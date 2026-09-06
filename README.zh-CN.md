@@ -12,7 +12,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-111-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-109-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
@@ -158,15 +158,12 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 | 程序化图像与方法图创作 | **ALIGN** — wanshuiyin [[仓库 + 交互式 Gallery]](https://github.com/wanshuiyin/ALIGN-Agentic-Loop-Image-GeneratioN) | Coding Agent 将图像构造成可编辑的 p5.js 程序；独立审阅者检查渲染像素，Critique 在有记录的多轮轨迹中驱动后续代码修改。 | 闭环社区 Demo |
 | Raster 到可编辑图形 | **DrawAI Workbench** — Renaissance Mind [[仓库 + Demo]](https://github.com/Renaissance-Mind/DrawAI) | 将论文图、幻灯片和 Diagram 等 Raster 输入转成可编辑 SVG/PPTX；Workbench 暴露中间产物与验证，而不只给最终图像。 | 闭环研究 Demo |
 | 文本、草图与扫描到 CAD | **CAD-Assistant** — Mallis et al. [[项目 + 视频]](https://cadassistant.github.io/) | Agent 编写并执行 FreeCAD 动作、观察不断变化的模型，并依据手绘命令或 3D Scan 证据调整后续代码。 | 闭环研究 Demo |
-| CAD 到物理仿真 | **Onshape × NVIDIA Isaac Sim** — Onshape by PTC (@Onshape) [[官方 X]](https://x.com/Onshape/status/2061440183564709951) | 多 Agent 概念验证将 CAD 几何带入仿真，并自动处理几何、物理与材质。 | 产业概念验证 |
 | 程序化 3D | **3DCodeBench** — 3DCodeBench team [[交互式 Gallery]](https://www.3dcodebench.com/) | Agent 执行 Blender 程序、读取错误、重试、多轮细化并视觉自评；网站提供可拖拽 3D 示例。 | 闭环研究 Demo |
-| Blender 场景创建 | **Blender MCP examples** — Blender Lab & BlenderMCP community [[官方 MCP]](https://www.blender.org/lab/mcp-server/) [[社区 Demo]](https://github.com/ahujasid/blender-mcp) | Demo 包含参考图到 Blender 场景，以及从场景检查到 Three.js 的工作流，并提供 Viewport 或 Render 证据。 | 官方工具 + 社区 Demo |
 | 持续游戏生成 | **Play2Code gallery** — GUI Agents for Continual Game Generation [[可玩 Demo]](https://continual-game-generation.vercel.app/) | GUI Agent 游玩生成的浏览器游戏，将体验轨迹返回给 Coding Agent，后者继续修改游戏。 | 闭环研究 Demo |
 | 游戏引擎编程与自验证 | **GPT-6 Astra × Playco Playbot** — OpenAI & Playco [[官方案例]](https://openai.com/index/playco-game-prototyping-with-astra/) | Playbot 连接 Unity 与 Godot；Astra 编辑场景、游玩并测试游戏、验证修改、发现 Bug，再继续改进可玩产物。OpenAI 报告的客户结果为人工修复减少 50%。 | 官方产品案例 |
 | 游戏移植与 GPU 修复 | **Speedrun your game port with agentic coding** — Apple [[WWDC26 视频 + Transcript]](https://developer.apple.com/videos/play/wwdc2026/357/) | Agent 移植 MiniEngine、捕获并检查 GPU Trace、修复明显错误的光照和纹理，再依据参考 Capture 验证修复后的渲染。 | 官方工程工作流 |
 | 可执行世界模型 | **TWIN interactive replay** — TWIN team [[项目 + Replay]](https://arc-agi-3-twin.vercel.app/) | Agent 为未知游戏编写 Python Twin，对照交互历史验证状态转移，修复首个不一致，并在修订后的模型中规划。 | 闭环研究 Demo |
 | 多格式设计 | **AutoDesign Open Research Demo** — Luo et al. [[项目 + 产物]](https://autodesign.designanything.ai/) | 同一篇论文被转成可编辑海报、Slide Deck、研究网站和旁白视频；每次 Rollout 保留可执行产物、渲染、诊断与局部修复。 | 闭环研究 Demo |
-| 代码化 Motion Graphics | **Remotion Agent Skills animation** — Remotion (@Remotion) [[官方 X]](https://x.com/Remotion/status/2013626968386765291) [[官方 Skills]](https://github.com/remotion-dev/remotion/tree/main/packages/skills) | Prompt 驱动的编程流程生成并渲染 React 动画；它是很强的 Code-to-video 案例，但原帖没有展示自主视觉 Critic。 | 相邻创作信号 |
 | 机器人 Code-as-policy | **ASPIRE task gallery** — NVIDIA GEAR et al. [[项目 + 88 个 Demo]](https://research.nvidia.com/labs/gear/aspire/) | Baseline 与修复后 Rollout 对应 Fix Code：Agent 检查多模态 Trace、重写策略、重新运行，并把验证后的修复保存为可复用 Skill。 | 闭环研究 Demo |
 
 <a id="topic-map"></a>
@@ -231,7 +228,6 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 | **Programming with Pixels** | `[Benchmark]` | `[Environment]` `[Verification]` |
 | **Rendering-in-the-Loop** | `[Method]` `[Benchmark]` `[Dataset]` | `[Data Curation]` `[Inference]` `[Environment]` `[Verification]` |
 | **ReLook** | `[Method]` | `[Training]` `[Inference]` `[Verification]` |
-| **CodeTracer** *（相邻工作）* | `[Method]` `[Benchmark]` `[Dataset]` | `[Data Curation]` `[Verification]` `[Trajectory Analysis]` |
 
 ## 📚 目录
 
@@ -320,9 +316,6 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 - `arXiv 2026.08` **MT-Web2Code: Benchmarking Coding Agents on Multi-Turn Regional Reconstruction and Localized Modification**. [[论文]](https://arxiv.org/abs/2608.03474) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
   > 评测多轮 Agent 的局部网页重建与修改，而不是一次性截图模仿。<br>
   > **验证维度：** 区域内保真度 · 区域外保持度 · 宏观／微观编辑成功率。
-- `arXiv 2026.05` **From Runnable to Shippable: Multi-Agent Test-Driven Development for Generating Full-Stack Web Applications from Requirements**. [[论文]](https://arxiv.org/abs/2605.17242) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
-  > 部署生成的应用，通过浏览器交互测试，并把观察到的失败转为修复报告。<br>
-  > **验证维度：** 构建与运行成功 · 浏览器测试用例通过 · 功能需求覆盖。
 - `arXiv 2026.04` **InteractWeb-Bench: Can Multimodal Agent Escape Blind Execution in Interactive Website Generation?**. [[论文]](https://arxiv.org/abs/2604.27419) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
   > 评测“澄清—实现—验证—提交”闭环：浏览器检查返回失败截图与有依据的诊断，指导 Agent 下一轮代码修改。<br>
   > **验证维度：** 基于 Oracle Slot 的 Task Completion Rate · 多余元素 Hallucination Rate · 功能与视觉需求满足。
@@ -341,9 +334,6 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 - `arXiv 2026.02` **VisRefiner: Learning from Visual Differences for Screenshot-to-Code Generation**. [[论文]](https://arxiv.org/abs/2602.05998) — `[Method]` `[Dataset]` · `[Data Curation]` `[Training]` `[Inference]` `[Verification]`
   > 从目标与渲染结果的视觉差异中学习，并将证据用于迭代代码细化。<br>
   > **验证维度：** HTML/CSS 有效性 · 区块／文本／位置／颜色／CLIP 保真度 · 迭代改进。
-- `arXiv 2026.02` **FullStack-Agent: Enhancing Agentic Full-Stack Web Coding via Development-Oriented Testing and Repository Back-Translation**. [[论文]](https://arxiv.org/abs/2602.03798) [[代码]](https://github.com/mnluzimu/FullStack-Agent) — `[Method]` `[Benchmark]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`
-  > 将仓库构建、面向开发的测试和反馈驱动的全栈应用修复结合起来。<br>
-  > **验证维度：** 前端／后端／数据库准确性 · 数据库交互有效性 · 外观质量。
 - `arXiv 2025.12` **FronTalk: Benchmarking Front-End Development as Conversational Code Generation with Multi-Modal Feedback**. [[论文]](https://arxiv.org/abs/2601.04203) [[代码]](https://github.com/shirley-wu/frontalk) [[项目]](https://frontalk-benchmark.github.io/) — `[Method]` `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`
   > 引入多轮视觉前端对话与 AceCoder；后者与渲染网站交互、批评失败并重新生成改进代码。<br>
   > **验证维度：** 交互通过率 · 可用性 · 遗忘／回退率。
@@ -673,22 +663,6 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 本节收录一次性多模态代码生成、只做最终评估、依赖人工继续修改，以及尚未展示同轨迹反馈闭环的相关基础工作。
 
-### 轨迹分析基础工作
-
-下列 Coding Agent 研究已经将轨迹分析建立为一个重要方向。它们仍放在相邻区，因为被分析的主要是文本与工具构成的 SWE 轨迹，并不强制要求执行后的多模态证据重新导向后续编码动作。
-
-- `ASE 2025` **Understanding Software Engineering Agents: A Study of Thought-Action-Result Trajectories**. [[论文]](https://arxiv.org/abs/2506.18824) [[代码与数据]](https://github.com/sola-st/llm-agents-study) — `[Empirical Study]` `[Dataset]` · `[Data Curation]` `[Trajectory Analysis]`
-  > 统一 RepairAgent、AutoCodeRover 和 OpenHands 轨迹，对比成功与失败修复中的动作模式、Token 使用、推理一致性和反馈整合。
-- `OOPSLA 2026` **Process-Centric Analysis of Agentic Software Systems**. [[论文]](https://arxiv.org/abs/2512.02393) [[代码与数据]](https://github.com/Intelligent-CAT-Lab/Graphectory) — `[Method]` `[Empirical Study]` `[Dataset]` · `[Data Curation]` `[Trajectory Analysis]`
-  > 将 SWE-agent 和 OpenHands 轨迹表示为时序与结构图，从而分析 Phase Flow、行为模式、低效路径和在线干预，而不只看最终成败。
-- `arXiv 2026.04` **CodeTracer: Towards Traceable Agent States**. [[论文]](https://arxiv.org/abs/2604.11641) [[代码]](https://github.com/NJU-LINK/CodeTracer) [[数据集]](https://huggingface.co/datasets/NJU-LINK/CodeTraceBench) — `[Method]` `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Verification]` `[Trajectory Analysis]`
-  > 将异构 Coding Agent 运行重建为分层状态转移轨迹，并通过重放恢复评估 Stage 与 Step 级失败起点定位。
-- `arXiv 2026.07` **Failure as a Process: An Anatomy of CLI Coding Agent Trajectories**. [[论文]](https://arxiv.org/abs/2607.09510) — `[Empirical Study]` · `[Data Curation]` `[Trajectory Analysis]`
-  > 将失败建模为起点、演化、恢复窗口与锁定过程，而不是把最终失败的 Patch 当作一个无区分的结果。
-
-- `arXiv 2026.07` **VisualPatchWorld: Code World Models as Latent Structured Representations for Planning**. [[论文]](https://arxiv.org/abs/2607.25236) [[代码]](https://github.com/HKBU-KnowComp/VisualPatchWorld) — `[Method]` · `[Training]` `[Inference]` `[Environment]` `[Verification]`
-  > 选择预定义动力学模板、离线拟合参数，并将图像状态用于下游模型预测控制，而不是由 Agent 编写和视觉修复世界代码。<br>
-  > **验证维度：** 多步 Rollout 误差 · 动力学形式选择 · 留出规划成功率。
 - `arXiv 2026.06` **Embodied CAD: Solver-Grounded LLM Agents for Parametric B-Rep Assembly Modeling**. [[论文]](https://arxiv.org/abs/2606.31252) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
   > 通过类型化 CAD Skills 构建可编辑 B-Rep 装配，并将求解器诊断、体积、包围盒和拓扑——而非渲染感知反馈——返回 Planner。<br>
   > **验证维度：** 有效／可执行率 · Skill／操作族／精确策略准确率 · 任务完成 · FreeCAD 执行成功。

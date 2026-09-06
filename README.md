@@ -12,7 +12,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-111-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-109-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
@@ -158,15 +158,12 @@ The following examples make the coding loop concrete across different tasks. We 
 | Programmatic image and method-figure creation | **ALIGN** — wanshuiyin [[repo + interactive gallery]](https://github.com/wanshuiyin/ALIGN-Agentic-Loop-Image-GeneratioN) | Coding agents construct images as editable p5.js programs; independent reviewers inspect rendered pixels and their critiques drive later code revisions across documented multi-round histories. | Closed-loop community demo |
 | Raster to editable graphics | **DrawAI Workbench** — Renaissance Mind [[repo + demo]](https://github.com/Renaissance-Mind/DrawAI) | Raster figures, slides, and diagrams become editable SVG/PPTX artifacts; the workbench exposes intermediate outputs and validation rather than only a final image. | Closed-loop research demo |
 | CAD from text, sketches, and scans | **CAD-Assistant** — Mallis et al. [[project + video]](https://cadassistant.github.io/) | The agent writes and executes FreeCAD actions, observes the evolving model, and adapts later code to hand-drawn commands or 3D scan evidence. | Closed-loop research demo |
-| CAD to physical simulation | **Onshape × NVIDIA Isaac Sim** — Onshape by PTC (@Onshape) [[official X]](https://x.com/Onshape/status/2061440183564709951) | A multi-agent proof-of-concept carries CAD geometry into simulation and automatically handles geometry, physics, and materials. | Industry proof-of-concept |
 | Procedural 3D | **3DCodeBench** — 3DCodeBench team [[interactive gallery]](https://www.3dcodebench.com/) | Agents execute Blender programs, read errors, retry, refine across turns, and visually critique procedural objects; the site includes draggable 3D examples. | Closed-loop research demo |
-| Blender scene creation | **Blender MCP examples** — Blender Lab & BlenderMCP community [[official MCP]](https://www.blender.org/lab/mcp-server/) [[community demos]](https://github.com/ahujasid/blender-mcp) | Demonstrations include reference-image-to-Blender-scene and scene-inspection-to-Three.js workflows with viewport or rendered evidence. | Official tool + community demos |
 | Continual game generation | **Play2Code gallery** — GUI Agents for Continual Game Generation [[playable demos]](https://continual-game-generation.vercel.app/) | A GUI agent plays generated browser games and returns experience traces to a coding agent, which continues modifying the game. | Closed-loop research demo |
 | Game-engine coding and self-validation | **GPT-6 Astra × Playco Playbot** — OpenAI & Playco [[official case]](https://openai.com/index/playco-game-prototyping-with-astra/) | Playbot connects Unity and Godot; Astra edits scenes, plays and tests the game, validates changes, finds bugs, and improves the playable artifact. OpenAI reports a customer-observed 50% reduction in manual fixes. | Official product case |
 | Game porting and GPU repair | **Speedrun your game port with agentic coding** — Apple [[WWDC26 video + transcript]](https://developer.apple.com/videos/play/wwdc2026/357/) | The agent ports MiniEngine, captures and inspects GPU traces, fixes visibly incorrect lighting and textures, and validates the corrected render against reference captures. | Official engineering workflow |
 | Executable world models | **TWIN interactive replay** — TWIN team [[project + replay]](https://arc-agi-3-twin.vercel.app/) | The agent writes a Python twin of an unknown game, validates transitions against interaction history, repairs the first mismatch, and plans inside the revised model. | Closed-loop research demo |
 | Multi-format design | **AutoDesign Open Research Demo** — Luo et al. [[project + artifacts]](https://autodesign.designanything.ai/) | One source paper becomes an editable poster, slide deck, research site, and narrated video; each rollout retains executable artifacts, renders, diagnostics, and localized repairs. | Closed-loop research demo |
-| Motion graphics as code | **Remotion Agent Skills animation** — Remotion (@Remotion) [[official X]](https://x.com/Remotion/status/2013626968386765291) [[official skills]](https://github.com/remotion-dev/remotion/tree/main/packages/skills) | A prompted coding workflow produces a rendered React animation; it is a compelling code-to-video case, while autonomous visual critique is not demonstrated in the post. | Adjacent creation signal |
 | Robot code-as-policy | **ASPIRE task gallery** — NVIDIA GEAR et al. [[project + 88 demos]](https://research.nvidia.com/labs/gear/aspire/) | Baseline and repaired robot rollouts are paired with fix code: the agent inspects multimodal traces, rewrites the policy, reruns it, and stores validated repairs as reusable skills. | Closed-loop research demo |
 
 <a id="topic-map"></a>
@@ -231,7 +228,6 @@ In the entries below, contribution tags appear first and research-role tags foll
 | **Programming with Pixels** | `[Benchmark]` | `[Environment]` `[Verification]` |
 | **Rendering-in-the-Loop** | `[Method]` `[Benchmark]` `[Dataset]` | `[Data Curation]` `[Inference]` `[Environment]` `[Verification]` |
 | **ReLook** | `[Method]` | `[Training]` `[Inference]` `[Verification]` |
-| **CodeTracer** *(adjacent)* | `[Method]` `[Benchmark]` `[Dataset]` | `[Data Curation]` `[Verification]` `[Trajectory Analysis]` |
 
 ## 📚 Table of Contents
 
@@ -320,9 +316,6 @@ Agents and benchmarks for repeatedly generating, deploying, viewing, interacting
 - `arXiv 2026.08` **MT-Web2Code: Benchmarking Coding Agents on Multi-Turn Regional Reconstruction and Localized Modification**. [[paper]](https://arxiv.org/abs/2608.03474) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
   > Benchmarks multi-turn agents on localized web reconstruction and modification instead of one-shot screenshot imitation.<br>
   > **Verification:** In-box fidelity · out-of-box preservation · macro/micro edit success.
-- `arXiv 2026.05` **From Runnable to Shippable: Multi-Agent Test-Driven Development for Generating Full-Stack Web Applications from Requirements**. [[paper]](https://arxiv.org/abs/2605.17242) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
-  > Deploys generated applications, exercises them through browser interactions, and turns observed failures into repair reports.<br>
-  > **Verification:** Build and run success · browser test-case pass · functional requirement coverage.
 - `arXiv 2026.04` **InteractWeb-Bench: Can Multimodal Agent Escape Blind Execution in Interactive Website Generation?**. [[paper]](https://arxiv.org/abs/2604.27419) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
   > Evaluates a Clarify–Implement–Verify–Submit loop in which browser inspection returns failure screenshots and grounded diagnostics for the agent's next code revision.<br>
   > **Verification:** Oracle-slot Task Completion Rate · unrequested-element Hallucination Rate · functional and visual requirement satisfaction.
@@ -341,9 +334,6 @@ Agents and benchmarks for repeatedly generating, deploying, viewing, interacting
 - `arXiv 2026.02` **VisRefiner: Learning from Visual Differences for Screenshot-to-Code Generation**. [[paper]](https://arxiv.org/abs/2602.05998) — `[Method]` `[Dataset]` · `[Data Curation]` `[Training]` `[Inference]` `[Verification]`
   > Learns from target-versus-render visual differences and applies the resulting evidence to iterative code refinement.<br>
   > **Verification:** HTML/CSS validity · block/text/position/color/CLIP fidelity · iterative improvement.
-- `arXiv 2026.02` **FullStack-Agent: Enhancing Agentic Full-Stack Web Coding via Development-Oriented Testing and Repository Back-Translation**. [[paper]](https://arxiv.org/abs/2602.03798) [[code]](https://github.com/mnluzimu/FullStack-Agent) — `[Method]` `[Benchmark]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`
-  > Combines repository construction with development-oriented tests and feedback-driven repair of full-stack applications.<br>
-  > **Verification:** Frontend/backend/database accuracy · valid database interactions · appearance quality.
 - `arXiv 2025.12` **FronTalk: Benchmarking Front-End Development as Conversational Code Generation with Multi-Modal Feedback**. [[paper]](https://arxiv.org/abs/2601.04203) [[code]](https://github.com/shirley-wu/frontalk) [[project]](https://frontalk-benchmark.github.io/) — `[Method]` `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`
   > Introduces multi-turn visual front-end conversations and AceCoder, which interacts with rendered sites, critiques failures, and regenerates improved code.<br>
   > **Verification:** Interactive pass rate · usability · forgetting/regression rate.
@@ -673,22 +663,6 @@ Work in which code is a controller, policy, experiment, or tool action and real 
 
 This section covers related foundations such as one-shot multimodal code generation, final-only evaluation, human-mediated refinement, and systems without a demonstrated same-trajectory feedback loop.
 
-### Trajectory-analysis foundations
-
-The following coding-agent studies establish trajectory analysis as an important research direction. They remain adjacent because their evaluated paths are primarily text-and-tool SWE trajectories and do not require post-execution multimodal evidence to redirect later coding actions.
-
-- `ASE 2025` **Understanding Software Engineering Agents: A Study of Thought-Action-Result Trajectories**. [[paper]](https://arxiv.org/abs/2506.18824) [[code and data]](https://github.com/sola-st/llm-agents-study) — `[Empirical Study]` `[Dataset]` · `[Data Curation]` `[Trajectory Analysis]`
-  > Unifies RepairAgent, AutoCodeRover, and OpenHands traces to compare action patterns, token use, reasoning coherence, and feedback integration across successful and failed repairs.
-- `OOPSLA 2026` **Process-Centric Analysis of Agentic Software Systems**. [[paper]](https://arxiv.org/abs/2512.02393) [[code and data]](https://github.com/Intelligent-CAT-Lab/Graphectory) — `[Method]` `[Empirical Study]` `[Dataset]` · `[Data Curation]` `[Trajectory Analysis]`
-  > Represents SWE-agent and OpenHands trajectories as temporal and structural graphs, enabling phase-flow, pattern, inefficiency, and online-intervention analyses beyond final success.
-- `arXiv 2026.04` **CodeTracer: Towards Traceable Agent States**. [[paper]](https://arxiv.org/abs/2604.11641) [[code]](https://github.com/NJU-LINK/CodeTracer) [[dataset]](https://huggingface.co/datasets/NJU-LINK/CodeTraceBench) — `[Method]` `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Verification]` `[Trajectory Analysis]`
-  > Reconstructs heterogeneous coding-agent runs as hierarchical state-transition traces and evaluates stage- and step-level failure-onset localization with replay-based recovery.
-- `arXiv 2026.07` **Failure as a Process: An Anatomy of CLI Coding Agent Trajectories**. [[paper]](https://arxiv.org/abs/2607.09510) — `[Empirical Study]` · `[Data Curation]` `[Trajectory Analysis]`
-  > Models failure through onset, evolution, recovery, and lock-in rather than treating an unsuccessful final patch as a single undifferentiated outcome.
-
-- `arXiv 2026.07` **VisualPatchWorld: Code World Models as Latent Structured Representations for Planning**. [[paper]](https://arxiv.org/abs/2607.25236) [[code]](https://github.com/HKBU-KnowComp/VisualPatchWorld) — `[Method]` · `[Training]` `[Inference]` `[Environment]` `[Verification]`
-  > Selects predefined dynamics sketches, fits their parameters offline, and uses image-derived state for downstream model-predictive control rather than agent-written visual code repair.<br>
-  > **Verification:** Multi-step rollout error · dynamics-form selection · held-out planning success.
 - `arXiv 2026.06` **Embodied CAD: Solver-Grounded LLM Agents for Parametric B-Rep Assembly Modeling**. [[paper]](https://arxiv.org/abs/2606.31252) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
   > Builds editable B-Rep assemblies through typed CAD skills and returns solver diagnostics, volumes, bounding boxes, and topology—rather than rendered perceptual feedback—to the planner.<br>
   > **Verification:** Valid/executable rate · skill/operation-family/exact-policy accuracy · task completion · FreeCAD execution success.

@@ -93,16 +93,6 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 - `2026-08-02` **Andrej Karpathy — 长时程 Three.js 实验与评论。** [[X]](https://x.com/karpathy/status/2083749667410727319?s=20) — **本仓库的直接启发来源。**
   > *方向信号：* 大型视觉程序的生成成本正在快速下降，但如何高效地观看、游玩、审计和修复这些程序，仍是核心瓶颈。
 
-- `2026-02-24` **Cursor — Cursor agents can now control their own computers.** [[官方博客]](https://cursor.com/blog/agent-computer-use) [[浏览器文档]](https://cursor.com/docs/agent/tools/browser)
-  > Agents can “build and interact with software directly ... iterate until they’ve validated their output.”
-  >
-  > *与本主题的关联：* 截图、视频、交互轨迹、控制台输出和网络证据共同闭合代码修改与验证之间的循环。
-
-- `2025-09-15` **OpenAI — Introducing upgrades to Codex.** [[官方博客]](https://openai.com/index/introducing-upgrades-to-codex/)
-  > Codex can “spin up its own browser, look at what it built, iterate.”
-  >
-  > *与本主题的关联：* 浏览器观测成为自主实现和验证过程的一部分，而不再只是留给人类的最终审阅。
-
 <a id="skills-and-tool-bridges"></a>
 ## 🧰 实用 Agent Skills 与工具桥
 

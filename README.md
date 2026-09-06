@@ -93,16 +93,6 @@ This section collects attributed, non-peer-reviewed signals that help explain wh
 - `2026-08-02` **Andrej Karpathy — Long-horizon Three.js experiment and commentary.** [[X]](https://x.com/karpathy/status/2083749667410727319?s=20) — **Direct inspiration for this repository.**
   > *Topic signal:* Large visual programs are becoming inexpensive to generate, while efficiently watching, playing, auditing, and repairing them remains a central bottleneck.
 
-- `2026-02-24` **Cursor — Cursor agents can now control their own computers.** [[official blog]](https://cursor.com/blog/agent-computer-use) [[browser docs]](https://cursor.com/docs/agent/tools/browser)
-  > Agents can “build and interact with software directly ... iterate until they’ve validated their output.”
-  >
-  > *Topic link:* Screenshots, videos, interaction traces, console output, and network evidence can all close the loop between a code change and its validation.
-
-- `2025-09-15` **OpenAI — Introducing upgrades to Codex.** [[official blog]](https://openai.com/index/introducing-upgrades-to-codex/)
-  > Codex can “spin up its own browser, look at what it built, iterate.”
-  >
-  > *Topic link:* Browser observation becomes part of autonomous implementation and verification rather than a final human-only review step.
-
 <a id="skills-and-tool-bridges"></a>
 ## 🧰 Practical Agent Skills and Tool Bridges
 

@@ -80,9 +80,6 @@ A benchmark may instantiate this loop through a named track, baseline, or docume
 
 This section collects attributed, non-peer-reviewed signals that help explain why multimodal feedback is moving into the coding loop, complementing the research literature with practitioner evidence.
 
-- `2026-08-02` **Andrej Karpathy — Long-horizon Three.js experiment and commentary.** [[X]](https://x.com/karpathy/status/2083749667410727319?s=20) — **Direct inspiration for this repository.**
-  > *Topic signal:* Large visual programs are becoming inexpensive to generate, while efficiently watching, playing, auditing, and repairing them remains a central bottleneck.
-
 - `2026-09-05` **Z.ai / AutoClaw Team — GLM-5.3-Flash: More Intelligence with Less Compute.** [[official blog]](https://autoclaw.z.ai/blog/model/glm-5.3-flash/) [[model card]](https://huggingface.co/zai-org/GLM-5.3-Flash)
   > “Vision therefore becomes part of execution and verification rather than a separate input capability.”
   >
@@ -93,6 +90,9 @@ This section collects attributed, non-peer-reviewed signals that help explain wh
   >
   > *Topic link:* The launch highlights visual judgment over websites, games, applications, and renderings; the Playco case makes the loop concrete through scene edits, gameplay tests, validation, bug finding, and further improvement in Unity and Godot.
 
+- `2026-08-02` **Andrej Karpathy — Long-horizon Three.js experiment and commentary.** [[X]](https://x.com/karpathy/status/2083749667410727319?s=20) — **Direct inspiration for this repository.**
+  > *Topic signal:* Large visual programs are becoming inexpensive to generate, while efficiently watching, playing, auditing, and repairing them remains a central bottleneck.
+
 - `2026-02-24` **Cursor — Cursor agents can now control their own computers.** [[official blog]](https://cursor.com/blog/agent-computer-use) [[browser docs]](https://cursor.com/docs/agent/tools/browser)
   > Agents can “build and interact with software directly ... iterate until they’ve validated their output.”
   >
@@ -102,11 +102,6 @@ This section collects attributed, non-peer-reviewed signals that help explain wh
   > Codex can “spin up its own browser, look at what it built, iterate.”
   >
   > *Topic link:* Browser observation becomes part of autonomous implementation and verification rather than a final human-only review step.
-
-- `2025-07-24` **Anthropic — How Anthropic teams use Claude Code.** [[official blog]](https://claude.com/blog/how-anthropic-teams-use-claude-code)
-  > Teams set up “autonomous loops where Claude Code writes the code, runs tests, and iterates continuously.”
-  >
-  > *Topic link:* Figma inputs, dashboard screenshots, executable prototypes, and repeated testing show how visual context is entering real coding workflows, while still leaving room for stronger autonomous visual verification.
 
 <a id="skills-and-tool-bridges"></a>
 ## 🧰 Practical Agent Skills and Tool Bridges

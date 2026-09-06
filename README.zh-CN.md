@@ -80,9 +80,6 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 本节收集带明确作者归属的非同行评审信号，用实践证据补充研究文献，并说明多模态反馈为何正在进入编程闭环。
 
-- `2026-08-02` **Andrej Karpathy — 长时程 Three.js 实验与评论。** [[X]](https://x.com/karpathy/status/2083749667410727319?s=20) — **本仓库的直接启发来源。**
-  > *方向信号：* 大型视觉程序的生成成本正在快速下降，但如何高效地观看、游玩、审计和修复这些程序，仍是核心瓶颈。
-
 - `2026-09-05` **Z.ai / AutoClaw Team — GLM-5.3-Flash: More Intelligence with Less Compute.** [[官方博客]](https://autoclaw.z.ai/blog/model/glm-5.3-flash/) [[模型卡]](https://huggingface.co/zai-org/GLM-5.3-Flash)
   > “Vision therefore becomes part of execution and verification rather than a separate input capability.”
   >
@@ -93,6 +90,9 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
   >
   > *与本主题的关联：* 官方发布强调其对网站、游戏、应用和渲染结果的视觉判断；Playco 案例则把闭环具体化为 Unity／Godot 场景编辑、游玩测试、验证、发现 Bug 和继续改进。
 
+- `2026-08-02` **Andrej Karpathy — 长时程 Three.js 实验与评论。** [[X]](https://x.com/karpathy/status/2083749667410727319?s=20) — **本仓库的直接启发来源。**
+  > *方向信号：* 大型视觉程序的生成成本正在快速下降，但如何高效地观看、游玩、审计和修复这些程序，仍是核心瓶颈。
+
 - `2026-02-24` **Cursor — Cursor agents can now control their own computers.** [[官方博客]](https://cursor.com/blog/agent-computer-use) [[浏览器文档]](https://cursor.com/docs/agent/tools/browser)
   > Agents can “build and interact with software directly ... iterate until they’ve validated their output.”
   >
@@ -102,11 +102,6 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
   > Codex can “spin up its own browser, look at what it built, iterate.”
   >
   > *与本主题的关联：* 浏览器观测成为自主实现和验证过程的一部分，而不再只是留给人类的最终审阅。
-
-- `2025-07-24` **Anthropic — How Anthropic teams use Claude Code.** [[官方博客]](https://claude.com/blog/how-anthropic-teams-use-claude-code)
-  > Teams set up “autonomous loops where Claude Code writes the code, runs tests, and iterates continuously.”
-  >
-  > *与本主题的关联：* Figma 输入、仪表盘截图、可执行原型和重复测试说明视觉上下文正进入真实编程工作流，同时也显示出更强自主视觉验证仍有发展空间。
 
 <a id="skills-and-tool-bridges"></a>
 ## 🧰 实用 Agent Skills 与工具桥

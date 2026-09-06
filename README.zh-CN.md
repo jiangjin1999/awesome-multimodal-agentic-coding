@@ -725,7 +725,9 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 如果你也对这个方向感兴趣——无论是在探索多模态智能体编程、视觉反馈驱动的 Agent、可执行视觉产物，还是相关 Benchmark——**都欢迎交流、分享资源与开展研究合作**。
 
 - **邮箱：** [jiangjin@stu.pku.edu.cn](mailto:jiangjin@stu.pku.edu.cn)
-- **微信：** `13120435355`
+- **微信：** 扫描下方二维码添加好友。
+
+<img src="assets/wechat-young-j.jpg" alt="Young J 的微信二维码" width="240">
 
 欢迎补充遗漏论文、修正链接或讨论分类位置。新增论文时，请提供一句话摘要，并简要说明执行后的多模态反馈如何改变后续代码或工具动作。
 

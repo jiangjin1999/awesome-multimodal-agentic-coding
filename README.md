@@ -725,7 +725,9 @@ The literature collected here repeatedly exposes several open problems:
 If this direction resonates with you—whether you are exploring multimodal agentic coding, visual-feedback-driven agents, executable visual artifacts, or related benchmarks—**we warmly welcome discussion, resource sharing, and research collaboration**.
 
 - **Email:** [jiangjin@stu.pku.edu.cn](mailto:jiangjin@stu.pku.edu.cn)
-- **WeChat:** `13120435355`
+- **WeChat:** Scan the QR code below to connect.
+
+<img src="assets/wechat-young-j.jpg" alt="WeChat QR code for Young J" width="240">
 
 Missing papers, corrected links, and placement discussions are welcome. For a paper addition, please include a one-sentence summary and briefly explain how post-execution multimodal feedback changes a later code or tool action.
 

@@ -273,6 +273,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 - [Survey 与相关资源合集](#surveys-and-related-collections)
 - [研究前沿](#research-frontiers)
 - [联系、合作与贡献](#contact-and-collaboration)
+- [引用](#citation)
 
 ---
 
@@ -784,6 +785,21 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 ```
 
 如果要提交大批条目、新增任务分类或修改 Taxonomy，请先发起 Issue。
+
+<a id="citation"></a>
+## 📝 引用
+
+如果本仓库对你的研究有所帮助，欢迎引用：
+
+```bibtex
+@misc{jiang2026awesomemultimodalagenticcoding,
+  author       = {Jiang, Jin},
+  title        = {Awesome Multimodal Agentic Coding},
+  year         = {2026},
+  publisher    = {GitHub},
+  howpublished = {\url{https://github.com/jiangjin1999/awesome-multimodal-agentic-coding}}
+}
+```
 
 ## 📄 许可证
 

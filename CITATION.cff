@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as follows."
+title: "Awesome Multimodal Agentic Coding"
+type: generic
+authors:
+  - family-names: "Jiang"
+    given-names: "Jin"
+    orcid: "https://orcid.org/0000-0001-8579-3430"
+repository-code: "https://github.com/jiangjin1999/awesome-multimodal-agentic-coding"
+url: "https://github.com/jiangjin1999/awesome-multimodal-agentic-coding"
+date-released: 2026-09-06
+license: MIT

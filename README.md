@@ -273,6 +273,7 @@ In the entries below, contribution tags appear first and research-role tags foll
 - [Surveys and Related Collections](#surveys-and-related-collections)
 - [Research Frontiers](#research-frontiers)
 - [Contact, Collaboration, and Contributing](#contact-and-collaboration)
+- [Citation](#citation)
 
 ---
 
@@ -784,6 +785,21 @@ Core multimodal agentic coding
 ```
 
 For a large batch, a new task category, or a taxonomy change, please open an issue first.
+
+<a id="citation"></a>
+## 📝 Citation
+
+If you find this repository useful, please cite:
+
+```bibtex
+@misc{jiang2026awesomemultimodalagenticcoding,
+  author       = {Jiang, Jin},
+  title        = {Awesome Multimodal Agentic Coding},
+  year         = {2026},
+  publisher    = {GitHub},
+  howpublished = {\url{https://github.com/jiangjin1999/awesome-multimodal-agentic-coding}}
+}
+```
 
 ## 📄 License
 

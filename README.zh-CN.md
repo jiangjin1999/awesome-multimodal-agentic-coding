@@ -12,23 +12,19 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-109-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-111-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-09-06**
+**最后更新：2026-09-12**
 
 </div>
-
-## 🔥 动态
-
-- **[2026-09-06]** 发布 **v0.1.0**：Awesome Multimodal Agentic Coding 的首个公开版本，收录横跨十个任务领域的 111 项核心工作，并提供实用 Skills、执行引擎地图、精选案例与中英文文档。
 
 <a id="motivation"></a>
 ## 💡 动机
 
-传统的多模态编程通常意味着：**将图像、视频、图表或设计稿作为代码生成的初始输入**。本仓库关注一个更窄、也更关键的转变：
+传统的多模态编程通常意味着：**将图像、视频、图表或设计稿作为代码生成的初始输入**。本仓库关注**多模态编程智能体（multimodal coding agents）**及其利用感知反馈持续改进代码的**多模态智能体编程工作流（multimodal agent coding）**：
 
 > **传统多模态编程将视觉作为输入；多模态智能体编程将多模态感知作为反馈。**
 
@@ -36,7 +32,7 @@
 
 研究对象不只是 `多模态输入 → 代码`，而是一条自主或半自主轨迹：可执行代码产生视觉或交互状态，智能体观察这一状态，并让观测结果重新决定后续工作。
 
-在这个范式中，智能体不只是在**编码前看一眼**，而是会在**编码过程中持续观察**，决定何时需要再次观测，并依据所见选择下一步行动。
+在这个范式中，视觉智能体不只是在**编码前看一眼**，而是会在**编码过程中持续观察**，决定何时需要再次观测，并依据所见选择下一步行动。
 
 ```mermaid
 flowchart LR
@@ -71,7 +67,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 - 对网页、应用、图表、示意图、3D 场景、CAD 模型、游戏、幻灯片、海报、动画和视频进行迭代生成与修复。
 - 在仓库或应用层复现、定位、修复视觉问题，并进行回归验证。
-- Coding Agent 在修改代码时主动浏览、检查截图、采样视频帧、操作 GUI、游玩游戏或观察机器人。
+- 视觉编程智能体（visual coding agents）在修改代码时主动浏览、检查截图、采样视频帧、操作 GUI、游玩游戏或观察机器人。
 - 由 Agent 编写、并依据多模态观测或交互反例修订代码的可执行世界模型与数字孪生。
 - 专门围绕上述闭环构建的训练方法、数据集和 Benchmark。
 
@@ -110,6 +106,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 | 参数化 CAD 执行 | [CadQuery MCP server](https://github.com/CadQuery/cadquery-contrib/tree/master/mcp-server) | 项目托管 MCP | 执行 CadQuery、渲染多视图 SVG、检查拓扑与物理属性，并导出制造格式。 |
 | 托管 CAD Agent 与几何 API | [Zoo developer tools](https://docs.zoo.dev/docs) | 官方 MCP / Agent API / Engine API | 将语言驱动的 KCL 工作流连接到几何执行、快照、检查和调试。 |
 | Blender 与程序化 3D | [Blender Lab MCP Server](https://www.blender.org/lab/mcp-server/) · [BlenderMCP 社区 Demo](https://github.com/ahujasid/blender-mcp) | 官方 MCP + 社区 Demo 生态 | 支持 Agent 在 Blender 中检查场景并执行 Python；社区 Demo 展示参考图到场景、Blender 到 Three.js 等工作流。 |
+| Blender 多视图模型诊断 | [trueform](https://github.com/shidenkai0/trueform) | 社区 Skill + MIT 工具包 | 匹配参考相机、渲染轮廓与表面诊断，拒绝让任一必检视图退化的修改，并指导 Agent 下一轮几何编辑。 |
 | Three.js 与浏览器 3D | [threejs-skills](https://github.com/full-stack-skills/threejs-skills) · [threejs-game-skills](https://github.com/majidmanzarpour/threejs-game-skills) | 社区 Skills | 编码场景、相机、材质、动画、玩法、确定性测试和视觉回归工作流。 |
 | 多引擎游戏构建与视觉 QA | [3AGameFactory](https://github.com/OpenDCAI/GameFactory-3A) | 项目托管 Skills + Pipelines + 引擎适配器 | 让 Coding Agent 在 UE5、Unity、Godot、Blender 与 Three.js 中组织资产、玩法和 UI 生成，并要求通过渲染资产审阅、引擎内录制与修复后再验收。 |
 | p5.js 视觉创作与审阅 | [ALIGN](https://github.com/wanshuiyin/ALIGN-Agentic-Loop-Image-GeneratioN) | 社区 Skills + 可复现 Demo | 为 Codex 与 Claude Code 封装参考图绘制和方法图工作流：编写 p5.js、渲染、获得独立的像素级审阅、修改程序，并保留决策与版本。 |
@@ -184,6 +181,71 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 | 文档、动画与视频 | Slide、海报、文档与时序媒体 | 页面／帧渲染、布局检查和时间一致性 |
 | 机器人与具身编程 | 控制器、策略和机器人程序 | 视频、传感器流、Rollout 和任务结果 |
 
+<a id="application-domains"></a>
+## 🌐 应用领域
+
+任务地图描述**构建什么**；这一互补索引描述**用在哪里**。不同领域有各自的视觉证据和验证要求。
+
+| 领域 | 代码构建的产物 | 代表资源 |
+|---|---|---|
+| [医学与生物可视化](#medical-visualization) | 解剖浏览器、程序化生物结构、医学研究图表 | Human Atlas · Chat Modeling · OpenLens AI · MCP-Slicer |
+| [建筑与建造](#architecture-construction) | 程序化建筑与构造几何 | CraftBot |
+| [教育与解释性媒体](#education-explanatory-media) | 可执行数学动画与可视化课程 | ManimAgent |
+| [科研复现与神经渲染](#scientific-reproduction) | 可训练的渲染实现与重建视图 | NERFIFY |
+
+<a id="medical-visualization"></a>
+### 🩺 医学可视化与仿真
+
+连接 **3D 解剖、科学可视化、动画与可执行仿真**的跨任务应用维度。可编辑代码可以将解剖资产与医学描述转化为交互式学习产物。值得探索的任务包括解剖结构探索、操作流程教学动画和生物力学仿真；验证需要区分软件行为与解剖、临床正确性。
+
+- **Human Atlas** — ashemag。**社区 Demo · 交互式解剖。** [[GitHub]](https://github.com/ashemag/human-atlas) [[在线体验]](https://human-atlas-seven.vercel.app/)
+  > 基于 React / Three.js 的解剖浏览器，将 BodyParts3D 的 2,234 个网格组织成可选择、搜索与展开的交互视图，覆盖 15 个解剖系统。
+  >
+  > *验证维度：* 项目记录的网格完整性、解剖名称与概念映射、展开布局无重叠、搜索／选择行为，以及桌面和移动端交互检查。
+
+应用代码采用 MIT 许可证；BodyParts3D 解剖数据须保留 CC BY 4.0 署名。Human Atlas 是**教育用途的浏览器，而非诊断或手术工具**。
+
+- `arXiv 2025.09` **OpenLens AI: Fully Autonomous Research Agent for Health Infomatics** — Cheng & Suo。**研究工作流。** [[论文]](https://arxiv.org/abs/2509.14778) [[代码]](https://github.com/jarrycyx/openlens-ai)
+  > 生成健康信息学分析代码与 LaTeX 稿件，利用 VLM 对图表和编译页面的反馈，决定后续代码修复与排版改进。<br>
+  > **验证维度：** 代码执行 · 图表清晰度／正确性 · 编译页面布局 · 证据可追溯性。
+- `arXiv 2024.04` **Chat Modeling: Natural Language-based Procedural Modeling of Biological Structures without Training** — Jia、Wang 与 Viola。**人参与闭环的研究。** [[论文]](https://arxiv.org/abs/2404.01063) [[更新版项目]](https://yunhaiwang.net/vis2026/ChatModeling_website/ChatModeling.html)
+  > 将生物结构建模需求转为可解释执行的程序化配方，由用户检查生成的 3D 结构并交互修订。<br>
+  > **验证维度：** 配方语法与执行 · 用户对建模结果的评估 · 结构生物学专家评价。
+- **MCP-Slicer** — zhaoyouj。**第三方工具桥。** [[代码与示例]](https://github.com/zhaoyouj/mcp-slicer)
+  > 将 3D Slicer 中的 Python 执行与切片／3D 视图截图连接起来，让 Agent 检查并修订代码创建的医学场景。<br>
+  > **观测通道：** MRML 场景节点 · 切片视图截图 · 3D 视图截图。
+
+软件、视觉与临床验证是不同层次：渲染成功或 Agent 认可，不代表解剖准确、患者安全或临床有效；医学研究数据也需要相应的隐私保护。MCP-Slicer 是第三方集成，其作者不建议用于生产环境。
+
+<a id="architecture-construction"></a>
+### 🏛️ 建筑与建造
+
+设计需求、图纸与参考照片可以转化为可编辑的建筑程序；这一领域同时关注视觉还原、空间关系与建造约束。
+
+- **CraftBot** — Luka Piskorec。**代码优先的研究项目与社区工作流。** [[代码、实验与论文草稿]](https://github.com/lukapiskorec/craftbot)
+  > 根据建筑参考编写 Blender Python，逐版本渲染，结合视觉检查报告与几何检查修改建筑程序。<br>
+  > **验证维度：** 构件缺失／错位 · 参考与需求一致性 · 几何重叠与接触关系。
+
+<a id="education-explanatory-media"></a>
+### 🎓 教育与解释性媒体
+
+可执行课程通过运动与交互呈现抽象概念；反馈不仅关注画面效果，也关注解释是否准确、易读。
+
+- `arXiv 2026.06` **ManimAgent: Self-Evolving Multimodal Agents for Visual Education**。**研究工作流。** [[论文]](https://arxiv.org/abs/2606.30296) [[代码]](https://github.com/jwj1342/Paper2Manim) [[任务分类条目]](#documents-video)
+  > 根据渲染帧审阅修订可执行 Manim 动画，并将成功与失败的改进经验用于后续任务。<br>
+  > **验证维度：** 逻辑流程 · 布局／遮挡 · 准确性 · 人工 Pass@1。
+
+<a id="scientific-reproduction"></a>
+### 🔬 科研复现与神经渲染
+
+研究实现本身也能生成可检查的视觉产物；基于渲染结果的调试将论文复现与代码修复连接起来，而不止于获得一个可运行仓库。
+
+- `arXiv 2026.02` **NERFIFY: A Multi-Agent Framework for Turning NeRF Papers into Code** — Jain 等。**研究方法与 Benchmark。** [[论文]](https://arxiv.org/abs/2603.00805)
+  > 根据论文构建可训练的 Nerfstudio 实现，通过渲染诊断与 VLM 引导的补丁持续改进代码。<br>
+  > **验证维度：** 可执行性 · PSNR／SSIM · 低质量图像区域 · 跨视角几何一致性。
+
+论文提出了覆盖 30 篇 NeRF 论文的 **Nerfify-Bench**。
+
 <a id="contribution-tags"></a>
 ## 🏷️ 标签体系
 
@@ -238,6 +300,11 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 - [执行与渲染引擎地图](#execution-and-rendering-engines)
 - [精选 Case 与 Demo](#selected-cases-and-demos)
 - [主题地图](#topic-map)
+- [应用领域](#application-domains)
+  - [医学可视化与仿真](#medical-visualization)
+  - [建筑与建造](#architecture-construction)
+  - [教育与解释性媒体](#education-explanatory-media)
+  - [科研复现与神经渲染](#scientific-reproduction)
 - [标签体系](#contribution-tags)
 - [论文与项目列表](#paper-and-project-list)
   - [1. 通用多模态编程与视觉问题求解](#general)
@@ -442,6 +509,9 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 生成可执行图形或 CAD 程序，并利用渲染视图、Solver 反馈或几何检查进行修改的 Agent。
 
+- `arXiv 2026.09` **Recursive Code World Models: Building Complex Worlds through Recursive Scene Programs**. [[论文]](https://arxiv.org/abs/2609.11499) — `[Method]` · `[Inference]` `[Verification]`
+  > 将复杂 Three.js 世界构造成递归场景程序：每个子世界拥有自己的“渲染—观察—改码”闭环，返回的代码还会在父级上下文中重新渲染并联合修复。<br>
+  > **验证维度：** PSNR／SSIM · Edge F1 · LPIPS／CLIP 相似度 · 局部细节保真度 · 递归深度与父级回访消融。
 - `arXiv 2026.09` **VisCAD: A Foundation Model Suite with Multimodal Industrial CAD Intelligence**. [[论文]](https://arxiv.org/abs/2609.03811) — `[Method]` `[System]` `[Benchmark]` · `[Data Curation]` `[Training]` `[Inference]` `[Environment]` `[Verification]`
   > 生成可执行 FreeCAD 程序，并评测观察六视图渲染后继续改写程序的顺序版本；论文报告该顺序闭环没有提升，而并行视觉重排有效。<br>
   > **验证维度：** FreeCAD 程序执行 · 六视图 Mesh 渲染 · Solid/Surface IoU · 视觉 Judge 分数 · 顺序细化结果。
@@ -637,6 +707,9 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 代码作为控制器、策略、实验或工具动作，真实或仿真的多模态结果指导后续改写。
 
+- `arXiv 2026.09` **Bridging Language and Physics: Automated Design of Continuum Robots with Large Language Models**. [[论文]](https://arxiv.org/abs/2609.08220) [[代码]](https://github.com/UNITES-Lab/AID-SR) — `[Method]` `[Benchmark]` · `[Inference]` `[Environment]` `[Verification]`
+  > 生成可执行的 MuJoCo XML 机器人设计，观察其仿真物理状态，并把结构化诊断返回 Coding Agent，迭代修复机器人形态。<br>
+  > **验证维度：** XML 有效性 · 物理稳定性 · 下游任务成功率 · 仿真到真实的一致性。
 - `arXiv 2026.08` **Skills in Weights, Memory in Code: Hybrid Learning for Memory-Dependent Robot Manipulation**. [[论文]](https://arxiv.org/abs/2608.09410) — `[Method]` · `[Training]` `[Inference]` `[Verification]`
   > 根据机器人 Rollout 迭代更新可执行记忆管理启发式，并用多模态阶段验证闭合执行。<br>
   > **验证维度：** 任务成功率 · 累积阶段成功率 · 本体感知／视觉完成检测。

@@ -12,23 +12,19 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-109-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-111-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-09-06**
+**Last updated: 2026-09-12**
 
 </div>
-
-## 🔥 News
-
-- **[2026-09-06]** Released **v0.1.0**, the first public version of Awesome Multimodal Agentic Coding, with 111 core works across ten task areas, practical skills and execution-engine maps, selected cases, and bilingual documentation.
 
 <a id="motivation"></a>
 ## 💡 Motivation
 
-Multimodal coding has traditionally meant **using an image, video, chart, or design as the initial input to code generation**. This repository focuses on a narrower transition:
+Multimodal coding has traditionally meant **using an image, video, chart, or design as the initial input to code generation**. This repository focuses on **multimodal coding agents** and the **multimodal agent coding** workflows that use perception as feedback:
 
 > **Traditional multimodal coding uses vision as input. Multimodal agentic coding uses multimodal perception as feedback.**
 
@@ -36,7 +32,7 @@ Multimodal coding has traditionally meant **using an image, video, chart, or des
 
 The object of study is not merely `multimodal input → code`, but an autonomous or semi-autonomous trajectory in which executable code produces a visual or interactive state, the agent observes that state, and the observation redirects later work.
 
-In this paradigm, an agent does not merely **see before coding**. It **sees while coding**, decides when another observation is needed, and uses what it perceives to choose what to do next.
+In this paradigm, a visual agent does not merely **see before coding**. It **sees while coding**, decides when another observation is needed, and uses what it perceives to choose what to do next.
 
 ```mermaid
 flowchart LR
@@ -71,7 +67,7 @@ A benchmark may instantiate this loop through a named track, baseline, or docume
 
 - Iterative generation and repair of web pages, apps, charts, diagrams, 3D scenes, CAD models, games, slides, posters, animations, and videos.
 - Repository-level visual issue reproduction, localization, patching, and regression validation.
-- Coding agents that actively browse, inspect screenshots, sample video frames, operate GUIs, play games, or observe robots while modifying code.
+- Visual coding agents that actively browse, inspect screenshots, sample video frames, operate GUIs, play games, or observe robots while modifying code.
 - Agent-authored executable world models and digital twins whose code is revised from multimodal observations or interaction counterexamples.
 - Training methods, datasets, and benchmarks specifically built around these loops.
 
@@ -110,6 +106,7 @@ The list below is a practical starting point rather than a security audit or end
 | Parametric CAD execution | [CadQuery MCP server](https://github.com/CadQuery/cadquery-contrib/tree/master/mcp-server) | Project-hosted MCP | Executes CadQuery, renders multiple SVG views, inspects topology and physical properties, and exports manufacturing formats. |
 | Hosted CAD agents and geometry APIs | [Zoo developer tools](https://docs.zoo.dev/docs) | Official MCP / Agent API / Engine API | Connects language-driven KCL workflows to geometric execution, snapshots, inspection, and debugging. |
 | Blender and procedural 3D | [Blender Lab MCP Server](https://www.blender.org/lab/mcp-server/) · [BlenderMCP community demos](https://github.com/ahujasid/blender-mcp) | Official MCP + community demo ecosystem | Gives agents scene inspection and Python operations inside Blender; community demos show reference-image-to-scene and Blender-to-Three.js workflows. |
+| Multi-view Blender model diagnosis | [trueform](https://github.com/shidenkai0/trueform) | Community skill + MIT toolkit | Matches reference cameras, renders silhouette and surface diagnostics, rejects revisions that regress any required view, and guides the agent's next geometry edits. |
 | Three.js and browser 3D | [threejs-skills](https://github.com/full-stack-skills/threejs-skills) · [threejs-game-skills](https://github.com/majidmanzarpour/threejs-game-skills) | Community skills | Encodes scene, camera, material, animation, gameplay, deterministic testing, and visual-regression workflows. |
 | Multi-engine game construction and visual QA | [3AGameFactory](https://github.com/OpenDCAI/GameFactory-3A) | Project-hosted skills + pipelines + engine adapters | Routes coding agents across asset, gameplay, and UI generation for UE5, Unity, Godot, Blender, and Three.js, then requires rendered asset review, in-engine capture, and repair before acceptance. |
 | p5.js visual creation and review | [ALIGN](https://github.com/wanshuiyin/ALIGN-Agentic-Loop-Image-GeneratioN) | Community skills + reproducible demos | Packages reference-art and method-figure workflows for Codex and Claude Code: write p5.js, render, obtain an independent pixel-grounded review, revise the program, and retain the decisions and versions. |
@@ -184,6 +181,71 @@ The taxonomy follows the artifact being built and the feedback channel that clos
 | Documents, animation, and video | Slides, posters, documents, and temporal media | Page/frame renders, layout checks, and temporal consistency |
 | Robotics and embodied coding | Controllers, policies, and robot programs | Video, sensor streams, rollouts, and task outcomes |
 
+<a id="application-domains"></a>
+## 🌐 Application Domains
+
+The task map describes **what is built**; this complementary index describes **where it is used**. Each domain brings its own visual evidence and verification requirements.
+
+| Domain | Code-built artifacts | Representative resources |
+|---|---|---|
+| [Medicine and biological visualization](#medical-visualization) | Anatomy explorers, procedural biological models, medical research figures | Human Atlas · Chat Modeling · OpenLens AI · MCP-Slicer |
+| [Architecture and construction](#architecture-construction) | Procedural buildings and construction geometry | CraftBot |
+| [Education and explanatory media](#education-explanatory-media) | Executable mathematical animations and visual lessons | ManimAgent |
+| [Scientific reproduction and neural rendering](#scientific-reproduction) | Trainable rendering implementations and reconstructed views | NERFIFY |
+
+<a id="medical-visualization"></a>
+### 🩺 Medical Visualization and Simulation
+
+A cross-cutting application dimension connecting **3D anatomy, scientific visualization, animation, and executable simulation**. Editable code can turn anatomical assets and medical explanations into interactive learning artifacts. Promising tasks include anatomy exploration, procedural teaching animations, and biomechanical simulations; verification must distinguish software behavior from anatomical and clinical correctness.
+
+- **Human Atlas** — ashemag. **Community demo · Interactive anatomy.** [[GitHub]](https://github.com/ashemag/human-atlas) [[Live demo]](https://human-atlas-seven.vercel.app/)
+  > A React / Three.js anatomy explorer makes 2,234 BodyParts3D meshes selectable, searchable, and separable into exploded views across 15 anatomical systems.
+  >
+  > *Validation:* Mesh integrity, anatomical name/concept mapping, nonoverlapping exploded layouts, search/selection behavior, and desktop/mobile interaction checks documented by the project.
+
+The code is MIT-licensed; BodyParts3D anatomy data requires CC BY 4.0 attribution. Human Atlas is an **educational explorer, not a diagnostic or surgical tool**.
+
+- `arXiv 2025.09` **OpenLens AI: Fully Autonomous Research Agent for Health Infomatics** — Cheng & Suo. **Research workflow.** [[paper]](https://arxiv.org/abs/2509.14778) [[code]](https://github.com/jarrycyx/openlens-ai)
+  > Generates health-informatics analysis code and LaTeX manuscripts, using VLM feedback on plots and compiled pages to route subsequent code fixes and polishing.<br>
+  > **Verification:** Code execution · plot clarity/correctness · compiled-page layout · evidence traceability.
+- `arXiv 2024.04` **Chat Modeling: Natural Language-based Procedural Modeling of Biological Structures without Training** — Jia, Wang & Viola. **Human-in-the-loop research.** [[paper]](https://arxiv.org/abs/2404.01063) [[updated project]](https://yunhaiwang.net/vis2026/ChatModeling_website/ChatModeling.html)
+  > Translates biological modeling requests into interpreted procedural recipes, with user inspection and interactive revision of the resulting 3D structures.<br>
+  > **Verification:** Recipe syntax and execution · user assessment of modeling results · structural-biologist evaluation.
+- **MCP-Slicer** — zhaoyouj. **Third-party tool bridge.** [[code + examples]](https://github.com/zhaoyouj/mcp-slicer)
+  > Couples Python execution in 3D Slicer with screenshots of slice and 3D views, enabling agents to inspect and revise code-created medical scenes.<br>
+  > **Observation channels:** MRML scene nodes · slice-view screenshots · 3D-view screenshots.
+
+Software, visual, and clinical validation are different layers: a successful render or an agent's approval does not establish anatomical accuracy, patient safety, or clinical efficacy. Medical research data also requires appropriate privacy safeguards. MCP-Slicer is a third-party integration whose authors do not recommend production use.
+
+<a id="architecture-construction"></a>
+### 🏛️ Architecture and Construction
+
+Design briefs, drawings, and reference photographs can become editable building programs. Here, visual fidelity meets spatial and construction constraints.
+
+- **CraftBot** — Luka Piskorec. **Code-first research project and community workflow.** [[code + experiments + draft paper]](https://github.com/lukapiskorec/craftbot)
+  > Writes Blender Python from architectural references, renders each version, and uses visual inspection reports alongside geometry checks to revise the building program.<br>
+  > **Verification:** Missing or misplaced elements · reference/requirement alignment · geometric overlaps and contacts.
+
+<a id="education-explanatory-media"></a>
+### 🎓 Education and Explanatory Media
+
+Executable lessons make abstract concepts visible through motion and interaction. The key feedback concerns not only appearance, but whether the explanation is accurate and readable.
+
+- `arXiv 2026.06` **ManimAgent: Self-Evolving Multimodal Agents for Visual Education**. **Research workflow.** [[paper]](https://arxiv.org/abs/2606.30296) [[code]](https://github.com/jwj1342/Paper2Manim) [[task listing]](#documents-video)
+  > Revises executable Manim animations using rendered-frame review and carries successful and failed refinement experience across tasks.<br>
+  > **Verification:** Logical flow · layout/occlusion · accuracy · human Pass@1.
+
+<a id="scientific-reproduction"></a>
+### 🔬 Scientific Reproduction and Neural Rendering
+
+Research implementations can themselves produce inspectable visual artifacts. Render-grounded debugging connects paper reproduction with code repair, beyond merely obtaining a runnable repository.
+
+- `arXiv 2026.02` **NERFIFY: A Multi-Agent Framework for Turning NeRF Papers into Code** — Jain et al. **Research method and benchmark.** [[paper]](https://arxiv.org/abs/2603.00805)
+  > Builds trainable Nerfstudio implementations from papers and uses render diagnostics and VLM-guided patches to refine their code.<br>
+  > **Verification:** Executability · PSNR/SSIM · low-quality image regions · cross-view geometric consistency.
+
+The paper introduces **Nerfify-Bench**, covering 30 NeRF papers.
+
 <a id="contribution-tags"></a>
 ## 🏷️ Tag System
 
@@ -238,6 +300,11 @@ In the entries below, contribution tags appear first and research-role tags foll
 - [Execution and Rendering Engine Map](#execution-and-rendering-engines)
 - [Selected Cases and Demos](#selected-cases-and-demos)
 - [Topic Map](#topic-map)
+- [Application Domains](#application-domains)
+  - [Medical Visualization and Simulation](#medical-visualization)
+  - [Architecture and Construction](#architecture-construction)
+  - [Education and Explanatory Media](#education-explanatory-media)
+  - [Scientific Reproduction and Neural Rendering](#scientific-reproduction)
 - [Tag System](#contribution-tags)
 - [Paper and Project List](#paper-and-project-list)
   - [1. General-Purpose Multimodal Coding and Visual Problem Solving](#general)
@@ -442,6 +509,9 @@ Agents that treat vector or diagram code as an editable symbolic artifact and re
 
 Agents that produce executable graphics or CAD programs and revise them using rendered views, solver feedback, or geometric checks.
 
+- `arXiv 2026.09` **Recursive Code World Models: Building Complex Worlds through Recursive Scene Programs**. [[paper]](https://arxiv.org/abs/2609.11499) — `[Method]` · `[Inference]` `[Verification]`
+  > Builds complex Three.js worlds as recursive scene programs: each subworld receives its own render-observe-edit loop, then returned code is re-rendered and jointly repaired in the parent context.<br>
+  > **Verification:** PSNR/SSIM · edge F1 · LPIPS/CLIP similarity · local-detail fidelity · recursive-depth and parent-revisitation ablations.
 - `arXiv 2026.09` **VisCAD: A Foundation Model Suite with Multimodal Industrial CAD Intelligence**. [[paper]](https://arxiv.org/abs/2609.03811) — `[Method]` `[System]` `[Benchmark]` · `[Data Curation]` `[Training]` `[Inference]` `[Environment]` `[Verification]`
   > Generates executable FreeCAD programs and evaluates a sequential variant that revises the program after inspecting six-view renders; the reported sequential loop does not improve quality, while parallel visual reranking does.<br>
   > **Verification:** FreeCAD-program execution · six-view mesh rendering · solid/surface IoU · visual judge score · sequential-refinement outcome.
@@ -637,6 +707,9 @@ Agents that create visual documents or temporal media as executable or structure
 
 Work in which code is a controller, policy, experiment, or tool action and real or simulated multimodal outcomes guide subsequent rewrites.
 
+- `arXiv 2026.09` **Bridging Language and Physics: Automated Design of Continuum Robots with Large Language Models**. [[paper]](https://arxiv.org/abs/2609.08220) [[code]](https://github.com/UNITES-Lab/AID-SR) — `[Method]` `[Benchmark]` · `[Inference]` `[Environment]` `[Verification]`
+  > Generates executable MuJoCo XML robot designs, observes their simulated physical states, and returns structured diagnostics to the coding agent for iterative morphology repair.<br>
+  > **Verification:** XML validity · physical stability · downstream task success · simulation-to-reality consistency.
 - `arXiv 2026.08` **Skills in Weights, Memory in Code: Hybrid Learning for Memory-Dependent Robot Manipulation**. [[paper]](https://arxiv.org/abs/2608.09410) — `[Method]` · `[Training]` `[Inference]` `[Verification]`
   > Iteratively updates an executable memory-management heuristic from robot rollouts and closes execution with multimodal stage verification.<br>
   > **Verification:** Task success rate · cumulative stage success · proprioceptive/visual completion detection.

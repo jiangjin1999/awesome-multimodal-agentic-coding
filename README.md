@@ -736,6 +736,9 @@ Work in which code is a controller, policy, experiment, or tool action and real 
 
 This section covers related foundations such as one-shot multimodal code generation, final-only evaluation, human-mediated refinement, and systems without a demonstrated same-trajectory feedback loop.
 
+- `arXiv 2026.09` **Atria Dawn: The Dawn of Agentic Superintelligence**. [[paper]](https://arxiv.org/abs/2609.15818) [[model card]](https://huggingface.co/internlm/Atria-Dawn-Preview) [[project]](https://www.atria-asi.ai/) — `[System]` `[Model]` · `[Training]` `[Inference]` `[Environment]`
+  > A foundation agentic model trained through verified tool interactions for research and engineering workflows, including code implementation, experiment execution, result analysis, and failure recovery across software, interactive applications, games, and data visualization. It is a strong adjacent foundation for MMAC, but the released model card specifies text-only input and the paper does not establish a multimodal render/observe/re-code loop, so it is not Core.
+
 - `arXiv 2026.06` **Embodied CAD: Solver-Grounded LLM Agents for Parametric B-Rep Assembly Modeling**. [[paper]](https://arxiv.org/abs/2606.31252) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
   > Builds editable B-Rep assemblies through typed CAD skills and returns solver diagnostics, volumes, bounding boxes, and topology—rather than rendered perceptual feedback—to the planner.<br>
   > **Verification:** Valid/executable rate · skill/operation-family/exact-policy accuracy · task completion · FreeCAD execution success.

@@ -736,6 +736,9 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 本节收录一次性多模态代码生成、只做最终评估、依赖人工继续修改，以及尚未展示同轨迹反馈闭环的相关基础工作。
 
+- `arXiv 2026.09` **Atria Dawn: The Dawn of Agentic Superintelligence**。[[论文]](https://arxiv.org/abs/2609.15818) [[模型卡]](https://huggingface.co/internlm/Atria-Dawn-Preview) [[项目主页]](https://www.atria-asi.ai/) — `[System]` `[Model]` · `[Training]` `[Inference]` `[Environment]`
+  > 这是一个通过可验证工具交互训练的基础 Agent 模型，面向科研与工程工作流，覆盖代码实现、实验执行、结果分析和失败恢复，并涉及软件、交互应用、游戏与数据可视化。它是 MMAC 值得跟踪的相邻基础，但官方模型卡明确说明当前版本仅接收文本输入，论文也尚未证明多模态“渲染—观察—再编码”闭环，因此不列入 Core。
+
 - `arXiv 2026.06` **Embodied CAD: Solver-Grounded LLM Agents for Parametric B-Rep Assembly Modeling**. [[论文]](https://arxiv.org/abs/2606.31252) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
   > 通过类型化 CAD Skills 构建可编辑 B-Rep 装配，并将求解器诊断、体积、包围盒和拓扑——而非渲染感知反馈——返回 Planner。<br>
   > **验证维度：** 有效／可执行率 · Skill／操作族／精确策略准确率 · 任务完成 · FreeCAD 执行成功。

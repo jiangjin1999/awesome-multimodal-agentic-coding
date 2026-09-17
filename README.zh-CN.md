@@ -12,12 +12,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-111-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-112-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-09-17**
+**最后更新：2026-09-18**
 
 </div>
 
@@ -110,6 +110,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 | Coding Agent 通用视觉 QA | [AgentVision](https://github.com/amitpatole/agent-vision) | 社区框架 + Skills | 运行“渲染—感知—报告—修复—再渲染”循环，提供 DOM、对比度、OCR、坐标级问题和 pass/warn/fail 判定。 |
 | Blender 到 Three.js 的 3D 创作 | [3dmodel-skill](https://github.com/fletcherholt/3dmodel-skill) | 社区 Claude Code Skill | 固化“生成几何—渲染—检查—修复”的 Blender 模型与交互式 Three.js 浏览器工作流，覆盖产品、爆炸图和 X-ray 视图。 |
 | Blender 到浏览器的交付 | [blender-to-web](https://github.com/cth9191/blender-to-web) | 社区 Skill + 可运行参考项目 | 保留“概念—Blender 几何—GLB 导出—Three.js 交互—视觉比较与验证”流程，并提供可编辑源资产和验证记录。 |
+| 图像到程序化 Three.js | [img2threejs](https://github.com/img2threejs/img2threejs) | 社区 Skill + 确定性脚本 | 将参考图重建为可编辑的 TypeScript 几何，结合规格检查、参考图与渲染对照及针对性修订。 |
+| USD 场景创作与验证 | [USD Content Agents](https://github.com/NVIDIA-Omniverse/usd-content-agents) | NVIDIA 维护的 Skills + Agents + CLI | 通过交互式 Coding Agent 支持程序化 USD 编辑、渲染材质审阅、物理调参与有证据的验证，各项能力的成熟度有所不同。 |
 | Three.js 与浏览器 3D | [threejs-skills](https://github.com/full-stack-skills/threejs-skills) · [threejs-game-skills](https://github.com/majidmanzarpour/threejs-game-skills) | 社区 Skills | 编码场景、相机、材质、动画、玩法、确定性测试和视觉回归工作流。 |
 | 多引擎游戏构建与视觉 QA | [3AGameFactory](https://github.com/OpenDCAI/GameFactory-3A) | 项目托管 Skills + Pipelines + 引擎适配器 | 让 Coding Agent 在 UE5、Unity、Godot、Blender 与 Three.js 中组织资产、玩法和 UI 生成，并要求通过渲染资产审阅、引擎内录制与修复后再验收。 |
 | p5.js 视觉创作与审阅 | [ALIGN](https://github.com/wanshuiyin/ALIGN-Agentic-Loop-Image-GeneratioN) | 社区 Skills + 可复现 Demo | 为 Codex 与 Claude Code 封装参考图绘制和方法图工作流：编写 p5.js、渲染、获得独立的像素级审阅、修改程序，并保留决策与版本。 |
@@ -518,6 +520,9 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 - `arXiv 2026.09` **VisCAD: A Foundation Model Suite with Multimodal Industrial CAD Intelligence**. [[论文]](https://arxiv.org/abs/2609.03811) — `[Method]` `[System]` `[Benchmark]` · `[Data Curation]` `[Training]` `[Inference]` `[Environment]` `[Verification]`
   > 生成可执行 FreeCAD 程序，并评测观察六视图渲染后继续改写程序的顺序版本；论文报告该顺序闭环没有提升，而并行视觉重排有效。<br>
   > **验证维度：** FreeCAD 程序执行 · 六视图 Mesh 渲染 · Solid/Surface IoU · 视觉 Judge 分数 · 顺序细化结果。
+- `arXiv 2026.08` **Procedura: Agentic 3D Modeling with Procedural Control**. [[论文]](https://arxiv.org/abs/2608.26238) [[项目主页]](https://spatiaos.github.io/projects/procedura/) — `[Method]` `[Benchmark]` · `[Inference]` `[Verification]`
+  > 通过带类型的配合约束逐部件构建可编辑 3D 装配程序，再由独立视觉 Critic 基于最新渲染结果约束每次代码修订。<br>
+  > **验证维度：** 编译与配合约束 · 网格连通性 · 装配质量评判 · 几何锐利度 · 仿真关节运动。
 - `arXiv 2026.08` **IterCAD: Iterative Program Repair for CAD Code Generation from Orthographic Views**. [[论文]](https://arxiv.org/abs/2608.24020) — `[Method]` `[Dataset]` · `[Data Curation]` `[Training]` `[Inference]` `[Environment]` `[Verification]`
   > 使用正交视图证据，在多轮渲染与比较中修复 CAD 程序。<br>
   > **验证维度：** 可执行性 · 体积 IoU · 平均／中位 Chamfer 距离 · 修改／停止判断正确性。
@@ -739,8 +744,11 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 本节收录一次性多模态代码生成、只做最终评估、依赖人工继续修改，以及尚未展示同轨迹反馈闭环的相关基础工作。
 
-- `arXiv 2026.09` **Atria Dawn: The Dawn of Agentic Superintelligence**。[[论文]](https://arxiv.org/abs/2609.15818) [[模型卡]](https://huggingface.co/internlm/Atria-Dawn-Preview) [[项目主页]](https://www.atria-asi.ai/) — `[System]` `[Model]` · `[Training]` `[Inference]` `[Environment]`
-  > 这是一个通过可验证工具交互训练的基础 Agent 模型，面向科研与工程工作流，覆盖代码实现、实验执行、结果分析和失败恢复，并涉及软件、交互应用、游戏与数据可视化。它是 MMAC 值得跟踪的相邻基础，但官方模型卡明确说明当前版本仅接收文本输入，论文也尚未证明多模态“渲染—观察—再编码”闭环，因此不列入 Core。
+- `arXiv 2026.09` **ProgramDistill: From Interactive Web Apps to Verifiable Reference-Guided SWE Tasks**. [[论文]](https://arxiv.org/abs/2609.18805) — `[Method]` `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]` `[Trajectory Analysis]`
+  > 将可运行网页转化为可重放验证的重建任务，通过结构化文本式浏览器观测而非截图输入，研究“观察—编辑—验证”行为。
+
+- `arXiv 2026.09` **Atria Dawn: The Dawn of Agentic Superintelligence**. [[论文]](https://arxiv.org/abs/2609.15818) [[模型卡]](https://huggingface.co/internlm/Atria-Dawn-Preview) [[项目主页]](https://www.atria-asi.ai/) — `[System]` · `[Training]` `[Inference]`
+  > 通过外部验证的工具交互训练 Agent 模型，展示交互应用与 CAD 生成，为产物构建工作流提供基础，并研究人机协作中的责任分工。
 
 - `arXiv 2026.06` **Embodied CAD: Solver-Grounded LLM Agents for Parametric B-Rep Assembly Modeling**. [[论文]](https://arxiv.org/abs/2606.31252) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
   > 通过类型化 CAD Skills 构建可编辑 B-Rep 装配，并将求解器诊断、体积、包围盒和拓扑——而非渲染感知反馈——返回 Planner。<br>

@@ -12,12 +12,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-111-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-112-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-09-17**
+**Last updated: 2026-09-18**
 
 </div>
 
@@ -110,6 +110,8 @@ The list below is a practical starting point rather than a security audit or end
 | General visual QA for coding agents | [AgentVision](https://github.com/amitpatole/agent-vision) | Community framework + skills | Runs render → perceive → report → fix → re-render loops with DOM, contrast, OCR, coordinate-grounded issues, and pass/warn/fail verdicts. |
 | Blender-to-Three.js 3D authoring | [3dmodel-skill](https://github.com/fletcherholt/3dmodel-skill) | Community Claude Code skill | Encodes a repeatable generate-geometry → render → inspect → fix workflow for Blender models and interactive Three.js viewers, including product, exploded, and x-ray views. |
 | Blender-to-browser handoff | [blender-to-web](https://github.com/cth9191/blender-to-web) | Community skill + runnable reference project | Preserves concept → Blender geometry → GLB export → Three.js interaction → visual comparison and verification, with editable source assets and validation evidence. |
+| Image-to-procedural Three.js | [img2threejs](https://github.com/img2threejs/img2threejs) | Community skill + deterministic scripts | Reconstructs a reference image as editable TypeScript geometry, combining specification checks with reference-versus-render review and targeted refinement. |
+| USD scene authoring and validation | [USD Content Agents](https://github.com/NVIDIA-Omniverse/usd-content-agents) | NVIDIA-maintained skills + agents + CLI | Supports programmatic USD edits, rendered material review, physics tuning, and evidence-based validation through an interactive coding agent; individual capabilities have different maturity levels. |
 | Three.js and browser 3D | [threejs-skills](https://github.com/full-stack-skills/threejs-skills) · [threejs-game-skills](https://github.com/majidmanzarpour/threejs-game-skills) | Community skills | Encodes scene, camera, material, animation, gameplay, deterministic testing, and visual-regression workflows. |
 | Multi-engine game construction and visual QA | [3AGameFactory](https://github.com/OpenDCAI/GameFactory-3A) | Project-hosted skills + pipelines + engine adapters | Routes coding agents across asset, gameplay, and UI generation for UE5, Unity, Godot, Blender, and Three.js, then requires rendered asset review, in-engine capture, and repair before acceptance. |
 | p5.js visual creation and review | [ALIGN](https://github.com/wanshuiyin/ALIGN-Agentic-Loop-Image-GeneratioN) | Community skills + reproducible demos | Packages reference-art and method-figure workflows for Codex and Claude Code: write p5.js, render, obtain an independent pixel-grounded review, revise the program, and retain the decisions and versions. |
@@ -518,6 +520,9 @@ Agents that produce executable graphics or CAD programs and revise them using re
 - `arXiv 2026.09` **VisCAD: A Foundation Model Suite with Multimodal Industrial CAD Intelligence**. [[paper]](https://arxiv.org/abs/2609.03811) — `[Method]` `[System]` `[Benchmark]` · `[Data Curation]` `[Training]` `[Inference]` `[Environment]` `[Verification]`
   > Generates executable FreeCAD programs and evaluates a sequential variant that revises the program after inspecting six-view renders; the reported sequential loop does not improve quality, while parallel visual reranking does.<br>
   > **Verification:** FreeCAD-program execution · six-view mesh rendering · solid/surface IoU · visual judge score · sequential-refinement outcome.
+- `arXiv 2026.08` **Procedura: Agentic 3D Modeling with Procedural Control**. [[paper]](https://arxiv.org/abs/2608.26238) [[project]](https://spatiaos.github.io/projects/procedura/) — `[Method]` `[Benchmark]` · `[Inference]` `[Verification]`
+  > Builds editable 3D assembly programs part by part with typed mates, then uses a separate visual critic to gate each code revision against fresh renders.<br>
+  > **Verification:** Compilation and mate constraints · mesh connectivity · judged assembly quality · geometric sharpness · simulated articulation.
 - `arXiv 2026.08` **IterCAD: Iterative Program Repair for CAD Code Generation from Orthographic Views**. [[paper]](https://arxiv.org/abs/2608.24020) — `[Method]` `[Dataset]` · `[Data Curation]` `[Training]` `[Inference]` `[Environment]` `[Verification]`
   > Repairs CAD programs over multiple render-and-compare rounds using orthographic-view evidence.<br>
   > **Verification:** Executability · volumetric IoU · mean/median Chamfer distance · revise/stop correctness.
@@ -739,8 +744,11 @@ Work in which code is a controller, policy, experiment, or tool action and real 
 
 This section covers related foundations such as one-shot multimodal code generation, final-only evaluation, human-mediated refinement, and systems without a demonstrated same-trajectory feedback loop.
 
-- `arXiv 2026.09` **Atria Dawn: The Dawn of Agentic Superintelligence**. [[paper]](https://arxiv.org/abs/2609.15818) [[model card]](https://huggingface.co/internlm/Atria-Dawn-Preview) [[project]](https://www.atria-asi.ai/) — `[System]` `[Model]` · `[Training]` `[Inference]` `[Environment]`
-  > A foundation agentic model trained through verified tool interactions for research and engineering workflows, including code implementation, experiment execution, result analysis, and failure recovery across software, interactive applications, games, and data visualization. It is a strong adjacent foundation for MMAC, but the released model card specifies text-only input and the paper does not establish a multimodal render/observe/re-code loop, so it is not Core.
+- `arXiv 2026.09` **ProgramDistill: From Interactive Web Apps to Verifiable Reference-Guided SWE Tasks**. [[paper]](https://arxiv.org/abs/2609.18805) — `[Method]` `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]` `[Trajectory Analysis]`
+  > Turns working web applications into replay-verifiable reconstruction tasks, studying observe–edit–validate behavior through structured text-based browser observations rather than screenshot inputs.
+
+- `arXiv 2026.09` **Atria Dawn: The Dawn of Agentic Superintelligence**. [[paper]](https://arxiv.org/abs/2609.15818) [[model card]](https://huggingface.co/internlm/Atria-Dawn-Preview) [[project]](https://www.atria-asi.ai/) — `[System]` · `[Training]` `[Inference]`
+  > Trains an agentic model through externally verified tool interactions and illustrates interactive applications and CAD generation, offering a foundation for artifact-building workflows alongside a study of human–AI collaboration.
 
 - `arXiv 2026.06` **Embodied CAD: Solver-Grounded LLM Agents for Parametric B-Rep Assembly Modeling**. [[paper]](https://arxiv.org/abs/2606.31252) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
   > Builds editable B-Rep assemblies through typed CAD skills and returns solver diagnostics, volumes, bounding boxes, and topology—rather than rendered perceptual feedback—to the planner.<br>

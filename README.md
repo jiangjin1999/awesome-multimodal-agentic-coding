@@ -1,3 +1,9 @@
+# Awesome Multimodal Agentic Coding
+
+A research map of agents that use visual and interactive feedback to build and repair websites, CAD models, 3D scenes, games, and more.
+
+**[Start here](./docs/READING_GUIDE.md) · [Browse papers](#paper-and-project-list) · [Explore demos](#selected-cases-and-demos) · [Suggest a work](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/issues/new/choose)**
+
 <div align="center">
 
 <img src="./assets/multimodal-agentic-coding-hero-v5.png" alt="Awesome Multimodal Agentic Coding — Vision as Feedback, Not Just Input. Code acts in digital and physical worlds, both feeding multimodal evidence into observe, verify, repair, and a return-to-code loop across ten task areas. What Can Be Verified Can Be Scaled." width="100%" />
@@ -12,14 +18,58 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-112-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-113-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-09-18**
+**Last updated: 2026-09-19**
 
 </div>
+
+<a id="start-here"></a>
+## 🚀 Start Here
+
+- **New to the topic?** Follow the [reading guide](./docs/READING_GUIDE.md): five examples and a shared framework for understanding the feedback loop.
+- **Building an agent?** Match an [execution engine](#execution-and-rendering-engines) with [skills and tool bridges](#skills-and-tool-bridges), then explore the [demos](#selected-cases-and-demos).
+- **Looking for research?** Jump to your task: [Web/UI](#web-ui-app) · [Visual software repair](#software-engineering) · [Charts](#visualization) · [SVG](#svg-diagrams) · [3D/CAD](#3d-cad) · [Games](#games) · [World models](#world-models) · [Documents/video](#documents-video) · [Robotics](#robotics) · [General methods](#general).
+
+Each core entry explains its mechanism and verification dimensions. [Related foundations](#adjacent-foundations), tools, and community demos have their own sections. If this map saves you time, **star the repository to find it again** or [contribute a useful work](./CONTRIBUTING.md).
+
+<details>
+<summary><strong>Browse all sections</strong></summary>
+
+- [Motivation](#motivation)
+- [Definition and Scope](#definition-and-scope)
+- [Perspectives, Blogs, and Industry Signals](#perspectives)
+- [Practical Agent Skills and Tool Bridges](#skills-and-tool-bridges)
+- [Execution and Rendering Engine Map](#execution-and-rendering-engines)
+- [Selected Cases and Demos](#selected-cases-and-demos)
+- [Topic Map](#topic-map)
+- [Application Domains](#application-domains)
+  - [Medical Visualization and Simulation](#medical-visualization)
+  - [Architecture and Construction](#architecture-construction)
+  - [Education and Explanatory Media](#education-explanatory-media)
+  - [Scientific Reproduction and Neural Rendering](#scientific-reproduction)
+- [Tag System](#contribution-tags)
+- [Paper and Project List](#paper-and-project-list)
+  - [1. General-Purpose Multimodal Coding and Visual Problem Solving](#general)
+  - [2. Multimodal Software Engineering and Program Repair](#software-engineering)
+  - [3. Web, UI, and App Development](#web-ui-app)
+  - [4. Data Visualization and Scientific Coding](#visualization)
+  - [5. SVG, Diagrams, and Structured Graphics](#svg-diagrams)
+  - [6. 3D Graphics, CAD, and Scene Generation](#3d-cad)
+  - [7. Games and Interactive Environments](#games)
+  - [8. World Models and Executable Simulation](#world-models)
+  - [9. Slides, Posters, Documents, Animation, and Video](#documents-video)
+  - [10. Robotics and Embodied Coding](#robotics)
+- [Adjacent Foundations](#adjacent-foundations)
+- [Surveys and Related Collections](#surveys-and-related-collections)
+- [Research Frontiers](#research-frontiers)
+- [Contact, Collaboration, and Contributing](#contact-and-collaboration)
+- [Citation](#citation)
+
+</details>
 
 <a id="motivation"></a>
 ## 💡 Motivation
@@ -296,40 +346,6 @@ In the entries below, contribution tags appear first and research-role tags foll
 | **Rendering-in-the-Loop** | `[Method]` `[Benchmark]` `[Dataset]` | `[Data Curation]` `[Inference]` `[Environment]` `[Verification]` |
 | **ReLook** | `[Method]` | `[Training]` `[Inference]` `[Verification]` |
 
-## 📚 Table of Contents
-
-- [Motivation](#motivation)
-- [Definition and Scope](#definition-and-scope)
-- [Perspectives, Blogs, and Industry Signals](#perspectives)
-- [Practical Agent Skills and Tool Bridges](#skills-and-tool-bridges)
-- [Execution and Rendering Engine Map](#execution-and-rendering-engines)
-- [Selected Cases and Demos](#selected-cases-and-demos)
-- [Topic Map](#topic-map)
-- [Application Domains](#application-domains)
-  - [Medical Visualization and Simulation](#medical-visualization)
-  - [Architecture and Construction](#architecture-construction)
-  - [Education and Explanatory Media](#education-explanatory-media)
-  - [Scientific Reproduction and Neural Rendering](#scientific-reproduction)
-- [Tag System](#contribution-tags)
-- [Paper and Project List](#paper-and-project-list)
-  - [1. General-Purpose Multimodal Coding and Visual Problem Solving](#general)
-  - [2. Multimodal Software Engineering and Program Repair](#software-engineering)
-  - [3. Web, UI, and App Development](#web-ui-app)
-  - [4. Data Visualization and Scientific Coding](#visualization)
-  - [5. SVG, Diagrams, and Structured Graphics](#svg-diagrams)
-  - [6. 3D Graphics, CAD, and Scene Generation](#3d-cad)
-  - [7. Games and Interactive Environments](#games)
-  - [8. World Models and Executable Simulation](#world-models)
-  - [9. Slides, Posters, Documents, Animation, and Video](#documents-video)
-  - [10. Robotics and Embodied Coding](#robotics)
-- [Adjacent Foundations](#adjacent-foundations)
-- [Surveys and Related Collections](#surveys-and-related-collections)
-- [Research Frontiers](#research-frontiers)
-- [Contact, Collaboration, and Contributing](#contact-and-collaboration)
-- [Citation](#citation)
-
----
-
 <a id="paper-and-project-list"></a>
 ## 📑 Paper and Project List
 
@@ -550,6 +566,9 @@ Agents that produce executable graphics or CAD programs and revise them using re
 - `arXiv 2026.05` **Self-Improving CAD Generation Agents with Finite Element Analysis as Feedback**. [[paper]](https://arxiv.org/abs/2605.17448) — `[Method]` · `[Inference]` `[Verification]`
   > Uses finite-element simulation outcomes as feedback for repeated CAD program improvement.<br>
   > **Verification:** CAD/STEP execution · stress/displacement/modal/buckling/contact/clearance requirements · strict and mean requirement pass.
+- `arXiv 2026.05` **Text-to-CAD Evaluation with CADTests**. [[paper]](https://arxiv.org/abs/2605.07807) [[code]](https://github.com/dimitrismallis/CADTestBench) — `[Method]` `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`
+  > Evaluates CAD generation with executable geometry and topology tests, comparing test-driven repair with a four-view visual ReAct baseline; added visual feedback does not improve performance in this study.<br>
+  > **Verification:** CAD validity · requirement score and pass rate · test soundness and mutation coverage · human agreement · visual versus test-feedback comparison.
 - `arXiv 2026.04` **Agent-Aided Design for Dynamic CAD Models**. [[paper]](https://arxiv.org/abs/2604.15184) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
   > Supports iterative construction and revision of dynamic CAD programs through agent-guided execution feedback.<br>
   > **Verification:** Compilation success · assembly-constraint satisfaction · joint/DoF motion · visual similarity.
@@ -815,6 +834,8 @@ If this direction resonates with you—whether you are exploring multimodal agen
 - **WeChat:** Scan the QR code below to connect.
 
 <img src="assets/wechat-young-j.jpg" alt="WeChat QR code for Young J" width="240">
+
+[Suggest a paper, tool, or demo](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/issues/new/choose) or read the [contribution guide](./CONTRIBUTING.md). English and Chinese submissions are welcome; a link and a short explanation are enough to start.
 
 Missing papers, corrected links, and placement discussions are welcome. For a paper addition, please include a one-sentence summary and briefly explain how post-execution multimodal feedback changes a later code or tool action.
 

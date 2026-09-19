@@ -1,0 +1,40 @@
+name: Suggest a paper, tool, or demo / 推荐工作
+description: Share a useful original source; English or Chinese is welcome.
+title: "[Suggestion] "
+body:
+  - type: input
+    id: work-title
+    attributes:
+      label: Official title / 官方标题
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type / 类型
+      options:
+        - Paper or benchmark / 论文或基准
+        - Tool, skill, or engine / 工具、Skill 或引擎
+        - Demo or workflow / Demo 或工作流
+        - Related collection or other resource / 相关合集或其他资源
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Original sources / 原始来源
+      description: Link the author paper, project, source code, or original demo.
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: What can readers learn? / 读者能了解什么？
+      description: One or two sentences are enough. / 一两句话即可。
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback example, if applicable / 反馈示例（如适用）
+      description: What is executed, who observes the result, and what changes next? A section, figure, code location, or timestamp helps. Unknown is fine. / 执行了什么、谁观察结果、下一步如何改变？可附章节、图号、代码位置或时间戳；尚不清楚也可说明。

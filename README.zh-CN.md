@@ -1,3 +1,9 @@
+# Awesome Multimodal Agentic Coding
+
+一份关于多模态智能体编程的研究地图：利用视觉与交互反馈，构建和修复网站、CAD 模型、3D 场景、游戏等产物。
+
+**[从这里开始](./docs/READING_GUIDE.zh-CN.md) · [浏览论文](#paper-and-project-list) · [体验 Demo](#selected-cases-and-demos) · [推荐工作](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/issues/new/choose)**
+
 <div align="center">
 
 <img src="./assets/multimodal-agentic-coding-hero-v5.png" alt="Awesome Multimodal Agentic Coding — Vision as Feedback, Not Just Input. 研究地图展示代码同时作用于数字世界与物理世界，两者将多模态证据反馈到观察、验证、修复并返回代码的闭环，覆盖十个任务领域。What Can Be Verified Can Be Scaled." width="100%" />
@@ -12,14 +18,58 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-112-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-113-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-09-18**
+**最后更新：2026-09-19**
 
 </div>
+
+<a id="start-here"></a>
+## 🚀 从这里开始
+
+- **刚接触这个方向？** 阅读[入门导读](./docs/READING_GUIDE.zh-CN.md)：通过五个案例与共同的比较框架理解反馈闭环。
+- **准备搭建 Agent？** 为[执行引擎](#execution-and-rendering-engines)匹配 [Skills 与工具桥](#skills-and-tool-bridges)，再探索 [Demo](#selected-cases-and-demos)。
+- **寻找研究工作？** 按任务直达：[Web/UI](#web-ui-app) · [视觉软件修复](#software-engineering) · [图表](#visualization) · [SVG](#svg-diagrams) · [3D/CAD](#3d-cad) · [游戏](#games) · [世界模型](#world-models) · [文档/视频](#documents-video) · [机器人](#robotics) · [通用方法](#general)。
+
+每个核心条目都说明机制与验证维度；[相邻基础](#adjacent-foundations)、工具与社区 Demo 分区呈现。如果这份地图帮你节省了时间，欢迎 **star 收藏，方便下次找到**，或[贡献有用的工作](./CONTRIBUTING.zh-CN.md)。
+
+<details>
+<summary><strong>浏览全部章节</strong></summary>
+
+- [动机](#motivation)
+- [定义与范围](#definition-and-scope)
+- [观点、博客与产业信号](#perspectives)
+- [实用 Agent Skills 与工具桥](#skills-and-tool-bridges)
+- [执行与渲染引擎地图](#execution-and-rendering-engines)
+- [精选 Case 与 Demo](#selected-cases-and-demos)
+- [主题地图](#topic-map)
+- [应用领域](#application-domains)
+  - [医学可视化与仿真](#medical-visualization)
+  - [建筑与建造](#architecture-construction)
+  - [教育与解释性媒体](#education-explanatory-media)
+  - [科研复现与神经渲染](#scientific-reproduction)
+- [标签体系](#contribution-tags)
+- [论文与项目列表](#paper-and-project-list)
+  - [1. 通用多模态编程与视觉问题求解](#general)
+  - [2. 多模态软件工程与程序修复](#software-engineering)
+  - [3. Web、UI 与 App 开发](#web-ui-app)
+  - [4. 数据可视化与科学编程](#visualization)
+  - [5. SVG、Diagram 与结构化图形](#svg-diagrams)
+  - [6. 3D、CAD 与场景生成](#3d-cad)
+  - [7. 游戏与交互环境](#games)
+  - [8. 世界模型与可执行仿真](#world-models)
+  - [9. Slide、海报、文档、动画与视频](#documents-video)
+  - [10. 机器人与具身编程](#robotics)
+- [相邻基础](#adjacent-foundations)
+- [Survey 与相关资源合集](#surveys-and-related-collections)
+- [研究前沿](#research-frontiers)
+- [联系、合作与贡献](#contact-and-collaboration)
+- [引用](#citation)
+
+</details>
 
 <a id="motivation"></a>
 ## 💡 动机
@@ -296,40 +346,6 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 | **Rendering-in-the-Loop** | `[Method]` `[Benchmark]` `[Dataset]` | `[Data Curation]` `[Inference]` `[Environment]` `[Verification]` |
 | **ReLook** | `[Method]` | `[Training]` `[Inference]` `[Verification]` |
 
-## 📚 目录
-
-- [动机](#motivation)
-- [定义与范围](#definition-and-scope)
-- [观点、博客与产业信号](#perspectives)
-- [实用 Agent Skills 与工具桥](#skills-and-tool-bridges)
-- [执行与渲染引擎地图](#execution-and-rendering-engines)
-- [精选 Case 与 Demo](#selected-cases-and-demos)
-- [主题地图](#topic-map)
-- [应用领域](#application-domains)
-  - [医学可视化与仿真](#medical-visualization)
-  - [建筑与建造](#architecture-construction)
-  - [教育与解释性媒体](#education-explanatory-media)
-  - [科研复现与神经渲染](#scientific-reproduction)
-- [标签体系](#contribution-tags)
-- [论文与项目列表](#paper-and-project-list)
-  - [1. 通用多模态编程与视觉问题求解](#general)
-  - [2. 多模态软件工程与程序修复](#software-engineering)
-  - [3. Web、UI 与 App 开发](#web-ui-app)
-  - [4. 数据可视化与科学编程](#visualization)
-  - [5. SVG、Diagram 与结构化图形](#svg-diagrams)
-  - [6. 3D、CAD 与场景生成](#3d-cad)
-  - [7. 游戏与交互环境](#games)
-  - [8. 世界模型与可执行仿真](#world-models)
-  - [9. Slide、海报、文档、动画与视频](#documents-video)
-  - [10. 机器人与具身编程](#robotics)
-- [相邻基础](#adjacent-foundations)
-- [Survey 与相关资源合集](#surveys-and-related-collections)
-- [研究前沿](#research-frontiers)
-- [联系、合作与贡献](#contact-and-collaboration)
-- [引用](#citation)
-
----
-
 <a id="paper-and-project-list"></a>
 ## 📑 论文与项目列表
 
@@ -550,6 +566,9 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 - `arXiv 2026.05` **Self-Improving CAD Generation Agents with Finite Element Analysis as Feedback**. [[论文]](https://arxiv.org/abs/2605.17448) — `[Method]` · `[Inference]` `[Verification]`
   > 将有限元仿真结果作为反馈，反复改进 CAD 程序。<br>
   > **验证维度：** CAD／STEP 执行 · 应力／位移／模态／屈曲／接触／间隙要求 · 严格与平均需求通过率。
+- `arXiv 2026.05` **Text-to-CAD Evaluation with CADTests**. [[论文]](https://arxiv.org/abs/2605.07807) [[代码]](https://github.com/dimitrismallis/CADTestBench) — `[Method]` `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`
+  > 用可执行的几何与拓扑测试评估 CAD 生成，对比测试驱动修复与四视图视觉 ReAct 基线；该研究中额外的视觉反馈没有提高性能。<br>
+  > **验证维度：** CAD 有效性 · 需求得分与通过率 · 测试健全性与变异覆盖 · 人工一致性 · 视觉与测试反馈比较。
 - `arXiv 2026.04` **Agent-Aided Design for Dynamic CAD Models**. [[论文]](https://arxiv.org/abs/2604.15184) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
   > 通过 Agent 引导的执行反馈，支持动态 CAD 程序的迭代构建与修改。<br>
   > **验证维度：** 编译成功 · 装配约束满足 · 关节／自由度运动 · 视觉相似度。
@@ -815,6 +834,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 - **微信：** 扫描下方二维码添加好友。
 
 <img src="assets/wechat-young-j.jpg" alt="Young J 的微信二维码" width="240">
+
+欢迎[推荐论文、工具或 Demo](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/issues/new/choose)，也可查看[贡献指南](./CONTRIBUTING.zh-CN.md)。中英文提交均可，提供链接与简短说明即可开始。
 
 欢迎补充遗漏论文、修正链接或讨论分类位置。新增论文时，请提供一句话摘要，并简要说明执行后的多模态反馈如何改变后续代码或工具动作。
 

@@ -1,0 +1,17 @@
+name: Correct an entry / 更正条目
+description: Fix a link, description, attribution, or category.
+title: "[Correction] "
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Entry title or link / 条目标题或链接
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Suggested correction and source / 更正建议与来源
+      description: Describe what should change and link supporting evidence when available. / 请说明建议修改的内容，并尽量附上来源。
+    validations:
+      required: true

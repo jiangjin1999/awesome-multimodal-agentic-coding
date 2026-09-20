@@ -455,7 +455,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 执行分析或绘图代码、检查视觉或科学结果，并修改程序或分析计划的 Agent。
 
-- `arXiv 2026.08` **ViCo: Visual-oriented Coding with Self-Reflection for Chart Replication**. [[论文]](https://arxiv.org/abs/2609.16014) [[代码]](https://github.com/Xigmoid/ViCo) — `[Method]` · `[Training]` `[Inference]` `[Verification]`
+- `arXiv 2026.08` **ViCo: Visual-oriented Coding with Self-Reflection for Chart Replication**. [[论文]](https://arxiv.org/abs/2609.16014) [[仓库]](https://github.com/Xigmoid/ViCo) — `[Method]` · `[Training]` `[Inference]` `[Verification]`
   > 训练图表编程 Agent 对比上一轮渲染与参考图，将差异写成明确反思，并通过反事实信用分配指导代码修订、落实反思。<br>
   > **验证维度：** 代码执行成功率 · 语义／布局／风格保真 · 反思落实一致性 · 多轮修订收益。
 - `arXiv 2026.08` **VisEditBench: Can Vision-Language Models Edit Visualization Code from Multimodal Feedback?**. [[论文]](https://arxiv.org/abs/2608.10408) [[仓库（待发布实现）]](https://github.com/vis-nlp/VisEditBench) — `[Method]` `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`

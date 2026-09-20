@@ -455,7 +455,7 @@ Agents and benchmarks for repeatedly generating, deploying, viewing, interacting
 
 Agents that execute analysis or plotting code, inspect visual or scientific outcomes, and revise the program or analysis plan.
 
-- `arXiv 2026.08` **ViCo: Visual-oriented Coding with Self-Reflection for Chart Replication**. [[paper]](https://arxiv.org/abs/2609.16014) [[code]](https://github.com/Xigmoid/ViCo) — `[Method]` · `[Training]` `[Inference]` `[Verification]`
+- `arXiv 2026.08` **ViCo: Visual-oriented Coding with Self-Reflection for Chart Replication**. [[paper]](https://arxiv.org/abs/2609.16014) [[repo]](https://github.com/Xigmoid/ViCo) — `[Method]` · `[Training]` `[Inference]` `[Verification]`
   > Trains chart-coding agents to compare their previous render with a reference, turn discrepancies into explicit reflections, and implement those reflections through counterfactual-credit-guided code refinement.<br>
   > **Verification:** Code execution success · semantic/layout/style fidelity · reflection-following consistency · improvement across refinement rounds.
 - `arXiv 2026.08` **VisEditBench: Can Vision-Language Models Edit Visualization Code from Multimodal Feedback?**. [[paper]](https://arxiv.org/abs/2608.10408) [[repo (release pending)]](https://github.com/vis-nlp/VisEditBench) — `[Method]` `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`

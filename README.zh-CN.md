@@ -18,12 +18,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-114-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-118-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-09-20**
+**最后更新：2026-09-21**
 
 </div>
 
@@ -154,6 +154,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 | 能力 | 资源 | 形式与来源 | 对闭环的意义 |
 |---|---|---|---|
 | 浏览器构建与测试 | [Playwright MCP](https://github.com/microsoft/playwright-mcp) · [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) | 官方 MCP / CLI + Skills | 暴露可访问性结构、截图、交互、控制台与网络证据，以及性能 Trace。 |
+| 人向 Agent 提交视觉缺陷 | [Shotback](https://github.com/DCCA/shotback) | 社区浏览器扩展 + Skill；MIT | 将标注截图与 CSS 选择器、React 组件路径、视口上下文及可读取的失败请求一起交付，并支持前后重截图比较，辅助人工反馈驱动的修复。 |
 | 设计到代码与设计回写 | [Figma MCP server](https://developers.figma.com/docs/figma-mcp-server/) | 官方 MCP + Skills | 允许 Agent 检查设计上下文、生成实现代码，并创建或更新原生 Figma 内容。 |
 | 文本／图像到 CAD | [text-to-cad](https://github.com/earthtojake/text-to-cad) | 社区 Skill 库 | 覆盖 CAD 生成与编辑、浏览器预览、STEP/DXF/机器人格式、可制造性检查、切片和交付，而不只是一次性几何生成。 |
 | 参数化 CAD 执行 | [CadQuery MCP server](https://github.com/CadQuery/cadquery-contrib/tree/master/mcp-server) | 项目托管 MCP | 执行 CadQuery、渲染多视图 SVG、检查拓扑与物理属性，并导出制造格式。 |
@@ -404,6 +405,9 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 - `arXiv 2026.09` **Rendering-in-the-Loop: An Execution-Driven Agent for Interactive Web Development**. [[论文]](https://arxiv.org/abs/2609.02088) — `[Method]` `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`
   > 在真实浏览器中重放参考交互，同时评估行为与渲染，再将多模态运行证据转化为多轮工具辅助代码修复。<br>
   > **验证维度：** 交互执行成功率 · SSIM/OCR/语义视觉保真度 · 修复轮次间提升。
+- `arXiv 2026.08` **WebWorld: The Browser as a World Model for Self-Improving Web Code**. [[论文]](https://arxiv.org/abs/2608.30530) — `[Method]` · `[Data Curation]` `[Training]` `[Inference]` `[Environment]` `[Verification]`
+  > 将截图证据支持的点评转化为限定范围的 HTML 修复和可重放浏览器契约，仅保留推进目标且不破坏已验证行为的状态转移。<br>
+  > **验证维度：** 浏览器重放 · 目标谓词改进 · 已有能力保留 · 验证证书支持的训练轨迹。
 - `arXiv 2026.08` **Rubrics as Visual-Repair Context for Self-Evolving UI-to-Code Generation**. [[论文]](https://arxiv.org/abs/2608.24138) — `[Method]` · `[Inference]` `[Verification]`
   > 使用持久化视觉修复 Rubric 选择限定范围的修改，减少多轮 UI 细化中的回归。<br>
   > **验证维度：** 整体视觉保真度 · 五类 UI 分项评分 · 修复轮次间回退。
@@ -455,6 +459,12 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 执行分析或绘图代码、检查视觉或科学结果，并修改程序或分析计划的 Agent。
 
+- `arXiv 2026.09` **VisInteract: Towards Dynamic Interactive Text-to-Visualization under Imperfect Queries**. [[论文]](https://arxiv.org/abs/2609.15182) — `[Method]` `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`
+  > 执行 Altair 程序，让模拟用户评阅渲染图表，并将视觉点评与文字澄清反馈用于后续代码搜索，逐步还原不完整需求中的可视化意图。<br>
+  > **验证维度：** 可渲染性 · 代码与图表的关键特征满足度 · 意图对齐 · 多轮任务成功率。
+- `arXiv 2026.09` **MedVA: An End-to-End Neuro-Symbolic Agentic System for Medical Volume Visualization**. [[论文]](https://arxiv.org/abs/2609.14874) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
+  > 构建结构化 JSON 可视化规格，根据渲染器测得的完整场景与独立区域可见性迭代调整 ROI 不透明度，并结合解剖本体检查与多模型分割。<br>
+  > **验证维度：** ROI 识别 · 可见性与遮挡约束 · 重渲染后的改进保留 · 专家可用性评估。
 - `arXiv 2026.08` **ViCo: Visual-oriented Coding with Self-Reflection for Chart Replication**. [[论文]](https://arxiv.org/abs/2609.16014) [[仓库]](https://github.com/Xigmoid/ViCo) — `[Method]` · `[Training]` `[Inference]` `[Verification]`
   > 训练图表编程 Agent 对比上一轮渲染与参考图，将差异写成明确反思，并通过反事实信用分配指导代码修订、落实反思。<br>
   > **验证维度：** 代码执行成功率 · 语义／布局／风格保真 · 反思落实一致性 · 多轮修订收益。
@@ -743,6 +753,9 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 代码作为控制器、策略、实验或工具动作，真实或仿真的多模态结果指导后续改写。
 
+- `arXiv 2026.09` **Coding Agents with an Obstacle-Aware Harness for Safe Robot Manipulation**. [[论文]](https://arxiv.org/abs/2609.20822) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
+  > 为 Code-as-policy Agent 增加视觉定位的路径检查与接触约束，并在执行遭遇障碍或未建模物理限制时，根据观测到的停止位姿重新规划后续动作。<br>
+  > **验证维度：** 任务成功率 · 避碰率 · 路径净空 · 执行约束下的恢复。
 - `arXiv 2026.09` **Bridging Language and Physics: Automated Design of Continuum Robots with Large Language Models**. [[论文]](https://arxiv.org/abs/2609.08220) [[代码]](https://github.com/UNITES-Lab/AID-SR) — `[Method]` `[Benchmark]` · `[Inference]` `[Environment]` `[Verification]`
   > 生成可执行的 MuJoCo XML 机器人设计，观察其仿真物理状态，并把结构化诊断返回 Coding Agent，迭代修复机器人形态。<br>
   > **验证维度：** XML 有效性 · 物理稳定性 · 下游任务成功率 · 仿真到真实的一致性。
@@ -771,6 +784,14 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 ## 🧱 相邻基础
 
 本节收录一次性多模态代码生成、只做最终评估、依赖人工继续修改，以及尚未展示同轨迹反馈闭环的相关基础工作。
+
+- `arXiv 2026.09` **IWC-Bench: Evaluating Web Application Generation from a Software Testing Perspective**. [[论文]](https://arxiv.org/abs/2609.15387) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > 以运行时代码覆盖率引导对生成网页的探索，再依据截图与交互证据评估美观度、可用性和需求对齐；评分不回传到代码修订。<br>
+  > **验证维度：** 探索覆盖率 · 视觉美观度 · 可用性 · 验收条件满足度 · 人类偏好一致性。
+
+- `arXiv 2026.09` **RepoAtlas: Guiding Coding Agents via Evolving Multimodal Repository Views**. [[论文]](https://arxiv.org/abs/2609.16936) — `[Method]` · `[Inference]` `[Verification]`
+  > 通过动态视觉代码图与定位到源代码的文本帮助 Agent 定位和修复仓库问题，其视觉上下文来自仓库结构，而非应用渲染结果。<br>
+  > **验证维度：** SWE-bench Verified 解决率 · Token 成本 · 模型调用数 · 仓库视图选择与刷新。
 
 - `arXiv 2026.09` **BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender**. [[论文]](https://arxiv.org/abs/2609.15478) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
   > 通过可编辑的 Blender 重建评测视频理解：Agent 在编程期间回看源视频帧，生成结束后再比较语义保留程度与感知相似度。<br>

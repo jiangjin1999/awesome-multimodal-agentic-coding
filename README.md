@@ -18,12 +18,12 @@ A research map of agents that use visual and interactive feedback to build and r
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-114-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-118-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-09-20**
+**Last updated: 2026-09-21**
 
 </div>
 
@@ -154,6 +154,7 @@ The list below is a practical starting point rather than a security audit or end
 | Capability | Resource | Form and provenance | Why it matters for the closed loop |
 |---|---|---|---|
 | Browser building and testing | [Playwright MCP](https://github.com/microsoft/playwright-mcp) · [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) | Official MCP / CLI + skills | Exposes accessibility structure, screenshots, interaction, console and network evidence, and performance traces. |
+| Human-to-agent visual bug reports | [Shotback](https://github.com/DCCA/shotback) | Community browser extension + skill; MIT | Packages annotated screenshots with CSS selectors, React component paths, viewport context, and readable failed requests; supports before/after recapture for human-guided repairs. |
 | Design-to-code and design write-back | [Figma MCP server](https://developers.figma.com/docs/figma-mcp-server/) | Official MCP + skills | Lets an agent inspect design context, generate implementation code, and create or update native Figma content. |
 | Text/image-to-CAD workflows | [text-to-cad](https://github.com/earthtojake/text-to-cad) | Community skill library | Covers CAD generation and editing, browser preview, STEP/DXF/robot formats, manufacturability checks, slicing, and handoff—not only one-shot geometry generation. |
 | Parametric CAD execution | [CadQuery MCP server](https://github.com/CadQuery/cadquery-contrib/tree/master/mcp-server) | Project-hosted MCP | Executes CadQuery, renders multiple SVG views, inspects topology and physical properties, and exports manufacturing formats. |
@@ -404,6 +405,9 @@ Agents and benchmarks for repeatedly generating, deploying, viewing, interacting
 - `arXiv 2026.09` **Rendering-in-the-Loop: An Execution-Driven Agent for Interactive Web Development**. [[paper]](https://arxiv.org/abs/2609.02088) — `[Method]` `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`
   > Replays reference interactions in a real browser, scores both behavior and rendering, and turns multimodal runtime evidence into repeated tool-assisted code repairs.<br>
   > **Verification:** Interaction execution success · SSIM/OCR/semantic visual fidelity · improvement across repair rounds.
+- `arXiv 2026.08` **WebWorld: The Browser as a World Model for Self-Improving Web Code**. [[paper]](https://arxiv.org/abs/2608.30530) — `[Method]` · `[Data Curation]` `[Training]` `[Inference]` `[Environment]` `[Verification]`
+  > Turns screenshot-grounded critiques into scoped HTML repairs and replayable browser contracts, retaining only transitions that improve the target without regressing previously verified behavior.<br>
+  > **Verification:** Browser replay · target-predicate progress · prior-capability preservation · certificate-backed training transitions.
 - `arXiv 2026.08` **Rubrics as Visual-Repair Context for Self-Evolving UI-to-Code Generation**. [[paper]](https://arxiv.org/abs/2608.24138) — `[Method]` · `[Inference]` `[Verification]`
   > Uses persistent visual-repair rubrics to select scoped edits and reduce regression across repeated UI refinement rounds.<br>
   > **Verification:** Overall visual fidelity · five aspect-level UI ratings · regression across repair rounds.
@@ -455,6 +459,12 @@ Agents and benchmarks for repeatedly generating, deploying, viewing, interacting
 
 Agents that execute analysis or plotting code, inspect visual or scientific outcomes, and revise the program or analysis plan.
 
+- `arXiv 2026.09` **VisInteract: Towards Dynamic Interactive Text-to-Visualization under Imperfect Queries**. [[paper]](https://arxiv.org/abs/2609.15182) — `[Method]` `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`
+  > Executes Altair programs and uses a simulated user's rendered-chart critiques and textual clarifications to steer subsequent code search toward underspecified visualization intent.<br>
+  > **Verification:** Renderability · code/chart key-feature satisfaction · intent alignment · multi-turn task success.
+- `arXiv 2026.09` **MedVA: An End-to-End Neuro-Symbolic Agentic System for Medical Volume Visualization**. [[paper]](https://arxiv.org/abs/2609.14874) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
+  > Builds structured JSON visualization specifications and refines ROI opacity using renderer-computed full-scene versus isolated visibility, combining anatomical ontology checks with multi-model segmentation.<br>
+  > **Verification:** ROI identification · visibility/occlusion constraints · retained improvements after re-rendering · expert usability assessment.
 - `arXiv 2026.08` **ViCo: Visual-oriented Coding with Self-Reflection for Chart Replication**. [[paper]](https://arxiv.org/abs/2609.16014) [[repo]](https://github.com/Xigmoid/ViCo) — `[Method]` · `[Training]` `[Inference]` `[Verification]`
   > Trains chart-coding agents to compare their previous render with a reference, turn discrepancies into explicit reflections, and implement those reflections through counterfactual-credit-guided code refinement.<br>
   > **Verification:** Code execution success · semantic/layout/style fidelity · reflection-following consistency · improvement across refinement rounds.
@@ -743,6 +753,9 @@ Agents that create visual documents or temporal media as executable or structure
 
 Work in which code is a controller, policy, experiment, or tool action and real or simulated multimodal outcomes guide subsequent rewrites.
 
+- `arXiv 2026.09` **Coding Agents with an Obstacle-Aware Harness for Safe Robot Manipulation**. [[paper]](https://arxiv.org/abs/2609.20822) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
+  > Equips code-as-policy agents with visually grounded route checks and contact constraints, replanning from the observed stopped pose when execution encounters an obstacle or an unmodeled physical constraint.<br>
+  > **Verification:** Task success · collision avoidance · route clearance · recovery under execution-time constraints.
 - `arXiv 2026.09` **Bridging Language and Physics: Automated Design of Continuum Robots with Large Language Models**. [[paper]](https://arxiv.org/abs/2609.08220) [[code]](https://github.com/UNITES-Lab/AID-SR) — `[Method]` `[Benchmark]` · `[Inference]` `[Environment]` `[Verification]`
   > Generates executable MuJoCo XML robot designs, observes their simulated physical states, and returns structured diagnostics to the coding agent for iterative morphology repair.<br>
   > **Verification:** XML validity · physical stability · downstream task success · simulation-to-reality consistency.
@@ -771,6 +784,14 @@ Work in which code is a controller, policy, experiment, or tool action and real 
 ## 🧱 Adjacent Foundations
 
 This section covers related foundations such as one-shot multimodal code generation, final-only evaluation, human-mediated refinement, and systems without a demonstrated same-trajectory feedback loop.
+
+- `arXiv 2026.09` **IWC-Bench: Evaluating Web Application Generation from a Software Testing Perspective**. [[paper]](https://arxiv.org/abs/2609.15387) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > Uses runtime code coverage to guide exploration of generated web applications, then judges screenshots and interaction evidence for aesthetics, usability, and requirement alignment without feeding those scores into code revision.<br>
+  > **Verification:** Exploration coverage · visual aesthetics · usability · acceptance-criterion satisfaction · human-preference agreement.
+
+- `arXiv 2026.09` **RepoAtlas: Guiding Coding Agents via Evolving Multimodal Repository Views**. [[paper]](https://arxiv.org/abs/2609.16936) — `[Method]` · `[Inference]` `[Verification]`
+  > Helps coding agents localize and repair repository issues with evolving visual code-graph views and source-grounded text, using repository structure rather than rendered application outcomes as visual context.<br>
+  > **Verification:** SWE-bench Verified resolve rate · token cost · model calls · repository-view selection and refresh.
 
 - `arXiv 2026.09` **BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender**. [[paper]](https://arxiv.org/abs/2609.15478) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
   > Tests video understanding through editable Blender reconstructions, comparing semantic retention and perceptual similarity after generation while agents revisit source-video frames during coding.<br>

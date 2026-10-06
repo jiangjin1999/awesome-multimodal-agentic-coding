@@ -18,12 +18,12 @@ A research map of agents that use visual and interactive feedback to build and r
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-125-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-135-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-09-22**
+**Last updated: 2026-10-06**
 
 </div>
 
@@ -159,6 +159,7 @@ The list below is a practical starting point rather than a security audit or end
 | Text/image-to-CAD workflows | [text-to-cad](https://github.com/earthtojake/text-to-cad) | Community skill library | Covers CAD generation and editing, browser preview, STEP/DXF/robot formats, manufacturability checks, slicing, and handoff—not only one-shot geometry generation. |
 | Parametric CAD execution | [CadQuery MCP server](https://github.com/CadQuery/cadquery-contrib/tree/master/mcp-server) | Project-hosted MCP | Executes CadQuery, renders multiple SVG views, inspects topology and physical properties, and exports manufacturing formats. |
 | Measurable, versioned CAD iteration | [agentcad](https://github.com/jdilla1277/agentcad) | Community CLI + optional MCP; Apache-2.0 | Executes build123d or CadQuery scripts and returns versioned STEP artifacts, geometric measurements, multi-view previews, specification checks, and geometric diffs for subsequent edits. |
+| Parametric CAD workbench and review | [AgentCAD (n3r)](https://github.com/n3r/AgentCAD) | Community workbench + HTTP/MCP; Apache-2.0 | Builds build123d parts and assemblies, returns multi-view PNGs as MCP image content, and exposes measured design-spec results alongside geometry-aware review workflows. |
 | Hosted CAD agents and geometry APIs | [Zoo developer tools](https://docs.zoo.dev/docs) | Official MCP / Agent API / Engine API | Connects language-driven KCL workflows to geometric execution, snapshots, inspection, and debugging. |
 | Blender and procedural 3D | [Blender Lab MCP Server](https://www.blender.org/lab/mcp-server/) · [BlenderMCP community demos](https://github.com/ahujasid/blender-mcp) | Official MCP + community demo ecosystem | Gives agents scene inspection and Python operations inside Blender; community demos show reference-image-to-scene and Blender-to-Three.js workflows. |
 | Blender scene and generation bridge | [Scenario for Blender](https://github.com/scenario-labs/blender-plugin) | Project-maintained experimental extension + MCP; GPL-3.0-or-later | Exposes viewport screenshots, still renders, scene operations, and gated Python alongside hosted asset generation; Blender 5.0+ and Scenario credentials are required. |
@@ -384,6 +385,10 @@ Cross-domain coding agents that use images, browsers, or executable visual tools
 
 Repository- or application-level agents that reproduce visual failures, localize relevant code, patch it, and validate the result.
 
+- `arXiv 2026.09` **CUA-SWE: When Computer-Use Agents Meet Visual Software Engineering**. [[paper]](https://arxiv.org/abs/2609.32600) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]` `[Trajectory Analysis]`
+  > Unifies source editing and screenshot-based computer use across web, game, mobile, and DevOps repairs, with visual runtime evidence guiding further edits and independent tests checking behavior and regressions.<br>
+  > **Verification:** Requested behavior · regression preservation · permitted changes · valid tool use · post-edit interaction evidence.
+
 - `arXiv 2026.07` **VisualRepair: Dynamic Tool Calling and Region Focusing for Visual Software Issue Repair**. [[paper]](https://arxiv.org/abs/2607.14075) — `[Method]` · `[Inference]`
   > Dynamically selects visual tools and zooms into suspicious regions while iteratively repairing screenshot-grounded software issues.<br>
   > **Verification:** Resolved rate · repository-test pass · screenshot-grounded repair correctness.
@@ -519,6 +524,10 @@ Agents that execute analysis or plotting code, inspect visual or scientific outc
 
 Agents that treat vector or diagram code as an editable symbolic artifact and repeatedly render, inspect, and repair it.
 
+- `arXiv 2026.10` **One Figure, Every Canvas: Editable Flowchart Relayout via Agentic Pipeline**. [[paper]](https://arxiv.org/abs/2610.06852) — `[Method]` `[Benchmark]` · `[Data Curation]` `[Inference]` `[Verification]`
+  > Relayouts raster flowcharts into editable draw.io XML for new aspect ratios, combining graph and layout constraints with rendered visual critiques to correct parsing, styling, and placement.<br>
+  > **Verification:** Relationship preservation · hallucination-free content · layout/style quality · editability · human-aligned judging.
+
 - `arXiv 2026.08` **DrawAI: Agentic Benchmark and Workflow for Making Raster Images Editable**. [[paper]](https://arxiv.org/abs/2608.00548) [[code]](https://github.com/Renaissance-Mind/DrawAI) [[project]](https://drawai.renaissancemind.ai/) — `[Method]` `[Benchmark]` · `[Data Curation]` `[Inference]` `[Verification]`
   > Turns raster references into editable structured graphics through an agentic generation, rendering, and correction workflow.<br>
   > **Verification:** Rendered fidelity · structural editability · text/image/formula/shape/connector/table criteria.
@@ -554,6 +563,22 @@ Agents that treat vector or diagram code as an editable symbolic artifact and re
 ### 6. 3D Graphics, CAD, and Scene Generation
 
 Agents that produce executable graphics or CAD programs and revise them using rendered views, solver feedback, or geometric checks.
+
+- `arXiv 2026.10` **CADForge: Agentic Single-View CAD Reconstruction with Explicit Geometry Reasoning**. [[paper]](https://arxiv.org/abs/2610.04262) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
+  > Reconstructs single-view objects as component-wise CadQuery programs, using explicit geometry calculations and highlighted multi-view reviews to route corrections back to parameter reasoning or code synthesis.<br>
+  > **Verification:** CAD validity · geometric distance/F-score · silhouette alignment · perceptual review · repair efficiency.
+
+- `arXiv 2026.10` **StepCAD: Mesh-to-CAD Code Generation via LLM Policy and Geometry-Guided Search**. [[paper]](https://arxiv.org/abs/2610.03799) — `[Method]` `[Dataset]` · `[Data Curation]` `[Training]` `[Inference]` `[Verification]`
+  > Alternates CadQuery action generation with execution and intermediate point-cloud conditioning, then refines the resulting program through geometry-guided parameter and structural search.<br>
+  > **Verification:** Volumetric IoU · Chamfer distance · valid solid rate · intermediate-state conditioning and search ablations.
+
+- `arXiv 2026.09` **Code4Scene: Benchmarking Coding Agents for Constructing and Editing 3D Scenes**. [[paper]](https://arxiv.org/abs/2609.36777) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]` `[Trajectory Analysis]`
+  > Evaluates code-driven Unreal Engine construction and reference-guided scene repair with in-loop scene inspection, scoring native artifact integrity, spatial validity, target recovery, and preservation of unrelated content.<br>
+  > **Verification:** Native-scene loadability · semantic alignment · support/interpenetration · repair precision/recall · collateral edits.
+
+- `arXiv 2026.09` **CoDimRecon: Agentic Reconstruction of Sim-Ready 3D Scenes with Deformable Curves, Surfaces, and Volumes**. [[paper]](https://arxiv.org/abs/2609.36024) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
+  > Reconstructs editable scenes with rigid, articulated, and curve/surface/volume deformable objects, using render comparisons and simulator behavior tests to revise geometry, boundary conditions, numerics, or material models.<br>
+  > **Verification:** Reconstruction geometry · rendered-view fidelity · settling stability · controlled deformation and interaction tests.
 
 - `arXiv 2026.09` **Vision2CAD: A Visual Agent Harness for Explicit Geometry Referencing and Localization in Parametric CAD Modeling**. [[paper]](https://arxiv.org/abs/2609.22688) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
   > Generates FreeCAD operations through ID-tagged geometry views and a sketch-coordinate bridge, then feeds rejected modeling previews back into command selection while preserving parametric references.<br>
@@ -658,6 +683,10 @@ Agents and benchmarks that require generated games or visual programs to be laun
 - `Technical Report 2026` **VibeGame: Prompt-to-Game Development with AI-Native Engine and Self-Evolving Adversarial Agent Team**. [[paper]](https://github.com/tettethu/VibeGame/blob/main/technical_report.pdf) [[repo]](https://github.com/tettethu/VibeGame) [[project]](https://vibegame.tettet.org/) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
   > Builds editable 2D games with an AI-native Phaser engine whose frame-synchronous play-testing and adversarial runtime verification route observed failures back into code, asset, and configuration revisions.<br>
   > **Verification:** Schema/static validity · frame-synchronous runtime behavior · functionality/visual quality/playability (qualitative).
+- `arXiv 2026.09` **GameReplica: A Benchmark for Black-Box Visual Game Replication by Vision-Language Agents**. [[paper]](https://arxiv.org/abs/2609.22308) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]` `[Trajectory Analysis]`
+  > Tests black-box game replication from screenshot-only exploration, then has agents run, visually inspect, and revise their HTML replicas before separate implementation, rule-consistency, and appearance evaluation.<br>
+  > **Verification:** Executable implementation · rule consistency · visual fidelity · difficulty scaling · self-check and repair behavior.
+
 - `arXiv 2026.06` **GameCraft-Bench: Can Agents Build Playable Games End-to-End in a Real Game Engine?**. [[paper]](https://arxiv.org/abs/2606.17861) [[code]](https://github.com/FreedomIntelligence/gamecraft-bench) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
   > Benchmarks complete Godot games and documents screenshot-guided project repair in its Kimi-K2.6 rollouts, distinct from final replay-based judging.<br>
   > **Verification:** Godot project execution · mechanics/content replay · visual feedback and presentation.
@@ -678,6 +707,14 @@ Agents and benchmarks that require generated games or visual programs to be laun
 ### 8. World Models and Executable Simulation
 
 Agents that write or revise executable code as a model of state, action, transition, physics, or environment dynamics.
+
+- `arXiv 2026.10` **Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos**. [[paper]](https://arxiv.org/abs/2610.04432) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > Benchmarks agents that reconstruct environment and robot-control programs from embodied videos, inspect their own physical rollouts, and revise both before hidden geometry, dynamics, and task evaluation.<br>
+  > **Verification:** Build rate · geometric fidelity · object-motion fidelity · physical task progress and success.
+
+- `arXiv 2026.09` **WorldAgent: Verification-Guided Agentic Physical World Construction**. [[paper]](https://arxiv.org/abs/2609.33208) — `[Method]` `[Benchmark]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`
+  > Constructs editable Blender worlds from structured specifications and uses rendered views, geometry, and simulation-state checks to revise failed construction or physics steps before re-execution.<br>
+  > **Verification:** Scale/support/connectivity · static and dynamic interpenetration · causal behavior · conservation/stability · task alignment.
 
 - `arXiv 2026.08` **Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning**. [[paper]](https://arxiv.org/abs/2608.27549) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
   > Proposes executable world hypotheses, simulates and renders them, compares them with multimodal evidence, and revises the code.<br>
@@ -708,6 +745,10 @@ Agents that write or revise executable code as a model of state, action, transit
 ### 9. Slides, Posters, Documents, Animation, and Video
 
 Agents that create visual documents or temporal media as executable or structured artifacts and inspect rendered outputs over multiple rounds.
+
+- `arXiv 2026.09` **TemplateCraft: Agentic Visual Template Generation**. [[paper]](https://arxiv.org/abs/2609.31451) — `[Method]` `[Benchmark]` · `[Data Curation]` `[Inference]` `[Verification]`
+  > Builds reusable, client-executable image and video templates, using multimodal trial-output evaluation to roll back and revise plans, materials, or effect workflows before recompilation.<br>
+  > **Verification:** Execution success · template adherence · style consistency · cross-input reuse · feedback-stage ablations.
 
 - `arXiv 2026.09` **Designer-RSI: Evolving Procedural Memory from User Traffic for Agentic Graphic Design**. [[paper]](https://arxiv.org/abs/2609.22086) — `[Method]` · `[Training]` `[Inference]` `[Verification]`
   > Builds editable graphic designs through tool operations and intermediate visual inspection, while evolving reusable skills from graded histories through a context-matched replay gate.<br>
@@ -810,6 +851,18 @@ Work in which code is a controller, policy, experiment, or tool action and real 
 ## 🧱 Adjacent Foundations
 
 This section covers related foundations such as one-shot multimodal code generation, final-only evaluation, human-mediated refinement, and systems without a demonstrated same-trajectory feedback loop.
+
+- `arXiv 2026.10` **Code2Games: Enabling Coding Agents for Gaming World Generation**. [[paper]](https://arxiv.org/abs/2610.05033) — `[Method]` `[Benchmark]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`
+  > Connects Blender scene structure, visually guided gameplay placement, and Unreal Engine logic through persistent element identities, repairing engine adaptation with compilation diagnostics and scripted gameplay tests.<br>
+  > **Verification:** Build reliability · gameplay objectives · interaction/physics adherence · visual and motion quality · human playability ratings.
+
+- `arXiv 2026.10` **4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes**. [[paper]](https://arxiv.org/abs/2610.03715) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > Evaluates executable reconstructions of dynamic videos across rendered appearance, explicit 3D geometry, and motion trajectories, exposing the gap between visual similarity and faithful scene dynamics.<br>
+  > **Verification:** Rendered static/dynamic fidelity · 3D geometry · trajectory DTW · motion distribution · executable submission validity.
+
+- `arXiv 2026.09` **RAPID: Robot Agentic Programming from Demonstrations**. [[paper]](https://arxiv.org/abs/2609.30249) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
+  > Derives relational robot programs, success predicates, and reconstructed simulation environments from a visual demonstration, refining primitives and their composition on scene variants before fixed-program deployment.<br>
+  > **Verification:** Inferred-predicate verification · hidden task success · scene-variation generalization · real-robot deployment.
 
 - `arXiv 2026.08` **ViSculpt: Visual-Centric Agentic Geometry Editing**. [[paper]](https://arxiv.org/abs/2608.24169) — `[Method]` · `[Inference]` `[Verification]`
   > Edits existing meshes through Blender GUI brush actions and before/after visual critique, complementing programmatic 3D creation with localized sculpting that preserves untouched regions.<br>

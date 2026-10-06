@@ -18,12 +18,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-125-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-135-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-09-22**
+**最后更新：2026-10-06**
 
 </div>
 
@@ -159,6 +159,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 | 文本／图像到 CAD | [text-to-cad](https://github.com/earthtojake/text-to-cad) | 社区 Skill 库 | 覆盖 CAD 生成与编辑、浏览器预览、STEP/DXF/机器人格式、可制造性检查、切片和交付，而不只是一次性几何生成。 |
 | 参数化 CAD 执行 | [CadQuery MCP server](https://github.com/CadQuery/cadquery-contrib/tree/master/mcp-server) | 项目托管 MCP | 执行 CadQuery、渲染多视图 SVG、检查拓扑与物理属性，并导出制造格式。 |
 | 可测量、可追踪版本的 CAD 迭代 | [agentcad](https://github.com/jdilla1277/agentcad) | 社区 CLI + 可选 MCP；Apache-2.0 | 执行 build123d 或 CadQuery 脚本，返回带版本的 STEP 产物、几何测量、多视图预览、规格检查和几何差异，供后续修改使用。 |
+| 参数化 CAD 工作台与审查 | [AgentCAD (n3r)](https://github.com/n3r/AgentCAD) | 社区工作台 + HTTP/MCP；Apache-2.0 | 构建 build123d 零件与装配，以 MCP 图像内容返回多视图 PNG，并提供实测设计规格结果与几何感知的审查流程。 |
 | 托管 CAD Agent 与几何 API | [Zoo developer tools](https://docs.zoo.dev/docs) | 官方 MCP / Agent API / Engine API | 将语言驱动的 KCL 工作流连接到几何执行、快照、检查和调试。 |
 | Blender 与程序化 3D | [Blender Lab MCP Server](https://www.blender.org/lab/mcp-server/) · [BlenderMCP 社区 Demo](https://github.com/ahujasid/blender-mcp) | 官方 MCP + 社区 Demo 生态 | 支持 Agent 在 Blender 中检查场景并执行 Python；社区 Demo 展示参考图到场景、Blender 到 Three.js 等工作流。 |
 | Blender 场景与生成工具桥 | [Scenario for Blender](https://github.com/scenario-labs/blender-plugin) | 项目维护的实验性扩展 + MCP；GPL-3.0-or-later | 提供视口截图、静帧渲染、场景操作及受开关控制的 Python，并连接托管资产生成；需要 Blender 5.0+ 与 Scenario 凭据。 |
@@ -384,6 +385,10 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 仓库或应用层 Agent 复现视觉故障、定位相关代码、生成补丁并验证结果。
 
+- `arXiv 2026.09` **CUA-SWE: When Computer-Use Agents Meet Visual Software Engineering**. [[论文]](https://arxiv.org/abs/2609.32600) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]` `[Trajectory Analysis]`
+  > 在 Web、游戏、移动应用和 DevOps 修复中统一源码编辑与截图驱动的计算机操作，用运行时视觉证据指导后续修改，并通过独立测试检查行为与回归。<br>
+  > **验证维度：** 目标行为 · 回归保持 · 允许修改范围 · 工具使用合规 · 修改后交互证据。
+
 - `arXiv 2026.07` **VisualRepair: Dynamic Tool Calling and Region Focusing for Visual Software Issue Repair**. [[论文]](https://arxiv.org/abs/2607.14075) — `[Method]` · `[Inference]`
   > 在迭代修复截图驱动的软件问题时，动态选择视觉工具并聚焦可疑区域。<br>
   > **验证维度：** 问题解决率 · 仓库测试通过 · 截图问题修复正确性。
@@ -519,6 +524,10 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 将矢量图或 Diagram Code 视为可编辑符号产物，并反复渲染、检查和修复的 Agent。
 
+- `arXiv 2026.10` **One Figure, Every Canvas: Editable Flowchart Relayout via Agentic Pipeline**. [[论文]](https://arxiv.org/abs/2610.06852) — `[Method]` `[Benchmark]` · `[Data Curation]` `[Inference]` `[Verification]`
+  > 把栅格流程图重排为适应新画布比例的可编辑 draw.io XML，结合图结构、布局约束和渲染视觉点评，纠正解析、风格与摆放。<br>
+  > **验证维度：** 关系保持 · 内容无幻觉 · 布局/风格质量 · 可编辑性 · 评审与人工一致性。
+
 - `arXiv 2026.08` **DrawAI: Agentic Benchmark and Workflow for Making Raster Images Editable**. [[论文]](https://arxiv.org/abs/2608.00548) [[代码]](https://github.com/Renaissance-Mind/DrawAI) [[项目]](https://drawai.renaissancemind.ai/) — `[Method]` `[Benchmark]` · `[Data Curation]` `[Inference]` `[Verification]`
   > 通过 Agentic 生成、渲染与修正流程，将 Raster 参考图转成可编辑结构化图形。<br>
   > **验证维度：** 渲染保真度 · 结构可编辑性 · 文本／图像／公式／形状／连接线／表格准则。
@@ -554,6 +563,22 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 ### 6. 3D、CAD 与场景生成
 
 生成可执行图形或 CAD 程序，并利用渲染视图、Solver 反馈或几何检查进行修改的 Agent。
+
+- `arXiv 2026.10` **CADForge: Agentic Single-View CAD Reconstruction with Explicit Geometry Reasoning**. [[论文]](https://arxiv.org/abs/2610.04262) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
+  > 通过显式几何计算逐部件重建单视图物体的 CadQuery 程序，再以高亮多视图审查把修正路由回参数推理或代码合成。<br>
+  > **验证维度：** CAD 有效性 · 几何距离/F-score · 轮廓对齐 · 感知审查 · 修复效率。
+
+- `arXiv 2026.10` **StepCAD: Mesh-to-CAD Code Generation via LLM Policy and Geometry-Guided Search**. [[论文]](https://arxiv.org/abs/2610.03799) — `[Method]` `[Dataset]` · `[Data Curation]` `[Training]` `[Inference]` `[Verification]`
+  > 交替进行 CadQuery 动作生成、执行与中间点云条件化，再通过几何引导的参数和结构搜索细化程序。<br>
+  > **验证维度：** 体积 IoU · Chamfer 距离 · 有效实体率 · 中间状态条件化与搜索消融。
+
+- `arXiv 2026.09` **Code4Scene: Benchmarking Coding Agents for Constructing and Editing 3D Scenes**. [[论文]](https://arxiv.org/abs/2609.36777) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]` `[Trajectory Analysis]`
+  > 评测带有过程内场景检查的代码驱动 Unreal Engine 构建与参考引导修复，分别衡量原生产物完整性、空间有效性、目标恢复和无关内容保持。<br>
+  > **验证维度：** 原生场景可加载性 · 语义对齐 · 支撑/穿透 · 修复精确率与召回率 · 附带修改。
+
+- `arXiv 2026.09` **CoDimRecon: Agentic Reconstruction of Sim-Ready 3D Scenes with Deformable Curves, Surfaces, and Volumes**. [[论文]](https://arxiv.org/abs/2609.36024) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
+  > 重建包含刚体、关节及线/面/体可变形物体的可编辑场景，以渲染比较和模拟行为测试修订几何、边界条件、数值设置或材料模型。<br>
+  > **验证维度：** 重建几何 · 渲染视图保真度 · 静置稳定性 · 受控形变与交互测试。
 
 - `arXiv 2026.09` **Vision2CAD: A Visual Agent Harness for Explicit Geometry Referencing and Localization in Parametric CAD Modeling**. [[论文]](https://arxiv.org/abs/2609.22688) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
   > 通过带 ID 的几何视图与草图坐标转换生成 FreeCAD 操作，并将被拒绝预览的原因反馈给命令选择，同时建立参数化几何引用。<br>
@@ -658,6 +683,10 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 - `技术报告 2026` **VibeGame: Prompt-to-Game Development with AI-Native Engine and Self-Evolving Adversarial Agent Team**. [[论文]](https://github.com/tettethu/VibeGame/blob/main/technical_report.pdf) [[仓库]](https://github.com/tettethu/VibeGame) [[项目]](https://vibegame.tettet.org/) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
   > 使用 AI 原生 Phaser 引擎构建可编辑的 2D 游戏；帧同步试玩与对抗式运行时验证会将观测到的失败反馈到代码、资源和配置修改中。<br>
   > **验证维度：** Schema／静态有效性 · 帧同步运行时行为 · 功能／视觉质量／可玩性（定性）。
+- `arXiv 2026.09` **GameReplica: A Benchmark for Black-Box Visual Game Replication by Vision-Language Agents**. [[论文]](https://arxiv.org/abs/2609.22308) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]` `[Trajectory Analysis]`
+  > 测试从仅截图探索出发的黑箱游戏复刻，让 Agent 运行、目视检查并修订自己的 HTML 副本，再分别评估实现、规则一致性与外观。<br>
+  > **验证维度：** 可执行实现 · 规则一致性 · 视觉保真度 · 难度扩展 · 自检与修复行为。
+
 - `arXiv 2026.06` **GameCraft-Bench: Can Agents Build Playable Games End-to-End in a Real Game Engine?**. [[论文]](https://arxiv.org/abs/2606.17861) [[代码]](https://github.com/FreedomIntelligence/gamecraft-bench) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
   > 评测完整 Godot 游戏，并在 Kimi-K2.6 轨迹中记录截图驱动的项目修复，明确区别于提交后的回放评分。<br>
   > **验证维度：** Godot 项目执行 · 机制／内容回放 · 视觉反馈与呈现。
@@ -678,6 +707,14 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 ### 8. 世界模型与可执行仿真
 
 编写或修改可执行代码，将其作为状态、动作、转移、物理或环境动力学模型的 Agent。
+
+- `arXiv 2026.10` **Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos**. [[论文]](https://arxiv.org/abs/2610.04432) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > 评测从具身视频重建环境与机器人控制程序的 Agent，让其检查自身物理 rollout 并修订两类代码，再以隐藏的几何、动力学和任务标准评估。<br>
+  > **验证维度：** 构建成功率 · 几何保真度 · 物体运动保真度 · 物理任务进展与成功率。
+
+- `arXiv 2026.09` **WorldAgent: Verification-Guided Agentic Physical World Construction**. [[论文]](https://arxiv.org/abs/2609.33208) — `[Method]` `[Benchmark]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`
+  > 从结构化规格构建可编辑 Blender 世界，并结合渲染、几何和模拟状态检查修订失败的构建或物理步骤后重新执行。<br>
+  > **验证维度：** 尺度/支撑/连通性 · 静态与动态穿透 · 因果行为 · 守恒/稳定性 · 任务对齐。
 
 - `arXiv 2026.08` **Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning**. [[论文]](https://arxiv.org/abs/2608.27549) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
   > 提出可执行世界假设，进行仿真与渲染，对照多模态证据并修改代码。<br>
@@ -708,6 +745,10 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 ### 9. Slide、海报、文档、动画与视频
 
 将视觉文档或时序媒体创建为可执行／结构化产物，并在多轮过程中检查渲染结果的 Agent。
+
+- `arXiv 2026.09` **TemplateCraft: Agentic Visual Template Generation**. [[论文]](https://arxiv.org/abs/2609.31451) — `[Method]` `[Benchmark]` · `[Data Curation]` `[Inference]` `[Verification]`
+  > 构建可复用、客户端可执行的图像与视频模板，以多模态试用输出评估定向回滚和修改计划、素材或效果工作流，再重新编译。<br>
+  > **验证维度：** 执行成功率 · 模板遵循度 · 风格一致性 · 跨输入复用 · 反馈阶段消融。
 
 - `arXiv 2026.09` **Designer-RSI: Evolving Procedural Memory from User Traffic for Agentic Graphic Design**. [[论文]](https://arxiv.org/abs/2609.22086) — `[Method]` · `[Training]` `[Inference]` `[Verification]`
   > 通过工具操作和中间视觉检查构建可编辑设计，并从带评价的历史轨迹演化可复用 Skill，以匹配上下文的重放筛选更新。<br>
@@ -810,6 +851,18 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 ## 🧱 相邻基础
 
 本节收录一次性多模态代码生成、只做最终评估、依赖人工继续修改，以及尚未展示同轨迹反馈闭环的相关基础工作。
+
+- `arXiv 2026.10` **Code2Games: Enabling Coding Agents for Gaming World Generation**. [[论文]](https://arxiv.org/abs/2610.05033) — `[Method]` `[Benchmark]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`
+  > 以持久实体身份连接 Blender 场景结构、视觉引导的玩法摆放与 Unreal Engine 逻辑，并用编译诊断和脚本化玩法测试修复引擎迁移。<br>
+  > **验证维度：** 构建可靠性 · 玩法目标 · 交互/物理遵循度 · 视觉与运动质量 · 人工可玩性评分。
+
+- `arXiv 2026.10` **4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes**. [[论文]](https://arxiv.org/abs/2610.03715) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > 从渲染外观、显式三维几何和运动轨迹评估动态视频的可执行重建，揭示视觉相似与忠实场景动力学之间的差距。<br>
+  > **验证维度：** 渲染静态/动态保真度 · 三维几何 · 轨迹 DTW · 运动分布 · 可执行提交有效性。
+
+- `arXiv 2026.09` **RAPID: Robot Agentic Programming from Demonstrations**. [[论文]](https://arxiv.org/abs/2609.30249) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
+  > 从视觉演示推导关系式机器人程序、成功谓词和重建仿真环境，在场景变体中细化原语及组合方式后，以固定程序部署。<br>
+  > **验证维度：** 推导谓词验证 · 隐藏任务成功率 · 场景变体泛化 · 实体机器人部署。
 
 - `arXiv 2026.08` **ViSculpt: Visual-Centric Agentic Geometry Editing**. [[论文]](https://arxiv.org/abs/2608.24169) — `[Method]` · `[Inference]` `[Verification]`
   > 通过 Blender GUI 笔刷动作和前后截图批评编辑已有网格，以保持未修改区域的局部雕刻补充程序化 3D 创作。<br>

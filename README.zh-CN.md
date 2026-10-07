@@ -18,12 +18,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-135-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-139-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-10-06**
+**最后更新：2026-10-07**
 
 </div>
 
@@ -413,6 +413,10 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 反复生成、部署、查看、交互和修复网站或应用的 Agent 与 Benchmark。
 
+- `arXiv 2026.10` **TeleGen: Improving LLM-Based Web Application Generation via Runtime Telemetry**. [[论文]](https://arxiv.org/abs/2610.04981) [[代码]](https://github.com/commoluo/TeleGen) — `[Method]` · `[Inference]` `[Verification]`
+  > 以压缩运行遥测和任务反馈修复生成的 Web 应用，在 WebGen-Bench 配置中将 WebVoyager 的截图判定结果传入代码修订。<br>
+  > **验证维度：** UI 任务成功率 · 遥测修复消融 · 测试 Pass@2 · 判定审计 · 上下文成本。
+
 - `arXiv 2026.09` **Rendering-in-the-Loop: An Execution-Driven Agent for Interactive Web Development**. [[论文]](https://arxiv.org/abs/2609.02088) — `[Method]` `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`
   > 在真实浏览器中重放参考交互，同时评估行为与渲染，再将多模态运行证据转化为多轮工具辅助代码修复。<br>
   > **验证维度：** 交互执行成功率 · SSIM/OCR/语义视觉保真度 · 修复轮次间提升。
@@ -580,6 +584,10 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
   > 重建包含刚体、关节及线/面/体可变形物体的可编辑场景，以渲染比较和模拟行为测试修订几何、边界条件、数值设置或材料模型。<br>
   > **验证维度：** 重建几何 · 渲染视图保真度 · 静置稳定性 · 受控形变与交互测试。
 
+- `arXiv 2026.09` **LEGO-Anything: Coding Agents for 3D Scene Reconstruction**. [[论文]](https://arxiv.org/abs/2609.36380) — `[Method]` `[Benchmark]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]` `[Trajectory Analysis]`
+  > 把场景重建为可执行 Blender 程序，以渲染视图、参考图导出的几何残差和版本控制约束迭代修正，并分别评估产物有效性、几何与外观。<br>
+  > **验证维度：** 产物有效性 · 可见表面重建 · 渲染外观 · 编辑回归 · 参考图支撑的残差。
+
 - `arXiv 2026.09` **Vision2CAD: A Visual Agent Harness for Explicit Geometry Referencing and Localization in Parametric CAD Modeling**. [[论文]](https://arxiv.org/abs/2609.22688) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
   > 通过带 ID 的几何视图与草图坐标转换生成 FreeCAD 操作，并将被拒绝预览的原因反馈给命令选择，同时建立参数化几何引用。<br>
   > **验证维度：** 执行预览接纳 · 几何 mIoU／Chamfer 距离 · 几何引用定位 · 参数编辑后的依赖保持。
@@ -676,6 +684,14 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 ### 7. 游戏与交互环境
 
 要求生成的游戏或视觉程序被启动、游玩、检查和调试的 Agent 与 Benchmark。
+
+- `arXiv 2026.09` **RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement**. [[论文]](https://arxiv.org/abs/2609.39045) [[代码]](https://github.com/WenyiWU0111/RSIGame) — `[Method]` · `[Data Curation]` `[Training]` `[Inference]` `[Verification]`
+  > 通过证据驱动的试玩—编辑—复验循环改进 Godot 与 Phaser 项目，以演化清单和回放比较保留最佳版本，并将成功开发经验用于训练。<br>
+  > **验证维度：** 回放中的机制与视觉质量 · 诊断证据支撑 · 回归检测 · 版本选择 · 开发成本。
+
+- `arXiv 2026.09` **A2Z GameSpec-Bench: How Faithfully Can Coding Agents Generate Games from Game Design Specifications?**. [[论文]](https://arxiv.org/abs/2609.39564) [[项目]](https://a2z-gamespec-bench.github.io) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > 将长篇游戏设计文档转为固定的依赖感知契约，以需求对齐的源码、回放画面和自适应试玩证据驱动后续修订。<br>
+  > **验证维度：** 设计文档忠实度 · 需求依赖 · 源码／回放／试玩一致性 · 修订收益。
 
 - `开源系统 2026.09` **3AGameFactory: Open-Source 3A Game Generation Skills and Asset Framework**. [[仓库]](https://github.com/OpenDCAI/GameFactory-3A) — `[System]` · `[Inference]` `[Environment]` `[Verification]`
   > 使用 Coding Agent 跨 UE5、Unity、Godot、Blender 与 Three.js 组装可编辑资产、玩法、UI 和引擎代码；渲染资产图与引擎内录制会暴露视觉缺陷，以触发重新生成或定向修复。<br>
@@ -851,6 +867,26 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 ## 🧱 相邻基础
 
 本节收录一次性多模态代码生成、只做最终评估、依赖人工继续修改，以及尚未展示同轨迹反馈闭环的相关基础工作。
+
+- `arXiv 2026.09` **WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents**. [[论文]](https://arxiv.org/abs/2609.40325) [[项目]](https://ucsb-nlp-chang.github.io/WorldAuditBench/) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > 评测 Agent 主动探索 Unreal Engine 与 Three.js 世界、取证核验物理、空间、时间和语义异常的能力，输出关联证据的审计报告而非代码修复。<br>
+  > **验证维度：** 异常识别 · 探索预算 · 证据获取 · 动作与推理耦合。
+
+- `arXiv 2026.09` **EngiWorld: What Can Frontier Agents Deliver in Professional Engineering Environments?**. [[论文]](https://arxiv.org/abs/2609.37686) [[项目]](https://engiworld.github.io) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > 以产物级几何、物理及跨工具一致性检查评估六类工程领域、26 个软件平台上的 GUI／CLI 工作流，并分析运行时图像访问的影响。<br>
+  > **验证维度：** 原生产物有效性 · 几何与物理约束 · 跨工具一致性 · 可行性门控的设计质量。
+
+- `arXiv 2026.09` **GameLogicBench: Evaluating Coding Agents on Runtime Game Logic with Tick-Level State Assertions**. [[论文]](https://arxiv.org/abs/2609.21562) [[代码]](https://github.com/NJU-LINK/GameLogicBench) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > 以覆盖评测方指定场景的确定性逐 tick 状态断言测试 Godot 玩法代码，并用正确实现与变异实现校准判定器，揭示运行中短暂的规则违规。<br>
+  > **验证维度：** 逐 tick 不变量 · 事件顺序 · 多场景可复现性 · 变异拒绝 · 密封网络评测。
+
+- `arXiv 2026.09` **CraftBench-UE: Deterministic Evaluation for Coding Agents in Unreal Engine**. [[论文]](https://arxiv.org/abs/2609.23142) [[代码]](https://github.com/ramenvr/craftbench-ue) — `[Benchmark]` `[Empirical Study]` · `[Data Curation]` `[Environment]` `[Verification]` `[Trajectory Analysis]`
+  > 在干净项目中重建保存的 Unreal Engine 提交，以确定性检查验证构建、原生资产和玩法，并对比匹配的 C++／Blueprint 实现及实际开发工作流。<br>
+  > **验证维度：** 干净项目重放 · 构建／资产／运行门控 · 匹配交付格式 · 开发状态回读。
+
+- `arXiv 2026.10` **Spec2Game: Can LLMs Generate Complete Playable Games from Detailed Specifications?**. [[论文]](https://arxiv.org/abs/2610.04253) [[代码]](https://github.com/Aurora1094/Spec2Game-Bench) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > 结合源码、运行和视觉证据评估受控规格变体上的分阶段 Pygame 生成，区分可执行性、需求实现、代码质量及用户界面质量，生成协议不接收反馈修复。<br>
+  > **验证维度：** 可执行性 · 需求检查点 · 代码质量 · 用户可见动态反馈 · 受控规则变体。
 
 - `arXiv 2026.10` **Code2Games: Enabling Coding Agents for Gaming World Generation**. [[论文]](https://arxiv.org/abs/2610.05033) — `[Method]` `[Benchmark]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`
   > 以持久实体身份连接 Blender 场景结构、视觉引导的玩法摆放与 Unreal Engine 逻辑，并用编译诊断和脚本化玩法测试修复引擎迁移。<br>

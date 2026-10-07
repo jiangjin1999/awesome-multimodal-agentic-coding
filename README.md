@@ -18,12 +18,12 @@ A research map of agents that use visual and interactive feedback to build and r
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-135-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-139-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-10-06**
+**Last updated: 2026-10-07**
 
 </div>
 
@@ -413,6 +413,10 @@ Repository- or application-level agents that reproduce visual failures, localize
 
 Agents and benchmarks for repeatedly generating, deploying, viewing, interacting with, and repairing websites or applications.
 
+- `arXiv 2026.10` **TeleGen: Improving LLM-Based Web Application Generation via Runtime Telemetry**. [[paper]](https://arxiv.org/abs/2610.04981) [[code]](https://github.com/commoluo/TeleGen) — `[Method]` · `[Inference]` `[Verification]`
+  > Repairs generated web applications with compressed runtime telemetry and task feedback, combining screenshot-based WebVoyager judgments with code revision in its WebGen-Bench configuration.<br>
+  > **Verification:** UI task success · telemetry/no-telemetry repair ablations · test Pass@2 · judgment audit · context cost.
+
 - `arXiv 2026.09` **Rendering-in-the-Loop: An Execution-Driven Agent for Interactive Web Development**. [[paper]](https://arxiv.org/abs/2609.02088) — `[Method]` `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`
   > Replays reference interactions in a real browser, scores both behavior and rendering, and turns multimodal runtime evidence into repeated tool-assisted code repairs.<br>
   > **Verification:** Interaction execution success · SSIM/OCR/semantic visual fidelity · improvement across repair rounds.
@@ -580,6 +584,10 @@ Agents that produce executable graphics or CAD programs and revise them using re
   > Reconstructs editable scenes with rigid, articulated, and curve/surface/volume deformable objects, using render comparisons and simulator behavior tests to revise geometry, boundary conditions, numerics, or material models.<br>
   > **Verification:** Reconstruction geometry · rendered-view fidelity · settling stability · controlled deformation and interaction tests.
 
+- `arXiv 2026.09` **LEGO-Anything: Coding Agents for 3D Scene Reconstruction**. [[paper]](https://arxiv.org/abs/2609.36380) — `[Method]` `[Benchmark]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]` `[Trajectory Analysis]`
+  > Reconstructs scenes as executable Blender programs and grounds iterative refinement in rendered views, reference-derived geometric residuals, and version control, separately evaluating artifact validity, geometry, and appearance.<br>
+  > **Verification:** Artifact validity · visible-surface reconstruction · rendered appearance · edit regressions · reference-grounded residuals.
+
 - `arXiv 2026.09` **Vision2CAD: A Visual Agent Harness for Explicit Geometry Referencing and Localization in Parametric CAD Modeling**. [[paper]](https://arxiv.org/abs/2609.22688) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
   > Generates FreeCAD operations through ID-tagged geometry views and a sketch-coordinate bridge, then feeds rejected modeling previews back into command selection while preserving parametric references.<br>
   > **Verification:** Execution-preview acceptance · geometric mIoU/Chamfer distance · reference localization · parameter-edit dependency preservation.
@@ -676,6 +684,14 @@ Agents that produce executable graphics or CAD programs and revise them using re
 ### 7. Games and Interactive Environments
 
 Agents and benchmarks that require generated games or visual programs to be launched, played, inspected, and debugged.
+
+- `arXiv 2026.09` **RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement**. [[paper]](https://arxiv.org/abs/2609.39045) [[code]](https://github.com/WenyiWU0111/RSIGame) — `[Method]` · `[Data Curation]` `[Training]` `[Inference]` `[Verification]`
+  > Improves Godot and Phaser projects through evidence-grounded playtest–edit–verify loops, using an evolving checklist and replay-based checkpoint comparison to preserve progress before distilling successful development experience.<br>
+  > **Verification:** Replay-based mechanics/visual quality · grounded diagnosis · regression detection · checkpoint selection · development cost.
+
+- `arXiv 2026.09` **A2Z GameSpec-Bench: How Faithfully Can Coding Agents Generate Games from Game Design Specifications?**. [[paper]](https://arxiv.org/abs/2609.39564) [[project]](https://a2z-gamespec-bench.github.io) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > Evaluates games against fixed dependency-aware contracts from long-form design documents, feeding requirement-linked source, replay-frame, and adaptive-playtest evidence into subsequent revisions.<br>
+  > **Verification:** GDD fidelity · dependency-aware requirements · source/replay/playtest agreement · revision gains.
 
 - `Open-source system 2026.09` **3AGameFactory: Open-Source 3A Game Generation Skills and Asset Framework**. [[repo]](https://github.com/OpenDCAI/GameFactory-3A) — `[System]` · `[Inference]` `[Environment]` `[Verification]`
   > Uses a coding agent to assemble editable assets, gameplay, UI, and engine code across UE5, Unity, Godot, Blender, and Three.js; rendered asset sheets and in-engine captures expose visual defects for regeneration or targeted repair.<br>
@@ -851,6 +867,26 @@ Work in which code is a controller, policy, experiment, or tool action and real 
 ## 🧱 Adjacent Foundations
 
 This section covers related foundations such as one-shot multimodal code generation, final-only evaluation, human-mediated refinement, and systems without a demonstrated same-trajectory feedback loop.
+
+- `arXiv 2026.09` **WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents**. [[paper]](https://arxiv.org/abs/2609.40325) [[project]](https://ucsb-nlp-chang.github.io/WorldAuditBench/) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > Benchmarks agents that actively explore Unreal Engine and Three.js worlds to substantiate physical, spatial, temporal, and semantic anomalies, producing evidence-linked audit reports rather than code repairs.<br>
+  > **Verification:** Anomaly identification · exploration budget · evidence gathering · action–reasoning coupling.
+
+- `arXiv 2026.09` **EngiWorld: What Can Frontier Agents Deliver in Professional Engineering Environments?**. [[paper]](https://arxiv.org/abs/2609.37686) [[project]](https://engiworld.github.io) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > Evaluates GUI- and CLI-based engineering workflows across six domains and 26 software platforms through artifact-level geometric, physical, and cross-tool consistency checks, including runtime-image-access ablations.<br>
+  > **Verification:** Native artifact validity · geometric/physical constraints · cross-tool consistency · feasibility-gated design quality.
+
+- `arXiv 2026.09` **GameLogicBench: Evaluating Coding Agents on Runtime Game Logic with Tick-Level State Assertions**. [[paper]](https://arxiv.org/abs/2609.21562) [[code]](https://github.com/NJU-LINK/GameLogicBench) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > Tests Godot gameplay code with deterministic tick-level state assertions across evaluator-selected scenarios, calibrating judges against correct implementations and mutants to expose transient rule violations.<br>
+  > **Verification:** Tick-level invariants · event ordering · multi-scenario reproducibility · mutant rejection · sealed-network evaluation.
+
+- `arXiv 2026.09` **CraftBench-UE: Deterministic Evaluation for Coding Agents in Unreal Engine**. [[paper]](https://arxiv.org/abs/2609.23142) [[code]](https://github.com/ramenvr/craftbench-ue) — `[Benchmark]` `[Empirical Study]` · `[Data Curation]` `[Environment]` `[Verification]` `[Trajectory Analysis]`
+  > Reconstructs saved Unreal Engine submissions in clean projects and deterministically checks builds, native assets, and gameplay, contrasting matched C++ and Blueprint implementations with observed authoring workflows.<br>
+  > **Verification:** Clean-project replay · build/asset/runtime gates · matched deliverables · authoring-state readback.
+
+- `arXiv 2026.10` **Spec2Game: Can LLMs Generate Complete Playable Games from Detailed Specifications?**. [[paper]](https://arxiv.org/abs/2610.04253) [[code]](https://github.com/Aurora1094/Spec2Game-Bench) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > Evaluates staged Pygame generation on controlled specification variants using source, runtime, and visual evidence, separating executability, requirement realization, code quality, and user-facing quality without feedback-driven repair.<br>
+  > **Verification:** Executability · requirement checkpoints · code quality · user-visible dynamic feedback · controlled rule variants.
 
 - `arXiv 2026.10` **Code2Games: Enabling Coding Agents for Gaming World Generation**. [[paper]](https://arxiv.org/abs/2610.05033) — `[Method]` `[Benchmark]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`
   > Connects Blender scene structure, visually guided gameplay placement, and Unreal Engine logic through persistent element identities, repairing engine adaptation with compilation diagnostics and scripted gameplay tests.<br>

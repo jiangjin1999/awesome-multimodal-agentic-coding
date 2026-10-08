@@ -18,12 +18,12 @@ A research map of agents that use visual and interactive feedback to build and r
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-139-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-143-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-10-07**
+**Last updated: 2026-10-08**
 
 </div>
 
@@ -176,7 +176,7 @@ The list below is a practical starting point rather than a security audit or end
 | Unity development | [Unity Agent Skills](https://github.com/Unity-Technologies/skills) | Official skills + CLI | Covers project setup, packages, UI, shaders, validation, and repeatable editor/build operations. |
 | Browser-game playtesting | [Game Playtest](https://github.com/openai/plugins/blob/main/plugins/game-studio/skills/game-playtest/SKILL.md) | OpenAI-maintained skill | Organizes input and scene-transition tests, screenshot-based canvas/WebGL review, HUD and camera checks, and reproducible issue reports for the next repair pass. |
 | Godot development | [Godot MCP](https://github.com/hybridindie/godot-mcp) | Community MCP | Supports scenes and scripts, running projects, input driving, screenshots, replays, profiling, and export. |
-| Godot visual playtesting | [Ziva playtesting workflow](https://ziva.sh/blogs/ai-agent-playtest-godot-game) | Official blog + commercial plugin | Describes paused-game input, screenshots, logs, and replay evidence, emphasizing that agents must read playtest results to benefit from them; vendor demonstrations are not independent benchmark evidence. |
+| Godot visual playtesting | [Ziva playtesting workflow](https://ziva.sh/blogs/ai-agent-playtest-godot-game) · [playtesting docs](https://ziva.sh/docs/playtest) | Official docs/blog + commercial plugin | The full playtest agent inspects live state and screenshots, returning verdicts, reproduction steps, and replay evidence; it does not edit the project, so repairs must be handed back to the development agent. Vendor demonstrations are not independent benchmark evidence. |
 | Unreal development | [Unreal MCP](https://github.com/ZiggyMar/unreal-mcp) | Community MCP | Provides indexed, token-efficient inspection and editing of Unreal projects and Blueprints. |
 | Diagram-as-code | [Mermaid MCP server](https://mermaid.ai/docs/ai/mcp-server) | Official MCP | Validates diagram syntax and returns SVG/PNG renders that can be inspected and repaired. |
 | Programmatic video | [Remotion](https://github.com/remotion-dev/remotion) | Official framework + skills | Turns React code into inspectable frames and videos, enabling frame-level rendering and iterative correction. |
@@ -227,6 +227,8 @@ The following examples make the coding loop concrete across different tasks. We 
 | Executable world models | **TWIN interactive replay** — TWIN team [[project + replay]](https://arc-agi-3-twin.vercel.app/) | The agent writes a Python twin of an unknown game, validates transitions against interaction history, repairs the first mismatch, and plans inside the revised model. | Closed-loop research demo |
 | Multi-format design | **AutoDesign Open Research Demo** — Luo et al. [[project + artifacts]](https://autodesign.designanything.ai/) | One source paper becomes an editable poster, slide deck, research site, and narrated video; each rollout retains executable artifacts, renders, diagnostics, and localized repairs. | Closed-loop research demo |
 | Robot code-as-policy | **ASPIRE task gallery** — NVIDIA GEAR et al. [[project + 88 demos]](https://research.nvidia.com/labs/gear/aspire/) | Baseline and repaired robot rollouts are paired with fix code: the agent inspects multimodal traces, rewrites the policy, reruns it, and stores validated repairs as reusable skills. | Closed-loop research demo |
+| Interactive physics and material prompt | **Banana Jelly** — NinjaCodex / @N1njaCodex [[author post + prompt]](https://x.com/N1njaCodex/status/2107187133173678156) | A single-file HTML/WebGPU/WGSL recipe combines flexible plants, translucent materials, and picking/collision interactions with debug hooks and repeatable browser assertions; specified QA is not evidence of passed tests. | Attributed community prompt |
+| Asset-generation and web-integration prompt | **Wild Atlas** — IamAlam / @_IamAlam [[author post + prompt]](https://x.com/_IamAlam/status/2107480596926939638) | Stages an encyclopedia app into its interface, consistent animal assets, and card/rotation/info-panel interactions; a rotating presentation does not establish a released full 3D scene. | Attributed community prompt |
 
 <a id="topic-map"></a>
 ## 🗺️ Topic Map
@@ -474,6 +476,14 @@ Agents and benchmarks for repeatedly generating, deploying, viewing, interacting
 
 Agents that execute analysis or plotting code, inspect visual or scientific outcomes, and revise the program or analysis plan.
 
+- `arXiv 2026.09` **ChartRevise: A Dataset and Evaluation Protocol for Exact Chart Editing via Code**. [[paper]](https://arxiv.org/abs/2609.38642) — `[Dataset]` `[Benchmark]` · `[Data Curation]` `[Training]` `[Verification]`
+  > Builds program-grounded chart edits through before/after rendering and judge-guided repair, then measures exactness by separating explicit requirements, coupled updates, and unrelated changes.<br>
+  > **Verification:** Execution/rendering · requirement completion · coupled updates · unrelated-change preservation · judge agreement.
+
+- `arXiv 2026.09` **IChart2Code: Benchmarking Multimodal Large Language Models for Interactive Chart Code Generation**. [[paper]](https://arxiv.org/abs/2609.32413) — `[Method]` `[Benchmark]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`
+  > Benchmarks chart appearance, data fidelity, and interactive state changes, with TRAIL using browser-observed trajectories to diagnose failures and revise HTML/JavaScript.<br>
+  > **Verification:** Executability · data fidelity · static visual correctness · interaction correctness · human-calibrated judging.
+
 - `arXiv 2026.09` **VisInteract: Towards Dynamic Interactive Text-to-Visualization under Imperfect Queries**. [[paper]](https://arxiv.org/abs/2609.15182) — `[Method]` `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`
   > Executes Altair programs and uses a simulated user's rendered-chart critiques and textual clarifications to steer subsequent code search toward underspecified visualization intent.<br>
   > **Verification:** Renderability · code/chart key-feature satisfaction · intent alignment · multi-turn task success.
@@ -567,6 +577,10 @@ Agents that treat vector or diagram code as an editable symbolic artifact and re
 ### 6. 3D Graphics, CAD, and Scene Generation
 
 Agents that produce executable graphics or CAD programs and revise them using rendered views, solver feedback, or geometric checks.
+
+- `arXiv 2026.10` **LMBuild: Evaluating LLM Agents for Generating Buildable and Functional Structures**. [[paper]](https://arxiv.org/abs/2610.04292) [[project]](https://lumos-jiateng.github.io/LMBuild/) [[code]](https://github.com/Lumos-Jiateng/LMBuild) — `[Benchmark]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`
+  > Builds part-based structures with executable CSG and assembly operations, feeding rendered views and diagnostics into later review rounds while evaluating soundness, affordance, design, and physical realization.<br>
+  > **Verification:** Assembly soundness · functional-part completeness · kinematic correctness · rendered design quality · physical operability.
 
 - `arXiv 2026.10` **CADForge: Agentic Single-View CAD Reconstruction with Explicit Geometry Reasoning**. [[paper]](https://arxiv.org/abs/2610.04262) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
   > Reconstructs single-view objects as component-wise CadQuery programs, using explicit geometry calculations and highlighted multi-view reviews to route corrections back to parameter reasoning or code synthesis.<br>
@@ -684,6 +698,10 @@ Agents that produce executable graphics or CAD programs and revise them using re
 ### 7. Games and Interactive Environments
 
 Agents and benchmarks that require generated games or visual programs to be launched, played, inspected, and debugged.
+
+- `arXiv 2026.10` **Recursive Game Creator: An Agentic Product-Level Experience-Oriented Game Harness**. [[paper]](https://arxiv.org/abs/2610.08621) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
+  > Separates policy-driven gameplay collection from visual experience review, using version-linked trajectories, screenshots, and user preferences to guide repeated game-code revisions and checkpoint retention.<br>
+  > **Verification:** Runtime requirements · replay-grounded experience · visual coherence · preference alignment · version retention · testing cost.
 
 - `arXiv 2026.09` **RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement**. [[paper]](https://arxiv.org/abs/2609.39045) [[code]](https://github.com/WenyiWU0111/RSIGame) — `[Method]` · `[Data Curation]` `[Training]` `[Inference]` `[Verification]`
   > Improves Godot and Phaser projects through evidence-grounded playtest–edit–verify loops, using an evolving checklist and replay-based checkpoint comparison to preserve progress before distilling successful development experience.<br>
@@ -867,6 +885,22 @@ Work in which code is a controller, policy, experiment, or tool action and real 
 ## 🧱 Adjacent Foundations
 
 This section covers related foundations such as one-shot multimodal code generation, final-only evaluation, human-mediated refinement, and systems without a demonstrated same-trajectory feedback loop.
+
+- `arXiv 2026.10` **WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?**. [[paper]](https://arxiv.org/abs/2610.08720) [[code]](https://github.com/sirujiang/WorldSolver) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > Isolates physics-solver code generation with fixed scene scaffolds, then evaluates frozen submissions through rendered-event fidelity and continuous trajectory-based physical checks.<br>
+  > **Verification:** Execution validity · event/interaction fidelity · temporal coherence · conservation/contact residuals · solver delivery.
+
+- `arXiv 2026.10` **World Editing: Intervening on Executable Worlds at Increasing Depth**. [[paper]](https://arxiv.org/abs/2610.02331) [[project]](https://vinesmsuic.github.io/IGMWorld/) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > Benchmarks modifications to Minecraft and Terraria across increasing intervention depth, checking native builds, in-game behavior, targeted regressions, and semantic/style consistency of introduced assets.<br>
+  > **Verification:** Build/load gates · behavioral criteria · unrelated-property preservation · asset consistency · intervention depth.
+
+- `arXiv 2026.09` **Faithful Chart Generation for Multimodal Deep Research: Frame-Evidence Co-Adaptation**. [[paper]](https://arxiv.org/abs/2610.00374) — `[Method]` · `[Inference]` `[Verification]`
+  > Adapts chart frames to retrievable quantitative evidence before generating ECharts, keeping accepted values fixed during rendering retries and auditing numerical provenance.<br>
+  > **Verification:** Numerical fidelity · source provenance · unsupported-value rate · chart utility · report quality.
+
+- `arXiv 2026.09` **SIVIA-RSI: Source-Grounded Adaptation of Diagramming Skills**. [[paper]](https://arxiv.org/abs/2609.33386) — `[Method]` `[Empirical Study]` · `[Inference]` `[Verification]`
+  > Adapts reusable raster-diagram instructions from source-linked visual critiques and evaluates every proposed skill on fresh diagrams, separating selection preference from cross-paper relation fidelity.<br>
+  > **Verification:** Source-grounded relations · complete-candidate coverage · fresh-output transfer · prompt/image traceability.
 
 - `arXiv 2026.09` **WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents**. [[paper]](https://arxiv.org/abs/2609.40325) [[project]](https://ucsb-nlp-chang.github.io/WorldAuditBench/) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
   > Benchmarks agents that actively explore Unreal Engine and Three.js worlds to substantiate physical, spatial, temporal, and semantic anomalies, producing evidence-linked audit reports rather than code repairs.<br>

@@ -18,12 +18,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-139-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-143-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-10-07**
+**最后更新：2026-10-08**
 
 </div>
 
@@ -176,7 +176,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 | Unity 开发 | [Unity Agent Skills](https://github.com/Unity-Technologies/skills) | 官方 Skills + CLI | 覆盖项目设置、包、UI、Shader、验证以及可重复的编辑器／构建操作。 |
 | 浏览器游戏试玩测试 | [Game Playtest](https://github.com/openai/plugins/blob/main/plugins/game-studio/skills/game-playtest/SKILL.md) | OpenAI 维护的 Skill | 组织输入与场景切换测试、基于截图的 Canvas/WebGL 检查、HUD 与相机检查，并输出可复现问题报告，供下一轮修复使用。 |
 | Godot 开发 | [Godot MCP](https://github.com/hybridindie/godot-mcp) | 社区 MCP | 支持场景与脚本、项目运行、输入驱动、截图、重放、性能分析和导出。 |
-| Godot 视觉试玩 | [Ziva 试玩工作流](https://ziva.sh/blogs/ai-agent-playtest-godot-game) | 官方博客 + 商业插件 | 描述暂停游戏、输入、截图、日志与重放证据，强调 Agent 必须读取试玩结果才可能获益；厂商演示不等于独立基准证据。 |
+| Godot 视觉试玩 | [Ziva 试玩工作流](https://ziva.sh/blogs/ai-agent-playtest-godot-game) · [试玩文档](https://ziva.sh/docs/playtest) | 官方文档／博客 + 商业插件 | 完整试玩 Agent 检查现场状态与截图，返回结论、复现步骤及重放证据；它本身不编辑项目，修复需交回开发 Agent。厂商演示不等于独立基准证据。 |
 | Unreal 开发 | [Unreal MCP](https://github.com/ZiggyMar/unreal-mcp) | 社区 MCP | 以索引化、Token 高效的方式检查和编辑 Unreal 项目与 Blueprint。 |
 | Diagram-as-code | [Mermaid MCP server](https://mermaid.ai/docs/ai/mcp-server) | 官方 MCP | 验证 Diagram 语法并返回可供检查与修复的 SVG/PNG 渲染。 |
 | 程序化视频 | [Remotion](https://github.com/remotion-dev/remotion) | 官方框架 + Skills | 将 React 代码转化为可检查的视频帧和视频，从而支持逐帧渲染与迭代纠错。 |
@@ -227,6 +227,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 | 可执行世界模型 | **TWIN interactive replay** — TWIN team [[项目 + Replay]](https://arc-agi-3-twin.vercel.app/) | Agent 为未知游戏编写 Python Twin，对照交互历史验证状态转移，修复首个不一致，并在修订后的模型中规划。 | 闭环研究 Demo |
 | 多格式设计 | **AutoDesign Open Research Demo** — Luo et al. [[项目 + 产物]](https://autodesign.designanything.ai/) | 同一篇论文被转成可编辑海报、Slide Deck、研究网站和旁白视频；每次 Rollout 保留可执行产物、渲染、诊断与局部修复。 | 闭环研究 Demo |
 | 机器人 Code-as-policy | **ASPIRE task gallery** — NVIDIA GEAR et al. [[项目 + 88 个 Demo]](https://research.nvidia.com/labs/gear/aspire/) | Baseline 与修复后 Rollout 对应 Fix Code：Agent 检查多模态 Trace、重写策略、重新运行，并把验证后的修复保存为可复用 Skill。 | 闭环研究 Demo |
+| 交互物理与材质提示词 | **Banana Jelly** — NinjaCodex / @N1njaCodex [[作者原帖 + 提示词]](https://x.com/N1njaCodex/status/2107187133173678156) | 单文件 HTML/WebGPU/WGSL 配方结合柔性植物、半透明材质和拾取／碰撞交互，并指定调试钩子与可重复浏览器断言；QA 要求不等于已通过测试。 | 署名社区提示词 |
+| 资产生成与网页集成提示词 | **Wild Atlas** — IamAlam / @_IamAlam [[作者原帖 + 提示词]](https://x.com/_IamAlam/status/2107480596926939638) | 将百科应用分为界面、统一风格动物资产及卡片／旋转／信息面板交互三个阶段；旋转展示不代表已公开完整 3D 场景。 | 署名社区提示词 |
 
 <a id="topic-map"></a>
 ## 🗺️ 主题地图
@@ -474,6 +476,14 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 执行分析或绘图代码、检查视觉或科学结果，并修改程序或分析计划的 Agent。
 
+- `arXiv 2026.09` **ChartRevise: A Dataset and Evaluation Protocol for Exact Chart Editing via Code**. [[论文]](https://arxiv.org/abs/2609.38642) — `[Dataset]` `[Benchmark]` · `[Data Curation]` `[Training]` `[Verification]`
+  > 通过修改前后渲染与判定器引导的修复构建程序化图表编辑，并将显式要求、关联更新和无关改动分开衡量编辑精确性。<br>
+  > **验证维度：** 执行与渲染 · 要求完成 · 关联更新 · 无关内容保持 · 判定一致性。
+
+- `arXiv 2026.09` **IChart2Code: Benchmarking Multimodal Large Language Models for Interactive Chart Code Generation**. [[论文]](https://arxiv.org/abs/2609.32413) — `[Method]` `[Benchmark]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`
+  > 同时评测图表外观、数据忠实度与交互状态变化，TRAIL 根据浏览器观测轨迹诊断失败并修订 HTML/JavaScript。<br>
+  > **验证维度：** 可执行性 · 数据忠实度 · 静态视觉正确性 · 交互正确性 · 人工校准判定。
+
 - `arXiv 2026.09` **VisInteract: Towards Dynamic Interactive Text-to-Visualization under Imperfect Queries**. [[论文]](https://arxiv.org/abs/2609.15182) — `[Method]` `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`
   > 执行 Altair 程序，让模拟用户评阅渲染图表，并将视觉点评与文字澄清反馈用于后续代码搜索，逐步还原不完整需求中的可视化意图。<br>
   > **验证维度：** 可渲染性 · 代码与图表的关键特征满足度 · 意图对齐 · 多轮任务成功率。
@@ -567,6 +577,10 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 ### 6. 3D、CAD 与场景生成
 
 生成可执行图形或 CAD 程序，并利用渲染视图、Solver 反馈或几何检查进行修改的 Agent。
+
+- `arXiv 2026.10` **LMBuild: Evaluating LLM Agents for Generating Buildable and Functional Structures**. [[论文]](https://arxiv.org/abs/2610.04292) [[项目]](https://lumos-jiateng.github.io/LMBuild/) [[代码]](https://github.com/Lumos-Jiateng/LMBuild) — `[Benchmark]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`
+  > 通过可执行 CSG 和装配操作构建部件化结构，将渲染视图与诊断返回后续复核轮次，并评测结构健全、功能可供性、设计及物理实现。<br>
+  > **验证维度：** 装配健全 · 功能部件完整性 · 运动学正确性 · 渲染设计质量 · 物理可操作性。
 
 - `arXiv 2026.10` **CADForge: Agentic Single-View CAD Reconstruction with Explicit Geometry Reasoning**. [[论文]](https://arxiv.org/abs/2610.04262) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
   > 通过显式几何计算逐部件重建单视图物体的 CadQuery 程序，再以高亮多视图审查把修正路由回参数推理或代码合成。<br>
@@ -684,6 +698,10 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 ### 7. 游戏与交互环境
 
 要求生成的游戏或视觉程序被启动、游玩、检查和调试的 Agent 与 Benchmark。
+
+- `arXiv 2026.10` **Recursive Game Creator: An Agentic Product-Level Experience-Oriented Game Harness**. [[论文]](https://arxiv.org/abs/2610.08621) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
+  > 将策略驱动的试玩采集与视觉体验审查分离，利用绑定版本的轨迹、截图和用户偏好指导反复修改游戏代码及保留检查点。<br>
+  > **验证维度：** 运行要求 · 重放证据支撑的体验 · 视觉一致性 · 偏好对齐 · 版本保留 · 测试成本。
 
 - `arXiv 2026.09` **RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement**. [[论文]](https://arxiv.org/abs/2609.39045) [[代码]](https://github.com/WenyiWU0111/RSIGame) — `[Method]` · `[Data Curation]` `[Training]` `[Inference]` `[Verification]`
   > 通过证据驱动的试玩—编辑—复验循环改进 Godot 与 Phaser 项目，以演化清单和回放比较保留最佳版本，并将成功开发经验用于训练。<br>
@@ -867,6 +885,22 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 ## 🧱 相邻基础
 
 本节收录一次性多模态代码生成、只做最终评估、依赖人工继续修改，以及尚未展示同轨迹反馈闭环的相关基础工作。
+
+- `arXiv 2026.10` **WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?**. [[论文]](https://arxiv.org/abs/2610.08720) [[代码]](https://github.com/sirujiang/WorldSolver) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > 用固定场景脚手架隔离物理求解器代码生成，再根据渲染事件忠实度和连续轨迹物理检查评估冻结后的提交。<br>
+  > **验证维度：** 执行有效性 · 事件与交互忠实度 · 时间连贯性 · 守恒/接触残差 · 求解器交付。
+
+- `arXiv 2026.10` **World Editing: Intervening on Executable Worlds at Increasing Depth**. [[论文]](https://arxiv.org/abs/2610.02331) [[项目]](https://vinesmsuic.github.io/IGMWorld/) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > 按递增干预深度评测 Minecraft 和 Terraria 的修改，检查原生构建、游戏行为、定向回归及新增资产的语义与风格一致性。<br>
+  > **验证维度：** 构建与载入门槛 · 行为判据 · 无关属性保持 · 资产一致性 · 干预深度。
+
+- `arXiv 2026.09` **Faithful Chart Generation for Multimodal Deep Research: Frame-Evidence Co-Adaptation**. [[论文]](https://arxiv.org/abs/2610.00374) — `[Method]` · `[Inference]` `[Verification]`
+  > 在生成 ECharts 前让图表框架适配可检索定量证据，在渲染重试中固定已接受数值，并审计数字来源。<br>
+  > **验证维度：** 数值忠实度 · 来源可追溯 · 无依据数值比例 · 图表效用 · 报告质量。
+
+- `arXiv 2026.09` **SIVIA-RSI: Source-Grounded Adaptation of Diagramming Skills**. [[论文]](https://arxiv.org/abs/2609.33386) — `[Method]` `[Empirical Study]` · `[Inference]` `[Verification]`
+  > 根据关联源段落的视觉批评调整可复用栅格绘图指令，并用全新图像评测每个候选，区分选择偏好与跨论文关系忠实度。<br>
+  > **验证维度：** 源证据支撑的关系 · 全候选覆盖 · 全新输出迁移 · 提示词与图像可追溯。
 
 - `arXiv 2026.09` **WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents**. [[论文]](https://arxiv.org/abs/2609.40325) [[项目]](https://ucsb-nlp-chang.github.io/WorldAuditBench/) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
   > 评测 Agent 主动探索 Unreal Engine 与 Three.js 世界、取证核验物理、空间、时间和语义异常的能力，输出关联证据的审计报告而非代码修复。<br>

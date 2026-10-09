@@ -18,12 +18,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-143-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-145-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-10-08**
+**最后更新：2026-10-09**
 
 </div>
 
@@ -181,6 +181,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 | Diagram-as-code | [Mermaid MCP server](https://mermaid.ai/docs/ai/mcp-server) | 官方 MCP | 验证 Diagram 语法并返回可供检查与修复的 SVG/PNG 渲染。 |
 | 程序化视频 | [Remotion](https://github.com/remotion-dev/remotion) | 官方框架 + Skills | 将 React 代码转化为可检查的视频帧和视频，从而支持逐帧渲染与迭代纠错。 |
 | 数学动画 | [Manim MCP](https://github.com/paulnegz/manim-mcp) | 社区 MCP | 把文本、生成的 Manim 代码、渲染视频与后续修正连接成一条工作流。 |
+| 数学动画编排与审阅 | [Manim Video Lab](https://github.com/ApliroAI/manim-video-lab) | 社区 Agent Skill；MIT | 使用 Docker 内的 Manim/FFmpeg 管线，结合明确的分镜约定、视频或采样帧审阅、带时间定位的代码修复，以及有限轮次的再渲染与再审阅。 |
 
 > **安全提示：** 许多集成能够在浏览器、CAD、DCC 工具和游戏引擎中执行代码。评估社区工具时，应检查源码、固定版本、限制文件系统与网络权限，并使用隔离的项目副本。
 
@@ -229,6 +230,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 | 机器人 Code-as-policy | **ASPIRE task gallery** — NVIDIA GEAR et al. [[项目 + 88 个 Demo]](https://research.nvidia.com/labs/gear/aspire/) | Baseline 与修复后 Rollout 对应 Fix Code：Agent 检查多模态 Trace、重写策略、重新运行，并把验证后的修复保存为可复用 Skill。 | 闭环研究 Demo |
 | 交互物理与材质提示词 | **Banana Jelly** — NinjaCodex / @N1njaCodex [[作者原帖 + 提示词]](https://x.com/N1njaCodex/status/2107187133173678156) | 单文件 HTML/WebGPU/WGSL 配方结合柔性植物、半透明材质和拾取／碰撞交互，并指定调试钩子与可重复浏览器断言；QA 要求不等于已通过测试。 | 署名社区提示词 |
 | 资产生成与网页集成提示词 | **Wild Atlas** — IamAlam / @_IamAlam [[作者原帖 + 提示词]](https://x.com/_IamAlam/status/2107480596926939638) | 将百科应用分为界面、统一风格动物资产及卡片／旋转／信息面板交互三个阶段；旋转展示不代表已公开完整 3D 场景。 | 署名社区提示词 |
+| 文学世界与交互媒体 | **Invisible Cities** — Piotr Migdał [[作者博客]](https://quesma.com/blog/invisible-cities-one-shot/) · [[Astra 源码]](https://github.com/stared/invisible-cities-astra) · [[Opus 源码]](https://github.com/stared/invisible-cities-opus-5.5) | 同一个开放式需求生成卡尔维诺城市的两种程序化 Three.js 演绎；作者比较设计与执行体验，而非提供受控的视觉修复基准。 | 作者报告的创作案例 |
+| 交互水面与材质提示词 | **Villa Jelly** — Vib3Coded / @vib3coded [[作者原帖 + 提示词]](https://x.com/vib3coded/status/2107617476473164210) | 指定单文件 WebGPU/WGSL 别墅微缩场景，结合波浪、浮力、拖船、可弯棕榈树与可重复的浏览器 QA 接口；要求执行的检查不等于已发布测试报告。 | 署名社区提示词 |
 
 <a id="topic-map"></a>
 ## 🗺️ 主题地图
@@ -578,6 +581,10 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 生成可执行图形或 CAD 程序，并利用渲染视图、Solver 反馈或几何检查进行修改的 Agent。
 
+- `arXiv 2026.10` **CADFather: Autonomous CAD Reconstruction through Coordinated Tool Use**. [[论文]](https://arxiv.org/abs/2610.09127) [[代码]](https://github.com/kulibinai/CADFather) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
+  > 观察目标与候选的渲染，将网格重建为 CadQuery 风格程序，并在持久候选池中协调学习式提案、几何构造与参数优化。<br>
+  > **验证维度：** 执行与闭合有效性 · 体积重叠 · 表面／法线一致性 · 几何距离 · 搜索成本。
+
 - `arXiv 2026.10` **LMBuild: Evaluating LLM Agents for Generating Buildable and Functional Structures**. [[论文]](https://arxiv.org/abs/2610.04292) [[项目]](https://lumos-jiateng.github.io/LMBuild/) [[代码]](https://github.com/Lumos-Jiateng/LMBuild) — `[Benchmark]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`
   > 通过可执行 CSG 和装配操作构建部件化结构，将渲染视图与诊断返回后续复核轮次，并评测结构健全、功能可供性、设计及物理实现。<br>
   > **验证维度：** 装配健全 · 功能部件完整性 · 运动学正确性 · 渲染设计质量 · 物理可操作性。
@@ -854,6 +861,10 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 代码作为控制器、策略、实验或工具动作，真实或仿真的多模态结果指导后续改写。
 
+- `arXiv 2026.10` **PhysEvo: Astra Can Act, Let It**. [[论文]](https://arxiv.org/abs/2610.08995) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
+  > 根据对齐的机器人图像、状态与执行轨迹，围绕冻结模型修改行动和诊断工具代码，在开发回合间测试并保留改进，再用固定版本评测。<br>
+  > **验证维度：** 保留布局任务成功率 · 行动／观察接口消融 · 修订验收 · 真实机器人技能适应。
+
 - `arXiv 2026.09` **Coding Agents with an Obstacle-Aware Harness for Safe Robot Manipulation**. [[论文]](https://arxiv.org/abs/2609.20822) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
   > 为 Code-as-policy Agent 增加视觉定位的路径检查与接触约束，并在执行遭遇障碍或未建模物理限制时，根据观测到的停止位姿重新规划后续动作。<br>
   > **验证维度：** 任务成功率 · 避碰率 · 路径净空 · 执行约束下的恢复。
@@ -885,6 +896,18 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 ## 🧱 相邻基础
 
 本节收录一次性多模态代码生成、只做最终评估、依赖人工继续修改，以及尚未展示同轨迹反馈闭环的相关基础工作。
+
+- `arXiv 2026.10` **TaoD2C-Bench: Benchmarking MLLMs for Industrial UI Code Generation Beyond Visual Fidelity**. [[论文]](https://arxiv.org/abs/2610.10374) [[项目]](https://taod2c-bench.github.io/) — `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > 将工业 UI 需求推断与代码实现分开评测，结合源码和运行时证据检查组件与布局约束，并独立比较最终渲染忠实度。<br>
+  > **验证维度：** 组件类型／属性 · 分组／对齐／定位 · 需求推断 · 最终视觉忠实度。
+
+- `arXiv 2026.09` **Enabling Creative Exploration for Vibe Design Agents**. [[论文]](https://arxiv.org/abs/2609.15078) — `[Method]` `[Empirical Study]` · `[Inference]` `[Verification]`
+  > 在固定设置的 UI 代码生成前抽样结构化主题与资产方向，并分别衡量渲染多样性、模型裁判偏好及线上用户行为。<br>
+  > **验证维度：** 设计方向覆盖 · 截图／DOM 变化 · 成对质量判定 · 线上修正、延迟与完成率。
+
+- `arXiv 2026.08` **RA-CAD: Learning Post-Execution Critique for State-Aware Text-to-CAD Generation**. [[论文]](https://arxiv.org/abs/2608.05714) — `[Method]` · `[Training]` `[Inference]` `[Verification]`
+  > 从完整轨迹中联合学习 CAD 提案、文字执行后批评与重写，用执行器诊断指导修复，并以终端几何奖励优化策略。<br>
+  > **验证维度：** 执行有效性 · 基元序列 F1 · 最终几何距离 · 生成／批评策略消融。
 
 - `arXiv 2026.10` **WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?**. [[论文]](https://arxiv.org/abs/2610.08720) [[代码]](https://github.com/sirujiang/WorldSolver) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
   > 用固定场景脚手架隔离物理求解器代码生成，再根据渲染事件忠实度和连续轨迹物理检查评估冻结后的提交。<br>

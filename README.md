@@ -18,12 +18,12 @@ A research map of agents that use visual and interactive feedback to build and r
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-143-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-145-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-10-08**
+**Last updated: 2026-10-09**
 
 </div>
 
@@ -181,6 +181,7 @@ The list below is a practical starting point rather than a security audit or end
 | Diagram-as-code | [Mermaid MCP server](https://mermaid.ai/docs/ai/mcp-server) | Official MCP | Validates diagram syntax and returns SVG/PNG renders that can be inspected and repaired. |
 | Programmatic video | [Remotion](https://github.com/remotion-dev/remotion) | Official framework + skills | Turns React code into inspectable frames and videos, enabling frame-level rendering and iterative correction. |
 | Mathematical animation | [Manim MCP](https://github.com/paulnegz/manim-mcp) | Community MCP | Connects text, generated Manim code, rendered video, and subsequent correction in one workflow. |
+| Mathematical animation direction and review | [Manim Video Lab](https://github.com/ApliroAI/manim-video-lab) | Community Agent Skill; MIT | Uses a Docker-backed Manim/FFmpeg pipeline with explicit storyboard contracts, video or sampled-frame review, timestamped code fixes, and bounded rerender-and-review passes. |
 
 > **Safety note:** many of these integrations can execute code inside browsers, CAD systems, DCC tools, and game engines. Review the source, pin versions, restrict filesystem and network access, and use isolated project copies when evaluating community bridges.
 
@@ -229,6 +230,8 @@ The following examples make the coding loop concrete across different tasks. We 
 | Robot code-as-policy | **ASPIRE task gallery** — NVIDIA GEAR et al. [[project + 88 demos]](https://research.nvidia.com/labs/gear/aspire/) | Baseline and repaired robot rollouts are paired with fix code: the agent inspects multimodal traces, rewrites the policy, reruns it, and stores validated repairs as reusable skills. | Closed-loop research demo |
 | Interactive physics and material prompt | **Banana Jelly** — NinjaCodex / @N1njaCodex [[author post + prompt]](https://x.com/N1njaCodex/status/2107187133173678156) | A single-file HTML/WebGPU/WGSL recipe combines flexible plants, translucent materials, and picking/collision interactions with debug hooks and repeatable browser assertions; specified QA is not evidence of passed tests. | Attributed community prompt |
 | Asset-generation and web-integration prompt | **Wild Atlas** — IamAlam / @_IamAlam [[author post + prompt]](https://x.com/_IamAlam/status/2107480596926939638) | Stages an encyclopedia app into its interface, consistent animal assets, and card/rotation/info-panel interactions; a rotating presentation does not establish a released full 3D scene. | Attributed community prompt |
+| Literary worlds and interactive media | **Invisible Cities** — Piotr Migdał [[author blog]](https://quesma.com/blog/invisible-cities-one-shot/) · [[Astra source]](https://github.com/stared/invisible-cities-astra) · [[Opus source]](https://github.com/stared/invisible-cities-opus-5.5) | The same open-ended brief produces two procedural Three.js interpretations of Calvino's cities; the author compares their design and execution experience, rather than providing a controlled visual-repair benchmark. | Author-reported creation case |
+| Interactive water and material prompt | **Villa Jelly** — Vib3Coded / @vib3coded [[author post + prompt]](https://x.com/vib3coded/status/2107617476473164210) | Specifies a single-file WebGPU/WGSL villa diorama with coupled waves, buoyancy, boat towing, bendable palms, and reproducible browser QA hooks; the requested checks are not a published test report. | Attributed community prompt |
 
 <a id="topic-map"></a>
 ## 🗺️ Topic Map
@@ -578,6 +581,10 @@ Agents that treat vector or diagram code as an editable symbolic artifact and re
 
 Agents that produce executable graphics or CAD programs and revise them using rendered views, solver feedback, or geometric checks.
 
+- `arXiv 2026.10` **CADFather: Autonomous CAD Reconstruction through Coordinated Tool Use**. [[paper]](https://arxiv.org/abs/2610.09127) [[code]](https://github.com/kulibinai/CADFather) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
+  > Reconstructs meshes as CadQuery-based programs by inspecting target and candidate renders, coordinating learned proposals, geometric construction, and parameter optimization across a persistent candidate pool.<br>
+  > **Verification:** Execution and watertight validity · volumetric overlap · surface/normal agreement · geometric distance · search cost.
+
 - `arXiv 2026.10` **LMBuild: Evaluating LLM Agents for Generating Buildable and Functional Structures**. [[paper]](https://arxiv.org/abs/2610.04292) [[project]](https://lumos-jiateng.github.io/LMBuild/) [[code]](https://github.com/Lumos-Jiateng/LMBuild) — `[Benchmark]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]`
   > Builds part-based structures with executable CSG and assembly operations, feeding rendered views and diagnostics into later review rounds while evaluating soundness, affordance, design, and physical realization.<br>
   > **Verification:** Assembly soundness · functional-part completeness · kinematic correctness · rendered design quality · physical operability.
@@ -854,6 +861,10 @@ Agents that create visual documents or temporal media as executable or structure
 
 Work in which code is a controller, policy, experiment, or tool action and real or simulated multimodal outcomes guide subsequent rewrites.
 
+- `arXiv 2026.10` **PhysEvo: Astra Can Act, Let It**. [[paper]](https://arxiv.org/abs/2610.08995) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
+  > Uses aligned robot images, states, and execution traces to revise both action and diagnostic harness code around a frozen model, testing and retaining improvements between development episodes before fixed-version evaluation.<br>
+  > **Verification:** Held-out-layout task success · action/observation interface ablations · revision acceptance · real-robot skill adaptation.
+
 - `arXiv 2026.09` **Coding Agents with an Obstacle-Aware Harness for Safe Robot Manipulation**. [[paper]](https://arxiv.org/abs/2609.20822) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
   > Equips code-as-policy agents with visually grounded route checks and contact constraints, replanning from the observed stopped pose when execution encounters an obstacle or an unmodeled physical constraint.<br>
   > **Verification:** Task success · collision avoidance · route clearance · recovery under execution-time constraints.
@@ -885,6 +896,18 @@ Work in which code is a controller, policy, experiment, or tool action and real 
 ## 🧱 Adjacent Foundations
 
 This section covers related foundations such as one-shot multimodal code generation, final-only evaluation, human-mediated refinement, and systems without a demonstrated same-trajectory feedback loop.
+
+- `arXiv 2026.10` **TaoD2C-Bench: Benchmarking MLLMs for Industrial UI Code Generation Beyond Visual Fidelity**. [[paper]](https://arxiv.org/abs/2610.10374) [[project]](https://taod2c-bench.github.io/) — `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > Separates industrial UI requirement inference from code realization, evaluating generated component and layout constraints through source/runtime evidence alongside final rendered fidelity.<br>
+  > **Verification:** Component type/properties · grouping/alignment/position · requirement inference · final visual fidelity.
+
+- `arXiv 2026.09` **Enabling Creative Exploration for Vibe Design Agents**. [[paper]](https://arxiv.org/abs/2609.15078) — `[Method]` `[Empirical Study]` · `[Inference]` `[Verification]`
+  > Samples structured theme and asset directions before fixed-setting UI code generation, measuring rendered diversity, model-judge preference, and deployed user behavior as separate outcomes.<br>
+  > **Verification:** Design-option coverage · screenshot/DOM variation · pairwise quality judgments · online corrections, latency, and completion.
+
+- `arXiv 2026.08` **RA-CAD: Learning Post-Execution Critique for State-Aware Text-to-CAD Generation**. [[paper]](https://arxiv.org/abs/2608.05714) — `[Method]` · `[Training]` `[Inference]` `[Verification]`
+  > Jointly learns CAD proposal, textual post-execution critique, and rewriting from complete trajectories, using executor diagnostics for repair and terminal geometry rewards for policy optimization.<br>
+  > **Verification:** Execution validity · primitive-sequence F1 · final geometric distance · generation/critique policy ablations.
 
 - `arXiv 2026.10` **WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?**. [[paper]](https://arxiv.org/abs/2610.08720) [[code]](https://github.com/sirujiang/WorldSolver) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
   > Isolates physics-solver code generation with fixed scene scaffolds, then evaluates frozen submissions through rendered-event fidelity and continuous trajectory-based physical checks.<br>

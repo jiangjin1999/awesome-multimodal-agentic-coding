@@ -6,7 +6,7 @@ A research map of multimodal agents that orchestrate model capabilities to build
 
 <div align="center">
 
-<img src="./assets/multimodal-agentic-coding-hero-v5.png" alt="Awesome Multimodal Agentic Coding — Vision as Feedback, Not Just Input. Code acts in digital and physical worlds, both feeding multimodal evidence into observe, verify, repair, and a return-to-code loop across ten task areas. What Can Be Verified Can Be Scaled." width="100%" />
+<img src="./assets/multimodal-agentic-coding-hero-v6.png" alt="Awesome Multimodal Agentic Coding — Orchestrate Models. Build. Act. Improve. A central multimodal agent composes perception, generation, action, and verification models as tools through code and skills. Digital and physical worlds return multimodal evidence through observe, verify, and improve back to the agent. The visual code–execute/render–observe–verify–repair loop remains a core instance, illustrated across ten task areas. What Can Be Verified Can Be Scaled." width="100%" />
 
 <br>
 

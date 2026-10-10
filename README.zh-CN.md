@@ -6,7 +6,7 @@
 
 <div align="center">
 
-<img src="./assets/multimodal-agentic-coding-hero-v5.png" alt="Awesome Multimodal Agentic Coding — Vision as Feedback, Not Just Input. 研究地图展示代码同时作用于数字世界与物理世界，两者将多模态证据反馈到观察、验证、修复并返回代码的闭环，覆盖十个任务领域。What Can Be Verified Can Be Scaled." width="100%" />
+<img src="./assets/multimodal-agentic-coding-hero-v6.png" alt="Awesome Multimodal Agentic Coding — Orchestrate Models. Build. Act. Improve. 多模态 Agent 位于中心，通过代码与 Skills 组织作为工具的感知、生成、动作与验证模型。数字与物理世界返回多模态证据，经观察、验证、改进后反馈给 Agent；代码—执行／渲染—观察—验证—修复仍是核心实例，图中覆盖十个任务领域。What Can Be Verified Can Be Scaled." width="100%" />
 
 <br>
 

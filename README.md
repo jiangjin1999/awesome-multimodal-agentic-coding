@@ -1,6 +1,6 @@
 # Awesome Multimodal Agentic Coding
 
-A research map of agents that use visual and interactive feedback to build and repair websites, CAD models, 3D scenes, games, and more.
+A research map of multimodal agents that orchestrate model capabilities to build, act, and continually improve in digital and physical worlds—from websites and CAD to games, simulations, and robotics.
 
 **[Start here](./docs/READING_GUIDE.md) · [Browse papers](#paper-and-project-list) · [Explore demos](#selected-cases-and-demos) · [Suggest a work](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/issues/new/choose)**
 
@@ -12,7 +12,7 @@ A research map of agents that use visual and interactive feedback to build and r
 
 ***What Can Be Verified Can Be Scaled.***
 
-**Agents that see what they build, interact with what they build, and iteratively improve it.**
+**Multimodal agents that orchestrate model capabilities to build, act, and continually improve in the world.**
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
@@ -74,15 +74,30 @@ Each core entry explains its mechanism and verification dimensions. [Related fou
 <a id="motivation"></a>
 ## 💡 Motivation
 
-Multimodal coding has traditionally meant **using an image, video, chart, or design as the initial input to code generation**. This repository focuses on **multimodal coding agents** and the **multimodal agent coding** workflows that use perception as feedback:
+Multimodal coding has traditionally meant **using an image, video, chart, or design as the initial input to code generation**. Our starting point went further: code acts in digital and physical worlds, and visual perception becomes feedback for improving what the agent builds.
 
-> **Traditional multimodal coding uses vision as input. Multimodal agentic coding uses multimodal perception as feedback.**
+We now place the **multimodal agent at the center**: it understands goals and observations, selects and combines model capabilities, and uses execution feedback to decide what to build, how to act, and what to change next.
 
-> ***We believe multimodal agentic coding is a new multimodal paradigm: vision is no longer only an input modality for understanding a task—it becomes a recurrent control signal for acting, verifying, and improving inside the coding loop.***
+> ***We believe multimodal agentic coding is an emerging multimodal paradigm: let an agent orchestrate different model capabilities to build, act, and continually improve in the world.***
 
-The object of study is not merely `multimodal input → code`, but an autonomous or semi-autonomous trajectory in which executable code produces a visual or interactive state, the agent observes that state, and the observation redirects later work.
+### Models as tools, code as composition
 
-In this paradigm, a visual agent does not merely **see before coding**. It **sees while coding**, decides when another observation is needed, and uses what it perceives to choose what to do next.
+**Models can provide reusable, atomic capabilities—not only serve as the agent itself.** For example, an agent can call a diffusion model to generate visual assets for a digital environment, or an action model to supply movement or manipulation capabilities in a physical environment. Perception, prediction, and verification models can also participate in the same workflow.
+
+| Role | Function in the agent loop |
+|---|---|
+| **Multimodal agent** | Understand goals and observations; plan, select capabilities, coordinate execution, and revise decisions. |
+| **Models as tools** | Supply capabilities for perception, image/video/3D generation, prediction, action, and evaluation. |
+| **Code and skills** | Compose model calls, assets, and tool actions into executable workflows, with state, checks, and recovery. Code is both a deliverable and a composition medium. |
+| **Digital, simulated, and physical worlds** | Execute programs and actions, expose their consequences, and return visual, temporal, spatial, interactive, or embodied feedback. |
+
+“Multimodal” describes the **whole agent system**, not a requirement to put every capability in one native multimodal model. A coding agent with a separate visual critic is also a valid architecture. Calling a model once, however, does not by itself establish a feedback loop.
+
+### Visual feedback remains central
+
+The original **code → execute/render → observe → verify → repair** loop is a central instance of this broader perspective. Vision is still **feedback, not just input**: the agent sees what it builds, interacts with it, and lets those observations redirect later work. The same principle extends to revising model selection, tool use, and executable workflows—not only the final artifact.
+
+Continual improvement here means evidence-driven iteration; it does not require updating model weights. The agent may revise code, plans, prompts, capability choices, or reusable skills in response to what happens in the world.
 
 ```mermaid
 flowchart LR
@@ -98,7 +113,7 @@ flowchart LR
 <a id="definition-and-scope"></a>
 ## 📌 Definition and Scope
 
-We use **multimodal agentic coding** to mean systems in which the following four events occur in the **same agent trajectory**:
+Within this agent-centered perspective, the **core work list** focuses on multimodal agentic coding systems in which the following four events occur in the **same agent trajectory**:
 
 1. the agent generates or modifies executable code or another programmatic representation;
 2. that code creates or changes an executable or editable artifact—or an executable world state;
@@ -113,12 +128,15 @@ The central inclusion test is:
 
 A benchmark may instantiate this loop through a named track, baseline, or documented agent configuration, even when other evaluated settings do not use multimodal feedback.
 
+Related foundations, model capabilities, skills, tool bridges, and demos complement this core list in their own sections. Model orchestration alone is not enough for a core coding loop: executable code or a programmatic representation must remain part of the trajectory.
+
 ### What is included
 
 - Iterative generation and repair of web pages, apps, charts, diagrams, 3D scenes, CAD models, games, slides, posters, animations, and videos.
 - Repository-level visual issue reproduction, localization, patching, and regression validation.
 - Visual coding agents that actively browse, inspect screenshots, sample video frames, operate GUIs, play games, or observe robots while modifying code.
 - Agent-authored executable world models and digital twins whose code is revised from multimodal observations or interaction counterexamples.
+- Agent programs that compose generative, perceptual, predictive, or action models and refine those workflows from post-execution multimodal feedback.
 - Training methods, datasets, and benchmarks specifically built around these loops.
 
 <a id="perspectives"></a>

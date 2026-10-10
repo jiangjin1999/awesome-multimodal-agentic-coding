@@ -18,12 +18,12 @@ A research map of agents that use visual and interactive feedback to build and r
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-145-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-151-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-10-09**
+**Last updated: 2026-10-10**
 
 </div>
 
@@ -163,6 +163,7 @@ The list below is a practical starting point rather than a security audit or end
 | Hosted CAD agents and geometry APIs | [Zoo developer tools](https://docs.zoo.dev/docs) | Official MCP / Agent API / Engine API | Connects language-driven KCL workflows to geometric execution, snapshots, inspection, and debugging. |
 | Blender and procedural 3D | [Blender Lab MCP Server](https://www.blender.org/lab/mcp-server/) · [BlenderMCP community demos](https://github.com/ahujasid/blender-mcp) | Official MCP + community demo ecosystem | Gives agents scene inspection and Python operations inside Blender; community demos show reference-image-to-scene and Blender-to-Three.js workflows. |
 | Blender scene and generation bridge | [Scenario for Blender](https://github.com/scenario-labs/blender-plugin) | Project-maintained experimental extension + MCP; GPL-3.0-or-later | Exposes viewport screenshots, still renders, scene operations, and gated Python alongside hosted asset generation; Blender 5.0+ and Scenario credentials are required. |
+| Reproducible Blender asset workflows | [Blender Agent Studio](https://github.com/ifBars/blender-agent-studio) | Community skills + local MCP; MIT | Preserves rebuildable Python and editable .blend assets, with fixed-view review, localized repairs, and contract-specific export/fresh-import checks. |
 | Multi-view Blender model diagnosis | [trueform](https://github.com/shidenkai0/trueform) | Community skill + MIT toolkit | Matches reference cameras, renders silhouette and surface diagnostics, rejects revisions that regress any required view, and guides the agent's next geometry edits. |
 | General visual QA for coding agents | [AgentVision](https://github.com/amitpatole/agent-vision) | Community framework + skills | Runs render → perceive → report → fix → re-render loops with DOM, contrast, OCR, coordinate-grounded issues, and pass/warn/fail verdicts. |
 | Visual regression diagnosis and review | [Applitools Eyes MCP](https://support.applitools.com/solutions/agentic-testing/) | Vendor-maintained MCP + commercial visual-testing platform | Returns visual-diff regions, cropped images, and focused DOM context to coding agents, with explicit human authorization for saving baseline changes. |
@@ -581,6 +582,18 @@ Agents that treat vector or diagram code as an editable symbolic artifact and re
 
 Agents that produce executable graphics or CAD programs and revise them using rendered views, solver feedback, or geometric checks.
 
+- `arXiv 2026.10` **GATOR: Generative and Agentic 3D Object Reconstruction From Casual Images**. [[paper]](https://arxiv.org/abs/2610.11215) [[project]](https://research.nvidia.com/labs/lpr/gator/) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
+  > Initializes a Blender edit–render–review loop with a pose-aware generative reconstruction, using input images and matched candidate renders to retain or revert local geometry and appearance repairs.<br>
+  > **Verification:** Posed geometry and surface accuracy · rendered appearance · refinement/time-budget ablations · asset validity.
+
+- `arXiv 2026.10` **USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation**. [[paper]](https://arxiv.org/abs/2610.11322) [[project]](https://xingyoujun.github.io/usdcraft/) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
+  > Builds articulated USD assets as executable programs, iteratively revising parts and joints from metric source/candidate geometry comparisons and rendered appearance and motion checks.<br>
+  > **Verification:** Part recovery · static/articulated geometry · joint axes · harness ablations · sim-to-real policy transfer.
+
+- `arXiv 2026.10` **SPLATIFY: Reproduce, Discover, Innovate! From Papers and Ideas to Trainable 3DGS Code**. [[paper]](https://arxiv.org/abs/2610.09116) — `[Method]` `[Benchmark]` · `[Inference]` `[Verification]`
+  > Turns 3D Gaussian Splatting papers and ideas into trainable plugins, repairing code through rendered-image critique, cross-view Gaussian diagnostics, and training-curve feedback.<br>
+  > **Verification:** Trainability · expert-reference render quality · novelty fidelity · structural/curve-feedback ablations · search cost.
+
 - `arXiv 2026.10` **CADFather: Autonomous CAD Reconstruction through Coordinated Tool Use**. [[paper]](https://arxiv.org/abs/2610.09127) [[code]](https://github.com/kulibinai/CADFather) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
   > Reconstructs meshes as CadQuery-based programs by inspecting target and candidate renders, coordinating learned proposals, geometric construction, and parameter optimization across a persistent candidate pool.<br>
   > **Verification:** Execution and watertight validity · volumetric overlap · surface/normal agreement · geometric distance · search cost.
@@ -861,6 +874,18 @@ Agents that create visual documents or temporal media as executable or structure
 
 Work in which code is a controller, policy, experiment, or tool action and real or simulated multimodal outcomes guide subsequent rewrites.
 
+- `arXiv 2026.10` **Agentic RSR: Real-to-Sim-to-Real through Scene Reconstruction and Execution-Grounded Robot Policies**. [[paper]](https://arxiv.org/abs/2610.10479) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
+  > Connects visually refined Blender scene reconstruction with robot-policy development, feeding executed RGB observations and action outcomes back into program revision before fixed-policy real-world transfer.<br>
+  > **Verification:** Metric reconstruction · scene-refinement ablations · randomized simulation success · paired real-robot transfer.
+
+- `arXiv 2026.09` **Self-Evolving Coding Agents: From Digital Programs to Physical-World Intelligence**. [[paper]](https://arxiv.org/abs/2609.35432) — `[Method]` `[System]` · `[Training]` `[Inference]` `[Environment]` `[Verification]`
+  > Organizes perception and learned action tools through explicit world and policy programs, using robot execution evidence to revise reusable tool code and retaining traces for separate model updates.<br>
+  > **Verification:** Fixed-action-model manipulation · versioned tool replay · held-out seeds · quantitative simulated experiments · constrained real-robot trials.
+
+- `arXiv 2025.09` **Robotic Ultra-Long-Horizon Manipulation Skills via Human-guided Lifelong Code Generation**. [[paper]](https://arxiv.org/abs/2509.18597) [[code]](https://github.com/Ghiara/LYRA) [[project]](https://ghiara.github.io/LYRA/) — `[Method]` · `[Inference]` `[Verification]`
+  > Preserves human corrections as inherited, retrievable robot skill code, with a separately evaluated RGB-D feedback configuration that diagnoses executed plans and iteratively revises them.<br>
+  > **Verification:** Human-guided versus visual-feedback success · correction efficiency · memory ablation · long-horizon real-robot trials.
+
 - `arXiv 2026.10` **PhysEvo: Astra Can Act, Let It**. [[paper]](https://arxiv.org/abs/2610.08995) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
   > Uses aligned robot images, states, and execution traces to revise both action and diagnostic harness code around a frozen model, testing and retaining improvements between development episodes before fixed-version evaluation.<br>
   > **Verification:** Held-out-layout task success · action/observation interface ablations · revision acceptance · real-robot skill adaptation.
@@ -896,6 +921,18 @@ Work in which code is a controller, policy, experiment, or tool action and real 
 ## 🧱 Adjacent Foundations
 
 This section covers related foundations such as one-shot multimodal code generation, final-only evaluation, human-mediated refinement, and systems without a demonstrated same-trajectory feedback loop.
+
+- `arXiv 2026.10` **BrickBench: Evaluating Agentic Brick Design**. [[paper]](https://arxiv.org/abs/2610.12452) [[code]](https://github.com/kulits/BrickAgent) [[project]](https://brickben.ch/) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > Benchmarks programmatic brick assemblies under size and inventory constraints, separately assessing collision/stability validity, multiview semantic alignment, and human-validated design preference.<br>
+  > **Verification:** Part inventory · collision/stability proxies · visual requirement graphs · pairwise design ratings · human agreement.
+
+- `arXiv 2026.10` **RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments**. [[paper]](https://arxiv.org/abs/2610.10409) [[code]](https://github.com/robotworldai/robotworld) [[project]](https://robotworldai.github.io/) — `[Benchmark]` · `[Environment]` `[Verification]` `[Trajectory Analysis]`
+  > Evaluates image- and state-grounded robot tool use across 84 simulated tasks and diverse embodiments, separating auxiliary computation from optional environment-side control code.<br>
+  > **Verification:** Hidden-checker task success · action/non-action budgets · perception/control failures · cross-embodiment coverage.
+
+- `arXiv 2025.09` **Agentic Scene Policies: Unifying Space, Semantics, and Affordances for Robot Action**. [[paper]](https://arxiv.org/abs/2509.19571) [[code]](https://github.com/montrealrobotics/agentic-scene-policies) [[project]](https://montrealrobotics.ca/agentic-scene-policies.github.io/) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
+  > Composes scene grounding, spatial queries, and vision-based affordance tools with existing motion-planning skills, refreshing object maps and retrying tool actions after failures.<br>
+  > **Verification:** Zero-shot real-robot manipulation · affordance ablations · mobile spatial queries · perception failures and latency.
 
 - `arXiv 2026.10` **TaoD2C-Bench: Benchmarking MLLMs for Industrial UI Code Generation Beyond Visual Fidelity**. [[paper]](https://arxiv.org/abs/2610.10374) [[project]](https://taod2c-bench.github.io/) — `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Environment]` `[Verification]`
   > Separates industrial UI requirement inference from code realization, evaluating generated component and layout constraints through source/runtime evidence alongside final rendered fidelity.<br>

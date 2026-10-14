@@ -18,7 +18,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-162-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-164-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
@@ -526,6 +526,10 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 执行分析或绘图代码、检查视觉或科学结果，并修改程序或分析计划的 Agent。
 
+- `arXiv 2026.10` **VisAudit: Evaluating Multimodal Agents for Visual Diagnosis and Repair**. [[论文]](https://arxiv.org/abs/2610.02399) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > 通过执行与渲染图表反馈诊断并修订可视化代码，分别评测缺陷恢复、正确内容保持，以及对原本正确图表不作修改的判断。<br>
+  > **验证维度：** 可执行性 · 二值／分级恢复与保持 · 正确图表识别 · 证据模态与交互预算消融。
+
 - `arXiv 2026.09` **ChartRevise: A Dataset and Evaluation Protocol for Exact Chart Editing via Code**. [[论文]](https://arxiv.org/abs/2609.38642) — `[Dataset]` `[Benchmark]` · `[Data Curation]` `[Training]` `[Verification]`
   > 通过修改前后渲染与判定器引导的修复构建程序化图表编辑，并将显式要求、关联更新和无关改动分开衡量编辑精确性。<br>
   > **验证维度：** 执行与渲染 · 要求完成 · 关联更新 · 无关内容保持 · 判定一致性。
@@ -649,8 +653,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
   > **验证维度：** 带位姿几何与表面精度 · 渲染外观 · 修订／时间预算消融 · 资产有效性。
 
 - `arXiv 2026.10` **USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation**. [[论文]](https://arxiv.org/abs/2610.11322) [[项目]](https://xingyoujun.github.io/usdcraft/) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
-  > 以可执行程序构建有关节的 USD 资产，根据源与候选的度量几何对比及渲染外观、运动检查，迭代修改部件与关节。<br>
-  > **验证维度：** 部件恢复 · 静态／关节运动几何 · 关节轴 · 工具框架消融 · 策略仿真到现实迁移。
+  > 以可执行程序构建有关节的 USD 资产，根据度量几何与渲染外观／运动检查修订部件和关节，将候选遗漏的已观测源表面视为纠错信号，并允许对未观测区域作有依据的补全。<br>
+  > **验证维度：** 部件恢复 · 静态／关节运动几何 · 关节轴 · 工具框架／反馈消融 · 策略仿真到现实迁移。
 
 - `arXiv 2026.10` **SPLATIFY: Reproduce, Discover, Innovate! From Papers and Ideas to Trainable 3DGS Code**. [[论文]](https://arxiv.org/abs/2610.09116) — `[Method]` `[Benchmark]` · `[Inference]` `[Verification]`
   > 将 3D 高斯泼溅论文和想法转成可训练插件，根据渲染图像批评、跨视角高斯诊断与训练曲线反馈修复代码。<br>
@@ -673,8 +677,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
   > **验证维度：** 体积 IoU · Chamfer 距离 · 有效实体率 · 中间状态条件化与搜索消融。
 
 - `arXiv 2026.09` **Code4Scene: Benchmarking Coding Agents for Constructing and Editing 3D Scenes**. [[论文]](https://arxiv.org/abs/2609.36777) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]` `[Trajectory Analysis]`
-  > 评测带有过程内场景检查的代码驱动 Unreal Engine 构建与参考引导修复，分别衡量原生产物完整性、空间有效性、目标恢复和无关内容保持。<br>
-  > **验证维度：** 原生场景可加载性 · 语义对齐 · 支撑/穿透 · 修复精确率与召回率 · 附带修改。
+  > 评测带有过程内场景检查的代码驱动 Unreal Engine 构建与参考引导修复，并分别检查目标恢复和无关内容保持；14 个公开配置的 212 次完整恢复中，仍有 76 次包含附带修改。<br>
+  > **验证维度：** 原生场景可加载性 · 语义对齐 · 支撑／穿透 · 修复精确率与召回率 · 附带修改及容差敏感性。
 
 - `arXiv 2026.09` **CoDimRecon: Agentic Reconstruction of Sim-Ready 3D Scenes with Deformable Curves, Surfaces, and Volumes**. [[论文]](https://arxiv.org/abs/2609.36024) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
   > 重建包含刚体、关节及线/面/体可变形物体的可编辑场景，以渲染比较和模拟行为测试修订几何、边界条件、数值设置或材料模型。<br>
@@ -952,6 +956,10 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
   > 根据融合 RGB／LiDAR 的世界状态变化触发重规划，修订 Python 机器人工作流，并保留虚拟机指令与变量快照以热加载后继续执行。<br>
   > **验证维度：** Gazebo 探索成功率 · 语法可执行性 · 重适应频率 · 定位／终止失败 · 决策延迟。
 
+- `arXiv 2026.09` **CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation**. [[论文]](https://arxiv.org/abs/2609.33807) [[代码]](https://github.com/lyhkk/CodeActionBench) [[项目]](https://codeactionbench.org/) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]` `[Trajectory Analysis]`
+  > 评测依据 RGB、机器人状态和执行反馈组合并修订 Python 策略的 Agent，以隐藏物理验收将任务成功与 Agent 的完成声明分开评测。<br>
+  > **验证维度：** 物理任务成功 · 空间进展与失败阶段 · 完成声明正确性 · 工具／时间预算。
+
 - `arXiv 2026.09` **AquaCap: A Training-Free Underwater Embodied Agent with Code-as-Policy**. [[论文]](https://arxiv.org/abs/2609.23133) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
   > 用传感器衍生的目标几何与可靠性检查水下动作结果，将抓取失败纠正传入后续 Python 程序与重规划。<br>
   > **验证维度：** 仿真成功率／路径效率 · 感知／记忆消融 · 泳池抓取／搬运（各 20%） · 恢复与超时分析。
@@ -1007,6 +1015,10 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 ## 🧱 相邻基础
 
 本节收录一次性多模态代码生成、只做最终评估、依赖人工继续修改，以及尚未展示同轨迹反馈闭环的相关基础工作。
+
+- `arXiv 2026.10` **WorldBench: Evaluating LLMs on Three.js Voxel World Generation**. [[论文]](https://arxiv.org/abs/2610.10622) [[代码]](https://github.com/KrishBakshi/worldbench) — `[Benchmark]` `[Empirical Study]` · `[Verification]`
+  > 结合源码定位证据、主动视觉探索和功能移除测试审计生成的 Three.js 世界；生成器接收运行错误诊断，不接收渲染图或评分反馈。<br>
+  > **验证维度：** 代码与画面证据一致性 · 视角相关覆盖 · 功能移除后的错误得分 · 时间／像素检查 · 评审重复性。
 
 - `arXiv 2026.09` **SWE-Game: Can Coding Agents Build the Games We Want?**. [[论文]](https://arxiv.org/abs/2609.33678) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
   > 以可执行参考游戏评测构建、修复、补全及 Godot 到 Unity 移植，将最终状态／回放检查与独立视觉量表、配对无输入对照结合。<br>

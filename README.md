@@ -18,7 +18,7 @@ A research map of multimodal agents that orchestrate model capabilities to build
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-162-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-164-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
@@ -526,6 +526,10 @@ Agents and benchmarks for repeatedly generating, deploying, viewing, interacting
 
 Agents that execute analysis or plotting code, inspect visual or scientific outcomes, and revise the program or analysis plan.
 
+- `arXiv 2026.10` **VisAudit: Evaluating Multimodal Agents for Visual Diagnosis and Repair**. [[paper]](https://arxiv.org/abs/2610.02399) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > Diagnoses and revises visualization code through execution and rendered-chart feedback, separating defect recovery, preservation, and the decision to leave already-correct charts unchanged.<br>
+  > **Verification:** Executability · binary/graded recovery and preservation · correct-chart recognition · modality and interaction-budget ablations.
+
 - `arXiv 2026.09` **ChartRevise: A Dataset and Evaluation Protocol for Exact Chart Editing via Code**. [[paper]](https://arxiv.org/abs/2609.38642) — `[Dataset]` `[Benchmark]` · `[Data Curation]` `[Training]` `[Verification]`
   > Builds program-grounded chart edits through before/after rendering and judge-guided repair, then measures exactness by separating explicit requirements, coupled updates, and unrelated changes.<br>
   > **Verification:** Execution/rendering · requirement completion · coupled updates · unrelated-change preservation · judge agreement.
@@ -649,8 +653,8 @@ Agents that produce executable graphics or CAD programs and revise them using re
   > **Verification:** Posed geometry and surface accuracy · rendered appearance · refinement/time-budget ablations · asset validity.
 
 - `arXiv 2026.10` **USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation**. [[paper]](https://arxiv.org/abs/2610.11322) [[project]](https://xingyoujun.github.io/usdcraft/) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
-  > Builds articulated USD assets as executable programs, iteratively revising parts and joints from metric source/candidate geometry comparisons and rendered appearance and motion checks.<br>
-  > **Verification:** Part recovery · static/articulated geometry · joint axes · harness ablations · sim-to-real policy transfer.
+  > Builds articulated USD assets as executable programs, revising parts and joints from metric geometry and rendered appearance/motion checks while treating candidate omissions of observed source surfaces as correction signals and unobserved regions as open to justified completion.<br>
+  > **Verification:** Part recovery · static/articulated geometry · joint axes · harness/feedback ablations · sim-to-real policy transfer.
 
 - `arXiv 2026.10` **SPLATIFY: Reproduce, Discover, Innovate! From Papers and Ideas to Trainable 3DGS Code**. [[paper]](https://arxiv.org/abs/2610.09116) — `[Method]` `[Benchmark]` · `[Inference]` `[Verification]`
   > Turns 3D Gaussian Splatting papers and ideas into trainable plugins, repairing code through rendered-image critique, cross-view Gaussian diagnostics, and training-curve feedback.<br>
@@ -673,8 +677,8 @@ Agents that produce executable graphics or CAD programs and revise them using re
   > **Verification:** Volumetric IoU · Chamfer distance · valid solid rate · intermediate-state conditioning and search ablations.
 
 - `arXiv 2026.09` **Code4Scene: Benchmarking Coding Agents for Constructing and Editing 3D Scenes**. [[paper]](https://arxiv.org/abs/2609.36777) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]` `[Trajectory Analysis]`
-  > Evaluates code-driven Unreal Engine construction and reference-guided scene repair with in-loop scene inspection, scoring native artifact integrity, spatial validity, target recovery, and preservation of unrelated content.<br>
-  > **Verification:** Native-scene loadability · semantic alignment · support/interpenetration · repair precision/recall · collateral edits.
+  > Evaluates code-driven Unreal Engine construction and reference-guided repair with in-loop scene inspection and separate target-recovery and preservation checks; 76 of 212 complete recoveries across 14 public configurations still contain collateral edits.<br>
+  > **Verification:** Native-scene loadability · semantic alignment · support/interpenetration · repair precision/recall · collateral edits and tolerance sensitivity.
 
 - `arXiv 2026.09` **CoDimRecon: Agentic Reconstruction of Sim-Ready 3D Scenes with Deformable Curves, Surfaces, and Volumes**. [[paper]](https://arxiv.org/abs/2609.36024) — `[Method]` · `[Inference]` `[Environment]` `[Verification]`
   > Reconstructs editable scenes with rigid, articulated, and curve/surface/volume deformable objects, using render comparisons and simulator behavior tests to revise geometry, boundary conditions, numerics, or material models.<br>
@@ -952,6 +956,10 @@ Work in which code is a controller, policy, experiment, or tool action and real 
   > Revises Python robot workflows when fused RGB/LiDAR world-state changes trigger replanning, preserving VM instruction and variable snapshots for hot-reloaded execution.<br>
   > **Verification:** Gazebo exploration success · syntactic executability · re-adaptation frequency · grounding/termination failures · cognition latency.
 
+- `arXiv 2026.09` **CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation**. [[paper]](https://arxiv.org/abs/2609.33807) [[code]](https://github.com/lyhkk/CodeActionBench) [[project]](https://codeactionbench.org/) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]` `[Trajectory Analysis]`
+  > Evaluates agents that compose and revise Python robot policies from RGB, robot-state, and execution feedback, with hidden physical-outcome verification separating task success from the agent’s completion claim.<br>
+  > **Verification:** Physical task success · spatial progress and failure stages · completion-claim correctness · tool/time budgets.
+
 - `arXiv 2026.09` **AquaCap: A Training-Free Underwater Embodied Agent with Code-as-Policy**. [[paper]](https://arxiv.org/abs/2609.23133) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
   > Uses sensor-derived target geometry and reliability to verify underwater action outcomes, feeding failed grasp corrections into subsequent Python programs and replanning.<br>
   > **Verification:** Simulation success/path efficiency · perception/memory ablations · pool grasping/transport (20% each) · recovery and timeout analysis.
@@ -1007,6 +1015,10 @@ Work in which code is a controller, policy, experiment, or tool action and real 
 ## 🧱 Adjacent Foundations
 
 This section covers related foundations such as one-shot multimodal code generation, final-only evaluation, human-mediated refinement, and systems without a demonstrated same-trajectory feedback loop.
+
+- `arXiv 2026.10` **WorldBench: Evaluating LLMs on Three.js Voxel World Generation**. [[paper]](https://arxiv.org/abs/2610.10622) [[code]](https://github.com/KrishBakshi/worldbench) — `[Benchmark]` `[Empirical Study]` · `[Verification]`
+  > Audits generated Three.js worlds by combining source-grounded code evidence with active visual exploration and feature-removal tests; generators receive crash diagnostics, not rendered views or grading feedback.<br>
+  > **Verification:** Code–frame agreement · view-dependent coverage · mutation-test false credit · temporal/pixel checks · judge repeatability.
 
 - `arXiv 2026.09` **SWE-Game: Can Coding Agents Build the Games We Want?**. [[paper]](https://arxiv.org/abs/2609.33678) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
   > Evaluates construction, repair, completion, and Godot-to-Unity porting from executable reference games, combining final state/replay checks with a separate visual rubric and matched no-input controls.<br>

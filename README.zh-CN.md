@@ -6,7 +6,7 @@
 
 <div align="center">
 
-<img src="./assets/multimodal-agentic-coding-hero-v9.png" alt="Awesome Multimodal Agentic Coding。理解的三个递进阶段：01 视觉作为反馈 → 02 将模型作为工具来组织能力 → 03 连接数字世界与物理世界。每个阶段都包含前一阶段。多模态 Agent 通过代码与 Skills 组合感知、生成、动作和验证模型，用于构建与行动。两侧世界将多模态证据返回观察、验证与改进节点。LLM 物理智能的新涌现作为物理世界区域的辅助说明；代码—执行／渲染—观察—验证—修复闭环与十个任务领域仍保留。" width="100%" />
+<img src="./assets/multimodal-agentic-coding-hero-v10.png" alt="Awesome Multimodal Agentic Coding。三个递进阶段：01 视觉作为反馈 → 02 将模型作为工具来组织能力 → 03 连接数字世界与物理世界，每个阶段都包含前一阶段。Models as Tools 工具层与中央多模态 Agent 双向连接；Agent 内的 Code &amp; Skills 组合模型能力，在数字与物理世界中构建和行动。两个世界的证据统一进入观察 → 验证 → 改进，再返回 Agent。物理世界旁保留 LLM 物理智能的新涌现说明，外围为十个任务领域，底部为原有代码—执行／渲染—观察—验证—修复闭环。" width="100%" />
 
 <br>
 
@@ -23,7 +23,7 @@
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-10-14**
+**最后更新：2026-10-15**
 
 </div>
 

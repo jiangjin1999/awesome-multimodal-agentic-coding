@@ -6,7 +6,7 @@ A research map of multimodal agents that orchestrate model capabilities to build
 
 <div align="center">
 
-<img src="./assets/multimodal-agentic-coding-hero-v9.png" alt="Awesome Multimodal Agentic Coding. Three cumulative stages of our perspective: 01 Visual as Feedback → 02 Orchestrating Models as Tools → 03 Bridging Digital &amp; Physical Worlds. Each stage builds on the previous one. A central Multimodal Agent composes perception, generation, action, and verification models through code and skills to build and act. Both worlds return multimodal evidence to Observe, Verify, and Improve. Emerging physical intelligence in LLMs is highlighted beside the physical world. The visual code–execute/render–observe–verify–repair loop and ten task areas remain central." width="100%" />
+<img src="./assets/multimodal-agentic-coding-hero-v10.png" alt="Awesome Multimodal Agentic Coding. Three cumulative stages: 01 Visual as Feedback → 02 Orchestrating Models as Tools → 03 Bridging Digital &amp; Physical Worlds. Each stage builds on the previous one. A Models as Tools tray connects bidirectionally to the central Multimodal Agent, whose Code &amp; Skills compose model capabilities for building and acting in digital and physical worlds. Evidence from both worlds enters Observe → Verify → Improve, then returns to the Agent. Emerging physical intelligence in LLMs accompanies the physical world. Ten task areas surround this architecture, above the original code–execute/render–observe–verify–repair loop." width="100%" />
 
 <br>
 
@@ -23,7 +23,7 @@ A research map of multimodal agents that orchestrate model capabilities to build
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-10-14**
+**Last updated: 2026-10-15**
 
 </div>
 

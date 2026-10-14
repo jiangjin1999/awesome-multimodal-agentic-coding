@@ -6,7 +6,7 @@ A research map of multimodal agents that orchestrate model capabilities to build
 
 <div align="center">
 
-<img src="./assets/multimodal-agentic-coding-hero-v8.png" alt="Awesome Multimodal Agentic Coding — Orchestrate Models. Build. Act. Improve. A central Multimodal Agent orchestrates perception, generation, action, and verification Models as Tools through code and skills, bridging digital and physical worlds. Emerging physical intelligence in LLMs is highlighted beside the physical-world panel. Both worlds return multimodal evidence to Observe, Verify, and Improve. The visual code–execute/render–observe–verify–repair loop remains central, illustrated across ten task areas. What Can Be Verified Can Be Scaled." width="100%" />
+<img src="./assets/multimodal-agentic-coding-hero-v9.png" alt="Awesome Multimodal Agentic Coding. Three cumulative stages of our perspective: 01 Visual as Feedback → 02 Orchestrating Models as Tools → 03 Bridging Digital &amp; Physical Worlds. Each stage builds on the previous one. A central Multimodal Agent composes perception, generation, action, and verification models through code and skills to build and act. Both worlds return multimodal evidence to Observe, Verify, and Improve. Emerging physical intelligence in LLMs is highlighted beside the physical world. The visual code–execute/render–observe–verify–repair loop and ten task areas remain central." width="100%" />
 
 <br>
 
@@ -80,10 +80,15 @@ We now place the **multimodal agent at the center**: it understands goals and ob
 
 > ***We believe multimodal agentic coding is an emerging multimodal paradigm: let an agent orchestrate different model capabilities to build, act, and continually improve in the world.***
 
-**Two guiding perspectives:**
+**Three cumulative stages of our perspective:**
 
-- **Emerging physical intelligence in LLMs.** We believe LLM-based agents are beginning to exhibit new physical-intelligence capabilities through coordinated perception, simulation, action, and feedback.
-- **Bridging the digital and physical worlds.** Multimodal Agentic Coding connects digital construction, executable simulation, and physical action through code and Models as Tools, while multimodal feedback drives continual improvement.
+1. **Visual as Feedback** — The agent sees the consequences of its code and uses those observations to verify, repair, and refine what it builds.
+2. **Orchestrating Models as Tools** — The multimodal agent composes perception, generation, action, and verification capabilities; feedback guides not only code edits, but also which models to call and how to combine them.
+3. **Bridging Digital & Physical Worlds** — This orchestration connects digital construction, executable simulation, and physical action, enabling the agent to build, act, and continually improve across worlds.
+
+**Each stage builds on the previous one—not a replacement, but an expansion.** The visual feedback loop remains foundational as the agent's capabilities and the worlds it acts in broaden.
+
+Within the third stage, **emerging physical intelligence in LLMs** is a research perspective we are especially interested in: how LLM-based agents coordinate perception, simulation, action, and feedback to develop physical-world capabilities.
 
 ### Models as tools, code as composition
 

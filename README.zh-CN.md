@@ -6,7 +6,7 @@
 
 <div align="center">
 
-<img src="./assets/multimodal-agentic-coding-hero-v8.png" alt="Awesome Multimodal Agentic Coding — Orchestrate Models. Build. Act. Improve. 多模态 Agent 位于中心，通过代码与 Skills 组织作为工具的感知、生成、动作与验证模型（Models as Tools），连接数字世界与物理世界。LLM 物理智能的新涌现作为物理世界区域的辅助说明。两侧世界将多模态证据返回观察、验证与改进节点；代码—执行／渲染—观察—验证—修复闭环仍是核心，图中覆盖十个任务领域。What Can Be Verified Can Be Scaled." width="100%" />
+<img src="./assets/multimodal-agentic-coding-hero-v9.png" alt="Awesome Multimodal Agentic Coding。理解的三个递进阶段：01 视觉作为反馈 → 02 将模型作为工具来组织能力 → 03 连接数字世界与物理世界。每个阶段都包含前一阶段。多模态 Agent 通过代码与 Skills 组合感知、生成、动作和验证模型，用于构建与行动。两侧世界将多模态证据返回观察、验证与改进节点。LLM 物理智能的新涌现作为物理世界区域的辅助说明；代码—执行／渲染—观察—验证—修复闭环与十个任务领域仍保留。" width="100%" />
 
 <br>
 
@@ -80,10 +80,15 @@
 
 > ***我们相信，多模态智能体编程是一种正在形成的新多模态范式：让 Agent 组织不同模型能力，在世界中构建、行动并持续改进。***
 
-**两个关键观点：**
+**理解的三个递进阶段：**
 
-- **LLM 物理智能的新涌现。** 我们相信，基于 LLM 的 Agent 在组织感知、仿真与动作能力，并根据反馈迭代的过程中，正在展现新的物理智能能力。
-- **连接数字世界与物理世界。** 用 Multimodal Agentic Coding，通过代码和 Models as Tools 连接数字构建、可执行仿真与物理行动，并以多模态反馈驱动持续改进。
+1. **视觉作为反馈（Visual as Feedback）** — Agent 看见代码执行的结果，用这些观测验证、修复并改进自己构建的内容。
+2. **组织模型能力（Orchestrating Models as Tools）** — 多模态 Agent 将感知、生成、动作与验证模型作为工具来组合；反馈不仅指导代码修改，也指导调用哪些模型、如何组合能力。
+3. **连接数字世界与物理世界（Bridging Digital & Physical Worlds）** — 这种能力编排连接数字构建、可执行仿真与物理行动，让 Agent 在不同世界中构建、行动并持续改进。
+
+**每个阶段都包含前一阶段，是扩展，而不是替代。** 随着 Agent 能力与作用世界的拓展，视觉反馈闭环依然是基础。
+
+在第三阶段中，**LLM 物理智能的新涌现**是我们尤其关注的研究视角：基于 LLM 的 Agent 如何组织感知、仿真、动作与反馈，发展面向物理世界的能力。
 
 ### 模型即工具，代码连接能力
 

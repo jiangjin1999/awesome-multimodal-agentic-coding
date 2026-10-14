@@ -6,7 +6,7 @@
 
 <div align="center">
 
-<img src="./assets/multimodal-agentic-coding-hero-v7.png" alt="Awesome Multimodal Agentic Coding — LLM 物理智能的新涌现，连接数字世界与物理世界。多模态 Agent 位于中心，通过代码与 Skills 组织作为工具的感知、生成、动作与验证模型（Models as Tools）。两侧世界将多模态证据返回观察、验证与改进节点；代码—执行／渲染—观察—验证—修复闭环仍是核心，图中覆盖十个任务领域。What Can Be Verified Can Be Scaled." width="100%" />
+<img src="./assets/multimodal-agentic-coding-hero-v8.png" alt="Awesome Multimodal Agentic Coding — Orchestrate Models. Build. Act. Improve. 多模态 Agent 位于中心，通过代码与 Skills 组织作为工具的感知、生成、动作与验证模型（Models as Tools），连接数字世界与物理世界。LLM 物理智能的新涌现作为物理世界区域的辅助说明。两侧世界将多模态证据返回观察、验证与改进节点；代码—执行／渲染—观察—验证—修复闭环仍是核心，图中覆盖十个任务领域。What Can Be Verified Can Be Scaled." width="100%" />
 
 <br>
 

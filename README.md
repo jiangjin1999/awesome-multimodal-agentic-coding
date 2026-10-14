@@ -80,6 +80,11 @@ We now place the **multimodal agent at the center**: it understands goals and ob
 
 > ***We believe multimodal agentic coding is an emerging multimodal paradigm: let an agent orchestrate different model capabilities to build, act, and continually improve in the world.***
 
+**Two guiding perspectives:**
+
+- **Emerging physical intelligence in LLMs.** We believe LLM-based agents are beginning to exhibit new physical-intelligence capabilities through coordinated perception, simulation, action, and feedback.
+- **Bridging the digital and physical worlds.** Multimodal Agentic Coding connects digital construction, executable simulation, and physical action through code and Models as Tools, while multimodal feedback drives continual improvement.
+
 ### Models as tools, code as composition
 
 **Models can provide reusable, atomic capabilities—not only serve as the agent itself.** For example, an agent can call a diffusion model to generate visual assets for a digital environment, or an action model to supply movement or manipulation capabilities in a physical environment. Perception, prediction, and verification models can also participate in the same workflow.

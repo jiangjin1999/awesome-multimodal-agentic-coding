@@ -18,7 +18,7 @@ A research map of multimodal agents that orchestrate model capabilities to build
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-162-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-165-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
@@ -152,20 +152,23 @@ Related foundations, model capabilities, skills, tool bridges, and demos complem
 <a id="perspectives"></a>
 ## ✍️ Perspectives, Blogs, and Industry Signals
 
-This section collects attributed, non-peer-reviewed signals that help explain why multimodal feedback is moving into the coding loop, complementing the research literature with practitioner evidence.
+This section collects attributed, non-peer-reviewed signals on multimodal feedback, model-tool orchestration, and digital–physical connections, complementing the research literature with practitioner examples.
+
+- `2026-10-13` **Kanishka Rao / Google — Gemini 4 Argon for Robotics.** [[official blog]](https://developers.googleblog.com/gemini-4-argon-for-robotics)
+  > *Topic link:* Illustrates model-tool use, video-world-model steering, MuJoCo twin construction, and hardware-feedback refinement across generated video, simulation, and real robots; these are attributed vendor demonstrations, not independent validation.
 
 - `2026-09-14` **Tim Hinds / Applitools — Bridging the “Probabilistic Validation Gap”: Deterministic Visual AI Guardrails for the Agentic SDLC.** [[official blog]](https://applitools.com/blog/probabilistic-validation-gap-agentic-sdlc/)
   > *Topic link:* The “Probabilistic Validation Gap” motivates returning visual-diff coordinates and DOM context to coding agents, while keeping baseline changes behind human review; the product claims are an industry perspective, not an independent benchmark.
-
-- `2026-09-05` **Z.ai / AutoClaw Team — GLM-5.3-Flash: More Intelligence with Less Compute.** [[official blog]](https://autoclaw.z.ai/blog/model/glm-5.3-flash/) [[model card]](https://huggingface.co/zai-org/GLM-5.3-Flash)
-  > “Vision therefore becomes part of execution and verification rather than a separate input capability.”
-  >
-  > *Topic link:* The model is explicitly framed around inspecting rendered work, determining what should happen next, and continuing refinement across documents, interfaces, and other visual artifacts.
 
 - `2026-09-03` **OpenAI — GPT-6 Astra and the Playco game-prototyping case.** [[official launch]](https://openai.com/index/gpt-6-astra/) [[Playco case]](https://openai.com/index/playco-game-prototyping-with-astra/) [[model guide]](https://developers.openai.com/api/docs/models/gpt-6-astra)
   > Astra can “create a website, and run frontend QA checks to make sure all the features on that site work.”
   >
   > *Topic link:* The launch highlights visual judgment over websites, games, applications, and renderings; the Playco case makes the loop concrete through scene edits, gameplay tests, validation, bug finding, and further improvement in Unity and Godot.
+
+- `2026-08-27` **Z.ai / AutoClaw Team — GLM-5.3-Flash: More Intelligence with Less Compute.** [[official blog]](https://autoclaw.z.ai/blog/model/glm-5.3-flash/) [[model card]](https://huggingface.co/zai-org/GLM-5.3-Flash)
+  > “Vision therefore becomes part of execution and verification rather than a separate input capability.”
+  >
+  > *Topic link:* The model is explicitly framed around inspecting rendered work, determining what should happen next, and continuing refinement across documents, interfaces, and other visual artifacts.
 
 - `2026-08-02` **Andrej Karpathy — Long-horizon Three.js experiment and commentary.** [[X]](https://x.com/karpathy/status/2083749667410727319?s=20) — **Direct inspiration for this repository.**
   > *Topic signal:* Large visual programs are becoming inexpensive to generate, while efficiently watching, playing, auditing, and repairing them remains a central bottleneck.
@@ -526,6 +529,10 @@ Agents and benchmarks for repeatedly generating, deploying, viewing, interacting
 
 Agents that execute analysis or plotting code, inspect visual or scientific outcomes, and revise the program or analysis plan.
 
+- `arXiv 2026.10` **ChartBmkAgent: Harness-Governed Multi-Agent Construction of Chart QA Benchmarks from Sparse Error-Taxonomy Specifications**. [[paper]](https://arxiv.org/abs/2610.08106) — `[Method]` `[Benchmark]` · `[Data Curation]` `[Inference]` `[Verification]`
+  > Constructs diagnostic chart-QA samples from sparse error descriptions, using evidence-gated multimodal critique to revise plotting programs while preserving frozen data and the intended error mechanism.<br>
+  > **Verification:** Execution/rendering · chart/data fidelity · diagnostic-target preservation · shortcut rejection · paired construction and gate ablations.
+
 - `arXiv 2026.09` **ChartRevise: A Dataset and Evaluation Protocol for Exact Chart Editing via Code**. [[paper]](https://arxiv.org/abs/2609.38642) — `[Dataset]` `[Benchmark]` · `[Data Curation]` `[Training]` `[Verification]`
   > Builds program-grounded chart edits through before/after rendering and judge-guided repair, then measures exactness by separating explicit requirements, coupled updates, and unrelated changes.<br>
   > **Verification:** Execution/rendering · requirement completion · coupled updates · unrelated-change preservation · judge agreement.
@@ -627,6 +634,10 @@ Agents that treat vector or diagram code as an editable symbolic artifact and re
 ### 6. 3D Graphics, CAD, and Scene Generation
 
 Agents that produce executable graphics or CAD programs and revise them using rendered views, solver feedback, or geometric checks.
+
+- `arXiv 2026.10` **CineRecon: Benchmarking Frontier Models for Agentic Cinematic Reconstruction**. [[paper]](https://arxiv.org/abs/2610.16577) [[project]](https://cinerecon.github.io/) — `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > Benchmarks agents that revise Blender Python scenes from time-aligned render–reference comparisons, separating camera, static, and dynamic fidelity across three appearance-detail settings.<br>
+  > **Verification:** Camera/shot consistency · spatial and appearance fidelity · action timing/contact · human–judge alignment · refinement ablations.
 
 - `arXiv 2026.10` **Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark**. [[paper]](https://arxiv.org/abs/2610.13947) [[project]](https://physicalvision.github.io/artisan/) — `[Method]` `[Benchmark]` · `[Inference]` `[Environment]` `[Verification]`
   > Artisan separates design, coding, and review, revising Python asset programs from Blender views and MuJoCo motion/stability reports while preserving intended articulation and functions.<br>
@@ -948,6 +959,10 @@ Agents that create visual documents or temporal media as executable or structure
 
 Work in which code is a controller, policy, experiment, or tool action and real or simulated multimodal outcomes guide subsequent rewrites.
 
+- `arXiv 2026.09` **HuGo: LLMs as Whole-Body Policy Code Designers for Humanoid Loco-Manipulation**. [[paper]](https://arxiv.org/abs/2609.30594) [[project]](https://iconlab.negarmehr.com/HuGo/) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
+  > Writes high-level policy code over frozen whole-body controllers and revises it from rollout video and numerical trajectories, supporting simulation-to-hardware transfer and real-robot code refinement.<br>
+  > **Verification:** Held-out simulated task success · visual/keyframe ablations · zero-shot hardware transfer · real-rollout refinement · controller and geometry-hint limitations.
+
 - `arXiv 2026.10` **Adaptive Code Generation for Controlling Robots**. [[paper]](https://arxiv.org/abs/2610.09588) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
   > Revises Python robot workflows when fused RGB/LiDAR world-state changes trigger replanning, preserving VM instruction and variable snapshots for hot-reloaded execution.<br>
   > **Verification:** Gazebo exploration success · syntactic executability · re-adaptation frequency · grounding/termination failures · cognition latency.
@@ -1006,7 +1021,15 @@ Work in which code is a controller, policy, experiment, or tool action and real 
 <a id="adjacent-foundations"></a>
 ## 🧱 Adjacent Foundations
 
-This section covers related foundations such as one-shot multimodal code generation, final-only evaluation, human-mediated refinement, and systems without a demonstrated same-trajectory feedback loop.
+This section covers related model orchestration, embodied active perception, and digital–physical transfer, alongside one-shot code generation, final evaluation, and human-guided refinement; these works are distinct from the core code-building loop.
+
+- `arXiv 2026.10` **Internalizing Agent Experience into Diffusion Model Weights via On-Policy Context Distillation**. [[paper]](https://arxiv.org/abs/2610.07250) [[code]](https://github.com/Yummytanmo/D-OPCD-CoEvolution) — `[Method]` · `[Training]` `[Inference]` `[Verification]`
+  > Uses image-verification feedback to refine diffusion prompts and evolve textual skills, then distills part of that prompt-mediated experience into the generator before renewing harness adaptation.<br>
+  > **Verification:** Four-benchmark image quality · direct-generation versus harness gains · prompt/skill ablations · one generator-update and re-evolution cycle.
+
+- `arXiv 2026.10` **ROMA: LLM System for Real-World Object-Centric Multi-Sensory Active Perception**. [[paper]](https://arxiv.org/abs/2610.06955) [[project]](https://gewu-lab.github.io/ROMA/) [[code]](https://github.com/GeWu-Lab/ROMA) — `[Method]` `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Training]` `[Inference]` `[Environment]` `[Verification]`
+  > Selects objects, physical interactions, and sensory modalities to acquire missing evidence through a grasping interface, updating subsequent perception decisions without rewriting policy code.<br>
+  > **Verification:** Offline perception-chain accuracy · separate real-arm tasks · localization/grasp failures · modality selection · interaction cost.
 
 - `arXiv 2026.09` **SWE-Game: Can Coding Agents Build the Games We Want?**. [[paper]](https://arxiv.org/abs/2609.33678) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
   > Evaluates construction, repair, completion, and Godot-to-Unity porting from executable reference games, combining final state/replay checks with a separate visual rubric and matched no-input controls.<br>

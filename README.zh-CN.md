@@ -18,7 +18,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-162-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-165-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
@@ -152,20 +152,23 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 <a id="perspectives"></a>
 ## ✍️ 观点、博客与产业信号
 
-本节收集带明确作者归属的非同行评审信号，用实践证据补充研究文献，并说明多模态反馈为何正在进入编程闭环。
+本节收集带明确作者归属的非同行评审信号，以实践案例补充研究文献，涵盖多模态反馈、模型工具编排和数字—物理世界连接。
+
+- `2026-10-13` **Kanishka Rao / Google — Gemini 4 Argon for Robotics.** [[官方博客]](https://developers.googleblog.com/gemini-4-argon-for-robotics)
+  > *与本主题的关联：* 展示模型工具调用、视频世界模型引导、MuJoCo 数字孪生构建与硬件反馈修订；文中的代表性提示词和厂商案例应区分生成视频、仿真及真实机器人结果，不等同于独立验证。
 
 - `2026-09-14` **Tim Hinds / Applitools — Bridging the “Probabilistic Validation Gap”: Deterministic Visual AI Guardrails for the Agentic SDLC.** [[官方博客]](https://applitools.com/blog/probabilistic-validation-gap-agentic-sdlc/)
   > *与本主题的关联：* “Probabilistic Validation Gap” 强调把视觉差异坐标与 DOM 上下文返回给 Coding Agent，同时保留基线变更的人工审核；文中的产品主张属于产业观点，而非独立 Benchmark 结论。
-
-- `2026-09-05` **Z.ai / AutoClaw Team — GLM-5.3-Flash: More Intelligence with Less Compute.** [[官方博客]](https://autoclaw.z.ai/blog/model/glm-5.3-flash/) [[模型卡]](https://huggingface.co/zai-org/GLM-5.3-Flash)
-  > “Vision therefore becomes part of execution and verification rather than a separate input capability.”
-  >
-  > *与本主题的关联：* 模型被明确描述为能够检查渲染结果、判断下一步行动，并在文档、界面等视觉产物上继续改进。
 
 - `2026-09-03` **OpenAI — GPT-6 Astra 与 Playco 游戏原型案例。** [[官方发布]](https://openai.com/index/gpt-6-astra/) [[Playco 案例]](https://openai.com/index/playco-game-prototyping-with-astra/) [[模型指南]](https://developers.openai.com/api/docs/models/gpt-6-astra)
   > Astra can “create a website, and run frontend QA checks to make sure all the features on that site work.”
   >
   > *与本主题的关联：* 官方发布强调其对网站、游戏、应用和渲染结果的视觉判断；Playco 案例则把闭环具体化为 Unity／Godot 场景编辑、游玩测试、验证、发现 Bug 和继续改进。
+
+- `2026-08-27` **Z.ai / AutoClaw Team — GLM-5.3-Flash: More Intelligence with Less Compute.** [[官方博客]](https://autoclaw.z.ai/blog/model/glm-5.3-flash/) [[模型卡]](https://huggingface.co/zai-org/GLM-5.3-Flash)
+  > “Vision therefore becomes part of execution and verification rather than a separate input capability.”
+  >
+  > *与本主题的关联：* 模型被明确描述为能够检查渲染结果、判断下一步行动，并在文档、界面等视觉产物上继续改进。
 
 - `2026-08-02` **Andrej Karpathy — 长时程 Three.js 实验与评论。** [[X]](https://x.com/karpathy/status/2083749667410727319?s=20) — **本仓库的直接启发来源。**
   > *方向信号：* 大型视觉程序的生成成本正在快速下降，但如何高效地观看、游玩、审计和修复这些程序，仍是核心瓶颈。
@@ -526,6 +529,10 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 执行分析或绘图代码、检查视觉或科学结果，并修改程序或分析计划的 Agent。
 
+- `arXiv 2026.10` **ChartBmkAgent: Harness-Governed Multi-Agent Construction of Chart QA Benchmarks from Sparse Error-Taxonomy Specifications**. [[论文]](https://arxiv.org/abs/2610.08106) — `[Method]` `[Benchmark]` · `[Data Curation]` `[Inference]` `[Verification]`
+  > 从稀疏错误描述构建诊断性图表问答，以证据门控的多模态批评修订绘图程序，同时保持冻结数据及预定错误机制。<br>
+  > **验证维度：** 执行与渲染 · 图表／数据忠实度 · 诊断目标保持 · 捷径排除 · 配对构建与门控消融。
+
 - `arXiv 2026.09` **ChartRevise: A Dataset and Evaluation Protocol for Exact Chart Editing via Code**. [[论文]](https://arxiv.org/abs/2609.38642) — `[Dataset]` `[Benchmark]` · `[Data Curation]` `[Training]` `[Verification]`
   > 通过修改前后渲染与判定器引导的修复构建程序化图表编辑，并将显式要求、关联更新和无关改动分开衡量编辑精确性。<br>
   > **验证维度：** 执行与渲染 · 要求完成 · 关联更新 · 无关内容保持 · 判定一致性。
@@ -627,6 +634,10 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 ### 6. 3D、CAD 与场景生成
 
 生成可执行图形或 CAD 程序，并利用渲染视图、Solver 反馈或几何检查进行修改的 Agent。
+
+- `arXiv 2026.10` **CineRecon: Benchmarking Frontier Models for Agentic Cinematic Reconstruction**. [[论文]](https://arxiv.org/abs/2610.16577) [[项目]](https://cinerecon.github.io/) — `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Environment]` `[Verification]`
+  > 评测依据同时间点渲染—参考对照修订 Blender Python 场景的 Agent，在三档外观细节下分别衡量摄像机、静态与动态一致性。<br>
+  > **验证维度：** 摄像机／镜头一致性 · 空间与外观保真度 · 动作时序／接触关系 · 人类与判定器一致性 · 迭代修订消融。
 
 - `arXiv 2026.10` **Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark**. [[论文]](https://arxiv.org/abs/2610.13947) [[项目]](https://physicalvision.github.io/artisan/) — `[Method]` `[Benchmark]` · `[Inference]` `[Environment]` `[Verification]`
   > Artisan 分离设计、编码与审阅，以 Blender 视图和 MuJoCo 运动／稳定性报告修订 Python 资产程序，同时保留预期关节运动和功能。<br>
@@ -948,6 +959,10 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 代码作为控制器、策略、实验或工具动作，真实或仿真的多模态结果指导后续改写。
 
+- `arXiv 2026.09` **HuGo: LLMs as Whole-Body Policy Code Designers for Humanoid Loco-Manipulation**. [[论文]](https://arxiv.org/abs/2609.30594) [[项目]](https://iconlab.negarmehr.com/HuGo/) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
+  > 在冻结的全身控制策略上编写高层策略代码，依据执行录像与数值轨迹修订，并验证仿真到实机迁移及真实机器人代码改进。<br>
+  > **验证维度：** 留出仿真任务成功率 · 视觉／关键帧消融 · 零样本实机迁移 · 真实执行反馈修订 · 控制器与几何提示的限制。
+
 - `arXiv 2026.10` **Adaptive Code Generation for Controlling Robots**. [[论文]](https://arxiv.org/abs/2610.09588) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
   > 根据融合 RGB／LiDAR 的世界状态变化触发重规划，修订 Python 机器人工作流，并保留虚拟机指令与变量快照以热加载后继续执行。<br>
   > **验证维度：** Gazebo 探索成功率 · 语法可执行性 · 重适应频率 · 定位／终止失败 · 决策延迟。
@@ -1006,7 +1021,15 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 <a id="adjacent-foundations"></a>
 ## 🧱 相邻基础
 
-本节收录一次性多模态代码生成、只做最终评估、依赖人工继续修改，以及尚未展示同轨迹反馈闭环的相关基础工作。
+本节收录相关的模型能力编排、具身主动感知和数字—物理迁移，以及一次性代码生成、最终评估与人工引导的修改；这些工作不计入核心代码构建闭环清单。
+
+- `arXiv 2026.10` **Internalizing Agent Experience into Diffusion Model Weights via On-Policy Context Distillation**. [[论文]](https://arxiv.org/abs/2610.07250) [[代码]](https://github.com/Yummytanmo/D-OPCD-CoEvolution) — `[Method]` · `[Training]` `[Inference]` `[Verification]`
+  > 以图像核验反馈修订扩散模型提示词并演化文本技能，再将部分提示词经验蒸馏进生成器，随后重新适配 Agent 工作流。<br>
+  > **验证维度：** 四项图像质量基准 · 直接生成与 Agent 工作流收益 · 提示词／技能消融 · 单次生成器更新与再演化。
+
+- `arXiv 2026.10` **ROMA: LLM System for Real-World Object-Centric Multi-Sensory Active Perception**. [[论文]](https://arxiv.org/abs/2610.06955) [[项目]](https://gewu-lab.github.io/ROMA/) [[代码]](https://github.com/GeWu-Lab/ROMA) — `[Method]` `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Training]` `[Inference]` `[Environment]` `[Verification]`
+  > 通过抓取接口选择物体、物理交互和感官模态以获取缺失证据，再调整后续主动感知决策，而非改写策略代码。<br>
+  > **验证维度：** 离线感知链准确率 · 独立实机任务 · 定位／抓取失败 · 模态选择 · 交互成本。
 
 - `arXiv 2026.09` **SWE-Game: Can Coding Agents Build the Games We Want?**. [[论文]](https://arxiv.org/abs/2609.33678) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]`
   > 以可执行参考游戏评测构建、修复、补全及 Godot 到 Unity 移植，将最终状态／回放检查与独立视觉量表、配对无输入对照结合。<br>

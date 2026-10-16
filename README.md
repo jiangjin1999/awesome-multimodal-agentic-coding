@@ -31,7 +31,7 @@ A research map of multimodal agents that orchestrate model capabilities to build
 ## 🚀 Start Here
 
 - **New to the topic?** Follow the [reading guide](./docs/READING_GUIDE.md): five examples and a shared framework for understanding the feedback loop.
-- **Building an agent?** Match an [execution engine](#execution-and-rendering-engines) with [skills and tool bridges](#skills-and-tool-bridges), then explore the [demos](#selected-cases-and-demos).
+- **Building an agent?** Explore [model capabilities](#models-as-tools), match an [execution engine](#execution-and-rendering-engines) with [skills and tool bridges](#skills-and-tool-bridges), then explore the [demos](#selected-cases-and-demos).
 - **Looking for research?** Jump to your task: [Web/UI](#web-ui-app) · [Visual software repair](#software-engineering) · [Charts](#visualization) · [SVG](#svg-diagrams) · [3D/CAD](#3d-cad) · [Games](#games) · [World models](#world-models) · [Documents/video](#documents-video) · [Robotics](#robotics) · [General methods](#general).
 
 Each core entry explains its mechanism and verification dimensions. [Related foundations](#adjacent-foundations), tools, and community demos have their own sections. If this map saves you time, **star the repository to find it again** or [contribute a useful work](./CONTRIBUTING.md).
@@ -42,6 +42,7 @@ Each core entry explains its mechanism and verification dimensions. [Related fou
 - [Motivation](#motivation)
 - [Definition and Scope](#definition-and-scope)
 - [Perspectives, Blogs, and Industry Signals](#perspectives)
+- [Models as Tools: Reusable Model Capabilities](#models-as-tools)
 - [Practical Agent Skills and Tool Bridges](#skills-and-tool-bridges)
 - [Execution and Rendering Engine Map](#execution-and-rendering-engines)
 - [Selected Cases and Demos](#selected-cases-and-demos)
@@ -172,6 +173,15 @@ This section collects attributed, non-peer-reviewed signals on multimodal feedba
 
 - `2026-08-02` **Andrej Karpathy — Long-horizon Three.js experiment and commentary.** [[X]](https://x.com/karpathy/status/2083749667410727319?s=20) — **Direct inspiration for this repository.**
   > *Topic signal:* Large visual programs are becoming inexpensive to generate, while efficiently watching, playing, auditing, and repairing them remains a central bottleneck.
+
+<a id="models-as-tools"></a>
+## 🧩 Models as Tools: Reusable Model Capabilities
+
+These **Resource** entries provide model capabilities for asset creation, perception, prediction, action, or verification. Their documented inputs and outputs help connect models to agent workflows; demonstrated agent systems appear in the core and adjacent research sections.
+
+| Capability | Resource and sources | Inputs → outputs | Role in a workflow |
+|---|---|---|---|
+| 3D material generation and editing | **SUPRA-Tex** — *SUPRA-TEX: 3D Generation with Super-Aligned Texture* [[paper]](https://arxiv.org/abs/2610.22352) · [[project]](https://supra-3d.github.io/supratex/) · [[repository docs]](https://github.com/Supra-3D/supra-tex) · [[weights]](https://huggingface.co/supra3d/supra-tex) · [[demo]](https://huggingface.co/spaces/UniLat3D/Supra-Tex) | Reference image + mesh + camera projection → full-surface, relightable PBR materials | Preserves reference text, logos, and patterns while completing unseen surfaces with albedo, metallic, and roughness properties. Geometry is supplied or generated upstream by Pixal3D; edited 2D views can update materials on the same mesh, providing an appearance-generation step for 3D asset workflows. |
 
 <a id="skills-and-tool-bridges"></a>
 ## 🧰 Practical Agent Skills and Tool Bridges

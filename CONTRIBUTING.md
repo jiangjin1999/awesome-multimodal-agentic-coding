@@ -12,7 +12,9 @@ For a feedback-driven system, a particularly useful detail is **what the agent o
 
 - **Core:** code or a programmatic representation produces an artifact; a post-execution multimodal observation changes a later code or tool action in the same trajectory. For a benchmark, identify the configuration that uses this loop.
 - **Adjacent:** related generation, evaluation, or interaction work with a different feedback setup.
-- **Resource:** a skill, tool bridge, engine, or attributed demo. Resources are listed in their own sections and are not counted as papers.
+- **Resource:** a reusable generation, perception, prediction, action, or verification model; a skill, tool bridge, engine, or attributed demo. Resources are listed in their own sections and are not counted as papers.
+
+For a **Models as Tools** resource, describe its inputs, outputs, and role in a concrete workflow—for example, a reference image and mesh become editable PBR materials for a 3D asset. Link the original method or documentation and indicate which code, weights, or demos are available. A resource need not implement its own agent or coding feedback loop.
 
 These are scope categories, not rankings. Inclusion is based on the work itself and is independent of whether its authors share or star this repository.
 

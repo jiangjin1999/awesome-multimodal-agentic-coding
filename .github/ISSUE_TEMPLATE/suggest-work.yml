@@ -14,6 +14,7 @@ body:
       label: Type / 类型
       options:
         - Paper or benchmark / 论文或基准
+        - Model capability resource / 模型能力资源
         - Tool, skill, or engine / 工具、Skill 或引擎
         - Demo or workflow / Demo 或工作流
         - Related collection or other resource / 相关合集或其他资源
@@ -33,6 +34,11 @@ body:
       description: One or two sentences are enough. / 一两句话即可。
     validations:
       required: true
+  - type: textarea
+    id: capability
+    attributes:
+      label: Model capability, if applicable / 模型能力（如适用）
+      description: Describe inputs, outputs, workflow use, and available code, weights, or demo. An agent loop is not required for a resource. / 请说明输入、输出、工作流用途及代码、权重或 Demo 的可用情况；资源无需自身实现 Agent 闭环。
   - type: textarea
     id: feedback
     attributes:

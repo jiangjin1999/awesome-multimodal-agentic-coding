@@ -31,7 +31,7 @@
 ## 🚀 从这里开始
 
 - **刚接触这个方向？** 阅读[入门导读](./docs/READING_GUIDE.zh-CN.md)：通过五个案例与共同的比较框架理解反馈闭环。
-- **准备搭建 Agent？** 为[执行引擎](#execution-and-rendering-engines)匹配 [Skills 与工具桥](#skills-and-tool-bridges)，再探索 [Demo](#selected-cases-and-demos)。
+- **准备搭建 Agent？** 浏览[模型能力资源](#models-as-tools)，为[执行引擎](#execution-and-rendering-engines)匹配 [Skills 与工具桥](#skills-and-tool-bridges)，再探索 [Demo](#selected-cases-and-demos)。
 - **寻找研究工作？** 按任务直达：[Web/UI](#web-ui-app) · [视觉软件修复](#software-engineering) · [图表](#visualization) · [SVG](#svg-diagrams) · [3D/CAD](#3d-cad) · [游戏](#games) · [世界模型](#world-models) · [文档/视频](#documents-video) · [机器人](#robotics) · [通用方法](#general)。
 
 每个核心条目都说明机制与验证维度；[相邻基础](#adjacent-foundations)、工具与社区 Demo 分区呈现。如果这份地图帮你节省了时间，欢迎 **star 收藏，方便下次找到**，或[贡献有用的工作](./CONTRIBUTING.zh-CN.md)。
@@ -42,6 +42,7 @@
 - [动机](#motivation)
 - [定义与范围](#definition-and-scope)
 - [观点、博客与产业信号](#perspectives)
+- [Models as Tools：可复用模型能力](#models-as-tools)
 - [实用 Agent Skills 与工具桥](#skills-and-tool-bridges)
 - [执行与渲染引擎地图](#execution-and-rendering-engines)
 - [精选 Case 与 Demo](#selected-cases-and-demos)
@@ -172,6 +173,15 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 - `2026-08-02` **Andrej Karpathy — 长时程 Three.js 实验与评论。** [[X]](https://x.com/karpathy/status/2083749667410727319?s=20) — **本仓库的直接启发来源。**
   > *方向信号：* 大型视觉程序的生成成本正在快速下降，但如何高效地观看、游玩、审计和修复这些程序，仍是核心瓶颈。
+
+<a id="models-as-tools"></a>
+## 🧩 Models as Tools：可复用模型能力
+
+本节以 **Resource** 收集用于资产创作、感知、预测、动作或验证的模型能力。已有文档描述的输入与输出帮助开发者将模型接入 Agent 工作流；已展示的 Agent 系统见核心与相邻研究章节。
+
+| 能力 | 资源与来源 | 输入 → 输出 | 在工作流中的作用 |
+|---|---|---|---|
+| 3D 材质生成与编辑 | **SUPRA-Tex** — *SUPRA-TEX: 3D Generation with Super-Aligned Texture* [[论文]](https://arxiv.org/abs/2610.22352) · [[项目]](https://supra-3d.github.io/supratex/) · [[仓库文档]](https://github.com/Supra-3D/supra-tex) · [[权重]](https://huggingface.co/supra3d/supra-tex) · [[Demo]](https://huggingface.co/spaces/UniLat3D/Supra-Tex) | 参考图像 + mesh + 相机投影 → 完整表面的可重光照 PBR 材质 | 保留参考图中的文字、Logo 与图案，并补全不可见表面的反照率、金属度和粗糙度。几何由外部提供或上游 Pixal3D 生成；编辑后的二维视图可更新同一 mesh 的材质，为 3D 资产工作流提供外观生成环节。 |
 
 <a id="skills-and-tool-bridges"></a>
 ## 🧰 实用 Agent Skills 与工具桥

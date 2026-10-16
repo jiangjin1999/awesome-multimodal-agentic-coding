@@ -18,12 +18,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-165-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-167-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-10-15**
+**最后更新：2026-10-16**
 
 </div>
 
@@ -219,6 +219,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 | Unreal 开发 | [Unreal MCP](https://github.com/ZiggyMar/unreal-mcp) | 社区 MCP | 以索引化、Token 高效的方式检查和编辑 Unreal 项目与 Blueprint。 |
 | Diagram-as-code | [Mermaid MCP server](https://mermaid.ai/docs/ai/mcp-server) | 官方 MCP | 验证 Diagram 语法并返回可供检查与修复的 SVG/PNG 渲染。 |
 | 程序化视频 | [Remotion](https://github.com/remotion-dev/remotion) | 官方框架 + Skills | 将 React 代码转化为可检查的视频帧和视频，从而支持逐帧渲染与迭代纠错。 |
+| Agent 视频编辑与媒体工具 | [Diffusion Studio](https://github.com/diffusionstudio/editor) · [Skills](https://github.com/diffusionstudio/skills) | 项目维护的编辑器 + CLI/MCP + Skills；编辑器 MPL-2.0 / Skills MIT | 将可编辑 SolidJS/TSX 合成与画布、时间线同步，连接素材分析、媒体生成、源码修改和渲染；Agent 工作流需要桌面应用，模型调用可能消耗付费额度。 |
 | 数学动画 | [Manim MCP](https://github.com/paulnegz/manim-mcp) | 社区 MCP | 把文本、生成的 Manim 代码、渲染视频与后续修正连接成一条工作流。 |
 | 数学动画编排与审阅 | [Manim Video Lab](https://github.com/ApliroAI/manim-video-lab) | 社区 Agent Skill；MIT | 使用 Docker 内的 Manim/FFmpeg 管线，结合明确的分镜约定、视频或采样帧审阅、带时间定位的代码修复，以及有限轮次的再渲染与再审阅。 |
 | SVG 优先的动画与预览检查 | [manimate](https://github.com/bassimeledath/manimate) | 社区 Agent Skill；MIT | 引导 Manim 场景生成，先检查 SVG 资产网格与中间帧，再在有限重试内修复源码、重新渲染，最后组装视频。 |
@@ -835,6 +836,10 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 编写或修改可执行代码，将其作为状态、动作、转移、物理或环境动力学模型的 Agent。
 
+- `arXiv 2026.10` **PhysCodeGym: Benchmarking Coding Agents for Physically Verifiable 4D Reconstruction**. [[论文]](https://arxiv.org/abs/2610.17288) [[代码]](https://github.com/ShaoShuai0605/PhysCodeGym) — `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Environment]` `[Verification]` `[Trajectory Analysis]`
+  > 评测从视频重建 Blender 世界的 Agent：检查仿真预览并修复场景程序，将视觉相似度与原生物理机制、部分任务的反事实检查分开衡量。<br>
+  > **验证维度：** 视觉／事件／运动保真度 · 原生场景物理有效性 · 反事实干预 · 实际完成的修复轨迹 · 执行预算影响。
+
 - `arXiv 2026.09` **Text2Sim: Agentic Physics-Based Simulation Generation with Distilled Expertise**. [[论文]](https://arxiv.org/abs/2609.36593) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
   > 组织 Meshy 资产生成与专门的 Genesis 代码 Writer，由独立 Critic 检查帧、视频及物理记录，再结合可复用 Debug Cards 将诊断分派为针对性的源代码修复。<br>
   > **验证维度：** 可执行仿真 · Agent 评判的物理需求 · 视频质量 · 盲测人类偏好 · 角色／经验卡消融，不等于真实世界有效性认证。
@@ -959,6 +964,10 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 代码作为控制器、策略、实验或工具动作，真实或仿真的多模态结果指导后续改写。
 
+- `arXiv 2026.10` **Agentic Robot Creation through Generation, Verification, and Revision**. [[论文]](https://arxiv.org/abs/2610.17881) [[项目]](https://roboforge-project.github.io/) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
+  > 提出 RoboForge，依据仿真中的身体、关节和接触反馈修订程序化参考运动与奖励配置，再将学得策略部署到经过人工设计修正并制造的机器人上。<br>
+  > **验证维度：** 制造前设计检查 · 四种形态／19 项任务仿真 · 运动—奖励修订消融 · 人类行为评分 · 独立的硬件行走与挥手演示。
+
 - `arXiv 2026.09` **HuGo: LLMs as Whole-Body Policy Code Designers for Humanoid Loco-Manipulation**. [[论文]](https://arxiv.org/abs/2609.30594) [[项目]](https://iconlab.negarmehr.com/HuGo/) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
   > 在冻结的全身控制策略上编写高层策略代码，依据执行录像与数值轨迹修订，并验证仿真到实机迁移及真实机器人代码改进。<br>
   > **验证维度：** 留出仿真任务成功率 · 视觉／关键帧消融 · 零样本实机迁移 · 真实执行反馈修订 · 控制器与几何提示的限制。
@@ -1022,6 +1031,14 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 ## 🧱 相邻基础
 
 本节收录相关的模型能力编排、具身主动感知和数字—物理迁移，以及一次性代码生成、最终评估与人工引导的修改；这些工作不计入核心代码构建闭环清单。
+
+- `arXiv 2026.09` **VideoGen-Agent: Reinforcing Video Generation Agents**. [[论文]](https://arxiv.org/abs/2609.24997) [[项目]](https://andyca111.github.io/VideoGen_Agent/) — `[Method]` `[Benchmark]` · `[Training]` `[Inference]` `[Verification]`
+  > 训练多模态策略组合检索、仿真、视频生成与视觉验证工具，依据中间观测选择后续调用或重新生成，而非改写底层工具。<br>
+  > **验证维度：** 六类 VABench · 工具／奖励消融 · 固定 Agent 下升级生成器 · 人类偏好 · 独立的动作到视频定性扩展，不是机器人执行。
+
+- `arXiv 2026.09` **World Action Agent: Harnessing VLMs for Robot Manipulation via World Action Rehearsal**. [[论文]](https://arxiv.org/abs/2609.29964) — `[Method]` `[System]` · `[Training]` `[Inference]` `[Environment]` `[Verification]`
+  > 为 VLM 提供交互局部视图、可编辑的动作预演和示范提炼的技能，通过数值规划工具持续修正操控决策，而不生成策略代码。<br>
+  > **验证维度：** LIBERO-Pro／robosuite 仿真 · 冻结技能迁移 · 感知来源变体 · 局部失败恢复 · 保持前沿模型子 Agent 的小模型主控蒸馏。
 
 - `arXiv 2026.10` **Internalizing Agent Experience into Diffusion Model Weights via On-Policy Context Distillation**. [[论文]](https://arxiv.org/abs/2610.07250) [[代码]](https://github.com/Yummytanmo/D-OPCD-CoEvolution) — `[Method]` · `[Training]` `[Inference]` `[Verification]`
   > 以图像核验反馈修订扩散模型提示词并演化文本技能，再将部分提示词经验蒸馏进生成器，随后重新适配 Agent 工作流。<br>

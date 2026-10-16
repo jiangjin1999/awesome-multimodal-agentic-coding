@@ -18,12 +18,12 @@ A research map of multimodal agents that orchestrate model capabilities to build
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-165-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-167-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-10-15**
+**Last updated: 2026-10-16**
 
 </div>
 
@@ -219,6 +219,7 @@ The list below is a practical starting point rather than a security audit or end
 | Unreal development | [Unreal MCP](https://github.com/ZiggyMar/unreal-mcp) | Community MCP | Provides indexed, token-efficient inspection and editing of Unreal projects and Blueprints. |
 | Diagram-as-code | [Mermaid MCP server](https://mermaid.ai/docs/ai/mcp-server) | Official MCP | Validates diagram syntax and returns SVG/PNG renders that can be inspected and repaired. |
 | Programmatic video | [Remotion](https://github.com/remotion-dev/remotion) | Official framework + skills | Turns React code into inspectable frames and videos, enabling frame-level rendering and iterative correction. |
+| Agent-driven video editing and media tools | [Diffusion Studio](https://github.com/diffusionstudio/editor) · [skills](https://github.com/diffusionstudio/skills) | Project-maintained editor + CLI/MCP + skills; MPL-2.0 editor / MIT skills | Keeps editable SolidJS/TSX compositions synchronized with the canvas and timeline, connecting footage analysis, media generation, source edits, and rendering; agent workflows require the desktop app, and model-backed actions may use paid credits. |
 | Mathematical animation | [Manim MCP](https://github.com/paulnegz/manim-mcp) | Community MCP | Connects text, generated Manim code, rendered video, and subsequent correction in one workflow. |
 | SVG-first animation with preview gates | [manimate](https://github.com/bassimeledath/manimate) | Community Agent Skill; MIT | Guides Manim scene generation through SVG asset-grid and intermediate-frame checks, then fixes source code and rerenders within bounded retries before video assembly. |
 | Mathematical animation direction and review | [Manim Video Lab](https://github.com/ApliroAI/manim-video-lab) | Community Agent Skill; MIT | Uses a Docker-backed Manim/FFmpeg pipeline with explicit storyboard contracts, video or sampled-frame review, timestamped code fixes, and bounded rerender-and-review passes. |
@@ -835,6 +836,10 @@ Agents and benchmarks that require generated games or visual programs to be laun
 
 Agents that write or revise executable code as a model of state, action, transition, physics, or environment dynamics.
 
+- `arXiv 2026.10` **PhysCodeGym: Benchmarking Coding Agents for Physically Verifiable 4D Reconstruction**. [[paper]](https://arxiv.org/abs/2610.17288) [[code]](https://github.com/ShaoShuai0605/PhysCodeGym) — `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Environment]` `[Verification]` `[Trajectory Analysis]`
+  > Benchmarks video-to-Blender reconstruction with agents that inspect simulation previews and repair scene programs, separating visual resemblance from native physical mechanisms and selected counterfactual checks.<br>
+  > **Verification:** Visual/event/motion fidelity · native-scene physical validity · counterfactual interventions · completed repair traces · execution-budget effects.
+
 - `arXiv 2026.09` **Text2Sim: Agentic Physics-Based Simulation Generation with Distilled Expertise**. [[paper]](https://arxiv.org/abs/2609.36593) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
   > Orchestrates Meshy assets and specialized Genesis code writers, using an independent critic's frames, video, and physical records to route targeted source repairs with reusable Debug Cards.<br>
   > **Verification:** Executable simulation · agent-assessed physical requirements · video quality · blinded human preference · role/card ablations, not certified real-world validity.
@@ -959,6 +964,10 @@ Agents that create visual documents or temporal media as executable or structure
 
 Work in which code is a controller, policy, experiment, or tool action and real or simulated multimodal outcomes guide subsequent rewrites.
 
+- `arXiv 2026.10` **Agentic Robot Creation through Generation, Verification, and Revision**. [[paper]](https://arxiv.org/abs/2610.17881) [[project]](https://roboforge-project.github.io/) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
+  > Introduces RoboForge, which revises procedural reference motions and reward specifications from simulated body, joint, and contact feedback before transferring learned policies to a fabricated robot whose design receives manual corrections.<br>
+  > **Verification:** Pre-fabrication design checks · four-embodiment/19-task simulation · motion–reward refinement ablations · human behavior ratings · separate hardware walking and waving demonstrations.
+
 - `arXiv 2026.09` **HuGo: LLMs as Whole-Body Policy Code Designers for Humanoid Loco-Manipulation**. [[paper]](https://arxiv.org/abs/2609.30594) [[project]](https://iconlab.negarmehr.com/HuGo/) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
   > Writes high-level policy code over frozen whole-body controllers and revises it from rollout video and numerical trajectories, supporting simulation-to-hardware transfer and real-robot code refinement.<br>
   > **Verification:** Held-out simulated task success · visual/keyframe ablations · zero-shot hardware transfer · real-rollout refinement · controller and geometry-hint limitations.
@@ -1022,6 +1031,14 @@ Work in which code is a controller, policy, experiment, or tool action and real 
 ## 🧱 Adjacent Foundations
 
 This section covers related model orchestration, embodied active perception, and digital–physical transfer, alongside one-shot code generation, final evaluation, and human-guided refinement; these works are distinct from the core code-building loop.
+
+- `arXiv 2026.09` **VideoGen-Agent: Reinforcing Video Generation Agents**. [[paper]](https://arxiv.org/abs/2609.24997) [[project]](https://andyca111.github.io/VideoGen_Agent/) — `[Method]` `[Benchmark]` · `[Training]` `[Inference]` `[Verification]`
+  > Trains a multimodal policy to compose retrieval, simulation, video-generation, and visual-verification tools, using intermediate observations to choose subsequent calls or regenerate rather than rewrite the underlying tools.<br>
+  > **Verification:** Six-category VABench · tool-use/reward ablations · generator upgrades with a fixed agent · human preference · separate qualitative action-to-video extension, not robot execution.
+
+- `arXiv 2026.09` **World Action Agent: Harnessing VLMs for Robot Manipulation via World Action Rehearsal**. [[paper]](https://arxiv.org/abs/2609.29964) — `[Method]` `[System]` · `[Training]` `[Inference]` `[Environment]` `[Verification]`
+  > Gives VLMs interaction-centered views, editable action rehearsals, and demonstration-derived skills to revise manipulation decisions through numerical planning tools without generating policy code.<br>
+  > **Verification:** LIBERO-Pro/robosuite simulation · frozen-skill transfer · perception-source variants · local recovery cases · smaller-pilot distillation with unchanged frontier-model subagents.
 
 - `arXiv 2026.10` **Internalizing Agent Experience into Diffusion Model Weights via On-Policy Context Distillation**. [[paper]](https://arxiv.org/abs/2610.07250) [[code]](https://github.com/Yummytanmo/D-OPCD-CoEvolution) — `[Method]` · `[Training]` `[Inference]` `[Verification]`
   > Uses image-verification feedback to refine diffusion prompts and evolve textual skills, then distills part of that prompt-mediated experience into the generator before renewing harness adaptation.<br>

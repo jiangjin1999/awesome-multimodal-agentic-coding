@@ -18,12 +18,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-167-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-170-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-10-16**
+**最后更新：2026-10-17**
 
 </div>
 
@@ -181,6 +181,9 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 | 能力 | 资源与来源 | 输入 → 输出 | 在工作流中的作用 |
 |---|---|---|---|
+| 动态 3D 纹理 | **DynaMesh** — *DynaMesh: Dynamic 3D Texture Generation* [[论文]](https://arxiv.org/abs/2610.05529) · [[项目]](https://threedle.github.io/dynamesh/) | Mesh + 效果提示词 → 固定 mesh 与随时间变化的纹理序列 | 将参考视频与 3D 生成器的时序条件、逐形状适配器结合；几何固定而外观演化，可为资产工作流提供表面效果，不是物理动力学模拟。 |
+| 原生 3D 纹理生成 | **Tex-Zero** — *Does Native 3D Texture Generation Necessarily Require 3D Assets for Training?* [[论文]](https://arxiv.org/abs/2609.34621) · [[仓库文档]](https://github.com/wangjiangshan0725/Tex-Zero) | 几何 + 多视图参考图 → 与几何对齐的 3D 表面颜色 | 用图像构造的训练样本学习图像／纹理共享表示，提供不依赖真实带纹理 3D 资产作为训练数据的纹理生成能力。 |
+| 机器人策略适配与服务 | **Pi API beta** — Physical Intelligence [[官方发布]](https://www.pi.website/blog/api-beta) | 机器人示范／数据 → 可经托管推理调用的微调策略 | 开发者适配并部署动作模型，再根据真实机器人失败决定下一轮数据采集；属于需申请 beta 的开发者主导工作流，不代表 LLM 自主修复。 |
 | 3D 材质生成与编辑 | **SUPRA-Tex** — *SUPRA-TEX: 3D Generation with Super-Aligned Texture* [[论文]](https://arxiv.org/abs/2610.22352) · [[项目]](https://supra-3d.github.io/supratex/) · [[仓库文档]](https://github.com/Supra-3D/supra-tex) · [[权重]](https://huggingface.co/supra3d/supra-tex) · [[Demo]](https://huggingface.co/spaces/UniLat3D/Supra-Tex) | 参考图像 + mesh + 相机投影 → 完整表面的可重光照 PBR 材质 | 保留参考图中的文字、Logo 与图案，并补全不可见表面的反照率、金属度和粗糙度。几何由外部提供或上游 Pixal3D 生成；编辑后的二维视图可更新同一 mesh 的材质，为 3D 资产工作流提供外观生成环节。 |
 
 <a id="skills-and-tool-bridges"></a>
@@ -646,6 +649,14 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 生成可执行图形或 CAD 程序，并利用渲染视图、Solver 反馈或几何检查进行修改的 Agent。
 
+- `arXiv 2026.10` **3DCodeVerse: Exploring 3D Worlds as Code**. [[论文]](https://arxiv.org/abs/2610.22341) [[代码]](https://github.com/gaoypeng/3dcodeverse) [[项目]](https://3dcodeverse.com/) — `[Method]` `[Dataset]` `[System]` · `[Data Curation]` `[Training]` `[Inference]` `[Environment]` `[Verification]`
+  > 将跨运行环境的 3D 程序语料与 DAG 编程 Harness 结合，把几何测量和多视图视觉点评转为限定文件范围的定向程序修订。<br>
+  > **验证维度：** 执行有效性 · 接触／碰撞与关节扫描检查 · 渲染外观 · 记录完整的修复轨迹 · 人类偏好 · 开放模型微调。
+
+- `arXiv 2026.10` **GRASE: Geometry-native Real-to-sim Agentic Scene Modeling from Video**. [[论文]](https://arxiv.org/abs/2610.21498) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
+  > 将深度、分割和 3D 生成模型与 Blender 编辑结合，依据原视频—渲染对照及几何检查，修复房间拓扑、物体布局与局部 mesh 部件。<br>
+  > **验证维度：** Replica／Imaginarium 重建 · 多视图渲染 · 几何反馈消融 · 仅静态几何／布局，不含材质动力学或机器人迁移。
+
 - `arXiv 2026.10` **CineRecon: Benchmarking Frontier Models for Agentic Cinematic Reconstruction**. [[论文]](https://arxiv.org/abs/2610.16577) [[项目]](https://cinerecon.github.io/) — `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Environment]` `[Verification]`
   > 评测依据同时间点渲染—参考对照修订 Blender Python 场景的 Agent，在三档外观细节下分别衡量摄像机、静态与动态一致性。<br>
   > **验证维度：** 摄像机／镜头一致性 · 空间与外观保真度 · 动作时序／接触关系 · 人类与判定器一致性 · 迭代修订消融。
@@ -974,6 +985,10 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 代码作为控制器、策略、实验或工具动作，真实或仿真的多模态结果指导后续改写。
 
+- `arXiv 2026.10` **MoCaP: Mobile Code-as-Policies for Zero-Shot Mobile Manipulation from Passive Human Videos**. [[论文]](https://arxiv.org/abs/2610.20998) [[项目]](https://mocap-7.github.io/MoCAP-page/) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
+  > 从被动人类视频提取空间与接近方向先验，再依据实时 RGB-D 和执行反馈修订短 Python 机器人程序，由感知与运动工具落实机器人自身的约束。<br>
+  > **验证维度：** 真实 YOR 导航与两项抓取任务 · 记忆／接近先验消融 · 考虑碰撞的基线 · 单环境可行性，尚非广泛跨家庭泛化。
+
 - `arXiv 2026.10` **Agentic Robot Creation through Generation, Verification, and Revision**. [[论文]](https://arxiv.org/abs/2610.17881) [[项目]](https://roboforge-project.github.io/) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
   > 提出 RoboForge，依据仿真中的身体、关节和接触反馈修订程序化参考运动与奖励配置，再将学得策略部署到经过人工设计修正并制造的机器人上。<br>
   > **验证维度：** 制造前设计检查 · 四种形态／19 项任务仿真 · 运动—奖励修订消融 · 人类行为评分 · 独立的硬件行走与挥手演示。
@@ -1041,6 +1056,14 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 ## 🧱 相邻基础
 
 本节收录相关的模型能力编排、具身主动感知和数字—物理迁移，以及一次性代码生成、最终评估与人工引导的修改；这些工作不计入核心代码构建闭环清单。
+
+- `arXiv 2026.10` **CoWorld Reasoner: Agentic Multimodal Reasoning with the Evolving Video World Model-Driven Harness**. [[论文]](https://arxiv.org/abs/2610.21910) — `[Method]` `[System]` · `[Inference]` `[Verification]`
+  > 让 VLM 选择视频世界模型的操作辅助视觉推理，在开发集反馈下修订工具、Skills 与 Harness 代码，再以固定 Harness 评测。<br>
+  > **验证维度：** 七项保留推理基准 · 生成证据与演化消融 · 操作级轨迹 · 预测视频而非物理执行。
+
+- `arXiv 2026.10` **Any Time, Any Space: A World-State-Centric Framework for Agentic Video Generation**. [[论文]](https://arxiv.org/abs/2610.20571) [[仓库]](https://github.com/ziplab/ATAS) [[项目]](http://lhmd.top/atas) — `[Method]` `[System]` · `[Inference]` `[Verification]`
+  > ATAS 将剧本编译为有场景、相机和时间定位的请求，用配准后的场景／事件记忆引导后续镜头，并将成片验收与生成观测是否写入记忆分开。<br>
+  > **验证维度：** 四种视频生成底座 · 空间重访与事件重现 · 记忆／验证消融 · 人类评价 · 重试减少与额外计算开销。
 
 - `arXiv 2026.09` **VideoGen-Agent: Reinforcing Video Generation Agents**. [[论文]](https://arxiv.org/abs/2609.24997) [[项目]](https://andyca111.github.io/VideoGen_Agent/) — `[Method]` `[Benchmark]` · `[Training]` `[Inference]` `[Verification]`
   > 训练多模态策略组合检索、仿真、视频生成与视觉验证工具，依据中间观测选择后续调用或重新生成，而非改写底层工具。<br>

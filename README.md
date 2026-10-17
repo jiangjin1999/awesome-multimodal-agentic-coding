@@ -18,12 +18,12 @@ A research map of multimodal agents that orchestrate model capabilities to build
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-167-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-170-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-10-16**
+**Last updated: 2026-10-17**
 
 </div>
 
@@ -181,6 +181,9 @@ These **Resource** entries provide model capabilities for asset creation, percep
 
 | Capability | Resource and sources | Inputs → outputs | Role in a workflow |
 |---|---|---|---|
+| Dynamic 3D textures | **DynaMesh** — *DynaMesh: Dynamic 3D Texture Generation* [[paper]](https://arxiv.org/abs/2610.05529) · [[project]](https://threedle.github.io/dynamesh/) | Mesh + effect prompt → one fixed mesh with a time-varying texture sequence | Combines a reference video with temporal conditioning and per-shape adapters on a 3D generator; appearance evolves while geometry stays fixed, supplying reusable surface effects rather than physical dynamics. |
+| Native 3D texture generation | **Tex-Zero** — *Does Native 3D Texture Generation Necessarily Require 3D Assets for Training?* [[paper]](https://arxiv.org/abs/2609.34621) · [[repository docs]](https://github.com/wangjiangshan0725/Tex-Zero) | Geometry + multiview reference images → geometry-aligned 3D surface colors | Learns a shared image/texture representation from image-derived training samples, providing a texturing capability without requiring real textured 3D assets for training. |
+| Robot policy adaptation and serving | **Pi API beta** — Physical Intelligence [[official announcement]](https://www.pi.website/blog/api-beta) | Robot demonstrations/data → fine-tuned policy accessible through hosted inference | Lets developers adapt and deploy action models, then use real-robot failures to choose the next data collection round; this is a developer-led workflow with beta access, not an autonomous LLM repair claim. |
 | 3D material generation and editing | **SUPRA-Tex** — *SUPRA-TEX: 3D Generation with Super-Aligned Texture* [[paper]](https://arxiv.org/abs/2610.22352) · [[project]](https://supra-3d.github.io/supratex/) · [[repository docs]](https://github.com/Supra-3D/supra-tex) · [[weights]](https://huggingface.co/supra3d/supra-tex) · [[demo]](https://huggingface.co/spaces/UniLat3D/Supra-Tex) | Reference image + mesh + camera projection → full-surface, relightable PBR materials | Preserves reference text, logos, and patterns while completing unseen surfaces with albedo, metallic, and roughness properties. Geometry is supplied or generated upstream by Pixal3D; edited 2D views can update materials on the same mesh, providing an appearance-generation step for 3D asset workflows. |
 
 <a id="skills-and-tool-bridges"></a>
@@ -646,6 +649,14 @@ Agents that treat vector or diagram code as an editable symbolic artifact and re
 
 Agents that produce executable graphics or CAD programs and revise them using rendered views, solver feedback, or geometric checks.
 
+- `arXiv 2026.10` **3DCodeVerse: Exploring 3D Worlds as Code**. [[paper]](https://arxiv.org/abs/2610.22341) [[code]](https://github.com/gaoypeng/3dcodeverse) [[project]](https://3dcodeverse.com/) — `[Method]` `[Dataset]` `[System]` · `[Data Curation]` `[Training]` `[Inference]` `[Environment]` `[Verification]`
+  > Couples a multi-runtime 3D program corpus with a DAG-based coding harness that converts geometric measurements and multiview visual critiques into targeted, file-scoped program revisions.<br>
+  > **Verification:** Execution validity · contact/collision and joint-sweep gates · rendered appearance · recorded repair trajectories · human preference · open-model fine-tuning.
+
+- `arXiv 2026.10` **GRASE: Geometry-native Real-to-sim Agentic Scene Modeling from Video**. [[paper]](https://arxiv.org/abs/2610.21498) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
+  > Combines depth, segmentation, and 3D-generation models with Blender editing, using source–render comparisons and geometric checks to repair room topology, object placement, and individual mesh parts.<br>
+  > **Verification:** Replica/Imaginarium reconstruction · multiview rendering · geometric-feedback ablations · static geometry/layout only, not material dynamics or robot transfer.
+
 - `arXiv 2026.10` **CineRecon: Benchmarking Frontier Models for Agentic Cinematic Reconstruction**. [[paper]](https://arxiv.org/abs/2610.16577) [[project]](https://cinerecon.github.io/) — `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Environment]` `[Verification]`
   > Benchmarks agents that revise Blender Python scenes from time-aligned render–reference comparisons, separating camera, static, and dynamic fidelity across three appearance-detail settings.<br>
   > **Verification:** Camera/shot consistency · spatial and appearance fidelity · action timing/contact · human–judge alignment · refinement ablations.
@@ -974,6 +985,10 @@ Agents that create visual documents or temporal media as executable or structure
 
 Work in which code is a controller, policy, experiment, or tool action and real or simulated multimodal outcomes guide subsequent rewrites.
 
+- `arXiv 2026.10` **MoCaP: Mobile Code-as-Policies for Zero-Shot Mobile Manipulation from Passive Human Videos**. [[paper]](https://arxiv.org/abs/2610.20998) [[project]](https://mocap-7.github.io/MoCAP-page/) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
+  > Turns passive human video into spatial and approach priors, then revises short Python robot programs from live RGB-D observations and execution feedback while perception and motion tools enforce robot-specific constraints.<br>
+  > **Verification:** Real YOR navigation and two grasping tasks · memory/approach-prior ablations · collision-aware baseline · single-environment feasibility, not broad cross-home generalization.
+
 - `arXiv 2026.10` **Agentic Robot Creation through Generation, Verification, and Revision**. [[paper]](https://arxiv.org/abs/2610.17881) [[project]](https://roboforge-project.github.io/) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]`
   > Introduces RoboForge, which revises procedural reference motions and reward specifications from simulated body, joint, and contact feedback before transferring learned policies to a fabricated robot whose design receives manual corrections.<br>
   > **Verification:** Pre-fabrication design checks · four-embodiment/19-task simulation · motion–reward refinement ablations · human behavior ratings · separate hardware walking and waving demonstrations.
@@ -1041,6 +1056,14 @@ Work in which code is a controller, policy, experiment, or tool action and real 
 ## 🧱 Adjacent Foundations
 
 This section covers related model orchestration, embodied active perception, and digital–physical transfer, alongside one-shot code generation, final evaluation, and human-guided refinement; these works are distinct from the core code-building loop.
+
+- `arXiv 2026.10` **CoWorld Reasoner: Agentic Multimodal Reasoning with the Evolving Video World Model-Driven Harness**. [[paper]](https://arxiv.org/abs/2610.21910) — `[Method]` `[System]` · `[Inference]` `[Verification]`
+  > Lets a VLM choose video-world-model operations for visual reasoning, with development-set feedback revising tools, skills, and harness code before fixed-harness evaluation.<br>
+  > **Verification:** Seven held-out reasoning benchmarks · generated-evidence and evolution ablations · operation-level traces · predicted videos, not physical execution.
+
+- `arXiv 2026.10` **Any Time, Any Space: A World-State-Centric Framework for Agentic Video Generation**. [[paper]](https://arxiv.org/abs/2610.20571) [[repository]](https://github.com/ziplab/ATAS) [[project]](http://lhmd.top/atas) — `[Method]` `[System]` · `[Inference]` `[Verification]`
+  > ATAS compiles screenplays into scene-, camera-, and time-grounded requests, conditioning later shots on registered scene/event memories while separating film acceptance from admission of generated observations to memory.<br>
+  > **Verification:** Four video backbones · spatial revisits and event recapture · memory/validation ablations · human evaluation · retry reduction versus added compute.
 
 - `arXiv 2026.09` **VideoGen-Agent: Reinforcing Video Generation Agents**. [[paper]](https://arxiv.org/abs/2609.24997) [[project]](https://andyca111.github.io/VideoGen_Agent/) — `[Method]` `[Benchmark]` · `[Training]` `[Inference]` `[Verification]`
   > Trains a multimodal policy to compose retrieval, simulation, video-generation, and visual-verification tools, using intermediate observations to choose subsequent calls or regenerate rather than rewrite the underlying tools.<br>

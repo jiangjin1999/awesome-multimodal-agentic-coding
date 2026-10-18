@@ -45,7 +45,7 @@ Each work has one complete bibliographic entry. Other sections link to it in a s
 | GUI and software training-environment synthesis | [2.2](#methods-gui-environments) | [3.2](#evaluation-gui-environments) | [4.2](#data-gui-environments) |
 | Charts, scientific visualization, and editable graphics | [2.3](#methods-graphics) | [3.3](#evaluation-graphics) | [4.3](#data-graphics) |
 | Documents and visual media | [2.4](#methods-media) | [3.4](#evaluation-media) | [4.4](#data-media) |
-| CAD and procedural 3D construction | [2.5](#methods-cad-3d) | [3.5](#evaluation-cad-3d) | [4.5](#data-cad-3d) |
+| Procedural 3D and CAD construction | [2.5](#methods-cad-3d) | [3.5](#evaluation-cad-3d) | [4.5](#data-cad-3d) |
 | Physical asset construction and diagnosis | [2.6](#methods-physical-assets) | [3.6](#evaluation-physical-assets) | [4.6](#data-physical-assets) |
 | Playable game construction, recreation, and repair | [2.7](#methods-games) | [3.7](#evaluation-games) | [4.7](#data-games) |
 | Executable world models and simulation programs | [2.8](#methods-world-models) | [3.8](#evaluation-world-models) | [4.8](#data-world-models) |
@@ -217,7 +217,7 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Boundary.** A rendered image is one observation of an artifact. Shape, program structure, interaction state, and physical parameters require separate descriptions.
 
-**Connect:** [2.3 Charts, scientific visualization, and editable graphics](#methods-graphics) · [2.5 CAD and procedural 3D construction](#methods-cad-3d) · [5.2 Program, geometry, material, and visual-media generation/editing](#section-5-2)
+**Connect:** [2.3 Charts, scientific visualization, and editable graphics](#methods-graphics) · [2.5 Procedural 3D and CAD construction](#methods-cad-3d) · [5.2 Program, geometry, material, and visual-media generation/editing](#section-5-2)
 
 <a id="paper-2606-15932"></a>
 <!-- mmac-record: {"id": "2606.15932", "scope": "Survey", "primary": "1.1", "task": null} -->
@@ -934,13 +934,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 <a id="methods-cad-3d"></a>
 
-### 2.5 CAD and procedural 3D construction
+### 2.5 Procedural 3D and CAD construction
 
 **Task.** Create executable, editable CAD and procedural 3D representations from requirements, drawings, geometry, or images, using constraints, decomposition, scene programs, inverse graphics, and asset assembly.
 
 **Boundary.** CAD design constraints differ from scene composition. Physical usability belongs in 2.6; observation-grounded simulation reconstruction belongs in 2.9.
 
-**Connect:** [3.5 CAD constraints, geometry, and procedural 3D evaluation](#evaluation-cad-3d) · [4.5 CAD/procedural 3D requirements, programs, and geometric assets](#data-cad-3d) · [2.6 Physical asset construction and diagnosis](#methods-physical-assets) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [5.3 Execution, rendering, simulation, and automation interfaces](#section-5-3)
+**Connect:** [3.5 Procedural 3D and CAD benchmarks](#evaluation-cad-3d) · [4.5 Procedural 3D and CAD data: requirements, programs, and assets](#data-cad-3d) · [2.6 Physical asset construction and diagnosis](#methods-physical-assets) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [5.3 Execution, rendering, simulation, and automation interfaces](#section-5-3)
 
 <a id="paper-2610-22341"></a>
 <!-- mmac-record: {"id": "2610.22341", "scope": "Core", "primary": "2.5", "task": 5} -->
@@ -1218,7 +1218,7 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Boundary.** Geometric similarity, successful loading, and physical usability are separate properties. Assets with real references may also connect to Real-to-Sim; physical asset generation does not always reconstruct reality.
 
-**Connect:** [3.6 Physical asset construction and usability evaluation](#evaluation-physical-assets) · [4.6 Physical assets, parameters, and diagnostic interactions](#data-physical-assets) · [2.5 CAD and procedural 3D construction](#methods-cad-3d) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.11 Real2Sim2Real: task learning and real execution](#methods-real2sim2real)
+**Connect:** [3.6 Physical asset construction and usability evaluation](#evaluation-physical-assets) · [4.6 Physical assets, parameters, and diagnostic interactions](#data-physical-assets) · [2.5 Procedural 3D and CAD construction](#methods-cad-3d) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.11 Real2Sim2Real: task learning and real execution](#methods-real2sim2real)
 
 <a id="paper-2610-13947"></a>
 <!-- mmac-record: {"id": "2610.13947", "scope": "Core", "primary": "2.6", "task": 6} -->
@@ -1768,6 +1768,8 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 Benchmark contributions and experimental protocols are distinguished below. Compare task units, observation access, tool permissions, evaluator independence, and budgets before comparing scores.
 
+**Productivity-oriented evaluation.** Across [software](#evaluation-software), [documents and media](#evaluation-media), and [procedural 3D/CAD](#evaluation-cad-3d), ask whether agents satisfy practical briefs and deliver usable, editable artifacts—not only plausible-looking outputs. [BlenderWorld](#work-blenderworld) illustrates this perspective through reference-driven 3D production tasks. Real-world workflows or reference images do not by themselves establish validation on physical hardware.
+
 <a id="evaluation-software"></a>
 
 ### 3.1 Visual software engineering and recreation evaluation
@@ -2028,13 +2030,13 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 <a id="evaluation-cad-3d"></a>
 
-### 3.5 CAD constraints, geometry, and procedural 3D evaluation
+### 3.5 Procedural 3D and CAD benchmarks
 
 **Task.** Evaluate execution, geometry, constraints, scene fidelity, and subsequent editing for CAD and procedural 3D, including tool and search costs.
 
 **Boundary.** Shape distance does not capture all constraints or design intent. CAD, scene programs, and GUI modeling require matched inputs and action permissions; broader engineering benchmarks also cover other domains.
 
-**Connect:** [2.5 CAD and procedural 3D construction](#methods-cad-3d) · [4.5 CAD/procedural 3D requirements, programs, and geometric assets](#data-cad-3d) · [3.6 Physical asset construction and usability evaluation](#evaluation-physical-assets) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
+**Connect:** [2.5 Procedural 3D and CAD construction](#methods-cad-3d) · [4.5 Procedural 3D and CAD data: requirements, programs, and assets](#data-cad-3d) · [3.6 Physical asset construction and usability evaluation](#evaluation-physical-assets) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
 
 <a id="work-blenderworld"></a>
 <!-- mmac-record: {"id": "system:blenderworld", "scope": "Core", "primary": "3.5", "task": 5} -->
@@ -2502,7 +2504,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Boundary.** Deterministic execution does not guarantee semantic correctness. Judge–human agreement also does not replace evidence of better closed-loop repairs.
 
-**Connect:** [3.1 Visual software engineering and recreation evaluation](#evaluation-software) · [3.3 Chart, scientific visualization, and graphics-editing evaluation](#evaluation-graphics) · [3.5 CAD constraints, geometry, and procedural 3D evaluation](#evaluation-cad-3d) · [3.7 Game behavior, playability, and repair evaluation](#evaluation-games) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [6.3 Independent verification and trustworthy rewards](#section-6-3)
+**Connect:** [3.1 Visual software engineering and recreation evaluation](#evaluation-software) · [3.3 Chart, scientific visualization, and graphics-editing evaluation](#evaluation-graphics) · [3.5 Procedural 3D and CAD benchmarks](#evaluation-cad-3d) · [3.7 Game behavior, playability, and repair evaluation](#evaluation-games) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [6.3 Independent verification and trustworthy rewards](#section-6-3)
 
 <a id="paper-2610-22355"></a>
 <!-- mmac-record: {"id": "2610.22355", "scope": "Adjacent", "primary": "3.13", "task": 8} -->
@@ -2672,13 +2674,13 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 <a id="data-cad-3d"></a>
 
-### 4.5 CAD/procedural 3D requirements, programs, and geometric assets
+### 4.5 Procedural 3D and CAD data: requirements, programs, and assets
 
 **Task.** Link requirements, drawings, and observations to geometry, CAD or scene programs, intermediate operations, constraints, and editable structure.
 
 **Boundary.** Meshes, B-reps, parametric programs, and scene code provide different supervision. Matching final geometry does not ensure matching design intent.
 
-**Connect:** [2.5 CAD and procedural 3D construction](#methods-cad-3d) · [3.5 CAD constraints, geometry, and procedural 3D evaluation](#evaluation-cad-3d) · [4.6 Physical assets, parameters, and diagnostic interactions](#data-physical-assets) · [4.9 Real-to-Sim observation, simulation, and interaction correspondences](#data-real-to-sim)
+**Connect:** [2.5 Procedural 3D and CAD construction](#methods-cad-3d) · [3.5 Procedural 3D and CAD benchmarks](#evaluation-cad-3d) · [4.6 Physical assets, parameters, and diagnostic interactions](#data-physical-assets) · [4.9 Real-to-Sim observation, simulation, and interaction correspondences](#data-real-to-sim)
 
 **Dataset contributions**
 
@@ -2717,7 +2719,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Boundary.** A program or mesh download may omit materials and diagnostic records. Physical configurations require simulator, scale, initial-state, and probing context.
 
-**Connect:** [2.6 Physical asset construction and diagnosis](#methods-physical-assets) · [3.6 Physical asset construction and usability evaluation](#evaluation-physical-assets) · [4.5 CAD/procedural 3D requirements, programs, and geometric assets](#data-cad-3d) · [4.9 Real-to-Sim observation, simulation, and interaction correspondences](#data-real-to-sim) · [4.10 Robot demonstrations, execution, and repair trajectories](#data-robot-programs)
+**Connect:** [2.6 Physical asset construction and diagnosis](#methods-physical-assets) · [3.6 Physical asset construction and usability evaluation](#evaluation-physical-assets) · [4.5 Procedural 3D and CAD data: requirements, programs, and assets](#data-cad-3d) · [4.9 Real-to-Sim observation, simulation, and interaction correspondences](#data-real-to-sim) · [4.10 Robot demonstrations, execution, and repair trajectories](#data-robot-programs)
 
 **Data-construction contributions**
 
@@ -2932,7 +2934,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Boundary.** Capability resources need not implement their own agent loop. Distinguish geometry, surface colors, PBR materials, and time-varying appearance from physical dynamics.
 
-**Connect:** [2.4 Documents and visual media](#methods-media) · [2.5 CAD and procedural 3D construction](#methods-cad-3d) · [2.6 Physical asset construction and diagnosis](#methods-physical-assets)
+**Connect:** [2.4 Documents and visual media](#methods-media) · [2.5 Procedural 3D and CAD construction](#methods-cad-3d) · [2.6 Physical asset construction and diagnosis](#methods-physical-assets)
 
 **Resource**
 
@@ -2952,7 +2954,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Boundary.** Engines, interface bridges, and agent workflows are different resources. An execution interface alone does not establish autonomous repair performance.
 
-**Connect:** [1.3 Execution, observation, feedback, repair, and verification](#section-1-3) · [2.5 CAD and procedural 3D construction](#methods-cad-3d) · [2.8 Executable world models and simulation programs](#methods-world-models)
+**Connect:** [1.3 Execution, observation, feedback, repair, and verification](#section-1-3) · [2.5 Procedural 3D and CAD construction](#methods-cad-3d) · [2.8 Executable world models and simulation programs](#methods-world-models)
 
 **Reading links**
 
@@ -3213,7 +3215,7 @@ Adjacent papers are integrated into the directions above. This index collects th
 
 - [2.4 Documents and visual media](#methods-media)：[Any Time, Any Space](#paper-2610-20571) · [VideoGen-Agent](#paper-2609-24997) · [Internalizing Agent Experience into Diffusion Model Weights via On-Policy Context Distillation](#paper-2610-07250)
 
-- [2.5 CAD and procedural 3D construction](#methods-cad-3d)：[ConCAD](#paper-2609-34494) · [ViSculpt](#paper-2608-24169) · [Embodied CAD](#paper-2606-31252)
+- [2.5 Procedural 3D and CAD construction](#methods-cad-3d)：[ConCAD](#paper-2609-34494) · [ViSculpt](#paper-2608-24169) · [Embodied CAD](#paper-2606-31252)
 
 - [2.7 Playable game construction, recreation, and repair](#methods-games)：[GAMEGO](#paper-2610-06910) · [Code2Games](#paper-2610-05033)
 
@@ -3225,7 +3227,7 @@ Adjacent papers are integrated into the directions above. This index collects th
 
 - [3.3 Chart, scientific visualization, and graphics-editing evaluation](#evaluation-graphics)：[SciVisAgentBench](#paper-2603-29139) · [InteractScience](#paper-2510-09724)
 
-- [3.5 CAD constraints, geometry, and procedural 3D evaluation](#evaluation-cad-3d)：[AssemblyWorld](#paper-2609-40353) · [BrickBench](#paper-2610-12452) · [EngiWorld](#paper-2609-37686) · [4DCodeBench](#paper-2610-03715) · [BVB](#paper-2609-15478) · [CADWorld](#paper-2609-16251)
+- [3.5 Procedural 3D and CAD benchmarks](#evaluation-cad-3d)：[AssemblyWorld](#paper-2609-40353) · [BrickBench](#paper-2610-12452) · [EngiWorld](#paper-2609-37686) · [4DCodeBench](#paper-2610-03715) · [BVB](#paper-2609-15478) · [CADWorld](#paper-2609-16251)
 
 - [3.7 Game behavior, playability, and repair evaluation](#evaluation-games)：[SWE-Game](#paper-2609-33678) · [OpenGameEval](#paper-2610-02563) · [World Editing](#paper-2610-02331) · [CraftBench-UE](#paper-2609-23142) · [Spec2Game](#paper-2610-04253) · [GameXpert-Bench](#paper-2608-21833)
 
@@ -3320,7 +3322,7 @@ Research implementations can themselves produce inspectable visual artifacts. Re
 
 The paper introduces **Nerfify-Bench**, covering 30 NeRF papers.
 
-Related directions: [2.1 Visual software engineering and application recreation](#methods-software) · [3.1 Visual software engineering and recreation evaluation](#evaluation-software) · [4.1 Software requirements, application observations, and development traces](#data-software) · [2.4 Documents and visual media](#methods-media) · [2.5 CAD and procedural 3D construction](#methods-cad-3d)
+Related directions: [2.1 Visual software engineering and application recreation](#methods-software) · [3.1 Visual software engineering and recreation evaluation](#evaluation-software) · [4.1 Software requirements, application observations, and development traces](#data-software) · [2.4 Documents and visual media](#methods-media) · [2.5 Procedural 3D and CAD construction](#methods-cad-3d)
 
 <a id="community-and-practice"></a>
 

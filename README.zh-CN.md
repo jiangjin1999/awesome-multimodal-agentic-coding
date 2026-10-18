@@ -45,7 +45,7 @@
 | GUI／软件训练环境合成 | [2.2](#methods-gui-environments) | [3.2](#evaluation-gui-environments) | [4.2](#data-gui-environments) |
 | 图表、科学可视化与可编辑图形构建 | [2.3](#methods-graphics) | [3.3](#evaluation-graphics) | [4.3](#data-graphics) |
 | 文档与视觉媒体构建 | [2.4](#methods-media) | [3.4](#evaluation-media) | [4.4](#data-media) |
-| CAD 与程序化 3D 构建 | [2.5](#methods-cad-3d) | [3.5](#evaluation-cad-3d) | [4.5](#data-cad-3d) |
+| 程序化 3D 与 CAD 构建 | [2.5](#methods-cad-3d) | [3.5](#evaluation-cad-3d) | [4.5](#data-cad-3d) |
 | 物理资产构建与诊断 | [2.6](#methods-physical-assets) | [3.6](#evaluation-physical-assets) | [4.6](#data-physical-assets) |
 | 可玩游戏构建、复刻与修复 | [2.7](#methods-games) | [3.7](#evaluation-games) | [4.7](#data-games) |
 | 可执行世界模型与仿真程序构建 | [2.8](#methods-world-models) | [3.8](#evaluation-world-models) | [4.8](#data-world-models) |
@@ -217,7 +217,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **边界：** 渲染画面是产物的一种观测；形状、程序结构、交互状态与物理参数需要分别描述。
 
-**关联阅读：** [2.3 图表、科学可视化与可编辑图形构建](#methods-graphics) · [2.5 CAD 与程序化 3D 构建](#methods-cad-3d) · [5.2 程序、几何、材质与视觉媒体生成／编辑](#section-5-2)
+**关联阅读：** [2.3 图表、科学可视化与可编辑图形构建](#methods-graphics) · [2.5 程序化 3D 与 CAD 构建](#methods-cad-3d) · [5.2 程序、几何、材质与视觉媒体生成／编辑](#section-5-2)
 
 <a id="paper-2606-15932"></a>
 <!-- mmac-record: {"id": "2606.15932", "scope": "Survey", "primary": "1.1", "task": null} -->
@@ -934,13 +934,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 <a id="methods-cad-3d"></a>
 
-### 2.5 CAD 与程序化 3D 构建
+### 2.5 程序化 3D 与 CAD 构建
 
 **任务定义：** 从需求、图纸、几何或图像观测形成可执行、可编辑的 CAD 和程序化 3D 表示。比较参数约束、对象分解、场景程序、逆图形与资产组装。
 
 **边界：** CAD 设计约束和一般场景构图分别评价；关节、材料响应等物理可用性集中在 2.6，观测约束的仿真重建见 2.9。
 
-**关联阅读：** [3.5 CAD 约束、几何与程序化 3D 构建评测](#evaluation-cad-3d) · [4.5 CAD／程序化 3D 的需求、程序与几何资产](#data-cad-3d) · [2.6 物理资产构建与诊断](#methods-physical-assets) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [5.3 执行、渲染、仿真与自动化接口](#section-5-3)
+**关联阅读：** [3.5 程序化 3D 与 CAD 基准评测](#evaluation-cad-3d) · [4.5 程序化 3D 与 CAD 数据：需求、程序与资产](#data-cad-3d) · [2.6 物理资产构建与诊断](#methods-physical-assets) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [5.3 执行、渲染、仿真与自动化接口](#section-5-3)
 
 <a id="paper-2610-22341"></a>
 <!-- mmac-record: {"id": "2610.22341", "scope": "Core", "primary": "2.5", "task": 5} -->
@@ -1218,7 +1218,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **边界：** 几何相似、加载成功和物理可用性分别验证；资产有真实参照时可关联 Real-to-Sim，但物理资产生成并不都包含真实重建。
 
-**关联阅读：** [3.6 物理资产构建与可用性评测](#evaluation-physical-assets) · [4.6 物理资产、参数与诊断交互数据](#data-physical-assets) · [2.5 CAD 与程序化 3D 构建](#methods-cad-3d) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.11 Real2Sim2Real：任务学习与真实执行](#methods-real2sim2real)
+**关联阅读：** [3.6 物理资产构建与可用性评测](#evaluation-physical-assets) · [4.6 物理资产、参数与诊断交互数据](#data-physical-assets) · [2.5 程序化 3D 与 CAD 构建](#methods-cad-3d) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.11 Real2Sim2Real：任务学习与真实执行](#methods-real2sim2real)
 
 <a id="paper-2610-13947"></a>
 <!-- mmac-record: {"id": "2610.13947", "scope": "Core", "primary": "2.6", "task": 6} -->
@@ -1768,6 +1768,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 以下区分独立 benchmark 工作与方法论文中的实验协议。比较分数之前，应对齐任务单位、观测权限、可用工具、评估器独立性与预算。
 
+**面向生产力的评测。** 横跨[软件](#evaluation-software)、[文档与媒体](#evaluation-media)和[程序化 3D／CAD](#evaluation-cad-3d)，关注 Agent 能否满足实际需求并交付可用、可编辑的产物，而不只是生成看起来合理的结果。[BlenderWorld](#work-blenderworld) 的参考驱动 3D 创作任务体现了这一视角。真实工作流程或参考图像本身不等于真实物理硬件验证。
+
 <a id="evaluation-software"></a>
 
 ### 3.1 视觉软件工程与应用复刻评测
@@ -2028,13 +2030,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 <a id="evaluation-cad-3d"></a>
 
-### 3.5 CAD 约束、几何与程序化 3D 构建评测
+### 3.5 程序化 3D 与 CAD 基准评测
 
 **任务定义：** 评价 CAD 与程序化 3D 的执行、几何、约束、场景符合度和后续编辑能力，并比较工具与搜索成本。
 
 **边界：** 形状距离不能完整描述约束或设计意图；CAD、场景程序和 GUI 操作式建模应采用匹配的输入与动作权限。
 
-**关联阅读：** [2.5 CAD 与程序化 3D 构建](#methods-cad-3d) · [4.5 CAD／程序化 3D 的需求、程序与几何资产](#data-cad-3d) · [3.6 物理资产构建与可用性评测](#evaluation-physical-assets) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
+**关联阅读：** [2.5 程序化 3D 与 CAD 构建](#methods-cad-3d) · [4.5 程序化 3D 与 CAD 数据：需求、程序与资产](#data-cad-3d) · [3.6 物理资产构建与可用性评测](#evaluation-physical-assets) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
 
 <a id="work-blenderworld"></a>
 <!-- mmac-record: {"id": "system:blenderworld", "scope": "Core", "primary": "3.5", "task": 5} -->
@@ -2502,7 +2504,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **边界：** 程序判定的确定性不等于任务语义正确；judge 与人工的一致性也不能替代闭环修复收益。
 
-**关联阅读：** [3.1 视觉软件工程与应用复刻评测](#evaluation-software) · [3.3 图表、科学可视化与图形编辑评测](#evaluation-graphics) · [3.5 CAD 约束、几何与程序化 3D 构建评测](#evaluation-cad-3d) · [3.7 游戏行为、可玩性与修复评测](#evaluation-games) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [6.3 独立验证与可信奖励](#section-6-3)
+**关联阅读：** [3.1 视觉软件工程与应用复刻评测](#evaluation-software) · [3.3 图表、科学可视化与图形编辑评测](#evaluation-graphics) · [3.5 程序化 3D 与 CAD 基准评测](#evaluation-cad-3d) · [3.7 游戏行为、可玩性与修复评测](#evaluation-games) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [6.3 独立验证与可信奖励](#section-6-3)
 
 <a id="paper-2610-22355"></a>
 <!-- mmac-record: {"id": "2610.22355", "scope": "Adjacent", "primary": "3.13", "task": 8} -->
@@ -2672,13 +2674,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 <a id="data-cad-3d"></a>
 
-### 4.5 CAD／程序化 3D 的需求、程序与几何资产
+### 4.5 程序化 3D 与 CAD 数据：需求、程序与资产
 
 **任务定义：** 组织需求／图纸／观测与几何、CAD 或场景程序的对应，并记录中间操作、约束和可编辑结构。
 
 **边界：** 网格、B-rep、参数化程序和场景代码具有不同监督目标；最终几何一致不保证程序设计意图一致。
 
-**关联阅读：** [2.5 CAD 与程序化 3D 构建](#methods-cad-3d) · [3.5 CAD 约束、几何与程序化 3D 构建评测](#evaluation-cad-3d) · [4.6 物理资产、参数与诊断交互数据](#data-physical-assets) · [4.9 Real-to-Sim 的观测、仿真表示与交互对应](#data-real-to-sim)
+**关联阅读：** [2.5 程序化 3D 与 CAD 构建](#methods-cad-3d) · [3.5 程序化 3D 与 CAD 基准评测](#evaluation-cad-3d) · [4.6 物理资产、参数与诊断交互数据](#data-physical-assets) · [4.9 Real-to-Sim 的观测、仿真表示与交互对应](#data-real-to-sim)
 
 **数据集工作**
 
@@ -2717,7 +2719,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **边界：** 程序或 mesh 下载不自动包含材料与诊断记录；物理配置需与仿真器、尺度、初态和探测条件一起使用。
 
-**关联阅读：** [2.6 物理资产构建与诊断](#methods-physical-assets) · [3.6 物理资产构建与可用性评测](#evaluation-physical-assets) · [4.5 CAD／程序化 3D 的需求、程序与几何资产](#data-cad-3d) · [4.9 Real-to-Sim 的观测、仿真表示与交互对应](#data-real-to-sim) · [4.10 机器人演示、执行与程序／策略修复轨迹](#data-robot-programs)
+**关联阅读：** [2.6 物理资产构建与诊断](#methods-physical-assets) · [3.6 物理资产构建与可用性评测](#evaluation-physical-assets) · [4.5 程序化 3D 与 CAD 数据：需求、程序与资产](#data-cad-3d) · [4.9 Real-to-Sim 的观测、仿真表示与交互对应](#data-real-to-sim) · [4.10 机器人演示、执行与程序／策略修复轨迹](#data-robot-programs)
 
 **数据构造工作**
 
@@ -2932,7 +2934,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **边界：** 独立能力资源无需自身实现 Agent 闭环；几何、表面颜色、PBR 与时变外观分别标注，避免把外观生成解释为物理动力学。
 
-**关联阅读：** [2.4 文档与视觉媒体构建](#methods-media) · [2.5 CAD 与程序化 3D 构建](#methods-cad-3d) · [2.6 物理资产构建与诊断](#methods-physical-assets)
+**关联阅读：** [2.4 文档与视觉媒体构建](#methods-media) · [2.5 程序化 3D 与 CAD 构建](#methods-cad-3d) · [2.6 物理资产构建与诊断](#methods-physical-assets)
 
 **Resource**
 
@@ -2952,7 +2954,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **边界：** 引擎、接口桥接与 Agent 工作流分别记录；可执行接口提供动作与观测能力，本身不证明自主修复效果。
 
-**关联阅读：** [1.3 怎样改进：执行、观察、反馈、修复与验证](#section-1-3) · [2.5 CAD 与程序化 3D 构建](#methods-cad-3d) · [2.8 可执行世界模型与仿真程序构建](#methods-world-models)
+**关联阅读：** [1.3 怎样改进：执行、观察、反馈、修复与验证](#section-1-3) · [2.5 程序化 3D 与 CAD 构建](#methods-cad-3d) · [2.8 可执行世界模型与仿真程序构建](#methods-world-models)
 
 **阅读入口**
 
@@ -3213,7 +3215,7 @@ Adjacent 论文已经归入上面的具体方向；此索引汇总其完整记�
 
 - [2.4 文档与视觉媒体构建](#methods-media)：[Any Time, Any Space](#paper-2610-20571) · [VideoGen-Agent](#paper-2609-24997) · [Internalizing Agent Experience into Diffusion Model Weights via On-Policy Context Distillation](#paper-2610-07250)
 
-- [2.5 CAD 与程序化 3D 构建](#methods-cad-3d)：[ConCAD](#paper-2609-34494) · [ViSculpt](#paper-2608-24169) · [Embodied CAD](#paper-2606-31252)
+- [2.5 程序化 3D 与 CAD 构建](#methods-cad-3d)：[ConCAD](#paper-2609-34494) · [ViSculpt](#paper-2608-24169) · [Embodied CAD](#paper-2606-31252)
 
 - [2.7 可玩游戏构建、复刻与修复](#methods-games)：[GAMEGO](#paper-2610-06910) · [Code2Games](#paper-2610-05033)
 
@@ -3225,7 +3227,7 @@ Adjacent 论文已经归入上面的具体方向；此索引汇总其完整记�
 
 - [3.3 图表、科学可视化与图形编辑评测](#evaluation-graphics)：[SciVisAgentBench](#paper-2603-29139) · [InteractScience](#paper-2510-09724)
 
-- [3.5 CAD 约束、几何与程序化 3D 构建评测](#evaluation-cad-3d)：[AssemblyWorld](#paper-2609-40353) · [BrickBench](#paper-2610-12452) · [EngiWorld](#paper-2609-37686) · [4DCodeBench](#paper-2610-03715) · [BVB](#paper-2609-15478) · [CADWorld](#paper-2609-16251)
+- [3.5 程序化 3D 与 CAD 基准评测](#evaluation-cad-3d)：[AssemblyWorld](#paper-2609-40353) · [BrickBench](#paper-2610-12452) · [EngiWorld](#paper-2609-37686) · [4DCodeBench](#paper-2610-03715) · [BVB](#paper-2609-15478) · [CADWorld](#paper-2609-16251)
 
 - [3.7 游戏行为、可玩性与修复评测](#evaluation-games)：[SWE-Game](#paper-2609-33678) · [OpenGameEval](#paper-2610-02563) · [World Editing](#paper-2610-02331) · [CraftBench-UE](#paper-2609-23142) · [Spec2Game](#paper-2610-04253) · [GameXpert-Bench](#paper-2608-21833)
 
@@ -3320,7 +3322,7 @@ Adjacent 论文已经归入上面的具体方向；此索引汇总其完整记�
 
 论文提出了覆盖 30 篇 NeRF 论文的 **Nerfify-Bench**。
 
-关联方向：[2.1 视觉软件工程与应用复刻](#methods-software) · [3.1 视觉软件工程与应用复刻评测](#evaluation-software) · [4.1 软件需求、应用观测与开发／复刻轨迹](#data-software) · [2.4 文档与视觉媒体构建](#methods-media) · [2.5 CAD 与程序化 3D 构建](#methods-cad-3d)
+关联方向：[2.1 视觉软件工程与应用复刻](#methods-software) · [3.1 视觉软件工程与应用复刻评测](#evaluation-software) · [4.1 软件需求、应用观测与开发／复刻轨迹](#data-software) · [2.4 文档与视觉媒体构建](#methods-media) · [2.5 程序化 3D 与 CAD 构建](#methods-cad-3d)
 
 <a id="community-and-practice"></a>
 

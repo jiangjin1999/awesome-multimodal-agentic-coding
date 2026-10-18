@@ -18,7 +18,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-170-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-171-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
@@ -1189,6 +1189,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **相关评测工作**
 
+- [BlenderWorld](#work-blenderworld) · **Core** · [3.5](#evaluation-cad-3d) — 交互式场景创作评测。
 - [CineRecon](#paper-2610-16577) · **Core** · [3.5](#evaluation-cad-3d)
 - [LMBuild](#paper-2610-04292) · **Core** · [3.5](#evaluation-cad-3d)
 - [Code4Scene](#paper-2609-36777) · **Core** · [3.5](#evaluation-cad-3d)
@@ -2035,6 +2036,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.5 CAD 与程序化 3D 构建](#methods-cad-3d) · [4.5 CAD／程序化 3D 的需求、程序与几何资产](#data-cad-3d) · [3.6 物理资产构建与可用性评测](#evaluation-physical-assets) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
 
+<a id="work-blenderworld"></a>
+<!-- mmac-record: {"id": "system:blenderworld", "scope": "Core", "primary": "3.5", "task": 5} -->
+
+- `技术报告 2026.10` **BlenderWorld: Benchmarking Visual Agents for 3D Creation from Real-World References**. [[报告]](https://github.com/QwenLM/BlenderWorld/blob/main/docs/BlenderWorld__Benchmarking_Visual_Agents_for_3D_Creation_from_Real_World_References.pdf) [[代码]](https://github.com/QwenLM/BlenderWorld) [[项目]](https://blenderworld.github.io/) [[数据集]](https://huggingface.co/datasets/Qwen/BlenderWorld) — `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Environment]` `[Verification]` `[Trajectory Analysis]` · **Core**
+  > 以 223 项参考驱动的 Blender 创作任务评测 Coding Agent 对可编辑场景的观察与修订，并由独立评测器结合 2,651 条需求检查、自适应多视角渲染与视觉质量判定进行评价。<br>
+  > **验证维度：** 可编辑场景结构 · 加权需求满足度 · 多视角视觉质量 · 人类与判定器一致性 · 工具使用与失败轨迹。
+
 <a id="paper-2610-16577"></a>
 <!-- mmac-record: {"id": "2610.16577", "scope": "Core", "primary": "3.5", "task": 5} -->
 
@@ -2533,6 +2541,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **Benchmark 工作**
 
+- [BlenderWorld](#work-blenderworld) · **Core** · [3.5](#evaluation-cad-3d) — 独立场景／视觉判定及人类一致性。
 - [Text-to-CAD Evaluation with CADTests](#paper-2605-07807) · **Core** · [3.5](#evaluation-cad-3d)
 
 <a id="data-and-learning-resources"></a>
@@ -2673,6 +2682,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **数据集工作**
 
+- [BlenderWorld](#work-blenderworld) · **Core** · [3.5](#evaluation-cad-3d) — 已发布的任务需求、参考素材、规格与评分规则。
 - [3DCodeVerse](#paper-2610-22341) · **Core** · [2.5](#methods-cad-3d)
 - [CineRecon](#paper-2610-16577) · **Core** · [3.5](#evaluation-cad-3d)
 - [HARMONY](#paper-2609-26793) · **Core** · [2.5](#methods-cad-3d)

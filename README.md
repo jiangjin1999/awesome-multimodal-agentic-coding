@@ -18,7 +18,7 @@ A research map of multimodal agents that orchestrate model capabilities to build
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-170-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-171-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
@@ -1189,6 +1189,7 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Related evaluation contributions**
 
+- [BlenderWorld](#work-blenderworld) · **Core** · [3.5](#evaluation-cad-3d) — interactive scene-creation evaluation.
 - [CineRecon](#paper-2610-16577) · **Core** · [3.5](#evaluation-cad-3d)
 - [LMBuild](#paper-2610-04292) · **Core** · [3.5](#evaluation-cad-3d)
 - [Code4Scene](#paper-2609-36777) · **Core** · [3.5](#evaluation-cad-3d)
@@ -2035,6 +2036,13 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Connect:** [2.5 CAD and procedural 3D construction](#methods-cad-3d) · [4.5 CAD/procedural 3D requirements, programs, and geometric assets](#data-cad-3d) · [3.6 Physical asset construction and usability evaluation](#evaluation-physical-assets) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
 
+<a id="work-blenderworld"></a>
+<!-- mmac-record: {"id": "system:blenderworld", "scope": "Core", "primary": "3.5", "task": 5} -->
+
+- `Technical Report 2026.10` **BlenderWorld: Benchmarking Visual Agents for 3D Creation from Real-World References**. [[report]](https://github.com/QwenLM/BlenderWorld/blob/main/docs/BlenderWorld__Benchmarking_Visual_Agents_for_3D_Creation_from_Real_World_References.pdf) [[code]](https://github.com/QwenLM/BlenderWorld) [[project]](https://blenderworld.github.io/) [[dataset]](https://huggingface.co/datasets/Qwen/BlenderWorld) — `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Environment]` `[Verification]` `[Trajectory Analysis]` · **Core**
+  > Benchmarks 223 reference-driven Blender creation tasks in which coding agents inspect and revise editable scenes, with a separate evaluator combining 2,651 requirement checks, adaptive multi-view renders, and visual-quality judgments.<br>
+  > **Verification:** Editable scene structure · weighted requirement satisfaction · multi-view visual quality · human–judge agreement · tool-use and failure trajectories.
+
 <a id="paper-2610-16577"></a>
 <!-- mmac-record: {"id": "2610.16577", "scope": "Core", "primary": "3.5", "task": 5} -->
 
@@ -2533,6 +2541,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Benchmark contributions**
 
+- [BlenderWorld](#work-blenderworld) · **Core** · [3.5](#evaluation-cad-3d) — independent scene/visual judging and human alignment.
 - [Text-to-CAD Evaluation with CADTests](#paper-2605-07807) · **Core** · [3.5](#evaluation-cad-3d)
 
 <a id="data-and-learning-resources"></a>
@@ -2673,6 +2682,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Dataset contributions**
 
+- [BlenderWorld](#work-blenderworld) · **Core** · [3.5](#evaluation-cad-3d) — released task briefs, references, specifications, and rubrics.
 - [3DCodeVerse](#paper-2610-22341) · **Core** · [2.5](#methods-cad-3d)
 - [CineRecon](#paper-2610-16577) · **Core** · [3.5](#evaluation-cad-3d)
 - [HARMONY](#paper-2609-26793) · **Core** · [2.5](#methods-cad-3d)

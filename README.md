@@ -23,7 +23,7 @@ A research map of multimodal agents that orchestrate model capabilities to build
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-10-17**
+**Last updated: 2026-10-18**
 
 </div>
 
@@ -1643,6 +1643,7 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 **Related capabilities and workflows**
 
 - [World Action Agent](#paper-2609-29964) · **Adjacent** · [5.4](#section-5-4)
+- [CarryOn](#paper-2610-21453) · **Adjacent** · [2.12](#methods-experience) — frozen-policy coordination with retained recovery skills.
 - [ROMA](#paper-2610-06955) · **Adjacent** · [5.1](#section-5-1)
 - [BT-Agent](#paper-2610-13862) · **Adjacent** · [5.4](#section-5-4)
 - [Recursive Video In-Context Learning for Agentic Robot](#paper-2610-06843) · **Adjacent** · [5.4](#section-5-4)
@@ -1686,6 +1687,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 **Boundary.** Distinguish learning the builder from learning the operator in a generated environment. Within-task iteration and static expert skills do not by themselves establish cross-task learning.
 
 **Connect:** [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [2.2 GUI and software training-environment synthesis](#methods-gui-environments) · [5.5 Skills, tool bridges, and reusable workflows](#section-5-5) · [6.5 From construction experience to transferable capability](#section-6-5)
+
+<a id="paper-2610-21453"></a>
+<!-- mmac-record: {"id": "2610.21453", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.10` **CarryOn: A Dual-Loop Harness for Personalized and Reliable Robot Assistance**. [[paper]](https://arxiv.org/abs/2610.21453) [[project]](https://vincent2311.github.io/Projects/CarryOn/) [[repository]](https://github.com/JIA-Lab-research/CarryOn) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]` · **Adjacent**
+  > Coordinates persistent user/scene memory, a frozen VLA, geometric shielding, and visual failure recovery, while offline reflection revises recovery strategies and parameters for later attempts.<br>
+  > **Verification:** Preference-consistent planning · scene-memory correction · simulation and hardware safety/recovery tests · cumulative retry success, distinct from single-attempt success.
 
 <a id="paper-2609-22086"></a>
 <!-- mmac-record: {"id": "2609.22086", "scope": "Core", "primary": "2.12", "task": 12} -->
@@ -2407,6 +2415,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 **Related capability evaluation**
 
 - [World Action Agent](#paper-2609-29964) · **Adjacent** · [5.4](#section-5-4)
+- [CarryOn](#paper-2610-21453) · **Adjacent** · [2.12](#methods-experience) — simulation and hardware safety/recovery protocols.
 - [ROMA](#paper-2610-06955) · **Adjacent** · [5.1](#section-5-1)
 - [BT-Agent](#paper-2610-13862) · **Adjacent** · [5.4](#section-5-4)
 - [Recursive Video In-Context Learning for Agentic Robot](#paper-2610-06843) · **Adjacent** · [5.4](#section-5-4)
@@ -2486,6 +2495,20 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 **Boundary.** Deterministic execution does not guarantee semantic correctness. Judge–human agreement also does not replace evidence of better closed-loop repairs.
 
 **Connect:** [3.1 Visual software engineering and recreation evaluation](#evaluation-software) · [3.3 Chart, scientific visualization, and graphics-editing evaluation](#evaluation-graphics) · [3.5 CAD constraints, geometry, and procedural 3D evaluation](#evaluation-cad-3d) · [3.7 Game behavior, playability, and repair evaluation](#evaluation-games) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [6.3 Independent verification and trustworthy rewards](#section-6-3)
+
+<a id="paper-2610-22355"></a>
+<!-- mmac-record: {"id": "2610.22355", "scope": "Adjacent", "primary": "3.13", "task": 8} -->
+
+- `arXiv 2026.10` **OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling**. [[paper]](https://arxiv.org/abs/2610.22355) [[code]](https://github.com/Cominclip/OmniVerifier) — `[Method]` · `[Training]` `[Verification]` · **Adjacent**
+  > Decomposes visual requirements into graded checks for training image generators, using ground-truth reference images to reduce target-state reasoning errors in rule-governed visual tasks.<br>
+  > **Verification:** Visual critic generalization · text–image alignment · rule-task correctness · pointwise/pairwise and graded/binary comparisons; reference-based rewards require a target image.
+
+<a id="paper-2610-15924"></a>
+<!-- mmac-record: {"id": "2610.15924", "scope": "Adjacent", "primary": "3.13", "task": 1} -->
+
+- `arXiv 2026.10` **Scalable Weak-to-Strong Verifier Hardening for Agent Environments**. [[paper]](https://arxiv.org/abs/2610.15924) [[project]](https://verifier-hardening.github.io/) — `[Method]` · `[Environment]` `[Verification]` · **Adjacent**
+  > Iteratively audits and repairs sandboxed agent-environment verifiers with weaker models, checking retained legitimate solutions and fresh solver attempts before accepting each repair.<br>
+  > **Verification:** Held-out stronger-agent attack success · benign validity · iterative/static repair comparison · residual exploits and finite validation coverage.
 
 <a id="paper-2511-15567"></a>
 <!-- mmac-record: {"id": "2511.15567", "scope": "Core", "primary": "3.13", "task": 1} -->
@@ -2855,6 +2878,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 - [RA-CAD](#paper-2608-05714) · **Adjacent** · [2.12](#methods-experience)
 - [Designer-RSI](#paper-2609-22086) · **Core** · [2.12](#methods-experience)
+- [CarryOn](#paper-2610-21453) · **Adjacent** · [2.12](#methods-experience) — failure examples and recovery-version chains described in the paper.
 
 <a id="capabilities-and-infrastructure"></a>
 
@@ -2880,6 +2904,13 @@ This is a research-resource index, not a claim that every linked paper releases 
 **Reading links**
 
 - [GRASE](#paper-2610-21498) · **Core** · [2.9](#methods-real-to-sim)
+
+**Resource**
+
+| Capability | Resource and sources | Inputs → outputs | Role in a workflow |
+|---|---|---|---|
+| Feed-forward 4D perception | **Gen4P** — *Gen4P: Video Generators are 4D Perceivers* [[paper]](https://arxiv.org/abs/2610.22371) · [[project]](https://gen4p.github.io/) · [[repository]](https://github.com/yitongx/Gen4P) | Monocular video + spatiotemporal queries → 3D tracks, geometry/depth, and camera estimates | Adapts a video generator with single-pass encoding and on-demand decoding, optionally reusing a frozen depth adapter; supplies scene measurements rather than an autonomous action loop. Installation and usage remain work in progress. |
+| Typed spatial decisions | **MJev-Spatial** — *MJev-Spatial: System One Spatial Intelligence via Native Attention Matching* [[paper]](https://arxiv.org/abs/2610.22276) · [[repository docs]](https://github.com/Fr0zenCrane/MJev-Spatial) · [[weights]](https://huggingface.co/mindlab-research/MJev-Spatial-4B) | Image + spatial question + candidate contract → option, scalar, or image point with scores | Uses native attention matching instead of answer-token generation; each decision is one pass, while scalar/point refinement can require multiple stages. A perception component evaluated offline, not evidence of robot execution. |
 
 <a id="models-as-tools"></a>
 
@@ -3043,6 +3074,7 @@ The list below is a practical starting point rather than a security audit or end
 | Parametric CAD workbench and review | [AgentCAD (n3r)](https://github.com/n3r/AgentCAD) | Community workbench + HTTP/MCP; Apache-2.0 | Builds build123d parts and assemblies, returns multi-view PNGs as MCP image content, and exposes measured design-spec results alongside geometry-aware review workflows. |
 | Hosted CAD agents and geometry APIs | [Zoo developer tools](https://docs.zoo.dev/docs) | Official MCP / Agent API / Engine API | Connects language-driven KCL workflows to geometric execution, snapshots, inspection, and debugging. |
 | Blender and procedural 3D | [Blender Lab MCP Server](https://www.blender.org/lab/mcp-server/) · [BlenderMCP community demos](https://github.com/ahujasid/blender-mcp) | Official MCP + community demo ecosystem | Gives agents scene inspection and Python operations inside Blender; community demos show reference-image-to-scene and Blender-to-Three.js workflows. |
+| Saved-file and headless Blender iteration | [bpy.dev Blender MCP](https://github.com/bpy-dev/blender-mcp) · [workflow](https://bpy.dev/) | Community developer-preview fork of Blender Lab MCP; GPL-3.0 | Adds saved-.blend subprocess execution, rendering/inspection, and runtime API lookup; agents can use returned renders for further edits. Timeouts and output limits are process safeguards, not an OS sandbox or a verified repair-performance guarantee. |
 | Blender scene and generation bridge | [Scenario for Blender](https://github.com/scenario-labs/blender-plugin) | Project-maintained experimental extension + MCP; GPL-3.0-or-later | Exposes viewport screenshots, still renders, scene operations, and gated Python alongside hosted asset generation; Blender 5.0+ and Scenario credentials are required. |
 | Reproducible Blender asset workflows | [Blender Agent Studio](https://github.com/ifBars/blender-agent-studio) | Community skills + local MCP; MIT | Preserves rebuildable Python and editable .blend assets, with fixed-view review, localized repairs, and contract-specific export/fresh-import checks. |
 | Multi-view Blender model diagnosis | [trueform](https://github.com/shidenkai0/trueform) | Community skill + MIT toolkit | Matches reference cameras, renders silhouette and surface diagnostics, rejects revisions that regress any required view, and guides the agent's next geometry edits. |

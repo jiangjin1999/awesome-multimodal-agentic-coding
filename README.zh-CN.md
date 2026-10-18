@@ -23,7 +23,7 @@
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-10-17**
+**最后更新：2026-10-18**
 
 </div>
 
@@ -1643,6 +1643,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **相邻能力与工作流**
 
 - [World Action Agent](#paper-2609-29964) · **Adjacent** · [5.4](#section-5-4)
+- [CarryOn](#paper-2610-21453) · **Adjacent** · [2.12](#methods-experience) — 协调冻结策略并保留恢复技能。
 - [ROMA](#paper-2610-06955) · **Adjacent** · [5.1](#section-5-1)
 - [BT-Agent](#paper-2610-13862) · **Adjacent** · [5.4](#section-5-4)
 - [Recursive Video In-Context Learning for Agentic Robot](#paper-2610-06843) · **Adjacent** · [5.4](#section-5-4)
@@ -1686,6 +1687,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 单次产物修订与跨任务能力改进分别验证；构建轨迹训练和在生成环境中训练操作策略也具有不同学习对象。
 
 **关联阅读：** [3.12 经验学习与跨任务泛化评测](#evaluation-experience) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [2.2 GUI／软件训练环境合成](#methods-gui-environments) · [5.5 Skills、工具桥与可复用工作流](#section-5-5) · [6.5 从构建经验到可迁移能力](#section-6-5)
+
+<a id="paper-2610-21453"></a>
+<!-- mmac-record: {"id": "2610.21453", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.10` **CarryOn: A Dual-Loop Harness for Personalized and Reliable Robot Assistance**. [[论文]](https://arxiv.org/abs/2610.21453) [[项目]](https://vincent2311.github.io/Projects/CarryOn/) [[仓库]](https://github.com/JIA-Lab-research/CarryOn) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]` · **Adjacent**
+  > 协调持久用户／场景记忆、冻结 VLA、几何安全过滤与视觉失败恢复，并通过离线反思修订恢复策略和参数，供后续尝试复用。<br>
+  > **验证维度：** 偏好一致的规划 · 场景记忆纠正 · 仿真与实机安全／恢复测试 · 区分累计重试成功率与单次成功率。
 
 <a id="paper-2609-22086"></a>
 <!-- mmac-record: {"id": "2609.22086", "scope": "Core", "primary": "2.12", "task": 12} -->
@@ -2407,6 +2415,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **相邻能力评测**
 
 - [World Action Agent](#paper-2609-29964) · **Adjacent** · [5.4](#section-5-4)
+- [CarryOn](#paper-2610-21453) · **Adjacent** · [2.12](#methods-experience) — 仿真与实机安全／恢复协议。
 - [ROMA](#paper-2610-06955) · **Adjacent** · [5.1](#section-5-1)
 - [BT-Agent](#paper-2610-13862) · **Adjacent** · [5.4](#section-5-4)
 - [Recursive Video In-Context Learning for Agentic Robot](#paper-2610-06843) · **Adjacent** · [5.4](#section-5-4)
@@ -2486,6 +2495,20 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 程序判定的确定性不等于任务语义正确；judge 与人工的一致性也不能替代闭环修复收益。
 
 **关联阅读：** [3.1 视觉软件工程与应用复刻评测](#evaluation-software) · [3.3 图表、科学可视化与图形编辑评测](#evaluation-graphics) · [3.5 CAD 约束、几何与程序化 3D 构建评测](#evaluation-cad-3d) · [3.7 游戏行为、可玩性与修复评测](#evaluation-games) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [6.3 独立验证与可信奖励](#section-6-3)
+
+<a id="paper-2610-22355"></a>
+<!-- mmac-record: {"id": "2610.22355", "scope": "Adjacent", "primary": "3.13", "task": 8} -->
+
+- `arXiv 2026.10` **OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling**. [[论文]](https://arxiv.org/abs/2610.22355) [[代码]](https://github.com/Cominclip/OmniVerifier) — `[Method]` · `[Training]` `[Verification]` · **Adjacent**
+  > 将视觉要求拆为分项检查并汇总为训练图像生成器的分级奖励，在规则约束视觉任务中借助真实目标参考图减少目标状态推理错误。<br>
+  > **验证维度：** 视觉评判泛化 · 图文对齐 · 规则任务正确性 · 单样本／参考图比较与分级／二值奖励对照；参考式奖励需要目标图像。
+
+<a id="paper-2610-15924"></a>
+<!-- mmac-record: {"id": "2610.15924", "scope": "Adjacent", "primary": "3.13", "task": 1} -->
+
+- `arXiv 2026.10` **Scalable Weak-to-Strong Verifier Hardening for Agent Environments**. [[论文]](https://arxiv.org/abs/2610.15924) [[项目]](https://verifier-hardening.github.io/) — `[Method]` · `[Environment]` `[Verification]` · **Adjacent**
+  > 用较弱模型迭代审计与修复沙箱内 Agent 环境的验证器，在接纳修复前回放合法解并检查新求解尝试。<br>
+  > **验证维度：** 留出强模型的攻击成功率 · 合法解有效性 · 迭代／静态修复比较 · 残余漏洞与有限验证覆盖。
 
 <a id="paper-2511-15567"></a>
 <!-- mmac-record: {"id": "2511.15567", "scope": "Core", "primary": "3.13", "task": 1} -->
@@ -2855,6 +2878,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 - [RA-CAD](#paper-2608-05714) · **Adjacent** · [2.12](#methods-experience)
 - [Designer-RSI](#paper-2609-22086) · **Core** · [2.12](#methods-experience)
+- [CarryOn](#paper-2610-21453) · **Adjacent** · [2.12](#methods-experience) — 论文描述的失败样例与恢复版本链。
 
 <a id="capabilities-and-infrastructure"></a>
 
@@ -2880,6 +2904,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **阅读入口**
 
 - [GRASE](#paper-2610-21498) · **Core** · [2.9](#methods-real-to-sim)
+
+**Resource**
+
+| 能力 | 资源与来源 | 输入 → 输出 | 工作流中的作用 |
+|---|---|---|---|
+| 前馈 4D 感知 | **Gen4P** — *Gen4P: Video Generators are 4D Perceivers* [[论文]](https://arxiv.org/abs/2610.22371) · [[项目]](https://gen4p.github.io/) · [[仓库]](https://github.com/yitongx/Gen4P) | 单目视频 + 时空查询 → 3D 轨迹、几何／深度与相机估计 | 将视频生成器适配为单次编码、按需解码的感知工具，可复用冻结深度适配器；提供场景测量，而非自主行动闭环。安装与使用接口仍在开发中。 |
+| 类型化空间决策 | **MJev-Spatial** — *MJev-Spatial: System One Spatial Intelligence via Native Attention Matching* [[论文]](https://arxiv.org/abs/2610.22276) · [[仓库文档]](https://github.com/Fr0zenCrane/MJev-Spatial) · [[权重]](https://huggingface.co/mindlab-research/MJev-Spatial-4B) | 图像 + 空间问题 + 候选约定 → 带评分的选项、标量或图像点 | 用原生注意力匹配代替答案 Token 生成；每次决策单次前向，标量／点位细化可能需多阶段。属于离线评测的感知组件，不是机器人执行证据。 |
 
 <a id="models-as-tools"></a>
 
@@ -3043,6 +3074,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 | CQ-Editor 技能引导的 CAD 审阅 | [CadQuery AI Agent](https://github.com/naturecodec-stack/Agentic-AI-for-CadQuery) | 社区工作流 + 形状模板；许可证未注明 | v4 工作流执行 CadQuery，将三视图渲染交给多模态审阅器，并将拒绝反馈传回代码生成器；有限轮次的视觉重试最终交由人工批准，缺少渲染时可能跳过审阅。 |
 | 托管 CAD Agent 与几何 API | [Zoo developer tools](https://docs.zoo.dev/docs) | 官方 MCP / Agent API / Engine API | 将语言驱动的 KCL 工作流连接到几何执行、快照、检查和调试。 |
 | Blender 与程序化 3D | [Blender Lab MCP Server](https://www.blender.org/lab/mcp-server/) · [BlenderMCP 社区 Demo](https://github.com/ahujasid/blender-mcp) | 官方 MCP + 社区 Demo 生态 | 支持 Agent 在 Blender 中检查场景并执行 Python；社区 Demo 展示参考图到场景、Blender 到 Three.js 等工作流。 |
+| 保存文件与无界面 Blender 迭代 | [bpy.dev Blender MCP](https://github.com/bpy-dev/blender-mcp) · [工作流](https://bpy.dev/) | Blender Lab MCP 的社区开发预览分支；GPL-3.0 | 增加保存 .blend 的子进程执行、渲染／检查与运行时 API 查询，Agent 可利用返回的渲染继续编辑；超时与输出限制是进程防护，不是操作系统沙箱或修复性能保证。 |
 | Blender 场景与生成工具桥 | [Scenario for Blender](https://github.com/scenario-labs/blender-plugin) | 项目维护的实验性扩展 + MCP；GPL-3.0-or-later | 提供视口截图、静帧渲染、场景操作及受开关控制的 Python，并连接托管资产生成；需要 Blender 5.0+ 与 Scenario 凭据。 |
 | 可重建 Blender 资产工作流 | [Blender Agent Studio](https://github.com/ifBars/blender-agent-studio) | 社区 Skills + 本地 MCP；MIT | 保留可重建 Python 与可编辑 .blend 资产，提供固定视角审查、局部修复及按交付约定执行的导出／重新导入检查。 |
 | Blender 多视图模型诊断 | [trueform](https://github.com/shidenkai0/trueform) | 社区 Skill + MIT 工具包 | 匹配参考相机、渲染轮廓与表面诊断，拒绝让任一必检视图退化的修改，并指导 Agent 下一轮几何编辑。 |

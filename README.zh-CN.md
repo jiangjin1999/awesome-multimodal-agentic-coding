@@ -18,12 +18,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-171-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-173-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-10-18**
+**最后更新：2026-10-19**
 
 </div>
 
@@ -518,6 +518,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 环境自身质量与下游 Agent 收益分别评价；合成软件到目标应用的迁移属于数字环境迁移。
 
 **关联阅读：** [3.2 GUI／软件训练环境构建与下游效用评测](#evaluation-gui-environments) · [4.2 GUI／软件训练环境、任务、奖励与操作轨迹](#data-gui-environments) · [1.4 何时成为环境：状态、动作、重置、任务与奖励](#section-1-4) · [2.1 视觉软件工程与应用复刻](#methods-software) · [2.12 从构建与交互经验学习](#methods-experience)
+
+<a id="paper-2605-25624"></a>
+<!-- mmac-record: {"id": "2605.25624", "scope": "Core", "primary": "2.2", "task": 2} -->
+
+- `arXiv 2026.05` **CUA-Gym: Scaling Verifiable Training Environments and Tasks for Computer-Use Agents**. [[论文]](https://arxiv.org/abs/2605.25624) [[代码]](https://github.com/xlang-ai/CUA-Gym) [[环境]](https://github.com/xlang-ai/CUA-Gym-Hub) [[数据]](https://huggingface.co/datasets/xlangai/CUA-Gym) — `[Method]` `[Dataset]` · `[Data Curation]` `[Training]` `[Environment]` `[Verification]` · **Core**
+  > 联合生成可重置的软件状态、任务与可执行奖励，将 rollout 截图判断与程序评分之间的分歧反馈给奖励编写 Agent，修改后重新执行验证。<br>
+  > **验证维度：** 初始／目标状态奖励检查 · 独立视觉评分一致性 · 任务可解性 · OSWorld／WebArena 下游迁移 · 区分论文的 32,112 个训练元组与公开发布的 10,910 个任务。
 
 <a id="paper-2610-12611"></a>
 <!-- mmac-record: {"id": "2610.12611", "scope": "Core", "primary": "2.2", "task": 2} -->
@@ -1689,6 +1696,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.12 经验学习与跨任务泛化评测](#evaluation-experience) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [2.2 GUI／软件训练环境合成](#methods-gui-environments) · [5.5 Skills、工具桥与可复用工作流](#section-5-5) · [6.5 从构建经验到可迁移能力](#section-6-5)
 
+<a id="paper-2610-22362"></a>
+<!-- mmac-record: {"id": "2610.22362", "scope": "Core", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.10` **CoDA: Co-Evolution of Data Engines and Action Policies**. [[论文]](https://arxiv.org/abs/2610.22362) — `[Method]` · `[Data Curation]` `[Training]` `[Environment]` `[Verification]` · **Core**
+  > 将基于视频的机器人失败诊断转化为可复用的场景生成程序与训练势函数程序，再通过仿真中测得的学习进展持续修订程序和动作策略。<br>
+  > **验证维度：** 场景有效性 · 定向／对照难度检验 · 未见物体／布局／任务／类别成功率 · LIBERO-Pro 迁移 · 相同生成预算与记忆／诊断消融；无实机评测。
+
 <a id="paper-2610-21453"></a>
 <!-- mmac-record: {"id": "2610.21453", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
 
@@ -1894,6 +1908,10 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **Benchmark 工作**
 
 - [SoftwareGym](#paper-2610-12611) · **Core** · [2.2](#methods-gui-environments)
+
+**方法论文中的评测设置**
+
+- [CUA-Gym](#paper-2605-25624) · **Core** · [2.2](#methods-gui-environments) — 奖励保真度与下游计算机操作迁移。
 
 <a id="evaluation-graphics"></a>
 
@@ -2400,6 +2418,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 - [Awomo-SimDataEngine](#paper-2610-02274) · **Core** · [2.8](#methods-world-models)
 - [MoCaP](#paper-2610-20998) · **Core** · [2.10](#methods-robot-programs)
+- [ACRO](#paper-2610-19677) · **Adjacent** · [5.4](#section-5-4) — 将回退运动计入物理步数预算的仿真与实机恢复评测。
 - [Agentic Robot Creation through Generation, Verification, and Revision](#paper-2610-17881) · **Core** · [2.10](#methods-robot-programs)
 - [HuGo](#paper-2609-30594) · **Core** · [2.10](#methods-robot-programs)
 - [Adaptive Code Generation for Controlling Robots](#paper-2610-09588) · **Core** · [2.10](#methods-robot-programs)
@@ -2469,6 +2488,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 - [Learning Only with Images](#paper-2507-20766) · **Core** · [2.1](#methods-software)
 - [WebWorld](#paper-2608-30530) · **Core** · [2.1](#methods-software)
+- [CoDA](#paper-2610-22362) · **Core** · [2.12](#methods-experience) — 仿真中的跨任务生成程序复用与策略学习。
 - [VisRefiner](#paper-2602-05998) · **Core** · [2.1](#methods-software)
 - [ReLook](#paper-2510-11498) · **Core** · [2.1](#methods-software)
 - [WebGen-Agent](#paper-2509-22644) · **Core** · [2.1](#methods-software)
@@ -2601,6 +2621,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **数据集工作**
 
 - [SoftwareGym](#paper-2610-12611) · **Core** · [2.2](#methods-gui-environments)
+
+- [CUA-Gym](#paper-2605-25624) · **Core** · [2.2](#methods-gui-environments) — 公开 10,910 个含初始化产物与奖励代码的任务包；网页任务需自托管模拟应用服务。
 
 <a id="data-graphics"></a>
 
@@ -2874,6 +2896,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 - [WebWorld](#paper-2608-30530) · **Core** · [2.1](#methods-software)
 - [RSIGame](#paper-2609-39045) · **Core** · [2.7](#methods-games)
 - [AutoDesign](#paper-2608-13560) · **Core** · [2.12](#methods-experience)
+- [CoDA](#paper-2610-22362) · **Core** · [2.12](#methods-experience) — 用生成场景、失败诊断与程序记忆支持迭代策略训练。
 - [MobiAgent](#paper-2610-03476) · **Adjacent** · [5.4](#section-5-4)
 
 **数据集工作**
@@ -2992,6 +3015,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.10 机器人程序与策略开发](#methods-robot-programs) · [2.11 Real2Sim2Real：任务学习与真实执行](#methods-real2sim2real) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
 
+<a id="paper-2610-19677"></a>
+<!-- mmac-record: {"id": "2610.19677", "scope": "Adjacent", "primary": "5.4", "task": 10} -->
+
+- `arXiv 2026.10` **ACRO: Actor–Critic Rollout Orchestration**. [[论文]](https://arxiv.org/abs/2610.19677) — `[Method]` · `[Training]` `[Inference]` `[Verification]` · **Adjacent**
+  > 为冻结 VLA 增加学习得到的 Critic 与轨迹回退 Actor，让机器人实际返回更有希望的已访问状态，再从新观测继续执行，而非重写控制代码。<br>
+  > **验证维度：** SimplerEnv／RoboCasa 与实机成功率 · 干预及回退运动成本 · 相同物理步数预算 · 恢复消融；物理步数预算不同于墙钟时间预算。
+
 <a id="paper-2609-29964"></a>
 <!-- mmac-record: {"id": "2609.29964", "scope": "Adjacent", "primary": "5.4", "task": 10} -->
 
@@ -3086,6 +3116,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 | CQ-Editor 技能引导的 CAD 审阅 | [CadQuery AI Agent](https://github.com/naturecodec-stack/Agentic-AI-for-CadQuery) | 社区工作流 + 形状模板；许可证未注明 | v4 工作流执行 CadQuery，将三视图渲染交给多模态审阅器，并将拒绝反馈传回代码生成器；有限轮次的视觉重试最终交由人工批准，缺少渲染时可能跳过审阅。 |
 | 托管 CAD Agent 与几何 API | [Zoo developer tools](https://docs.zoo.dev/docs) | 官方 MCP / Agent API / Engine API | 将语言驱动的 KCL 工作流连接到几何执行、快照、检查和调试。 |
 | Blender 与程序化 3D | [Blender Lab MCP Server](https://www.blender.org/lab/mcp-server/) · [BlenderMCP 社区 Demo](https://github.com/ahujasid/blender-mcp) | 官方 MCP + 社区 Demo 生态 | 支持 Agent 在 Blender 中检查场景并执行 Python；社区 Demo 展示参考图到场景、Blender 到 Three.js 等工作流。 |
+| Blender 编码与多视图检查 | [Claude Blender](https://github.com/minihellboy/claude-blender) | 社区 MCP；MIT | 执行 Blender Python，并向外部 Agent 返回视口／渲染图、多视图拼图与场景差异；接口支持检查与修订，但不是自主修复性能基准。 |
 | 保存文件与无界面 Blender 迭代 | [bpy.dev Blender MCP](https://github.com/bpy-dev/blender-mcp) · [工作流](https://bpy.dev/) | Blender Lab MCP 的社区开发预览分支；GPL-3.0 | 增加保存 .blend 的子进程执行、渲染／检查与运行时 API 查询，Agent 可利用返回的渲染继续编辑；超时与输出限制是进程防护，不是操作系统沙箱或修复性能保证。 |
 | Blender 场景与生成工具桥 | [Scenario for Blender](https://github.com/scenario-labs/blender-plugin) | 项目维护的实验性扩展 + MCP；GPL-3.0-or-later | 提供视口截图、静帧渲染、场景操作及受开关控制的 Python，并连接托管资产生成；需要 Blender 5.0+ 与 Scenario 凭据。 |
 | 可重建 Blender 资产工作流 | [Blender Agent Studio](https://github.com/ifBars/blender-agent-studio) | 社区 Skills + 本地 MCP；MIT | 保留可重建 Python 与可编辑 .blend 资产，提供固定视角审查、局部修复及按交付约定执行的导出／重新导入检查。 |

@@ -18,12 +18,12 @@ A research map of multimodal agents that orchestrate model capabilities to build
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-171-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-173-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-10-18**
+**Last updated: 2026-10-19**
 
 </div>
 
@@ -518,6 +518,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 **Boundary.** Environment quality and downstream agent benefit are evaluated separately. Transfer from synthetic software to target applications is digital-environment transfer.
 
 **Connect:** [3.2 Training-environment construction and downstream utility](#evaluation-gui-environments) · [4.2 GUI/software environments, tasks, rewards, and action traces](#data-gui-environments) · [1.4 From artifacts to environments: state, actions, resets, tasks, and rewards](#section-1-4) · [2.1 Visual software engineering and application recreation](#methods-software) · [2.12 Learning from construction and interaction experience](#methods-experience)
+
+<a id="paper-2605-25624"></a>
+<!-- mmac-record: {"id": "2605.25624", "scope": "Core", "primary": "2.2", "task": 2} -->
+
+- `arXiv 2026.05` **CUA-Gym: Scaling Verifiable Training Environments and Tasks for Computer-Use Agents**. [[paper]](https://arxiv.org/abs/2605.25624) [[code]](https://github.com/xlang-ai/CUA-Gym) [[environments]](https://github.com/xlang-ai/CUA-Gym-Hub) [[data]](https://huggingface.co/datasets/xlangai/CUA-Gym) — `[Method]` `[Dataset]` · `[Data Curation]` `[Training]` `[Environment]` `[Verification]` · **Core**
+  > Co-generates resettable software states, tasks, and executable rewards, returning disagreements between rollout screenshots and programmatic scores to the reward-writing agent for revision and another rollout.<br>
+  > **Verification:** Initial/golden-state reward checks · independent visual-score agreement · task feasibility · OSWorld/WebArena downstream transfer · 32,112 training tuples in the paper versus 10,910 tasks in the public release.
 
 <a id="paper-2610-12611"></a>
 <!-- mmac-record: {"id": "2610.12611", "scope": "Core", "primary": "2.2", "task": 2} -->
@@ -1689,6 +1696,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Connect:** [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [2.2 GUI and software training-environment synthesis](#methods-gui-environments) · [5.5 Skills, tool bridges, and reusable workflows](#section-5-5) · [6.5 From construction experience to transferable capability](#section-6-5)
 
+<a id="paper-2610-22362"></a>
+<!-- mmac-record: {"id": "2610.22362", "scope": "Core", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.10` **CoDA: Co-Evolution of Data Engines and Action Policies**. [[paper]](https://arxiv.org/abs/2610.22362) — `[Method]` · `[Data Curation]` `[Training]` `[Environment]` `[Verification]` · **Core**
+  > Turns video-grounded robot failure diagnoses into reusable scene-generation and training-potential programs, refining these programs and action policies through measured learning progress in simulation.<br>
+  > **Verification:** Scene validity · targeted/control difficulty comparisons · held-out object/layout/task/category success · LIBERO-Pro transfer · matched generation budgets and memory/critic ablations; no real-hardware evaluation.
+
 <a id="paper-2610-21453"></a>
 <!-- mmac-record: {"id": "2610.21453", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
 
@@ -1894,6 +1908,10 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 **Benchmark contributions**
 
 - [SoftwareGym](#paper-2610-12611) · **Core** · [2.2](#methods-gui-environments)
+
+**Evaluation settings in method papers**
+
+- [CUA-Gym](#paper-2605-25624) · **Core** · [2.2](#methods-gui-environments) — reward fidelity and downstream computer-use transfer.
 
 <a id="evaluation-graphics"></a>
 
@@ -2400,6 +2418,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 - [Awomo-SimDataEngine](#paper-2610-02274) · **Core** · [2.8](#methods-world-models)
 - [MoCaP](#paper-2610-20998) · **Core** · [2.10](#methods-robot-programs)
+- [ACRO](#paper-2610-19677) · **Adjacent** · [5.4](#section-5-4) — simulated and real-robot recovery under physical-step budgets that include return motion.
 - [Agentic Robot Creation through Generation, Verification, and Revision](#paper-2610-17881) · **Core** · [2.10](#methods-robot-programs)
 - [HuGo](#paper-2609-30594) · **Core** · [2.10](#methods-robot-programs)
 - [Adaptive Code Generation for Controlling Robots](#paper-2610-09588) · **Core** · [2.10](#methods-robot-programs)
@@ -2469,6 +2488,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 - [Learning Only with Images](#paper-2507-20766) · **Core** · [2.1](#methods-software)
 - [WebWorld](#paper-2608-30530) · **Core** · [2.1](#methods-software)
+- [CoDA](#paper-2610-22362) · **Core** · [2.12](#methods-experience) — cross-task generation-program reuse and policy learning in simulation.
 - [VisRefiner](#paper-2602-05998) · **Core** · [2.1](#methods-software)
 - [ReLook](#paper-2510-11498) · **Core** · [2.1](#methods-software)
 - [WebGen-Agent](#paper-2509-22644) · **Core** · [2.1](#methods-software)
@@ -2601,6 +2621,8 @@ This is a research-resource index, not a claim that every linked paper releases 
 **Dataset contributions**
 
 - [SoftwareGym](#paper-2610-12611) · **Core** · [2.2](#methods-gui-environments)
+
+- [CUA-Gym](#paper-2605-25624) · **Core** · [2.2](#methods-gui-environments) — 10,910 released task bundles with setup artifacts and reward code; web tasks require self-hosted mock endpoints.
 
 <a id="data-graphics"></a>
 
@@ -2874,6 +2896,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 - [WebWorld](#paper-2608-30530) · **Core** · [2.1](#methods-software)
 - [RSIGame](#paper-2609-39045) · **Core** · [2.7](#methods-games)
 - [AutoDesign](#paper-2608-13560) · **Core** · [2.12](#methods-experience)
+- [CoDA](#paper-2610-22362) · **Core** · [2.12](#methods-experience) — generated scenes, failure diagnoses, and program memory support iterative policy training.
 - [MobiAgent](#paper-2610-03476) · **Adjacent** · [5.4](#section-5-4)
 
 **Dataset contributions**
@@ -2992,6 +3015,13 @@ These layers are complementary rather than mutually exclusive. For example, an a
 
 **Connect:** [2.10 Robot program and policy development](#methods-robot-programs) · [2.11 Real2Sim2Real: task learning and real execution](#methods-real2sim2real) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
 
+<a id="paper-2610-19677"></a>
+<!-- mmac-record: {"id": "2610.19677", "scope": "Adjacent", "primary": "5.4", "task": 10} -->
+
+- `arXiv 2026.10` **ACRO: Actor–Critic Rollout Orchestration**. [[paper]](https://arxiv.org/abs/2610.19677) — `[Method]` · `[Training]` `[Inference]` `[Verification]` · **Adjacent**
+  > Wraps a frozen VLA with a learned critic and trajectory-retraction actor that physically returns the robot to a promising visited state before resuming from a fresh observation, rather than rewriting control code.<br>
+  > **Verification:** SimplerEnv/RoboCasa and real-robot success · intervention and return-motion costs · matched physical-step budgets · recovery ablations; physical-step budgets are not wall-clock budgets.
+
 <a id="paper-2609-29964"></a>
 <!-- mmac-record: {"id": "2609.29964", "scope": "Adjacent", "primary": "5.4", "task": 10} -->
 
@@ -3086,6 +3116,7 @@ The list below is a practical starting point rather than a security audit or end
 | Parametric CAD workbench and review | [AgentCAD (n3r)](https://github.com/n3r/AgentCAD) | Community workbench + HTTP/MCP; Apache-2.0 | Builds build123d parts and assemblies, returns multi-view PNGs as MCP image content, and exposes measured design-spec results alongside geometry-aware review workflows. |
 | Hosted CAD agents and geometry APIs | [Zoo developer tools](https://docs.zoo.dev/docs) | Official MCP / Agent API / Engine API | Connects language-driven KCL workflows to geometric execution, snapshots, inspection, and debugging. |
 | Blender and procedural 3D | [Blender Lab MCP Server](https://www.blender.org/lab/mcp-server/) · [BlenderMCP community demos](https://github.com/ahujasid/blender-mcp) | Official MCP + community demo ecosystem | Gives agents scene inspection and Python operations inside Blender; community demos show reference-image-to-scene and Blender-to-Three.js workflows. |
+| Blender coding and multi-view inspection | [Claude Blender](https://github.com/minihellboy/claude-blender) | Community MCP; MIT | Executes Blender Python and returns viewport/render images, multi-view contact sheets, and scene diffs to an external agent; these interfaces support inspection and revision but are not an autonomous-repair benchmark. |
 | Saved-file and headless Blender iteration | [bpy.dev Blender MCP](https://github.com/bpy-dev/blender-mcp) · [workflow](https://bpy.dev/) | Community developer-preview fork of Blender Lab MCP; GPL-3.0 | Adds saved-.blend subprocess execution, rendering/inspection, and runtime API lookup; agents can use returned renders for further edits. Timeouts and output limits are process safeguards, not an OS sandbox or a verified repair-performance guarantee. |
 | Blender scene and generation bridge | [Scenario for Blender](https://github.com/scenario-labs/blender-plugin) | Project-maintained experimental extension + MCP; GPL-3.0-or-later | Exposes viewport screenshots, still renders, scene operations, and gated Python alongside hosted asset generation; Blender 5.0+ and Scenario credentials are required. |
 | Reproducible Blender asset workflows | [Blender Agent Studio](https://github.com/ifBars/blender-agent-studio) | Community skills + local MCP; MIT | Preserves rebuildable Python and editable .blend assets, with fixed-view review, localized repairs, and contract-specific export/fresh-import checks. |

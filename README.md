@@ -2,11 +2,31 @@
 
 A research map of multimodal agents that orchestrate model capabilities to build, act, and continually improve in digital and physical worlds—from websites and CAD to games, simulations, and robotics.
 
-> **Our Vision: An Agentic Coding Trilogy**
->
-> **Visual as Feedback** → **Orchestrating Models as Tools** → **Bridging Digital & Physical Worlds**
->
-> Three connected, cumulative research directions that shape our vision for agentic coding.
+<a id="multimodal-agentic-coding-trilogy"></a>
+
+## Our Vision: A Multimodal Agentic Coding Trilogy
+
+We envision the development of **multimodal agentic coding** through three connected, cumulative research directions. This trilogy forms the core perspective of this collection, guiding how we connect methods, data, and evaluation.
+
+<a id="trilogy-visual-feedback"></a>
+
+### 01 · Visual as Feedback
+
+Use **visual feedback** to help agents continually observe, improve, and refine what they build.
+
+<a id="trilogy-models-as-tools"></a>
+
+### 02 · Orchestrating Models as Tools
+
+Enable agents to **organize and combine model capabilities**, expanding their ability to build, act, and solve problems.
+
+<a id="trilogy-digital-physical"></a>
+
+### 03 · Bridging Digital & Physical Worlds
+
+**Connect digital and physical worlds**, extending construction, action, and learning across them.
+
+---
 
 **[Start here](./docs/READING_GUIDE.md) · [Browse papers](#paper-and-project-list) · [Explore demos](#selected-cases-and-demos) · [Suggest a work](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/issues/new/choose)**
 
@@ -74,13 +94,7 @@ We now place the **multimodal agent at the center**: it understands goals and ob
 
 > ***We believe multimodal agentic coding is an emerging multimodal paradigm: let an agent orchestrate different model capabilities to build, act, and continually improve in the world.***
 
-**The three directions of our agentic coding trilogy:**
-
-1. **Visual as Feedback** — Use visual feedback to help agents continually observe, improve, and refine what they build.
-2. **Orchestrating Models as Tools** — Enable agents to organize and combine model capabilities, expanding their ability to build, act, and solve problems.
-3. **Bridging Digital & Physical Worlds** — Connect digital and physical worlds, extending construction, action, and learning across them.
-
-**Together, these directions express an expanding vision for agentic coding.** Visual feedback remains foundational as agents draw on broader capabilities and act across worlds.
+The [Multimodal Agentic Coding Trilogy](#multimodal-agentic-coding-trilogy) expresses this expanding vision. Visual feedback remains foundational as agents draw on broader capabilities and act across worlds.
 
 Within the third direction, **emerging physical intelligence in LLMs** is a research perspective we are especially interested in: how LLM-based agents develop capabilities for understanding and acting in the physical world.
 

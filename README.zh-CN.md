@@ -2,11 +2,31 @@
 
 一份关于多模态智能体编程的研究地图：由多模态 Agent 组织不同模型能力，在数字与物理世界中构建、行动并持续改进，覆盖网站、CAD、游戏、仿真与机器人等任务。
 
-> **我们的愿景：Agentic Coding 三部曲**
->
-> **Visual as Feedback** → **Orchestrating Models as Tools** → **Bridging Digital & Physical Worlds**
->
-> 三条相互连接、逐步拓展的研究方向，共同构成我们对 agentic coding 的愿景。
+<a id="multimodal-agentic-coding-trilogy"></a>
+
+## 我们的愿景：Multimodal Agentic Coding 三部曲
+
+我们以三个相互连接、逐步拓展的研究方向，勾勒 **multimodal agentic coding** 的发展愿景。这三部曲是本仓库的核心研究视角，贯穿后续的方法、数据与评测。
+
+<a id="trilogy-visual-feedback"></a>
+
+### 01 · Visual as Feedback
+
+将**视觉作为反馈**，让 Agent 在构建过程中持续观察、改进和完善。
+
+<a id="trilogy-models-as-tools"></a>
+
+### 02 · Orchestrating Models as Tools
+
+让 Agent **组织和组合不同模型的能力**，拓展其构建、行动与解决问题的能力。
+
+<a id="trilogy-digital-physical"></a>
+
+### 03 · Bridging Digital & Physical Worlds
+
+**连接数字世界与物理世界**，让构建、行动与学习在两者之间延伸。
+
+---
 
 **[从这里开始](./docs/READING_GUIDE.zh-CN.md) · [浏览论文](#paper-and-project-list) · [体验 Demo](#selected-cases-and-demos) · [推荐工作](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/issues/new/choose)**
 
@@ -74,13 +94,7 @@
 
 > ***我们相信，多模态智能体编程是一种正在形成的新多模态范式：让 Agent 组织不同模型能力，在世界中构建、行动并持续改进。***
 
-**Agentic Coding 三部曲的三个方向：**
-
-1. **Visual as Feedback** — 将视觉作为反馈，让 Agent 在构建过程中持续观察、改进和完善。
-2. **Orchestrating Models as Tools** — 让 Agent 组织和组合不同模型的能力，拓展其构建、行动与解决问题的能力。
-3. **Bridging Digital & Physical Worlds** — 连接数字世界与物理世界，让构建、行动与学习在两者之间延伸。
-
-**这三个方向共同表达我们对 agentic coding 逐步拓展的理解。** 随着 Agent 所能组织的能力与作用世界的拓展，视觉反馈依然是基础。
+[Multimodal Agentic Coding 三部曲](#multimodal-agentic-coding-trilogy)表达了我们逐步拓展的研究愿景。随着 Agent 所能组织的能力与作用世界的拓展，视觉反馈依然是基础。
 
 在第三个方向中，**LLM 物理智能的新涌现**是我们尤其关注的研究视角：基于 LLM 的 Agent 如何发展理解物理世界并在其中行动的能力。
 

@@ -2,11 +2,17 @@
 
 A research map of multimodal agents that orchestrate model capabilities to build, act, and continually improve in digital and physical worlds—from websites and CAD to games, simulations, and robotics.
 
+> **Our Vision: An Agentic Coding Trilogy**
+>
+> **Visual as Feedback** → **Orchestrating Models as Tools** → **Bridging Digital & Physical Worlds**
+>
+> Three connected, cumulative research directions that shape our vision for agentic coding.
+
 **[Start here](./docs/READING_GUIDE.md) · [Browse papers](#paper-and-project-list) · [Explore demos](#selected-cases-and-demos) · [Suggest a work](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/issues/new/choose)**
 
 <div align="center">
 
-<img src="./assets/multimodal-agentic-coding-hero-v10.png" alt="Awesome Multimodal Agentic Coding. Three cumulative stages: 01 Visual as Feedback → 02 Orchestrating Models as Tools → 03 Bridging Digital &amp; Physical Worlds. Each stage builds on the previous one. A Models as Tools tray connects bidirectionally to the central Multimodal Agent, whose Code &amp; Skills compose model capabilities for building and acting in digital and physical worlds. Evidence from both worlds enters Observe → Verify → Improve, then returns to the Agent. Emerging physical intelligence in LLMs accompanies the physical world. Ten task areas surround this architecture, above the original code–execute/render–observe–verify–repair loop." width="100%" />
+<img src="./assets/multimodal-agentic-coding-hero-v10.png" alt="Awesome Multimodal Agentic Coding. Three cumulative directions: 01 Visual as Feedback → 02 Orchestrating Models as Tools → 03 Bridging Digital &amp; Physical Worlds. A Models as Tools tray connects bidirectionally to the central Multimodal Agent, whose Code &amp; Skills compose model capabilities for building and acting in digital and physical worlds. Evidence from both worlds enters Observe → Verify → Improve, then returns to the Agent. Emerging physical intelligence in LLMs accompanies the physical world. Ten task areas surround this architecture, above the original code–execute/render–observe–verify–repair loop." width="100%" />
 
 <br>
 
@@ -23,7 +29,7 @@ A research map of multimodal agents that orchestrate model capabilities to build
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-10-19**
+**Last updated: 2026-10-20**
 
 </div>
 
@@ -68,15 +74,15 @@ We now place the **multimodal agent at the center**: it understands goals and ob
 
 > ***We believe multimodal agentic coding is an emerging multimodal paradigm: let an agent orchestrate different model capabilities to build, act, and continually improve in the world.***
 
-**Three cumulative stages of our perspective:**
+**The three directions of our agentic coding trilogy:**
 
-1. **Visual as Feedback** — The agent sees the consequences of its code and uses those observations to verify, repair, and refine what it builds.
-2. **Orchestrating Models as Tools** — The multimodal agent composes perception, generation, action, and verification capabilities; feedback guides not only code edits, but also which models to call and how to combine them.
-3. **Bridging Digital & Physical Worlds** — This orchestration connects digital construction, executable simulation, and physical action, enabling the agent to build, act, and continually improve across worlds.
+1. **Visual as Feedback** — Use visual feedback to help agents continually observe, improve, and refine what they build.
+2. **Orchestrating Models as Tools** — Enable agents to organize and combine model capabilities, expanding their ability to build, act, and solve problems.
+3. **Bridging Digital & Physical Worlds** — Connect digital and physical worlds, extending construction, action, and learning across them.
 
-**Each stage builds on the previous one—not a replacement, but an expansion.** The visual feedback loop remains foundational as the agent's capabilities and the worlds it acts in broaden.
+**Together, these directions express an expanding vision for agentic coding.** Visual feedback remains foundational as agents draw on broader capabilities and act across worlds.
 
-Within the third stage, **emerging physical intelligence in LLMs** is a research perspective we are especially interested in: how LLM-based agents coordinate perception, simulation, action, and feedback to develop physical-world capabilities.
+Within the third direction, **emerging physical intelligence in LLMs** is a research perspective we are especially interested in: how LLM-based agents develop capabilities for understanding and acting in the physical world.
 
 ### Models as tools, code as composition
 
@@ -108,13 +114,13 @@ flowchart LR
     E -->|done| F[Deliverable, patch, model, or policy]
 ```
 
-These are cumulative **reading frameworks**, not mutually exclusive labels or a ranking of papers. Application recreation can grow into an agent training environment; reconstruction can grow into task simulation and real execution. Each transition requires its own behavioral, physical, or transfer evidence.
+This trilogy offers **connected perspectives on the field's development**. A work can contribute to several directions, and new tasks and methods can extend their scope.
 
 | Framework | Questions to carry across directions | Reading path |
 |---|---|---|
-| **Visual as Feedback** | What is observed after execution, and which revision does it cause? How are feedback quality and repair benefit measured? | [Software](#methods-software) · [Graphics](#methods-graphics) · [3D](#methods-cad-3d) → [Evaluator reliability](#section-3-13) |
-| **Models as Tools** | Which capability is supplied by each model, how are interfaces aligned, and what does the coordinating agent contribute? | [Media](#methods-media) · [Physical assets](#methods-physical-assets) → [Capabilities](#capabilities-and-infrastructure) |
-| **Bridging Digital & Physical Worlds** | What correspondence connects real observations, simulation, and action? Does the constructed environment improve unseen interactions or real tasks? | [Real-to-Sim](#methods-real-to-sim) → [Robot programs](#methods-robot-programs) → [Real2Sim2Real evaluation](#evaluation-real2sim2real) |
+| **Visual as Feedback** | How can visual feedback support agents in continually improving what they build? | [Software](#methods-software) · [Graphics](#methods-graphics) · [3D](#methods-cad-3d) → [Evaluator reliability](#section-3-13) |
+| **Orchestrating Models as Tools** | How can organizing model capabilities expand what agents can build and do? | [Media](#methods-media) · [Physical assets](#methods-physical-assets) → [Capabilities](#capabilities-and-infrastructure) |
+| **Bridging Digital & Physical Worlds** | How can construction, action, and learning connect digital and physical worlds? | [Real-to-Sim](#methods-real-to-sim) → [Robot programs](#methods-robot-programs) → [Real2Sim2Real evaluation](#evaluation-real2sim2real) |
 
 <a id="definition-and-scope"></a>
 

@@ -2,11 +2,17 @@
 
 一份关于多模态智能体编程的研究地图：由多模态 Agent 组织不同模型能力，在数字与物理世界中构建、行动并持续改进，覆盖网站、CAD、游戏、仿真与机器人等任务。
 
+> **我们的愿景：Agentic Coding 三部曲**
+>
+> **Visual as Feedback** → **Orchestrating Models as Tools** → **Bridging Digital & Physical Worlds**
+>
+> 三条相互连接、逐步拓展的研究方向，共同构成我们对 agentic coding 的愿景。
+
 **[从这里开始](./docs/READING_GUIDE.zh-CN.md) · [浏览论文](#paper-and-project-list) · [体验 Demo](#selected-cases-and-demos) · [推荐工作](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/issues/new/choose)**
 
 <div align="center">
 
-<img src="./assets/multimodal-agentic-coding-hero-v10.png" alt="Awesome Multimodal Agentic Coding。三个递进阶段：01 视觉作为反馈 → 02 将模型作为工具来组织能力 → 03 连接数字世界与物理世界，每个阶段都包含前一阶段。Models as Tools 工具层与中央多模态 Agent 双向连接；Agent 内的 Code &amp; Skills 组合模型能力，在数字与物理世界中构建和行动。两个世界的证据统一进入观察 → 验证 → 改进，再返回 Agent。物理世界旁保留 LLM 物理智能的新涌现说明，外围为十个任务领域，底部为原有代码—执行／渲染—观察—验证—修复闭环。" width="100%" />
+<img src="./assets/multimodal-agentic-coding-hero-v10.png" alt="Awesome Multimodal Agentic Coding。三个递进方向：01 Visual as Feedback → 02 Orchestrating Models as Tools → 03 Bridging Digital &amp; Physical Worlds。Models as Tools 工具层与中央多模态 Agent 双向连接；Agent 内的 Code &amp; Skills 组合模型能力，在数字与物理世界中构建和行动。两个世界的证据统一进入观察 → 验证 → 改进，再返回 Agent。物理世界旁保留 LLM 物理智能的新涌现说明，外围为十个任务领域，底部为原有代码—执行／渲染—观察—验证—修复闭环。" width="100%" />
 
 <br>
 
@@ -23,7 +29,7 @@
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-10-19**
+**最后更新：2026-10-20**
 
 </div>
 
@@ -68,15 +74,15 @@
 
 > ***我们相信，多模态智能体编程是一种正在形成的新多模态范式：让 Agent 组织不同模型能力，在世界中构建、行动并持续改进。***
 
-**理解的三个递进阶段：**
+**Agentic Coding 三部曲的三个方向：**
 
-1. **视觉作为反馈（Visual as Feedback）** — Agent 看见代码执行的结果，用这些观测验证、修复并改进自己构建的内容。
-2. **组织模型能力（Orchestrating Models as Tools）** — 多模态 Agent 将感知、生成、动作与验证模型作为工具来组合；反馈不仅指导代码修改，也指导调用哪些模型、如何组合能力。
-3. **连接数字世界与物理世界（Bridging Digital & Physical Worlds）** — 这种能力编排连接数字构建、可执行仿真与物理行动，让 Agent 在不同世界中构建、行动并持续改进。
+1. **Visual as Feedback** — 将视觉作为反馈，让 Agent 在构建过程中持续观察、改进和完善。
+2. **Orchestrating Models as Tools** — 让 Agent 组织和组合不同模型的能力，拓展其构建、行动与解决问题的能力。
+3. **Bridging Digital & Physical Worlds** — 连接数字世界与物理世界，让构建、行动与学习在两者之间延伸。
 
-**每个阶段都包含前一阶段，是扩展，而不是替代。** 随着 Agent 能力与作用世界的拓展，视觉反馈闭环依然是基础。
+**这三个方向共同表达我们对 agentic coding 逐步拓展的理解。** 随着 Agent 所能组织的能力与作用世界的拓展，视觉反馈依然是基础。
 
-在第三阶段中，**LLM 物理智能的新涌现**是我们尤其关注的研究视角：基于 LLM 的 Agent 如何组织感知、仿真、动作与反馈，发展面向物理世界的能力。
+在第三个方向中，**LLM 物理智能的新涌现**是我们尤其关注的研究视角：基于 LLM 的 Agent 如何发展理解物理世界并在其中行动的能力。
 
 ### 模型即工具，代码连接能力
 
@@ -108,13 +114,13 @@ flowchart LR
     E -->|完成| F[交付物、补丁、模型或策略]
 ```
 
-三个框架是递进的**理解视角**，并非互斥类别，也不是论文的等级排名。应用复刻可以延伸为 Agent 训练环境，重建可以延伸为任务仿真与真实执行；每一步都需要相应的行为、物理或迁移证据。
+这三部分提供了理解领域发展的**相互连接的视角**。一项工作可以同时涉及多个方向，新的任务与方法也可以不断拓展它们的内涵。
 
 | 理解框架 | 贯穿各方向的问题 | 阅读路径 |
 |---|---|---|
-| **Visual as Feedback** | 执行后看到了什么，促成了哪一次修订？反馈质量和修复收益怎样评价？ | [软件](#methods-software) · [图形](#methods-graphics) · [3D](#methods-cad-3d) → [评估器可靠性](#section-3-13) |
-| **Models as Tools** | 每个模型提供什么能力，接口怎样对齐，组织它们的 Agent 贡献了什么？ | [媒体](#methods-media) · [物理资产](#methods-physical-assets) → [能力资源](#capabilities-and-infrastructure) |
-| **Bridging Digital & Physical Worlds** | 真实观测、仿真与行动之间建立了什么对应？所构建的环境能否改善未见交互或真实任务？ | [Real-to-Sim](#methods-real-to-sim) → [机器人程序](#methods-robot-programs) → [Real2Sim2Real 评测](#evaluation-real2sim2real) |
+| **Visual as Feedback** | 视觉反馈如何支持 Agent 持续改进其构建的内容？ | [软件](#methods-software) · [图形](#methods-graphics) · [3D](#methods-cad-3d) → [评估器可靠性](#section-3-13) |
+| **Orchestrating Models as Tools** | 组织不同模型的能力，如何拓展 Agent 能够构建和完成的事情？ | [媒体](#methods-media) · [物理资产](#methods-physical-assets) → [能力资源](#capabilities-and-infrastructure) |
+| **Bridging Digital & Physical Worlds** | 构建、行动与学习如何连接数字世界和物理世界？ | [Real-to-Sim](#methods-real-to-sim) → [机器人程序](#methods-robot-programs) → [Real2Sim2Real 评测](#evaluation-real2sim2real) |
 
 <a id="definition-and-scope"></a>
 

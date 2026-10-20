@@ -44,7 +44,7 @@ Enable agents to **organize and combine model capabilities**, expanding their ab
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-173-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-175-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
@@ -969,6 +969,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Connect:** [3.5 Procedural 3D and CAD benchmarks](#evaluation-cad-3d) · [4.5 Procedural 3D and CAD data: requirements, programs, and assets](#data-cad-3d) · [2.6 Physical asset construction and diagnosis](#methods-physical-assets) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [5.3 Execution, rendering, simulation, and automation interfaces](#section-5-3)
 
+<a id="paper-2610-23121"></a>
+<!-- mmac-record: {"id": "2610.23121", "scope": "Core", "primary": "2.5", "task": 5} -->
+
+- `arXiv 2026.10` **Scene-Designer: Learning Design Intelligence for Agentic 3D Scene Generation**. [[paper]](https://arxiv.org/abs/2610.23121) [[project]](https://zju-omniai.github.io/Scene-Designer/) [[code]](https://github.com/ZJU-OmniAI/Scene-Designer) [[evaluation data]](https://huggingface.co/datasets/XuanyuLiu/Scene-OTC-Bench) — `[Method]` `[Dataset]` · `[Data Curation]` `[Training]` `[Inference]` `[Environment]` `[Verification]` · **Core**
+  > Learns scene construction and critique from consolidated editing trajectories and ranked scene perturbations, using rendered observations and critic-guided executable edits to improve indoor layouts.<br>
+  > **Verification:** Collision/boundary checks · accessibility and functional organization · scene-ranking accuracy · correction efficiency · training and test-time critic ablations; published evaluation data is distinct from the training collections.
+
 <a id="paper-2610-22341"></a>
 <!-- mmac-record: {"id": "2610.22341", "scope": "Core", "primary": "2.5", "task": 5} -->
 
@@ -1716,6 +1723,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Connect:** [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [2.2 GUI and software training-environment synthesis](#methods-gui-environments) · [5.5 Skills, tool bridges, and reusable workflows](#section-5-5) · [6.5 From construction experience to transferable capability](#section-6-5)
 
+<a id="paper-2610-23479"></a>
+<!-- mmac-record: {"id": "2610.23479", "scope": "Core", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.10` **HexaShell: A Thin Harness for Exploring the Limits of VLM Agents as Robot Coding Agents**. [[paper]](https://arxiv.org/abs/2610.23479) [[tools and interfaces]](https://github.com/HexaFuture/HexaShell) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]` `[Trajectory Analysis]` · **Core**
+  > Converts robot failures into reusable Python tools through episode-log and selected camera-frame analysis, same-layout repair trials, and subsequent frozen-tool evaluation in RoboDojo simulation.<br>
+  > **Verification:** Held-out layouts within one seed · RGB triangulation and active-view costs · executed-edit case studies · contact-sensitive failure analysis; fixed shared tools and task guidance, with no hardware evaluation.
+
 <a id="paper-2610-22362"></a>
 <!-- mmac-record: {"id": "2610.22362", "scope": "Core", "primary": "2.12", "task": 12} -->
 
@@ -2189,6 +2203,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 - [SceneAssistant](#paper-2603-12238) · **Core** · [2.5](#methods-cad-3d)
 - [CADReasoner](#paper-2603-29847) · **Core** · [2.5](#methods-cad-3d)
 - [Vision-as-Inverse-Graphics Agent via Interleaved Multimodal Reasoning](#paper-2601-11109) · **Core** · [2.5](#methods-cad-3d)
+- [Scene-Designer](#paper-2610-23121) · **Core** · [2.5](#methods-cad-3d) — scene validity, correction efficiency, and held-out Scene-OTC ranking tests.
 - [LL3M](#paper-2508-08228) · **Core** · [2.5](#methods-cad-3d)
 - [CADDesigner](#paper-2508-01031) · **Core** · [2.5](#methods-cad-3d)
 - [CAD-Assistant](#paper-2412-13810) · **Core** · [2.5](#methods-cad-3d)
@@ -2427,6 +2442,13 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Connect:** [2.10 Robot program and policy development](#methods-robot-programs) · [4.10 Robot demonstrations, execution, and repair trajectories](#data-robot-programs) · [3.11 Real2Sim2Real utility and real-transfer evaluation](#evaluation-real2sim2real) · [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience)
 
+<a id="paper-2610-22471"></a>
+<!-- mmac-record: {"id": "2610.22471", "scope": "Adjacent", "primary": "3.10", "task": 10} -->
+
+- `arXiv 2026.10` **Has GPT-6-Astra Achieved Embodied Intelligence?**. [[paper]](https://arxiv.org/abs/2610.22471) [[project]](https://sensenova.ai/has-gpt-6-astra-achieved-embodied-intelligence) — `[Benchmark]` · `[Inference]` `[Environment]` `[Verification]` `[Trajectory Analysis]` · **Adjacent**
+  > Studies demonstration-informed direct control and VLA-action review across twelve embodied benchmarks, separating gains from extended interaction budgets from zero-shot trials on eight real robot configurations.<br>
+  > **Verification:** Standard versus up-to-10× step budgets · frozen in-context knowledge · action-interface and token-cost ablations · human context/safety supervision · hardware contact, latency, and recovery limits.
+
 <a id="paper-2610-10409"></a>
 <!-- mmac-record: {"id": "2610.10409", "scope": "Adjacent", "primary": "3.10", "task": 10} -->
 
@@ -2508,6 +2530,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 - [Learning Only with Images](#paper-2507-20766) · **Core** · [2.1](#methods-software)
 - [WebWorld](#paper-2608-30530) · **Core** · [2.1](#methods-software)
+- [HexaShell](#paper-2610-23479) · **Core** · [2.12](#methods-experience) — frozen-tool tests on unseen same-seed layouts, distinct from cross-task or multi-seed generalization.
 - [CoDA](#paper-2610-22362) · **Core** · [2.12](#methods-experience) — cross-task generation-program reuse and policy learning in simulation.
 - [VisRefiner](#paper-2602-05998) · **Core** · [2.1](#methods-software)
 - [ReLook](#paper-2510-11498) · **Core** · [2.1](#methods-software)
@@ -2726,6 +2749,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Dataset contributions**
 
+- [Scene-Designer](#paper-2610-23121) · **Core** · [2.5](#methods-cad-3d) — released Scene-OTC-Bench has 149 ranking questions and 408 scene images; Scene-OTA-35K/Scene-OTC-15K are separately described training-data constructions.
 - [BlenderWorld](#work-blenderworld) · **Core** · [3.5](#evaluation-cad-3d) — released task briefs, references, specifications, and rubrics.
 - [3DCodeVerse](#paper-2610-22341) · **Core** · [2.5](#methods-cad-3d)
 - [CineRecon](#paper-2610-16577) · **Core** · [3.5](#evaluation-cad-3d)
@@ -2934,6 +2958,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 - [RA-CAD](#paper-2608-05714) · **Adjacent** · [2.12](#methods-experience)
 - [Designer-RSI](#paper-2609-22086) · **Core** · [2.12](#methods-experience)
 - [CarryOn](#paper-2610-21453) · **Adjacent** · [2.12](#methods-experience) — failure examples and recovery-version chains described in the paper.
+- [HexaShell](#paper-2610-23479) · **Core** · [2.12](#methods-experience) — released frozen tools, interfaces, and results; optimizer development logs, tests, and the full harness are not bundled.
 
 <a id="capabilities-and-infrastructure"></a>
 
@@ -2986,6 +3011,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 | Dynamic 3D textures | **DynaMesh** — *DynaMesh: Dynamic 3D Texture Generation* [[paper]](https://arxiv.org/abs/2610.05529) · [[project]](https://threedle.github.io/dynamesh/) | Mesh + effect prompt → one fixed mesh with a time-varying texture sequence | Combines a reference video with temporal conditioning and per-shape adapters on a 3D generator; appearance evolves while geometry stays fixed, supplying reusable surface effects rather than physical dynamics. |
 | Native 3D texture generation | **Tex-Zero** — *Does Native 3D Texture Generation Necessarily Require 3D Assets for Training?* [[paper]](https://arxiv.org/abs/2609.34621) · [[repository docs]](https://github.com/wangjiangshan0725/Tex-Zero) | Geometry + multiview reference images → geometry-aligned 3D surface colors | Learns a shared image/texture representation from image-derived training samples, providing a texturing capability without requiring real textured 3D assets for training. |
 | 3D material generation and editing | **SUPRA-Tex** — *SUPRA-TEX: 3D Generation with Super-Aligned Texture* [[paper]](https://arxiv.org/abs/2610.22352) · [[project]](https://supra-3d.github.io/supratex/) · [[repository docs]](https://github.com/Supra-3D/supra-tex) · [[weights]](https://huggingface.co/supra3d/supra-tex) · [[demo]](https://huggingface.co/spaces/UniLat3D/Supra-Tex) | Reference image + mesh + camera projection → full-surface, relightable PBR materials | Preserves reference text, logos, and patterns while completing unseen surfaces with albedo, metallic, and roughness properties. Geometry is supplied or generated upstream by Pixal3D; edited 2D views can update materials on the same mesh, providing an appearance-generation step for 3D asset workflows. |
+| Feed-forward PBR materials | **TexGaussian** — *TexGaussian: Generating High-quality PBR Material via Octree-based 3D Gaussian Splatting* [[paper]](https://arxiv.org/abs/2411.19654) · [[project]](https://3d-aigc.github.io/TexGaussian/) · [[code]](https://github.com/ymxbj/TexGaussian) · [[weights]](https://huggingface.co/ymxbj/TexGaussian) | Mesh + text → albedo, roughness, and metallic maps | Predicts octree-aligned Gaussian material channels and bakes their views into UV maps, supplying relightable surface appearance for downstream rendering; distinct from physical-dynamics modeling or agentic repair. |
 
 <a id="execution-and-rendering-engines"></a>
 

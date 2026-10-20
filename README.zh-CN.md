@@ -44,7 +44,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-173-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-175-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
@@ -969,6 +969,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.5 程序化 3D 与 CAD 基准评测](#evaluation-cad-3d) · [4.5 程序化 3D 与 CAD 数据：需求、程序与资产](#data-cad-3d) · [2.6 物理资产构建与诊断](#methods-physical-assets) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [5.3 执行、渲染、仿真与自动化接口](#section-5-3)
 
+<a id="paper-2610-23121"></a>
+<!-- mmac-record: {"id": "2610.23121", "scope": "Core", "primary": "2.5", "task": 5} -->
+
+- `arXiv 2026.10` **Scene-Designer: Learning Design Intelligence for Agentic 3D Scene Generation**. [[论文]](https://arxiv.org/abs/2610.23121) [[项目]](https://zju-omniai.github.io/Scene-Designer/) [[代码]](https://github.com/ZJU-OmniAI/Scene-Designer) [[评价数据]](https://huggingface.co/datasets/XuanyuLiu/Scene-OTC-Bench) — `[Method]` `[Dataset]` · `[Data Curation]` `[Training]` `[Inference]` `[Environment]` `[Verification]` · **Core**
+  > 从压缩后的编辑轨迹与场景扰动排序中学习构建和批评能力，以渲染观测和 Critic 引导的可执行编辑持续改进室内布局。<br>
+  > **验证维度：** 碰撞／边界检查 · 可达性与功能组织 · 场景排序准确率 · 修正效率 · 训练及测试时 Critic 消融；已公开评价集与训练资料分别标注。
+
 <a id="paper-2610-22341"></a>
 <!-- mmac-record: {"id": "2610.22341", "scope": "Core", "primary": "2.5", "task": 5} -->
 
@@ -1716,6 +1723,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.12 经验学习与跨任务泛化评测](#evaluation-experience) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [2.2 GUI／软件训练环境合成](#methods-gui-environments) · [5.5 Skills、工具桥与可复用工作流](#section-5-5) · [6.5 从构建经验到可迁移能力](#section-6-5)
 
+<a id="paper-2610-23479"></a>
+<!-- mmac-record: {"id": "2610.23479", "scope": "Core", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.10` **HexaShell: A Thin Harness for Exploring the Limits of VLM Agents as Robot Coding Agents**. [[论文]](https://arxiv.org/abs/2610.23479) [[工具与接口]](https://github.com/HexaFuture/HexaShell) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]` `[Trajectory Analysis]` · **Core**
+  > 通过回合日志及选定相机帧分析、同布局修复重试，将机器人失败转化为可复用 Python 工具，再于 RoboDojo 仿真中冻结工具评测。<br>
+  > **验证维度：** 同一随机种子内的未见布局 · RGB 三角测量与主动观察成本 · 实际执行修订代码的案例 · 接触相关失败分析；保留固定共享工具和任务指引，无实机评测。
+
 <a id="paper-2610-22362"></a>
 <!-- mmac-record: {"id": "2610.22362", "scope": "Core", "primary": "2.12", "task": 12} -->
 
@@ -2189,6 +2203,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 - [SceneAssistant](#paper-2603-12238) · **Core** · [2.5](#methods-cad-3d)
 - [CADReasoner](#paper-2603-29847) · **Core** · [2.5](#methods-cad-3d)
 - [Vision-as-Inverse-Graphics Agent via Interleaved Multimodal Reasoning](#paper-2601-11109) · **Core** · [2.5](#methods-cad-3d)
+- [Scene-Designer](#paper-2610-23121) · **Core** · [2.5](#methods-cad-3d) — 场景有效性、修正效率与独立的 Scene-OTC 场景排序测试。
 - [LL3M](#paper-2508-08228) · **Core** · [2.5](#methods-cad-3d)
 - [CADDesigner](#paper-2508-01031) · **Core** · [2.5](#methods-cad-3d)
 - [CAD-Assistant](#paper-2412-13810) · **Core** · [2.5](#methods-cad-3d)
@@ -2427,6 +2442,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.10 机器人程序与策略开发](#methods-robot-programs) · [4.10 机器人演示、执行与程序／策略修复轨迹](#data-robot-programs) · [3.11 Real2Sim2Real 的任务效用与真实迁移评测](#evaluation-real2sim2real) · [3.12 经验学习与跨任务泛化评测](#evaluation-experience)
 
+<a id="paper-2610-22471"></a>
+<!-- mmac-record: {"id": "2610.22471", "scope": "Adjacent", "primary": "3.10", "task": 10} -->
+
+- `arXiv 2026.10` **Has GPT-6-Astra Achieved Embodied Intelligence?**. [[论文]](https://arxiv.org/abs/2610.22471) [[项目]](https://sensenova.ai/has-gpt-6-astra-achieved-embodied-intelligence) — `[Benchmark]` · `[Inference]` `[Environment]` `[Verification]` `[Trajectory Analysis]` · **Adjacent**
+  > 在十二项具身基准上研究示范辅助的直接控制与 VLA 动作审查，将扩大交互预算的收益与八种真实机器人配置上的零样本试验分别评估。<br>
+  > **验证维度：** 标准与最高十倍步数预算 · 冻结的上下文知识 · 动作接口与 token 成本消融 · 人类上下文／安全监督 · 实机接触、延迟与恢复限制。
+
 <a id="paper-2610-10409"></a>
 <!-- mmac-record: {"id": "2610.10409", "scope": "Adjacent", "primary": "3.10", "task": 10} -->
 
@@ -2508,6 +2530,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 - [Learning Only with Images](#paper-2507-20766) · **Core** · [2.1](#methods-software)
 - [WebWorld](#paper-2608-30530) · **Core** · [2.1](#methods-software)
+- [HexaShell](#paper-2610-23479) · **Core** · [2.12](#methods-experience) — 冻结工具后的同种子未见布局测试；不等同于跨任务或多种子泛化。
 - [CoDA](#paper-2610-22362) · **Core** · [2.12](#methods-experience) — 仿真中的跨任务生成程序复用与策略学习。
 - [VisRefiner](#paper-2602-05998) · **Core** · [2.1](#methods-software)
 - [ReLook](#paper-2510-11498) · **Core** · [2.1](#methods-software)
@@ -2726,6 +2749,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **数据集工作**
 
+- [Scene-Designer](#paper-2610-23121) · **Core** · [2.5](#methods-cad-3d) — 已公开 Scene-OTC-Bench 的 149 道排序题和 408 张场景图像；Scene-OTA-35K／Scene-OTC-15K 是另行描述的训练数据构造。
 - [BlenderWorld](#work-blenderworld) · **Core** · [3.5](#evaluation-cad-3d) — 已发布的任务需求、参考素材、规格与评分规则。
 - [3DCodeVerse](#paper-2610-22341) · **Core** · [2.5](#methods-cad-3d)
 - [CineRecon](#paper-2610-16577) · **Core** · [3.5](#evaluation-cad-3d)
@@ -2934,6 +2958,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 - [RA-CAD](#paper-2608-05714) · **Adjacent** · [2.12](#methods-experience)
 - [Designer-RSI](#paper-2609-22086) · **Core** · [2.12](#methods-experience)
 - [CarryOn](#paper-2610-21453) · **Adjacent** · [2.12](#methods-experience) — 论文描述的失败样例与恢复版本链。
+- [HexaShell](#paper-2610-23479) · **Core** · [2.12](#methods-experience) — 公开冻结工具、接口和结果；优化器开发记录、测试与完整 Harness 未随库发布。
 
 <a id="capabilities-and-infrastructure"></a>
 
@@ -2986,6 +3011,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 | 动态 3D 纹理 | **DynaMesh** — *DynaMesh: Dynamic 3D Texture Generation* [[论文]](https://arxiv.org/abs/2610.05529) · [[项目]](https://threedle.github.io/dynamesh/) | Mesh + 效果提示词 → 固定 mesh 与随时间变化的纹理序列 | 将参考视频与 3D 生成器的时序条件、逐形状适配器结合；几何固定而外观演化，可为资产工作流提供表面效果，不是物理动力学模拟。 |
 | 原生 3D 纹理生成 | **Tex-Zero** — *Does Native 3D Texture Generation Necessarily Require 3D Assets for Training?* [[论文]](https://arxiv.org/abs/2609.34621) · [[仓库文档]](https://github.com/wangjiangshan0725/Tex-Zero) | 几何 + 多视图参考图 → 与几何对齐的 3D 表面颜色 | 用图像构造的训练样本学习图像／纹理共享表示，提供不依赖真实带纹理 3D 资产作为训练数据的纹理生成能力。 |
 | 3D 材质生成与编辑 | **SUPRA-Tex** — *SUPRA-TEX: 3D Generation with Super-Aligned Texture* [[论文]](https://arxiv.org/abs/2610.22352) · [[项目]](https://supra-3d.github.io/supratex/) · [[仓库文档]](https://github.com/Supra-3D/supra-tex) · [[权重]](https://huggingface.co/supra3d/supra-tex) · [[Demo]](https://huggingface.co/spaces/UniLat3D/Supra-Tex) | 参考图像 + mesh + 相机投影 → 完整表面的可重光照 PBR 材质 | 保留参考图中的文字、Logo 与图案，并补全不可见表面的反照率、金属度和粗糙度。几何由外部提供或上游 Pixal3D 生成；编辑后的二维视图可更新同一 mesh 的材质，为 3D 资产工作流提供外观生成环节。 |
+| 前馈 PBR 材质生成 | **TexGaussian** — *TexGaussian: Generating High-quality PBR Material via Octree-based 3D Gaussian Splatting* [[论文]](https://arxiv.org/abs/2411.19654) · [[项目]](https://3d-aigc.github.io/TexGaussian/) · [[代码]](https://github.com/ymxbj/TexGaussian) · [[权重]](https://huggingface.co/ymxbj/TexGaussian) | mesh + 文本 → 反照率、粗糙度和金属度贴图 | 预测八叉树对齐的高斯材质通道，再将多视图结果烘焙为 UV 贴图，为后续渲染提供可重光照的表面外观；不同于物理动力学建模或 Agent 自主修复。 |
 
 <a id="execution-and-rendering-engines"></a>
 

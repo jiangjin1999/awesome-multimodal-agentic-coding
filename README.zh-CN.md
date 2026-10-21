@@ -44,12 +44,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-175-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-176-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-10-20**
+**最后更新：2026-10-21**
 
 </div>
 
@@ -1310,6 +1310,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.7 游戏行为、可玩性与修复评测](#evaluation-games) · [4.7 游戏需求、代码、资产与运行测试轨迹](#data-games) · [2.8 可执行世界模型与仿真程序构建](#methods-world-models) · [2.12 从构建与交互经验学习](#methods-experience) · [5.5 Skills、工具桥与可复用工作流](#section-5-5)
 
+<a id="paper-2610-16776"></a>
+<!-- mmac-record: {"id": "2610.16776", "scope": "Core", "primary": "2.7", "task": 7} -->
+
+- `arXiv 2026.10` **Game-Creation-Agents: Autonomous Game Production**. [[论文]](https://arxiv.org/abs/2610.16776) [[代码]](https://github.com/Tencent/Game-Creation-Agents) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]` · **Core**
+  > 以多模态设计文档组织 Phaser 代码与模型生成素材，将绑定当前构建版本的试玩和视觉 Critic 发现路由给产物负责人继续修复。<br>
+  > **验证维度：** 真实界面需求检查 · 当前构建的视觉证据 · 有界修复关卡 · 独立的 20 组同提示词成品游戏评测 · 人类偏好。
+
 <a id="paper-2610-08621"></a>
 <!-- mmac-record: {"id": "2610.08621", "scope": "Core", "primary": "2.7", "task": 7} -->
 
@@ -1393,6 +1400,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 世界可以是纯数字任务或由需求生成的仿真；真实观测到仿真的对应关系见 2.9。固定场景中的 solver 与场景生成分别比较。
 
 **关联阅读：** [3.8 世界模型的预测、干预与规划效用评测](#evaluation-world-models) · [4.8 世界观测、状态转移与仿真程序数据](#data-world-models) · [2.7 可玩游戏构建、复刻与修复](#methods-games) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.12 从构建与交互经验学习](#methods-experience)
+
+<a id="paper-2610-26811"></a>
+<!-- mmac-record: {"id": "2610.26811", "scope": "Adjacent", "primary": "2.8", "task": 8} -->
+
+- `arXiv 2026.10` **State World Models: Execute the Rules, Generate the Pixels**. [[论文]](https://arxiv.org/abs/2610.26811) [[代码]](https://github.com/Zhangyr2022/StateWorldModel) [[项目]](https://ivg-yanranzhang.github.io/StateWorldModel/) [[数据集]](https://huggingface.co/datasets/Louis0411/StateWorldModel) — `[Method]` `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]` · **Adjacent**
+  > 将 Coding Agent 编写的规则与冻结视频模型的渲染分离，把已结算事件编译成视觉指令，并将符合规则的视频观测纳入后续世界状态。<br>
+  > **验证维度：** 隐藏状态反事实配对 · 必须／禁止结果 · 同一冻结骨干的对照 · 多轮示例；运行期状态反馈不改写规则程序。
 
 <a id="paper-2602-12311"></a>
 <!-- mmac-record: {"id": "2602.12311", "scope": "Core", "primary": "2.8", "task": 8} -->
@@ -1487,6 +1501,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **相关评测工作**
 
+- [ExeWorldBench](#paper-2610-15166) · **Adjacent** · [3.8](#evaluation-world-models)
 - [PhysCodeGym](#paper-2610-17288) · **Core** · [3.9](#evaluation-real-to-sim)
 - [Video2World](#paper-2610-04432) · **Core** · [3.9](#evaluation-real-to-sim)
 - [WorldSolver](#paper-2610-08720) · **Adjacent** · [3.8](#evaluation-world-models)
@@ -2093,7 +2108,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 <a id="work-blenderworld"></a>
 <!-- mmac-record: {"id": "system:blenderworld", "scope": "Core", "primary": "3.5", "task": 5} -->
 
-- `技术报告 2026.10` **BlenderWorld: Benchmarking Visual Agents for 3D Creation from Real-World References**. [[报告]](https://github.com/QwenLM/BlenderWorld/blob/main/docs/BlenderWorld__Benchmarking_Visual_Agents_for_3D_Creation_from_Real_World_References.pdf) [[代码]](https://github.com/QwenLM/BlenderWorld) [[项目]](https://blenderworld.github.io/) [[数据集]](https://huggingface.co/datasets/Qwen/BlenderWorld) — `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Environment]` `[Verification]` `[Trajectory Analysis]` · **Core**
+- `技术报告 2026.10` **BlenderWorld: Benchmarking Visual Agents for 3D Creation from Real-World References**. [[论文]](https://arxiv.org/abs/2610.23986) [[报告]](https://github.com/QwenLM/BlenderWorld/blob/main/docs/BlenderWorld__Benchmarking_Visual_Agents_for_3D_Creation_from_Real_World_References.pdf) [[代码]](https://github.com/QwenLM/BlenderWorld) [[项目]](https://blenderworld.github.io/) [[数据集]](https://huggingface.co/datasets/Qwen/BlenderWorld) — `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Environment]` `[Verification]` `[Trajectory Analysis]` · **Core**
   > 以 223 项参考驱动的 Blender 创作任务评测 Coding Agent 对可编辑场景的观察与修订，并由独立评测器结合 2,651 条需求检查、自适应多视角渲染与视觉质量判定进行评价。<br>
   > **验证维度：** 可编辑场景结构 · 加权需求满足度 · 多视角视觉质量 · 人类与判定器一致性 · 工具使用与失败轨迹。
 
@@ -2339,6 +2354,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **方法论文中的评测设置**
 
+- [Game-Creation-Agents](#paper-2610-16776) · **Core** · [2.7](#methods-games) — 20 组同提示词游戏；基于真实界面的需求评分与独立人评。
 - [Recursive Game Creator](#paper-2610-08621) · **Core** · [2.7](#methods-games)
 - [RSIGame](#paper-2609-39045) · **Core** · [2.7](#methods-games)
 - [3AGameFactory](#work-3agamefactory) · **Core** · [2.7](#methods-games)
@@ -2362,6 +2378,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 重放已见轨迹、预测新动作和利用模型完成任务分别测量；真实世界有效性需要额外证据。
 
 **关联阅读：** [2.8 可执行世界模型与仿真程序构建](#methods-world-models) · [4.8 世界观测、状态转移与仿真程序数据](#data-world-models) · [3.7 游戏行为、可玩性与修复评测](#evaluation-games) · [3.9 面向 Agentic Real-to-Sim 的场景与交互构建评测](#evaluation-real-to-sim)
+
+<a id="paper-2610-15166"></a>
+<!-- mmac-record: {"id": "2610.15166", "scope": "Adjacent", "primary": "3.8", "task": 8} -->
+
+- `arXiv 2026.10` **ExeWorldBench: Benchmarking Code-Based Executable 3D World Modeling**. [[论文]](https://arxiv.org/abs/2610.15166) [[项目]](https://helen1p.github.io/ExeWorldBench/) [[数据集]](https://huggingface.co/datasets/HelenPeng/ExeWorldBench) — `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Environment]` `[Verification]` · **Adjacent**
+  > 通过单一机制、多阶段因果系统和目标驱动世界合成测试 Blender 程序，将渲染结构、运动和目标满足程度与单纯代码可运行性分开衡量。<br>
+  > **验证维度：** 执行失败惩罚与条件化分数 · 视觉／机械／因果判断 · 链长度及运动参考分析；API 执行错误修复与视觉机制修订分开。
 
 <a id="paper-2610-08720"></a>
 <!-- mmac-record: {"id": "2610.08720", "scope": "Adjacent", "primary": "3.8", "task": 8} -->
@@ -2391,6 +2414,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **Benchmark 工作**
 
+- [State World Models / WorldState-Bench](#paper-2610-26811) · **Adjacent** · [2.8](#methods-world-models) — 50 组共享可见输入的隐藏状态反事实配对。
 - [PhysCodeGym](#paper-2610-17288) · **Core** · [3.9](#evaluation-real-to-sim)
 - [Video2World](#paper-2610-04432) · **Core** · [3.9](#evaluation-real-to-sim)
 - [WorldAgent](#paper-2609-33208) · **Core** · [2.8](#methods-world-models)
@@ -2845,6 +2869,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **数据集工作**
 
+- [State World Models / WorldState-Bench](#paper-2610-26811) · **Adjacent** · [2.8](#methods-world-models) — 已发布案例程序、首帧和成对指令。
+- [ExeWorldBench](#paper-2610-15166) · **Adjacent** · [3.8](#evaluation-world-models) — 已发布任务提示、参考资料与 Blender 世界构建材料。
 - [PhysCodeGym](#paper-2610-17288) · **Core** · [3.9](#evaluation-real-to-sim)
 - [Awomo-SimDataEngine](#paper-2610-02274) · **Core** · [2.8](#methods-world-models)
 - [Agentic Game Development as a Verifiable Trajectory Data Engine for Scaling World Models](#paper-2608-25518) · **Core** · [2.8](#methods-world-models)
@@ -3118,6 +3144,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 | 能力 | 资源与来源 | 输入 → 输出 | 在工作流中的作用 |
 |---|---|---|---|
+| 视频到动作能力 | **BridgeWAM** — *BridgeWAM: Bridging Video and Action Experts via Latent Bridge Queries* [[论文]](https://arxiv.org/abs/2610.14746) · [[代码]](https://github.com/jxfang04/BridgeWAM-code) · [[权重]](https://huggingface.co/BridgeWAM/bridgewam) | 相机观测 + 语言 + 本体感知 → 动作块 | 用潜在桥接查询压缩视频专家特征，供轻量动作专家读取；默认推理不生成未来视频。在仿真和真实操控中评测，提供可复用模型能力，而非 LLM 主导的代码修复。 |
 | 机器人策略适配与服务 | **Pi API beta** — Physical Intelligence [[官方发布]](https://www.pi.website/blog/api-beta) | 机器人示范／数据 → 可经托管推理调用的微调策略 | 开发者适配并部署动作模型，再根据真实机器人失败决定下一轮数据采集；属于需申请 beta 的开发者主导工作流，不代表 LLM 自主修复。 |
 
 <a id="skills-and-tool-bridges"></a>

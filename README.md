@@ -44,12 +44,12 @@ Enable agents to **organize and combine model capabilities**, expanding their ab
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-175-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-176-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-10-20**
+**Last updated: 2026-10-21**
 
 </div>
 
@@ -1310,6 +1310,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Connect:** [3.7 Game behavior, playability, and repair evaluation](#evaluation-games) · [4.7 Game requirements, code, assets, and playtesting traces](#data-games) · [2.8 Executable world models and simulation programs](#methods-world-models) · [2.12 Learning from construction and interaction experience](#methods-experience) · [5.5 Skills, tool bridges, and reusable workflows](#section-5-5)
 
+<a id="paper-2610-16776"></a>
+<!-- mmac-record: {"id": "2610.16776", "scope": "Core", "primary": "2.7", "task": 7} -->
+
+- `arXiv 2026.10` **Game-Creation-Agents: Autonomous Game Production**. [[paper]](https://arxiv.org/abs/2610.16776) [[code]](https://github.com/Tencent/Game-Creation-Agents) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]` · **Core**
+  > Coordinates Phaser code and model-generated assets through a multimodal design document, routing build-linked playtesting and visual-critic findings back to artifact owners for repair.<br>
+  > **Verification:** Real-UI requirement checks · visual evidence tied to the current build · bounded repair gates · separate finished-game evaluation on 20 prompt-matched task pairs · human preference.
+
 <a id="paper-2610-08621"></a>
 <!-- mmac-record: {"id": "2610.08621", "scope": "Core", "primary": "2.7", "task": 7} -->
 
@@ -1393,6 +1400,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 **Boundary.** Worlds may be digital or generated from requirements. Correspondence to real observations belongs in 2.9. Solvers for fixed scenes and scene-generation systems are distinct tasks.
 
 **Connect:** [3.8 World-model prediction, intervention, and planning evaluation](#evaluation-world-models) · [4.8 World observations, transitions, and simulation-program data](#data-world-models) · [2.7 Playable game construction, recreation, and repair](#methods-games) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.12 Learning from construction and interaction experience](#methods-experience)
+
+<a id="paper-2610-26811"></a>
+<!-- mmac-record: {"id": "2610.26811", "scope": "Adjacent", "primary": "2.8", "task": 8} -->
+
+- `arXiv 2026.10` **State World Models: Execute the Rules, Generate the Pixels**. [[paper]](https://arxiv.org/abs/2610.26811) [[code]](https://github.com/Zhangyr2022/StateWorldModel) [[project]](https://ivg-yanranzhang.github.io/StateWorldModel/) [[dataset]](https://huggingface.co/datasets/Louis0411/StateWorldModel) — `[Method]` `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Inference]` `[Environment]` `[Verification]` · **Adjacent**
+  > Separates coding-agent-authored rules from frozen video rendering, compiling settled events into visual instructions and admitting rule-compatible video observations into subsequent world state.<br>
+  > **Verification:** Hidden-state counterfactual pairs · required and forbidden outcomes · matched frozen-backbone comparison · multi-turn examples; runtime state feedback keeps the rule program fixed.
 
 <a id="paper-2602-12311"></a>
 <!-- mmac-record: {"id": "2602.12311", "scope": "Core", "primary": "2.8", "task": 8} -->
@@ -1487,6 +1501,7 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Related evaluation contributions**
 
+- [ExeWorldBench](#paper-2610-15166) · **Adjacent** · [3.8](#evaluation-world-models)
 - [PhysCodeGym](#paper-2610-17288) · **Core** · [3.9](#evaluation-real-to-sim)
 - [Video2World](#paper-2610-04432) · **Core** · [3.9](#evaluation-real-to-sim)
 - [WorldSolver](#paper-2610-08720) · **Adjacent** · [3.8](#evaluation-world-models)
@@ -2093,7 +2108,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 <a id="work-blenderworld"></a>
 <!-- mmac-record: {"id": "system:blenderworld", "scope": "Core", "primary": "3.5", "task": 5} -->
 
-- `Technical Report 2026.10` **BlenderWorld: Benchmarking Visual Agents for 3D Creation from Real-World References**. [[report]](https://github.com/QwenLM/BlenderWorld/blob/main/docs/BlenderWorld__Benchmarking_Visual_Agents_for_3D_Creation_from_Real_World_References.pdf) [[code]](https://github.com/QwenLM/BlenderWorld) [[project]](https://blenderworld.github.io/) [[dataset]](https://huggingface.co/datasets/Qwen/BlenderWorld) — `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Environment]` `[Verification]` `[Trajectory Analysis]` · **Core**
+- `Technical Report 2026.10` **BlenderWorld: Benchmarking Visual Agents for 3D Creation from Real-World References**. [[paper]](https://arxiv.org/abs/2610.23986) [[report]](https://github.com/QwenLM/BlenderWorld/blob/main/docs/BlenderWorld__Benchmarking_Visual_Agents_for_3D_Creation_from_Real_World_References.pdf) [[code]](https://github.com/QwenLM/BlenderWorld) [[project]](https://blenderworld.github.io/) [[dataset]](https://huggingface.co/datasets/Qwen/BlenderWorld) — `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Environment]` `[Verification]` `[Trajectory Analysis]` · **Core**
   > Benchmarks 223 reference-driven Blender creation tasks in which coding agents inspect and revise editable scenes, with a separate evaluator combining 2,651 requirement checks, adaptive multi-view renders, and visual-quality judgments.<br>
   > **Verification:** Editable scene structure · weighted requirement satisfaction · multi-view visual quality · human–judge agreement · tool-use and failure trajectories.
 
@@ -2339,6 +2354,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Evaluation settings in method papers**
 
+- [Game-Creation-Agents](#paper-2610-16776) · **Core** · [2.7](#methods-games) — 20 prompt-matched game pairs; UI-grounded requirement scoring and separate human evaluation.
 - [Recursive Game Creator](#paper-2610-08621) · **Core** · [2.7](#methods-games)
 - [RSIGame](#paper-2609-39045) · **Core** · [2.7](#methods-games)
 - [3AGameFactory](#work-3agamefactory) · **Core** · [2.7](#methods-games)
@@ -2362,6 +2378,13 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 **Boundary.** Measure replay of known traces, prediction under new actions, and model-assisted task completion separately. Real-world validity requires additional evidence.
 
 **Connect:** [2.8 Executable world models and simulation programs](#methods-world-models) · [4.8 World observations, transitions, and simulation-program data](#data-world-models) · [3.7 Game behavior, playability, and repair evaluation](#evaluation-games) · [3.9 Scene and interaction construction for Agentic Real-to-Sim](#evaluation-real-to-sim)
+
+<a id="paper-2610-15166"></a>
+<!-- mmac-record: {"id": "2610.15166", "scope": "Adjacent", "primary": "3.8", "task": 8} -->
+
+- `arXiv 2026.10` **ExeWorldBench: Benchmarking Code-Based Executable 3D World Modeling**. [[paper]](https://arxiv.org/abs/2610.15166) [[project]](https://helen1p.github.io/ExeWorldBench/) [[dataset]](https://huggingface.co/datasets/HelenPeng/ExeWorldBench) — `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Environment]` `[Verification]` · **Adjacent**
+  > Tests Blender programs on individual mechanisms, multi-stage causal systems, and goal-driven world synthesis, separating rendered structure, motion, and goal satisfaction from mere code executability.<br>
+  > **Verification:** Execution-penalized and execution-conditioned scores · visual/mechanical/causal judgments · chain-length and motion-reference analyses; API execution-error repair is distinct from visual mechanism revision.
 
 <a id="paper-2610-08720"></a>
 <!-- mmac-record: {"id": "2610.08720", "scope": "Adjacent", "primary": "3.8", "task": 8} -->
@@ -2391,6 +2414,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Benchmark contributions**
 
+- [State World Models / WorldState-Bench](#paper-2610-26811) · **Adjacent** · [2.8](#methods-world-models) — 50 hidden-state counterfactual pairs with shared visible inputs.
 - [PhysCodeGym](#paper-2610-17288) · **Core** · [3.9](#evaluation-real-to-sim)
 - [Video2World](#paper-2610-04432) · **Core** · [3.9](#evaluation-real-to-sim)
 - [WorldAgent](#paper-2609-33208) · **Core** · [2.8](#methods-world-models)
@@ -2845,6 +2869,8 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Dataset contributions**
 
+- [State World Models / WorldState-Bench](#paper-2610-26811) · **Adjacent** · [2.8](#methods-world-models) — released case programs, first frames, and paired instructions.
+- [ExeWorldBench](#paper-2610-15166) · **Adjacent** · [3.8](#evaluation-world-models) — released task prompts, references, and Blender-world construction materials.
 - [PhysCodeGym](#paper-2610-17288) · **Core** · [3.9](#evaluation-real-to-sim)
 - [Awomo-SimDataEngine](#paper-2610-02274) · **Core** · [2.8](#methods-world-models)
 - [Agentic Game Development as a Verifiable Trajectory Data Engine for Scaling World Models](#paper-2608-25518) · **Core** · [2.8](#methods-world-models)
@@ -3118,6 +3144,7 @@ These layers are complementary rather than mutually exclusive. For example, an a
 
 | Capability | Resource and sources | Inputs → outputs | Role in a workflow |
 |---|---|---|---|
+| Video-to-action capability | **BridgeWAM** — *BridgeWAM: Bridging Video and Action Experts via Latent Bridge Queries* [[paper]](https://arxiv.org/abs/2610.14746) · [[code]](https://github.com/jxfang04/BridgeWAM-code) · [[weights]](https://huggingface.co/BridgeWAM/bridgewam) | Camera observations + language + proprioception → action chunks | Compresses video-expert features into latent bridge queries for a lightweight action expert; the default inference path skips future-video generation. Evaluated in simulation and real manipulation, as a reusable model capability rather than LLM-led code repair. |
 | Robot policy adaptation and serving | **Pi API beta** — Physical Intelligence [[official announcement]](https://www.pi.website/blog/api-beta) | Robot demonstrations/data → fine-tuned policy accessible through hosted inference | Lets developers adapt and deploy action models, then use real-robot failures to choose the next data collection round; this is a developer-led workflow with beta access, not an autonomous LLM repair claim. |
 
 <a id="skills-and-tool-bridges"></a>

@@ -49,7 +49,7 @@
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-10-21**
+**最后更新：2026-10-22**
 
 </div>
 
@@ -1972,6 +1972,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.3 图表、科学可视化与可编辑图形构建](#methods-graphics) · [4.3 图表数据、图形程序与编辑记录](#data-graphics) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
 
+<a id="paper-2607-10301"></a>
+<!-- mmac-record: {"id": "2607.10301", "scope": "Adjacent", "primary": "3.3", "task": 3} -->
+
+- `arXiv 2026.07` **ChartSync: A Benchmark for Visuo-Logical Cascading Chart Editing**. [[论文]](https://arxiv.org/abs/2607.10301) [[代码]](https://github.com/kaka-yjk/ChartSyncCodebase) [[数据]](https://huggingface.co/datasets/JiakangYu/ChartSync) — `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Verification]` · **Adjacent**
+  > 以程序渲染、专家校正的目标图及独立视觉评测，检查图表图像编辑能否让数值变化同步反映到对应几何，同时保持无关内容不变。<br>
+  > **验证维度：** 870 组编辑三元组，其中 235 组涉及几何联动 · OCR／结构保真 · 几何同步 · 背景保持 · 人类与评估器一致性。
+
 <a id="paper-2609-38642"></a>
 <!-- mmac-record: {"id": "2609.38642", "scope": "Core", "primary": "3.3", "task": 3} -->
 
@@ -2718,6 +2725,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **数据集工作**
 
 - [ChartRevise](#paper-2609-38642) · **Core** · [3.3](#evaluation-graphics)
+- [ChartSync](#paper-2607-10301) · **Adjacent** · [3.3](#evaluation-graphics) — 已发布 870 组原图／指令／目标图及配对绘图程序；其中 235 组检验数值与几何同步。
 - [VisInteract](#paper-2609-15182) · **Core** · [2.3](#methods-graphics)
 - [VisEditBench](#paper-2608-10408) · **Core** · [2.3](#methods-graphics)
 - [VisCoder2](#paper-2510-23642) · **Core** · [2.3](#methods-graphics)
@@ -3000,6 +3008,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.10 机器人程序与策略开发](#methods-robot-programs) · [6.1 主动证据获取与任务相关保真度](#section-6-1)
 
+<a id="paper-2610-28354"></a>
+<!-- mmac-record: {"id": "2610.28354", "scope": "Adjacent", "primary": "5.1", "task": 9} -->
+
+- `arXiv 2026.10` **S-Agent 2.0: Spatial Reasoning with a General Coding Agent**. [[论文]](https://arxiv.org/abs/2610.28354) [[代码]](https://github.com/Ropedia/S-Agent-2.0) [[项目]](https://ropedia.github.io/S-Agent-2.0) — `[Method]` `[System]` · `[Inference]` `[Verification]` · **Adjacent**
+  > 为通用编码 Agent 配备冻结感知工具、可编辑场景记忆和几何依据明确的读数，使其在回答空间问题前检查并修正证据。<br>
+  > **验证维度：** 五项离线多视图／视频推理基准 · 有无工具与接口消融 · Harness 迁移 · 坐标系和假想视点理解失败；不属于机器人执行评测。
+
 <a id="paper-2610-06955"></a>
 <!-- mmac-record: {"id": "2610.06955", "scope": "Adjacent", "primary": "5.1", "task": 10} -->
 
@@ -3038,6 +3053,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 | 原生 3D 纹理生成 | **Tex-Zero** — *Does Native 3D Texture Generation Necessarily Require 3D Assets for Training?* [[论文]](https://arxiv.org/abs/2609.34621) · [[仓库文档]](https://github.com/wangjiangshan0725/Tex-Zero) | 几何 + 多视图参考图 → 与几何对齐的 3D 表面颜色 | 用图像构造的训练样本学习图像／纹理共享表示，提供不依赖真实带纹理 3D 资产作为训练数据的纹理生成能力。 |
 | 3D 材质生成与编辑 | **SUPRA-Tex** — *SUPRA-TEX: 3D Generation with Super-Aligned Texture* [[论文]](https://arxiv.org/abs/2610.22352) · [[项目]](https://supra-3d.github.io/supratex/) · [[仓库文档]](https://github.com/Supra-3D/supra-tex) · [[权重]](https://huggingface.co/supra3d/supra-tex) · [[Demo]](https://huggingface.co/spaces/UniLat3D/Supra-Tex) | 参考图像 + mesh + 相机投影 → 完整表面的可重光照 PBR 材质 | 保留参考图中的文字、Logo 与图案，并补全不可见表面的反照率、金属度和粗糙度。几何由外部提供或上游 Pixal3D 生成；编辑后的二维视图可更新同一 mesh 的材质，为 3D 资产工作流提供外观生成环节。 |
 | 前馈 PBR 材质生成 | **TexGaussian** — *TexGaussian: Generating High-quality PBR Material via Octree-based 3D Gaussian Splatting* [[论文]](https://arxiv.org/abs/2411.19654) · [[项目]](https://3d-aigc.github.io/TexGaussian/) · [[代码]](https://github.com/ymxbj/TexGaussian) · [[权重]](https://huggingface.co/ymxbj/TexGaussian) | mesh + 文本 → 反照率、粗糙度和金属度贴图 | 预测八叉树对齐的高斯材质通道，再将多视图结果烘焙为 UV 贴图，为后续渲染提供可重光照的表面外观；不同于物理动力学建模或 Agent 自主修复。 |
+| 联合 PBR 材质生成 | **VideoMatGen** — *VideoMatGen: PBR Materials through Joint Generative Modeling* [[论文]](https://arxiv.org/abs/2603.16566) · [[官方介绍]](https://research.nvidia.com/labs/rtr/publication/hasselgren2026videomatgen/) | 带 UV 的 mesh + 文本，可选参考图 → 基色、粗糙度、金属度和高度贴图 | 用视频扩散模型联合生成材质本征属性的多视图，再烘焙为可渲染纹理；是已有文档说明的资产生成能力，不等于 Agent 自主修复或真实物理迁移。 |
 
 <a id="execution-and-rendering-engines"></a>
 

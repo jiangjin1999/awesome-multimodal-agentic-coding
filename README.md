@@ -49,7 +49,7 @@ Enable agents to **organize and combine model capabilities**, expanding their ab
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-10-21**
+**Last updated: 2026-10-22**
 
 </div>
 
@@ -1972,6 +1972,13 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Connect:** [2.3 Charts, scientific visualization, and editable graphics](#methods-graphics) · [4.3 Chart data, graphics programs, and edit records](#data-graphics) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
 
+<a id="paper-2607-10301"></a>
+<!-- mmac-record: {"id": "2607.10301", "scope": "Adjacent", "primary": "3.3", "task": 3} -->
+
+- `arXiv 2026.07` **ChartSync: A Benchmark for Visuo-Logical Cascading Chart Editing**. [[paper]](https://arxiv.org/abs/2607.10301) [[code]](https://github.com/kaka-yjk/ChartSyncCodebase) [[data]](https://huggingface.co/datasets/JiakangYu/ChartSync) — `[Benchmark]` `[Dataset]` · `[Data Curation]` `[Verification]` · **Adjacent**
+  > Tests whether chart-image edits propagate changed values into the corresponding geometry while preserving unrelated content, using program-rendered, expert-curated targets and independent visual evaluation.<br>
+  > **Verification:** 870 editing triplets, including 235 geometry-coupled cases · OCR/structural fidelity · geometric synchronization · background preservation · human–judge agreement.
+
 <a id="paper-2609-38642"></a>
 <!-- mmac-record: {"id": "2609.38642", "scope": "Core", "primary": "3.3", "task": 3} -->
 
@@ -2718,6 +2725,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 **Dataset contributions**
 
 - [ChartRevise](#paper-2609-38642) · **Core** · [3.3](#evaluation-graphics)
+- [ChartSync](#paper-2607-10301) · **Adjacent** · [3.3](#evaluation-graphics) — 870 released source/instruction/target triplets with paired plotting programs; 235 test value-to-geometry synchronization.
 - [VisInteract](#paper-2609-15182) · **Core** · [2.3](#methods-graphics)
 - [VisEditBench](#paper-2608-10408) · **Core** · [2.3](#methods-graphics)
 - [VisCoder2](#paper-2510-23642) · **Core** · [2.3](#methods-graphics)
@@ -3000,6 +3008,13 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Connect:** [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.10 Robot program and policy development](#methods-robot-programs) · [6.1 Active evidence acquisition and task-relevant fidelity](#section-6-1)
 
+<a id="paper-2610-28354"></a>
+<!-- mmac-record: {"id": "2610.28354", "scope": "Adjacent", "primary": "5.1", "task": 9} -->
+
+- `arXiv 2026.10` **S-Agent 2.0: Spatial Reasoning with a General Coding Agent**. [[paper]](https://arxiv.org/abs/2610.28354) [[code]](https://github.com/Ropedia/S-Agent-2.0) [[project]](https://ropedia.github.io/S-Agent-2.0) — `[Method]` `[System]` · `[Inference]` `[Verification]` · **Adjacent**
+  > Equips general coding agents with frozen perception tools, editable scene memory, and geometry-grounded readouts so they can inspect and correct evidence before answering spatial questions.<br>
+  > **Verification:** Five offline multi-view/video reasoning benchmarks · tools/no-tools and interface ablations · harness transfer · coordinate-frame and viewpoint-grounding failures; not robot-execution evaluation.
+
 <a id="paper-2610-06955"></a>
 <!-- mmac-record: {"id": "2610.06955", "scope": "Adjacent", "primary": "5.1", "task": 10} -->
 
@@ -3038,6 +3053,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 | Native 3D texture generation | **Tex-Zero** — *Does Native 3D Texture Generation Necessarily Require 3D Assets for Training?* [[paper]](https://arxiv.org/abs/2609.34621) · [[repository docs]](https://github.com/wangjiangshan0725/Tex-Zero) | Geometry + multiview reference images → geometry-aligned 3D surface colors | Learns a shared image/texture representation from image-derived training samples, providing a texturing capability without requiring real textured 3D assets for training. |
 | 3D material generation and editing | **SUPRA-Tex** — *SUPRA-TEX: 3D Generation with Super-Aligned Texture* [[paper]](https://arxiv.org/abs/2610.22352) · [[project]](https://supra-3d.github.io/supratex/) · [[repository docs]](https://github.com/Supra-3D/supra-tex) · [[weights]](https://huggingface.co/supra3d/supra-tex) · [[demo]](https://huggingface.co/spaces/UniLat3D/Supra-Tex) | Reference image + mesh + camera projection → full-surface, relightable PBR materials | Preserves reference text, logos, and patterns while completing unseen surfaces with albedo, metallic, and roughness properties. Geometry is supplied or generated upstream by Pixal3D; edited 2D views can update materials on the same mesh, providing an appearance-generation step for 3D asset workflows. |
 | Feed-forward PBR materials | **TexGaussian** — *TexGaussian: Generating High-quality PBR Material via Octree-based 3D Gaussian Splatting* [[paper]](https://arxiv.org/abs/2411.19654) · [[project]](https://3d-aigc.github.io/TexGaussian/) · [[code]](https://github.com/ymxbj/TexGaussian) · [[weights]](https://huggingface.co/ymxbj/TexGaussian) | Mesh + text → albedo, roughness, and metallic maps | Predicts octree-aligned Gaussian material channels and bakes their views into UV maps, supplying relightable surface appearance for downstream rendering; distinct from physical-dynamics modeling or agentic repair. |
+| Joint PBR material generation | **VideoMatGen** — *VideoMatGen: PBR Materials through Joint Generative Modeling* [[paper]](https://arxiv.org/abs/2603.16566) · [[official publication]](https://research.nvidia.com/labs/rtr/publication/hasselgren2026videomatgen/) | UV-mapped mesh + text, optionally a reference image → base color, roughness, metallicity, and height maps | Jointly generates intrinsic material views with a video diffusion model and bakes them into renderable textures; a documented asset-generation capability, not evidence of agentic repair or physical transfer. |
 
 <a id="execution-and-rendering-engines"></a>
 

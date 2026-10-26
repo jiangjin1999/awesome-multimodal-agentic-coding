@@ -44,12 +44,12 @@ Enable agents to **organize and combine model capabilities**, expanding their ab
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-176-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-180-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-10-22**
+**Last updated: 2026-10-27**
 
 </div>
 
@@ -538,6 +538,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 **Boundary.** Environment quality and downstream agent benefit are evaluated separately. Transfer from synthetic software to target applications is digital-environment transfer.
 
 **Connect:** [3.2 Training-environment construction and downstream utility](#evaluation-gui-environments) · [4.2 GUI/software environments, tasks, rewards, and action traces](#data-gui-environments) · [1.4 From artifacts to environments: state, actions, resets, tasks, and rewards](#section-1-4) · [2.1 Visual software engineering and application recreation](#methods-software) · [2.12 Learning from construction and interaction experience](#methods-experience)
+
+<a id="paper-2610-30792"></a>
+<!-- mmac-record: {"id": "2610.30792", "scope": "Core", "primary": "2.2", "task": 2} -->
+
+- `arXiv 2026.10` **Trace2World: Reconstructing App Worlds from Real Interaction Traces for Scalable GUI Agent Training**. [[paper]](https://arxiv.org/abs/2610.30792) — `[Method]` `[Benchmark]` · `[Data Curation]` `[Training]` `[Environment]` `[Verification]` · **Core**
+  > Reconciles real interaction traces into a fixed app-behavior model, then uses independent screenshot-grounded replay to guide bounded package repair before synthesizing GUI-agent training tasks.<br>
+  > **Verification:** Six source-workflow obligations · reset/state contracts · environment-repair ablation · downstream GUI and real-device transfer.
 
 <a id="paper-2605-25624"></a>
 <!-- mmac-record: {"id": "2605.25624", "scope": "Core", "primary": "2.2", "task": 2} -->
@@ -1254,6 +1261,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Connect:** [3.6 Physical asset construction and usability evaluation](#evaluation-physical-assets) · [4.6 Physical assets, parameters, and diagnostic interactions](#data-physical-assets) · [2.5 Procedural 3D and CAD construction](#methods-cad-3d) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.11 Real2Sim2Real: task learning and real execution](#methods-real2sim2real)
 
+<a id="paper-2610-31651"></a>
+<!-- mmac-record: {"id": "2610.31651", "scope": "Core", "primary": "2.6", "task": 6} -->
+
+- `arXiv 2026.10` **BrickWright: Agentic Creation of Physically Feasible Brick Builds**. [[paper]](https://arxiv.org/abs/2610.31651) [[code]](https://github.com/avalovelace1/brickwright) [[project]](https://avalovelace1.github.io/brickwright/) — `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > Repairs Python brick assemblies through typed-connector, collision, and floating-part checks plus rendered-view inspection; physical feasibility here excludes stability and executable assembly-sequence guarantees.<br>
+  > **Verification:** BrickNet-512 validity · connected components · prompt adherence · validation-call and token cost.
+
 <a id="paper-2610-13947"></a>
 <!-- mmac-record: {"id": "2610.13947", "scope": "Core", "primary": "2.6", "task": 6} -->
 
@@ -1522,6 +1536,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Connect:** [3.9 Scene and interaction construction for Agentic Real-to-Sim](#evaluation-real-to-sim) · [4.9 Real-to-Sim observation, simulation, and interaction correspondences](#data-real-to-sim) · [2.6 Physical asset construction and diagnosis](#methods-physical-assets) · [2.8 Executable world models and simulation programs](#methods-world-models) · [2.11 Real2Sim2Real: task learning and real execution](#methods-real2sim2real)
 
+<a id="paper-2610-31834"></a>
+<!-- mmac-record: {"id": "2610.31834", "scope": "Core", "primary": "2.9", "task": 9} -->
+
+- `arXiv 2026.10` **WorldMirror: Agentic Real-to-Sim Generation of Interactive Worlds from In-the-Wild Robot Demonstrations**. [[paper]](https://arxiv.org/abs/2610.31834) [[project]](https://worldmirror-page.github.io/) — `[Method]` · `[Inference]` `[Environment]` `[Verification]` · **Core**
+  > Orchestrates reconstruction and generation tools to refine camera-aligned world programs from robot demonstrations, using rendered and simulation feedback to preserve interaction and trajectory replay.<br>
+  > **Verification:** Appearance and geometry · camera/robot alignment · collision consistency · recorded-trajectory replay in simulation.
+
 <a id="paper-2610-21498"></a>
 <!-- mmac-record: {"id": "2610.21498", "scope": "Core", "primary": "2.9", "task": 9} -->
 
@@ -1564,6 +1585,20 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 **Boundary.** Calling an existing action model does not itself constitute program development. Separate simulation from hardware results and code updates from policy learning.
 
 **Connect:** [3.10 Robot program and policy execution evaluation](#evaluation-robot-programs) · [4.10 Robot demonstrations, execution, and repair trajectories](#data-robot-programs) · [2.11 Real2Sim2Real: task learning and real execution](#methods-real2sim2real) · [2.12 Learning from construction and interaction experience](#methods-experience) · [5.4 Action, policy, prediction, and verification capabilities](#section-5-4)
+
+<a id="paper-2610-31841"></a>
+<!-- mmac-record: {"id": "2610.31841", "scope": "Core", "primary": "2.10", "task": 10} -->
+
+- `arXiv 2026.10` **FORCA: A Force-Aware Coding Agent for Contact-Rich Robot Manipulation**. [[paper]](https://arxiv.org/abs/2610.31841) — `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > Revises Python contact-control logic using real-robot visual outcomes and force/torque traces, extending execution feedback from motion parameters to contact detection and recovery behavior.<br>
+  > **Verification:** Five UR5e hardware tasks · frozen-controller success · force limits · real-interaction and revision cost.
+
+<a id="paper-2610-30136"></a>
+<!-- mmac-record: {"id": "2610.30136", "scope": "Adjacent", "primary": "2.10", "task": 10} -->
+
+- `arXiv 2026.10` **Agentic World Action Models**. [[paper]](https://arxiv.org/abs/2610.30136) [[project]](https://agentic-wam.github.io/) — `[Method]` · `[Data Curation]` `[Training]` `[Inference]` · **Adjacent**
+  > Jointly generates skill-program plans, future video, and robot actions; an optional hybrid mode invokes valid program slices alongside learned action chunks, without online skill-library learning.<br>
+  > **Verification:** RoboTwin clean/random conditions · two physical bimanual platforms · code-expert ablations · hybrid-execution trade-offs.
 
 <a id="paper-2610-20998"></a>
 <!-- mmac-record: {"id": "2610.20998", "scope": "Core", "primary": "2.10", "task": 10} -->
@@ -1956,6 +1991,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Benchmark contributions**
 
+- [Trace2World](#paper-2610-30792) · **Core** · [2.2](#methods-gui-environments)
 - [SoftwareGym](#paper-2610-12611) · **Core** · [2.2](#methods-gui-environments)
 
 **Evaluation settings in method papers**
@@ -2267,6 +2303,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Evaluation settings in method papers**
 
+- [BrickWright](#paper-2610-31651) · **Core** · [2.6](#methods-physical-assets)
 - [USDCraft](#paper-2610-11322) · **Core** · [2.6](#methods-physical-assets)
 - [DiagGen](#paper-2609-23103) · **Core** · [2.6](#methods-physical-assets)
 - [DeformSmith](#paper-2609-18620) · **Core** · [2.6](#methods-physical-assets)
@@ -2457,6 +2494,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Evaluation settings in method papers**
 
+- [WorldMirror](#paper-2610-31834) · **Core** · [2.9](#methods-real-to-sim)
 - [GRASE](#paper-2610-21498) · **Core** · [2.9](#methods-real-to-sim)
 - [LiteReality-Agent](#paper-2610-01863) · **Core** · [2.9](#methods-real-to-sim)
 - [CoDimRecon](#paper-2609-36024) · **Core** · [2.9](#methods-real-to-sim)
@@ -2489,6 +2527,8 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Evaluation settings in method papers**
 
+- [FORCA](#paper-2610-31841) · **Core** · [2.10](#methods-robot-programs)
+- [AW-0](#paper-2610-30136) · **Adjacent** · [2.10](#methods-robot-programs)
 - [Awomo-SimDataEngine](#paper-2610-02274) · **Core** · [2.8](#methods-world-models)
 - [MoCaP](#paper-2610-20998) · **Core** · [2.10](#methods-robot-programs)
 - [ACRO](#paper-2610-19677) · **Adjacent** · [5.4](#section-5-4) — simulated and real-robot recovery under physical-step budgets that include return motion.
@@ -2935,6 +2975,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Data-construction contributions**
 
+- [AW-0](#paper-2610-30136) · **Adjacent** · [2.10](#methods-robot-programs)
 - [CaP-X](#paper-2603-22435) · **Core** · [2.10](#methods-robot-programs)
 - [MobiAgent](#paper-2610-03476) · **Adjacent** · [5.4](#section-5-4)
 

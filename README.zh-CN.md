@@ -44,12 +44,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-176-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-180-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-10-22**
+**最后更新：2026-10-27**
 
 </div>
 
@@ -538,6 +538,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 环境自身质量与下游 Agent 收益分别评价；合成软件到目标应用的迁移属于数字环境迁移。
 
 **关联阅读：** [3.2 GUI／软件训练环境构建与下游效用评测](#evaluation-gui-environments) · [4.2 GUI／软件训练环境、任务、奖励与操作轨迹](#data-gui-environments) · [1.4 何时成为环境：状态、动作、重置、任务与奖励](#section-1-4) · [2.1 视觉软件工程与应用复刻](#methods-software) · [2.12 从构建与交互经验学习](#methods-experience)
+
+<a id="paper-2610-30792"></a>
+<!-- mmac-record: {"id": "2610.30792", "scope": "Core", "primary": "2.2", "task": 2} -->
+
+- `arXiv 2026.10` **Trace2World: Reconstructing App Worlds from Real Interaction Traces for Scalable GUI Agent Training**. [[论文]](https://arxiv.org/abs/2610.30792) — `[Method]` `[Benchmark]` · `[Data Curation]` `[Training]` `[Environment]` `[Verification]` · **Core**
+  > 先从真实交互轨迹确定应用行为，再以独立截图重放定位缺陷、约束环境代码修复，随后生成 GUI Agent 训练任务。<br>
+  > **验证维度：** 六类源工作流义务 · 重置／状态契约 · 环境修复消融 · 下游 GUI 与真实设备迁移。
 
 <a id="paper-2605-25624"></a>
 <!-- mmac-record: {"id": "2605.25624", "scope": "Core", "primary": "2.2", "task": 2} -->
@@ -1254,6 +1261,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.6 物理资产构建与可用性评测](#evaluation-physical-assets) · [4.6 物理资产、参数与诊断交互数据](#data-physical-assets) · [2.5 程序化 3D 与 CAD 构建](#methods-cad-3d) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.11 Real2Sim2Real：任务学习与真实执行](#methods-real2sim2real)
 
+<a id="paper-2610-31651"></a>
+<!-- mmac-record: {"id": "2610.31651", "scope": "Core", "primary": "2.6", "task": 6} -->
+
+- `arXiv 2026.10` **BrickWright: Agentic Creation of Physically Feasible Brick Builds**. [[论文]](https://arxiv.org/abs/2610.31651) [[代码]](https://github.com/avalovelace1/brickwright) [[项目]](https://avalovelace1.github.io/brickwright/) — `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > 通过类型化连接、碰撞与悬空检查及渲染观察修复 Python 积木模型；其物理可行性定义不包含稳定性和可执行装配顺序保证。<br>
+  > **验证维度：** BrickNet-512 有效性 · 连通分量 · 提示一致性 · 验证调用与 token 成本。
+
 <a id="paper-2610-13947"></a>
 <!-- mmac-record: {"id": "2610.13947", "scope": "Core", "primary": "2.6", "task": 6} -->
 
@@ -1522,6 +1536,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.9 面向 Agentic Real-to-Sim 的场景与交互构建评测](#evaluation-real-to-sim) · [4.9 Real-to-Sim 的观测、仿真表示与交互对应](#data-real-to-sim) · [2.6 物理资产构建与诊断](#methods-physical-assets) · [2.8 可执行世界模型与仿真程序构建](#methods-world-models) · [2.11 Real2Sim2Real：任务学习与真实执行](#methods-real2sim2real)
 
+<a id="paper-2610-31834"></a>
+<!-- mmac-record: {"id": "2610.31834", "scope": "Core", "primary": "2.9", "task": 9} -->
+
+- `arXiv 2026.10` **WorldMirror: Agentic Real-to-Sim Generation of Interactive Worlds from In-the-Wild Robot Demonstrations**. [[论文]](https://arxiv.org/abs/2610.31834) [[项目]](https://worldmirror-page.github.io/) — `[Method]` · `[Inference]` `[Environment]` `[Verification]` · **Core**
+  > 组织重建与生成工具，将机器人示范转为相机对齐的世界程序，并用渲染和仿真反馈修正交互结构与轨迹重放。<br>
+  > **验证维度：** 外观与几何 · 相机／机器人对齐 · 碰撞一致性 · 仿真中的原始轨迹重放。
+
 <a id="paper-2610-21498"></a>
 <!-- mmac-record: {"id": "2610.21498", "scope": "Core", "primary": "2.9", "task": 9} -->
 
@@ -1564,6 +1585,20 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 感知、动作模型与控制器的能力来源单独记录；仅有真实机器人执行，不意味着系统完成了 Real2Sim2Real 环境构建链。
 
 **关联阅读：** [3.10 机器人程序与策略的执行评测](#evaluation-robot-programs) · [4.10 机器人演示、执行与程序／策略修复轨迹](#data-robot-programs) · [2.11 Real2Sim2Real：任务学习与真实执行](#methods-real2sim2real) · [2.12 从构建与交互经验学习](#methods-experience) · [5.4 动作、策略、预测与验证能力](#section-5-4)
+
+<a id="paper-2610-31841"></a>
+<!-- mmac-record: {"id": "2610.31841", "scope": "Core", "primary": "2.10", "task": 10} -->
+
+- `arXiv 2026.10` **FORCA: A Force-Aware Coding Agent for Contact-Rich Robot Manipulation**. [[论文]](https://arxiv.org/abs/2610.31841) — `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > 联合实机视觉结果与力／力矩轨迹修订 Python 接触控制代码，将执行反馈用于接触判断、动作顺序和恢复逻辑。<br>
+  > **验证维度：** 五类 UR5e 实机任务 · 固定控制器成功率 · 力限制 · 真实交互与修订成本。
+
+<a id="paper-2610-30136"></a>
+<!-- mmac-record: {"id": "2610.30136", "scope": "Adjacent", "primary": "2.10", "task": 10} -->
+
+- `arXiv 2026.10` **Agentic World Action Models**. [[论文]](https://arxiv.org/abs/2610.30136) [[项目]](https://agentic-wam.github.io/) — `[Method]` · `[Data Curation]` `[Training]` `[Inference]` · **Adjacent**
+  > 联合生成技能程序计划、未来视频与机器人动作，并以可选混合模式在有效程序片段和模型动作块之间切换，当前不进行在线技能库学习。<br>
+  > **验证维度：** RoboTwin 常规／随机化条件 · 两类双臂实机平台 · 代码专家消融 · 混合执行权衡。
 
 <a id="paper-2610-20998"></a>
 <!-- mmac-record: {"id": "2610.20998", "scope": "Core", "primary": "2.10", "task": 10} -->
@@ -1956,6 +1991,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **Benchmark 工作**
 
+- [Trace2World](#paper-2610-30792) · **Core** · [2.2](#methods-gui-environments)
 - [SoftwareGym](#paper-2610-12611) · **Core** · [2.2](#methods-gui-environments)
 
 **方法论文中的评测设置**
@@ -2267,6 +2303,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **方法论文中的评测设置**
 
+- [BrickWright](#paper-2610-31651) · **Core** · [2.6](#methods-physical-assets)
 - [USDCraft](#paper-2610-11322) · **Core** · [2.6](#methods-physical-assets)
 - [DiagGen](#paper-2609-23103) · **Core** · [2.6](#methods-physical-assets)
 - [DeformSmith](#paper-2609-18620) · **Core** · [2.6](#methods-physical-assets)
@@ -2457,6 +2494,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **方法论文中的评测设置**
 
+- [WorldMirror](#paper-2610-31834) · **Core** · [2.9](#methods-real-to-sim)
 - [GRASE](#paper-2610-21498) · **Core** · [2.9](#methods-real-to-sim)
 - [LiteReality-Agent](#paper-2610-01863) · **Core** · [2.9](#methods-real-to-sim)
 - [CoDimRecon](#paper-2609-36024) · **Core** · [2.9](#methods-real-to-sim)
@@ -2489,6 +2527,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **方法论文中的评测设置**
 
+- [FORCA](#paper-2610-31841) · **Core** · [2.10](#methods-robot-programs)
+- [AW-0](#paper-2610-30136) · **Adjacent** · [2.10](#methods-robot-programs)
 - [Awomo-SimDataEngine](#paper-2610-02274) · **Core** · [2.8](#methods-world-models)
 - [MoCaP](#paper-2610-20998) · **Core** · [2.10](#methods-robot-programs)
 - [ACRO](#paper-2610-19677) · **Adjacent** · [5.4](#section-5-4) — 将回退运动计入物理步数预算的仿真与实机恢复评测。
@@ -2935,6 +2975,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **数据构造工作**
 
+- [AW-0](#paper-2610-30136) · **Adjacent** · [2.10](#methods-robot-programs)
 - [CaP-X](#paper-2603-22435) · **Core** · [2.10](#methods-robot-programs)
 - [MobiAgent](#paper-2610-03476) · **Adjacent** · [5.4](#section-5-4)
 

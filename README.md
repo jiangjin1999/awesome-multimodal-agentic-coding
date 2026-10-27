@@ -976,6 +976,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Connect:** [3.5 Procedural 3D and CAD benchmarks](#evaluation-cad-3d) · [4.5 Procedural 3D and CAD data: requirements, programs, and assets](#data-cad-3d) · [2.6 Physical asset construction and diagnosis](#methods-physical-assets) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [5.3 Execution, rendering, simulation, and automation interfaces](#section-5-3)
 
+<a id="paper-2610-32978"></a>
+<!-- mmac-record: {"id": "2610.32978", "scope": "Adjacent", "primary": "2.5", "task": 5} -->
+
+- `arXiv 2026.10` **SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning**. [[paper]](https://arxiv.org/abs/2610.32978) [[code]](https://github.com/Tinaliu0123/scenebloom) — `[Method]` · `[Inference]` `[Environment]` `[Verification]` · **Adjacent**
+  > Combines asset-conditioned diffusion proposals and VLM-extracted spatial contracts with geometric compilation to build diverse indoor scenes for navigation training.<br>
+  > **Verification:** Mesh collisions and boundaries · simulated physical stability · real-layout distributions · navigation on held-out scanned scenes in Habitat; no hardware transfer evaluation.
+
 <a id="paper-2610-23121"></a>
 <!-- mmac-record: {"id": "2610.23121", "scope": "Core", "primary": "2.5", "task": 5} -->
 
@@ -1415,6 +1422,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Connect:** [3.8 World-model prediction, intervention, and planning evaluation](#evaluation-world-models) · [4.8 World observations, transitions, and simulation-program data](#data-world-models) · [2.7 Playable game construction, recreation, and repair](#methods-games) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.12 Learning from construction and interaction experience](#methods-experience)
 
+<a id="paper-2610-30679"></a>
+<!-- mmac-record: {"id": "2610.30679", "scope": "Adjacent", "primary": "2.8", "task": 8} -->
+
+- `arXiv 2026.10` **AgentDreamer: Agentic 3D Motion Reasoning for Text-Controllable Physics Simulation**. [[paper]](https://arxiv.org/abs/2610.30679) [[project]](http://cv.snu.ac.kr/research/AgentDreamer/) — `[Method]` · `[Inference]` `[Environment]` `[Verification]` · **Adjacent**
+  > Translates annotated scene geometry and language into parametric 3D motion functions, then fits a differentiable MPM simulator to the fixed trajectories.<br>
+  > **Verification:** Motion-IG text–motion alignment · human preference · motion-function analysis · eight scenes and 20 instructions in simulation.
+
 <a id="paper-2610-26811"></a>
 <!-- mmac-record: {"id": "2610.26811", "scope": "Adjacent", "primary": "2.8", "task": 8} -->
 
@@ -1773,6 +1787,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Connect:** [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [2.2 GUI and software training-environment synthesis](#methods-gui-environments) · [5.5 Skills, tool bridges, and reusable workflows](#section-5-5) · [6.5 From construction experience to transferable capability](#section-6-5)
 
+<a id="paper-2610-32120"></a>
+<!-- mmac-record: {"id": "2610.32120", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.10` **ImageRSI: Verification-Driven Recursive Self-Improvement for Agentic Image Generation**. [[paper]](https://arxiv.org/abs/2610.32120) — `[Method]` · `[Training]` `[Inference]` `[Verification]` · **Adjacent**
+  > Repairs images with multimodal verification, admits reusable strategies through paired validation, and trains the judge offline while keeping the image generator frozen.<br>
+  > **Verification:** Checklist strict accuracy · matched-budget repair · experience-reuse ablations · judge error; prompt and experience updates, with the judge fixed within each task.
+
 <a id="paper-2610-23479"></a>
 <!-- mmac-record: {"id": "2610.23479", "scope": "Core", "primary": "2.12", "task": 12} -->
 
@@ -1877,6 +1898,13 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 **Boundary.** Static screenshot matching, multi-state functionality, and repository repair require different protocols. Specify available reference access, tools, budgets, and hidden tests; broad artifact benchmarks also span other directions.
 
 **Connect:** [2.1 Visual software engineering and application recreation](#methods-software) · [4.1 Software requirements, application observations, and development traces](#data-software) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
+
+<a id="paper-2610-29014"></a>
+<!-- mmac-record: {"id": "2610.29014", "scope": "Adjacent", "primary": "3.1", "task": 1} -->
+
+- `arXiv 2026.10` **GenXR-Bench: Benchmarking Coding Agents for Interactive XR Development**. [[paper]](https://arxiv.org/abs/2610.29014) [[code]](https://github.com/whuang37/genxr-bench) [[tasks]](https://github.com/whuang37/genxr-bench/tree/master/tasks) — `[Benchmark]` `[Dataset]` · `[Environment]` `[Verification]` · **Adjacent**
+  > Evaluates XR feature implementation, bug repair, and app generation using simulated hand and environment inputs with held-out programmatic and visual tests, validated against expert reviews on XR hardware.<br>
+  > **Verification:** 112 tasks · functional and interaction assertions · agreement with expert judgments on 124 applications · test flakiness and sensor-lifecycle failures.
 
 <a id="paper-2609-32600"></a>
 <!-- mmac-record: {"id": "2609.32600", "scope": "Core", "primary": "3.1", "task": 1} -->
@@ -2241,6 +2269,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Evaluation settings in method papers**
 
+- [SceneBloom](#paper-2610-32978) · **Adjacent** · [2.5](#methods-cad-3d)
 - [3DCodeVerse](#paper-2610-22341) · **Core** · [2.5](#methods-cad-3d)
 - [Task-Adaptive Grounded 3D-Programmers Using 2D VLMs](#paper-2610-02021) · **Core** · [2.5](#methods-cad-3d)
 - [GATOR](#paper-2610-11215) · **Core** · [2.5](#methods-cad-3d)
@@ -2446,6 +2475,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Evaluation settings in method papers**
 
+- [AgentDreamer](#paper-2610-30679) · **Adjacent** · [2.8](#methods-world-models)
 - [Perceptual Self-Reflection in Agentic Physics Simulation Code Generation](#paper-2602-12311) · **Core** · [2.8](#methods-world-models)
 - [Text2Sim](#paper-2609-36593) · **Core** · [2.8](#methods-world-models)
 - [Awomo-SimDataEngine](#paper-2610-02274) · **Core** · [2.8](#methods-world-models)
@@ -2599,6 +2629,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Evaluation settings in method papers**
 
+- [ImageRSI](#paper-2610-32120) · **Adjacent** · [2.12](#methods-experience)
 - [Learning Only with Images](#paper-2507-20766) · **Core** · [2.1](#methods-software)
 - [WebWorld](#paper-2608-30530) · **Core** · [2.1](#methods-software)
 - [HexaShell](#paper-2610-23479) · **Core** · [2.12](#methods-experience) — frozen-tool tests on unseen same-seed layouts, distinct from cross-task or multi-seed generalization.
@@ -2712,6 +2743,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Dataset contributions**
 
+- [GenXR-Bench](#paper-2610-29014) · **Adjacent** · [3.1](#evaluation-software) — released XR task instructions, configurations, and tests.
 - [Rendering-in-the-Loop](#paper-2609-02088) · **Core** · [2.1](#methods-software)
 - [VisRefiner](#paper-2602-05998) · **Core** · [2.1](#methods-software)
 - [FronTalk](#paper-2601-04203) · **Core** · [2.1](#methods-software)

@@ -976,6 +976,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.5 程序化 3D 与 CAD 基准评测](#evaluation-cad-3d) · [4.5 程序化 3D 与 CAD 数据：需求、程序与资产](#data-cad-3d) · [2.6 物理资产构建与诊断](#methods-physical-assets) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [5.3 执行、渲染、仿真与自动化接口](#section-5-3)
 
+<a id="paper-2610-32978"></a>
+<!-- mmac-record: {"id": "2610.32978", "scope": "Adjacent", "primary": "2.5", "task": 5} -->
+
+- `arXiv 2026.10` **SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning**. [[paper]](https://arxiv.org/abs/2610.32978) [[code]](https://github.com/Tinaliu0123/scenebloom) — `[Method]` · `[Inference]` `[Environment]` `[Verification]` · **Adjacent**
+  > 结合资产条件扩散提案、VLM 提取的空间关系约束和几何编译，构建供导航训练使用的多样室内场景。<br>
+  > **验证维度：** 网格碰撞与边界 · 仿真物理稳定性 · 真实布局分布 · Habitat 中留出扫描场景的导航表现；未进行实机迁移评测。
+
 <a id="paper-2610-23121"></a>
 <!-- mmac-record: {"id": "2610.23121", "scope": "Core", "primary": "2.5", "task": 5} -->
 
@@ -1415,6 +1422,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.8 世界模型的预测、干预与规划效用评测](#evaluation-world-models) · [4.8 世界观测、状态转移与仿真程序数据](#data-world-models) · [2.7 可玩游戏构建、复刻与修复](#methods-games) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.12 从构建与交互经验学习](#methods-experience)
 
+<a id="paper-2610-30679"></a>
+<!-- mmac-record: {"id": "2610.30679", "scope": "Adjacent", "primary": "2.8", "task": 8} -->
+
+- `arXiv 2026.10` **AgentDreamer: Agentic 3D Motion Reasoning for Text-Controllable Physics Simulation**. [[paper]](https://arxiv.org/abs/2610.30679) [[project]](http://cv.snu.ac.kr/research/AgentDreamer/) — `[Method]` · `[Inference]` `[Environment]` `[Verification]` · **Adjacent**
+  > 将带标注的场景几何与语言转为参数化三维运动函数，再让可微 MPM 模拟器拟合这些固定目标轨迹。<br>
+  > **验证维度：** Motion-IG 文本—运动对齐 · 人类偏好 · 运动函数分析 · 仿真中的八个场景与二十条指令。
+
 <a id="paper-2610-26811"></a>
 <!-- mmac-record: {"id": "2610.26811", "scope": "Adjacent", "primary": "2.8", "task": 8} -->
 
@@ -1773,6 +1787,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.12 经验学习与跨任务泛化评测](#evaluation-experience) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [2.2 GUI／软件训练环境合成](#methods-gui-environments) · [5.5 Skills、工具桥与可复用工作流](#section-5-5) · [6.5 从构建经验到可迁移能力](#section-6-5)
 
+<a id="paper-2610-32120"></a>
+<!-- mmac-record: {"id": "2610.32120", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.10` **ImageRSI: Verification-Driven Recursive Self-Improvement for Agentic Image Generation**. [[paper]](https://arxiv.org/abs/2610.32120) — `[Method]` · `[Training]` `[Inference]` `[Verification]` · **Adjacent**
+  > 通过多模态验证修复图像，以成对验证筛选可复用经验，并在冻结图像生成器的同时离线训练判别器。<br>
+  > **验证维度：** 检查项严格准确率 · 等预算修复 · 经验复用消融 · 判别器误差；更新提示词与经验，单次任务内判别器固定。
+
 <a id="paper-2610-23479"></a>
 <!-- mmac-record: {"id": "2610.23479", "scope": "Core", "primary": "2.12", "task": 12} -->
 
@@ -1877,6 +1898,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 截图到代码、运行应用复刻和需求驱动开发的输入权限不同；最终 judge 的观察与构建 Agent 的反馈分别记录。
 
 **关联阅读：** [2.1 视觉软件工程与应用复刻](#methods-software) · [4.1 软件需求、应用观测与开发／复刻轨迹](#data-software) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
+
+<a id="paper-2610-29014"></a>
+<!-- mmac-record: {"id": "2610.29014", "scope": "Adjacent", "primary": "3.1", "task": 1} -->
+
+- `arXiv 2026.10` **GenXR-Bench: Benchmarking Coding Agents for Interactive XR Development**. [[paper]](https://arxiv.org/abs/2610.29014) [[code]](https://github.com/whuang37/genxr-bench) [[tasks]](https://github.com/whuang37/genxr-bench/tree/master/tasks) — `[Benchmark]` `[Dataset]` · `[Environment]` `[Verification]` · **Adjacent**
+  > 使用模拟手部与环境输入、隐藏程序及视觉测试评估 XR 功能实现、缺陷修复和应用生成，并对照 XR 真机上的专家评审验证测试器。<br>
+  > **验证维度：** 112 项任务 · 功能与交互断言 · 对照 124 个应用的专家判断 · 测试不稳定性与传感器生命周期失败。
 
 <a id="paper-2609-32600"></a>
 <!-- mmac-record: {"id": "2609.32600", "scope": "Core", "primary": "3.1", "task": 1} -->
@@ -2241,6 +2269,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **方法论文中的评测设置**
 
+- [SceneBloom](#paper-2610-32978) · **Adjacent** · [2.5](#methods-cad-3d)
 - [3DCodeVerse](#paper-2610-22341) · **Core** · [2.5](#methods-cad-3d)
 - [Task-Adaptive Grounded 3D-Programmers Using 2D VLMs](#paper-2610-02021) · **Core** · [2.5](#methods-cad-3d)
 - [GATOR](#paper-2610-11215) · **Core** · [2.5](#methods-cad-3d)
@@ -2446,6 +2475,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **方法论文中的评测设置**
 
+- [AgentDreamer](#paper-2610-30679) · **Adjacent** · [2.8](#methods-world-models)
 - [Perceptual Self-Reflection in Agentic Physics Simulation Code Generation](#paper-2602-12311) · **Core** · [2.8](#methods-world-models)
 - [Text2Sim](#paper-2609-36593) · **Core** · [2.8](#methods-world-models)
 - [Awomo-SimDataEngine](#paper-2610-02274) · **Core** · [2.8](#methods-world-models)
@@ -2599,6 +2629,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **方法论文中的评测设置**
 
+- [ImageRSI](#paper-2610-32120) · **Adjacent** · [2.12](#methods-experience)
 - [Learning Only with Images](#paper-2507-20766) · **Core** · [2.1](#methods-software)
 - [WebWorld](#paper-2608-30530) · **Core** · [2.1](#methods-software)
 - [HexaShell](#paper-2610-23479) · **Core** · [2.12](#methods-experience) — 冻结工具后的同种子未见布局测试；不等同于跨任务或多种子泛化。
@@ -2712,6 +2743,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **数据集工作**
 
+- [GenXR-Bench](#paper-2610-29014) · **Adjacent** · [3.1](#evaluation-software) — 已发布的 XR 任务说明、配置与测试。
 - [Rendering-in-the-Loop](#paper-2609-02088) · **Core** · [2.1](#methods-software)
 - [VisRefiner](#paper-2602-05998) · **Core** · [2.1](#methods-software)
 - [FronTalk](#paper-2601-04203) · **Core** · [2.1](#methods-software)

@@ -44,12 +44,12 @@ Enable agents to **organize and combine model capabilities**, expanding their ab
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-180-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-183-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-10-27**
+**Last updated: 2026-10-28**
 
 </div>
 
@@ -538,6 +538,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 **Boundary.** Environment quality and downstream agent benefit are evaluated separately. Transfer from synthetic software to target applications is digital-environment transfer.
 
 **Connect:** [3.2 Training-environment construction and downstream utility](#evaluation-gui-environments) · [4.2 GUI/software environments, tasks, rewards, and action traces](#data-gui-environments) · [1.4 From artifacts to environments: state, actions, resets, tasks, and rewards](#section-1-4) · [2.1 Visual software engineering and application recreation](#methods-software) · [2.12 Learning from construction and interaction experience](#methods-experience)
+
+<a id="paper-2610-26828"></a>
+<!-- mmac-record: {"id": "2610.26828", "scope": "Adjacent", "primary": "2.2", "task": 2} -->
+
+- `arXiv 2026.10` **Agent World Model in the Wild: Computer-Use Agent Environment Synthesis**. [[paper]](https://arxiv.org/abs/2610.26828) [[code]](https://github.com/MSR-Orchard/WildAWM) [[dataset]](https://huggingface.co/datasets/ChilleD/WildAWM) — `[Method]` `[Dataset]` · `[Data Curation]` `[Training]` `[Environment]` `[Verification]` · **Adjacent**
+  > Synthesizes replayable personal-computer worlds spanning GUI, MCP, and CLI, using heterogeneous rollouts and verifier-consistency gates to produce environment–task packages for computer-use training.<br>
+  > **Verification:** Deterministic reset/replay · solvability and difficulty · judge consistency and counterfactual probes · downstream computer-use generalization.
 
 <a id="paper-2610-30792"></a>
 <!-- mmac-record: {"id": "2610.30792", "scope": "Core", "primary": "2.2", "task": 2} -->
@@ -1268,6 +1275,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Connect:** [3.6 Physical asset construction and usability evaluation](#evaluation-physical-assets) · [4.6 Physical assets, parameters, and diagnostic interactions](#data-physical-assets) · [2.5 Procedural 3D and CAD construction](#methods-cad-3d) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.11 Real2Sim2Real: task learning and real execution](#methods-real2sim2real)
 
+<a id="paper-2610-33060"></a>
+<!-- mmac-record: {"id": "2610.33060", "scope": "Core", "primary": "2.6", "task": 6} -->
+
+- `arXiv 2026.10` **MARC: Mechanism-Aware Reflective Correction for Articulated Object Code Generation**. [[paper]](https://arxiv.org/abs/2610.33060) [[project]](https://demianmusk.github.io/MARC-Home/) — `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > Shares an executable kinematic graph across articulated-object code generation, constraint solving, and visual diagnosis, using targeted probes to repair geometry and coupled connections before replaying the original motion paths.<br>
+  > **Verification:** Connection preservation · joint limits and collisions · valid motion coverage · coupled-motion correctness · paired repair ablations on 20 simulated mechanisms.
+
 <a id="paper-2610-31651"></a>
 <!-- mmac-record: {"id": "2610.31651", "scope": "Core", "primary": "2.6", "task": 6} -->
 
@@ -1396,6 +1410,7 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Related evaluation contributions**
 
+- [CEGame-Bench / GCB](#paper-2610-26098) · **Core** · [3.7](#evaluation-games) — Game Completion Boost playtesting and guarded repair.
 - [A2Z GameSpec-Bench](#paper-2609-39564) · **Core** · [3.7](#evaluation-games)
 - [GameReplica](#paper-2609-22308) · **Core** · [3.7](#evaluation-games)
 - [GameCraft-Bench](#paper-2606-17861) · **Core** · [3.7](#evaluation-games)
@@ -1549,6 +1564,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 **Boundary.** Report static geometry, physical dynamics, and interaction fidelity separately, and distinguish real from synthetic references. Runnable simulation and real-task transfer require different evidence.
 
 **Connect:** [3.9 Scene and interaction construction for Agentic Real-to-Sim](#evaluation-real-to-sim) · [4.9 Real-to-Sim observation, simulation, and interaction correspondences](#data-real-to-sim) · [2.6 Physical asset construction and diagnosis](#methods-physical-assets) · [2.8 Executable world models and simulation programs](#methods-world-models) · [2.11 Real2Sim2Real: task learning and real execution](#methods-real2sim2real)
+
+<a id="paper-2610-34745"></a>
+<!-- mmac-record: {"id": "2610.34745", "scope": "Core", "primary": "2.9", "task": 9} -->
+
+- `arXiv 2026.10` **SceneAgent: An Agentic Pipeline from 3D and 4D Captures to Simulation Environments**. [[paper]](https://arxiv.org/abs/2610.34745) [[project]](https://computationalrobotics.seas.harvard.edu/SceneAgent/) — `[Method]` · `[Inference]` `[Environment]` `[Verification]` · **Core**
+  > Orchestrates reconstruction and physical-modeling tools to turn 3D/4D captures into simulation scenes, revising assets and simulation programs through multiview inspection before generating policy-training variations.<br>
+  > **Verification:** Static geometry and dynamic reconstruction · visual repair · preliminary Franka pick-and-place transfer; physical parameters remain uncalibrated against measured interactions.
 
 <a id="paper-2610-31834"></a>
 <!-- mmac-record: {"id": "2610.31834", "scope": "Core", "primary": "2.9", "task": 9} -->
@@ -1787,6 +1809,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Connect:** [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [2.2 GUI and software training-environment synthesis](#methods-gui-environments) · [5.5 Skills, tool bridges, and reusable workflows](#section-5-5) · [6.5 From construction experience to transferable capability](#section-6-5)
 
+<a id="paper-2610-34921"></a>
+<!-- mmac-record: {"id": "2610.34921", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.10` **PhysEvolve: Verifier-grounded Self-evolution for Physical Reasoning with Executable Worlds**. [[paper]](https://arxiv.org/abs/2610.34921) [[project]](https://yelonhu.github.io/physevolve-page/) — `[Method]` · `[Data Curation]` `[Training]` `[Environment]` `[Verification]` · **Adjacent**
+  > Co-trains a world-program proposer and visual solver through deterministic counterfactual simulations and exact answer-bound rewards, improving physical reasoning through policy updates across rounds.<br>
+  > **Verification:** PhysBench, CausalPhys, and ContPhy transfer · paired-branch and proposer-update ablations · reward-hacking audit; video reasoning rather than hardware control.
+
 <a id="paper-2610-32120"></a>
 <!-- mmac-record: {"id": "2610.32120", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
 
@@ -1983,6 +2012,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Evaluation settings in method papers**
 
+- [WebUniverse](#paper-2610-33149) · **Adjacent** · [4.1](#data-software) — web-development transfer after fine-tuning.
 - [Learning Only with Images](#paper-2507-20766) · **Core** · [2.1](#methods-software)
 - [VisualRepair](#paper-2607-14075) · **Core** · [2.1](#methods-software)
 - [FailureMem](#paper-2603-17826) · **Core** · [2.1](#methods-software)
@@ -2024,6 +2054,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Evaluation settings in method papers**
 
+- [WildAWM](#paper-2610-26828) · **Adjacent** · [2.2](#methods-gui-environments) — task validity and downstream computer-use transfer.
 - [CUA-Gym](#paper-2605-25624) · **Core** · [2.2](#methods-gui-environments) — reward fidelity and downstream computer-use transfer.
 
 <a id="evaluation-graphics"></a>
@@ -2124,6 +2155,13 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 **Boundary.** Native editability, rendering success, visual preference, and information fidelity are different properties. Cross-page and cross-frame errors require corresponding tests.
 
 **Connect:** [2.4 Documents and visual media](#methods-media) · [4.4 Documents, media assets, and construction/editing traces](#data-media) · [3.3 Chart, scientific visualization, and graphics-editing evaluation](#evaluation-graphics) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
+
+<a id="paper-2610-35864"></a>
+<!-- mmac-record: {"id": "2610.35864", "scope": "Adjacent", "primary": "3.4", "task": 4} -->
+
+- `arXiv 2026.10` **VibeVideoBench: Evaluating Multimodal Agents on Code-Driven Video Generation**. [[paper]](https://arxiv.org/abs/2610.35864) [[project]](https://vibevideobench.github.io/) — `[Benchmark]` · `[Verification]` · **Adjacent**
+  > Evaluates code-rendered audiovisual videos through delivery checks, task-grounded rubrics, and multimodal quality judgments, separating self-inspection statistics from independently measured output quality.<br>
+  > **Verification:** 239 tasks · decodable video and audio specifications · task-grounded checks · three judge panels and blind human preferences · delivery failures and inspection behavior.
 
 <a id="paper-2606-28593"></a>
 <!-- mmac-record: {"id": "2606.28593", "scope": "Core", "primary": "3.4", "task": 4} -->
@@ -2332,6 +2370,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Evaluation settings in method papers**
 
+- [MARC](#paper-2610-33060) · **Core** · [2.6](#methods-physical-assets) — 20-object mechanism and motion validation.
 - [BrickWright](#paper-2610-31651) · **Core** · [2.6](#methods-physical-assets)
 - [USDCraft](#paper-2610-11322) · **Core** · [2.6](#methods-physical-assets)
 - [DiagGen](#paper-2609-23103) · **Core** · [2.6](#methods-physical-assets)
@@ -2348,6 +2387,13 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 **Boundary.** Appearance and rule fidelity are separate. Final screenshots can miss transient violations, event ordering, and long-horizon failures.
 
 **Connect:** [2.7 Playable game construction, recreation, and repair](#methods-games) · [4.7 Game requirements, code, assets, and playtesting traces](#data-games) · [3.8 World-model prediction, intervention, and planning evaluation](#evaluation-world-models) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
+
+<a id="paper-2610-26098"></a>
+<!-- mmac-record: {"id": "2610.26098", "scope": "Core", "primary": "3.7", "task": 7} -->
+
+- `arXiv 2026.10` **From Code to Playable Systems: CEGame-Bench for Long-Horizon Game Creation Agents**. [[paper]](https://arxiv.org/abs/2610.26098) — `[Benchmark]` `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > Evaluates complete-game creation across five engines and introduces Game Completion Boost, which links input-driven visual observations to project revisions, targeted repairs, regression replay, and rollback.<br>
+  > **Verification:** Functional completion · mechanics and lifecycle · state–view agreement · hidden gameplay evaluation; the GCB configuration provides the construction-time visual repair loop.
 
 <a id="paper-2609-39564"></a>
 <!-- mmac-record: {"id": "2609.39564", "scope": "Core", "primary": "3.7", "task": 7} -->
@@ -2524,6 +2570,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Evaluation settings in method papers**
 
+- [SceneAgent](#paper-2610-34745) · **Core** · [2.9](#methods-real-to-sim) — static and dynamic reconstruction.
 - [WorldMirror](#paper-2610-31834) · **Core** · [2.9](#methods-real-to-sim)
 - [GRASE](#paper-2610-21498) · **Core** · [2.9](#methods-real-to-sim)
 - [LiteReality-Agent](#paper-2610-01863) · **Core** · [2.9](#methods-real-to-sim)
@@ -2606,6 +2653,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Evaluation settings in method papers**
 
+- [SceneAgent](#paper-2610-34745) · **Core** · [2.9](#methods-real-to-sim) — preliminary real-robot pick-and-place transfer.
 - [Agentic RSR](#paper-2610-10479) · **Core** · [2.11](#methods-real2sim2real)
 - [RAPID](#paper-2609-30249) · **Adjacent** · [2.11](#methods-real2sim2real)
 
@@ -2629,6 +2677,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Evaluation settings in method papers**
 
+- [PhysEvolve](#paper-2610-34921) · **Adjacent** · [2.12](#methods-experience) — physical-reasoning transfer and paired training ablations.
 - [ImageRSI](#paper-2610-32120) · **Adjacent** · [2.12](#methods-experience)
 - [Learning Only with Images](#paper-2507-20766) · **Core** · [2.1](#methods-software)
 - [WebWorld](#paper-2608-30530) · **Core** · [2.1](#methods-software)
@@ -2743,6 +2792,13 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Dataset contributions**
 
+<a id="paper-2610-33149"></a>
+<!-- mmac-record: {"id": "2610.33149", "scope": "Adjacent", "primary": "4.1", "task": 1} -->
+
+- `arXiv 2026.10` **WebUniverse: Scaling Verified Training Data for Agentic Web Development**. [[paper]](https://arxiv.org/abs/2610.33149) [[project]](https://webuniverse-nsl.github.io/) [[environments]](https://huggingface.co/datasets/WebUniverse-NSL/WebUniverse-Env) [[trajectories]](https://huggingface.co/datasets/WebUniverse-NSL/WebUniverse-Mix) — `[Dataset]` `[Method]` · `[Data Curation]` `[Training]` `[Verification]` · **Adjacent**
+  > Builds paired web-development environments and verified trajectories, combining functional and visual checks with independent attempts and failure continuations for supervised agent training.<br>
+  > **Verification:** Browser and GUI tests · page–viewport similarity · trajectory integrity and decontamination · matched-budget fine-tuning; environment and trajectory releases require access approval.
+
 - [GenXR-Bench](#paper-2610-29014) · **Adjacent** · [3.1](#evaluation-software) — released XR task instructions, configurations, and tests.
 - [Rendering-in-the-Loop](#paper-2609-02088) · **Core** · [2.1](#methods-software)
 - [VisRefiner](#paper-2602-05998) · **Core** · [2.1](#methods-software)
@@ -2766,6 +2822,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Dataset contributions**
 
+- [WildAWM](#paper-2610-26828) · **Adjacent** · [2.2](#methods-gui-environments) — released environment, instruction, reset, and verifier packages.
 - [SoftwareGym](#paper-2610-12611) · **Core** · [2.2](#methods-gui-environments)
 
 - [CUA-Gym](#paper-2605-25624) · **Core** · [2.2](#methods-gui-environments) — 10,910 released task bundles with setup artifacts and reward code; web tasks require self-hosted mock endpoints.
@@ -3233,6 +3290,8 @@ These layers are complementary rather than mutually exclusive. For example, an a
 
 | Capability | Resource and sources | Inputs → outputs | Role in a workflow |
 |---|---|---|---|
+| Interactive world simulation | **Genie 4** [[official blog]](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/) | Prompts, reference images, navigation, and live edits → interactive audiovisual worlds. | Research preview that combines generative simulation with Gemini planning and frame-based checks; access is limited to trusted testers. Spatial accuracy, physical interactions, and long-term consistency remain limitations; robotics examples are generated simulations. |
+| Adaptive action-horizon correction | **VLA-Corrector: Lightweight Detect-and-Correct Inference for Adaptive Action Horizon** [[paper]](https://arxiv.org/abs/2607.01804) · [[code]](https://github.com/ZJU-OmniAI/vla-corrector) | Frozen-VLA visual features + executed actions → drift signal, chunk truncation, and a guided recovery replan. | A reusable ~40M external corrector for action-chunked VLAs; evaluated in simulation and on AgileX PiPER. Code is available; trained corrector weights and demonstration data are not included. |
 | Video-to-action capability | **BridgeWAM** — *BridgeWAM: Bridging Video and Action Experts via Latent Bridge Queries* [[paper]](https://arxiv.org/abs/2610.14746) · [[code]](https://github.com/jxfang04/BridgeWAM-code) · [[weights]](https://huggingface.co/BridgeWAM/bridgewam) | Camera observations + language + proprioception → action chunks | Compresses video-expert features into latent bridge queries for a lightweight action expert; the default inference path skips future-video generation. Evaluated in simulation and real manipulation, as a reusable model capability rather than LLM-led code repair. |
 | Robot policy adaptation and serving | **Pi API beta** — Physical Intelligence [[official announcement]](https://www.pi.website/blog/api-beta) | Robot demonstrations/data → fine-tuned policy accessible through hosted inference | Lets developers adapt and deploy action models, then use real-robot failures to choose the next data collection round; this is a developer-led workflow with beta access, not an autonomous LLM repair claim. |
 

@@ -44,12 +44,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-180-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-183-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-10-27**
+**最后更新：2026-10-28**
 
 </div>
 
@@ -538,6 +538,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 环境自身质量与下游 Agent 收益分别评价；合成软件到目标应用的迁移属于数字环境迁移。
 
 **关联阅读：** [3.2 GUI／软件训练环境构建与下游效用评测](#evaluation-gui-environments) · [4.2 GUI／软件训练环境、任务、奖励与操作轨迹](#data-gui-environments) · [1.4 何时成为环境：状态、动作、重置、任务与奖励](#section-1-4) · [2.1 视觉软件工程与应用复刻](#methods-software) · [2.12 从构建与交互经验学习](#methods-experience)
+
+<a id="paper-2610-26828"></a>
+<!-- mmac-record: {"id": "2610.26828", "scope": "Adjacent", "primary": "2.2", "task": 2} -->
+
+- `arXiv 2026.10` **Agent World Model in the Wild: Computer-Use Agent Environment Synthesis**. [[paper]](https://arxiv.org/abs/2610.26828) [[code]](https://github.com/MSR-Orchard/WildAWM) [[dataset]](https://huggingface.co/datasets/ChilleD/WildAWM) — `[Method]` `[Dataset]` · `[Data Curation]` `[Training]` `[Environment]` `[Verification]` · **Adjacent**
+  > 合成覆盖 GUI、MCP 和 CLI 的可重放个人电脑世界，以异构执行轨迹和验证器一致性检查生成计算机使用训练的环境—任务包。<br>
+  > **验证维度：** 确定性重置与重放 · 可解性与难度 · 判定一致性及反事实探测 · 下游计算机使用泛化。
 
 <a id="paper-2610-30792"></a>
 <!-- mmac-record: {"id": "2610.30792", "scope": "Core", "primary": "2.2", "task": 2} -->
@@ -1268,6 +1275,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.6 物理资产构建与可用性评测](#evaluation-physical-assets) · [4.6 物理资产、参数与诊断交互数据](#data-physical-assets) · [2.5 程序化 3D 与 CAD 构建](#methods-cad-3d) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.11 Real2Sim2Real：任务学习与真实执行](#methods-real2sim2real)
 
+<a id="paper-2610-33060"></a>
+<!-- mmac-record: {"id": "2610.33060", "scope": "Core", "primary": "2.6", "task": 6} -->
+
+- `arXiv 2026.10` **MARC: Mechanism-Aware Reflective Correction for Articulated Object Code Generation**. [[paper]](https://arxiv.org/abs/2610.33060) [[project]](https://demianmusk.github.io/MARC-Home/) — `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > 在关节物体代码生成、约束求解和视觉诊断间共享可执行运动学图，通过定向探测修复几何及耦合连接，再重放原运动路径。<br>
+  > **验证维度：** 连接保持 · 关节限位与碰撞 · 有效运动覆盖 · 耦合运动正确性 · 20 个仿真机构上的配对修复消融。
+
 <a id="paper-2610-31651"></a>
 <!-- mmac-record: {"id": "2610.31651", "scope": "Core", "primary": "2.6", "task": 6} -->
 
@@ -1396,6 +1410,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **相关评测工作**
 
+- [CEGame-Bench / GCB](#paper-2610-26098) · **Core** · [3.7](#evaluation-games) — Game Completion Boost 试玩与受保护的修复。
 - [A2Z GameSpec-Bench](#paper-2609-39564) · **Core** · [3.7](#evaluation-games)
 - [GameReplica](#paper-2609-22308) · **Core** · [3.7](#evaluation-games)
 - [GameCraft-Bench](#paper-2606-17861) · **Core** · [3.7](#evaluation-games)
@@ -1549,6 +1564,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 静态几何、动态物理和交互保真分别报告；真实／合成参考输入也应区分。仿真可运行与真实任务迁移属于不同证据层次。
 
 **关联阅读：** [3.9 面向 Agentic Real-to-Sim 的场景与交互构建评测](#evaluation-real-to-sim) · [4.9 Real-to-Sim 的观测、仿真表示与交互对应](#data-real-to-sim) · [2.6 物理资产构建与诊断](#methods-physical-assets) · [2.8 可执行世界模型与仿真程序构建](#methods-world-models) · [2.11 Real2Sim2Real：任务学习与真实执行](#methods-real2sim2real)
+
+<a id="paper-2610-34745"></a>
+<!-- mmac-record: {"id": "2610.34745", "scope": "Core", "primary": "2.9", "task": 9} -->
+
+- `arXiv 2026.10` **SceneAgent: An Agentic Pipeline from 3D and 4D Captures to Simulation Environments**. [[paper]](https://arxiv.org/abs/2610.34745) [[project]](https://computationalrobotics.seas.harvard.edu/SceneAgent/) — `[Method]` · `[Inference]` `[Environment]` `[Verification]` · **Core**
+  > 编排重建与物理建模工具，将 3D/4D 捕获转为仿真场景，通过多视角检查修订资产和仿真程序，再生成策略训练所需的场景变体。<br>
+  > **验证维度：** 静态几何与动态重建 · 视觉修复 · 初步 Franka 抓放迁移；物理参数尚未对照真实交互测量校准。
 
 <a id="paper-2610-31834"></a>
 <!-- mmac-record: {"id": "2610.31834", "scope": "Core", "primary": "2.9", "task": 9} -->
@@ -1787,6 +1809,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.12 经验学习与跨任务泛化评测](#evaluation-experience) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [2.2 GUI／软件训练环境合成](#methods-gui-environments) · [5.5 Skills、工具桥与可复用工作流](#section-5-5) · [6.5 从构建经验到可迁移能力](#section-6-5)
 
+<a id="paper-2610-34921"></a>
+<!-- mmac-record: {"id": "2610.34921", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.10` **PhysEvolve: Verifier-grounded Self-evolution for Physical Reasoning with Executable Worlds**. [[paper]](https://arxiv.org/abs/2610.34921) [[project]](https://yelonhu.github.io/physevolve-page/) — `[Method]` · `[Data Curation]` `[Training]` `[Environment]` `[Verification]` · **Adjacent**
+  > 通过确定性反事实仿真和绑定准确答案的奖励，共同训练世界程序提议者与视觉解题者，以跨轮策略更新提升物理推理。<br>
+  > **验证维度：** PhysBench、CausalPhys 与 ContPhy 迁移 · 配对分支与提议者更新消融 · 奖励投机审计；评测为视频推理而非硬件控制。
+
 <a id="paper-2610-32120"></a>
 <!-- mmac-record: {"id": "2610.32120", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
 
@@ -1983,6 +2012,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **方法论文中的评测设置**
 
+- [WebUniverse](#paper-2610-33149) · **Adjacent** · [4.1](#data-software) — 微调后的网页开发迁移。
 - [Learning Only with Images](#paper-2507-20766) · **Core** · [2.1](#methods-software)
 - [VisualRepair](#paper-2607-14075) · **Core** · [2.1](#methods-software)
 - [FailureMem](#paper-2603-17826) · **Core** · [2.1](#methods-software)
@@ -2024,6 +2054,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **方法论文中的评测设置**
 
+- [WildAWM](#paper-2610-26828) · **Adjacent** · [2.2](#methods-gui-environments) — 任务有效性与下游计算机使用迁移。
 - [CUA-Gym](#paper-2605-25624) · **Core** · [2.2](#methods-gui-environments) — 奖励保真度与下游计算机操作迁移。
 
 <a id="evaluation-graphics"></a>
@@ -2124,6 +2155,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 原生可编辑结构、渲染成功、视觉偏好和信息保真是不同属性；跨页与跨帧错误需要相应测试。
 
 **关联阅读：** [2.4 文档与视觉媒体构建](#methods-media) · [4.4 文档、媒体素材与构建／编辑过程](#data-media) · [3.3 图表、科学可视化与图形编辑评测](#evaluation-graphics) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
+
+<a id="paper-2610-35864"></a>
+<!-- mmac-record: {"id": "2610.35864", "scope": "Adjacent", "primary": "3.4", "task": 4} -->
+
+- `arXiv 2026.10` **VibeVideoBench: Evaluating Multimodal Agents on Code-Driven Video Generation**. [[paper]](https://arxiv.org/abs/2610.35864) [[project]](https://vibevideobench.github.io/) — `[Benchmark]` · `[Verification]` · **Adjacent**
+  > 以交付检查、任务约束量规和多模态质量判定评测代码渲染的视听视频，将自检查行为统计与独立测得的产物质量区分。<br>
+  > **验证维度：** 239 个任务 · 视频解码与音频规范 · 任务约束检查 · 三组评委和盲测人类偏好 · 交付失败与自检查行为。
 
 <a id="paper-2606-28593"></a>
 <!-- mmac-record: {"id": "2606.28593", "scope": "Core", "primary": "3.4", "task": 4} -->
@@ -2332,6 +2370,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **方法论文中的评测设置**
 
+- [MARC](#paper-2610-33060) · **Core** · [2.6](#methods-physical-assets) — 20 个机构的结构与运动验证。
 - [BrickWright](#paper-2610-31651) · **Core** · [2.6](#methods-physical-assets)
 - [USDCraft](#paper-2610-11322) · **Core** · [2.6](#methods-physical-assets)
 - [DiagGen](#paper-2609-23103) · **Core** · [2.6](#methods-physical-assets)
@@ -2348,6 +2387,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 外观相似与规则一致独立比较；最终截图可能遗漏短暂违规、事件顺序和长程失败。
 
 **关联阅读：** [2.7 可玩游戏构建、复刻与修复](#methods-games) · [4.7 游戏需求、代码、资产与运行测试轨迹](#data-games) · [3.8 世界模型的预测、干预与规划效用评测](#evaluation-world-models) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
+
+<a id="paper-2610-26098"></a>
+<!-- mmac-record: {"id": "2610.26098", "scope": "Core", "primary": "3.7", "task": 7} -->
+
+- `arXiv 2026.10` **From Code to Playable Systems: CEGame-Bench for Long-Horizon Game Creation Agents**. [[paper]](https://arxiv.org/abs/2610.26098) — `[Benchmark]` `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > 跨五种引擎评测完整游戏构建，并提出 Game Completion Boost，将真实输入驱动的视觉观测与项目版本、定向修复、回归重放和回滚关联。<br>
+  > **验证维度：** 功能完整性 · 机制与生命周期 · 状态—画面一致性 · 隐藏玩法评测；GCB 配置实现构建期视觉修复闭环。
 
 <a id="paper-2609-39564"></a>
 <!-- mmac-record: {"id": "2609.39564", "scope": "Core", "primary": "3.7", "task": 7} -->
@@ -2524,6 +2570,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **方法论文中的评测设置**
 
+- [SceneAgent](#paper-2610-34745) · **Core** · [2.9](#methods-real-to-sim) — 静态与动态重建。
 - [WorldMirror](#paper-2610-31834) · **Core** · [2.9](#methods-real-to-sim)
 - [GRASE](#paper-2610-21498) · **Core** · [2.9](#methods-real-to-sim)
 - [LiteReality-Agent](#paper-2610-01863) · **Core** · [2.9](#methods-real-to-sim)
@@ -2606,6 +2653,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **方法论文中的评测设置**
 
+- [SceneAgent](#paper-2610-34745) · **Core** · [2.9](#methods-real-to-sim) — 初步实机抓放迁移。
 - [Agentic RSR](#paper-2610-10479) · **Core** · [2.11](#methods-real2sim2real)
 - [RAPID](#paper-2609-30249) · **Adjacent** · [2.11](#methods-real2sim2real)
 
@@ -2629,6 +2677,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **方法论文中的评测设置**
 
+- [PhysEvolve](#paper-2610-34921) · **Adjacent** · [2.12](#methods-experience) — 物理推理迁移与配对训练消融。
 - [ImageRSI](#paper-2610-32120) · **Adjacent** · [2.12](#methods-experience)
 - [Learning Only with Images](#paper-2507-20766) · **Core** · [2.1](#methods-software)
 - [WebWorld](#paper-2608-30530) · **Core** · [2.1](#methods-software)
@@ -2743,6 +2792,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **数据集工作**
 
+<a id="paper-2610-33149"></a>
+<!-- mmac-record: {"id": "2610.33149", "scope": "Adjacent", "primary": "4.1", "task": 1} -->
+
+- `arXiv 2026.10` **WebUniverse: Scaling Verified Training Data for Agentic Web Development**. [[paper]](https://arxiv.org/abs/2610.33149) [[project]](https://webuniverse-nsl.github.io/) [[environments]](https://huggingface.co/datasets/WebUniverse-NSL/WebUniverse-Env) [[trajectories]](https://huggingface.co/datasets/WebUniverse-NSL/WebUniverse-Mix) — `[Dataset]` `[Method]` · `[Data Curation]` `[Training]` `[Verification]` · **Adjacent**
+  > 构建配套网页开发环境与经验证的轨迹，结合功能和视觉检查、独立尝试及失败续写，为 Agent 监督训练提供数据。<br>
+  > **验证维度：** 浏览器与 GUI 测试 · 页面—视口相似性 · 轨迹完整性与去污染 · 同预算微调；环境与轨迹发布采用审批访问。
+
 - [GenXR-Bench](#paper-2610-29014) · **Adjacent** · [3.1](#evaluation-software) — 已发布的 XR 任务说明、配置与测试。
 - [Rendering-in-the-Loop](#paper-2609-02088) · **Core** · [2.1](#methods-software)
 - [VisRefiner](#paper-2602-05998) · **Core** · [2.1](#methods-software)
@@ -2766,6 +2822,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **数据集工作**
 
+- [WildAWM](#paper-2610-26828) · **Adjacent** · [2.2](#methods-gui-environments) — 已发布的环境、指令、重置和验证器任务包。
 - [SoftwareGym](#paper-2610-12611) · **Core** · [2.2](#methods-gui-environments)
 
 - [CUA-Gym](#paper-2605-25624) · **Core** · [2.2](#methods-gui-environments) — 公开 10,910 个含初始化产物与奖励代码的任务包；网页任务需自托管模拟应用服务。
@@ -3233,6 +3290,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 | 能力 | 资源与来源 | 输入 → 输出 | 在工作流中的作用 |
 |---|---|---|---|
+| 交互式世界模拟 | **Genie 4** [[官方博客]](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/) | 提示、参考图像、导航和实时编辑 → 可交互视听世界。 | 将生成式模拟与 Gemini 规划和逐帧检查结合的研究预览，仅面向可信测试者；空间准确性、物理交互与长程一致性仍有限，机器人案例为生成式仿真。 |
+| 自适应动作时域纠错 | **VLA-Corrector: Lightweight Detect-and-Correct Inference for Adaptive Action Horizon** [[paper]](https://arxiv.org/abs/2607.01804) · [[code]](https://github.com/ZJU-OmniAI/vla-corrector) | 冻结 VLA 的视觉特征 + 已执行动作 → 漂移信号、动作块截断及引导式恢复重规划。 | 面向分块动作 VLA 的约 40M 外部纠错器，已在仿真和 AgileX PiPER 上评测；提供代码，未包含训练后的纠错器权重与演示数据。 |
 | 视频到动作能力 | **BridgeWAM** — *BridgeWAM: Bridging Video and Action Experts via Latent Bridge Queries* [[论文]](https://arxiv.org/abs/2610.14746) · [[代码]](https://github.com/jxfang04/BridgeWAM-code) · [[权重]](https://huggingface.co/BridgeWAM/bridgewam) | 相机观测 + 语言 + 本体感知 → 动作块 | 用潜在桥接查询压缩视频专家特征，供轻量动作专家读取；默认推理不生成未来视频。在仿真和真实操控中评测，提供可复用模型能力，而非 LLM 主导的代码修复。 |
 | 机器人策略适配与服务 | **Pi API beta** — Physical Intelligence [[官方发布]](https://www.pi.website/blog/api-beta) | 机器人示范／数据 → 可经托管推理调用的微调策略 | 开发者适配并部署动作模型，再根据真实机器人失败决定下一轮数据采集；属于需申请 beta 的开发者主导工作流，不代表 LLM 自主修复。 |
 

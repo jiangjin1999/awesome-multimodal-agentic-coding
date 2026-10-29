@@ -44,12 +44,12 @@ Enable agents to **organize and combine model capabilities**, expanding their ab
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-183-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-187-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-10-28**
+**Last updated: 2026-10-29**
 
 </div>
 
@@ -538,6 +538,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 **Boundary.** Environment quality and downstream agent benefit are evaluated separately. Transfer from synthetic software to target applications is digital-environment transfer.
 
 **Connect:** [3.2 Training-environment construction and downstream utility](#evaluation-gui-environments) · [4.2 GUI/software environments, tasks, rewards, and action traces](#data-gui-environments) · [1.4 From artifacts to environments: state, actions, resets, tasks, and rewards](#section-1-4) · [2.1 Visual software engineering and application recreation](#methods-software) · [2.12 Learning from construction and interaction experience](#methods-experience)
+
+<a id="paper-2610-37567"></a>
+<!-- mmac-record: {"id": "2610.37567", "scope": "Core", "primary": "2.2", "task": 2} -->
+
+- `arXiv 2026.10` **Gym-Anything-RT: Scaling Real-Time Environments for Vision-Language Agents**. [[paper]](https://arxiv.org/abs/2610.37567) [[code]](https://github.com/gym-anything/gym-anything-rt) — `[Method]` `[Benchmark]` `[Dataset]` · `[Environment]` `[Verification]` · **Core**
+  > Builds real-time visual minigames through creator–auditor code revisions grounded in screenshots and recordings, then controls the environment clock to isolate latency from task capability.<br>
+  > **Verification:** 100 minigames · six capabilities · live/slow/paused comparisons · solvability and temporal audits; Core refers to environment construction.
 
 <a id="paper-2610-26828"></a>
 <!-- mmac-record: {"id": "2610.26828", "scope": "Adjacent", "primary": "2.2", "task": 2} -->
@@ -1437,6 +1444,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Connect:** [3.8 World-model prediction, intervention, and planning evaluation](#evaluation-world-models) · [4.8 World observations, transitions, and simulation-program data](#data-world-models) · [2.7 Playable game construction, recreation, and repair](#methods-games) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.12 Learning from construction and interaction experience](#methods-experience)
 
+<a id="paper-2610-36371"></a>
+<!-- mmac-record: {"id": "2610.36371", "scope": "Adjacent", "primary": "2.8", "task": 8} -->
+
+- `arXiv 2026.10` **BoxWorld: Let World Engines Control and Video Generators Render**. [[paper]](https://arxiv.org/abs/2610.36371) [[project]](https://boxworld-web.github.io/) — `[Method]` `[Benchmark]` · `[Inference]` `[Environment]` `[Verification]` · **Adjacent**
+  > Separates agent-authored interaction rules from generative appearance through an object-centric state interface, streaming executable world-engine states into a causal video renderer.<br>
+  > **Verification:** Paired counterfactual interaction control · state-transition fidelity · video quality and streaming speed; rendered dynamics are not real-hardware validation.
+
 <a id="paper-2610-30679"></a>
 <!-- mmac-record: {"id": "2610.30679", "scope": "Adjacent", "primary": "2.8", "task": 8} -->
 
@@ -1621,6 +1635,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 **Boundary.** Calling an existing action model does not itself constitute program development. Separate simulation from hardware results and code updates from policy learning.
 
 **Connect:** [3.10 Robot program and policy execution evaluation](#evaluation-robot-programs) · [4.10 Robot demonstrations, execution, and repair trajectories](#data-robot-programs) · [2.11 Real2Sim2Real: task learning and real execution](#methods-real2sim2real) · [2.12 Learning from construction and interaction experience](#methods-experience) · [5.4 Action, policy, prediction, and verification capabilities](#section-5-4)
+
+<a id="paper-2610-36533"></a>
+<!-- mmac-record: {"id": "2610.36533", "scope": "Core", "primary": "2.10", "task": 10} -->
+
+- `arXiv 2026.10` **RoboAuto: Autonomous Robot Program Search through Multi-Level Physical Understanding**. [[paper]](https://arxiv.org/abs/2610.36533) [[project]](https://roboauto-ai.github.io/) — `[Method]` · `[Inference]` `[Environment]` `[Verification]` · **Core**
+  > Combines object-centric physical knowledge, visual scene grounding, and self-designed diagnostic experiments to revise staged robot programs from synchronized rollout-video audits.<br>
+  > **Verification:** Program-search generalization · stage-wise visual audits · simulation-to-robot knowledge transfer; real trials use human success judgments and resets.
 
 <a id="paper-2610-31841"></a>
 <!-- mmac-record: {"id": "2610.31841", "scope": "Core", "primary": "2.10", "task": 10} -->
@@ -1808,6 +1829,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 **Boundary.** Distinguish learning the builder from learning the operator in a generated environment. Within-task iteration and static expert skills do not by themselves establish cross-task learning.
 
 **Connect:** [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [2.2 GUI and software training-environment synthesis](#methods-gui-environments) · [5.5 Skills, tool bridges, and reusable workflows](#section-5-5) · [6.5 From construction experience to transferable capability](#section-6-5)
+
+<a id="paper-2610-36077"></a>
+<!-- mmac-record: {"id": "2610.36077", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.10` **The Trinity: Capability-Driven Recursive Self-Improvement for Multimodal Agents**. [[paper]](https://arxiv.org/abs/2610.36077) [[project]](https://trinity-rsi.github.io/) [[repository]](https://github.com/InfRec-Cardinal/The-Trinity) — `[Method]` · `[Training]` `[Environment]` `[Verification]` · **Adjacent**
+  > Couples verifiable world generation with capability-organized Harness evolution and routing, transferring selected Harness–skill configurations across heterogeneous tasks and two embodied settings.<br>
+  > **Verification:** Training/unseen task transfer · module inheritance and routing · two embodied tasks; module evolution and task-specific skill preparation are evaluated jointly.
 
 <a id="paper-2610-34921"></a>
 <!-- mmac-record: {"id": "2610.34921", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
@@ -2054,6 +2082,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Evaluation settings in method papers**
 
+- [Gym-Anything-RT](#paper-2610-37567) · **Core** · [2.2](#methods-gui-environments) — downstream real-time versus paused visual interaction.
 - [WildAWM](#paper-2610-26828) · **Adjacent** · [2.2](#methods-gui-environments) — task validity and downstream computer-use transfer.
 - [CUA-Gym](#paper-2605-25624) · **Core** · [2.2](#methods-gui-environments) — reward fidelity and downstream computer-use transfer.
 
@@ -2155,6 +2184,13 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 **Boundary.** Native editability, rendering success, visual preference, and information fidelity are different properties. Cross-page and cross-frame errors require corresponding tests.
 
 **Connect:** [2.4 Documents and visual media](#methods-media) · [4.4 Documents, media assets, and construction/editing traces](#data-media) · [3.3 Chart, scientific visualization, and graphics-editing evaluation](#evaluation-graphics) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
+
+<a id="paper-2610-37341"></a>
+<!-- mmac-record: {"id": "2610.37341", "scope": "Core", "primary": "3.4", "task": 4} -->
+
+- `arXiv 2026.10` **CodeCap-Bench: Can Code Serve as a Good Video Caption?**. [[paper]](https://arxiv.org/abs/2610.37341) [[project]](https://codecap-bench.github.io/) — `[Benchmark]` · `[Inference]` `[Verification]` · **Core**
+  > Evaluates executable code as a representation of structured video, with agentic configurations comparing timestamp-aligned browser renders to reference frames before refining the reconstruction.<br>
+  > **Verification:** 323 videos · visual similarity · object spatiotemporal IoU · static/dynamic information retention; agentic visual refinement is separate from single-pass baselines.
 
 <a id="paper-2610-35864"></a>
 <!-- mmac-record: {"id": "2610.35864", "scope": "Adjacent", "primary": "3.4", "task": 4} -->
@@ -2362,6 +2398,13 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Connect:** [2.6 Physical asset construction and diagnosis](#methods-physical-assets) · [4.6 Physical assets, parameters, and diagnostic interactions](#data-physical-assets) · [3.9 Scene and interaction construction for Agentic Real-to-Sim](#evaluation-real-to-sim) · [3.11 Real2Sim2Real utility and real-transfer evaluation](#evaluation-real2sim2real)
 
+<a id="paper-2610-37326"></a>
+<!-- mmac-record: {"id": "2610.37326", "scope": "Adjacent", "primary": "3.6", "task": 6} -->
+
+- `arXiv 2026.10` **ScIntBench: Physical Interaction Plausibility in 3D Scene Generation**. [[paper]](https://arxiv.org/abs/2610.37326) [[project]](https://scintbench.github.io/) — `[Benchmark]` · `[Verification]` · **Adjacent**
+  > Tests generated indoor scenes with calibrated opening, pushing, and surface-probing interventions, separating native interaction capability, task success, post-contact integrity, and dynamic plausibility.<br>
+  > **Verification:** 12 generation systems · 10 room types · simulation-based interaction and integrity · independent visual judging; no generator repair loop.
+
 **Benchmark contributions**
 
 - [Towards Physically Grounded Articulated 3D Assets](#paper-2610-13947) · **Core** · [2.6](#methods-physical-assets)
@@ -2387,6 +2430,13 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 **Boundary.** Appearance and rule fidelity are separate. Final screenshots can miss transient violations, event ordering, and long-horizon failures.
 
 **Connect:** [2.7 Playable game construction, recreation, and repair](#methods-games) · [4.7 Game requirements, code, assets, and playtesting traces](#data-games) · [3.8 World-model prediction, intervention, and planning evaluation](#evaluation-world-models) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
+
+<a id="paper-2610-35980"></a>
+<!-- mmac-record: {"id": "2610.35980", "scope": "Core", "primary": "3.7", "task": 7} -->
+
+- `arXiv 2026.10` **UnityBench-Mini3D: Evaluating LLM Agents for 3D Game Development in Unity**. [[paper]](https://arxiv.org/abs/2610.35980) [[repository]](https://github.com/Unity-China/UnityBench-Mini3D) — `[Benchmark]` · `[Environment]` `[Verification]` · **Core**
+  > Evaluates complete Unity projects with hidden in-engine milestone tests, including an Excavator trajectory where scene-image diagnosis guides motion-path and carry-angle repairs.<br>
+  > **Verification:** 77 tasks · 1,178 held-out milestone tests · scene/component/runtime checks; visual repair is evidenced by a specific trajectory, not every harness.
 
 <a id="paper-2610-26098"></a>
 <!-- mmac-record: {"id": "2610.26098", "scope": "Core", "primary": "3.7", "task": 7} -->
@@ -2521,6 +2571,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Evaluation settings in method papers**
 
+- [BoxWorld](#paper-2610-36371) · **Adjacent** · [2.8](#methods-world-models) — PairedStateBench evaluates paired counterfactual outcomes and conditional state changes.
 - [AgentDreamer](#paper-2610-30679) · **Adjacent** · [2.8](#methods-world-models)
 - [Perceptual Self-Reflection in Agentic Physics Simulation Code Generation](#paper-2602-12311) · **Core** · [2.8](#methods-world-models)
 - [Text2Sim](#paper-2609-36593) · **Core** · [2.8](#methods-world-models)
@@ -2604,6 +2655,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Evaluation settings in method papers**
 
+- [RoboAuto](#paper-2610-36533) · **Core** · [2.10](#methods-robot-programs) — program-search generalization and physical-grounding ablations.
 - [FORCA](#paper-2610-31841) · **Core** · [2.10](#methods-robot-programs)
 - [AW-0](#paper-2610-30136) · **Adjacent** · [2.10](#methods-robot-programs)
 - [Awomo-SimDataEngine](#paper-2610-02274) · **Core** · [2.8](#methods-world-models)
@@ -2653,6 +2705,8 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Evaluation settings in method papers**
 
+- [The Trinity](#paper-2610-36077) · **Adjacent** · [2.12](#methods-experience) — frozen Harness–skill configurations in simulation and on two robots.
+- [RoboAuto](#paper-2610-36533) · **Core** · [2.10](#methods-robot-programs) — simulation-derived knowledge on three WidowX tasks with human-scored stage completion.
 - [SceneAgent](#paper-2610-34745) · **Core** · [2.9](#methods-real-to-sim) — preliminary real-robot pick-and-place transfer.
 - [Agentic RSR](#paper-2610-10479) · **Core** · [2.11](#methods-real2sim2real)
 - [RAPID](#paper-2609-30249) · **Adjacent** · [2.11](#methods-real2sim2real)
@@ -2677,6 +2731,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Evaluation settings in method papers**
 
+- [The Trinity](#paper-2610-36077) · **Adjacent** · [2.12](#methods-experience) — capability-tree organization, inheritance, routing, and unseen-task transfer.
 - [PhysEvolve](#paper-2610-34921) · **Adjacent** · [2.12](#methods-experience) — physical-reasoning transfer and paired training ablations.
 - [ImageRSI](#paper-2610-32120) · **Adjacent** · [2.12](#methods-experience)
 - [Learning Only with Images](#paper-2507-20766) · **Core** · [2.1](#methods-software)
@@ -2822,6 +2877,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Dataset contributions**
 
+- [Gym-Anything-RT](#paper-2610-37567) · **Core** · [2.2](#methods-gui-environments) — released minigame programs, interface contracts, and verification assets.
 - [WildAWM](#paper-2610-26828) · **Adjacent** · [2.2](#methods-gui-environments) — released environment, instruction, reset, and verifier packages.
 - [SoftwareGym](#paper-2610-12611) · **Core** · [2.2](#methods-gui-environments)
 
@@ -3179,6 +3235,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 | Capability | Resource and sources | Inputs → outputs | Role in a workflow |
 |---|---|---|---|
+| Multi-view texture consolidation | **Texture Consolidation of Generated Multi-View Renderings** [[paper]](https://arxiv.org/abs/2610.36098) · [[code]](https://github.com/hliuw/TextureConsolidation) | UV-atlased triangle mesh + sparse renders/photos + camera parameters → one coherent color texture | Aligns multi-view appearance with mesh-based optical flow and confidence-aware gradient-domain stitching; complements image generators while preserving the mesh geometry. |
 | Dynamic 3D textures | **DynaMesh** — *DynaMesh: Dynamic 3D Texture Generation* [[paper]](https://arxiv.org/abs/2610.05529) · [[project]](https://threedle.github.io/dynamesh/) | Mesh + effect prompt → one fixed mesh with a time-varying texture sequence | Combines a reference video with temporal conditioning and per-shape adapters on a 3D generator; appearance evolves while geometry stays fixed, supplying reusable surface effects rather than physical dynamics. |
 | Native 3D texture generation | **Tex-Zero** — *Does Native 3D Texture Generation Necessarily Require 3D Assets for Training?* [[paper]](https://arxiv.org/abs/2609.34621) · [[repository docs]](https://github.com/wangjiangshan0725/Tex-Zero) | Geometry + multiview reference images → geometry-aligned 3D surface colors | Learns a shared image/texture representation from image-derived training samples, providing a texturing capability without requiring real textured 3D assets for training. |
 | 3D material generation and editing | **SUPRA-Tex** — *SUPRA-TEX: 3D Generation with Super-Aligned Texture* [[paper]](https://arxiv.org/abs/2610.22352) · [[project]](https://supra-3d.github.io/supratex/) · [[repository docs]](https://github.com/Supra-3D/supra-tex) · [[weights]](https://huggingface.co/supra3d/supra-tex) · [[demo]](https://huggingface.co/spaces/UniLat3D/Supra-Tex) | Reference image + mesh + camera projection → full-surface, relightable PBR materials | Preserves reference text, logos, and patterns while completing unseen surfaces with albedo, metallic, and roughness properties. Geometry is supplied or generated upstream by Pixal3D; edited 2D views can update materials on the same mesh, providing an appearance-generation step for 3D asset workflows. |

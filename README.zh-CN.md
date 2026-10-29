@@ -44,12 +44,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-183-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-187-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-10-28**
+**最后更新：2026-10-29**
 
 </div>
 
@@ -538,6 +538,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 环境自身质量与下游 Agent 收益分别评价；合成软件到目标应用的迁移属于数字环境迁移。
 
 **关联阅读：** [3.2 GUI／软件训练环境构建与下游效用评测](#evaluation-gui-environments) · [4.2 GUI／软件训练环境、任务、奖励与操作轨迹](#data-gui-environments) · [1.4 何时成为环境：状态、动作、重置、任务与奖励](#section-1-4) · [2.1 视觉软件工程与应用复刻](#methods-software) · [2.12 从构建与交互经验学习](#methods-experience)
+
+<a id="paper-2610-37567"></a>
+<!-- mmac-record: {"id": "2610.37567", "scope": "Core", "primary": "2.2", "task": 2} -->
+
+- `arXiv 2026.10` **Gym-Anything-RT: Scaling Real-Time Environments for Vision-Language Agents**. [[paper]](https://arxiv.org/abs/2610.37567) [[code]](https://github.com/gym-anything/gym-anything-rt) — `[Method]` `[Benchmark]` `[Dataset]` · `[Environment]` `[Verification]` · **Core**
+  > 通过依据截图和录像的 Creator—Auditor 代码修订构建实时视觉小游戏，再控制环境时钟以区分动作延迟与任务能力。<br>
+  > **验证维度：** 100 个小游戏 · 六类能力 · 实时／减速／暂停对照 · 可解性和时序审核；Core 指环境构建链条。
 
 <a id="paper-2610-26828"></a>
 <!-- mmac-record: {"id": "2610.26828", "scope": "Adjacent", "primary": "2.2", "task": 2} -->
@@ -1437,6 +1444,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.8 世界模型的预测、干预与规划效用评测](#evaluation-world-models) · [4.8 世界观测、状态转移与仿真程序数据](#data-world-models) · [2.7 可玩游戏构建、复刻与修复](#methods-games) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.12 从构建与交互经验学习](#methods-experience)
 
+<a id="paper-2610-36371"></a>
+<!-- mmac-record: {"id": "2610.36371", "scope": "Adjacent", "primary": "2.8", "task": 8} -->
+
+- `arXiv 2026.10` **BoxWorld: Let World Engines Control and Video Generators Render**. [[paper]](https://arxiv.org/abs/2610.36371) [[project]](https://boxworld-web.github.io/) — `[Method]` `[Benchmark]` · `[Inference]` `[Environment]` `[Verification]` · **Adjacent**
+  > 以对象状态接口分离 Agent 编写的交互规则与生成式外观，将可执行世界引擎的状态流传给因果视频渲染器。<br>
+  > **验证维度：** 成对反事实交互控制 · 状态转换忠实度 · 视频质量与流式速度；渲染动力学不等于实机验证。
+
 <a id="paper-2610-30679"></a>
 <!-- mmac-record: {"id": "2610.30679", "scope": "Adjacent", "primary": "2.8", "task": 8} -->
 
@@ -1621,6 +1635,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 感知、动作模型与控制器的能力来源单独记录；仅有真实机器人执行，不意味着系统完成了 Real2Sim2Real 环境构建链。
 
 **关联阅读：** [3.10 机器人程序与策略的执行评测](#evaluation-robot-programs) · [4.10 机器人演示、执行与程序／策略修复轨迹](#data-robot-programs) · [2.11 Real2Sim2Real：任务学习与真实执行](#methods-real2sim2real) · [2.12 从构建与交互经验学习](#methods-experience) · [5.4 动作、策略、预测与验证能力](#section-5-4)
+
+<a id="paper-2610-36533"></a>
+<!-- mmac-record: {"id": "2610.36533", "scope": "Core", "primary": "2.10", "task": 10} -->
+
+- `arXiv 2026.10` **RoboAuto: Autonomous Robot Program Search through Multi-Level Physical Understanding**. [[paper]](https://arxiv.org/abs/2610.36533) [[project]](https://roboauto-ai.github.io/) — `[Method]` · `[Inference]` `[Environment]` `[Verification]` · **Core**
+  > 结合对象物理知识、视觉场景定位与自主设计的诊断实验，根据同步执行视频的审核结果修订分阶段机器人程序。<br>
+  > **验证维度：** 程序搜索泛化 · 分阶段视觉审核 · 仿真知识到实机的迁移；实机试验由人判定成功并重置。
 
 <a id="paper-2610-31841"></a>
 <!-- mmac-record: {"id": "2610.31841", "scope": "Core", "primary": "2.10", "task": 10} -->
@@ -1808,6 +1829,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 单次产物修订与跨任务能力改进分别验证；构建轨迹训练和在生成环境中训练操作策略也具有不同学习对象。
 
 **关联阅读：** [3.12 经验学习与跨任务泛化评测](#evaluation-experience) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [2.2 GUI／软件训练环境合成](#methods-gui-environments) · [5.5 Skills、工具桥与可复用工作流](#section-5-5) · [6.5 从构建经验到可迁移能力](#section-6-5)
+
+<a id="paper-2610-36077"></a>
+<!-- mmac-record: {"id": "2610.36077", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.10` **The Trinity: Capability-Driven Recursive Self-Improvement for Multimodal Agents**. [[paper]](https://arxiv.org/abs/2610.36077) [[project]](https://trinity-rsi.github.io/) [[repository]](https://github.com/InfRec-Cardinal/The-Trinity) — `[Method]` · `[Training]` `[Environment]` `[Verification]` · **Adjacent**
+  > 将可验证世界生成与按能力组织的 Harness 演化、路由结合，使所选 Harness—技能配置迁移到异构任务和两项具身场景。<br>
+  > **验证维度：** 训练／未见任务迁移 · 模块继承与路由 · 两项具身任务；模块演化与任务专用技能准备被联合评价。
 
 <a id="paper-2610-34921"></a>
 <!-- mmac-record: {"id": "2610.34921", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
@@ -2054,6 +2082,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **方法论文中的评测设置**
 
+- [Gym-Anything-RT](#paper-2610-37567) · **Core** · [2.2](#methods-gui-environments) — 下游实时与暂停视觉交互对照。
 - [WildAWM](#paper-2610-26828) · **Adjacent** · [2.2](#methods-gui-environments) — 任务有效性与下游计算机使用迁移。
 - [CUA-Gym](#paper-2605-25624) · **Core** · [2.2](#methods-gui-environments) — 奖励保真度与下游计算机操作迁移。
 
@@ -2155,6 +2184,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 原生可编辑结构、渲染成功、视觉偏好和信息保真是不同属性；跨页与跨帧错误需要相应测试。
 
 **关联阅读：** [2.4 文档与视觉媒体构建](#methods-media) · [4.4 文档、媒体素材与构建／编辑过程](#data-media) · [3.3 图表、科学可视化与图形编辑评测](#evaluation-graphics) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
+
+<a id="paper-2610-37341"></a>
+<!-- mmac-record: {"id": "2610.37341", "scope": "Core", "primary": "3.4", "task": 4} -->
+
+- `arXiv 2026.10` **CodeCap-Bench: Can Code Serve as a Good Video Caption?**. [[paper]](https://arxiv.org/abs/2610.37341) [[project]](https://codecap-bench.github.io/) — `[Benchmark]` · `[Inference]` `[Verification]` · **Core**
+  > 评测可执行代码对结构化视频的表达能力，Agentic 配置比较同时间戳的浏览器渲染与参考帧后迭代重建。<br>
+  > **验证维度：** 323 段视频 · 视觉相似度 · 对象时空 IoU · 静态／动态信息保留；Agentic 视觉细化与单次生成基线分开。
 
 <a id="paper-2610-35864"></a>
 <!-- mmac-record: {"id": "2610.35864", "scope": "Adjacent", "primary": "3.4", "task": 4} -->
@@ -2362,6 +2398,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.6 物理资产构建与诊断](#methods-physical-assets) · [4.6 物理资产、参数与诊断交互数据](#data-physical-assets) · [3.9 面向 Agentic Real-to-Sim 的场景与交互构建评测](#evaluation-real-to-sim) · [3.11 Real2Sim2Real 的任务效用与真实迁移评测](#evaluation-real2sim2real)
 
+<a id="paper-2610-37326"></a>
+<!-- mmac-record: {"id": "2610.37326", "scope": "Adjacent", "primary": "3.6", "task": 6} -->
+
+- `arXiv 2026.10` **ScIntBench: Physical Interaction Plausibility in 3D Scene Generation**. [[paper]](https://arxiv.org/abs/2610.37326) [[project]](https://scintbench.github.io/) — `[Benchmark]` · `[Verification]` · **Adjacent**
+  > 以校准后的开、推和表面探测检验生成室内场景，区分原生交互能力、任务成功、接触后完整性与动态合理性。<br>
+  > **验证维度：** 12 个生成系统 · 10 类房间 · 仿真交互与完整性 · 独立视觉评价；不包含生成器修复闭环。
+
 **Benchmark 工作**
 
 - [Towards Physically Grounded Articulated 3D Assets](#paper-2610-13947) · **Core** · [2.6](#methods-physical-assets)
@@ -2387,6 +2430,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 外观相似与规则一致独立比较；最终截图可能遗漏短暂违规、事件顺序和长程失败。
 
 **关联阅读：** [2.7 可玩游戏构建、复刻与修复](#methods-games) · [4.7 游戏需求、代码、资产与运行测试轨迹](#data-games) · [3.8 世界模型的预测、干预与规划效用评测](#evaluation-world-models) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
+
+<a id="paper-2610-35980"></a>
+<!-- mmac-record: {"id": "2610.35980", "scope": "Core", "primary": "3.7", "task": 7} -->
+
+- `arXiv 2026.10` **UnityBench-Mini3D: Evaluating LLM Agents for 3D Game Development in Unity**. [[paper]](https://arxiv.org/abs/2610.35980) [[repository]](https://github.com/Unity-China/UnityBench-Mini3D) — `[Benchmark]` · `[Environment]` `[Verification]` · **Core**
+  > 以引擎内隐藏里程碑测试评测完整 Unity 项目，并记录 Excavator 中场景图诊断驱动运动路径与搬运角度修复的轨迹。<br>
+  > **验证维度：** 77 个任务 · 1,178 个隐藏里程碑测试 · 场景／组件／运行行为；视觉修复证据限于具体轨迹，不泛指全部 Harness。
 
 <a id="paper-2610-26098"></a>
 <!-- mmac-record: {"id": "2610.26098", "scope": "Core", "primary": "3.7", "task": 7} -->
@@ -2521,6 +2571,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **方法论文中的评测设置**
 
+- [BoxWorld](#paper-2610-36371) · **Adjacent** · [2.8](#methods-world-models) — PairedStateBench 评测成对反事实结果与有条件状态变化。
 - [AgentDreamer](#paper-2610-30679) · **Adjacent** · [2.8](#methods-world-models)
 - [Perceptual Self-Reflection in Agentic Physics Simulation Code Generation](#paper-2602-12311) · **Core** · [2.8](#methods-world-models)
 - [Text2Sim](#paper-2609-36593) · **Core** · [2.8](#methods-world-models)
@@ -2604,6 +2655,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **方法论文中的评测设置**
 
+- [RoboAuto](#paper-2610-36533) · **Core** · [2.10](#methods-robot-programs) — 程序搜索泛化与物理定位消融。
 - [FORCA](#paper-2610-31841) · **Core** · [2.10](#methods-robot-programs)
 - [AW-0](#paper-2610-30136) · **Adjacent** · [2.10](#methods-robot-programs)
 - [Awomo-SimDataEngine](#paper-2610-02274) · **Core** · [2.8](#methods-world-models)
@@ -2653,6 +2705,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **方法论文中的评测设置**
 
+- [The Trinity](#paper-2610-36077) · **Adjacent** · [2.12](#methods-experience) — 冻结 Harness—技能配置后的仿真与两机器人实机比较。
+- [RoboAuto](#paper-2610-36533) · **Core** · [2.10](#methods-robot-programs) — 仿真知识迁移到三个 WidowX 任务，以人工评分的阶段完成比例评测。
 - [SceneAgent](#paper-2610-34745) · **Core** · [2.9](#methods-real-to-sim) — 初步实机抓放迁移。
 - [Agentic RSR](#paper-2610-10479) · **Core** · [2.11](#methods-real2sim2real)
 - [RAPID](#paper-2609-30249) · **Adjacent** · [2.11](#methods-real2sim2real)
@@ -2677,6 +2731,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **方法论文中的评测设置**
 
+- [The Trinity](#paper-2610-36077) · **Adjacent** · [2.12](#methods-experience) — 能力树组织、继承、路由与未见任务迁移。
 - [PhysEvolve](#paper-2610-34921) · **Adjacent** · [2.12](#methods-experience) — 物理推理迁移与配对训练消融。
 - [ImageRSI](#paper-2610-32120) · **Adjacent** · [2.12](#methods-experience)
 - [Learning Only with Images](#paper-2507-20766) · **Core** · [2.1](#methods-software)
@@ -2822,6 +2877,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **数据集工作**
 
+- [Gym-Anything-RT](#paper-2610-37567) · **Core** · [2.2](#methods-gui-environments) — 已发布的小游戏程序、接口契约与验证资料。
 - [WildAWM](#paper-2610-26828) · **Adjacent** · [2.2](#methods-gui-environments) — 已发布的环境、指令、重置和验证器任务包。
 - [SoftwareGym](#paper-2610-12611) · **Core** · [2.2](#methods-gui-environments)
 
@@ -3179,6 +3235,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 | 能力 | 资源与来源 | 输入 → 输出 | 在工作流中的作用 |
 |---|---|---|---|
+| 多视图纹理整合 | **Texture Consolidation of Generated Multi-View Renderings** [[paper]](https://arxiv.org/abs/2610.36098) · [[code]](https://github.com/hliuw/TextureConsolidation) | 带 UV 图集的三角网格 + 稀疏渲染／照片 + 相机参数 → 连贯颜色纹理 | 以网格光流和置信度加权的梯度域拼接对齐多视图外观，在保留网格几何的同时补充图像生成器的纹理整合能力。 |
 | 动态 3D 纹理 | **DynaMesh** — *DynaMesh: Dynamic 3D Texture Generation* [[论文]](https://arxiv.org/abs/2610.05529) · [[项目]](https://threedle.github.io/dynamesh/) | Mesh + 效果提示词 → 固定 mesh 与随时间变化的纹理序列 | 将参考视频与 3D 生成器的时序条件、逐形状适配器结合；几何固定而外观演化，可为资产工作流提供表面效果，不是物理动力学模拟。 |
 | 原生 3D 纹理生成 | **Tex-Zero** — *Does Native 3D Texture Generation Necessarily Require 3D Assets for Training?* [[论文]](https://arxiv.org/abs/2609.34621) · [[仓库文档]](https://github.com/wangjiangshan0725/Tex-Zero) | 几何 + 多视图参考图 → 与几何对齐的 3D 表面颜色 | 用图像构造的训练样本学习图像／纹理共享表示，提供不依赖真实带纹理 3D 资产作为训练数据的纹理生成能力。 |
 | 3D 材质生成与编辑 | **SUPRA-Tex** — *SUPRA-TEX: 3D Generation with Super-Aligned Texture* [[论文]](https://arxiv.org/abs/2610.22352) · [[项目]](https://supra-3d.github.io/supratex/) · [[仓库文档]](https://github.com/Supra-3D/supra-tex) · [[权重]](https://huggingface.co/supra3d/supra-tex) · [[Demo]](https://huggingface.co/spaces/UniLat3D/Supra-Tex) | 参考图像 + mesh + 相机投影 → 完整表面的可重光照 PBR 材质 | 保留参考图中的文字、Logo 与图案，并补全不可见表面的反照率、金属度和粗糙度。几何由外部提供或上游 Pixal3D 生成；编辑后的二维视图可更新同一 mesh 的材质，为 3D 资产工作流提供外观生成环节。 |

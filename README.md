@@ -44,12 +44,12 @@ Enable agents to **organize and combine model capabilities**, expanding their ab
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-187-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-188-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-10-29**
+**Last updated: 2026-10-30**
 
 </div>
 
@@ -1830,6 +1830,20 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Connect:** [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [2.2 GUI and software training-environment synthesis](#methods-gui-environments) · [5.5 Skills, tool bridges, and reusable workflows](#section-5-5) · [6.5 From construction experience to transferable capability](#section-6-5)
 
+<a id="paper-2610-36925"></a>
+<!-- mmac-record: {"id": "2610.36925", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.10` **Vision-Language Agents Can Learn in Their Own Latent Worlds**. [[paper]](https://arxiv.org/abs/2610.36925) [[code]](https://github.com/Tom111-lhx/Dwell) — `[Method]` · `[Training]` `[Environment]` `[Verification]` · **Adjacent**
+  > Shares a frozen VLM backbone between latent-world and policy adapters, using imagined transitions and environment experience to improve visual decisions without reconstructing future images.<br>
+  > **Verification:** Five visual/simulated environments · matched interaction budgets · task-dependent success/compute gains; EB-ALFRED uses a fixed world model and behavior-cloning support.
+
+<a id="paper-2610-36013"></a>
+<!-- mmac-record: {"id": "2610.36013", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.10` **OmniBrain-0: A Unified Agentic Model for Embodied Intelligence**. [[paper]](https://arxiv.org/abs/2610.36013) [[project]](https://public-bots.github.io/OmniBrain-0/) [[repository]](https://github.com/luo-yc17/OmniBrain-0) — `[Method]` · `[Training]` `[Inference]` `[Verification]` · **Adjacent**
+  > Consolidates manipulation and navigation experts into a compact multimodal agent that coordinates specialist tools, while rubric-guided feedback supplies reminders and verified trajectories for further learning.<br>
+  > **Verification:** Five simulated task suites · tool-matched distillation/RSI ablations · three real manipulation tasks, 20 trials per task and method; low-level skill reliability remains a dependency.
+
 <a id="paper-2610-36077"></a>
 <!-- mmac-record: {"id": "2610.36077", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
 
@@ -2330,9 +2344,9 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 <a id="paper-2609-15478"></a>
 <!-- mmac-record: {"id": "2609.15478", "scope": "Adjacent", "primary": "3.5", "task": 5} -->
 
-- `arXiv 2026.09` **BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender**. [[paper]](https://arxiv.org/abs/2609.15478) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]` · **Adjacent**
+- `arXiv 2026.09` **BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender**. [[paper]](https://arxiv.org/abs/2609.15478) [[evaluation code]](https://github.com/yunlong10/BVB/blob/main/eval/dual_vqa_metric.py) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]` · **Adjacent**
   > Tests video understanding through editable Blender reconstructions, comparing semantic retention and perceptual similarity after generation while agents revisit source-video frames during coding.<br>
-  > **Verification:** Dual VQA semantic retention · V-JEPA latent similarity · balanced overall score · per-scene cost.
+  > **Verification:** Dual VQA semantic retention · V-JEPA latent similarity · balanced overall score · per-scene cost. Use the option-aware Dual VQA evaluator and refreshed source-answer cache (2026-10-19).
 
 <a id="paper-2609-16251"></a>
 <!-- mmac-record: {"id": "2609.16251", "scope": "Adjacent", "primary": "3.5", "task": 5} -->
@@ -2548,6 +2562,13 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Connect:** [2.8 Executable world models and simulation programs](#methods-world-models) · [4.8 World observations, transitions, and simulation-program data](#data-world-models) · [3.7 Game behavior, playability, and repair evaluation](#evaluation-games) · [3.9 Scene and interaction construction for Agentic Real-to-Sim](#evaluation-real-to-sim)
 
+<a id="paper-2610-37649"></a>
+<!-- mmac-record: {"id": "2610.37649", "scope": "Core", "primary": "3.8", "task": 8} -->
+
+- `arXiv 2026.10` **Can LLMs Uncover Hidden Physical Laws through Free Exploration?**. [[paper]](https://arxiv.org/abs/2610.37649) [[project]](https://zhenyangcs.github.io/LongChang-website/) [[repository]](https://github.com/EnVision-Research/LongChang) — `[Benchmark]` · `[Inference]` `[Environment]` `[Verification]` · **Core**
+  > Tests task-free physical inquiry in altered-law MuJoCo worlds, including an explorer that redesigns a weighing apparatus after spatial observations reveal that a ball drifts off its pan.<br>
+  > **Verification:** Law correctness and experimental support · normal-physics control · apparatus/budget ablations · scene evolution; simulation only.
+
 <a id="paper-2610-15166"></a>
 <!-- mmac-record: {"id": "2610.15166", "scope": "Adjacent", "primary": "3.8", "task": 8} -->
 
@@ -2731,6 +2752,8 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Evaluation settings in method papers**
 
+- [Dwell](#paper-2610-36925) · **Adjacent** · [2.12](#methods-experience) — five visual environments, matched interaction budgets, imagination cost, and environment-specific training protocols.
+- [OmniBrain-0](#paper-2610-36013) · **Adjacent** · [2.12](#methods-experience) — shared-brain distillation, rubric-guided interaction learning, and task-specific ablations.
 - [The Trinity](#paper-2610-36077) · **Adjacent** · [2.12](#methods-experience) — capability-tree organization, inheritance, routing, and unseen-task transfer.
 - [PhysEvolve](#paper-2610-34921) · **Adjacent** · [2.12](#methods-experience) — physical-reasoning transfer and paired training ablations.
 - [ImageRSI](#paper-2610-32120) · **Adjacent** · [2.12](#methods-experience)
@@ -3060,6 +3083,13 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Connect:** [2.8 Executable world models and simulation programs](#methods-world-models) · [3.8 World-model prediction, intervention, and planning evaluation](#evaluation-world-models) · [4.7 Game requirements, code, assets, and playtesting traces](#data-games) · [4.9 Real-to-Sim observation, simulation, and interaction correspondences](#data-real-to-sim) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience)
 
+<a id="paper-2610-37257"></a>
+<!-- mmac-record: {"id": "2610.37257", "scope": "Adjacent", "primary": "4.8", "task": 8} -->
+
+- `arXiv 2026.10` **GameVerse: A Minute-Scale Gameplay Dataset for Long-Horizon Interactive World Modeling**. [[paper]](https://arxiv.org/abs/2610.37257) [[project]](https://kangverse.github.io/GameVerse/) [[code]](https://github.com/kangverse/GameVerse) [[data]](https://huggingface.co/datasets/Kangverse/GameVerse) — `[Dataset]` · `[Data Curation]` `[Training]` `[Verification]` · **Adjacent**
+  > Pairs minute-scale gameplay clip metadata with estimated camera trajectories and hierarchical scene/action captions to support long-horizon video world modeling; the release provides annotations and source timestamps rather than redistributing MP4s.<br>
+  > **Verification:** Same-backbone fine-tuning · 30-second VBench/WorldScore evaluation · caption audit · release metadata and samples; non-commercial research license.
+
 **Dataset contributions**
 
 - [State World Models / WorldState-Bench](#paper-2610-26811) · **Adjacent** · [2.8](#methods-world-models) — released case programs, first frames, and paired instructions.
@@ -3347,6 +3377,7 @@ These layers are complementary rather than mutually exclusive. For example, an a
 
 | Capability | Resource and sources | Inputs → outputs | Role in a workflow |
 |---|---|---|---|
+| Sensor diagnosis and input repair | **When Black-Box Robot Policies Fail: Online Sensor Diagnosis and Repair with a Transparent Surrogate** [[paper]](https://arxiv.org/abs/2610.36852) | Sensor streams + frozen-policy actions + healthy gait references → fault diagnosis and repaired policy inputs | MBD/PRR uses an additive surrogate to diagnose sensor faults and repair inputs without policy gradients; evaluated on simulated quadrupeds, with no demonstrated LLM orchestration or hardware deployment. |
 | Interactive world simulation | **Genie 4** [[official blog]](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/) | Prompts, reference images, navigation, and live edits → interactive audiovisual worlds. | Research preview that combines generative simulation with Gemini planning and frame-based checks; access is limited to trusted testers. Spatial accuracy, physical interactions, and long-term consistency remain limitations; robotics examples are generated simulations. |
 | Adaptive action-horizon correction | **VLA-Corrector: Lightweight Detect-and-Correct Inference for Adaptive Action Horizon** [[paper]](https://arxiv.org/abs/2607.01804) · [[code]](https://github.com/ZJU-OmniAI/vla-corrector) | Frozen-VLA visual features + executed actions → drift signal, chunk truncation, and a guided recovery replan. | A reusable ~40M external corrector for action-chunked VLAs; evaluated in simulation and on AgileX PiPER. Code is available; trained corrector weights and demonstration data are not included. |
 | Video-to-action capability | **BridgeWAM** — *BridgeWAM: Bridging Video and Action Experts via Latent Bridge Queries* [[paper]](https://arxiv.org/abs/2610.14746) · [[code]](https://github.com/jxfang04/BridgeWAM-code) · [[weights]](https://huggingface.co/BridgeWAM/bridgewam) | Camera observations + language + proprioception → action chunks | Compresses video-expert features into latent bridge queries for a lightweight action expert; the default inference path skips future-video generation. Evaluated in simulation and real manipulation, as a reusable model capability rather than LLM-led code repair. |

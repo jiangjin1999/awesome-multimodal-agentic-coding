@@ -44,12 +44,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-187-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-188-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-10-29**
+**最后更新：2026-10-30**
 
 </div>
 
@@ -1830,6 +1830,20 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.12 经验学习与跨任务泛化评测](#evaluation-experience) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [2.2 GUI／软件训练环境合成](#methods-gui-environments) · [5.5 Skills、工具桥与可复用工作流](#section-5-5) · [6.5 从构建经验到可迁移能力](#section-6-5)
 
+<a id="paper-2610-36925"></a>
+<!-- mmac-record: {"id": "2610.36925", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.10` **Vision-Language Agents Can Learn in Their Own Latent Worlds**. [[论文]](https://arxiv.org/abs/2610.36925) [[代码]](https://github.com/Tom111-lhx/Dwell) — `[Method]` · `[Training]` `[Environment]` `[Verification]` · **Adjacent**
+  > 让潜在世界模型与策略适配器共享冻结 VLM 主干，结合想象转移和环境经验改进视觉决策，无需生成未来图像。<br>
+  > **验证维度：** 五类视觉／仿真环境 · 相同交互预算 · 因任务而异的成功率与计算收益；EB-ALFRED使用固定世界模型与行为克隆辅助。
+
+<a id="paper-2610-36013"></a>
+<!-- mmac-record: {"id": "2610.36013", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.10` **OmniBrain-0: A Unified Agentic Model for Embodied Intelligence**. [[论文]](https://arxiv.org/abs/2610.36013) [[项目]](https://public-bots.github.io/OmniBrain-0/) [[仓库]](https://github.com/luo-yc17/OmniBrain-0) — `[Method]` · `[Training]` `[Inference]` `[Verification]` · **Adjacent**
+  > 将操控与导航专家蒸馏为紧凑的多模态 Agent 来协调专用工具，并把 rubric 引导的执行反馈转为提醒与已验证轨迹以持续学习。<br>
+  > **验证维度：** 五组仿真任务 · 相同工具条件下的蒸馏／RSI消融 · 三项实机操控、每任务每方法20次试验；仍依赖底层技能可靠性。
+
 <a id="paper-2610-36077"></a>
 <!-- mmac-record: {"id": "2610.36077", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
 
@@ -2330,9 +2344,9 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 <a id="paper-2609-15478"></a>
 <!-- mmac-record: {"id": "2609.15478", "scope": "Adjacent", "primary": "3.5", "task": 5} -->
 
-- `arXiv 2026.09` **BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender**. [[论文]](https://arxiv.org/abs/2609.15478) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]` · **Adjacent**
+- `arXiv 2026.09` **BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender**. [[论文]](https://arxiv.org/abs/2609.15478) [[评估代码]](https://github.com/yunlong10/BVB/blob/main/eval/dual_vqa_metric.py) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]` · **Adjacent**
   > 通过可编辑的 Blender 重建评测视频理解：Agent 在编程期间回看源视频帧，生成结束后再比较语义保留程度与感知相似度。<br>
-  > **验证维度：** Dual VQA 语义保留 · V-JEPA 潜空间相似度 · 均衡综合评分 · 单场景成本。
+  > **验证维度：** Dual VQA 语义保留 · V-JEPA 潜空间相似度 · 均衡综合评分 · 单场景成本。 使用含选择题选项的 Dual VQA 评估器及更新后的源视频答案缓存（2026-10-19）。
 
 <a id="paper-2609-16251"></a>
 <!-- mmac-record: {"id": "2609.16251", "scope": "Adjacent", "primary": "3.5", "task": 5} -->
@@ -2548,6 +2562,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.8 可执行世界模型与仿真程序构建](#methods-world-models) · [4.8 世界观测、状态转移与仿真程序数据](#data-world-models) · [3.7 游戏行为、可玩性与修复评测](#evaluation-games) · [3.9 面向 Agentic Real-to-Sim 的场景与交互构建评测](#evaluation-real-to-sim)
 
+<a id="paper-2610-37649"></a>
+<!-- mmac-record: {"id": "2610.37649", "scope": "Core", "primary": "3.8", "task": 8} -->
+
+- `arXiv 2026.10` **Can LLMs Uncover Hidden Physical Laws through Free Exploration?**. [[论文]](https://arxiv.org/abs/2610.37649) [[项目]](https://zhenyangcs.github.io/LongChang-website/) [[仓库]](https://github.com/EnVision-Research/LongChang) — `[Benchmark]` · `[Inference]` `[Environment]` `[Verification]` · **Core**
+  > 在改变物理规律的 MuJoCo 世界中评测无指定任务的物理探究，包括探索者发现球滑离秤盘后依据空间观测重新设计测量装置的轨迹。<br>
+  > **验证维度：** 规律正确性与实验支持 · 正常物理对照 · 装置／预算消融 · 场景演化；仅仿真。
+
 <a id="paper-2610-15166"></a>
 <!-- mmac-record: {"id": "2610.15166", "scope": "Adjacent", "primary": "3.8", "task": 8} -->
 
@@ -2731,6 +2752,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **方法论文中的评测设置**
 
+- [Dwell](#paper-2610-36925) · **Adjacent** · [2.12](#methods-experience) — 五类视觉环境、相同交互预算、想象开销与不同环境的训练协议。
+- [OmniBrain-0](#paper-2610-36013) · **Adjacent** · [2.12](#methods-experience) — 共享决策模型蒸馏、rubric 引导的交互学习与分任务消融。
 - [The Trinity](#paper-2610-36077) · **Adjacent** · [2.12](#methods-experience) — 能力树组织、继承、路由与未见任务迁移。
 - [PhysEvolve](#paper-2610-34921) · **Adjacent** · [2.12](#methods-experience) — 物理推理迁移与配对训练消融。
 - [ImageRSI](#paper-2610-32120) · **Adjacent** · [2.12](#methods-experience)
@@ -3060,6 +3083,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.8 可执行世界模型与仿真程序构建](#methods-world-models) · [3.8 世界模型的预测、干预与规划效用评测](#evaluation-world-models) · [4.7 游戏需求、代码、资产与运行测试轨迹](#data-games) · [4.9 Real-to-Sim 的观测、仿真表示与交互对应](#data-real-to-sim) · [4.12 跨任务构建、修复与技能学习资料](#data-experience)
 
+<a id="paper-2610-37257"></a>
+<!-- mmac-record: {"id": "2610.37257", "scope": "Adjacent", "primary": "4.8", "task": 8} -->
+
+- `arXiv 2026.10` **GameVerse: A Minute-Scale Gameplay Dataset for Long-Horizon Interactive World Modeling**. [[论文]](https://arxiv.org/abs/2610.37257) [[项目]](https://kangverse.github.io/GameVerse/) [[代码]](https://github.com/kangverse/GameVerse) [[数据]](https://huggingface.co/datasets/Kangverse/GameVerse) — `[Dataset]` · `[Data Curation]` `[Training]` `[Verification]` · **Adjacent**
+  > 将分钟级游戏片段索引与估计相机轨迹、分层场景／动作描述配对，用于长时序视频世界建模；实际发布标注与源视频时间戳，不再分发 MP4。<br>
+  > **验证维度：** 同骨干微调 · 30秒VBench／WorldScore评测 · 描述人工审查 · 发布清单与样例；非商业研究许可。
+
 **数据集工作**
 
 - [State World Models / WorldState-Bench](#paper-2610-26811) · **Adjacent** · [2.8](#methods-world-models) — 已发布案例程序、首帧和成对指令。
@@ -3347,6 +3377,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 | 能力 | 资源与来源 | 输入 → 输出 | 在工作流中的作用 |
 |---|---|---|---|
+| 传感器诊断与输入修复 | **When Black-Box Robot Policies Fail: Online Sensor Diagnosis and Repair with a Transparent Surrogate** [[paper]](https://arxiv.org/abs/2610.36852) | 传感器流 + 冻结策略动作 + 健康步态参考 → 故障诊断与修复后的策略输入 | MBD／PRR通过可加性代理诊断传感器故障并修复输入，无需策略梯度；验证限于仿真四足机器人，未展示LLM编排或硬件部署。 |
 | 交互式世界模拟 | **Genie 4** [[官方博客]](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/) | 提示、参考图像、导航和实时编辑 → 可交互视听世界。 | 将生成式模拟与 Gemini 规划和逐帧检查结合的研究预览，仅面向可信测试者；空间准确性、物理交互与长程一致性仍有限，机器人案例为生成式仿真。 |
 | 自适应动作时域纠错 | **VLA-Corrector: Lightweight Detect-and-Correct Inference for Adaptive Action Horizon** [[paper]](https://arxiv.org/abs/2607.01804) · [[code]](https://github.com/ZJU-OmniAI/vla-corrector) | 冻结 VLA 的视觉特征 + 已执行动作 → 漂移信号、动作块截断及引导式恢复重规划。 | 面向分块动作 VLA 的约 40M 外部纠错器，已在仿真和 AgileX PiPER 上评测；提供代码，未包含训练后的纠错器权重与演示数据。 |
 | 视频到动作能力 | **BridgeWAM** — *BridgeWAM: Bridging Video and Action Experts via Latent Bridge Queries* [[论文]](https://arxiv.org/abs/2610.14746) · [[代码]](https://github.com/jxfang04/BridgeWAM-code) · [[权重]](https://huggingface.co/BridgeWAM/bridgewam) | 相机观测 + 语言 + 本体感知 → 动作块 | 用潜在桥接查询压缩视频专家特征，供轻量动作专家读取；默认推理不生成未来视频。在仿真和真实操控中评测，提供可复用模型能力，而非 LLM 主导的代码修复。 |

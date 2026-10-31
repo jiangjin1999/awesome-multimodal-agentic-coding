@@ -44,12 +44,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-188-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-189-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-10-30**
+**最后更新：2026-10-31**
 
 </div>
 
@@ -811,6 +811,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.4 文档与视觉媒体构建评测](#evaluation-media) · [4.4 文档、媒体素材与构建／编辑过程](#data-media) · [2.3 图表、科学可视化与可编辑图形构建](#methods-graphics) · [2.12 从构建与交互经验学习](#methods-experience) · [5.2 程序、几何、材质与视觉媒体生成／编辑](#section-5-2)
 
+<a id="paper-2610-38352"></a>
+<!-- mmac-record: {"id": "2610.38352", "scope": "Core", "primary": "2.4", "task": 4} -->
+
+- `arXiv 2026.10` **WeVisCut: The Whole Editing Room in One Agent From Narration to Long-Form Video**. [[paper]](https://arxiv.org/abs/2610.38352) [[project]](https://tencent.github.io/WeVisCut/) [[code]](https://github.com/Tencent/WeVisCut) [[weights]](https://huggingface.co/tencent/WeVisCut) — `[Method]` · `[Data Curation]` `[Training]` `[Inference]` `[Verification]` · **Core**
+  > 训练共享编辑策略构建可执行镜头计划、编排旁白与媒体工具，并依据渲染产物的生产反馈修订模板内容和时间线。<br>
+  > **验证维度：** 100 项留出任务 · 执行与交付轨迹 · 质量／成本诊断 · 盲测人工评分；生产反馈与只读最终评测分开。
+
 <a id="paper-2609-31451"></a>
 <!-- mmac-record: {"id": "2609.31451", "scope": "Core", "primary": "2.4", "task": 4} -->
 
@@ -1383,7 +1390,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 <a id="work-vibegame"></a>
 <!-- mmac-record: {"id": "system:vibegame", "scope": "Core", "primary": "2.7", "task": 7} -->
 
-- `技术报告 2026` **VibeGame: Prompt-to-Game Development with AI-Native Engine and Self-Evolving Adversarial Agent Team**. [[论文]](https://github.com/tettethu/VibeGame/blob/main/technical_report.pdf) [[仓库]](https://github.com/tettethu/VibeGame) [[项目]](https://vibegame.tettet.org/) — `[Method]` · `[Inference]` `[Environment]` `[Verification]` · **Core**
+- `技术报告 2026` **VibeGame: Prompt-to-Game Development with AI-Native Engine and Self-Evolving Adversarial Agent Team**. [[arXiv]](https://arxiv.org/abs/2610.33106) [[论文]](https://github.com/tettethu/VibeGame/blob/main/technical_report.pdf) [[仓库]](https://github.com/tettethu/VibeGame) [[项目]](https://vibegame.tettet.org/) — `[Method]` · `[Inference]` `[Environment]` `[Verification]` · **Core**
   > 使用 AI 原生 Phaser 引擎构建可编辑的 2D 游戏；帧同步试玩与对抗式运行时验证会将观测到的失败反馈到代码、资源和配置修改中。<br>
   > **验证维度：** Schema／静态有效性 · 帧同步运行时行为 · 功能／视觉质量／可玩性（定性）。
 
@@ -1636,6 +1643,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.10 机器人程序与策略的执行评测](#evaluation-robot-programs) · [4.10 机器人演示、执行与程序／策略修复轨迹](#data-robot-programs) · [2.11 Real2Sim2Real：任务学习与真实执行](#methods-real2sim2real) · [2.12 从构建与交互经验学习](#methods-experience) · [5.4 动作、策略、预测与验证能力](#section-5-4)
 
+<a id="paper-2610-29702"></a>
+<!-- mmac-record: {"id": "2610.29702", "scope": "Adjacent", "primary": "2.10", "task": 10} -->
+
+- `arXiv 2026.10` **CausGround: Causal Interaction Grounding for Adaptive Embodied Planning**. [[paper]](https://arxiv.org/abs/2610.29702) [[project]](https://causground.github.io/) — `[Method]` · `[Inference]` `[Environment]` · **Adjacent**
+  > 将 RGB 观测落地为对象级因果机制，检索动作前提和效果以引导冻结规划器选择技能，并通过仿真、录制技能回放与定性机器人演示验证。<br>
+  > **验证维度：** 任务成功率与进度 · 因果机制库消融 · 渲染校正的 VirtualHome · 回放式 RoboCasa；两项定性实机任务。
+
 <a id="paper-2610-36533"></a>
 <!-- mmac-record: {"id": "2610.36533", "scope": "Core", "primary": "2.10", "task": 10} -->
 
@@ -1806,6 +1820,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.11 Real2Sim2Real 的任务效用与真实迁移评测](#evaluation-real2sim2real) · [4.11 Real2Sim2Real 的环境、策略与配对迁移记录](#data-real2sim2real) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.10 机器人程序与策略开发](#methods-robot-programs) · [5.4 动作、策略、预测与验证能力](#section-5-4)
 
+<a id="paper-2610-34186"></a>
+<!-- mmac-record: {"id": "2610.34186", "scope": "Adjacent", "primary": "2.11", "task": 11} -->
+
+- `arXiv 2026.10` **HuGe: Scaling Humanoid Generalist Vision-Language-Action Models with Egocentric Experience**. [[paper]](https://arxiv.org/abs/2610.34186) [[project]](https://yliu-cs.github.io/HuGe/) [[code]](https://github.com/yliu-cs/HuGe) — `[Method]` · `[Data Curation]` `[Training]` · **Adjacent**
+  > 将人类第一视角经验与人形机器人观测及 SONIC 动作潜变量对齐，用于分阶段 VLA 训练，并通过冻结全身控制器执行动作。<br>
+  > **验证维度：** HumanoidArena 仿真 · 伪本体状态／数据消融 · 单项 G1 抓取放置每配置 30 次试验；实机验证范围有限。
+
 <a id="paper-2610-10479"></a>
 <!-- mmac-record: {"id": "2610.10479", "scope": "Core", "primary": "2.11", "task": 11} -->
 
@@ -1969,6 +1990,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 截图到代码、运行应用复刻和需求驱动开发的输入权限不同；最终 judge 的观察与构建 Agent 的反馈分别记录。
 
 **关联阅读：** [2.1 视觉软件工程与应用复刻](#methods-software) · [4.1 软件需求、应用观测与开发／复刻轨迹](#data-software) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
+
+<a id="paper-2610-35138"></a>
+<!-- mmac-record: {"id": "2610.35138", "scope": "Adjacent", "primary": "3.1", "task": 1} -->
+
+- `arXiv 2026.10` **Co-Design Bench: Multimodal Collaborative Coding Evaluation for Agentic Models**. [[paper]](https://arxiv.org/abs/2610.35138) [[project]](https://codesignbench.github.io/) [[code]](https://github.com/Wiselnn570/Co-Design-Bench) [[data]](https://huggingface.co/datasets/Wiselnn/Co-Design-Bench) — `[Benchmark]` `[Dataset]` · `[Inference]` `[Verification]` · **Adjacent**
+  > 用源代码、渲染界面和交互证据检查已有应用的修改是否满足隐藏需求，并通过独立反驳阶段复核正向判定。<br>
+  > **验证维度：** 论文评测 273 任务／2,331 项标准 · 严格完成与全项通过 · 模型—Harness 敏感性；公开 96 个 ME 任务／521 项标准。
 
 <a id="paper-2610-29014"></a>
 <!-- mmac-record: {"id": "2610.29014", "scope": "Adjacent", "primary": "3.1", "task": 1} -->
@@ -2242,6 +2270,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **方法论文中的评测设置**
 
+- [WeVisCut](#paper-2610-38352) · **Core** · [2.4](#methods-media) — 100 项留出脚本到视频任务、交付与质量诊断，以及盲测人工评分。
 - [Designer-RSI](#paper-2609-22086) · **Core** · [2.12](#methods-experience)
 - [Editable Visual Design](#paper-2609-04034) · **Core** · [2.4](#methods-media)
 - [ManimAgent](#paper-2606-30296) · **Core** · [2.4](#methods-media)
@@ -2660,6 +2689,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.10 机器人程序与策略开发](#methods-robot-programs) · [4.10 机器人演示、执行与程序／策略修复轨迹](#data-robot-programs) · [3.11 Real2Sim2Real 的任务效用与真实迁移评测](#evaluation-real2sim2real) · [3.12 经验学习与跨任务泛化评测](#evaluation-experience)
 
+<a id="paper-2610-31670"></a>
+<!-- mmac-record: {"id": "2610.31670", "scope": "Adjacent", "primary": "3.10", "task": 10} -->
+
+- `arXiv 2026.10` **Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success**. [[paper]](https://arxiv.org/abs/2610.31670) [[project]](https://yunfeixie233.github.io/s2/) [[code]](https://github.com/yunfeixie233/sensorimotor-alignment) — `[Benchmark]` · `[Verification]` · **Adjacent**
+  > 度量感知嵌入与已记录运动轨迹的近邻结构一致性，为昂贵闭环评测前的具身模型筛选提供离线代理指标。<br>
+  > **验证维度：** 跨模型家族相关性 · 具身不匹配与混杂控制 · 复用实机结果；最强真实策略相关性来自探索性时间范围。
+
 <a id="paper-2610-22471"></a>
 <!-- mmac-record: {"id": "2610.22471", "scope": "Adjacent", "primary": "3.10", "task": 10} -->
 
@@ -2869,6 +2905,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 - [ArtifactsBench](#paper-2507-04952) · **Adjacent** · [3.1](#evaluation-software)
 
 **数据集工作**
+
+- [Co-Design Bench](#paper-2610-35138) · **Adjacent** · [3.1](#evaluation-software) — 公开 ME 子集含 96 个任务、521 项标准；论文的 273 任务评测另含仓库级编辑。
 
 <a id="paper-2610-33149"></a>
 <!-- mmac-record: {"id": "2610.33149", "scope": "Adjacent", "primary": "4.1", "task": 1} -->
@@ -3265,6 +3303,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 | 能力 | 资源与来源 | 输入 → 输出 | 在工作流中的作用 |
 |---|---|---|---|
+| 几何条件的主体视频 | **OmniShowcase: Omnidirectional Subject-Consistent Video Generation from Multi-View Images** [[paper]](https://arxiv.org/abs/2610.35684) · [[project]](https://justin4ai.github.io/OmniShowcase/) · [[release status]](https://github.com/justin4ai/OmniShowcase) | 多张参考图 + 相机运动提示 → 以重建法线转台为条件的主体一致视频 | 结合多视角重建与 LoRA 视频生成器，支持围绕静态主体的视角变化；非刚体运动仍受限，代码和数据处于发布计划中。 |
+| 可动画化的风格化发型资产 | **HairDeck: Animation-Ready Stylized Hair Cards from a Single Image** [[paper]](https://arxiv.org/abs/2610.40599) · [[code]](https://github.com/hyz317/HairDeck) · [[weights]](https://huggingface.co/hyz317/HairDeck) | 单张图像 → 独立发片几何、逐片 UV 和弹簧骨链；支持 GLB／VRM 导出 | 用集合扩散生成艺术家式发片基元，再由第二模型生成动画骨链，为角色工作流提供可编辑资产；不生成纹理，也不自带 Agent 修复闭环。 |
 | 多视图纹理整合 | **Texture Consolidation of Generated Multi-View Renderings** [[paper]](https://arxiv.org/abs/2610.36098) · [[code]](https://github.com/hliuw/TextureConsolidation) | 带 UV 图集的三角网格 + 稀疏渲染／照片 + 相机参数 → 连贯颜色纹理 | 以网格光流和置信度加权的梯度域拼接对齐多视图外观，在保留网格几何的同时补充图像生成器的纹理整合能力。 |
 | 动态 3D 纹理 | **DynaMesh** — *DynaMesh: Dynamic 3D Texture Generation* [[论文]](https://arxiv.org/abs/2610.05529) · [[项目]](https://threedle.github.io/dynamesh/) | Mesh + 效果提示词 → 固定 mesh 与随时间变化的纹理序列 | 将参考视频与 3D 生成器的时序条件、逐形状适配器结合；几何固定而外观演化，可为资产工作流提供表面效果，不是物理动力学模拟。 |
 | 原生 3D 纹理生成 | **Tex-Zero** — *Does Native 3D Texture Generation Necessarily Require 3D Assets for Training?* [[论文]](https://arxiv.org/abs/2609.34621) · [[仓库文档]](https://github.com/wangjiangshan0725/Tex-Zero) | 几何 + 多视图参考图 → 与几何对齐的 3D 表面颜色 | 用图像构造的训练样本学习图像／纹理共享表示，提供不依赖真实带纹理 3D 资产作为训练数据的纹理生成能力。 |

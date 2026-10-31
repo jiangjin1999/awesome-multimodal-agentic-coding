@@ -44,12 +44,12 @@ Enable agents to **organize and combine model capabilities**, expanding their ab
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-188-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-189-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-10-30**
+**Last updated: 2026-10-31**
 
 </div>
 
@@ -811,6 +811,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Connect:** [3.4 Document and visual-media evaluation](#evaluation-media) · [4.4 Documents, media assets, and construction/editing traces](#data-media) · [2.3 Charts, scientific visualization, and editable graphics](#methods-graphics) · [2.12 Learning from construction and interaction experience](#methods-experience) · [5.2 Program, geometry, material, and visual-media generation/editing](#section-5-2)
 
+<a id="paper-2610-38352"></a>
+<!-- mmac-record: {"id": "2610.38352", "scope": "Core", "primary": "2.4", "task": 4} -->
+
+- `arXiv 2026.10` **WeVisCut: The Whole Editing Room in One Agent From Narration to Long-Form Video**. [[paper]](https://arxiv.org/abs/2610.38352) [[project]](https://tencent.github.io/WeVisCut/) [[code]](https://github.com/Tencent/WeVisCut) [[weights]](https://huggingface.co/tencent/WeVisCut) — `[Method]` · `[Data Curation]` `[Training]` `[Inference]` `[Verification]` · **Core**
+  > Trains a shared editing policy to construct executable shot plans, orchestrate narration and media tools, and revise template content and timelines from render-grounded production feedback.<br>
+  > **Verification:** 100 held-out tasks · execution and delivery traces · quality/cost diagnostics · blinded human ratings; production feedback is separate from read-only final evaluation.
+
 <a id="paper-2609-31451"></a>
 <!-- mmac-record: {"id": "2609.31451", "scope": "Core", "primary": "2.4", "task": 4} -->
 
@@ -1383,7 +1390,7 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 <a id="work-vibegame"></a>
 <!-- mmac-record: {"id": "system:vibegame", "scope": "Core", "primary": "2.7", "task": 7} -->
 
-- `Technical Report 2026` **VibeGame: Prompt-to-Game Development with AI-Native Engine and Self-Evolving Adversarial Agent Team**. [[paper]](https://github.com/tettethu/VibeGame/blob/main/technical_report.pdf) [[repo]](https://github.com/tettethu/VibeGame) [[project]](https://vibegame.tettet.org/) — `[Method]` · `[Inference]` `[Environment]` `[Verification]` · **Core**
+- `Technical Report 2026` **VibeGame: Prompt-to-Game Development with AI-Native Engine and Self-Evolving Adversarial Agent Team**. [[arXiv]](https://arxiv.org/abs/2610.33106) [[paper]](https://github.com/tettethu/VibeGame/blob/main/technical_report.pdf) [[repo]](https://github.com/tettethu/VibeGame) [[project]](https://vibegame.tettet.org/) — `[Method]` · `[Inference]` `[Environment]` `[Verification]` · **Core**
   > Builds editable 2D games with an AI-native Phaser engine whose frame-synchronous play-testing and adversarial runtime verification route observed failures back into code, asset, and configuration revisions.<br>
   > **Verification:** Schema/static validity · frame-synchronous runtime behavior · functionality/visual quality/playability (qualitative).
 
@@ -1636,6 +1643,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Connect:** [3.10 Robot program and policy execution evaluation](#evaluation-robot-programs) · [4.10 Robot demonstrations, execution, and repair trajectories](#data-robot-programs) · [2.11 Real2Sim2Real: task learning and real execution](#methods-real2sim2real) · [2.12 Learning from construction and interaction experience](#methods-experience) · [5.4 Action, policy, prediction, and verification capabilities](#section-5-4)
 
+<a id="paper-2610-29702"></a>
+<!-- mmac-record: {"id": "2610.29702", "scope": "Adjacent", "primary": "2.10", "task": 10} -->
+
+- `arXiv 2026.10` **CausGround: Causal Interaction Grounding for Adaptive Embodied Planning**. [[paper]](https://arxiv.org/abs/2610.29702) [[project]](https://causground.github.io/) — `[Method]` · `[Inference]` `[Environment]` · **Adjacent**
+  > Grounds RGB observations in object-level causal mechanisms and retrieves action preconditions and effects to guide a frozen planner’s skill selection, with simulation, recorded-skill replay, and qualitative robot demonstrations.<br>
+  > **Verification:** Task success and progress · causal-library ablations · renderer-corrected VirtualHome · replay-based RoboCasa; two qualitative hardware tasks.
+
 <a id="paper-2610-36533"></a>
 <!-- mmac-record: {"id": "2610.36533", "scope": "Core", "primary": "2.10", "task": 10} -->
 
@@ -1806,6 +1820,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Connect:** [3.11 Real2Sim2Real utility and real-transfer evaluation](#evaluation-real2sim2real) · [4.11 Real2Sim2Real environments, policies, and paired transfer records](#data-real2sim2real) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.10 Robot program and policy development](#methods-robot-programs) · [5.4 Action, policy, prediction, and verification capabilities](#section-5-4)
 
+<a id="paper-2610-34186"></a>
+<!-- mmac-record: {"id": "2610.34186", "scope": "Adjacent", "primary": "2.11", "task": 11} -->
+
+- `arXiv 2026.10` **HuGe: Scaling Humanoid Generalist Vision-Language-Action Models with Egocentric Experience**. [[paper]](https://arxiv.org/abs/2610.34186) [[project]](https://yliu-cs.github.io/HuGe/) [[code]](https://github.com/yliu-cs/HuGe) — `[Method]` · `[Data Curation]` `[Training]` · **Adjacent**
+  > Aligns egocentric human experience with humanoid observations and SONIC action latents for staged VLA training, connecting large-scale motion data to a frozen whole-body controller.<br>
+  > **Verification:** HumanoidArena simulation · pseudo-proprioception/data ablations · 30 trials per configuration on one G1 pick-and-drop task; limited hardware scope.
+
 <a id="paper-2610-10479"></a>
 <!-- mmac-record: {"id": "2610.10479", "scope": "Core", "primary": "2.11", "task": 11} -->
 
@@ -1969,6 +1990,13 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 **Boundary.** Static screenshot matching, multi-state functionality, and repository repair require different protocols. Specify available reference access, tools, budgets, and hidden tests; broad artifact benchmarks also span other directions.
 
 **Connect:** [2.1 Visual software engineering and application recreation](#methods-software) · [4.1 Software requirements, application observations, and development traces](#data-software) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
+
+<a id="paper-2610-35138"></a>
+<!-- mmac-record: {"id": "2610.35138", "scope": "Adjacent", "primary": "3.1", "task": 1} -->
+
+- `arXiv 2026.10` **Co-Design Bench: Multimodal Collaborative Coding Evaluation for Agentic Models**. [[paper]](https://arxiv.org/abs/2610.35138) [[project]](https://codesignbench.github.io/) [[code]](https://github.com/Wiselnn570/Co-Design-Bench) [[data]](https://huggingface.co/datasets/Wiselnn/Co-Design-Bench) — `[Benchmark]` `[Dataset]` · `[Inference]` `[Verification]` · **Adjacent**
+  > Evaluates edits to existing applications against hidden requirements using source, rendered interfaces, and interaction evidence, with an independent refutation stage that challenges positive judgments.<br>
+  > **Verification:** 273 tasks / 2,331 criteria in the paper · strict vs. full completion · model–harness sensitivity; public release: 96 ME tasks / 521 criteria.
 
 <a id="paper-2610-29014"></a>
 <!-- mmac-record: {"id": "2610.29014", "scope": "Adjacent", "primary": "3.1", "task": 1} -->
@@ -2242,6 +2270,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Evaluation settings in method papers**
 
+- [WeVisCut](#paper-2610-38352) · **Core** · [2.4](#methods-media) — 100 held-out script-to-video tasks, delivery and quality diagnostics, and blinded human ratings.
 - [Designer-RSI](#paper-2609-22086) · **Core** · [2.12](#methods-experience)
 - [Editable Visual Design](#paper-2609-04034) · **Core** · [2.4](#methods-media)
 - [ManimAgent](#paper-2606-30296) · **Core** · [2.4](#methods-media)
@@ -2660,6 +2689,13 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Connect:** [2.10 Robot program and policy development](#methods-robot-programs) · [4.10 Robot demonstrations, execution, and repair trajectories](#data-robot-programs) · [3.11 Real2Sim2Real utility and real-transfer evaluation](#evaluation-real2sim2real) · [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience)
 
+<a id="paper-2610-31670"></a>
+<!-- mmac-record: {"id": "2610.31670", "scope": "Adjacent", "primary": "3.10", "task": 10} -->
+
+- `arXiv 2026.10` **Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success**. [[paper]](https://arxiv.org/abs/2610.31670) [[project]](https://yunfeixie233.github.io/s2/) [[code]](https://github.com/yunfeixie233/sensorimotor-alignment) — `[Benchmark]` · `[Verification]` · **Adjacent**
+  > Measures alignment between sensory embeddings and recorded motion neighborhoods as an offline proxy for prioritizing embodied models before costly closed-loop evaluation.<br>
+  > **Verification:** Cross-family correlations · embodiment mismatch and confound controls · reused hardware results; the strongest real-policy correlation uses an exploratory horizon.
+
 <a id="paper-2610-22471"></a>
 <!-- mmac-record: {"id": "2610.22471", "scope": "Adjacent", "primary": "3.10", "task": 10} -->
 
@@ -2869,6 +2905,8 @@ This is a research-resource index, not a claim that every linked paper releases 
 - [ArtifactsBench](#paper-2507-04952) · **Adjacent** · [3.1](#evaluation-software)
 
 **Dataset contributions**
+
+- [Co-Design Bench](#paper-2610-35138) · **Adjacent** · [3.1](#evaluation-software) — Released ME subset: 96 tasks and 521 criteria; the 273-task paper evaluation also includes repository edits.
 
 <a id="paper-2610-33149"></a>
 <!-- mmac-record: {"id": "2610.33149", "scope": "Adjacent", "primary": "4.1", "task": 1} -->
@@ -3265,6 +3303,8 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 | Capability | Resource and sources | Inputs → outputs | Role in a workflow |
 |---|---|---|---|
+| Geometry-conditioned subject videos | **OmniShowcase: Omnidirectional Subject-Consistent Video Generation from Multi-View Images** [[paper]](https://arxiv.org/abs/2610.35684) · [[project]](https://justin4ai.github.io/OmniShowcase/) · [[release status]](https://github.com/justin4ai/OmniShowcase) | Multiple reference images + motion prompt → subject-consistent video, conditioned on reconstructed surface-normal turntables | Combines multi-view reconstruction with a LoRA-adapted video generator for viewpoint changes around static subjects; non-rigid motion remains limited, and code/data release is planned. |
+| Animatable stylized hair assets | **HairDeck: Animation-Ready Stylized Hair Cards from a Single Image** [[paper]](https://arxiv.org/abs/2610.40599) · [[code]](https://github.com/hyz317/HairDeck) · [[weights]](https://huggingface.co/hyz317/HairDeck) | Single image → separate hair-card geometry, per-card UVs and spring-bone chains; GLB / VRM export | Uses set diffusion to generate artist-style hair primitives and a second model for their animation rig; supplies editable avatar assets, with no texture generation or agent repair loop. |
 | Multi-view texture consolidation | **Texture Consolidation of Generated Multi-View Renderings** [[paper]](https://arxiv.org/abs/2610.36098) · [[code]](https://github.com/hliuw/TextureConsolidation) | UV-atlased triangle mesh + sparse renders/photos + camera parameters → one coherent color texture | Aligns multi-view appearance with mesh-based optical flow and confidence-aware gradient-domain stitching; complements image generators while preserving the mesh geometry. |
 | Dynamic 3D textures | **DynaMesh** — *DynaMesh: Dynamic 3D Texture Generation* [[paper]](https://arxiv.org/abs/2610.05529) · [[project]](https://threedle.github.io/dynamesh/) | Mesh + effect prompt → one fixed mesh with a time-varying texture sequence | Combines a reference video with temporal conditioning and per-shape adapters on a 3D generator; appearance evolves while geometry stays fixed, supplying reusable surface effects rather than physical dynamics. |
 | Native 3D texture generation | **Tex-Zero** — *Does Native 3D Texture Generation Necessarily Require 3D Assets for Training?* [[paper]](https://arxiv.org/abs/2609.34621) · [[repository docs]](https://github.com/wangjiangshan0725/Tex-Zero) | Geometry + multiview reference images → geometry-aligned 3D surface colors | Learns a shared image/texture representation from image-derived training samples, providing a texturing capability without requiring real textured 3D assets for training. |

@@ -49,7 +49,7 @@ Enable agents to **organize and combine model capabilities**, expanding their ab
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-10-31**
+**Last updated: 2026-11-01**
 
 </div>
 
@@ -1643,6 +1643,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Connect:** [3.10 Robot program and policy execution evaluation](#evaluation-robot-programs) · [4.10 Robot demonstrations, execution, and repair trajectories](#data-robot-programs) · [2.11 Real2Sim2Real: task learning and real execution](#methods-real2sim2real) · [2.12 Learning from construction and interaction experience](#methods-experience) · [5.4 Action, policy, prediction, and verification capabilities](#section-5-4)
 
+<a id="paper-2610-23334"></a>
+<!-- mmac-record: {"id": "2610.23334", "scope": "Adjacent", "primary": "2.10", "task": 10} -->
+
+- `arXiv 2026.10` **LAW: Unifying Language, Action, and World Modeling for Agentic Physical Intelligence**. [[paper]](https://arxiv.org/abs/2610.23334) [[code]](https://github.com/hey-cjj/LAW) [[project]](https://hey-cjj.github.io/LAW-project/) [[data]](https://huggingface.co/datasets/KAITANG2003/LAW-RoboTwin-VLM-Training) — `[Method]` · `[Training]` `[Inference]` `[Environment]` `[Verification]` · **Adjacent**
+  > Coordinates a world-action model with shared-backbone VLM experts for subtask planning, action valuation, and asynchronous progress checks, adapting robot decisions to fresh visual observations without rewriting policy code.<br>
+  > **Verification:** 50-task RoboTwin success · three real-robot tasks with task-specific demonstrations · action-selection, memory and expert ablations; future video generation is used in training, not explicit inference-time rollout scoring.
+
 <a id="paper-2610-29702"></a>
 <!-- mmac-record: {"id": "2610.29702", "scope": "Adjacent", "primary": "2.10", "task": 10} -->
 
@@ -1850,6 +1857,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 **Boundary.** Distinguish learning the builder from learning the operator in a generated environment. Within-task iteration and static expert skills do not by themselves establish cross-task learning.
 
 **Connect:** [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [2.2 GUI and software training-environment synthesis](#methods-gui-environments) · [5.5 Skills, tool bridges, and reusable workflows](#section-5-5) · [6.5 From construction experience to transferable capability](#section-6-5)
+
+<a id="paper-2610-38568"></a>
+<!-- mmac-record: {"id": "2610.38568", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.10` **A-RSI: Adaptive Task Refresh for Zero-Data Multimodal Self-Improvement**. [[paper]](https://arxiv.org/abs/2610.38568) — `[Method]` · `[Data Curation]` `[Training]` `[Verification]` · **Adjacent**
+  > Uses a fixed library of model-authored rendering programs to produce independently checkable visual tasks, refreshing the solver’s training pool when logged learning signals weaken rather than rewriting generators online.<br>
+  > **Verification:** Eleven-benchmark mean · fresh-task budget · fixed-pool and continuous-refresh comparisons · answer audits; single-run comparisons and missing matched-timing control limit causal claims.
 
 <a id="paper-2610-36925"></a>
 <!-- mmac-record: {"id": "2610.36925", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
@@ -2226,6 +2240,13 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 **Boundary.** Native editability, rendering success, visual preference, and information fidelity are different properties. Cross-page and cross-frame errors require corresponding tests.
 
 **Connect:** [2.4 Documents and visual media](#methods-media) · [4.4 Documents, media assets, and construction/editing traces](#data-media) · [3.3 Chart, scientific visualization, and graphics-editing evaluation](#evaluation-graphics) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
+
+<a id="paper-2610-38425"></a>
+<!-- mmac-record: {"id": "2610.38425", "scope": "Adjacent", "primary": "3.4", "task": 4} -->
+
+- `arXiv 2026.10` **IntReal: A Real-World Dataset and Benchmark for Multimodal Interleaved Generation**. [[paper]](https://arxiv.org/abs/2610.38425) [[code]](https://github.com/yushaohan/IntReal) [[project]](https://yushaohan.github.io/IntReal/) [[data]](https://huggingface.co/datasets/yushaohan/IntReal-100K) — `[Benchmark]` `[Dataset]` · `[Training]` `[Verification]` · **Adjacent**
+  > Pairs real-source interleaved text–image data with specialist evaluators for holistic quality and context-conditioned fidelity, distinguishing post-generation evaluation from the generator’s own feedback loop.<br>
+  > **Verification:** 600 test tasks across four categories · seven metrics · expert-preference agreement · selected cross-judge ranking checks · post-training utility; image-count and human-preference checks are distinct.
 
 <a id="paper-2610-37341"></a>
 <!-- mmac-record: {"id": "2610.37341", "scope": "Core", "primary": "3.4", "task": 4} -->
@@ -2871,6 +2892,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Benchmark contributions**
 
+- [IntReal](#paper-2610-38425) · **Adjacent** · [3.4](#evaluation-media) — Expert-preference comparisons and selected cross-judge rank checks examine the reliability of distinct interleaved-generation metrics.
 - [BlenderWorld](#work-blenderworld) · **Core** · [3.5](#evaluation-cad-3d) — independent scene/visual judging and human alignment.
 - [Text-to-CAD Evaluation with CADTests](#paper-2605-07807) · **Core** · [3.5](#evaluation-cad-3d)
 
@@ -2992,6 +3014,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Dataset contributions**
 
+- [IntReal](#paper-2610-38425) · **Adjacent** · [3.4](#evaluation-media) — IntReal-100K provides curated text–image sequences, with 600 held-out tasks and image-level rubrics; underlying media retain their source terms.
 - [CineRecon](#paper-2610-16577) · **Core** · [3.5](#evaluation-cad-3d)
 - [OCR-EDR](#paper-2609-03445) · **Core** · [2.4](#methods-media)
 - [Animation2Code](#paper-2606-28593) · **Core** · [3.4](#evaluation-media)
@@ -3184,6 +3207,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Dataset contributions**
 
+- [LAW](#paper-2610-23334) · **Adjacent** · [2.10](#methods-robot-programs) — RoboTwin demonstrations and success/failure material for WAM/VLM training are released with separate manifests and licensing scopes.
 - [Awomo-SimDataEngine](#paper-2610-02274) · **Core** · [2.8](#methods-world-models)
 
 **Data-construction contributions**
@@ -3224,6 +3248,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Data-construction contributions**
 
+- [A-RSI](#paper-2610-38568) · **Adjacent** · [2.12](#methods-experience) — Frozen rendering templates derive visual tasks and reference answers from shared parameters; adaptive refresh selects training experience rather than editing the templates.
 - [RecreationWorld](#paper-2609-22000) · **Core** · [2.1](#methods-software)
 - [WebWorld](#paper-2608-30530) · **Core** · [2.1](#methods-software)
 - [RSIGame](#paper-2609-39045) · **Core** · [2.7](#methods-games)
@@ -3284,6 +3309,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 | Capability | Resource and sources | Inputs → outputs | Role in a workflow |
 |---|---|---|---|
+| Grounded omni-modal parsing | **Youtu-Parsing-Omni: One Encoder, One Schema, All Modalities** [[paper]](https://arxiv.org/abs/2610.39301) · [[code]](https://github.com/TencentCloudADP/youtu-parsing) · [[weights]](https://huggingface.co/tencent/Youtu-Parsing-Omni) | Documents / images / audio / video → JSON records with boxes, timestamps and structured content | Uses a shared encoder and OmniSchema to expose source-grounded content across ten parsing tasks, supporting agent perception and inspection; dense autoregressive decoding remains a throughput limitation. |
 | Feed-forward 4D perception | **Gen4P** — *Gen4P: Video Generators are 4D Perceivers* [[paper]](https://arxiv.org/abs/2610.22371) · [[project]](https://gen4p.github.io/) · [[repository]](https://github.com/yitongx/Gen4P) | Monocular video + spatiotemporal queries → 3D tracks, geometry/depth, and camera estimates | Adapts a video generator with single-pass encoding and on-demand decoding, optionally reusing a frozen depth adapter; supplies scene measurements rather than an autonomous action loop. Installation and usage remain work in progress. |
 | Typed spatial decisions | **MJev-Spatial** — *MJev-Spatial: System One Spatial Intelligence via Native Attention Matching* [[paper]](https://arxiv.org/abs/2610.22276) · [[repository docs]](https://github.com/Fr0zenCrane/MJev-Spatial) · [[weights]](https://huggingface.co/mindlab-research/MJev-Spatial-4B) | Image + spatial question + candidate contract → option, scalar, or image point with scores | Uses native attention matching instead of answer-token generation; each decision is one pass, while scalar/point refinement can require multiple stages. A perception component evaluated offline, not evidence of robot execution. |
 
@@ -3303,6 +3329,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 | Capability | Resource and sources | Inputs → outputs | Role in a workflow |
 |---|---|---|---|
+| Semantic-to-pixel image generation | **Know, then Draw: A New Learning Paradigm for Visual Generation** [[paper]](https://arxiv.org/abs/2610.37626) | Text → semantic autoregressive tokens → diffusion-rendered image | Separates semantic acquisition from pixel rendering, using language-supervised visual tokens to condition a diffusion renderer; provides a paper-described text-to-image generation component. |
 | Geometry-conditioned subject videos | **OmniShowcase: Omnidirectional Subject-Consistent Video Generation from Multi-View Images** [[paper]](https://arxiv.org/abs/2610.35684) · [[project]](https://justin4ai.github.io/OmniShowcase/) · [[release status]](https://github.com/justin4ai/OmniShowcase) | Multiple reference images + motion prompt → subject-consistent video, conditioned on reconstructed surface-normal turntables | Combines multi-view reconstruction with a LoRA-adapted video generator for viewpoint changes around static subjects; non-rigid motion remains limited, and code/data release is planned. |
 | Animatable stylized hair assets | **HairDeck: Animation-Ready Stylized Hair Cards from a Single Image** [[paper]](https://arxiv.org/abs/2610.40599) · [[code]](https://github.com/hyz317/HairDeck) · [[weights]](https://huggingface.co/hyz317/HairDeck) | Single image → separate hair-card geometry, per-card UVs and spring-bone chains; GLB / VRM export | Uses set diffusion to generate artist-style hair primitives and a second model for their animation rig; supplies editable avatar assets, with no texture generation or agent repair loop. |
 | Multi-view texture consolidation | **Texture Consolidation of Generated Multi-View Renderings** [[paper]](https://arxiv.org/abs/2610.36098) · [[code]](https://github.com/hliuw/TextureConsolidation) | UV-atlased triangle mesh + sparse renders/photos + camera parameters → one coherent color texture | Aligns multi-view appearance with mesh-based optical flow and confidence-aware gradient-domain stitching; complements image generators while preserving the mesh geometry. |
@@ -3417,6 +3444,7 @@ These layers are complementary rather than mutually exclusive. For example, an a
 
 | Capability | Resource and sources | Inputs → outputs | Role in a workflow |
 |---|---|---|---|
+| Camera-controlled visual world prediction | **L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory** [[paper]](https://arxiv.org/abs/2610.40614) · [[project]](https://cvlab-kaist.github.io/L3G-World/) · [[release status]](https://github.com/cvlab-kaist/L3G-World) | Image + text + camera trajectory → video chunks and persistent latent 3D Gaussian memory | Alternates video diffusion with selective Gaussian-memory updates and renders memory directly into latent space for consistent revisits; predicts visual worlds, with code and checkpoints listed as planned releases. |
 | Sensor diagnosis and input repair | **When Black-Box Robot Policies Fail: Online Sensor Diagnosis and Repair with a Transparent Surrogate** [[paper]](https://arxiv.org/abs/2610.36852) | Sensor streams + frozen-policy actions + healthy gait references → fault diagnosis and repaired policy inputs | MBD/PRR uses an additive surrogate to diagnose sensor faults and repair inputs without policy gradients; evaluated on simulated quadrupeds, with no demonstrated LLM orchestration or hardware deployment. |
 | Interactive world simulation | **Genie 4** [[official blog]](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/) | Prompts, reference images, navigation, and live edits → interactive audiovisual worlds. | Research preview that combines generative simulation with Gemini planning and frame-based checks; access is limited to trusted testers. Spatial accuracy, physical interactions, and long-term consistency remain limitations; robotics examples are generated simulations. |
 | Adaptive action-horizon correction | **VLA-Corrector: Lightweight Detect-and-Correct Inference for Adaptive Action Horizon** [[paper]](https://arxiv.org/abs/2607.01804) · [[code]](https://github.com/ZJU-OmniAI/vla-corrector) | Frozen-VLA visual features + executed actions → drift signal, chunk truncation, and a guided recovery replan. | A reusable ~40M external corrector for action-chunked VLAs; evaluated in simulation and on AgileX PiPER. Code is available; trained corrector weights and demonstration data are not included. |
@@ -3451,6 +3479,7 @@ The list below is a practical starting point rather than a security audit or end
 
 | Capability | Resource | Form and provenance | Why it matters for the closed loop |
 |---|---|---|---|
+| Staged Blender production and review | **Blender AI Plugin** [[repository]](https://github.com/proyecto26/blender-ai-plugin) | Community skills + MCP workflows and bpy scripts; MIT (Proyecto 26 / original arjun988 skill pack) | Routes briefs and references to specialist skills, pairs stage gates with viewport captures, and records geometry/export checks; supplies a reusable production workflow rather than a measured autonomous-agent benchmark. |
 | Browser building and testing | [Playwright MCP](https://github.com/microsoft/playwright-mcp) · [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) | Official MCP / CLI + skills | Exposes accessibility structure, screenshots, interaction, console and network evidence, and performance traces. |
 | Human-to-agent visual bug reports | [Shotback](https://github.com/DCCA/shotback) | Community browser extension + skill; MIT | Packages annotated screenshots with CSS selectors, React component paths, viewport context, and readable failed requests; supports before/after recapture for human-guided repairs. |
 | Evidence-gated UI repair | [ReproSight](https://github.com/tungcorn/ReproSight) | Community CLI; MIT | Gives an external coding agent browser geometry, screenshots, CSS source candidates, isolated workspaces, and target/regression checks before human review; its flagship demo uses a deterministic mock provider, not a real-model accuracy benchmark. |

@@ -49,7 +49,7 @@
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-10-31**
+**最后更新：2026-11-01**
 
 </div>
 
@@ -1643,6 +1643,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.10 机器人程序与策略的执行评测](#evaluation-robot-programs) · [4.10 机器人演示、执行与程序／策略修复轨迹](#data-robot-programs) · [2.11 Real2Sim2Real：任务学习与真实执行](#methods-real2sim2real) · [2.12 从构建与交互经验学习](#methods-experience) · [5.4 动作、策略、预测与验证能力](#section-5-4)
 
+<a id="paper-2610-23334"></a>
+<!-- mmac-record: {"id": "2610.23334", "scope": "Adjacent", "primary": "2.10", "task": 10} -->
+
+- `arXiv 2026.10` **LAW: Unifying Language, Action, and World Modeling for Agentic Physical Intelligence**. [[论文]](https://arxiv.org/abs/2610.23334) [[代码]](https://github.com/hey-cjj/LAW) [[项目]](https://hey-cjj.github.io/LAW-project/) [[数据]](https://huggingface.co/datasets/KAITANG2003/LAW-RoboTwin-VLM-Training) — `[Method]` · `[Training]` `[Inference]` `[Environment]` `[Verification]` · **Adjacent**
+  > 用共享骨干的 VLM 专家协调世界动作模型，分别负责子任务规划、动作估值与异步进度检查，根据新的视觉观测调整机器人决策。<br>
+  > **验证维度：** 50 项 RoboTwin 任务成功率 · 使用任务示教训练的三项实机任务 · 动作选择、记忆与专家消融；未来视频生成用于训练，不是推理时的显式视频试演评分。
+
 <a id="paper-2610-29702"></a>
 <!-- mmac-record: {"id": "2610.29702", "scope": "Adjacent", "primary": "2.10", "task": 10} -->
 
@@ -1850,6 +1857,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 单次产物修订与跨任务能力改进分别验证；构建轨迹训练和在生成环境中训练操作策略也具有不同学习对象。
 
 **关联阅读：** [3.12 经验学习与跨任务泛化评测](#evaluation-experience) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [2.2 GUI／软件训练环境合成](#methods-gui-environments) · [5.5 Skills、工具桥与可复用工作流](#section-5-5) · [6.5 从构建经验到可迁移能力](#section-6-5)
+
+<a id="paper-2610-38568"></a>
+<!-- mmac-record: {"id": "2610.38568", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.10` **A-RSI: Adaptive Task Refresh for Zero-Data Multimodal Self-Improvement**. [[论文]](https://arxiv.org/abs/2610.38568) — `[Method]` · `[Data Curation]` `[Training]` `[Verification]` · **Adjacent**
+  > 用固定的模型编写渲染程序生成可独立核对答案的视觉任务，在训练日志显示学习信号减弱时刷新求解器题池，而不是在线改写生成程序。<br>
+  > **验证维度：** 十一基准平均分 · 新任务预算 · 固定题池与持续刷新对比 · 答案审计；单次运行及缺少匹配刷新时刻的对照限制因果结论。
 
 <a id="paper-2610-36925"></a>
 <!-- mmac-record: {"id": "2610.36925", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
@@ -2226,6 +2240,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 原生可编辑结构、渲染成功、视觉偏好和信息保真是不同属性；跨页与跨帧错误需要相应测试。
 
 **关联阅读：** [2.4 文档与视觉媒体构建](#methods-media) · [4.4 文档、媒体素材与构建／编辑过程](#data-media) · [3.3 图表、科学可视化与图形编辑评测](#evaluation-graphics) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
+
+<a id="paper-2610-38425"></a>
+<!-- mmac-record: {"id": "2610.38425", "scope": "Adjacent", "primary": "3.4", "task": 4} -->
+
+- `arXiv 2026.10` **IntReal: A Real-World Dataset and Benchmark for Multimodal Interleaved Generation**. [[论文]](https://arxiv.org/abs/2610.38425) [[代码]](https://github.com/yushaohan/IntReal) [[项目]](https://yushaohan.github.io/IntReal/) [[数据]](https://huggingface.co/datasets/yushaohan/IntReal-100K) — `[Benchmark]` `[Dataset]` · `[Training]` `[Verification]` · **Adjacent**
+  > 结合真实来源的图文交错数据与专家评测器，分别诊断整体质量和上下文条件下的图像忠实度，并区分生成后评测与生成器自身的反馈闭环。<br>
+  > **验证维度：** 四类共 600 项测试任务 · 七项指标 · 专家偏好一致性 · 部分指标的跨评测器排名核对 · 后训练效果；图像数量检查与人工偏好验证分开。
 
 <a id="paper-2610-37341"></a>
 <!-- mmac-record: {"id": "2610.37341", "scope": "Core", "primary": "3.4", "task": 4} -->
@@ -2871,6 +2892,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **Benchmark 工作**
 
+- [IntReal](#paper-2610-38425) · **Adjacent** · [3.4](#evaluation-media) — 通过专家偏好比较和部分指标的跨评测器排名检查，研究图文交错生成指标的可靠性。
 - [BlenderWorld](#work-blenderworld) · **Core** · [3.5](#evaluation-cad-3d) — 独立场景／视觉判定及人类一致性。
 - [Text-to-CAD Evaluation with CADTests](#paper-2605-07807) · **Core** · [3.5](#evaluation-cad-3d)
 
@@ -2992,6 +3014,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **数据集工作**
 
+- [IntReal](#paper-2610-38425) · **Adjacent** · [3.4](#evaluation-media) — IntReal-100K 提供整理后的图文序列、600 条留出测试任务及图像级标准，原始媒体保留各来源条款。
 - [CineRecon](#paper-2610-16577) · **Core** · [3.5](#evaluation-cad-3d)
 - [OCR-EDR](#paper-2609-03445) · **Core** · [2.4](#methods-media)
 - [Animation2Code](#paper-2606-28593) · **Core** · [3.4](#evaluation-media)
@@ -3184,6 +3207,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **数据集工作**
 
+- [LAW](#paper-2610-23334) · **Adjacent** · [2.10](#methods-robot-programs) — 发布带独立清单和许可范围的 RoboTwin 示教、成功／失败资料，支持 WAM 与 VLM 训练。
 - [Awomo-SimDataEngine](#paper-2610-02274) · **Core** · [2.8](#methods-world-models)
 
 **数据构造工作**
@@ -3224,6 +3248,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **数据构造工作**
 
+- [A-RSI](#paper-2610-38568) · **Adjacent** · [2.12](#methods-experience) — 冻结渲染模板从共享参数导出视觉任务和参考答案，自适应刷新负责选择训练经验而非编辑模板。
 - [RecreationWorld](#paper-2609-22000) · **Core** · [2.1](#methods-software)
 - [WebWorld](#paper-2608-30530) · **Core** · [2.1](#methods-software)
 - [RSIGame](#paper-2609-39045) · **Core** · [2.7](#methods-games)
@@ -3284,6 +3309,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 | 能力 | 资源与来源 | 输入 → 输出 | 工作流中的作用 |
 |---|---|---|---|
+| 带定位的全模态解析 | **Youtu-Parsing-Omni: One Encoder, One Schema, All Modalities** [[论文]](https://arxiv.org/abs/2610.39301) · [[代码]](https://github.com/TencentCloudADP/youtu-parsing) · [[权重]](https://huggingface.co/tencent/Youtu-Parsing-Omni) | 文档／图像／音频／视频 → 带框、时间戳和结构化内容的 JSON 记录 | 用共享编码器和 OmniSchema 在十类解析任务中提供可追溯到来源的内容，为 Agent 感知与检查提供接口；密集内容的自回归解码吞吐量仍受限。 |
 | 前馈 4D 感知 | **Gen4P** — *Gen4P: Video Generators are 4D Perceivers* [[论文]](https://arxiv.org/abs/2610.22371) · [[项目]](https://gen4p.github.io/) · [[仓库]](https://github.com/yitongx/Gen4P) | 单目视频 + 时空查询 → 3D 轨迹、几何／深度与相机估计 | 将视频生成器适配为单次编码、按需解码的感知工具，可复用冻结深度适配器；提供场景测量，而非自主行动闭环。安装与使用接口仍在开发中。 |
 | 类型化空间决策 | **MJev-Spatial** — *MJev-Spatial: System One Spatial Intelligence via Native Attention Matching* [[论文]](https://arxiv.org/abs/2610.22276) · [[仓库文档]](https://github.com/Fr0zenCrane/MJev-Spatial) · [[权重]](https://huggingface.co/mindlab-research/MJev-Spatial-4B) | 图像 + 空间问题 + 候选约定 → 带评分的选项、标量或图像点 | 用原生注意力匹配代替答案 Token 生成；每次决策单次前向，标量／点位细化可能需多阶段。属于离线评测的感知组件，不是机器人执行证据。 |
 
@@ -3303,6 +3329,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 | 能力 | 资源与来源 | 输入 → 输出 | 在工作流中的作用 |
 |---|---|---|---|
+| 语义到像素的图像生成 | **Know, then Draw: A New Learning Paradigm for Visual Generation** [[论文]](https://arxiv.org/abs/2610.37626) | 文本 → 自回归语义 token → 扩散渲染图像 | 将语义学习与像素渲染分开，用语言监督的视觉 token 为扩散渲染器提供条件；为文本生图提供语义与渲染分工的模型组件。 |
 | 几何条件的主体视频 | **OmniShowcase: Omnidirectional Subject-Consistent Video Generation from Multi-View Images** [[paper]](https://arxiv.org/abs/2610.35684) · [[project]](https://justin4ai.github.io/OmniShowcase/) · [[release status]](https://github.com/justin4ai/OmniShowcase) | 多张参考图 + 相机运动提示 → 以重建法线转台为条件的主体一致视频 | 结合多视角重建与 LoRA 视频生成器，支持围绕静态主体的视角变化；非刚体运动仍受限，代码和数据处于发布计划中。 |
 | 可动画化的风格化发型资产 | **HairDeck: Animation-Ready Stylized Hair Cards from a Single Image** [[paper]](https://arxiv.org/abs/2610.40599) · [[code]](https://github.com/hyz317/HairDeck) · [[weights]](https://huggingface.co/hyz317/HairDeck) | 单张图像 → 独立发片几何、逐片 UV 和弹簧骨链；支持 GLB／VRM 导出 | 用集合扩散生成艺术家式发片基元，再由第二模型生成动画骨链，为角色工作流提供可编辑资产；不生成纹理，也不自带 Agent 修复闭环。 |
 | 多视图纹理整合 | **Texture Consolidation of Generated Multi-View Renderings** [[paper]](https://arxiv.org/abs/2610.36098) · [[code]](https://github.com/hliuw/TextureConsolidation) | 带 UV 图集的三角网格 + 稀疏渲染／照片 + 相机参数 → 连贯颜色纹理 | 以网格光流和置信度加权的梯度域拼接对齐多视图外观，在保留网格几何的同时补充图像生成器的纹理整合能力。 |
@@ -3417,6 +3444,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 | 能力 | 资源与来源 | 输入 → 输出 | 在工作流中的作用 |
 |---|---|---|---|
+| 相机控制的视觉世界预测 | **L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory** [[论文]](https://arxiv.org/abs/2610.40614) · [[项目]](https://cvlab-kaist.github.io/L3G-World/) · [[发布计划]](https://github.com/cvlab-kaist/L3G-World) | 图像 + 文本 + 相机轨迹 → 视频块和持久潜在 3D 高斯记忆 | 交替运行视频扩散与选择性高斯记忆更新，将记忆直接渲染到潜空间以保持重访一致性；提供视觉世界预测，代码和权重仍列为待发布。 |
 | 传感器诊断与输入修复 | **When Black-Box Robot Policies Fail: Online Sensor Diagnosis and Repair with a Transparent Surrogate** [[paper]](https://arxiv.org/abs/2610.36852) | 传感器流 + 冻结策略动作 + 健康步态参考 → 故障诊断与修复后的策略输入 | MBD／PRR通过可加性代理诊断传感器故障并修复输入，无需策略梯度；验证限于仿真四足机器人，未展示LLM编排或硬件部署。 |
 | 交互式世界模拟 | **Genie 4** [[官方博客]](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/) | 提示、参考图像、导航和实时编辑 → 可交互视听世界。 | 将生成式模拟与 Gemini 规划和逐帧检查结合的研究预览，仅面向可信测试者；空间准确性、物理交互与长程一致性仍有限，机器人案例为生成式仿真。 |
 | 自适应动作时域纠错 | **VLA-Corrector: Lightweight Detect-and-Correct Inference for Adaptive Action Horizon** [[paper]](https://arxiv.org/abs/2607.01804) · [[code]](https://github.com/ZJU-OmniAI/vla-corrector) | 冻结 VLA 的视觉特征 + 已执行动作 → 漂移信号、动作块截断及引导式恢复重规划。 | 面向分块动作 VLA 的约 40M 外部纠错器，已在仿真和 AgileX PiPER 上评测；提供代码，未包含训练后的纠错器权重与演示数据。 |
@@ -3451,6 +3479,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 | 能力 | 资源 | 形式与来源 | 对闭环的意义 |
 |---|---|---|---|
+| 分阶段 Blender 制作与检查 | **Blender AI Plugin** [[仓库]](https://github.com/proyecto26/blender-ai-plugin) | 社区 Skills + MCP 工作流与 bpy 脚本；MIT（Proyecto 26／原始 arjun988 技能包） | 将需求与参考图路由到专业技能，把阶段检查与视口截图结合，并记录几何和导出结果，提供可复用制作流程；不是经过测量的自主 Agent 基准。 |
 | 浏览器构建与测试 | [Playwright MCP](https://github.com/microsoft/playwright-mcp) · [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) | 官方 MCP / CLI + Skills | 暴露可访问性结构、截图、交互、控制台与网络证据，以及性能 Trace。 |
 | 人向 Agent 提交视觉缺陷 | [Shotback](https://github.com/DCCA/shotback) | 社区浏览器扩展 + Skill；MIT | 将标注截图与 CSS 选择器、React 组件路径、视口上下文及可读取的失败请求一起交付，并支持前后重截图比较，辅助人工反馈驱动的修复。 |
 | 证据驱动的 UI 修复 | [ReproSight](https://github.com/tungcorn/ReproSight) | 社区 CLI；MIT | 向外部 Coding Agent 提供浏览器几何、截图、CSS 源码候选、隔离工作区及目标／回归检查，再交由人工审阅；其主要 Demo 使用确定性的模拟提供器，并非真实模型准确率基准。 |

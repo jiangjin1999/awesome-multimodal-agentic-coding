@@ -3481,6 +3481,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 |---|---|---|---|
 | 分阶段 Blender 制作与检查 | **Blender AI Plugin** [[仓库]](https://github.com/proyecto26/blender-ai-plugin) | 社区 Skills + MCP 工作流与 bpy 脚本；MIT（Proyecto 26／原始 arjun988 技能包） | 将需求与参考图路由到专业技能，把阶段检查与视口截图结合，并记录几何和导出结果，提供可复用制作流程；不是经过测量的自主 Agent 基准。 |
 | 浏览器构建与测试 | [Playwright MCP](https://github.com/microsoft/playwright-mcp) · [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) | 官方 MCP / CLI + Skills | 暴露可访问性结构、截图、交互、控制台与网络证据，以及性能 Trace。 |
+| 基于证据的网页与移动端 QA | [agent-qa](https://vostride.com) · [MCP 文档](https://vostride.com/docs/agent-qa/mcp) | 官方 CLI + MCP；FSL-1.1-ALv2（限制竞争性商业服务） | 向编码 Agent 提供自然语言网页、Android 和 iOS 测试、截图、控制台/网络证据及判定纠正；持久 memidex 记忆与基于证据的自我改进在多次运行间保留已验证经验。 |
 | 人向 Agent 提交视觉缺陷 | [Shotback](https://github.com/DCCA/shotback) | 社区浏览器扩展 + Skill；MIT | 将标注截图与 CSS 选择器、React 组件路径、视口上下文及可读取的失败请求一起交付，并支持前后重截图比较，辅助人工反馈驱动的修复。 |
 | 证据驱动的 UI 修复 | [ReproSight](https://github.com/tungcorn/ReproSight) | 社区 CLI；MIT | 向外部 Coding Agent 提供浏览器几何、截图、CSS 源码候选、隔离工作区及目标／回归检查，再交由人工审阅；其主要 Demo 使用确定性的模拟提供器，并非真实模型准确率基准。 |
 | 设计到代码与设计回写 | [Figma MCP server](https://developers.figma.com/docs/figma-mcp-server/) | 官方 MCP + Skills | 允许 Agent 检查设计上下文、生成实现代码，并创建或更新原生 Figma 内容。 |

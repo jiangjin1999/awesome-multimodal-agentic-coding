@@ -49,7 +49,7 @@
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-11-01**
+**最后更新：2026-11-02**
 
 </div>
 
@@ -539,6 +539,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.2 GUI／软件训练环境构建与下游效用评测](#evaluation-gui-environments) · [4.2 GUI／软件训练环境、任务、奖励与操作轨迹](#data-gui-environments) · [1.4 何时成为环境：状态、动作、重置、任务与奖励](#section-1-4) · [2.1 视觉软件工程与应用复刻](#methods-software) · [2.12 从构建与交互经验学习](#methods-experience)
 
+<a id="paper-2608-15930"></a>
+<!-- mmac-record: {"id": "2608.15930", "scope": "Adjacent", "primary": "2.2", "task": 2} -->
+
+- `arXiv 2026.08` **UI-Mate: Advancing Open-Weight Foundation GUI Agents with In-Context Demonstrations**. [[论文]](https://arxiv.org/abs/2608.15930) [[代码]](https://github.com/Tencent/UI-Mate) [[数据]](https://huggingface.co/datasets/tencent/OSWorkerBench) — `[Method]` `[Benchmark]` `[Dataset]` · `[Environment]` `[Training]` `[Verification]` · **Adjacent**
+  > 将可执行桌面任务构造、能力覆盖均衡的操作者训练和示范引导工作流相结合，依据实时截图调整操作。<br>
+  > **验证维度：** 100 项 OSWorkerBench 任务 · 纯指令与同任务／变体示范协议 · 严格成功率与部分进度 · 初态、交付物及验证器检查。
+
 <a id="paper-2610-37567"></a>
 <!-- mmac-record: {"id": "2610.37567", "scope": "Core", "primary": "2.2", "task": 2} -->
 
@@ -587,6 +594,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 图表的数据语义、科学可视化的分析目标与 SVG／TikZ 的结构约束在内部区分；不能只用整体视觉相似度概括成功。
 
 **关联阅读：** [3.3 图表、科学可视化与图形编辑评测](#evaluation-graphics) · [4.3 图表数据、图形程序与编辑记录](#data-graphics) · [2.4 文档与视觉媒体构建](#methods-media) · [3.13 测试、奖励与评估器可靠性](#section-3-13) · [5.5 Skills、工具桥与可复用工作流](#section-5-5)
+
+<a id="paper-2610-13502"></a>
+<!-- mmac-record: {"id": "2610.13502", "scope": "Adjacent", "primary": "2.3", "task": 3} -->
+
+- `arXiv 2026.10` **Stride: Scale-Aware Multi-Agent Evolutionary Refinement for Infographic Generation**. [[论文]](https://arxiv.org/abs/2610.13502) [[项目]](https://github.com/SJTUSAI/Stride) — `[Method]` · `[Inference]` `[Verification]` · **Adjacent**
+  > 结合独立的约束评分与视觉定位，将信息图错误分派给冻结生成器重画或局部文字／公式修补，并保留内部评分提升的候选。<br>
+  > **验证维度：** BizGenEval、IGenBench、WISE · 路线／采样消融 · 人类与多模态评分一致性；局部编辑不涵盖图表几何，内部单调不保证独立评分提升。
 
 <a id="paper-2610-08106"></a>
 <!-- mmac-record: {"id": "2610.08106", "scope": "Core", "primary": "2.3", "task": 3} -->
@@ -1858,6 +1872,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.12 经验学习与跨任务泛化评测](#evaluation-experience) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [2.2 GUI／软件训练环境合成](#methods-gui-environments) · [5.5 Skills、工具桥与可复用工作流](#section-5-5) · [6.5 从构建经验到可迁移能力](#section-6-5)
 
+<a id="paper-2606-19930"></a>
+<!-- mmac-record: {"id": "2606.19930", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.06` **MobileForge: Annotation-Free Adaptation for Mobile GUI Agents with Hierarchical Feedback-Guided Policy Optimization**. [[论文]](https://arxiv.org/abs/2606.19930) [[代码]](https://github.com/kwai/MobileForge) [[项目]](https://mobile-forge.github.io/) [[数据]](https://huggingface.co/collections/lgy0404/mobileforge-datasets) — `[Method]` `[Dataset]` · `[Training]` `[Verification]` · **Adjacent**
+  > 从真实 App 探索中挖掘任务，跨尝试复用视觉 Critic 的纠错提示，并把优选决策转为带反馈条件的步骤级策略更新。<br>
+  > **验证维度：** AndroidWorld Pass@1/2/3 · 留出 MobileWorld 泛化 · 提示、评估器与任务筛选消融；学习对象是操作者。
+
 <a id="paper-2610-38568"></a>
 <!-- mmac-record: {"id": "2610.38568", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
 
@@ -2133,6 +2154,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **Benchmark 工作**
 
+- [UI-Mate](#paper-2608-15930) · **Adjacent** · [2.2](#methods-gui-environments) — OSWorkerBench 固定初始化与验证器，对照纯指令和示范引导的操作。
 - [Trace2World](#paper-2610-30792) · **Core** · [2.2](#methods-gui-environments)
 - [SoftwareGym](#paper-2610-12611) · **Core** · [2.2](#methods-gui-environments)
 
@@ -2781,6 +2803,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.11 Real2Sim2Real：任务学习与真实执行](#methods-real2sim2real) · [4.11 Real2Sim2Real 的环境、策略与配对迁移记录](#data-real2sim2real) · [3.9 面向 Agentic Real-to-Sim 的场景与交互构建评测](#evaluation-real-to-sim) · [3.10 机器人程序与策略的执行评测](#evaluation-robot-programs)
 
+<a id="paper-2610-34527"></a>
+<!-- mmac-record: {"id": "2610.34527", "scope": "Adjacent", "primary": "3.11", "task": 11} -->
+
+- `arXiv 2026.10` **How High Can GPT-6 Astra Climb in Contact-Rich Manipulation? PhysLadder: A Hierarchical, Matched Sim-Real Benchmark for Physical Interaction**. [[论文]](https://arxiv.org/abs/2610.34527) [[代码]](https://github.com/LLM4Robot/LLM4Robot-Bench) [[项目]](https://llm4robot.github.io/bench/) — `[Benchmark]` · `[Environment]` `[Verification]` · **Adjacent**
+  > 以配对的仿真和实机双臂接触任务，测量视觉动作选择在几何对齐、持续接触与接触重配置中的能力和失败；项目现由 LLM4Robot-Bench 维护。<br>
+  > **验证维度：** 16 项任务 · 每项每环境三次试验 · 共享结果标准 · 物理／视觉匹配与失败分析；仅单一模型，实机和仿真的执行预算不同。
+
 **方法论文中的评测设置**
 
 - [The Trinity](#paper-2610-36077) · **Adjacent** · [2.12](#methods-experience) — 冻结 Harness—技能配置后的仿真与两机器人实机比较。
@@ -2958,8 +2987,17 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.2 GUI／软件训练环境合成](#methods-gui-environments) · [3.2 GUI／软件训练环境构建与下游效用评测](#evaluation-gui-environments) · [4.1 软件需求、应用观测与开发／复刻轨迹](#data-software) · [4.12 跨任务构建、修复与技能学习资料](#data-experience)
 
+<a id="paper-2610-01215"></a>
+<!-- mmac-record: {"id": "2610.01215", "scope": "Adjacent", "primary": "4.2", "task": 2} -->
+
+- `arXiv 2026.10` **AutoGUIWorld: Image Generators as Visual World Models for GUI Agent**. [[论文]](https://arxiv.org/abs/2610.01215) [[模型]](https://huggingface.co/YangC777/AGW-35B) — `[Method]` · `[Data Curation]` `[Training]` `[Verification]` · **Adjacent**
+  > 用规划器和图像生成器合成动作条件的 GUI 截图轨迹，修复目标标注、过滤不一致转移后训练操作者，无需运行所描绘的应用。<br>
+  > **验证维度：** 79,266 条筛选步骤 · 定位／转移一致性审核 · 下游桌面和科学任务评分；生成式视觉转移与可执行软件环境分别评价。
+
 **数据集工作**
 
+- [MobileForge](#paper-2606-19930) · **Adjacent** · [2.12](#methods-experience) — 发布 3,249 个生成式移动任务、探索轨迹和训练分片，并单列评测结果归档。
+- [UI-Mate](#paper-2608-15930) · **Adjacent** · [2.2](#methods-gui-environments) — 发布办公任务包与示范轨迹，区分同任务／变体示范协议，并注明模拟应用服务依赖。
 - [Gym-Anything-RT](#paper-2610-37567) · **Core** · [2.2](#methods-gui-environments) — 已发布的小游戏程序、接口契约与验证资料。
 - [WildAWM](#paper-2610-26828) · **Adjacent** · [2.2](#methods-gui-environments) — 已发布的环境、指令、重置和验证器任务包。
 - [SoftwareGym](#paper-2610-12611) · **Core** · [2.2](#methods-gui-environments)
@@ -3329,6 +3367,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 | 能力 | 资源与来源 | 输入 → 输出 | 在工作流中的作用 |
 |---|---|---|---|
+| 语义规划的图像／视频生成编辑 | **Bernini: Latent Semantic Planning for Video Diffusion** [[代码]](https://github.com/bytedance/Bernini) · [[文档]](https://github.com/bytedance/Bernini/blob/main/docs/bernini.md) · [[权重]](https://huggingface.co/ByteDance/Bernini-Diffusers) | 提示 + 可选源／参考图像或视频 → 生成或编辑后的视觉媒体 | 将 Qwen2.5-VL 语义规划器连接到 Wan2.2 扩散渲染器，以统一任务接口提供生成／编辑；完整管线与独立渲染器版本均可作为媒体工具。 |
 | 语义到像素的图像生成 | **Know, then Draw: A New Learning Paradigm for Visual Generation** [[论文]](https://arxiv.org/abs/2610.37626) | 文本 → 自回归语义 token → 扩散渲染图像 | 将语义学习与像素渲染分开，用语言监督的视觉 token 为扩散渲染器提供条件；为文本生图提供语义与渲染分工的模型组件。 |
 | 几何条件的主体视频 | **OmniShowcase: Omnidirectional Subject-Consistent Video Generation from Multi-View Images** [[paper]](https://arxiv.org/abs/2610.35684) · [[project]](https://justin4ai.github.io/OmniShowcase/) · [[release status]](https://github.com/justin4ai/OmniShowcase) | 多张参考图 + 相机运动提示 → 以重建法线转台为条件的主体一致视频 | 结合多视角重建与 LoRA 视频生成器，支持围绕静态主体的视角变化；非刚体运动仍受限，代码和数据处于发布计划中。 |
 | 可动画化的风格化发型资产 | **HairDeck: Animation-Ready Stylized Hair Cards from a Single Image** [[paper]](https://arxiv.org/abs/2610.40599) · [[code]](https://github.com/hyz317/HairDeck) · [[weights]](https://huggingface.co/hyz317/HairDeck) | 单张图像 → 独立发片几何、逐片 UV 和弹簧骨链；支持 GLB／VRM 导出 | 用集合扩散生成艺术家式发片基元，再由第二模型生成动画骨链，为角色工作流提供可编辑资产；不生成纹理，也不自带 Agent 修复闭环。 |
@@ -3479,6 +3518,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 | 能力 | 资源 | 形式与来源 | 对闭环的意义 |
 |---|---|---|---|
+| 视频到场景的 Skills 与模型编排 | **AHa-3D: Agentic Tool Use for Real2Sim with GPT-6 Astra** [[代码]](https://github.com/KevinXu02/aha-3d) · [[示例流程]](https://github.com/KevinXu02/aha-3d/blob/main/docs/GETTING_STARTED.md) | 社区 Skills + Blender／模型工具；项目代码 Apache-2.0，第三方资产单列；视频 → 可编辑场景与预览 | KevinXu02 的工作流结合几何、分割和运动工具，由 Coding Agent 编写场景并分阶段视觉核查；office 示例展示 Gallery/X-ray 修订，各模型及第三方资产独立配置。 |
 | 分阶段 Blender 制作与检查 | **Blender AI Plugin** [[仓库]](https://github.com/proyecto26/blender-ai-plugin) | 社区 Skills + MCP 工作流与 bpy 脚本；MIT（Proyecto 26／原始 arjun988 技能包） | 将需求与参考图路由到专业技能，把阶段检查与视口截图结合，并记录几何和导出结果，提供可复用制作流程；不是经过测量的自主 Agent 基准。 |
 | 浏览器构建与测试 | [Playwright MCP](https://github.com/microsoft/playwright-mcp) · [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) | 官方 MCP / CLI + Skills | 暴露可访问性结构、截图、交互、控制台与网络证据，以及性能 Trace。 |
 | 人向 Agent 提交视觉缺陷 | [Shotback](https://github.com/DCCA/shotback) | 社区浏览器扩展 + Skill；MIT | 将标注截图与 CSS 选择器、React 组件路径、视口上下文及可读取的失败请求一起交付，并支持前后重截图比较，辅助人工反馈驱动的修复。 |

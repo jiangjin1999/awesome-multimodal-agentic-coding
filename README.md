@@ -49,7 +49,7 @@ Enable agents to **organize and combine model capabilities**, expanding their ab
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-11-01**
+**Last updated: 2026-11-02**
 
 </div>
 
@@ -539,6 +539,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Connect:** [3.2 Training-environment construction and downstream utility](#evaluation-gui-environments) · [4.2 GUI/software environments, tasks, rewards, and action traces](#data-gui-environments) · [1.4 From artifacts to environments: state, actions, resets, tasks, and rewards](#section-1-4) · [2.1 Visual software engineering and application recreation](#methods-software) · [2.12 Learning from construction and interaction experience](#methods-experience)
 
+<a id="paper-2608-15930"></a>
+<!-- mmac-record: {"id": "2608.15930", "scope": "Adjacent", "primary": "2.2", "task": 2} -->
+
+- `arXiv 2026.08` **UI-Mate: Advancing Open-Weight Foundation GUI Agents with In-Context Demonstrations**. [[paper]](https://arxiv.org/abs/2608.15930) [[code]](https://github.com/Tencent/UI-Mate) [[data]](https://huggingface.co/datasets/tencent/OSWorkerBench) — `[Method]` `[Benchmark]` `[Dataset]` · `[Environment]` `[Training]` `[Verification]` · **Adjacent**
+  > Couples executable desktop-task construction with capability-balanced operator training and demonstration-guided workflows that adapt to live screenshots rather than replaying fixed actions.<br>
+  > **Verification:** 100-task OSWorkerBench · instruction-only versus self-/variant-demo protocols · strict success and partial progress · setup, deliverable and verifier checks.
+
 <a id="paper-2610-37567"></a>
 <!-- mmac-record: {"id": "2610.37567", "scope": "Core", "primary": "2.2", "task": 2} -->
 
@@ -587,6 +594,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 **Boundary.** Chart semantics, scientific analysis goals, and SVG/TikZ structure impose different constraints; overall visual similarity alone cannot capture success.
 
 **Connect:** [3.3 Chart, scientific visualization, and graphics-editing evaluation](#evaluation-graphics) · [4.3 Chart data, graphics programs, and edit records](#data-graphics) · [2.4 Documents and visual media](#methods-media) · [3.13 Test, reward, and evaluator reliability](#section-3-13) · [5.5 Skills, tool bridges, and reusable workflows](#section-5-5)
+
+<a id="paper-2610-13502"></a>
+<!-- mmac-record: {"id": "2610.13502", "scope": "Adjacent", "primary": "2.3", "task": 3} -->
+
+- `arXiv 2026.10` **Stride: Scale-Aware Multi-Agent Evolutionary Refinement for Infographic Generation**. [[paper]](https://arxiv.org/abs/2610.13502) [[project]](https://github.com/SJTUSAI/Stride) — `[Method]` · `[Inference]` `[Verification]` · **Adjacent**
+  > Routes infographic failures between frozen-generator redraws and localized text/formula repairs using separate rubric verification and visual grounding, retaining only candidates with improved internal scores.<br>
+  > **Verification:** BizGenEval, IGenBench and WISE · route/sampling ablations · human–MLLM agreement; local edits exclude chart geometry, and internal monotonicity does not guarantee independent-score improvement.
 
 <a id="paper-2610-08106"></a>
 <!-- mmac-record: {"id": "2610.08106", "scope": "Core", "primary": "2.3", "task": 3} -->
@@ -1858,6 +1872,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Connect:** [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [2.2 GUI and software training-environment synthesis](#methods-gui-environments) · [5.5 Skills, tool bridges, and reusable workflows](#section-5-5) · [6.5 From construction experience to transferable capability](#section-6-5)
 
+<a id="paper-2606-19930"></a>
+<!-- mmac-record: {"id": "2606.19930", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.06` **MobileForge: Annotation-Free Adaptation for Mobile GUI Agents with Hierarchical Feedback-Guided Policy Optimization**. [[paper]](https://arxiv.org/abs/2606.19930) [[code]](https://github.com/kwai/MobileForge) [[project]](https://mobile-forge.github.io/) [[data]](https://huggingface.co/collections/lgy0404/mobileforge-datasets) — `[Method]` `[Dataset]` · `[Training]` `[Verification]` · **Adjacent**
+  > Adapts mobile GUI operators by mining tasks from real-app exploration, reusing visual-critic hints across attempts, and converting selected decisions into feedback-conditioned step-level policy updates.<br>
+  > **Verification:** AndroidWorld Pass@1/2/3 · held-out MobileWorld transfer · hint, evaluator and task-filtering ablations; learns the operator rather than constructing the app.
+
 <a id="paper-2610-38568"></a>
 <!-- mmac-record: {"id": "2610.38568", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
 
@@ -2133,6 +2154,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Benchmark contributions**
 
+- [UI-Mate](#paper-2608-15930) · **Adjacent** · [2.2](#methods-gui-environments) — OSWorkerBench controls initialization and verifiers while comparing instruction-only and demonstration-guided operation.
 - [Trace2World](#paper-2610-30792) · **Core** · [2.2](#methods-gui-environments)
 - [SoftwareGym](#paper-2610-12611) · **Core** · [2.2](#methods-gui-environments)
 
@@ -2781,6 +2803,13 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Connect:** [2.11 Real2Sim2Real: task learning and real execution](#methods-real2sim2real) · [4.11 Real2Sim2Real environments, policies, and paired transfer records](#data-real2sim2real) · [3.9 Scene and interaction construction for Agentic Real-to-Sim](#evaluation-real-to-sim) · [3.10 Robot program and policy execution evaluation](#evaluation-robot-programs)
 
+<a id="paper-2610-34527"></a>
+<!-- mmac-record: {"id": "2610.34527", "scope": "Adjacent", "primary": "3.11", "task": 11} -->
+
+- `arXiv 2026.10` **How High Can GPT-6 Astra Climb in Contact-Rich Manipulation? PhysLadder: A Hierarchical, Matched Sim-Real Benchmark for Physical Interaction**. [[paper]](https://arxiv.org/abs/2610.34527) [[code]](https://github.com/LLM4Robot/LLM4Robot-Bench) [[project]](https://llm4robot.github.io/bench/) — `[Benchmark]` · `[Environment]` `[Verification]` · **Adjacent**
+  > Pairs simulated and real dual-arm contact tasks to measure where visual action selection succeeds or fails across geometric alignment, sustained contact, and contact reconfiguration; the maintained project is LLM4Robot-Bench.<br>
+  > **Verification:** 16 tasks · three trials per task/environment · shared outcome criteria · physical/visual matching and failure analysis; single-model evidence, with different real/sim execution budgets.
+
 **Evaluation settings in method papers**
 
 - [The Trinity](#paper-2610-36077) · **Adjacent** · [2.12](#methods-experience) — frozen Harness–skill configurations in simulation and on two robots.
@@ -2958,8 +2987,17 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Connect:** [2.2 GUI and software training-environment synthesis](#methods-gui-environments) · [3.2 Training-environment construction and downstream utility](#evaluation-gui-environments) · [4.1 Software requirements, application observations, and development traces](#data-software) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience)
 
+<a id="paper-2610-01215"></a>
+<!-- mmac-record: {"id": "2610.01215", "scope": "Adjacent", "primary": "4.2", "task": 2} -->
+
+- `arXiv 2026.10` **AutoGUIWorld: Image Generators as Visual World Models for GUI Agent**. [[paper]](https://arxiv.org/abs/2610.01215) [[model]](https://huggingface.co/YangC777/AGW-35B) — `[Method]` · `[Data Curation]` `[Training]` `[Verification]` · **Adjacent**
+  > Synthesizes action-conditioned GUI screenshot trajectories with a planner and image generator, repairing target annotations and filtering inconsistent transitions before operator training without running the depicted applications.<br>
+  > **Verification:** 79,266 curated steps · grounding/transition audit · downstream desktop and scientific-task scores; generated visual transitions are distinct from executable software environments.
+
 **Dataset contributions**
 
+- [MobileForge](#paper-2606-19930) · **Adjacent** · [2.12](#methods-experience) — Released 3,249 generated mobile tasks, exploration traces and training splits, with separate benchmark-result archives.
+- [UI-Mate](#paper-2608-15930) · **Adjacent** · [2.2](#methods-gui-environments) — Released office-task bundles and demonstration traces, with separate self-demo and variant-demo protocols and mock-application dependencies.
 - [Gym-Anything-RT](#paper-2610-37567) · **Core** · [2.2](#methods-gui-environments) — released minigame programs, interface contracts, and verification assets.
 - [WildAWM](#paper-2610-26828) · **Adjacent** · [2.2](#methods-gui-environments) — released environment, instruction, reset, and verifier packages.
 - [SoftwareGym](#paper-2610-12611) · **Core** · [2.2](#methods-gui-environments)
@@ -3329,6 +3367,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 | Capability | Resource and sources | Inputs → outputs | Role in a workflow |
 |---|---|---|---|
+| Planned image/video generation and editing | **Bernini: Latent Semantic Planning for Video Diffusion** [[code]](https://github.com/bytedance/Bernini) · [[guide]](https://github.com/bytedance/Bernini/blob/main/docs/bernini.md) · [[weights]](https://huggingface.co/ByteDance/Bernini-Diffusers) | Prompt + optional source/reference image or video → generated or edited visual media | Connects a Qwen2.5-VL semantic planner to a Wan2.2 diffusion renderer through a shared task interface; released full-pipeline and renderer-only variants provide reusable media tools. |
 | Semantic-to-pixel image generation | **Know, then Draw: A New Learning Paradigm for Visual Generation** [[paper]](https://arxiv.org/abs/2610.37626) | Text → semantic autoregressive tokens → diffusion-rendered image | Separates semantic acquisition from pixel rendering, using language-supervised visual tokens to condition a diffusion renderer; provides a paper-described text-to-image generation component. |
 | Geometry-conditioned subject videos | **OmniShowcase: Omnidirectional Subject-Consistent Video Generation from Multi-View Images** [[paper]](https://arxiv.org/abs/2610.35684) · [[project]](https://justin4ai.github.io/OmniShowcase/) · [[release status]](https://github.com/justin4ai/OmniShowcase) | Multiple reference images + motion prompt → subject-consistent video, conditioned on reconstructed surface-normal turntables | Combines multi-view reconstruction with a LoRA-adapted video generator for viewpoint changes around static subjects; non-rigid motion remains limited, and code/data release is planned. |
 | Animatable stylized hair assets | **HairDeck: Animation-Ready Stylized Hair Cards from a Single Image** [[paper]](https://arxiv.org/abs/2610.40599) · [[code]](https://github.com/hyz317/HairDeck) · [[weights]](https://huggingface.co/hyz317/HairDeck) | Single image → separate hair-card geometry, per-card UVs and spring-bone chains; GLB / VRM export | Uses set diffusion to generate artist-style hair primitives and a second model for their animation rig; supplies editable avatar assets, with no texture generation or agent repair loop. |
@@ -3479,6 +3518,7 @@ The list below is a practical starting point rather than a security audit or end
 
 | Capability | Resource | Form and provenance | Why it matters for the closed loop |
 |---|---|---|---|
+| Video-to-scene skills and model orchestration | **AHa-3D: Agentic Tool Use for Real2Sim with GPT-6 Astra** [[code]](https://github.com/KevinXu02/aha-3d) · [[walkthrough]](https://github.com/KevinXu02/aha-3d/blob/main/docs/GETTING_STARTED.md) | Community Skills + Blender/model tools; Apache-2.0 project code, separate third-party assets; video → editable scene and previews | KevinXu02's workflow combines geometry, segmentation and motion tools with coding-agent scene authoring and staged visual reviews; the office walkthrough includes Gallery/X-ray refinement, with separate third-party model requirements. |
 | Staged Blender production and review | **Blender AI Plugin** [[repository]](https://github.com/proyecto26/blender-ai-plugin) | Community skills + MCP workflows and bpy scripts; MIT (Proyecto 26 / original arjun988 skill pack) | Routes briefs and references to specialist skills, pairs stage gates with viewport captures, and records geometry/export checks; supplies a reusable production workflow rather than a measured autonomous-agent benchmark. |
 | Browser building and testing | [Playwright MCP](https://github.com/microsoft/playwright-mcp) · [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) | Official MCP / CLI + skills | Exposes accessibility structure, screenshots, interaction, console and network evidence, and performance traces. |
 | Human-to-agent visual bug reports | [Shotback](https://github.com/DCCA/shotback) | Community browser extension + skill; MIT | Packages annotated screenshots with CSS selectors, React component paths, viewport context, and readable failed requests; supports before/after recapture for human-guided repairs. |

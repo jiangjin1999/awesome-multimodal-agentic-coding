@@ -44,12 +44,12 @@ Enable agents to **organize and combine model capabilities**, expanding their ab
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-189-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-193-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-11-02**
+**Last updated: 2026-11-03**
 
 </div>
 
@@ -594,6 +594,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 **Boundary.** Chart semantics, scientific analysis goals, and SVG/TikZ structure impose different constraints; overall visual similarity alone cannot capture success.
 
 **Connect:** [3.3 Chart, scientific visualization, and graphics-editing evaluation](#evaluation-graphics) · [4.3 Chart data, graphics programs, and edit records](#data-graphics) · [2.4 Documents and visual media](#methods-media) · [3.13 Test, reward, and evaluator reliability](#section-3-13) · [5.5 Skills, tool bridges, and reusable workflows](#section-5-5)
+
+<a id="paper-2610-41260"></a>
+<!-- mmac-record: {"id": "2610.41260", "scope": "Core", "primary": "2.3", "task": 3} -->
+
+- `arXiv 2026.10` **SketchDirector: Complex Scene Sketching via Agentic Layout Reasoning and Detail Refinement**. [[paper]](https://arxiv.org/abs/2610.41260) [[code]](https://github.com/GVCLab/SketchDirector) [[data]](https://huggingface.co/datasets/yiki77/MCSketch8K) [[project]](https://yiki77.github.io/SketchDirector/) — `[Method]` `[Dataset]` · `[Inference]` `[Verification]` · **Core**
+  > Builds editable scene sketches through object-level SVG programs, revises layouts using geometric and visual-semantic feedback with reusable memory, and then refines curves with diffusion priors.<br>
+  > **Verification:** Geometric and visual-semantic checks · memory/backbone ablations · 30-prompt quantitative study · 68-person preference study on 15 prompts.
 
 <a id="paper-2610-13502"></a>
 <!-- mmac-record: {"id": "2610.13502", "scope": "Adjacent", "primary": "2.3", "task": 3} -->
@@ -1465,6 +1472,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Connect:** [3.8 World-model prediction, intervention, and planning evaluation](#evaluation-world-models) · [4.8 World observations, transitions, and simulation-program data](#data-world-models) · [2.7 Playable game construction, recreation, and repair](#methods-games) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.12 Learning from construction and interaction experience](#methods-experience)
 
+<a id="paper-2610-40339"></a>
+<!-- mmac-record: {"id": "2610.40339", "scope": "Adjacent", "primary": "2.8", "task": 8} -->
+
+- `arXiv 2026.10` **Wizard: Manipulate Any World in Real Time via Agentic Control**. [[paper]](https://arxiv.org/abs/2610.40339) [[project]](https://wyzardwu.github.io/wizard/) — `[Method]` · `[Inference]` · **Adjacent**
+  > Orchestrates geometry, skeleton, motion and video-generation tools around explicit game state, using agent-controlled visual proxies to render interactive worlds while keeping mechanics outside the diffusion model.<br>
+  > **Verification:** Unseen scene/character/motion examples · proxy–video alignment · explicit combat rules · long-rollout consistency and motion-library limits.
+
 <a id="paper-2610-36371"></a>
 <!-- mmac-record: {"id": "2610.36371", "scope": "Adjacent", "primary": "2.8", "task": 8} -->
 
@@ -1656,6 +1670,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 **Boundary.** Calling an existing action model does not itself constitute program development. Separate simulation from hardware results and code updates from policy learning.
 
 **Connect:** [3.10 Robot program and policy execution evaluation](#evaluation-robot-programs) · [4.10 Robot demonstrations, execution, and repair trajectories](#data-robot-programs) · [2.11 Real2Sim2Real: task learning and real execution](#methods-real2sim2real) · [2.12 Learning from construction and interaction experience](#methods-experience) · [5.4 Action, policy, prediction, and verification capabilities](#section-5-4)
+
+<a id="paper-2610-42053"></a>
+<!-- mmac-record: {"id": "2610.42053", "scope": "Adjacent", "primary": "2.10", "task": 10} -->
+
+- `arXiv 2026.10` **REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control**. [[paper]](https://arxiv.org/abs/2610.42053) [[project]](https://mikeeeeeeeeeeeeee.github.io/REA/) — `[Method]` · `[Inference]` `[Verification]` · **Adjacent**
+  > Separates fast robot execution from asynchronous model judging and route selection, coordinating fixed code policies and action models with visual outcome checks at policy-return boundaries.<br>
+  > **Verification:** 3,000 LIBERO-PRO episodes · shared recovery budgets · simulation versus small hardware studies · fixed test-time code and routing.
 
 <a id="paper-2610-23334"></a>
 <!-- mmac-record: {"id": "2610.23334", "scope": "Adjacent", "primary": "2.10", "task": 10} -->
@@ -1871,6 +1892,20 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 **Boundary.** Distinguish learning the builder from learning the operator in a generated environment. Within-task iteration and static expert skills do not by themselves establish cross-task learning.
 
 **Connect:** [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [2.2 GUI and software training-environment synthesis](#methods-gui-environments) · [5.5 Skills, tool bridges, and reusable workflows](#section-5-5) · [6.5 From construction experience to transferable capability](#section-6-5)
+
+<a id="paper-2610-40799"></a>
+<!-- mmac-record: {"id": "2610.40799", "scope": "Core", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.10` **CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents**. [[paper]](https://arxiv.org/abs/2610.40799) [[code]](https://github.com/waltstephen/CaPtain) [[project]](https://github.com/waltstephen/CaPtain-Harness) [[data]](https://huggingface.co/datasets/YijiaFan/CaPtain-SFT-Data) — `[Method]` `[Dataset]` · `[Training]` `[Inference]` `[Verification]` · **Core**
+  > Post-trains a small vision-language model to iteratively write robot-control Python from camera views and low-level action receipts, using SFT and physical-critic-assisted RL before simulator-adapted hardware transfer.<br>
+  > **Verification:** Host versus explicit-finish success · privileged critic used only during training · cross-simulator API adaptation · twin-adapted XR1 demonstrations.
+
+<a id="paper-2610-42141"></a>
+<!-- mmac-record: {"id": "2610.42141", "scope": "Core", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.10` **RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory**. [[paper]](https://arxiv.org/abs/2610.42141) [[code]](https://github.com/roboarchitect-ai/RoboArchitect) [[project]](https://roboarchitect-ai.github.io/) — `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > Uses rollout videos and tool outputs to evolve control code and persistent memory around frozen robot policies, then evaluates the resulting harness on held-out simulated scenes and tasks.<br>
+  > **Verification:** Held-out scene/task transfer · harness and memory ablations · benchmark-specific success/progress metrics · simulation only.
 
 <a id="paper-2606-19930"></a>
 <!-- mmac-record: {"id": "2606.19930", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
@@ -2335,6 +2370,13 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 **Boundary.** Shape distance does not capture all constraints or design intent. CAD, scene programs, and GUI modeling require matched inputs and action permissions; broader engineering benchmarks also cover other domains.
 
 **Connect:** [2.5 Procedural 3D and CAD construction](#methods-cad-3d) · [4.5 Procedural 3D and CAD data: requirements, programs, and assets](#data-cad-3d) · [3.6 Physical asset construction and usability evaluation](#evaluation-physical-assets) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
+
+<a id="paper-2610-38231"></a>
+<!-- mmac-record: {"id": "2610.38231", "scope": "Core", "primary": "3.5", "task": 5} -->
+
+- `arXiv 2026.10` **3DCodeEdit: Benchmarking Instruction-Guided 3D Program Editing**. [[paper]](https://arxiv.org/abs/2610.38231) [[code]](https://github.com/BinjieW/3DCodeEdit) [[data]](https://huggingface.co/datasets/BinjieW/3DCodeEdit) [[project]](https://binjiew.github.io/3DCodeEdit/) — `[Benchmark]` `[Dataset]` · `[Inference]` `[Verification]` · **Core**
+  > Benchmarks instruction-guided Blender program editing with multi-view checks and a multi-turn study in which independent visual reviews guide code revisions beyond executable-but-geometrically-wrong outputs.<br>
+  > **Verification:** 2,592 tasks / 108 programs · six edit types · 312-task feedback subset · hidden grading versus reviewer-generated feedback.
 
 <a id="work-blenderworld"></a>
 <!-- mmac-record: {"id": "system:blenderworld", "scope": "Core", "primary": "3.5", "task": 5} -->
@@ -3030,6 +3072,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Dataset contributions**
 
+- [SketchDirector](#paper-2610-41260) · **Core** · [2.3](#methods-graphics) — MCSketch8K releases 1,000 model-generated scenes with editable SVG assets, executable layouts and before/after renders; the packaged train split is not a benchmark split.
 - [ChartRevise](#paper-2609-38642) · **Core** · [3.3](#evaluation-graphics)
 - [ChartSync](#paper-2607-10301) · **Adjacent** · [3.3](#evaluation-graphics) — 870 released source/instruction/target triplets with paired plotting programs; 235 test value-to-geometry synchronization.
 - [VisInteract](#paper-2609-15182) · **Core** · [2.3](#methods-graphics)
@@ -3088,6 +3131,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Dataset contributions**
 
+- [3DCodeEdit](#paper-2610-38231) · **Core** · [3.5](#evaluation-cad-3d) — Released edit instructions, human-reviewed checklists and source programs, with per-program upstream attribution and license metadata.
 - [Scene-Designer](#paper-2610-23121) · **Core** · [2.5](#methods-cad-3d) — released Scene-OTC-Bench has 149 ranking questions and 408 scene images; Scene-OTA-35K/Scene-OTC-15K are separately described training-data constructions.
 - [BlenderWorld](#work-blenderworld) · **Core** · [3.5](#evaluation-cad-3d) — released task briefs, references, specifications, and rubrics.
 - [3DCodeVerse](#paper-2610-22341) · **Core** · [2.5](#methods-cad-3d)
@@ -3199,6 +3243,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Data-construction contributions**
 
+- [Wizard](#paper-2610-40339) · **Adjacent** · [2.8](#methods-world-models) — Constructs aligned RGB/proxy clips from game capture, synthetic and rendered scenes; the paper describes provenance without asserting a released open dataset.
 - [Video2World](#paper-2610-04432) · **Core** · [3.9](#evaluation-real-to-sim)
 - [WorldAgent](#paper-2609-33208) · **Core** · [2.8](#methods-world-models)
 - [ChronoAgentic](#paper-2605-14398) · **Core** · [2.8](#methods-world-models)
@@ -3245,6 +3290,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Dataset contributions**
 
+- [CaPtain](#paper-2610-40799) · **Core** · [2.12](#methods-experience) — Released simulated code-as-policy trajectories and visual-QA training rows, with camera assets and explicit filtering/normalization provenance.
 - [LAW](#paper-2610-23334) · **Adjacent** · [2.10](#methods-robot-programs) — RoboTwin demonstrations and success/failure material for WAM/VLM training are released with separate manifests and licensing scopes.
 - [Awomo-SimDataEngine](#paper-2610-02274) · **Core** · [2.8](#methods-world-models)
 
@@ -3483,6 +3529,7 @@ These layers are complementary rather than mutually exclusive. For example, an a
 
 | Capability | Resource and sources | Inputs → outputs | Role in a workflow |
 |---|---|---|---|
+| Controlled multiview and LiDAR simulation | **Cosmos3-Nano-Sim-Auto** [[model]](https://huggingface.co/nvidia/Cosmos3-Nano-Sim-Auto) · [[guide]](https://github.com/NVIDIA/cosmos-framework/blob/main/docs/inference_sim_auto.md) · [[blog]](https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos/) | Per-camera text + WSM controls + optional initial observations → synchronized video and LiDAR | A causal world-model tool with released weights and Cosmos Framework inference/adaptation skills; generated sensor feedback supports policy evaluation, with camera-rig and sim-to-real validity requiring separate checks. |
 | Camera-controlled visual world prediction | **L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory** [[paper]](https://arxiv.org/abs/2610.40614) · [[project]](https://cvlab-kaist.github.io/L3G-World/) · [[release status]](https://github.com/cvlab-kaist/L3G-World) | Image + text + camera trajectory → video chunks and persistent latent 3D Gaussian memory | Alternates video diffusion with selective Gaussian-memory updates and renders memory directly into latent space for consistent revisits; predicts visual worlds, with code and checkpoints listed as planned releases. |
 | Sensor diagnosis and input repair | **When Black-Box Robot Policies Fail: Online Sensor Diagnosis and Repair with a Transparent Surrogate** [[paper]](https://arxiv.org/abs/2610.36852) | Sensor streams + frozen-policy actions + healthy gait references → fault diagnosis and repaired policy inputs | MBD/PRR uses an additive surrogate to diagnose sensor faults and repair inputs without policy gradients; evaluated on simulated quadrupeds, with no demonstrated LLM orchestration or hardware deployment. |
 | Interactive world simulation | **Genie 4** [[official blog]](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/) | Prompts, reference images, navigation, and live edits → interactive audiovisual worlds. | Research preview that combines generative simulation with Gemini planning and frame-based checks; access is limited to trusted testers. Spatial accuracy, physical interactions, and long-term consistency remain limitations; robotics examples are generated simulations. |
@@ -3518,6 +3565,7 @@ The list below is a practical starting point rather than a security audit or end
 
 | Capability | Resource | Form and provenance | Why it matters for the closed loop |
 |---|---|---|---|
+| Blender authoring and asset validation | **cc-blender-skill** [[code]](https://github.com/RobLe3/cc-blender-skill) · [[validation]](https://github.com/RobLe3/cc-blender-skill/blob/main/docs/test-results/v1.4.0-integration.md) | 30 composable skills · MIT · Blender Lab / ahujasid MCP | Turns text/reference briefs into staged modeling, materials, animation, render checks and exports; documents bounded Blender 5.1.1 checks and remaining engine/provider gaps. |
 | Video-to-scene skills and model orchestration | **AHa-3D: Agentic Tool Use for Real2Sim with GPT-6 Astra** [[code]](https://github.com/KevinXu02/aha-3d) · [[walkthrough]](https://github.com/KevinXu02/aha-3d/blob/main/docs/GETTING_STARTED.md) | Community Skills + Blender/model tools; Apache-2.0 project code, separate third-party assets; video → editable scene and previews | KevinXu02's workflow combines geometry, segmentation and motion tools with coding-agent scene authoring and staged visual reviews; the office walkthrough includes Gallery/X-ray refinement, with separate third-party model requirements. |
 | Staged Blender production and review | **Blender AI Plugin** [[repository]](https://github.com/proyecto26/blender-ai-plugin) | Community skills + MCP workflows and bpy scripts; MIT (Proyecto 26 / original arjun988 skill pack) | Routes briefs and references to specialist skills, pairs stage gates with viewport captures, and records geometry/export checks; supplies a reusable production workflow rather than a measured autonomous-agent benchmark. |
 | Browser building and testing | [Playwright MCP](https://github.com/microsoft/playwright-mcp) · [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) | Official MCP / CLI + skills | Exposes accessibility structure, screenshots, interaction, console and network evidence, and performance traces. |
@@ -3785,6 +3833,7 @@ The following examples make the coding loop concrete across different tasks. We 
 
 | Task | Case and source | What to watch | Evidence label |
 |---|---|---|---|
+| Product brief to editable UI | **AutoClaw Design** — AutoClaw Team [[official workflow]](https://autoclaw.z.ai/blog/product/product-brief-to-ui-design-with-autoclaw/) | Combines reference-guided drafts, conversational or canvas edits, device previews and HTML/project exports; users review interactions and request corrections. | Official product workflow; human review |
 | Visual software engineering | **Programming with Pixels** — Aggarwal & Welleck [[project + demo]](https://programmingwithpixels.com/) | A computer-use agent sees VS Code, types and clicks, edits UI code, and inspects the live preview instead of relying only on text tools. | Closed-loop research demo |
 | Web and UI reconstruction | **WebVIA** — Zhen et al. [[project + cases]](https://zheny2751-dotcom.github.io/webvia.github.io/) | The agent explores multi-state source pages, builds executable HTML/CSS/JS, then tests clicks, input, and navigation against the observed behavior. | Closed-loop research demo |
 | Native design systems | **Agents, meet the Figma canvas** — Figma [[official blog + demos]](https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/) | Coding agents create or edit native Figma layers with real components and variables, take screenshots, and iterate through a documented self-healing loop. | Official product workflow |

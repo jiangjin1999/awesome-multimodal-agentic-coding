@@ -44,12 +44,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-189-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-193-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-11-02**
+**最后更新：2026-11-03**
 
 </div>
 
@@ -594,6 +594,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 图表的数据语义、科学可视化的分析目标与 SVG／TikZ 的结构约束在内部区分；不能只用整体视觉相似度概括成功。
 
 **关联阅读：** [3.3 图表、科学可视化与图形编辑评测](#evaluation-graphics) · [4.3 图表数据、图形程序与编辑记录](#data-graphics) · [2.4 文档与视觉媒体构建](#methods-media) · [3.13 测试、奖励与评估器可靠性](#section-3-13) · [5.5 Skills、工具桥与可复用工作流](#section-5-5)
+
+<a id="paper-2610-41260"></a>
+<!-- mmac-record: {"id": "2610.41260", "scope": "Core", "primary": "2.3", "task": 3} -->
+
+- `arXiv 2026.10` **SketchDirector: Complex Scene Sketching via Agentic Layout Reasoning and Detail Refinement**. [[论文]](https://arxiv.org/abs/2610.41260) [[代码]](https://github.com/GVCLab/SketchDirector) [[数据]](https://huggingface.co/datasets/yiki77/MCSketch8K) [[项目]](https://yiki77.github.io/SketchDirector/) — `[Method]` `[Dataset]` · `[Inference]` `[Verification]` · **Core**
+  > 通过对象级 SVG 程序构建可编辑场景草图，以几何与视觉语义反馈及可复用记忆修订布局，再用扩散先验细化曲线。<br>
+  > **验证维度：** 几何与视觉语义检查 · 记忆／基础模型消融 · 30 提示量化评测 · 68 人对 15 提示的偏好研究。
 
 <a id="paper-2610-13502"></a>
 <!-- mmac-record: {"id": "2610.13502", "scope": "Adjacent", "primary": "2.3", "task": 3} -->
@@ -1465,6 +1472,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.8 世界模型的预测、干预与规划效用评测](#evaluation-world-models) · [4.8 世界观测、状态转移与仿真程序数据](#data-world-models) · [2.7 可玩游戏构建、复刻与修复](#methods-games) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.12 从构建与交互经验学习](#methods-experience)
 
+<a id="paper-2610-40339"></a>
+<!-- mmac-record: {"id": "2610.40339", "scope": "Adjacent", "primary": "2.8", "task": 8} -->
+
+- `arXiv 2026.10` **Wizard: Manipulate Any World in Real Time via Agentic Control**. [[论文]](https://arxiv.org/abs/2610.40339) [[项目]](https://wyzardwu.github.io/wizard/) — `[Method]` · `[Inference]` · **Adjacent**
+  > 围绕显式游戏状态编排几何、骨架、动作与视频生成工具，由 Agent 控制的视觉代理驱动交互世界渲染，游戏机制由独立控制器维护。<br>
+  > **验证维度：** 未见场景／角色／动作示例 · 代理与视频对齐 · 显式战斗规则 · 长时一致性和动作库限制。
+
 <a id="paper-2610-36371"></a>
 <!-- mmac-record: {"id": "2610.36371", "scope": "Adjacent", "primary": "2.8", "task": 8} -->
 
@@ -1656,6 +1670,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 感知、动作模型与控制器的能力来源单独记录；仅有真实机器人执行，不意味着系统完成了 Real2Sim2Real 环境构建链。
 
 **关联阅读：** [3.10 机器人程序与策略的执行评测](#evaluation-robot-programs) · [4.10 机器人演示、执行与程序／策略修复轨迹](#data-robot-programs) · [2.11 Real2Sim2Real：任务学习与真实执行](#methods-real2sim2real) · [2.12 从构建与交互经验学习](#methods-experience) · [5.4 动作、策略、预测与验证能力](#section-5-4)
+
+<a id="paper-2610-42053"></a>
+<!-- mmac-record: {"id": "2610.42053", "scope": "Adjacent", "primary": "2.10", "task": 10} -->
+
+- `arXiv 2026.10` **REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control**. [[论文]](https://arxiv.org/abs/2610.42053) [[项目]](https://mikeeeeeeeeeeeeee.github.io/REA/) — `[Method]` · `[Inference]` `[Verification]` · **Adjacent**
+  > 将快速机器人执行与异步模型判断、路径选择分离，在策略返回边界通过视觉结果检查协调固定代码策略和动作模型。<br>
+  > **验证维度：** 3,000 回合 LIBERO-PRO · 共享恢复预算 · 仿真与小规模实机分列 · 测试时代码及路由固定。
 
 <a id="paper-2610-23334"></a>
 <!-- mmac-record: {"id": "2610.23334", "scope": "Adjacent", "primary": "2.10", "task": 10} -->
@@ -1871,6 +1892,20 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 单次产物修订与跨任务能力改进分别验证；构建轨迹训练和在生成环境中训练操作策略也具有不同学习对象。
 
 **关联阅读：** [3.12 经验学习与跨任务泛化评测](#evaluation-experience) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [2.2 GUI／软件训练环境合成](#methods-gui-environments) · [5.5 Skills、工具桥与可复用工作流](#section-5-5) · [6.5 从构建经验到可迁移能力](#section-6-5)
+
+<a id="paper-2610-40799"></a>
+<!-- mmac-record: {"id": "2610.40799", "scope": "Core", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.10` **CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents**. [[论文]](https://arxiv.org/abs/2610.40799) [[代码]](https://github.com/waltstephen/CaPtain) [[项目]](https://github.com/waltstephen/CaPtain-Harness) [[数据]](https://huggingface.co/datasets/YijiaFan/CaPtain-SFT-Data) — `[Method]` `[Dataset]` · `[Training]` `[Inference]` `[Verification]` · **Core**
+  > 通过 SFT 与物理 critic 辅助 RL，训练小型视觉语言模型依据摄像图像和低层动作回执迭代编写机器人控制程序，再经仿真适配迁移到实机。<br>
+  > **验证维度：** 环境判定与显式结束成功率 · 特权 critic 仅用于训练 · 跨仿真接口适配 · 经孪生适配的 XR1 实机演示。
+
+<a id="paper-2610-42141"></a>
+<!-- mmac-record: {"id": "2610.42141", "scope": "Core", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.10` **RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory**. [[论文]](https://arxiv.org/abs/2610.42141) [[代码]](https://github.com/roboarchitect-ai/RoboArchitect) [[项目]](https://roboarchitect-ai.github.io/) — `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > 依据执行视频和工具输出，迭代改写冻结机器人策略外的控制程序与持续记忆，并在留出的仿真场景和任务上评估。<br>
+  > **验证维度：** 留出场景／任务迁移 · 控制程序与记忆消融 · 区分成功率和进度指标 · 仅仿真验证。
 
 <a id="paper-2606-19930"></a>
 <!-- mmac-record: {"id": "2606.19930", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
@@ -2335,6 +2370,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 形状距离不能完整描述约束或设计意图；CAD、场景程序和 GUI 操作式建模应采用匹配的输入与动作权限。
 
 **关联阅读：** [2.5 程序化 3D 与 CAD 构建](#methods-cad-3d) · [4.5 程序化 3D 与 CAD 数据：需求、程序与资产](#data-cad-3d) · [3.6 物理资产构建与可用性评测](#evaluation-physical-assets) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
+
+<a id="paper-2610-38231"></a>
+<!-- mmac-record: {"id": "2610.38231", "scope": "Core", "primary": "3.5", "task": 5} -->
+
+- `arXiv 2026.10` **3DCodeEdit: Benchmarking Instruction-Guided 3D Program Editing**. [[论文]](https://arxiv.org/abs/2610.38231) [[代码]](https://github.com/BinjieW/3DCodeEdit) [[数据]](https://huggingface.co/datasets/BinjieW/3DCodeEdit) [[项目]](https://binjiew.github.io/3DCodeEdit/) — `[Benchmark]` `[Dataset]` · `[Inference]` `[Verification]` · **Core**
+  > 以多视角条件检查评测指令引导的 Blender 程序编辑，并通过多轮实验让独立视觉审查指导代码修订，检验“能执行但几何错误”的问题。<br>
+  > **验证维度：** 2,592 项任务／108 个程序 · 六类编辑 · 312 项多轮反馈子集 · 隐藏评分与 reviewer 反馈分离。
 
 <a id="work-blenderworld"></a>
 <!-- mmac-record: {"id": "system:blenderworld", "scope": "Core", "primary": "3.5", "task": 5} -->
@@ -3030,6 +3072,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **数据集工作**
 
+- [SketchDirector](#paper-2610-41260) · **Core** · [2.3](#methods-graphics) — MCSketch8K 发布 1,000 个模型生成场景，含可编辑 SVG、可执行布局和前后渲染；train 打包名称不代表基准划分。
 - [ChartRevise](#paper-2609-38642) · **Core** · [3.3](#evaluation-graphics)
 - [ChartSync](#paper-2607-10301) · **Adjacent** · [3.3](#evaluation-graphics) — 已发布 870 组原图／指令／目标图及配对绘图程序；其中 235 组检验数值与几何同步。
 - [VisInteract](#paper-2609-15182) · **Core** · [2.3](#methods-graphics)
@@ -3088,6 +3131,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **数据集工作**
 
+- [3DCodeEdit](#paper-2610-38231) · **Core** · [3.5](#evaluation-cad-3d) — 发布编辑指令、人工审核条件清单与源程序，并提供逐程序的上游作者和许可证。
 - [Scene-Designer](#paper-2610-23121) · **Core** · [2.5](#methods-cad-3d) — 已公开 Scene-OTC-Bench 的 149 道排序题和 408 张场景图像；Scene-OTA-35K／Scene-OTC-15K 是另行描述的训练数据构造。
 - [BlenderWorld](#work-blenderworld) · **Core** · [3.5](#evaluation-cad-3d) — 已发布的任务需求、参考素材、规格与评分规则。
 - [3DCodeVerse](#paper-2610-22341) · **Core** · [2.5](#methods-cad-3d)
@@ -3199,6 +3243,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **数据构造工作**
 
+- [Wizard](#paper-2610-40339) · **Adjacent** · [2.8](#methods-world-models) — 从游戏录屏、合成及渲染场景构造对齐 RGB／代理片段；按数据构造记录，不视为已公开数据集。
 - [Video2World](#paper-2610-04432) · **Core** · [3.9](#evaluation-real-to-sim)
 - [WorldAgent](#paper-2609-33208) · **Core** · [2.8](#methods-world-models)
 - [ChronoAgentic](#paper-2605-14398) · **Core** · [2.8](#methods-world-models)
@@ -3245,6 +3290,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **数据集工作**
 
+- [CaPtain](#paper-2610-40799) · **Core** · [2.12](#methods-experience) — 发布仿真 Code-as-Policy 轨迹与视觉问答训练行，包含摄像资产及明确的过滤／代码规范化来源。
 - [LAW](#paper-2610-23334) · **Adjacent** · [2.10](#methods-robot-programs) — 发布带独立清单和许可范围的 RoboTwin 示教、成功／失败资料，支持 WAM 与 VLM 训练。
 - [Awomo-SimDataEngine](#paper-2610-02274) · **Core** · [2.8](#methods-world-models)
 
@@ -3483,6 +3529,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 | 能力 | 资源与来源 | 输入 → 输出 | 在工作流中的作用 |
 |---|---|---|---|
+| 受控多视角与 LiDAR 仿真 | **Cosmos3-Nano-Sim-Auto** [[模型]](https://huggingface.co/nvidia/Cosmos3-Nano-Sim-Auto) · [[指南]](https://github.com/NVIDIA/cosmos-framework/blob/main/docs/inference_sim_auto.md) · [[博客]](https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos/) | 逐相机文字 + WSM 控制 + 可选初始观测 → 同步视频与 LiDAR | 具备公开权重及 Cosmos Framework 推理／适配 Skills 的因果世界模型工具；生成传感器反馈可用于策略评估，相机配置适配与仿真到真实有效性需分别检查。 |
 | 相机控制的视觉世界预测 | **L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory** [[论文]](https://arxiv.org/abs/2610.40614) · [[项目]](https://cvlab-kaist.github.io/L3G-World/) · [[发布计划]](https://github.com/cvlab-kaist/L3G-World) | 图像 + 文本 + 相机轨迹 → 视频块和持久潜在 3D 高斯记忆 | 交替运行视频扩散与选择性高斯记忆更新，将记忆直接渲染到潜空间以保持重访一致性；提供视觉世界预测，代码和权重仍列为待发布。 |
 | 传感器诊断与输入修复 | **When Black-Box Robot Policies Fail: Online Sensor Diagnosis and Repair with a Transparent Surrogate** [[paper]](https://arxiv.org/abs/2610.36852) | 传感器流 + 冻结策略动作 + 健康步态参考 → 故障诊断与修复后的策略输入 | MBD／PRR通过可加性代理诊断传感器故障并修复输入，无需策略梯度；验证限于仿真四足机器人，未展示LLM编排或硬件部署。 |
 | 交互式世界模拟 | **Genie 4** [[官方博客]](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/) | 提示、参考图像、导航和实时编辑 → 可交互视听世界。 | 将生成式模拟与 Gemini 规划和逐帧检查结合的研究预览，仅面向可信测试者；空间准确性、物理交互与长程一致性仍有限，机器人案例为生成式仿真。 |
@@ -3518,6 +3565,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 | 能力 | 资源 | 形式与来源 | 对闭环的意义 |
 |---|---|---|---|
+| Blender 创作与资产验证 | **cc-blender-skill** [[代码]](https://github.com/RobLe3/cc-blender-skill) · [[验证说明]](https://github.com/RobLe3/cc-blender-skill/blob/main/docs/test-results/v1.4.0-integration.md) | 30 项可组合 Skills · MIT · Blender Lab／ahujasid MCP | 将文字／参考需求组织为建模、材质、动画、渲染检查与导出步骤，并说明 Blender 5.1.1 的有限测试及引擎／服务验证缺口。 |
 | 视频到场景的 Skills 与模型编排 | **AHa-3D: Agentic Tool Use for Real2Sim with GPT-6 Astra** [[代码]](https://github.com/KevinXu02/aha-3d) · [[示例流程]](https://github.com/KevinXu02/aha-3d/blob/main/docs/GETTING_STARTED.md) | 社区 Skills + Blender／模型工具；项目代码 Apache-2.0，第三方资产单列；视频 → 可编辑场景与预览 | KevinXu02 的工作流结合几何、分割和运动工具，由 Coding Agent 编写场景并分阶段视觉核查；office 示例展示 Gallery/X-ray 修订，各模型及第三方资产独立配置。 |
 | 分阶段 Blender 制作与检查 | **Blender AI Plugin** [[仓库]](https://github.com/proyecto26/blender-ai-plugin) | 社区 Skills + MCP 工作流与 bpy 脚本；MIT（Proyecto 26／原始 arjun988 技能包） | 将需求与参考图路由到专业技能，把阶段检查与视口截图结合，并记录几何和导出结果，提供可复用制作流程；不是经过测量的自主 Agent 基准。 |
 | 浏览器构建与测试 | [Playwright MCP](https://github.com/microsoft/playwright-mcp) · [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) | 官方 MCP / CLI + Skills | 暴露可访问性结构、截图、交互、控制台与网络证据，以及性能 Trace。 |
@@ -3785,6 +3833,7 @@ Adjacent 论文已经归入上面的具体方向；此索引汇总其完整记�
 
 | 任务 | 案例与来源 | 重点观察 | 证据标签 |
 |---|---|---|---|
+| 产品需求到可编辑 UI | **AutoClaw Design** — AutoClaw Team [[官方流程]](https://autoclaw.z.ai/blog/product/product-brief-to-ui-design-with-autoclaw/) | 结合参考素材生成、对话／画布编辑、设备预览和 HTML／项目导出，由用户检查交互并提出修正。 | 官方产品流程；人工评审 |
 | 视觉软件工程 | **Programming with Pixels** — Aggarwal & Welleck [[项目 + Demo]](https://programmingwithpixels.com/) | Computer-use Agent 观察 VS Code，通过点击与输入修改 UI 代码，并检查实时预览，而不是只依赖文本工具。 | 闭环研究 Demo |
 | Web 与 UI 重建 | **WebVIA** — Zhen et al. [[项目 + 案例]](https://zheny2751-dotcom.github.io/webvia.github.io/) | Agent 探索源网页的多种状态，生成可执行 HTML/CSS/JS，再用点击、输入和导航验证行为。 | 闭环研究 Demo |
 | 原生设计系统 | **Agents, meet the Figma canvas** — Figma [[官方博客 + Demo]](https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/) | Coding Agent 使用真实组件与变量创建或编辑原生 Figma 图层，截图并通过文档明确描述的自修复循环继续迭代。 | 官方产品工作流 |

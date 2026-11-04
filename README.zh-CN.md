@@ -44,12 +44,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-193-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-196-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-11-03**
+**最后更新：2026-11-04**
 
 </div>
 
@@ -260,6 +260,12 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.2 GUI／软件训练环境合成](#methods-gui-environments) · [2.6 物理资产构建与诊断](#methods-physical-assets) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [5.2 程序、几何、材质与视觉媒体生成／编辑](#section-5-2) · [5.3 执行、渲染、仿真与自动化接口](#section-5-3)
 
+<a id="paper-2611-01860"></a>
+<!-- mmac-record: {"id": "2611.01860", "scope": "Survey", "primary": "1.2", "task": null} -->
+
+- `arXiv 2026.11` **Advances in Agentic Computer Graphics**. [[论文]](https://arxiv.org/abs/2611.01860) — `[Survey]` · **背景综述**
+  > 从任务规格、基础模型、编排流程和图形接口四个角度梳理面向二维、静态三维与动态资产的图形 Agent。
+
 **阅读入口**
 
 - [Towards Physically Grounded Articulated 3D Assets](#paper-2610-13947) · **Core** · [2.6](#methods-physical-assets)
@@ -275,6 +281,12 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 仅保存截图或进行最终视觉打分，不构成该观测推动后续修订的证据；训练时和推理时的反馈路径分别记录。
 
 **关联阅读：** [2.1 视觉软件工程与应用复刻](#methods-software) · [2.12 从构建与交互经验学习](#methods-experience) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
+
+<a id="paper-2610-40191"></a>
+<!-- mmac-record: {"id": "2610.40191", "scope": "Survey", "primary": "1.3", "task": null} -->
+
+- `arXiv 2026.10` **Video Generation Meets Agent Harness: Agentic Video Generation, Agentic World Modeling and Recursive Self-Improvement**. [[论文]](https://arxiv.org/abs/2610.40191) — `[Survey]` · **背景综述**
+  > 从运行时如何组织视频生成、与世界模型交互，以及评价信号最终更新模型还是外围程序，梳理相关系统。
 
 **阅读入口**
 
@@ -1472,6 +1484,20 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.8 世界模型的预测、干预与规划效用评测](#evaluation-world-models) · [4.8 世界观测、状态转移与仿真程序数据](#data-world-models) · [2.7 可玩游戏构建、复刻与修复](#methods-games) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.12 从构建与交互经验学习](#methods-experience)
 
+<a id="paper-2611-02341"></a>
+<!-- mmac-record: {"id": "2611.02341", "scope": "Adjacent", "primary": "2.8", "task": 8} -->
+
+- `arXiv 2026.11` **AgiWorld: An Agentic Video World Model for Building Persistent Worlds**. [[论文]](https://arxiv.org/abs/2611.02341) [[项目]](https://bshfang.github.io/agiworld/) — `[Method]` · `[Inference]` `[Verification]` · **Adjacent**
+  > 用度量相机轨迹与结构化提示驱动视频世界模型，再检查抽帧与几何，修订布局、重规划路线或重生成片段。<br>
+  > **验证维度：** 重访一致性、相机跟随、有次数上限的局部重生成；仅生成世界。
+
+<a id="paper-2611-00513"></a>
+<!-- mmac-record: {"id": "2611.00513", "scope": "Core", "primary": "2.8", "task": 8} -->
+
+- `arXiv 2026.10` **WorldSketch: Sketching World Models for Zero-Shot Mobile Manipulation**. [[论文]](https://arxiv.org/abs/2611.00513) — `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > 用 RGB-D 观测构建可执行运动学草图，依据渲染叠图修正几何，再由规划器联合求解接触与全身运动。<br>
+  > **验证维度：** 叠图核对消融、深度噪声回放、区分草图与执行失败；仅在仿真中验证。
+
 <a id="paper-2610-40339"></a>
 <!-- mmac-record: {"id": "2610.40339", "scope": "Adjacent", "primary": "2.8", "task": 8} -->
 
@@ -1670,6 +1696,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 感知、动作模型与控制器的能力来源单独记录；仅有真实机器人执行，不意味着系统完成了 Real2Sim2Real 环境构建链。
 
 **关联阅读：** [3.10 机器人程序与策略的执行评测](#evaluation-robot-programs) · [4.10 机器人演示、执行与程序／策略修复轨迹](#data-robot-programs) · [2.11 Real2Sim2Real：任务学习与真实执行](#methods-real2sim2real) · [2.12 从构建与交互经验学习](#methods-experience) · [5.4 动作、策略、预测与验证能力](#section-5-4)
+
+<a id="paper-2611-01560"></a>
+<!-- mmac-record: {"id": "2611.01560", "scope": "Core", "primary": "2.10", "task": 10} -->
+
+- `arXiv 2026.11` **Democratizing Robot-Use Agents: A Unified Harness with Open Models**. [[论文]](https://arxiv.org/abs/2611.01560) [[代码]](https://github.com/Open-RUA/uni-robot-agent) — `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > 在仿真器与双臂实机间共享感知和运动工具，让 Agent 执行几何检查，观察抓取结果，并在失败后更换操控策略。<br>
+  > **验证维度：** 仿真及 19 个双臂实机任务、实机执行轨迹；基线传感器与微调条件有差异。
 
 <a id="paper-2610-42053"></a>
 <!-- mmac-record: {"id": "2610.42053", "scope": "Adjacent", "primary": "2.10", "task": 10} -->
@@ -2676,6 +2709,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.8 可执行世界模型与仿真程序构建](#methods-world-models) · [4.8 世界观测、状态转移与仿真程序数据](#data-world-models) · [3.7 游戏行为、可玩性与修复评测](#evaluation-games) · [3.9 面向 Agentic Real-to-Sim 的场景与交互构建评测](#evaluation-real-to-sim)
 
+<a id="paper-2611-01815"></a>
+<!-- mmac-record: {"id": "2611.01815", "scope": "Adjacent", "primary": "3.8", "task": 8} -->
+
+- `arXiv 2026.11` **When Does Latent Prediction Error Support Physical Surprise Claims in Video World Models?**. [[论文]](https://arxiv.org/abs/2611.01815) [[代码]](https://github.com/3-ml/jepa-surprise) — `[Benchmark]` · `[Verification]` · **Adjacent**
+  > 检验视频世界模型的原生预测误差能否区分物理违规与外观变化，以及固定阈值能否迁移到新场景。<br>
+  > **验证维度：** 动作与外观对照、误差排序，以及阈值迁移后的误报和漏报。
+
 <a id="paper-2610-37649"></a>
 <!-- mmac-record: {"id": "2610.37649", "scope": "Core", "primary": "3.8", "task": 8} -->
 
@@ -2739,6 +2779,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 资产、场景和 episode 使用不同构建单位；视频来源、可见参数和允许工具影响可比性。构建评测与真实策略迁移分开。
 
 **关联阅读：** [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [4.9 Real-to-Sim 的观测、仿真表示与交互对应](#data-real-to-sim) · [3.6 物理资产构建与可用性评测](#evaluation-physical-assets) · [3.8 世界模型的预测、干预与规划效用评测](#evaluation-world-models) · [3.11 Real2Sim2Real 的任务效用与真实迁移评测](#evaluation-real2sim2real)
+
+<a id="paper-2611-02928"></a>
+<!-- mmac-record: {"id": "2611.02928", "scope": "Core", "primary": "3.9", "task": 9} -->
+
+- `arXiv 2026.11` **Lab2Sim: Turning Real-World Experiment Videos into Interactive Virtual Experiments**. [[论文]](https://arxiv.org/abs/2611.02928) [[项目]](https://black1948.github.io/lab2sim) — `[Method]` `[Benchmark]` · `[Verification]` · **Core**
+  > 逐步重放网页实验，将截图和状态与实拍视频对照，评测交互还原度，并根据独立验证器的诊断修正器材素材或状态机。<br>
+  > **验证维度：** 区分可运行率与操作／状态还原度；测试非法操作及修复消融。
 
 <a id="paper-2610-17288"></a>
 <!-- mmac-record: {"id": "2610.17288", "scope": "Core", "primary": "3.9", "task": 9} -->
@@ -3194,6 +3241,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.7 可玩游戏构建、复刻与修复](#methods-games) · [3.7 游戏行为、可玩性与修复评测](#evaluation-games) · [4.8 世界观测、状态转移与仿真程序数据](#data-world-models) · [4.12 跨任务构建、修复与技能学习资料](#data-experience)
 
+<a id="paper-2611-03626"></a>
+<!-- mmac-record: {"id": "2611.03626", "scope": "Adjacent", "primary": "4.7", "task": 7} -->
+
+- `arXiv 2026.11` **Isekai3D SDG: A Platform for Diverse Synthetic Gameplay Visual Data**. [[论文]](https://arxiv.org/abs/2611.03626) [[项目]](https://research.nvidia.com/publication/2026-10_isekai3d-sdg-platform-diverse-synthetic-gameplay-visual-data) — `[Method]` · `[Data Curation]` · **Adjacent**
+  > 在 Unreal Engine 中一次记录游戏状态、动作与相机轨迹，再用不同采集设置回放同一事件，生成对齐的视觉训练数据。<br>
+  > **验证维度：** 回放对齐、相机与渲染控制、RGB／深度输出；属于数据生成平台。
+
 **数据构造工作**
 
 - [RSIGame](#paper-2609-39045) · **Core** · [2.7](#methods-games)
@@ -3271,6 +3325,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **数据构造工作**
 
+- [Lab2Sim](#paper-2611-02928) · **Core** · [3.9](#evaluation-real-to-sim) — 将演示操作与可见状态变化对齐到可执行页面行为和逐实例评分项。
 - [Video2World](#paper-2610-04432) · **Core** · [3.9](#evaluation-real-to-sim)
 
 **论文描述的实验资料与协议**
@@ -3583,7 +3638,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 | 托管 CAD Agent 与几何 API | [Zoo developer tools](https://docs.zoo.dev/docs) | 官方 MCP / Agent API / Engine API | 将语言驱动的 KCL 工作流连接到几何执行、快照、检查和调试。 |
 | Blender 与程序化 3D | [Blender Lab MCP Server](https://www.blender.org/lab/mcp-server/) · [BlenderMCP 社区 Demo](https://github.com/ahujasid/blender-mcp) | 官方 MCP + 社区 Demo 生态 | 支持 Agent 在 Blender 中检查场景并执行 Python；社区 Demo 展示参考图到场景、Blender 到 Three.js 等工作流。 |
 | Blender 编码与多视图检查 | [Claude Blender](https://github.com/minihellboy/claude-blender) | 社区 MCP；MIT | 执行 Blender Python，并向外部 Agent 返回视口／渲染图、多视图拼图与场景差异；接口支持检查与修订，但不是自主修复性能基准。 |
-| 保存文件与无界面 Blender 迭代 | [bpy.dev Blender MCP](https://github.com/bpy-dev/blender-mcp) · [工作流](https://bpy.dev/) | Blender Lab MCP 的社区开发预览分支；GPL-3.0 | 增加保存 .blend 的子进程执行、渲染／检查与运行时 API 查询，Agent 可利用返回的渲染继续编辑；超时与输出限制是进程防护，不是操作系统沙箱或修复性能保证。 |
+| 保存文件与无界面 Blender 迭代 | [bpy.dev Blender MCP](https://github.com/bpy-dev/blender-mcp) · [工作流](https://bpy.dev/) | Blender Lab MCP 的社区开发预览分支；GPL-3.0 | 增加保存 .blend 的子进程执行、渲染／检查与运行时 API 查询，Agent 可利用返回的渲染继续编辑；超时与输出限制是进程防护，不是操作系统沙箱或修复性能保证。 [公开运行记录](https://huggingface.co/datasets/michaelgold/blenderbench-direct-results/blob/7c2c43be4517aee4d76d2b445578988de186970c/results/results-summary.json)包含 27 题、270 个渲染检查点：Agent 可看渲染结果，离线 CLIP 分数不回传。 |
 | Blender 场景与生成工具桥 | [Scenario for Blender](https://github.com/scenario-labs/blender-plugin) | 项目维护的实验性扩展 + MCP；GPL-3.0-or-later | 提供视口截图、静帧渲染、场景操作及受开关控制的 Python，并连接托管资产生成；需要 Blender 5.0+ 与 Scenario 凭据。 |
 | 可重建 Blender 资产工作流 | [Blender Agent Studio](https://github.com/ifBars/blender-agent-studio) | 社区 Skills + 本地 MCP；MIT | 保留可重建 Python 与可编辑 .blend 资产，提供固定视角审查、局部修复及按交付约定执行的导出／重新导入检查。 |
 | Blender 多视图模型诊断 | [trueform](https://github.com/shidenkai0/trueform) | 社区 Skill + MIT 工具包 | 匹配参考相机、渲染轮廓与表面诊断，拒绝让任一必检视图退化的修改，并指导 Agent 下一轮几何编辑。 |
@@ -3833,6 +3888,8 @@ Adjacent 论文已经归入上面的具体方向；此索引汇总其完整记�
 
 | 任务 | 案例与来源 | 重点观察 | 证据标签 |
 |---|---|---|---|
+| 科学设计 | **Google DeepMind — Agentic cheminformatics** [[原文]](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/) | Antigravity 调用 RDKit 和效力模型提出宏环候选，科学家审阅图表和预测；合成与实验验证仍需另行完成。 | 官方应用案例 |
+| 程序化三维场景 | **Mr Tactical — Blender 火山岛** [[原文]](https://x.com/MrTacticalX/status/2116835082547740994) | 作者给两个模型相同的火山岛需求，要求完全用代码构建、不下载模型或纹理，并展示生成场景。 | 社区演示 |
 | 产品需求到可编辑 UI | **AutoClaw Design** — AutoClaw Team [[官方流程]](https://autoclaw.z.ai/blog/product/product-brief-to-ui-design-with-autoclaw/) | 结合参考素材生成、对话／画布编辑、设备预览和 HTML／项目导出，由用户检查交互并提出修正。 | 官方产品流程；人工评审 |
 | 视觉软件工程 | **Programming with Pixels** — Aggarwal & Welleck [[项目 + Demo]](https://programmingwithpixels.com/) | Computer-use Agent 观察 VS Code，通过点击与输入修改 UI 代码，并检查实时预览，而不是只依赖文本工具。 | 闭环研究 Demo |
 | Web 与 UI 重建 | **WebVIA** — Zhen et al. [[项目 + 案例]](https://zheny2751-dotcom.github.io/webvia.github.io/) | Agent 探索源网页的多种状态，生成可执行 HTML/CSS/JS，再用点击、输入和导航验证行为。 | 闭环研究 Demo |

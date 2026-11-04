@@ -44,12 +44,12 @@ Enable agents to **organize and combine model capabilities**, expanding their ab
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-193-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-196-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-11-03**
+**Last updated: 2026-11-04**
 
 </div>
 
@@ -260,6 +260,12 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Connect:** [2.2 GUI and software training-environment synthesis](#methods-gui-environments) · [2.6 Physical asset construction and diagnosis](#methods-physical-assets) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [5.2 Program, geometry, material, and visual-media generation/editing](#section-5-2) · [5.3 Execution, rendering, simulation, and automation interfaces](#section-5-3)
 
+<a id="paper-2611-01860"></a>
+<!-- mmac-record: {"id": "2611.01860", "scope": "Survey", "primary": "1.2", "task": null} -->
+
+- `arXiv 2026.11` **Advances in Agentic Computer Graphics**. [[paper]](https://arxiv.org/abs/2611.01860) — `[Survey]` · **Background survey**
+  > Organizes agentic graphics around task specifications, base models, orchestration, and graphics interfaces across 2D, static 3D, and dynamic assets.
+
 **Reading links**
 
 - [Towards Physically Grounded Articulated 3D Assets](#paper-2610-13947) · **Core** · [2.6](#methods-physical-assets)
@@ -275,6 +281,12 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 **Boundary.** Saving a screenshot or assigning a final visual score does not show that the observation guided a later revision. Training-time and inference-time feedback paths are described separately.
 
 **Connect:** [2.1 Visual software engineering and application recreation](#methods-software) · [2.12 Learning from construction and interaction experience](#methods-experience) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
+
+<a id="paper-2610-40191"></a>
+<!-- mmac-record: {"id": "2610.40191", "scope": "Survey", "primary": "1.3", "task": null} -->
+
+- `arXiv 2026.10` **Video Generation Meets Agent Harness: Agentic Video Generation, Agentic World Modeling and Recursive Self-Improvement**. [[paper]](https://arxiv.org/abs/2610.40191) — `[Survey]` · **Background survey**
+  > Surveys how agent runtimes coordinate video generation, interact with world models, and route evaluation signals into changes to models or their surrounding programs.
 
 **Reading links**
 
@@ -1472,6 +1484,20 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Connect:** [3.8 World-model prediction, intervention, and planning evaluation](#evaluation-world-models) · [4.8 World observations, transitions, and simulation-program data](#data-world-models) · [2.7 Playable game construction, recreation, and repair](#methods-games) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.12 Learning from construction and interaction experience](#methods-experience)
 
+<a id="paper-2611-02341"></a>
+<!-- mmac-record: {"id": "2611.02341", "scope": "Adjacent", "primary": "2.8", "task": 8} -->
+
+- `arXiv 2026.11` **AgiWorld: An Agentic Video World Model for Building Persistent Worlds**. [[paper]](https://arxiv.org/abs/2611.02341) [[project]](https://bshfang.github.io/agiworld/) — `[Method]` · `[Inference]` `[Verification]` · **Adjacent**
+  > Directs a video world model with metric camera paths and structured prompts, then reviews sampled frames and geometry to revise the layout, replan a route, or regenerate a chunk.<br>
+  > **Verification:** Revisit consistency · camera following · bounded regeneration · generated worlds only.
+
+<a id="paper-2611-00513"></a>
+<!-- mmac-record: {"id": "2611.00513", "scope": "Core", "primary": "2.8", "task": 8} -->
+
+- `arXiv 2026.10` **WorldSketch: Sketching World Models for Zero-Shot Mobile Manipulation**. [[paper]](https://arxiv.org/abs/2611.00513) — `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > Builds an executable kinematic sketch from RGB-D observations, checks the geometry against rendered overlays, and revises the sketch before a geometric planner solves contact and whole-body motion.<br>
+  > **Verification:** Overlay-check ablation · depth-noise replay · sketch vs. execution failures · simulation only.
+
 <a id="paper-2610-40339"></a>
 <!-- mmac-record: {"id": "2610.40339", "scope": "Adjacent", "primary": "2.8", "task": 8} -->
 
@@ -1670,6 +1696,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 **Boundary.** Calling an existing action model does not itself constitute program development. Separate simulation from hardware results and code updates from policy learning.
 
 **Connect:** [3.10 Robot program and policy execution evaluation](#evaluation-robot-programs) · [4.10 Robot demonstrations, execution, and repair trajectories](#data-robot-programs) · [2.11 Real2Sim2Real: task learning and real execution](#methods-real2sim2real) · [2.12 Learning from construction and interaction experience](#methods-experience) · [5.4 Action, policy, prediction, and verification capabilities](#section-5-4)
+
+<a id="paper-2611-01560"></a>
+<!-- mmac-record: {"id": "2611.01560", "scope": "Core", "primary": "2.10", "task": 10} -->
+
+- `arXiv 2026.11` **Democratizing Robot-Use Agents: A Unified Harness with Open Models**. [[paper]](https://arxiv.org/abs/2611.01560) [[code]](https://github.com/Open-RUA/uni-robot-agent) — `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > Shares perception and motion tools across simulators and a dual-arm robot so agents can run geometric checks, observe the outcome of a grasp, and switch manipulation strategies when it fails.<br>
+  > **Verification:** Simulation and 19 real-robot tasks · hardware trace · sensor and fine-tuning differences across baselines.
 
 <a id="paper-2610-42053"></a>
 <!-- mmac-record: {"id": "2610.42053", "scope": "Adjacent", "primary": "2.10", "task": 10} -->
@@ -2676,6 +2709,13 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Connect:** [2.8 Executable world models and simulation programs](#methods-world-models) · [4.8 World observations, transitions, and simulation-program data](#data-world-models) · [3.7 Game behavior, playability, and repair evaluation](#evaluation-games) · [3.9 Scene and interaction construction for Agentic Real-to-Sim](#evaluation-real-to-sim)
 
+<a id="paper-2611-01815"></a>
+<!-- mmac-record: {"id": "2611.01815", "scope": "Adjacent", "primary": "3.8", "task": 8} -->
+
+- `arXiv 2026.11` **When Does Latent Prediction Error Support Physical Surprise Claims in Video World Models?**. [[paper]](https://arxiv.org/abs/2611.01815) [[code]](https://github.com/3-ml/jepa-surprise) — `[Benchmark]` · `[Verification]` · **Adjacent**
+  > Tests whether a video world model’s native prediction error distinguishes physical violations from appearance changes and whether a fixed threshold transfers to new scenes.<br>
+  > **Verification:** Matched action and appearance controls · error ordering · false alarms and misses after threshold transfer.
+
 <a id="paper-2610-37649"></a>
 <!-- mmac-record: {"id": "2610.37649", "scope": "Core", "primary": "3.8", "task": 8} -->
 
@@ -2739,6 +2779,13 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 **Boundary.** Assets, scenes, and episodes are different construction units. Video provenance, visible parameters, and allowed tools affect comparability. Construction evaluation is distinct from real-policy transfer.
 
 **Connect:** [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [4.9 Real-to-Sim observation, simulation, and interaction correspondences](#data-real-to-sim) · [3.6 Physical asset construction and usability evaluation](#evaluation-physical-assets) · [3.8 World-model prediction, intervention, and planning evaluation](#evaluation-world-models) · [3.11 Real2Sim2Real utility and real-transfer evaluation](#evaluation-real2sim2real)
+
+<a id="paper-2611-02928"></a>
+<!-- mmac-record: {"id": "2611.02928", "scope": "Core", "primary": "3.9", "task": 9} -->
+
+- `arXiv 2026.11` **Lab2Sim: Turning Real-World Experiment Videos into Interactive Virtual Experiments**. [[paper]](https://arxiv.org/abs/2611.02928) [[project]](https://black1948.github.io/lab2sim) — `[Method]` `[Benchmark]` · `[Verification]` · **Core**
+  > Benchmarks interactive browser reconstructions of filmed experiments and uses a separate verifier to compare replayed states with video evidence before revising assets or state-machine logic.<br>
+  > **Verification:** Runnable rate vs. operation and transition fidelity · invalid-action tests · repair ablations.
 
 <a id="paper-2610-17288"></a>
 <!-- mmac-record: {"id": "2610.17288", "scope": "Core", "primary": "3.9", "task": 9} -->
@@ -3194,6 +3241,13 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Connect:** [2.7 Playable game construction, recreation, and repair](#methods-games) · [3.7 Game behavior, playability, and repair evaluation](#evaluation-games) · [4.8 World observations, transitions, and simulation-program data](#data-world-models) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience)
 
+<a id="paper-2611-03626"></a>
+<!-- mmac-record: {"id": "2611.03626", "scope": "Adjacent", "primary": "4.7", "task": 7} -->
+
+- `arXiv 2026.11` **Isekai3D SDG: A Platform for Diverse Synthetic Gameplay Visual Data**. [[paper]](https://arxiv.org/abs/2611.03626) [[project]](https://research.nvidia.com/publication/2026-10_isekai3d-sdg-platform-diverse-synthetic-gameplay-visual-data) — `[Method]` · `[Data Curation]` · **Adjacent**
+  > Records gameplay state, actions, and camera tracks once in Unreal Engine, then replays the same events under different capture settings to generate aligned visual training data.<br>
+  > **Verification:** Replay alignment · camera and rendering controls · RGB/depth outputs; data-generation platform.
+
 **Data-construction contributions**
 
 - [RSIGame](#paper-2609-39045) · **Core** · [2.7](#methods-games)
@@ -3271,6 +3325,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Data-construction contributions**
 
+- [Lab2Sim](#paper-2611-02928) · **Core** · [3.9](#evaluation-real-to-sim) — Aligns demonstrated operations and observed state changes with executable page behavior and per-instance rubrics.
 - [Video2World](#paper-2610-04432) · **Core** · [3.9](#evaluation-real-to-sim)
 
 **Experimental data and protocols described in papers**
@@ -3583,7 +3638,7 @@ The list below is a practical starting point rather than a security audit or end
 | Hosted CAD agents and geometry APIs | [Zoo developer tools](https://docs.zoo.dev/docs) | Official MCP / Agent API / Engine API | Connects language-driven KCL workflows to geometric execution, snapshots, inspection, and debugging. |
 | Blender and procedural 3D | [Blender Lab MCP Server](https://www.blender.org/lab/mcp-server/) · [BlenderMCP community demos](https://github.com/ahujasid/blender-mcp) | Official MCP + community demo ecosystem | Gives agents scene inspection and Python operations inside Blender; community demos show reference-image-to-scene and Blender-to-Three.js workflows. |
 | Blender coding and multi-view inspection | [Claude Blender](https://github.com/minihellboy/claude-blender) | Community MCP; MIT | Executes Blender Python and returns viewport/render images, multi-view contact sheets, and scene diffs to an external agent; these interfaces support inspection and revision but are not an autonomous-repair benchmark. |
-| Saved-file and headless Blender iteration | [bpy.dev Blender MCP](https://github.com/bpy-dev/blender-mcp) · [workflow](https://bpy.dev/) | Community developer-preview fork of Blender Lab MCP; GPL-3.0 | Adds saved-.blend subprocess execution, rendering/inspection, and runtime API lookup; agents can use returned renders for further edits. Timeouts and output limits are process safeguards, not an OS sandbox or a verified repair-performance guarantee. |
+| Saved-file and headless Blender iteration | [bpy.dev Blender MCP](https://github.com/bpy-dev/blender-mcp) · [workflow](https://bpy.dev/) | Community developer-preview fork of Blender Lab MCP; GPL-3.0 | Adds saved-.blend subprocess execution, rendering/inspection, and runtime API lookup; agents can use returned renders for further edits. Timeouts and output limits are process safeguards, not an OS sandbox or a verified repair-performance guarantee. In the [published run](https://huggingface.co/datasets/michaelgold/blenderbench-direct-results/blob/7c2c43be4517aee4d76d2b445578988de186970c/results/results-summary.json), the agent viewed renders; CLIP scored 270 checkpoints across 27 tasks offline and was never shown to the agent. |
 | Blender scene and generation bridge | [Scenario for Blender](https://github.com/scenario-labs/blender-plugin) | Project-maintained experimental extension + MCP; GPL-3.0-or-later | Exposes viewport screenshots, still renders, scene operations, and gated Python alongside hosted asset generation; Blender 5.0+ and Scenario credentials are required. |
 | Reproducible Blender asset workflows | [Blender Agent Studio](https://github.com/ifBars/blender-agent-studio) | Community skills + local MCP; MIT | Preserves rebuildable Python and editable .blend assets, with fixed-view review, localized repairs, and contract-specific export/fresh-import checks. |
 | Multi-view Blender model diagnosis | [trueform](https://github.com/shidenkai0/trueform) | Community skill + MIT toolkit | Matches reference cameras, renders silhouette and surface diagnostics, rejects revisions that regress any required view, and guides the agent's next geometry edits. |
@@ -3833,6 +3888,8 @@ The following examples make the coding loop concrete across different tasks. We 
 
 | Task | Case and source | What to watch | Evidence label |
 |---|---|---|---|
+| Scientific design | **Google DeepMind — Agentic cheminformatics** [[source]](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/) | Antigravity uses RDKit and potency models to propose macrocycles; a scientist inspects the plots and predictions, and synthesis and experimental validation remain necessary. | Official application walkthrough |
+| Procedural 3D scenes | **Mr Tactical — Blender volcano island** [[source]](https://x.com/MrTacticalX/status/2116835082547740994) | Two models were given the same brief to build an island entirely in code without downloaded assets; the author shows the resulting scenes. | Community demo |
 | Product brief to editable UI | **AutoClaw Design** — AutoClaw Team [[official workflow]](https://autoclaw.z.ai/blog/product/product-brief-to-ui-design-with-autoclaw/) | Combines reference-guided drafts, conversational or canvas edits, device previews and HTML/project exports; users review interactions and request corrections. | Official product workflow; human review |
 | Visual software engineering | **Programming with Pixels** — Aggarwal & Welleck [[project + demo]](https://programmingwithpixels.com/) | A computer-use agent sees VS Code, types and clicks, edits UI code, and inspects the live preview instead of relying only on text tools. | Closed-loop research demo |
 | Web and UI reconstruction | **WebVIA** — Zhen et al. [[project + cases]](https://zheny2751-dotcom.github.io/webvia.github.io/) | The agent explores multi-state source pages, builds executable HTML/CSS/JS, then tests clicks, input, and navigation against the observed behavior. | Closed-loop research demo |

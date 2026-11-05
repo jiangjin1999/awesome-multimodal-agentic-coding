@@ -49,7 +49,7 @@
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-11-04**
+**最后更新：2026-11-05**
 
 </div>
 
@@ -550,6 +550,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 环境自身质量与下游 Agent 收益分别评价；合成软件到目标应用的迁移属于数字环境迁移。
 
 **关联阅读：** [3.2 GUI／软件训练环境构建与下游效用评测](#evaluation-gui-environments) · [4.2 GUI／软件训练环境、任务、奖励与操作轨迹](#data-gui-environments) · [1.4 何时成为环境：状态、动作、重置、任务与奖励](#section-1-4) · [2.1 视觉软件工程与应用复刻](#methods-software) · [2.12 从构建与交互经验学习](#methods-experience)
+
+<a id="paper-2611-03634"></a>
+<!-- mmac-record: {"id": "2611.03634", "scope": "Adjacent", "primary": "2.2", "task": 2} -->
+
+- `arXiv 2026.11` **WebHarbor: Docking Real Websites for Evolving GUI Agent Environments**. [[论文]](https://arxiv.org/abs/2611.03634) [[代码]](https://github.com/aiming-lab/WebHarbor) [[数据]](https://huggingface.co/datasets/ChilleD/WebHarbor-Tasks) — `[Method]` `[Benchmark]` `[Dataset]` · `[Environment]` `[Training]` · **Adjacent**
+  > 通过任务限定的全栈编码与人工视觉／流程审阅，构造可重置网站环境，支持可复现 GUI 评测与操作者训练。<br>
+  > **验证维度：** 人工视觉与流程审阅、确定性重置、任务／奖励核验、留出 GUI 评测。
 
 <a id="paper-2608-15930"></a>
 <!-- mmac-record: {"id": "2608.15930", "scope": "Adjacent", "primary": "2.2", "task": 2} -->
@@ -1484,6 +1491,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.8 世界模型的预测、干预与规划效用评测](#evaluation-world-models) · [4.8 世界观测、状态转移与仿真程序数据](#data-world-models) · [2.7 可玩游戏构建、复刻与修复](#methods-games) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.12 从构建与交互经验学习](#methods-experience)
 
+<a id="paper-2611-04870"></a>
+<!-- mmac-record: {"id": "2611.04870", "scope": "Adjacent", "primary": "2.8", "task": 8} -->
+
+- `arXiv 2026.11` **PrimeSim: A Generalist World Model Simulator from Large-Scale Cross-Embodiment Demonstrations**. [[论文]](https://arxiv.org/abs/2611.04870) [[项目]](https://primebottech.github.io/PrimeSim-website) — `[Method]` · `[Training]` `[Verification]` · **Adjacent**
+  > 将动作条件多视角视频模型用作闭环策略仿真器，检验策略排序及短预算强化学习收益能否迁回 LIBERO 物理仿真器。<br>
+  > **验证维度：** 八策略排序保真度、固定初始状态、在 LIBERO 验证强化学习收益；未测试实机迁移。
+
 <a id="paper-2611-02341"></a>
 <!-- mmac-record: {"id": "2611.02341", "scope": "Adjacent", "primary": "2.8", "task": 8} -->
 
@@ -1926,6 +1940,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.12 经验学习与跨任务泛化评测](#evaluation-experience) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [2.2 GUI／软件训练环境合成](#methods-gui-environments) · [5.5 Skills、工具桥与可复用工作流](#section-5-5) · [6.5 从构建经验到可迁移能力](#section-6-5)
 
+<a id="paper-2610-28282"></a>
+<!-- mmac-record: {"id": "2610.28282", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.10` **ChartEvo: Self-Evolving Agent Harnesses for Long-Tail Chart Reasoning**. [[论文]](https://arxiv.org/abs/2610.28282) — `[Method]` · `[Inference]` `[Verification]` · **Adjacent**
+  > 利用有监督任务反馈演化图表专用 Skills、可执行视觉／数值工具及可复用工具链，支持长尾图表推理。<br>
+  > **验证维度：** Skill／工具／工具链消融、运行时契约核验、区分有监督演化与推理恢复。
+
 <a id="paper-2610-40799"></a>
 <!-- mmac-record: {"id": "2610.40799", "scope": "Core", "primary": "2.12", "task": 12} -->
 
@@ -2222,6 +2243,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **Benchmark 工作**
 
+- [WebHarbor](#paper-2611-03634) · **Adjacent** · [2.2](#methods-gui-environments) — 任务限定的人工审阅与状态／证据评分区分环境构建和 GUI 操作。
 - [UI-Mate](#paper-2608-15930) · **Adjacent** · [2.2](#methods-gui-environments) — OSWorkerBench 固定初始化与验证器，对照纯指令和示范引导的操作。
 - [Trace2World](#paper-2610-30792) · **Core** · [2.2](#methods-gui-environments)
 - [SoftwareGym](#paper-2610-12611) · **Core** · [2.2](#methods-gui-environments)
@@ -2821,6 +2843,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.10 机器人程序与策略开发](#methods-robot-programs) · [4.10 机器人演示、执行与程序／策略修复轨迹](#data-robot-programs) · [3.11 Real2Sim2Real 的任务效用与真实迁移评测](#evaluation-real2sim2real) · [3.12 经验学习与跨任务泛化评测](#evaluation-experience)
 
+<a id="paper-2611-02497"></a>
+<!-- mmac-record: {"id": "2611.02497", "scope": "Adjacent", "primary": "3.10", "task": 10} -->
+
+- `arXiv 2026.11` **RoboColosseum: Evaluating Physical Intelligence at Scale In-The-Wild**. [[论文]](https://arxiv.org/abs/2611.02497) [[项目]](https://robocolosseum.ai/) [[代码]](https://github.com/RoboColosseum) — `[Benchmark]` · `[Verification]` · **Adjacent**
+  > 通过跨站点、条件匹配的盲测实机试验比较冻结 Agent 与 VLA，并另设适配赛道分析不同机器人上的排名变化。<br>
+  > **验证维度：** 本地匹配试验、人工成功判定、跨站点与排名不确定性、单列任务适配。
+
 <a id="paper-2610-31670"></a>
 <!-- mmac-record: {"id": "2610.31670", "scope": "Adjacent", "primary": "3.10", "task": 10} -->
 
@@ -3085,6 +3114,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **数据集工作**
 
+- [WebHarbor](#paper-2611-03634) · **Adjacent** · [2.2](#methods-gui-environments) — 发布可重置网站复刻对应的任务指令、环境定义与测试。
 - [MobileForge](#paper-2606-19930) · **Adjacent** · [2.12](#methods-experience) — 发布 3,249 个生成式移动任务、探索轨迹和训练分片，并单列评测结果归档。
 - [UI-Mate](#paper-2608-15930) · **Adjacent** · [2.2](#methods-gui-environments) — 发布办公任务包与示范轨迹，区分同任务／变体示范协议，并注明模拟应用服务依赖。
 - [Gym-Anything-RT](#paper-2610-37567) · **Core** · [2.2](#methods-gui-environments) — 已发布的小游戏程序、接口契约与验证资料。
@@ -3102,6 +3132,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 精确编辑需要同时描述目标变化、必要联动和应保持部分；用于训练构建者的数据与用于测试图表理解的数据分开。
 
 **关联阅读：** [2.3 图表、科学可视化与可编辑图形构建](#methods-graphics) · [3.3 图表、科学可视化与图形编辑评测](#evaluation-graphics) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
+
+<a id="paper-2610-19337"></a>
+<!-- mmac-record: {"id": "2610.19337", "scope": "Adjacent", "primary": "4.3", "task": 3} -->
+
+- `arXiv 2026.10` **Beyond Initial Creation: Two Decades of Community-based Chart Revisions from Wikimedia Commons**. [[论文]](https://arxiv.org/abs/2610.19337) [[数据]](https://github.com/WikiVizEvolution/viz-revisions-dataset) — `[Dataset]` · `[Data Curation]` · **Adjacent**
+  > 发布 1,664 张 Wikimedia 图表、7,786 次修订的历史元数据与编辑标签，为初次创建之后的图表变化提供人类编辑数据。<br>
+  > **验证维度：** 经人工验证的编辑分类、标签可靠性、图表级纵向分析。
 
 **数据构造工作**
 
@@ -3343,6 +3380,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.10 机器人程序与策略开发](#methods-robot-programs) · [3.10 机器人程序与策略的执行评测](#evaluation-robot-programs) · [4.11 Real2Sim2Real 的环境、策略与配对迁移记录](#data-real2sim2real) · [4.12 跨任务构建、修复与技能学习资料](#data-experience)
 
+<a id="paper-2611-05163"></a>
+<!-- mmac-record: {"id": "2611.05163", "scope": "Adjacent", "primary": "4.10", "task": 10} -->
+
+- `arXiv 2026.11` **RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On**. [[论文]](https://arxiv.org/abs/2611.05163) [[项目]](https://ryan-seungyong-lee.github.io/RoboTryOn) — `[Method]` · `[Data Curation]` `[Training]` · **Adjacent**
+  > 将真人示范转换为目标机器人视频，通过逆动力学和腕部校正生成伪动作，训练策略并在两种真实机器人上评估。<br>
+  > **验证维度：** 仿真开环动作回放、两种实机与 11 个任务、视觉及动作差距消融。
+
 **数据集工作**
 
 - [CaPtain](#paper-2610-40799) · **Core** · [2.12](#methods-experience) — 发布仿真 Code-as-Policy 轨迹与视觉问答训练行，包含摄像资产及明确的过滤／代码规范化来源。
@@ -3468,6 +3512,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 | 能力 | 资源与来源 | 输入 → 输出 | 在工作流中的作用 |
 |---|---|---|---|
+| 三维生成、局部编辑与补全 | **SeMo3D** [[论文]](https://arxiv.org/abs/2611.02568) [[项目]](https://xiaokunsun.github.io/SeMo3D.github.io/) | 参考图、可选文本／点、编辑区域及缓存潜变量 → 带纹理三维资产 | 选择性生成几何和纹理，保留未编辑区域；Agent 可组织图像生成与用户连续提出的局部修改。代码与权重已公告、尚未发布。 |
 | 语义规划的图像／视频生成编辑 | **Bernini: Latent Semantic Planning for Video Diffusion** [[代码]](https://github.com/bytedance/Bernini) · [[文档]](https://github.com/bytedance/Bernini/blob/main/docs/bernini.md) · [[权重]](https://huggingface.co/ByteDance/Bernini-Diffusers) | 提示 + 可选源／参考图像或视频 → 生成或编辑后的视觉媒体 | 将 Qwen2.5-VL 语义规划器连接到 Wan2.2 扩散渲染器，以统一任务接口提供生成／编辑；完整管线与独立渲染器版本均可作为媒体工具。 |
 | 语义到像素的图像生成 | **Know, then Draw: A New Learning Paradigm for Visual Generation** [[论文]](https://arxiv.org/abs/2610.37626) | 文本 → 自回归语义 token → 扩散渲染图像 | 将语义学习与像素渲染分开，用语言监督的视觉 token 为扩散渲染器提供条件；为文本生图提供语义与渲染分工的模型组件。 |
 | 几何条件的主体视频 | **OmniShowcase: Omnidirectional Subject-Consistent Video Generation from Multi-View Images** [[paper]](https://arxiv.org/abs/2610.35684) · [[project]](https://justin4ai.github.io/OmniShowcase/) · [[release status]](https://github.com/justin4ai/OmniShowcase) | 多张参考图 + 相机运动提示 → 以重建法线转台为条件的主体一致视频 | 结合多视角重建与 LoRA 视频生成器，支持围绕静态主体的视角变化；非刚体运动仍受限，代码和数据处于发布计划中。 |
@@ -3526,6 +3571,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 区分被调用模型的能力与 Agent 的组织贡献；模型微调、程序调整、策略调用和真实反馈采集属于不同操作。
 
 **关联阅读：** [2.10 机器人程序与策略开发](#methods-robot-programs) · [2.11 Real2Sim2Real：任务学习与真实执行](#methods-real2sim2real) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
+
+<a id="paper-2611-05275"></a>
+<!-- mmac-record: {"id": "2611.05275", "scope": "Adjacent", "primary": "5.4", "task": null} -->
+
+- `arXiv 2026.11` **Route Anything: A Study of Model and Policy Routing for General-Purpose AI Systems**. [[论文]](https://arxiv.org/abs/2611.05275) [[代码]](https://github.com/InfRec-Cardinal/route-anything) [[数据]](https://huggingface.co/datasets/Lance1573/route-anything-data) — `[Method]` · `[Inference]` `[Verification]` · **Adjacent**
+  > 在一致的质量—成本口径下研究异构模型和机器人策略路由；根据场景选择固定策略可减少策略推理耗时，不修改被选策略。<br>
+  > **验证维度：** 统一输入集合及回退规则、留出 RoboTwin 任务、成本与不确定区间。
 
 <a id="paper-2610-19677"></a>
 <!-- mmac-record: {"id": "2610.19677", "scope": "Adjacent", "primary": "5.4", "task": 10} -->
@@ -3890,6 +3942,7 @@ Adjacent 论文已经归入上面的具体方向；此索引汇总其完整记�
 |---|---|---|---|
 | 科学设计 | **Google DeepMind — Agentic cheminformatics** [[原文]](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/) | Antigravity 调用 RDKit 和效力模型提出宏环候选，科学家审阅图表和预测；合成与实验验证仍需另行完成。 | 官方应用案例 |
 | 程序化三维场景 | **Mr Tactical — Blender 火山岛** [[原文]](https://x.com/MrTacticalX/status/2116835082547740994) | 作者给两个模型相同的火山岛需求，要求完全用代码构建、不下载模型或纹理，并展示生成场景。 | 社区演示 |
+| 数字孪生与工厂运行 | **NVIDIA — Factory Operations Blueprint** [[原文]](https://developer.nvidia.com/blog/how-nvidia-factory-operations-blueprint-coordinates-ai-agents-to-investigate-production-issues/) | 管理 Agent 编排视觉检查、时序分析与车队专家；运输在 Isaac Sim／ROS 2 中演示，真实设备接入、批准及人工返修仍属部署环节。 | 官方应用案例 |
 | 产品需求到可编辑 UI | **AutoClaw Design** — AutoClaw Team [[官方流程]](https://autoclaw.z.ai/blog/product/product-brief-to-ui-design-with-autoclaw/) | 结合参考素材生成、对话／画布编辑、设备预览和 HTML／项目导出，由用户检查交互并提出修正。 | 官方产品流程；人工评审 |
 | 视觉软件工程 | **Programming with Pixels** — Aggarwal & Welleck [[项目 + Demo]](https://programmingwithpixels.com/) | Computer-use Agent 观察 VS Code，通过点击与输入修改 UI 代码，并检查实时预览，而不是只依赖文本工具。 | 闭环研究 Demo |
 | Web 与 UI 重建 | **WebVIA** — Zhen et al. [[项目 + 案例]](https://zheny2751-dotcom.github.io/webvia.github.io/) | Agent 探索源网页的多种状态，生成可执行 HTML/CSS/JS，再用点击、输入和导航验证行为。 | 闭环研究 Demo |

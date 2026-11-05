@@ -49,7 +49,7 @@ Enable agents to **organize and combine model capabilities**, expanding their ab
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-11-04**
+**Last updated: 2026-11-05**
 
 </div>
 
@@ -550,6 +550,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 **Boundary.** Environment quality and downstream agent benefit are evaluated separately. Transfer from synthetic software to target applications is digital-environment transfer.
 
 **Connect:** [3.2 Training-environment construction and downstream utility](#evaluation-gui-environments) · [4.2 GUI/software environments, tasks, rewards, and action traces](#data-gui-environments) · [1.4 From artifacts to environments: state, actions, resets, tasks, and rewards](#section-1-4) · [2.1 Visual software engineering and application recreation](#methods-software) · [2.12 Learning from construction and interaction experience](#methods-experience)
+
+<a id="paper-2611-03634"></a>
+<!-- mmac-record: {"id": "2611.03634", "scope": "Adjacent", "primary": "2.2", "task": 2} -->
+
+- `arXiv 2026.11` **WebHarbor: Docking Real Websites for Evolving GUI Agent Environments**. [[paper]](https://arxiv.org/abs/2611.03634) [[code]](https://github.com/aiming-lab/WebHarbor) [[data]](https://huggingface.co/datasets/ChilleD/WebHarbor-Tasks) — `[Method]` `[Benchmark]` `[Dataset]` · `[Environment]` `[Training]` · **Adjacent**
+  > Builds resettable full-stack website environments through task-scoped coding and human visual/workflow audits, supporting reproducible GUI evaluation and operator training.<br>
+  > **Verification:** Human visual and workflow audit · deterministic reset · task/reward checks · held-out GUI evaluation.
 
 <a id="paper-2608-15930"></a>
 <!-- mmac-record: {"id": "2608.15930", "scope": "Adjacent", "primary": "2.2", "task": 2} -->
@@ -1484,6 +1491,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Connect:** [3.8 World-model prediction, intervention, and planning evaluation](#evaluation-world-models) · [4.8 World observations, transitions, and simulation-program data](#data-world-models) · [2.7 Playable game construction, recreation, and repair](#methods-games) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.12 Learning from construction and interaction experience](#methods-experience)
 
+<a id="paper-2611-04870"></a>
+<!-- mmac-record: {"id": "2611.04870", "scope": "Adjacent", "primary": "2.8", "task": 8} -->
+
+- `arXiv 2026.11` **PrimeSim: A Generalist World Model Simulator from Large-Scale Cross-Embodiment Demonstrations**. [[paper]](https://arxiv.org/abs/2611.04870) [[project]](https://primebottech.github.io/PrimeSim-website) — `[Method]` · `[Training]` `[Verification]` · **Adjacent**
+  > Uses an action-conditioned multiview video model as a closed-loop policy simulator and tests whether policy rankings and short-budget RL gains transfer back to the LIBERO physics simulator.<br>
+  > **Verification:** Eight-policy ranking fidelity · fixed initial states · RL gains checked in LIBERO; no real-robot transfer test.
+
 <a id="paper-2611-02341"></a>
 <!-- mmac-record: {"id": "2611.02341", "scope": "Adjacent", "primary": "2.8", "task": 8} -->
 
@@ -1926,6 +1940,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Connect:** [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [2.2 GUI and software training-environment synthesis](#methods-gui-environments) · [5.5 Skills, tool bridges, and reusable workflows](#section-5-5) · [6.5 From construction experience to transferable capability](#section-6-5)
 
+<a id="paper-2610-28282"></a>
+<!-- mmac-record: {"id": "2610.28282", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.10` **ChartEvo: Self-Evolving Agent Harnesses for Long-Tail Chart Reasoning**. [[paper]](https://arxiv.org/abs/2610.28282) — `[Method]` · `[Inference]` `[Verification]` · **Adjacent**
+  > Evolves chart-specific skills, executable visual/numerical tools, and reusable toolchains using supervised task feedback, then reuses them for long-tail chart reasoning.<br>
+  > **Verification:** Skill/tool/toolchain ablations · runtime-contract checks · supervised evolution separated from inference recovery.
+
 <a id="paper-2610-40799"></a>
 <!-- mmac-record: {"id": "2610.40799", "scope": "Core", "primary": "2.12", "task": 12} -->
 
@@ -2222,6 +2243,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Benchmark contributions**
 
+- [WebHarbor](#paper-2611-03634) · **Adjacent** · [2.2](#methods-gui-environments) — Task-scoped human audits and state/evidence-based scoring separate environment construction from GUI operation.
 - [UI-Mate](#paper-2608-15930) · **Adjacent** · [2.2](#methods-gui-environments) — OSWorkerBench controls initialization and verifiers while comparing instruction-only and demonstration-guided operation.
 - [Trace2World](#paper-2610-30792) · **Core** · [2.2](#methods-gui-environments)
 - [SoftwareGym](#paper-2610-12611) · **Core** · [2.2](#methods-gui-environments)
@@ -2821,6 +2843,13 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Connect:** [2.10 Robot program and policy development](#methods-robot-programs) · [4.10 Robot demonstrations, execution, and repair trajectories](#data-robot-programs) · [3.11 Real2Sim2Real utility and real-transfer evaluation](#evaluation-real2sim2real) · [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience)
 
+<a id="paper-2611-02497"></a>
+<!-- mmac-record: {"id": "2611.02497", "scope": "Adjacent", "primary": "3.10", "task": 10} -->
+
+- `arXiv 2026.11` **RoboColosseum: Evaluating Physical Intelligence at Scale In-The-Wild**. [[paper]](https://arxiv.org/abs/2611.02497) [[project]](https://robocolosseum.ai/) [[code]](https://github.com/RoboColosseum) — `[Benchmark]` · `[Verification]` · **Adjacent**
+  > Compares frozen agents and VLA policies through matched, blinded real-robot trials across sites, with a separate adaptation track and explicit embodiment-dependent ranking analysis.<br>
+  > **Verification:** Matched local trials · human success assessment · cross-site/rank uncertainty · adaptation tracked separately.
+
 <a id="paper-2610-31670"></a>
 <!-- mmac-record: {"id": "2610.31670", "scope": "Adjacent", "primary": "3.10", "task": 10} -->
 
@@ -3085,6 +3114,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Dataset contributions**
 
+- [WebHarbor](#paper-2611-03634) · **Adjacent** · [2.2](#methods-gui-environments) — Released task instructions, environment definitions and tests for resettable website mirrors.
 - [MobileForge](#paper-2606-19930) · **Adjacent** · [2.12](#methods-experience) — Released 3,249 generated mobile tasks, exploration traces and training splits, with separate benchmark-result archives.
 - [UI-Mate](#paper-2608-15930) · **Adjacent** · [2.2](#methods-gui-environments) — Released office-task bundles and demonstration traces, with separate self-demo and variant-demo protocols and mock-application dependencies.
 - [Gym-Anything-RT](#paper-2610-37567) · **Core** · [2.2](#methods-gui-environments) — released minigame programs, interface contracts, and verification assets.
@@ -3102,6 +3132,13 @@ This is a research-resource index, not a claim that every linked paper releases 
 **Boundary.** Precise editing describes intended changes, necessary dependent changes, and protected content. Builder-training data differs from chart-understanding evaluation data.
 
 **Connect:** [2.3 Charts, scientific visualization, and editable graphics](#methods-graphics) · [3.3 Chart, scientific visualization, and graphics-editing evaluation](#evaluation-graphics) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
+
+<a id="paper-2610-19337"></a>
+<!-- mmac-record: {"id": "2610.19337", "scope": "Adjacent", "primary": "4.3", "task": 3} -->
+
+- `arXiv 2026.10` **Beyond Initial Creation: Two Decades of Community-based Chart Revisions from Wikimedia Commons**. [[paper]](https://arxiv.org/abs/2610.19337) [[data]](https://github.com/WikiVizEvolution/viz-revisions-dataset) — `[Dataset]` · `[Data Curation]` · **Adjacent**
+  > Releases longitudinal metadata and edit labels for 7,786 revisions of 1,664 Wikimedia charts, providing human revision histories for studying changes beyond initial chart creation.<br>
+  > **Verification:** Human-validated edit taxonomy · label reliability · chart-level longitudinal analysis.
 
 **Data-construction contributions**
 
@@ -3343,6 +3380,13 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Connect:** [2.10 Robot program and policy development](#methods-robot-programs) · [3.10 Robot program and policy execution evaluation](#evaluation-robot-programs) · [4.11 Real2Sim2Real environments, policies, and paired transfer records](#data-real2sim2real) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience)
 
+<a id="paper-2611-05163"></a>
+<!-- mmac-record: {"id": "2611.05163", "scope": "Adjacent", "primary": "4.10", "task": 10} -->
+
+- `arXiv 2026.11` **RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On**. [[paper]](https://arxiv.org/abs/2611.05163) [[project]](https://ryan-seungyong-lee.github.io/RoboTryOn) — `[Method]` · `[Data Curation]` `[Training]` · **Adjacent**
+  > Translates human demonstrations into target-robot videos, infers pseudo-actions with inverse dynamics and wrist correction, and uses the resulting data to train policies evaluated on two real robot platforms.<br>
+  > **Verification:** Open-loop action replay in simulation · two real robots and 11 tasks · visual/action-gap ablations.
+
 **Dataset contributions**
 
 - [CaPtain](#paper-2610-40799) · **Core** · [2.12](#methods-experience) — Released simulated code-as-policy trajectories and visual-QA training rows, with camera assets and explicit filtering/normalization provenance.
@@ -3468,6 +3512,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 | Capability | Resource and sources | Inputs → outputs | Role in a workflow |
 |---|---|---|---|
+| 3D generation, local editing & completion | **SeMo3D** [[paper]](https://arxiv.org/abs/2611.02568) [[project]](https://xiaokunsun.github.io/SeMo3D.github.io/) | Reference image, optional text/points, edit region and cached latents → textured 3D asset | Selectively models geometry and texture while preserving untouched regions; an agent can combine image generation with successive user-requested edits. Code and weights are announced but not yet released. |
 | Planned image/video generation and editing | **Bernini: Latent Semantic Planning for Video Diffusion** [[code]](https://github.com/bytedance/Bernini) · [[guide]](https://github.com/bytedance/Bernini/blob/main/docs/bernini.md) · [[weights]](https://huggingface.co/ByteDance/Bernini-Diffusers) | Prompt + optional source/reference image or video → generated or edited visual media | Connects a Qwen2.5-VL semantic planner to a Wan2.2 diffusion renderer through a shared task interface; released full-pipeline and renderer-only variants provide reusable media tools. |
 | Semantic-to-pixel image generation | **Know, then Draw: A New Learning Paradigm for Visual Generation** [[paper]](https://arxiv.org/abs/2610.37626) | Text → semantic autoregressive tokens → diffusion-rendered image | Separates semantic acquisition from pixel rendering, using language-supervised visual tokens to condition a diffusion renderer; provides a paper-described text-to-image generation component. |
 | Geometry-conditioned subject videos | **OmniShowcase: Omnidirectional Subject-Consistent Video Generation from Multi-View Images** [[paper]](https://arxiv.org/abs/2610.35684) · [[project]](https://justin4ai.github.io/OmniShowcase/) · [[release status]](https://github.com/justin4ai/OmniShowcase) | Multiple reference images + motion prompt → subject-consistent video, conditioned on reconstructed surface-normal turntables | Combines multi-view reconstruction with a LoRA-adapted video generator for viewpoint changes around static subjects; non-rigid motion remains limited, and code/data release is planned. |
@@ -3526,6 +3571,13 @@ These layers are complementary rather than mutually exclusive. For example, an a
 **Boundary.** Distinguish a called model's capability from the agent's coordination contribution. Model adaptation, code editing, policy invocation, and real-feedback collection are different operations.
 
 **Connect:** [2.10 Robot program and policy development](#methods-robot-programs) · [2.11 Real2Sim2Real: task learning and real execution](#methods-real2sim2real) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
+
+<a id="paper-2611-05275"></a>
+<!-- mmac-record: {"id": "2611.05275", "scope": "Adjacent", "primary": "5.4", "task": null} -->
+
+- `arXiv 2026.11` **Route Anything: A Study of Model and Policy Routing for General-Purpose AI Systems**. [[paper]](https://arxiv.org/abs/2611.05275) [[code]](https://github.com/InfRec-Cardinal/route-anything) [[data]](https://huggingface.co/datasets/Lance1573/route-anything-data) — `[Method]` · `[Inference]` `[Verification]` · **Adjacent**
+  > Studies routing among heterogeneous models and robot policies under matched quality–cost comparisons; scene-conditioned selection saves policy time without editing the selected policies.<br>
+  > **Verification:** Matched input sets and fallback rules · held-out RoboTwin tasks · cost and uncertainty intervals.
 
 <a id="paper-2610-19677"></a>
 <!-- mmac-record: {"id": "2610.19677", "scope": "Adjacent", "primary": "5.4", "task": 10} -->
@@ -3890,6 +3942,7 @@ The following examples make the coding loop concrete across different tasks. We 
 |---|---|---|---|
 | Scientific design | **Google DeepMind — Agentic cheminformatics** [[source]](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/) | Antigravity uses RDKit and potency models to propose macrocycles; a scientist inspects the plots and predictions, and synthesis and experimental validation remain necessary. | Official application walkthrough |
 | Procedural 3D scenes | **Mr Tactical — Blender volcano island** [[source]](https://x.com/MrTacticalX/status/2116835082547740994) | Two models were given the same brief to build an island entirely in code without downloaded assets; the author shows the resulting scenes. | Community demo |
+| Digital twins & factory operations | **NVIDIA — Factory Operations Blueprint** [[source]](https://developer.nvidia.com/blog/how-nvidia-factory-operations-blueprint-coordinates-ai-agents-to-investigate-production-issues/) | A manager coordinates visual inspection, time-series analysis and fleet specialists; transport is demonstrated in Isaac Sim/ROS 2, while physical integration, approval and human rework remain deployment steps. | Official application walkthrough |
 | Product brief to editable UI | **AutoClaw Design** — AutoClaw Team [[official workflow]](https://autoclaw.z.ai/blog/product/product-brief-to-ui-design-with-autoclaw/) | Combines reference-guided drafts, conversational or canvas edits, device previews and HTML/project exports; users review interactions and request corrections. | Official product workflow; human review |
 | Visual software engineering | **Programming with Pixels** — Aggarwal & Welleck [[project + demo]](https://programmingwithpixels.com/) | A computer-use agent sees VS Code, types and clicks, edits UI code, and inspects the live preview instead of relying only on text tools. | Closed-loop research demo |
 | Web and UI reconstruction | **WebVIA** — Zhen et al. [[project + cases]](https://zheny2751-dotcom.github.io/webvia.github.io/) | The agent explores multi-state source pages, builds executable HTML/CSS/JS, then tests clicks, input, and navigation against the observed behavior. | Closed-loop research demo |

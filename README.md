@@ -1714,9 +1714,9 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 <a id="paper-2611-01560"></a>
 <!-- mmac-record: {"id": "2611.01560", "scope": "Core", "primary": "2.10", "task": 10} -->
 
-- `arXiv 2026.11` **Democratizing Robot-Use Agents: A Unified Harness with Open Models**. [[paper]](https://arxiv.org/abs/2611.01560) [[code]](https://github.com/Open-RUA/uni-robot-agent) — `[Method]` · `[Inference]` `[Verification]` · **Core**
-  > Shares perception and motion tools across simulators and a dual-arm robot so agents can run geometric checks, observe the outcome of a grasp, and switch manipulation strategies when it fails.<br>
-  > **Verification:** Simulation and 19 real-robot tasks · hardware trace · sensor and fine-tuning differences across baselines.
+- `arXiv 2026.11` **Democratizing Robot-Use Agents: A Unified Harness with Open Models**. [[paper]](https://arxiv.org/abs/2611.01560) [[code]](https://github.com/Open-RUA/uni-robot-agent) [[project]](https://openrua.ai/uni-robot-agent) — `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > Connects Qwen3.8-Flash-Next and GPT-6 Astra to shared perception and motion tools so agents can run geometric checks, inspect action outcomes, and adjust their next move.<br>
+  > **Verification:** RoboDojo comparisons with the same model across harnesses · 19 real-robot tasks · sensor inputs and fine-tuning differ across hardware baselines.
 
 <a id="paper-2610-42053"></a>
 <!-- mmac-record: {"id": "2610.42053", "scope": "Adjacent", "primary": "2.10", "task": 10} -->
@@ -2013,9 +2013,9 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 <a id="paper-2610-23479"></a>
 <!-- mmac-record: {"id": "2610.23479", "scope": "Core", "primary": "2.12", "task": 12} -->
 
-- `arXiv 2026.10` **HexaShell: A Thin Harness for Exploring the Limits of VLM Agents as Robot Coding Agents**. [[paper]](https://arxiv.org/abs/2610.23479) [[tools and interfaces]](https://github.com/HexaFuture/HexaShell) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]` `[Trajectory Analysis]` · **Core**
-  > Converts robot failures into reusable Python tools through episode-log and selected camera-frame analysis, same-layout repair trials, and subsequent frozen-tool evaluation in RoboDojo simulation.<br>
-  > **Verification:** Held-out layouts within one seed · RGB triangulation and active-view costs · executed-edit case studies · contact-sensitive failure analysis; fixed shared tools and task guidance, with no hardware evaluation.
+- `arXiv 2026.10` **HexaShell: A Universal Harness for Robot Coding Agents in Simulation and the Real World**. [[paper]](https://arxiv.org/abs/2610.23479) [[tools and interfaces]](https://github.com/HexaFuture/HexaShell) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]` `[Trajectory Analysis]` · **Core**
+  > Lets a robot coding agent write a Python cell each turn against shared motion, perception and state tools, with optional task skills drafted from earlier runs.<br>
+  > **Verification:** GPT-6 Astra across four simulation benchmarks · nine dual-arm hardware tasks, 76/90 episodes judged successful · GPT-6.1 Terra wrote the hardware code and GPT-6 Astra judged the outcomes.
 
 <a id="paper-2610-22362"></a>
 <!-- mmac-record: {"id": "2610.22362", "scope": "Core", "primary": "2.12", "task": 12} -->
@@ -2873,6 +2873,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Evaluation settings in method papers**
 
+- [uni-robot-agent](#paper-2611-01560) · **Core** · [2.10](#methods-robot-programs) — Compares RoboProbe and uni-robot-agent with Qwen3.8-Flash-Next on the same RoboDojo task suite.
 - [RoboAuto](#paper-2610-36533) · **Core** · [2.10](#methods-robot-programs) — program-search generalization and physical-grounding ablations.
 - [FORCA](#paper-2610-31841) · **Core** · [2.10](#methods-robot-programs)
 - [AW-0](#paper-2610-30136) · **Adjacent** · [2.10](#methods-robot-programs)
@@ -2924,8 +2925,8 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 <a id="paper-2610-34527"></a>
 <!-- mmac-record: {"id": "2610.34527", "scope": "Adjacent", "primary": "3.11", "task": 11} -->
 
-- `arXiv 2026.10` **How High Can GPT-6 Astra Climb in Contact-Rich Manipulation? PhysLadder: A Hierarchical, Matched Sim-Real Benchmark for Physical Interaction**. [[paper]](https://arxiv.org/abs/2610.34527) [[code]](https://github.com/LLM4Robot/LLM4Robot-Bench) [[project]](https://llm4robot.github.io/bench/) — `[Benchmark]` · `[Environment]` `[Verification]` · **Adjacent**
-  > Pairs simulated and real dual-arm contact tasks to measure where visual action selection succeeds or fails across geometric alignment, sustained contact, and contact reconfiguration; the maintained project is LLM4Robot-Bench.<br>
+- `arXiv 2026.10` **LLM4Robot-Bench: How Far Can GPT-6 Astra Go in Robotic Manipulation? A Hierarchical, Paired Sim-Real Benchmark**. [[paper]](https://arxiv.org/abs/2610.34527) [[code]](https://github.com/LLM4Robot/LLM4Robot-Bench) [[project]](https://llm4robot.github.io/bench/) — `[Benchmark]` · `[Environment]` `[Verification]` · **Adjacent**
+  > Originally released as PhysLadder, this benchmark tests GPT-6 Astra on geometric alignment, force regulation and contact reconfiguration in matched simulated and real dual-arm tasks.<br>
   > **Verification:** 16 tasks · three trials per task/environment · shared outcome criteria · physical/visual matching and failure analysis; single-model evidence, with different real/sim execution budgets.
 
 **Evaluation settings in method papers**
@@ -2963,7 +2964,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 - [ImageRSI](#paper-2610-32120) · **Adjacent** · [2.12](#methods-experience)
 - [Learning Only with Images](#paper-2507-20766) · **Core** · [2.1](#methods-software)
 - [WebWorld](#paper-2608-30530) · **Core** · [2.1](#methods-software)
-- [HexaShell](#paper-2610-23479) · **Core** · [2.12](#methods-experience) — frozen-tool tests on unseen same-seed layouts, distinct from cross-task or multi-seed generalization.
+- [HexaShell](#paper-2610-23479) · **Core** · [2.12](#methods-experience) — Compares skills derived from development runs against general tools and reports successes gained and lost on held-out layouts.
 - [CoDA](#paper-2610-22362) · **Core** · [2.12](#methods-experience) — cross-task generation-program reuse and policy learning in simulation.
 - [VisRefiner](#paper-2602-05998) · **Core** · [2.1](#methods-software)
 - [ReLook](#paper-2510-11498) · **Core** · [2.1](#methods-software)
@@ -3454,7 +3455,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 - [RA-CAD](#paper-2608-05714) · **Adjacent** · [2.12](#methods-experience)
 - [Designer-RSI](#paper-2609-22086) · **Core** · [2.12](#methods-experience)
 - [CarryOn](#paper-2610-21453) · **Adjacent** · [2.12](#methods-experience) — failure examples and recovery-version chains described in the paper.
-- [HexaShell](#paper-2610-23479) · **Core** · [2.12](#methods-experience) — released frozen tools, interfaces, and results; optimizer development logs, tests, and the full harness are not bundled.
+- [HexaShell](#paper-2610-23479) · **Core** · [2.12](#methods-experience) — Documents how task skills are drafted from execution records and compares those skills with optimized task-specific Python tools.
 
 <a id="capabilities-and-infrastructure"></a>
 

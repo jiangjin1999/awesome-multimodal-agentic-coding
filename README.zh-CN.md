@@ -1714,9 +1714,9 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 <a id="paper-2611-01560"></a>
 <!-- mmac-record: {"id": "2611.01560", "scope": "Core", "primary": "2.10", "task": 10} -->
 
-- `arXiv 2026.11` **Democratizing Robot-Use Agents: A Unified Harness with Open Models**. [[论文]](https://arxiv.org/abs/2611.01560) [[代码]](https://github.com/Open-RUA/uni-robot-agent) — `[Method]` · `[Inference]` `[Verification]` · **Core**
-  > 在仿真器与双臂实机间共享感知和运动工具，让 Agent 执行几何检查，观察抓取结果，并在失败后更换操控策略。<br>
-  > **验证维度：** 仿真及 19 个双臂实机任务、实机执行轨迹；基线传感器与微调条件有差异。
+- `arXiv 2026.11` **Democratizing Robot-Use Agents: A Unified Harness with Open Models**. [[论文]](https://arxiv.org/abs/2611.01560) [[代码]](https://github.com/Open-RUA/uni-robot-agent) [[项目]](https://openrua.ai/uni-robot-agent) — `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > 让 Qwen3.8-Flash-Next 和 GPT-6 Astra 通过统一接口调用感知与运动工具，运行几何检查，观察动作结果并调整下一步操作。<br>
+  > **验证维度：** RoboDojo 上固定模型比较不同 Harness · 19 个实机任务 · 实机基线的传感器输入和微调条件存在差异。
 
 <a id="paper-2610-42053"></a>
 <!-- mmac-record: {"id": "2610.42053", "scope": "Adjacent", "primary": "2.10", "task": 10} -->
@@ -2013,9 +2013,9 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 <a id="paper-2610-23479"></a>
 <!-- mmac-record: {"id": "2610.23479", "scope": "Core", "primary": "2.12", "task": 12} -->
 
-- `arXiv 2026.10` **HexaShell: A Thin Harness for Exploring the Limits of VLM Agents as Robot Coding Agents**. [[论文]](https://arxiv.org/abs/2610.23479) [[工具与接口]](https://github.com/HexaFuture/HexaShell) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]` `[Trajectory Analysis]` · **Core**
-  > 通过回合日志及选定相机帧分析、同布局修复重试，将机器人失败转化为可复用 Python 工具，再于 RoboDojo 仿真中冻结工具评测。<br>
-  > **验证维度：** 同一随机种子内的未见布局 · RGB 三角测量与主动观察成本 · 实际执行修订代码的案例 · 接触相关失败分析；保留固定共享工具和任务指引，无实机评测。
+- `arXiv 2026.10` **HexaShell: A Universal Harness for Robot Coding Agents in Simulation and the Real World**. [[论文]](https://arxiv.org/abs/2610.23479) [[工具与接口]](https://github.com/HexaFuture/HexaShell) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]` `[Trajectory Analysis]` · **Core**
+  > 让机器人编程 Agent 在每轮编写一段 Python，调用共享的运动、感知与状态工具，也可复用从历史执行记录提炼的任务 Skills。<br>
+  > **验证维度：** GPT-6 Astra 在四套仿真基准上评测。双臂实机覆盖 9 个任务，90 次试验中 76 次判定成功，GPT-6.1 Terra 编写实机代码，GPT-6 Astra 判定结果。
 
 <a id="paper-2610-22362"></a>
 <!-- mmac-record: {"id": "2610.22362", "scope": "Core", "primary": "2.12", "task": 12} -->
@@ -2873,6 +2873,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **方法论文中的评测设置**
 
+- [uni-robot-agent](#paper-2611-01560) · **Core** · [2.10](#methods-robot-programs) — 以 Qwen3.8-Flash-Next 为规划器，在同一组 RoboDojo 任务上对照 RoboProbe 与 uni-robot-agent。
 - [RoboAuto](#paper-2610-36533) · **Core** · [2.10](#methods-robot-programs) — 程序搜索泛化与物理定位消融。
 - [FORCA](#paper-2610-31841) · **Core** · [2.10](#methods-robot-programs)
 - [AW-0](#paper-2610-30136) · **Adjacent** · [2.10](#methods-robot-programs)
@@ -2924,8 +2925,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 <a id="paper-2610-34527"></a>
 <!-- mmac-record: {"id": "2610.34527", "scope": "Adjacent", "primary": "3.11", "task": 11} -->
 
-- `arXiv 2026.10` **How High Can GPT-6 Astra Climb in Contact-Rich Manipulation? PhysLadder: A Hierarchical, Matched Sim-Real Benchmark for Physical Interaction**. [[论文]](https://arxiv.org/abs/2610.34527) [[代码]](https://github.com/LLM4Robot/LLM4Robot-Bench) [[项目]](https://llm4robot.github.io/bench/) — `[Benchmark]` · `[Environment]` `[Verification]` · **Adjacent**
-  > 以配对的仿真和实机双臂接触任务，测量视觉动作选择在几何对齐、持续接触与接触重配置中的能力和失败；项目现由 LLM4Robot-Bench 维护。<br>
+- `arXiv 2026.10` **LLM4Robot-Bench: How Far Can GPT-6 Astra Go in Robotic Manipulation? A Hierarchical, Paired Sim-Real Benchmark**. [[论文]](https://arxiv.org/abs/2610.34527) [[代码]](https://github.com/LLM4Robot/LLM4Robot-Bench) [[项目]](https://llm4robot.github.io/bench/) — `[Benchmark]` · `[Environment]` `[Verification]` · **Adjacent**
+  > 在配对的仿真与真实双臂任务中，测量 GPT-6 Astra 在几何对齐、力调节和接触重配置中的表现，基准原名 PhysLadder。<br>
   > **验证维度：** 16 项任务 · 每项每环境三次试验 · 共享结果标准 · 物理／视觉匹配与失败分析；仅单一模型，实机和仿真的执行预算不同。
 
 **方法论文中的评测设置**
@@ -2963,7 +2964,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 - [ImageRSI](#paper-2610-32120) · **Adjacent** · [2.12](#methods-experience)
 - [Learning Only with Images](#paper-2507-20766) · **Core** · [2.1](#methods-software)
 - [WebWorld](#paper-2608-30530) · **Core** · [2.1](#methods-software)
-- [HexaShell](#paper-2610-23479) · **Core** · [2.12](#methods-experience) — 冻结工具后的同种子未见布局测试；不等同于跨任务或多种子泛化。
+- [HexaShell](#paper-2610-23479) · **Core** · [2.12](#methods-experience) — 比较历史轨迹提炼的 Skills 和通用工具在留出布局上的表现，分别记录加入 Skills 后成功或退化的任务回合。
 - [CoDA](#paper-2610-22362) · **Core** · [2.12](#methods-experience) — 仿真中的跨任务生成程序复用与策略学习。
 - [VisRefiner](#paper-2602-05998) · **Core** · [2.1](#methods-software)
 - [ReLook](#paper-2510-11498) · **Core** · [2.1](#methods-software)
@@ -3454,7 +3455,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 - [RA-CAD](#paper-2608-05714) · **Adjacent** · [2.12](#methods-experience)
 - [Designer-RSI](#paper-2609-22086) · **Core** · [2.12](#methods-experience)
 - [CarryOn](#paper-2610-21453) · **Adjacent** · [2.12](#methods-experience) — 论文描述的失败样例与恢复版本链。
-- [HexaShell](#paper-2610-23479) · **Core** · [2.12](#methods-experience) — 公开冻结工具、接口和结果；优化器开发记录、测试与完整 Harness 未随库发布。
+- [HexaShell](#paper-2610-23479) · **Core** · [2.12](#methods-experience) — 说明如何利用执行记录提炼任务 Skills，并与经过优化的任务专用 Python 工具比较。
 
 <a id="capabilities-and-infrastructure"></a>
 

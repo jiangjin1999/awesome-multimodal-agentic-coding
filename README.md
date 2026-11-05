@@ -14,6 +14,8 @@ We envision the development of **multimodal agentic coding** through three conne
 
 Use **visual feedback** to help agents continually observe, improve, and refine what they build.
 
+Research on [visual diffs for code repair](#visual-diff) asks how an agent can trace a discrepancy in a render to a code change and check its effect in the next render.
+
 <a id="trilogy-models-as-tools"></a>
 
 ### 02 · Orchestrating Models as Tools
@@ -294,6 +296,13 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 - [Learning Only with Images](#paper-2507-20766) · **Core** · [2.1](#methods-software)
 - [Imperfect Visual Verification for Code Edition](#paper-2606-15693) · **Core** · [3.13](#section-3-13)
 
+<a id="visual-diff"></a>
+
+#### Visual diffs for code repair
+
+- **Reference versus current render.** If a button and everything below it shift down by the same distance, the agent can inspect the spacing above the group. A screenshot diff locates the change. Pairing these discrepancies with their corresponding frontend edits gives a model examples to learn from. [agent-visual-diff screenshot tool](#tool-agent-visual-diff) · [VisRefiner](#paper-2602-05998)
+- **Before versus after a patch.** Render both versions with the same input, viewport, and application state. Check the requested change, any related updates, and unintended changes elsewhere. Renaming a chart series may require a matching legend update. Moving an object in a 3D scene should preserve the positions of unrelated objects. [ChartRevise](#paper-2609-38642) · [Code4Scene](#paper-2609-36777)
+
 <a id="section-1-4"></a>
 
 ### 1.4 From artifacts to environments: state, actions, resets, tasks, and rewards
@@ -335,7 +344,7 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Boundary.** The deliverable is a software implementation. Environments built specifically to train operating agents belong in 2.2. Reference exploration, development checks, and hidden submission tests are distinct.
 
-**Connect:** [3.1 Visual software engineering and recreation evaluation](#evaluation-software) · [4.1 Software requirements, application observations, and development traces](#data-software) · [2.2 GUI and software training-environment synthesis](#methods-gui-environments) · [2.12 Learning from construction and interaction experience](#methods-experience)
+**Connect:** [3.1 Visual software engineering and recreation evaluation](#evaluation-software) · [4.1 Software requirements, application observations, and development traces](#data-software) · [2.2 GUI and software training-environment synthesis](#methods-gui-environments) · [2.12 Learning from construction and interaction experience](#methods-experience) · [Visual diffs for code repair](#visual-diff)
 
 <a id="paper-2609-22000"></a>
 <!-- mmac-record: {"id": "2609.22000", "scope": "Core", "primary": "2.1", "task": 1} -->
@@ -3705,6 +3714,7 @@ The list below is a practical starting point rather than a security audit or end
 | Browser building and testing | [Playwright MCP](https://github.com/microsoft/playwright-mcp) · [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) | Official MCP / CLI + skills | Exposes accessibility structure, screenshots, interaction, console and network evidence, and performance traces. |
 | Evidence-driven web and mobile QA | [agent-qa](https://vostride.com) · [MCP documentation](https://vostride.com/docs/agent-qa/mcp) | Official CLI + MCP; FSL-1.1-ALv2 (competing commercial offerings restricted) | Exposes natural-language web, Android and iOS tests, screenshots, console/network evidence and verdict corrections to coding agents; persistent memidex memory and evidence-gated self-improvement retain validated lessons across runs. |
 | Human-to-agent visual bug reports | [Shotback](https://github.com/DCCA/shotback) | Community browser extension + skill; MIT | Packages annotated screenshots with CSS selectors, React component paths, viewport context, and readable failed requests; supports before/after recapture for human-guided repairs. |
+| Screenshot comparison and layout shifts | <a id="tool-agent-visual-diff"></a>[agent-visual-diff](https://github.com/lbframe/agent-visual-diff) · [Agent interface](https://github.com/lbframe/agent-visual-diff/blob/main/docs/agent-contract.md) | Community CLI · MIT | Compares two PNGs and returns bounding boxes ranked by changed-pixel count in JSON. Optional shift detection flags content that moved together so an agent can inspect the layout and compare again after a fix. |
 | Evidence-gated UI repair | [ReproSight](https://github.com/tungcorn/ReproSight) | Community CLI; MIT | Gives an external coding agent browser geometry, screenshots, CSS source candidates, isolated workspaces, and target/regression checks before human review; its flagship demo uses a deterministic mock provider, not a real-model accuracy benchmark. |
 | Design-to-code and design write-back | [Figma MCP server](https://developers.figma.com/docs/figma-mcp-server/) | Official MCP + skills | Lets an agent inspect design context, generate implementation code, and create or update native Figma content. |
 | Text/image-to-CAD workflows | [text-to-cad](https://github.com/earthtojake/text-to-cad) | Community skill library | Covers CAD generation and editing, browser preview, STEP/DXF/robot formats, manufacturability checks, slicing, and handoff—not only one-shot geometry generation. |

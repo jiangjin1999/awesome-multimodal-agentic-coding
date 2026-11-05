@@ -14,6 +14,8 @@
 
 将**视觉作为反馈**，让 Agent 在构建过程中持续观察、改进和完善。
 
+其中一个子方向是[用视觉差异（Visual Diff）指导代码修复](#visual-diff)，研究 Agent 如何从渲染差异追查应修改的代码，再通过下一次渲染验证修改效果。
+
 <a id="trilogy-models-as-tools"></a>
 
 ### 02 · Orchestrating Models as Tools
@@ -294,6 +296,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 - [Learning Only with Images](#paper-2507-20766) · **Core** · [2.1](#methods-software)
 - [Imperfect Visual Verification for Code Edition](#paper-2606-15693) · **Core** · [3.13](#section-3-13)
 
+<a id="visual-diff"></a>
+
+#### 用视觉差异（Visual Diff）指导代码修复
+
+- **参考图与当前渲染。** 如果一个按钮和它下方的内容都向下移动了相同距离，Agent 可以先检查这组元素上方的间距。截图差异能定位变化的位置。将这些差异与相应的前端代码修改配对，还能构造供模型学习的样例。[截图比较工具 agent-visual-diff](#tool-agent-visual-diff) · [VisRefiner](#paper-2602-05998)
+- **补丁前与补丁后。** 在相同输入、视口和应用状态下重新渲染，分别核对要求的改动、必要的联动和其他区域的意外变化。给图表的数据系列改名时，图例可能需要同步更新。移动一个三维物体时，无关物体则应留在原位。[ChartRevise](#paper-2609-38642) · [Code4Scene](#paper-2609-36777)
+
 <a id="section-1-4"></a>
 
 ### 1.4 何时成为环境：状态、动作、重置、任务与奖励
@@ -335,7 +344,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **边界：** 本方向直接交付软件实现；专为操作型 Agent 提供任务与学习信号的环境构建见 2.2。参考探索、过程检查和提交后的隐藏评测分别比较。
 
-**关联阅读：** [3.1 视觉软件工程与应用复刻评测](#evaluation-software) · [4.1 软件需求、应用观测与开发／复刻轨迹](#data-software) · [2.2 GUI／软件训练环境合成](#methods-gui-environments) · [2.12 从构建与交互经验学习](#methods-experience)
+**关联阅读：** [3.1 视觉软件工程与应用复刻评测](#evaluation-software) · [4.1 软件需求、应用观测与开发／复刻轨迹](#data-software) · [2.2 GUI／软件训练环境合成](#methods-gui-environments) · [2.12 从构建与交互经验学习](#methods-experience) · [用视觉差异指导代码修复](#visual-diff)
 
 <a id="paper-2609-22000"></a>
 <!-- mmac-record: {"id": "2609.22000", "scope": "Core", "primary": "2.1", "task": 1} -->
@@ -3705,6 +3714,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 | 浏览器构建与测试 | [Playwright MCP](https://github.com/microsoft/playwright-mcp) · [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) | 官方 MCP / CLI + Skills | 暴露可访问性结构、截图、交互、控制台与网络证据，以及性能 Trace。 |
 | 基于证据的网页与移动端 QA | [agent-qa](https://vostride.com) · [MCP 文档](https://vostride.com/docs/agent-qa/mcp) | 官方 CLI + MCP；FSL-1.1-ALv2（限制竞争性商业服务） | 向编码 Agent 提供自然语言网页、Android 和 iOS 测试、截图、控制台/网络证据及判定纠正；持久 memidex 记忆与基于证据的自我改进在多次运行间保留已验证经验。 |
 | 人向 Agent 提交视觉缺陷 | [Shotback](https://github.com/DCCA/shotback) | 社区浏览器扩展 + Skill；MIT | 将标注截图与 CSS 选择器、React 组件路径、视口上下文及可读取的失败请求一起交付，并支持前后重截图比较，辅助人工反馈驱动的修复。 |
+| 截图比较与布局位移定位 | <a id="tool-agent-visual-diff"></a>[agent-visual-diff](https://github.com/lbframe/agent-visual-diff) · [Agent 接口说明](https://github.com/lbframe/agent-visual-diff/blob/main/docs/agent-contract.md) | 社区命令行工具 · MIT | 比较两张 PNG，以 JSON 返回按变化像素数排序的区域边界框。可选的位移检测会标出一起移动的内容，供 Agent 检查布局并在修改后再次比对。 |
 | 证据驱动的 UI 修复 | [ReproSight](https://github.com/tungcorn/ReproSight) | 社区 CLI；MIT | 向外部 Coding Agent 提供浏览器几何、截图、CSS 源码候选、隔离工作区及目标／回归检查，再交由人工审阅；其主要 Demo 使用确定性的模拟提供器，并非真实模型准确率基准。 |
 | 设计到代码与设计回写 | [Figma MCP server](https://developers.figma.com/docs/figma-mcp-server/) | 官方 MCP + Skills | 允许 Agent 检查设计上下文、生成实现代码，并创建或更新原生 Figma 内容。 |
 | 文本／图像到 CAD | [text-to-cad](https://github.com/earthtojake/text-to-cad) | 社区 Skill 库 | 覆盖 CAD 生成与编辑、浏览器预览、STEP/DXF/机器人格式、可制造性检查、切片和交付，而不只是一次性几何生成。 |

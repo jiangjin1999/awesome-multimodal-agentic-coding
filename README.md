@@ -300,8 +300,10 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 #### Visual diffs for code repair
 
-- **Reference versus current render.** If a button and everything below it shift down by the same distance, the agent can inspect the spacing above the group. A screenshot diff locates the change. Pairing these discrepancies with their corresponding frontend edits gives a model examples to learn from. [agent-visual-diff screenshot tool](#tool-agent-visual-diff) · [VisRefiner](#paper-2602-05998)
-- **Before versus after a patch.** Render both versions with the same input, viewport, and application state. Check the requested change, any related updates, and unintended changes elsewhere. Renaming a chart series may require a matching legend update. Moving an object in a 3D scene should preserve the positions of unrelated objects. [ChartRevise](#paper-2609-38642) · [Code4Scene](#paper-2609-36777)
+A visual diff identifies the two visual outputs being compared and reports a specific difference. This can be a difference map, a changed-pixel count, or an observation such as “the Save button is 12 pixels lower than in the reference.”
+
+- **Reference versus current render.** The agent-visual-diff tool compares two screenshots and returns bounding boxes ranked by changed-pixel count. A shared downward shift across several controls can guide inspection of the spacing above the group. VisRefiner pairs visible UI discrepancies with the corresponding frontend edits for training. [agent-visual-diff](#tool-agent-visual-diff) · [VisRefiner](#paper-2602-05998)
+- **Before versus after a patch.** Hold conditions such as viewport and application state constant. During dataset construction, the ChartRevise judge compares the original and edited chart renders alongside the code diff. It checks whether the requested change reached the intended element and whether unrelated elements changed. If the target edit is missing, the judge explains the mismatch to the editor before another round of editing and rendering. [ChartRevise](#paper-2609-38642)
 
 <a id="section-1-4"></a>
 

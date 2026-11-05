@@ -44,7 +44,7 @@ Enable agents to **organize and combine model capabilities**, expanding their ab
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-196-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-198-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
@@ -832,6 +832,7 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Related evaluation contributions**
 
+- [VisAudit](#paper-2610-02399) · **Core** · [3.3](#evaluation-graphics)
 - [ChartRevise](#paper-2609-38642) · **Core** · [3.3](#evaluation-graphics)
 - [RealChart2Code](#paper-2603-25804) · **Core** · [3.3](#evaluation-graphics)
 - [ChartEditBench](#paper-2602-15758) · **Core** · [3.3](#evaluation-graphics)
@@ -1354,8 +1355,8 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 <!-- mmac-record: {"id": "2610.11322", "scope": "Core", "primary": "2.6", "task": 6} -->
 
 - `arXiv 2026.10` **USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation**. [[paper]](https://arxiv.org/abs/2610.11322) [[project]](https://xingyoujun.github.io/usdcraft/) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]` · **Core**
-  > Builds articulated USD assets as executable programs, iteratively revising parts and joints from metric source/candidate geometry comparisons and rendered appearance and motion checks.<br>
-  > **Verification:** Part recovery · static/articulated geometry · joint axes · harness ablations · sim-to-real policy transfer.
+  > Builds articulated USD assets as executable programs, revising parts and joints from metric geometry and rendered appearance/motion checks while treating candidate omissions of observed source surfaces as correction signals and unobserved regions as open to justified completion.<br>
+  > **Verification:** Part recovery · static/articulated geometry · joint axes · harness/feedback ablations · sim-to-real policy transfer.
 
 <a id="paper-2609-23103"></a>
 <!-- mmac-record: {"id": "2609.23103", "scope": "Core", "primary": "2.6", "task": 6} -->
@@ -1897,6 +1898,7 @@ The `arXiv YYYY.MM` label follows the source page’s first-submission date. **V
 
 **Related evaluation contributions**
 
+- [CodeActionBench](#paper-2609-33807) · **Core** · [3.10](#evaluation-robot-programs)
 - [RobotWorld](#paper-2610-10409) · **Adjacent** · [3.10](#evaluation-robot-programs)
 
 <a id="methods-real2sim2real"></a>
@@ -2264,6 +2266,13 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Connect:** [2.3 Charts, scientific visualization, and editable graphics](#methods-graphics) · [4.3 Chart data, graphics programs, and edit records](#data-graphics) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
 
+<a id="paper-2610-02399"></a>
+<!-- mmac-record: {"id": "2610.02399", "scope": "Core", "primary": "3.3", "task": 3} -->
+
+- `arXiv 2026.10` **VisAudit: Evaluating Multimodal Agents for Visual Diagnosis and Repair**. [[paper]](https://arxiv.org/abs/2610.02399) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]` · **Core**
+  > Diagnoses and revises visualization code through execution and rendered-chart feedback, separating defect recovery, preservation, and the decision to leave already-correct charts unchanged.<br>
+  > **Verification:** Executability · binary/graded recovery and preservation · correct-chart recognition · modality and interaction-budget ablations.
+
 <a id="paper-2607-10301"></a>
 <!-- mmac-record: {"id": "2607.10301", "scope": "Adjacent", "primary": "3.3", "task": 3} -->
 
@@ -2458,8 +2467,8 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 <!-- mmac-record: {"id": "2609.36777", "scope": "Core", "primary": "3.5", "task": 5} -->
 
 - `arXiv 2026.09` **Code4Scene: Benchmarking Coding Agents for Constructing and Editing 3D Scenes**. [[paper]](https://arxiv.org/abs/2609.36777) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]` `[Trajectory Analysis]` · **Core**
-  > Evaluates code-driven Unreal Engine construction and reference-guided scene repair with in-loop scene inspection, scoring native artifact integrity, spatial validity, target recovery, and preservation of unrelated content.<br>
-  > **Verification:** Native-scene loadability · semantic alignment · support/interpenetration · repair precision/recall · collateral edits.
+  > Evaluates code-driven Unreal Engine construction and reference-guided repair with in-loop scene inspection and separate target-recovery and preservation checks; 76 of 212 complete recoveries across 14 public configurations still contain collateral edits.<br>
+  > **Verification:** Native-scene loadability · semantic alignment · support/interpenetration · repair precision/recall · collateral edits and tolerance sensitivity.
 
 <a id="paper-2608-05539"></a>
 <!-- mmac-record: {"id": "2608.05539", "scope": "Core", "primary": "3.5", "task": 5} -->
@@ -2782,6 +2791,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Benchmark contributions**
 
+- [WorldBench](#paper-2610-10622) · **Adjacent** · [3.13](#section-3-13) — Camera and clock controls, source checks, and pixel measurements test spatial and dynamic requirements in a running voxel world.
 - [State World Models / WorldState-Bench](#paper-2610-26811) · **Adjacent** · [2.8](#methods-world-models) — 50 hidden-state counterfactual pairs with shared visible inputs.
 - [PhysCodeGym](#paper-2610-17288) · **Core** · [3.9](#evaluation-real-to-sim)
 - [Video2World](#paper-2610-04432) · **Core** · [3.9](#evaluation-real-to-sim)
@@ -2842,6 +2852,13 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 **Boundary.** Compare privileged state and perceptual observations separately. Simulation, hardware, and robot-platform results are not interchangeable; robot-tool-use benchmarks are related capability evaluations.
 
 **Connect:** [2.10 Robot program and policy development](#methods-robot-programs) · [4.10 Robot demonstrations, execution, and repair trajectories](#data-robot-programs) · [3.11 Real2Sim2Real utility and real-transfer evaluation](#evaluation-real2sim2real) · [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience)
+
+<a id="paper-2609-33807"></a>
+<!-- mmac-record: {"id": "2609.33807", "scope": "Core", "primary": "3.10", "task": 10} -->
+
+- `arXiv 2026.09` **CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation**. [[paper]](https://arxiv.org/abs/2609.33807) [[code]](https://github.com/lyhkk/CodeActionBench) [[project]](https://codeactionbench.org/) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]` `[Trajectory Analysis]` · **Core**
+  > Agents execute Python manipulation programs in RoboTwin 2.0 simulation and use camera views, robot state, and contact feedback to revise their policies. A hidden verifier checks the final state independently of the agent’s completion claim.<br>
+  > **Verification:** 25 fixed simulated tasks · hidden outcome checks · spatial progress and failure stage · completion-claim accuracy · tool-call and simulated-time budgets.
 
 <a id="paper-2611-02497"></a>
 <!-- mmac-record: {"id": "2611.02497", "scope": "Adjacent", "primary": "3.10", "task": 10} -->
@@ -3003,6 +3020,13 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Connect:** [3.1 Visual software engineering and recreation evaluation](#evaluation-software) · [3.3 Chart, scientific visualization, and graphics-editing evaluation](#evaluation-graphics) · [3.5 Procedural 3D and CAD benchmarks](#evaluation-cad-3d) · [3.7 Game behavior, playability, and repair evaluation](#evaluation-games) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [6.3 Independent verification and trustworthy rewards](#section-6-3)
 
+<a id="paper-2610-10622"></a>
+<!-- mmac-record: {"id": "2610.10622", "scope": "Adjacent", "primary": "3.13", "task": 8} -->
+
+- `arXiv 2026.10` **WorldBench: Evaluating LLMs on Three.js Voxel World Generation**. [[paper]](https://arxiv.org/abs/2610.10622) [[code]](https://github.com/KrishBakshi/worldbench) — `[Benchmark]` `[Empirical Study]` · `[Verification]` · **Adjacent**
+  > The judge changes the viewpoint and clock in a running Three.js voxel world and checks code, rendered evidence, and feature-removal tests. During repair the generator receives only parser or console errors.<br>
+  > **Verification:** Code–frame agreement · view-dependent coverage · mutation-test false credit · temporal/pixel checks · judge repeatability.
+
 <a id="paper-2610-22355"></a>
 <!-- mmac-record: {"id": "2610.22355", "scope": "Adjacent", "primary": "3.13", "task": 8} -->
 
@@ -3143,6 +3167,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Data-construction contributions**
 
+- [VisAudit](#paper-2610-02399) · **Core** · [3.3](#evaluation-graphics) — Controlled perturbations yield 1,900 flawed instances, alongside 300 initially correct charts to test when agents leave a chart intact.
 - [ChartBmkAgent](#paper-2610-08106) · **Core** · [2.3](#methods-graphics)
 - [IChart2Code](#paper-2609-32413) · **Core** · [2.3](#methods-graphics)
 - [RealChart2Code](#paper-2603-25804) · **Core** · [3.3](#evaluation-graphics)
@@ -3402,6 +3427,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Experimental data and protocols described in papers**
 
+- [CodeActionBench](#paper-2609-33807) · **Core** · [3.10](#evaluation-robot-programs) — Fixed simulated task instances, execution budgets, and hidden outcome checks for 25 manipulation tasks.
 - [MoCaP](#paper-2610-20998) · **Core** · [2.10](#methods-robot-programs)
 - [ENPIRE](#paper-2606-19980) · **Core** · [2.10](#methods-robot-programs)
 

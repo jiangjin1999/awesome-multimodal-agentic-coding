@@ -44,7 +44,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-196-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-198-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
@@ -832,6 +832,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **相关评测工作**
 
+- [VisAudit](#paper-2610-02399) · **Core** · [3.3](#evaluation-graphics)
 - [ChartRevise](#paper-2609-38642) · **Core** · [3.3](#evaluation-graphics)
 - [RealChart2Code](#paper-2603-25804) · **Core** · [3.3](#evaluation-graphics)
 - [ChartEditBench](#paper-2602-15758) · **Core** · [3.3](#evaluation-graphics)
@@ -1354,8 +1355,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 <!-- mmac-record: {"id": "2610.11322", "scope": "Core", "primary": "2.6", "task": 6} -->
 
 - `arXiv 2026.10` **USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation**. [[论文]](https://arxiv.org/abs/2610.11322) [[项目]](https://xingyoujun.github.io/usdcraft/) — `[Method]` `[System]` · `[Inference]` `[Environment]` `[Verification]` · **Core**
-  > 以可执行程序构建有关节的 USD 资产，根据源与候选的度量几何对比及渲染外观、运动检查，迭代修改部件与关节。<br>
-  > **验证维度：** 部件恢复 · 静态／关节运动几何 · 关节轴 · 工具框架消融 · 策略仿真到现实迁移。
+  > 以可执行程序构建有关节的 USD 资产，根据度量几何与渲染外观／运动检查修订部件和关节，将候选遗漏的已观测源表面视为纠错信号，并允许对未观测区域作有依据的补全。<br>
+  > **验证维度：** 部件恢复 · 静态／关节运动几何 · 关节轴 · 工具框架／反馈消融 · 策略仿真到现实迁移。
 
 <a id="paper-2609-23103"></a>
 <!-- mmac-record: {"id": "2609.23103", "scope": "Core", "primary": "2.6", "task": 6} -->
@@ -1897,6 +1898,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **相关评测工作**
 
+- [CodeActionBench](#paper-2609-33807) · **Core** · [3.10](#evaluation-robot-programs)
 - [RobotWorld](#paper-2610-10409) · **Adjacent** · [3.10](#evaluation-robot-programs)
 
 <a id="methods-real2sim2real"></a>
@@ -2264,6 +2266,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.3 图表、科学可视化与可编辑图形构建](#methods-graphics) · [4.3 图表数据、图形程序与编辑记录](#data-graphics) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
 
+<a id="paper-2610-02399"></a>
+<!-- mmac-record: {"id": "2610.02399", "scope": "Core", "primary": "3.3", "task": 3} -->
+
+- `arXiv 2026.10` **VisAudit: Evaluating Multimodal Agents for Visual Diagnosis and Repair**. [[论文]](https://arxiv.org/abs/2610.02399) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]` · **Core**
+  > 通过执行与渲染图表反馈诊断并修订可视化代码，分别评测缺陷恢复、正确内容保持，以及对原本正确图表不作修改的判断。<br>
+  > **验证维度：** 可执行性 · 二值／分级恢复与保持 · 正确图表识别 · 证据模态与交互预算消融。
+
 <a id="paper-2607-10301"></a>
 <!-- mmac-record: {"id": "2607.10301", "scope": "Adjacent", "primary": "3.3", "task": 3} -->
 
@@ -2458,8 +2467,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 <!-- mmac-record: {"id": "2609.36777", "scope": "Core", "primary": "3.5", "task": 5} -->
 
 - `arXiv 2026.09` **Code4Scene: Benchmarking Coding Agents for Constructing and Editing 3D Scenes**. [[论文]](https://arxiv.org/abs/2609.36777) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]` `[Trajectory Analysis]` · **Core**
-  > 评测带有过程内场景检查的代码驱动 Unreal Engine 构建与参考引导修复，分别衡量原生产物完整性、空间有效性、目标恢复和无关内容保持。<br>
-  > **验证维度：** 原生场景可加载性 · 语义对齐 · 支撑/穿透 · 修复精确率与召回率 · 附带修改。
+  > 评测带有过程内场景检查的代码驱动 Unreal Engine 构建与参考引导修复，并分别检查目标恢复和无关内容保持；14 个公开配置的 212 次完整恢复中，仍有 76 次包含附带修改。<br>
+  > **验证维度：** 原生场景可加载性 · 语义对齐 · 支撑／穿透 · 修复精确率与召回率 · 附带修改及容差敏感性。
 
 <a id="paper-2608-05539"></a>
 <!-- mmac-record: {"id": "2608.05539", "scope": "Core", "primary": "3.5", "task": 5} -->
@@ -2782,6 +2791,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **Benchmark 工作**
 
+- [WorldBench](#paper-2610-10622) · **Adjacent** · [3.13](#section-3-13) — 通过控制视角和时间、对照源码与像素，检查可执行体素世界的空间与动态要求。
 - [State World Models / WorldState-Bench](#paper-2610-26811) · **Adjacent** · [2.8](#methods-world-models) — 50 组共享可见输入的隐藏状态反事实配对。
 - [PhysCodeGym](#paper-2610-17288) · **Core** · [3.9](#evaluation-real-to-sim)
 - [Video2World](#paper-2610-04432) · **Core** · [3.9](#evaluation-real-to-sim)
@@ -2842,6 +2852,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 特权状态与 RGB-D 等感知条件分别比较；仿真、真实硬件和不同机器人平台的结果不直接合并。
 
 **关联阅读：** [2.10 机器人程序与策略开发](#methods-robot-programs) · [4.10 机器人演示、执行与程序／策略修复轨迹](#data-robot-programs) · [3.11 Real2Sim2Real 的任务效用与真实迁移评测](#evaluation-real2sim2real) · [3.12 经验学习与跨任务泛化评测](#evaluation-experience)
+
+<a id="paper-2609-33807"></a>
+<!-- mmac-record: {"id": "2609.33807", "scope": "Core", "primary": "3.10", "task": 10} -->
+
+- `arXiv 2026.09` **CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation**. [[论文]](https://arxiv.org/abs/2609.33807) [[代码]](https://github.com/lyhkk/CodeActionBench) [[项目]](https://codeactionbench.org/) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]` `[Trajectory Analysis]` · **Core**
+  > 在 RoboTwin 2.0 双臂仿真中，Agent 执行 Python 操控程序，根据相机画面、机器人状态和接触反馈修订策略。隐藏验收器独立核对最终状态和 Agent 的完成声明。<br>
+  > **验证维度：** 25 个固定仿真任务 · 隐藏状态验收 · 空间进展与失败阶段 · 完成声明正确性 · 调用与仿真时间预算。
 
 <a id="paper-2611-02497"></a>
 <!-- mmac-record: {"id": "2611.02497", "scope": "Adjacent", "primary": "3.10", "task": 10} -->
@@ -3003,6 +3020,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.1 视觉软件工程与应用复刻评测](#evaluation-software) · [3.3 图表、科学可视化与图形编辑评测](#evaluation-graphics) · [3.5 程序化 3D 与 CAD 基准评测](#evaluation-cad-3d) · [3.7 游戏行为、可玩性与修复评测](#evaluation-games) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [6.3 独立验证与可信奖励](#section-6-3)
 
+<a id="paper-2610-10622"></a>
+<!-- mmac-record: {"id": "2610.10622", "scope": "Adjacent", "primary": "3.13", "task": 8} -->
+
+- `arXiv 2026.10` **WorldBench: Evaluating LLMs on Three.js Voxel World Generation**. [[论文]](https://arxiv.org/abs/2610.10622) [[代码]](https://github.com/KrishBakshi/worldbench) — `[Benchmark]` `[Empirical Study]` · `[Verification]` · **Adjacent**
+  > 评分器主动改变 Three.js 体素世界的视角与时间，将源码、运行画面和移除功能后的结果对照评分。生成器修订代码时只接收解析或控制台错误。<br>
+  > **验证维度：** 代码与画面证据一致性 · 视角相关覆盖 · 功能移除后的错误得分 · 时间／像素检查 · 评审重复性。
+
 <a id="paper-2610-22355"></a>
 <!-- mmac-record: {"id": "2610.22355", "scope": "Adjacent", "primary": "3.13", "task": 8} -->
 
@@ -3143,6 +3167,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **数据构造工作**
 
+- [VisAudit](#paper-2610-02399) · **Core** · [3.3](#evaluation-graphics) — 通过受控扰动构造 1,900 个有缺陷图表实例，另纳入 300 张原本正确的图表，检查 Agent 能否判断何时应保留原图。
 - [ChartBmkAgent](#paper-2610-08106) · **Core** · [2.3](#methods-graphics)
 - [IChart2Code](#paper-2609-32413) · **Core** · [2.3](#methods-graphics)
 - [RealChart2Code](#paper-2603-25804) · **Core** · [3.3](#evaluation-graphics)
@@ -3402,6 +3427,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **论文描述的实验资料与协议**
 
+- [CodeActionBench](#paper-2609-33807) · **Core** · [3.10](#evaluation-robot-programs) — 25 个固定仿真任务的场景、执行预算和隐藏验收协议。
 - [MoCaP](#paper-2610-20998) · **Core** · [2.10](#methods-robot-programs)
 - [ENPIRE](#paper-2606-19980) · **Core** · [2.10](#methods-robot-programs)
 

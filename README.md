@@ -46,12 +46,12 @@ Enable agents to **organize and combine model capabilities**, expanding their ab
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-198-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-199-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-11-05**
+**Last updated: 2026-11-06**
 
 </div>
 
@@ -1723,6 +1723,8 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 
 **Connect:** [3.10 Robot program and policy execution evaluation](#evaluation-robot-programs) · [4.10 Robot demonstrations, execution, and repair trajectories](#data-robot-programs) · [2.11 Real2Sim2Real: task learning and real execution](#methods-real2sim2real) · [2.12 Learning from construction and interaction experience](#methods-experience) · [5.4 Action, policy, prediction, and verification capabilities](#section-5-4)
 
+- [PyRUA-REAL](#paper-2611-06768) · **Core** · [2.12](#methods-experience) — Physical execution, diagnosis and control-program repair, with persistent skills.
+
 <a id="paper-2611-01560"></a>
 <!-- mmac-record: {"id": "2611.01560", "scope": "Core", "primary": "2.10", "task": 10} -->
 
@@ -1922,6 +1924,13 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 
 **Connect:** [3.11 Real2Sim2Real utility and real-transfer evaluation](#evaluation-real2sim2real) · [4.11 Real2Sim2Real environments, policies, and paired transfer records](#data-real2sim2real) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.10 Robot program and policy development](#methods-robot-programs) · [5.4 Action, policy, prediction, and verification capabilities](#section-5-4)
 
+<a id="paper-2611-05320"></a>
+<!-- mmac-record: {"id": "2611.05320", "scope": "Adjacent", "primary": "2.11", "task": 11} -->
+
+- `arXiv 2026.11` **PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data**. [[paper]](https://arxiv.org/abs/2611.05320) [[project]](https://dagroup-pku.github.io/PyRUA-Lean/DataFarm) [[code]](https://github.com/DAGroup-PKU/PyRUA-Lean/tree/DataFarm) — `[Method]` · `[Data Curation]` `[Training]` `[Inference]` `[Verification]` · **Adjacent**
+  > Orchestrates agent-written simulation tasks and experts with real-image-conditioned video models to produce action-labelled, multi-view training episodes that transfer to a physical robot.<br>
+  > **Verification:** Five bimanual PiPER tasks · matched 100-episode training sets · held-out appearance tests · hidden expert checks and independent render review; released pipeline excludes datasets.
+
 <a id="paper-2610-34186"></a>
 <!-- mmac-record: {"id": "2610.34186", "scope": "Adjacent", "primary": "2.11", "task": 11} -->
 
@@ -1952,6 +1961,13 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 **Boundary.** Distinguish learning the builder from learning the operator in a generated environment. Within-task iteration and static expert skills do not by themselves establish cross-task learning.
 
 **Connect:** [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [2.2 GUI and software training-environment synthesis](#methods-gui-environments) · [5.5 Skills, tool bridges, and reusable workflows](#section-5-5) · [6.5 From construction experience to transferable capability](#section-6-5)
+
+<a id="paper-2611-06768"></a>
+<!-- mmac-record: {"id": "2611.06768", "scope": "Core", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.11` **PyRUA-REAL: Robot Exploration and Adaptive Learning through RSI in the Real World**. [[paper]](https://arxiv.org/abs/2611.06768) [[project]](https://dagroup-pku.github.io/PyRUA-Lean/real/) [[code]](https://github.com/DAGroup-PKU/PyRUA-Lean/tree/REAL) — `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > Turns real robot execution evidence into revised programs and reusable skills through researcher–engineer collaboration, then runs the resulting perception-and-control code with live observations.<br>
+  > **Verification:** Eight physical tasks · inspected-image-to-source-repair traces · 42-task RoboDojo evaluation · feedback and skill-transfer ablations; development statistics and assisted insertion are separated from frozen-program reliability.
 
 <a id="paper-2610-28282"></a>
 <!-- mmac-record: {"id": "2610.28282", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
@@ -2975,6 +2991,8 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Connect:** [2.12 Learning from construction and interaction experience](#methods-experience) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [3.2 Training-environment construction and downstream utility](#evaluation-gui-environments) · [3.10 Robot program and policy execution evaluation](#evaluation-robot-programs) · [6.5 From construction experience to transferable capability](#section-6-5)
 
+- [PyRUA-REAL](#paper-2611-06768) · **Core** · [2.12](#methods-experience) — Eight-task with/without skill-library transfer and fixed-budget feedback comparisons.
+
 **Benchmark contributions**
 
 - [RecreationWorld](#paper-2609-22000) · **Core** · [2.1](#methods-software)
@@ -3030,6 +3048,13 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 **Boundary.** Deterministic execution does not guarantee semantic correctness. Judge–human agreement also does not replace evidence of better closed-loop repairs.
 
 **Connect:** [3.1 Visual software engineering and recreation evaluation](#evaluation-software) · [3.3 Chart, scientific visualization, and graphics-editing evaluation](#evaluation-graphics) · [3.5 Procedural 3D and CAD benchmarks](#evaluation-cad-3d) · [3.7 Game behavior, playability, and repair evaluation](#evaluation-games) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [6.3 Independent verification and trustworthy rewards](#section-6-3)
+
+<a id="paper-2604-18164"></a>
+<!-- mmac-record: {"id": "2604.18164", "scope": "Adjacent", "primary": "3.13", "task": null} -->
+
+- `ACL 2026` **MM-JudgeBias: A Benchmark for Evaluating Compositional Biases in MLLM-as-a-Judge**. [[paper]](https://arxiv.org/abs/2604.18164) [[conference]](https://aclanthology.org/2026.acl-long.1162/) [[code]](https://github.com/naver-ai/MM-JudgeBias) [[data]](https://huggingface.co/datasets/naver-ai/MM-JudgeBias) — `[Benchmark]` `[Dataset]` · `[Verification]` · **Adjacent**
+  > Tests whether multimodal judges use the full query–image–response evidence through nine controlled perturbations, separating sensitivity to missing or mismatched evidence from stability under irrelevant changes.<br>
+  > **Verification:** 1,804 samples from 29 benchmarks · 26 judges · distinct Bias-Deviation/Bias-Conformity metrics · released evaluation data and code; not a closed-loop repair benchmark.
 
 <a id="paper-2610-10622"></a>
 <!-- mmac-record: {"id": "2610.10622", "scope": "Adjacent", "primary": "3.13", "task": 8} -->
@@ -3213,6 +3238,13 @@ This is a research-resource index, not a claim that every linked paper releases 
 **Boundary.** Editable source files, final images/videos, and construction traces are distinct. Licenses, dependencies, and temporal alignment affect reuse.
 
 **Connect:** [2.4 Documents and visual media](#methods-media) · [3.4 Document and visual-media evaluation](#evaluation-media) · [4.3 Chart data, graphics programs, and edit records](#data-graphics) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience)
+
+<a id="paper-2611-04418"></a>
+<!-- mmac-record: {"id": "2611.04418", "scope": "Adjacent", "primary": "4.4", "task": 4} -->
+
+- `NeurIPS 2026` **VidUEU-Agent: A Data-Curation Agent for Multimodal Understanding, Editing, and Unified Tasks**. [[paper]](https://arxiv.org/abs/2611.04418) [[code]](https://github.com/LRuca/VidUEU-Agent) [[data]](https://huggingface.co/datasets/Lruca/VidUEU100k) — `[Method]` `[Dataset]` · `[Data Curation]` `[Training]` `[Verification]` · **Adjacent**
+  > Coordinates visual tools and VLM checks to curate 100K traceable understanding/editing/unified instructions from videos, then adjusts sampling and routing from downstream training feedback.<br>
+  > **Verification:** Released instruction/metadata files · training comparisons · feedback-free benchmarks separated from test-score-guided data iteration; upstream visual assets retain source-specific terms.
 
 **Dataset contributions**
 
@@ -3452,6 +3484,8 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Connect:** [2.11 Real2Sim2Real: task learning and real execution](#methods-real2sim2real) · [3.11 Real2Sim2Real utility and real-transfer evaluation](#evaluation-real2sim2real) · [4.9 Real-to-Sim observation, simulation, and interaction correspondences](#data-real-to-sim) · [4.10 Robot demonstrations, execution, and repair trajectories](#data-robot-programs)
 
+- [PyRUA-DataFarm](#paper-2611-05320) · **Adjacent** · [2.11](#methods-real2sim2real) — Action-labelled simulated rollouts, real-image-conditioned views and admission records; data-construction pipeline, not a bundled dataset.
+
 **Experimental data and protocols described in papers**
 
 - [Agentic RSR](#paper-2610-10479) · **Core** · [2.11](#methods-real2sim2real)
@@ -3508,6 +3542,13 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Connect:** [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.10 Robot program and policy development](#methods-robot-programs) · [6.1 Active evidence acquisition and task-relevant fidelity](#section-6-1)
 
+<a id="paper-2611-06083"></a>
+<!-- mmac-record: {"id": "2611.06083", "scope": "Adjacent", "primary": "5.1", "task": 4} -->
+
+- `arXiv 2026.11` **SleuthVLM: Do We Really Need Audio-in-Video for Omni Video Understanding?**. [[paper]](https://arxiv.org/abs/2611.06083) [[project]](https://wpr001.github.io/sleuthVLM/) — `[Method]` · `[Inference]` `[Verification]` · **Adjacent**
+  > Uses timed transcription as an index for a VLM to inspect frames and clips adaptively, with an optional audio-model tool for evidence that speech transcripts cannot supply.<br>
+  > **Verification:** Four audiovisual QA benchmarks · transcript/timestamp ablations · optional audio-captioning study · logged access audit; evidence acquisition rather than artifact repair.
+
 <a id="paper-2610-28354"></a>
 <!-- mmac-record: {"id": "2610.28354", "scope": "Adjacent", "primary": "5.1", "task": 9} -->
 
@@ -3550,6 +3591,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 | Capability | Resource and sources | Inputs → outputs | Role in a workflow |
 |---|---|---|---|
+| Long-form, multi-shot video editing | **MoviEdit** [[paper]](https://arxiv.org/abs/2611.02737) [[project]](https://multi-shot-edit.github.io/) [[benchmark]](https://multi-shot-edit.github.io/benchmark.html) | Source video + edit text or edited reference frames → consistently edited multi-shot video | A global draft guides full-resolution autoregressive editing; 64-video/128-scenario benchmark materials accompany the method. The project provides demonstrations and evaluation manifests, without a released model download. |
 | 3D generation, local editing & completion | **SeMo3D** [[paper]](https://arxiv.org/abs/2611.02568) [[project]](https://xiaokunsun.github.io/SeMo3D.github.io/) | Reference image, optional text/points, edit region and cached latents → textured 3D asset | Selectively models geometry and texture while preserving untouched regions; an agent can combine image generation with successive user-requested edits. Code and weights are announced but not yet released. |
 | Planned image/video generation and editing | **Bernini: Latent Semantic Planning for Video Diffusion** [[code]](https://github.com/bytedance/Bernini) · [[guide]](https://github.com/bytedance/Bernini/blob/main/docs/bernini.md) · [[weights]](https://huggingface.co/ByteDance/Bernini-Diffusers) | Prompt + optional source/reference image or video → generated or edited visual media | Connects a Qwen2.5-VL semantic planner to a Wan2.2 diffusion renderer through a shared task interface; released full-pipeline and renderer-only variants provide reusable media tools. |
 | Semantic-to-pixel image generation | **Know, then Draw: A New Learning Paradigm for Visual Generation** [[paper]](https://arxiv.org/abs/2610.37626) | Text → semantic autoregressive tokens → diffusion-rendered image | Separates semantic acquisition from pixel rendering, using language-supervised visual tokens to condition a diffusion renderer; provides a paper-described text-to-image generation component. |
@@ -3609,6 +3651,13 @@ These layers are complementary rather than mutually exclusive. For example, an a
 **Boundary.** Distinguish a called model's capability from the agent's coordination contribution. Model adaptation, code editing, policy invocation, and real-feedback collection are different operations.
 
 **Connect:** [2.10 Robot program and policy development](#methods-robot-programs) · [2.11 Real2Sim2Real: task learning and real execution](#methods-real2sim2real) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
+
+<a id="paper-2611-06518"></a>
+<!-- mmac-record: {"id": "2611.06518", "scope": "Adjacent", "primary": "5.4", "task": 4} -->
+
+- `arXiv 2026.11` **EmoReward: Self-Evolving Reward Calibration for Emotional Video Generation RL**. [[paper]](https://arxiv.org/abs/2611.06518) [[code]](https://github.com/Tencent-Hunyuan/EmoReward) [[project]](https://emoreward-project.github.io/) — `[Method]` · `[Training]` `[Verification]` · **Adjacent**
+  > Calibrates heterogeneous emotion-reward providers using current-video validity gates and a frozen table derived from earlier training traces, supplying better-grounded rewards for video-generator training.<br>
+  > **Verification:** Matched reward-policy ablations · generator/image-transfer studies · 18-participant ordinal ratings; one reference-to-calibrated transition, with reward providers fixed.
 
 <a id="paper-2611-05275"></a>
 <!-- mmac-record: {"id": "2611.05275", "scope": "Adjacent", "primary": "5.4", "task": null} -->
@@ -3694,6 +3743,13 @@ These layers are complementary rather than mutually exclusive. For example, an a
 
 **Connect:** [2.7 Playable game construction, recreation, and repair](#methods-games) · [2.12 Learning from construction and interaction experience](#methods-experience) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience)
 
+<a id="paper-2610-41432"></a>
+<!-- mmac-record: {"id": "2610.41432", "scope": "Adjacent", "primary": "5.5", "task": 2} -->
+
+- `arXiv 2026.10` **Hybrid Computer Use: A Unified Programmatic, Semantic, and Visual Interface for General Agents**. [[paper]](https://arxiv.org/abs/2610.41432) — `[Method]` · `[Inference]` `[Verification]` · **Adjacent**
+  > Lets agents combine programmatic tools, accessibility actions and visual interaction, using live-state guards, batched verification and returned AX changes to guide subsequent operations.<br>
+  > **Verification:** OSWorld comparisons · channel/skill ablations · macOS, Windows and browser workflows · cost and stale-target recovery; AX changes are semantic state feedback.
+
 <a id="paper-2606-05525"></a>
 <!-- mmac-record: {"id": "2606.05525", "scope": "Adjacent", "primary": "5.5", "task": 12} -->
 
@@ -3710,6 +3766,7 @@ The list below is a practical starting point rather than a security audit or end
 
 | Capability | Resource | Form and provenance | Why it matters for the closed loop |
 |---|---|---|---|
+| Video-editing service integration | **Rendley video-editing-skill** [[code]](https://github.com/rendleyhq/video-editing-skill) [[skill]](https://github.com/rendleyhq/video-editing-skill/blob/main/SKILL.md) | Official Skill · MIT · hosted MCP/REST service | Passes an editing brief and media to Rendley's hosted agent through MCP or REST and returns an editable project; the MIT skill is an integration layer requiring a service connection, not a local editing engine. |
 | Blender authoring and asset validation | **cc-blender-skill** [[code]](https://github.com/RobLe3/cc-blender-skill) · [[validation]](https://github.com/RobLe3/cc-blender-skill/blob/main/docs/test-results/v1.4.0-integration.md) | 30 composable skills · MIT · Blender Lab / ahujasid MCP | Turns text/reference briefs into staged modeling, materials, animation, render checks and exports; documents bounded Blender 5.1.1 checks and remaining engine/provider gaps. |
 | Video-to-scene skills and model orchestration | **AHa-3D: Agentic Tool Use for Real2Sim with GPT-6 Astra** [[code]](https://github.com/KevinXu02/aha-3d) · [[walkthrough]](https://github.com/KevinXu02/aha-3d/blob/main/docs/GETTING_STARTED.md) | Community Skills + Blender/model tools; Apache-2.0 project code, separate third-party assets; video → editable scene and previews | KevinXu02's workflow combines geometry, segmentation and motion tools with coding-agent scene authoring and staged visual reviews; the office walkthrough includes Gallery/X-ray refinement, with separate third-party model requirements. |
 | Staged Blender production and review | **Blender AI Plugin** [[repository]](https://github.com/proyecto26/blender-ai-plugin) | Community skills + MCP workflows and bpy scripts; MIT (Proyecto 26 / original arjun988 skill pack) | Routes briefs and references to specialist skills, pairs stage gates with viewport captures, and records geometry/export checks; supplies a reusable production workflow rather than a measured autonomous-agent benchmark. |
@@ -3984,6 +4041,7 @@ The following examples make the coding loop concrete across different tasks. We 
 | Scientific design | **Google DeepMind — Agentic cheminformatics** [[source]](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/) | Antigravity uses RDKit and potency models to propose macrocycles; a scientist inspects the plots and predictions, and synthesis and experimental validation remain necessary. | Official application walkthrough |
 | Procedural 3D scenes | **Mr Tactical — Blender volcano island** [[source]](https://x.com/MrTacticalX/status/2116835082547740994) | Two models were given the same brief to build an island entirely in code without downloaded assets; the author shows the resulting scenes. | Community demo |
 | Digital twins & factory operations | **NVIDIA — Factory Operations Blueprint** [[source]](https://developer.nvidia.com/blog/how-nvidia-factory-operations-blueprint-coordinates-ai-agents-to-investigate-production-issues/) | A manager coordinates visual inspection, time-series analysis and fleet specialists; transport is demonstrated in Isaac Sim/ROS 2, while physical integration, approval and human rework remain deployment steps. | Official application walkthrough |
+| Video tools & iterative editing | **Google DeepMind — Gemini Omni 1.2 Flash** [[source]](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/) | Introduces 15-second video generation, image/motion/audio references and multi-turn edits to an existing clip, offering a media tool for agent workflows; demonstrations are vendor product examples. | Official product blog |
 | Product brief to editable UI | **AutoClaw Design** — AutoClaw Team [[official workflow]](https://autoclaw.z.ai/blog/product/product-brief-to-ui-design-with-autoclaw/) | Combines reference-guided drafts, conversational or canvas edits, device previews and HTML/project exports; users review interactions and request corrections. | Official product workflow; human review |
 | Visual software engineering | **Programming with Pixels** — Aggarwal & Welleck [[project + demo]](https://programmingwithpixels.com/) | A computer-use agent sees VS Code, types and clicks, edits UI code, and inspects the live preview instead of relying only on text tools. | Closed-loop research demo |
 | Web and UI reconstruction | **WebVIA** — Zhen et al. [[project + cases]](https://zheny2751-dotcom.github.io/webvia.github.io/) | The agent explores multi-state source pages, builds executable HTML/CSS/JS, then tests clicks, input, and navigation against the observed behavior. | Closed-loop research demo |

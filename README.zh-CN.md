@@ -46,12 +46,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-198-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-199-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-11-05**
+**最后更新：2026-11-06**
 
 </div>
 
@@ -1723,6 +1723,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.10 机器人程序与策略的执行评测](#evaluation-robot-programs) · [4.10 机器人演示、执行与程序／策略修复轨迹](#data-robot-programs) · [2.11 Real2Sim2Real：任务学习与真实执行](#methods-real2sim2real) · [2.12 从构建与交互经验学习](#methods-experience) · [5.4 动作、策略、预测与验证能力](#section-5-4)
 
+- [PyRUA-REAL](#paper-2611-06768) · **Core** · [2.12](#methods-experience) — 真实执行、诊断和控制程序修复，并保存可复用技能。
+
 <a id="paper-2611-01560"></a>
 <!-- mmac-record: {"id": "2611.01560", "scope": "Core", "primary": "2.10", "task": 10} -->
 
@@ -1922,6 +1924,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.11 Real2Sim2Real 的任务效用与真实迁移评测](#evaluation-real2sim2real) · [4.11 Real2Sim2Real 的环境、策略与配对迁移记录](#data-real2sim2real) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.10 机器人程序与策略开发](#methods-robot-programs) · [5.4 动作、策略、预测与验证能力](#section-5-4)
 
+<a id="paper-2611-05320"></a>
+<!-- mmac-record: {"id": "2611.05320", "scope": "Adjacent", "primary": "2.11", "task": 11} -->
+
+- `arXiv 2026.11` **PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data**. [[论文]](https://arxiv.org/abs/2611.05320) [[项目]](https://dagroup-pku.github.io/PyRUA-Lean/DataFarm) [[代码]](https://github.com/DAGroup-PKU/PyRUA-Lean/tree/DataFarm) — `[Method]` · `[Data Curation]` `[Training]` `[Inference]` `[Verification]` · **Adjacent**
+  > 编排 Agent 编写的仿真任务、专家控制器与真实图像条件视频模型，生成带动作标签的多视角训练轨迹并迁移到实体机器人。<br>
+  > **验证维度：** 五项双臂 PiPER 任务、同规模100轨迹训练集、未见外观测试、隐藏专家判定与独立渲染审核；发布的管线不含数据集。
+
 <a id="paper-2610-34186"></a>
 <!-- mmac-record: {"id": "2610.34186", "scope": "Adjacent", "primary": "2.11", "task": 11} -->
 
@@ -1952,6 +1961,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 单次产物修订与跨任务能力改进分别验证；构建轨迹训练和在生成环境中训练操作策略也具有不同学习对象。
 
 **关联阅读：** [3.12 经验学习与跨任务泛化评测](#evaluation-experience) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [2.2 GUI／软件训练环境合成](#methods-gui-environments) · [5.5 Skills、工具桥与可复用工作流](#section-5-5) · [6.5 从构建经验到可迁移能力](#section-6-5)
+
+<a id="paper-2611-06768"></a>
+<!-- mmac-record: {"id": "2611.06768", "scope": "Core", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.11` **PyRUA-REAL: Robot Exploration and Adaptive Learning through RSI in the Real World**. [[论文]](https://arxiv.org/abs/2611.06768) [[项目]](https://dagroup-pku.github.io/PyRUA-Lean/real/) [[代码]](https://github.com/DAGroup-PKU/PyRUA-Lean/tree/REAL) — `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > 通过研究者与工程师 Agent 协作，将真实机器人执行证据转成修订后的程序与可复用技能，再以实时观测运行感知和控制代码。<br>
+  > **验证维度：** 八项实机任务、图像检查到源码修复的轨迹、42 项 RoboDojo 评测及反馈／技能迁移消融；开发统计与需协助的插接区分于冻结程序可靠性。
 
 <a id="paper-2610-28282"></a>
 <!-- mmac-record: {"id": "2610.28282", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
@@ -2975,6 +2991,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.12 从构建与交互经验学习](#methods-experience) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [3.2 GUI／软件训练环境构建与下游效用评测](#evaluation-gui-environments) · [3.10 机器人程序与策略的执行评测](#evaluation-robot-programs) · [6.5 从构建经验到可迁移能力](#section-6-5)
 
+- [PyRUA-REAL](#paper-2611-06768) · **Core** · [2.12](#methods-experience) — 八任务有／无技能库迁移与固定修订预算的反馈比较。
+
 **Benchmark 工作**
 
 - [RecreationWorld](#paper-2609-22000) · **Core** · [2.1](#methods-software)
@@ -3030,6 +3048,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 程序判定的确定性不等于任务语义正确；judge 与人工的一致性也不能替代闭环修复收益。
 
 **关联阅读：** [3.1 视觉软件工程与应用复刻评测](#evaluation-software) · [3.3 图表、科学可视化与图形编辑评测](#evaluation-graphics) · [3.5 程序化 3D 与 CAD 基准评测](#evaluation-cad-3d) · [3.7 游戏行为、可玩性与修复评测](#evaluation-games) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [6.3 独立验证与可信奖励](#section-6-3)
+
+<a id="paper-2604-18164"></a>
+<!-- mmac-record: {"id": "2604.18164", "scope": "Adjacent", "primary": "3.13", "task": null} -->
+
+- `ACL 2026` **MM-JudgeBias: A Benchmark for Evaluating Compositional Biases in MLLM-as-a-Judge**. [[论文]](https://arxiv.org/abs/2604.18164) [[会议版]](https://aclanthology.org/2026.acl-long.1162/) [[代码]](https://github.com/naver-ai/MM-JudgeBias) [[数据]](https://huggingface.co/datasets/naver-ai/MM-JudgeBias) — `[Benchmark]` `[Dataset]` · `[Verification]` · **Adjacent**
+  > 通过九类受控扰动检验多模态裁判是否利用完整的问题—图像—回答证据，并区分缺失／错配证据敏感性与无关变化下的稳定性。<br>
+  > **验证维度：** 来自29个基准的1,804样本、26个裁判、用途不同的BD／BC指标及公开评测数据与代码；不是闭环修复基准。
 
 <a id="paper-2610-10622"></a>
 <!-- mmac-record: {"id": "2610.10622", "scope": "Adjacent", "primary": "3.13", "task": 8} -->
@@ -3213,6 +3238,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 可编辑源文件、最终图片／视频和构建轨迹分别记录；素材许可、依赖与时间对齐影响复用。
 
 **关联阅读：** [2.4 文档与视觉媒体构建](#methods-media) · [3.4 文档与视觉媒体构建评测](#evaluation-media) · [4.3 图表数据、图形程序与编辑记录](#data-graphics) · [4.12 跨任务构建、修复与技能学习资料](#data-experience)
+
+<a id="paper-2611-04418"></a>
+<!-- mmac-record: {"id": "2611.04418", "scope": "Adjacent", "primary": "4.4", "task": 4} -->
+
+- `NeurIPS 2026` **VidUEU-Agent: A Data-Curation Agent for Multimodal Understanding, Editing, and Unified Tasks**. [[论文]](https://arxiv.org/abs/2611.04418) [[代码]](https://github.com/LRuca/VidUEU-Agent) [[数据]](https://huggingface.co/datasets/Lruca/VidUEU100k) — `[Method]` `[Dataset]` · `[Data Curation]` `[Training]` `[Verification]` · **Adjacent**
+  > 组织视觉工具与 VLM 检查，从视频构造10万条可追溯的理解、编辑和统一任务指令，再根据下游训练反馈调整采样与路由。<br>
+  > **验证维度：** 已发布指令／元数据文件与训练对比；未参与反馈的基准区分于测试分数引导的数据迭代，上游视觉资产沿用各自条款。
 
 **数据集工作**
 
@@ -3452,6 +3484,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.11 Real2Sim2Real：任务学习与真实执行](#methods-real2sim2real) · [3.11 Real2Sim2Real 的任务效用与真实迁移评测](#evaluation-real2sim2real) · [4.9 Real-to-Sim 的观测、仿真表示与交互对应](#data-real-to-sim) · [4.10 机器人演示、执行与程序／策略修复轨迹](#data-robot-programs)
 
+- [PyRUA-DataFarm](#paper-2611-05320) · **Adjacent** · [2.11](#methods-real2sim2real) — 带动作标签的仿真轨迹、真实图像条件多视角及接收记录；属于数据构造管线，不附带数据集。
+
 **论文描述的实验资料与协议**
 
 - [Agentic RSR](#paper-2610-10479) · **Core** · [2.11](#methods-real2sim2real)
@@ -3508,6 +3542,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.10 机器人程序与策略开发](#methods-robot-programs) · [6.1 主动证据获取与任务相关保真度](#section-6-1)
 
+<a id="paper-2611-06083"></a>
+<!-- mmac-record: {"id": "2611.06083", "scope": "Adjacent", "primary": "5.1", "task": 4} -->
+
+- `arXiv 2026.11` **SleuthVLM: Do We Really Need Audio-in-Video for Omni Video Understanding?**. [[论文]](https://arxiv.org/abs/2611.06083) [[项目]](https://wpr001.github.io/sleuthVLM/) — `[Method]` · `[Inference]` `[Verification]` · **Adjacent**
+  > 将带时间戳的转写用作索引，让 VLM 自适应查看帧与片段，并可调用音频模型补充语音转写无法提供的证据。<br>
+  > **验证维度：** 四个音视频问答基准、转写／时间戳消融、可选音频描述工具实验及访问日志审计；验证的是证据获取而非产物修复。
+
 <a id="paper-2610-28354"></a>
 <!-- mmac-record: {"id": "2610.28354", "scope": "Adjacent", "primary": "5.1", "task": 9} -->
 
@@ -3550,6 +3591,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 | 能力 | 资源与来源 | 输入 → 输出 | 在工作流中的作用 |
 |---|---|---|---|
+| 长视频多镜头编辑 | **MoviEdit** [[论文]](https://arxiv.org/abs/2611.02737) [[项目]](https://multi-shot-edit.github.io/) [[评测]](https://multi-shot-edit.github.io/benchmark.html) | 源视频＋编辑文字或编辑后的参考帧 → 跨镜头一致的编辑视频 | 以全局草稿指导全分辨率自回归编辑，配套64视频／128场景评测；项目提供演示和评测清单，尚无模型下载入口。 |
 | 三维生成、局部编辑与补全 | **SeMo3D** [[论文]](https://arxiv.org/abs/2611.02568) [[项目]](https://xiaokunsun.github.io/SeMo3D.github.io/) | 参考图、可选文本／点、编辑区域及缓存潜变量 → 带纹理三维资产 | 选择性生成几何和纹理，保留未编辑区域；Agent 可组织图像生成与用户连续提出的局部修改。代码与权重已公告、尚未发布。 |
 | 语义规划的图像／视频生成编辑 | **Bernini: Latent Semantic Planning for Video Diffusion** [[代码]](https://github.com/bytedance/Bernini) · [[文档]](https://github.com/bytedance/Bernini/blob/main/docs/bernini.md) · [[权重]](https://huggingface.co/ByteDance/Bernini-Diffusers) | 提示 + 可选源／参考图像或视频 → 生成或编辑后的视觉媒体 | 将 Qwen2.5-VL 语义规划器连接到 Wan2.2 扩散渲染器，以统一任务接口提供生成／编辑；完整管线与独立渲染器版本均可作为媒体工具。 |
 | 语义到像素的图像生成 | **Know, then Draw: A New Learning Paradigm for Visual Generation** [[论文]](https://arxiv.org/abs/2610.37626) | 文本 → 自回归语义 token → 扩散渲染图像 | 将语义学习与像素渲染分开，用语言监督的视觉 token 为扩散渲染器提供条件；为文本生图提供语义与渲染分工的模型组件。 |
@@ -3609,6 +3651,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 区分被调用模型的能力与 Agent 的组织贡献；模型微调、程序调整、策略调用和真实反馈采集属于不同操作。
 
 **关联阅读：** [2.10 机器人程序与策略开发](#methods-robot-programs) · [2.11 Real2Sim2Real：任务学习与真实执行](#methods-real2sim2real) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
+
+<a id="paper-2611-06518"></a>
+<!-- mmac-record: {"id": "2611.06518", "scope": "Adjacent", "primary": "5.4", "task": 4} -->
+
+- `arXiv 2026.11` **EmoReward: Self-Evolving Reward Calibration for Emotional Video Generation RL**. [[论文]](https://arxiv.org/abs/2611.06518) [[代码]](https://github.com/Tencent-Hunyuan/EmoReward) [[项目]](https://emoreward-project.github.io/) — `[Method]` · `[Training]` `[Verification]` · **Adjacent**
+  > 以当前视频的证据有效性门控和既往训练轨迹生成的冻结权重表校准异构情绪评分器，为视频生成器训练提供更有依据的奖励。<br>
+  > **验证维度：** 匹配预算的奖励策略消融、生成器／图像迁移实验及18人等级评分；验证一次参考到校准运行的转移，奖励提供模型保持固定。
 
 <a id="paper-2611-05275"></a>
 <!-- mmac-record: {"id": "2611.05275", "scope": "Adjacent", "primary": "5.4", "task": null} -->
@@ -3694,6 +3743,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.7 可玩游戏构建、复刻与修复](#methods-games) · [2.12 从构建与交互经验学习](#methods-experience) · [4.12 跨任务构建、修复与技能学习资料](#data-experience)
 
+<a id="paper-2610-41432"></a>
+<!-- mmac-record: {"id": "2610.41432", "scope": "Adjacent", "primary": "5.5", "task": 2} -->
+
+- `arXiv 2026.10` **Hybrid Computer Use: A Unified Programmatic, Semantic, and Visual Interface for General Agents**. [[论文]](https://arxiv.org/abs/2610.41432) — `[Method]` · `[Inference]` `[Verification]` · **Adjacent**
+  > 让 Agent 组合程序工具、可访问性动作与视觉交互，通过实时状态检查、批次内验证及返回的 AX 变化指导后续操作。<br>
+  > **验证维度：** OSWorld 对比、通道／Skill 消融、macOS／Windows／浏览器流程、成本与过期目标恢复；AX 变化属于语义状态反馈。
+
 <a id="paper-2606-05525"></a>
 <!-- mmac-record: {"id": "2606.05525", "scope": "Adjacent", "primary": "5.5", "task": 12} -->
 
@@ -3710,6 +3766,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 | 能力 | 资源 | 形式与来源 | 对闭环的意义 |
 |---|---|---|---|
+| 视频编辑服务集成 | **Rendley video-editing-skill** [[代码]](https://github.com/rendleyhq/video-editing-skill) [[定义]](https://github.com/rendleyhq/video-editing-skill/blob/main/SKILL.md) | 官方 Skill · MIT · 托管 MCP／REST 服务 | 经 MCP／REST 将编辑需求与媒体交给 Rendley 托管 Agent，返回可编辑项目；MIT Skill 属于需服务连接的集成层，不是本地剪辑引擎。 |
 | Blender 创作与资产验证 | **cc-blender-skill** [[代码]](https://github.com/RobLe3/cc-blender-skill) · [[验证说明]](https://github.com/RobLe3/cc-blender-skill/blob/main/docs/test-results/v1.4.0-integration.md) | 30 项可组合 Skills · MIT · Blender Lab／ahujasid MCP | 将文字／参考需求组织为建模、材质、动画、渲染检查与导出步骤，并说明 Blender 5.1.1 的有限测试及引擎／服务验证缺口。 |
 | 视频到场景的 Skills 与模型编排 | **AHa-3D: Agentic Tool Use for Real2Sim with GPT-6 Astra** [[代码]](https://github.com/KevinXu02/aha-3d) · [[示例流程]](https://github.com/KevinXu02/aha-3d/blob/main/docs/GETTING_STARTED.md) | 社区 Skills + Blender／模型工具；项目代码 Apache-2.0，第三方资产单列；视频 → 可编辑场景与预览 | KevinXu02 的工作流结合几何、分割和运动工具，由 Coding Agent 编写场景并分阶段视觉核查；office 示例展示 Gallery/X-ray 修订，各模型及第三方资产独立配置。 |
 | 分阶段 Blender 制作与检查 | **Blender AI Plugin** [[仓库]](https://github.com/proyecto26/blender-ai-plugin) | 社区 Skills + MCP 工作流与 bpy 脚本；MIT（Proyecto 26／原始 arjun988 技能包） | 将需求与参考图路由到专业技能，把阶段检查与视口截图结合，并记录几何和导出结果，提供可复用制作流程；不是经过测量的自主 Agent 基准。 |
@@ -3984,6 +4041,7 @@ Adjacent 论文已经归入上面的具体方向；此索引汇总其完整记�
 | 科学设计 | **Google DeepMind — Agentic cheminformatics** [[原文]](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/) | Antigravity 调用 RDKit 和效力模型提出宏环候选，科学家审阅图表和预测；合成与实验验证仍需另行完成。 | 官方应用案例 |
 | 程序化三维场景 | **Mr Tactical — Blender 火山岛** [[原文]](https://x.com/MrTacticalX/status/2116835082547740994) | 作者给两个模型相同的火山岛需求，要求完全用代码构建、不下载模型或纹理，并展示生成场景。 | 社区演示 |
 | 数字孪生与工厂运行 | **NVIDIA — Factory Operations Blueprint** [[原文]](https://developer.nvidia.com/blog/how-nvidia-factory-operations-blueprint-coordinates-ai-agents-to-investigate-production-issues/) | 管理 Agent 编排视觉检查、时序分析与车队专家；运输在 Isaac Sim／ROS 2 中演示，真实设备接入、批准及人工返修仍属部署环节。 | 官方应用案例 |
+| 视频工具与迭代编辑 | **Google DeepMind — Gemini Omni 1.2 Flash** [[原文]](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/) | 介绍15秒视频生成、图像／动作／音频参考和同一片段的多轮编辑，可作为 Agent 的媒体工具；演示属于厂商产品案例。 | 官方产品博客 |
 | 产品需求到可编辑 UI | **AutoClaw Design** — AutoClaw Team [[官方流程]](https://autoclaw.z.ai/blog/product/product-brief-to-ui-design-with-autoclaw/) | 结合参考素材生成、对话／画布编辑、设备预览和 HTML／项目导出，由用户检查交互并提出修正。 | 官方产品流程；人工评审 |
 | 视觉软件工程 | **Programming with Pixels** — Aggarwal & Welleck [[项目 + Demo]](https://programmingwithpixels.com/) | Computer-use Agent 观察 VS Code，通过点击与输入修改 UI 代码，并检查实时预览，而不是只依赖文本工具。 | 闭环研究 Demo |
 | Web 与 UI 重建 | **WebVIA** — Zhen et al. [[项目 + 案例]](https://zheny2751-dotcom.github.io/webvia.github.io/) | Agent 探索源网页的多种状态，生成可执行 HTML/CSS/JS，再用点击、输入和导航验证行为。 | 闭环研究 Demo |

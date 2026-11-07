@@ -46,12 +46,12 @@ Enable agents to **organize and combine model capabilities**, expanding their ab
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-199-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-201-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-11-06**
+**Last updated: 2026-11-07**
 
 </div>
 
@@ -863,6 +863,8 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 
 **Connect:** [3.4 Document and visual-media evaluation](#evaluation-media) · [4.4 Documents, media assets, and construction/editing traces](#data-media) · [2.3 Charts, scientific visualization, and editable graphics](#methods-graphics) · [2.12 Learning from construction and interaction experience](#methods-experience) · [5.2 Program, geometry, material, and visual-media generation/editing](#section-5-2)
 
+- [ManimCode](#paper-2611-08294) · **Core** · [2.12](#methods-experience) — Educational-animation code generation with visual self-correction.
+
 <a id="paper-2610-38352"></a>
 <!-- mmac-record: {"id": "2610.38352", "scope": "Core", "primary": "2.4", "task": 4} -->
 
@@ -1048,6 +1050,13 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 **Boundary.** CAD design constraints differ from scene composition. Physical usability belongs in 2.6; observation-grounded simulation reconstruction belongs in 2.9.
 
 **Connect:** [3.5 Procedural 3D and CAD benchmarks](#evaluation-cad-3d) · [4.5 Procedural 3D and CAD data: requirements, programs, and assets](#data-cad-3d) · [2.6 Physical asset construction and diagnosis](#methods-physical-assets) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [5.3 Execution, rendering, simulation, and automation interfaces](#section-5-3)
+
+<a id="paper-2611-08175"></a>
+<!-- mmac-record: {"id": "2611.08175", "scope": "Core", "primary": "2.5", "task": 5} -->
+
+- `arXiv 2026.11` **PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?**. [[paper]](https://arxiv.org/abs/2611.08175) [[project]](https://chip-ai-agent.github.io/research/pcbrouteagent) — `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > Patches structured routing guides from KiCad execution failures with spatial obstacle and connectivity feedback, separating multimodal global replanning from native geometric routing.<br>
+  > **Verification:** 247 PCBWorld boards · connectivity plus zero error-level DRC · fixed initial images with evolving spatial feedback; D3-B includes recovery steps, and no fabricated-board validation is reported.
 
 <a id="paper-2610-32978"></a>
 <!-- mmac-record: {"id": "2610.32978", "scope": "Adjacent", "primary": "2.5", "task": 5} -->
@@ -1723,6 +1732,13 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 
 **Connect:** [3.10 Robot program and policy execution evaluation](#evaluation-robot-programs) · [4.10 Robot demonstrations, execution, and repair trajectories](#data-robot-programs) · [2.11 Real2Sim2Real: task learning and real execution](#methods-real2sim2real) · [2.12 Learning from construction and interaction experience](#methods-experience) · [5.4 Action, policy, prediction, and verification capabilities](#section-5-4)
 
+<a id="paper-2611-08321"></a>
+<!-- mmac-record: {"id": "2611.08321", "scope": "Adjacent", "primary": "2.10", "task": 10} -->
+
+- `arXiv 2026.11` **ControlAnything: Generative UI and On-Demand Device Integration for Mixed-Reality Hand Interaction by a Coding Agent**. [[paper]](https://arxiv.org/abs/2611.08321) [[code]](https://github.com/Apolotary/controlanything) — `[Method]` · `[Inference]` · **Adjacent**
+  > Combines visual object selection and language requests with a coding agent that generates device connectors, AR controls and hand-mapping programs over existing transports.<br>
+  > **Verification:** Quest 3 and physical devices · nine of ten requests reached ready in one author-operated session; transport acknowledgements do not verify physical effects.
+
 - [PyRUA-REAL](#paper-2611-06768) · **Core** · [2.12](#methods-experience) — Physical execution, diagnosis and control-program repair, with persistent skills.
 
 <a id="paper-2611-01560"></a>
@@ -1924,6 +1940,13 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 
 **Connect:** [3.11 Real2Sim2Real utility and real-transfer evaluation](#evaluation-real2sim2real) · [4.11 Real2Sim2Real environments, policies, and paired transfer records](#data-real2sim2real) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.10 Robot program and policy development](#methods-robot-programs) · [5.4 Action, policy, prediction, and verification capabilities](#section-5-4)
 
+<a id="paper-2611-07881"></a>
+<!-- mmac-record: {"id": "2611.07881", "scope": "Adjacent", "primary": "2.11", "task": 11} -->
+
+- `arXiv 2026.11` **TactileLab: Sim-to-Real Dexterous Robot Manipulation with Efficient Shear-Sensitive Tactile Simulation**. [[paper]](https://arxiv.org/abs/2611.07881) [[project]](https://yijionglin.github.io/tactilelab/) — `[Method]` · `[Training]` `[Verification]` · **Adjacent**
+  > Aligns real tactile-image pairs with simulated contact-depth and shear-flow observations so simulation-trained manipulation policies transfer to dual-arm and dexterous-hand hardware.<br>
+  > **Verification:** Real dual-arm following and LEAP-hand rotation · tactile-modality ablations · paired real/sim calibration and a sticking-contact assumption; policy transfer without an LLM builder.
+
 <a id="paper-2611-05320"></a>
 <!-- mmac-record: {"id": "2611.05320", "scope": "Adjacent", "primary": "2.11", "task": 11} -->
 
@@ -1961,6 +1984,13 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 **Boundary.** Distinguish learning the builder from learning the operator in a generated environment. Within-task iteration and static expert skills do not by themselves establish cross-task learning.
 
 **Connect:** [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [2.2 GUI and software training-environment synthesis](#methods-gui-environments) · [5.5 Skills, tool bridges, and reusable workflows](#section-5-5) · [6.5 From construction experience to transferable capability](#section-6-5)
+
+<a id="paper-2611-08294"></a>
+<!-- mmac-record: {"id": "2611.08294", "scope": "Core", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.11` **ManimCode: Learning Visual Self-Correction for Educational Animation**. [[paper]](https://arxiv.org/abs/2611.08294) [[project]](https://liang-zhengyang.github.io/manimcode/) — `[Method]` · `[Training]` `[Inference]` `[Verification]` · **Core**
+  > Trains one 4B model to write, visually review and revise Manim programs using render–critique–repair trajectories and reinforcement learning on its own failures.<br>
+  > **Verification:** Eight-frame reviewer and layout diagnostics · matched-budget render/quality tests · long-form pipeline transfer; code and ManimData downloads are announced but not yet released.
 
 <a id="paper-2611-06768"></a>
 <!-- mmac-record: {"id": "2611.06768", "scope": "Core", "primary": "2.12", "task": 12} -->
@@ -2880,6 +2910,20 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Connect:** [2.10 Robot program and policy development](#methods-robot-programs) · [4.10 Robot demonstrations, execution, and repair trajectories](#data-robot-programs) · [3.11 Real2Sim2Real utility and real-transfer evaluation](#evaluation-real2sim2real) · [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience)
 
+<a id="paper-2609-01404"></a>
+<!-- mmac-record: {"id": "2609.01404", "scope": "Adjacent", "primary": "3.10", "task": 10} -->
+
+- `arXiv 2026.09` **Evaluating Multimodal LLMs as Generalist Vision-Language-Action Agents for Drone Control: Commanding, Approaching, Tracking and Searching**. [[paper]](https://arxiv.org/abs/2609.01404) [[project]](https://github.com/naver-ai/DroneCATS) [[data]](https://huggingface.co/datasets/naver-ai/DroneCATS-Pilot-54K) — `[Benchmark]` · `[Training]` `[Inference]` `[Verification]` · **Adjacent**
+  > Evaluates image-conditioned drone actions and commander–sub-agent coordination across simulators and real Tello flights, exposing latency and arrival-declaration failures.<br>
+  > **Verification:** Ten-model simulated benchmark · 100 single-drone and 18 two-drone real episodes · small per-cell samples; 54K RGB-D-derived supervision is not real-flight trajectory data.
+
+<a id="paper-2611-08209"></a>
+<!-- mmac-record: {"id": "2611.08209", "scope": "Adjacent", "primary": "3.10", "task": 10} -->
+
+- `arXiv 2026.11` **RoboARCade: Benchmarking Agentic Robot Control**. [[paper]](https://arxiv.org/abs/2611.08209) — `[Benchmark]` · `[Inference]` `[Verification]` · **Adjacent**
+  > Benchmarks visual robot-control agents on randomized long-horizon MuJoCo tasks, separating interface effects, in-context demonstrations and cross-trial text-harness optimization.<br>
+  > **Verification:** 22 tasks, three embodiments · hidden task predicates · control cost and false-success analysis · five-task adaptation study; simulated control and harness updates, not construction-code repair.
+
 <a id="paper-2609-33807"></a>
 <!-- mmac-record: {"id": "2609.33807", "scope": "Core", "primary": "3.10", "task": 10} -->
 
@@ -2990,6 +3034,8 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 **Boundary.** Match tasks, data, and budgets, and report transfer and regressions. Training builders and training operators inside generated environments require different protocols.
 
 **Connect:** [2.12 Learning from construction and interaction experience](#methods-experience) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [3.2 Training-environment construction and downstream utility](#evaluation-gui-environments) · [3.10 Robot program and policy execution evaluation](#evaluation-robot-programs) · [6.5 From construction experience to transferable capability](#section-6-5)
+
+- [RoboARCade](#paper-2611-08209) · **Adjacent** · [3.10](#evaluation-robot-programs) — Compares successful-episode context with text harnesses revised between graded trials.
 
 - [PyRUA-REAL](#paper-2611-06768) · **Core** · [2.12](#methods-experience) — Eight-task with/without skill-library transfer and fixed-budget feedback comparisons.
 
@@ -3449,6 +3495,8 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Connect:** [2.10 Robot program and policy development](#methods-robot-programs) · [3.10 Robot program and policy execution evaluation](#evaluation-robot-programs) · [4.11 Real2Sim2Real environments, policies, and paired transfer records](#data-real2sim2real) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience)
 
+- [DroneCATS](#paper-2609-01404) · **Adjacent** · [3.10](#evaluation-robot-programs) — Released RGB-D-derived action, point and depth annotations with source reconstruction ledgers, rather than flight trajectories.
+
 <a id="paper-2611-05163"></a>
 <!-- mmac-record: {"id": "2611.05163", "scope": "Adjacent", "primary": "4.10", "task": 10} -->
 
@@ -3500,6 +3548,8 @@ This is a research-resource index, not a claim that every linked paper releases 
 **Boundary.** Distinguish training trajectories, static expert skills, and experience updated during execution. Final successful samples alone cannot explain repair decisions.
 
 **Connect:** [2.12 Learning from construction and interaction experience](#methods-experience) · [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience) · [4.1 Software requirements, application observations, and development traces](#data-software) · [4.7 Game requirements, code, assets, and playtesting traces](#data-games) · [4.10 Robot demonstrations, execution, and repair trajectories](#data-robot-programs) · [3.13 Test, reward, and evaluator reliability](#section-3-13) · [6.5 From construction experience to transferable capability](#section-6-5)
+
+- [ManimCode](#paper-2611-08294) · **Core** · [2.12](#methods-experience) — ManimData construction preserves render errors, visual critiques and code revisions; download forthcoming.
 
 **Data-construction contributions**
 
@@ -3591,6 +3641,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 | Capability | Resource and sources | Inputs → outputs | Role in a workflow |
 |---|---|---|---|
+| Reference-guided PBR materials | **MIKU** [[paper]](https://arxiv.org/abs/2611.07354) | Reference image + mesh geometry cues → multi-view albedo, metallic and roughness maps | Normalizes material conventions and separates albedo from deterministic metallic/roughness prediction; targets consistent renderable assets, not physically measured materials. Paper-described capability; code and weights are not linked. |
 | Long-form, multi-shot video editing | **MoviEdit** [[paper]](https://arxiv.org/abs/2611.02737) [[project]](https://multi-shot-edit.github.io/) [[benchmark]](https://multi-shot-edit.github.io/benchmark.html) | Source video + edit text or edited reference frames → consistently edited multi-shot video | A global draft guides full-resolution autoregressive editing; 64-video/128-scenario benchmark materials accompany the method. The project provides demonstrations and evaluation manifests, without a released model download. |
 | 3D generation, local editing & completion | **SeMo3D** [[paper]](https://arxiv.org/abs/2611.02568) [[project]](https://xiaokunsun.github.io/SeMo3D.github.io/) | Reference image, optional text/points, edit region and cached latents → textured 3D asset | Selectively models geometry and texture while preserving untouched regions; an agent can combine image generation with successive user-requested edits. Code and weights are announced but not yet released. |
 | Planned image/video generation and editing | **Bernini: Latent Semantic Planning for Video Diffusion** [[code]](https://github.com/bytedance/Bernini) · [[guide]](https://github.com/bytedance/Bernini/blob/main/docs/bernini.md) · [[weights]](https://huggingface.co/ByteDance/Bernini-Diffusers) | Prompt + optional source/reference image or video → generated or edited visual media | Connects a Qwen2.5-VL semantic planner to a Wan2.2 diffusion renderer through a shared task interface; released full-pipeline and renderer-only variants provide reusable media tools. |

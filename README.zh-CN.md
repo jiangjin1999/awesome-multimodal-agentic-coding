@@ -46,12 +46,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-199-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-201-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-11-06**
+**最后更新：2026-11-07**
 
 </div>
 
@@ -863,6 +863,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.4 文档与视觉媒体构建评测](#evaluation-media) · [4.4 文档、媒体素材与构建／编辑过程](#data-media) · [2.3 图表、科学可视化与可编辑图形构建](#methods-graphics) · [2.12 从构建与交互经验学习](#methods-experience) · [5.2 程序、几何、材质与视觉媒体生成／编辑](#section-5-2)
 
+- [ManimCode](#paper-2611-08294) · **Core** · [2.12](#methods-experience) — 带视觉自我修正的教学动画程序生成。
+
 <a id="paper-2610-38352"></a>
 <!-- mmac-record: {"id": "2610.38352", "scope": "Core", "primary": "2.4", "task": 4} -->
 
@@ -1048,6 +1050,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** CAD 设计约束和一般场景构图分别评价；关节、材料响应等物理可用性集中在 2.6，观测约束的仿真重建见 2.9。
 
 **关联阅读：** [3.5 程序化 3D 与 CAD 基准评测](#evaluation-cad-3d) · [4.5 程序化 3D 与 CAD 数据：需求、程序与资产](#data-cad-3d) · [2.6 物理资产构建与诊断](#methods-physical-assets) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [5.3 执行、渲染、仿真与自动化接口](#section-5-3)
+
+<a id="paper-2611-08175"></a>
+<!-- mmac-record: {"id": "2611.08175", "scope": "Core", "primary": "2.5", "task": 5} -->
+
+- `arXiv 2026.11` **PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?**. [[论文]](https://arxiv.org/abs/2611.08175) [[项目]](https://chip-ai-agent.github.io/research/pcbrouteagent) — `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > 根据 KiCad 执行失败中的空间障碍与连通反馈修订结构化布线指引，将多模态全局重规划与原生几何布线分工。<br>
+  > **验证维度：** 247 块 PCBWorld 测试板，以完整连通和零 error 级 DRC 联合验证；初始图像固定、空间反馈更新，D3-B 含恢复步骤，未报告制板实测。
 
 <a id="paper-2610-32978"></a>
 <!-- mmac-record: {"id": "2610.32978", "scope": "Adjacent", "primary": "2.5", "task": 5} -->
@@ -1723,6 +1732,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.10 机器人程序与策略的执行评测](#evaluation-robot-programs) · [4.10 机器人演示、执行与程序／策略修复轨迹](#data-robot-programs) · [2.11 Real2Sim2Real：任务学习与真实执行](#methods-real2sim2real) · [2.12 从构建与交互经验学习](#methods-experience) · [5.4 动作、策略、预测与验证能力](#section-5-4)
 
+<a id="paper-2611-08321"></a>
+<!-- mmac-record: {"id": "2611.08321", "scope": "Adjacent", "primary": "2.10", "task": 10} -->
+
+- `arXiv 2026.11` **ControlAnything: Generative UI and On-Demand Device Integration for Mixed-Reality Hand Interaction by a Coding Agent**. [[论文]](https://arxiv.org/abs/2611.08321) [[代码]](https://github.com/Apolotary/controlanything) — `[Method]` · `[Inference]` · **Adjacent**
+  > 将视觉选物和语言请求交给 Coding Agent，基于已有传输层生成设备连接器、AR 控件与手势映射程序。<br>
+  > **验证维度：** Quest 3 与真实设备上由作者执行的一次实验，10 请求中9个达到 ready；传输回执不能证明物理效果。
+
 - [PyRUA-REAL](#paper-2611-06768) · **Core** · [2.12](#methods-experience) — 真实执行、诊断和控制程序修复，并保存可复用技能。
 
 <a id="paper-2611-01560"></a>
@@ -1924,6 +1940,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.11 Real2Sim2Real 的任务效用与真实迁移评测](#evaluation-real2sim2real) · [4.11 Real2Sim2Real 的环境、策略与配对迁移记录](#data-real2sim2real) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.10 机器人程序与策略开发](#methods-robot-programs) · [5.4 动作、策略、预测与验证能力](#section-5-4)
 
+<a id="paper-2611-07881"></a>
+<!-- mmac-record: {"id": "2611.07881", "scope": "Adjacent", "primary": "2.11", "task": 11} -->
+
+- `arXiv 2026.11` **TactileLab: Sim-to-Real Dexterous Robot Manipulation with Efficient Shear-Sensitive Tactile Simulation**. [[论文]](https://arxiv.org/abs/2611.07881) [[项目]](https://yijionglin.github.io/tactilelab/) — `[Method]` · `[Training]` `[Verification]` · **Adjacent**
+  > 将真实触觉图像对与仿真接触深度、剪切流观测对齐，使仿真训练的操作策略迁移到双臂和灵巧手实机。<br>
+  > **验证维度：** 真实双臂跟随与 LEAP 手转物、触觉模态消融；依赖配对真实／仿真标定和不滑动接触假设，属于无 LLM 构建者的策略迁移。
+
 <a id="paper-2611-05320"></a>
 <!-- mmac-record: {"id": "2611.05320", "scope": "Adjacent", "primary": "2.11", "task": 11} -->
 
@@ -1961,6 +1984,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 单次产物修订与跨任务能力改进分别验证；构建轨迹训练和在生成环境中训练操作策略也具有不同学习对象。
 
 **关联阅读：** [3.12 经验学习与跨任务泛化评测](#evaluation-experience) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [2.2 GUI／软件训练环境合成](#methods-gui-environments) · [5.5 Skills、工具桥与可复用工作流](#section-5-5) · [6.5 从构建经验到可迁移能力](#section-6-5)
+
+<a id="paper-2611-08294"></a>
+<!-- mmac-record: {"id": "2611.08294", "scope": "Core", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.11` **ManimCode: Learning Visual Self-Correction for Educational Animation**. [[论文]](https://arxiv.org/abs/2611.08294) [[项目]](https://liang-zhengyang.github.io/manimcode/) — `[Method]` · `[Training]` `[Inference]` `[Verification]` · **Core**
+  > 利用渲染—批评—修复轨迹与自身失败状态上的强化学习，训练同一个 4B 模型编写、视觉审阅和修订 Manim 程序。<br>
+  > **验证维度：** 八帧审阅与布局诊断、相同预算下的渲染／质量测试及长视频流程迁移；代码和 ManimData 下载已预告，尚未发布。
 
 <a id="paper-2611-06768"></a>
 <!-- mmac-record: {"id": "2611.06768", "scope": "Core", "primary": "2.12", "task": 12} -->
@@ -2880,6 +2910,20 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.10 机器人程序与策略开发](#methods-robot-programs) · [4.10 机器人演示、执行与程序／策略修复轨迹](#data-robot-programs) · [3.11 Real2Sim2Real 的任务效用与真实迁移评测](#evaluation-real2sim2real) · [3.12 经验学习与跨任务泛化评测](#evaluation-experience)
 
+<a id="paper-2609-01404"></a>
+<!-- mmac-record: {"id": "2609.01404", "scope": "Adjacent", "primary": "3.10", "task": 10} -->
+
+- `arXiv 2026.09` **Evaluating Multimodal LLMs as Generalist Vision-Language-Action Agents for Drone Control: Commanding, Approaching, Tracking and Searching**. [[论文]](https://arxiv.org/abs/2609.01404) [[项目]](https://github.com/naver-ai/DroneCATS) [[数据]](https://huggingface.co/datasets/naver-ai/DroneCATS-Pilot-54K) — `[Benchmark]` · `[Training]` `[Inference]` `[Verification]` · **Adjacent**
+  > 在仿真器与真实 Tello 飞行中评测图像条件动作及指挥员—子 Agent 协作，分析延迟与到达声明失误。<br>
+  > **验证维度：** 十模型仿真评测、100次单机与18次双机实飞；每组样本较少，54K来自RGB-D的监督数据不等于真实飞行轨迹。
+
+<a id="paper-2611-08209"></a>
+<!-- mmac-record: {"id": "2611.08209", "scope": "Adjacent", "primary": "3.10", "task": 10} -->
+
+- `arXiv 2026.11` **RoboARCade: Benchmarking Agentic Robot Control**. [[论文]](https://arxiv.org/abs/2611.08209) — `[Benchmark]` · `[Inference]` `[Verification]` · **Adjacent**
+  > 在随机化长程 MuJoCo 任务上评测视觉机器人控制 Agent，分别比较接口、上下文示范和跨尝试文本工作流优化。<br>
+  > **验证维度：** 22 任务、三种机器人形态、隐藏任务判据、控制成本与误报成功分析，以及五任务适应实验；属于仿真控制和工作流更新。
+
 <a id="paper-2609-33807"></a>
 <!-- mmac-record: {"id": "2609.33807", "scope": "Core", "primary": "3.10", "task": 10} -->
 
@@ -2990,6 +3034,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 比较应匹配任务、数据和预算，报告迁移与退化；训练构建者和训练环境中的操作者采用不同协议。
 
 **关联阅读：** [2.12 从构建与交互经验学习](#methods-experience) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [3.2 GUI／软件训练环境构建与下游效用评测](#evaluation-gui-environments) · [3.10 机器人程序与策略的执行评测](#evaluation-robot-programs) · [6.5 从构建经验到可迁移能力](#section-6-5)
+
+- [RoboARCade](#paper-2611-08209) · **Adjacent** · [3.10](#evaluation-robot-programs) — 比较成功轨迹上下文与按已评分尝试修订的文本工作流。
 
 - [PyRUA-REAL](#paper-2611-06768) · **Core** · [2.12](#methods-experience) — 八任务有／无技能库迁移与固定修订预算的反馈比较。
 
@@ -3449,6 +3495,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.10 机器人程序与策略开发](#methods-robot-programs) · [3.10 机器人程序与策略的执行评测](#evaluation-robot-programs) · [4.11 Real2Sim2Real 的环境、策略与配对迁移记录](#data-real2sim2real) · [4.12 跨任务构建、修复与技能学习资料](#data-experience)
 
+- [DroneCATS](#paper-2609-01404) · **Adjacent** · [3.10](#evaluation-robot-programs) — 发布来自 RGB-D 的动作、点和深度标注及原始来源重建清单，并非飞行轨迹。
+
 <a id="paper-2611-05163"></a>
 <!-- mmac-record: {"id": "2611.05163", "scope": "Adjacent", "primary": "4.10", "task": 10} -->
 
@@ -3500,6 +3548,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 本节作为跨任务索引，区分训练轨迹、静态专家 Skills 和执行中更新的经验；最终成功样本不足以解释修复决策。
 
 **关联阅读：** [2.12 从构建与交互经验学习](#methods-experience) · [3.12 经验学习与跨任务泛化评测](#evaluation-experience) · [4.1 软件需求、应用观测与开发／复刻轨迹](#data-software) · [4.7 游戏需求、代码、资产与运行测试轨迹](#data-games) · [4.10 机器人演示、执行与程序／策略修复轨迹](#data-robot-programs) · [3.13 测试、奖励与评估器可靠性](#section-3-13) · [6.5 从构建经验到可迁移能力](#section-6-5)
+
+- [ManimCode](#paper-2611-08294) · **Core** · [2.12](#methods-experience) — ManimData 构造保留渲染错误、视觉批评和代码修订；下载待发布。
 
 **数据构造工作**
 
@@ -3591,6 +3641,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 | 能力 | 资源与来源 | 输入 → 输出 | 在工作流中的作用 |
 |---|---|---|---|
+| 参考图引导的 PBR 材质 | **MIKU** [[论文]](https://arxiv.org/abs/2611.07354) | 参考图＋mesh几何条件 → 多视角 albedo、金属度与粗糙度图 | 统一材质约定，分阶段生成albedo并确定性预测金属度／粗糙度；目标为可渲染资产一致性，不是实测材质。论文描述了能力，尚无代码或权重链接。 |
 | 长视频多镜头编辑 | **MoviEdit** [[论文]](https://arxiv.org/abs/2611.02737) [[项目]](https://multi-shot-edit.github.io/) [[评测]](https://multi-shot-edit.github.io/benchmark.html) | 源视频＋编辑文字或编辑后的参考帧 → 跨镜头一致的编辑视频 | 以全局草稿指导全分辨率自回归编辑，配套64视频／128场景评测；项目提供演示和评测清单，尚无模型下载入口。 |
 | 三维生成、局部编辑与补全 | **SeMo3D** [[论文]](https://arxiv.org/abs/2611.02568) [[项目]](https://xiaokunsun.github.io/SeMo3D.github.io/) | 参考图、可选文本／点、编辑区域及缓存潜变量 → 带纹理三维资产 | 选择性生成几何和纹理，保留未编辑区域；Agent 可组织图像生成与用户连续提出的局部修改。代码与权重已公告、尚未发布。 |
 | 语义规划的图像／视频生成编辑 | **Bernini: Latent Semantic Planning for Video Diffusion** [[代码]](https://github.com/bytedance/Bernini) · [[文档]](https://github.com/bytedance/Bernini/blob/main/docs/bernini.md) · [[权重]](https://huggingface.co/ByteDance/Bernini-Diffusers) | 提示 + 可选源／参考图像或视频 → 生成或编辑后的视觉媒体 | 将 Qwen2.5-VL 语义规划器连接到 Wan2.2 扩散渲染器，以统一任务接口提供生成／编辑；完整管线与独立渲染器版本均可作为媒体工具。 |

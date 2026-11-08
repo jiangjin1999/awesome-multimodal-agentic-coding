@@ -51,7 +51,7 @@ Enable agents to **organize and combine model capabilities**, expanding their ab
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-11-07**
+**Last updated: 2026-11-08**
 
 </div>
 
@@ -1732,6 +1732,13 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 
 **Connect:** [3.10 Robot program and policy execution evaluation](#evaluation-robot-programs) · [4.10 Robot demonstrations, execution, and repair trajectories](#data-robot-programs) · [2.11 Real2Sim2Real: task learning and real execution](#methods-real2sim2real) · [2.12 Learning from construction and interaction experience](#methods-experience) · [5.4 Action, policy, prediction, and verification capabilities](#section-5-4)
 
+<a id="paper-2611-03585"></a>
+<!-- mmac-record: {"id": "2611.03585", "scope": "Adjacent", "primary": "2.10", "task": 10} -->
+
+- `CoRL 2026 Workshop` **Seeing Through the Illusion: Test-Time Scaling for World Action Models**. [[paper]](https://arxiv.org/abs/2611.03585) — `[Method]` · `[Inference]` `[Verification]` · **Adjacent**
+  > Selects frozen world–action model rollouts by combining action validity, inverse-dynamics agreement with imagined motion, and task progress, then executes the chosen action chunk and replans from fresh observations.<br>
+  > **Verification:** RoboLab: 50 simulated episodes · LIBERO: 2,000 episodes per method · matched four-candidate comparisons · component and runtime analysis; small gains over the strongest matched-budget selectors.
+
 <a id="paper-2611-08321"></a>
 <!-- mmac-record: {"id": "2611.08321", "scope": "Adjacent", "primary": "2.10", "task": 10} -->
 
@@ -1984,6 +1991,13 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 **Boundary.** Distinguish learning the builder from learning the operator in a generated environment. Within-task iteration and static expert skills do not by themselves establish cross-task learning.
 
 **Connect:** [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [2.2 GUI and software training-environment synthesis](#methods-gui-environments) · [5.5 Skills, tool bridges, and reusable workflows](#section-5-5) · [6.5 From construction experience to transferable capability](#section-6-5)
+
+<a id="paper-2611-06817"></a>
+<!-- mmac-record: {"id": "2611.06817", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.11` **Open-HumanWAM: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models**. [[paper]](https://arxiv.org/abs/2611.06817) [[project]](https://dagroup-pku.github.io/open-humanwam/) [[code]](https://github.com/DAGroup-PKU/HumanNet/tree/Open-HumanWAM) [[data]](https://huggingface.co/datasets/DAGroup-PKU/Open-HumanWAM-50K) — `[Method]` `[Dataset]` · `[Training]` `[Inference]` · **Adjacent**
+  > Scales egocentric human pretraining and joint human–robot learning in world–action models, using visual goals to condition frozen robot policies while separating zero-shot execution from task-specific post-training.<br>
+  > **Verification:** RoboTwin and RoboDojo simulation · 20-task real-robot zero-shot study · data-scale, diversity and action-alignment ablations · goal-conditioned demonstrations; long-horizon policies receive task-specific post-training.
 
 <a id="paper-2611-08294"></a>
 <!-- mmac-record: {"id": "2611.08294", "scope": "Core", "primary": "2.12", "task": 12} -->
@@ -3495,6 +3509,8 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Connect:** [2.10 Robot program and policy development](#methods-robot-programs) · [3.10 Robot program and policy execution evaluation](#evaluation-robot-programs) · [4.11 Real2Sim2Real environments, policies, and paired transfer records](#data-real2sim2real) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience)
 
+- [Open-HumanWAM](#paper-2611-06817) · **Adjacent** · [2.12](#methods-experience) — curated egocentric video, hand-motion and language supervision in Open-HumanWAM-50K; subset indices and partial payloads are public, with the corpus upload still in progress.
+
 - [DroneCATS](#paper-2609-01404) · **Adjacent** · [3.10](#evaluation-robot-programs) — Released RGB-D-derived action, point and depth annotations with source reconstruction ledgers, rather than flight trajectories.
 
 <a id="paper-2611-05163"></a>
@@ -3817,6 +3833,7 @@ The list below is a practical starting point rather than a security audit or end
 
 | Capability | Resource | Form and provenance | Why it matters for the closed loop |
 |---|---|---|---|
+| Webots simulation authoring and observation | **Webots MCP** [[source]](https://github.com/MHasaan/webotMCP) | Community MCP; no license specified | Exposes scene editing, controller code, robot commands, multiview screenshots, motion traces and contact events to agents; ground-truth simulator readouts and reactive controls are distinguished from learned perception and planning. |
 | Video-editing service integration | **Rendley video-editing-skill** [[code]](https://github.com/rendleyhq/video-editing-skill) [[skill]](https://github.com/rendleyhq/video-editing-skill/blob/main/SKILL.md) | Official Skill · MIT · hosted MCP/REST service | Passes an editing brief and media to Rendley's hosted agent through MCP or REST and returns an editable project; the MIT skill is an integration layer requiring a service connection, not a local editing engine. |
 | Blender authoring and asset validation | **cc-blender-skill** [[code]](https://github.com/RobLe3/cc-blender-skill) · [[validation]](https://github.com/RobLe3/cc-blender-skill/blob/main/docs/test-results/v1.4.0-integration.md) | 30 composable skills · MIT · Blender Lab / ahujasid MCP | Turns text/reference briefs into staged modeling, materials, animation, render checks and exports; documents bounded Blender 5.1.1 checks and remaining engine/provider gaps. |
 | Video-to-scene skills and model orchestration | **AHa-3D: Agentic Tool Use for Real2Sim with GPT-6 Astra** [[code]](https://github.com/KevinXu02/aha-3d) · [[walkthrough]](https://github.com/KevinXu02/aha-3d/blob/main/docs/GETTING_STARTED.md) | Community Skills + Blender/model tools; Apache-2.0 project code, separate third-party assets; video → editable scene and previews | KevinXu02's workflow combines geometry, segmentation and motion tools with coding-agent scene authoring and staged visual reviews; the office walkthrough includes Gallery/X-ray refinement, with separate third-party model requirements. |
@@ -4121,6 +4138,9 @@ The following examples make the coding loop concrete across different tasks. We 
 ## ✍️ Perspectives, Blogs, and Industry Signals
 
 This section collects attributed, non-peer-reviewed signals on multimodal feedback, model-tool orchestration, and digital–physical connections, complementing the research literature with practitioner examples.
+
+- `2026-11-06` **Lance Martin / Anthropic — The components of agent memory.** [[official blog]](https://www.anthropic.com/research/components-of-agent-memory)
+  > *Topic link:* Connects experience to later actions through selective notes, transcript-grounded memory correction and offline consolidation; Pokémon and document examples are attributed engineering observations, with memory updates distinct from model training.
 
 - `2026-10-13` **Kanishka Rao / Google — Gemini 4 Argon for Robotics.** [[official blog]](https://developers.googleblog.com/gemini-4-argon-for-robotics)
   > *Topic link:* Illustrates model-tool use, video-world-model steering, MuJoCo twin construction, and hardware-feedback refinement across generated video, simulation, and real robots; these are attributed vendor demonstrations, not independent validation.

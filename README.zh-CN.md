@@ -51,7 +51,7 @@
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-11-07**
+**最后更新：2026-11-08**
 
 </div>
 
@@ -1732,6 +1732,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.10 机器人程序与策略的执行评测](#evaluation-robot-programs) · [4.10 机器人演示、执行与程序／策略修复轨迹](#data-robot-programs) · [2.11 Real2Sim2Real：任务学习与真实执行](#methods-real2sim2real) · [2.12 从构建与交互经验学习](#methods-experience) · [5.4 动作、策略、预测与验证能力](#section-5-4)
 
+<a id="paper-2611-03585"></a>
+<!-- mmac-record: {"id": "2611.03585", "scope": "Adjacent", "primary": "2.10", "task": 10} -->
+
+- `CoRL 2026 Workshop` **Seeing Through the Illusion: Test-Time Scaling for World Action Models**. [[论文]](https://arxiv.org/abs/2611.03585) — `[Method]` · `[Inference]` `[Verification]` · **Adjacent**
+  > 组合动作有效性、想象运动的逆动力学一致性与任务进度，为冻结世界—动作模型选择候选轨迹，执行动作块后依据新观测重规划。<br>
+  > **验证维度：** RoboLab：50仿真回合 · LIBERO：每方法2,000回合 · 同为四候选的比较 · 组件与运行耗时分析；相对同预算最强选择器的提升较小。
+
 <a id="paper-2611-08321"></a>
 <!-- mmac-record: {"id": "2611.08321", "scope": "Adjacent", "primary": "2.10", "task": 10} -->
 
@@ -1984,6 +1991,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 单次产物修订与跨任务能力改进分别验证；构建轨迹训练和在生成环境中训练操作策略也具有不同学习对象。
 
 **关联阅读：** [3.12 经验学习与跨任务泛化评测](#evaluation-experience) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [2.2 GUI／软件训练环境合成](#methods-gui-environments) · [5.5 Skills、工具桥与可复用工作流](#section-5-5) · [6.5 从构建经验到可迁移能力](#section-6-5)
+
+<a id="paper-2611-06817"></a>
+<!-- mmac-record: {"id": "2611.06817", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.11` **Open-HumanWAM: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models**. [[论文]](https://arxiv.org/abs/2611.06817) [[项目]](https://dagroup-pku.github.io/open-humanwam/) [[代码]](https://github.com/DAGroup-PKU/HumanNet/tree/Open-HumanWAM) [[数据]](https://huggingface.co/datasets/DAGroup-PKU/Open-HumanWAM-50K) — `[Method]` `[Dataset]` · `[Training]` `[Inference]` · **Adjacent**
+  > 通过第一视角人类预训练与人机联合学习扩展世界—动作模型，以视觉目标引导冻结机器人策略，并分别评估零样本执行与任务后训练。<br>
+  > **验证维度：** RoboTwin／RoboDojo仿真 · 20任务实机零样本评测 · 数据规模、多样性与动作对齐消融 · 目标图像条件演示；长流程策略经过任务后训练。
 
 <a id="paper-2611-08294"></a>
 <!-- mmac-record: {"id": "2611.08294", "scope": "Core", "primary": "2.12", "task": 12} -->
@@ -3495,6 +3509,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.10 机器人程序与策略开发](#methods-robot-programs) · [3.10 机器人程序与策略的执行评测](#evaluation-robot-programs) · [4.11 Real2Sim2Real 的环境、策略与配对迁移记录](#data-real2sim2real) · [4.12 跨任务构建、修复与技能学习资料](#data-experience)
 
+- [Open-HumanWAM](#paper-2611-06817) · **Adjacent** · [2.12](#methods-experience) — Open-HumanWAM-50K整理第一视角视频、手部动作和语言监督；已公开子集索引与部分载荷，完整语料仍在上传。
+
 - [DroneCATS](#paper-2609-01404) · **Adjacent** · [3.10](#evaluation-robot-programs) — 发布来自 RGB-D 的动作、点和深度标注及原始来源重建清单，并非飞行轨迹。
 
 <a id="paper-2611-05163"></a>
@@ -3817,6 +3833,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 | 能力 | 资源 | 形式与来源 | 对闭环的意义 |
 |---|---|---|---|
+| Webots仿真构建与观察 | **Webots MCP** [[源码]](https://github.com/MHasaan/webotMCP) | 社区MCP；未标明许可证 | 向Agent开放场景编辑、控制器代码、机器人动作、多视图截图、运动轨迹与接触事件；模拟器真值和反应式控制分别区别于学习式感知与规划。 |
 | 视频编辑服务集成 | **Rendley video-editing-skill** [[代码]](https://github.com/rendleyhq/video-editing-skill) [[定义]](https://github.com/rendleyhq/video-editing-skill/blob/main/SKILL.md) | 官方 Skill · MIT · 托管 MCP／REST 服务 | 经 MCP／REST 将编辑需求与媒体交给 Rendley 托管 Agent，返回可编辑项目；MIT Skill 属于需服务连接的集成层，不是本地剪辑引擎。 |
 | Blender 创作与资产验证 | **cc-blender-skill** [[代码]](https://github.com/RobLe3/cc-blender-skill) · [[验证说明]](https://github.com/RobLe3/cc-blender-skill/blob/main/docs/test-results/v1.4.0-integration.md) | 30 项可组合 Skills · MIT · Blender Lab／ahujasid MCP | 将文字／参考需求组织为建模、材质、动画、渲染检查与导出步骤，并说明 Blender 5.1.1 的有限测试及引擎／服务验证缺口。 |
 | 视频到场景的 Skills 与模型编排 | **AHa-3D: Agentic Tool Use for Real2Sim with GPT-6 Astra** [[代码]](https://github.com/KevinXu02/aha-3d) · [[示例流程]](https://github.com/KevinXu02/aha-3d/blob/main/docs/GETTING_STARTED.md) | 社区 Skills + Blender／模型工具；项目代码 Apache-2.0，第三方资产单列；视频 → 可编辑场景与预览 | KevinXu02 的工作流结合几何、分割和运动工具，由 Coding Agent 编写场景并分阶段视觉核查；office 示例展示 Gallery/X-ray 修订，各模型及第三方资产独立配置。 |
@@ -4121,6 +4138,9 @@ Adjacent 论文已经归入上面的具体方向；此索引汇总其完整记�
 ## ✍️ 观点、博客与产业信号
 
 本节收集带明确作者归属的非同行评审信号，以实践案例补充研究文献，涵盖多模态反馈、模型工具编排和数字—物理世界连接。
+
+- `2026-11-06` **Lance Martin / Anthropic — The components of agent memory.** [[官方博客]](https://www.anthropic.com/research/components-of-agent-memory)
+  > *主题关联：* 以选择性笔记、基于原轨迹的记忆纠错和离线整理连接经验与后续行动；Pokémon与文档案例属于署名工程观察，记忆更新区别于模型训练。
 
 - `2026-10-13` **Kanishka Rao / Google — Gemini 4 Argon for Robotics.** [[官方博客]](https://developers.googleblog.com/gemini-4-argon-for-robotics)
   > *与本主题的关联：* 展示模型工具调用、视频世界模型引导、MuJoCo 数字孪生构建与硬件反馈修订；文中的代表性提示词和厂商案例应区分生成视频、仿真及真实机器人结果，不等同于独立验证。

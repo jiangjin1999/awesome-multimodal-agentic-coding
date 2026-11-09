@@ -46,12 +46,12 @@ Enable agents to **organize and combine model capabilities**, expanding their ab
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-201-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-204-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-11-08**
+**Last updated: 2026-11-09**
 
 </div>
 
@@ -561,6 +561,13 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 **Boundary.** Environment quality and downstream agent benefit are evaluated separately. Transfer from synthetic software to target applications is digital-environment transfer.
 
 **Connect:** [3.2 Training-environment construction and downstream utility](#evaluation-gui-environments) · [4.2 GUI/software environments, tasks, rewards, and action traces](#data-gui-environments) · [1.4 From artifacts to environments: state, actions, resets, tasks, and rewards](#section-1-4) · [2.1 Visual software engineering and application recreation](#methods-software) · [2.12 Learning from construction and interaction experience](#methods-experience)
+
+<a id="paper-2610-37786"></a>
+<!-- mmac-record: {"id": "2610.37786", "scope": "Core", "primary": "2.2", "task": 2} -->
+
+- `arXiv 2026.10` **WebAnything: From the Wild Web to Scalable Agent Environments**. [[paper]](https://arxiv.org/abs/2610.37786) [[code]](https://github.com/china-qijizhifeng/Web-Anything) — `[Method]` · `[Environment]` `[Data Curation]` `[Inference]` `[Verification]` · **Core**
+  > Reconstructs resettable web-agent environments from source-site observations, using independent visual and interaction checks to drive code repair or targeted recapture before producing operator-training tasks.<br>
+  > **Verification:** Source fidelity, interaction and reset checks · traced feedback-to-repair cases · downstream GUI-operator training; 244 historical artifacts are an inventory, while public code includes three limited demos.
 
 <a id="paper-2611-03634"></a>
 <!-- mmac-record: {"id": "2611.03634", "scope": "Adjacent", "primary": "2.2", "task": 2} -->
@@ -1732,6 +1739,8 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 
 **Connect:** [3.10 Robot program and policy execution evaluation](#evaluation-robot-programs) · [4.10 Robot demonstrations, execution, and repair trajectories](#data-robot-programs) · [2.11 Real2Sim2Real: task learning and real execution](#methods-real2sim2real) · [2.12 Learning from construction and interaction experience](#methods-experience) · [5.4 Action, policy, prediction, and verification capabilities](#section-5-4)
 
+- [RobotAgentBench](#paper-2610-34649) · **Core** · [3.10](#evaluation-robot-programs) — Compares code/VLA/WAM tool composition and feedback-driven refinement of reusable control functions in different coding-agent configurations.
+
 <a id="paper-2611-03585"></a>
 <!-- mmac-record: {"id": "2611.03585", "scope": "Adjacent", "primary": "2.10", "task": 10} -->
 
@@ -1992,6 +2001,13 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 
 **Connect:** [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [2.2 GUI and software training-environment synthesis](#methods-gui-environments) · [5.5 Skills, tool bridges, and reusable workflows](#section-5-5) · [6.5 From construction experience to transferable capability](#section-6-5)
 
+<a id="paper-2610-23104"></a>
+<!-- mmac-record: {"id": "2610.23104", "scope": "Core", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.10` **WebCoder: Scaling General Frontend Development with Artifact-Grounded Agentic Reinforcement Learning**. [[paper]](https://arxiv.org/abs/2610.23104) [[project]](https://douzj-llm.github.io/WebCoder/) [[code]](https://github.com/douzj-llm/WebCoder) [[data]](https://huggingface.co/datasets/Roy-DOU/Webdev-Bench) — `[Method]` `[Benchmark]` `[Dataset]` · `[Training]` `[Inference]` `[Verification]` · **Core**
+  > Trains a frontend builder with artifact-grounded reinforcement learning, using rendered feedback to revise a persistent application and assigning long-horizon credit through changes in requirement satisfaction.<br>
+  > **Verification:** 40 composite Webdev-Bench tasks · 66 Vision2Web L2 tasks · credit-assignment and compaction ablations · gated revision cases; the released benchmark translates the original Chinese tasks into English.
+
 <a id="paper-2611-06817"></a>
 <!-- mmac-record: {"id": "2611.06817", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
 
@@ -2188,6 +2204,8 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Connect:** [2.1 Visual software engineering and application recreation](#methods-software) · [4.1 Software requirements, application observations, and development traces](#data-software) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
 
+- [WebCoder](#paper-2610-23104) · **Core** · [2.12](#methods-experience) — Webdev-Bench evaluates sequential requirements and preservation of earlier behavior using a user-feedback gate and independent terminal acceptance.
+
 <a id="paper-2610-35138"></a>
 <!-- mmac-record: {"id": "2610.35138", "scope": "Adjacent", "primary": "3.1", "task": 1} -->
 
@@ -2313,6 +2331,8 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 **Boundary.** Report environment quality separately from downstream transfer. Distinguish construction-agent performance from operating-agent performance and specify the target applications.
 
 **Connect:** [2.2 GUI and software training-environment synthesis](#methods-gui-environments) · [4.2 GUI/software environments, tasks, rewards, and action traces](#data-gui-environments) · [3.1 Visual software engineering and recreation evaluation](#evaluation-software) · [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
+
+- [WebAnything](#paper-2610-37786) · **Core** · [2.2](#methods-gui-environments) — Checks source-state fidelity, interaction validity, reset and downstream operator utility, with historical candidate/version comparability limits.
 
 **Benchmark contributions**
 
@@ -2924,6 +2944,13 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Connect:** [2.10 Robot program and policy development](#methods-robot-programs) · [4.10 Robot demonstrations, execution, and repair trajectories](#data-robot-programs) · [3.11 Real2Sim2Real utility and real-transfer evaluation](#evaluation-real2sim2real) · [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience)
 
+<a id="paper-2610-34649"></a>
+<!-- mmac-record: {"id": "2610.34649", "scope": "Core", "primary": "3.10", "task": 10} -->
+
+- `arXiv 2026.10` **RobotAgentBench: Towards Open-world Robot Autonomy**. [[paper]](https://arxiv.org/abs/2610.34649) [[project]](https://aetherlabsai.github.io/RobotAgentBench/) [[code]](https://github.com/AetherLabsAI/RobotAgentBench) [[data]](https://huggingface.co/datasets/AetherLabs-AI/RobotAgentBench-assets) — `[Benchmark]` `[Method]` · `[Environment]` `[Inference]` `[Verification]` · **Core**
+  > Benchmarks household robot autonomy with code-based, learned and hybrid executors, including visual-feedback-driven program execution and reusable control-tool refinement in its coding-agent configurations.<br>
+  > **Verification:** 50 simulated layouts · five task-level capabilities and four open-ended scenarios · matched sim/real subset · harness ablations; coding-agent and standalone-policy tracks are evaluated separately, with human-assisted scene calibration.
+
 <a id="paper-2609-01404"></a>
 <!-- mmac-record: {"id": "2609.01404", "scope": "Adjacent", "primary": "3.10", "task": 10} -->
 
@@ -3023,6 +3050,8 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 **Boundary.** Control environment and policy changes separately, and state whether real feedback supports development, calibration, or final testing. Paper-specific protocols do not automatically form a shared benchmark.
 
 **Connect:** [2.11 Real2Sim2Real: task learning and real execution](#methods-real2sim2real) · [4.11 Real2Sim2Real environments, policies, and paired transfer records](#data-real2sim2real) · [3.9 Scene and interaction construction for Agentic Real-to-Sim](#evaluation-real-to-sim) · [3.10 Robot program and policy execution evaluation](#evaluation-robot-programs)
+
+- [RobotAgentBench](#paper-2610-34649) · **Core** · [3.10](#evaluation-robot-programs) — Selected matched household tasks compare simulated and real execution after human-assisted scene and dynamics calibration.
 
 <a id="paper-2610-34527"></a>
 <!-- mmac-record: {"id": "2610.34527", "scope": "Adjacent", "primary": "3.11", "task": 11} -->
@@ -3180,6 +3209,8 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Connect:** [2.1 Visual software engineering and application recreation](#methods-software) · [3.1 Visual software engineering and recreation evaluation](#evaluation-software) · [4.2 GUI/software environments, tasks, rewards, and action traces](#data-gui-environments) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience)
 
+- [WebCoder](#paper-2610-23104) · **Core** · [2.12](#methods-experience) — 40 released composite tasks with seed projects, reference screenshots and hidden acceptance checklists; English translations of the original Chinese tasks.
+
 **Data-construction contributions**
 
 - [RecreationWorld](#paper-2609-22000) · **Core** · [2.1](#methods-software)
@@ -3225,6 +3256,8 @@ This is a research-resource index, not a claim that every linked paper releases 
 **Boundary.** Count environments, tasks, and trajectories separately. Reuse depends on versions and runtime dependencies; experimental scale does not establish downloadable scale.
 
 **Connect:** [2.2 GUI and software training-environment synthesis](#methods-gui-environments) · [3.2 Training-environment construction and downstream utility](#evaluation-gui-environments) · [4.1 Software requirements, application observations, and development traces](#data-software) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience)
+
+- [WebAnything](#paper-2610-37786) · **Core** · [2.2](#methods-gui-environments) — Environment/task construction pipeline with a 244-site metadata inventory and three public demos; the full site corpus and training trajectories are not bundled.
 
 <a id="paper-2610-01215"></a>
 <!-- mmac-record: {"id": "2610.01215", "scope": "Adjacent", "primary": "4.2", "task": 2} -->

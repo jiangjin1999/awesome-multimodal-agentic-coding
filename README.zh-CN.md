@@ -46,12 +46,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-201-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-204-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-11-08**
+**最后更新：2026-11-09**
 
 </div>
 
@@ -561,6 +561,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 环境自身质量与下游 Agent 收益分别评价；合成软件到目标应用的迁移属于数字环境迁移。
 
 **关联阅读：** [3.2 GUI／软件训练环境构建与下游效用评测](#evaluation-gui-environments) · [4.2 GUI／软件训练环境、任务、奖励与操作轨迹](#data-gui-environments) · [1.4 何时成为环境：状态、动作、重置、任务与奖励](#section-1-4) · [2.1 视觉软件工程与应用复刻](#methods-software) · [2.12 从构建与交互经验学习](#methods-experience)
+
+<a id="paper-2610-37786"></a>
+<!-- mmac-record: {"id": "2610.37786", "scope": "Core", "primary": "2.2", "task": 2} -->
+
+- `arXiv 2026.10` **WebAnything: From the Wild Web to Scalable Agent Environments**. [[论文]](https://arxiv.org/abs/2610.37786) [[代码]](https://github.com/china-qijizhifeng/Web-Anything) — `[Method]` · `[Environment]` `[Data Curation]` `[Inference]` `[Verification]` · **Core**
+  > 依据源站观测重建可重置Web Agent环境，以独立视觉与交互检查驱动代码修复或定向补采，再构造操作者训练任务。<br>
+  > **验证维度：** 源站保真、交互与reset检查 · 反馈到修复的可追踪案例 · 下游GUI操作者训练；244项历史产物是清单，公开代码仅附三个有限Demo。
 
 <a id="paper-2611-03634"></a>
 <!-- mmac-record: {"id": "2611.03634", "scope": "Adjacent", "primary": "2.2", "task": 2} -->
@@ -1732,6 +1739,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.10 机器人程序与策略的执行评测](#evaluation-robot-programs) · [4.10 机器人演示、执行与程序／策略修复轨迹](#data-robot-programs) · [2.11 Real2Sim2Real：任务学习与真实执行](#methods-real2sim2real) · [2.12 从构建与交互经验学习](#methods-experience) · [5.4 动作、策略、预测与验证能力](#section-5-4)
 
+- [RobotAgentBench](#paper-2610-34649) · **Core** · [3.10](#evaluation-robot-programs) — 在不同代码Agent配置中比较代码／VLA／WAM工具组合，以及反馈驱动的可复用控制函数修订。
+
 <a id="paper-2611-03585"></a>
 <!-- mmac-record: {"id": "2611.03585", "scope": "Adjacent", "primary": "2.10", "task": 10} -->
 
@@ -1992,6 +2001,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.12 经验学习与跨任务泛化评测](#evaluation-experience) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [2.2 GUI／软件训练环境合成](#methods-gui-environments) · [5.5 Skills、工具桥与可复用工作流](#section-5-5) · [6.5 从构建经验到可迁移能力](#section-6-5)
 
+<a id="paper-2610-23104"></a>
+<!-- mmac-record: {"id": "2610.23104", "scope": "Core", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.10` **WebCoder: Scaling General Frontend Development with Artifact-Grounded Agentic Reinforcement Learning**. [[论文]](https://arxiv.org/abs/2610.23104) [[项目]](https://douzj-llm.github.io/WebCoder/) [[代码]](https://github.com/douzj-llm/WebCoder) [[数据]](https://huggingface.co/datasets/Roy-DOU/Webdev-Bench) — `[Method]` `[Benchmark]` `[Dataset]` · `[Training]` `[Inference]` `[Verification]` · **Core**
+  > 以产物进展为依据训练前端构建者，通过渲染反馈持续修订同一应用，并按需求满足度的变化分配长轨迹强化学习信用。<br>
+  > **验证维度：** 40项Webdev-Bench复合任务 · 66项Vision2Web L2任务 · 信用分配与上下文压缩消融 · 验收反馈驱动的修订案例；公开评测集为原中文任务的英文译版。
+
 <a id="paper-2611-06817"></a>
 <!-- mmac-record: {"id": "2611.06817", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
 
@@ -2188,6 +2204,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.1 视觉软件工程与应用复刻](#methods-software) · [4.1 软件需求、应用观测与开发／复刻轨迹](#data-software) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
 
+- [WebCoder](#paper-2610-23104) · **Core** · [2.12](#methods-experience) — Webdev-Bench以用户反馈gate和独立终验评估顺序需求及既有行为保持。
+
 <a id="paper-2610-35138"></a>
 <!-- mmac-record: {"id": "2610.35138", "scope": "Adjacent", "primary": "3.1", "task": 1} -->
 
@@ -2313,6 +2331,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 固定环境里比较操作 Agent，与固定需求下比较环境构建系统是不同实验；下游模型、数据和训练预算需明确。
 
 **关联阅读：** [2.2 GUI／软件训练环境合成](#methods-gui-environments) · [4.2 GUI／软件训练环境、任务、奖励与操作轨迹](#data-gui-environments) · [3.1 视觉软件工程与应用复刻评测](#evaluation-software) · [3.12 经验学习与跨任务泛化评测](#evaluation-experience) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
+
+- [WebAnything](#paper-2610-37786) · **Core** · [2.2](#methods-gui-environments) — 检查源站状态保真、交互有效性、reset与下游操作者收益，同时区分历史候选／版本的可比性限制。
 
 **Benchmark 工作**
 
@@ -2924,6 +2944,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.10 机器人程序与策略开发](#methods-robot-programs) · [4.10 机器人演示、执行与程序／策略修复轨迹](#data-robot-programs) · [3.11 Real2Sim2Real 的任务效用与真实迁移评测](#evaluation-real2sim2real) · [3.12 经验学习与跨任务泛化评测](#evaluation-experience)
 
+<a id="paper-2610-34649"></a>
+<!-- mmac-record: {"id": "2610.34649", "scope": "Core", "primary": "3.10", "task": 10} -->
+
+- `arXiv 2026.10` **RobotAgentBench: Towards Open-world Robot Autonomy**. [[论文]](https://arxiv.org/abs/2610.34649) [[项目]](https://aetherlabsai.github.io/RobotAgentBench/) [[代码]](https://github.com/AetherLabsAI/RobotAgentBench) [[数据]](https://huggingface.co/datasets/AetherLabs-AI/RobotAgentBench-assets) — `[Benchmark]` `[Method]` · `[Environment]` `[Inference]` `[Verification]` · **Core**
+  > 以代码、学习策略及混合执行器评测家庭机器人自主性，在代码Agent配置中研究视觉反馈驱动的程序执行与可复用控制工具修订。<br>
+  > **验证维度：** 50个仿真布局 · 五类任务能力与四种开放场景 · 配对仿真／实机子集 · Harness消融；代码Agent与独立策略分别评估，场景校准有人参与。
+
 <a id="paper-2609-01404"></a>
 <!-- mmac-record: {"id": "2609.01404", "scope": "Adjacent", "primary": "3.10", "task": 10} -->
 
@@ -3023,6 +3050,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 分别控制环境和策略变化，并说明真实反馈用于开发、校准还是最终测试；论文级协议不自动形成统一公共 benchmark。
 
 **关联阅读：** [2.11 Real2Sim2Real：任务学习与真实执行](#methods-real2sim2real) · [4.11 Real2Sim2Real 的环境、策略与配对迁移记录](#data-real2sim2real) · [3.9 面向 Agentic Real-to-Sim 的场景与交互构建评测](#evaluation-real-to-sim) · [3.10 机器人程序与策略的执行评测](#evaluation-robot-programs)
+
+- [RobotAgentBench](#paper-2610-34649) · **Core** · [3.10](#evaluation-robot-programs) — 在人参与的场景与动力学校准后，对选定家庭任务进行配对仿真／实机比较。
 
 <a id="paper-2610-34527"></a>
 <!-- mmac-record: {"id": "2610.34527", "scope": "Adjacent", "primary": "3.11", "task": 11} -->
@@ -3180,6 +3209,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.1 视觉软件工程与应用复刻](#methods-software) · [3.1 视觉软件工程与应用复刻评测](#evaluation-software) · [4.2 GUI／软件训练环境、任务、奖励与操作轨迹](#data-gui-environments) · [4.12 跨任务构建、修复与技能学习资料](#data-experience)
 
+- [WebCoder](#paper-2610-23104) · **Core** · [2.12](#methods-experience) — 公开40项复合任务、种子项目、参考截图与隐藏验收清单；任务为原中文版本的英文翻译。
+
 **数据构造工作**
 
 - [RecreationWorld](#paper-2609-22000) · **Core** · [2.1](#methods-software)
@@ -3225,6 +3256,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 环境数、任务数和轨迹数分别统计；复用取决于环境版本与运行依赖，论文实验规模不等于公开可下载规模。
 
 **关联阅读：** [2.2 GUI／软件训练环境合成](#methods-gui-environments) · [3.2 GUI／软件训练环境构建与下游效用评测](#evaluation-gui-environments) · [4.1 软件需求、应用观测与开发／复刻轨迹](#data-software) · [4.12 跨任务构建、修复与技能学习资料](#data-experience)
+
+- [WebAnything](#paper-2610-37786) · **Core** · [2.2](#methods-gui-environments) — 环境／任务构造流水线附244站点元数据清单与三个公开Demo；未打包完整站点语料与训练轨迹。
 
 <a id="paper-2610-01215"></a>
 <!-- mmac-record: {"id": "2610.01215", "scope": "Adjacent", "primary": "4.2", "task": 2} -->

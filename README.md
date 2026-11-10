@@ -46,12 +46,12 @@ Enable agents to **organize and combine model capabilities**, expanding their ab
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-204-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-205-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-11-09**
+**Last updated: 2026-11-10**
 
 </div>
 
@@ -870,6 +870,8 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 
 **Connect:** [3.4 Document and visual-media evaluation](#evaluation-media) · [4.4 Documents, media assets, and construction/editing traces](#data-media) · [2.3 Charts, scientific visualization, and editable graphics](#methods-graphics) · [2.12 Learning from construction and interaction experience](#methods-experience) · [5.2 Program, geometry, material, and visual-media generation/editing](#section-5-2)
 
+- [Video-Coder](#paper-2611-09894) · **Core** · [2.12](#methods-experience) — Executable scene drafts guide downstream video synthesis after the coding agent has inspected and revised rendered frames.
+
 - [ManimCode](#paper-2611-08294) · **Core** · [2.12](#methods-experience) — Educational-animation code generation with visual self-correction.
 
 <a id="paper-2610-38352"></a>
@@ -1356,6 +1358,13 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 **Boundary.** Geometric similarity, successful loading, and physical usability are separate properties. Assets with real references may also connect to Real-to-Sim; physical asset generation does not always reconstruct reality.
 
 **Connect:** [3.6 Physical asset construction and usability evaluation](#evaluation-physical-assets) · [4.6 Physical assets, parameters, and diagnostic interactions](#data-physical-assets) · [2.5 Procedural 3D and CAD construction](#methods-cad-3d) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.11 Real2Sim2Real: task learning and real execution](#methods-real2sim2real)
+
+<a id="paper-2607-13586"></a>
+<!-- mmac-record: {"id": "2607.13586", "scope": "Adjacent", "primary": "2.6", "task": 6} -->
+
+- `arXiv 2026.07` **UniPhysGen: Unified Physical Grounding for Simulation-Ready 3D Assets**. [[paper]](https://arxiv.org/abs/2607.13586) [[code]](https://github.com/breezexian/UniPhysGen) [[data]](https://huggingface.co/datasets/spatialverse/UniPhys-Bench) — `[Method]` `[Benchmark]` `[Dataset]` · `[Training]` `[Verification]` · **Adjacent**
+  > Combines perceptual decomposition, multimodal physical grounding and simulation checks to create articulated assets, then learns a geometry-robust model of joint structure and intrinsic physical properties.<br>
+  > **Verification:** UniPhys-40K and 1,927-object UniPhys-Bench · rotated/decomposition-shift tests · simulation consistency and Isaac Sim interaction examples; physical admissibility does not establish real-world parameter accuracy.
 
 <a id="paper-2610-33060"></a>
 <!-- mmac-record: {"id": "2610.33060", "scope": "Core", "primary": "2.6", "task": 6} -->
@@ -2001,6 +2010,13 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 
 **Connect:** [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [2.2 GUI and software training-environment synthesis](#methods-gui-environments) · [5.5 Skills, tool bridges, and reusable workflows](#section-5-5) · [6.5 From construction experience to transferable capability](#section-6-5)
 
+<a id="paper-2611-09894"></a>
+<!-- mmac-record: {"id": "2611.09894", "scope": "Core", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.11` **Video-Coder: Reinforcing Agentic Coding for Video Generation**. [[paper]](https://arxiv.org/abs/2611.09894) [[code]](https://github.com/CYWang735/Video-Coder) [[data]](https://huggingface.co/datasets/Video-Coder/Train-Data) — `[Method]` · `[Training]` `[Inference]` `[Verification]` · **Core**
+  > Trains a Blender coding agent to revise dynamic scene programs using rendered-frame feedback, then conditions a fixed downstream video generator on the resulting structural draft.<br>
+  > **Verification:** Visual-feedback harness and clean re-execution · video quality and physical-consistency benchmarks · SFT/RL ablations; the public training card and paper report different data sizes.
+
 <a id="paper-2610-23104"></a>
 <!-- mmac-record: {"id": "2610.23104", "scope": "Core", "primary": "2.12", "task": 12} -->
 
@@ -2526,6 +2542,20 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Connect:** [2.5 Procedural 3D and CAD construction](#methods-cad-3d) · [4.5 Procedural 3D and CAD data: requirements, programs, and assets](#data-cad-3d) · [3.6 Physical asset construction and usability evaluation](#evaluation-physical-assets) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
 
+<a id="paper-2611-02659"></a>
+<!-- mmac-record: {"id": "2611.02659", "scope": "Adjacent", "primary": "3.5", "task": 5} -->
+
+- `arXiv 2026.11` **Parametric CAD Bench v3: Evaluating Agentic Parametric CAD Authoring from Text and Engineering Drawings**. [[paper]](https://arxiv.org/abs/2611.02659) [[project]](https://cadbench.ai/) [[data]](https://huggingface.co/datasets/gnucleus-ai/cad-gen-freecad-bench-v3) — `[Benchmark]` · `[Verification]` · **Adjacent**
+  > Evaluates native parametric CAD authoring on 100 text, create-and-edit and engineering-drawing tasks using separate geometry and specification checks on executable scripts and editable FreeCAD artifacts.<br>
+  > **Verification:** Pinned FreeCAD/Harbor environment · 30/30/40 task split · native-history constraints · continuous reward and inspectable trial artifacts; reported rankings are point estimates.
+
+<a id="paper-2611-09017"></a>
+<!-- mmac-record: {"id": "2611.09017", "scope": "Adjacent", "primary": "3.5", "task": 5} -->
+
+- `arXiv 2026.11` **Frontier3DBench: Benchmarking Coding Agents for 3D Creation across Objects, Scenes, and Interactive Open Worlds**. [[paper]](https://arxiv.org/abs/2611.09017) [[project]](https://lab.einsia.ai/frontier3dbench/) [[code]](https://github.com/Einsia/Frontier3D) — `[Benchmark]` `[Dataset]` · `[Environment]` `[Verification]` · **Adjacent**
+  > Benchmarks coding agents across 145 object, scene and interactive-world creation tasks, separating artifact generation from independent visual, structural and continuous-behavior evaluation.<br>
+  > **Verification:** 65 object + 65 scene + 15 interactive-world tasks · Blender/Unreal artifacts · hidden judges and persistent-state workflows; execution retries are distinct from visual-feedback-driven construction.
+
 <a id="paper-2610-38231"></a>
 <!-- mmac-record: {"id": "2610.38231", "scope": "Core", "primary": "3.5", "task": 5} -->
 
@@ -2681,6 +2711,8 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Connect:** [2.6 Physical asset construction and diagnosis](#methods-physical-assets) · [4.6 Physical assets, parameters, and diagnostic interactions](#data-physical-assets) · [3.9 Scene and interaction construction for Agentic Real-to-Sim](#evaluation-real-to-sim) · [3.11 Real2Sim2Real utility and real-transfer evaluation](#evaluation-real2sim2real)
 
+- [UniPhysGen](#paper-2607-13586) · **Adjacent** · [2.6](#methods-physical-assets) — Evaluates articulation semantics, structure, physical properties and robustness to rotation and heterogeneous decompositions.
+
 <a id="paper-2610-37326"></a>
 <!-- mmac-record: {"id": "2610.37326", "scope": "Adjacent", "primary": "3.6", "task": 6} -->
 
@@ -2830,6 +2862,8 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 **Boundary.** Measure replay of known traces, prediction under new actions, and model-assisted task completion separately. Real-world validity requires additional evidence.
 
 **Connect:** [2.8 Executable world models and simulation programs](#methods-world-models) · [4.8 World observations, transitions, and simulation-program data](#data-world-models) · [3.7 Game behavior, playability, and repair evaluation](#evaluation-games) · [3.9 Scene and interaction construction for Agentic Real-to-Sim](#evaluation-real-to-sim)
+
+- [Frontier3DBench](#paper-2611-09017) · **Adjacent** · [3.5](#evaluation-cad-3d) — Interactive-world tasks evaluate persistent-state mechanisms, clearance and continuous workflows separately.
 
 <a id="paper-2611-01815"></a>
 <!-- mmac-record: {"id": "2611.01815", "scope": "Adjacent", "primary": "3.8", "task": 8} -->
@@ -3332,6 +3366,8 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Connect:** [2.4 Documents and visual media](#methods-media) · [3.4 Document and visual-media evaluation](#evaluation-media) · [4.3 Chart data, graphics programs, and edit records](#data-graphics) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience)
 
+- [Video-Coder](#paper-2611-09894) · **Core** · [2.12](#methods-experience) — Released SFT/RL JSON, cached images and reference-video archives; release-card sizes differ from those in the paper.
+
 <a id="paper-2611-04418"></a>
 <!-- mmac-record: {"id": "2611.04418", "scope": "Adjacent", "primary": "4.4", "task": 4} -->
 
@@ -3375,6 +3411,10 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Connect:** [2.5 Procedural 3D and CAD construction](#methods-cad-3d) · [3.5 Procedural 3D and CAD benchmarks](#evaluation-cad-3d) · [4.6 Physical assets, parameters, and diagnostic interactions](#data-physical-assets) · [4.9 Real-to-Sim observation, simulation, and interaction correspondences](#data-real-to-sim)
 
+- [Parametric CAD Bench v3](#paper-2611-02659) · **Adjacent** · [3.5](#evaluation-cad-3d) — Released evaluation records, trajectories and CAD artifacts complement the versioned Harbor tasks.
+
+- [Frontier3DBench](#paper-2611-09017) · **Adjacent** · [3.5](#evaluation-cad-3d) — Public 145-task packages include instructions, manifests and reference/assessment material across three creation levels.
+
 **Dataset contributions**
 
 - [3DCodeEdit](#paper-2610-38231) · **Core** · [3.5](#evaluation-cad-3d) — Released edit instructions, human-reviewed checklists and source programs, with per-program upstream attribution and license metadata.
@@ -3415,6 +3455,8 @@ This is a research-resource index, not a claim that every linked paper releases 
 **Boundary.** A program or mesh download may omit materials and diagnostic records. Physical configurations require simulator, scale, initial-state, and probing context.
 
 **Connect:** [2.6 Physical asset construction and diagnosis](#methods-physical-assets) · [3.6 Physical asset construction and usability evaluation](#evaluation-physical-assets) · [4.5 Procedural 3D and CAD data: requirements, programs, and assets](#data-cad-3d) · [4.9 Real-to-Sim observation, simulation, and interaction correspondences](#data-real-to-sim) · [4.10 Robot demonstrations, execution, and repair trajectories](#data-robot-programs)
+
+- [UniPhysGen](#paper-2607-13586) · **Adjacent** · [2.6](#methods-physical-assets) — Released UniPhys-40K training assets and the two-part, 1,927-object UniPhys-Bench support physical grounding.
 
 **Data-construction contributions**
 
@@ -3690,6 +3732,7 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 | Capability | Resource and sources | Inputs → outputs | Role in a workflow |
 |---|---|---|---|
+| Reference-guided high-resolution texturing | **UltraTex (2K Multi-View Diffusion)** [[source]](https://github.com/YiboZ2001/UltraTex) [[paper]](https://arxiv.org/abs/2609.23169) | Reference image + mesh geometry cues → multi-view 2K textures and PBR extension | Supplies a surface-appearance module through high-resolution multi-view diffusion and texture baking; code and a G-buffer data release accompany the paper. |
 | Reference-guided PBR materials | **MIKU** [[paper]](https://arxiv.org/abs/2611.07354) | Reference image + mesh geometry cues → multi-view albedo, metallic and roughness maps | Normalizes material conventions and separates albedo from deterministic metallic/roughness prediction; targets consistent renderable assets, not physically measured materials. Paper-described capability; code and weights are not linked. |
 | Long-form, multi-shot video editing | **MoviEdit** [[paper]](https://arxiv.org/abs/2611.02737) [[project]](https://multi-shot-edit.github.io/) [[benchmark]](https://multi-shot-edit.github.io/benchmark.html) | Source video + edit text or edited reference frames → consistently edited multi-shot video | A global draft guides full-resolution autoregressive editing; 64-video/128-scenario benchmark materials accompany the method. The project provides demonstrations and evaluation manifests, without a released model download. |
 | 3D generation, local editing & completion | **SeMo3D** [[paper]](https://arxiv.org/abs/2611.02568) [[project]](https://xiaokunsun.github.io/SeMo3D.github.io/) | Reference image, optional text/points, edit region and cached latents → textured 3D asset | Selectively models geometry and texture while preserving untouched regions; an agent can combine image generation with successive user-requested edits. Code and weights are announced but not yet released. |
@@ -3866,6 +3909,7 @@ The list below is a practical starting point rather than a security audit or end
 
 | Capability | Resource | Form and provenance | Why it matters for the closed loop |
 |---|---|---|---|
+| Model execution and evaluation workflows | **WorldFoundry** [[source]](https://github.com/OpenEnvision/WorldFoundry) [[paper]](https://arxiv.org/abs/2611.10771) | Project-maintained CLI / Studio / model adapters | Connects model-specific inputs, runtime requirements and output artifacts to common inference and evaluation workflows, with explicit readiness and eligibility states. |
 | Webots simulation authoring and observation | **Webots MCP** [[source]](https://github.com/MHasaan/webotMCP) | Community MCP; no license specified | Exposes scene editing, controller code, robot commands, multiview screenshots, motion traces and contact events to agents; ground-truth simulator readouts and reactive controls are distinguished from learned perception and planning. |
 | Video-editing service integration | **Rendley video-editing-skill** [[code]](https://github.com/rendleyhq/video-editing-skill) [[skill]](https://github.com/rendleyhq/video-editing-skill/blob/main/SKILL.md) | Official Skill · MIT · hosted MCP/REST service | Passes an editing brief and media to Rendley's hosted agent through MCP or REST and returns an editable project; the MIT skill is an integration layer requiring a service connection, not a local editing engine. |
 | Blender authoring and asset validation | **cc-blender-skill** [[code]](https://github.com/RobLe3/cc-blender-skill) · [[validation]](https://github.com/RobLe3/cc-blender-skill/blob/main/docs/test-results/v1.4.0-integration.md) | 30 composable skills · MIT · Blender Lab / ahujasid MCP | Turns text/reference briefs into staged modeling, materials, animation, render checks and exports; documents bounded Blender 5.1.1 checks and remaining engine/provider gaps. |

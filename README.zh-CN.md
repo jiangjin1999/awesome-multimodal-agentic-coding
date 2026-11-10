@@ -46,12 +46,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-204-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-205-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-11-09**
+**最后更新：2026-11-10**
 
 </div>
 
@@ -870,6 +870,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.4 文档与视觉媒体构建评测](#evaluation-media) · [4.4 文档、媒体素材与构建／编辑过程](#data-media) · [2.3 图表、科学可视化与可编辑图形构建](#methods-graphics) · [2.12 从构建与交互经验学习](#methods-experience) · [5.2 程序、几何、材质与视觉媒体生成／编辑](#section-5-2)
 
+- [Video-Coder](#paper-2611-09894) · **Core** · [2.12](#methods-experience) — 编码Agent检查渲染帧并修订场景程序后，可执行草稿为下游视频合成提供结构指导。
+
 - [ManimCode](#paper-2611-08294) · **Core** · [2.12](#methods-experience) — 带视觉自我修正的教学动画程序生成。
 
 <a id="paper-2610-38352"></a>
@@ -1356,6 +1358,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 几何相似、加载成功和物理可用性分别验证；资产有真实参照时可关联 Real-to-Sim，但物理资产生成并不都包含真实重建。
 
 **关联阅读：** [3.6 物理资产构建与可用性评测](#evaluation-physical-assets) · [4.6 物理资产、参数与诊断交互数据](#data-physical-assets) · [2.5 程序化 3D 与 CAD 构建](#methods-cad-3d) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.11 Real2Sim2Real：任务学习与真实执行](#methods-real2sim2real)
+
+<a id="paper-2607-13586"></a>
+<!-- mmac-record: {"id": "2607.13586", "scope": "Adjacent", "primary": "2.6", "task": 6} -->
+
+- `arXiv 2026.07` **UniPhysGen: Unified Physical Grounding for Simulation-Ready 3D Assets**. [[论文]](https://arxiv.org/abs/2607.13586) [[代码]](https://github.com/breezexian/UniPhysGen) [[数据]](https://huggingface.co/datasets/spatialverse/UniPhys-Bench) — `[Method]` `[Benchmark]` `[Dataset]` · `[Training]` `[Verification]` · **Adjacent**
+  > 组合感知分解、多模态物理属性推断与仿真检查构建可关节运动资产，并学习几何鲁棒的关节结构及内在物理属性模型。<br>
+  > **验证维度：** UniPhys-40K与1,927物体UniPhys-Bench · 旋转及部件分解变化测试 · 仿真一致性和Isaac Sim交互示例；仿真可接受性不等于真实物理参数精度。
 
 <a id="paper-2610-33060"></a>
 <!-- mmac-record: {"id": "2610.33060", "scope": "Core", "primary": "2.6", "task": 6} -->
@@ -2001,6 +2010,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.12 经验学习与跨任务泛化评测](#evaluation-experience) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [2.2 GUI／软件训练环境合成](#methods-gui-environments) · [5.5 Skills、工具桥与可复用工作流](#section-5-5) · [6.5 从构建经验到可迁移能力](#section-6-5)
 
+<a id="paper-2611-09894"></a>
+<!-- mmac-record: {"id": "2611.09894", "scope": "Core", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.11` **Video-Coder: Reinforcing Agentic Coding for Video Generation**. [[论文]](https://arxiv.org/abs/2611.09894) [[代码]](https://github.com/CYWang735/Video-Coder) [[数据]](https://huggingface.co/datasets/Video-Coder/Train-Data) — `[Method]` · `[Training]` `[Inference]` `[Verification]` · **Core**
+  > 训练Blender编码Agent依据渲染帧反馈修订动态场景程序，再用得到的结构草稿条件化固定的下游视频生成模型。<br>
+  > **验证维度：** 视觉反馈Harness与干净重执行 · 视频质量和物理一致性评测 · SFT/RL消融；公开训练数据卡与论文报告的数据规模不同。
+
 <a id="paper-2610-23104"></a>
 <!-- mmac-record: {"id": "2610.23104", "scope": "Core", "primary": "2.12", "task": 12} -->
 
@@ -2526,6 +2542,20 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.5 程序化 3D 与 CAD 构建](#methods-cad-3d) · [4.5 程序化 3D 与 CAD 数据：需求、程序与资产](#data-cad-3d) · [3.6 物理资产构建与可用性评测](#evaluation-physical-assets) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
 
+<a id="paper-2611-02659"></a>
+<!-- mmac-record: {"id": "2611.02659", "scope": "Adjacent", "primary": "3.5", "task": 5} -->
+
+- `arXiv 2026.11` **Parametric CAD Bench v3: Evaluating Agentic Parametric CAD Authoring from Text and Engineering Drawings**. [[论文]](https://arxiv.org/abs/2611.02659) [[项目]](https://cadbench.ai/) [[数据]](https://huggingface.co/datasets/gnucleus-ai/cad-gen-freecad-bench-v3) — `[Benchmark]` · `[Verification]` · **Adjacent**
+  > 以100项文本、创建后编辑和工程图任务评估原生参数化CAD创作，对可执行脚本及可编辑FreeCAD产物分别进行几何与规范检查。<br>
+  > **验证维度：** 固定FreeCAD/Harbor环境 · 30/30/40任务划分 · 原生历史约束 · 连续奖励及可检查试验产物；排名仅代表点估计。
+
+<a id="paper-2611-09017"></a>
+<!-- mmac-record: {"id": "2611.09017", "scope": "Adjacent", "primary": "3.5", "task": 5} -->
+
+- `arXiv 2026.11` **Frontier3DBench: Benchmarking Coding Agents for 3D Creation across Objects, Scenes, and Interactive Open Worlds**. [[论文]](https://arxiv.org/abs/2611.09017) [[项目]](https://lab.einsia.ai/frontier3dbench/) [[代码]](https://github.com/Einsia/Frontier3D) — `[Benchmark]` `[Dataset]` · `[Environment]` `[Verification]` · **Adjacent**
+  > 以145项对象、场景和交互世界创作任务评测编码Agent，将产物生成与独立的视觉、结构和连续行为评估分开。<br>
+  > **验证维度：** 65项对象＋65项场景＋15项交互世界任务 · Blender/Unreal产物 · 隐藏评估器与持久状态工作流；执行错误重试与视觉反馈驱动构建分别判断。
+
 <a id="paper-2610-38231"></a>
 <!-- mmac-record: {"id": "2610.38231", "scope": "Core", "primary": "3.5", "task": 5} -->
 
@@ -2681,6 +2711,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.6 物理资产构建与诊断](#methods-physical-assets) · [4.6 物理资产、参数与诊断交互数据](#data-physical-assets) · [3.9 面向 Agentic Real-to-Sim 的场景与交互构建评测](#evaluation-real-to-sim) · [3.11 Real2Sim2Real 的任务效用与真实迁移评测](#evaluation-real2sim2real)
 
+- [UniPhysGen](#paper-2607-13586) · **Adjacent** · [2.6](#methods-physical-assets) — 评估关节语义、结构、物理属性以及旋转和异构部件分解下的鲁棒性。
+
 <a id="paper-2610-37326"></a>
 <!-- mmac-record: {"id": "2610.37326", "scope": "Adjacent", "primary": "3.6", "task": 6} -->
 
@@ -2830,6 +2862,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 重放已见轨迹、预测新动作和利用模型完成任务分别测量；真实世界有效性需要额外证据。
 
 **关联阅读：** [2.8 可执行世界模型与仿真程序构建](#methods-world-models) · [4.8 世界观测、状态转移与仿真程序数据](#data-world-models) · [3.7 游戏行为、可玩性与修复评测](#evaluation-games) · [3.9 面向 Agentic Real-to-Sim 的场景与交互构建评测](#evaluation-real-to-sim)
+
+- [Frontier3DBench](#paper-2611-09017) · **Adjacent** · [3.5](#evaluation-cad-3d) — 交互世界任务分别评估持久状态机制、通关和连续工作流。
 
 <a id="paper-2611-01815"></a>
 <!-- mmac-record: {"id": "2611.01815", "scope": "Adjacent", "primary": "3.8", "task": 8} -->
@@ -3332,6 +3366,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.4 文档与视觉媒体构建](#methods-media) · [3.4 文档与视觉媒体构建评测](#evaluation-media) · [4.3 图表数据、图形程序与编辑记录](#data-graphics) · [4.12 跨任务构建、修复与技能学习资料](#data-experience)
 
+- [Video-Coder](#paper-2611-09894) · **Core** · [2.12](#methods-experience) — 公开SFT/RL JSON、缓存图像和参考视频归档；数据卡规模与论文表述不同。
+
 <a id="paper-2611-04418"></a>
 <!-- mmac-record: {"id": "2611.04418", "scope": "Adjacent", "primary": "4.4", "task": 4} -->
 
@@ -3375,6 +3411,10 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.5 程序化 3D 与 CAD 构建](#methods-cad-3d) · [3.5 程序化 3D 与 CAD 基准评测](#evaluation-cad-3d) · [4.6 物理资产、参数与诊断交互数据](#data-physical-assets) · [4.9 Real-to-Sim 的观测、仿真表示与交互对应](#data-real-to-sim)
 
+- [Parametric CAD Bench v3](#paper-2611-02659) · **Adjacent** · [3.5](#evaluation-cad-3d) — 公开评测试验记录、轨迹与CAD产物，补充版本化Harbor任务。
+
+- [Frontier3DBench](#paper-2611-09017) · **Adjacent** · [3.5](#evaluation-cad-3d) — 公开145项任务包，包含三个创作层级的说明、清单和参考／评估材料。
+
 **数据集工作**
 
 - [3DCodeEdit](#paper-2610-38231) · **Core** · [3.5](#evaluation-cad-3d) — 发布编辑指令、人工审核条件清单与源程序，并提供逐程序的上游作者和许可证。
@@ -3415,6 +3455,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 程序或 mesh 下载不自动包含材料与诊断记录；物理配置需与仿真器、尺度、初态和探测条件一起使用。
 
 **关联阅读：** [2.6 物理资产构建与诊断](#methods-physical-assets) · [3.6 物理资产构建与可用性评测](#evaluation-physical-assets) · [4.5 程序化 3D 与 CAD 数据：需求、程序与资产](#data-cad-3d) · [4.9 Real-to-Sim 的观测、仿真表示与交互对应](#data-real-to-sim) · [4.10 机器人演示、执行与程序／策略修复轨迹](#data-robot-programs)
+
+- [UniPhysGen](#paper-2607-13586) · **Adjacent** · [2.6](#methods-physical-assets) — 公开UniPhys-40K训练资产及分两部分发布的1,927物体UniPhys-Bench，支持物理语义构建。
 
 **数据构造工作**
 
@@ -3690,6 +3732,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 | 能力 | 资源与来源 | 输入 → 输出 | 在工作流中的作用 |
 |---|---|---|---|
+| 参考驱动的高分辨率纹理 | **UltraTex (2K Multi-View Diffusion)** [[源码]](https://github.com/YiboZ2001/UltraTex) [[论文]](https://arxiv.org/abs/2609.23169) | 参考图＋mesh几何线索 → 多视角2K纹理及PBR扩展 | 以高分辨率多视角扩散与纹理烘焙提供表面外观能力，论文配套代码及G-buffer数据发布。 |
 | 参考图引导的 PBR 材质 | **MIKU** [[论文]](https://arxiv.org/abs/2611.07354) | 参考图＋mesh几何条件 → 多视角 albedo、金属度与粗糙度图 | 统一材质约定，分阶段生成albedo并确定性预测金属度／粗糙度；目标为可渲染资产一致性，不是实测材质。论文描述了能力，尚无代码或权重链接。 |
 | 长视频多镜头编辑 | **MoviEdit** [[论文]](https://arxiv.org/abs/2611.02737) [[项目]](https://multi-shot-edit.github.io/) [[评测]](https://multi-shot-edit.github.io/benchmark.html) | 源视频＋编辑文字或编辑后的参考帧 → 跨镜头一致的编辑视频 | 以全局草稿指导全分辨率自回归编辑，配套64视频／128场景评测；项目提供演示和评测清单，尚无模型下载入口。 |
 | 三维生成、局部编辑与补全 | **SeMo3D** [[论文]](https://arxiv.org/abs/2611.02568) [[项目]](https://xiaokunsun.github.io/SeMo3D.github.io/) | 参考图、可选文本／点、编辑区域及缓存潜变量 → 带纹理三维资产 | 选择性生成几何和纹理，保留未编辑区域；Agent 可组织图像生成与用户连续提出的局部修改。代码与权重已公告、尚未发布。 |
@@ -3866,6 +3909,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 | 能力 | 资源 | 形式与来源 | 对闭环的意义 |
 |---|---|---|---|
+| 模型执行与评测工作流 | **WorldFoundry** [[源码]](https://github.com/OpenEnvision/WorldFoundry) [[论文]](https://arxiv.org/abs/2611.10771) | 项目维护的CLI／Studio／模型适配器 | 将模型各自的输入、运行要求及输出产物接入统一推理和评测工作流，明确区分准备状态和评测资格。 |
 | Webots仿真构建与观察 | **Webots MCP** [[源码]](https://github.com/MHasaan/webotMCP) | 社区MCP；未标明许可证 | 向Agent开放场景编辑、控制器代码、机器人动作、多视图截图、运动轨迹与接触事件；模拟器真值和反应式控制分别区别于学习式感知与规划。 |
 | 视频编辑服务集成 | **Rendley video-editing-skill** [[代码]](https://github.com/rendleyhq/video-editing-skill) [[定义]](https://github.com/rendleyhq/video-editing-skill/blob/main/SKILL.md) | 官方 Skill · MIT · 托管 MCP／REST 服务 | 经 MCP／REST 将编辑需求与媒体交给 Rendley 托管 Agent，返回可编辑项目；MIT Skill 属于需服务连接的集成层，不是本地剪辑引擎。 |
 | Blender 创作与资产验证 | **cc-blender-skill** [[代码]](https://github.com/RobLe3/cc-blender-skill) · [[验证说明]](https://github.com/RobLe3/cc-blender-skill/blob/main/docs/test-results/v1.4.0-integration.md) | 30 项可组合 Skills · MIT · Blender Lab／ahujasid MCP | 将文字／参考需求组织为建模、材质、动画、渲染检查与导出步骤，并说明 Blender 5.1.1 的有限测试及引擎／服务验证缺口。 |

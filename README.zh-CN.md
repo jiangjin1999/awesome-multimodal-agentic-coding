@@ -3908,6 +3908,9 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 | 能力 | 资源与来源 | 输入 → 输出 | 在工作流中的作用 |
 |---|---|---|---|
+| 自适应驾驶动作模型 | **Alpamayo 2 Edge** [[模型]](https://huggingface.co/nvidia/Alpamayo2-Edge) · [[源码]](https://github.com/NVlabs/alpamayo2-edge) | 环视相机序列＋导航＋自车运动历史 → 因果推理与驾驶轨迹 | 组合VLM骨干与扩散动作专家，公开权重和推理代码可用于轨迹生成及仿真评测；部署时延、合作方实车示范与仿真成绩分别理解。 |
+| 驾驶推理评审模型 | **AlpaJudge** [[模型]](https://huggingface.co/nvidia/alpajudge) · [[源码]](https://github.com/NVlabs/alpajudge) | 参考／候选文本（RB），或相机帧＋动作上下文＋理由（RF） → 一致性或分项评分 | 提供依赖参考答案与视觉无参考两类权重，可用于数据筛选和推理奖励；理由质量应与轨迹及碰撞指标联合报告，不等同于驾驶行为验证。 |
+| 面向合作伙伴的机器人动作模型 | **Gemini Robotics 2.5** [[官方博客]](https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/) | 视觉场景与任务上下文 → 机器人动作；具身推理模型组织工作流 | Google报告ER／动作模型在Apollo 2工厂试点中的分工，以及Argon辅助仿真和数据开发；目前向合作伙伴开放，官方实机结果及研发描述区别于公开可复现评测。 |
 | 受控多视角与 LiDAR 仿真 | **Cosmos3-Nano-Sim-Auto** [[模型]](https://huggingface.co/nvidia/Cosmos3-Nano-Sim-Auto) · [[指南]](https://github.com/NVIDIA/cosmos-framework/blob/main/docs/inference_sim_auto.md) · [[博客]](https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos/) | 逐相机文字 + WSM 控制 + 可选初始观测 → 同步视频与 LiDAR | 具备公开权重及 Cosmos Framework 推理／适配 Skills 的因果世界模型工具；生成传感器反馈可用于策略评估，相机配置适配与仿真到真实有效性需分别检查。 |
 | 相机控制的视觉世界预测 | **L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory** [[论文]](https://arxiv.org/abs/2610.40614) · [[项目]](https://cvlab-kaist.github.io/L3G-World/) · [[发布计划]](https://github.com/cvlab-kaist/L3G-World) | 图像 + 文本 + 相机轨迹 → 视频块和持久潜在 3D 高斯记忆 | 交替运行视频扩散与选择性高斯记忆更新，将记忆直接渲染到潜空间以保持重访一致性；提供视觉世界预测，代码和权重仍列为待发布。 |
 | 传感器诊断与输入修复 | **When Black-Box Robot Policies Fail: Online Sensor Diagnosis and Repair with a Transparent Surrogate** [[paper]](https://arxiv.org/abs/2610.36852) | 传感器流 + 冻结策略动作 + 健康步态参考 → 故障诊断与修复后的策略输入 | MBD／PRR通过可加性代理诊断传感器故障并修复输入，无需策略梯度；验证限于仿真四足机器人，未展示LLM编排或硬件部署。 |

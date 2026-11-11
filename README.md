@@ -46,12 +46,12 @@ Enable agents to **organize and combine model capabilities**, expanding their ab
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-205-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-206-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-11-10**
+**Last updated: 2026-11-11**
 
 </div>
 
@@ -1528,6 +1528,13 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 
 **Connect:** [3.8 World-model prediction, intervention, and planning evaluation](#evaluation-world-models) · [4.8 World observations, transitions, and simulation-program data](#data-world-models) · [2.7 Playable game construction, recreation, and repair](#methods-games) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.12 Learning from construction and interaction experience](#methods-experience)
 
+<a id="paper-2611-11344"></a>
+<!-- mmac-record: {"id": "2611.11344", "scope": "Adjacent", "primary": "2.8", "task": 8} -->
+
+- `arXiv 2026.11` **Spatial Harness: Grounding Spatial Reasoning in Executable World States with Physics Engines**. [[paper]](https://arxiv.org/abs/2611.11344) [[project]](https://github.com/tmlr-group/Spatial-Harness) — `[Method]` · `[Inference]` `[Verification]` · **Adjacent**
+  > Compiles language constraints and visual estimates into a shared MuJoCo proxy scene, then grounds spatial questions in iterative Python measurements and rendered views of that scene.<br>
+  > **Verification:** Four spatial-reasoning benchmarks · matched ground-truth-layout controls · perception and feedback ablations; static spatial reasoning, not dynamic prediction or hardware control.
+
 <a id="paper-2611-04870"></a>
 <!-- mmac-record: {"id": "2611.04870", "scope": "Adjacent", "primary": "2.8", "task": 8} -->
 
@@ -1747,6 +1754,13 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 **Boundary.** Calling an existing action model does not itself constitute program development. Separate simulation from hardware results and code updates from policy learning.
 
 **Connect:** [3.10 Robot program and policy execution evaluation](#evaluation-robot-programs) · [4.10 Robot demonstrations, execution, and repair trajectories](#data-robot-programs) · [2.11 Real2Sim2Real: task learning and real execution](#methods-real2sim2real) · [2.12 Learning from construction and interaction experience](#methods-experience) · [5.4 Action, policy, prediction, and verification capabilities](#section-5-4)
+
+<a id="paper-2611-01112"></a>
+<!-- mmac-record: {"id": "2611.01112", "scope": "Core", "primary": "2.10", "task": 10} -->
+
+- `arXiv 2026.10` **Auriga Technical Report: A Task-Agnostic Agent Harness for Zero-Shot Embodied Manipulation**. [[paper]](https://arxiv.org/abs/2611.01112) [[code]](https://github.com/lose4578/Auriga) [[project]](https://auriga.stelledge.com/) — `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > Coordinates perception tools, generated programs and staged robot actions through one preview-and-execution gateway, using fresh images and measured discrepancies to revise operations within a single simulation episode.<br>
+  > **Verification:** RoboDojo and RoboCasa365 simulation · program/preview/geometry ablations · observation-linked recovery traces; the evaluation harness is frozen and no hardware result is reported.
 
 - [RobotAgentBench](#paper-2610-34649) · **Core** · [3.10](#evaluation-robot-programs) — Compares code/VLA/WAM tool composition and feedback-driven refinement of reusable control functions in different coding-agent configurations.
 
@@ -2009,6 +2023,8 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 **Boundary.** Distinguish learning the builder from learning the operator in a generated environment. Within-task iteration and static expert skills do not by themselves establish cross-task learning.
 
 **Connect:** [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [2.2 GUI and software training-environment synthesis](#methods-gui-environments) · [5.5 Skills, tool bridges, and reusable workflows](#section-5-5) · [6.5 From construction experience to transferable capability](#section-6-5)
+
+- [Auriga](#paper-2611-01112) · **Core** · [2.10](#methods-robot-programs) — Separates cross-task harness development from within-episode adaptation with frozen model weights and tools.
 
 <a id="paper-2611-09894"></a>
 <!-- mmac-record: {"id": "2611.09894", "scope": "Core", "primary": "2.12", "task": 12} -->
@@ -2469,6 +2485,20 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Connect:** [2.4 Documents and visual media](#methods-media) · [4.4 Documents, media assets, and construction/editing traces](#data-media) · [3.3 Chart, scientific visualization, and graphics-editing evaluation](#evaluation-graphics) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
 
+<a id="paper-2611-10592"></a>
+<!-- mmac-record: {"id": "2611.10592", "scope": "Adjacent", "primary": "3.4", "task": 4} -->
+
+- `arXiv 2026.11` **MotionGraphicsBench: Evaluating Motion Graphics Generation with Programmatic Verification**. [[paper]](https://arxiv.org/abs/2611.10592) [[data]](https://huggingface.co/datasets/figma-ai/motion-graphics-bench) [[project]](https://motion-graphics-bench.github.io/) — `[Benchmark]` `[Dataset]` · `[Inference]` `[Verification]` · **Adjacent**
+  > Pairs 100 static-SVG motion-editing tasks with deterministic verification programs that check spatial, appearance and temporal requirements while accepting multiple valid animations.<br>
+  > **Verification:** 180 held-out human-labeled animations · 47 model configurations · independent pass@k attempts · released tasks and output records; generation attempts do not receive iterative repair feedback.
+
+<a id="paper-system-mka"></a>
+<!-- mmac-record: {"id": "system:mka", "scope": "Adjacent", "primary": "3.4", "task": 4} -->
+
+- `Technical report 2026.11` **MKA: Evaluating Multimodal Knowledge Agents on end-to-end professional tasks**. [[paper]](https://storage.googleapis.com/deepmind-media/papers/mka_tech_paper.pdf) [[project]](https://artificialanalysis.ai/evaluations/mka) [[data]](https://huggingface.co/datasets/google/multimodal-knowledge-agent) — `[Benchmark]` `[Dataset]` · `[Inference]` `[Verification]` · **Adjacent**
+  > Evaluates visual multi-file knowledge work and professional deliverables with a shared tool harness, expert-weighted rubrics and a separate visual/programmatic autorater.<br>
+  > **Verification:** 200 private tasks · image-tool ablation · 50-task autorater agreement study · 10 disjoint public showcase tasks; final grading is separate from the generation trajectory.
+
 <a id="paper-2610-38425"></a>
 <!-- mmac-record: {"id": "2610.38425", "scope": "Adjacent", "primary": "3.4", "task": 4} -->
 
@@ -2863,6 +2893,8 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Connect:** [2.8 Executable world models and simulation programs](#methods-world-models) · [4.8 World observations, transitions, and simulation-program data](#data-world-models) · [3.7 Game behavior, playability, and repair evaluation](#evaluation-games) · [3.9 Scene and interaction construction for Agentic Real-to-Sim](#evaluation-real-to-sim)
 
+- [Spatial Harness](#paper-2611-11344) · **Adjacent** · [2.8](#methods-world-models) — Uses matched scene layouts to separate state estimation from spatial computation, alongside four existing QA benchmarks.
+
 - [Frontier3DBench](#paper-2611-09017) · **Adjacent** · [3.5](#evaluation-cad-3d) — Interactive-world tasks evaluate persistent-state mechanisms, clearance and continuous workflows separately.
 
 <a id="paper-2611-01815"></a>
@@ -2977,6 +3009,8 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 **Boundary.** Compare privileged state and perceptual observations separately. Simulation, hardware, and robot-platform results are not interchangeable; robot-tool-use benchmarks are related capability evaluations.
 
 **Connect:** [2.10 Robot program and policy development](#methods-robot-programs) · [4.10 Robot demonstrations, execution, and repair trajectories](#data-robot-programs) · [3.11 Real2Sim2Real utility and real-transfer evaluation](#evaluation-real2sim2real) · [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience)
+
+- [Auriga](#paper-2611-01112) · **Core** · [2.10](#methods-robot-programs) — Reports zero-shot simulated manipulation, randomized layouts and program/feedback ablations.
 
 <a id="paper-2610-34649"></a>
 <!-- mmac-record: {"id": "2610.34649", "scope": "Core", "primary": "3.10", "task": 10} -->
@@ -3172,6 +3206,10 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Connect:** [3.1 Visual software engineering and recreation evaluation](#evaluation-software) · [3.3 Chart, scientific visualization, and graphics-editing evaluation](#evaluation-graphics) · [3.5 Procedural 3D and CAD benchmarks](#evaluation-cad-3d) · [3.7 Game behavior, playability, and repair evaluation](#evaluation-games) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [6.3 Independent verification and trustworthy rewards](#section-6-3)
 
+- [MotionGraphicsBench](#paper-2611-10592) · **Adjacent** · [3.4](#evaluation-media) — Validates counterexample-refined verifiers against 180 held-out human judgments, separately from animation generation.
+
+- [MKA](#paper-system-mka) · **Adjacent** · [3.4](#evaluation-media) — Tests a separate file-inspecting autorater against experts on 50 tasks, with agreement measured on selected high-weight criteria.
+
 <a id="paper-2604-18164"></a>
 <!-- mmac-record: {"id": "2604.18164", "scope": "Adjacent", "primary": "3.13", "task": null} -->
 
@@ -3365,6 +3403,10 @@ This is a research-resource index, not a claim that every linked paper releases 
 **Boundary.** Editable source files, final images/videos, and construction traces are distinct. Licenses, dependencies, and temporal alignment affect reuse.
 
 **Connect:** [2.4 Documents and visual media](#methods-media) · [3.4 Document and visual-media evaluation](#evaluation-media) · [4.3 Chart data, graphics programs, and edit records](#data-graphics) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience)
+
+- [MotionGraphicsBench](#paper-2611-10592) · **Adjacent** · [3.4](#evaluation-media) — Publishes 100 tasks with SVG inputs and verification programs, plus 53,180 output records with evaluation and human-review fields.
+
+- [MKA](#paper-system-mka) · **Adjacent** · [3.4](#evaluation-media) — Releases 10 disjoint showcase tasks with input workspaces, prompts and rubrics; the 200-task evaluation suite remains private.
 
 - [Video-Coder](#paper-2611-09894) · **Core** · [2.12](#methods-experience) — Released SFT/RL JSON, cached images and reference-video archives; release-card sizes differ from those in the paper.
 
@@ -3909,6 +3951,7 @@ The list below is a practical starting point rather than a security audit or end
 
 | Capability | Resource | Form and provenance | Why it matters for the closed loop |
 |---|---|---|---|
+| Game refinement and playtesting skills | **Agentic Gamedev Skills** [[source]](https://github.com/abagames/agentic-gamedev-skills) | Playable prototype + design intent + replays/frames/telemetry → measured changes and revision records | Documents staged prototype refinement, screen-readability checks, deterministic replay and repair validation for browser and Godot workflows; reusable procedures, not a benchmarked autonomous system. |
 | Model execution and evaluation workflows | **WorldFoundry** [[source]](https://github.com/OpenEnvision/WorldFoundry) [[paper]](https://arxiv.org/abs/2611.10771) | Project-maintained CLI / Studio / model adapters | Connects model-specific inputs, runtime requirements and output artifacts to common inference and evaluation workflows, with explicit readiness and eligibility states. |
 | Webots simulation authoring and observation | **Webots MCP** [[source]](https://github.com/MHasaan/webotMCP) | Community MCP; no license specified | Exposes scene editing, controller code, robot commands, multiview screenshots, motion traces and contact events to agents; ground-truth simulator readouts and reactive controls are distinguished from learned perception and planning. |
 | Video-editing service integration | **Rendley video-editing-skill** [[code]](https://github.com/rendleyhq/video-editing-skill) [[skill]](https://github.com/rendleyhq/video-editing-skill/blob/main/SKILL.md) | Official Skill · MIT · hosted MCP/REST service | Passes an editing brief and media to Rendley's hosted agent through MCP or REST and returns an editable project; the MIT skill is an integration layer requiring a service connection, not a local editing engine. |

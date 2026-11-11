@@ -46,12 +46,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-205-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-206-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-11-10**
+**最后更新：2026-11-11**
 
 </div>
 
@@ -1528,6 +1528,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.8 世界模型的预测、干预与规划效用评测](#evaluation-world-models) · [4.8 世界观测、状态转移与仿真程序数据](#data-world-models) · [2.7 可玩游戏构建、复刻与修复](#methods-games) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.12 从构建与交互经验学习](#methods-experience)
 
+<a id="paper-2611-11344"></a>
+<!-- mmac-record: {"id": "2611.11344", "scope": "Adjacent", "primary": "2.8", "task": 8} -->
+
+- `arXiv 2026.11` **Spatial Harness: Grounding Spatial Reasoning in Executable World States with Physics Engines**. [[论文]](https://arxiv.org/abs/2611.11344) [[项目]](https://github.com/tmlr-group/Spatial-Harness) — `[Method]` · `[Inference]` `[Verification]` · **Adjacent**
+  > 将语言约束和视觉估计编译为共享MuJoCo代理场景，再以迭代Python测量与渲染视图支撑空间问答。<br>
+  > **验证维度：** 四个空间推理基准 · 匹配真实布局的对照 · 感知与反馈消融；属于静态空间推理，不是动力学预测或硬件控制。
+
 <a id="paper-2611-04870"></a>
 <!-- mmac-record: {"id": "2611.04870", "scope": "Adjacent", "primary": "2.8", "task": 8} -->
 
@@ -1747,6 +1754,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 感知、动作模型与控制器的能力来源单独记录；仅有真实机器人执行，不意味着系统完成了 Real2Sim2Real 环境构建链。
 
 **关联阅读：** [3.10 机器人程序与策略的执行评测](#evaluation-robot-programs) · [4.10 机器人演示、执行与程序／策略修复轨迹](#data-robot-programs) · [2.11 Real2Sim2Real：任务学习与真实执行](#methods-real2sim2real) · [2.12 从构建与交互经验学习](#methods-experience) · [5.4 动作、策略、预测与验证能力](#section-5-4)
+
+<a id="paper-2611-01112"></a>
+<!-- mmac-record: {"id": "2611.01112", "scope": "Core", "primary": "2.10", "task": 10} -->
+
+- `arXiv 2026.10` **Auriga Technical Report: A Task-Agnostic Agent Harness for Zero-Shot Embodied Manipulation**. [[论文]](https://arxiv.org/abs/2611.01112) [[代码]](https://github.com/lose4578/Auriga) [[项目]](https://auriga.stelledge.com/) — `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > 通过统一预览与执行网关编排感知工具、生成程序和分阶段机器人动作，依据新图像与实测偏差在同一仿真回合内修订操作。<br>
+  > **验证维度：** RoboDojo与RoboCasa365仿真 · 程序／预览／几何消融 · 关联观测的恢复轨迹；评测时Harness固定，未报告真实硬件结果。
 
 - [RobotAgentBench](#paper-2610-34649) · **Core** · [3.10](#evaluation-robot-programs) — 在不同代码Agent配置中比较代码／VLA／WAM工具组合，以及反馈驱动的可复用控制函数修订。
 
@@ -2009,6 +2023,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 单次产物修订与跨任务能力改进分别验证；构建轨迹训练和在生成环境中训练操作策略也具有不同学习对象。
 
 **关联阅读：** [3.12 经验学习与跨任务泛化评测](#evaluation-experience) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [2.2 GUI／软件训练环境合成](#methods-gui-environments) · [5.5 Skills、工具桥与可复用工作流](#section-5-5) · [6.5 从构建经验到可迁移能力](#section-6-5)
+
+- [Auriga](#paper-2611-01112) · **Core** · [2.10](#methods-robot-programs) — 区分跨任务Harness开发与固定权重、工具下的回合内适应。
 
 <a id="paper-2611-09894"></a>
 <!-- mmac-record: {"id": "2611.09894", "scope": "Core", "primary": "2.12", "task": 12} -->
@@ -2469,6 +2485,20 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.4 文档与视觉媒体构建](#methods-media) · [4.4 文档、媒体素材与构建／编辑过程](#data-media) · [3.3 图表、科学可视化与图形编辑评测](#evaluation-graphics) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
 
+<a id="paper-2611-10592"></a>
+<!-- mmac-record: {"id": "2611.10592", "scope": "Adjacent", "primary": "3.4", "task": 4} -->
+
+- `arXiv 2026.11` **MotionGraphicsBench: Evaluating Motion Graphics Generation with Programmatic Verification**. [[论文]](https://arxiv.org/abs/2611.10592) [[数据]](https://huggingface.co/datasets/figma-ai/motion-graphics-bench) [[项目]](https://motion-graphics-bench.github.io/) — `[Benchmark]` `[Dataset]` · `[Inference]` `[Verification]` · **Adjacent**
+  > 为100个静态SVG运动编辑任务配备确定性验证程序，检查空间、外观与时序要求，并接受多种正确动画实现。<br>
+  > **验证维度：** 180个保留人评动画 · 47种模型配置 · 独立尝试pass@k · 公开任务与输出记录；生成尝试不接收迭代修复反馈。
+
+<a id="paper-system-mka"></a>
+<!-- mmac-record: {"id": "system:mka", "scope": "Adjacent", "primary": "3.4", "task": 4} -->
+
+- `Technical report 2026.11` **MKA: Evaluating Multimodal Knowledge Agents on end-to-end professional tasks**. [[论文]](https://storage.googleapis.com/deepmind-media/papers/mka_tech_paper.pdf) [[项目]](https://artificialanalysis.ai/evaluations/mka) [[数据]](https://huggingface.co/datasets/google/multimodal-knowledge-agent) — `[Benchmark]` `[Dataset]` · `[Inference]` `[Verification]` · **Adjacent**
+  > 通过统一工具Harness、专家加权准则及独立视觉／程序化评审器，评估视觉多文件知识工作与专业交付物。<br>
+  > **验证维度：** 200个私有任务 · 看图工具消融 · 50任务评审一致性研究 · 10个不重叠公开示例；最终评分与生成轨迹分离。
+
 <a id="paper-2610-38425"></a>
 <!-- mmac-record: {"id": "2610.38425", "scope": "Adjacent", "primary": "3.4", "task": 4} -->
 
@@ -2863,6 +2893,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.8 可执行世界模型与仿真程序构建](#methods-world-models) · [4.8 世界观测、状态转移与仿真程序数据](#data-world-models) · [3.7 游戏行为、可玩性与修复评测](#evaluation-games) · [3.9 面向 Agentic Real-to-Sim 的场景与交互构建评测](#evaluation-real-to-sim)
 
+- [Spatial Harness](#paper-2611-11344) · **Adjacent** · [2.8](#methods-world-models) — 以匹配场景布局分离状态估计与空间计算，并在四个现有问答基准上评测。
+
 - [Frontier3DBench](#paper-2611-09017) · **Adjacent** · [3.5](#evaluation-cad-3d) — 交互世界任务分别评估持久状态机制、通关和连续工作流。
 
 <a id="paper-2611-01815"></a>
@@ -2977,6 +3009,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 特权状态与 RGB-D 等感知条件分别比较；仿真、真实硬件和不同机器人平台的结果不直接合并。
 
 **关联阅读：** [2.10 机器人程序与策略开发](#methods-robot-programs) · [4.10 机器人演示、执行与程序／策略修复轨迹](#data-robot-programs) · [3.11 Real2Sim2Real 的任务效用与真实迁移评测](#evaluation-real2sim2real) · [3.12 经验学习与跨任务泛化评测](#evaluation-experience)
+
+- [Auriga](#paper-2611-01112) · **Core** · [2.10](#methods-robot-programs) — 报告零样本仿真操控、随机布局及程序／反馈消融。
 
 <a id="paper-2610-34649"></a>
 <!-- mmac-record: {"id": "2610.34649", "scope": "Core", "primary": "3.10", "task": 10} -->
@@ -3172,6 +3206,10 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.1 视觉软件工程与应用复刻评测](#evaluation-software) · [3.3 图表、科学可视化与图形编辑评测](#evaluation-graphics) · [3.5 程序化 3D 与 CAD 基准评测](#evaluation-cad-3d) · [3.7 游戏行为、可玩性与修复评测](#evaluation-games) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [6.3 独立验证与可信奖励](#section-6-3)
 
+- [MotionGraphicsBench](#paper-2611-10592) · **Adjacent** · [3.4](#evaluation-media) — 将经反例改进的验证器对照180个保留人评样例检验，与动画生成过程分开。
+
+- [MKA](#paper-system-mka) · **Adjacent** · [3.4](#evaluation-media) — 在50个任务上对照专家检验独立文件评审器，一致性统计限于选取的高权重准则。
+
 <a id="paper-2604-18164"></a>
 <!-- mmac-record: {"id": "2604.18164", "scope": "Adjacent", "primary": "3.13", "task": null} -->
 
@@ -3365,6 +3403,10 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 可编辑源文件、最终图片／视频和构建轨迹分别记录；素材许可、依赖与时间对齐影响复用。
 
 **关联阅读：** [2.4 文档与视觉媒体构建](#methods-media) · [3.4 文档与视觉媒体构建评测](#evaluation-media) · [4.3 图表数据、图形程序与编辑记录](#data-graphics) · [4.12 跨任务构建、修复与技能学习资料](#data-experience)
+
+- [MotionGraphicsBench](#paper-2611-10592) · **Adjacent** · [3.4](#evaluation-media) — 公开100个含SVG输入与验证程序的任务，以及53,180条带评测和人评字段的输出记录。
+
+- [MKA](#paper-system-mka) · **Adjacent** · [3.4](#evaluation-media) — 公开10个独立示例的输入工作区、提示与准则；200任务评测集保持私有。
 
 - [Video-Coder](#paper-2611-09894) · **Core** · [2.12](#methods-experience) — 公开SFT/RL JSON、缓存图像和参考视频归档；数据卡规模与论文表述不同。
 
@@ -3909,6 +3951,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 | 能力 | 资源 | 形式与来源 | 对闭环的意义 |
 |---|---|---|---|
+| 游戏迭代与试玩验证Skills | **Agentic Gamedev Skills** [[源码]](https://github.com/abagames/agentic-gamedev-skills) | 可玩原型＋设计意图＋回放／画面／遥测 → 有测量依据的修改与迭代记录 | 为浏览器与Godot工作流提供分阶段原型迭代、画面可读性检查、确定性回放及修复验证流程；属于可复用规程，不是已评测的自主系统。 |
 | 模型执行与评测工作流 | **WorldFoundry** [[源码]](https://github.com/OpenEnvision/WorldFoundry) [[论文]](https://arxiv.org/abs/2611.10771) | 项目维护的CLI／Studio／模型适配器 | 将模型各自的输入、运行要求及输出产物接入统一推理和评测工作流，明确区分准备状态和评测资格。 |
 | Webots仿真构建与观察 | **Webots MCP** [[源码]](https://github.com/MHasaan/webotMCP) | 社区MCP；未标明许可证 | 向Agent开放场景编辑、控制器代码、机器人动作、多视图截图、运动轨迹与接触事件；模拟器真值和反应式控制分别区别于学习式感知与规划。 |
 | 视频编辑服务集成 | **Rendley video-editing-skill** [[代码]](https://github.com/rendleyhq/video-editing-skill) [[定义]](https://github.com/rendleyhq/video-editing-skill/blob/main/SKILL.md) | 官方 Skill · MIT · 托管 MCP／REST 服务 | 经 MCP／REST 将编辑需求与媒体交给 Rendley 托管 Agent，返回可编辑项目；MIT Skill 属于需服务连接的集成层，不是本地剪辑引擎。 |

@@ -46,12 +46,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-206-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-209-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-11-11**
+**最后更新：2026-11-12**
 
 </div>
 
@@ -348,6 +348,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.1 视觉软件工程与应用复刻评测](#evaluation-software) · [4.1 软件需求、应用观测与开发／复刻轨迹](#data-software) · [2.2 GUI／软件训练环境合成](#methods-gui-environments) · [2.12 从构建与交互经验学习](#methods-experience) · [用视觉差异指导代码修复](#visual-diff)
 
+<a id="paper-2611-12112"></a>
+<!-- mmac-record: {"id": "2611.12112", "scope": "Core", "primary": "2.1", "task": 1} -->
+
+- `arXiv 2026.11` **LiveWorkspace: Externalizing Visual Understanding as Persistent Shared State for Screenshot-to-Code Agents**. [[论文]](https://arxiv.org/abs/2611.12112) — `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > 把目标界面与实际执行界面维护为共享视觉状态，依据实测几何／样式差异及源码绑定持续修复代码并完成局部编辑。<br>
+  > **验证维度：** 匹配调用预算的Design2Code与ScreenBench比较 · 迭代修复与100个受控编辑 · 源码绑定审计及编辑副作用。
+
 <a id="paper-2609-22000"></a>
 <!-- mmac-record: {"id": "2609.22000", "scope": "Core", "primary": "2.1", "task": 1} -->
 
@@ -631,6 +638,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 图表的数据语义、科学可视化的分析目标与 SVG／TikZ 的结构约束在内部区分；不能只用整体视觉相似度概括成功。
 
 **关联阅读：** [3.3 图表、科学可视化与图形编辑评测](#evaluation-graphics) · [4.3 图表数据、图形程序与编辑记录](#data-graphics) · [2.4 文档与视觉媒体构建](#methods-media) · [3.13 测试、奖励与评估器可靠性](#section-3-13) · [5.5 Skills、工具桥与可复用工作流](#section-5-5)
+
+<a id="paper-2611-10840"></a>
+<!-- mmac-record: {"id": "2611.10840", "scope": "Core", "primary": "2.3", "task": 3} -->
+
+- `NeurIPS 2026` **Simple Test-Time Refinement for Plot-to-Code Generation via Visual-Code Diagnostics**. [[论文]](https://arxiv.org/abs/2611.10840) [[代码]](https://github.com/guopeiming/plot_to_code_refine) — `[Method]` · `[Training]` `[Inference]` `[Verification]` · **Core**
+  > 训练小型验证器，将参考图与渲染图的差异定位到绘图代码，再通过反复渲染驱动局部补丁修复。<br>
+  > **验证维度：** ChartMimic与Plot2Code · 诊断定位及迭代修复 · 多种生成器；专门化生成器即使获得理想反馈仍可能退化。
 
 <a id="paper-2610-41260"></a>
 <!-- mmac-record: {"id": "2610.41260", "scope": "Core", "primary": "2.3", "task": 3} -->
@@ -1359,6 +1373,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.6 物理资产构建与可用性评测](#evaluation-physical-assets) · [4.6 物理资产、参数与诊断交互数据](#data-physical-assets) · [2.5 程序化 3D 与 CAD 构建](#methods-cad-3d) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.11 Real2Sim2Real：任务学习与真实执行](#methods-real2sim2real)
 
+<a id="paper-2611-13344"></a>
+<!-- mmac-record: {"id": "2611.13344", "scope": "Core", "primary": "2.6", "task": 6} -->
+
+- `arXiv 2026.11` **PneuGen: Task-Driven Agentic Co-Design of Soft Pneumatic Robots**. [[论文]](https://arxiv.org/abs/2611.13344) — `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > 通过类型化设计程序协同设计可打印气动机器人的几何与驱动，利用拟合部件响应先验和有限元空间诊断推动设计者—批评者修订。<br>
+  > **验证维度：** 固定预算的抓取与二维／三维形状匹配仿真 · 批评者／响应模型消融 · 打印实物演示；硬件反馈未回写优化过程。
+
 <a id="paper-2607-13586"></a>
 <!-- mmac-record: {"id": "2607.13586", "scope": "Adjacent", "primary": "2.6", "task": 6} -->
 
@@ -1979,6 +2000,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.11 Real2Sim2Real 的任务效用与真实迁移评测](#evaluation-real2sim2real) · [4.11 Real2Sim2Real 的环境、策略与配对迁移记录](#data-real2sim2real) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.10 机器人程序与策略开发](#methods-robot-programs) · [5.4 动作、策略、预测与验证能力](#section-5-4)
 
+- [RoboScript / WICL](#paper-2611-12885) · **Adjacent** · [2.12](#methods-experience) — 跨机器人形态适配仿真语义记忆；实机执行采用离线规划。
+
 <a id="paper-2611-07881"></a>
 <!-- mmac-record: {"id": "2611.07881", "scope": "Adjacent", "primary": "2.11", "task": 11} -->
 
@@ -2023,6 +2046,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 单次产物修订与跨任务能力改进分别验证；构建轨迹训练和在生成环境中训练操作策略也具有不同学习对象。
 
 **关联阅读：** [3.12 经验学习与跨任务泛化评测](#evaluation-experience) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [2.2 GUI／软件训练环境合成](#methods-gui-environments) · [5.5 Skills、工具桥与可复用工作流](#section-5-5) · [6.5 从构建经验到可迁移能力](#section-6-5)
+
+<a id="paper-2611-12885"></a>
+<!-- mmac-record: {"id": "2611.12885", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.11` **World In-Context Learning for Agentic Robot Manipulation**. [[论文]](https://arxiv.org/abs/2611.12885) [[代码]](https://github.com/ArcheOne-AI/RoboScript) [[项目]](https://ArcheOne-AI.github.io/RoboScript) — `[Method]` · `[Inference]` · **Adjacent**
+  > 在仿真排练中为冻结模型写入可迁移语义Task Memory，再通过感知、规划和技能部署冻结记忆；实机试验使用离线规划动作序列。<br>
+  > **验证维度：** 50项RoboTwin 2.0任务及隔离的排练／部署数据 · 记忆与反思分析 · 4项PiPER任务各10次；实机试验无在线重规划。
 
 - [Auriga](#paper-2611-01112) · **Core** · [2.10](#methods-robot-programs) — 区分跨任务Harness开发与固定权重、工具下的回合内适应。
 
@@ -2236,6 +2266,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.1 视觉软件工程与应用复刻](#methods-software) · [4.1 软件需求、应用观测与开发／复刻轨迹](#data-software) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
 
+- [LiveWorkspace](#paper-2611-12112) · **Core** · [2.1](#methods-software) — 比较匹配预算的生成、迭代修复、局部编辑及可操作源码绑定。
+
 - [WebCoder](#paper-2610-23104) · **Core** · [2.12](#methods-experience) — Webdev-Bench以用户反馈gate和独立终验评估顺序需求及既有行为保持。
 
 <a id="paper-2610-35138"></a>
@@ -2389,6 +2421,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.3 图表、科学可视化与可编辑图形构建](#methods-graphics) · [4.3 图表数据、图形程序与编辑记录](#data-graphics) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
 
+- [Visual-Code Diagnostics](#paper-2611-10840) · **Core** · [2.3](#methods-graphics) — 评测跨生成器图表诊断与多轮修复，包含理想反馈下仍失败的情况。
+
 <a id="paper-2610-02399"></a>
 <!-- mmac-record: {"id": "2610.02399", "scope": "Core", "primary": "3.3", "task": 3} -->
 
@@ -2484,6 +2518,13 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 原生可编辑结构、渲染成功、视觉偏好和信息保真是不同属性；跨页与跨帧错误需要相应测试。
 
 **关联阅读：** [2.4 文档与视觉媒体构建](#methods-media) · [4.4 文档、媒体素材与构建／编辑过程](#data-media) · [3.3 图表、科学可视化与图形编辑评测](#evaluation-graphics) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
+
+<a id="paper-2611-13576"></a>
+<!-- mmac-record: {"id": "2611.13576", "scope": "Adjacent", "primary": "3.4", "task": 4} -->
+
+- `arXiv 2026.11` **PhyRubric: Rubric-Grounded Diagnostic Evaluation of Physical Commonsense in Text-to-Video Generation**. [[论文]](https://arxiv.org/abs/2611.13576) [[代码]](https://github.com/chenyil6/phyRubric) [[数据]](https://huggingface.co/datasets/kittyhy/PhyRubric-Bench) [[训练数据]](https://huggingface.co/datasets/kittyhy/PhyRubric-Train) [[验证模型]](https://huggingface.co/kittyhy/PhyRubric-Judge) — `[Benchmark]` `[Dataset]` · `[Verification]` `[Training]` · **Adjacent**
+  > 在检查生成视频前构造描述特定的语义与物理判据，再以时间定位证据支持逐项判决、诊断评测及验证模型训练。<br>
+  > **验证维度：** 10种视频生成器 · 5个物理领域与34类别 · 人类判断相关性及判据消融；评估可见视频合理性，不代表可执行动力学或硬件验证。
 
 <a id="paper-2611-10592"></a>
 <!-- mmac-record: {"id": "2611.10592", "scope": "Adjacent", "primary": "3.4", "task": 4} -->
@@ -2740,6 +2781,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 加载成功、运动视觉合理和物理响应符合分别检查；单资产实验与场景／任务迁移分别报告。
 
 **关联阅读：** [2.6 物理资产构建与诊断](#methods-physical-assets) · [4.6 物理资产、参数与诊断交互数据](#data-physical-assets) · [3.9 面向 Agentic Real-to-Sim 的场景与交互构建评测](#evaluation-real-to-sim) · [3.11 Real2Sim2Real 的任务效用与真实迁移评测](#evaluation-real2sim2real)
+
+- [PneuGen](#paper-2611-13344) · **Core** · [2.6](#methods-physical-assets) — 通过固定预算抓取／形状仿真、消融与实物演示评测物理资产可用性。
 
 - [UniPhysGen](#paper-2607-13586) · **Adjacent** · [2.6](#methods-physical-assets) — 评估关节语义、结构、物理属性以及旋转和异构部件分解下的鲁棒性。
 
@@ -3146,6 +3189,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.12 从构建与交互经验学习](#methods-experience) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [3.2 GUI／软件训练环境构建与下游效用评测](#evaluation-gui-environments) · [3.10 机器人程序与策略的执行评测](#evaluation-robot-programs) · [6.5 从构建经验到可迁移能力](#section-6-5)
 
+- [RoboScript / WICL](#paper-2611-12885) · **Adjacent** · [2.12](#methods-experience) — 隔离排练、冻结记忆部署与反思块，并研究视觉分布变化下的迁移。
+
 - [RoboARCade](#paper-2611-08209) · **Adjacent** · [3.10](#evaluation-robot-programs) — 比较成功轨迹上下文与按已评分尝试修订的文本工作流。
 
 - [PyRUA-REAL](#paper-2611-06768) · **Core** · [2.12](#methods-experience) — 八任务有／无技能库迁移与固定修订预算的反馈比较。
@@ -3205,6 +3250,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 程序判定的确定性不等于任务语义正确；judge 与人工的一致性也不能替代闭环修复收益。
 
 **关联阅读：** [3.1 视觉软件工程与应用复刻评测](#evaluation-software) · [3.3 图表、科学可视化与图形编辑评测](#evaluation-graphics) · [3.5 程序化 3D 与 CAD 基准评测](#evaluation-cad-3d) · [3.7 游戏行为、可玩性与修复评测](#evaluation-games) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [6.3 独立验证与可信奖励](#section-6-3)
+
+- [PhyRubric](#paper-2611-13576) · **Adjacent** · [3.4](#evaluation-media) — 比较诊断Judge与人类判断，并检验判据与证据设计。
 
 - [MotionGraphicsBench](#paper-2611-10592) · **Adjacent** · [3.4](#evaluation-media) — 将经反例改进的验证器对照180个保留人评样例检验，与动画生成过程分开。
 
@@ -3359,6 +3406,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.3 图表、科学可视化与可编辑图形构建](#methods-graphics) · [3.3 图表、科学可视化与图形编辑评测](#evaluation-graphics) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
 
+- [Visual-Code Diagnostics](#paper-2611-10840) · **Core** · [2.3](#methods-graphics) — 通过绘图程序受控扰动构造视觉—代码诊断对。
+
 <a id="paper-2610-19337"></a>
 <!-- mmac-record: {"id": "2610.19337", "scope": "Adjacent", "primary": "4.3", "task": 3} -->
 
@@ -3403,6 +3452,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 可编辑源文件、最终图片／视频和构建轨迹分别记录；素材许可、依赖与时间对齐影响复用。
 
 **关联阅读：** [2.4 文档与视觉媒体构建](#methods-media) · [3.4 文档与视觉媒体构建评测](#evaluation-media) · [4.3 图表数据、图形程序与编辑记录](#data-graphics) · [4.12 跨任务构建、修复与技能学习资料](#data-experience)
+
+- [PhyRubric](#paper-2611-13576) · **Adjacent** · [3.4](#evaluation-media) — 发布带逐项证据的判据化视频评测集与训练集。
 
 - [MotionGraphicsBench](#paper-2611-10592) · **Adjacent** · [3.4](#evaluation-media) — 公开100个含SVG输入与验证程序的任务，以及53,180条带评测和人评字段的输出记录。
 
@@ -3954,6 +4005,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 | 能力 | 资源 | 形式与来源 | 对闭环的意义 |
 |---|---|---|---|
+| 游戏引擎／模型工具桥 | **Unreal Engine 5.9 MegaJam Preview** [[官方公告]](https://forums.unrealengine.com/t/unreal-engine-5-9-megajam-preview/2852840) | 提示词、参考素材与场景 → 编辑器操作、图像／3D／视频资产及运行检查 | 实验性预览提供用于编辑、渲染及调试的Unreal MCP，并通过Canvas组合生成模型工具；官方公告介绍接入能力，不是自主开发性能评测。 |
 | 游戏迭代与试玩验证Skills | **Agentic Gamedev Skills** [[源码]](https://github.com/abagames/agentic-gamedev-skills) | 可玩原型＋设计意图＋回放／画面／遥测 → 有测量依据的修改与迭代记录 | 为浏览器与Godot工作流提供分阶段原型迭代、画面可读性检查、确定性回放及修复验证流程；属于可复用规程，不是已评测的自主系统。 |
 | 模型执行与评测工作流 | **WorldFoundry** [[源码]](https://github.com/OpenEnvision/WorldFoundry) [[论文]](https://arxiv.org/abs/2611.10771) | 项目维护的CLI／Studio／模型适配器 | 将模型各自的输入、运行要求及输出产物接入统一推理和评测工作流，明确区分准备状态和评测资格。 |
 | Webots仿真构建与观察 | **Webots MCP** [[源码]](https://github.com/MHasaan/webotMCP) | 社区MCP；未标明许可证 | 向Agent开放场景编辑、控制器代码、机器人动作、多视图截图、运动轨迹与接触事件；模拟器真值和反应式控制分别区别于学习式感知与规划。 |

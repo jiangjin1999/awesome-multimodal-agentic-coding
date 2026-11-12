@@ -46,12 +46,12 @@ Enable agents to **organize and combine model capabilities**, expanding their ab
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-206-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-209-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-11-11**
+**Last updated: 2026-11-12**
 
 </div>
 
@@ -348,6 +348,13 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 
 **Connect:** [3.1 Visual software engineering and recreation evaluation](#evaluation-software) · [4.1 Software requirements, application observations, and development traces](#data-software) · [2.2 GUI and software training-environment synthesis](#methods-gui-environments) · [2.12 Learning from construction and interaction experience](#methods-experience) · [Visual diffs for code repair](#visual-diff)
 
+<a id="paper-2611-12112"></a>
+<!-- mmac-record: {"id": "2611.12112", "scope": "Core", "primary": "2.1", "task": 1} -->
+
+- `arXiv 2026.11` **LiveWorkspace: Externalizing Visual Understanding as Persistent Shared State for Screenshot-to-Code Agents**. [[paper]](https://arxiv.org/abs/2611.12112) — `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > Maintains target and executed interfaces in a shared visual state, using measured geometry/style differences and source bindings to guide repeated code repair and localized edits.<br>
+  > **Verification:** Design2Code and ScreenBench under matched model-call budgets · iterative repair and 100 controlled edits · source-binding audit and edit side effects.
+
 <a id="paper-2609-22000"></a>
 <!-- mmac-record: {"id": "2609.22000", "scope": "Core", "primary": "2.1", "task": 1} -->
 
@@ -631,6 +638,13 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 **Boundary.** Chart semantics, scientific analysis goals, and SVG/TikZ structure impose different constraints; overall visual similarity alone cannot capture success.
 
 **Connect:** [3.3 Chart, scientific visualization, and graphics-editing evaluation](#evaluation-graphics) · [4.3 Chart data, graphics programs, and edit records](#data-graphics) · [2.4 Documents and visual media](#methods-media) · [3.13 Test, reward, and evaluator reliability](#section-3-13) · [5.5 Skills, tool bridges, and reusable workflows](#section-5-5)
+
+<a id="paper-2611-10840"></a>
+<!-- mmac-record: {"id": "2611.10840", "scope": "Core", "primary": "2.3", "task": 3} -->
+
+- `NeurIPS 2026` **Simple Test-Time Refinement for Plot-to-Code Generation via Visual-Code Diagnostics**. [[paper]](https://arxiv.org/abs/2611.10840) [[code]](https://github.com/guopeiming/plot_to_code_refine) — `[Method]` · `[Training]` `[Inference]` `[Verification]` · **Core**
+  > Trains a compact verifier to localize discrepancies between reference and rendered charts in their plotting code, then guides patch-based refinement across repeated renders.<br>
+  > **Verification:** ChartMimic and Plot2Code · diagnostic localization and iterative refinement · multiple generators; a specialized generator can degrade even with oracle feedback.
 
 <a id="paper-2610-41260"></a>
 <!-- mmac-record: {"id": "2610.41260", "scope": "Core", "primary": "2.3", "task": 3} -->
@@ -1359,6 +1373,13 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 
 **Connect:** [3.6 Physical asset construction and usability evaluation](#evaluation-physical-assets) · [4.6 Physical assets, parameters, and diagnostic interactions](#data-physical-assets) · [2.5 Procedural 3D and CAD construction](#methods-cad-3d) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.11 Real2Sim2Real: task learning and real execution](#methods-real2sim2real)
 
+<a id="paper-2611-13344"></a>
+<!-- mmac-record: {"id": "2611.13344", "scope": "Core", "primary": "2.6", "task": 6} -->
+
+- `arXiv 2026.11` **PneuGen: Task-Driven Agentic Co-Design of Soft Pneumatic Robots**. [[paper]](https://arxiv.org/abs/2611.13344) — `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > Co-designs printable pneumatic robot geometry and actuation through typed design programs, using fitted module-response priors and spatial finite-element diagnostics to drive designer–critic revisions.<br>
+  > **Verification:** Budgeted grasping and 2D/3D shape-matching simulations · critic/response-model ablations · printed hardware demonstrations; hardware feedback is not fed back into optimization.
+
 <a id="paper-2607-13586"></a>
 <!-- mmac-record: {"id": "2607.13586", "scope": "Adjacent", "primary": "2.6", "task": 6} -->
 
@@ -1979,6 +2000,8 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 
 **Connect:** [3.11 Real2Sim2Real utility and real-transfer evaluation](#evaluation-real2sim2real) · [4.11 Real2Sim2Real environments, policies, and paired transfer records](#data-real2sim2real) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [2.10 Robot program and policy development](#methods-robot-programs) · [5.4 Action, policy, prediction, and verification capabilities](#section-5-4)
 
+- [RoboScript / WICL](#paper-2611-12885) · **Adjacent** · [2.12](#methods-experience) — Adapts simulated semantic memory across embodiments; physical executions are offline planned.
+
 <a id="paper-2611-07881"></a>
 <!-- mmac-record: {"id": "2611.07881", "scope": "Adjacent", "primary": "2.11", "task": 11} -->
 
@@ -2023,6 +2046,13 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 **Boundary.** Distinguish learning the builder from learning the operator in a generated environment. Within-task iteration and static expert skills do not by themselves establish cross-task learning.
 
 **Connect:** [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [2.2 GUI and software training-environment synthesis](#methods-gui-environments) · [5.5 Skills, tool bridges, and reusable workflows](#section-5-5) · [6.5 From construction experience to transferable capability](#section-6-5)
+
+<a id="paper-2611-12885"></a>
+<!-- mmac-record: {"id": "2611.12885", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.11` **World In-Context Learning for Agentic Robot Manipulation**. [[paper]](https://arxiv.org/abs/2611.12885) [[code]](https://github.com/ArcheOne-AI/RoboScript) [[project]](https://ArcheOne-AI.github.io/RoboScript) — `[Method]` · `[Inference]` · **Adjacent**
+  > Rehearses manipulation in simulation to write transferable semantic Task Memory for a frozen model, then deploys the frozen memory through perception, planning and skills; physical trials use offline-planned action sequences.<br>
+  > **Verification:** 50 RoboTwin 2.0 tasks with isolated rehearsal/deployment data · memory/reflection analyses · four PiPER tasks with 10 trials each; physical trials have no online replanning.
 
 - [Auriga](#paper-2611-01112) · **Core** · [2.10](#methods-robot-programs) — Separates cross-task harness development from within-episode adaptation with frozen model weights and tools.
 
@@ -2236,6 +2266,8 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Connect:** [2.1 Visual software engineering and application recreation](#methods-software) · [4.1 Software requirements, application observations, and development traces](#data-software) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
 
+- [LiveWorkspace](#paper-2611-12112) · **Core** · [2.1](#methods-software) — Compares matched-budget generation, iterative repair, local editing and actionable source bindings.
+
 - [WebCoder](#paper-2610-23104) · **Core** · [2.12](#methods-experience) — Webdev-Bench evaluates sequential requirements and preservation of earlier behavior using a user-feedback gate and independent terminal acceptance.
 
 <a id="paper-2610-35138"></a>
@@ -2389,6 +2421,8 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Connect:** [2.3 Charts, scientific visualization, and editable graphics](#methods-graphics) · [4.3 Chart data, graphics programs, and edit records](#data-graphics) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
 
+- [Visual-Code Diagnostics](#paper-2611-10840) · **Core** · [2.3](#methods-graphics) — Tests chart diagnostics and multi-round repair across generators, including failure under oracle feedback.
+
 <a id="paper-2610-02399"></a>
 <!-- mmac-record: {"id": "2610.02399", "scope": "Core", "primary": "3.3", "task": 3} -->
 
@@ -2484,6 +2518,13 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 **Boundary.** Native editability, rendering success, visual preference, and information fidelity are different properties. Cross-page and cross-frame errors require corresponding tests.
 
 **Connect:** [2.4 Documents and visual media](#methods-media) · [4.4 Documents, media assets, and construction/editing traces](#data-media) · [3.3 Chart, scientific visualization, and graphics-editing evaluation](#evaluation-graphics) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
+
+<a id="paper-2611-13576"></a>
+<!-- mmac-record: {"id": "2611.13576", "scope": "Adjacent", "primary": "3.4", "task": 4} -->
+
+- `arXiv 2026.11` **PhyRubric: Rubric-Grounded Diagnostic Evaluation of Physical Commonsense in Text-to-Video Generation**. [[paper]](https://arxiv.org/abs/2611.13576) [[code]](https://github.com/chenyil6/phyRubric) [[data]](https://huggingface.co/datasets/kittyhy/PhyRubric-Bench) [[train data]](https://huggingface.co/datasets/kittyhy/PhyRubric-Train) [[judge]](https://huggingface.co/kittyhy/PhyRubric-Judge) — `[Benchmark]` `[Dataset]` · `[Verification]` `[Training]` · **Adjacent**
+  > Builds caption-specific semantic and physical rubrics before inspecting generated videos, then grounds item-level judgments in timestamped evidence to support diagnostic video evaluation and judge training.<br>
+  > **Verification:** Ten video generators · five physical domains and 34 categories · human-judgment correlations and rubric ablations; evaluates visible video plausibility, not executable dynamics or hardware.
 
 <a id="paper-2611-10592"></a>
 <!-- mmac-record: {"id": "2611.10592", "scope": "Adjacent", "primary": "3.4", "task": 4} -->
@@ -2740,6 +2781,8 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 **Boundary.** Loading success, plausible motion, and correct physical response need separate checks. Asset-level experiments and scene/task transfer are reported separately.
 
 **Connect:** [2.6 Physical asset construction and diagnosis](#methods-physical-assets) · [4.6 Physical assets, parameters, and diagnostic interactions](#data-physical-assets) · [3.9 Scene and interaction construction for Agentic Real-to-Sim](#evaluation-real-to-sim) · [3.11 Real2Sim2Real utility and real-transfer evaluation](#evaluation-real2sim2real)
+
+- [PneuGen](#paper-2611-13344) · **Core** · [2.6](#methods-physical-assets) — Evaluates physical asset usability with budgeted grasp/shape simulations, ablations and fabricated demonstrations.
 
 - [UniPhysGen](#paper-2607-13586) · **Adjacent** · [2.6](#methods-physical-assets) — Evaluates articulation semantics, structure, physical properties and robustness to rotation and heterogeneous decompositions.
 
@@ -3146,6 +3189,8 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Connect:** [2.12 Learning from construction and interaction experience](#methods-experience) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [3.2 Training-environment construction and downstream utility](#evaluation-gui-environments) · [3.10 Robot program and policy execution evaluation](#evaluation-robot-programs) · [6.5 From construction experience to transferable capability](#section-6-5)
 
+- [RoboScript / WICL](#paper-2611-12885) · **Adjacent** · [2.12](#methods-experience) — Separates rehearsal, frozen-memory deployment and reflection blocks; studies transfer across visual distributions.
+
 - [RoboARCade](#paper-2611-08209) · **Adjacent** · [3.10](#evaluation-robot-programs) — Compares successful-episode context with text harnesses revised between graded trials.
 
 - [PyRUA-REAL](#paper-2611-06768) · **Core** · [2.12](#methods-experience) — Eight-task with/without skill-library transfer and fixed-budget feedback comparisons.
@@ -3205,6 +3250,8 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 **Boundary.** Deterministic execution does not guarantee semantic correctness. Judge–human agreement also does not replace evidence of better closed-loop repairs.
 
 **Connect:** [3.1 Visual software engineering and recreation evaluation](#evaluation-software) · [3.3 Chart, scientific visualization, and graphics-editing evaluation](#evaluation-graphics) · [3.5 Procedural 3D and CAD benchmarks](#evaluation-cad-3d) · [3.7 Game behavior, playability, and repair evaluation](#evaluation-games) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [6.3 Independent verification and trustworthy rewards](#section-6-3)
+
+- [PhyRubric](#paper-2611-13576) · **Adjacent** · [3.4](#evaluation-media) — Compares diagnostic judges with human judgments and tests rubric/evidence choices.
 
 - [MotionGraphicsBench](#paper-2611-10592) · **Adjacent** · [3.4](#evaluation-media) — Validates counterexample-refined verifiers against 180 held-out human judgments, separately from animation generation.
 
@@ -3359,6 +3406,8 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Connect:** [2.3 Charts, scientific visualization, and editable graphics](#methods-graphics) · [3.3 Chart, scientific visualization, and graphics-editing evaluation](#evaluation-graphics) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
 
+- [Visual-Code Diagnostics](#paper-2611-10840) · **Core** · [2.3](#methods-graphics) — Constructs visual/code diagnostic pairs through controlled mutations of plotting programs.
+
 <a id="paper-2610-19337"></a>
 <!-- mmac-record: {"id": "2610.19337", "scope": "Adjacent", "primary": "4.3", "task": 3} -->
 
@@ -3403,6 +3452,8 @@ This is a research-resource index, not a claim that every linked paper releases 
 **Boundary.** Editable source files, final images/videos, and construction traces are distinct. Licenses, dependencies, and temporal alignment affect reuse.
 
 **Connect:** [2.4 Documents and visual media](#methods-media) · [3.4 Document and visual-media evaluation](#evaluation-media) · [4.3 Chart data, graphics programs, and edit records](#data-graphics) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience)
+
+- [PhyRubric](#paper-2611-13576) · **Adjacent** · [3.4](#evaluation-media) — Releases rubric-grounded video benchmark and training data with item-level evidence.
 
 - [MotionGraphicsBench](#paper-2611-10592) · **Adjacent** · [3.4](#evaluation-media) — Publishes 100 tasks with SVG inputs and verification programs, plus 53,180 output records with evaluation and human-review fields.
 
@@ -3954,6 +4005,7 @@ The list below is a practical starting point rather than a security audit or end
 
 | Capability | Resource | Form and provenance | Why it matters for the closed loop |
 |---|---|---|---|
+| Game engine / model-tool bridge | **Unreal Engine 5.9 MegaJam Preview** [[official announcement]](https://forums.unrealengine.com/t/unreal-engine-5-9-megajam-preview/2852840) | Prompts, references and scenes → editor operations, images, 3D/video assets and runtime inspection | Experimental preview adds Unreal MCP for editor/render/debug operations and Canvas for composing generative model tools; the official announcement describes integration capabilities, not an autonomous development benchmark. |
 | Game refinement and playtesting skills | **Agentic Gamedev Skills** [[source]](https://github.com/abagames/agentic-gamedev-skills) | Playable prototype + design intent + replays/frames/telemetry → measured changes and revision records | Documents staged prototype refinement, screen-readability checks, deterministic replay and repair validation for browser and Godot workflows; reusable procedures, not a benchmarked autonomous system. |
 | Model execution and evaluation workflows | **WorldFoundry** [[source]](https://github.com/OpenEnvision/WorldFoundry) [[paper]](https://arxiv.org/abs/2611.10771) | Project-maintained CLI / Studio / model adapters | Connects model-specific inputs, runtime requirements and output artifacts to common inference and evaluation workflows, with explicit readiness and eligibility states. |
 | Webots simulation authoring and observation | **Webots MCP** [[source]](https://github.com/MHasaan/webotMCP) | Community MCP; no license specified | Exposes scene editing, controller code, robot commands, multiview screenshots, motion traces and contact events to agents; ground-truth simulator readouts and reactive controls are distinguished from learned perception and planning. |

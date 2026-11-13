@@ -16,11 +16,15 @@ Agent 编写代码、执行、观察结果，再依据观测选择下一次修�
 | [Play2Code](https://continual-game-generation.vercel.app/) | GUI Agent 实际游玩生成的 HTML 游戏，将体验报告与修复清单返回给 Coding Agent。 | 为什么交互轨迹能暴露单张图片难以发现的问题。 |
 | [Text-to-CAD Evaluation with CADTests](https://arxiv.org/html/2605.07807v1) — §6 与附录 C | 对比四视图视觉 ReAct、测试驱动代码修订与几何日志。 | 为什么反馈方式需要实验验证：该研究中额外的视觉反馈没有提高性能。 |
 
+## 按三阶段阅读
+
+合集从[视觉反馈](../README.zh-CN.md#stage-1)出发，延伸到[模型作为工具](../README.zh-CN.md#stage-2)和[数字—物理交互](../README.zh-CN.md#stage-3)。可以从关心的产物或能力进入，再比较方法、评测、数据与可复用工具。[第三阶段导读](../stage3/README.zh-CN.md)进一步串联具身 Harness、模拟器、数据、学习和物理应用。
+
 ## 选择阅读路线
 
-- **了解领域：** 先看 PwP 的 UI Demo，再看 CAD-Assistant 与 Play2Code，随后通过[主题地图](../README.zh-CN.md#topic-map)寻找关心的产物类型。
-- **搭建系统：** 先选[执行引擎](../README.zh-CN.md#execution-and-rendering-engines)，再查看对应的 [Skills 与工具桥](../README.zh-CN.md#skills-and-tool-bridges)，比较产物与观测通路相近的方法。工具能截图，并不等于 Agent 已经利用截图改进代码。
-- **设计研究：** 对比 Procedura 与 CADTests 的反馈路径，再阅读相应的[基准与方法](../README.zh-CN.md#paper-and-project-list)以及[研究前沿](../README.zh-CN.md#research-frontiers)。
+- **了解领域：** 先看 PwP 的 UI Demo，再看 CAD-Assistant 与 Play2Code，随后通过[三阶段目录](../README.zh-CN.md#contents)寻找关心的产物类型。
+- **搭建系统：** 先选[执行引擎](../README.zh-CN.md#stage-1)，再查看对应的 [Skills 与工具桥](../README.zh-CN.md#s3-1)，比较产物与观测通路相近的方法。工具能截图，并不等于 Agent 已经利用截图改进代码。
+- **设计研究：** 对比 Procedura 与 CADTests 的反馈路径，再阅读相应的[基准与方法](../README.zh-CN.md#stage-1)以及[研究前沿](../README.zh-CN.md#s1-7)。
 
 ## 比较闭环，而不只看最终产物
 
@@ -53,8 +57,8 @@ Agent 编写代码、执行、观察结果，再依据观测选择下一次修�
 
 ## 找到合适的收录区域
 
-**Core** 工作在同一轨迹或明确的基准配置中包含代码、执行、多模态观测与后续动作。**Adjacent** 工作提供相关的生成、评估或交互基础。**Resource** 提供工具、Skills、引擎与 Demo。这些身份表示不同作用，不是质量排名。
+**Core** 工作在同一轨迹或明确的基准配置中包含代码、执行、多模态观测与后续动作。**Adjacent** 工作提供相关的生成、评估或交互基础。**Resource** 提供模型能力、工具、Skills 与引擎；**Demo** 和 **Reading** 分别标明演示与观点阅读。这些身份表示不同作用，不是质量排名。
 
 阅读基准时，确认具体哪种评估配置使用反馈；观看 Demo 时，区分展示的行为与经过测量的基准结果。
 
-有合适的案例或更正？欢迎[在这里提交](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/issues/new/choose)，中英文均可。
+有合适的案例或更正？欢迎[在这里提交](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/issues/new/choose)，中英日文均可。

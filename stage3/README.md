@@ -6,7 +6,7 @@
 
 How can multimodal coding agents interact with the physical world, build verifiable environments, and improve programs, skills and models through experience? This guide connects six research questions, from early foundations to recent work, with an emphasis on manipulation and directly related scientific and fabrication tasks.
 
-**Literature cutoff: 2026-11-13.** [Full research map](../README.md#topic-map).
+**Literature cutoff: 2026-11-13.** [Full research map](../README.md#contents).
 
 | Research question | Primary entries | Connections |
 |---|---:|---|
@@ -40,7 +40,7 @@ Early work connects language tasks to programs and robot APIs. Recent systems ex
 
 ### Composable execution resources
 
-These existing [runtime resources](../README.md#section-5-5) and [model capabilities](../README.md#section-5-4) retain **Resource** status. A callable component can support a harness without itself implementing agent learning.
+These existing [runtime resources](../README.md#s3-1) and [model capabilities](../README.md#s2-6) retain **Resource** status. A callable component can support a harness without itself implementing agent learning.
 
 | Resource | Interface and role | Evidence boundary |
 |---|---|---|
@@ -1255,11 +1255,11 @@ Construction feedback belongs to the generation procedure: a render, compiler er
 
 | Resource | Contribution to construction | Availability and interpretation |
 |---|---|---|
-| [UltraTex](../README.md#models-as-tools) · [paper](https://arxiv.org/abs/2609.23169) · [code](https://github.com/YiboZ2001/UltraTex) | Reference image and mesh cues → 2K multiview textures with a PBR extension | Surface-appearance component; code and G-buffer data accompany the method |
-| [MIKU](../README.md#models-as-tools) · [paper](https://arxiv.org/abs/2611.07354) | Reference image and geometry → aligned albedo, metallic and roughness maps | Paper-described material capability; code and weights are not linked; generated maps are not measured physical properties |
-| [WorldFoundry](../README.md#skills-and-tool-bridges) · [source](https://github.com/OpenEnvision/WorldFoundry) | CLI, Studio and adapters → model execution, artifacts and evaluation workflows | Shared infrastructure with model-specific requirements and explicit readiness; does not itself establish a scene's physical accuracy |
-| [Unreal Engine 5.9 MegaJam Preview](../README.md#skills-and-tool-bridges) · [official announcement](https://forums.unrealengine.com/t/unreal-engine-5-9-megajam-preview/2852840) | Unreal MCP and Canvas → editor operations, render/debug feedback and composed generation tools | Experimental platform interfaces; an integration announcement, not an autonomous-construction benchmark |
-| [blender-agent-skills](../README.md#skills-and-tool-bridges) · [source](https://github.com/oh-ashen-one/blender-agent-skills) | Reference and scene → staged construction, visual gates, rig and export checks | Five community expert procedures; reusable external skills, without demonstrated model learning |
+| [UltraTex](../README.md#paper-res-ultratex-2k-multi-view-diffusion) · [paper](https://arxiv.org/abs/2609.23169) · [code](https://github.com/YiboZ2001/UltraTex) | Reference image and mesh cues → 2K multiview textures with a PBR extension | Surface-appearance component; code and G-buffer data accompany the method |
+| [MIKU](../README.md#paper-res-miku) · [paper](https://arxiv.org/abs/2611.07354) | Reference image and geometry → aligned albedo, metallic and roughness maps | Paper-described material capability; code and weights are not linked; generated maps are not measured physical properties |
+| [WorldFoundry](../README.md#paper-res-worldfoundry) · [source](https://github.com/OpenEnvision/WorldFoundry) | CLI, Studio and adapters → model execution, artifacts and evaluation workflows | Shared infrastructure with model-specific requirements and explicit readiness; does not itself establish a scene's physical accuracy |
+| [Unreal Engine 5.9 MegaJam Preview](../README.md#paper-res-unreal-engine-5-9-megajam-preview) · [official announcement](https://forums.unrealengine.com/t/unreal-engine-5-9-megajam-preview/2852840) | Unreal MCP and Canvas → editor operations, render/debug feedback and composed generation tools | Experimental platform interfaces; an integration announcement, not an autonomous-construction benchmark |
+| [blender-agent-skills](../README.md#paper-res-blender-agent-skills) · [source](https://github.com/oh-ashen-one/blender-agent-skills) | Reference and scene → staged construction, visual gates, rig and export checks | Five community expert procedures; reusable external skills, without demonstrated model learning |
 
 <a id="work-2611-11344"></a>
 <!-- stage3-record: {"id": "2611.11344", "scope": "Adjacent", "section": 2} -->
@@ -3146,7 +3146,7 @@ Tests whether generated indoor scenes support prescribed physical interactions.
 
 `2026-10-14` · Zhejiang University; Alibaba Token Hub, Alibaba Group; The Chinese University of Hong Kong; Fudan University; National University of Singapore · **Core**
 
-[Bibliographic record](../README.md#work-blenderworld) · [Evidence 1](https://arxiv.org/abs/2610.23986) · [Evidence 2](https://arxiv.org/html/2610.23986) · [Evidence 3](https://blenderworld.github.io/)
+[Bibliographic record](../README.md#paper-system-blenderworld) · [Evidence 1](https://arxiv.org/abs/2610.23986) · [Evidence 2](https://arxiv.org/html/2610.23986) · [Evidence 3](https://blenderworld.github.io/)
 
 Evaluates reusable Blender creations produced from real-world references and specifications.
 

@@ -16,11 +16,15 @@ These examples illustrate different mechanisms; they are not a ranking.
 | [Play2Code](https://continual-game-generation.vercel.app/) | A GUI agent plays a generated HTML game and returns a report and fix list to the coding agent. | Why interaction trajectories reveal failures that a still image can miss. |
 | [Text-to-CAD Evaluation with CADTests](https://arxiv.org/html/2605.07807v1) — §6 and Appendix C | Compare four-view visual ReAct with test-based code refinement and geometric logs. | Why the choice of feedback needs an experiment: added visual feedback did not improve performance in this study. |
 
+## Read across the three stages
+
+The collection starts with [visual feedback](../README.md#stage-1), then follows [models used as tools](../README.md#stage-2) and [digital–physical interaction](../README.md#stage-3). Begin with your artifact or capability, then compare its methods, evaluations, data, and reusable tools. The [Stage 3 guide](../stage3/README.md) offers a deeper reading path through embodied harnesses, simulators, data, learning, and physical applications.
+
 ## Choose a reading path
 
-- **Understand the field:** watch the PwP UI demo, explore CAD-Assistant and Play2Code, then use the [topic map](../README.md#topic-map) to find your artifact type.
-- **Build a system:** choose an [execution engine](../README.md#execution-and-rendering-engines), inspect its [skills and tool bridges](../README.md#skills-and-tool-bridges), and compare a method with a similar artifact and observation channel. A tool's screenshot capability alone does not establish that an agent uses it to improve code.
-- **Design a research study:** compare the feedback paths in Procedura and CADTests, then read the relevant [benchmarks and methods](../README.md#paper-and-project-list) and [research frontiers](../README.md#research-frontiers).
+- **Understand the field:** watch the PwP UI demo, explore CAD-Assistant and Play2Code, then use the [three-stage contents](../README.md#contents) to find your artifact type.
+- **Build a system:** choose an [execution engine](../README.md#stage-1), inspect its [skills and tool bridges](../README.md#s3-1), and compare a method with a similar artifact and observation channel. A tool's screenshot capability alone does not establish that an agent uses it to improve code.
+- **Design a research study:** compare the feedback paths in Procedura and CADTests, then read the relevant [benchmarks and methods](../README.md#stage-1) and [research frontiers](../README.md#s1-7).
 
 ## Compare the loop, not just the final artifact
 
@@ -53,8 +57,8 @@ Cost and failure cases:
 
 ## Find the right part of the collection
 
-**Core** works document code, execution, multimodal observation, and a subsequent action within a trajectory or a named benchmark configuration. **Adjacent** works contribute related generation, evaluation, or interaction foundations. **Resources** provide tools, skills, engines, and demos. These describe different roles, not a quality ranking.
+**Core** works document code, execution, multimodal observation, and a subsequent action within a trajectory or a named benchmark configuration. **Adjacent** works contribute related generation, evaluation, or interaction foundations. **Resources** provide model capabilities, tools, skills, and engines; **Demo** and **Reading** entries identify demonstrations and commentary separately. These describe different roles, not a quality ranking.
 
 For any benchmark, check which evaluated configuration uses feedback. For any demo, distinguish the behavior shown from a measured benchmark result.
 
-Have a useful example or a correction? [Suggest it here](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/issues/new/choose). Contributions in English or Chinese are welcome.
+Have a useful example or a correction? [Suggest it here](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/issues/new/choose). Contributions in English, Chinese, or Japanese are welcome.

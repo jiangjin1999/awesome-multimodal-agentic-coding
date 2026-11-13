@@ -1,5 +1,5 @@
 name: Suggest a paper, tool, or demo / 推荐工作
-description: Share a useful original source; English or Chinese is welcome.
+description: Share a useful original source; English, Chinese, or Japanese is welcome.
 title: "[Suggestion] "
 body:
   - type: input

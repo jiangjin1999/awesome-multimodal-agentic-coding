@@ -6,3 +6,8 @@ For a feedback-driven system: what is executed, what does the agent observe, and
 
 If translation help is needed, say which language is ready.
 如需翻译帮助，请注明已完成的语言版本。
+
+For catalog changes, edit `data/works.yaml` (and shared text in `data/site.yaml`), then regenerate all three READMEs. Preserve IDs, scope, source URLs, and old anchors. Publication checks require complete English, Chinese, and Japanese summaries.
+条目修改请编辑 YAML 后生成三语 README，保留 ID、范围身份、来源和旧锚点；发布校验要求中英日摘要完整。
+
+Validation / 校验：`python3 scripts/build_readme.py --check` and `python3 -m unittest discover -s scripts -p 'test_*.py'`.

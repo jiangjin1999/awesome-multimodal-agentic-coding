@@ -1,26 +1,26 @@
-# Fixed page text for the three generated READMEs.
-# Entries live in data/works.yaml; run `python scripts/build_readme.py` after editing either file.
-
 languages:
-  en: {file: README.md, label: English}
-  zh: {file: README.zh-CN.md, label: 简体中文}
-  ja: {file: README.ja.md, label: 日本語}
-
+  en:
+    file: README.md
+    label: English
+  zh:
+    file: README.zh-CN.md
+    label: 简体中文
+  ja:
+    file: README.ja.md
+    label: 日本語
 repo: jiangjin1999/awesome-multimodal-agentic-coding
-updated: "2026-11-13"   # bump when the list changes
-
+updated: '2026-11-14'
 hero:
   light: assets/hero/hero-light.png
   dark: assets/hero/hero-dark.png
-  alt: >-
-    Awesome Multimodal Agentic Coding — three cumulative stages. 01 Visual as Feedback: an agent writes code,
-    builds an artifact, and observes it. 02 Orchestrating Models as Tools: the same loop calls image, video and
-    world models. 03 Bridging Digital & Physical Worlds: the agent acts and observes in simulation and reality,
-    with simulation built from the real world and practice in simulation strengthening the agent.
-
+  alt: 'Awesome Multimodal Agentic Coding — three cumulative stages. 01 Visual as Feedback: an agent writes code, builds an
+    artifact, and observes it. 02 Orchestrating Models as Tools: the same loop calls image, video and world models. 03 Bridging
+    Digital & Physical Worlds: the agent acts and observes in simulation and reality, with simulation built from the real
+    world and practice in simulation strengthening the agent.'
 text:
   tagline:
-    en: A research map of multimodal agents that write code, observe what it does, and improve — from screens to the physical world.
+    en: A research map of multimodal agents that write code, observe what it does, and improve — from screens to the physical
+      world.
     zh: 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从屏幕延伸到物理世界。
     ja: マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——画面の中から物理世界まで。
   vision_title:
@@ -28,14 +28,13 @@ text:
     zh: 我们的愿景
     ja: ビジョン
   vision:
-    en: >-
-      We read multimodal agentic coding as **one loop that keeps expanding**: an agent writes code, builds something,
-      observes the result, and revises. Each stage keeps that loop and adds one thing — **01** the agent *sees* what it
-      builds; **02** it *calls other models as tools*; **03** it *acts* in simulation and the real world.
-    zh: >-
-      我们把多模态智能体编程理解为**一个不断扩展的闭环**：Agent 编写代码、构建产物、观察结果，再据此修改。每个阶段都保留这个闭环，并在其上增加一样东西——**01** Agent *看见*自己构建的东西；**02** Agent *把其他模型当作工具来调用*；**03** Agent 在仿真与真实世界中*行动*。
-    ja: >-
-      私たちはマルチモーダル・エージェンティック・コーディングを**拡張し続ける一つのループ**として捉えます。エージェントはコードを書き、成果物を構築し、結果を観察して修正します。各段階はこのループを保ったまま一つの要素を加えます——**01** 自分が作ったものを*見る*、**02** 他のモデルを*ツールとして呼び出す*、**03** シミュレーションと現実世界で*行動する*。
+    en: 'We read multimodal agentic coding as **one loop that keeps expanding**: an agent writes code, builds something, observes
+      the result, and revises. Each stage keeps that loop and adds one thing — **01** the agent *sees* what it builds; **02**
+      it *calls other models as tools*; **03** it *acts* in simulation and the real world.'
+    zh: 我们把多模态智能体编程理解为**一个不断扩展的闭环**：Agent 编写代码、构建产物、观察结果，再据此修改。每个阶段都保留这个闭环，并在其上增加一样东西——**01** Agent *看见*自己构建的东西；**02** Agent
+      *把其他模型当作工具来调用*；**03** Agent 在仿真与真实世界中*行动*。
+    ja: 私たちはマルチモーダル・エージェンティック・コーディングを**拡張し続ける一つのループ**として捉えます。エージェントはコードを書き、成果物を構築し、結果を観察して修正します。各段階はこのループを保ったまま一つの要素を加えます——**01**
+      自分が作ったものを*見る*、**02** 他のモデルを*ツールとして呼び出す*、**03** シミュレーションと現実世界で*行動する*。
   machine_note:
     ja: この日本語版は機械支援翻訳です。論文タイトルは原文のままです。誤りを見つけた場合は Issue でお知らせください。
   contents:
@@ -47,15 +46,15 @@ text:
     zh: 收录标准
     ja: 収録基準
   scope:
-    en: >-
-      A work is included when, within one agent trajectory, **code builds or changes an artifact or world state, the
-      agent obtains post-execution evidence (visual, temporal, spatial, interactive or embodied), and that evidence changes
-      later code or tool actions.** Tools, callable models and demos are listed when they support such a loop.
-      Each work appears once; related placements are linked with *See also*.
-    zh: >-
-      收录标准是：在同一条 Agent 轨迹中，**代码构建或改变了产物或世界状态，Agent 获得了执行后的证据（视觉、时间、空间、交互或具身），并且这些证据改变了后续的代码或工具动作。** 工具、可调用模型和 Demo 在能够支撑这一闭环时收录。每项工作只出现一次，相关位置用「另见」链接。
-    ja: >-
-      収録の基準は、一つのエージェント軌跡の中で、**コードが成果物や世界の状態を構築・変更し、エージェントが実行後の証拠（視覚・時間・空間・インタラクション・身体性）を得て、その証拠が後のコードやツール操作を変えること**です。ツール、呼び出し可能なモデル、デモは、このループを支える場合に掲載します。各研究は一度だけ掲載し、関連する箇所は「関連」で示します。
+    en: Core works document code or a programmatic representation, execution, post-execution multimodal observation, and a
+      subsequent code or tool action driven by that observation in one trajectory or named evaluation configuration. Adjacent
+      works provide directly related methods, evaluation, data or foundations. Resources provide reusable capabilities and
+      tools; demos and reading materials retain their own roles. Stages describe research perspectives, not scope or quality.
+      Each work has one primary entry; other contributions use See also links.
+    zh: Core 工作在同一轨迹或明确评测配置中展示代码或程序化表示、执行、执行后的多模态观测，以及观测驱动的后续代码或工具动作。Adjacent 收录直接相关的方法、评测、数据与基础。Resource 提供可复用能力或工具；Demo
+      与阅读资料保留各自角色。三个阶段表示研究视角，不决定范围身份或质量。每项工作只有一个主入口，其他贡献通过「另见」连接。
+    ja: Core は、同一の軌跡または明示された評価設定で、コードやプログラム表現、実行、実行後のマルチモーダルな観測、その観測に基づく次のコード修正またはツール操作を示す研究です。Adjacent は直接関連する手法・評価・データ・基盤を扱います。Resource
+      は再利用可能な能力やツールを提供し、デモと読み物はそれぞれの役割を維持します。三段階は研究の視点であり、範囲や品質の等級ではありません。各項目には一つの主掲載先を設け、他の貢献は「関連」で結びます。
   start_with:
     en: Start with
     zh: 入门必读
@@ -69,22 +68,74 @@ text:
     zh: 常用执行环境
     ja: 主な実行環境
   subs:
-    method: {en: Methods, zh: 方法, ja: 手法}
-    eval: {en: Evaluation & data, zh: 评测与数据, ja: 評価とデータ}
-    tools: {en: Tools & resources, zh: 工具与资源, ja: ツールとリソース}
-    models: {en: Callable models, zh: 可调用模型, ja: 呼び出し可能なモデル}
-    tools-interfaces: {en: Tools and control interfaces, zh: 工具与控制接口, ja: ツールと制御インターフェース}
-    delegation: {en: Delegation to existing policies, zh: 委派已有策略, ja: 既存ポリシーへの委任}
-    capability-eval: {en: Agent capability evaluation, zh: Agent 能力评测, ja: エージェント能力の評価}
-    skills-runtime: {en: Skills, bridges and runtime resources, zh: Skills、工具桥与运行资源, ja: スキル・ブリッジ・ランタイム資源}
-    real-data: {en: Real observations and interaction records, zh: 真实观测与交互记录, ja: 実観測とインタラクション記録}
-    synthetic-data: {en: Synthetic data and production methods, zh: 合成数据与构造方法, ja: 合成データと生成手法}
-    program-policy: {en: Program and policy development, zh: 程序与策略研发, ja: プログラムとポリシーの開発}
-    experience-skill: {en: Experience, memory and skill learning, zh: 经验、记忆与技能学习, ja: 経験・記憶・スキル学習}
-    post-training: {en: Post-training the coding agent, zh: Coding Agent 后训练, ja: コーディングエージェントの事後学習}
-    robot-interaction: {en: Robot interaction and manipulation, zh: 机器人交互与操作, ja: ロボットのインタラクションと操作}
-    experiments: {en: Experiments, measurement and discovery, zh: 实验、测量与发现, ja: 実験・計測・発見}
-    physical-design: {en: Physical design, fabrication and validation, zh: 物理设计、制造与验证, ja: 物理設計・製造・検証}
+    method:
+      en: Methods
+      zh: 方法
+      ja: 手法
+    eval:
+      en: Evaluation & data
+      zh: 评测与数据
+      ja: 評価とデータ
+    tools:
+      en: Tools & resources
+      zh: 工具与资源
+      ja: ツールとリソース
+    models:
+      en: Callable models
+      zh: 可调用模型
+      ja: 呼び出し可能なモデル
+    tools-interfaces:
+      en: Tools and control interfaces
+      zh: 工具与控制接口
+      ja: ツールと制御インターフェース
+    delegation:
+      en: Delegation to existing policies
+      zh: 委派已有策略
+      ja: 既存ポリシーへの委任
+    capability-eval:
+      en: Agent capability evaluation
+      zh: Agent 能力评测
+      ja: エージェント能力の評価
+    skills-runtime:
+      en: Skills
+      bridges and runtime resources: null
+      zh: Skills、工具桥与运行资源
+      ja: スキル・ブリッジ・ランタイム資源
+    real-data:
+      en: Real observations and interaction records
+      zh: 真实观测与交互记录
+      ja: 実観測とインタラクション記録
+    synthetic-data:
+      en: Synthetic data and production methods
+      zh: 合成数据与构造方法
+      ja: 合成データと生成手法
+    program-policy:
+      en: Program and policy development
+      zh: 程序与策略研发
+      ja: プログラムとポリシーの開発
+    experience-skill:
+      en: Experience
+      memory and skill learning: null
+      zh: 经验、记忆与技能学习
+      ja: 経験・記憶・スキル学習
+    post-training:
+      en: Post-training the coding agent
+      zh: Coding Agent 后训练
+      ja: コーディングエージェントの事後学習
+    robot-interaction:
+      en: Robot interaction and manipulation
+      zh: 机器人交互与操作
+      ja: ロボットのインタラクションと操作
+    experiments:
+      en: Experiments
+      measurement and discovery: null
+      zh: 实验、测量与发现
+      ja: 実験・計測・発見
+    physical-design:
+      en: Physical design
+      fabrication and validation: null
+      zh: 物理设计、制造与验证
+      ja: 物理設計・製造・検証
   related_title:
     en: Surveys and related collections
     zh: 综述与相关合集
@@ -98,14 +149,12 @@ text:
     zh: 联系与贡献
     ja: 連絡とコントリビュート
   contact:
-    en: >-
-      Suggestions, corrections and discussions are welcome. [Suggest a paper, tool or demo](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/issues/new/choose)
-      or read the [contribution guide](./CONTRIBUTING.md). You can also reach us by
-      [email](mailto:jiangjin@stu.pku.edu.cn) or WeChat:
-    zh: >-
-      欢迎推荐工作、指出错误或一起讨论。可以[推荐论文、工具或 Demo](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/issues/new/choose)，或阅读[贡献指南](./CONTRIBUTING.zh-CN.md)。也可以通过[邮件](mailto:jiangjin@stu.pku.edu.cn)或微信联系我们：
-    ja: >-
-      研究の推薦、誤りの指摘、議論を歓迎します。[論文・ツール・デモを推薦する](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/issues/new/choose)か、[コントリビュートガイド](./CONTRIBUTING.ja.md)をご覧ください。[メール](mailto:jiangjin@stu.pku.edu.cn)または WeChat でもご連絡いただけます：
+    en: 'Suggestions, corrections and discussions are welcome. [Suggest a paper, tool or demo](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/issues/new/choose)
+      or read the [contribution guide](./CONTRIBUTING.md). You can also reach us by [email](mailto:jiangjin@stu.pku.edu.cn)
+      or WeChat:'
+    zh: 欢迎推荐工作、指出错误或一起讨论。可以[推荐论文、工具或 Demo](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/issues/new/choose)，或阅读[贡献指南](./CONTRIBUTING.zh-CN.md)。也可以通过[邮件](mailto:jiangjin@stu.pku.edu.cn)或微信联系我们：
+    ja: 研究の推薦、誤りの指摘、議論を歓迎します。[論文・ツール・デモを推薦する](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/issues/new/choose)か、[コントリビュートガイド](./CONTRIBUTING.ja.md)をご覧ください。[メール](mailto:jiangjin@stu.pku.edu.cn)または
+      WeChat でもご連絡いただけます：
   citation_title:
     en: Citation
     zh: 引用
@@ -119,7 +168,8 @@ text:
     zh: 许可证
     ja: ライセンス
   license:
-    en: This repository is released under the [MIT License](./LICENSE). Linked papers, code, datasets and media keep their own licenses.
+    en: This repository is released under the [MIT License](./LICENSE). Linked papers, code, datasets and media keep their
+      own licenses.
     zh: 本仓库采用 [MIT 许可证](./LICENSE)。所链接的论文、代码、数据集和媒体遵循各自的许可证。
     ja: 本リポジトリは [MIT ライセンス](./LICENSE) で公開しています。リンク先の論文・コード・データセット・メディアはそれぞれのライセンスに従います。
   hero_credit:
@@ -130,68 +180,285 @@ text:
     en: Last updated
     zh: 最后更新
     ja: 最終更新
-
+  source:
+    en: source
+    zh: 来源
+    ja: 資料
 stages:
-  - id: 1
-    name: {en: Visual as Feedback, zh: 视觉作为反馈, ja: フィードバックとしての視覚}
-    intro:
-      en: >-
-        The agent writes code, renders or runs what it built, **looks at the result**, and uses what it sees to choose
-        the next edit. Vision is feedback, not only input. Works are organized by what is built.
-      zh: >-
-        Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再根据看到的内容决定下一步修改。视觉是反馈，而不只是输入。本阶段按构建的对象（任务）组织。
-      ja: >-
-        エージェントはコードを書き、作ったものをレンダリングまたは実行し、**結果を見て**、見たものから次の修正を決めます。視覚は入力であるだけでなくフィードバックです。本段階は構築する対象（タスク）ごとに整理しています。
-    start_with: ["2502.18525", "2412.13810", "2608.26238", "2605.28258", "2605.07807"]
-    sections: ["1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7"]
-  - id: 2
-    name: {en: Orchestrating Models as Tools, zh: 把模型当作工具来编排, ja: モデルをツールとして編成する}
-    intro:
-      en: >-
-        The agent **calls other models through code** — image, video and world generators, perception and action
-        models — composes them into workflows, and revises those workflows from feedback. A work is placed here when its
-        main contribution is how models are chosen and combined. Works are organized by model type × task.
-      zh: >-
-        Agent **通过代码调用其他模型**——图像、视频和世界生成模型，以及感知和动作模型——把它们组合成工作流，并根据反馈修改工作流。主要贡献在于「怎样选择和组合模型」的工作放在这里。本阶段按「模型类型 × 任务」组织。
-      ja: >-
-        エージェントは**コードを通じて他のモデルを呼び出し**（画像・動画・世界の生成モデル、知覚モデル、行動モデル）、それらをワークフローに組み合わせ、フィードバックに基づいてワークフローを修正します。主な貢献が「モデルの選び方と組み合わせ方」にある研究をここに置きます。本段階は「モデルの種類 × タスク」で整理しています。
-    start_with: ["2609.24997", "2610.20571", "2610.26811", "2611.05275"]
-    sections: ["2.1", "2.2", "2.3", "2.4", "2.5", "2.6"]
-  - id: 3
-    name: {en: Bridging Digital & Physical Worlds, zh: 打通数字世界与物理世界, ja: デジタルと物理世界の架け橋}
-    intro:
-      en: >-
-        The loop reaches simulation and reality: the agent **acts and observes in the real world**, builds simulators
-        from real observations, and practises in simulation to become stronger — Real2Sim2Real. Works are organized by
-        research question: build verifiable environments → collect interaction experience → improve the agent.
-      zh: >-
-        闭环延伸到仿真与现实：Agent **在真实世界中行动和观察**，依据真实观测构建仿真器，并在仿真中练习来增强自身——即 Real2Sim2Real。本阶段按研究问题组织，主线是：构建可验证的环境 → 收集交互经验 → 提升 Agent。
-      ja: >-
-        ループはシミュレーションと現実へ広がります。エージェントは**現実世界で行動し観察し**、実観測からシミュレータを構築し、シミュレーションで練習して強くなります——Real2Sim2Real です。本段階は研究課題ごとに整理しており、検証可能な環境を構築 → インタラクション経験を収集 → エージェントを改善、という流れです。
-    start_with: ["2209.07753", "2611.01560", "2609.37089", "2610.10479", "2310.12931"]
-    sections: ["3.1", "3.2", "3.3", "3.4", "3.5", "3.6"]
-
+- id: 1
+  name:
+    en: Visual as Feedback
+    zh: 视觉作为反馈
+    ja: フィードバックとしての視覚
+  intro:
+    en: The agent writes code, renders or runs what it built, **looks at the result**, and uses what it sees to choose the
+      next edit. Vision is feedback, not only input. Works are organized by what is built.
+    zh: Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再根据看到的内容决定下一步修改。视觉是反馈，而不只是输入。本阶段按构建的对象（任务）组织。
+    ja: エージェントはコードを書き、作ったものをレンダリングまたは実行し、**結果を見て**、見たものから次の修正を決めます。視覚は入力であるだけでなくフィードバックです。本段階は構築する対象（タスク）ごとに整理しています。
+  start_with:
+  - '2502.18525'
+  - '2412.13810'
+  - '2608.26238'
+  - '2605.28258'
+  - '2605.07807'
+  sections:
+  - '1.1'
+  - '1.2'
+  - '1.3'
+  - '1.4'
+  - '1.5'
+  - '1.6'
+  - '1.7'
+- id: 2
+  name:
+    en: Orchestrating Models as Tools
+    zh: 把模型当作工具来编排
+    ja: モデルをツールとして編成する
+  intro:
+    en: The agent **calls other models through code** — image, video and world generators, perception and action models —
+      composes them into workflows, and revises those workflows from feedback. A work is placed here when its main contribution
+      is how models are chosen and combined. Works are organized by model type × task.
+    zh: Agent **通过代码调用其他模型**——图像、视频和世界生成模型，以及感知和动作模型——把它们组合成工作流，并根据反馈修改工作流。主要贡献在于「怎样选择和组合模型」的工作放在这里。本阶段按「模型类型 × 任务」组织。
+    ja: エージェントは**コードを通じて他のモデルを呼び出し**（画像・動画・世界の生成モデル、知覚モデル、行動モデル）、それらをワークフローに組み合わせ、フィードバックに基づいてワークフローを修正します。主な貢献が「モデルの選び方と組み合わせ方」にある研究をここに置きます。本段階は「モデルの種類
+      × タスク」で整理しています。
+  start_with:
+  - '2609.24997'
+  - '2610.20571'
+  - '2610.26811'
+  - '2611.05275'
+  sections:
+  - '2.1'
+  - '2.2'
+  - '2.3'
+  - '2.4'
+  - '2.5'
+  - '2.6'
+- id: 3
+  name:
+    en: Bridging Digital & Physical Worlds
+    zh: 打通数字世界与物理世界
+    ja: デジタルと物理世界の架け橋
+  intro:
+    en: 'The loop reaches simulation and reality: the agent **acts and observes in the real world**, builds simulators from
+      real observations, and practises in simulation to become stronger — Real2Sim2Real. Works are organized by research question:
+      build verifiable environments → collect interaction experience → improve the agent.'
+    zh: 闭环延伸到仿真与现实：Agent **在真实世界中行动和观察**，依据真实观测构建仿真器，并在仿真中练习来增强自身——即 Real2Sim2Real。本阶段按研究问题组织，主线是：构建可验证的环境 → 收集交互经验 → 提升 Agent。
+    ja: ループはシミュレーションと現実へ広がります。エージェントは**現実世界で行動し観察し**、実観測からシミュレータを構築し、シミュレーションで練習して強くなります——Real2Sim2Real です。本段階は研究課題ごとに整理しており、検証可能な環境を構築
+      → インタラクション経験を収集 → エージェントを改善、という流れです。
+  start_with:
+  - '2209.07753'
+  - '2611.01560'
+  - '2609.37089'
+  - '2610.10479'
+  - '2310.12931'
+  sections:
+  - '3.1'
+  - '3.2'
+  - '3.3'
+  - '3.4'
+  - '3.5'
+  - '3.6'
 sections:
-  "1.1": {en: "Web, UI and applications", zh: "网页、UI 与应用", ja: "Web・UI・アプリケーション", subs: [method, eval, tools], engines: [HTML, Three.js]}
-  "1.2": {en: "GUI and software training environments", zh: "GUI 与软件训练环境", ja: "GUI・ソフトウェア学習環境", subs: [method, eval, tools]}
-  "1.3": {en: "Charts, scientific visualization and editable graphics", zh: "图表、科学可视化与可编辑图形", ja: "チャート・科学可視化・編集可能なグラフィックス", subs: [method, eval, tools], engines: [D3, Mermaid]}
-  "1.4": {en: "Documents, slides, posters and code-driven media", zh: "文档、幻灯片、海报与代码驱动的媒体", ja: "文書・スライド・ポスター・コード駆動メディア", subs: [method, eval, tools], engines: [Manim]}
-  "1.5": {en: "3D and CAD", zh: "3D 与 CAD", ja: "3D と CAD", subs: [method, eval, tools], engines: [Blender Python API, OpenSCAD]}
-  "1.6": {en: "Games and executable game worlds", zh: "游戏与可执行游戏世界", ja: "ゲームと実行可能なゲーム世界", subs: [method, eval, tools], engines: [PixiJS, Godot]}
-  "1.7": {en: "Cross-task: visual evaluators, experience and training", zh: "跨任务：视觉评估器、经验与训练", ja: "タスク横断：視覚評価器・経験・学習", subs: [method, eval, tools]}
-  "2.1": {en: "Image generation models × image and visual design", zh: "图像生成模型 × 图像与视觉设计", ja: "画像生成モデル × 画像・ビジュアルデザイン", subs: [null, models]}
-  "2.2": {en: "Video generation models × video creation and editing", zh: "视频生成模型 × 视频创作与编辑", ja: "動画生成モデル × 動画制作・編集", subs: [null, models]}
-  "2.3": {en: "3D generation models × 3D assets and scenes", zh: "3D 生成模型 × 3D 资产与场景", ja: "3D 生成モデル × 3D アセット・シーン", subs: [null, models]}
-  "2.4": {en: "Generative world models × interactive environments", zh: "生成式世界模型 × 可交互环境", ja: "生成的世界モデル × インタラクティブ環境", subs: [null, models]}
-  "2.5": {en: "Perception models × scene understanding and reconstruction", zh: "感知模型 × 场景理解与重建", ja: "知覚モデル × シーン理解・再構成", subs: [null, models]}
-  "2.6": {en: "Action models × robot manipulation", zh: "动作模型 × 机器人操作", ja: "行動モデル × ロボット操作", subs: [null, models]}
-  "3.1": {en: "Embodied harnesses", zh: "具身框架（Harness）", ja: "身体性ハーネス", subs: [tools-interfaces, delegation, capability-eval, skills-runtime]}
-  "3.2": {en: "Simulator construction", zh: "仿真器构建", ja: "シミュレータ構築", subs: [null], engines: [MuJoCo]}
-  "3.3": {en: "Simulator quality evaluation", zh: "仿真器质量评估", ja: "シミュレータ品質評価", subs: [null]}
-  "3.4": {en: "Data", zh: "数据", ja: "データ", subs: [real-data, synthetic-data]}
-  "3.5": {en: "Training and capability improvement", zh: "训练与能力提升", ja: "学習と能力向上", subs: [program-policy, experience-skill, post-training]}
-  "3.6": {en: "Physical applications and experiments", zh: "物理应用与实验", ja: "物理応用と実験", subs: [robot-interaction, experiments, physical-design]}
-
+  '1.1':
+    en: Web, UI and applications
+    zh: 网页、UI 与应用
+    ja: Web・UI・アプリケーション
+    subs:
+    - method
+    - eval
+    - tools
+    engines:
+    - HTML
+    - Three.js
+    - CSS
+    - SVG
+    - Canvas
+    - WebGL
+    - WebGPU
+  '1.2':
+    en: GUI and software training environments
+    zh: GUI 与软件训练环境
+    ja: GUI・ソフトウェア学習環境
+    subs:
+    - method
+    - eval
+    - tools
+  '1.3':
+    en: Charts, scientific visualization and editable graphics
+    zh: 图表、科学可视化与可编辑图形
+    ja: チャート・科学可視化・編集可能なグラフィックス
+    subs:
+    - method
+    - eval
+    - tools
+    engines:
+    - D3
+    - Mermaid
+    - HTML
+    - CSS
+    - SVG
+    - Canvas
+    - WebGL
+    - WebGPU
+    - Vega-Lite
+    - Plotly.js
+    - Graphviz
+    - PlantUML
+    - Typst
+    - TikZ
+  '1.4':
+    en: Documents, slides, posters and code-driven media
+    zh: 文档、幻灯片、海报与代码驱动的媒体
+    ja: 文書・スライド・ポスター・コード駆動メディア
+    subs:
+    - method
+    - eval
+    - tools
+    engines:
+    - Manim
+    - Mermaid
+    - Graphviz
+    - PlantUML
+    - Typst
+    - TikZ
+    - Remotion
+    - FFmpeg
+  '1.5':
+    en: 3D and CAD
+    zh: 3D 与 CAD
+    ja: 3D と CAD
+    subs:
+    - method
+    - eval
+    - tools
+    engines:
+    - Blender Python API
+    - OpenSCAD
+    - Three.js
+    - Babylon.js
+    - React Three Fiber
+    - CadQuery
+    - build123d
+    - FreeCAD
+    - Zoo/KCL
+  '1.6':
+    en: Games and executable game worlds
+    zh: 游戏与可执行游戏世界
+    ja: ゲームと実行可能なゲーム世界
+    subs:
+    - method
+    - eval
+    - tools
+    engines:
+    - PixiJS
+    - Godot
+    - Phaser
+    - Unity
+    - Unreal Engine
+  '1.7':
+    en: 'Cross-task: visual evaluators, experience and training'
+    zh: 跨任务：视觉评估器、经验与训练
+    ja: タスク横断：視覚評価器・経験・学習
+    subs:
+    - method
+    - eval
+    - tools
+  '2.1':
+    en: Image generation models × image and visual design
+    zh: 图像生成模型 × 图像与视觉设计
+    ja: 画像生成モデル × 画像・ビジュアルデザイン
+    subs:
+    - null
+    - models
+  '2.2':
+    en: Video generation models × video creation and editing
+    zh: 视频生成模型 × 视频创作与编辑
+    ja: 動画生成モデル × 動画制作・編集
+    subs:
+    - null
+    - models
+  '2.3':
+    en: 3D generation models × 3D assets and scenes
+    zh: 3D 生成模型 × 3D 资产与场景
+    ja: 3D 生成モデル × 3D アセット・シーン
+    subs:
+    - null
+    - models
+  '2.4':
+    en: Generative world models × interactive environments
+    zh: 生成式世界模型 × 可交互环境
+    ja: 生成的世界モデル × インタラクティブ環境
+    subs:
+    - null
+    - models
+  '2.5':
+    en: Perception models × scene understanding and reconstruction
+    zh: 感知模型 × 场景理解与重建
+    ja: 知覚モデル × シーン理解・再構成
+    subs:
+    - null
+    - models
+  '2.6':
+    en: Action models × robot manipulation
+    zh: 动作模型 × 机器人操作
+    ja: 行動モデル × ロボット操作
+    subs:
+    - null
+    - models
+  '3.1':
+    en: Embodied harnesses
+    zh: 具身框架（Harness）
+    ja: 身体性ハーネス
+    subs:
+    - tools-interfaces
+    - delegation
+    - capability-eval
+    - skills-runtime
+    engines:
+    - MuJoCo
+    - Isaac Sim
+    - Gazebo
+    - PyBullet
+  '3.2':
+    en: Simulator construction
+    zh: 仿真器构建
+    ja: シミュレータ構築
+    subs:
+    - null
+    engines:
+    - MuJoCo
+    - Isaac Sim
+    - Gazebo
+    - PyBullet
+  '3.3':
+    en: Simulator quality evaluation
+    zh: 仿真器质量评估
+    ja: シミュレータ品質評価
+    subs:
+    - null
+  '3.4':
+    en: Data
+    zh: 数据
+    ja: データ
+    subs:
+    - real-data
+    - synthetic-data
+  '3.5':
+    en: Training and capability improvement
+    zh: 训练与能力提升
+    ja: 学習と能力向上
+    subs:
+    - program-policy
+    - experience-skill
+    - post-training
+  '3.6':
+    en: Physical applications and experiments
+    zh: 物理应用与实验
+    ja: 物理応用と実験
+    subs:
+    - robot-interaction
+    - experiments
+    - physical-design
 engines:
   HTML: https://developer.mozilla.org/en-US/docs/Web/HTML
   Three.js: https://threejs.org/docs/
@@ -203,69 +470,209 @@ engines:
   PixiJS: https://pixijs.com/
   Godot: https://docs.godotengine.org/en/stable/
   MuJoCo: https://mujoco.readthedocs.io/en/stable/overview.html
-
-# Stage 2 sections link to works placed elsewhere; Plan-B works are linked from Stage 3 via `see_also` in works.yaml.
+  CSS: https://developer.mozilla.org/en-US/docs/Web/CSS
+  SVG: https://developer.mozilla.org/en-US/docs/Web/SVG
+  Canvas: https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
+  WebGL: https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API
+  WebGPU: https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API
+  Phaser: https://phaser.io/
+  Babylon.js: https://doc.babylonjs.com/
+  React Three Fiber: https://r3f.docs.pmnd.rs/getting-started/introduction
+  Vega-Lite: https://vega.github.io/vega-lite/
+  Plotly.js: https://plotly.com/javascript/
+  Graphviz: https://graphviz.org/documentation/
+  PlantUML: https://plantuml.com/
+  Typst: https://typst.app/docs/
+  TikZ: https://tikz.dev/
+  CadQuery: https://cadquery.readthedocs.io/en/latest/
+  build123d: https://build123d.readthedocs.io/en/latest/
+  FreeCAD: https://wiki.freecad.org/Power_users_hub
+  Zoo/KCL: https://zoo.dev/docs/kcl
+  Unity: https://docs.unity3d.com/Manual/index.html
+  Unreal Engine: https://dev.epicgames.com/documentation/en-us/unreal-engine
+  Remotion: https://www.remotion.dev/docs/
+  FFmpeg: https://ffmpeg.org/documentation.html
+  Isaac Sim: https://docs.isaacsim.omniverse.nvidia.com/latest/index.html
+  Gazebo: https://gazebosim.org/docs/latest/getstarted/
+  PyBullet: https://github.com/bulletphysics/bullet3
 see_also:
-  "2.1": ["2610.13502", "2609.04034"]
-  "2.3": ["2610.32978", "2602.10116", "2310.18308", "2605.21572", "2609.26793", "2610.11215", "system:3agamefactory", "2608.30821"]
-  "2.5": ["2610.21498", "2610.34745", "2609.37089", "2610.01863", "2305.11176", "system:plumb"]
-  "2.6": ["2610.42053", "2607.08448", "system:the-harness-corl2026", "2610.21453", "2611.03585"]
-
+  '2.1':
+  - '2610.13502'
+  - '2609.04034'
+  '2.3':
+  - '2610.32978'
+  - '2602.10116'
+  - '2310.18308'
+  - '2605.21572'
+  - '2609.26793'
+  - '2610.11215'
+  - system:3agamefactory
+  - '2608.30821'
+  '2.5':
+  - '2610.21498'
+  - '2610.34745'
+  - '2609.37089'
+  - '2610.01863'
+  - '2305.11176'
+  - system:plumb
+  '2.6':
+  - '2610.42053'
+  - '2607.08448'
+  - system:the-harness-corl2026
+  - '2610.21453'
+  - '2611.03585'
 related_lists:
-  - name: Awesome Multimodal LLM for Code
-    url: https://github.com/xjywhu/Awesome-Multimodal-LLM-for-Code
-    en: The closest broad collection, covering both one-shot and agentic multimodal code generation.
-    zh: 最接近的宽口径合集，同时覆盖一次性与 Agentic 多模态代码生成。
-    ja: 最も近い幅広いコレクションで、一回生成型とエージェント型の両方のマルチモーダルコード生成を扱います。
-  - name: Awesome Agentic Artifact Creation
-    url: https://github.com/GeminiLight/awesome-agentic-artifact-creation
-    en: A broader artifact-centric list spanning code, visual media, audio, video and 3D.
-    zh: 更广的产物中心合集，覆盖代码、视觉媒体、音频、视频和 3D。
-    ja: コード、視覚メディア、音声、動画、3D にわたる、成果物中心のより広いリストです。
-  - name: Awesome Agentic Coding Papers
-    url: https://github.com/archersama/awesome-agentic-coding-papers
-    en: Coding-agent research with less emphasis on multimodal execution feedback.
-    zh: Coding Agent 研究合集，对多模态执行反馈的强调较少。
-    ja: コーディングエージェント研究のリストで、マルチモーダルな実行フィードバックへの比重は小さめです。
-  - name: Awesome Code Agents
-    url: https://github.com/EuniAI/awesome-code-agents
-    en: Coding agents organized by the artifacts and environments they build, including web, CAD, 3D, graphics and games.
-    zh: 按产物和环境组织 Coding Agent，包括 Web、CAD、3D、图形和游戏。
-    ja: Web、CAD、3D、グラフィックス、ゲームなど、構築する成果物と環境ごとにコーディングエージェントを整理しています。
-  - name: Awesome Agentic MLLMs
-    url: https://github.com/HJYao00/Awesome-Agentic-MLLMs
-    en: General multimodal-agent methods, benchmarks and datasets.
-    zh: 通用多模态 Agent 方法、Benchmark 与数据集。
-    ja: 汎用マルチモーダルエージェントの手法、ベンチマーク、データセットです。
-  - name: Awesome Multimodal Agent
-    url: https://github.com/OpenEnvision/Awesome-Multimodal-Agent
-    en: A broad collection spanning visual agents, agentic AIGC, CAD and 3D.
-    zh: 覆盖视觉 Agent、Agentic AIGC、CAD 与 3D 的宽口径合集。
-    ja: 視覚エージェント、エージェント型 AIGC、CAD、3D にわたる幅広いコレクションです。
-  - name: Awesome Multimodal Agent Benchmarks
-    url: https://github.com/PhiloLabs/awesome-multimodal-agent-benchmarks
-    en: Benchmark-focused multimodal-agent resources.
-    zh: 以多模态 Agent Benchmark 为核心的资源。
-    ja: ベンチマークを中心としたマルチモーダルエージェントのリソースです。
-  - name: Awesome LLM SWE-bench
-    url: https://github.com/wasiahmad/Awesome-LLM-SWE-Bench
-    en: Repository-level software-engineering agents and the SWE-bench ecosystem.
-    zh: 仓库级软件工程 Agent 与 SWE-bench 生态。
-    ja: リポジトリ単位のソフトウェア工学エージェントと SWE-bench エコシステムです。
-  - name: Awesome Issue Solving
-    url: https://github.com/ZhonghaoJiang/Awesome-Issue-Solving
-    en: Issue understanding, localization, patching and evaluation resources.
-    zh: Issue 理解、定位、补丁与评测资源。
-    ja: Issue の理解、特定、パッチ作成、評価に関するリソースです。
-
+- name: Awesome Multimodal LLM for Code
+  url: https://github.com/xjywhu/Awesome-Multimodal-LLM-for-Code
+  en: The closest broad collection, covering both one-shot and agentic multimodal code generation.
+  zh: 最接近的宽口径合集，同时覆盖一次性与 Agentic 多模态代码生成。
+  ja: 最も近い幅広いコレクションで、一回生成型とエージェント型の両方のマルチモーダルコード生成を扱います。
+- name: Awesome Agentic Artifact Creation
+  url: https://github.com/GeminiLight/awesome-agentic-artifact-creation
+  en: A broader artifact-centric list spanning code, visual media, audio, video and 3D.
+  zh: 更广的产物中心合集，覆盖代码、视觉媒体、音频、视频和 3D。
+  ja: コード、視覚メディア、音声、動画、3D にわたる、成果物中心のより広いリストです。
+- name: Awesome Agentic Coding Papers
+  url: https://github.com/archersama/awesome-agentic-coding-papers
+  en: Coding-agent research with less emphasis on multimodal execution feedback.
+  zh: Coding Agent 研究合集，对多模态执行反馈的强调较少。
+  ja: コーディングエージェント研究のリストで、マルチモーダルな実行フィードバックへの比重は小さめです。
+- name: Awesome Code Agents
+  url: https://github.com/EuniAI/awesome-code-agents
+  en: Coding agents organized by the artifacts and environments they build, including web, CAD, 3D, graphics and games.
+  zh: 按产物和环境组织 Coding Agent，包括 Web、CAD、3D、图形和游戏。
+  ja: Web、CAD、3D、グラフィックス、ゲームなど、構築する成果物と環境ごとにコーディングエージェントを整理しています。
+- name: Awesome Agentic MLLMs
+  url: https://github.com/HJYao00/Awesome-Agentic-MLLMs
+  en: General multimodal-agent methods, benchmarks and datasets.
+  zh: 通用多模态 Agent 方法、Benchmark 与数据集。
+  ja: 汎用マルチモーダルエージェントの手法、ベンチマーク、データセットです。
+- name: Awesome Multimodal Agent
+  url: https://github.com/OpenEnvision/Awesome-Multimodal-Agent
+  en: A broad collection spanning visual agents, agentic AIGC, CAD and 3D.
+  zh: 覆盖视觉 Agent、Agentic AIGC、CAD 与 3D 的宽口径合集。
+  ja: 視覚エージェント、エージェント型 AIGC、CAD、3D にわたる幅広いコレクションです。
+- name: Awesome Multimodal Agent Benchmarks
+  url: https://github.com/PhiloLabs/awesome-multimodal-agent-benchmarks
+  en: Benchmark-focused multimodal-agent resources.
+  zh: 以多模态 Agent Benchmark 为核心的资源。
+  ja: ベンチマークを中心としたマルチモーダルエージェントのリソースです。
+- name: Awesome LLM SWE-bench
+  url: https://github.com/wasiahmad/Awesome-LLM-SWE-Bench
+  en: Repository-level software-engineering agents and the SWE-bench ecosystem.
+  zh: 仓库级软件工程 Agent 与 SWE-bench 生态。
+  ja: リポジトリ単位のソフトウェア工学エージェントと SWE-bench エコシステムです。
+- name: Awesome Issue Solving
+  url: https://github.com/ZhonghaoJiang/Awesome-Issue-Solving
+  en: Issue understanding, localization, patching and evaluation resources.
+  zh: Issue 理解、定位、补丁与评测资源。
+  ja: Issue の理解、特定、パッチ作成、評価に関するリソースです。
 contact:
   wechat_image: assets/wechat-young-j.jpg
-
-citation: |
-  @misc{jiang2026awesomemultimodalagenticcoding,
-    author       = {Jiang, Jin},
-    title        = {Awesome Multimodal Agentic Coding},
-    year         = {2026},
-    publisher    = {GitHub},
-    howpublished = {\url{https://github.com/jiangjin1999/awesome-multimodal-agentic-coding}}
-  }
+citation: "@misc{jiang2026awesomemultimodalagenticcoding,\n  author       = {Jiang, Jin},\n  title        = {Awesome Multimodal\
+  \ Agentic Coding},\n  year         = {2026},\n  publisher    = {GitHub},\n  howpublished = {\\url{https://github.com/jiangjin1999/awesome-multimodal-agentic-coding}}\n\
+  }\n"
+layout: three-stages-v1
+anchor_aliases:
+  multimodal-agentic-coding-trilogy: contents
+  trilogy-visual-feedback: stage-1
+  trilogy-models-as-tools: stage-2
+  trilogy-digital-physical: stage-3
+  start-here: contents
+  topic-map: contents
+  motivation: contents
+  definition-and-scope: contents
+  contribution-tags: contents
+  foundations: contents
+  section-1-1: contents
+  section-1-2: stage-1
+  section-1-3: s1-7
+  visual-diff: s1-7
+  section-1-4: stage-2
+  methods-and-systems: stage-2
+  paper-and-project-list: stage-1
+  general: stage-2
+  software-engineering: s1-1
+  web-ui-app: s1-1
+  methods-software: s1-1
+  methods-gui-environments: s1-2
+  visualization: s1-3
+  svg-diagrams: s1-3
+  methods-graphics: s1-3
+  documents-video: s1-4
+  methods-media: s1-4
+  3d-cad: s1-5
+  methods-cad-3d: s1-5
+  methods-physical-assets: s3-2
+  games: s1-6
+  methods-games: s1-6
+  work-3agamefactory: paper-system-3agamefactory
+  work-vibegame: paper-system-vibegame
+  world-models: s3-2
+  methods-world-models: s3-2
+  methods-real-to-sim: s3-2
+  robotics: s3-5
+  methods-robot-programs: s3-5
+  methods-real2sim2real: s3-6
+  methods-experience: s3-5
+  benchmarks-and-evaluation: s1-7
+  evaluation-software: s1-1
+  evaluation-gui-environments: s1-2
+  evaluation-graphics: s1-3
+  evaluation-media: s1-4
+  evaluation-cad-3d: s1-5
+  work-blenderworld: paper-system-blenderworld
+  evaluation-physical-assets: s3-3
+  evaluation-games: s1-6
+  evaluation-world-models: s3-3
+  evaluation-real-to-sim: s3-3
+  evaluation-robot-programs: s3-5
+  evaluation-real2sim2real: s3-3
+  evaluation-experience: s3-5
+  section-3-13: s1-7
+  data-and-learning-resources: s1-7
+  data-software: s1-1
+  data-gui-environments: s1-2
+  data-graphics: s1-3
+  data-media: s1-4
+  data-cad-3d: s1-5
+  data-physical-assets: s3-4
+  data-games: s1-6
+  data-world-models: s3-2
+  data-real-to-sim: s3-4
+  data-robot-programs: s3-4
+  data-real2sim2real: s3-4
+  data-experience: s3-4
+  capabilities-and-infrastructure: stage-2
+  section-5-1: s2-5
+  models-as-tools: stage-2
+  section-5-2: stage-2
+  execution-and-rendering-engines: stage-1
+  section-5-3: stage-1
+  section-5-4: s2-6
+  skills-and-tool-bridges: s3-1
+  section-5-5: s3-1
+  research-opportunities: s1-7
+  research-frontiers: s1-7
+  section-6-1: s1-7
+  section-6-2: s3-3
+  section-6-3: s3-5
+  section-6-4: s3-6
+  section-6-5: s3-4
+  adjacent-foundations: contents
+  application-domains: contents
+  medical-visualization: s1-5
+  application-paper-2509-14778: paper-2509-14778
+  application-paper-2404-01063: paper-2404-01063
+  architecture-construction: s1-5
+  education-explanatory-media: s1-4
+  scientific-reproduction: s1-7
+  application-paper-2603-00805: paper-2603-00805
+  community-and-practice: s1-5
+  selected-cases-and-demos: s1-5
+  perspectives: s1-7
+  surveys-and-related-collections: related
+  contact-and-collaboration: contact
+  contributing: contact
+  tool-orkas-uidesigner: paper-res-orkas-uidesigner
+  tool-agent-visual-diff: paper-res-agent-visual-diff

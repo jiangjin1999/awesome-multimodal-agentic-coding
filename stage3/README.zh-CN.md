@@ -6,7 +6,7 @@
 
 多模态 Coding Agent 如何获得物理交互能力，构建可验证的环境，并从交互经验中改进程序、技能和模型？本专题按六个相互连接的研究问题组织早期基础与近期进展，以机器人操作为重点，也覆盖直接相关的科学实验和设计制造。
 
-**文献截止：2026-11-13。** [返回完整研究地图](../README.zh-CN.md#topic-map)。
+**文献截止：2026-11-13。** [返回完整研究地图](../README.zh-CN.md#contents)。
 
 | 研究问题 | 主条目 | 连接 |
 |---|---:|---|
@@ -40,7 +40,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 ### 可组合的执行资源
 
-以下已有[运行资源](../README.zh-CN.md#section-5-5)与[模型能力](../README.zh-CN.md#section-5-4)保留 **Resource** 身份。可调用组件可以支持 Harness，但不等于组件自身实现了 Agent 学习。
+以下已有[运行资源](../README.zh-CN.md#s3-1)与[模型能力](../README.zh-CN.md#s2-6)保留 **Resource** 身份。可调用组件可以支持 Harness，但不等于组件自身实现了 Agent 学习。
 
 | 资源 | 接口与用途 | 证据边界 |
 |---|---|---|
@@ -1255,11 +1255,11 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 | 资源 | 对构建流程的贡献 | 可用性与含义 |
 |---|---|---|
-| [UltraTex](../README.zh-CN.md#models-as-tools) · [论文](https://arxiv.org/abs/2609.23169) · [代码](https://github.com/YiboZ2001/UltraTex) | 参考图与 mesh 几何线索 → 2K 多视图纹理及 PBR 扩展 | 表面外观组件；方法附有代码与 G-buffer 数据 |
-| [MIKU](../README.zh-CN.md#models-as-tools) · [论文](https://arxiv.org/abs/2611.07354) | 参考图与几何 → 对齐的 albedo、metallic、roughness 贴图 | 论文描述的材质能力；尚未链接代码与权重，生成贴图不是测得的物理属性 |
-| [WorldFoundry](../README.zh-CN.md#skills-and-tool-bridges) · [源码](https://github.com/OpenEnvision/WorldFoundry) | CLI、Studio 与适配器 → 模型执行、产物和评估流程 | 提供共享基础设施，区分模型依赖与就绪状态；本身不证明场景物理精度 |
-| [Unreal Engine 5.9 MegaJam Preview](../README.zh-CN.md#skills-and-tool-bridges) · [官方公告](https://forums.unrealengine.com/t/unreal-engine-5-9-megajam-preview/2852840) | Unreal MCP 与 Canvas → 编辑器操作、渲染／调试反馈及生成模型组合 | 实验性平台接口；属于集成公告，不是自主构建评测 |
-| [blender-agent-skills](../README.zh-CN.md#skills-and-tool-bridges) · [源码](https://github.com/oh-ashen-one/blender-agent-skills) | 参考与场景 → 分阶段构建、视觉关卡、绑定及导出检查 | 五套社区专家流程；属于可复用外部技能，未证明模型学习 |
+| [UltraTex](../README.zh-CN.md#paper-res-ultratex-2k-multi-view-diffusion) · [论文](https://arxiv.org/abs/2609.23169) · [代码](https://github.com/YiboZ2001/UltraTex) | 参考图与 mesh 几何线索 → 2K 多视图纹理及 PBR 扩展 | 表面外观组件；方法附有代码与 G-buffer 数据 |
+| [MIKU](../README.zh-CN.md#paper-res-miku) · [论文](https://arxiv.org/abs/2611.07354) | 参考图与几何 → 对齐的 albedo、metallic、roughness 贴图 | 论文描述的材质能力；尚未链接代码与权重，生成贴图不是测得的物理属性 |
+| [WorldFoundry](../README.zh-CN.md#paper-res-worldfoundry) · [源码](https://github.com/OpenEnvision/WorldFoundry) | CLI、Studio 与适配器 → 模型执行、产物和评估流程 | 提供共享基础设施，区分模型依赖与就绪状态；本身不证明场景物理精度 |
+| [Unreal Engine 5.9 MegaJam Preview](../README.zh-CN.md#paper-res-unreal-engine-5-9-megajam-preview) · [官方公告](https://forums.unrealengine.com/t/unreal-engine-5-9-megajam-preview/2852840) | Unreal MCP 与 Canvas → 编辑器操作、渲染／调试反馈及生成模型组合 | 实验性平台接口；属于集成公告，不是自主构建评测 |
+| [blender-agent-skills](../README.zh-CN.md#paper-res-blender-agent-skills) · [源码](https://github.com/oh-ashen-one/blender-agent-skills) | 参考与场景 → 分阶段构建、视觉关卡、绑定及导出检查 | 五套社区专家流程；属于可复用外部技能，未证明模型学习 |
 
 <a id="work-2611-11344"></a>
 <!-- stage3-record: {"id": "2611.11344", "scope": "Adjacent", "section": 2} -->
@@ -3146,7 +3146,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-14` · Zhejiang University; Alibaba Token Hub, Alibaba Group; The Chinese University of Hong Kong; Fudan University; National University of Singapore · **Core**
 
-[完整书目](../README.zh-CN.md#work-blenderworld) · [证据 1](https://arxiv.org/abs/2610.23986) · [证据 2](https://arxiv.org/html/2610.23986) · [证据 3](https://blenderworld.github.io/)
+[完整书目](../README.zh-CN.md#paper-system-blenderworld) · [证据 1](https://arxiv.org/abs/2610.23986) · [证据 2](https://arxiv.org/html/2610.23986) · [证据 3](https://blenderworld.github.io/)
 
 提供来自建筑、产品、自然环境和科学可视化的 3D 创作任务，让 Agent 根据文字、图片、视频或规格文件，用 Blender 创建或编辑可复用的场景。评估时结合多视角渲染、原生场景检查和逐任务要求，判断最终作品是否完成创作意图。
 

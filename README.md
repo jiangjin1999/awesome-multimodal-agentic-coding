@@ -46,12 +46,12 @@ Enable agents to **organize and combine model capabilities**, expanding their ab
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![Collaborate](https://img.shields.io/badge/Collaborate-Let's%20build%20together-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-209-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-212-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-0969DA?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-switch-6E7781?style=flat-square)](./README.zh-CN.md)
 
-**Last updated: 2026-11-12**
+**Last updated: 2026-11-13**
 
 </div>
 
@@ -884,6 +884,15 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 
 **Connect:** [3.4 Document and visual-media evaluation](#evaluation-media) · [4.4 Documents, media assets, and construction/editing traces](#data-media) · [2.3 Charts, scientific visualization, and editable graphics](#methods-graphics) · [2.12 Learning from construction and interaction experience](#methods-experience) · [5.2 Program, geometry, material, and visual-media generation/editing](#section-5-2)
 
+- [PhysOPSD](#paper-2611-12411) · **Core** · [2.12](#methods-experience) — Uses repaired simulation programs as training privilege for simulation-free video generation.
+
+<a id="paper-2610-40754"></a>
+<!-- mmac-record: {"id": "2610.40754", "scope": "Core", "primary": "2.4", "task": 4} -->
+
+- `arXiv 2026.10` **DyCraft: An Agentic System for Long-Horizon 4D Scene Generation**. [[paper]](https://arxiv.org/abs/2610.40754) [[project]](https://dy-craft.github.io/) [[code]](https://github.com/jefftan969/dycraft) [[data]](https://huggingface.co/datasets/jefftan969/dycraft-films) — `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > Builds articulated CAD scenes and long-horizon Blender animations through storyboard checks, motion tools and render/spatial diagnostics that guide repeated program repair.<br>
+  > **Verification:** 24 multi-shot briefs · human preference and per-frame penetration/support diagnostics · long-horizon tool ablations; rendered scenes, not hardware trials.
+
 - [Video-Coder](#paper-2611-09894) · **Core** · [2.12](#methods-experience) — Executable scene drafts guide downstream video synthesis after the coding agent has inspected and revised rendered frames.
 
 - [ManimCode](#paper-2611-08294) · **Core** · [2.12](#methods-experience) — Educational-animation code generation with visual self-correction.
@@ -1073,6 +1082,8 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 **Boundary.** CAD design constraints differ from scene composition. Physical usability belongs in 2.6; observation-grounded simulation reconstruction belongs in 2.9.
 
 **Connect:** [3.5 Procedural 3D and CAD benchmarks](#evaluation-cad-3d) · [4.5 Procedural 3D and CAD data: requirements, programs, and assets](#data-cad-3d) · [2.6 Physical asset construction and diagnosis](#methods-physical-assets) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [5.3 Execution, rendering, simulation, and automation interfaces](#section-5-3)
+
+- [BlenderFORGE](#paper-2611-10768) · **Core** · [2.12](#methods-experience) — Learns reactive editing of explicit Blender scenes through program execution and rendered feedback.
 
 <a id="paper-2611-08175"></a>
 <!-- mmac-record: {"id": "2611.08175", "scope": "Core", "primary": "2.5", "task": 5} -->
@@ -2047,6 +2058,20 @@ A visual diff identifies the two visual outputs being compared and reports a spe
 
 **Connect:** [3.12 Experience learning and cross-task generalization evaluation](#evaluation-experience) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience) · [2.2 GUI and software training-environment synthesis](#methods-gui-environments) · [5.5 Skills, tool bridges, and reusable workflows](#section-5-5) · [6.5 From construction experience to transferable capability](#section-6-5)
 
+<a id="paper-2611-12411"></a>
+<!-- mmac-record: {"id": "2611.12411", "scope": "Core", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.11` **PhysOPSD: Code as Privilege for Physically Plausible Video Generation**. [[paper]](https://arxiv.org/abs/2611.12411) [[project]](https://haroldchen19.github.io/PhysOPSD-site/) — `[Method]` · `[Training]` `[Data Curation]` `[Verification]` · **Core**
+  > Repairs executable scene programs using preview frames and physical diagnostics, then distills their rendered drafts and controlled variants into video generators that run without simulation at inference.<br>
+  > **Verification:** VideoPhy-2, PhyGround and VBench · privilege/variation ablations · Core loop belongs to the data-construction engine, not the deployed video generator.
+
+<a id="paper-2611-10768"></a>
+<!-- mmac-record: {"id": "2611.10768", "scope": "Core", "primary": "2.12", "task": 12} -->
+
+- `NeurIPS 2026` **BlenderFORGE: Framework for Optimizing Reactive 3D-Graphics Editing Ability of MLLMs**. [[paper]](https://arxiv.org/abs/2611.10768) [[project]](https://sensetime-fvg.github.io/BlenderFORGE/) — `[Method]` · `[Training]` `[Data Curation]` `[Environment]` `[Verification]` · **Core**
+  > Trains open-weight Blender editing agents with teacher trajectories and sandbox-rewarded multi-turn RL, interleaving bpy execution with rendered observations to improve scene edits.<br>
+  > **Verification:** Four editing families · SFT/RL ablations · held-out camera and BlenderGym transfer; reported metrics exclude timeout/server failures.
+
 <a id="paper-2611-12885"></a>
 <!-- mmac-record: {"id": "2611.12885", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
 
@@ -2519,6 +2544,10 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 
 **Connect:** [2.4 Documents and visual media](#methods-media) · [4.4 Documents, media assets, and construction/editing traces](#data-media) · [3.3 Chart, scientific visualization, and graphics-editing evaluation](#evaluation-graphics) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
 
+- [PhysOPSD](#paper-2611-12411) · **Core** · [2.12](#methods-experience) — Measures video physical plausibility and general quality with privilege and controlled-variation ablations.
+
+- [DyCraft](#paper-2610-40754) · **Core** · [2.4](#methods-media) — Evaluates long-horizon films through human preference and frame-level physical-error checks.
+
 <a id="paper-2611-13576"></a>
 <!-- mmac-record: {"id": "2611.13576", "scope": "Adjacent", "primary": "3.4", "task": 4} -->
 
@@ -2612,6 +2641,8 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 **Boundary.** Shape distance does not capture all constraints or design intent. CAD, scene programs, and GUI modeling require matched inputs and action permissions; broader engineering benchmarks also cover other domains.
 
 **Connect:** [2.5 Procedural 3D and CAD construction](#methods-cad-3d) · [4.5 Procedural 3D and CAD data: requirements, programs, and assets](#data-cad-3d) · [3.6 Physical asset construction and usability evaluation](#evaluation-physical-assets) · [3.13 Test, reward, and evaluator reliability](#section-3-13)
+
+- [BlenderFORGE](#paper-2611-10768) · **Core** · [2.12](#methods-experience) — Tests four scene-editing families and transfer across cameras and BlenderGym tasks.
 
 <a id="paper-2611-02659"></a>
 <!-- mmac-record: {"id": "2611.02659", "scope": "Adjacent", "primary": "3.5", "task": 5} -->
@@ -3029,7 +3060,7 @@ Benchmark contributions and experimental protocols are distinguished below. Comp
 <a id="paper-2610-04432"></a>
 <!-- mmac-record: {"id": "2610.04432", "scope": "Core", "primary": "3.9", "task": 9} -->
 
-- `arXiv 2026.10` **Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos**. [[paper]](https://arxiv.org/abs/2610.04432) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]` · **Core**
+- `arXiv 2026.10` **Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos**. [[paper]](https://arxiv.org/abs/2610.04432) [[project]](https://aetherlabsai.github.io/Video2World) [[code]](https://github.com/AetherLabsAI/Video2World) [[data]](https://huggingface.co/datasets/AetherLabs-AI/Video2World) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]` · **Core**
   > Benchmarks agents that reconstruct environment and robot-control programs from embodied videos, inspect their own physical rollouts, and revise both before hidden geometry, dynamics, and task evaluation.<br>
   > **Verification:** Build rate · geometric fidelity · object-motion fidelity · physical task progress and success.
 
@@ -3453,6 +3484,10 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Connect:** [2.4 Documents and visual media](#methods-media) · [3.4 Document and visual-media evaluation](#evaluation-media) · [4.3 Chart data, graphics programs, and edit records](#data-graphics) · [4.12 Cross-task construction, repair, and skill-learning resources](#data-experience)
 
+- [PhysOPSD](#paper-2611-12411) · **Core** · [2.12](#methods-experience) — Constructs aligned programs, rendered drafts, physical metadata and controlled variants; release remains forthcoming.
+
+- [DyCraft](#paper-2610-40754) · **Core** · [2.4](#methods-media) — Releases 24 films with Blender projects, plans and briefs, subject to per-asset licenses.
+
 - [PhyRubric](#paper-2611-13576) · **Adjacent** · [3.4](#evaluation-media) — Releases rubric-grounded video benchmark and training data with item-level evidence.
 
 - [MotionGraphicsBench](#paper-2611-10592) · **Adjacent** · [3.4](#evaluation-media) — Publishes 100 tasks with SVG inputs and verification programs, plus 53,180 output records with evaluation and human-review fields.
@@ -3503,6 +3538,8 @@ This is a research-resource index, not a claim that every linked paper releases 
 **Boundary.** Meshes, B-reps, parametric programs, and scene code provide different supervision. Matching final geometry does not ensure matching design intent.
 
 **Connect:** [2.5 Procedural 3D and CAD construction](#methods-cad-3d) · [3.5 Procedural 3D and CAD benchmarks](#evaluation-cad-3d) · [4.6 Physical assets, parameters, and diagnostic interactions](#data-physical-assets) · [4.9 Real-to-Sim observation, simulation, and interaction correspondences](#data-real-to-sim)
+
+- [BlenderFORGE](#paper-2611-10768) · **Core** · [2.12](#methods-experience) — Constructs 9,000 training and 800 test editing tasks; the official repository lists data release as forthcoming.
 
 - [Parametric CAD Bench v3](#paper-2611-02659) · **Adjacent** · [3.5](#evaluation-cad-3d) — Released evaluation records, trajectories and CAD artifacts complement the versioned Harbor tasks.
 
@@ -3655,12 +3692,12 @@ This is a research-resource index, not a claim that every linked paper releases 
 
 **Dataset contributions**
 
+- [Video2World](#paper-2610-04432) · **Core** · [3.9](#evaluation-real-to-sim) — Releases 222 configurations across 39 task families, separating agent-visible inputs from hidden evaluation references.
 - [PhysCodeGym](#paper-2610-17288) · **Core** · [3.9](#evaluation-real-to-sim)
 
 **Data-construction contributions**
 
 - [Lab2Sim](#paper-2611-02928) · **Core** · [3.9](#evaluation-real-to-sim) — Aligns demonstrated operations and observed state changes with executable page behavior and per-instance rubrics.
-- [Video2World](#paper-2610-04432) · **Core** · [3.9](#evaluation-real-to-sim)
 
 **Experimental data and protocols described in papers**
 
@@ -4005,6 +4042,7 @@ The list below is a practical starting point rather than a security audit or end
 
 | Capability | Resource | Form and provenance | Why it matters for the closed loop |
 |---|---|---|---|
+| Staged Blender authoring and visual review | **blender-agent-skills** [[source]](https://github.com/oh-ashen-one/blender-agent-skills) | Community expert skills · MIT · references/scenes → staged builds, render checks and rig/export checks | Five documented skills organize isolated MCP sessions, staged construction, concept-to-render visual gates, voxel scenes and rig verification; reusable expert procedures, not a measured autonomous-learning system. |
 | Game engine / model-tool bridge | **Unreal Engine 5.9 MegaJam Preview** [[official announcement]](https://forums.unrealengine.com/t/unreal-engine-5-9-megajam-preview/2852840) | Prompts, references and scenes → editor operations, images, 3D/video assets and runtime inspection | Experimental preview adds Unreal MCP for editor/render/debug operations and Canvas for composing generative model tools; the official announcement describes integration capabilities, not an autonomous development benchmark. |
 | Game refinement and playtesting skills | **Agentic Gamedev Skills** [[source]](https://github.com/abagames/agentic-gamedev-skills) | Playable prototype + design intent + replays/frames/telemetry → measured changes and revision records | Documents staged prototype refinement, screen-readability checks, deterministic replay and repair validation for browser and Godot workflows; reusable procedures, not a benchmarked autonomous system. |
 | Model execution and evaluation workflows | **WorldFoundry** [[source]](https://github.com/OpenEnvision/WorldFoundry) [[paper]](https://arxiv.org/abs/2611.10771) | Project-maintained CLI / Studio / model adapters | Connects model-specific inputs, runtime requirements and output artifacts to common inference and evaluation workflows, with explicit readiness and eligibility states. |
@@ -4313,6 +4351,9 @@ The following examples make the coding loop concrete across different tasks. We 
 ## ✍️ Perspectives, Blogs, and Industry Signals
 
 This section collects attributed, non-peer-reviewed signals on multimodal feedback, model-tool orchestration, and digital–physical connections, complementing the research literature with practitioner examples.
+
+- `2026-11-12` **Koray Kavukcuoglu / Google — Introducing Gemini 4 Hydrogen.** [[official blog]](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/)
+  > *Topic link:* Describes routing between Carbon and Hydrogen for coordination, execution and verification, with a video-to-slides example that audits and repairs layout; these are attributed vendor demonstrations.
 
 - `2026-11-06` **Lance Martin / Anthropic — The components of agent memory.** [[official blog]](https://www.anthropic.com/research/components-of-agent-memory)
   > *Topic link:* Connects experience to later actions through selective notes, transcript-grounded memory correction and offline consolidation; Pokémon and document examples are attributed engineering observations, with memory updates distinct from model training.

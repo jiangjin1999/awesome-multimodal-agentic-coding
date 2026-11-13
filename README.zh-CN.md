@@ -46,12 +46,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 [![一起合作](https://img.shields.io/badge/%E4%B8%80%E8%B5%B7%E5%90%88%E4%BD%9C-%E6%AC%A2%E8%BF%8E%E8%81%94%E7%B3%BB-8A2BE2.svg)](#contact-and-collaboration)
-[![Core works](https://img.shields.io/badge/Core%20works-209-blue.svg)](#paper-and-project-list)
+[![Core works](https://img.shields.io/badge/Core%20works-212-blue.svg)](#paper-and-project-list)
 
 [![English](https://img.shields.io/badge/English-default-6E7781?style=flat-square)](./README.md)
 [![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-0969DA?style=flat-square)](./README.zh-CN.md)
 
-**最后更新：2026-11-12**
+**最后更新：2026-11-13**
 
 </div>
 
@@ -884,6 +884,15 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.4 文档与视觉媒体构建评测](#evaluation-media) · [4.4 文档、媒体素材与构建／编辑过程](#data-media) · [2.3 图表、科学可视化与可编辑图形构建](#methods-graphics) · [2.12 从构建与交互经验学习](#methods-experience) · [5.2 程序、几何、材质与视觉媒体生成／编辑](#section-5-2)
 
+- [PhysOPSD](#paper-2611-12411) · **Core** · [2.12](#methods-experience) — 将修复后的仿真程序作为训练特权，支持推理时无需仿真的视频生成。
+
+<a id="paper-2610-40754"></a>
+<!-- mmac-record: {"id": "2610.40754", "scope": "Core", "primary": "2.4", "task": 4} -->
+
+- `arXiv 2026.10` **DyCraft: An Agentic System for Long-Horizon 4D Scene Generation**. [[论文]](https://arxiv.org/abs/2610.40754) [[项目]](https://dy-craft.github.io/) [[代码]](https://github.com/jefftan969/dycraft) [[数据]](https://huggingface.co/datasets/jefftan969/dycraft-films) — `[Method]` · `[Inference]` `[Verification]` · **Core**
+  > 通过分镜检查、运动工具及渲染／空间诊断持续修复程序，构建带关节的CAD场景与长时序Blender动画。<br>
+  > **验证维度：** 24个多镜头任务 · 人类偏好及逐帧穿插／支撑诊断 · 长时程工具消融；为渲染场景而非硬件试验。
+
 - [Video-Coder](#paper-2611-09894) · **Core** · [2.12](#methods-experience) — 编码Agent检查渲染帧并修订场景程序后，可执行草稿为下游视频合成提供结构指导。
 
 - [ManimCode](#paper-2611-08294) · **Core** · [2.12](#methods-experience) — 带视觉自我修正的教学动画程序生成。
@@ -1073,6 +1082,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** CAD 设计约束和一般场景构图分别评价；关节、材料响应等物理可用性集中在 2.6，观测约束的仿真重建见 2.9。
 
 **关联阅读：** [3.5 程序化 3D 与 CAD 基准评测](#evaluation-cad-3d) · [4.5 程序化 3D 与 CAD 数据：需求、程序与资产](#data-cad-3d) · [2.6 物理资产构建与诊断](#methods-physical-assets) · [2.9 Agentic Real-to-Sim](#methods-real-to-sim) · [5.3 执行、渲染、仿真与自动化接口](#section-5-3)
+
+- [BlenderFORGE](#paper-2611-10768) · **Core** · [2.12](#methods-experience) — 通过程序执行与渲染反馈学习显式Blender场景的反应式编辑。
 
 <a id="paper-2611-08175"></a>
 <!-- mmac-record: {"id": "2611.08175", "scope": "Core", "primary": "2.5", "task": 5} -->
@@ -2047,6 +2058,20 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [3.12 经验学习与跨任务泛化评测](#evaluation-experience) · [4.12 跨任务构建、修复与技能学习资料](#data-experience) · [2.2 GUI／软件训练环境合成](#methods-gui-environments) · [5.5 Skills、工具桥与可复用工作流](#section-5-5) · [6.5 从构建经验到可迁移能力](#section-6-5)
 
+<a id="paper-2611-12411"></a>
+<!-- mmac-record: {"id": "2611.12411", "scope": "Core", "primary": "2.12", "task": 12} -->
+
+- `arXiv 2026.11` **PhysOPSD: Code as Privilege for Physically Plausible Video Generation**. [[论文]](https://arxiv.org/abs/2611.12411) [[项目]](https://haroldchen19.github.io/PhysOPSD-site/) — `[Method]` · `[Training]` `[Data Curation]` `[Verification]` · **Core**
+  > 依据预览帧和物理诊断修复可执行场景程序，再将其渲染草稿与受控变体蒸馏进推理时无需仿真的视频生成模型。<br>
+  > **验证维度：** VideoPhy-2、PhyGround与VBench · 特权／变体消融 · Core闭环位于数据构建引擎，不是部署的视频生成器。
+
+<a id="paper-2611-10768"></a>
+<!-- mmac-record: {"id": "2611.10768", "scope": "Core", "primary": "2.12", "task": 12} -->
+
+- `NeurIPS 2026` **BlenderFORGE: Framework for Optimizing Reactive 3D-Graphics Editing Ability of MLLMs**. [[论文]](https://arxiv.org/abs/2611.10768) [[项目]](https://sensetime-fvg.github.io/BlenderFORGE/) — `[Method]` · `[Training]` `[Data Curation]` `[Environment]` `[Verification]` · **Core**
+  > 利用教师轨迹与沙箱奖励的多轮强化学习训练开放权重Blender编辑Agent，在bpy执行与渲染观察之间交替修订场景。<br>
+  > **验证维度：** 四类编辑任务 · SFT/RL消融 · 留出相机及BlenderGym迁移；所报指标排除了超时／服务失败。
+
 <a id="paper-2611-12885"></a>
 <!-- mmac-record: {"id": "2611.12885", "scope": "Adjacent", "primary": "2.12", "task": 12} -->
 
@@ -2519,6 +2544,10 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.4 文档与视觉媒体构建](#methods-media) · [4.4 文档、媒体素材与构建／编辑过程](#data-media) · [3.3 图表、科学可视化与图形编辑评测](#evaluation-graphics) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
 
+- [PhysOPSD](#paper-2611-12411) · **Core** · [2.12](#methods-experience) — 通过特权及受控变体消融，评测视频物理合理性与通用质量。
+
+- [DyCraft](#paper-2610-40754) · **Core** · [2.4](#methods-media) — 通过人类偏好及逐帧物理错误检查评测长时序影片。
+
 <a id="paper-2611-13576"></a>
 <!-- mmac-record: {"id": "2611.13576", "scope": "Adjacent", "primary": "3.4", "task": 4} -->
 
@@ -2612,6 +2641,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 形状距离不能完整描述约束或设计意图；CAD、场景程序和 GUI 操作式建模应采用匹配的输入与动作权限。
 
 **关联阅读：** [2.5 程序化 3D 与 CAD 构建](#methods-cad-3d) · [4.5 程序化 3D 与 CAD 数据：需求、程序与资产](#data-cad-3d) · [3.6 物理资产构建与可用性评测](#evaluation-physical-assets) · [3.13 测试、奖励与评估器可靠性](#section-3-13)
+
+- [BlenderFORGE](#paper-2611-10768) · **Core** · [2.12](#methods-experience) — 检验四类场景编辑及跨相机、BlenderGym任务迁移。
 
 <a id="paper-2611-02659"></a>
 <!-- mmac-record: {"id": "2611.02659", "scope": "Adjacent", "primary": "3.5", "task": 5} -->
@@ -3029,7 +3060,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 <a id="paper-2610-04432"></a>
 <!-- mmac-record: {"id": "2610.04432", "scope": "Core", "primary": "3.9", "task": 9} -->
 
-- `arXiv 2026.10` **Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos**. [[论文]](https://arxiv.org/abs/2610.04432) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]` · **Core**
+- `arXiv 2026.10` **Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos**. [[论文]](https://arxiv.org/abs/2610.04432) [[项目]](https://aetherlabsai.github.io/Video2World) [[代码]](https://github.com/AetherLabsAI/Video2World) [[数据]](https://huggingface.co/datasets/AetherLabs-AI/Video2World) — `[Benchmark]` · `[Data Curation]` `[Environment]` `[Verification]` · **Core**
   > 评测从具身视频重建环境与机器人控制程序的 Agent，让其检查自身物理 rollout 并修订两类代码，再以隐藏的几何、动力学和任务标准评估。<br>
   > **验证维度：** 构建成功率 · 几何保真度 · 物体运动保真度 · 物理任务进展与成功率。
 
@@ -3453,6 +3484,10 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **关联阅读：** [2.4 文档与视觉媒体构建](#methods-media) · [3.4 文档与视觉媒体构建评测](#evaluation-media) · [4.3 图表数据、图形程序与编辑记录](#data-graphics) · [4.12 跨任务构建、修复与技能学习资料](#data-experience)
 
+- [PhysOPSD](#paper-2611-12411) · **Core** · [2.12](#methods-experience) — 构造对齐的程序、渲染草稿、物理元数据和受控变体；数据尚待发布。
+
+- [DyCraft](#paper-2610-40754) · **Core** · [2.4](#methods-media) — 发布24个影片及Blender项目、计划和任务描述，许可按具体资产区分。
+
 - [PhyRubric](#paper-2611-13576) · **Adjacent** · [3.4](#evaluation-media) — 发布带逐项证据的判据化视频评测集与训练集。
 
 - [MotionGraphicsBench](#paper-2611-10592) · **Adjacent** · [3.4](#evaluation-media) — 公开100个含SVG输入与验证程序的任务，以及53,180条带评测和人评字段的输出记录。
@@ -3503,6 +3538,8 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 **边界：** 网格、B-rep、参数化程序和场景代码具有不同监督目标；最终几何一致不保证程序设计意图一致。
 
 **关联阅读：** [2.5 程序化 3D 与 CAD 构建](#methods-cad-3d) · [3.5 程序化 3D 与 CAD 基准评测](#evaluation-cad-3d) · [4.6 物理资产、参数与诊断交互数据](#data-physical-assets) · [4.9 Real-to-Sim 的观测、仿真表示与交互对应](#data-real-to-sim)
+
+- [BlenderFORGE](#paper-2611-10768) · **Core** · [2.12](#methods-experience) — 构造9,000个训练与800个测试编辑任务；官方仓库仍将数据发布列为待办。
 
 - [Parametric CAD Bench v3](#paper-2611-02659) · **Adjacent** · [3.5](#evaluation-cad-3d) — 公开评测试验记录、轨迹与CAD产物，补充版本化Harbor任务。
 
@@ -3655,12 +3692,12 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 **数据集工作**
 
+- [Video2World](#paper-2610-04432) · **Core** · [3.9](#evaluation-real-to-sim) — 发布39类任务的222个配置，区分Agent可见输入与隐藏评测参考。
 - [PhysCodeGym](#paper-2610-17288) · **Core** · [3.9](#evaluation-real-to-sim)
 
 **数据构造工作**
 
 - [Lab2Sim](#paper-2611-02928) · **Core** · [3.9](#evaluation-real-to-sim) — 将演示操作与可见状态变化对齐到可执行页面行为和逐实例评分项。
-- [Video2World](#paper-2610-04432) · **Core** · [3.9](#evaluation-real-to-sim)
 
 **论文描述的实验资料与协议**
 
@@ -4005,6 +4042,7 @@ Benchmark 可以通过某个明确的 Track、基线方法或已记录的 Agent 
 
 | 能力 | 资源 | 形式与来源 | 对闭环的意义 |
 |---|---|---|---|
+| 分阶段Blender创作与视觉审查 | **blender-agent-skills** [[源码]](https://github.com/oh-ashen-one/blender-agent-skills) | 社区专家Skills · MIT · 参考素材／场景 → 分阶段构建、渲染检查及绑定／导出检查 | 五项文档化Skill组织独立MCP会话、分阶段构建、概念—渲染视觉检查、体素场景和绑定验证；属于可复用专家流程，不是已测量的自主学习系统。 |
 | 游戏引擎／模型工具桥 | **Unreal Engine 5.9 MegaJam Preview** [[官方公告]](https://forums.unrealengine.com/t/unreal-engine-5-9-megajam-preview/2852840) | 提示词、参考素材与场景 → 编辑器操作、图像／3D／视频资产及运行检查 | 实验性预览提供用于编辑、渲染及调试的Unreal MCP，并通过Canvas组合生成模型工具；官方公告介绍接入能力，不是自主开发性能评测。 |
 | 游戏迭代与试玩验证Skills | **Agentic Gamedev Skills** [[源码]](https://github.com/abagames/agentic-gamedev-skills) | 可玩原型＋设计意图＋回放／画面／遥测 → 有测量依据的修改与迭代记录 | 为浏览器与Godot工作流提供分阶段原型迭代、画面可读性检查、确定性回放及修复验证流程；属于可复用规程，不是已评测的自主系统。 |
 | 模型执行与评测工作流 | **WorldFoundry** [[源码]](https://github.com/OpenEnvision/WorldFoundry) [[论文]](https://arxiv.org/abs/2611.10771) | 项目维护的CLI／Studio／模型适配器 | 将模型各自的输入、运行要求及输出产物接入统一推理和评测工作流，明确区分准备状态和评测资格。 |
@@ -4313,6 +4351,9 @@ Adjacent 论文已经归入上面的具体方向；此索引汇总其完整记�
 ## ✍️ 观点、博客与产业信号
 
 本节收集带明确作者归属的非同行评审信号，以实践案例补充研究文献，涵盖多模态反馈、模型工具编排和数字—物理世界连接。
+
+- `2026-11-12` **Koray Kavukcuoglu / Google — Introducing Gemini 4 Hydrogen.** [[官方博客]](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/)
+  > *主题关联：* 介绍Carbon与Hydrogen在协调、执行和验证之间的模型分工，并展示视频到幻灯片的布局审查与修复；属于署名厂商演示。
 
 - `2026-11-06` **Lance Martin / Anthropic — The components of agent memory.** [[官方博客]](https://www.anthropic.com/research/components-of-agent-memory)
   > *主题关联：* 以选择性笔记、基于原轨迹的记忆纠错和离线整理连接经验与后续行动；Pokémon与文档案例属于署名工程观察，记忆更新区别于模型训练。

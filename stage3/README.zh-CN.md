@@ -19,7 +19,7 @@
 
 **构建可验证环境 → 获得交互经验 → 提升 Coding Agent 能力**是贯穿全篇的研究联系。各项工作的证据覆盖其中不同环节，完整的规模化闭环仍需联合检验。环境构建者、环境操作者和下游动作策略可能是不同模型。
 
-每项工作保留一个专题主入口，跨章贡献用链接连接。已有完整书目链接回原研究地图；日期优先采用首次公开时间，会议或版本日期另作说明。Core、Adjacent、Resource 是证据范围身份，不表示章节或质量排名。独立 Benchmark、方法内的评估和资源分别阅读。
+每项工作保留一个专题主入口，跨章贡献用链接连接。已有完整书目链接回原研究地图；日期优先采用首次公开时间，会议或版本日期另作说明。独立 Benchmark、方法内的评估和资源分别阅读。
 
 ---
 
@@ -40,7 +40,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 ### 可组合的执行资源
 
-以下已有[运行资源](../README.zh-CN.md#s3-1)与[模型能力](../README.zh-CN.md#s2-6)保留 **Resource** 身份。可调用组件可以支持 Harness，但不等于组件自身实现了 Agent 学习。
+可从[运行资源](../README.zh-CN.md#s3-1)与[模型能力](../README.zh-CN.md#s2-6)寻找可复用组件。可调用组件可以支持 Harness，但不等于组件自身实现了 Agent 学习。
 
 | 资源 | 接口与用途 | 证据边界 |
 |---|---|---|
@@ -56,7 +56,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Democratizing Robot-Use Agents: A Unified Harness with Open Models
 
-`2026-11-01` · Tsinghua University; University of California, Berkeley · **Core**
+`2026-11-01` · Tsinghua University; University of California, Berkeley
 
 [完整书目](../README.zh-CN.md#paper-2611-01560) · [证据 1](https://arxiv.org/abs/2611.01560) · [证据 2](https://github.com/Open-RUA/uni-robot-agent) · [证据 3](https://openrua.ai/uni-robot-agent)
 
@@ -71,7 +71,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Auriga Technical Report: A Task-Agnostic Agent Harness for Zero-Shot Embodied Manipulation
 
-`2026-10-31` · StellarEdge AI Technical Team · **Core**
+`2026-10-31` · StellarEdge AI Technical Team
 
 [完整书目](../README.zh-CN.md#paper-2611-01112) · [证据 1](https://arxiv.org/abs/2611.01112) · [证据 2](https://auriga.stelledge.com/) · [证据 3](https://github.com/lose4578/Auriga)
 
@@ -84,7 +84,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### TARSphere: A Robot-Oriented Full-Stack Framework for Long-Horizon Embodied Agents in Evolving Physical and Social Environments
 
-`2026-10-21` · Zhejiang University; Fudan University · **Adjacent**
+`2026-10-21` · Zhejiang University; Fudan University
 
 [一手来源 1](https://arxiv.org/abs/2610.30043) · [一手来源 2](https://xuyicheng-zju.github.io/TARSphere/) · [一手来源 3](https://github.com/xuyicheng-zju/TARSphere)
 
@@ -97,7 +97,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### HexaShell: A Universal Harness for Robot Coding Agents in Simulation and the Real World
 
-`2026-10-16` · HexaFuture · **Core**
+`2026-10-16` · HexaFuture
 
 [完整书目](../README.zh-CN.md#paper-2610-23479) · [证据 1](https://arxiv.org/abs/2610.23479) · [证据 2](https://github.com/HexaFuture/HexaShell)
 
@@ -114,7 +114,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### BT-Agent: Deploying Onboard Robot Agents with Behavior Trees and Multi-Fidelity Evaluation
 
-`2026-10-09` · Stanford University; University of California, Berkeley; NVIDIA · **Adjacent**
+`2026-10-09` · Stanford University; University of California, Berkeley; NVIDIA
 
 [完整书目](../README.zh-CN.md#paper-2610-13862) · [证据 1](https://arxiv.org/abs/2610.13862)
 
@@ -127,7 +127,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### SpatialHarness: Test-Time Spatial Scaffolding for Fine Robotic Manipulation
 
-`2026-10-08` · Fudan University; Singapore Management University · **Adjacent**
+`2026-10-08` · Fudan University; Singapore Management University
 
 [一手来源 1](https://arxiv.org/abs/2610.12457) · [一手来源 2](https://emilia113.github.io/SpatialHarness/)
 
@@ -142,7 +142,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### RobotUse: Allocating Computation, Context, and Decisions
 
-`2026-10-04` · KAIST; Seoul National University · **Adjacent**
+`2026-10-04` · KAIST; Seoul National University
 
 [一手来源 1](https://arxiv.org/abs/2610.04929) · [一手来源 2](https://robotuse-team.github.io/)
 
@@ -159,7 +159,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### OpenRUA: Robot-Use Agents Are Zero-Shot Visuomotor Policies
 
-`2026-10-01` · University College London; Carnegie Mellon University · **Core**
+`2026-10-01` · University College London; Carnegie Mellon University
 
 [一手来源 1](https://arxiv.org/abs/2610.02459) · [一手来源 2](https://github.com/terminalworld/OpenRUA)
 
@@ -174,7 +174,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Fewer Tokens, Better Action: GPT-6 Astra Robot Agents with 14% Higher Success Rate but 65% Fewer Tokens
 
-`2026-10-01` · Peking University; National University of Singapore; NVIDIA; Impossible Research · **Core**
+`2026-10-01` · Peking University; National University of Singapore; NVIDIA; Impossible Research
 
 [一手来源 1](https://arxiv.org/abs/2610.01939)
 
@@ -191,7 +191,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### RoboHarness: A Simple Harness Outperforms VLA and World Action Models
 
-`2026-09-29` · Zhejiang University · **Adjacent**
+`2026-09-29` · Zhejiang University
 
 [一手来源 1](https://arxiv.org/abs/2610.14018)
 
@@ -204,7 +204,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### MotorMind: Scaffolding General Vision Language Models for Zero-Shot Robot Manipulation
 
-`2026-09-29` · University of Illinois Urbana-Champaign · **Adjacent**
+`2026-09-29` · University of Illinois Urbana-Champaign
 
 [一手来源 1](https://arxiv.org/abs/2609.38078)
 
@@ -219,7 +219,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Robo-Harness K1: Harnessing Robot-Use Agents via Perception Augmentation
 
-`2026-09-24` · The Chinese University of Hong Kong; The Hong Kong University of Science and Technology (Guangzhou); Knowin AI · **Adjacent**
+`2026-09-24` · The Chinese University of Hong Kong; The Hong Kong University of Science and Technology (Guangzhou); Knowin AI
 
 [一手来源 1](https://arxiv.org/abs/2609.29389)
 
@@ -234,7 +234,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Coding Agents with an Obstacle-Aware Harness for Safe Robot Manipulation
 
-`2026-09-17` · University of Southern California; University of Central Florida; University of California, Santa Barbara · **Core**
+`2026-09-17` · University of Southern California; University of Central Florida; University of California, Santa Barbara
 
 [完整书目](../README.zh-CN.md#paper-2609-20822) · [证据 1](https://arxiv.org/abs/2609.20822)
 
@@ -249,7 +249,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Agent as Policy for Robotic Manipulation
 
-`2026-09-11` · University of Notre Dame; University of California San Diego; San Diego State University · **Core**
+`2026-09-11` · University of Notre Dame; University of California San Diego; San Diego State University
 
 [一手来源 1](https://arxiv.org/abs/2609.12541)
 
@@ -262,7 +262,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Show-Harness: Just a VLM Agent Can Play Robots
 
-`2026-09-09` · Show Lab, National University of Singapore · **Adjacent**
+`2026-09-09` · Show Lab, National University of Singapore
 
 [一手来源 1](https://arxiv.org/abs/2609.10522) · [一手来源 2](https://showlab.github.io/Show-Harness)
 
@@ -275,7 +275,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### ChemAutoAgent: A Multi-Agent System for Evidence-Controlled Laboratory Instrument Driver Generation from Text-Based Manuals
 
-`2026-08-20` · 单位未明确 · **Adjacent**
+`2026-08-20` · 单位未明确
 
 [一手来源 1](https://www.mdpi.com/2076-3417/16/16/8291) · [一手来源 2](https://www.mdpi.com/2076-3417/16/16/8291/notes)
 
@@ -288,7 +288,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### ETA: A New Agentic Paradigm for Embodied Tasks
 
-`2026-08-04` · Shanghai Innovation Institute; Fudan University; Jilin University; Nanjing University; Zhejiang University · **Adjacent**
+`2026-08-04` · Shanghai Innovation Institute; Fudan University; Jilin University; Nanjing University; Zhejiang University
 
 [一手来源 1](https://arxiv.org/abs/2608.03924)
 
@@ -303,7 +303,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### PhyAgentOS: A Self-Evolving Operating System for Embodied Agents with Decoupled Cognitive Planning and Physical Execution
 
-`2026-07-18` · X-Era Lab; Sun Yat-sen University; Peng Cheng Laboratory · **Adjacent**
+`2026-07-18` · X-Era Lab; Sun Yat-sen University; Peng Cheng Laboratory
 
 [一手来源 1](https://arxiv.org/abs/2607.16636)
 
@@ -316,7 +316,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### GaP: A Graph-as-Policy Multi-Agent Self-Learning Harness For Variational Automation Tasks
 
-`2026-07-06` · University of California, Berkeley; Bosch; NVIDIA · **Adjacent**
+`2026-07-06` · University of California, Berkeley; Bosch; NVIDIA
 
 [一手来源 1](https://arxiv.org/abs/2607.05369) · [一手来源 2](https://graph-robots.github.io/gap)
 
@@ -331,7 +331,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Enabling Extensible Embodied Capabilities with Tools
 
-`2026-05-26` · Huazhong University of Science and Technology; Hebei University of Technology; Tianjin University; Lehigh University; Tsinghua University · **Adjacent**
+`2026-05-26` · Huazhong University of Science and Technology; Hebei University of Technology; Tianjin University; Lehigh University; Tsinghua University
 
 [一手来源 1](https://arxiv.org/abs/2605.26637)
 
@@ -344,7 +344,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### MAESTRO: Orchestrating Robotics Modules with Coding Agents for Zero-Shot Generalist Robots
 
-`2025-11-02` · University of Pennsylvania · **Core**
+`2025-11-02` · University of Pennsylvania
 
 [一手来源 1](https://arxiv.org/abs/2511.00917) · [一手来源 2](https://maestro-robot.github.io) · [一手来源 3](https://github.com/penn-pal-lab/maestro)
 
@@ -359,7 +359,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Towards Reliable Code-as-Policies: A Neuro-Symbolic Framework for Embodied Task Planning
 
-`2025-10-24` · Sungkyunkwan University · **Adjacent**
+`2025-10-24` · Sungkyunkwan University
 
 [一手来源 1](https://arxiv.org/abs/2510.21302)
 
@@ -372,7 +372,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### RAI: Flexible Agent Framework for Embodied AI
 
-`2025-05-12` · Robotec.AI; Warsaw University of Technology · **Adjacent**
+`2025-05-12` · Robotec.AI; Warsaw University of Technology
 
 [一手来源 1](https://arxiv.org/abs/2505.07532)
 
@@ -385,7 +385,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Robotic Long-Horizon Manipulation with Progressive In-Context Code Generation and Episodic Feedback
 
-`2025-03-27` · Technical University of Munich; Ludwig Maximilian University of Munich; Beijing Academy of Artificial Intelligence; Nanjing University · **Core**
+`2025-03-27` · Technical University of Munich; Ludwig Maximilian University of Munich; Beijing Academy of Artificial Intelligence; Nanjing University
 
 [一手来源 1](https://arxiv.org/abs/2503.21969)
 
@@ -398,7 +398,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Code-as-Monitor: Constraint-aware Visual Programming for Reactive and Proactive Robotic Failure Detection
 
-`2024-12-05` · Beihang University; Peking University; Beijing Academy of Artificial Intelligence; Galbot · **Adjacent**
+`2024-12-05` · Beihang University; Peking University; Beijing Academy of Artificial Intelligence; Galbot
 
 [一手来源 1](https://arxiv.org/abs/2412.04455) · [一手来源 2](https://zhoues.github.io/Code-as-Monitor/)
 
@@ -413,7 +413,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Language-guided Manipulator Motion Planning with Bounded Task Space
 
-`2024-10-11` · 单位未明确 · **Adjacent**
+`2024-10-11` · 单位未明确
 
 [一手来源 1](https://proceedings.mlr.press/v270/oelerich25a.html) · [一手来源 2](https://www.acin.tuwien.ac.at/42d2/)
 
@@ -426,7 +426,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Enabling Novel Mission Operations and Interactions with ROSA: The Robot Operating System Agent
 
-`2024-10-09` · NASA Jet Propulsion Laboratory; California Institute of Technology · **Adjacent**
+`2024-10-09` · NASA Jet Propulsion Laboratory; California Institute of Technology
 
 [一手来源 1](https://arxiv.org/abs/2410.06472)
 
@@ -439,7 +439,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Chain of Code: Reasoning with a Language Model-Augmented Code Emulator
 
-`2023-12-07` · Stanford University; Google DeepMind; University of California, Berkeley · **Adjacent**
+`2023-12-07` · Stanford University; Google DeepMind; University of California, Berkeley
 
 [一手来源 1](https://arxiv.org/abs/2312.04474) · [一手来源 2](https://chain-of-code.github.io)
 
@@ -452,7 +452,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Tell Me Where to Go: A Composable Framework for Context-Aware Embodied Robot Navigation
 
-`2023-06-15` · University of Colorado Boulder · **Adjacent**
+`2023-06-15` · University of Colorado Boulder
 
 [一手来源 1](https://arxiv.org/abs/2306.09523)
 
@@ -465,7 +465,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Instruct2Act: Mapping Multi-modality Instructions to Robotic Actions with Large Language Model
 
-`2023-05-18` · Shanghai Jiao Tong University; Shanghai AI Laboratory; University of Chinese Academy of Sciences; Peking University; The Chinese University of Hong Kong · **Adjacent**
+`2023-05-18` · Shanghai Jiao Tong University; Shanghai AI Laboratory; University of Chinese Academy of Sciences; Peking University; The Chinese University of Hong Kong
 
 [一手来源 1](https://arxiv.org/abs/2305.11176) · [一手来源 2](https://github.com/OpenGVLab/Instruct2Act)
 
@@ -480,7 +480,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### ChatGPT for Robotics: Design Principles and Model Abilities
 
-`2023-02-20` · Scaled Foundations; Microsoft Autonomous Systems and Robotics Research · **Adjacent**
+`2023-02-20` · Scaled Foundations; Microsoft Autonomous Systems and Robotics Research
 
 [一手来源 1](https://arxiv.org/abs/2306.17582) · [一手来源 2](https://www.microsoft.com/en-us/research/publication/chatgpt-for-robotics-design-principles-and-model-abilities/)
 
@@ -495,7 +495,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### ProgPrompt: Generating Situated Robot Task Plans using Large Language Models
 
-`2022-09-22` · University of Southern California; NVIDIA · **Adjacent**
+`2022-09-22` · University of Southern California; NVIDIA
 
 [一手来源 1](https://arxiv.org/abs/2209.11302) · [一手来源 2](http://progprompt.github.io)
 
@@ -510,7 +510,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Code as Policies: Language Model Programs for Embodied Control
 
-`2022-09-16` · Robotics at Google · **Adjacent**
+`2022-09-16` · Robotics at Google
 
 [一手来源 1](https://arxiv.org/abs/2209.07753) · [一手来源 2](https://code-as-policies.github.io)
 
@@ -527,7 +527,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Seeing Through the Illusion: Test-Time Scaling for World Action Models
 
-`2026-11-02` · Huawei Technologies Canada; University of British Columbia · **Adjacent**
+`2026-11-02` · Huawei Technologies Canada; University of British Columbia
 
 [完整书目](../README.zh-CN.md#paper-2611-03585) · [证据 1](https://arxiv.org/abs/2611.03585)
 
@@ -542,7 +542,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### The Harness: One Agent Harness for Anything that Acts
 
-`2026-11` · University of Michigan; Nanyang Technological University; EPFL; Princeton University; University of Virginia; LMMs-Lab · **Adjacent**
+`2026-11` · University of Michigan; Nanyang Technological University; EPFL; Princeton University; University of Virginia; LMMs-Lab
 
 [一手来源 1](https://web.eecs.umich.edu/~stellayu/publication/2026harnessCoRLL.html) · [一手来源 2](https://web.eecs.umich.edu/~stellayu/publication/doc/2026harnessCoRLL.pdf)
 
@@ -557,7 +557,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control
 
-`2026-10-30` · National University of Singapore, HPC-AI Lab; InfRec, Cardinal AI Lab; University of California, Berkeley; The University of Tokyo; Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences; Hong Kong University of Science and Technology · **Adjacent**
+`2026-10-30` · National University of Singapore, HPC-AI Lab; InfRec, Cardinal AI Lab; University of California, Berkeley; The University of Tokyo; Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences; Hong Kong University of Science and Technology
 
 [完整书目](../README.zh-CN.md#paper-2610-42053) · [证据 1](https://arxiv.org/abs/2610.42053) · [证据 2](https://mikeeeeeeeeeeeeee.github.io/REA/)
 
@@ -572,7 +572,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### CarryOn: A Dual-Loop Harness for Personalized and Reliable Robot Assistance
 
-`2026-10-15` · Hong Kong University of Science and Technology; The Chinese University of Hong Kong; SmartMore · **Adjacent**
+`2026-10-15` · Hong Kong University of Science and Technology; The Chinese University of Hong Kong; SmartMore
 
 [完整书目](../README.zh-CN.md#paper-2610-21453) · [证据 1](https://arxiv.org/abs/2610.21453) · [证据 2](https://vincent2311.github.io/Projects/CarryOn/) · [证据 3](https://github.com/JIA-Lab-research/CarryOn)
 
@@ -587,7 +587,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### HarnessPAI: An Evolving Harness for Physical AI
 
-`2026-09-24` · Xiaomi Inc.; Tsinghua University; Nanjing University; Shanghai Jiao Tong University; East China Normal University; University College London; King’s College London; Imperial College London; Institute of Automation, Chinese Academy of Sciences; Shanghai Innovation Institute; University of Oxford; University of Edinburgh; Nanyang Technological University · **Core**
+`2026-09-24` · Xiaomi Inc.; Tsinghua University; Nanjing University; Shanghai Jiao Tong University; East China Normal University; University College London; King’s College London; Imperial College London; Institute of Automation, Chinese Academy of Sciences; Shanghai Innovation Institute; University of Oxford; University of Edinburgh; Nanyang Technological University
 
 [一手来源 1](https://arxiv.org/abs/2609.29166) · [一手来源 2](https://darwin-agent.github.io/HarnessPAI)
 
@@ -604,7 +604,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Towards the Harness of Embodied Agents
 
-`2026-08-03` · Eastern Institute of Technology, Ningbo · **Adjacent**
+`2026-08-03` · Eastern Institute of Technology, Ningbo
 
 [一手来源 1](https://arxiv.org/abs/2608.11246) · [一手来源 2](https://eit-hai.github.io/thea)
 
@@ -619,7 +619,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents
 
-`2026-07-09` · Tsinghua University; Striding AI; Purdue University; Institute of Automation, Chinese Academy of Sciences; Infinigence AI; Hong Kong University of Science and Technology; Zhongguancun Academy · **Adjacent**
+`2026-07-09` · Tsinghua University; Striding AI; Purdue University; Institute of Automation, Chinese Academy of Sciences; Infinigence AI; Hong Kong University of Science and Technology; Zhongguancun Academy
 
 [一手来源 1](https://arxiv.org/abs/2607.08448)
 
@@ -636,7 +636,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Embodied First Exam
 
-`2026-11-09` · Northwestern University; Carnegie Mellon University; University of California Berkeley; University of Washington; Stanford University; UNC-Chapel Hill; Texas A&M University; University of Texas at Austin · **Adjacent**
+`2026-11-09` · Northwestern University; Carnegie Mellon University; University of California Berkeley; University of Washington; Stanford University; UNC-Chapel Hill; Texas A&M University; University of Texas at Austin
 
 [一手来源 1](https://arxiv.org/abs/2611.12177) · [一手来源 2](https://arxiv.org/html/2611.12177)
 
@@ -653,7 +653,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### RoboARCade: Benchmarking Agentic Robot Control
 
-`2026-11-05` · Stanford University · **Adjacent**
+`2026-11-05` · Stanford University
 
 [完整书目](../README.zh-CN.md#paper-2611-08209) · [证据 1](https://arxiv.org/abs/2611.08209) · [证据 2](http://roboarcade.org)
 
@@ -666,7 +666,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### RoboColosseum: Evaluating Physical Intelligence at Scale In-The-Wild
 
-`2026-11-02` · National University of Singapore; University of Washington; Stanford University; University of North Carolina at Chapel Hill; Allen Institute for AI; University of Oxford; Hugging Face; BitRobot; Singapore Embodied AI Centre · **Adjacent**
+`2026-11-02` · National University of Singapore; University of Washington; Stanford University; University of North Carolina at Chapel Hill; Allen Institute for AI; University of Oxford; Hugging Face; BitRobot; Singapore Embodied AI Centre
 
 [完整书目](../README.zh-CN.md#paper-2611-02497) · [证据 1](https://arxiv.org/abs/2611.02497) · [证据 2](https://robocolosseum.ai/) · [证据 3](https://github.com/RoboColosseum)
 
@@ -679,7 +679,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### RobotAgentBench: Towards Open-world Robot Autonomy
 
-`2026-10-26` · Aether AI; University of California San Diego; University of California Davis · **Core**
+`2026-10-26` · Aether AI; University of California San Diego; University of California Davis
 
 [完整书目](../README.zh-CN.md#paper-2610-34649) · [证据 1](https://arxiv.org/abs/2610.34649) · [证据 2](https://aetherlabsai.github.io/RobotAgentBench/)
 
@@ -692,7 +692,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### LLM4Robot-Bench: How Far Can GPT-6 Astra Go in Robotic Manipulation? A Hierarchical, Paired Sim-Real Benchmark
 
-`2026-10-25` · Tuojing Intelligence; The University of Hong Kong; Chinese Academy of Sciences; Nanyang Technological University; University of Michigan, Ann Arbor; Southeast University; Sapient Intelligence; SimpleAI; Mohamed bin Zayed University of Artificial Intelligence; Stanford University; Imperial College London; Tsinghua University; Carnegie Mellon University · **Adjacent**
+`2026-10-25` · Tuojing Intelligence; The University of Hong Kong; Chinese Academy of Sciences; Nanyang Technological University; University of Michigan, Ann Arbor; Southeast University; Sapient Intelligence; SimpleAI; Mohamed bin Zayed University of Artificial Intelligence; Stanford University; Imperial College London; Tsinghua University; Carnegie Mellon University
 
 [完整书目](../README.zh-CN.md#paper-2610-34527) · [证据 1](https://arxiv.org/abs/2610.34527) · [证据 2](https://github.com/LLM4Robot/LLM4Robot-Bench) · [证据 3](https://llm4robot.github.io/bench/)
 
@@ -705,7 +705,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### From Reasoning to Action: Benchmarking Frontier AI Models on LIBERO-10 Robot Manipulation Tasks
 
-`2026-10-21` · The University of Texas at Dallas · **Adjacent**
+`2026-10-21` · The University of Texas at Dallas
 
 [一手来源 1](https://arxiv.org/abs/2610.30051) · [一手来源 2](https://irvlutd.github.io/LLM-LIBERO/) · [一手来源 3](https://github.com/IRVLUTD/LLM_LIBERO)
 
@@ -718,7 +718,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Embodied Playground: A Long-Horizon Agentic Robotics Benchmark for Physical, Strategic, and Spatial Reasoning
 
-`2026-10-19` · The University of Hong Kong; Sharpa; Tsinghua University; Stanford University; University of North Carolina at Chapel Hill; Massachusetts Institute of Technology; Transcengram · **Adjacent**
+`2026-10-19` · The University of Hong Kong; Sharpa; Tsinghua University; Stanford University; University of North Carolina at Chapel Hill; Massachusetts Institute of Technology; Transcengram
 
 [一手来源 1](https://arxiv.org/abs/2610.27039) · [一手来源 2](https://winniechen2002.github.io/Agent-bench-website/)
 
@@ -731,7 +731,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### The Bitter Lesson Comes to Robotics
 
-`2026-10-18` · Robocurve; University of Southern California; University of California, Irvine · **Adjacent**
+`2026-10-18` · Robocurve; University of Southern California; University of California, Irvine
 
 [一手来源 1](https://arxiv.org/abs/2610.25287)
 
@@ -744,7 +744,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Has GPT-6-Astra Achieved Embodied Intelligence?
 
-`2026-10-15` · SenseNova and Joint Research Team · **Adjacent**
+`2026-10-15` · SenseNova and Joint Research Team
 
 [完整书目](../README.zh-CN.md#paper-2610-22471) · [证据 1](https://arxiv.org/abs/2610.22471) · [证据 2](https://sensenova.ai/has-gpt-6-astra-achieved-embodied-intelligence)
 
@@ -757,7 +757,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Embodied Skill Bench: Benchmarking How Well Agents with Embodied Skills Perform on Physical Tasks
 
-`2026-10-12` · Shanghai Jiao Tong University; Shanghai Artificial Intelligence Laboratory; Sun Yat-Sen University; Jilin University; Beihang University · **Adjacent**
+`2026-10-12` · Shanghai Jiao Tong University; Shanghai Artificial Intelligence Laboratory; Sun Yat-Sen University; Jilin University; Beihang University
 
 [一手来源 1](https://arxiv.org/abs/2610.16238) · [一手来源 2](https://github.com/HanZhi306/EmbodiedSkill-Bench)
 
@@ -772,7 +772,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments
 
-`2026-10-07` · The Hong Kong University of Science and Technology; The Chinese University of Hong Kong; Peking University; Stanford University; University of California, Berkeley; National University of Singapore; Massachusetts Institute of Technology; Tsinghua University; Carnegie Mellon University; Fudan University; The University of Hong Kong · **Adjacent**
+`2026-10-07` · The Hong Kong University of Science and Technology; The Chinese University of Hong Kong; Peking University; Stanford University; University of California, Berkeley; National University of Singapore; Massachusetts Institute of Technology; Tsinghua University; Carnegie Mellon University; Fudan University; The University of Hong Kong
 
 [完整书目](../README.zh-CN.md#paper-2610-10409) · [证据 1](https://arxiv.org/abs/2610.10409) · [证据 2](https://github.com/robotworldai/robotworld) · [证据 3](https://robotworldai.github.io/)
 
@@ -785,7 +785,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation
 
-`2026-10-06` · Imperial College London · **Adjacent**
+`2026-10-06` · Imperial College London
 
 [一手来源 1](https://arxiv.org/abs/2610.07594) · [一手来源 2](https://github.com/swirl-uk/BiGym2)
 
@@ -798,7 +798,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Are Frontier VLM Agents Ready to Be Robot Generalists? An Empirical Study with the Embodied Agent Arena
 
-`2026-10-01` · The Hong Kong University of Science and Technology (Guangzhou); The Chinese University of Hong Kong; Knowin AI · **Adjacent**
+`2026-10-01` · The Hong Kong University of Science and Technology (Guangzhou); The Chinese University of Hong Kong; Knowin AI
 
 [一手来源 1](https://arxiv.org/abs/2610.00854) · [一手来源 2](https://embodied-agent-arena.github.io/embodied-agent-arena/)
 
@@ -811,7 +811,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents
 
-`2026-09-30` · University of California Santa Barbara; MIT CSAIL; MIT-IBM Watson AI Lab · **Adjacent**
+`2026-09-30` · University of California Santa Barbara; MIT CSAIL; MIT-IBM Watson AI Lab
 
 [完整书目](../README.zh-CN.md#paper-2609-40325) · [证据 1](https://arxiv.org/abs/2609.40325) · [证据 2](https://arxiv.org/html/2609.40325) · [证据 3](https://ucsb-nlp-chang.github.io/WorldAuditBench/)
 
@@ -828,7 +828,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### LIBERO-Agent: Evaluating General-Purpose Agents for Direct Embodied Manipulation
 
-`2026-09-30` · Fudan University; Shanghai Innovation Institute · **Adjacent**
+`2026-09-30` · Fudan University; Shanghai Innovation Institute
 
 [一手来源 1](https://arxiv.org/abs/2609.39507)
 
@@ -841,7 +841,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation
 
-`2026-09-27` · Nanyang Technological University · **Core**
+`2026-09-27` · Nanyang Technological University
 
 [完整书目](../README.zh-CN.md#paper-2609-33807) · [证据 1](https://arxiv.org/abs/2609.33807) · [证据 2](https://github.com/lyhkk/CodeActionBench) · [证据 3](https://codeactionbench.org/)
 
@@ -856,7 +856,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Evaluating Multimodal LLMs as Generalist Vision-Language-Action Agents for Drone Control: Commanding, Approaching, Tracking and Searching
 
-`2026-09-01` · Drone AI Team, NAVER Cloud · **Adjacent**
+`2026-09-01` · Drone AI Team, NAVER Cloud
 
 [完整书目](../README.zh-CN.md#paper-2609-01404) · [证据 1](https://arxiv.org/abs/2609.01404) · [证据 2](https://github.com/naver-ai/DroneCATS) · [证据 3](https://huggingface.co/datasets/naver-ai/DroneCATS-Pilot-54K)
 
@@ -871,7 +871,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies
 
-`2026-07-05` · MMLab@HKU; UC Berkeley; THU; PKU; Stanford; MIT; UNC; Princeton; CMU; NUS; NTU; CUHK; IC; SJTU; NU; HKUST (GZ); ZJU; Yale · **Resource**
+`2026-07-05` · MMLab@HKU; UC Berkeley; THU; PKU; Stanford; MIT; UNC; Princeton; CMU; NUS; NTU; CUHK; IC; SJTU; NU; HKUST (GZ); ZJU; Yale
 
 [一手来源 1](https://arxiv.org/abs/2607.04434) · [一手来源 2](http://robodojo-benchmark.com/) · [一手来源 3](https://robodojo-benchmark.com/) · [一手来源 4](https://github.com/RoboDojo-Benchmark/RoboDojo) · [一手来源 5](https://robodojo-benchmark.com/leaderboard)
 
@@ -884,7 +884,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### KinDER: A Physical Reasoning Benchmark for Robot Learning and Planning
 
-`2026-04-28` · University of Cambridge; Georgia Institute of Technology; Princeton University; NVIDIA; Massachusetts Institute of Technology; Carnegie Mellon University · **Resource**
+`2026-04-28` · University of Cambridge; Georgia Institute of Technology; Princeton University; NVIDIA; Massachusetts Institute of Technology; Carnegie Mellon University
 
 [一手来源 1](https://arxiv.org/abs/2604.25788) · [一手来源 2](https://prpl-group.com/kinder-site/)
 
@@ -897,7 +897,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation
 
-`2026-03-23` · NVIDIA; University of California, Berkeley; Stanford University; Carnegie Mellon University · **Core**
+`2026-03-23` · NVIDIA; University of California, Berkeley; Stanford University; Carnegie Mellon University
 
 [完整书目](../README.zh-CN.md#paper-2603-22435) · [证据 1](https://arxiv.org/abs/2603.22435)
 
@@ -910,7 +910,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Demonstration-Free Robotic Control via LLM Agents
 
-`2026-01-28` · Independent researchers · **Adjacent**
+`2026-01-28` · Independent researchers
 
 [一手来源 1](https://arxiv.org/abs/2601.20334) · [一手来源 2](https://github.com/robiemusketeer/faea-sim)
 
@@ -923,7 +923,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### ALRM: Agentic LLM for Robotic Manipulation
 
-`2026-01-27` · Technology Innovation Institute; Dublin City University · **Adjacent**
+`2026-01-27` · Technology Innovation Institute; Dublin City University
 
 [一手来源 1](https://arxiv.org/abs/2601.19510)
 
@@ -936,7 +936,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### RoboScript: Code Generation for Free-Form Manipulation Tasks across Real and Simulation
 
-`2024-02-22` · OpenGVLab, Shanghai AI Laboratory; ETH Zurich; The University of Hong Kong; Shanghai Jiao Tong University; Tsinghua University; University of California, Berkeley · **Adjacent**
+`2024-02-22` · OpenGVLab, Shanghai AI Laboratory; ETH Zurich; The University of Hong Kong; Shanghai Jiao Tong University; Tsinghua University; University of California, Berkeley
 
 [一手来源 1](https://arxiv.org/abs/2402.14623)
 
@@ -951,7 +951,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Deploying and Evaluating LLMs to Program Service Mobile Robots
 
-`2023-11-18` · The University of Texas at Austin; Northeastern University; Wellesley College · **Adjacent**
+`2023-11-18` · The University of Texas at Austin; Northeastern University; Wellesley College
 
 [一手来源 1](https://arxiv.org/abs/2311.11183) · [一手来源 2](https://amrl.cs.utexas.edu/codebotler/)
 
@@ -964,7 +964,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning
 
-`2023-06-05` · The University of Texas at Austin; Sony AI; Tsinghua University · **Resource**
+`2023-06-05` · The University of Texas at Austin; Sony AI; Tsinghua University
 
 [一手来源 1](https://arxiv.org/abs/2306.03310) · [一手来源 2](https://libero-project.github.io)
 
@@ -979,7 +979,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Kinex
 
-`2026-10-15` · 单位未明确 · **Resource**
+`2026-10-15` · 单位未明确
 
 [一手来源 1](https://github.com/stacx-lab/kinex)
 
@@ -992,7 +992,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Qwen-MM-Plugins — MHS
 
-`2026-09-20` · 单位未明确 · **Resource**
+`2026-09-20` · 单位未明确
 
 [一手来源 1](https://github.com/QwenLM/Qwen-MM-Plugins) · [一手来源 2](https://qwenlm.github.io/qwen-mm-plugins-hub/plugins/mhs/cookbook/)
 
@@ -1005,7 +1005,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Safe Lab Agents
 
-`2026-07` · 单位未明确 · **Resource**
+`2026-07` · 单位未明确
 
 [一手来源 1](https://github.com/MaxNaeg/safe_lab_agents) · [一手来源 2](https://safe-lab-agents.org/)
 
@@ -1018,7 +1018,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### PyRoki: A Modular Toolkit for Robot Kinematic Optimization
 
-`2025-05-06` · University of California, Berkeley · **Resource**
+`2025-05-06` · University of California, Berkeley
 
 [一手来源 1](https://arxiv.org/abs/2505.03728) · [一手来源 2](https://pyroki-toolkit.github.io)
 
@@ -1031,7 +1031,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### phys-0
 
-`首发日期未明确` · 单位未明确 · **Resource**
+`首发日期未明确` · 单位未明确
 
 [一手来源 1](https://jvboid.dev/projects/phys-0) · [一手来源 2](https://github.com/JacobFV/chem-0)
 
@@ -1044,7 +1044,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### VBOT Lab
 
-`首发日期未明确` · 单位未明确 · **Resource**
+`首发日期未明确` · 单位未明确
 
 [一手来源 1](https://github.com/VitaDynamics/vbot-lab)
 
@@ -1057,7 +1057,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Robotics Agent Skills
 
-`首发日期未明确` · 单位未明确 · **Resource**
+`首发日期未明确` · 单位未明确
 
 [一手来源 1](https://github.com/arpitg1304/robotics-agent-skills)
 
@@ -1070,7 +1070,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Robo Use
 
-`首发日期未明确` · 单位未明确 · **Resource**
+`首发日期未明确` · 单位未明确
 
 [一手来源 1](https://github.com/benchflow-ai/robouse)
 
@@ -1083,7 +1083,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### ROSClaw
 
-`首发日期未明确` · 单位未明确 · **Resource**
+`首发日期未明确` · 单位未明确
 
 [一手来源 1](https://github.com/ros-claw/rosclaw)
 
@@ -1096,7 +1096,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### ROS MCP Server
 
-`首发日期未明确` · 单位未明确 · **Resource**
+`首发日期未明确` · 单位未明确
 
 [一手来源 1](https://github.com/robotmcp/ros-mcp-server)
 
@@ -1109,7 +1109,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### NVIDIA Agent Skills — Physical AI and Robotics
 
-`首发日期未明确` · 单位未明确 · **Resource**
+`首发日期未明确` · 单位未明确
 
 [一手来源 1](https://github.com/NVIDIA/skills)
 
@@ -1122,7 +1122,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### DimOS
 
-`首发日期未明确` · 单位未明确 · **Resource**
+`首发日期未明确` · 单位未明确
 
 [一手来源 1](https://github.com/dimensionalOS/dimos)
 
@@ -1132,96 +1132,96 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 ### 跨章节阅读
 
-- [One Policy for 100 Household Tasks: Our Solution for the 2026 BEHAVIOR Challenge](#work-2611-14432) · Core
-- [World In-Context Learning for Agentic Robot Manipulation](#work-2611-12885) · Adjacent
-- [Spatial Harness: Grounding Spatial Reasoning in Executable World States with Physics Engines](#work-2611-11344) · Adjacent
-- [BlenderFORGE: Framework for Optimizing Reactive 3D-Graphics Editing Ability of MLLMs](#work-2611-10768) · Core
-- [PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?](#work-2611-08175) · Core
-- [PyRUA-REAL: Robot Exploration and Adaptive Learning through RSI in the Real World](#work-2611-06768) · Core
-- [Open-HumanWAM: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models](#work-2611-06817) · Adjacent
-- [WorldSketch: Sketching World Models for Zero-Shot Mobile Manipulation](#work-2611-00513) · Core
-- [TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents](#work-2610-41216) · Adjacent
-- [RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory](#work-2610-42141) · Core
-- [DyCraft: An Agentic System for Long-Horizon 4D Scene Generation](#work-2610-40754) · Core
-- [CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents](#work-2610-40799) · Core
-- [RoboAuto: Autonomous Robot Program Search through Multi-Level Physical Understanding](#work-2610-36533) · Core
-- [Plumb: Coding Agents with 3D Perception Rebuild Physical Scenes from Video](#work-system-plumb) · Resource
-- [From VLM Planners to Robotic Agents: Self-Evolving Harnesses for History-Dependent Manipulation](#work-2610-29560) · Core
-- [Agentic World Action Models](#work-2610-30136) · Adjacent
-- [AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](#work-2610-28589) · Core
-- [Compile Once, Run Cheap: Frozen, Portable Skills for Embodied Agents, and What Recursive Self-Improvement Adds](#work-2610-25114) · Core
-- [InstAgent: A Recursively Self-Improving Agent Operating System for Heterogeneous Robot Collaboration](#work-2610-23098) · Core
-- [CoEvolve: Self-Evolving Code Policies from Skills to Strategies for Humanoid Robots](#work-2610-23288) · Core
-- [Scaling Online Exploration for Robot Agents](#work-2610-22496) · Core
-- [Spatial Memory by Agents, for Agents](#work-2610-22736) · Adjacent
-- [RoboSimStudio: An Interactive Toolkit for Human and Agent Rapid Real2Sim of Robot Manipulation Tasks](#work-2610-18835) · Core
-- [SEAR: Self-Evolving Agentic Robotics](#work-2610-18792) · Core
-- [EmbodiedEvo: Self-Evolving Coding Agent For Physical Intelligence](#work-2610-18867) · Core
-- [ChunkAct: Action Chunking for Agentic Robotics](#work-2610-18874) · Adjacent
-- [Harness^2: Recursive Agent Harnessing for an Open World](#work-2610-14224) · Adjacent
-- [Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement](#work-2610-12369) · Core
-- [Adaptive Code Generation for Controlling Robots](#work-2610-09588) · Core
-- [EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution](#work-2610-10498) · Core
-- [PhysEvo: Astra Can Act, Let It](#work-2610-08995) · Core
-- [Recova: Agent-Guided Failure Recovery for Autonomous Robotic Manipulation](#work-2610-01178) · Core
-- [Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents](#work-2610-02204) · Adjacent
-- [SimEX: Simulation-Integrated Robotics AutoResearch](#work-2609-38982) · Core
-- [Make Code as Policy Great Again: Frontier Agents Write, Call, and Evolve Robot Tools](#work-2609-39018) · Core
-- [ASENA: Self-evolving Agents for Embodied Navigation](#work-2609-39207) · Core
-- [Scale and Selection: What Makes Automatic Harness Evolution Work for Visual-Interface Robot Agents](#work-2609-39304) · Core
-- [DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents](#work-2609-40306) · Adjacent
-- [RoboHarn-Evo: Evolving Hierarchical Physical Knowledge for Self-Improving Robotic Manipulation](#work-2609-37583) · Adjacent
-- [Self-Evolving Coding Agents: From Digital Programs to Physical-World Intelligence](#work-2609-35432) · Core
-- [Recursive Harness Distillation across Agents for Robot Manipulation](#work-2609-33378) · Adjacent
-- [RoboFoundry: System-as-Policy Evolution for Self-Learning Embodied Agents](#work-2609-32862) · Core
-- [RACaP: Agentic Reasoning, Acting, and Coding as Policies for Evolvable Robot Learning](#work-2609-29394) · Core
-- [Coding Agents for Generalized Task and Motion Planning Problems](#work-2609-30233) · Adjacent
-- [HuGo: LLMs as Whole-Body Policy Code Designers for Humanoid Loco-Manipulation](#work-2609-30594) · Core
-- [EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics](#work-2609-27308) · Core
-- [What Stops Recursive Self-Improvement in Robotics? Lessons from 123 Rounds of Agentic Skill Discovery](#work-2609-31760) · Core
-- [MimicAgent: Quadruped Skills via Prompt-to-Trajectory Generation](#work-2609-24145) · Adjacent
-- [Zetta $ζ$: An Efficient Closed-Loop Embodied Harness for Self-Evolving Physical Intelligence](#work-2608-16590) · Core
-- [Self-Evolving Embodied Agents via Skill-Harness Evolution](#work-2608-11350) · Adjacent
-- [Skills in Weights, Memory in Code: Hybrid Learning for Memory-Dependent Robot Manipulation](#work-2608-09410) · Core
-- [You Don't Need To Stay in The Loop: An Agentic Robotics Loop for Robot-Policy Improvement](#work-2608-07555) · Adjacent
-- [A Few Words Go a Long Way: Language Guided Robot Policy Synthesis](#work-2607-23784) · Adjacent
-- [LabRobFail: A Benchmark for Robotic Failure Analysis in Chemical Self-driving Laboratory](#work-2607-23704) · Adjacent
-- [Stress-testing large language model agents in a robotic chemistry laboratory](#work-2607-23045) · Adjacent
-- [EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI](#work-2607-07459) · Resource
-- [ASPIRE: Agentic /Skills Discovery for Robotics](#work-2607-00272) · Core
-- [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](#work-2606-19980) · Core
-- [Playful Agentic Robot Learning](#work-2606-19419) · Core
-- [Guava: Distilling Frontier VLMs into a Compact Agent through a Robotic Manipulation Harness](#work-2606-18363) · Adjacent
-- [RHO: Your Coding Agent is Secretly a Roboticist](#work-2606-16458) · Core
-- [HARBOR: A Harness Framework for Agentic Robot Reinforcement Learning](#work-2606-08610) · Core
-- [PerceptTwin: Semantic Scene Reconstruction for Iterative LLM Planning and Verification](#work-2606-04226) · Adjacent
-- [ChronoAgentic: A Code-based Multi-Agent World Simulator for Physically Grounded Simulation Construction](#work-2605-14398) · Core
-- [EmbodiSkill: Skill-Aware Reflection for Self-Evolving Embodied Agents](#work-2605-10332) · Adjacent
-- [SimWorld Studio: Automatic Environment Generation with Evolving Coding Agent for Embodied Agent Learning](#work-2605-09423) · Core
-- [Uni-Skill: Building Self-Evolving Skill Repository for Generalizable Robotic Manipulation](#work-2603-02623) · Adjacent
-- [Act-Observe-Rewrite: Multimodal Coding Agents as In-Context Policy Learners for Robot Manipulation](#work-2603-04466) · Core
-- [Robotic Ultra-Long-Horizon Manipulation Skills via Human-guided Lifelong Code Generation](#work-2509-18597) · Core
-- [HyCodePolicy: Hybrid Language Controllers for Multimodal Monitoring and Decision in Embodied Agents](#work-2508-02629) · Core
-- [RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation](#work-2506-18088) · Adjacent
-- [INPROVF: Leveraging Large Language Models to Repair High-level Robot Controllers from Assumption Violations](#work-2503-13660) · Adjacent
-- [Robotic Programmer: Video Instructed Policy Code Generation for Robotic Manipulation](#work-2501-04268) · Adjacent
-- [Creating and Repairing Robot Programs in Open-World Domains](#work-2410-18893) · Adjacent
-- [ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation](#work-2409-01652) · Adjacent
-- [A Multiagent-Driven Robotic AI Chemist Enabling Autonomous Chemical Research On Demand](#work-chemagents) · Adjacent
-- [Lifelong Robot Library Learning: Bootstrapping Composable and Generalizable Skills for Embodied Control with Language Models](#work-2406-18746) · Adjacent
-- [RoboCoder: Robotic Learning from Basic Skills to General Tasks with Large Language Models](#work-2406-03757) · Adjacent
-- [DrEureka: Language Model Guided Sim-To-Real Transfer](#work-2406-01967) · Adjacent
-- [InterPreT: Interactive Predicate Learning from Language Feedback for Generalizable Task Planning](#work-2405-19758) · Adjacent
-- [Evaluating Real-World Robot Manipulation Policies in Simulation](#work-2405-05941) · Adjacent
-- [RoboCodeX: Multimodal Code Generation for Robotic Behavior Synthesis](#work-2402-16117) · Adjacent
-- [Code as Reward: Empowering Reinforcement Learning with VLMs](#work-2402-04764) · Adjacent
-- [Eureka: Human-Level Reward Design via Coding Large Language Models](#work-2310-12931) · Adjacent
-- [Text2Reward: Reward Shaping with Language Models for Reinforcement Learning](#work-2309-11489) · Adjacent
-- [Language to Rewards for Robotic Skill Synthesis](#work-2306-08647) · Adjacent
-- [Demo2Code: From Summarizing Demonstrations to Synthesizing Code via Extended Chain-of-Thought](#work-2305-16744) · Adjacent
-- [mujoco-workbench](#work-mujoco-workbench) · Resource
-- [autoresearch-robotics](#work-autoresearch-robotics) · Resource
-- [An agentic artificially intelligent X-ray scientist](#work-xray-scientist) · Adjacent
+- [One Policy for 100 Household Tasks: Our Solution for the 2026 BEHAVIOR Challenge](#work-2611-14432)
+- [World In-Context Learning for Agentic Robot Manipulation](#work-2611-12885)
+- [Spatial Harness: Grounding Spatial Reasoning in Executable World States with Physics Engines](#work-2611-11344)
+- [BlenderFORGE: Framework for Optimizing Reactive 3D-Graphics Editing Ability of MLLMs](#work-2611-10768)
+- [PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?](#work-2611-08175)
+- [PyRUA-REAL: Robot Exploration and Adaptive Learning through RSI in the Real World](#work-2611-06768)
+- [Open-HumanWAM: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models](#work-2611-06817)
+- [WorldSketch: Sketching World Models for Zero-Shot Mobile Manipulation](#work-2611-00513)
+- [TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents](#work-2610-41216)
+- [RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory](#work-2610-42141)
+- [DyCraft: An Agentic System for Long-Horizon 4D Scene Generation](#work-2610-40754)
+- [CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents](#work-2610-40799)
+- [RoboAuto: Autonomous Robot Program Search through Multi-Level Physical Understanding](#work-2610-36533)
+- [Plumb: Coding Agents with 3D Perception Rebuild Physical Scenes from Video](#work-system-plumb)
+- [From VLM Planners to Robotic Agents: Self-Evolving Harnesses for History-Dependent Manipulation](#work-2610-29560)
+- [Agentic World Action Models](#work-2610-30136)
+- [AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](#work-2610-28589)
+- [Compile Once, Run Cheap: Frozen, Portable Skills for Embodied Agents, and What Recursive Self-Improvement Adds](#work-2610-25114)
+- [InstAgent: A Recursively Self-Improving Agent Operating System for Heterogeneous Robot Collaboration](#work-2610-23098)
+- [CoEvolve: Self-Evolving Code Policies from Skills to Strategies for Humanoid Robots](#work-2610-23288)
+- [Scaling Online Exploration for Robot Agents](#work-2610-22496)
+- [Spatial Memory by Agents, for Agents](#work-2610-22736)
+- [RoboSimStudio: An Interactive Toolkit for Human and Agent Rapid Real2Sim of Robot Manipulation Tasks](#work-2610-18835)
+- [SEAR: Self-Evolving Agentic Robotics](#work-2610-18792)
+- [EmbodiedEvo: Self-Evolving Coding Agent For Physical Intelligence](#work-2610-18867)
+- [ChunkAct: Action Chunking for Agentic Robotics](#work-2610-18874)
+- [Harness^2: Recursive Agent Harnessing for an Open World](#work-2610-14224)
+- [Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement](#work-2610-12369)
+- [Adaptive Code Generation for Controlling Robots](#work-2610-09588)
+- [EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution](#work-2610-10498)
+- [PhysEvo: Astra Can Act, Let It](#work-2610-08995)
+- [Recova: Agent-Guided Failure Recovery for Autonomous Robotic Manipulation](#work-2610-01178)
+- [Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents](#work-2610-02204)
+- [SimEX: Simulation-Integrated Robotics AutoResearch](#work-2609-38982)
+- [Make Code as Policy Great Again: Frontier Agents Write, Call, and Evolve Robot Tools](#work-2609-39018)
+- [ASENA: Self-evolving Agents for Embodied Navigation](#work-2609-39207)
+- [Scale and Selection: What Makes Automatic Harness Evolution Work for Visual-Interface Robot Agents](#work-2609-39304)
+- [DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents](#work-2609-40306)
+- [RoboHarn-Evo: Evolving Hierarchical Physical Knowledge for Self-Improving Robotic Manipulation](#work-2609-37583)
+- [Self-Evolving Coding Agents: From Digital Programs to Physical-World Intelligence](#work-2609-35432)
+- [Recursive Harness Distillation across Agents for Robot Manipulation](#work-2609-33378)
+- [RoboFoundry: System-as-Policy Evolution for Self-Learning Embodied Agents](#work-2609-32862)
+- [RACaP: Agentic Reasoning, Acting, and Coding as Policies for Evolvable Robot Learning](#work-2609-29394)
+- [Coding Agents for Generalized Task and Motion Planning Problems](#work-2609-30233)
+- [HuGo: LLMs as Whole-Body Policy Code Designers for Humanoid Loco-Manipulation](#work-2609-30594)
+- [EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics](#work-2609-27308)
+- [What Stops Recursive Self-Improvement in Robotics? Lessons from 123 Rounds of Agentic Skill Discovery](#work-2609-31760)
+- [MimicAgent: Quadruped Skills via Prompt-to-Trajectory Generation](#work-2609-24145)
+- [Zetta $ζ$: An Efficient Closed-Loop Embodied Harness for Self-Evolving Physical Intelligence](#work-2608-16590)
+- [Self-Evolving Embodied Agents via Skill-Harness Evolution](#work-2608-11350)
+- [Skills in Weights, Memory in Code: Hybrid Learning for Memory-Dependent Robot Manipulation](#work-2608-09410)
+- [You Don't Need To Stay in The Loop: An Agentic Robotics Loop for Robot-Policy Improvement](#work-2608-07555)
+- [A Few Words Go a Long Way: Language Guided Robot Policy Synthesis](#work-2607-23784)
+- [LabRobFail: A Benchmark for Robotic Failure Analysis in Chemical Self-driving Laboratory](#work-2607-23704)
+- [Stress-testing large language model agents in a robotic chemistry laboratory](#work-2607-23045)
+- [EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI](#work-2607-07459)
+- [ASPIRE: Agentic /Skills Discovery for Robotics](#work-2607-00272)
+- [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](#work-2606-19980)
+- [Playful Agentic Robot Learning](#work-2606-19419)
+- [Guava: Distilling Frontier VLMs into a Compact Agent through a Robotic Manipulation Harness](#work-2606-18363)
+- [RHO: Your Coding Agent is Secretly a Roboticist](#work-2606-16458)
+- [HARBOR: A Harness Framework for Agentic Robot Reinforcement Learning](#work-2606-08610)
+- [PerceptTwin: Semantic Scene Reconstruction for Iterative LLM Planning and Verification](#work-2606-04226)
+- [ChronoAgentic: A Code-based Multi-Agent World Simulator for Physically Grounded Simulation Construction](#work-2605-14398)
+- [EmbodiSkill: Skill-Aware Reflection for Self-Evolving Embodied Agents](#work-2605-10332)
+- [SimWorld Studio: Automatic Environment Generation with Evolving Coding Agent for Embodied Agent Learning](#work-2605-09423)
+- [Uni-Skill: Building Self-Evolving Skill Repository for Generalizable Robotic Manipulation](#work-2603-02623)
+- [Act-Observe-Rewrite: Multimodal Coding Agents as In-Context Policy Learners for Robot Manipulation](#work-2603-04466)
+- [Robotic Ultra-Long-Horizon Manipulation Skills via Human-guided Lifelong Code Generation](#work-2509-18597)
+- [HyCodePolicy: Hybrid Language Controllers for Multimodal Monitoring and Decision in Embodied Agents](#work-2508-02629)
+- [RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation](#work-2506-18088)
+- [INPROVF: Leveraging Large Language Models to Repair High-level Robot Controllers from Assumption Violations](#work-2503-13660)
+- [Robotic Programmer: Video Instructed Policy Code Generation for Robotic Manipulation](#work-2501-04268)
+- [Creating and Repairing Robot Programs in Open-World Domains](#work-2410-18893)
+- [ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation](#work-2409-01652)
+- [A Multiagent-Driven Robotic AI Chemist Enabling Autonomous Chemical Research On Demand](#work-chemagents)
+- [Lifelong Robot Library Learning: Bootstrapping Composable and Generalizable Skills for Embodied Control with Language Models](#work-2406-18746)
+- [RoboCoder: Robotic Learning from Basic Skills to General Tasks with Large Language Models](#work-2406-03757)
+- [DrEureka: Language Model Guided Sim-To-Real Transfer](#work-2406-01967)
+- [InterPreT: Interactive Predicate Learning from Language Feedback for Generalizable Task Planning](#work-2405-19758)
+- [Evaluating Real-World Robot Manipulation Policies in Simulation](#work-2405-05941)
+- [RoboCodeX: Multimodal Code Generation for Robotic Behavior Synthesis](#work-2402-16117)
+- [Code as Reward: Empowering Reinforcement Learning with VLMs](#work-2402-04764)
+- [Eureka: Human-Level Reward Design via Coding Large Language Models](#work-2310-12931)
+- [Text2Reward: Reward Shaping with Language Models for Reinforcement Learning](#work-2309-11489)
+- [Language to Rewards for Robotic Skill Synthesis](#work-2306-08647)
+- [Demo2Code: From Summarizing Demonstrations to Synthesizing Code via Extended Chain-of-Thought](#work-2305-16744)
+- [mujoco-workbench](#work-mujoco-workbench)
+- [autoresearch-robotics](#work-autoresearch-robotics)
+- [An agentic artificially intelligent X-ray scientist](#work-xray-scientist)
 
 [返回研究地图](#research-map)
 
@@ -1251,7 +1251,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 构建反馈属于生成流程：渲染、编译报错、几何探针或失败 rollout 都可能触发编辑；最终质量评估则检查已接受环境在独立条件下是否仍然有用。第 3 节区分这两种作用，第 4、5 节进一步区分生成训练样本、更新下游控制器、积累外部技能与训练 Coding Agent 模型。一个核心开放问题是：哪些环境误差最影响 Agent 学习，哪些构建期检查能够可靠预测这种影响？
 
-**可组合资源。** 以下已有资源提供外观生成、运行时接口或可复用流程，继续保留 Resource 身份，与构建方法数量分开统计。PBR 外观参数不能替代接触、惯量或材料本构校准。
+**可组合资源。** 以下已有资源提供外观生成、运行时接口或可复用流程，与构建方法数量分开统计。PBR 外观参数不能替代接触、惯量或材料本构校准。
 
 | 资源 | 对构建流程的贡献 | 可用性与含义 |
 |---|---|---|
@@ -1266,7 +1266,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Spatial Harness: Grounding Spatial Reasoning in Executable World States with Physics Engines
 
-`2026-11-08` · Hong Kong Baptist University; ByteDance Seed · **Adjacent**
+`2026-11-08` · Hong Kong Baptist University; ByteDance Seed
 
 [完整书目](../README.zh-CN.md#paper-2611-11344) · [证据 1](https://arxiv.org/abs/2611.11344) · [证据 2](https://github.com/tmlr-group/Spatial-Harness) · [证据 3](https://arxiv.org/html/2611.11344v1)
 
@@ -1294,7 +1294,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 #### Agentic discrete-event simulation for manufacturing system design: an open 3D simulator, a benchmark and an industrial case
 
-`2026-11-07` · Universidade da Coruña; CITENI; Grupo Integrado de Ingeniería · **Adjacent**
+`2026-11-07` · Universidade da Coruña; CITENI; Grupo Integrado de Ingeniería
 
 [一手来源 1](https://arxiv.org/abs/2611.10602) · [一手来源 2](https://arxiv.org/html/2611.10602v2)
 
@@ -1322,7 +1322,7 @@ SimuLean 为 Agent 提供经过验证的制造系统建模组件。领域命令�
 
 #### Closing the Dynamics Gap through Self-Directed Robotic Interaction
 
-`2026-11-02` · Stanford University; ETH Zurich; NVIDIA Research; microagi · **Core**
+`2026-11-02` · Stanford University; ETH Zurich; NVIDIA Research; microagi
 
 [一手来源 1](https://arxiv.org/abs/2611.02691) · [一手来源 2](https://arxiv.org/html/2611.02691v1) · [一手来源 3](https://cue-dynamics.github.io/)
 
@@ -1350,7 +1350,7 @@ CUE 针对仅看图片难以恢复摩擦和恢复系数的动力学缺口，让 
 
 #### WorldSketch: Sketching World Models for Zero-Shot Mobile Manipulation
 
-`2026-10-31` · 单位未明确 · **Core**
+`2026-10-31` · 单位未明确
 
 [完整书目](../README.zh-CN.md#paper-2611-00513) · [证据 1](https://arxiv.org/abs/2611.00513) · [证据 2](https://arxiv.org/html/2611.00513v1)
 
@@ -1378,7 +1378,7 @@ WorldSketch 让 VLM 决定任务需要哪些部件和机制，由深度测量提
 
 #### Gym-Anything for Robotics: Scaling physical simulations with digital agents
 
-`2026-10-29` · Carnegie Mellon University · **Core**
+`2026-10-29` · Carnegie Mellon University
 
 [一手来源 1](https://arxiv.org/abs/2610.40565) · [一手来源 2](https://arxiv.org/html/2610.40565v1) · [一手来源 3](https://gym-anything.github.io/robotics)
 
@@ -1406,7 +1406,7 @@ Gym-Anything for Robotics 将构建与检验物理仿真转化为 Coding Agent �
 
 #### DyCraft: An Agentic System for Long-Horizon 4D Scene Generation
 
-`2026-10-29` · Stanford University; University of Cambridge · **Core**
+`2026-10-29` · Stanford University; University of Cambridge
 
 [完整书目](../README.zh-CN.md#paper-2610-40754) · [证据 1](https://arxiv.org/abs/2610.40754) · [证据 2](https://arxiv.org/html/2610.40754v1) · [证据 3](https://dy-craft.github.io/)
 
@@ -1434,7 +1434,7 @@ Gym-Anything for Robotics 将构建与检验物理仿真转化为 Coding Agent �
 
 #### LabWorld: Learning Interactive 4D Worlds for Scientific Experimentation
 
-`2026-10-27` · Princeton University; Stanford University; University of Chicago; New York University; Oregon State University; University of Illinois at Urbana-Champaign; University of Texas at Austin · **Adjacent**
+`2026-10-27` · Princeton University; Stanford University; University of Chicago; New York University; Oregon State University; University of Illinois at Urbana-Champaign; University of Texas at Austin
 
 [一手来源 1](https://arxiv.org/abs/2610.36592) · [一手来源 2](https://arxiv.org/html/2610.36592v1)
 
@@ -1462,7 +1462,7 @@ LabWorld 将实验室视频中的设备、空间布局和操作过程转为可�
 
 #### SceneAgent: An Agentic Pipeline from 3D and 4D Captures to Simulation Environments
 
-`2026-10-26` · Harvard University · **Core**
+`2026-10-26` · Harvard University
 
 [完整书目](../README.zh-CN.md#paper-2610-34745) · [证据 1](https://arxiv.org/abs/2610.34745) · [证据 2](https://arxiv.org/html/2610.34745v1) · [证据 3](https://computationalrobotics.seas.harvard.edu/SceneAgent/)
 
@@ -1490,7 +1490,7 @@ SceneAgent 从多类 3D 捕获和动态视频构建可交互场景，协调物�
 
 #### SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning
 
-`2026-10-23` · New York University; University of California, San Diego · **Adjacent**
+`2026-10-23` · New York University; University of California, San Diego
 
 [完整书目](../README.zh-CN.md#paper-2610-32978) · [证据 1](https://arxiv.org/abs/2610.32978) · [证据 2](https://arxiv.org/pdf/2610.32978v1) · [证据 3](https://tinaliu0123.github.io/scenebloom/)
 
@@ -1518,7 +1518,7 @@ SceneBloom 将视觉生成模型提供的布局先验与几何编译结合，用
 
 #### WorldMirror: Agentic Real-to-Sim Generation of Interactive Worlds from In-the-Wild Robot Demonstrations
 
-`2026-10-22` · Xspark AI; Tsinghua University; The University of Hong Kong; University College London; Peking University · **Core**
+`2026-10-22` · Xspark AI; Tsinghua University; The University of Hong Kong; University College London; Peking University
 
 [完整书目](../README.zh-CN.md#paper-2610-31834) · [证据 1](https://arxiv.org/abs/2610.31834) · [证据 2](https://arxiv.org/html/2610.31834v1) · [证据 3](https://worldmirror-page.github.io/)
 
@@ -1546,7 +1546,7 @@ WorldMirror 以真实机器人示范和相应轨迹构建数字孪生。固定�
 
 #### Plumb: Coding Agents with 3D Perception Rebuild Physical Scenes from Video
 
-`2026-10-21` · Westlake University; The University of Hong Kong · **Resource**
+`2026-10-21` · Westlake University; The University of Hong Kong
 
 [一手来源 1](https://yubel426.github.io/Plumb/) · [一手来源 2](https://github.com/Inception3D/Plumb)
 
@@ -1574,7 +1574,7 @@ Plumb 探讨 Coding Agent 如何从视频恢复可执行的物理场景，以 3D
 
 #### MARC: Mechanism-Aware Reflective Correction for Articulated Object Code Generation
 
-`2026-10-19` · Shanghai Jiao Tong University; Meituan · **Core**
+`2026-10-19` · Shanghai Jiao Tong University; Meituan
 
 [完整书目](../README.zh-CN.md#paper-2610-33060) · [证据 1](https://arxiv.org/abs/2610.33060) · [证据 2](https://arxiv.org/html/2610.33060v1) · [证据 3](https://demianmusk.github.io/MARC-Home/)
 
@@ -1602,7 +1602,7 @@ MARC 面向闭链与耦合机构中“能加载但不能按预期运动”的问
 
 #### GRASE: Geometry-native Real-to-sim Agentic Scene Modeling from Video
 
-`2026-10-15` · Xi’an Jiaotong University; Fuzhou University; Adobe Systems; Westlake University · **Core**
+`2026-10-15` · Xi’an Jiaotong University; Fuzhou University; Adobe Systems; Westlake University
 
 [完整书目](../README.zh-CN.md#paper-2610-21498) · [证据 1](https://arxiv.org/abs/2610.21498) · [证据 2](https://arxiv.org/html/2610.21498v1)
 
@@ -1628,7 +1628,7 @@ GRASE 将输入视频作为整个重建过程的持续参照，避免一次性�
 
 #### RoboSimStudio: An Interactive Toolkit for Human and Agent Rapid Real2Sim of Robot Manipulation Tasks
 
-`2026-10-13` · University of California, Berkeley; NVIDIA · **Core**
+`2026-10-13` · University of California, Berkeley; NVIDIA
 
 [一手来源 1](https://arxiv.org/abs/2610.18835) · [一手来源 2](https://arxiv.org/html/2610.18835v2) · [一手来源 3](https://robosimstudio.github.io)
 
@@ -1656,7 +1656,7 @@ RoboSimStudio 暴露求解器、接触模型和物理参数，让人和 Coding A
 
 #### D-World: An Explicit World-Language-Action Model with Recursive Self-Improvement under Dual Control
 
-`2026-10-12` · Geek+ · **Core**
+`2026-10-12` · Geek+
 
 [一手来源 1](https://arxiv.org/abs/2610.17114) · [一手来源 2](https://arxiv.org/html/2610.17114v1)
 
@@ -1684,7 +1684,7 @@ D-World 把世界模型表示为 Agent 可直接检查和修订的数字孪生�
 
 #### Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark
 
-`2026-10-09` · Nanyang Technological University; ETH Zurich; Microsoft; University of Cambridge; University of Oxford · **Core**
+`2026-10-09` · Nanyang Technological University; ETH Zurich; Microsoft; University of Cambridge; University of Oxford
 
 [完整书目](../README.zh-CN.md#paper-2610-13947) · [证据 1](https://arxiv.org/abs/2610.13947) · [证据 2](https://arxiv.org/html/2610.13947v3) · [证据 3](https://physicalvision.github.io/artisan/)
 
@@ -1712,7 +1712,7 @@ Artisan 将资产生成目标从几何外观扩展到碰撞、稳定性、质量
 
 #### USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation
 
-`2026-10-08` · NVIDIA; Nanyang Technological University; Peking University · **Core**
+`2026-10-08` · NVIDIA; Nanyang Technological University; Peking University
 
 [完整书目](../README.zh-CN.md#paper-2610-11322) · [证据 1](https://arxiv.org/abs/2610.11322) · [证据 2](https://arxiv.org/html/2610.11322v1) · [证据 3](https://xingyoujun.github.io/usdcraft/)
 
@@ -1740,7 +1740,7 @@ USDCraft 将关节资产重建写成以部分几何证据为依据的程序建�
 
 #### Agentic RSR: Real-to-Sim-to-Real through Scene Reconstruction and Execution-Grounded Robot Policies
 
-`2026-10-07` · Sun Yat-sen University; The Hong Kong University of Science and Technology (Guangzhou) · **Core**
+`2026-10-07` · Sun Yat-sen University; The Hong Kong University of Science and Technology (Guangzhou)
 
 [完整书目](../README.zh-CN.md#paper-2610-10479) · [证据 1](https://arxiv.org/abs/2610.10479) · [证据 2](https://arxiv.org/html/2610.10479v2)
 
@@ -1768,7 +1768,7 @@ Agentic RSR 将场景重建、策略开发和真机执行连接到同一个操�
 
 #### Awomo-SimDataEngine: Agentic Simulation-Ready World Generation
 
-`2026-10-01` · 单位未明确 · **Core**
+`2026-10-01` · 单位未明确
 
 [完整书目](../README.zh-CN.md#paper-2610-02274) · [证据 1](https://arxiv.org/abs/2610.02274) · [证据 2](https://arxiv.org/html/2610.02274v1)
 
@@ -1796,7 +1796,7 @@ Awomo-SimDataEngine 把仿真资产、世界构建和机器人示范合成整合
 
 #### Text2Sim: Agentic Physics-Based Simulation Generation with Distilled Expertise
 
-`2026-09-29` · Tsinghua University; Carnegie Mellon University; Genesis AI; Shanghai Qi Zhi Institute · **Core**
+`2026-09-29` · Tsinghua University; Carnegie Mellon University; Genesis AI; Shanghai Qi Zhi Institute
 
 [完整书目](../README.zh-CN.md#paper-2609-36593) · [证据 1](https://arxiv.org/abs/2609.36593) · [证据 2](https://arxiv.org/html/2609.36593v2)
 
@@ -1824,7 +1824,7 @@ Text2Sim 将文字描述转成可执行且可编辑的物理动态案例，协�
 
 #### Real2Gym: Building Gyms from Videos, Bringing Skills to Robots
 
-`2026-09-29` · Shanghai Artificial Intelligence Laboratory; Shanghai Jiao Tong University; Zhejiang University; University of Science and Technology of China; The Chinese University of Hong Kong; The University of Hong Kong · **Core**
+`2026-09-29` · Shanghai Artificial Intelligence Laboratory; Shanghai Jiao Tong University; Zhejiang University; University of Science and Technology of China; The Chinese University of Hong Kong; The University of Hong Kong
 
 [一手来源 1](https://arxiv.org/abs/2609.37089) · [一手来源 2](https://arxiv.org/html/2609.37089v1) · [一手来源 3](https://real2gym.github.io/)
 
@@ -1852,7 +1852,7 @@ Text2Sim 将文字描述转成可执行且可编辑的物理动态案例，协�
 
 #### FACT: Fidelity-Aware Construction of Articulated Twins
 
-`2026-09-29` · ShanghaiTech University · **Adjacent**
+`2026-09-29` · ShanghaiTech University
 
 [一手来源 1](https://arxiv.org/abs/2609.37067) · [一手来源 2](https://arxiv.org/html/2609.37067v2)
 
@@ -1880,7 +1880,7 @@ FACT 以共享部件身份和坐标系逐阶段构建关节数字孪生。Agent 
 
 #### CoDimRecon: Agentic Reconstruction of Sim-Ready 3D Scenes with Deformable Curves, Surfaces, and Volumes
 
-`2026-09-28` · Tsinghua University; Carnegie Mellon University; Genesis AI · **Core**
+`2026-09-28` · Tsinghua University; Carnegie Mellon University; Genesis AI
 
 [完整书目](../README.zh-CN.md#paper-2609-36024) · [证据 1](https://arxiv.org/abs/2609.36024) · [证据 2](https://arxiv.org/html/2609.36024v3) · [证据 3](https://shuzhaoxie.github.io/CoDimRecon/)
 
@@ -1908,7 +1908,7 @@ CoDimRecon 将可组合场景重建扩展到具有不同几何维度的可变形
 
 #### WorldAgent: Verification-Guided Agentic Physical World Construction
 
-`2026-09-27` · University of British Columbia; VAST; Zhejiang University; University of Utah; The University of Texas at Austin; University of California, Los Angeles · **Core**
+`2026-09-27` · University of British Columbia; VAST; Zhejiang University; University of Utah; The University of Texas at Austin; University of California, Los Angeles
 
 [完整书目](../README.zh-CN.md#paper-2609-33208) · [证据 1](https://arxiv.org/abs/2609.33208) · [证据 2](https://arxiv.org/html/2609.33208v1)
 
@@ -1936,7 +1936,7 @@ WorldAgent 将复杂世界构建看作规格与验证共同驱动的过程，要
 
 #### DiagGen: Agentic Generation of Deformable Assets with Sim-based Diagnostics for Robotic Simulation
 
-`2026-09-19` · University of British Columbia; National University of Singapore; University of Cambridge; Friedrich-Alexander-Universität Erlangen-Nürnberg; University of Wisconsin–Madison · **Core**
+`2026-09-19` · University of British Columbia; National University of Singapore; University of Cambridge; Friedrich-Alexander-Universität Erlangen-Nürnberg; University of Wisconsin–Madison
 
 [完整书目](../README.zh-CN.md#paper-2609-23103) · [证据 1](https://arxiv.org/abs/2609.23103) · [证据 2](https://arxiv.org/html/2609.23103v1) · [证据 3](https://diaggen.github.io/)
 
@@ -1964,7 +1964,7 @@ DiagGen 将生成后的物理响应变成可行动的诊断信号，弥补仅静
 
 #### DeformSmith: Physics Harness-Guided Hierarchical Generation of Deformable Assets for Robot Manipulation
 
-`2026-09-16` · Nankai University; Rightly Robotics, A4x · **Core**
+`2026-09-16` · Nankai University; Rightly Robotics, A4x
 
 [完整书目](../README.zh-CN.md#paper-2609-18620) · [证据 1](https://arxiv.org/abs/2609.18620) · [证据 2](https://arxiv.org/html/2609.18620v2) · [证据 3](https://can-lee.github.io/DeformSmith_web/)
 
@@ -1992,7 +1992,7 @@ DeformSmith 面向可抓取的体积软物体，把几何、物理条件、材�
 
 #### GIF: Agentic Generation of Interactive and Functional Object Compositions for Robot Learning
 
-`2026-09-05` · Galbot; Peking University; Zhejiang University; The University of Hong Kong; Tsinghua University; Beijing Academy of Artificial Intelligence · **Adjacent**
+`2026-09-05` · Galbot; Peking University; Zhejiang University; The University of Hong Kong; Tsinghua University; Beijing Academy of Artificial Intelligence
 
 [一手来源 1](https://arxiv.org/abs/2609.05927) · [一手来源 2](https://fufumeichi.github.io/gif-project-page/) · [一手来源 3](https://fufumeichi.github.io/gif-project-page/assets/paper.pdf)
 
@@ -2020,7 +2020,7 @@ GIF 将精确物体组合分解为独立资产重建和相对位姿恢复。互�
 
 #### SceneMosaic: Efficient and Diverse Simulation-Ready Scene Generation via Hybrid Agentic Layout Evolution
 
-`2026-09-04` · The University of Hong Kong; University of Electronic Science and Technology of China · **Adjacent**
+`2026-09-04` · The University of Hong Kong; University of Electronic Science and Technology of China
 
 [一手来源 1](https://arxiv.org/abs/2609.05594) · [一手来源 2](https://arxiv.org/html/2609.05594) · [一手来源 3](https://github.com/rxjfighting/SceneMosaic) · [一手来源 4](https://rxjfighting.github.io/SceneMosaic/)
 
@@ -2048,7 +2048,7 @@ GIF 将精确物体组合分解为独立资产重建和相对位姿恢复。互�
 
 #### Lucida: Parse, Generate, and Place for Composable Real-to-Sim Scene Modeling
 
-`2026-08-31` · ByteDance Seed; Peking University; Zhejiang University · **Adjacent**
+`2026-08-31` · ByteDance Seed; Peking University; Zhejiang University
 
 [一手来源 1](https://arxiv.org/abs/2608.30821) · [一手来源 2](https://arxiv.org/html/2608.30821v1) · [一手来源 3](https://lucida-r2s.github.io/)
 
@@ -2076,7 +2076,7 @@ Lucida 按解析、生成和放置三步重建可编辑真实场景，将准确�
 
 #### Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning
 
-`2026-08-27` · MirroS; Tsinghua University; Peking University; Nanyang Technological University · **Core**
+`2026-08-27` · MirroS; Tsinghua University; Peking University; Nanyang Technological University
 
 [完整书目](../README.zh-CN.md#paper-2608-27549) · [证据 1](https://arxiv.org/abs/2608.27549) · [证据 2](https://arxiv.org/html/2608.27549v2) · [证据 3](https://mirros-lab.github.io/code-as-world)
 
@@ -2104,7 +2104,7 @@ Code as Worlds 把世界分成可独立编辑的组成、动态和外观，并�
 
 #### Beyond Placement and Articulation: Usage-Driven Code Scenes for Embodied Interaction
 
-`2026-08-19` · Shanghai Jiao Tong University; Meituan · **Adjacent**
+`2026-08-19` · Shanghai Jiao Tong University; Meituan
 
 [一手来源 1](https://arxiv.org/abs/2608.18840) · [一手来源 2](https://arxiv.org/html/2608.18840)
 
@@ -2132,7 +2132,7 @@ RoomWright 将代码场景的目标从“摆放和关节”扩展到物体如何
 
 #### LiteReality-Agent: An Agentic System for Interactable 3D Indoor Scene Reconstruction
 
-`2026-08-04` · University of Cambridge; Imperial College London; Independent Researcher · **Core**
+`2026-08-04` · University of Cambridge; Imperial College London; Independent Researcher
 
 官方项目文章：2026-08-04；arXiv v1：2026-10-01。
 
@@ -2162,7 +2162,7 @@ LiteReality-Agent 从 RGB-D 扫描构建真实、带关节且可交互的室内�
 
 #### GS-Agent: Creating 4D Physical Worlds With Generative Simulation
 
-`2026-07-23` · University of Massachusetts Amherst; Genesis AI · **Adjacent**
+`2026-07-23` · University of Massachusetts Amherst; Genesis AI
 
 [一手来源 1](https://arxiv.org/abs/2607.21522) · [一手来源 2](https://arxiv.org/html/2607.21522) · [一手来源 3](https://umass-embodied-agi.github.io/gs-agent/)
 
@@ -2190,7 +2190,7 @@ GS-Agent 将实体构建、物理参数与拍摄过程交给能够编程和互�
 
 #### Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents
 
-`2026-07-21` · University of British Columbia; National University of Singapore; Johns Hopkins University; Friedrich-Alexander-Universität Erlangen-Nürnberg; University of Cambridge; Columbia University; University of California, Los Angeles; Style3D · **Core**
+`2026-07-21` · University of British Columbia; National University of Singapore; Johns Hopkins University; Friedrich-Alexander-Universität Erlangen-Nürnberg; University of Cambridge; Columbia University; University of California, Los Angeles; Style3D
 
 [一手来源 1](https://arxiv.org/abs/2607.19190) · [一手来源 2](https://arxiv.org/html/2607.19190v5) · [一手来源 3](https://agentic-real2sim.github.io/)
 
@@ -2218,7 +2218,7 @@ Agentic Real2Sim 将真实交互记录转换成能够再次执行而非仅观看
 
 #### UniPhysGen: Unified Physical Grounding for Simulation-Ready 3D Assets
 
-`2026-07-15` · Zhejiang University; Manycore Tech; University of Electronic Science and Technology of China · **Adjacent**
+`2026-07-15` · Zhejiang University; Manycore Tech; University of Electronic Science and Technology of China
 
 [完整书目](../README.zh-CN.md#paper-2607-13586) · [证据 1](https://arxiv.org/abs/2607.13586) · [证据 2](https://github.com/breezexian/UniPhysGen) · [证据 3](https://huggingface.co/datasets/spatialverse/UniPhys-Bench)
 
@@ -2246,7 +2246,7 @@ Agentic Real2Sim 将真实交互记录转换成能够再次执行而非仅观看
 
 #### EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI
 
-`2026-07-08` · Horizon Robotics; WuwenAI · **Resource**
+`2026-07-08` · Horizon Robotics; WuwenAI
 
 [一手来源 1](https://arxiv.org/abs/2607.07459) · [一手来源 2](https://arxiv.org/html/2607.07459v3) · [一手来源 3](https://horizonrobotics.github.io/EmbodiedGen/)
 
@@ -2263,7 +2263,7 @@ Agentic Real2Sim 将真实交互记录转换成能够再次执行而非仅观看
 <details>
 <summary>摘要概述</summary>
 
-EmbodiedGen V2 联合仿真资产加工、交互 affordance、任务世界、多房间场景和自然语言编辑，使生成结果可复用与跨平台部署。其论文包含具体生成和放置算法及消融，适合方法页阅读；已有 Resource 身份保持，不能把下游强化学习当作构建者训练。
+EmbodiedGen V2 联合仿真资产加工、交互 affordance、任务世界、多房间场景和自然语言编辑，使生成结果可复用与跨平台部署。其论文包含具体生成和放置算法及消融，适合方法页阅读；不能把下游强化学习当作构建者训练。
 
 </details>
 
@@ -2274,7 +2274,7 @@ EmbodiedGen V2 联合仿真资产加工、交互 affordance、任务世界、多
 
 #### SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation
 
-`2026-07-02` · Carnegie Mellon University; Harvard University; University of California, Merced · **Adjacent**
+`2026-07-02` · Carnegie Mellon University; Harvard University; University of California, Merced
 
 [一手来源 1](https://arxiv.org/abs/2607.01766) · [一手来源 2](https://arxiv.org/html/2607.01766v1) · [一手来源 3](https://dynsimworlds.github.io/)
 
@@ -2302,7 +2302,7 @@ SimWorlds 针对看起来运动正确却使用错误机制的动态场景，加�
 
 #### SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation
 
-`2026-06-26` · NVIDIA; Georgia Institute of Technology; Stanford University; The University of Texas at Austin; University of Toronto · **Adjacent**
+`2026-06-26` · NVIDIA; Georgia Institute of Technology; Stanford University; The University of Texas at Austin; University of Toronto
 
 [一手来源 1](https://arxiv.org/abs/2606.28276) · [一手来源 2](https://arxiv.org/html/2606.28276v4) · [一手来源 3](https://research.nvidia.com/labs/gear/simfoundry/) · [一手来源 4](https://github.com/NVlabs/SimFoundry)
 
@@ -2330,7 +2330,7 @@ SimFoundry 从单段现实视频自动重建可模拟场景，同时支持物体
 
 #### MUSE: Agentic 3D Scene Authoring via Memory-Grounded Incremental Requirement Satisfaction
 
-`2026-06-12` · East China Normal University; Fudan University; Shanghai Jiao Tong University · **Adjacent**
+`2026-06-12` · East China Normal University; Fudan University; Shanghai Jiao Tong University
 
 [一手来源 1](https://arxiv.org/abs/2606.14168) · [一手来源 2](https://arxiv.org/html/2606.14168) · [一手来源 3](https://xujay111.github.io/muse_githubio/)
 
@@ -2358,7 +2358,7 @@ MUSE 研究如何在持续构建中保留已经完成的工作。它用需求程
 
 #### PerceptTwin: Semantic Scene Reconstruction for Iterative LLM Planning and Verification
 
-`2026-06-02` · Université de Montréal; Mila – Quebec AI Institute · **Adjacent**
+`2026-06-02` · Université de Montréal; Mila – Quebec AI Institute
 
 [一手来源 1](https://arxiv.org/abs/2606.04226) · [一手来源 2](https://arxiv.org/html/2606.04226v1) · [一手来源 3](https://percept-twin.github.io/)
 
@@ -2386,7 +2386,7 @@ PerceptTwin 从机器人感知地图自动构造一个可解释、可交互的�
 
 #### PhysX-Omni: Unified Simulation-Ready Physical 3D Generation for Rigid, Deformable, and Articulated Objects
 
-`2026-05-20` · Nanyang Technological University; ACE Robotics · **Adjacent**
+`2026-05-20` · Nanyang Technological University; ACE Robotics
 
 [一手来源 1](https://arxiv.org/abs/2605.21572) · [一手来源 2](https://arxiv.org/html/2605.21572v1) · [一手来源 3](https://physx-omni.github.io/)
 
@@ -2414,7 +2414,7 @@ PhysX-Omni 的独立方法贡献是面向 VLM 的模板 RLE 几何表示及全�
 
 #### SceneCode: Executable World Programs for Editable Indoor Scenes with Articulated Objects
 
-`2026-05-19` · The Chinese University of Hong Kong; Shanghai Jiao Tong University; Shanghai AI Laboratory; Microsoft; University of Oxford · **Adjacent**
+`2026-05-19` · The Chinese University of Hong Kong; Shanghai Jiao Tong University; Shanghai AI Laboratory; Microsoft; University of Oxford
 
 [一手来源 1](https://arxiv.org/abs/2605.19587) · [一手来源 2](https://arxiv.org/html/2605.19587v1) · [一手来源 3](https://scene-code.github.io/) · [一手来源 4](https://github.com/wangpuyi/SceneCode)
 
@@ -2442,7 +2442,7 @@ SceneCode 将可交互室内场景生成表述为程序化世界构建，以显�
 
 #### ChronoAgentic: A Code-based Multi-Agent World Simulator for Physically Grounded Simulation Construction
 
-`2026-05-14` · University of Wisconsin–Madison · **Core**
+`2026-05-14` · University of Wisconsin–Madison
 
 [完整书目](../README.zh-CN.md#paper-2605-14398) · [证据 1](https://arxiv.org/abs/2605.14398) · [证据 2](https://arxiv.org/html/2605.14398v3) · [证据 3](https://uwsbel.github.io/chrono-agentic-website/)
 
@@ -2470,7 +2470,7 @@ ChronoAgentic 通过可执行代码构建显式物理世界，让专门角色处
 
 #### Articraft: An Agentic System for Scalable Articulated 3D Asset Generation
 
-`2026-05-14` · University of Cambridge; University of Oxford; Nanyang Technological University · **Adjacent**
+`2026-05-14` · University of Cambridge; University of Oxford; Nanyang Technological University
 
 [一手来源 1](https://arxiv.org/abs/2605.15187) · [一手来源 2](https://arxiv.org/html/2605.15187v1) · [一手来源 3](https://articraft3d.github.io/)
 
@@ -2498,7 +2498,7 @@ Articraft 将关节 3D 资产生成写成小而专用的程序编写问题，通
 
 #### SimWorld Studio: Automatic Environment Generation with Evolving Coding Agent for Embodied Agent Learning
 
-`2026-05-10` · UC San Diego; New York University · **Core**
+`2026-05-10` · UC San Diego; New York University
 
 [一手来源 1](https://arxiv.org/abs/2605.09423) · [一手来源 2](https://arxiv.org/html/2605.09423v2) · [一手来源 3](https://github.com/SimWorld-AI/SimWorld-Studio)
 
@@ -2526,7 +2526,7 @@ SimWorld Studio 用工具和技能增强的 Coding Agent 自动构建可供具�
 
 #### DeformMaster: An Interactive Physics-Neural World Model for Deformable Objects from Videos
 
-`2026-05-10` · Nankai University; Zhejiang University; Southern University of Science and Technology; Rightly Robotics, A4X; University of Science and Technology of China · **Adjacent**
+`2026-05-10` · Nankai University; Zhejiang University; Southern University of Science and Technology; Rightly Robotics, A4X; University of Science and Technology of China
 
 [一手来源 1](https://arxiv.org/abs/2605.09586) · [一手来源 2](https://arxiv.org/html/2605.09586v2) · [一手来源 3](https://can-lee.github.io/deformmaster-web/)
 
@@ -2554,7 +2554,7 @@ DeformMaster 从真实物体交互建立可响应新动作、材料设置和视�
 
 #### ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation
 
-`2026-04-13` · Beihang University; Zhejiang University; The University of Hong Kong · **Core**
+`2026-04-13` · Beihang University; Zhejiang University; The University of Hong Kong
 
 [完整书目](../README.zh-CN.md#paper-2604-10992) · [证据 1](https://arxiv.org/abs/2604.10992) · [证据 2](https://arxiv.org/html/2604.10992v2) · [证据 3](https://shui-yuan.github.io/articad/)
 
@@ -2582,7 +2582,7 @@ ArtiCAD 将多部件可动模型生成拆成设计、部件代码、确定性装
 
 #### SAGE: Scalable Agentic 3D Scene Generation for Embodied AI
 
-`2026-02-10` · NVIDIA; University of Illinois Urbana-Champaign; Cornell University; Stanford University · **Adjacent**
+`2026-02-10` · NVIDIA; University of Illinois Urbana-Champaign; Cornell University; Stanford University
 
 [一手来源 1](https://arxiv.org/abs/2602.10116) · [一手来源 2](https://arxiv.org/html/2602.10116v2) · [一手来源 3](https://research.nvidia.com/labs/dir/sage/)
 
@@ -2610,7 +2610,7 @@ SAGE 从用户任务自动组织布局、物体组合和场景校验工具，以
 
 #### SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes
 
-`2026-02-09` · Massachusetts Institute of Technology; Toyota Research Institute · **Core**
+`2026-02-09` · Massachusetts Institute of Technology; Toyota Research Institute
 
 [一手来源 1](https://arxiv.org/abs/2602.09153) · [一手来源 2](https://arxiv.org/html/2602.09153v2) · [一手来源 3](https://scenesmith.github.io/)
 
@@ -2638,7 +2638,7 @@ SceneSmith 面向家庭机器人训练和评估，生成包含密集杂物、可
 
 #### SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent
 
-`2025-09-24` · State Key Laboratory of General Artificial Intelligence, BIGAI; Tsinghua University · **Adjacent**
+`2025-09-24` · State Key Laboratory of General Artificial Intelligence, BIGAI; Tsinghua University
 
 [一手来源 1](https://arxiv.org/abs/2509.20414) · [一手来源 2](https://arxiv.org/html/2509.20414v2) · [一手来源 3](https://scene-weaver.github.io/) · [一手来源 4](https://github.com/Scene-Weaver/SceneWeaver) · [一手来源 5](https://proceedings.neurips.cc/paper_files/paper/2025/hash/cd2b3c429c8a2ca57656970e010b4b60-Abstract-Conference.html)
 
@@ -2666,7 +2666,7 @@ SceneWeaver 以可扩展工具接口统一多种场景合成方式，让语言�
 
 #### Eurekaverse: Environment Curriculum Generation via Large Language Models
 
-`2024-11-04` · University of Pennsylvania · **Adjacent**
+`2024-11-04` · University of Pennsylvania
 
 [一手来源 1](https://arxiv.org/abs/2411.01775) · [一手来源 2](https://arxiv.org/html/2411.01775v1) · [一手来源 3](https://eureka-research.github.io/eurekaverse/)
 
@@ -2694,7 +2694,7 @@ Eurekaverse 将无监督环境设计写成 LLM 可编辑的地形程序，并让
 
 #### GRS: Generating Robotic Simulation Tasks from Real-World Images
 
-`2024-10-20` · NVIDIA; Stanford University · **Adjacent**
+`2024-10-20` · NVIDIA; Stanford University
 
 [一手来源 1](https://arxiv.org/abs/2410.15536) · [一手来源 2](https://openaccess.thecvf.com/content/CVPR2025W/CV2/papers/Zook_GRS_Generating_Robotic_Simulation_Tasks_from_Real-World_Images_CVPRW_2025_paper.pdf)
 
@@ -2722,7 +2722,7 @@ GRS 将单幅 RGB-D 观测转化为包含可解任务的仿真。系统先理解
 
 #### Articulate-Anything: Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model
 
-`2024-10-03` · University of Pennsylvania · **Core**
+`2024-10-03` · University of Pennsylvania
 
 [一手来源 1](https://arxiv.org/abs/2410.13882) · [一手来源 2](https://arxiv.org/html/2410.13882v4) · [一手来源 3](https://articulate-anything.github.io/) · [一手来源 4](https://github.com/vlongle/articulate-anything)
 
@@ -2750,7 +2750,7 @@ Articulate-Anything 从文字、图像或视频构建带关节的交互物体，
 
 #### FactorSim: Generative Simulation via Factorized Representation
 
-`2024-09-26` · Stanford University; NVIDIA · **Adjacent**
+`2024-09-26` · Stanford University; NVIDIA
 
 [一手来源 1](https://arxiv.org/abs/2409.17652) · [一手来源 2](https://arxiv.org/html/2409.17652v2) · [一手来源 3](https://cs.stanford.edu/~sunfanyun/factorsim/)
 
@@ -2778,7 +2778,7 @@ FactorSim 针对长规格下语言模型容易遗漏条件或修改无关代码�
 
 #### RoboTwin: Dual-Arm Robot Benchmark with Generative Digital Twins
 
-`2024-09-04` · The University of Hong Kong; Shanghai AI Laboratory; Shenzhen University; AgileX Robotics; Institute of Automation, Chinese Academy of Sciences · **Adjacent**
+`2024-09-04` · The University of Hong Kong; Shanghai AI Laboratory; Shenzhen University; AgileX Robotics; Institute of Automation, Chinese Academy of Sciences
 
 [一手来源 1](https://arxiv.org/abs/2409.02920) · [一手来源 2](https://arxiv.org/html/2409.02920v3) · [一手来源 3](https://robotwin-benchmark.github.io/early-version/)
 
@@ -2806,7 +2806,7 @@ RoboTwin 早期版把真实遥操作数据与生成式数字孪生中的合成�
 
 #### Real2Code: Reconstruct Articulated Objects via Code Generation
 
-`2024-06-12` · Stanford University; Columbia University · **Adjacent**
+`2024-06-12` · Stanford University; Columbia University
 
 [一手来源 1](https://arxiv.org/abs/2406.08474) · [一手来源 2](https://arxiv.org/html/2406.08474v2) · [一手来源 3](https://real2code.github.io/)
 
@@ -2834,7 +2834,7 @@ Real2Code 从视觉观测重建物体的部件几何，再用定向包围盒把�
 
 #### OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code
 
-`2024-05-24` · Imperial College London; University of British Columbia; Vector Institute · **Adjacent**
+`2024-05-24` · Imperial College London; University of British Columbia; Vector Institute
 
 [一手来源 1](https://arxiv.org/abs/2405.15568) · [一手来源 2](https://arxiv.org/html/2405.15568v3) · [一手来源 3](https://dub.sh/omniepic)
 
@@ -2862,7 +2862,7 @@ OMNI-EPIC 将开放式探索扩展到以代码定义环境，联合生成场景�
 
 #### Holodeck: Language Guided Generation of 3D Embodied AI Environments
 
-`2023-12-14` · University of Pennsylvania; Stanford University; Allen Institute for Artificial Intelligence; University of Washington · **Adjacent**
+`2023-12-14` · University of Pennsylvania; Stanford University; Allen Institute for Artificial Intelligence; University of Washington
 
 [一手来源 1](https://arxiv.org/abs/2312.09067) · [一手来源 2](https://arxiv.org/html/2312.09067v2) · [一手来源 3](https://yueyang1996.github.io/holodeck/) · [一手来源 4](https://github.com/allenai/Holodeck)
 
@@ -2890,7 +2890,7 @@ Holodeck 根据自然语言自动构建多样化的具身 AI 室内环境，利�
 
 #### RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation
 
-`2023-11-02` · Carnegie Mellon University; Tsinghua University; Massachusetts Institute of Technology; University of Massachusetts Amherst; MIT-IBM AI Lab · **Adjacent**
+`2023-11-02` · Carnegie Mellon University; Tsinghua University; Massachusetts Institute of Technology; University of Massachusetts Amherst; MIT-IBM AI Lab
 
 [一手来源 1](https://arxiv.org/abs/2311.01455) · [一手来源 2](https://arxiv.org/html/2311.01455v3) · [一手来源 3](https://robogen-ai.github.io/)
 
@@ -2918,7 +2918,7 @@ RoboGen 将基础模型用于生成机器人学习所需的任务、场景和监
 
 #### Gen2Sim: Scaling up Robot Learning in Simulation with Generative Models
 
-`2023-10-27` · Carnegie Mellon University · **Adjacent**
+`2023-10-27` · Carnegie Mellon University
 
 [一手来源 1](https://arxiv.org/abs/2310.18308) · [一手来源 2](https://arxiv.org/html/2310.18308v1) · [一手来源 3](https://gen2sim.github.io/)
 
@@ -2946,7 +2946,7 @@ Gen2Sim 用预训练视觉与语言生成模型减少人工制作机器人训练
 
 #### GenSim: Generating Robotic Simulation Tasks via Large Language Models
 
-`2023-10-02` · MIT CSAIL; UC San Diego; University of Washington; CMU; Tsinghua University; Shanghai Jiao Tong University · **Adjacent**
+`2023-10-02` · MIT CSAIL; UC San Diego; University of Washington; CMU; Tsinghua University; Shanghai Jiao Tong University
 
 [一手来源 1](https://arxiv.org/abs/2310.01361) · [一手来源 2](https://arxiv.org/html/2310.01361v2) · [一手来源 3](https://liruiw.github.io/gensim) · [一手来源 4](https://github.com/liruiw/GenSim)
 
@@ -2974,7 +2974,7 @@ GenSim 利用 LLM 的推理和代码能力自动扩展机器人模拟任务，�
 
 #### mujoco-workbench
 
-`首发日期未明确` · Hebbian Robotics · **Resource**
+`首发日期未明确` · Hebbian Robotics
 
 [一手来源 1](https://github.com/Hebbian-Robotics/mujoco-workbench)
 
@@ -2999,44 +2999,44 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 ### 跨章节阅读
 
-- [PneuGen: Task-Driven Agentic Co-Design of Soft Pneumatic Robots](#work-2611-13344) · Core
-- [PhysOPSD: Code as Privilege for Physically Plausible Video Generation](#work-2611-12411) · Core
-- [BlenderFORGE: Framework for Optimizing Reactive 3D-Graphics Editing Ability of MLLMs](#work-2611-10768) · Core
-- [Frontier3DBench: Benchmarking Coding Agents for 3D Creation across Objects, Scenes, and Interactive Open Worlds](#work-2611-09017) · Adjacent
-- [TactileLab: Sim-to-Real Dexterous Robot Manipulation with Efficient Shear-Sensitive Tactile Simulation](#work-2611-07881) · Adjacent
-- [GREP: Grounding Generated Room Evaluation in Principles](#work-2611-05802) · Adjacent
-- [ScIntBench: Physical Interaction Plausibility in 3D Scene Generation](#work-2610-37326) · Adjacent
-- [CoDA: Co-Evolution of Data Engines and Action Policies](#work-2610-22362) · Core
-- [BlenderWorld: Benchmarking Visual Agents for 3D Creation from Real-World References](#work-system-blenderworld) · Core
-- [YUBI-Real2Sim: 3DGS Scene Verification for Reliable Policy Evaluation](#work-2610-17521) · Adjacent
-- [PhysCodeGym: Benchmarking Coding Agents for Physically Verifiable 4D Reconstruction](#work-2610-17288) · Core
-- [ExeWorldBench: Benchmarking Code-Based Executable 3D World Modeling](#work-2610-15166) · Adjacent
-- [WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?](#work-2610-08720) · Adjacent
-- [Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos](#work-2610-04432) · Core
-- [4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes](#work-2610-03715) · Adjacent
-- [Code4Scene: Benchmarking Coding Agents for Constructing and Editing 3D Scenes](#work-2609-36777) · Core
-- [DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library](#work-2609-35318) · Core
-- [EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics](#work-2609-27308) · Core
-- [BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender](#work-2609-15478) · Adjacent
-- [WorldCoder-Bench: Benchmarking Physically Grounded 3D World Synthesis](#work-2606-01869) · Adjacent
-- [MPMWorlds: Material-Point-Method Simulations for Inferring and Extrapolating Physical Dynamics](#work-2606-01538) · Adjacent
-- [Δynamics: Language-Based Representation for Inferring Rigid-Body Dynamics From Videos](#work-2605-20576) · Adjacent
-- [AI-designed and AI-implemented control systems for bespoke scientific instrumentation: application to scanning microscopy](#work-bespoke-instrument) · Resource
-- [PhysCodeBench: Benchmarking Physics-Aware Symbolic Simulation of 3D Scenes via Self-Corrective Multi-Agent Refinement](#work-2604-23580) · Adjacent
-- [SceneCritic: A Symbolic Evaluator for 3D Indoor Scene Synthesis](#work-2604-13035) · Adjacent
-- [SceneTeract: Probing and Improving Agent-Aware Activity Reasoning in 3D Indoor Scenes](#work-2603-29798) · Adjacent
-- [IRIS: A Real-World Benchmark for Inverse Recovery and Identification of Physical Dynamic Systems from Monocular Video](#work-2603-16432) · Adjacent
-- [Training and Benchmarking Code Generation for Physics-Inspired Animations](#work-2602-10840) · Adjacent
-- [VisPhyWorld: Probing Physical Reasoning via Code-Driven Video Reconstruction](#work-2602-13294) · Adjacent
-- [Apples on the Table? Evaluating Text-Guided 3D Scene Synthesis via Fine-Grained Constraint Verification](#work-2511-03001) · Adjacent
-- [IR3D-Bench: Evaluating Vision-Language Model Scene Understanding as Agentic Inverse Rendering](#work-2506-23329) · Adjacent
-- [RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation](#work-2506-18088) · Adjacent
-- [BlenderGym: Benchmarking Foundational Model Systems for Graphics Editing](#work-2504-01786) · Adjacent
-- [SceneEval: Evaluating Semantic Coherence in Text-Conditioned 3D Indoor Scene Synthesis](#work-2503-14756) · Adjacent
-- [GenSim2: Scaling Robot Data Generation with Multi-modal and Reasoning LLMs](#work-2410-03645) · Adjacent
-- [DrEureka: Language Model Guided Sim-To-Real Transfer](#work-2406-01967) · Adjacent
-- [Evaluating Real-World Robot Manipulation Policies in Simulation](#work-2405-05941) · Adjacent
-- [Real2Sim Benchmark](#work-real2sim-benchmark) · Adjacent
+- [PneuGen: Task-Driven Agentic Co-Design of Soft Pneumatic Robots](#work-2611-13344)
+- [PhysOPSD: Code as Privilege for Physically Plausible Video Generation](#work-2611-12411)
+- [BlenderFORGE: Framework for Optimizing Reactive 3D-Graphics Editing Ability of MLLMs](#work-2611-10768)
+- [Frontier3DBench: Benchmarking Coding Agents for 3D Creation across Objects, Scenes, and Interactive Open Worlds](#work-2611-09017)
+- [TactileLab: Sim-to-Real Dexterous Robot Manipulation with Efficient Shear-Sensitive Tactile Simulation](#work-2611-07881)
+- [GREP: Grounding Generated Room Evaluation in Principles](#work-2611-05802)
+- [ScIntBench: Physical Interaction Plausibility in 3D Scene Generation](#work-2610-37326)
+- [CoDA: Co-Evolution of Data Engines and Action Policies](#work-2610-22362)
+- [BlenderWorld: Benchmarking Visual Agents for 3D Creation from Real-World References](#work-system-blenderworld)
+- [YUBI-Real2Sim: 3DGS Scene Verification for Reliable Policy Evaluation](#work-2610-17521)
+- [PhysCodeGym: Benchmarking Coding Agents for Physically Verifiable 4D Reconstruction](#work-2610-17288)
+- [ExeWorldBench: Benchmarking Code-Based Executable 3D World Modeling](#work-2610-15166)
+- [WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?](#work-2610-08720)
+- [Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos](#work-2610-04432)
+- [4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes](#work-2610-03715)
+- [Code4Scene: Benchmarking Coding Agents for Constructing and Editing 3D Scenes](#work-2609-36777)
+- [DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library](#work-2609-35318)
+- [EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics](#work-2609-27308)
+- [BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender](#work-2609-15478)
+- [WorldCoder-Bench: Benchmarking Physically Grounded 3D World Synthesis](#work-2606-01869)
+- [MPMWorlds: Material-Point-Method Simulations for Inferring and Extrapolating Physical Dynamics](#work-2606-01538)
+- [Δynamics: Language-Based Representation for Inferring Rigid-Body Dynamics From Videos](#work-2605-20576)
+- [AI-designed and AI-implemented control systems for bespoke scientific instrumentation: application to scanning microscopy](#work-bespoke-instrument)
+- [PhysCodeBench: Benchmarking Physics-Aware Symbolic Simulation of 3D Scenes via Self-Corrective Multi-Agent Refinement](#work-2604-23580)
+- [SceneCritic: A Symbolic Evaluator for 3D Indoor Scene Synthesis](#work-2604-13035)
+- [SceneTeract: Probing and Improving Agent-Aware Activity Reasoning in 3D Indoor Scenes](#work-2603-29798)
+- [IRIS: A Real-World Benchmark for Inverse Recovery and Identification of Physical Dynamic Systems from Monocular Video](#work-2603-16432)
+- [Training and Benchmarking Code Generation for Physics-Inspired Animations](#work-2602-10840)
+- [VisPhyWorld: Probing Physical Reasoning via Code-Driven Video Reconstruction](#work-2602-13294)
+- [Apples on the Table? Evaluating Text-Guided 3D Scene Synthesis via Fine-Grained Constraint Verification](#work-2511-03001)
+- [IR3D-Bench: Evaluating Vision-Language Model Scene Understanding as Agentic Inverse Rendering](#work-2506-23329)
+- [RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation](#work-2506-18088)
+- [BlenderGym: Benchmarking Foundational Model Systems for Graphics Editing](#work-2504-01786)
+- [SceneEval: Evaluating Semantic Coherence in Text-Conditioned 3D Indoor Scene Synthesis](#work-2503-14756)
+- [GenSim2: Scaling Robot Data Generation with Multi-modal and Reasoning LLMs](#work-2410-03645)
+- [DrEureka: Language Model Guided Sim-To-Real Transfer](#work-2406-01967)
+- [Evaluating Real-World Robot Manipulation Policies in Simulation](#work-2405-05941)
+- [Real2Sim Benchmark](#work-real2sim-benchmark)
 
 [返回研究地图](#research-map)
 
@@ -3068,7 +3068,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### PhyRubric: Rubric-Grounded Diagnostic Evaluation of Physical Commonsense in Text-to-Video Generation
 
-`2026-11-10` · University of Illinois Chicago · **Adjacent**
+`2026-11-10` · University of Illinois Chicago
 
 [完整书目](../README.zh-CN.md#paper-2611-13576) · [证据 1](https://arxiv.org/abs/2611.13576) · [证据 2](https://github.com/chenyil6/phyRubric) · [证据 3](https://huggingface.co/datasets/kittyhy/PhyRubric-Bench)
 
@@ -3087,7 +3087,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Frontier3DBench: Benchmarking Coding Agents for 3D Creation across Objects, Scenes, and Interactive Open Worlds
 
-`2026-11-06` · Navers Lab; Einsia.AI; Tsinghua University · **Adjacent**
+`2026-11-06` · Navers Lab; Einsia.AI; Tsinghua University
 
 [完整书目](../README.zh-CN.md#paper-2611-09017) · [证据 1](https://arxiv.org/abs/2611.09017) · [证据 2](https://arxiv.org/html/2611.09017)
 
@@ -3106,7 +3106,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### GREP: Grounding Generated Room Evaluation in Principles
 
-`2026-11-04` · University of Washington; Tencent AI Lab; HKUST; USTC; Shanghai Jiao Tong University · **Adjacent**
+`2026-11-04` · University of Washington; Tencent AI Lab; HKUST; USTC; Shanghai Jiao Tong University
 
 [一手来源 1](https://arxiv.org/abs/2611.05802) · [一手来源 2](https://arxiv.org/html/2611.05802)
 
@@ -3125,7 +3125,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### ScIntBench: Physical Interaction Plausibility in 3D Scene Generation
 
-`2026-10-27` · University of Western Australia; University of British Columbia · **Adjacent**
+`2026-10-27` · University of Western Australia; University of British Columbia
 
 [完整书目](../README.zh-CN.md#paper-2610-37326) · [证据 1](https://arxiv.org/abs/2610.37326) · [证据 2](https://arxiv.org/html/2610.37326)
 
@@ -3144,7 +3144,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### BlenderWorld: Benchmarking Visual Agents for 3D Creation from Real-World References
 
-`2026-10-14` · Zhejiang University; Alibaba Token Hub, Alibaba Group; The Chinese University of Hong Kong; Fudan University; National University of Singapore · **Core**
+`2026-10-14` · Zhejiang University; Alibaba Token Hub, Alibaba Group; The Chinese University of Hong Kong; Fudan University; National University of Singapore
 
 [完整书目](../README.zh-CN.md#paper-system-blenderworld) · [证据 1](https://arxiv.org/abs/2610.23986) · [证据 2](https://arxiv.org/html/2610.23986) · [证据 3](https://blenderworld.github.io/)
 
@@ -3163,7 +3163,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### YUBI-Real2Sim: 3DGS Scene Verification for Reliable Policy Evaluation
 
-`2026-10-13` · AI Robot Association (AIRoA); Waseda University · **Adjacent**
+`2026-10-13` · AI Robot Association (AIRoA); Waseda University
 
 [一手来源 1](https://arxiv.org/abs/2610.17521) · [一手来源 2](https://arxiv.org/html/2610.17521) · [一手来源 3](https://research.airoa.io/publications/yubi-real2sim/) · [一手来源 4](https://huggingface.co/datasets/airoa-org/yubi-real2sim-assets) · [一手来源 5](https://github.com/airoa-org/yubi-real2sim)
 
@@ -3182,7 +3182,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### PhysCodeGym: Benchmarking Coding Agents for Physically Verifiable 4D Reconstruction
 
-`2026-10-12` · Shanghai Jiao Tong University; Sun Yat-sen University; Shanghai Innovation Institute; Southeast University; Nanyang Technological University; Carnegie Mellon University · **Core**
+`2026-10-12` · Shanghai Jiao Tong University; Sun Yat-sen University; Shanghai Innovation Institute; Southeast University; Nanyang Technological University; Carnegie Mellon University
 
 [完整书目](../README.zh-CN.md#paper-2610-17288) · [证据 1](https://arxiv.org/abs/2610.17288) · [证据 2](https://arxiv.org/html/2610.17288)
 
@@ -3201,7 +3201,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### ExeWorldBench: Benchmarking Code-Based Executable 3D World Modeling
 
-`2026-10-10` · University of Science and Technology of China; The Chinese University of Hong Kong · **Adjacent**
+`2026-10-10` · University of Science and Technology of China; The Chinese University of Hong Kong
 
 [完整书目](../README.zh-CN.md#paper-2610-15166) · [证据 1](https://arxiv.org/abs/2610.15166) · [证据 2](https://arxiv.org/html/2610.15166)
 
@@ -3220,7 +3220,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?
 
-`2026-10-06` · NLPR & MAIS, CASIA; Peking University; Huawei Noah’s Ark Lab · **Adjacent**
+`2026-10-06` · NLPR & MAIS, CASIA; Peking University; Huawei Noah’s Ark Lab
 
 [完整书目](../README.zh-CN.md#paper-2610-08720) · [证据 1](https://arxiv.org/abs/2610.08720) · [证据 2](https://arxiv.org/html/2610.08720)
 
@@ -3239,7 +3239,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos
 
-`2026-10-03` · Aether AI; University of California San Diego · **Core**
+`2026-10-03` · Aether AI; University of California San Diego
 
 [完整书目](../README.zh-CN.md#paper-2610-04432) · [证据 1](https://arxiv.org/abs/2610.04432) · [证据 2](https://arxiv.org/html/2610.04432) · [证据 3](https://github.com/AetherLabsAI/Video2World/blob/main/docs/benchmark.md)
 
@@ -3258,7 +3258,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### 4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes
 
-`2026-10-02` · Johns Hopkins University; Stanford University; Max Planck Institute for Intelligent Systems; Massachusetts Institute of Technology · **Adjacent**
+`2026-10-02` · Johns Hopkins University; Stanford University; Max Planck Institute for Intelligent Systems; Massachusetts Institute of Technology
 
 [完整书目](../README.zh-CN.md#paper-2610-03715) · [证据 1](https://arxiv.org/abs/2610.03715) · [证据 2](https://arxiv.org/html/2610.03715)
 
@@ -3277,7 +3277,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Code4Scene: Benchmarking Coding Agents for Constructing and Editing 3D Scenes
 
-`2026-09-29` · University of California San Diego; University of California Berkeley · **Core**
+`2026-09-29` · University of California San Diego; University of California Berkeley
 
 [完整书目](../README.zh-CN.md#paper-2609-36777) · [证据 1](https://arxiv.org/abs/2609.36777) · [证据 2](https://arxiv.org/html/2609.36777)
 
@@ -3296,7 +3296,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Parametric CAD Bench v3: Evaluating Agentic Parametric CAD Authoring from Text and Engineering Drawings
 
-`2026-09-21` · gNucleus AI, Inc. · **Adjacent**
+`2026-09-21` · gNucleus AI, Inc.
 
 官方基准首发：2026-09-21；arXiv v1：2026-11-02。
 
@@ -3317,7 +3317,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender
 
-`2026-09-14` · University of Rochester; Sony Group Corporation; Carnegie Mellon University; University of Washington · **Adjacent**
+`2026-09-14` · University of Rochester; Sony Group Corporation; Carnegie Mellon University; University of Washington
 
 [完整书目](../README.zh-CN.md#paper-2609-15478) · [证据 1](https://arxiv.org/abs/2609.15478) · [证据 2](https://arxiv.org/html/2609.15478)
 
@@ -3336,7 +3336,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### WorldCoder-Bench: Benchmarking Physically Grounded 3D World Synthesis
 
-`2026-06-01` · NLPR & MAIS, CASIA; Huawei Noah’s Ark Lab · **Adjacent**
+`2026-06-01` · NLPR & MAIS, CASIA; Huawei Noah’s Ark Lab
 
 [一手来源 1](https://arxiv.org/abs/2606.01869) · [一手来源 2](https://arxiv.org/html/2606.01869)
 
@@ -3355,7 +3355,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### MPMWorlds: Material-Point-Method Simulations for Inferring and Extrapolating Physical Dynamics
 
-`2026-06-01` · Cornell University · **Adjacent**
+`2026-06-01` · Cornell University
 
 [一手来源 1](https://arxiv.org/abs/2606.01538) · [一手来源 2](https://arxiv.org/html/2606.01538)
 
@@ -3374,7 +3374,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Δynamics: Language-Based Representation for Inferring Rigid-Body Dynamics From Videos
 
-`2026-05-20` · Cornell University; Amazon · **Adjacent**
+`2026-05-20` · Cornell University; Amazon
 
 [一手来源 1](https://arxiv.org/abs/2605.20576) · [一手来源 2](https://arxiv.org/html/2605.20576)
 
@@ -3393,7 +3393,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### PhysCodeBench: Benchmarking Physics-Aware Symbolic Simulation of 3D Scenes via Self-Corrective Multi-Agent Refinement
 
-`2026-04-26` · Nanjing University; Skywork AI; Jilin University; Great Wall Motor; Tianjin University · **Adjacent**
+`2026-04-26` · Nanjing University; Skywork AI; Jilin University; Great Wall Motor; Tianjin University
 
 [一手来源 1](https://arxiv.org/abs/2604.23580) · [一手来源 2](https://arxiv.org/html/2604.23580)
 
@@ -3412,7 +3412,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### SceneCritic: A Symbolic Evaluator for 3D Indoor Scene Synthesis
 
-`2026-04-14` · Stony Brook University · **Adjacent**
+`2026-04-14` · Stony Brook University
 
 [一手来源 1](https://arxiv.org/abs/2604.13035) · [一手来源 2](https://arxiv.org/html/2604.13035)
 
@@ -3431,7 +3431,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### SceneTeract: Probing and Improving Agent-Aware Activity Reasoning in 3D Indoor Scenes
 
-`2026-03-31` · École Polytechnique; Dassault Systèmes; Stanford University; Università della Svizzera italiana · **Adjacent**
+`2026-03-31` · École Polytechnique; Dassault Systèmes; Stanford University; Università della Svizzera italiana
 
 [一手来源 1](https://arxiv.org/abs/2603.29798) · [一手来源 2](https://arxiv.org/html/2603.29798)
 
@@ -3450,7 +3450,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### IRIS: A Real-World Benchmark for Inverse Recovery and Identification of Physical Dynamic Systems from Monocular Video
 
-`2026-03-17` · Hamad Bin Khalifa University; Texas A&M University · **Adjacent**
+`2026-03-17` · Hamad Bin Khalifa University; Texas A&M University
 
 [一手来源 1](https://arxiv.org/abs/2603.16432) · [一手来源 2](https://arxiv.org/html/2603.16432)
 
@@ -3469,7 +3469,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Training and Benchmarking Code Generation for Physics-Inspired Animations
 
-`2026-02-11` · Mohamed bin Zayed University of Artificial Intelligence; Sun Yat-sen University · **Adjacent**
+`2026-02-11` · Mohamed bin Zayed University of Artificial Intelligence; Sun Yat-sen University
 
 [一手来源 1](https://arxiv.org/abs/2602.10840) · [一手来源 2](https://arxiv.org/html/2602.10840)
 
@@ -3488,7 +3488,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### VisPhyWorld: Probing Physical Reasoning via Code-Driven Video Reconstruction
 
-`2026-02-09` · University of Waterloo; Autodesk AI Lab; independent researcher · **Adjacent**
+`2026-02-09` · University of Waterloo; Autodesk AI Lab; independent researcher
 
 [一手来源 1](https://arxiv.org/abs/2602.13294) · [一手来源 2](https://arxiv.org/html/2602.13294)
 
@@ -3507,7 +3507,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Apples on the Table? Evaluating Text-Guided 3D Scene Synthesis via Fine-Grained Constraint Verification
 
-`2025-11-04` · Yonsei University; POSTECH · **Adjacent**
+`2025-11-04` · Yonsei University; POSTECH
 
 [一手来源 1](https://arxiv.org/abs/2511.03001) · [一手来源 2](https://arxiv.org/html/2511.03001)
 
@@ -3526,7 +3526,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### IR3D-Bench: Evaluating Vision-Language Model Scene Understanding as Agentic Inverse Rendering
 
-`2025-06-29` · The Chinese University of Hong Kong; Tianjin University; EPFL; HKUST; Xiamen University; Massachusetts Institute of Technology · **Adjacent**
+`2025-06-29` · The Chinese University of Hong Kong; Tianjin University; EPFL; HKUST; Xiamen University; Massachusetts Institute of Technology
 
 [一手来源 1](https://arxiv.org/abs/2506.23329) · [一手来源 2](https://arxiv.org/html/2506.23329)
 
@@ -3545,7 +3545,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### BlenderGym: Benchmarking Foundational Model Systems for Graphics Editing
 
-`2025-04-02` · Stanford University · **Adjacent**
+`2025-04-02` · Stanford University
 
 [一手来源 1](https://arxiv.org/abs/2504.01786) · [一手来源 2](https://arxiv.org/html/2504.01786)
 
@@ -3564,7 +3564,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### SceneEval: Evaluating Semantic Coherence in Text-Conditioned 3D Indoor Scene Synthesis
 
-`2025-03-18` · Simon Fraser University; Amii · **Adjacent**
+`2025-03-18` · Simon Fraser University; Amii
 
 [一手来源 1](https://arxiv.org/abs/2503.14756) · [一手来源 2](https://arxiv.org/html/2503.14756)
 
@@ -3583,7 +3583,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Evaluating Real-World Robot Manipulation Policies in Simulation
 
-`2024-05-09` · University of California San Diego; Stanford University; University of California Berkeley; Google DeepMind · **Adjacent**
+`2024-05-09` · University of California San Diego; Stanford University; University of California Berkeley; Google DeepMind
 
 [一手来源 1](https://arxiv.org/abs/2405.05941) · [一手来源 2](https://arxiv.org/html/2405.05941)
 
@@ -3602,7 +3602,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Real2Sim Benchmark
 
-`首发日期未明确` · Momentum Research Labs · **Adjacent**
+`首发日期未明确` · Momentum Research Labs
 
 [一手来源 1](https://www.real2sim.bot/)
 
@@ -3618,55 +3618,55 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 ### 跨章节阅读
 
-- [PneuGen: Task-Driven Agentic Co-Design of Soft Pneumatic Robots](#work-2611-13344) · Core
-- [PhysOPSD: Code as Privilege for Physically Plausible Video Generation](#work-2611-12411) · Core
-- [Spatial Harness: Grounding Spatial Reasoning in Executable World States with Physics Engines](#work-2611-11344) · Adjacent
-- [Agentic discrete-event simulation for manufacturing system design: an open 3D simulator, a benchmark and an industrial case](#work-2611-10602) · Adjacent
-- [TactileLab: Sim-to-Real Dexterous Robot Manipulation with Efficient Shear-Sensitive Tactile Simulation](#work-2611-07881) · Adjacent
-- [PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?](#work-2611-08175) · Core
-- [Closing the Dynamics Gap through Self-Directed Robotic Interaction](#work-2611-02691) · Core
-- [WorldSketch: Sketching World Models for Zero-Shot Mobile Manipulation](#work-2611-00513) · Core
-- [Gym-Anything for Robotics: Scaling physical simulations with digital agents](#work-2610-40565) · Core
-- [DyCraft: An Agentic System for Long-Horizon 4D Scene Generation](#work-2610-40754) · Core
-- [LabWorld: Learning Interactive 4D Worlds for Scientific Experimentation](#work-2610-36592) · Adjacent
-- [SceneAgent: An Agentic Pipeline from 3D and 4D Captures to Simulation Environments](#work-2610-34745) · Core
-- [WorldMirror: Agentic Real-to-Sim Generation of Interactive Worlds from In-the-Wild Robot Demonstrations](#work-2610-31834) · Core
-- [Plumb: Coding Agents with 3D Perception Rebuild Physical Scenes from Video](#work-system-plumb) · Resource
-- [MARC: Mechanism-Aware Reflective Correction for Articulated Object Code Generation](#work-2610-33060) · Core
-- [Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark](#work-2610-13947) · Core
-- [Agentic RSR: Real-to-Sim-to-Real through Scene Reconstruction and Execution-Grounded Robot Policies](#work-2610-10479) · Core
-- [WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents](#work-2609-40325) · Adjacent
-- [FACT: Fidelity-Aware Construction of Articulated Twins](#work-2609-37067) · Adjacent
-- [CoDimRecon: Agentic Reconstruction of Sim-Ready 3D Scenes with Deformable Curves, Surfaces, and Volumes](#work-2609-36024) · Core
-- [WorldAgent: Verification-Guided Agentic Physical World Construction](#work-2609-33208) · Core
-- [What Stops Recursive Self-Improvement in Robotics? Lessons from 123 Rounds of Agentic Skill Discovery](#work-2609-31760) · Core
-- [DiagGen: Agentic Generation of Deformable Assets with Sim-based Diagnostics for Robotic Simulation](#work-2609-23103) · Core
-- [DeformSmith: Physics Harness-Guided Hierarchical Generation of Deformable Assets for Robot Manipulation](#work-2609-18620) · Core
-- [SceneMosaic: Efficient and Diverse Simulation-Ready Scene Generation via Hybrid Agentic Layout Evolution](#work-2609-05594) · Adjacent
-- [Lucida: Parse, Generate, and Place for Composable Real-to-Sim Scene Modeling](#work-2608-30821) · Adjacent
-- [Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning](#work-2608-27549) · Core
-- [Beyond Placement and Articulation: Usage-Driven Code Scenes for Embodied Interaction](#work-2608-18840) · Adjacent
-- [LiteReality-Agent: An Agentic System for Interactable 3D Indoor Scene Reconstruction](#work-2610-01863) · Core
-- [GS-Agent: Creating 4D Physical Worlds With Generative Simulation](#work-2607-21522) · Adjacent
-- [Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents](#work-2607-19190) · Core
-- [UniPhysGen: Unified Physical Grounding for Simulation-Ready 3D Assets](#work-2607-13586) · Adjacent
-- [EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI](#work-2607-07459) · Resource
-- [SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation](#work-2607-01766) · Adjacent
-- [SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation](#work-2606-28276) · Adjacent
-- [MUSE: Agentic 3D Scene Authoring via Memory-Grounded Incremental Requirement Satisfaction](#work-2606-14168) · Adjacent
-- [PerceptTwin: Semantic Scene Reconstruction for Iterative LLM Planning and Verification](#work-2606-04226) · Adjacent
-- [PhysX-Omni: Unified Simulation-Ready Physical 3D Generation for Rigid, Deformable, and Articulated Objects](#work-2605-21572) · Adjacent
-- [SceneCode: Executable World Programs for Editable Indoor Scenes with Articulated Objects](#work-2605-19587) · Adjacent
-- [ChronoAgentic: A Code-based Multi-Agent World Simulator for Physically Grounded Simulation Construction](#work-2605-14398) · Core
-- [Articraft: An Agentic System for Scalable Articulated 3D Asset Generation](#work-2605-15187) · Adjacent
-- [DeformMaster: An Interactive Physics-Neural World Model for Deformable Objects from Videos](#work-2605-09586) · Adjacent
-- [ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation](#work-2604-10992) · Core
-- [SAGE: Scalable Agentic 3D Scene Generation for Embodied AI](#work-2602-10116) · Adjacent
-- [SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes](#work-2602-09153) · Core
-- [SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent](#work-2509-20414) · Adjacent
-- [GRS: Generating Robotic Simulation Tasks from Real-World Images](#work-2410-15536) · Adjacent
-- [Articulate-Anything: Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model](#work-2410-13882) · Core
-- [Real2Code: Reconstruct Articulated Objects via Code Generation](#work-2406-08474) · Adjacent
+- [PneuGen: Task-Driven Agentic Co-Design of Soft Pneumatic Robots](#work-2611-13344)
+- [PhysOPSD: Code as Privilege for Physically Plausible Video Generation](#work-2611-12411)
+- [Spatial Harness: Grounding Spatial Reasoning in Executable World States with Physics Engines](#work-2611-11344)
+- [Agentic discrete-event simulation for manufacturing system design: an open 3D simulator, a benchmark and an industrial case](#work-2611-10602)
+- [TactileLab: Sim-to-Real Dexterous Robot Manipulation with Efficient Shear-Sensitive Tactile Simulation](#work-2611-07881)
+- [PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?](#work-2611-08175)
+- [Closing the Dynamics Gap through Self-Directed Robotic Interaction](#work-2611-02691)
+- [WorldSketch: Sketching World Models for Zero-Shot Mobile Manipulation](#work-2611-00513)
+- [Gym-Anything for Robotics: Scaling physical simulations with digital agents](#work-2610-40565)
+- [DyCraft: An Agentic System for Long-Horizon 4D Scene Generation](#work-2610-40754)
+- [LabWorld: Learning Interactive 4D Worlds for Scientific Experimentation](#work-2610-36592)
+- [SceneAgent: An Agentic Pipeline from 3D and 4D Captures to Simulation Environments](#work-2610-34745)
+- [WorldMirror: Agentic Real-to-Sim Generation of Interactive Worlds from In-the-Wild Robot Demonstrations](#work-2610-31834)
+- [Plumb: Coding Agents with 3D Perception Rebuild Physical Scenes from Video](#work-system-plumb)
+- [MARC: Mechanism-Aware Reflective Correction for Articulated Object Code Generation](#work-2610-33060)
+- [Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark](#work-2610-13947)
+- [Agentic RSR: Real-to-Sim-to-Real through Scene Reconstruction and Execution-Grounded Robot Policies](#work-2610-10479)
+- [WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents](#work-2609-40325)
+- [FACT: Fidelity-Aware Construction of Articulated Twins](#work-2609-37067)
+- [CoDimRecon: Agentic Reconstruction of Sim-Ready 3D Scenes with Deformable Curves, Surfaces, and Volumes](#work-2609-36024)
+- [WorldAgent: Verification-Guided Agentic Physical World Construction](#work-2609-33208)
+- [What Stops Recursive Self-Improvement in Robotics? Lessons from 123 Rounds of Agentic Skill Discovery](#work-2609-31760)
+- [DiagGen: Agentic Generation of Deformable Assets with Sim-based Diagnostics for Robotic Simulation](#work-2609-23103)
+- [DeformSmith: Physics Harness-Guided Hierarchical Generation of Deformable Assets for Robot Manipulation](#work-2609-18620)
+- [SceneMosaic: Efficient and Diverse Simulation-Ready Scene Generation via Hybrid Agentic Layout Evolution](#work-2609-05594)
+- [Lucida: Parse, Generate, and Place for Composable Real-to-Sim Scene Modeling](#work-2608-30821)
+- [Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning](#work-2608-27549)
+- [Beyond Placement and Articulation: Usage-Driven Code Scenes for Embodied Interaction](#work-2608-18840)
+- [LiteReality-Agent: An Agentic System for Interactable 3D Indoor Scene Reconstruction](#work-2610-01863)
+- [GS-Agent: Creating 4D Physical Worlds With Generative Simulation](#work-2607-21522)
+- [Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents](#work-2607-19190)
+- [UniPhysGen: Unified Physical Grounding for Simulation-Ready 3D Assets](#work-2607-13586)
+- [EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI](#work-2607-07459)
+- [SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation](#work-2607-01766)
+- [SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation](#work-2606-28276)
+- [MUSE: Agentic 3D Scene Authoring via Memory-Grounded Incremental Requirement Satisfaction](#work-2606-14168)
+- [PerceptTwin: Semantic Scene Reconstruction for Iterative LLM Planning and Verification](#work-2606-04226)
+- [PhysX-Omni: Unified Simulation-Ready Physical 3D Generation for Rigid, Deformable, and Articulated Objects](#work-2605-21572)
+- [SceneCode: Executable World Programs for Editable Indoor Scenes with Articulated Objects](#work-2605-19587)
+- [ChronoAgentic: A Code-based Multi-Agent World Simulator for Physically Grounded Simulation Construction](#work-2605-14398)
+- [Articraft: An Agentic System for Scalable Articulated 3D Asset Generation](#work-2605-15187)
+- [DeformMaster: An Interactive Physics-Neural World Model for Deformable Objects from Videos](#work-2605-09586)
+- [ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation](#work-2604-10992)
+- [SAGE: Scalable Agentic 3D Scene Generation for Embodied AI](#work-2602-10116)
+- [SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes](#work-2602-09153)
+- [SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent](#work-2509-20414)
+- [GRS: Generating Robotic Simulation Tasks from Real-World Images](#work-2410-15536)
+- [Articulate-Anything: Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model](#work-2410-13882)
+- [Real2Code: Reconstruct Articulated Objects via Code Generation](#work-2406-08474)
 
 [返回研究地图](#research-map)
 
@@ -3697,7 +3697,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Open-HumanWAM: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models
 
-`2026-11-04` · Peking University; National University of Singapore; Massachusetts Institute of Technology; University of California, Santa Barbara; NVIDIA · **Adjacent**
+`2026-11-04` · Peking University; National University of Singapore; Massachusetts Institute of Technology; University of California, Santa Barbara; NVIDIA
 
 [完整书目](../README.zh-CN.md#paper-2611-06817) · [证据 1](https://arxiv.org/abs/2611.06817) · [证据 2](https://dagroup-pku.github.io/open-humanwam/) · [证据 3](https://github.com/DAGroup-PKU/HumanNet/tree/Open-HumanWAM)
 
@@ -3714,7 +3714,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Manipulate-Anything: Automating Real-World Robots using Vision-Language Models
 
-`2024-06-27` · University of Washington; Universidad Católica San Pablo; Allen Institute for Artificial Intelligence; NVIDIA · **Adjacent**
+`2024-06-27` · University of Washington; Universidad Católica San Pablo; Allen Institute for Artificial Intelligence; NVIDIA
 
 [一手来源 1](https://arxiv.org/abs/2406.18915) · [一手来源 2](https://robot-ma.github.io/)
 
@@ -3729,7 +3729,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset
 
-`2024-03-19` · Stanford University; University of California, Berkeley; Toyota Research Institute; Carnegie Mellon University; University of Texas at Austin; University of Montreal; University of Edinburgh; Princeton University; University of Washington; KAIST; University of California, San Diego; Google DeepMind; University of California, Davis; University of Pennsylvania; Columbia University; Yonsei University · **Resource**
+`2024-03-19` · Stanford University; University of California, Berkeley; Toyota Research Institute; Carnegie Mellon University; University of Texas at Austin; University of Montreal; University of Edinburgh; Princeton University; University of Washington; KAIST; University of California, San Diego; Google DeepMind; University of California, Davis; University of Pennsylvania; Columbia University; Yonsei University
 
 [一手来源 1](https://arxiv.org/abs/2403.12945) · [一手来源 2](https://droid-dataset.github.io/)
 
@@ -3746,7 +3746,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### PhysOPSD: Code as Privilege for Physically Plausible Video Generation
 
-`2026-11-09` · Hong Kong University of Science and Technology; Alibaba Token Hub; Alibaba Group · **Core**
+`2026-11-09` · Hong Kong University of Science and Technology; Alibaba Token Hub; Alibaba Group
 
 [完整书目](../README.zh-CN.md#paper-2611-12411) · [证据 1](https://arxiv.org/abs/2611.12411) · [证据 2](https://haroldchen19.github.io/PhysOPSD-site/)
 
@@ -3754,7 +3754,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 **具体方法：** Coding Agent 依据参考构建 MuJoCo／Genesis／Blender 程序，通过执行日志、运动学诊断与预览关键帧修复；冻结轨迹后生成不同抽象程度的草稿和受控参数变体。共享噪声蒸馏更新视频模型权重，而非 Coding Agent。
 
-**验证：** 在 VideoPhy-2、PhyGround、VBench 上评估并消融特权信息和参数变体。PhysOPSD-3K 合计约 3,000 个基础场景／变体条目，尚待发布。Core 修复循环位于数据构造阶段，部署的视频生成无需仿真。
+**验证：** 在 VideoPhy-2、PhyGround、VBench 上评估并消融特权信息和参数变体。PhysOPSD-3K 合计约 3,000 个基础场景／变体条目，尚待发布。修复循环位于数据构造阶段，部署的视频生成无需仿真。
 
 **关联：** [2. Simulator 构建](#section-2) · [3. Simulator 质量评估](#section-3) · [5. 训练与能力提升](#section-5)
 
@@ -3763,7 +3763,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data
 
-`2026-11-03` · Peking University; NVIDIA · **Adjacent**
+`2026-11-03` · Peking University; NVIDIA
 
 [完整书目](../README.zh-CN.md#paper-2611-05320) · [证据 1](https://arxiv.org/abs/2611.05320) · [证据 2](https://dagroup-pku.github.io/PyRUA-Lean/DataFarm) · [证据 3](https://github.com/DAGroup-PKU/PyRUA-Lean/tree/DataFarm)
 
@@ -3778,7 +3778,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### CoDA: Co-Evolution of Data Engines and Action Policies
 
-`2026-10-15` · University of Illinois Urbana-Champaign; Chinese University of Hong Kong, Shenzhen; Amazon · **Core**
+`2026-10-15` · University of Illinois Urbana-Champaign; Chinese University of Hong Kong, Shenzhen; Amazon
 
 [完整书目](../README.zh-CN.md#paper-2610-22362) · [证据 1](https://arxiv.org/abs/2610.22362) · [证据 2](https://plan-lab.github.io/projects/coda/)
 
@@ -3795,7 +3795,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### EmbodiedSmith: Scaling Embodied Data through Recursive Self-Improvement Flywheel in Simulation
 
-`2026-10-06` · HKUST (Guangzhou); Xiaomi Robotics; Southeastern University; Tsinghua University; Zhejiang University; Westlake University; Symbiosis Robotics; Peking University; Xi’an Jiaotong University; Beijing Academy of Artificial Intelligence · **Core**
+`2026-10-06` · HKUST (Guangzhou); Xiaomi Robotics; Southeastern University; Tsinghua University; Zhejiang University; Westlake University; Symbiosis Robotics; Peking University; Xi’an Jiaotong University; Beijing Academy of Artificial Intelligence
 
 [一手来源 1](https://arxiv.org/abs/2610.07969)
 
@@ -3810,7 +3810,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library
 
-`2026-09-28` · Stanford University; Columbia University · **Core**
+`2026-09-28` · Stanford University; Columbia University
 
 [一手来源 1](https://arxiv.org/abs/2609.35318) · [一手来源 2](https://dexagent1.github.io/) · [一手来源 3](https://dexagent123.github.io/)
 
@@ -3827,7 +3827,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics
 
-`2026-09-23` · ByteDance Seed; Yale University; Princeton University; Carnegie Mellon University; Stanford University; University of California, Los Angeles; University of Washington · **Core**
+`2026-09-23` · ByteDance Seed; Yale University; Princeton University; Carnegie Mellon University; Stanford University; University of California, Los Angeles; University of Washington
 
 [一手来源 1](https://arxiv.org/abs/2609.27308)
 
@@ -3844,7 +3844,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### LabRobFail: A Benchmark for Robotic Failure Analysis in Chemical Self-driving Laboratory
 
-`2026-07-26` · Dalian University of Technology; Shenzhen Loop Area Institute; Harbin Institute of Technology; Shanghai AI Laboratory; HKUST; Chinese University of Hong Kong · **Adjacent**
+`2026-07-26` · Dalian University of Technology; Shenzhen Loop Area Institute; Harbin Institute of Technology; Shanghai AI Laboratory; HKUST; Chinese University of Hong Kong
 
 [一手来源 1](https://arxiv.org/abs/2607.23704) · [一手来源 2](https://github.com/Su-ISE-2001/LabRobFail)
 
@@ -3861,7 +3861,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation
 
-`2025-06-22` · Lumina EAI; Shanghai AI Lab; Shenzhen University; Nanjing University; TeleAI; Fudan University; Sun Yat-sen University; USTC; Central South University; SUSTech; Tsinghua University; D-Robotics; Shanghai Jiao Tong University; HKU; Northeastern University · **Adjacent**
+`2025-06-22` · Lumina EAI; Shanghai AI Lab; Shenzhen University; Nanjing University; TeleAI; Fudan University; Sun Yat-sen University; USTC; Central South University; SUSTech; Tsinghua University; D-Robotics; Shanghai Jiao Tong University; HKU; Northeastern University
 
 [一手来源 1](https://arxiv.org/abs/2506.18088) · [一手来源 2](https://robotwin-platform.github.io/) · [一手来源 3](https://github.com/robotwin-Platform/robotwin/) · [一手来源 4](https://github.com/robotwin-Platform/robotwin) · [一手来源 5](https://robotwin-platform.github.io/doc/) · [一手来源 6](https://github.com/RoboTwin-Platform/RoboTwin)
 
@@ -3878,7 +3878,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### GenSim2: Scaling Robot Data Generation with Multi-modal and Reasoning LLMs
 
-`2024-10-04` · Tsinghua University; University of California, San Diego; Shanghai Jiao Tong University; MIT CSAIL · **Adjacent**
+`2024-10-04` · Tsinghua University; University of California, San Diego; Shanghai Jiao Tong University; MIT CSAIL
 
 [一手来源 1](https://arxiv.org/abs/2410.03645) · [一手来源 2](https://gensim2.github.io/)
 
@@ -3895,7 +3895,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Scaling Up and Distilling Down: Language-Guided Robot Skill Acquisition
 
-`2023-07-26` · Columbia University; Google DeepMind · **Adjacent**
+`2023-07-26` · Columbia University; Google DeepMind
 
 [一手来源 1](https://arxiv.org/abs/2307.14535) · [一手来源 2](https://www.cs.columbia.edu/~huy/scalingup/)
 
@@ -3907,54 +3907,54 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 ### 跨章节阅读
 
-- [PhyRubric: Rubric-Grounded Diagnostic Evaluation of Physical Commonsense in Text-to-Video Generation](#work-2611-13576) · Adjacent
-- [One Policy for 100 Household Tasks: Our Solution for the 2026 BEHAVIOR Challenge](#work-2611-14432) · Core
-- [World In-Context Learning for Agentic Robot Manipulation](#work-2611-12885) · Adjacent
-- [BlenderFORGE: Framework for Optimizing Reactive 3D-Graphics Editing Ability of MLLMs](#work-2611-10768) · Core
-- [TactileLab: Sim-to-Real Dexterous Robot Manipulation with Efficient Shear-Sensitive Tactile Simulation](#work-2611-07881) · Adjacent
-- [Gym-Anything for Robotics: Scaling physical simulations with digital agents](#work-2610-40565) · Core
-- [DyCraft: An Agentic System for Long-Horizon 4D Scene Generation](#work-2610-40754) · Core
-- [CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents](#work-2610-40799) · Core
-- [SceneAgent: An Agentic Pipeline from 3D and 4D Captures to Simulation Environments](#work-2610-34745) · Core
-- [SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning](#work-2610-32978) · Adjacent
-- [WorldMirror: Agentic Real-to-Sim Generation of Interactive Worlds from In-the-Wild Robot Demonstrations](#work-2610-31834) · Core
-- [Agentic World Action Models](#work-2610-30136) · Adjacent
-- [Scaling Online Exploration for Robot Agents](#work-2610-22496) · Core
-- [RoboSimStudio: An Interactive Toolkit for Human and Agent Rapid Real2Sim of Robot Manipulation Tasks](#work-2610-18835) · Core
-- [YUBI-Real2Sim: 3DGS Scene Verification for Reliable Policy Evaluation](#work-2610-17521) · Adjacent
-- [D-World: An Explicit World-Language-Action Model with Recursive Self-Improvement under Dual Control](#work-2610-17114) · Core
-- [USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation](#work-2610-11322) · Core
-- [Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos](#work-2610-04432) · Core
-- [Awomo-SimDataEngine: Agentic Simulation-Ready World Generation](#work-2610-02274) · Core
-- [Text2Sim: Agentic Physics-Based Simulation Generation with Distilled Expertise](#work-2609-36593) · Core
-- [Real2Gym: Building Gyms from Videos, Bringing Skills to Robots](#work-2609-37089) · Core
-- [Parametric CAD Bench v3: Evaluating Agentic Parametric CAD Authoring from Text and Engineering Drawings](#work-2611-02659) · Adjacent
-- [DeformSmith: Physics Harness-Guided Hierarchical Generation of Deformable Assets for Robot Manipulation](#work-2609-18620) · Core
-- [GIF: Agentic Generation of Interactive and Functional Object Compositions for Robot Learning](#work-2609-05927) · Adjacent
-- [Lucida: Parse, Generate, and Place for Composable Real-to-Sim Scene Modeling](#work-2608-30821) · Adjacent
-- [Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents](#work-2607-19190) · Core
-- [UniPhysGen: Unified Physical Grounding for Simulation-Ready 3D Assets](#work-2607-13586) · Adjacent
-- [EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI](#work-2607-07459) · Resource
-- [SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation](#work-2606-28276) · Adjacent
-- [MPMWorlds: Material-Point-Method Simulations for Inferring and Extrapolating Physical Dynamics](#work-2606-01538) · Adjacent
-- [PhysX-Omni: Unified Simulation-Ready Physical 3D Generation for Rigid, Deformable, and Articulated Objects](#work-2605-21572) · Adjacent
-- [Articraft: An Agentic System for Scalable Articulated 3D Asset Generation](#work-2605-15187) · Adjacent
-- [SimWorld Studio: Automatic Environment Generation with Evolving Coding Agent for Embodied Agent Learning](#work-2605-09423) · Core
-- [IRIS: A Real-World Benchmark for Inverse Recovery and Identification of Physical Dynamic Systems from Monocular Video](#work-2603-16432) · Adjacent
-- [SAGE: Scalable Agentic 3D Scene Generation for Embodied AI](#work-2602-10116) · Adjacent
-- [Apples on the Table? Evaluating Text-Guided 3D Scene Synthesis via Fine-Grained Constraint Verification](#work-2511-03001) · Adjacent
-- [Robotic Programmer: Video Instructed Policy Code Generation for Robotic Manipulation](#work-2501-04268) · Adjacent
-- [Eurekaverse: Environment Curriculum Generation via Large Language Models](#work-2411-01775) · Adjacent
-- [GRS: Generating Robotic Simulation Tasks from Real-World Images](#work-2410-15536) · Adjacent
-- [FactorSim: Generative Simulation via Factorized Representation](#work-2409-17652) · Adjacent
-- [RoboTwin: Dual-Arm Robot Benchmark with Generative Digital Twins](#work-2409-02920) · Adjacent
-- [Real2Code: Reconstruct Articulated Objects via Code Generation](#work-2406-08474) · Adjacent
-- [OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code](#work-2405-15568) · Adjacent
-- [Holodeck: Language Guided Generation of 3D Embodied AI Environments](#work-2312-09067) · Adjacent
-- [RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation](#work-2311-01455) · Adjacent
-- [Gen2Sim: Scaling up Robot Learning in Simulation with Generative Models](#work-2310-18308) · Adjacent
-- [GenSim: Generating Robotic Simulation Tasks via Large Language Models](#work-2310-01361) · Adjacent
-- [mujoco-workbench](#work-mujoco-workbench) · Resource
+- [PhyRubric: Rubric-Grounded Diagnostic Evaluation of Physical Commonsense in Text-to-Video Generation](#work-2611-13576)
+- [One Policy for 100 Household Tasks: Our Solution for the 2026 BEHAVIOR Challenge](#work-2611-14432)
+- [World In-Context Learning for Agentic Robot Manipulation](#work-2611-12885)
+- [BlenderFORGE: Framework for Optimizing Reactive 3D-Graphics Editing Ability of MLLMs](#work-2611-10768)
+- [TactileLab: Sim-to-Real Dexterous Robot Manipulation with Efficient Shear-Sensitive Tactile Simulation](#work-2611-07881)
+- [Gym-Anything for Robotics: Scaling physical simulations with digital agents](#work-2610-40565)
+- [DyCraft: An Agentic System for Long-Horizon 4D Scene Generation](#work-2610-40754)
+- [CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents](#work-2610-40799)
+- [SceneAgent: An Agentic Pipeline from 3D and 4D Captures to Simulation Environments](#work-2610-34745)
+- [SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning](#work-2610-32978)
+- [WorldMirror: Agentic Real-to-Sim Generation of Interactive Worlds from In-the-Wild Robot Demonstrations](#work-2610-31834)
+- [Agentic World Action Models](#work-2610-30136)
+- [Scaling Online Exploration for Robot Agents](#work-2610-22496)
+- [RoboSimStudio: An Interactive Toolkit for Human and Agent Rapid Real2Sim of Robot Manipulation Tasks](#work-2610-18835)
+- [YUBI-Real2Sim: 3DGS Scene Verification for Reliable Policy Evaluation](#work-2610-17521)
+- [D-World: An Explicit World-Language-Action Model with Recursive Self-Improvement under Dual Control](#work-2610-17114)
+- [USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation](#work-2610-11322)
+- [Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos](#work-2610-04432)
+- [Awomo-SimDataEngine: Agentic Simulation-Ready World Generation](#work-2610-02274)
+- [Text2Sim: Agentic Physics-Based Simulation Generation with Distilled Expertise](#work-2609-36593)
+- [Real2Gym: Building Gyms from Videos, Bringing Skills to Robots](#work-2609-37089)
+- [Parametric CAD Bench v3: Evaluating Agentic Parametric CAD Authoring from Text and Engineering Drawings](#work-2611-02659)
+- [DeformSmith: Physics Harness-Guided Hierarchical Generation of Deformable Assets for Robot Manipulation](#work-2609-18620)
+- [GIF: Agentic Generation of Interactive and Functional Object Compositions for Robot Learning](#work-2609-05927)
+- [Lucida: Parse, Generate, and Place for Composable Real-to-Sim Scene Modeling](#work-2608-30821)
+- [Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents](#work-2607-19190)
+- [UniPhysGen: Unified Physical Grounding for Simulation-Ready 3D Assets](#work-2607-13586)
+- [EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI](#work-2607-07459)
+- [SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation](#work-2606-28276)
+- [MPMWorlds: Material-Point-Method Simulations for Inferring and Extrapolating Physical Dynamics](#work-2606-01538)
+- [PhysX-Omni: Unified Simulation-Ready Physical 3D Generation for Rigid, Deformable, and Articulated Objects](#work-2605-21572)
+- [Articraft: An Agentic System for Scalable Articulated 3D Asset Generation](#work-2605-15187)
+- [SimWorld Studio: Automatic Environment Generation with Evolving Coding Agent for Embodied Agent Learning](#work-2605-09423)
+- [IRIS: A Real-World Benchmark for Inverse Recovery and Identification of Physical Dynamic Systems from Monocular Video](#work-2603-16432)
+- [SAGE: Scalable Agentic 3D Scene Generation for Embodied AI](#work-2602-10116)
+- [Apples on the Table? Evaluating Text-Guided 3D Scene Synthesis via Fine-Grained Constraint Verification](#work-2511-03001)
+- [Robotic Programmer: Video Instructed Policy Code Generation for Robotic Manipulation](#work-2501-04268)
+- [Eurekaverse: Environment Curriculum Generation via Large Language Models](#work-2411-01775)
+- [GRS: Generating Robotic Simulation Tasks from Real-World Images](#work-2410-15536)
+- [FactorSim: Generative Simulation via Factorized Representation](#work-2409-17652)
+- [RoboTwin: Dual-Arm Robot Benchmark with Generative Digital Twins](#work-2409-02920)
+- [Real2Code: Reconstruct Articulated Objects via Code Generation](#work-2406-08474)
+- [OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code](#work-2405-15568)
+- [Holodeck: Language Guided Generation of 3D Embodied AI Environments](#work-2312-09067)
+- [RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation](#work-2311-01455)
+- [Gen2Sim: Scaling up Robot Learning in Simulation with Generative Models](#work-2310-18308)
+- [GenSim: Generating Robotic Simulation Tasks via Large Language Models](#work-2310-01361)
+- [mujoco-workbench](#work-mujoco-workbench)
 
 [返回研究地图](#research-map)
 
@@ -3985,7 +3985,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### RoboAuto: Autonomous Robot Program Search through Multi-Level Physical Understanding
 
-`2026-10-27` · Washington University in St. Louis · **Core**
+`2026-10-27` · Washington University in St. Louis
 
 [完整书目](../README.zh-CN.md#paper-2610-36533) · [证据 1](https://arxiv.org/abs/2610.36533) · [证据 2](https://roboauto-ai.github.io/)
 
@@ -4002,7 +4002,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### CoEvolve: Self-Evolving Code Policies from Skills to Strategies for Humanoid Robots
 
-`2026-10-16` · Peking University; Renmin University of China; Beijing XYZ Embodied AI Co., Ltd.; Beijing Academy of Artificial Intelligence (BAAI) · **Core**
+`2026-10-16` · Peking University; Renmin University of China; Beijing XYZ Embodied AI Co., Ltd.; Beijing Academy of Artificial Intelligence (BAAI)
 
 [一手来源 1](https://arxiv.org/abs/2610.23288)
 
@@ -4019,7 +4019,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### SEAR: Self-Evolving Agentic Robotics
 
-`2026-10-13` · Luma AI · **Core**
+`2026-10-13` · Luma AI
 
 [一手来源 1](https://arxiv.org/abs/2610.18792)
 
@@ -4036,7 +4036,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement
 
-`2026-10-08` · Nanyang Technological University; Ropedia · **Core**
+`2026-10-08` · Nanyang Technological University; Ropedia
 
 [完整书目](../README.zh-CN.md#paper-2610-12369) · [证据 1](https://arxiv.org/abs/2610.12369)
 
@@ -4053,7 +4053,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Adaptive Code Generation for Controlling Robots
 
-`2026-10-07` · Technische Universität Berlin, Germany; logsight.ai, Berlin, Germany · **Core**
+`2026-10-07` · Technische Universität Berlin, Germany; logsight.ai, Berlin, Germany
 
 [完整书目](../README.zh-CN.md#paper-2610-09588) · [证据 1](https://arxiv.org/abs/2610.09588)
 
@@ -4070,7 +4070,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### SimEX: Simulation-Integrated Robotics AutoResearch
 
-`2026-09-30` · Amazon FAR (Frontier AI & Robotics); The University of Texas at Austin; Carnegie Mellon University · **Core**
+`2026-09-30` · Amazon FAR (Frontier AI & Robotics); The University of Texas at Austin; Carnegie Mellon University
 
 [一手来源 1](https://arxiv.org/abs/2609.38982) · [一手来源 2](https://robo-simex.github.io/)
 
@@ -4087,7 +4087,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### HuGo: LLMs as Whole-Body Policy Code Designers for Humanoid Loco-Manipulation
 
-`2026-09-24` · University of California, Berkeley; ShanghaiTech University; Google DeepMind; Nomagic · **Core**
+`2026-09-24` · University of California, Berkeley; ShanghaiTech University; Google DeepMind; Nomagic
 
 [完整书目](../README.zh-CN.md#paper-2609-30594) · [证据 1](https://arxiv.org/abs/2609.30594) · [证据 2](https://iconlab.negarmehr.com/HuGo/)
 
@@ -4104,7 +4104,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Coding Agents for Generalized Task and Motion Planning Problems
 
-`2026-09-24` · Fondazione Bruno Kessler; Carnegie Mellon University; Princeton University · **Adjacent**
+`2026-09-24` · Fondazione Bruno Kessler; Carnegie Mellon University; Princeton University
 
 [一手来源 1](https://arxiv.org/abs/2609.30233)
 
@@ -4121,7 +4121,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### MimicAgent: Quadruped Skills via Prompt-to-Trajectory Generation
 
-`2026-09-21` · Carnegie Mellon University · **Adjacent**
+`2026-09-21` · Carnegie Mellon University
 
 [一手来源 1](https://arxiv.org/abs/2609.24145) · [一手来源 2](https://luckykantnayak.github.io/mimic-agent/)
 
@@ -4138,7 +4138,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### You Don't Need To Stay in The Loop: An Agentic Robotics Loop for Robot-Policy Improvement
 
-`2026-08-02` · Independent Researcher, United States · **Adjacent**
+`2026-08-02` · Independent Researcher, United States
 
 [一手来源 1](https://arxiv.org/abs/2608.07555)
 
@@ -4155,7 +4155,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### ENPIRE: Agentic Robot Policy Self-Improvement in the Real World
 
-`2026-06-18` · NVIDIA; Carnegie Mellon University; University of California, Berkeley · **Core**
+`2026-06-18` · NVIDIA; Carnegie Mellon University; University of California, Berkeley
 
 [完整书目](../README.zh-CN.md#paper-2606-19980) · [证据 1](https://arxiv.org/abs/2606.19980) · [证据 2](https://research.nvidia.com/labs/gear/enpire/)
 
@@ -4172,7 +4172,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### RHO: Your Coding Agent is Secretly a Roboticist
 
-`2026-06-15` · University of California, Berkeley; Embodied Science; AMD · **Core**
+`2026-06-15` · University of California, Berkeley; Embodied Science; AMD
 
 [一手来源 1](https://arxiv.org/abs/2606.16458) · [一手来源 2](https://rho-robotics.github.io)
 
@@ -4189,7 +4189,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### HARBOR: A Harness Framework for Agentic Robot Reinforcement Learning
 
-`2026-06-07` · TU Darmstadt; Honda Research Institute Europe; Columbia University; Tongji University; Shanghai Research Institute for Intelligent Autonomous Systems; University of Würzburg; Hessian.AI · **Core**
+`2026-06-07` · TU Darmstadt; Honda Research Institute Europe; Columbia University; Tongji University; Shanghai Research Institute for Intelligent Autonomous Systems; University of Würzburg; Hessian.AI
 
 [一手来源 1](https://arxiv.org/abs/2606.08610)
 
@@ -4206,7 +4206,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Act-Observe-Rewrite: Multimodal Coding Agents as In-Context Policy Learners for Robot Manipulation
 
-`2026-03-03` · General Bionix · **Core**
+`2026-03-03` · General Bionix
 
 [完整书目](../README.zh-CN.md#paper-2603-04466) · [证据 1](https://arxiv.org/abs/2603.04466)
 
@@ -4223,7 +4223,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### HyCodePolicy: Hybrid Language Controllers for Multimodal Monitoring and Decision in Embodied Agents
 
-`2025-08-04` · Northeastern University; D-Robotics; HKU MMLab; Shanghai AI Lab; Shenzhen University; SUSTech; Shanghai Jiao Tong University; Tsinghua University · **Core**
+`2025-08-04` · Northeastern University; D-Robotics; HKU MMLab; Shanghai AI Lab; Shenzhen University; SUSTech; Shanghai Jiao Tong University; Tsinghua University
 
 [完整书目](../README.zh-CN.md#paper-2508-02629) · [证据 1](https://arxiv.org/abs/2508.02629)
 
@@ -4240,7 +4240,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### INPROVF: Leveraging Large Language Models to Repair High-level Robot Controllers from Assumption Violations
 
-`2025-03-17` · Cornell University · **Adjacent**
+`2025-03-17` · Cornell University
 
 [一手来源 1](https://arxiv.org/abs/2503.13660)
 
@@ -4257,7 +4257,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Creating and Repairing Robot Programs in Open-World Domains
 
-`2024-10-24` · Northeastern University; University of Texas at Austin · **Adjacent**
+`2024-10-24` · Northeastern University; University of Texas at Austin
 
 [一手来源 1](https://arxiv.org/abs/2410.18893)
 
@@ -4274,7 +4274,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation
 
-`2024-09-03` · Stanford University; Columbia University · **Adjacent**
+`2024-09-03` · Stanford University; Columbia University
 
 [一手来源 1](https://arxiv.org/abs/2409.01652) · [一手来源 2](https://rekep-robot.github.io/)
 
@@ -4291,7 +4291,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### DrEureka: Language Model Guided Sim-To-Real Transfer
 
-`2024-06-04` · University of Pennsylvania; NVIDIA; University of Texas, Austin · **Adjacent**
+`2024-06-04` · University of Pennsylvania; NVIDIA; University of Texas, Austin
 
 [一手来源 1](https://arxiv.org/abs/2406.01967) · [一手来源 2](https://eureka-research.github.io/dr-eureka/)
 
@@ -4308,7 +4308,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Code as Reward: Empowering Reinforcement Learning with VLMs
 
-`2024-02-07` · Mila; McGill University; Google DeepMind; University of California, Berkeley · **Adjacent**
+`2024-02-07` · Mila; McGill University; Google DeepMind; University of California, Berkeley
 
 [一手来源 1](https://arxiv.org/abs/2402.04764)
 
@@ -4325,7 +4325,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Eureka: Human-Level Reward Design via Coding Large Language Models
 
-`2023-10-19` · University of Pennsylvania; Caltech; NVIDIA; University of Texas at Austin · **Adjacent**
+`2023-10-19` · University of Pennsylvania; Caltech; NVIDIA; University of Texas at Austin
 
 [一手来源 1](https://arxiv.org/abs/2310.12931) · [一手来源 2](https://eureka-research.github.io/)
 
@@ -4342,7 +4342,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Text2Reward: Reward Shaping with Language Models for Reinforcement Learning
 
-`2023-09-20` · The University of Hong Kong; Carnegie Mellon University; Nanjing University; Microsoft Research; University of Waterloo · **Adjacent**
+`2023-09-20` · The University of Hong Kong; Carnegie Mellon University; Nanjing University; Microsoft Research; University of Waterloo
 
 [一手来源 1](https://arxiv.org/abs/2309.11489) · [一手来源 2](https://text-to-reward.github.io/)
 
@@ -4359,7 +4359,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Language to Rewards for Robotic Skill Synthesis
 
-`2023-06-14` · Google DeepMind · **Adjacent**
+`2023-06-14` · Google DeepMind
 
 [一手来源 1](https://arxiv.org/abs/2306.08647) · [一手来源 2](https://language-to-reward.github.io/)
 
@@ -4376,7 +4376,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### autoresearch-robotics
 
-`首发日期未明确` · 未明确 · **Resource**
+`首发日期未明确` · 未明确
 
 [一手来源 1](https://github.com/jellyheadandrew/autoresearch-robotics)
 
@@ -4395,7 +4395,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### One Policy for 100 Household Tasks: Our Solution for the 2026 BEHAVIOR Challenge
 
-`2026-11-10` · 独立团队 · **Core**
+`2026-11-10` · 独立团队
 
 [一手来源 1](https://arxiv.org/abs/2611.14432)
 
@@ -4412,7 +4412,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### World In-Context Learning for Agentic Robot Manipulation
 
-`2026-11-09` · Huazhong University of Science and Technology; ArcheOne AI · **Adjacent**
+`2026-11-09` · Huazhong University of Science and Technology; ArcheOne AI
 
 [完整书目](../README.zh-CN.md#paper-2611-12885) · [证据 1](https://arxiv.org/abs/2611.12885) · [证据 2](https://archeone-ai.github.io/RoboScript/) · [证据 3](https://github.com/ArcheOne-AI/RoboScript)
 
@@ -4429,7 +4429,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### PyRUA-REAL: Robot Exploration and Adaptive Learning through RSI in the Real World
 
-`2026-11-04` · Peking University; EngineAI; National University of Singapore · **Core**
+`2026-11-04` · Peking University; EngineAI; National University of Singapore
 
 [完整书目](../README.zh-CN.md#paper-2611-06768) · [证据 1](https://arxiv.org/abs/2611.06768) · [证据 2](https://dagroup-pku.github.io/PyRUA-Lean/real/) · [证据 3](https://github.com/DAGroup-PKU/PyRUA-Lean/tree/REAL)
 
@@ -4446,7 +4446,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory
 
-`2026-10-30` · Stanford University · **Core**
+`2026-10-30` · Stanford University
 
 [完整书目](../README.zh-CN.md#paper-2610-42141) · [证据 1](https://arxiv.org/abs/2610.42141) · [证据 2](https://github.com/roboarchitect-ai/RoboArchitect) · [证据 3](https://roboarchitect-ai.github.io/)
 
@@ -4463,7 +4463,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### From VLM Planners to Robotic Agents: Self-Evolving Harnesses for History-Dependent Manipulation
 
-`2026-10-21` · University of Science and Technology of China; Shanghai Artificial Intelligence Laboratory; Shanghai Jiao Tong University; Mohamed bin Zayed University of Artificial Intelligence; Zhejiang University · **Core**
+`2026-10-21` · University of Science and Technology of China; Shanghai Artificial Intelligence Laboratory; Shanghai Jiao Tong University; Mohamed bin Zayed University of Artificial Intelligence; Zhejiang University
 
 [一手来源 1](https://arxiv.org/abs/2610.29560)
 
@@ -4480,7 +4480,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Compile Once, Run Cheap: Frozen, Portable Skills for Embodied Agents, and What Recursive Self-Improvement Adds
 
-`2026-10-18` · Beijing Ou Rui Ling Shi Technology; ChangingTek Robotics Technology (Suzhou); Shanghai Yunfan Intelligent Control Robot Technology · **Core**
+`2026-10-18` · Beijing Ou Rui Ling Shi Technology; ChangingTek Robotics Technology (Suzhou); Shanghai Yunfan Intelligent Control Robot Technology
 
 [一手来源 1](https://arxiv.org/abs/2610.25114) · [一手来源 2](https://github.com/Orillusion/embodied-skill-rsi)
 
@@ -4497,7 +4497,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### InstAgent: A Recursively Self-Improving Agent Operating System for Heterogeneous Robot Collaboration
 
-`2026-10-16` · ShanghaiTech University, Shanghai, China.; InstAdapt, Shanghai, China. · **Core**
+`2026-10-16` · ShanghaiTech University, Shanghai, China.; InstAdapt, Shanghai, China.
 
 [一手来源 1](https://arxiv.org/abs/2610.23098)
 
@@ -4514,7 +4514,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Spatial Memory by Agents, for Agents
 
-`2026-10-15` · Nanjing University; Princeton University; Carnegie Mellon University; Johns Hopkins University; Mondo Robotics · **Adjacent**
+`2026-10-15` · Nanjing University; Princeton University; Carnegie Mellon University; Johns Hopkins University; Mondo Robotics
 
 [一手来源 1](https://arxiv.org/abs/2610.22736) · [一手来源 2](https://ba-fa-3344.github.io/)
 
@@ -4531,7 +4531,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Scaling Online Exploration for Robot Agents
 
-`2026-10-15` · Harvard University; NVIDIA; University of California, Berkeley; Massachusetts Institute of Technology; Stanford University · **Core**
+`2026-10-15` · Harvard University; NVIDIA; University of California, Berkeley; Massachusetts Institute of Technology; Stanford University
 
 [一手来源 1](https://arxiv.org/abs/2610.22496) · [一手来源 2](https://robot-agent-exploration.com/) · [一手来源 3](https://huggingface.co/datasets/robot-agent-exploration/robot-session-logs) · [一手来源 4](https://github.com/robot-agent-exploration/skills-lib) · [一手来源 5](https://github.com/robot-agent-exploration/rax)
 
@@ -4548,7 +4548,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### EmbodiedEvo: Self-Evolving Coding Agent For Physical Intelligence
 
-`2026-10-13` · Navers Lab, Einsia.AI, Tsinghua University · **Core**
+`2026-10-13` · Navers Lab, Einsia.AI, Tsinghua University
 
 [一手来源 1](https://arxiv.org/abs/2610.18867)
 
@@ -4565,7 +4565,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### ChunkAct: Action Chunking for Agentic Robotics
 
-`2026-10-13` · University of Southern California; University of Central Florida; Stony Brook University · **Adjacent**
+`2026-10-13` · University of Southern California; University of Central Florida; Stony Brook University
 
 [一手来源 1](https://arxiv.org/abs/2610.18874)
 
@@ -4582,7 +4582,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Harness^2: Recursive Agent Harnessing for an Open World
 
-`2026-10-09` · Google Cloud AI Research; Northwestern University · **Adjacent**
+`2026-10-09` · Google Cloud AI Research; Northwestern University
 
 [一手来源 1](https://arxiv.org/abs/2610.14224)
 
@@ -4599,7 +4599,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution
 
-`2026-10-07` · Columbia University; Princeton University · **Core**
+`2026-10-07` · Columbia University; Princeton University
 
 [一手来源 1](https://arxiv.org/abs/2610.10498)
 
@@ -4616,7 +4616,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### PhysEvo: Astra Can Act, Let It
 
-`2026-10-06` · University of Chinese Academy of Sciences; Institute of Automation, Chinese Academy of Sciences; Tsinghua University; Independent researcher · **Core**
+`2026-10-06` · University of Chinese Academy of Sciences; Institute of Automation, Chinese Academy of Sciences; Tsinghua University; Independent researcher
 
 [完整书目](../README.zh-CN.md#paper-2610-08995) · [证据 1](https://arxiv.org/abs/2610.08995)
 
@@ -4633,7 +4633,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Recova: Agent-Guided Failure Recovery for Autonomous Robotic Manipulation
 
-`2026-10-01` · University of California, San Diego; University of Texas at Austin; NVIDIA · **Core**
+`2026-10-01` · University of California, San Diego; University of Texas at Austin; NVIDIA
 
 [一手来源 1](https://arxiv.org/abs/2610.01178) · [一手来源 2](https://www.liuisabella.com/Recova)
 
@@ -4650,7 +4650,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents
 
-`2026-10-01` · UC Berkeley; MIT; Amazon FAR; University of Chicago · **Adjacent**
+`2026-10-01` · UC Berkeley; MIT; Amazon FAR; University of Chicago
 
 [一手来源 1](https://arxiv.org/abs/2610.02204) · [一手来源 2](https://rpg-robot.github.io/)
 
@@ -4667,7 +4667,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Scale and Selection: What Makes Automatic Harness Evolution Work for Visual-Interface Robot Agents
 
-`2026-09-30` · 未明确 · **Core**
+`2026-09-30` · 未明确
 
 [一手来源 1](https://arxiv.org/abs/2609.39304)
 
@@ -4684,7 +4684,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Make Code as Policy Great Again: Frontier Agents Write, Call, and Evolve Robot Tools
 
-`2026-09-30` · HexaFuture; Peking University; Beijing Institute of Technology; Tsinghua University · **Core**
+`2026-09-30` · HexaFuture; Peking University; Beijing Institute of Technology; Tsinghua University
 
 [一手来源 1](https://arxiv.org/abs/2609.39018)
 
@@ -4701,7 +4701,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents
 
-`2026-09-30` · Nanyang Technological University; Nanjing University · **Adjacent**
+`2026-09-30` · Nanyang Technological University; Nanjing University
 
 [一手来源 1](https://arxiv.org/abs/2609.40306) · [一手来源 2](https://denghaoyuan123.github.io/Dynaharness_page/)
 
@@ -4718,7 +4718,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### ASENA: Self-evolving Agents for Embodied Navigation
 
-`2026-09-30` · NVIDIA; University of California, San Diego; The University of Texas at Austin · **Core**
+`2026-09-30` · NVIDIA; University of California, San Diego; The University of Texas at Austin
 
 [一手来源 1](https://arxiv.org/abs/2609.39207) · [一手来源 2](https://research.nvidia.com/labs/gear/asena)
 
@@ -4735,7 +4735,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### RoboHarn-Evo: Evolving Hierarchical Physical Knowledge for Self-Improving Robotic Manipulation
 
-`2026-09-29` · Renmin University of China; XYZ Embodied AI; Tsinghua University · **Adjacent**
+`2026-09-29` · Renmin University of China; XYZ Embodied AI; Tsinghua University
 
 [一手来源 1](https://arxiv.org/abs/2609.37583)
 
@@ -4752,7 +4752,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Self-Evolving Coding Agents: From Digital Programs to Physical-World Intelligence
 
-`2026-09-28` · 未明确 · **Core**
+`2026-09-28` · 未明确
 
 [完整书目](../README.zh-CN.md#paper-2609-35432) · [证据 1](https://arxiv.org/abs/2609.35432)
 
@@ -4769,7 +4769,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Recursive Harness Distillation across Agents for Robot Manipulation
 
-`2026-09-27` · Seoul National University; Korea Advanced Institute of Science and Technology · **Adjacent**
+`2026-09-27` · Seoul National University; Korea Advanced Institute of Science and Technology
 
 [一手来源 1](https://arxiv.org/abs/2609.33378)
 
@@ -4786,7 +4786,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### RoboFoundry: System-as-Policy Evolution for Self-Learning Embodied Agents
 
-`2026-09-26` · Nanyang Technological University; Beihang University; National University of Singapore; Cloud Butterfly Technology; Shanghai Jiao Tong University · **Core**
+`2026-09-26` · Nanyang Technological University; Beihang University; National University of Singapore; Cloud Butterfly Technology; Shanghai Jiao Tong University
 
 [一手来源 1](https://arxiv.org/abs/2609.32862) · [一手来源 2](https://jingsongliang.com/robofoundry)
 
@@ -4803,7 +4803,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### RACaP: Agentic Reasoning, Acting, and Coding as Policies for Evolvable Robot Learning
 
-`2026-09-24` · Chinese University of Hong Kong; HKUST (Guangzhou); Knowin AI · **Core**
+`2026-09-24` · Chinese University of Hong Kong; HKUST (Guangzhou); Knowin AI
 
 [一手来源 1](https://arxiv.org/abs/2609.29394)
 
@@ -4820,7 +4820,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### What Stops Recursive Self-Improvement in Robotics? Lessons from 123 Rounds of Agentic Skill Discovery
 
-`2026-09-23` · National University of Singapore · **Core**
+`2026-09-23` · National University of Singapore
 
 [一手来源 1](https://arxiv.org/abs/2609.31760)
 
@@ -4837,7 +4837,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Zetta $ζ$: An Efficient Closed-Loop Embodied Harness for Self-Evolving Physical Intelligence
 
-`2026-08-17` · Institute for AI Industry Research (AIR), Tsinghua University; Z-Trans AI · **Core**
+`2026-08-17` · Institute for AI Industry Research (AIR), Tsinghua University; Z-Trans AI
 
 [一手来源 1](https://arxiv.org/abs/2608.16590)
 
@@ -4854,7 +4854,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Self-Evolving Embodied Agents via Skill-Harness Evolution
 
-`2026-08-11` · Northeastern University; Microsoft Research · **Adjacent**
+`2026-08-11` · Northeastern University; Microsoft Research
 
 [一手来源 1](https://arxiv.org/abs/2608.11350)
 
@@ -4871,7 +4871,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Skills in Weights, Memory in Code: Hybrid Learning for Memory-Dependent Robot Manipulation
 
-`2026-08-10` · Northwestern University; University of Minnesota; Stanford University · **Core**
+`2026-08-10` · Northwestern University; University of Minnesota; Stanford University
 
 [完整书目](../README.zh-CN.md#paper-2608-09410) · [证据 1](https://arxiv.org/abs/2608.09410)
 
@@ -4888,7 +4888,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### A Few Words Go a Long Way: Language Guided Robot Policy Synthesis
 
-`2026-07-26` · University of Washington; Microsoft Research; Massachusetts Institute of Technology · **Adjacent**
+`2026-07-26` · University of Washington; Microsoft Research; Massachusetts Institute of Technology
 
 [一手来源 1](https://arxiv.org/abs/2607.23784) · [一手来源 2](https://robo-architect.github.io/)
 
@@ -4905,7 +4905,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### ASPIRE: Agentic /Skills Discovery for Robotics
 
-`2026-06-30` · NVIDIA; Carnegie Mellon University; University of California, Berkeley; University of Michigan; University of Illinois Urbana-Champaign · **Core**
+`2026-06-30` · NVIDIA; Carnegie Mellon University; University of California, Berkeley; University of Michigan; University of Illinois Urbana-Champaign
 
 [完整书目](../README.zh-CN.md#paper-2607-00272) · [证据 1](https://arxiv.org/abs/2607.00272) · [证据 2](https://github.com/NVlabs/ASPIRE) · [证据 3](https://research.nvidia.com/labs/gear/aspire/)
 
@@ -4922,7 +4922,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Playful Agentic Robot Learning
 
-`2026-06-17` · University of California, Berkeley  Impossible Research · **Core**
+`2026-06-17` · University of California, Berkeley  Impossible Research
 
 [一手来源 1](https://arxiv.org/abs/2606.19419) · [一手来源 2](https://playful-rats.github.io/)
 
@@ -4939,7 +4939,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### EmbodiSkill: Skill-Aware Reflection for Self-Evolving Embodied Agents
 
-`2026-05-11` · Huazhong University of Science and Technology; University of Science and Technology of China; Microsoft Research; Institute for AI Industry Research (AIR), Tsinghua University · **Adjacent**
+`2026-05-11` · Huazhong University of Science and Technology; University of Science and Technology of China; Microsoft Research; Institute for AI Industry Research (AIR), Tsinghua University
 
 [一手来源 1](https://arxiv.org/abs/2605.10332)
 
@@ -4956,7 +4956,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Uni-Skill: Building Self-Evolving Skill Repository for Generalizable Robotic Manipulation
 
-`2026-03-03` · Institute of Computing Technology, Chinese Academy of Sciences; University of Chinese Academy of Sciences · **Adjacent**
+`2026-03-03` · Institute of Computing Technology, Chinese Academy of Sciences; University of Chinese Academy of Sciences
 
 [一手来源 1](https://arxiv.org/abs/2603.02623)
 
@@ -4973,7 +4973,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Robotic Ultra-Long-Horizon Manipulation Skills via Human-guided Lifelong Code Generation
 
-`2025-09-23` · Beijing Academy of Artificial Intelligence; XYZ Embodied AI · **Core**
+`2025-09-23` · Beijing Academy of Artificial Intelligence; XYZ Embodied AI
 
 [完整书目](../README.zh-CN.md#paper-2509-18597) · [证据 1](https://arxiv.org/abs/2509.18597) · [证据 2](https://github.com/Ghiara/LYRA) · [证据 3](https://ghiara.github.io/LYRA/)
 
@@ -4990,7 +4990,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Lifelong Robot Library Learning: Bootstrapping Composable and Generalizable Skills for Embodied Control with Language Models
 
-`2024-06-26` · University of Groningen · **Adjacent**
+`2024-06-26` · University of Groningen
 
 [一手来源 1](https://arxiv.org/abs/2406.18746) · [一手来源 2](https://gtziafas.github.io/LRLL_project)
 
@@ -5007,7 +5007,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### RoboCoder: Robotic Learning from Basic Skills to General Tasks with Large Language Models
 
-`2024-06-06` · CUHK; SmartMore · **Adjacent**
+`2024-06-06` · CUHK; SmartMore
 
 [一手来源 1](https://arxiv.org/abs/2406.03757)
 
@@ -5024,7 +5024,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### InterPreT: Interactive Predicate Learning from Language Feedback for Generalizable Task Planning
 
-`2024-05-30` · University of California, Los Angeles; University of Texas at Austin · **Adjacent**
+`2024-05-30` · University of California, Los Angeles; University of Texas at Austin
 
 [一手来源 1](https://arxiv.org/abs/2405.19758) · [一手来源 2](https://interpret-robot.github.io)
 
@@ -5041,7 +5041,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Demo2Code: From Summarizing Demonstrations to Synthesizing Code via Extended Chain-of-Thought
 
-`2023-05-26` · Cornell University · **Adjacent**
+`2023-05-26` · Cornell University
 
 [一手来源 1](https://arxiv.org/abs/2305.16744) · [一手来源 2](https://portal-cornell.github.io/demo2code/)
 
@@ -5060,7 +5060,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### BlenderFORGE: Framework for Optimizing Reactive 3D-Graphics Editing Ability of MLLMs
 
-`2026-11-07` · Hong Kong University of Science and Technology; SenseTime Research · **Core**
+`2026-11-07` · Hong Kong University of Science and Technology; SenseTime Research
 
 [完整书目](../README.zh-CN.md#paper-2611-10768) · [证据 1](https://arxiv.org/abs/2611.10768) · [证据 2](https://sensetime-fvg.github.io/BlenderFORGE/)
 
@@ -5077,7 +5077,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents
 
-`2026-10-30` · Huawei Technologies Co., Ltd; Huawei Noah Research Institute · **Adjacent**
+`2026-10-30` · Huawei Technologies Co., Ltd; Huawei Noah Research Institute
 
 [一手来源 1](https://arxiv.org/abs/2610.41216) · [一手来源 2](https://garfield-kh.github.io/TinyAstral/)
 
@@ -5094,7 +5094,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents
 
-`2026-10-29` · MMLab, The Chinese University of Hong Kong; NovaXBot · **Core**
+`2026-10-29` · MMLab, The Chinese University of Hong Kong; NovaXBot
 
 [完整书目](../README.zh-CN.md#paper-2610-40799) · [证据 1](https://arxiv.org/abs/2610.40799) · [证据 2](https://github.com/waltstephen/CaPtain) · [证据 3](https://github.com/waltstephen/CaPtain-Harness)
 
@@ -5111,7 +5111,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Agentic World Action Models
 
-`2026-10-21` · University of California, Berkeley; NVIDIA; University of Pennsylvania · **Adjacent**
+`2026-10-21` · University of California, Berkeley; NVIDIA; University of Pennsylvania
 
 [完整书目](../README.zh-CN.md#paper-2610-30136) · [证据 1](https://arxiv.org/abs/2610.30136) · [证据 2](https://agentic-wam.github.io/)
 
@@ -5128,7 +5128,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics
 
-`2026-10-20` · University of Central Florida; University of Southern California; Michigan State University · **Core**
+`2026-10-20` · University of Central Florida; University of Southern California; Michigan State University
 
 [一手来源 1](https://arxiv.org/abs/2610.28589)
 
@@ -5145,7 +5145,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Guava: Distilling Frontier VLMs into a Compact Agent through a Robotic Manipulation Harness
 
-`2026-06-16` · University of Maryland College Park; University of Illinois Urbana-Champaign; University of Waterloo; Mohamed bin Zayed University of Artificial Intelligence; University of Pennsylvania; Amazon FAR · **Adjacent**
+`2026-06-16` · University of Maryland College Park; University of Illinois Urbana-Champaign; University of Waterloo; Mohamed bin Zayed University of Artificial Intelligence; University of Pennsylvania; Amazon FAR
 
 [一手来源 1](https://arxiv.org/abs/2606.18363)
 
@@ -5162,7 +5162,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Robotic Programmer: Video Instructed Policy Code Generation for Robotic Manipulation
 
-`2025-01-08` · Institute of Computing Technology, Chinese Academy of Sciences; University of Chinese Academy of Sciences · **Adjacent**
+`2025-01-08` · Institute of Computing Technology, Chinese Academy of Sciences; University of Chinese Academy of Sciences
 
 [一手来源 1](https://arxiv.org/abs/2501.04268)
 
@@ -5179,7 +5179,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### RoboCodeX: Multimodal Code Generation for Robotic Behavior Synthesis
 
-`2024-02-25` · University of Hong Kong; OpenGVLab, Shanghai AI Laboratory; ETH Zurich; Shanghai Jiao Tong University; Chinese University of Hong Kong; Tsinghua University; University of California, Berkeley · **Adjacent**
+`2024-02-25` · University of Hong Kong; OpenGVLab, Shanghai AI Laboratory; ETH Zurich; Shanghai Jiao Tong University; Chinese University of Hong Kong; Tsinghua University; University of California, Berkeley
 
 [一手来源 1](https://arxiv.org/abs/2402.16117)
 
@@ -5193,52 +5193,52 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 ### 跨章节阅读
 
-- [PhyRubric: Rubric-Grounded Diagnostic Evaluation of Physical Commonsense in Text-to-Video Generation](#work-2611-13576) · Adjacent
-- [Embodied First Exam](#work-2611-12177) · Adjacent
-- [PneuGen: Task-Driven Agentic Co-Design of Soft Pneumatic Robots](#work-2611-13344) · Core
-- [PhysOPSD: Code as Privilege for Physically Plausible Video Generation](#work-2611-12411) · Core
-- [TactileLab: Sim-to-Real Dexterous Robot Manipulation with Efficient Shear-Sensitive Tactile Simulation](#work-2611-07881) · Adjacent
-- [PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?](#work-2611-08175) · Core
-- [Open-HumanWAM: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models](#work-2611-06817) · Adjacent
-- [Gym-Anything for Robotics: Scaling physical simulations with digital agents](#work-2610-40565) · Core
-- [HexaShell: A Universal Harness for Robot Coding Agents in Simulation and the Real World](#work-2610-23479) · Core
-- [CoDA: Co-Evolution of Data Engines and Action Policies](#work-2610-22362) · Core
-- [RoboSimStudio: An Interactive Toolkit for Human and Agent Rapid Real2Sim of Robot Manipulation Tasks](#work-2610-18835) · Core
-- [Agentic Robot Creation through Generation, Verification, and Revision](#work-2610-17881) · Core
-- [D-World: An Explicit World-Language-Action Model with Recursive Self-Improvement under Dual Control](#work-2610-17114) · Core
-- [RobotUse: Allocating Computation, Context, and Decisions](#work-2610-04929) · Adjacent
-- [Fewer Tokens, Better Action: GPT-6 Astra Robot Agents with 14% Higher Success Rate but 65% Fewer Tokens](#work-2610-01939) · Core
-- [Awomo-SimDataEngine: Agentic Simulation-Ready World Generation](#work-2610-02274) · Core
-- [Text2Sim: Agentic Physics-Based Simulation Generation with Distilled Expertise](#work-2609-36593) · Core
-- [Real2Gym: Building Gyms from Videos, Bringing Skills to Robots](#work-2609-37089) · Core
-- [DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library](#work-2609-35318) · Core
-- [HarnessPAI: An Evolving Harness for Physical AI](#work-2609-29166) · Core
-- [EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics](#work-2609-27308) · Core
-- [DeformSmith: Physics Harness-Guided Hierarchical Generation of Deformable Assets for Robot Manipulation](#work-2609-18620) · Core
-- [GIF: Agentic Generation of Interactive and Functional Object Compositions for Robot Learning](#work-2609-05927) · Adjacent
-- [Lucida: Parse, Generate, and Place for Composable Real-to-Sim Scene Modeling](#work-2608-30821) · Adjacent
-- [LabRobFail: A Benchmark for Robotic Failure Analysis in Chemical Self-driving Laboratory](#work-2607-23704) · Adjacent
-- [Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents](#work-2607-19190) · Core
-- [UniPhysGen: Unified Physical Grounding for Simulation-Ready 3D Assets](#work-2607-13586) · Adjacent
-- [SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation](#work-2606-28276) · Adjacent
-- [PhysX-Omni: Unified Simulation-Ready Physical 3D Generation for Rigid, Deformable, and Articulated Objects](#work-2605-21572) · Adjacent
-- [Self-Improving CAD Generation Agents with Finite Element Analysis as Feedback](#work-2605-17448) · Core
-- [SimWorld Studio: Automatic Environment Generation with Evolving Coding Agent for Embodied Agent Learning](#work-2605-09423) · Core
-- [SceneTeract: Probing and Improving Agent-Aware Activity Reasoning in 3D Indoor Scenes](#work-2603-29798) · Adjacent
-- [Training and Benchmarking Code Generation for Physics-Inspired Animations](#work-2602-10840) · Adjacent
-- [SAGE: Scalable Agentic 3D Scene Generation for Embodied AI](#work-2602-10116) · Adjacent
-- [Eurekaverse: Environment Curriculum Generation via Large Language Models](#work-2411-01775) · Adjacent
-- [GenSim2: Scaling Robot Data Generation with Multi-modal and Reasoning LLMs](#work-2410-03645) · Adjacent
-- [Articulate-Anything: Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model](#work-2410-13882) · Core
-- [FactorSim: Generative Simulation via Factorized Representation](#work-2409-17652) · Adjacent
-- [RoboTwin: Dual-Arm Robot Benchmark with Generative Digital Twins](#work-2409-02920) · Adjacent
-- [Real2Code: Reconstruct Articulated Objects via Code Generation](#work-2406-08474) · Adjacent
-- [OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code](#work-2405-15568) · Adjacent
-- [Evaluating Real-World Robot Manipulation Policies in Simulation](#work-2405-05941) · Adjacent
-- [Holodeck: Language Guided Generation of 3D Embodied AI Environments](#work-2312-09067) · Adjacent
-- [RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation](#work-2311-01455) · Adjacent
-- [Gen2Sim: Scaling up Robot Learning in Simulation with Generative Models](#work-2310-18308) · Adjacent
-- [GenSim: Generating Robotic Simulation Tasks via Large Language Models](#work-2310-01361) · Adjacent
+- [PhyRubric: Rubric-Grounded Diagnostic Evaluation of Physical Commonsense in Text-to-Video Generation](#work-2611-13576)
+- [Embodied First Exam](#work-2611-12177)
+- [PneuGen: Task-Driven Agentic Co-Design of Soft Pneumatic Robots](#work-2611-13344)
+- [PhysOPSD: Code as Privilege for Physically Plausible Video Generation](#work-2611-12411)
+- [TactileLab: Sim-to-Real Dexterous Robot Manipulation with Efficient Shear-Sensitive Tactile Simulation](#work-2611-07881)
+- [PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?](#work-2611-08175)
+- [Open-HumanWAM: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models](#work-2611-06817)
+- [Gym-Anything for Robotics: Scaling physical simulations with digital agents](#work-2610-40565)
+- [HexaShell: A Universal Harness for Robot Coding Agents in Simulation and the Real World](#work-2610-23479)
+- [CoDA: Co-Evolution of Data Engines and Action Policies](#work-2610-22362)
+- [RoboSimStudio: An Interactive Toolkit for Human and Agent Rapid Real2Sim of Robot Manipulation Tasks](#work-2610-18835)
+- [Agentic Robot Creation through Generation, Verification, and Revision](#work-2610-17881)
+- [D-World: An Explicit World-Language-Action Model with Recursive Self-Improvement under Dual Control](#work-2610-17114)
+- [RobotUse: Allocating Computation, Context, and Decisions](#work-2610-04929)
+- [Fewer Tokens, Better Action: GPT-6 Astra Robot Agents with 14% Higher Success Rate but 65% Fewer Tokens](#work-2610-01939)
+- [Awomo-SimDataEngine: Agentic Simulation-Ready World Generation](#work-2610-02274)
+- [Text2Sim: Agentic Physics-Based Simulation Generation with Distilled Expertise](#work-2609-36593)
+- [Real2Gym: Building Gyms from Videos, Bringing Skills to Robots](#work-2609-37089)
+- [DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library](#work-2609-35318)
+- [HarnessPAI: An Evolving Harness for Physical AI](#work-2609-29166)
+- [EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics](#work-2609-27308)
+- [DeformSmith: Physics Harness-Guided Hierarchical Generation of Deformable Assets for Robot Manipulation](#work-2609-18620)
+- [GIF: Agentic Generation of Interactive and Functional Object Compositions for Robot Learning](#work-2609-05927)
+- [Lucida: Parse, Generate, and Place for Composable Real-to-Sim Scene Modeling](#work-2608-30821)
+- [LabRobFail: A Benchmark for Robotic Failure Analysis in Chemical Self-driving Laboratory](#work-2607-23704)
+- [Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents](#work-2607-19190)
+- [UniPhysGen: Unified Physical Grounding for Simulation-Ready 3D Assets](#work-2607-13586)
+- [SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation](#work-2606-28276)
+- [PhysX-Omni: Unified Simulation-Ready Physical 3D Generation for Rigid, Deformable, and Articulated Objects](#work-2605-21572)
+- [Self-Improving CAD Generation Agents with Finite Element Analysis as Feedback](#work-2605-17448)
+- [SimWorld Studio: Automatic Environment Generation with Evolving Coding Agent for Embodied Agent Learning](#work-2605-09423)
+- [SceneTeract: Probing and Improving Agent-Aware Activity Reasoning in 3D Indoor Scenes](#work-2603-29798)
+- [Training and Benchmarking Code Generation for Physics-Inspired Animations](#work-2602-10840)
+- [SAGE: Scalable Agentic 3D Scene Generation for Embodied AI](#work-2602-10116)
+- [Eurekaverse: Environment Curriculum Generation via Large Language Models](#work-2411-01775)
+- [GenSim2: Scaling Robot Data Generation with Multi-modal and Reasoning LLMs](#work-2410-03645)
+- [Articulate-Anything: Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model](#work-2410-13882)
+- [FactorSim: Generative Simulation via Factorized Representation](#work-2409-17652)
+- [RoboTwin: Dual-Arm Robot Benchmark with Generative Digital Twins](#work-2409-02920)
+- [Real2Code: Reconstruct Articulated Objects via Code Generation](#work-2406-08474)
+- [OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code](#work-2405-15568)
+- [Evaluating Real-World Robot Manipulation Policies in Simulation](#work-2405-05941)
+- [Holodeck: Language Guided Generation of 3D Embodied AI Environments](#work-2312-09067)
+- [RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation](#work-2311-01455)
+- [Gen2Sim: Scaling up Robot Learning in Simulation with Generative Models](#work-2310-18308)
+- [GenSim: Generating Robotic Simulation Tasks via Large Language Models](#work-2310-01361)
 
 [返回研究地图](#research-map)
 
@@ -5267,7 +5267,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### TactileLab: Sim-to-Real Dexterous Robot Manipulation with Efficient Shear-Sensitive Tactile Simulation
 
-`2026-11-05` · Beijing Institute of Technology; University of Bristol; Xi’an Jiaotong-Liverpool University · **Adjacent**
+`2026-11-05` · Beijing Institute of Technology; University of Bristol; Xi’an Jiaotong-Liverpool University
 
 [完整书目](../README.zh-CN.md#paper-2611-07881) · [证据 1](https://arxiv.org/abs/2611.07881) · [证据 2](https://yijionglin.github.io/tactilelab/)
 
@@ -5284,7 +5284,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### ControlAnything: Generative UI and On-Demand Device Integration for Mixed-Reality Hand Interaction by a Coding Agent
 
-`2026-11-05` · 未明确 · **Adjacent**
+`2026-11-05` · 未明确
 
 [完整书目](../README.zh-CN.md#paper-2611-08321) · [证据 1](https://arxiv.org/abs/2611.08321) · [证据 2](https://github.com/Apolotary/controlanything)
 
@@ -5299,7 +5299,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### FORCA: A Force-Aware Coding Agent for Contact-Rich Robot Manipulation
 
-`2026-10-22` · University of Illinois Urbana-Champaign; Tsinghua University · **Core**
+`2026-10-22` · University of Illinois Urbana-Champaign; Tsinghua University
 
 [完整书目](../README.zh-CN.md#paper-2610-31841) · [证据 1](https://arxiv.org/abs/2610.31841) · [证据 2](https://tanoom.github.io/forca/)
 
@@ -5314,7 +5314,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### MoCaP: Mobile Code-as-Policies for Zero-Shot Mobile Manipulation from Passive Human Videos
 
-`2026-10-14` · New York University; Fudan University; NYU Shanghai · **Core**
+`2026-10-14` · New York University; Fudan University; NYU Shanghai
 
 [完整书目](../README.zh-CN.md#paper-2610-20998) · [证据 1](https://arxiv.org/abs/2610.20998) · [证据 2](https://mocap-7.github.io/MoCAP-page/)
 
@@ -5329,7 +5329,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Fly-by-Code: Embodied Coding Agents for Aerial Manipulation with Active Visual and Physical Feedback
 
-`2026-10-08` · Seoul National University; Carnegie Mellon University; University of Maryland, College Park; All Purpose AI; Kyung Hee University · **Core**
+`2026-10-08` · Seoul National University; Carnegie Mellon University; University of Maryland, College Park; All Purpose AI; Kyung Hee University
 
 [一手来源 1](https://arxiv.org/abs/2610.12549) · [一手来源 2](https://fly-by-code.github.io/)
 
@@ -5344,7 +5344,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### RAPID: Robot Agentic Programming from Demonstrations
 
-`2026-09-24` · Massachusetts Institute of Technology; National University of Singapore; University of Pennsylvania; NVIDIA · **Adjacent**
+`2026-09-24` · Massachusetts Institute of Technology; National University of Singapore; University of Pennsylvania; NVIDIA
 
 [完整书目](../README.zh-CN.md#paper-2609-30249) · [证据 1](https://arxiv.org/abs/2609.30249) · [证据 2](https://yuyaoliu.me/projects/rapid)
 
@@ -5359,7 +5359,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### AquaCap: A Training-Free Underwater Embodied Agent with Code-as-Policy
 
-`2026-09-19` · Sun Yat-sen University; Dalian University of Technology; BIXOCEAN; Southern Marine Science and Engineering Guangdong Laboratory · **Core**
+`2026-09-19` · Sun Yat-sen University; Dalian University of Technology; BIXOCEAN; Southern Marine Science and Engineering Guangdong Laboratory
 
 [完整书目](../README.zh-CN.md#paper-2609-23133) · [证据 1](https://arxiv.org/abs/2609.23133)
 
@@ -5374,7 +5374,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### GenSwarm: Scalable Multi-Robot Code-Policy Generation and Deployment via Language Models
 
-`2025-03-31` · Department of Artificial Intelligence, Westlake University, Hangzhou, China; School of Automation Science and Electrical Engineering, Beihang University, Beijing, China; Institute of Engineering and Technology, University of Groningen, Groningen, Netherlands; Department of Computer Science, Technical University of Darmstadt, Darmstadt, Germany; School of Electrical and Electronic Engineering, The University of Sheffield, Sheffield, UK · **Core**
+`2025-03-31` · Department of Artificial Intelligence, Westlake University, Hangzhou, China; School of Automation Science and Electrical Engineering, Beihang University, Beijing, China; Institute of Engineering and Technology, University of Groningen, Groningen, Netherlands; Department of Computer Science, Technical University of Darmstadt, Darmstadt, Germany; School of Electrical and Electronic Engineering, The University of Sheffield, Sheffield, UK
 
 [一手来源 1](https://arxiv.org/abs/2503.23875) · [一手来源 2](http://alike.The) · [一手来源 3](https://github.com/WindyLab/GenSwarm) · [一手来源 4](https://www.nature.com/articles/s44182-025-00065-w)
 
@@ -5389,7 +5389,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### DeliGrasp: Inferring Object Properties with LLMs for Adaptive Grasp Policies
 
-`2024-03-12` · University of Colorado Boulder · **Adjacent**
+`2024-03-12` · University of Colorado Boulder
 
 [一手来源 1](https://arxiv.org/abs/2403.07832) · [一手来源 2](https://deligrasp.github.io)
 
@@ -5404,7 +5404,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Creative Robot Tool Use with Large Language Models
 
-`2023-10-19` · Carnegie Mellon University; Google DeepMind · **Adjacent**
+`2023-10-19` · Carnegie Mellon University; Google DeepMind
 
 [一手来源 1](https://arxiv.org/abs/2310.13065) · [一手来源 2](https://creative-robotool.github.io/)
 
@@ -5419,7 +5419,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models
 
-`2023-07-12` · Stanford University; University of Illinois Urbana-Champaign · **Adjacent**
+`2023-07-12` · Stanford University; University of Illinois Urbana-Champaign
 
 [一手来源 1](https://arxiv.org/abs/2307.05973) · [一手来源 2](https://voxposer.github.io)
 
@@ -5436,7 +5436,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Evaluating Instrument-Centered AI Agents for Table-Top Science Experiments
 
-`2026-10-30` · Massachusetts Institute of Technology; Boston College; University of Washington · **Adjacent**
+`2026-10-30` · Massachusetts Institute of Technology; Boston College; University of Washington
 
 [一手来源 1](https://arxiv.org/abs/2610.41717) · [一手来源 2](https://github.com/caidish/instrMCP) · [一手来源 3](https://github.com/caidish/qdevbench)
 
@@ -5451,7 +5451,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### BioAgent: Self-Directed Skill Acquisition and Capability Growth for Long-Horizon Laboratory Protocols
 
-`2026-10-30` · Shanghai Jiao Tong University; University of Sussex · **Adjacent**
+`2026-10-30` · Shanghai Jiao Tong University; University of Sussex
 
 [一手来源 1](https://arxiv.org/abs/2610.41383)
 
@@ -5466,7 +5466,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Can LLMs Uncover Hidden Physical Laws through Free Exploration?
 
-`2026-10-27` · HKUST(GZ); ZJU; Alibaba Group; HKUST · **Core**
+`2026-10-27` · HKUST(GZ); ZJU; Alibaba Group; HKUST
 
 [完整书目](../README.zh-CN.md#paper-2610-37649) · [证据 1](https://arxiv.org/abs/2610.37649) · [证据 2](https://zhenyangcs.github.io/LongChang-website/) · [证据 3](https://github.com/EnVision-Research/LongChang)
 
@@ -5481,7 +5481,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### EmbodiedLab: Benchmarking Embodied Agents That Act to Know
 
-`2026-10-26` · HexaFuture; Tsinghua University; National University of Singapore; Peking University · **Adjacent**
+`2026-10-26` · HexaFuture; Tsinghua University; National University of Singapore; Peking University
 
 [一手来源 1](https://arxiv.org/abs/2610.35385) · [一手来源 2](https://github.com/HexaFuture/EmbodiedLab) · [一手来源 3](https://hexafuture.ai/benchmarks/embodiedlab/)
 
@@ -5496,7 +5496,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Self-Building Labs
 
-`2026-10-16` · University of Toronto; Vector Institute; Acceleration Consortium; University of Amsterdam; CIFAR; NVIDIA · **Adjacent**
+`2026-10-16` · University of Toronto; Vector Institute; Acceleration Consortium; University of Amsterdam; CIFAR; NVIDIA
 
 [一手来源 1](https://arxiv.org/abs/2610.23826) · [一手来源 2](https://self-building-labs.github.io/)
 
@@ -5511,7 +5511,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### WetRobo: A Reproducible Robot Kit for Coding Agents in Biological Laboratories
 
-`2026-09-16` · University of Tokyo; RIKEN; New York University; Google DeepMind; National Institute for Materials Science · **Adjacent**
+`2026-09-16` · University of Tokyo; RIKEN; New York University; Google DeepMind; National Institute for Materials Science
 
 [一手来源 1](https://arxiv.org/abs/2609.18435) · [一手来源 2](http://AGENTS.md) · [一手来源 3](https://github.com/tsudalab/WetRobo)
 
@@ -5526,7 +5526,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### ProtoAct: Turning Wet-Lab Protocols into Embodied Robotic Actions
 
-`2026-08-03` · East China University of Science and Technology; Ruijin Hospital, Shanghai Jiao Tong University School of Medicine; Shanghai AI Laboratory · **Adjacent**
+`2026-08-03` · East China University of Science and Technology; Ruijin Hospital, Shanghai Jiao Tong University School of Medicine; Shanghai AI Laboratory
 
 [一手来源 1](https://arxiv.org/abs/2608.01690)
 
@@ -5541,7 +5541,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Stress-testing large language model agents in a robotic chemistry laboratory
 
-`2026-07-25` · University of Science and Technology of China; Center for Scientific Intelligence Innovation, Hefei; University of Birmingham · **Adjacent**
+`2026-07-25` · University of Science and Technology of China; Center for Scientific Intelligence Innovation, Hefei; University of Birmingham
 
 [一手来源 1](https://arxiv.org/abs/2607.23045)
 
@@ -5558,7 +5558,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### AI-designed and AI-implemented control systems for bespoke scientific instrumentation: application to scanning microscopy
 
-`2026-05-08` · University of Cambridge · **Resource**
+`2026-05-08` · University of Cambridge
 
 [一手来源 1](https://pubs.rsc.org/en/content/articlelanding/2026/dd/d6dd00177g) · [一手来源 2](https://www.repository.cam.ac.uk/items/cb2e6fef-94c4-4fe9-903a-aaa198da8f4f)
 
@@ -5575,7 +5575,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### AutoLabs: cognitive multi-agent systems with self-correction for autonomous chemical experimentation
 
-`2025-09-30` · Pacific Northwest National Laboratory, Richland, Washington, WA, USA · **Adjacent**
+`2025-09-30` · Pacific Northwest National Laboratory, Richland, Washington, WA, USA
 
 [一手来源 1](https://arxiv.org/abs/2509.25651) · [一手来源 2](https://github.com/pnnl/autolabs) · [一手来源 3](https://doi.org/10.1038/s41598-026-45593-z)
 
@@ -5590,7 +5590,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Agentic Exploration of Physics Models
 
-`2025-09-29` · Max Planck Institute for the Science of Light, Staudtstraße 2, 91058 Erlangen, Germany; Department of Physics, Friedrich-Alexander Universität Erlangen-Nürnberg, Staudtstraße 5, 91058 Erlangen, Germany · **Core**
+`2025-09-29` · Max Planck Institute for the Science of Light, Staudtstraße 2, 91058 Erlangen, Germany; Department of Physics, Friedrich-Alexander Universität Erlangen-Nürnberg, Staudtstraße 5, 91058 Erlangen, Germany
 
 [一手来源 1](https://arxiv.org/abs/2509.24978) · [一手来源 2](https://github.com/MaxNaeg/SciExplorer) · [一手来源 3](https://journals.aps.org/prx/abstract/10.1103/xnqc-q6nt)
 
@@ -5605,7 +5605,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### A Multiagent-Driven Robotic AI Chemist Enabling Autonomous Chemical Research On Demand
 
-`2024-07-30` · 未明确 · **Adjacent**
+`2024-07-30` · 未明确
 
 [一手来源 1](https://doi.org/10.1021/jacs.4c17738) · [一手来源 2](https://www.cambridge.org/engage/chemrxiv/article-details/66a8c11bc9c6a5c07a7a59c0)
 
@@ -5622,7 +5622,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Autonomous chemical research with large language models
 
-`2023-04-11` · 未明确 · **Adjacent**
+`2023-04-11` · 未明确
 
 [一手来源 1](https://arxiv.org/abs/2304.05332) · [一手来源 2](https://pmc.ncbi.nlm.nih.gov/articles/PMC10733136/) · [一手来源 3](https://github.com/gomesgroup/coscientist)
 
@@ -5637,7 +5637,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### An agentic artificially intelligent X-ray scientist
 
-`首发日期未明确` · Stanford University; SLAC National Accelerator Laboratory; University of Texas at Austin; Carnegie Mellon University; Northeastern University; Howard University; Massachusetts Institute of Technology · **Adjacent**
+`首发日期未明确` · Stanford University; SLAC National Accelerator Laboratory; University of Texas at Austin; Carnegie Mellon University; Northeastern University; Howard University; Massachusetts Institute of Technology
 
 [一手来源 1](https://www.nature.com/articles/s42256-026-01261-5) · [一手来源 2](https://github.com/zhantaochen/llm4xray)
 
@@ -5656,7 +5656,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### PneuGen: Task-Driven Agentic Co-Design of Soft Pneumatic Robots
 
-`2026-11-09` · Oxford Robotics Institute, University of Oxford · **Core**
+`2026-11-09` · Oxford Robotics Institute, University of Oxford
 
 [完整书目](../README.zh-CN.md#paper-2611-13344) · [证据 1](https://arxiv.org/abs/2611.13344)
 
@@ -5673,7 +5673,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?
 
-`2026-11-05` · University of Texas at Dallas; Texas Instruments; Iowa State University · **Core**
+`2026-11-05` · University of Texas at Dallas; Texas Instruments; Iowa State University
 
 [完整书目](../README.zh-CN.md#paper-2611-08175) · [证据 1](https://arxiv.org/abs/2611.08175) · [证据 2](https://chip-ai-agent.github.io/research/pcbrouteagent)
 
@@ -5690,7 +5690,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### BrickWright: Agentic Creation of Physically Feasible Brick Builds
 
-`2026-10-22` · Carnegie Mellon University; Independent Researcher; Stanford University · **Core**
+`2026-10-22` · Carnegie Mellon University; Independent Researcher; Stanford University
 
 [完整书目](../README.zh-CN.md#paper-2610-31651) · [证据 1](https://arxiv.org/abs/2610.31651) · [证据 2](https://github.com/avalovelace1/brickwright) · [证据 3](https://avalovelace1.github.io/brickwright/)
 
@@ -5705,7 +5705,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Agentic Robot Creation through Generation, Verification, and Revision
 
-`2026-10-13` · ShanghaiTech University · **Core**
+`2026-10-13` · ShanghaiTech University
 
 [完整书目](../README.zh-CN.md#paper-2610-17881) · [证据 1](https://arxiv.org/abs/2610.17881) · [证据 2](https://roboforge-project.github.io/)
 
@@ -5722,7 +5722,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Bridging Language and Physics: Automated Design of Continuum Robots with Large Language Models
 
-`2026-09-08` · University of Science and Technology of China; University of North Carolina at Chapel Hill; University of Central Florida · **Core**
+`2026-09-08` · University of Science and Technology of China; University of North Carolina at Chapel Hill; University of Central Florida
 
 [完整书目](../README.zh-CN.md#paper-2609-08220) · [证据 1](https://arxiv.org/abs/2609.08220) · [证据 2](https://github.com/UNITES-Lab/AID-SR)
 
@@ -5737,7 +5737,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Self-Improving CAD Generation Agents with Finite Element Analysis as Feedback
 
-`2026-05-17` · Seoul National University; OneLineAI; Sungkyunkwan University; Ewha Womans University · **Core**
+`2026-05-17` · Seoul National University; OneLineAI; Sungkyunkwan University; Ewha Womans University
 
 [完整书目](../README.zh-CN.md#paper-2605-17448) · [证据 1](https://arxiv.org/abs/2605.17448)
 
@@ -5754,7 +5754,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### LLM-3D Print: Large Language Models To Monitor and Control 3D Printing
 
-`2024-08-26` · Carnegie Mellon University · **Adjacent**
+`2024-08-26` · Carnegie Mellon University
 
 [一手来源 1](https://arxiv.org/abs/2408.14307) · [一手来源 2](https://github.com/BaratiLab/LLM-3D-Print-Large-Language-Models-To-Monitor-and-Control-3D-Printing)
 
@@ -5769,7 +5769,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### ai-cad
 
-`首发日期未明确` · 未明确 · **Resource**
+`首发日期未明确` · 未明确
 
 [一手来源 1](https://github.com/BorjaLL/ai-cad) · [一手来源 2](https://github.com/BorjaLL/ai-cad/blob/1ef2bf72de799006d069498d3ee146dae2e4f075/data/fits-measured.json)
 
@@ -5784,7 +5784,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 #### Agentic AI for FDM 3D Printing Process Control
 
-`首发日期未明确` · 未明确 · **Resource**
+`首发日期未明确` · 未明确
 
 [一手来源 1](https://github.com/jabarkle/AgenticAI-FDM-Printing) · [一手来源 2](https://github.com/BaratiLab/LLM-3D-Print-Large-Language-Models-To-Monitor-and-Control-3D-Printing)
 
@@ -5796,24 +5796,24 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 ### 跨章节阅读
 
-- [One Policy for 100 Household Tasks: Our Solution for the 2026 BEHAVIOR Challenge](#work-2611-14432) · Core
-- [Embodied First Exam](#work-2611-12177) · Adjacent
-- [World In-Context Learning for Agentic Robot Manipulation](#work-2611-12885) · Adjacent
-- [Agentic discrete-event simulation for manufacturing system design: an open 3D simulator, a benchmark and an industrial case](#work-2611-10602) · Adjacent
-- [Open-HumanWAM: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models](#work-2611-06817) · Adjacent
-- [Closing the Dynamics Gap through Self-Directed Robotic Interaction](#work-2611-02691) · Core
-- [WorldSketch: Sketching World Models for Zero-Shot Mobile Manipulation](#work-2611-00513) · Core
-- [LabWorld: Learning Interactive 4D Worlds for Scientific Experimentation](#work-2610-36592) · Adjacent
-- [D-World: An Explicit World-Language-Action Model with Recursive Self-Improvement under Dual Control](#work-2610-17114) · Core
-- [What Stops Recursive Self-Improvement in Robotics? Lessons from 123 Rounds of Agentic Skill Discovery](#work-2609-31760) · Core
-- [Parametric CAD Bench v3: Evaluating Agentic Parametric CAD Authoring from Text and Engineering Drawings](#work-2611-02659) · Adjacent
-- [GIF: Agentic Generation of Interactive and Functional Object Compositions for Robot Learning](#work-2609-05927) · Adjacent
-- [LabRobFail: A Benchmark for Robotic Failure Analysis in Chemical Self-driving Laboratory](#work-2607-23704) · Adjacent
-- [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](#work-2606-19980) · Core
-- [ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation](#work-2604-10992) · Core
-- [Eurekaverse: Environment Curriculum Generation via Large Language Models](#work-2411-01775) · Adjacent
-- [Articulate-Anything: Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model](#work-2410-13882) · Core
-- [Gen2Sim: Scaling up Robot Learning in Simulation with Generative Models](#work-2310-18308) · Adjacent
-- [GenSim: Generating Robotic Simulation Tasks via Large Language Models](#work-2310-01361) · Adjacent
+- [One Policy for 100 Household Tasks: Our Solution for the 2026 BEHAVIOR Challenge](#work-2611-14432)
+- [Embodied First Exam](#work-2611-12177)
+- [World In-Context Learning for Agentic Robot Manipulation](#work-2611-12885)
+- [Agentic discrete-event simulation for manufacturing system design: an open 3D simulator, a benchmark and an industrial case](#work-2611-10602)
+- [Open-HumanWAM: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models](#work-2611-06817)
+- [Closing the Dynamics Gap through Self-Directed Robotic Interaction](#work-2611-02691)
+- [WorldSketch: Sketching World Models for Zero-Shot Mobile Manipulation](#work-2611-00513)
+- [LabWorld: Learning Interactive 4D Worlds for Scientific Experimentation](#work-2610-36592)
+- [D-World: An Explicit World-Language-Action Model with Recursive Self-Improvement under Dual Control](#work-2610-17114)
+- [What Stops Recursive Self-Improvement in Robotics? Lessons from 123 Rounds of Agentic Skill Discovery](#work-2609-31760)
+- [Parametric CAD Bench v3: Evaluating Agentic Parametric CAD Authoring from Text and Engineering Drawings](#work-2611-02659)
+- [GIF: Agentic Generation of Interactive and Functional Object Compositions for Robot Learning](#work-2609-05927)
+- [LabRobFail: A Benchmark for Robotic Failure Analysis in Chemical Self-driving Laboratory](#work-2607-23704)
+- [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](#work-2606-19980)
+- [ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation](#work-2604-10992)
+- [Eurekaverse: Environment Curriculum Generation via Large Language Models](#work-2411-01775)
+- [Articulate-Anything: Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model](#work-2410-13882)
+- [Gen2Sim: Scaling up Robot Learning in Simulation with Generative Models](#work-2310-18308)
+- [GenSim: Generating Robotic Simulation Tasks via Large Language Models](#work-2310-01361)
 
 [返回研究地图](#research-map)

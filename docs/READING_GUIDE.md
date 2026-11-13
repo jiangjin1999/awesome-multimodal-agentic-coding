@@ -57,7 +57,7 @@ Cost and failure cases:
 
 ## Find the right part of the collection
 
-**Core** works document code, execution, multimodal observation, and a subsequent action within a trajectory or a named benchmark configuration. **Adjacent** works contribute related generation, evaluation, or interaction foundations. **Resources** provide model capabilities, tools, skills, and engines; **Demo** and **Reading** entries identify demonstrations and commentary separately. These describe different roles, not a quality ranking.
+Use the three stages to locate your research question, then compare methods, evaluations, datasets, and reusable tools within that area.
 
 For any benchmark, check which evaluated configuration uses feedback. For any demo, distinguish the behavior shown from a measured benchmark result.
 

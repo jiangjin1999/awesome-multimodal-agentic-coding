@@ -101,7 +101,7 @@ def entry(w, lang, site):
     sources = [u for u in w.get('sources', []) if u not in (w['url'], w.get('demo'))]
     extra = ''.join(f' [[{t(site, "source", lang)} {i}]]({url})' for i, url in enumerate(sources, 2))
     return (f'{aliases}<!-- mmac-record: {json.dumps(metadata, ensure_ascii=False)} -->\n\n'
-            f'- <a id="{target}"></a>{date}**[{w["title"]}]({w["url"]})** · **{w["scope"].title()}**{demo}{extra}\n'
+            f'- <a id="{target}"></a>{date}**[{w["title"]}]({w["url"]})**{demo}{extra}\n'
             f'  > {tl}\n')
 
 

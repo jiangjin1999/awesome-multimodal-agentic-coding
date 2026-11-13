@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 748" width="1600" height="748" role="img" aria-label="Awesome Multimodal Agentic Coding: three cumulative stages — visual as feedback, orchestrating models as tools, bridging digital and physical worlds">
+<defs>
+<marker id="ah-n" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 1.5 L10 6 L2 10.5" fill="none" stroke="#6C7896" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<marker id="ah-0" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 1.5 L10 6 L2 10.5" fill="none" stroke="#5CC8FF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<marker id="ah-1" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 1.5 L10 6 L2 10.5" fill="none" stroke="#B69CFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<marker id="ah-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 1.5 L10 6 L2 10.5" fill="none" stroke="#FFB65C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="7" result="b"/><feColorMatrix in="b" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.55 0" result="g"/><feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1600" height="748" fill="#0B0F1A"/>
+<text x="50" y="88" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="52" font-weight="700" fill="#EEF2F8" letter-spacing="-1">Awesome Multimodal Agentic Coding</text>
+<text x="1550" y="86" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="650" fill="#FFB65C" letter-spacing="3">TOWARD PHYSICAL AGI</text>
+<g transform="translate(50 132)">
+<rect x="0" y="0" width="480" height="580" rx="22" fill="#121829" stroke="#222B45" stroke-width="1.5"/>
+<text x="30" y="50" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#5CC8FF" letter-spacing="2">01</text>
+<text x="450" y="50" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#5CC8FF">+ sees what it builds</text>
+<text x="30" y="92" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#EEF2F8">Visual as Feedback</text>
+<g transform="translate(0 -4)">
+<rect x="40" y="140" width="400" height="56" rx="16" fill="none" stroke="#2A3452" stroke-width="1.8" stroke-dasharray="3 7" stroke-linecap="round"/>
+<rect x="40" y="448" width="400" height="64" rx="16" fill="none" stroke="#2A3452" stroke-width="1.8" stroke-dasharray="3 7" stroke-linecap="round"/>
+<path d="M143.07959603786298 276.11792369738146 C160 246 194 232 216 232" fill="none" stroke="#6C7896" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M264 232 C286 232 320 246 336.920403962137 276.11792369738146" fill="none" stroke="#6C7896" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-n)"/>
+<g filter="url(#glow)">
+<path d="M336.920403962137 339.88207630261854 C320 370 286 384 266 384" fill="none" stroke="#5CC8FF" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M214 384 C194 384 160 370 143.07959603786298 339.88207630261854" fill="none" stroke="#5CC8FF" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-0)"/>
+<circle cx="240" cy="384" r="23" fill="#12293D" stroke="#5CC8FF" stroke-width="3.2"/>
+<g transform="translate(240 384)"><path d="M-14 0 Q0 -11.5 14 0 Q0 11.5 -14 0 Z" fill="none" stroke="#5CC8FF" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/><circle r="4" fill="#5CC8FF"/></g>
+</g>
+<circle cx="240" cy="232" r="21" fill="#121829" stroke="#6C7896" stroke-width="2.4"/>
+<g transform="translate(240 232)" fill="none" stroke="#6C7896" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M-5.5 -6 L-11.5 0 L-5.5 6 M5.5 -6 L11.5 0 L5.5 6 M2.2 -8 L-2.2 8"/></g>
+<text x="240" y="282" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" fill="#8E99B0">code</text>
+<text x="240" y="347" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#5CC8FF">observe</text>
+<circle cx="102" cy="308" r="46" fill="#161D31" stroke="#6C7896" stroke-width="2.4"/>
+<g transform="translate(102 311)" fill="none" stroke="#8E99B0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="-20" y="-13" width="40" height="29" rx="9"/><path d="M0 -13 V-21"/><circle cx="0" cy="-24" r="3"/><circle cx="-8" cy="1" r="2.6" fill="#8E99B0" stroke="none"/><circle cx="8" cy="1" r="2.6" fill="#8E99B0" stroke="none"/></g>
+<text x="102" y="248" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" fill="#8E99B0">agent</text>
+<circle cx="378" cy="308" r="46" fill="#161D31" stroke="#6C7896" stroke-width="2.4"/>
+<g transform="translate(378 308)" fill="none" stroke="#8E99B0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="-23" y="-18" width="46" height="36" rx="6"/><path d="M-23 -8 H23"/><path d="M-12 10 V4 M-3 10 V-1 M6 10 V2 M14 10 V-3"/></g>
+<text x="378" y="248" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" fill="#8E99B0">build</text>
+</g>
+<text x="240" y="556" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="21" fill="#98A2B8">web · charts · CAD · games</text>
+</g>
+<g transform="translate(560 132)">
+<rect x="0" y="0" width="480" height="580" rx="22" fill="#121829" stroke="#222B45" stroke-width="1.5"/>
+<text x="30" y="50" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#B69CFF" letter-spacing="2">02</text>
+<text x="450" y="50" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#B69CFF">+ calls models as tools</text>
+<text x="30" y="92" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#EEF2F8">Orchestrating Models as Tools</text>
+<g transform="translate(0 -4)">
+<rect x="40" y="448" width="400" height="64" rx="16" fill="none" stroke="#2A3452" stroke-width="1.8" stroke-dasharray="3 7" stroke-linecap="round"/>
+<g filter="url(#glow)">
+<rect x="40" y="140" width="400" height="56" rx="16" fill="#231F45" stroke="#B69CFF" stroke-width="3.2"/>
+<line x1="240" y1="196" x2="240" y2="211" stroke="#B69CFF" stroke-width="3.2" stroke-linecap="round"/>
+<g transform="translate(90.25 168)" fill="none" stroke="#B69CFF" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M-13 9 L-5 -3 L1 4 L5 -1 L13 9 Z"/><circle cx="7" cy="-8" r="2.6"/></g>
+<text x="110.25" y="174.5" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#B69CFF">image</text>
+<g transform="translate(213.5 168)" fill="none" stroke="#B69CFF" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><rect x="-13" y="-9" width="26" height="18" rx="4"/><path d="M-3.5 -4.5 L4.5 0 L-3.5 4.5 Z"/></g>
+<text x="233.5" y="174.5" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#B69CFF">video</text>
+<g transform="translate(332.75 168)" fill="none" stroke="#B69CFF" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><circle r="12"/><ellipse rx="5" ry="12"/><path d="M-12 0 H12 M-10.4 -6 H10.4 M-10.4 6 H10.4"/></g>
+<text x="352.75" y="174.5" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#B69CFF">world</text>
+</g>
+<path d="M143.07959603786298 276.11792369738146 C160 246 194 232 216 232" fill="none" stroke="#6C7896" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M264 232 C286 232 320 246 336.920403962137 276.11792369738146" fill="none" stroke="#6C7896" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-n)"/>
+<g>
+<path d="M336.920403962137 339.88207630261854 C320 370 286 384 266 384" fill="none" stroke="#6C7896" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M214 384 C194 384 160 370 143.07959603786298 339.88207630261854" fill="none" stroke="#6C7896" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-n)"/>
+<circle cx="240" cy="384" r="23" fill="#121829" stroke="#6C7896" stroke-width="2.4"/>
+<g transform="translate(240 384)"><path d="M-14 0 Q0 -11.5 14 0 Q0 11.5 -14 0 Z" fill="none" stroke="#6C7896" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/><circle r="4" fill="#6C7896"/></g>
+</g>
+<circle cx="240" cy="232" r="21" fill="#121829" stroke="#6C7896" stroke-width="2.4"/>
+<g transform="translate(240 232)" fill="none" stroke="#6C7896" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M-5.5 -6 L-11.5 0 L-5.5 6 M5.5 -6 L11.5 0 L5.5 6 M2.2 -8 L-2.2 8"/></g>
+<text x="240" y="282" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" fill="#8E99B0">code</text>
+<text x="240" y="347" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#8E99B0">observe</text>
+<circle cx="102" cy="308" r="46" fill="#161D31" stroke="#6C7896" stroke-width="2.4"/>
+<g transform="translate(102 311)" fill="none" stroke="#8E99B0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="-20" y="-13" width="40" height="29" rx="9"/><path d="M0 -13 V-21"/><circle cx="0" cy="-24" r="3"/><circle cx="-8" cy="1" r="2.6" fill="#8E99B0" stroke="none"/><circle cx="8" cy="1" r="2.6" fill="#8E99B0" stroke="none"/></g>
+<text x="102" y="248" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" fill="#8E99B0">agent</text>
+<circle cx="378" cy="308" r="46" fill="#161D31" stroke="#6C7896" stroke-width="2.4"/>
+<g transform="translate(378 308)" fill="none" stroke="#8E99B0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="-23" y="-18" width="46" height="36" rx="6"/><path d="M-23 -8 H23"/><path d="M-12 10 V4 M-3 10 V-1 M6 10 V2 M14 10 V-3"/></g>
+<text x="378" y="248" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" fill="#8E99B0">build</text>
+</g>
+<text x="240" y="556" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="21" fill="#98A2B8">design · video · interactive worlds</text>
+</g>
+<g transform="translate(1070 132)">
+<rect x="0" y="0" width="480" height="580" rx="22" fill="#121829" stroke="#222B45" stroke-width="1.5"/>
+<text x="30" y="50" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#FFB65C" letter-spacing="2">03</text>
+<text x="450" y="50" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#FFB65C">+ acts in simulation and reality</text>
+<text x="30" y="92" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="25.5" font-weight="700" fill="#EEF2F8">Bridging Digital &amp; Physical Worlds</text>
+<g transform="translate(0 -4)">
+<g>
+<rect x="40" y="140" width="400" height="56" rx="16" fill="none" stroke="#6C7896" stroke-width="2.4"/>
+<line x1="240" y1="196" x2="240" y2="211" stroke="#6C7896" stroke-width="2.4" stroke-linecap="round"/>
+<g transform="translate(77.5 168)" fill="none" stroke="#6C7896" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M-12 -5 V-12 H-5 M5 -12 H12 V-5 M12 5 V12 H5 M-5 12 H-12 V5"/><circle r="4.5"/></g>
+<text x="97.5" y="174.5" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="500" fill="#8E99B0">perception</text>
+<g transform="translate(232 168)" fill="none" stroke="#6C7896" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle r="12"/><ellipse rx="5" ry="12"/><path d="M-12 0 H12 M-10.4 -6 H10.4 M-10.4 6 H10.4"/></g>
+<text x="252" y="174.5" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="500" fill="#8E99B0">world</text>
+<g transform="translate(339.5 168)" fill="none" stroke="#6C7896" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g transform="translate(-1 -1) scale(0.78)"><path d="M-16 18 H10 M-9 18 V11 H3 V18"/><path d="M-3 9 L-10 -7 L7 -13"/><path d="M7 -13 L13 -9 M13 -9 L18 -14 M13 -9 L16 -3"/></g></g>
+<text x="359.5" y="174.5" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="500" fill="#8E99B0">action</text>
+</g>
+<g filter="url(#glow)">
+<line x1="378" y1="360" x2="378" y2="444" stroke="#FFB65C" stroke-width="3.2" stroke-linecap="round" marker-end="url(#ah-2)"/>
+<line x1="240" y1="444" x2="240" y2="412" stroke="#FFB65C" stroke-width="3.2" stroke-linecap="round" marker-end="url(#ah-2)"/>
+<rect x="40" y="448" width="400" height="76" rx="18" fill="#3A2A18" stroke="#FFB65C" stroke-width="3.2"/>
+<rect x="50" y="458" width="124" height="56" rx="12" fill="#161D31" stroke="#FFB65C" stroke-width="2.2" stroke-dasharray="6 5"/>
+<g transform="translate(82 486)" fill="none" stroke="#FFB65C" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M0 -11 L10 -5.5 V5.5 L0 11 L-10 5.5 V-5.5 Z M0 0 V11 M0 0 L10 -5.5 M0 0 L-10 -5.5"/></g>
+<text x="104" y="494" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="650" fill="#FFB65C">sim</text>
+<rect x="262" y="458" width="168" height="56" rx="12" fill="#161D31" stroke="#FFB65C" stroke-width="2.2"/>
+<g transform="translate(290 486)" fill="none" stroke="#FFB65C" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><rect x="-14" y="-8" width="28" height="19" rx="4"/><path d="M-6 -8 L-3.5 -12 H3.5 L6 -8"/><circle cy="1.5" r="5"/></g>
+<text x="348" y="494" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="650" fill="#FFB65C">real</text>
+<g transform="translate(400 484)" fill="none" stroke="#FFB65C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M-16 18 H10 M-9 18 V11 H3 V18"/><path d="M-3 9 L-10 -7 L7 -13"/><path d="M7 -13 L13 -9 M13 -9 L18 -14 M13 -9 L16 -3"/><circle cx="-3" cy="10" r="2.6" fill="#161D31"/><circle cx="-10" cy="-7" r="2.6" fill="#161D31"/></g>
+<line x1="252" y1="486" x2="184" y2="486" stroke="#FFB65C" stroke-width="2.6" stroke-linecap="round" marker-end="url(#ah-2)"/>
+<line x1="102" y1="458" x2="102" y2="360" stroke="#FFB65C" stroke-width="2.2" stroke-dasharray="6 5" marker-end="url(#ah-2)"/>
+</g>
+<path d="M143.07959603786298 276.11792369738146 C160 246 194 232 216 232" fill="none" stroke="#6C7896" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M264 232 C286 232 320 246 336.920403962137 276.11792369738146" fill="none" stroke="#6C7896" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-n)"/>
+<g>
+<path d="M336.920403962137 339.88207630261854 C320 370 286 384 266 384" fill="none" stroke="#6C7896" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M214 384 C194 384 160 370 143.07959603786298 339.88207630261854" fill="none" stroke="#6C7896" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-n)"/>
+<circle cx="240" cy="384" r="23" fill="#121829" stroke="#6C7896" stroke-width="2.4"/>
+<g transform="translate(240 384)"><path d="M-14 0 Q0 -11.5 14 0 Q0 11.5 -14 0 Z" fill="none" stroke="#6C7896" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/><circle r="4" fill="#6C7896"/></g>
+</g>
+<circle cx="240" cy="232" r="21" fill="#121829" stroke="#6C7896" stroke-width="2.4"/>
+<g transform="translate(240 232)" fill="none" stroke="#6C7896" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M-5.5 -6 L-11.5 0 L-5.5 6 M5.5 -6 L11.5 0 L5.5 6 M2.2 -8 L-2.2 8"/></g>
+<text x="240" y="282" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" fill="#8E99B0">code</text>
+<text x="240" y="347" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#8E99B0">observe</text>
+<circle cx="102" cy="308" r="46" fill="#161D31" stroke="#6C7896" stroke-width="2.4"/>
+<g transform="translate(102 311)" fill="none" stroke="#8E99B0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="-20" y="-13" width="40" height="29" rx="9"/><path d="M0 -13 V-21"/><circle cx="0" cy="-24" r="3"/><circle cx="-8" cy="1" r="2.6" fill="#8E99B0" stroke="none"/><circle cx="8" cy="1" r="2.6" fill="#8E99B0" stroke="none"/></g>
+<text x="102" y="248" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" fill="#8E99B0">agent</text>
+<circle cx="378" cy="308" r="46" fill="#161D31" stroke="#6C7896" stroke-width="2.4"/>
+<g transform="translate(378 308)" fill="none" stroke="#8E99B0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="-23" y="-18" width="46" height="36" rx="6"/><path d="M-23 -8 H23"/><path d="M-12 10 V4 M-3 10 V-1 M6 10 V2 M14 10 V-3"/></g>
+<text x="378" y="248" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" fill="#8E99B0">build</text>
+</g>
+<text x="240" y="556" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="21" fill="#98A2B8">simulators · robots · real-world data</text>
+</g>
+<circle cx="545" cy="436" r="15" fill="#0B0F1A" stroke="#222B45" stroke-width="1.5"/>
+<path d="M539 436 H551 M545 430 V442" fill="none" stroke="#B69CFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1055" cy="436" r="15" fill="#0B0F1A" stroke="#222B45" stroke-width="1.5"/>
+<path d="M1049 436 H1061 M1055 430 V442" fill="none" stroke="#FFB65C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

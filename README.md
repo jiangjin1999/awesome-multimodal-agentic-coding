@@ -23,8 +23,6 @@ A research map of multimodal agents that write code, observe what it does, and i
 
 We read multimodal agentic coding as **one loop that keeps expanding**: an agent writes code, builds something, observes the result, and revises. Each stage keeps that loop and adds one thing — **01** the agent *sees* what it builds; **02** it *calls other models as tools*; **03** it *acts* in simulation and the real world.
 
-**What is included.** Core works document code or a programmatic representation, execution, post-execution multimodal observation, and a subsequent code or tool action driven by that observation in one trajectory or named evaluation configuration. Adjacent works provide directly related methods, evaluation, data or foundations. Resources provide reusable capabilities and tools; demos and reading materials retain their own roles. Stages describe research perspectives, not scope or quality. Each work has one primary entry; other contributions use See also links.
-
 <a id="multimodal-agentic-coding-trilogy"></a>
 <a id="start-here"></a>
 <a id="topic-map"></a>

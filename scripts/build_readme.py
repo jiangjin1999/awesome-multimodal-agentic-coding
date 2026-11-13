@@ -156,10 +156,9 @@ def render(site, works, lang):
     if lang == 'ja':
         o(f"> [!NOTE]\n> {t(site, 'machine_note', lang)}\n")
 
-    # vision + scope
+    # vision
     o(f"## {t(site, 'vision_title', lang)}\n")
     o(t(site, 'vision', lang).strip() + '\n')
-    o(f"**{t(site, 'scope_title', lang)}.** {t(site, 'scope', lang).strip()}\n")
 
     # contents
     named_anchor('contents')

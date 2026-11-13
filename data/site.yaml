@@ -41,20 +41,6 @@ text:
     en: Contents
     zh: 目录
     ja: 目次
-  scope_title:
-    en: What is included
-    zh: 收录标准
-    ja: 収録基準
-  scope:
-    en: Core works document code or a programmatic representation, execution, post-execution multimodal observation, and a
-      subsequent code or tool action driven by that observation in one trajectory or named evaluation configuration. Adjacent
-      works provide directly related methods, evaluation, data or foundations. Resources provide reusable capabilities and
-      tools; demos and reading materials retain their own roles. Stages describe research perspectives, not scope or quality.
-      Each work has one primary entry; other contributions use See also links.
-    zh: Core 工作在同一轨迹或明确评测配置中展示代码或程序化表示、执行、执行后的多模态观测，以及观测驱动的后续代码或工具动作。Adjacent 收录直接相关的方法、评测、数据与基础。Resource 提供可复用能力或工具；Demo
-      与阅读资料保留各自角色。三个阶段表示研究视角，不决定范围身份或质量。每项工作只有一个主入口，其他贡献通过「另见」连接。
-    ja: Core は、同一の軌跡または明示された評価設定で、コードやプログラム表現、実行、実行後のマルチモーダルな観測、その観測に基づく次のコード修正またはツール操作を示す研究です。Adjacent は直接関連する手法・評価・データ・基盤を扱います。Resource
-      は再利用可能な能力やツールを提供し、デモと読み物はそれぞれの役割を維持します。三段階は研究の視点であり、範囲や品質の等級ではありません。各項目には一つの主掲載先を設け、他の貢献は「関連」で結びます。
   start_with:
     en: Start with
     zh: 入门必读

@@ -11,7 +11,7 @@
   <img src="assets/hero/hero-light.png" alt="Awesome Multimodal Agentic Coding — three cumulative stages. 01 Visual as Feedback: an agent writes code, builds an artifact, and observes it. 02 Orchestrating Models as Tools: the same loop calls image, video and world models. 03 Bridging Digital & Physical Worlds: the agent acts and observes in simulation and reality, with simulation built from the real world and practice in simulation strengthening the agent." width="100%">
 </picture>
 
-マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——画面の中から物理世界まで。
+マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——デジタル世界から物理世界まで。
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-638-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--14-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 

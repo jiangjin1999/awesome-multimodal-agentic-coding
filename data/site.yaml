@@ -19,10 +19,10 @@ hero:
     world and practice in simulation strengthening the agent.'
 text:
   tagline:
-    en: A research map of multimodal agents that write code, observe what it does, and improve — from screens to the physical
-      world.
-    zh: 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从屏幕延伸到物理世界。
-    ja: マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——画面の中から物理世界まで。
+    en: A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to
+      the physical world.
+    zh: 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从数字世界延伸到物理世界。
+    ja: マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——デジタル世界から物理世界まで。
   vision_title:
     en: Our Vision
     zh: 我们的愿景

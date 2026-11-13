@@ -21,7 +21,11 @@ A research map of multimodal agents that write code, observe what it does, and i
 
 ## Our Vision
 
-We read multimodal agentic coding as **one loop that keeps expanding**: an agent writes code, builds something, observes the result, and revises. Each stage keeps that loop and adds one thing — **01** the agent *sees* what it builds; **02** it *calls other models as tools*; **03** it *acts* in simulation and the real world.
+From a coding perspective, we see three stages in multimodal agents' evolution from the digital world to the physical world:
+
+1. **Visual feedback:** Build digital artifacts with code and refine them through visual feedback.
+2. **Models as tools:** Orchestrate models through code to combine perception, generation, and action.
+3. **Bridging digital and physical worlds:** Build simulations and drive actions with code, learning and improving in simulation and reality.
 
 <a id="multimodal-agentic-coding-trilogy"></a>
 <a id="start-here"></a>

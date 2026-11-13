@@ -28,13 +28,24 @@ text:
     zh: 我们的愿景
     ja: ビジョン
   vision:
-    en: 'We read multimodal agentic coding as **one loop that keeps expanding**: an agent writes code, builds something, observes
-      the result, and revises. Each stage keeps that loop and adds one thing — **01** the agent *sees* what it builds; **02**
-      it *calls other models as tools*; **03** it *acts* in simulation and the real world.'
-    zh: 我们把多模态智能体编程理解为**一个不断扩展的闭环**：Agent 编写代码、构建产物、观察结果，再据此修改。每个阶段都保留这个闭环，并在其上增加一样东西——**01** Agent *看见*自己构建的东西；**02** Agent
-      *把其他模型当作工具来调用*；**03** Agent 在仿真与真实世界中*行动*。
-    ja: 私たちはマルチモーダル・エージェンティック・コーディングを**拡張し続ける一つのループ**として捉えます。エージェントはコードを書き、成果物を構築し、結果を観察して修正します。各段階はこのループを保ったまま一つの要素を加えます——**01**
-      自分が作ったものを*見る*、**02** 他のモデルを*ツールとして呼び出す*、**03** シミュレーションと現実世界で*行動する*。
+    en: |-
+      From a coding perspective, we see three stages in multimodal agents' evolution from the digital world to the physical world:
+
+      1. **Visual feedback:** Build digital artifacts with code and refine them through visual feedback.
+      2. **Models as tools:** Orchestrate models through code to combine perception, generation, and action.
+      3. **Bridging digital and physical worlds:** Build simulations and drive actions with code, learning and improving in simulation and reality.
+    zh: |-
+      我们从 coding 的视角，将多模态 Agent 从数字世界走向物理世界的演进分为三个阶段：
+
+      1. **视觉反馈**：用代码构建数字产物，并通过视觉反馈改进。
+      2. **模型作为工具**：用代码编排不同模型，组合感知、生成与行动能力。
+      3. **连接数字与物理世界**：用代码构建仿真、驱动行动，在仿真与现实中学习和改进。
+    ja: |-
+      私たちはコーディングの視点から、マルチモーダルエージェントがデジタル世界から物理世界へ進む過程を三段階で捉えます。
+
+      1. **視覚フィードバック**：コードでデジタル成果物を構築し、視覚フィードバックで改善する。
+      2. **ツールとしてのモデル**：コードで異なるモデルを組み合わせ、知覚・生成・行動の能力を統合する。
+      3. **デジタル世界と物理世界の接続**：コードでシミュレーションを構築して行動を制御し、シミュレーションと現実で学習・改善する。
   machine_note:
     ja: この日本語版は機械支援翻訳です。論文タイトルは原文のままです。誤りを見つけた場合は Issue でお知らせください。
   contents:

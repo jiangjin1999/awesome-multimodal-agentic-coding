@@ -304,6 +304,7 @@ source_kind_overrides:
   "https://huggingface.co/spaces/yushaohan/IntReal-Leaderboard": leaderboard
   "https://ivg-yanranzhang.github.io/StateWorldModel/#worlds": demo
   "https://lucida-r2s.github.io/#main-result": demo
+  https://programmingwithpixels.com/: project
   "https://programmingwithpixels.com/#pwp-in-action": demo
   "https://projects.blender.org/lab/blender_mcp": code
   "https://tencent.github.io/WeVisCut/#demo": demo

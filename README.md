@@ -286,7 +286,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2502.18525", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2502-18525"></a>`2025.02` **[Programming with Pixels: Can Computer-Use Agents do Software Engineering?](https://arxiv.org/abs/2502.18525)** [[Demo]](https://programmingwithpixels.com/) [[Code]](https://github.com/ProgrammingwithPixels/PwP) [[Dataset]](https://github.com/ProgrammingWithPixels/PwP/tree/main/pwp_bench) [[Demo]](https://programmingwithpixels.com/#pwp-in-action)
+- <a id="paper-2502-18525"></a>`2025.02` **[Programming with Pixels: Can Computer-Use Agents do Software Engineering?](https://arxiv.org/abs/2502.18525)** [[Project page]](https://programmingwithpixels.com/) [[Code]](https://github.com/ProgrammingwithPixels/PwP) [[Dataset]](https://github.com/ProgrammingWithPixels/PwP/tree/main/pwp_bench) [[Demo]](https://programmingwithpixels.com/#pwp-in-action)
   > Evaluates coding agents that must observe and operate a visual IDE rather than relying on direct text-only tool access.
 
 #### Tools & resources

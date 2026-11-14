@@ -289,7 +289,7 @@
 
 <!-- mmac-record: {"id": "2502.18525", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2502-18525"></a>`2025.02` **[Programming with Pixels: Can Computer-Use Agents do Software Engineering?](https://arxiv.org/abs/2502.18525)** [[デモ]](https://programmingwithpixels.com/) [[コード]](https://github.com/ProgrammingwithPixels/PwP) [[データセット]](https://github.com/ProgrammingWithPixels/PwP/tree/main/pwp_bench) [[デモ]](https://programmingwithpixels.com/#pwp-in-action)
+- <a id="paper-2502-18525"></a>`2025.02` **[Programming with Pixels: Can Computer-Use Agents do Software Engineering?](https://arxiv.org/abs/2502.18525)** [[プロジェクトページ]](https://programmingwithpixels.com/) [[コード]](https://github.com/ProgrammingwithPixels/PwP) [[データセット]](https://github.com/ProgrammingWithPixels/PwP/tree/main/pwp_bench) [[デモ]](https://programmingwithpixels.com/#pwp-in-action)
   > テキストのツールインターフェースだけではなく、視覚的な IDE を観察して操作する必要があるコーディングエージェントを評価する。
 
 #### ツールとリソース

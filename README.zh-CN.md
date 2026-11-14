@@ -286,7 +286,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2502.18525", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2502-18525"></a>`2025.02` **[Programming with Pixels: Can Computer-Use Agents do Software Engineering?](https://arxiv.org/abs/2502.18525)** [[Demo]](https://programmingwithpixels.com/) [[代码]](https://github.com/ProgrammingwithPixels/PwP) [[数据集]](https://github.com/ProgrammingWithPixels/PwP/tree/main/pwp_bench) [[Demo]](https://programmingwithpixels.com/#pwp-in-action)
+- <a id="paper-2502-18525"></a>`2025.02` **[Programming with Pixels: Can Computer-Use Agents do Software Engineering?](https://arxiv.org/abs/2502.18525)** [[项目页]](https://programmingwithpixels.com/) [[代码]](https://github.com/ProgrammingwithPixels/PwP) [[数据集]](https://github.com/ProgrammingWithPixels/PwP/tree/main/pwp_bench) [[Demo]](https://programmingwithpixels.com/#pwp-in-action)
   > 评测必须观察并操作视觉 IDE、而不能只依赖文本工具接口的 Coding Agent。
 
 #### 工具与资源

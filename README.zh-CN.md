@@ -2808,16 +2808,23 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 ### 3.3 仿真器质量评估
 
-| 编号 | 层级 | 核心问题 | 作品 |
-|---|---|---|---|
-| L0a | 需求符合 | 做到了要求里说的吗？ | [SceneEval](#paper-2503-14756) † · [LEGO-Eval](#paper-2511-03001) † · [SceneCritic](#paper-2604-13035) † · [Code4Scene](#paper-2609-36777) |
-| L0b | 参照还原 | 和参照看起来一样吗？ | [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786) · [BlenderWorld](#paper-system-blenderworld) · [Parametric CAD Bench v3](#paper-2611-02659) · [BVB](#paper-2609-15478) · [Frontier3DBench](#paper-2611-09017) |
-| L1 | 静态合理性 | 放着不动时，站得住、走得通吗？ | [GREP](#paper-2611-05802) † · [SceneTeract](#paper-2603-29798) † |
-| L2 | 交互响应 | 推一下、开一下，反应对吗？ | [ScIntBench](#paper-2610-37326) · [WorldCoder-Bench](#paper-2606-01869) · [Lab2Sim](#paper-2611-02928) · [Articulated Simulation Physics](#paper-2605-19136) † |
-| L3a | 动态：看起来对 | 动起来的过程和参照视频一样吗？（只比画面和轨迹，手写动画也能得高分） | [ExeWorldBench](#paper-2610-15166) · [4DCodeBench](#paper-2610-03715) · [VisPhyWorld](#paper-2602-13294) · [Physics-Inspired Animations](#paper-2602-10840) · [PhyRubric](#paper-2611-13576) † · [Latent Prediction Error](#paper-2611-01815) · [Video2World](#paper-2610-04432) · [Real2Sim Benchmark](#paper-real2sim-benchmark) |
-| L3b | 动态：真在模拟 | 换个条件（斜坡更陡、球更重）重跑，结果会跟着正确变化吗？ | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) · [Polynomial Invariants](#paper-2609-13194) † |
-| L3c | 动态：数值准确 | 质量、摩擦等参数和真实一致吗？只看前几秒，能预测后面的过程吗？ | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
-| L4 | 下游效用 | 拿去评测或训练，结论在真实世界成立吗？ | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) |
+下图用同一个厨房例子走一遍各层：每层问什么，又查不出什么。作品链接见图下的表格。
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/eval-ladder/eval-ladder-zh-dark.svg">
+  <img src="assets/eval-ladder/eval-ladder-zh-light.svg" alt="仿真器质量评估的各个层级，用同一个厨房仿真走一遍：从只看、放着不动、碰一下，到让它自己动、拿去用。每层给出拿这间厨房问的问题、这一层查不出什么，以及收录的作品数。" width="100%">
+</picture>
+
+| 层级 | 核心问题 | 作品 |
+|---|---|---|
+| L0a 需求符合 | 做到了要求里说的吗？ | [SceneEval](#paper-2503-14756) † · [LEGO-Eval](#paper-2511-03001) † · [SceneCritic](#paper-2604-13035) † · [Code4Scene](#paper-2609-36777) |
+| L0b 参照还原 | 和参照看起来一样吗？ | [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786) · [BlenderWorld](#paper-system-blenderworld) · [Parametric CAD Bench v3](#paper-2611-02659) · [BVB](#paper-2609-15478) · [Frontier3DBench](#paper-2611-09017) |
+| L1 静态合理性 | 放着不动时，站得住、走得通吗？ | [GREP](#paper-2611-05802) † · [SceneTeract](#paper-2603-29798) † |
+| L2 交互响应 | 推一下、开一下，反应对吗？ | [ScIntBench](#paper-2610-37326) · [WorldCoder-Bench](#paper-2606-01869) · [Lab2Sim](#paper-2611-02928) · [Articulated Simulation Physics](#paper-2605-19136) † |
+| L3a 动态：看起来对 | 动起来的过程和参照视频一样吗？ | [ExeWorldBench](#paper-2610-15166) · [4DCodeBench](#paper-2610-03715) · [VisPhyWorld](#paper-2602-13294) · [Physics-Inspired Animations](#paper-2602-10840) · [PhyRubric](#paper-2611-13576) † · [Latent Prediction Error](#paper-2611-01815) · [Video2World](#paper-2610-04432) · [Real2Sim Benchmark](#paper-real2sim-benchmark) |
+| L3b 动态：真在模拟 | 换个条件重跑，结果会跟着正确变化吗？ | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) · [Polynomial Invariants](#paper-2609-13194) † |
+| L3c 动态：数值准确 | 质量、摩擦等参数和真实一致吗？只看前几秒，能预测后面的过程吗？ | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
+| L4 下游效用 | 拿去评测或训练，结论在真实世界成立吗？ | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) |
 
 † 表示评估器，即主要贡献是评估工具的工作。每篇按论文主打的创新点归层。完整说明见 [仿真器质量评估：检验层级](stage3/simulator-evaluation.zh-CN.md)。
 

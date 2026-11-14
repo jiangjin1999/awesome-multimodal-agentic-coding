@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1066 704" width="1066" height="704" role="img" aria-label="仿真器质量评估：检验层级" font-family="&#x27;PingFang SC&#x27;, &#x27;Hiragino Sans GB&#x27;, &#x27;Microsoft YaHei&#x27;, &#x27;Noto Sans CJK SC&#x27;, &#x27;Noto Sans SC&#x27;, sans-serif">
+<title>仿真器质量评估：检验层级</title>
+<defs>
+<marker id="arrow-0" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#86B6EF"/></marker>
+<marker id="arrow-1" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#5598E7"/></marker>
+<marker id="arrow-2" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#2A78D6"/></marker>
+<marker id="arrow-3" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#1C5CAB"/></marker>
+<marker id="arrow-4" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#104281"/></marker>
+</defs>
+<rect x="0.5" y="0.5" width="1065" height="703" rx="10" fill="#FFFFFF" stroke="#D1D9E0"/>
+<rect x="24" y="24" width="1018" height="40" rx="6" fill="#F0F3F6"/>
+<text x="36" y="49" font-size="14" fill="#1F2328">例子：让 Agent 搭一个厨房仿真，给机器人练习“打开柜门，把杯子放进去”。下面每一层，都拿这间厨房来问。</text>
+<text x="24" y="96" font-size="12.5" font-weight="600" fill="#59636E">阶段</text>
+<text x="150" y="96" font-size="12.5" font-weight="600" fill="#59636E">层级</text>
+<text x="334" y="96" font-size="12.5" font-weight="600" fill="#59636E">拿这间厨房来问</text>
+<text x="678" y="96" font-size="12.5" font-weight="600" fill="#59636E">这一层查不出</text>
+<text x="932" y="96" font-size="12.5" font-weight="600" fill="#59636E">作品</text>
+<line x1="24" y1="106" x2="1042" y2="106" stroke="#D1D9E0"/>
+<line x1="31" y1="143" x2="31" y2="254" stroke="#86B6EF" stroke-width="2" marker-end="url(#arrow-0)"/>
+<line x1="31" y1="279" x2="31" y2="326" stroke="#5598E7" stroke-width="2" marker-end="url(#arrow-1)"/>
+<line x1="31" y1="351" x2="31" y2="398" stroke="#2A78D6" stroke-width="2" marker-end="url(#arrow-2)"/>
+<line x1="31" y1="423" x2="31" y2="598" stroke="#1C5CAB" stroke-width="2" marker-end="url(#arrow-3)"/>
+<circle cx="31" cy="132" r="7" fill="#86B6EF"/>
+<text x="46" y="137" font-size="14" font-weight="700" fill="#1F2328">只看</text>
+<circle cx="31" cy="268" r="7" fill="#5598E7"/>
+<text x="46" y="273" font-size="14" font-weight="700" fill="#1F2328">放着不动</text>
+<circle cx="31" cy="340" r="7" fill="#2A78D6"/>
+<text x="46" y="345" font-size="14" font-weight="700" fill="#1F2328">碰一下</text>
+<circle cx="31" cy="412" r="7" fill="#1C5CAB"/>
+<text x="46" y="417" font-size="14" font-weight="700" fill="#1F2328">让它自己动</text>
+<circle cx="31" cy="612" r="7" fill="#104281"/>
+<text x="46" y="617" font-size="14" font-weight="700" fill="#1F2328">拿去用</text>
+<rect x="150.75" y="122.75" width="37" height="19.5" rx="4" fill="#FFFFFF" stroke="#86B6EF" stroke-width="1.5"/>
+<text x="157.75" y="137" font-size="12.5" font-weight="700" fill="#1F2328">L0a</text>
+<text x="150" y="157" font-size="14" font-weight="600" fill="#1F2328">需求符合</text>
+<text x="334" y="137" font-size="14" fill="#1F2328">要求里的桌子、柜子、杯子都有吗？杯子在桌上吗？</text>
+<text x="678" y="137" font-size="14" fill="#59636E">任何物理错误：这一层不运行物理</text>
+<circle cx="936.5" cy="132" r="3.75" fill="none" stroke="#59636E" stroke-width="1.5"/>
+<circle cx="948.5" cy="132" r="3.75" fill="none" stroke="#59636E" stroke-width="1.5"/>
+<circle cx="960.5" cy="132" r="3.75" fill="none" stroke="#59636E" stroke-width="1.5"/>
+<circle cx="972.5" cy="132" r="4.5" fill="#59636E"/>
+<text x="984" y="137" font-size="12.5" fill="#59636E">4</text>
+<line x1="150" y1="174" x2="1042" y2="174" stroke="#D1D9E0" stroke-dasharray="3 3"/>
+<rect x="150.75" y="186.75" width="37" height="19.5" rx="4" fill="#FFFFFF" stroke="#86B6EF" stroke-width="1.5"/>
+<text x="157.75" y="201" font-size="12.5" font-weight="700" fill="#1F2328">L0b</text>
+<text x="150" y="221" font-size="14" font-weight="600" fill="#1F2328">参照还原</text>
+<text x="334" y="201" font-size="14" fill="#1F2328">和照片里那间厨房长得一样吗？</text>
+<text x="678" y="201" font-size="14" fill="#59636E">看着一样，碰撞体、质量、关节未必对</text>
+<circle cx="936.5" cy="196" r="4.5" fill="#59636E"/>
+<circle cx="948.5" cy="196" r="4.5" fill="#59636E"/>
+<circle cx="960.5" cy="196" r="4.5" fill="#59636E"/>
+<circle cx="972.5" cy="196" r="4.5" fill="#59636E"/>
+<circle cx="984.5" cy="196" r="4.5" fill="#59636E"/>
+<circle cx="996.5" cy="196" r="4.5" fill="#59636E"/>
+<text x="1008" y="201" font-size="12.5" fill="#59636E">6</text>
+<line x1="24" y1="242" x2="1042" y2="242" stroke="#D1D9E0"/>
+<rect x="150.75" y="258.75" width="30" height="19.5" rx="4" fill="#FFFFFF" stroke="#5598E7" stroke-width="1.5"/>
+<text x="157.75" y="273" font-size="12.5" font-weight="700" fill="#1F2328">L1</text>
+<text x="150" y="293" font-size="14" font-weight="600" fill="#1F2328">静态合理性</text>
+<text x="334" y="273" font-size="14" fill="#1F2328">杯子有没有悬空、嵌进桌面？机器人走得过去吗？</text>
+<text x="678" y="273" font-size="14" fill="#59636E">一碰、一动之后会怎样</text>
+<circle cx="936.5" cy="268" r="3.75" fill="none" stroke="#59636E" stroke-width="1.5"/>
+<circle cx="948.5" cy="268" r="3.75" fill="none" stroke="#59636E" stroke-width="1.5"/>
+<text x="960" y="273" font-size="12.5" fill="#59636E">2</text>
+<line x1="24" y1="314" x2="1042" y2="314" stroke="#D1D9E0"/>
+<rect x="150.75" y="330.75" width="30" height="19.5" rx="4" fill="#FFFFFF" stroke="#2A78D6" stroke-width="1.5"/>
+<text x="157.75" y="345" font-size="12.5" font-weight="700" fill="#1F2328">L2</text>
+<text x="150" y="365" font-size="14" font-weight="600" fill="#1F2328">交互响应</text>
+<text x="334" y="345" font-size="14" fill="#1F2328">拉一下柜门，门会绕着铰链转开吗？</text>
+<text x="678" y="345" font-size="14" fill="#59636E">门能开，但质量、阻尼未必对</text>
+<circle cx="936.5" cy="340" r="4.5" fill="#59636E"/>
+<circle cx="948.5" cy="340" r="4.5" fill="#59636E"/>
+<circle cx="960.5" cy="340" r="4.5" fill="#59636E"/>
+<circle cx="972.5" cy="340" r="3.75" fill="none" stroke="#59636E" stroke-width="1.5"/>
+<text x="984" y="345" font-size="12.5" fill="#59636E">4</text>
+<line x1="24" y1="386" x2="1042" y2="386" stroke="#D1D9E0"/>
+<rect x="150.75" y="402.75" width="37" height="19.5" rx="4" fill="#FFFFFF" stroke="#1C5CAB" stroke-width="1.5"/>
+<text x="157.75" y="417" font-size="12.5" font-weight="700" fill="#1F2328">L3a</text>
+<text x="150" y="437" font-size="14" font-weight="600" fill="#1F2328">看起来对</text>
+<text x="334" y="417" font-size="14" fill="#1F2328">杯子被碰倒、滚下桌的过程，和真实录像像吗？</text>
+<text x="678" y="417" font-size="14" fill="#59636E">可能只是写死的动画，不是算出来的</text>
+<circle cx="936.5" cy="412" r="4.5" fill="#59636E"/>
+<circle cx="948.5" cy="412" r="4.5" fill="#59636E"/>
+<circle cx="960.5" cy="412" r="4.5" fill="#59636E"/>
+<circle cx="972.5" cy="412" r="4.5" fill="#59636E"/>
+<circle cx="984.5" cy="412" r="3.75" fill="none" stroke="#59636E" stroke-width="1.5"/>
+<circle cx="996.5" cy="412" r="4.5" fill="#59636E"/>
+<circle cx="1008.5" cy="412" r="4.5" fill="#59636E"/>
+<circle cx="1020.5" cy="412" r="4.5" fill="#59636E"/>
+<text x="1032" y="417" font-size="12.5" fill="#59636E">8</text>
+<line x1="150" y1="454" x2="1042" y2="454" stroke="#D1D9E0" stroke-dasharray="3 3"/>
+<rect x="150.75" y="466.75" width="37" height="19.5" rx="4" fill="#FFFFFF" stroke="#1C5CAB" stroke-width="1.5"/>
+<text x="157.75" y="481" font-size="12.5" font-weight="700" fill="#1F2328">L3b</text>
+<text x="150" y="501" font-size="14" font-weight="600" fill="#1F2328">真在模拟</text>
+<text x="334" y="481" font-size="14" fill="#1F2328">桌面调斜、杯子换重后再跑，结果跟着正确变化吗？</text>
+<text x="678" y="481" font-size="14" fill="#59636E">规律对了，质量、摩擦等数值未必准</text>
+<circle cx="936.5" cy="476" r="4.5" fill="#59636E"/>
+<circle cx="948.5" cy="476" r="4.5" fill="#59636E"/>
+<circle cx="960.5" cy="476" r="4.5" fill="#59636E"/>
+<circle cx="972.5" cy="476" r="3.75" fill="none" stroke="#59636E" stroke-width="1.5"/>
+<text x="984" y="481" font-size="12.5" fill="#59636E">4</text>
+<line x1="150" y1="518" x2="1042" y2="518" stroke="#D1D9E0" stroke-dasharray="3 3"/>
+<rect x="150.75" y="530.75" width="37" height="19.5" rx="4" fill="#FFFFFF" stroke="#1C5CAB" stroke-width="1.5"/>
+<text x="157.75" y="545" font-size="12.5" font-weight="700" fill="#1F2328">L3c</text>
+<text x="150" y="565" font-size="14" font-weight="600" fill="#1F2328">数值准确</text>
+<text x="334" y="545" font-size="14" fill="#1F2328">杯子质量、桌面摩擦和实测一致吗？</text>
+<text x="334" y="565" font-size="14" fill="#1F2328">只看前几秒，能预测后面吗？</text>
+<text x="678" y="545" font-size="14" fill="#59636E">拿去评测、训练后，结论是否成立</text>
+<circle cx="936.5" cy="540" r="4.5" fill="#59636E"/>
+<circle cx="948.5" cy="540" r="4.5" fill="#59636E"/>
+<circle cx="960.5" cy="540" r="4.5" fill="#59636E"/>
+<text x="972" y="545" font-size="12.5" fill="#59636E">3</text>
+<line x1="24" y1="586" x2="1042" y2="586" stroke="#D1D9E0"/>
+<rect x="150.75" y="602.75" width="30" height="19.5" rx="4" fill="#FFFFFF" stroke="#104281" stroke-width="1.5"/>
+<text x="157.75" y="617" font-size="12.5" font-weight="700" fill="#1F2328">L4</text>
+<text x="150" y="637" font-size="14" font-weight="600" fill="#1F2328">下游效用</text>
+<text x="334" y="617" font-size="14" fill="#1F2328">在这里排第一的策略，到真厨房里也排第一吗？</text>
+<text x="678" y="617" font-size="14" fill="#59636E">评测排得准，拿去训练时，策略仍可能</text>
+<text x="678" y="637" font-size="14" fill="#59636E">钻仿真的空子</text>
+<circle cx="936.5" cy="612" r="4.5" fill="#59636E"/>
+<circle cx="948.5" cy="612" r="4.5" fill="#59636E"/>
+<circle cx="960.5" cy="612" r="4.5" fill="#59636E"/>
+<circle cx="972.5" cy="612" r="4.5" fill="#59636E"/>
+<circle cx="984.5" cy="612" r="4.5" fill="#59636E"/>
+<text x="996" y="617" font-size="12.5" fill="#59636E">5</text>
+<text x="24" y="680" font-size="12.5" fill="#59636E">从上到下，仿真被用得越来越接近真实。各层查的是不同的错误，不是累加的分数；L0a 与 L0b 是两个平行的起点。</text>
+<circle cx="884.25" cy="675.5" r="4.5" fill="#59636E"/>
+<text x="895.75" y="680" font-size="12.5" fill="#59636E">一项作品</text>
+<circle cx="966.25" cy="675.5" r="3.75" fill="none" stroke="#59636E" stroke-width="1.5"/>
+<text x="977.75" y="680" font-size="12.5" fill="#59636E">评估器 †</text>
+</svg>

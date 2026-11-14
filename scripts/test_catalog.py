@@ -5,6 +5,7 @@ from tempfile import TemporaryDirectory
 import unittest
 
 import engine_map
+import eval_ladder
 from build_readme import render, validate
 from catalog import anchor, canonical_records, check_local_links, load
 
@@ -86,6 +87,19 @@ class CatalogTests(unittest.TestCase):
         errors = validate(site, self.works, True)[0]
         self.assertTrue(any('covers 7 columns' in e for e in errors))
         self.assertTrue(any('kind missing ja' in e for e in errors))
+
+    def test_eval_ladder_images_are_current_and_works_exist(self):
+        for rel, svg in eval_ladder.outputs(self.site):
+            self.assertEqual((ROOT / rel).read_text(encoding='utf-8'), svg, rel)
+        site = deepcopy(self.site)
+        level = site['eval_ladder']['stages'][0]['levels'][0]
+        level['works'].append('9999.99999')
+        del level['blind']['ja']
+        site['sections']['3.3']['guide']['zh'] = site['sections']['3.3']['guide']['zh'].replace('{eval_table}', '')
+        errors = validate(site, self.works, True)[0]
+        self.assertTrue(any('work 9999.99999 not found' in e for e in errors))
+        self.assertTrue(any('L0a.blind missing ja' in e for e in errors))
+        self.assertTrue(any('lacks {eval_table}' in e for e in errors))
 
     def test_compatibility_targets_must_exist(self):
         site = deepcopy(self.site)

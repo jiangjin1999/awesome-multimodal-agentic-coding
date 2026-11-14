@@ -2808,16 +2808,23 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 ### 3.3 Simulator quality evaluation
 
-| No. | Level | Core question | Works |
-|---|---|---|---|
-| L0a | Semantic fidelity | Does it do what the requirements say? | [SceneEval](#paper-2503-14756) † · [LEGO-Eval](#paper-2511-03001) † · [SceneCritic](#paper-2604-13035) † · [Code4Scene](#paper-2609-36777) |
-| L0b | Visual / reconstruction fidelity | Does it look the same as the reference? | [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786) · [BlenderWorld](#paper-system-blenderworld) · [Parametric CAD Bench v3](#paper-2611-02659) · [BVB](#paper-2609-15478) · [Frontier3DBench](#paper-2611-09017) |
-| L1 | Static physical plausibility | Left at rest, does it stand stably and can people get through? | [GREP](#paper-2611-05802) † · [SceneTeract](#paper-2603-29798) † |
-| L2 | Interaction plausibility | Push it or open it: does it respond correctly? | [ScIntBench](#paper-2610-37326) · [WorldCoder-Bench](#paper-2606-01869) · [Lab2Sim](#paper-2611-02928) · [Articulated Simulation Physics](#paper-2605-19136) † |
-| L3a | Dynamics: looks right | Does the motion match the reference video? (Only frames and trajectories are compared, so hand-written animation can also score well.) | [ExeWorldBench](#paper-2610-15166) · [4DCodeBench](#paper-2610-03715) · [VisPhyWorld](#paper-2602-13294) · [Physics-Inspired Animations](#paper-2602-10840) · [PhyRubric](#paper-2611-13576) † · [Latent Prediction Error](#paper-2611-01815) · [Video2World](#paper-2610-04432) · [Real2Sim Benchmark](#paper-real2sim-benchmark) |
-| L3b | Dynamics: truly simulated | Rerun under changed conditions (a steeper ramp, a heavier ball): does the result change correctly? | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) · [Polynomial Invariants](#paper-2609-13194) † |
-| L3c | Dynamics: numerically accurate | Do parameters such as mass and friction match reality? Given the first few seconds, can it predict what follows? | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
-| L4 | Sim-to-real predictivity | Used for evaluation or training, do the conclusions hold in the real world? | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) |
+The figure walks one kitchen example through every level: what each level asks, and what it cannot catch. Links to the works are in the table below it.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/eval-ladder/eval-ladder-en-dark.svg">
+  <img src="assets/eval-ladder/eval-ladder-en-light.svg" alt="The simulator-evaluation levels, walked through one kitchen simulation: from looking at it, leaving it at rest and poking it, to letting it run and putting it to use. For each level the figure gives the question asked of the kitchen, what the level cannot catch, and how many works it holds." width="100%">
+</picture>
+
+| Level | Core question | Works |
+|---|---|---|
+| L0a Semantic fidelity | Does it do what the requirements say? | [SceneEval](#paper-2503-14756) † · [LEGO-Eval](#paper-2511-03001) † · [SceneCritic](#paper-2604-13035) † · [Code4Scene](#paper-2609-36777) |
+| L0b Visual / reconstruction fidelity | Does it look the same as the reference? | [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786) · [BlenderWorld](#paper-system-blenderworld) · [Parametric CAD Bench v3](#paper-2611-02659) · [BVB](#paper-2609-15478) · [Frontier3DBench](#paper-2611-09017) |
+| L1 Static physical plausibility | Left at rest, does it stand stably and can people get through? | [GREP](#paper-2611-05802) † · [SceneTeract](#paper-2603-29798) † |
+| L2 Interaction plausibility | Push it or open it: does it respond correctly? | [ScIntBench](#paper-2610-37326) · [WorldCoder-Bench](#paper-2606-01869) · [Lab2Sim](#paper-2611-02928) · [Articulated Simulation Physics](#paper-2605-19136) † |
+| L3a Dynamics: looks right | Does the motion match the reference video? | [ExeWorldBench](#paper-2610-15166) · [4DCodeBench](#paper-2610-03715) · [VisPhyWorld](#paper-2602-13294) · [Physics-Inspired Animations](#paper-2602-10840) · [PhyRubric](#paper-2611-13576) † · [Latent Prediction Error](#paper-2611-01815) · [Video2World](#paper-2610-04432) · [Real2Sim Benchmark](#paper-real2sim-benchmark) |
+| L3b Dynamics: truly simulated | Rerun under changed conditions: does the result change correctly? | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) · [Polynomial Invariants](#paper-2609-13194) † |
+| L3c Dynamics: numerically accurate | Do parameters such as mass and friction match reality? Given the first few seconds, can it predict what follows? | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
+| L4 Sim-to-real predictivity | Used for evaluation or training, do the conclusions hold in the real world? | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) |
 
 † marks evaluators, works whose main contribution is an evaluation tool. Each work is placed by its main claimed contribution. Full explanation: [Simulator quality evaluation: a fidelity ladder](stage3/simulator-evaluation.md).
 

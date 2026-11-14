@@ -435,6 +435,248 @@ stages:
         [MuJoCo](https://mujoco.readthedocs.io/en/stable/overview.html) · [PyBullet](https://pybullet.org/) · [Bullet](https://github.com/bulletphysics/bullet3) · [Drake](https://drake.mit.edu/) · [Genesis](https://genesis-world.readthedocs.io/en/latest/) · [Newton](https://newton-physics.github.io/newton/) · [Warp](https://nvidia.github.io/warp/) · [Isaac Sim](https://docs.isaacsim.omniverse.nvidia.com/latest/index.html) · [Isaac Lab](https://isaac-sim.github.io/IsaacLab/) · [Isaac Gym](https://github.com/isaac-sim/IsaacGymEnvs) · [SAPIEN](https://github.com/haosulab/SAPIEN) · [ManiSkill](https://maniskill.readthedocs.io/en/latest/) · [Gazebo](https://gazebosim.org/docs/latest/getstarted/) · [Webots](https://cyberbotics.com/) · [GS-Agent のサンプルスクリプト](https://github.com/UMass-Embodied-AGI/gs-agent/tree/gh-pages/static/code)
 
         </details>
+eval_ladder:
+  text:
+    title:
+      en: 'Simulator quality evaluation: a fidelity ladder'
+      zh: 仿真器质量评估：检验层级
+      ja: シミュレータ品質評価：検証レベル
+    alt:
+      en: 'The simulator-evaluation levels, walked through one kitchen simulation: from looking at it, leaving it at rest and poking it, to letting it run and putting it to use. For each level the figure gives the question asked of the kitchen, what the level cannot catch, and how many works it holds.'
+      zh: 仿真器质量评估的各个层级，用同一个厨房仿真走一遍：从只看、放着不动、碰一下，到让它自己动、拿去用。每层给出拿这间厨房问的问题、这一层查不出什么，以及收录的作品数。
+      ja: シミュレータ品質評価の各レベルを、1つのキッチンのシミュレーションでたどる図。見るだけ、置いたまま、触れてみる、動かしてみる、実際に使う、の順に、各レベルがこのキッチンに問うこと、そのレベルでは見抜けないこと、収録作品数を示す。
+    example:
+      en: 'Example: an agent builds a kitchen simulation in which a robot practises “open the cabinet and put the cup inside”. Every level below asks its question of this kitchen.'
+      zh: 例子：让 Agent 搭一个厨房仿真，给机器人练习“打开柜门，把杯子放进去”。下面每一层，都拿这间厨房来问。
+      ja: 例：エージェントがキッチンのシミュレーションを作り、ロボットが「棚の扉を開けてコップを入れる」練習をする。以下の各レベルは、このキッチンについて問う。
+    head:
+    - en: Stage
+      zh: 阶段
+      ja: 段階
+    - en: Level
+      zh: 层级
+      ja: レベル
+    - en: Asked of the kitchen
+      zh: 拿这间厨房来问
+      ja: このキッチンで問うこと
+    - en: What it cannot catch
+      zh: 这一层查不出
+      ja: このレベルでは見抜けない
+    - en: Works
+      zh: 作品
+      ja: 作品
+    table:
+    - en: Level
+      zh: 层级
+      ja: レベル
+    - en: Core question
+      zh: 核心问题
+      ja: 中心となる問い
+    - en: Works
+      zh: 作品
+      ja: 作品
+    note:
+      en: Top to bottom, the simulator is used more and more like the real thing. Each level catches different errors; it is not a cumulative score. L0a and L0b are parallel starting points.
+      zh: 从上到下，仿真被用得越来越接近真实。各层查的是不同的错误，不是累加的分数；L0a 与 L0b 是两个平行的起点。
+      ja: 上から下へ、シミュレータの使い方が実際の利用に近づく。各レベルは異なる誤りを捉えるもので、累積スコアではない。L0a と L0b は並列の起点。
+    work:
+      en: a work
+      zh: 一项作品
+      ja: 作品1件
+    evaluator:
+      en: an evaluator †
+      zh: 评估器 †
+      ja: 評価器 †
+  # Display names where the title before its colon is not the short name used in the table.
+  labels:
+    '2511.03001': LEGO-Eval
+    '2605.19136': Articulated Simulation Physics
+    '2602.10840': Physics-Inspired Animations
+    '2611.01815': Latent Prediction Error
+    '2609.13194': Polynomial Invariants
+    '2405.05941': SIMPLER
+  stages:
+  - name:
+      en: Look only
+      zh: 只看
+      ja: 見るだけ
+    levels:
+    - code: L0a
+      name:
+        en: Semantic fidelity
+        zh: 需求符合
+        ja: 意味的忠実度
+      question:
+        en: Does it do what the requirements say?
+        zh: 做到了要求里说的吗？
+        ja: 要件に書かれたことを満たしているか？
+      example:
+        en: Are the table, cabinet and cup that were asked for all there? Is the cup on the table?
+        zh: 要求里的桌子、柜子、杯子都有吗？杯子在桌上吗？
+        ja: 要求されたテーブル、棚、コップはそろっているか？コップはテーブルの上か？
+      blind:
+        en: Any physical error, since no physics is run
+        zh: 任何物理错误：这一层不运行物理
+        ja: 物理的な誤り全般（物理は動かさない）
+      works: ['2503.14756 †', '2511.03001 †', '2604.13035 †', '2609.36777']
+    - code: L0b
+      name:
+        en: Visual / reconstruction fidelity
+        zh: 参照还原
+        ja: 視覚・再構成の忠実度
+      question:
+        en: Does it look the same as the reference?
+        zh: 和参照看起来一样吗？
+        ja: 参照と同じに見えるか？
+      example:
+        en: Does it look like the kitchen in the photo?
+        zh: 和照片里那间厨房长得一样吗？
+        ja: 写真のキッチンと同じに見えるか？
+      blind:
+        en: Collision shapes, masses and joints can still be wrong
+        zh: 看着一样，碰撞体、质量、关节未必对
+        ja: 見た目が同じでも、衝突形状・質量・関節は正しいとは限らない
+      works: ['2506.23329', '2504.01786', 'system:blenderworld', '2611.02659', '2609.15478', '2611.09017']
+  - name:
+      en: Left at rest
+      zh: 放着不动
+      ja: 置いたまま
+    levels:
+    - code: L1
+      name:
+        en: Static physical plausibility
+        zh: 静态合理性
+        ja: 静的な物理的妥当性
+      question:
+        en: Left at rest, does it stand stably and can people get through?
+        zh: 放着不动时，站得住、走得通吗？
+        ja: 静止した状態で、倒れず、通り抜けられるか？
+      example:
+        en: Is the cup floating or sunk into the table? Can the robot get through?
+        zh: 杯子有没有悬空、嵌进桌面？机器人走得过去吗？
+        ja: コップが浮いたり天板にめり込んだりしていないか？ロボットは通れるか？
+      blind:
+        en: What happens once something is touched or moves
+        zh: 一碰、一动之后会怎样
+        ja: 触れたり動いたりした後にどうなるか
+      works: ['2611.05802 †', '2603.29798 †']
+  - name:
+      en: Poke it
+      zh: 碰一下
+      ja: 触れてみる
+    levels:
+    - code: L2
+      name:
+        en: Interaction plausibility
+        zh: 交互响应
+        ja: インタラクションの妥当性
+      question:
+        en: 'Push it or open it: does it respond correctly?'
+        zh: 推一下、开一下，反应对吗？
+        ja: 押したり開けたりしたとき、正しく反応するか？
+      example:
+        en: 'Pull the cabinet door: does it swing open on its hinge?'
+        zh: 拉一下柜门，门会绕着铰链转开吗？
+        ja: 棚の扉を引くと、蝶番を軸に開くか？
+      blind:
+        en: The door opens, but its mass and damping may be wrong
+        zh: 门能开，但质量、阻尼未必对
+        ja: 扉は開いても、質量や減衰は正しいとは限らない
+      works: ['2610.37326', '2606.01869', '2611.02928', '2605.19136 †']
+  - name:
+      en: Let it run
+      zh: 让它自己动
+      ja: 動かしてみる
+    levels:
+    - code: L3a
+      name:
+        en: 'Dynamics: looks right'
+        zh: 动态：看起来对
+        ja: 動態：見た目が正しい
+      short:
+        en: Looks right
+        zh: 看起来对
+        ja: 見た目が正しい
+      question:
+        en: Does the motion match the reference video?
+        zh: 动起来的过程和参照视频一样吗？
+        ja: 動きの過程は参照動画と同じか？
+      example:
+        en: When the cup is knocked over and rolls off the table, does it match real footage?
+        zh: 杯子被碰倒、滚下桌的过程，和真实录像像吗？
+        ja: コップが倒れてテーブルから転がり落ちる様子は、実際の映像と同じか？
+      blind:
+        en: It may be hand-written animation rather than simulation
+        zh: 可能只是写死的动画，不是算出来的
+        ja: 手書きのアニメーションかもしれず、計算した結果とは限らない
+      works: ['2610.15166', '2610.03715', '2602.13294', '2602.10840', '2611.13576 †', '2611.01815', '2610.04432', 'real2sim-benchmark']
+    - code: L3b
+      name:
+        en: 'Dynamics: truly simulated'
+        zh: 动态：真在模拟
+        ja: 動態：本当にシミュレーション
+      short:
+        en: Truly simulated
+        zh: 真在模拟
+        ja: 本当にシミュレーション
+      question:
+        en: 'Rerun under changed conditions: does the result change correctly?'
+        zh: 换个条件重跑，结果会跟着正确变化吗？
+        ja: 条件を変えて再実行すると、結果は正しく変わるか？
+      example:
+        en: 'Tilt the table or make the cup heavier, then rerun: does the outcome change correctly?'
+        zh: 桌面调斜、杯子换重后再跑，结果跟着正确变化吗？
+        ja: "天板を傾ける、コップを重くするなどして\n再実行すると、結果は正しく変わるか？"
+      blind:
+        en: The laws are right, but values such as mass and friction may be off
+        zh: 规律对了，质量、摩擦等数值未必准
+        ja: 法則は正しくても、質量や摩擦などの値が正確とは限らない
+      works: ['2610.17288', '2604.23580', '2610.08720', '2609.13194 †']
+    - code: L3c
+      name:
+        en: 'Dynamics: numerically accurate'
+        zh: 动态：数值准确
+        ja: 動態：数値が正確
+      short:
+        en: Numerically accurate
+        zh: 数值准确
+        ja: 数値が正確
+      question:
+        en: Do parameters such as mass and friction match reality? Given the first few seconds, can it predict what follows?
+        zh: 质量、摩擦等参数和真实一致吗？只看前几秒，能预测后面的过程吗？
+        ja: 質量や摩擦などのパラメータは現実と一致するか？最初の数秒だけから、その後を予測できるか？
+      example:
+        en: Do the cup's mass and the table's friction match measurements? From the first seconds, can it predict the rest?
+        zh: "杯子质量、桌面摩擦和实测一致吗？\n只看前几秒，能预测后面吗？"
+        ja: "コップの質量や天板の摩擦は実測と一致するか？\n最初の数秒から、その後を予測できるか？"
+      blind:
+        en: Whether conclusions hold once it is used for evaluation or training
+        zh: 拿去评测、训练后，结论是否成立
+        ja: 評価や学習に使ったとき、結論が成り立つか
+      works: ['2603.16432', '2605.20576', '2606.01538']
+  - name:
+      en: Put it to use
+      zh: 拿去用
+      ja: 実際に使う
+    levels:
+    - code: L4
+      name:
+        en: Sim-to-real predictivity
+        zh: 下游效用
+        ja: Sim-to-Real 予測性
+      question:
+        en: Used for evaluation or training, do the conclusions hold in the real world?
+        zh: 拿去评测或训练，结论在真实世界成立吗？
+        ja: 評価や学習に使ったとき、結論は現実世界でも成り立つか？
+      example:
+        en: Does the policy that ranks first here also rank first in a real kitchen?
+        zh: 在这里排第一的策略，到真厨房里也排第一吗？
+        ja: ここで1位の方策は、本物のキッチンでも1位か？
+      blind:
+        en: 'Accurate rankings do not make it safe for training: policies exploit simulator errors'
+        zh: 评测排得准，拿去训练时，策略仍可能钻仿真的空子
+        ja: 評価の順位が正確でも、学習では方策がシミュレータの誤差を突きうる
+      works: ['2405.05941', '2610.17521', '2609.27449', '2512.16881', '2609.24778']
 engine_map:
   text:
     title:
@@ -833,42 +1075,27 @@ sections:
     - null
     guide:
       en: |-
-        | No. | Level | Core question | Works |
-        |---|---|---|---|
-        | L0a | Semantic fidelity | Does it do what the requirements say? | [SceneEval](#paper-2503-14756) † · [LEGO-Eval](#paper-2511-03001) † · [SceneCritic](#paper-2604-13035) † · [Code4Scene](#paper-2609-36777) |
-        | L0b | Visual / reconstruction fidelity | Does it look the same as the reference? | [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786) · [BlenderWorld](#paper-system-blenderworld) · [Parametric CAD Bench v3](#paper-2611-02659) · [BVB](#paper-2609-15478) · [Frontier3DBench](#paper-2611-09017) |
-        | L1 | Static physical plausibility | Left at rest, does it stand stably and can people get through? | [GREP](#paper-2611-05802) † · [SceneTeract](#paper-2603-29798) † |
-        | L2 | Interaction plausibility | Push it or open it: does it respond correctly? | [ScIntBench](#paper-2610-37326) · [WorldCoder-Bench](#paper-2606-01869) · [Lab2Sim](#paper-2611-02928) · [Articulated Simulation Physics](#paper-2605-19136) † |
-        | L3a | Dynamics: looks right | Does the motion match the reference video? (Only frames and trajectories are compared, so hand-written animation can also score well.) | [ExeWorldBench](#paper-2610-15166) · [4DCodeBench](#paper-2610-03715) · [VisPhyWorld](#paper-2602-13294) · [Physics-Inspired Animations](#paper-2602-10840) · [PhyRubric](#paper-2611-13576) † · [Latent Prediction Error](#paper-2611-01815) · [Video2World](#paper-2610-04432) · [Real2Sim Benchmark](#paper-real2sim-benchmark) |
-        | L3b | Dynamics: truly simulated | Rerun under changed conditions (a steeper ramp, a heavier ball): does the result change correctly? | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) · [Polynomial Invariants](#paper-2609-13194) † |
-        | L3c | Dynamics: numerically accurate | Do parameters such as mass and friction match reality? Given the first few seconds, can it predict what follows? | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
-        | L4 | Sim-to-real predictivity | Used for evaluation or training, do the conclusions hold in the real world? | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) |
+        The figure walks one kitchen example through every level: what each level asks, and what it cannot catch. Links to the works are in the table below it.
+
+        {eval_ladder}
+
+        {eval_table}
 
         † marks evaluators, works whose main contribution is an evaluation tool. Each work is placed by its main claimed contribution. Full explanation: [Simulator quality evaluation: a fidelity ladder](stage3/simulator-evaluation.md).
       zh: |-
-        | 编号 | 层级 | 核心问题 | 作品 |
-        |---|---|---|---|
-        | L0a | 需求符合 | 做到了要求里说的吗？ | [SceneEval](#paper-2503-14756) † · [LEGO-Eval](#paper-2511-03001) † · [SceneCritic](#paper-2604-13035) † · [Code4Scene](#paper-2609-36777) |
-        | L0b | 参照还原 | 和参照看起来一样吗？ | [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786) · [BlenderWorld](#paper-system-blenderworld) · [Parametric CAD Bench v3](#paper-2611-02659) · [BVB](#paper-2609-15478) · [Frontier3DBench](#paper-2611-09017) |
-        | L1 | 静态合理性 | 放着不动时，站得住、走得通吗？ | [GREP](#paper-2611-05802) † · [SceneTeract](#paper-2603-29798) † |
-        | L2 | 交互响应 | 推一下、开一下，反应对吗？ | [ScIntBench](#paper-2610-37326) · [WorldCoder-Bench](#paper-2606-01869) · [Lab2Sim](#paper-2611-02928) · [Articulated Simulation Physics](#paper-2605-19136) † |
-        | L3a | 动态：看起来对 | 动起来的过程和参照视频一样吗？（只比画面和轨迹，手写动画也能得高分） | [ExeWorldBench](#paper-2610-15166) · [4DCodeBench](#paper-2610-03715) · [VisPhyWorld](#paper-2602-13294) · [Physics-Inspired Animations](#paper-2602-10840) · [PhyRubric](#paper-2611-13576) † · [Latent Prediction Error](#paper-2611-01815) · [Video2World](#paper-2610-04432) · [Real2Sim Benchmark](#paper-real2sim-benchmark) |
-        | L3b | 动态：真在模拟 | 换个条件（斜坡更陡、球更重）重跑，结果会跟着正确变化吗？ | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) · [Polynomial Invariants](#paper-2609-13194) † |
-        | L3c | 动态：数值准确 | 质量、摩擦等参数和真实一致吗？只看前几秒，能预测后面的过程吗？ | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
-        | L4 | 下游效用 | 拿去评测或训练，结论在真实世界成立吗？ | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) |
+        下图用同一个厨房例子走一遍各层：每层问什么，又查不出什么。作品链接见图下的表格。
+
+        {eval_ladder}
+
+        {eval_table}
 
         † 表示评估器，即主要贡献是评估工具的工作。每篇按论文主打的创新点归层。完整说明见 [仿真器质量评估：检验层级](stage3/simulator-evaluation.zh-CN.md)。
       ja: |-
-        | 番号 | レベル | 中心となる問い | 作品 |
-        |---|---|---|---|
-        | L0a | 意味的忠実度 | 要件に書かれたことを満たしているか？ | [SceneEval](#paper-2503-14756) † · [LEGO-Eval](#paper-2511-03001) † · [SceneCritic](#paper-2604-13035) † · [Code4Scene](#paper-2609-36777) |
-        | L0b | 視覚・再構成の忠実度 | 参照と同じに見えるか？ | [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786) · [BlenderWorld](#paper-system-blenderworld) · [Parametric CAD Bench v3](#paper-2611-02659) · [BVB](#paper-2609-15478) · [Frontier3DBench](#paper-2611-09017) |
-        | L1 | 静的な物理的妥当性 | 静止した状態で、倒れず、通り抜けられるか？ | [GREP](#paper-2611-05802) † · [SceneTeract](#paper-2603-29798) † |
-        | L2 | インタラクションの妥当性 | 押したり開けたりしたとき、正しく反応するか？ | [ScIntBench](#paper-2610-37326) · [WorldCoder-Bench](#paper-2606-01869) · [Lab2Sim](#paper-2611-02928) · [Articulated Simulation Physics](#paper-2605-19136) † |
-        | L3a | 動態：見た目が正しい | 動きの過程は参照動画と同じか？（画面と軌跡だけを比べるため、手書きのアニメーションでも高得点になりうる） | [ExeWorldBench](#paper-2610-15166) · [4DCodeBench](#paper-2610-03715) · [VisPhyWorld](#paper-2602-13294) · [Physics-Inspired Animations](#paper-2602-10840) · [PhyRubric](#paper-2611-13576) † · [Latent Prediction Error](#paper-2611-01815) · [Video2World](#paper-2610-04432) · [Real2Sim Benchmark](#paper-real2sim-benchmark) |
-        | L3b | 動態：本当にシミュレーション | 条件を変えて（坂をより急に、球をより重く）再実行すると、結果は正しく変わるか？ | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) · [Polynomial Invariants](#paper-2609-13194) † |
-        | L3c | 動態：数値が正確 | 質量や摩擦などのパラメータは現実と一致するか？最初の数秒だけから、その後を予測できるか？ | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
-        | L4 | Sim-to-Real 予測性 | 評価や学習に使ったとき、結論は現実世界でも成り立つか？ | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) |
+        下の図は、1つのキッチンの例で各レベルをたどり、各レベルが何を問い、何を見抜けないかを示します。作品へのリンクは図の下の表にあります。
+
+        {eval_ladder}
+
+        {eval_table}
 
         † は評価器、つまり主な貢献が評価ツールである作品を示します。各作品は論文が主張する主な貢献で配置しています。詳しい説明は英語版 [Simulator quality evaluation: a fidelity ladder](stage3/simulator-evaluation.md) を参照してください。
   '3.4':

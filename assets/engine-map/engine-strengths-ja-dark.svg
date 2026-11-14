@@ -1,0 +1,333 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1084 546" width="1084" height="546" role="img" aria-label="シミュレーションツールの強み" font-family="&#x27;Hiragino Sans&#x27;, &#x27;Hiragino Kaku Gothic ProN&#x27;, &#x27;Yu Gothic&#x27;, Meiryo, &#x27;Noto Sans CJK JP&#x27;, &#x27;Noto Sans JP&#x27;, sans-serif">
+<title>シミュレーションツールの強み</title>
+<rect x="0.5" y="0.5" width="1083" height="545" rx="10" fill="#0D1117" stroke="#3D444D"/>
+<rect x="22" y="23" width="52" height="22" rx="4" fill="#45C3B3"/>
+<circle cx="37" cy="34" r="3.6" fill="#0D1117"/>
+<circle cx="48" cy="34" r="3.6" fill="#0D1117"/>
+<circle cx="59" cy="34" r="3.6" fill="#0D1117"/>
+<text x="82" y="38.5" font-size="13" fill="#9198A1">強い</text>
+<rect x="130.0" y="23" width="52" height="22" rx="4" fill="#22645C"/>
+<circle cx="145" cy="34" r="3.6" fill="#E6EDF3"/>
+<circle cx="156" cy="34" r="3.6" fill="#E6EDF3"/>
+<circle cx="167" cy="34" r="2.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<text x="190.0" y="38.5" font-size="13" fill="#9198A1">使える</text>
+<rect x="251.0" y="23" width="52" height="22" rx="4" fill="#14262A"/>
+<circle cx="266" cy="34" r="3.6" fill="#9198A1"/>
+<circle cx="277" cy="34" r="2.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="288" cy="34" r="2.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<text x="311.0" y="38.5" font-size="13" fill="#9198A1">弱い・外部ツールが必要</text>
+<polygon points="485.0,26.0 487.1,31.1 492.6,31.5 488.4,35.1 489.7,40.5 485.0,37.6 480.3,40.5 481.6,35.1 477.4,31.5 482.9,31.1" fill="#E3A251"/>
+<text x="500.0" y="38.5" font-size="13" fill="#9198A1">この項目の第一候補</text>
+<text x="285" y="74" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E6EDF3">接触精度</text>
+<text x="285" y="93" text-anchor="middle" font-size="12" fill="#9198A1">把持・挿入</text>
+<text x="389" y="74" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E6EDF3">写実的な描画</text>
+<text x="389" y="93" text-anchor="middle" font-size="12" fill="#9198A1">視覚入力</text>
+<text x="493" y="74" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E6EDF3">GPU 並列</text>
+<text x="493" y="93" text-anchor="middle" font-size="12" fill="#9198A1">数千の環境</text>
+<text x="597" y="74" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E6EDF3">柔軟物</text>
+<text x="597" y="93" text-anchor="middle" font-size="12" fill="#9198A1">布・紐・流体</text>
+<text x="701" y="74" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E6EDF3">関節物体</text>
+<text x="701" y="93" text-anchor="middle" font-size="12" fill="#9198A1">引き出し・扉</text>
+<text x="805" y="74" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E6EDF3">計画・最適化</text>
+<text x="805" y="93" text-anchor="middle" font-size="12" fill="#9198A1">IK・軌道</text>
+<text x="909" y="74" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E6EDF3">ROS・実機</text>
+<text x="909" y="93" text-anchor="middle" font-size="12" fill="#9198A1">実機へ移行</text>
+<text x="1013" y="74" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E6EDF3">Agent 向き</text>
+<text x="1013" y="93" text-anchor="middle" font-size="12" fill="#9198A1">書きやすさ</text>
+<text x="22" y="133" font-size="15" font-weight="700" fill="#E6EDF3">MuJoCo</text>
+<text x="22" y="151" font-size="12" fill="#9198A1">接触が正確で書きやすい</text>
+<rect x="236" y="114" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="271" cy="137" r="4.6" fill="#0D1117"/>
+<circle cx="285" cy="137" r="4.6" fill="#0D1117"/>
+<circle cx="299" cy="137" r="4.6" fill="#0D1117"/>
+<rect x="340" y="114" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="375" cy="137" r="4.6" fill="#9198A1"/>
+<circle cx="389" cy="137" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="403" cy="137" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="444" y="114" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="479" cy="137" r="4.6" fill="#E6EDF3"/>
+<circle cx="493" cy="137" r="4.6" fill="#E6EDF3"/>
+<circle cx="507" cy="137" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="548" y="114" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="583" cy="137" r="4.6" fill="#9198A1"/>
+<circle cx="597" cy="137" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="611" cy="137" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="652" y="114" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="687" cy="137" r="4.6" fill="#E6EDF3"/>
+<circle cx="701" cy="137" r="4.6" fill="#E6EDF3"/>
+<circle cx="715" cy="137" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="756" y="114" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="791" cy="137" r="4.6" fill="#9198A1"/>
+<circle cx="805" cy="137" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="819" cy="137" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="860" y="114" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="895" cy="137" r="4.6" fill="#9198A1"/>
+<circle cx="909" cy="137" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="923" cy="137" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="964" y="114" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="999" cy="137" r="4.6" fill="#0D1117"/>
+<circle cx="1013" cy="137" r="4.6" fill="#0D1117"/>
+<circle cx="1027" cy="137" r="4.6" fill="#0D1117"/>
+<rect x="965.25" y="115.25" width="95.5" height="43.5" rx="3.5" fill="none" stroke="#E3A251" stroke-width="2.5"/>
+<circle cx="1050" cy="126" r="9" fill="#0D1117"/>
+<polygon points="1050.0,119.0 1052.0,123.8 1057.1,124.2 1053.2,127.5 1054.4,132.6 1050.0,129.9 1045.6,132.6 1046.8,127.5 1042.9,124.2 1048.0,123.8" fill="#E3A251"/>
+<text x="22" y="185" font-size="15" font-weight="700" fill="#E6EDF3">Isaac Sim / Lab</text>
+<text x="22" y="203" font-size="12" fill="#9198A1">写実的な描画と大規模並列</text>
+<rect x="236" y="166" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="271" cy="189" r="4.6" fill="#E6EDF3"/>
+<circle cx="285" cy="189" r="4.6" fill="#E6EDF3"/>
+<circle cx="299" cy="189" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="340" y="166" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="375" cy="189" r="4.6" fill="#0D1117"/>
+<circle cx="389" cy="189" r="4.6" fill="#0D1117"/>
+<circle cx="403" cy="189" r="4.6" fill="#0D1117"/>
+<rect x="341.25" y="167.25" width="95.5" height="43.5" rx="3.5" fill="none" stroke="#E3A251" stroke-width="2.5"/>
+<circle cx="426" cy="178" r="9" fill="#0D1117"/>
+<polygon points="426.0,171.0 428.0,175.8 433.1,176.2 429.2,179.5 430.4,184.6 426.0,181.9 421.6,184.6 422.8,179.5 418.9,176.2 424.0,175.8" fill="#E3A251"/>
+<rect x="444" y="166" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="479" cy="189" r="4.6" fill="#0D1117"/>
+<circle cx="493" cy="189" r="4.6" fill="#0D1117"/>
+<circle cx="507" cy="189" r="4.6" fill="#0D1117"/>
+<rect x="445.25" y="167.25" width="95.5" height="43.5" rx="3.5" fill="none" stroke="#E3A251" stroke-width="2.5"/>
+<circle cx="530" cy="178" r="9" fill="#0D1117"/>
+<polygon points="530.0,171.0 532.0,175.8 537.1,176.2 533.2,179.5 534.4,184.6 530.0,181.9 525.6,184.6 526.8,179.5 522.9,176.2 528.0,175.8" fill="#E3A251"/>
+<rect x="548" y="166" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="583" cy="189" r="4.6" fill="#E6EDF3"/>
+<circle cx="597" cy="189" r="4.6" fill="#E6EDF3"/>
+<circle cx="611" cy="189" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="652" y="166" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="687" cy="189" r="4.6" fill="#E6EDF3"/>
+<circle cx="701" cy="189" r="4.6" fill="#E6EDF3"/>
+<circle cx="715" cy="189" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="756" y="166" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="791" cy="189" r="4.6" fill="#E6EDF3"/>
+<circle cx="805" cy="189" r="4.6" fill="#E6EDF3"/>
+<circle cx="819" cy="189" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="860" y="166" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="895" cy="189" r="4.6" fill="#E6EDF3"/>
+<circle cx="909" cy="189" r="4.6" fill="#E6EDF3"/>
+<circle cx="923" cy="189" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="964" y="166" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="999" cy="189" r="4.6" fill="#9198A1"/>
+<circle cx="1013" cy="189" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="1027" cy="189" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<text x="22" y="237" font-size="15" font-weight="700" fill="#E6EDF3">SAPIEN / ManiSkill</text>
+<text x="22" y="255" font-size="12" fill="#9198A1">関節物体と GPU 並列</text>
+<rect x="236" y="218" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="271" cy="241" r="4.6" fill="#E6EDF3"/>
+<circle cx="285" cy="241" r="4.6" fill="#E6EDF3"/>
+<circle cx="299" cy="241" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="340" y="218" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="375" cy="241" r="4.6" fill="#E6EDF3"/>
+<circle cx="389" cy="241" r="4.6" fill="#E6EDF3"/>
+<circle cx="403" cy="241" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="444" y="218" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="479" cy="241" r="4.6" fill="#0D1117"/>
+<circle cx="493" cy="241" r="4.6" fill="#0D1117"/>
+<circle cx="507" cy="241" r="4.6" fill="#0D1117"/>
+<rect x="548" y="218" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="583" cy="241" r="4.6" fill="#9198A1"/>
+<circle cx="597" cy="241" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="611" cy="241" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="652" y="218" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="687" cy="241" r="4.6" fill="#0D1117"/>
+<circle cx="701" cy="241" r="4.6" fill="#0D1117"/>
+<circle cx="715" cy="241" r="4.6" fill="#0D1117"/>
+<rect x="653.25" y="219.25" width="95.5" height="43.5" rx="3.5" fill="none" stroke="#E3A251" stroke-width="2.5"/>
+<circle cx="738" cy="230" r="9" fill="#0D1117"/>
+<polygon points="738.0,223.0 740.0,227.8 745.1,228.2 741.2,231.5 742.4,236.6 738.0,233.9 733.6,236.6 734.8,231.5 730.9,228.2 736.0,227.8" fill="#E3A251"/>
+<rect x="756" y="218" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="791" cy="241" r="4.6" fill="#E6EDF3"/>
+<circle cx="805" cy="241" r="4.6" fill="#E6EDF3"/>
+<circle cx="819" cy="241" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="860" y="218" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="895" cy="241" r="4.6" fill="#9198A1"/>
+<circle cx="909" cy="241" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="923" cy="241" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="964" y="218" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="999" cy="241" r="4.6" fill="#E6EDF3"/>
+<circle cx="1013" cy="241" r="4.6" fill="#E6EDF3"/>
+<circle cx="1027" cy="241" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<text x="22" y="289" font-size="15" font-weight="700" fill="#E6EDF3">Genesis</text>
+<text x="22" y="307" font-size="12" fill="#9198A1">布・柔軟物・流体</text>
+<rect x="236" y="270" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="271" cy="293" r="4.6" fill="#E6EDF3"/>
+<circle cx="285" cy="293" r="4.6" fill="#E6EDF3"/>
+<circle cx="299" cy="293" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="340" y="270" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="375" cy="293" r="4.6" fill="#E6EDF3"/>
+<circle cx="389" cy="293" r="4.6" fill="#E6EDF3"/>
+<circle cx="403" cy="293" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="444" y="270" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="479" cy="293" r="4.6" fill="#0D1117"/>
+<circle cx="493" cy="293" r="4.6" fill="#0D1117"/>
+<circle cx="507" cy="293" r="4.6" fill="#0D1117"/>
+<rect x="548" y="270" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="583" cy="293" r="4.6" fill="#0D1117"/>
+<circle cx="597" cy="293" r="4.6" fill="#0D1117"/>
+<circle cx="611" cy="293" r="4.6" fill="#0D1117"/>
+<rect x="549.25" y="271.25" width="95.5" height="43.5" rx="3.5" fill="none" stroke="#E3A251" stroke-width="2.5"/>
+<circle cx="634" cy="282" r="9" fill="#0D1117"/>
+<polygon points="634.0,275.0 636.0,279.8 641.1,280.2 637.2,283.5 638.4,288.6 634.0,285.9 629.6,288.6 630.8,283.5 626.9,280.2 632.0,279.8" fill="#E3A251"/>
+<rect x="652" y="270" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="687" cy="293" r="4.6" fill="#E6EDF3"/>
+<circle cx="701" cy="293" r="4.6" fill="#E6EDF3"/>
+<circle cx="715" cy="293" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="756" y="270" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="791" cy="293" r="4.6" fill="#E6EDF3"/>
+<circle cx="805" cy="293" r="4.6" fill="#E6EDF3"/>
+<circle cx="819" cy="293" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="860" y="270" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="895" cy="293" r="4.6" fill="#9198A1"/>
+<circle cx="909" cy="293" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="923" cy="293" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="964" y="270" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="999" cy="293" r="4.6" fill="#E6EDF3"/>
+<circle cx="1013" cy="293" r="4.6" fill="#E6EDF3"/>
+<circle cx="1027" cy="293" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<text x="22" y="341" font-size="15" font-weight="700" fill="#E6EDF3">Newton / Warp</text>
+<text x="22" y="359" font-size="12" fill="#9198A1">微分可能な GPU 物理</text>
+<rect x="236" y="322" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="271" cy="345" r="4.6" fill="#0D1117"/>
+<circle cx="285" cy="345" r="4.6" fill="#0D1117"/>
+<circle cx="299" cy="345" r="4.6" fill="#0D1117"/>
+<rect x="340" y="322" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="375" cy="345" r="4.6" fill="#9198A1"/>
+<circle cx="389" cy="345" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="403" cy="345" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="444" y="322" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="479" cy="345" r="4.6" fill="#0D1117"/>
+<circle cx="493" cy="345" r="4.6" fill="#0D1117"/>
+<circle cx="507" cy="345" r="4.6" fill="#0D1117"/>
+<rect x="548" y="322" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="583" cy="345" r="4.6" fill="#0D1117"/>
+<circle cx="597" cy="345" r="4.6" fill="#0D1117"/>
+<circle cx="611" cy="345" r="4.6" fill="#0D1117"/>
+<rect x="652" y="322" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="687" cy="345" r="4.6" fill="#E6EDF3"/>
+<circle cx="701" cy="345" r="4.6" fill="#E6EDF3"/>
+<circle cx="715" cy="345" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="756" y="322" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="791" cy="345" r="4.6" fill="#9198A1"/>
+<circle cx="805" cy="345" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="819" cy="345" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="860" y="322" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="895" cy="345" r="4.6" fill="#9198A1"/>
+<circle cx="909" cy="345" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="923" cy="345" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="964" y="322" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="999" cy="345" r="4.6" fill="#E6EDF3"/>
+<circle cx="1013" cy="345" r="4.6" fill="#E6EDF3"/>
+<circle cx="1027" cy="345" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<text x="22" y="393" font-size="15" font-weight="700" fill="#E6EDF3">Drake</text>
+<text x="22" y="411" font-size="12" fill="#9198A1">厳密な接触と計画</text>
+<rect x="236" y="374" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="271" cy="397" r="4.6" fill="#0D1117"/>
+<circle cx="285" cy="397" r="4.6" fill="#0D1117"/>
+<circle cx="299" cy="397" r="4.6" fill="#0D1117"/>
+<rect x="237.25" y="375.25" width="95.5" height="43.5" rx="3.5" fill="none" stroke="#E3A251" stroke-width="2.5"/>
+<circle cx="322" cy="386" r="9" fill="#0D1117"/>
+<polygon points="322.0,379.0 324.0,383.8 329.1,384.2 325.2,387.5 326.4,392.6 322.0,389.9 317.6,392.6 318.8,387.5 314.9,384.2 320.0,383.8" fill="#E3A251"/>
+<rect x="340" y="374" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="375" cy="397" r="4.6" fill="#9198A1"/>
+<circle cx="389" cy="397" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="403" cy="397" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="444" y="374" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="479" cy="397" r="4.6" fill="#9198A1"/>
+<circle cx="493" cy="397" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="507" cy="397" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="548" y="374" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="583" cy="397" r="4.6" fill="#E6EDF3"/>
+<circle cx="597" cy="397" r="4.6" fill="#E6EDF3"/>
+<circle cx="611" cy="397" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="652" y="374" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="687" cy="397" r="4.6" fill="#E6EDF3"/>
+<circle cx="701" cy="397" r="4.6" fill="#E6EDF3"/>
+<circle cx="715" cy="397" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="756" y="374" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="791" cy="397" r="4.6" fill="#0D1117"/>
+<circle cx="805" cy="397" r="4.6" fill="#0D1117"/>
+<circle cx="819" cy="397" r="4.6" fill="#0D1117"/>
+<rect x="757.25" y="375.25" width="95.5" height="43.5" rx="3.5" fill="none" stroke="#E3A251" stroke-width="2.5"/>
+<circle cx="842" cy="386" r="9" fill="#0D1117"/>
+<polygon points="842.0,379.0 844.0,383.8 849.1,384.2 845.2,387.5 846.4,392.6 842.0,389.9 837.6,392.6 838.8,387.5 834.9,384.2 840.0,383.8" fill="#E3A251"/>
+<rect x="860" y="374" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="895" cy="397" r="4.6" fill="#9198A1"/>
+<circle cx="909" cy="397" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="923" cy="397" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="964" y="374" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="999" cy="397" r="4.6" fill="#E6EDF3"/>
+<circle cx="1013" cy="397" r="4.6" fill="#E6EDF3"/>
+<circle cx="1027" cy="397" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<text x="22" y="445" font-size="15" font-weight="700" fill="#E6EDF3">PyBullet</text>
+<text x="22" y="463" font-size="12" fill="#9198A1">軽量で始めやすい</text>
+<rect x="236" y="426" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="271" cy="449" r="4.6" fill="#E6EDF3"/>
+<circle cx="285" cy="449" r="4.6" fill="#E6EDF3"/>
+<circle cx="299" cy="449" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="340" y="426" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="375" cy="449" r="4.6" fill="#9198A1"/>
+<circle cx="389" cy="449" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="403" cy="449" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="444" y="426" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="479" cy="449" r="4.6" fill="#9198A1"/>
+<circle cx="493" cy="449" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="507" cy="449" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="548" y="426" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="583" cy="449" r="4.6" fill="#9198A1"/>
+<circle cx="597" cy="449" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="611" cy="449" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="652" y="426" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="687" cy="449" r="4.6" fill="#E6EDF3"/>
+<circle cx="701" cy="449" r="4.6" fill="#E6EDF3"/>
+<circle cx="715" cy="449" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="756" y="426" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="791" cy="449" r="4.6" fill="#9198A1"/>
+<circle cx="805" cy="449" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="819" cy="449" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="860" y="426" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="895" cy="449" r="4.6" fill="#9198A1"/>
+<circle cx="909" cy="449" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="923" cy="449" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="964" y="426" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="999" cy="449" r="4.6" fill="#0D1117"/>
+<circle cx="1013" cy="449" r="4.6" fill="#0D1117"/>
+<circle cx="1027" cy="449" r="4.6" fill="#0D1117"/>
+<text x="22" y="497" font-size="15" font-weight="700" fill="#E6EDF3">Gazebo / Webots</text>
+<text x="22" y="515" font-size="12" fill="#9198A1">ROS と実機に強い</text>
+<rect x="236" y="478" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="271" cy="501" r="4.6" fill="#9198A1"/>
+<circle cx="285" cy="501" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="299" cy="501" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="340" y="478" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="375" cy="501" r="4.6" fill="#E6EDF3"/>
+<circle cx="389" cy="501" r="4.6" fill="#E6EDF3"/>
+<circle cx="403" cy="501" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="444" y="478" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="479" cy="501" r="4.6" fill="#9198A1"/>
+<circle cx="493" cy="501" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="507" cy="501" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="548" y="478" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="583" cy="501" r="4.6" fill="#9198A1"/>
+<circle cx="597" cy="501" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="611" cy="501" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="652" y="478" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="687" cy="501" r="4.6" fill="#9198A1"/>
+<circle cx="701" cy="501" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="715" cy="501" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="756" y="478" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="791" cy="501" r="4.6" fill="#9198A1"/>
+<circle cx="805" cy="501" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="819" cy="501" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="860" y="478" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="895" cy="501" r="4.6" fill="#0D1117"/>
+<circle cx="909" cy="501" r="4.6" fill="#0D1117"/>
+<circle cx="923" cy="501" r="4.6" fill="#0D1117"/>
+<rect x="861.25" y="479.25" width="95.5" height="43.5" rx="3.5" fill="none" stroke="#E3A251" stroke-width="2.5"/>
+<circle cx="946" cy="490" r="9" fill="#0D1117"/>
+<polygon points="946.0,483.0 948.0,487.8 953.1,488.2 949.2,491.5 950.4,496.6 946.0,493.9 941.6,496.6 942.8,491.5 938.9,488.2 944.0,487.8" fill="#E3A251"/>
+<rect x="964" y="478" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="999" cy="501" r="4.6" fill="#E6EDF3"/>
+<circle cx="1013" cy="501" r="4.6" fill="#E6EDF3"/>
+<circle cx="1027" cy="501" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+</svg>

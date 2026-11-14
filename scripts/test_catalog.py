@@ -86,6 +86,9 @@ class CatalogTests(unittest.TestCase):
         errors = validate(site, self.works, True)[0]
         self.assertTrue(any('covers 7 columns' in e for e in errors))
         self.assertTrue(any('kind missing ja' in e for e in errors))
+        site = deepcopy(self.site)
+        site['engine_strengths']['rows'][0]['scores'] = '3 1 2 1 2 1 1 3'  # drops the only star in its column
+        self.assertTrue(any('exactly one top pick' in e for e in validate(site, self.works, True)[0]))
 
     def test_compatibility_targets_must_exist(self):
         site = deepcopy(self.site)

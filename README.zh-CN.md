@@ -3646,6 +3646,13 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
   <img src="assets/engine-map/engine-map-zh-light.svg" alt="仿真工具覆盖图，横轴是八个环节：素材、场景文件、物理参数、物理求解、渲染、传感器、控制接口、任务与训练。MuJoCo 以物理求解为核心，robosuite 和 RoboCasa 建在它之上，补上控制、任务与训练。Isaac Sim 覆盖从素材到控制接口，物理用 PhysX；Isaac Lab 建在它之上，负责并行训练。SAPIEN/ManiSkill 覆盖操作任务的全流程。Genesis 在物理求解之外还提供传感器、逆运动学和运动规划。Newton/Warp、Drake 和 PyBullet 以物理求解为核心，Drake 还擅长规划与优化。Gazebo/Webots 强在传感器和 ROS。Blender 作为对照：建模和渲染强，但物理只求看起来对。" width="100%">
 </picture>
 
+下面这张图比较各工具在哪方面特别强。评级是概括性判断；★ 是这一项的首推。
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/engine-map/engine-strengths-zh-dark.svg">
+  <img src="assets/engine-map/engine-strengths-zh-light.svg" alt="仿真工具强项对比热力表：8 个工具在 8 个维度上各评 1 到 3 档。各维度首推：接触精度 Drake（MuJoCo、Newton 也强）；画面逼真 Isaac Sim/Lab；GPU 并行 Isaac Sim/Lab（SAPIEN/ManiSkill、Genesis、Newton 也强）；软体布料 Genesis（Newton 也强）；关节物体 SAPIEN/ManiSkill；规划优化 Drake；ROS 与真机 Gazebo/Webots；对 Coding Agent 友好 MuJoCo（PyBullet 也强）。" width="100%">
+</picture>
+
 <details>
 <summary>工具文档与示例</summary>
 

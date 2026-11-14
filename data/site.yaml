@@ -407,6 +407,10 @@ stages:
 
         {engine_map}
 
+        The next figure compares where each tool is especially strong. Ratings are broad judgments; ★ marks the top pick for each column.
+
+        {engine_strengths}
+
         <details>
         <summary>Tool documentation and examples</summary>
 
@@ -418,6 +422,10 @@ stages:
 
         {engine_map}
 
+        下面这张图比较各工具在哪方面特别强。评级是概括性判断；★ 是这一项的首推。
+
+        {engine_strengths}
+
         <details>
         <summary>工具文档与示例</summary>
 
@@ -428,6 +436,10 @@ stages:
         行を横に見ると、そのツールがシミュレータのどの工程を担うかがわかります。対応範囲はおおまかな判断で、役割分担を示すためのものです。厳密な評価ではありません。
 
         {engine_map}
+
+        次の図は、各ツールがどの点で特に強いかを比べたものです。評価はおおまかな判断で、★ は各項目の第一候補です。
+
+        {engine_strengths}
 
         <details>
         <summary>ツールのドキュメントとサンプル</summary>
@@ -663,6 +675,83 @@ engine_map:
       zh: 建模渲染软件（对照）
       ja: モデリング・描画ソフト（比較用）
     cells: [core modeling, core, basic, basic looks-right, core realistic, basic camera, none, none]
+engine_strengths:
+  text:
+    title:
+      en: Simulation tool strengths
+      zh: 仿真工具强项对比
+      ja: シミュレーションツールの強み
+    alt:
+      en: 'Heatmap of simulation tool strengths: eight tools rated from 1 to 3 on eight dimensions. Top picks: contact accuracy,
+        Drake (MuJoCo and Newton are also strong); visual realism, Isaac Sim/Lab; GPU scale, Isaac Sim/Lab (SAPIEN/ManiSkill,
+        Genesis and Newton are also strong); deformables, Genesis (Newton is also strong); articulated objects, SAPIEN/ManiSkill;
+        planning and optimization, Drake; ROS and real robots, Gazebo/Webots; friendliness to coding agents, MuJoCo (PyBullet
+        is also strong).'
+      zh: 仿真工具强项对比热力表：8 个工具在 8 个维度上各评 1 到 3 档。各维度首推：接触精度 Drake（MuJoCo、Newton 也强）；画面逼真 Isaac Sim/Lab；GPU 并行 Isaac
+        Sim/Lab（SAPIEN/ManiSkill、Genesis、Newton 也强）；软体布料 Genesis（Newton 也强）；关节物体 SAPIEN/ManiSkill；规划优化 Drake；ROS 与真机 Gazebo/Webots；对
+        Coding Agent 友好 MuJoCo（PyBullet 也强）。
+      ja: シミュレーションツールの強みのヒートマップ。8 つのツールを 8 つの観点で 1〜3 段階に評価している。各観点の第一候補：接触精度は Drake（MuJoCo と Newton も強い）、写実的な描画は
+        Isaac Sim/Lab、GPU 並列は Isaac Sim/Lab（SAPIEN/ManiSkill、Genesis、Newton も強い）、柔軟物は Genesis（Newton も強い）、関節物体は SAPIEN/ManiSkill、計画・最適化は
+        Drake、ROS・実機は Gazebo/Webots、コーディングエージェントへの向きやすさは MuJoCo（PyBullet も強い）。
+    legend:
+      '3':
+        en: Strong
+        zh: 强
+        ja: 強い
+      '2':
+        en: Usable
+        zh: 可用
+        ja: 使える
+      '1':
+        en: Weak or needs other tools
+        zh: 弱或要靠外部工具
+        ja: 弱い・外部ツールが必要
+      star:
+        en: Top pick for this column
+        zh: 这一项的首推
+        ja: この項目の第一候補
+  columns:
+  - name: {en: Contact, zh: 接触精度, ja: 接触精度}
+    hint: {en: 'grasp, insert', zh: 抓取、插孔, ja: 把持・挿入}
+  - name: {en: Visuals, zh: 画面逼真, ja: 写実的な描画}
+    hint: {en: vision input, zh: 看图做决策, ja: 視覚入力}
+  - name: {en: GPU scale, zh: GPU 并行, ja: GPU 並列}
+    hint: {en: 1000s of envs, zh: 同时开几千份, ja: 数千の環境}
+  - name: {en: Deformables, zh: 软体布料, ja: 柔軟物}
+    hint: {en: 'cloth, fluid', zh: 布、绳、流体, ja: 布・紐・流体}
+  - name: {en: Articulated, zh: 关节物体, ja: 関節物体}
+    hint: {en: 'drawers, doors', zh: 抽屉、柜门, ja: 引き出し・扉}
+  - name: {en: Planning, zh: 规划优化, ja: 計画・最適化}
+    hint: {en: 'IK, trajectory', zh: IK、轨迹, ja: IK・軌道}
+  - name: {en: ROS & robots, zh: ROS 与真机, ja: ROS・実機}
+    hint: {en: real hardware, zh: 代码上真机, ja: 実機へ移行}
+  - name: {en: For agents, zh: Agent 友好, ja: Agent 向き}
+    hint: {en: easy to edit, zh: 好写好改, ja: 書きやすさ}
+  rows:
+  - name: MuJoCo
+    note: {en: 'Accurate contact, easy to write', zh: 接触准，Agent 好写, ja: 接触が正確で書きやすい}
+    scores: '3 1 2 1 2 1 1 3*'
+  - name: Isaac Sim / Lab
+    note: {en: Realistic visuals at scale, zh: 画面逼真，大规模并行, ja: 写実的な描画と大規模並列}
+    scores: '2 3* 3* 2 2 2 2 1'
+  - name: SAPIEN / ManiSkill
+    note: {en: Articulated objects on GPU, zh: 关节物体，GPU 并行, ja: 関節物体と GPU 並列}
+    scores: '2 2 3 1 3* 2 1 2'
+  - name: Genesis
+    note: {en: 'Cloth, soft bodies, fluids', zh: 软体、布料、流体, ja: 布・柔軟物・流体}
+    scores: '2 2 3 3* 2 2 1 2'
+  - name: Newton / Warp
+    note: {en: Differentiable GPU physics, zh: GPU 可微，擅长软体, ja: 微分可能な GPU 物理}
+    scores: '3 1 3 3 2 1 1 2'
+  - name: Drake
+    note: {en: 'Rigorous contact, planning', zh: 严谨接触，规划优化, ja: 厳密な接触と計画}
+    scores: '3* 1 1 2 2 3* 1 2'
+  - name: PyBullet
+    note: {en: 'Lightweight, quickest start', zh: 轻量，上手最快, ja: 軽量で始めやすい}
+    scores: '2 1 1 1 2 1 1 3'
+  - name: Gazebo / Webots
+    note: {en: ROS and real robots, zh: 对接 ROS，上真机, ja: ROS と実機に強い}
+    scores: '1 2 1 1 1 1 3* 2'
 sections:
   '1.1':
     en: Web, UI and applications

@@ -18,16 +18,16 @@ Works from [3.3 Simulator quality evaluation](../README.md#s3-3), organized by f
 
 ## Overview
 
-| No. | Level | Core question | Formal term |
-|---|---|---|---|
-| L0a | Semantic fidelity | Does it do what the requirements say? | Semantic Fidelity |
-| L0b | Visual / reconstruction fidelity | Does it look the same as the reference? | Visual / Reconstruction Fidelity |
-| L1 | Static physical plausibility | Left at rest, does it stand stably and can people get through? | Static Physical Plausibility |
-| L2 | Interaction plausibility | Push it or open it: does it respond correctly? | Interaction Plausibility |
-| L3a | Dynamics: looks right | Does the motion match the reference video? | Motion Fidelity |
-| L3b | Dynamics: truly simulated | Rerun under changed conditions: does the result change correctly? | Model Verification |
-| L3c | Dynamics: numerically accurate | Do parameters match reality? Given the first seconds, can it predict the rest? | Validation & System Identification |
-| L4 | Sim-to-real predictivity | Used for evaluation or training, do the conclusions hold in the real world? | Sim-to-Real Predictivity |
+| No. | Level | Core question |
+|---|---|---|
+| L0a | Semantic fidelity | Does it do what the requirements say? |
+| L0b | Visual / reconstruction fidelity | Does it look the same as the reference? |
+| L1 | Static physical plausibility | Left at rest, does it stand stably and can people get through? |
+| L2 | Interaction plausibility | Push it or open it: does it respond correctly? |
+| L3a | Dynamics: looks right (motion fidelity) | Does the motion match the reference video? |
+| L3b | Dynamics: truly simulated (model verification) | Rerun under changed conditions: does the result change correctly? |
+| L3c | Dynamics: numerically accurate (validation & system identification) | Do parameters match reality? Given the first seconds, can it predict the rest? |
+| L4 | Sim-to-real predictivity | Used for evaluation or training, do the conclusions hold in the real world? |
 
 ```
   Requirement-driven: L0a semantic ──┐
@@ -39,7 +39,7 @@ L0a and L0b are parallel starting points; each level checks a different failure 
 
 ## L0a Semantic fidelity
 
-**Checks:** Decompose written requirements and commonsense expectations into constraints on objects, attributes and relations, and verify each.
+**Checks:** Decompose written requirements and commonsense expectations into constraints on objects, attributes and relations, and verify each.\
 **Limit:** Says nothing about physical properties.
 
 | Work | What it checks |
@@ -51,7 +51,7 @@ L0a and L0b are parallel starting points; each level checks a different failure 
 
 ## L0b Visual and reconstruction fidelity
 
-**Checks:** Compare against a target image, video, scene or drawing; rendered similarity asks "does it look alike", native geometry and structure ask "is the structure right".
+**Checks:** Compare against a target image, video, scene or drawing; rendered similarity asks "does it look alike", native geometry and structure ask "is the structure right".\
 **Limit:** Looking identical does not make colliders, masses or joints correct.
 
 | Work | What it checks |
@@ -65,7 +65,7 @@ L0a and L0b are parallel starting points; each level checks a different failure 
 
 ## L1 Static physical plausibility
 
-**Checks:** Without running physics, use geometry to check interpenetration, support, reachability and navigability.
+**Checks:** Without running physics, use geometry to check interpenetration, support, reachability and navigability.\
 **Limit:** Fine at rest does not mean correct in motion.
 
 | Work | What it checks |
@@ -75,7 +75,7 @@ L0a and L0b are parallel starting points; each level checks a different failure 
 
 ## L2 Interaction plausibility
 
-**Checks:** Apply actions and see whether the physical response is plausible or program state changes as specified.
+**Checks:** Apply actions and see whether the physical response is plausible or program state changes as specified.\
 **Limit:** A door that opens with the right state may still have the wrong mass and damping.
 
 | Work | What it checks |
@@ -125,7 +125,7 @@ With an existing engine, the engine supplies the physical laws, so the check is 
 
 ## L4 Sim-to-real predictivity
 
-**Checks:** Whether the same conclusion holds in simulation and reality, such as policy rankings or task outcomes in a reconstructed environment.
+**Checks:** Whether the same conclusion holds in simulation and reality, such as policy rankings or task outcomes in a reconstructed environment.\
 **Limit:** Controllers may compensate for world errors; attributing failures to the environment needs a fixed controller and a reference environment.
 
 | Work | What it checks |

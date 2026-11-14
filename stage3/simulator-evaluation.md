@@ -106,6 +106,8 @@ With an existing engine, the engine supplies the physical laws, so the check is 
 | [Physics-Inspired Animations](../README.md#paper-2602-10840) | Animation code depicting physical phenomena, checked by a VLM |
 | [PhyRubric](../README.md#paper-2611-13576) † | Physical-commonsense errors in generated videos, diagnosed with pre-specified rubrics |
 | [Latent Prediction Error and Physical Surprise](../README.md#paper-2611-01815) | Whether video world models' prediction error separates physical violations from appearance changes |
+| [Video2World](../README.md#paper-2610-04432) | Environments and behaviors rebuilt from real demonstration videos, compared on geometry and object trajectories, with whether the demonstrated task can be reproduced |
+| [Real2Sim Benchmark](../README.md#paper-real2sim-benchmark) | A frozen reconstructed scene compared by rendering, real-action replay and fixed-policy closed loop; a known-working reference scene is still missing |
 
 ### L3b Dynamics: truly simulated
 
@@ -125,15 +127,13 @@ With an existing engine, the engine supplies the physical laws, so the check is 
 
 ## L4 Sim-to-real predictivity
 
-**Checks:** Whether the same conclusion holds in simulation and reality, such as policy rankings or task outcomes in a reconstructed environment.\
-**Limit:** Controllers may compensate for world errors; attributing failures to the environment needs a fixed controller and a reference environment.
+**Checks:** With several real outcomes (different policies or conditions), whether simulation predicts their differences, such as policy rankings or success and failure.\
+**Limit:** A single successful demonstration can test reproduction but not prediction; such works belong in L3a.
 
 | Work | What it checks |
 |---|---|
 | [SIMPLER](../README.md#paper-2405-05941) | The same policies in simulation and on real robots, compared on performance and ranking (Pearson, MMRV) |
 | [YUBI-Real2Sim](../README.md#paper-2610-17521) | Only reconstruction artifacts vary; visual scores fail to predict policy-ranking failures |
-| [Video2World](../README.md#paper-2610-04432) | Environments and behaviors rebuilt from real demonstration videos, compared on geometry, trajectories and task results |
-| [Real2Sim Benchmark](../README.md#paper-real2sim-benchmark) | A frozen reconstructed scene compared by rendering, action replay and fixed-policy closed loop |
 
 ## Observations
 

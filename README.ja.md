@@ -2775,10 +2775,10 @@
 | L0b | 視覚・再構成の忠実度 | 参照と同じに見えるか？ | [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786) · [BlenderWorld](#paper-system-blenderworld) · [Parametric CAD Bench v3](#paper-2611-02659) · [BVB](#paper-2609-15478) · [Frontier3DBench](#paper-2611-09017) |
 | L1 | 静的な物理的妥当性 | 静止した状態で、倒れず、通り抜けられるか？ | [GREP](#paper-2611-05802) † · [SceneTeract](#paper-2603-29798) † |
 | L2 | インタラクションの妥当性 | 押したり開けたりしたとき、正しく反応するか？ | [ScIntBench](#paper-2610-37326) · [WorldCoder-Bench](#paper-2606-01869) · [Lab2Sim](#paper-2611-02928) |
-| L3a | 動態：見た目が正しい | 動きの過程は参照動画と同じか？（画面と軌跡だけを比べるため、手書きのアニメーションでも高得点になりうる） | [ExeWorldBench](#paper-2610-15166) · [4DCodeBench](#paper-2610-03715) · [VisPhyWorld](#paper-2602-13294) · [Physics-Inspired Animations](#paper-2602-10840) · [PhyRubric](#paper-2611-13576) † · [Latent Prediction Error](#paper-2611-01815) |
+| L3a | 動態：見た目が正しい | 動きの過程は参照動画と同じか？（画面と軌跡だけを比べるため、手書きのアニメーションでも高得点になりうる） | [ExeWorldBench](#paper-2610-15166) · [4DCodeBench](#paper-2610-03715) · [VisPhyWorld](#paper-2602-13294) · [Physics-Inspired Animations](#paper-2602-10840) · [PhyRubric](#paper-2611-13576) † · [Latent Prediction Error](#paper-2611-01815) · [Video2World](#paper-2610-04432) · [Real2Sim Benchmark](#paper-real2sim-benchmark) |
 | L3b | 動態：本当にシミュレーション | 条件を変えて（坂をより急に、球をより重く）再実行すると、結果は正しく変わるか？ | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) |
 | L3c | 動態：数値が正確 | 質量や摩擦などのパラメータは現実と一致するか？最初の数秒だけから、その後を予測できるか？ | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
-| L4 | Sim-to-Real 予測性 | 評価や学習に使ったとき、結論は現実世界でも成り立つか？ | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [Video2World](#paper-2610-04432) · [Real2Sim Benchmark](#paper-real2sim-benchmark) |
+| L4 | Sim-to-Real 予測性 | 評価や学習に使ったとき、結論は現実世界でも成り立つか？ | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) |
 
 † は評価器、つまり主な貢献が評価ツールである作品を示します。各作品は論文が主張する主な貢献で配置しています。詳しい説明は英語版 [Simulator quality evaluation: a fidelity ladder](stage3/simulator-evaluation.md) を参照してください。
 

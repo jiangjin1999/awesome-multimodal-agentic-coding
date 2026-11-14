@@ -106,6 +106,8 @@ L0a、L0b 是平行起点；各层检查不同的失败模式，不是累积分�
 | [Physics-Inspired Animations](../README.zh-CN.md#paper-2602-10840) | 生成表现物理现象的动画代码，由 VLM 检查视频 |
 | [PhyRubric](../README.zh-CN.md#paper-2611-13576) † | 用预先制定的 rubric 诊断生成视频中的物理常识错误 |
 | [Latent Prediction Error and Physical Surprise](../README.zh-CN.md#paper-2611-01815) | 视频世界模型的预测误差能否区分物理违规与外观变化 |
+| [Video2World](../README.zh-CN.md#paper-2610-04432) | 从真实示范视频重建环境并编写行为，比较几何与物体轨迹，并检查示范任务能否复现 |
+| [Real2Sim Benchmark](../README.zh-CN.md#paper-real2sim-benchmark) | 冻结重建场景后，比较渲染、真实动作重放与固定策略闭环的结果；尚缺已知可用的参照场景 |
 
 ### L3b 动态：真在模拟
 
@@ -125,15 +127,13 @@ L0a、L0b 是平行起点；各层检查不同的失败模式，不是累积分�
 
 ## L4 下游效用
 
-**检查：** 同一结论在仿真和真实世界是否一致，例如策略排名，或重建环境中的任务结果。\
-**局限：** 控制器可能补偿环境误差；要固定控制器并设参照环境，才能归因到环境。
+**检查：** 需要多组真实结果（不同策略或条件），检验仿真能否预测它们的差异，例如策略排名或成败。\
+**局限：** 只有一次成功示范时，只能检验“能否复现”，不能检验“能否预测”；这类工作归入 L3a。
 
 | 作品 | 检查什么 |
 |---|---|
 | [SIMPLER](../README.zh-CN.md#paper-2405-05941) | 同一批策略在仿真与实机上运行，比较表现与排名（Pearson、MMRV） |
 | [YUBI-Real2Sim](../README.zh-CN.md#paper-2610-17521) | 只改变重建背景伪影，发现视觉分数无法预测策略排名的失败 |
-| [Video2World](../README.zh-CN.md#paper-2610-04432) | 从真实示范视频重建环境并编写行为，比较几何、轨迹与任务结果 |
-| [Real2Sim Benchmark](../README.zh-CN.md#paper-real2sim-benchmark) | 冻结重建场景后，依次比较渲染、动作重放与固定策略闭环 |
 
 ## 观察
 

@@ -22,12 +22,14 @@ FONTS = {
 
 PALETTE = {
     'light': {
+        'bg': '#FFFFFF', 'frame': '#D1D9E0',
         'ink': '#1F2328', 'sub': '#59636E', 'line': '#D1D9E0', 'pill': '#FFFFFF', 'on_core': '#FFFFFF',
         'inherit_fill': '#F0F3F6', 'inherit_stroke': '#8C959F',
         'a': ('#A35C0A', '#FBEAD2'), 'b': ('#0B7266', '#D2EEEA'),
         'c': ('#2B57A4', '#DCE5F6'), 'd': ('#A5324D', '#F6DCE2'),
     },
     'dark': {
+        'bg': '#0D1117', 'frame': '#3D444D',
         'ink': '#E6EDF3', 'sub': '#9198A1', 'line': '#3D444D', 'pill': '#0D1117', 'on_core': '#0D1117',
         'inherit_fill': '#161B22', 'inherit_stroke': '#6E7681',
         'a': ('#E3A251', '#3A2914'), 'b': ('#45C3B3', '#10302B'),
@@ -36,7 +38,7 @@ PALETTE = {
 }
 
 # Geometry (SVG user units).
-PAD, NAME_W, CELL_W, GAP = 16, 214, 98, 6
+PAD, NAME_W, CELL_W, GAP = 22, 214, 98, 6
 ROW_H, ROW_GAP, SEP_H = 50, 6, 18
 LEGEND_H, GROUP_H, HEAD_H = 34, 28, 62
 FS_CELL, FS_HEAD, FS_NAME, FS_KIND = 13, 13.5, 15, 12
@@ -169,6 +171,9 @@ def render(site, lang, theme):
     o(f'<pattern id="hatch-legend" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
       f'<rect width="2.2" height="7" fill="{pal["sub"]}"/></pattern>')
     o('</defs>')
+    # Opaque card: the image stays legible even when a viewer shows the light map on a dark page
+    # (GitHub picks the <picture> source from the system theme, not from its own theme setting).
+    o(f'<rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1:g}" rx="10" fill="{pal["bg"]}" stroke="{pal["frame"]}"/>')
 
     # Legend swatches.
     for x, level, text in legend_items:

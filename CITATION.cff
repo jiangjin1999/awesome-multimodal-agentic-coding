@@ -2,6 +2,10 @@ cff-version: 1.2.0
 message: "If you use this repository, please cite it as follows."
 title: "Awesome Multimodal Agentic Coding"
 type: generic
+abstract: >-
+  A research map of multimodal agents that write code, observe what it does,
+  and improve, organized in three stages: visual feedback, orchestrating models
+  as tools, and bridging digital and physical worlds.
 authors:
   - family-names: "Jiang"
     given-names: "Jin"
@@ -10,3 +14,12 @@ repository-code: "https://github.com/jiangjin1999/awesome-multimodal-agentic-cod
 url: "https://github.com/jiangjin1999/awesome-multimodal-agentic-coding"
 date-released: 2026-09-06
 license: MIT
+keywords:
+  - multimodal agentic coding
+  - coding agents
+  - visual feedback
+  - model orchestration
+  - world models
+  - embodied AI
+  - sim-to-real
+  - physical AGI

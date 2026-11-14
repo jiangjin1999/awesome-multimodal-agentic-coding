@@ -30,6 +30,8 @@
 2. **ツールとしてのモデル**：コードで異なるモデルを組み合わせ、知覚・生成・行動の能力を統合する。
 3. **デジタル世界と物理世界の接続**：コードでシミュレーションを構築して行動を制御し、シミュレーションと現実で学習・改善する。
 
+**ガイド（英語）：**[How to read this collection](./docs/READING_GUIDE.md) · [Stage 3 in depth](./stage3/README.md) · [Simulator quality evaluation](./stage3/simulator-evaluation.md)
+
 <a id="multimodal-agentic-coding-trilogy"></a>
 <a id="start-here"></a>
 <a id="topic-map"></a>

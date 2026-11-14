@@ -18,7 +18,7 @@ Agent 编写代码、执行、观察结果，再依据观测选择下一次修�
 
 ## 按三阶段阅读
 
-合集从[视觉反馈](../README.zh-CN.md#stage-1)出发，延伸到[模型作为工具](../README.zh-CN.md#stage-2)和[数字—物理交互](../README.zh-CN.md#stage-3)。可以从关心的产物或能力进入，再比较方法、评测、数据与可复用工具。[第三阶段导读](../stage3/README.zh-CN.md)进一步串联具身 Harness、模拟器、数据、学习和物理应用。
+合集从[视觉反馈](../README.zh-CN.md#stage-1)出发，延伸到[模型作为工具](../README.zh-CN.md#stage-2)和[连接数字与物理世界](../README.zh-CN.md#stage-3)。可以从关心的产物或能力进入，再比较方法、评测、数据与可复用工具。[第三阶段导读](../stage3/README.zh-CN.md)进一步串联具身 Harness、模拟器、数据、学习和物理应用。
 
 ## 选择阅读路线
 

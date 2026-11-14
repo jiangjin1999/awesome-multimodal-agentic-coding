@@ -27,6 +27,8 @@
 2. **模型作为工具**：用代码编排不同模型，组合感知、生成与行动能力。
 3. **连接数字与物理世界**：用代码构建仿真、驱动行动，在仿真与现实中学习和改进。
 
+**导读：**[如何阅读本合集](./docs/READING_GUIDE.zh-CN.md) · [第三阶段专题](./stage3/README.zh-CN.md) · [仿真器质量评估](./stage3/simulator-evaluation.zh-CN.md)
+
 <a id="multimodal-agentic-coding-trilogy"></a>
 <a id="start-here"></a>
 <a id="topic-map"></a>

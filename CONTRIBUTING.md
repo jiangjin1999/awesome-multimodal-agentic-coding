@@ -17,7 +17,7 @@ These are scope identities, not rankings. Inclusion is independent of whether au
 
 ## Submit a pull request
 
-The three stages organize **visual feedback**, **models as tools**, and **digital–physical interaction**. Choose one main section for a work; link other relevant sections to its stable entry rather than repeating the bibliography. Stage placement does not determine Core or Adjacent status.
+The three stages organize **visual feedback**, **models as tools**, and **bridging digital and physical worlds**. Choose one main section for a work; link other relevant sections to its stable entry rather than repeating the bibliography. Stage placement does not determine Core or Adjacent status.
 
 Edit [data/works.yaml](./data/works.yaml) for entries and [data/site.yaml](./data/site.yaml) for shared navigation and text. Preserve canonical IDs, first-publication dates, source URLs, existing scope, and compatibility anchors. Keep a concise summary in each language and retain English/Chinese verification evidence for Core works. An official report can use a stable non-arXiv ID; record a later arXiv ID as an explicit alias.
 

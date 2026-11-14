@@ -18,7 +18,7 @@ These examples illustrate different mechanisms; they are not a ranking.
 
 ## Read across the three stages
 
-The collection starts with [visual feedback](../README.md#stage-1), then follows [models used as tools](../README.md#stage-2) and [digital–physical interaction](../README.md#stage-3). Begin with your artifact or capability, then compare its methods, evaluations, data, and reusable tools. The [Stage 3 guide](../stage3/README.md) offers a deeper reading path through embodied harnesses, simulators, data, learning, and physical applications.
+The collection starts with [visual feedback](../README.md#stage-1), then follows [models used as tools](../README.md#stage-2) and [bridging digital and physical worlds](../README.md#stage-3). Begin with your artifact or capability, then compare its methods, evaluations, data, and reusable tools. The [Stage 3 guide](../stage3/README.md) offers a deeper reading path through embodied harnesses, simulators, data, learning, and physical applications.
 
 ## Choose a reading path
 

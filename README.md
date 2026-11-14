@@ -27,6 +27,8 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
 2. **Models as tools:** Orchestrate models through code to combine perception, generation, and action.
 3. **Bridging digital and physical worlds:** Build simulations and drive actions with code, learning and improving in simulation and reality.
 
+**Guides:** [How to read this collection](./docs/READING_GUIDE.md) · [Stage 3 in depth](./stage3/README.md) · [Simulator quality evaluation](./stage3/simulator-evaluation.md)
+
 <a id="multimodal-agentic-coding-trilogy"></a>
 <a id="start-here"></a>
 <a id="topic-map"></a>

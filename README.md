@@ -63,6 +63,7 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [3.4 Data](#s3-4) (14)
   - [3.5 Training and capability improvement](#s3-5) (73)
   - [3.6 Physical applications and experiments](#s3-6) (37)
+  - [Simulation engines at a glance](#s3-engines)
 - [Surveys and related collections](#related)
 - [Contact and contributing](#contact) · [Citation](#citation)
 
@@ -2017,8 +2018,6 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 ### 3.1 Embodied harnesses
 
-*Common execution environments:* [MuJoCo](https://mujoco.readthedocs.io/en/stable/overview.html) · [Isaac Sim](https://docs.isaacsim.omniverse.nvidia.com/latest/index.html) · [Gazebo](https://gazebosim.org/docs/latest/getstarted/) · [PyBullet](https://github.com/bulletphysics/bullet3)
-
 #### Tools and control interfaces
 
 <!-- mmac-record: {"id": "2611.01560", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2457,8 +2456,6 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <a id="s3-2"></a>
 
 ### 3.2 Simulator construction
-
-*Common execution environments:* [MuJoCo](https://mujoco.readthedocs.io/en/stable/overview.html) · [Isaac Sim](https://docs.isaacsim.omniverse.nvidia.com/latest/index.html) · [Gazebo](https://gazebosim.org/docs/latest/getstarted/) · [PyBullet](https://github.com/bulletphysics/bullet3)
 
 <!-- mmac-record: {"id": "2611.10602", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -3635,6 +3632,27 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 - <a id="paper-ai-cad"></a>**[ai-cad](https://github.com/BorjaLL/ai-cad)** [[Results]](https://github.com/BorjaLL/ai-cad/blob/1ef2bf72de799006d069498d3ee146dae2e4f075/data/fits-measured.json)
   > Connects parametric CAD to manual print-fit feedback.
+
+[↑ Back to contents](#contents)
+
+<a id="s3-engines"></a>
+
+### Simulation engines at a glance
+
+Physics simulation engines commonly used in Stage 3. Representative works are chosen from those that use the engine as their main platform, ranked by citations and GitHub stars.
+
+**Choosing for robot-arm manipulation:** state inputs such as joint angles and object poses, with accurate contact → MuJoCo; camera-image inputs or large-scale synthetic data → Isaac Sim / Isaac Lab or ManiSkill; articulated objects such as drawers and cabinet doors → SAPIEN / ManiSkill; cloth, cables or soft bodies → Genesis or Newton.
+
+| Category | Engine | In one sentence | For robot-arm manipulation | Representative works |
+|---|---|---|---|---|
+| Physics engines | [MuJoCo](https://mujoco.readthedocs.io/en/stable/overview.html) | An open-source physics engine maintained by Google DeepMind. Describe the robot and objects in one XML file, and it computes contacts and joint motion quickly and accurately | **First choice.** Accurate contact; suits state-based policies, reinforcement learning and calibrating parameters against real data. Camera rendering also supports vision-based policies. For photorealistic synthetic data, consider a platform with more advanced rendering | [Real2Code](#paper-2406-08474) · [Articulate-Anything](#paper-2410-13882) · [LiteReality-Agent](#paper-2610-01863) |
+| | [PyBullet](https://pybullet.org/) / [Bullet](https://github.com/bulletphysics/bullet3) | A long-standing, lightweight physics engine that works right after `pip install` | Usable. Good for quick prototypes; accuracy and graphics are moderate | [GenSim](#paper-2310-01361) · [Instruct2Act](#paper-2305-11176) · [OMNI-EPIC](#paper-2405-15568) |
+| | [Drake](https://drake.mit.edu/) | A robotics toolbox developed mainly by Toyota Research Institute, emphasizing rigorous models and mathematical optimization | Usable. Good for motion planning and for checking whether a placement is stable or interpenetrating; not suited to large-scale training | [SceneSmith](#paper-2602-09153) · [GIF](#paper-2609-05927) |
+| | [Genesis](https://genesis-world.readthedocs.io/en/latest/) | A newer Python-native physics platform with one interface for rigid bodies, cloth, fluids and soft bodies | Usable. Better suited to manipulation involving cloth or soft bodies; the ecosystem is still young | [RoboGen](#paper-2311-01455) · [GS-Agent](#paper-2607-21522) |
+| | [Newton](https://newton-physics.github.io/newton/) / [Warp](https://nvidia.github.io/warp/) | Warp is NVIDIA's framework for writing GPU simulation code in Python; Newton is an open-source physics engine built on Warp by NVIDIA, Google DeepMind and Disney Research | Usable. GPU-accelerated and differentiable; suits cloth, cables and soft bodies; still evolving quickly | [RoboSimStudio](#paper-2610-18835) · [Gym-Anything](#paper-2610-40565) · [DeformMaster](#paper-2605-09586) |
+| Simulation platforms (physics + realistic rendering + sensors) | [Isaac Sim](https://docs.isaacsim.omniverse.nvidia.com/latest/index.html) / [Isaac Lab](https://isaac-sim.github.io/IsaacLab/) | NVIDIA's robot simulation platform: PhysX for physics, ray tracing for rendering, plus simulated cameras and LiDAR. Isaac Lab is the parallel-training framework built on it, succeeding Isaac Gym | **First choice.** Suits vision-based policies, large-scale synthetic data and digital twins; needs an NVIDIA GPU and a heavy installation | [SAGE](#paper-2602-10116) · [Gen2Sim](#paper-2310-18308) |
+| | [SAPIEN](https://github.com/haosulab/SAPIEN) / [ManiSkill](https://maniskill.readthedocs.io/en/latest/) | A simulation platform designed for manipulation, with many articulated object models such as drawers and cabinet doors. ManiSkill is the GPU-parallel task suite built on it | **First choice.** Suits articulated-object manipulation and GPU-parallel data collection | [Articulate-Anything](#paper-2410-13882) · [EmbodiedGen V2](#paper-2607-07459) |
+| ROS-ecosystem simulators | [Gazebo](https://gazebosim.org/docs/latest/getstarted/) / [Webots](https://cyberbotics.com/) | Built for whole-system testing: the real robot's ROS code can run directly in simulation | Usable. Good for whole-system integration; grasp contact is weaker, so it does not suit large-scale data collection | [Adaptive Code Generation](#paper-2610-09588) · [Webots MCP](#paper-res-webots-mcp) |
 
 [↑ Back to contents](#contents)
 

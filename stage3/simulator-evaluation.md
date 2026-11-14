@@ -27,7 +27,8 @@ Works from [3.3 Simulator quality evaluation](../README.md#s3-3), organized by f
 | L3a | Dynamics: looks right (motion fidelity) | Does the motion match the reference video? |
 | L3b | Dynamics: truly simulated (model verification) | Rerun under changed conditions: does the result change correctly? |
 | L3c | Dynamics: numerically accurate (validation & system identification) | Do parameters match reality? Given the first seconds, can it predict the rest? |
-| L4 | Sim-to-real predictivity | Used for evaluation or training, do the conclusions hold in the real world? |
+| L4a | Downstream: evaluation proxy | Used for evaluation, do policy rankings match the real world? |
+| L4b | Downstream: training utility | Used for training, do the trained policies work in the real world? |
 
 ```
   Requirement-driven: L0a semantic ──┐
@@ -127,17 +128,28 @@ With an existing engine, the engine supplies the physical laws, so the check is 
 
 ## L4 Sim-to-real predictivity
 
-**Checks:** With several real outcomes (different policies or conditions), whether simulation predicts their differences, such as policy rankings or success and failure.\
-**Limit:** A single successful demonstration can test reproduction but not prediction; such works belong in L3a.
+A simulator has two downstream uses: evaluating policies that are already trained, or training them. Training optimizes against the simulator and exploits its errors (simulator exploitation, [2605.29032](https://arxiv.org/abs/2605.29032)), so a simulator that ranks policies well may still be unusable for training. Both uses need several real outcomes for comparison; a single successful demonstration can only test reproduction and belongs in L3a.
+
+### L4a Downstream: evaluation proxy
+
+**Checks:** Run the same policies in simulation and on real robots, and compare performance and rankings.\
+**Limit:** Accurate rankings do not mean the simulator can be used for training.
 
 | Work | What it checks |
 |---|---|
 | [SIMPLER](../README.md#paper-2405-05941) | The same policies in simulation and on real robots, compared on performance and ranking (Pearson, MMRV) |
 | [YUBI-Real2Sim](../README.md#paper-2610-17521) | Only reconstruction artifacts vary; visual scores fail to predict policy-ranking failures |
 
+### L4b Downstream: training utility
+
+**Checks:** Train policies in the simulator, then test them in the real world (or a high-fidelity reference).\
+**Limit:** Results depend on the learning algorithm and training setup.
+
+None yet: no work compares the training utility of different simulators under a common protocol.
+
 ## Observations
 
-- **Uneven coverage:** Work concentrates in L0 and L3a; few works check mechanisms, parameters or downstream use, and evaluators appear only in L0, L1 and L3a.
+- **Uneven coverage:** Work concentrates in L0 and L3a; few works check mechanisms, parameters or downstream use, and evaluators appear only in L0, L1 and L3a; L4b is empty.
 - **Open question:** Which lower-level checks predict higher-level failures? YUBI-Real2Sim is a counterexample: visual quality does not predict policy rankings.
 
 ## Terminology sources

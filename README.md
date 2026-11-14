@@ -2775,7 +2775,8 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 | L3a | Dynamics: looks right | Does the motion match the reference video? (Only frames and trajectories are compared, so hand-written animation can also score well.) | [ExeWorldBench](#paper-2610-15166) · [4DCodeBench](#paper-2610-03715) · [VisPhyWorld](#paper-2602-13294) · [Physics-Inspired Animations](#paper-2602-10840) · [PhyRubric](#paper-2611-13576) † · [Latent Prediction Error](#paper-2611-01815) · [Video2World](#paper-2610-04432) · [Real2Sim Benchmark](#paper-real2sim-benchmark) |
 | L3b | Dynamics: truly simulated | Rerun under changed conditions (a steeper ramp, a heavier ball): does the result change correctly? | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) |
 | L3c | Dynamics: numerically accurate | Do parameters such as mass and friction match reality? Given the first few seconds, can it predict what follows? | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
-| L4 | Sim-to-real predictivity | Used for evaluation or training, do the conclusions hold in the real world? | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) |
+| L4a | Downstream: evaluation proxy | Used for evaluation, do policy rankings match the real world? | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) |
+| L4b | Downstream: training utility | Used for training, do the trained policies work in the real world? | None yet |
 
 † marks evaluators, works whose main contribution is an evaluation tool. Each work is placed by its main claimed contribution. Full explanation: [Simulator quality evaluation: a fidelity ladder](stage3/simulator-evaluation.md).
 

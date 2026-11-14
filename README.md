@@ -3650,7 +3650,7 @@ The next figure compares where each tool is especially strong. Ratings are broad
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/engine-map/engine-strengths-en-dark.svg">
-  <img src="assets/engine-map/engine-strengths-en-light.svg" alt="Heatmap of simulation tool strengths: eight tools rated from 1 to 3 on eight dimensions, grouped like the coverage map. Top picks: building the world, SAPIEN/ManiSkill for articulated objects and MuJoCo for friendliness to coding agents (PyBullet is also strong); physics, Drake for contact accuracy (MuJoCo and Newton are also strong) and Genesis for deformables (Newton is also strong); observation, Isaac Sim/Lab for visual realism; skills, Isaac Sim/Lab for GPU scale (SAPIEN/ManiSkill, Genesis and Newton are also strong), Drake for planning and optimization, and Gazebo/Webots for ROS and real robots." width="100%">
+  <img src="assets/engine-map/engine-strengths-en-light.svg" alt="Heatmap of simulation tool strengths: eight tools rated from 1 to 3 on eight dimensions, grouped like the coverage map. Top picks: building the world, SAPIEN/ManiSkill for articulated objects and MuJoCo for friendliness to coding agents (PyBullet is also strong); physics, Drake for contact accuracy (MuJoCo and Newton are also strong) and Genesis for deformables (Newton is also strong); observation, Isaac Sim/Lab for visual realism; training and deployment, Isaac Sim/Lab for GPU scale (SAPIEN/ManiSkill, Genesis and Newton are also strong), Drake for planning and optimization, and Gazebo/Webots for ROS and real robots." width="100%">
 </picture>
 
 <details>

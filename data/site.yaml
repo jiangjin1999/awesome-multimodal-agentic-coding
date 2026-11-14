@@ -504,9 +504,9 @@ engine_map:
     ja: C 観測
   - block: d
     span: 2
-    en: D Skills
-    zh: D 练技能
-    ja: D 技能の練習
+    en: D Training & deployment
+    zh: D 训练与部署
+    ja: D 学習と実機展開
   columns:
   - en: Assets
     zh: 素材
@@ -685,14 +685,14 @@ engine_strengths:
       en: 'Heatmap of simulation tool strengths: eight tools rated from 1 to 3 on eight dimensions, grouped like the coverage
         map. Top picks: building the world, SAPIEN/ManiSkill for articulated objects and MuJoCo for friendliness to coding agents
         (PyBullet is also strong); physics, Drake for contact accuracy (MuJoCo and Newton are also strong) and Genesis for deformables
-        (Newton is also strong); observation, Isaac Sim/Lab for visual realism; skills, Isaac Sim/Lab for GPU scale (SAPIEN/ManiSkill,
+        (Newton is also strong); observation, Isaac Sim/Lab for visual realism; training and deployment, Isaac Sim/Lab for GPU scale (SAPIEN/ManiSkill,
         Genesis and Newton are also strong), Drake for planning and optimization, and Gazebo/Webots for ROS and real robots.'
       zh: 仿真工具强项对比热力表：8 个工具在 8 个维度上各评 1 到 3 档，维度按覆盖图的四块分组。各维度首推：A 造世界——关节物体 SAPIEN/ManiSkill，Agent 友好 MuJoCo（PyBullet
-        也强）；B 算物理——接触精度 Drake（MuJoCo、Newton 也强），软体布料 Genesis（Newton 也强）；C 给观察——画面逼真 Isaac Sim/Lab；D 练技能——GPU 并行 Isaac
+        也强）；B 算物理——接触精度 Drake（MuJoCo、Newton 也强），软体布料 Genesis（Newton 也强）；C 给观察——画面逼真 Isaac Sim/Lab；D 训练与部署——GPU 并行 Isaac
         Sim/Lab（SAPIEN/ManiSkill、Genesis、Newton 也强），规划优化 Drake，ROS 与真机 Gazebo/Webots。
       ja: シミュレーションツールの強みのヒートマップ。8 つのツールを 8 つの観点で 1〜3 段階に評価し、観点は対応範囲の図と同じ四つに分けている。各観点の第一候補：A 世界をつくる——関節物体は SAPIEN/ManiSkill、エージェント向きは
         MuJoCo（PyBullet も強い）。B 物理計算——接触精度は Drake（MuJoCo と Newton も強い）、柔軟物は Genesis（Newton も強い）。C 観測——写実的な描画は Isaac Sim/Lab。D
-        技能の練習——GPU 並列は Isaac Sim/Lab（SAPIEN/ManiSkill、Genesis、Newton も強い）、計画・最適化は Drake、ROS・実機は Gazebo/Webots。
+        学習と実機展開——GPU 並列は Isaac Sim/Lab（SAPIEN/ManiSkill、Genesis、Newton も強い）、計画・最適化は Drake、ROS・実機は Gazebo/Webots。
     legend:
       '3':
         en: Strong
@@ -728,9 +728,9 @@ engine_strengths:
     ja: C 観測
   - block: d
     span: 3
-    en: D Skills
-    zh: D 练技能
-    ja: D 技能の練習
+    en: D Training & deployment
+    zh: D 训练与部署
+    ja: D 学習と実機展開
   columns:
   - name: {en: Articulated, zh: 关节物体, ja: 関節物体}
     hint: {en: 'drawers, doors', zh: 抽屉、柜门, ja: 引き出し・扉}

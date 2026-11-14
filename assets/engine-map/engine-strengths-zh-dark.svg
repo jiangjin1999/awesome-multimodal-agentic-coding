@@ -25,7 +25,7 @@
 <rect x="672" y="56" width="98" height="28" rx="4" fill="#18243B"/>
 <text x="721" y="75" text-anchor="middle" font-size="13.5" font-weight="700" fill="#8AACEF">C 给观察</text>
 <rect x="786" y="56" width="306" height="28" rx="4" fill="#3A1A24"/>
-<text x="939" y="75" text-anchor="middle" font-size="13.5" font-weight="700" fill="#EA8099">D 练技能</text>
+<text x="939" y="75" text-anchor="middle" font-size="13.5" font-weight="700" fill="#EA8099">D 训练与部署</text>
 <text x="285" y="110" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E6EDF3">关节物体</text>
 <text x="285" y="129" text-anchor="middle" font-size="12" fill="#9198A1">抽屉、柜门</text>
 <text x="389" y="110" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E6EDF3">Agent 友好</text>

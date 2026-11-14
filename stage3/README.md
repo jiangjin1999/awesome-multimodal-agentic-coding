@@ -129,7 +129,7 @@ Composes perception and physical-action tools through fixed behavior-tree skills
 
 `2026-10-08` · Fudan University; Singapore Management University
 
-[Paper](https://arxiv.org/abs/2610.12457) · [Project page](https://emilia113.github.io/SpatialHarness/)
+[Paper](https://arxiv.org/abs/2610.12457) · [Project page](https://emilia113.github.io/SpatialHarness/) · [Dataset](https://huggingface.co/datasets/yzy05/SpatialHarness)
 
 Maintains a simulation scene synchronized with real execution and renders task-specific auxiliary viewpoints.
 
@@ -144,7 +144,7 @@ Maintains a simulation scene synchronized with real execution and renders task-s
 
 `2026-10-04` · KAIST; Seoul National University
 
-[Paper](https://arxiv.org/abs/2610.04929) · [Project page](https://robotuse-team.github.io/)
+[Paper](https://arxiv.org/abs/2610.04929) · [Project page](https://robotuse-team.github.io/) · [Code](https://github.com/robotuse-team/RobotUse)
 
 Allocates physical task decisions and detailed interactions to subagents while the parent receives compact results and constraints.
 
@@ -193,7 +193,7 @@ Batches robot primitives, computation, conditions and local retries inside Pytho
 
 `2026-09-29` · Zhejiang University
 
-[Paper](https://arxiv.org/abs/2610.14018)
+[Paper](https://arxiv.org/abs/2610.14018) · [Code](https://github.com/BinceQu/RoboHarness)
 
 Gives an LLM a visual-geometric control panel for zero-shot manipulation using existing robot tools.
 
@@ -251,7 +251,7 @@ Equips code-as-policy agents with visually grounded route checks and contact con
 
 `2026-09-11` · University of Notre Dame; University of California San Diego; San Diego State University
 
-[Paper](https://arxiv.org/abs/2609.12541)
+[Paper](https://arxiv.org/abs/2609.12541) · [Dataset](https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy) · [Code](https://github.com/agent-as-policy-2026/agent-as-policy)
 
 Lets a general agent inspect visual evidence, write programs and issue motion requests throughout a manipulation episode.
 
@@ -264,7 +264,7 @@ Lets a general agent inspect visual evidence, write programs and issue motion re
 
 `2026-09-09` · Show Lab, National University of Singapore
 
-[Paper](https://arxiv.org/abs/2609.10522) · [Project page](https://showlab.github.io/Show-Harness)
+[Paper](https://arxiv.org/abs/2609.10522) · [Project page](https://showlab.github.io/Show-Harness) · [Code](https://github.com/showlab/Show-Harness) · [Model](https://huggingface.co/showlab/Show-Harness-VLMs) · [Dataset](https://huggingface.co/datasets/showlab/Show-Harness-Data)
 
 Connects a general VLM to a robot interpreter through a compact semantic action interface.
 
@@ -305,7 +305,7 @@ Connects digital agents to observation, target marking and motion through a ligh
 
 `2026-07-18` · X-Era Lab; Sun Yat-sen University; Peng Cheng Laboratory
 
-[Paper](https://arxiv.org/abs/2607.16636)
+[Paper](https://arxiv.org/abs/2607.16636) · [Code](https://github.com/PhyAgentOS/PhyAgentOS)
 
 Separates cognitive planning from physical execution through file-based state contracts, tools and persistent execution records.
 
@@ -318,7 +318,7 @@ Separates cognitive planning from physical execution through file-based state co
 
 `2026-07-06` · University of California, Berkeley; Bosch; NVIDIA
 
-[Paper](https://arxiv.org/abs/2607.05369) · [Project page](https://graph-robots.github.io/gap)
+[Paper](https://arxiv.org/abs/2607.05369) · [Project page](https://graph-robots.github.io/gap) · [Code](https://github.com/graph-robots/graph-as-policy)
 
 Builds typed computation graphs connecting perception, planning and control skills, then rehearses and revises the graph in simulation.
 
@@ -441,7 +441,7 @@ Exposes ROS queries, diagnosis and operations as callable tools for language age
 
 `2023-12-07` · Stanford University; Google DeepMind; University of California, Berkeley
 
-[Paper](https://arxiv.org/abs/2312.04474) · [Project page](https://chain-of-code.github.io)
+[Paper](https://arxiv.org/abs/2312.04474) · [Project page](https://chain-of-code.github.io) · [Demo](https://colab.research.google.com/github/google-research/google-research/blob/master/code_as_policies/coc_demo.ipynb)
 
 Executes explicit program logic in an interpreter and asks a language model to emulate unresolved semantic operations.
 
@@ -497,7 +497,7 @@ Combines robot function libraries, prompting and human dialogue to generate and 
 
 `2022-09-22` · University of Southern California; NVIDIA
 
-[Paper](https://arxiv.org/abs/2209.11302) · [Project page](http://progprompt.github.io)
+[Paper](https://arxiv.org/abs/2209.11302) · [Project page](http://progprompt.github.io) · [Code](https://github.com/NVlabs/progprompt-vh)
 
 Generates program-like plans using available objects, actions and assertions, with recovery steps when action preconditions fail.
 
@@ -512,7 +512,7 @@ Generates program-like plans using available objects, actions and assertions, wi
 
 `2022-09-16` · Robotics at Google
 
-[Paper](https://arxiv.org/abs/2209.07753) · [Project page](https://code-as-policies.github.io)
+[Paper](https://arxiv.org/abs/2209.07753) · [Project page](https://code-as-policies.github.io) · [Code](https://github.com/google-research/google-research/tree/master/code_as_policies) · [Demo](https://huggingface.co/spaces/jackyliang42/code-as-policies)
 
 Recursively generates Python policies that combine perception results, geometric calculations and robot APIs.
 
@@ -589,7 +589,7 @@ Coordinates persistent user/scene memory, a frozen VLA, geometric shielding, and
 
 `2026-09-24` · Xiaomi Inc.; Tsinghua University; Nanjing University; Shanghai Jiao Tong University; East China Normal University; University College London; King’s College London; Imperial College London; Institute of Automation, Chinese Academy of Sciences; Shanghai Innovation Institute; University of Oxford; University of Edinburgh; Nanyang Technological University
 
-[Paper](https://arxiv.org/abs/2609.29166) · [Project page](https://darwin-agent.github.io/HarnessPAI)
+[Paper](https://arxiv.org/abs/2609.29166) · [Project page](https://darwin-agent.github.io/HarnessPAI) · [Code](https://github.com/Darwin-Agent/HarnessPAI)
 
 Synthesizes programs over perception and motion primitives, then evolves them across rollouts and extracts reusable skills.
 
@@ -606,7 +606,7 @@ Synthesizes programs over perception and motion primitives, then evolves them ac
 
 `2026-08-03` · Eastern Institute of Technology, Ningbo
 
-[Paper](https://arxiv.org/abs/2608.11246) · [Project page](https://eit-hai.github.io/thea)
+[Paper](https://arxiv.org/abs/2608.11246) · [Project page](https://eit-hai.github.io/thea) · [Code](https://github.com/EIT-HAI/Thea)
 
 Uses a persistent scene graph and semantically meaningful tool returns to organize robot abilities and task progress.
 
@@ -621,7 +621,7 @@ Uses a persistent scene graph and semantically meaningful tool returns to organi
 
 `2026-07-09` · Tsinghua University; Striding AI; Purdue University; Institute of Automation, Chinese Academy of Sciences; Infinigence AI; Hong Kong University of Science and Technology; Zhongguancun Academy
 
-[Paper](https://arxiv.org/abs/2607.08448)
+[Paper](https://arxiv.org/abs/2607.08448) · [Code](https://github.com/RLinf/RPent)
 
 Lets a coding agent combine analytic motion primitives with calls to a frozen VLA, assigning language subgoals, budgets and stopping conditions.
 
@@ -681,7 +681,7 @@ Compares frozen agents and VLA policies through matched, blinded real-robot tria
 
 `2026-10-26` · Aether AI; University of California San Diego; University of California Davis
 
-[Bibliographic record](../README.md#paper-2610-34649) · [Paper](https://arxiv.org/abs/2610.34649) · [Project page](https://aetherlabsai.github.io/RobotAgentBench/)
+[Bibliographic record](../README.md#paper-2610-34649) · [Paper](https://arxiv.org/abs/2610.34649) · [Project page](https://aetherlabsai.github.io/RobotAgentBench/) · [Demo](https://aetherlabsai.github.io/RobotAgentBench/#demo) · [Model](https://huggingface.co/AetherLabs-AI/InternVLA-A1.5-RAB) · [Dataset](https://huggingface.co/datasets/AetherLabs-AI/RobotAgentBench-TrainingData)
 
 Benchmarks household robot autonomy with code-based, learned and hybrid executors, including visual-feedback-driven program execution and reusable control-tool refinement in its coding-agent configurations.
 
@@ -720,7 +720,7 @@ Compares frontier models on LIBERO-10 using a shared interaction loop and contro
 
 `2026-10-19` · The University of Hong Kong; Sharpa; Tsinghua University; Stanford University; University of North Carolina at Chapel Hill; Massachusetts Institute of Technology; Transcengram
 
-[Paper](https://arxiv.org/abs/2610.27039) · [Project page](https://winniechen2002.github.io/Agent-bench-website/)
+[Paper](https://arxiv.org/abs/2610.27039) · [Project page](https://winniechen2002.github.io/Agent-bench-website/) · [Code](https://github.com/Winniechen2002/Embodied-Playground)
 
 Tests coordination of physical, strategic and spatial reasoning in long-horizon robot tasks.
 
@@ -746,7 +746,7 @@ Studies general multimodal models operating physical robot arms through control 
 
 `2026-10-15` · SenseNova and Joint Research Team
 
-[Bibliographic record](../README.md#paper-2610-22471) · [Paper](https://arxiv.org/abs/2610.22471) · [Article](https://sensenova.ai/has-gpt-6-astra-achieved-embodied-intelligence)
+[Bibliographic record](../README.md#paper-2610-22471) · [Paper](https://arxiv.org/abs/2610.22471) · [Article](https://sensenova.ai/has-gpt-6-astra-achieved-embodied-intelligence) · [Code](https://github.com/OpenSenseNova/SenseNova-RoboRSI) · [Dataset](https://huggingface.co/datasets/sensenova/SenseNova-RoboRSI-Log) · [Dataset](https://huggingface.co/datasets/sensenova/SenseNova-RoboRSI-Packages)
 
 Studies demonstration-informed direct control and VLA-action review across twelve embodied benchmarks, separating gains from extended interaction budgets from zero-shot trials on eight real robot configurations.
 
@@ -759,7 +759,7 @@ Studies demonstration-informed direct control and VLA-action review across twelv
 
 `2026-10-12` · Shanghai Jiao Tong University; Shanghai Artificial Intelligence Laboratory; Sun Yat-Sen University; Jilin University; Beihang University
 
-[Paper](https://arxiv.org/abs/2610.16238) · [Code](https://github.com/HanZhi306/EmbodiedSkill-Bench)
+[Paper](https://arxiv.org/abs/2610.16238) · [Code](https://github.com/HanZhi306/EmbodiedSkill-Bench) · [Code](https://github.com/FBddcz/embodied-jev)
 
 Compares native control, skill-only execution and agent selection or modification of embodied skills.
 
@@ -800,7 +800,7 @@ Compares learned and agent-developed humanoid policies under matched onboard obs
 
 `2026-10-01` · The Hong Kong University of Science and Technology (Guangzhou); The Chinese University of Hong Kong; Knowin AI
 
-[Paper](https://arxiv.org/abs/2610.00854) · [Project page](https://embodied-agent-arena.github.io/embodied-agent-arena/)
+[Paper](https://arxiv.org/abs/2610.00854) · [Project page](https://embodied-agent-arena.github.io/embodied-agent-arena/) · [Code](https://github.com/embodied-agent-arena/embodied-agent-arena) · [Dataset](https://huggingface.co/datasets/uuu-Quant/Embodied-Agent-Arena)
 
 Compares frontier VLM robot agents under shared budgets and source-task interfaces.
 
@@ -813,7 +813,7 @@ Compares frontier VLM robot agents under shared budgets and source-task interfac
 
 `2026-09-30` · University of California Santa Barbara; MIT CSAIL; MIT-IBM Watson AI Lab
 
-[Bibliographic record](../README.md#paper-2609-40325) · [Paper](https://arxiv.org/abs/2609.40325) · [Project page](https://ucsb-nlp-chang.github.io/WorldAuditBench/)
+[Bibliographic record](../README.md#paper-2609-40325) · [Paper](https://arxiv.org/abs/2609.40325) · [Project page](https://ucsb-nlp-chang.github.io/WorldAuditBench/) · [Code](https://github.com/UCSB-NLP-Chang/WorldAuditBench)
 
 Measures an agent’s ability to explore interactive worlds and substantiate anomalies with evidence.
 
@@ -830,7 +830,7 @@ Measures an agent’s ability to explore interactive worlds and substantiate ano
 
 `2026-09-30` · Fudan University; Shanghai Innovation Institute
 
-[Paper](https://arxiv.org/abs/2609.39507)
+[Paper](https://arxiv.org/abs/2609.39507) · [Code](https://github.com/dzj441/Libero-Agent)
 
 Turns LIBERO into an interactive setting where general agents inspect observations, use their own tools and issue native actions.
 
@@ -886,7 +886,7 @@ Offers paired simulation and real-robot protocols for manipulation across tasks 
 
 `2026-04-28` · University of Cambridge; Georgia Institute of Technology; Princeton University; NVIDIA; Massachusetts Institute of Technology; Carnegie Mellon University
 
-[Paper](https://arxiv.org/abs/2604.25788) · [Project page](https://prpl-group.com/kinder-site/)
+[Paper](https://arxiv.org/abs/2604.25788) · [Project page](https://prpl-group.com/kinder-site/) · [Code](https://github.com/Princeton-Robot-Planning-and-Learning/kindergarden)
 
 Provides resettable physical-reasoning tasks, parameterized skills and an evaluation interface for planning and learning.
 
@@ -953,7 +953,7 @@ Connects free-form robot code generation to ROS, perception and motion tools acr
 
 `2023-11-18` · The University of Texas at Austin; Northeastern University; Wellesley College
 
-[Paper](https://arxiv.org/abs/2311.11183) · [Project page](https://amrl.cs.utexas.edu/codebotler/)
+[Paper](https://arxiv.org/abs/2311.11183) · [Project page](https://amrl.cs.utexas.edu/codebotler/) · [Code](https://github.com/ut-amrl/codebotler)
 
 CodeBotler generates service-robot programs in a Python-embedded language; RoboEval tests action order, conditions and task execution.
 
@@ -1020,7 +1020,7 @@ Lets isolated coding agents write scan and analysis scripts and call laboratory 
 
 `2025-05-06` · University of California, Berkeley
 
-[Paper](https://arxiv.org/abs/2505.03728) · [Project page](https://pyroki-toolkit.github.io)
+[Paper](https://arxiv.org/abs/2505.03728) · [Project page](https://pyroki-toolkit.github.io) · [Code](https://github.com/chungmin99/pyroki)
 
 Provides composable kinematic optimization interfaces that realize agent-selected targets and motion programs.
 
@@ -1033,7 +1033,7 @@ Provides composable kinematic optimization interfaces that realize agent-selecte
 
 `First-public date not established` · Affiliation not established
 
-[Project page](https://jvboid.dev/projects/phys-0) · [Code](https://github.com/JacobFV/chem-0)
+[Project page](https://jvboid.dev/projects/phys-0) · [Code](https://github.com/JacobFV/chem-0) · [Code](https://github.com/JacobFV/phys-0)
 
 Connects editable physical scenes, a SO-101 arm and laboratory observations through logged agent tools.
 
@@ -2050,7 +2050,7 @@ Local layout units make simulation-ready scene variation more efficient. SAM3 se
 
 `2026-08-31` · ByteDance Seed; Peking University; Zhejiang University
 
-[Paper](https://arxiv.org/abs/2608.30821) · [Project page](https://lucida-r2s.github.io/)
+[Paper](https://arxiv.org/abs/2608.30821) · [Project page](https://lucida-r2s.github.io/) · [Demo](https://lucida-r2s.github.io/#main-result)
 
 A visual editing agent aligns generated assets to measured scene evidence.
 
@@ -2948,7 +2948,7 @@ Image-derived physical assets and generated rewards support simulated manipulati
 
 `2023-10-02` · MIT CSAIL; UC San Diego; University of Washington; CMU; Tsinghua University; Shanghai Jiao Tong University
 
-[Paper](https://arxiv.org/abs/2310.01361) · [Project page](https://liruiw.github.io/gensim) · [Code](https://github.com/liruiw/GenSim)
+[Paper](https://arxiv.org/abs/2310.01361) · [Project page](https://liruiw.github.io/gensim) · [Code](https://github.com/liruiw/GenSim) · [Demo](https://huggingface.co/spaces/Gen-Sim/Gen-Sim)
 
 Executable task generation scales demonstration collection and downstream robot-policy training.
 
@@ -3262,7 +3262,7 @@ Evaluates joint reconstruction of simulated environments and robot behavior from
 
 `2026-10-02` · Johns Hopkins University; Stanford University; Max Planck Institute for Intelligent Systems; Massachusetts Institute of Technology
 
-[Bibliographic record](../README.md#paper-2610-03715) · [Paper](https://arxiv.org/abs/2610.03715)
+[Bibliographic record](../README.md#paper-2610-03715) · [Paper](https://arxiv.org/abs/2610.03715) · [Code](https://github.com/4DCodeBench/4DCodeBench)
 
 Measures inverse graphics of dynamic videos through executable scene programs.
 
@@ -3302,7 +3302,7 @@ Tests scene construction and precise editing through a shared Unreal Engine inte
 
 Official benchmark release: 2026-09-21; arXiv v1: 2026-11-02.
 
-[Bibliographic record](../README.md#paper-2611-02659) · [Paper](https://arxiv.org/abs/2611.02659) · [Article](https://cadbench.ai/news/cad-bench-v3) · [Dataset](https://huggingface.co/datasets/gnucleus-ai/cad-gen-freecad-bench-v3)
+[Bibliographic record](../README.md#paper-2611-02659) · [Paper](https://arxiv.org/abs/2611.02659) · [Article](https://cadbench.ai/news/cad-bench-v3) · [Dataset](https://huggingface.co/datasets/gnucleus-ai/cad-gen-freecad-bench-v3) · [Code](https://github.com/anniedoris/CADBench)
 
 Tests native parametric CAD authoring from text, create-and-edit requests and engineering drawings.
 
@@ -3321,7 +3321,7 @@ Tests native parametric CAD authoring from text, create-and-edit requests and en
 
 `2026-09-14` · University of Rochester; Sony Group Corporation; Carnegie Mellon University; University of Washington
 
-[Bibliographic record](../README.md#paper-2609-15478) · [Paper](https://arxiv.org/abs/2609.15478)
+[Bibliographic record](../README.md#paper-2609-15478) · [Paper](https://arxiv.org/abs/2609.15478) · [Project page](https://yoloytang.me/BVB/) · [Code](https://github.com/yoloytang/BVB)
 
 Uses programmatic Blender reconstruction to test agentic video understanding.
 
@@ -3340,7 +3340,7 @@ Uses programmatic Blender reconstruction to test agentic video understanding.
 
 `2026-06-01` · NLPR & MAIS, CASIA; Huawei Noah’s Ark Lab
 
-[Paper](https://arxiv.org/abs/2606.01869)
+[Paper](https://arxiv.org/abs/2606.01869) · [Dataset](https://huggingface.co/datasets/shuolucs/WorldCoder-Bench)
 
 Tests whether generated interactive 3D programs satisfy executable world contracts.
 
@@ -3416,7 +3416,7 @@ Evaluates simulation code for described physical phenomena and studies targeted 
 
 `2026-04-14` · Stony Brook University
 
-[Paper](https://arxiv.org/abs/2604.13035)
+[Paper](https://arxiv.org/abs/2604.13035) · [Project page](https://lab-spell.github.io/SceneCritic) · [Code](https://github.com/DIASENGUPTA/SceneCritic)
 
 Provides explainable symbolic assessment of indoor layouts and feedback for revision.
 
@@ -3492,7 +3492,7 @@ Trains and evaluates language models that express physical concepts through exec
 
 `2026-02-09` · University of Waterloo; Autodesk AI Lab; independent researcher
 
-[Paper](https://arxiv.org/abs/2602.13294)
+[Paper](https://arxiv.org/abs/2602.13294) · [Code](https://github.com/TIGER-AI-Lab/VisPhyWorld)
 
 Probes physical reasoning by reconstructing controlled videos as simulator programs.
 
@@ -3701,7 +3701,7 @@ Data connect physical experience to learning only when the observations, labels,
 
 `2026-11-04` · Peking University; National University of Singapore; Massachusetts Institute of Technology; University of California, Santa Barbara; NVIDIA
 
-[Bibliographic record](../README.md#paper-2611-06817) · [Paper](https://arxiv.org/abs/2611.06817) · [Project page](https://dagroup-pku.github.io/open-humanwam/) · [Code](https://github.com/DAGroup-PKU/HumanNet/tree/Open-HumanWAM)
+[Bibliographic record](../README.md#paper-2611-06817) · [Paper](https://arxiv.org/abs/2611.06817) · [Project page](https://dagroup-pku.github.io/open-humanwam/) · [Code](https://github.com/DAGroup-PKU/HumanNet/tree/Open-HumanWAM) · [Collection](https://huggingface.co/collections/DAGroup-PKU/open-humanwam)
 
 Curates human manipulation experience and aligned actions for world–action model pretraining and robot adaptation.
 
@@ -3718,7 +3718,7 @@ Curates human manipulation experience and aligned actions for world–action mod
 
 `2024-06-27` · University of Washington; Universidad Católica San Pablo; Allen Institute for Artificial Intelligence; NVIDIA
 
-[Paper](https://arxiv.org/abs/2406.18915) · [Project page](https://robot-ma.github.io/)
+[Paper](https://arxiv.org/abs/2406.18915) · [Project page](https://robot-ma.github.io/) · [Code](https://github.com/Robot-MA/manipulate-anything)
 
 Collects real demonstrations with visual-language feedback.
 
@@ -3733,7 +3733,7 @@ Collects real demonstrations with visual-language feedback.
 
 `2024-03-19` · Stanford University; University of California, Berkeley; Toyota Research Institute; Carnegie Mellon University; University of Texas at Austin; University of Montreal; University of Edinburgh; Princeton University; University of Washington; KAIST; University of California, San Diego; Google DeepMind; University of California, Davis; University of Pennsylvania; Columbia University; Yonsei University
 
-[Paper](https://arxiv.org/abs/2403.12945) · [Project page](https://droid-dataset.github.io/)
+[Paper](https://arxiv.org/abs/2403.12945) · [Project page](https://droid-dataset.github.io/) · [Demo](https://droid-dataset.github.io/visualizer) · [Hardware code](https://github.com/droid-dataset/droid) · [Policy training code](https://github.com/droid-dataset/droid_policy_learning) · [Documentation](https://droid-dataset.github.io/droid/)
 
 Supplies real observations for robot-learning pipelines.
 
@@ -3814,7 +3814,7 @@ Builds a self-improving simulation data engine.
 
 `2026-09-28` · Stanford University; Columbia University
 
-[Paper](https://arxiv.org/abs/2609.35318) · [Project page](https://dexagent1.github.io/) · [Project page](https://dexagent123.github.io/)
+[Paper](https://arxiv.org/abs/2609.35318) · [Project page](https://dexagent1.github.io/) · [Project page](https://dexagent123.github.io/) · [Code](https://github.com/dexagent1/DexAgent)
 
 Converts human videos into simulated dexterous supervision.
 
@@ -3831,7 +3831,7 @@ Converts human videos into simulated dexterous supervision.
 
 `2026-09-23` · ByteDance Seed; Yale University; Princeton University; Carnegie Mellon University; Stanford University; University of California, Los Angeles; University of Washington
 
-[Paper](https://arxiv.org/abs/2609.27308)
+[Paper](https://arxiv.org/abs/2609.27308) · [Code](https://github.com/EmbodiedSWE/EmbodiedSWE)
 
 Scales verified robot programs into synthetic demonstrations.
 
@@ -3848,7 +3848,7 @@ Scales verified robot programs into synthetic demonstrations.
 
 `2026-07-26` · Dalian University of Technology; Shenzhen Loop Area Institute; Harbin Institute of Technology; Shanghai AI Laboratory; HKUST; Chinese University of Hong Kong
 
-[Paper](https://arxiv.org/abs/2607.23704) · [Code](https://github.com/Su-ISE-2001/LabRobFail)
+[Paper](https://arxiv.org/abs/2607.23704) · [Code](https://github.com/Su-ISE-2001/LabRobFail) · [Code](https://github.com/Su-ISE-2001/SciRobo)
 
 Builds simulated laboratory failure trajectories with structured diagnoses and correction labels.
 
@@ -3865,7 +3865,7 @@ Builds simulated laboratory failure trajectories with structured diagnoses and c
 
 `2025-06-22` · Lumina EAI; Shanghai AI Lab; Shenzhen University; Nanjing University; TeleAI; Fudan University; Sun Yat-sen University; USTC; Central South University; SUSTech; Tsinghua University; D-Robotics; Shanghai Jiao Tong University; HKU; Northeastern University
 
-[Paper](https://arxiv.org/abs/2506.18088) · [Project page](https://robotwin-platform.github.io/) · [Code](https://github.com/robotwin-Platform/robotwin/) · [Code](https://github.com/robotwin-Platform/robotwin) · [Project page](https://robotwin-platform.github.io/doc/) · [Code](https://github.com/RoboTwin-Platform/RoboTwin)
+[Paper](https://arxiv.org/abs/2506.18088) · [Project page](https://robotwin-platform.github.io/) · [Code](https://github.com/robotwin-Platform/robotwin/) · [Code](https://github.com/robotwin-Platform/robotwin) · [Project page](https://robotwin-platform.github.io/doc/) · [Code](https://github.com/RoboTwin-Platform/RoboTwin) · [Dataset](https://huggingface.co/datasets/TianxingChen/RoboTwin2.0)
 
 Generates diverse bimanual training trajectories.
 
@@ -3882,7 +3882,7 @@ Generates diverse bimanual training trajectories.
 
 `2024-10-04` · Tsinghua University; University of California, San Diego; Shanghai Jiao Tong University; MIT CSAIL
 
-[Paper](https://arxiv.org/abs/2410.03645) · [Project page](https://gensim2.github.io/)
+[Paper](https://arxiv.org/abs/2410.03645) · [Project page](https://gensim2.github.io/) · [Code](https://github.com/GenSim2/gensim2)
 
 Scales robot demonstrations through generated tasks and solvers.
 
@@ -3899,7 +3899,7 @@ Scales robot demonstrations through generated tasks and solvers.
 
 `2023-07-26` · Columbia University; Google DeepMind
 
-[Paper](https://arxiv.org/abs/2307.14535) · [Project page](https://www.cs.columbia.edu/~huy/scalingup/)
+[Paper](https://arxiv.org/abs/2307.14535) · [Project page](https://www.cs.columbia.edu/~huy/scalingup/) · [Code](https://github.com/columbia-ai-robotics/scalingup)
 
 Distills generated robot experience into a visuomotor policy.
 
@@ -4006,7 +4006,7 @@ Searches programs using staged physical diagnostics.
 
 `2026-10-16` · Peking University; Renmin University of China; Beijing XYZ Embodied AI Co., Ltd.; Beijing Academy of Artificial Intelligence (BAAI)
 
-[Paper](https://arxiv.org/abs/2610.23288)
+[Paper](https://arxiv.org/abs/2610.23288) · [Code](https://github.com/Innovationlzc/CoEvolve)
 
 Evolves team strategies over fixed humanoid skills.
 
@@ -4108,7 +4108,7 @@ Designs high-level humanoid policy code.
 
 `2026-09-24` · Fondazione Bruno Kessler; Carnegie Mellon University; Princeton University
 
-[Paper](https://arxiv.org/abs/2609.30233)
+[Paper](https://arxiv.org/abs/2609.30233) · [Code](https://github.com/tomsilver/robocode)
 
 Programs solvers for task-and-motion planning.
 
@@ -4125,7 +4125,7 @@ Programs solvers for task-and-motion planning.
 
 `2026-09-21` · Carnegie Mellon University
 
-[Paper](https://arxiv.org/abs/2609.24145) · [Project page](https://luckykantnayak.github.io/mimic-agent/)
+[Paper](https://arxiv.org/abs/2609.24145) · [Project page](https://luckykantnayak.github.io/mimic-agent/) · [Code](https://github.com/Luckykantnayak/mimicagent-humnaoid)
 
 Generates reference motion for quadruped policy training.
 
@@ -4159,7 +4159,7 @@ Organizes a repeatable loop for policy development.
 
 `2026-06-18` · NVIDIA; Carnegie Mellon University; University of California, Berkeley
 
-[Bibliographic record](../README.md#paper-2606-19980) · [Paper](https://arxiv.org/abs/2606.19980) · [Project page](https://research.nvidia.com/labs/gear/enpire/)
+[Bibliographic record](../README.md#paper-2606-19980) · [Paper](https://arxiv.org/abs/2606.19980) · [Project page](https://research.nvidia.com/labs/gear/enpire/) · [Code](https://github.com/NVlabs/ENPIRE)
 
 Develops robot policies from physical trial evidence.
 
@@ -4176,7 +4176,7 @@ Develops robot policies from physical trial evidence.
 
 `2026-06-15` · University of California, Berkeley; Embodied Science; AMD
 
-[Paper](https://arxiv.org/abs/2606.16458) · [Project page](https://rho-robotics.github.io)
+[Paper](https://arxiv.org/abs/2606.16458) · [Project page](https://rho-robotics.github.io) · [Code](https://github.com/KE7/HELIX)
 
 Searches reusable policy repositories before deployment.
 
@@ -4278,7 +4278,7 @@ Repairs programs while preserving completed work.
 
 `2024-09-03` · Stanford University; Columbia University
 
-[Paper](https://arxiv.org/abs/2409.01652) · [Project page](https://rekep-robot.github.io/)
+[Paper](https://arxiv.org/abs/2409.01652) · [Project page](https://rekep-robot.github.io/) · [Code](https://github.com/huangwl18/ReKep)
 
 Programs geometric constraints for online manipulation.
 
@@ -4295,7 +4295,7 @@ Programs geometric constraints for online manipulation.
 
 `2024-06-04` · University of Pennsylvania; NVIDIA; University of Texas, Austin
 
-[Paper](https://arxiv.org/abs/2406.01967) · [Project page](https://eureka-research.github.io/dr-eureka/)
+[Paper](https://arxiv.org/abs/2406.01967) · [Project page](https://eureka-research.github.io/dr-eureka/) · [Code](https://github.com/eureka-research/DrEureka)
 
 Uses generated rewards and randomization for sim-to-real.
 
@@ -4329,7 +4329,7 @@ Compiles visual task understanding into reusable reward code.
 
 `2023-10-19` · University of Pennsylvania; Caltech; NVIDIA; University of Texas at Austin
 
-[Paper](https://arxiv.org/abs/2310.12931) · [Project page](https://eureka-research.github.io/)
+[Paper](https://arxiv.org/abs/2310.12931) · [Project page](https://eureka-research.github.io/) · [Code](https://github.com/eureka-research/Eureka)
 
 Searches reward programs using policy-training feedback.
 
@@ -4346,7 +4346,7 @@ Searches reward programs using policy-training feedback.
 
 `2023-09-20` · The University of Hong Kong; Carnegie Mellon University; Nanjing University; Microsoft Research; University of Waterloo
 
-[Paper](https://arxiv.org/abs/2309.11489) · [Project page](https://text-to-reward.github.io/)
+[Paper](https://arxiv.org/abs/2309.11489) · [Project page](https://text-to-reward.github.io/) · [Code](https://github.com/xlang-ai/text2reward)
 
 Makes reward shaping a code-generation problem.
 
@@ -4363,7 +4363,7 @@ Makes reward shaping a code-generation problem.
 
 `2023-06-14` · Google DeepMind
 
-[Paper](https://arxiv.org/abs/2306.08647) · [Project page](https://language-to-reward.github.io/)
+[Paper](https://arxiv.org/abs/2306.08647) · [Project page](https://language-to-reward.github.io/) · [Code](https://github.com/google-deepmind/language_to_reward_2023)
 
 Expresses desired robot skills through generated rewards.
 
@@ -4586,7 +4586,7 @@ Compiles memory into autonomous action chunks.
 
 `2026-10-09` · Google Cloud AI Research; Northwestern University
 
-[Paper](https://arxiv.org/abs/2610.14224)
+[Paper](https://arxiv.org/abs/2610.14224) · [Code](https://github.com/google-research/harness2)
 
 Evolves harnesses within and across tasks.
 
@@ -4739,7 +4739,7 @@ Retains navigation repairs for subsequent environments.
 
 `2026-09-29` · Renmin University of China; XYZ Embodied AI; Tsinghua University
 
-[Paper](https://arxiv.org/abs/2609.37583)
+[Paper](https://arxiv.org/abs/2609.37583) · [Code](https://github.com/RUCKBReasoning/RoboHarn-Evo)
 
 Accumulates hierarchical knowledge from physical interaction.
 
@@ -4892,7 +4892,7 @@ Combines learned skills with programmable memory.
 
 `2026-07-26` · University of Washington; Microsoft Research; Massachusetts Institute of Technology
 
-[Paper](https://arxiv.org/abs/2607.23784) · [Project page](https://robo-architect.github.io/)
+[Paper](https://arxiv.org/abs/2607.23784) · [Project page](https://robo-architect.github.io/) · [Code](https://github.com/robo-architect/architect-franka)
 
 Uses language corrections to improve robot programs.
 
@@ -4926,7 +4926,7 @@ Turns verified code repairs into reusable skills.
 
 `2026-06-17` · University of California, Berkeley  Impossible Research
 
-[Paper](https://arxiv.org/abs/2606.19419) · [Project page](https://playful-rats.github.io/)
+[Paper](https://arxiv.org/abs/2606.19419) · [Project page](https://playful-rats.github.io/) · [Code](https://github.com/Playful-RATs/rats)
 
 Turns task-free exploration into persistent code skills.
 
@@ -4943,7 +4943,7 @@ Turns task-free exploration into persistent code skills.
 
 `2026-05-11` · Huazhong University of Science and Technology; University of Science and Technology of China; Microsoft Research; Institute for AI Industry Research (AIR), Tsinghua University
 
-[Paper](https://arxiv.org/abs/2605.10332)
+[Paper](https://arxiv.org/abs/2605.10332) · [Code](https://github.com/air-embodied-brain/EmbodiSkill)
 
 Links reflection to the skills responsible for failures.
 
@@ -5028,7 +5028,7 @@ Builds complex tasks from reusable basic skills.
 
 `2024-05-30` · University of California, Los Angeles; University of Texas at Austin
 
-[Paper](https://arxiv.org/abs/2405.19758) · [Project page](https://interpret-robot.github.io)
+[Paper](https://arxiv.org/abs/2405.19758) · [Project page](https://interpret-robot.github.io) · [Code](https://github.com/hmz-15/interactive-predicate-learning)
 
 Learns planning predicates from language corrections.
 
@@ -5045,7 +5045,7 @@ Learns planning predicates from language corrections.
 
 `2023-05-26` · Cornell University
 
-[Paper](https://arxiv.org/abs/2305.16744) · [Project page](https://portal-cornell.github.io/demo2code/)
+[Paper](https://arxiv.org/abs/2305.16744) · [Project page](https://portal-cornell.github.io/demo2code/) · [Code](https://github.com/portal-cornell/demo2code)
 
 Turns demonstrations into reusable robot programs.
 
@@ -5081,7 +5081,7 @@ Trains an open-weight coding agent to revise explicit Blender scenes using execu
 
 `2026-10-30` · Huawei Technologies Co., Ltd; Huawei Noah Research Institute
 
-[Paper](https://arxiv.org/abs/2610.41216) · [Project page](https://garfield-kh.github.io/TinyAstral/)
+[Paper](https://arxiv.org/abs/2610.41216) · [Project page](https://garfield-kh.github.io/TinyAstral/) · [Code](https://github.com/Garfield-kh/TinyAstral) · [Model](https://huggingface.co/kehong/TinyAstral-weights) · [Dataset](https://huggingface.co/datasets/kehong/TinyAstral-SFT)
 
 Transfers a refined teacher harness to a small agent.
 
@@ -5098,7 +5098,7 @@ Transfers a refined teacher harness to a small agent.
 
 `2026-10-29` · MMLab, The Chinese University of Hong Kong; NovaXBot
 
-[Bibliographic record](../README.md#paper-2610-40799) · [Paper](https://arxiv.org/abs/2610.40799) · [Code](https://github.com/waltstephen/CaPtain) · [Code](https://github.com/waltstephen/CaPtain-Harness)
+[Bibliographic record](../README.md#paper-2610-40799) · [Paper](https://arxiv.org/abs/2610.40799) · [Code](https://github.com/waltstephen/CaPtain) · [Code](https://github.com/waltstephen/CaPtain-Harness) · [Project page](https://waltstephen.github.io/captain/)
 
 Trains a small model to act through robot code.
 
@@ -5115,7 +5115,7 @@ Trains a small model to act through robot code.
 
 `2026-10-21` · University of California, Berkeley; NVIDIA; University of Pennsylvania
 
-[Bibliographic record](../README.md#paper-2610-30136) · [Paper](https://arxiv.org/abs/2610.30136) · [Project page](https://agentic-wam.github.io/)
+[Bibliographic record](../README.md#paper-2610-30136) · [Paper](https://arxiv.org/abs/2610.30136) · [Project page](https://agentic-wam.github.io/) · [Model](https://huggingface.co/miniFranka/agentic-wam-pretrain-yamego3k-soup-e1) · [Code](https://github.com/ZhuoyangLiu2005/agentic-wam)
 
 Models programs, predicted video and robot actions together.
 
@@ -5132,7 +5132,7 @@ Models programs, predicted video and robot actions together.
 
 `2026-10-20` · University of Central Florida; University of Southern California; Michigan State University
 
-[Paper](https://arxiv.org/abs/2610.28589)
+[Paper](https://arxiv.org/abs/2610.28589) · [Code](https://github.com/L-CodingSpace/AgenticRoboRL) · [Project page](https://l-codingspace.github.io/AgenticRoboRL/)
 
 Post-trains robot planners across different harnesses.
 
@@ -5318,7 +5318,7 @@ Uses vision and force traces to repair contact code.
 
 `2026-10-14` · New York University; Fudan University; NYU Shanghai
 
-[Bibliographic record](../README.md#paper-2610-20998) · [Paper](https://arxiv.org/abs/2610.20998) · [Project page](https://mocap-7.github.io/MoCAP-page/)
+[Bibliographic record](../README.md#paper-2610-20998) · [Paper](https://arxiv.org/abs/2610.20998) · [Project page](https://mocap-7.github.io/MoCAP-page/) · [Code](https://github.com/MoCAP-7/MoCAP)
 
 Transfers human-video priors to mobile robot programs.
 
@@ -5348,7 +5348,7 @@ Uses active sensing to program aerial manipulation.
 
 `2026-09-24` · Massachusetts Institute of Technology; National University of Singapore; University of Pennsylvania; NVIDIA
 
-[Bibliographic record](../README.md#paper-2609-30249) · [Paper](https://arxiv.org/abs/2609.30249) · [Project page](https://yuyaoliu.me/projects/rapid)
+[Bibliographic record](../README.md#paper-2609-30249) · [Paper](https://arxiv.org/abs/2609.30249) · [Project page](https://yuyaoliu.me/projects/rapid) · [Code](https://github.com/nature21/RAPID)
 
 Infers reusable relational robot programs and a verification environment from one visual demonstration.
 
@@ -5393,7 +5393,7 @@ Generates and deploys multi-robot code policies.
 
 `2024-03-12` · University of Colorado Boulder
 
-[Paper](https://arxiv.org/abs/2403.07832) · [Project page](https://deligrasp.github.io)
+[Paper](https://arxiv.org/abs/2403.07832) · [Project page](https://deligrasp.github.io) · [Code](https://github.com/deligrasp/deligrasp)
 
 Combines object-property estimates with adaptive grasping.
 
@@ -5423,7 +5423,7 @@ Programs robots to solve tasks with physical tools.
 
 `2023-07-12` · Stanford University; University of Illinois Urbana-Champaign
 
-[Paper](https://arxiv.org/abs/2307.05973) · [Project page](https://voxposer.github.io)
+[Paper](https://arxiv.org/abs/2307.05973) · [Project page](https://voxposer.github.io) · [Code](https://github.com/huangwl18/VoxPoser)
 
 Builds spatial value maps for manipulation.
 
@@ -5562,7 +5562,7 @@ Tests coding agents on laboratory workflows.
 
 `2026-05-08` · University of Cambridge
 
-[Project page](https://pubs.rsc.org/en/content/articlelanding/2026/dd/d6dd00177g) · [Paper](https://www.repository.cam.ac.uk/items/cb2e6fef-94c4-4fe9-903a-aaa198da8f4f)
+[Project page](https://pubs.rsc.org/en/content/articlelanding/2026/dd/d6dd00177g) · [Paper](https://www.repository.cam.ac.uk/items/cb2e6fef-94c4-4fe9-903a-aaa198da8f4f) · [Code](https://github.com/Okarl96/shem_gui)
 
 Develops instrument-control code with human oversight.
 
@@ -5677,7 +5677,7 @@ Iteratively co-designs soft pneumatic robot geometry and actuation through execu
 
 `2026-11-05` · University of Texas at Dallas; Texas Instruments; Iowa State University
 
-[Bibliographic record](../README.md#paper-2611-08175) · [Paper](https://arxiv.org/abs/2611.08175) · [Project page](https://chip-ai-agent.github.io/research/pcbrouteagent)
+[Bibliographic record](../README.md#paper-2611-08175) · [Paper](https://arxiv.org/abs/2611.08175) · [Project page](https://chip-ai-agent.github.io/research/pcbrouteagent) · [Code](https://github.com/chip-ai-agent/PCBRouteAgent)
 
 Revises PCB routing guides from native KiCad execution feedback to improve board connectivity.
 
@@ -5741,7 +5741,7 @@ Uses physics feedback to improve continuum-robot designs.
 
 `2026-05-17` · Seoul National University; OneLineAI; Sungkyunkwan University; Ewha Womans University
 
-[Bibliographic record](../README.md#paper-2605-17448) · [Paper](https://arxiv.org/abs/2605.17448)
+[Bibliographic record](../README.md#paper-2605-17448) · [Paper](https://arxiv.org/abs/2605.17448) · [Code](https://github.com/3dlg-hcvc/s2o)
 
 Uses visual and finite-element feedback to improve CAD.
 

@@ -104,7 +104,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2610.23104", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-23104"></a>`2026.10` **[WebCoder: Scaling General Frontend Development with Artifact-Grounded Agentic Reinforcement Learning](https://arxiv.org/abs/2610.23104)** [[项目页]](https://douzj-llm.github.io/WebCoder/) [[代码]](https://github.com/douzj-llm/WebCoder) [[数据集]](https://huggingface.co/datasets/Roy-DOU/Webdev-Bench)
+- <a id="paper-2610-23104"></a>`2026.10` **[WebCoder: Scaling General Frontend Development with Artifact-Grounded Agentic Reinforcement Learning](https://arxiv.org/abs/2610.23104)** [[项目页]](https://douzj-llm.github.io/WebCoder/) [[代码]](https://github.com/douzj-llm/WebCoder) [[数据集]](https://huggingface.co/datasets/Roy-DOU/Webdev-Bench) [[模型]](https://huggingface.co/Roy-DOU/WebCoder-27B)
   > 以产物进展为依据训练前端构建者，通过渲染反馈持续修订同一应用，并按需求满足度的变化分配长轨迹强化学习信用。
 
 <!-- mmac-record: {"id": "2610.02617", "scope": "Adjacent", "primary": "1.1", "stage": 1, "type": "paper"} -->
@@ -124,7 +124,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2609.22000", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-22000"></a>`2026.09` **[RecreationWorld: Scalable and Verifiable Environments for Hybrid Computer-Use Agents](https://arxiv.org/abs/2609.22000)**
+- <a id="paper-2609-22000"></a>`2026.09` **[RecreationWorld: Scalable and Verifiable Environments for Hybrid Computer-Use Agents](https://arxiv.org/abs/2609.22000)** [[代码]](https://github.com/QwenLM/RecreationWorld)
   > 在桌面、Android 与 Web 上交替探索参考应用、编写源码、运行与视觉检查，并用通过验证的重建轨迹训练混合交互 Agent。
 
 <!-- mmac-record: {"id": "2609.02088", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
@@ -174,7 +174,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2602.06090", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2602-06090"></a>`2026.02` **[SVRepair: Structured Visual Reasoning for Automated Program Repair](https://arxiv.org/abs/2602.06090)**
+- <a id="paper-2602-06090"></a>`2026.02` **[SVRepair: Structured Visual Reasoning for Automated Program Repair](https://arxiv.org/abs/2602.06090)** [[代码]](https://github.com/codefuse-ai/CodeFuse-SVR)
   > 将截图结构化为局部视觉证据，在场景理解、代码定位与补丁生成之间迭代。
 
 <!-- mmac-record: {"id": "2602.05998", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
@@ -184,7 +184,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2601.04203", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2601-04203"></a>`2025.12` **[FronTalk: Benchmarking Front-End Development as Conversational Code Generation with Multi-Modal Feedback](https://arxiv.org/abs/2601.04203)** [[项目页]](https://frontalk-benchmark.github.io/) [[代码]](https://github.com/shirley-wu/frontalk)
+- <a id="paper-2601-04203"></a>`2025.12` **[FronTalk: Benchmarking Front-End Development as Conversational Code Generation with Multi-Modal Feedback](https://arxiv.org/abs/2601.04203)** [[项目页]](https://frontalk-benchmark.github.io/) [[代码]](https://github.com/shirley-wu/frontalk) [[数据集]](https://huggingface.co/datasets/xqwu/FronTalk)
   > 引入多轮视觉前端对话与 AceCoder；后者与渲染网站交互、批评失败并重新生成改进代码。
 
 <!-- mmac-record: {"id": "2511.08195", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
@@ -194,7 +194,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2511.06251", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2511-06251"></a>`2025.11` **[WebVIA: A Web-based Vision-Language Agentic Framework for Interactive and Verifiable UI-to-Code Generation](https://arxiv.org/abs/2511.06251)** [[Demo]](https://zheny2751-dotcom.github.io/webvia.github.io/) [[代码]](https://github.com/zheny2751-dotcom/WebVIA)
+- <a id="paper-2511-06251"></a>`2025.11` **[WebVIA: A Web-based Vision-Language Agentic Framework for Interactive and Verifiable UI-to-Code Generation](https://arxiv.org/abs/2511.06251)** [[Demo]](https://zheny2751-dotcom.github.io/webvia.github.io/) [[代码]](https://github.com/zheny2751-dotcom/WebVIA) [[模型]](https://huggingface.co/zai-org/WebVIA-Agent)
   > 通过反复的感知—行动—验证探索源界面，合成可执行交互代码并验证恢复出的行为。
 
 <!-- mmac-record: {"id": "2510.11498", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
@@ -231,7 +231,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2610.35138", "scope": "Adjacent", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-35138"></a>`2026.10` **[Co-Design Bench: Multimodal Collaborative Coding Evaluation for Agentic Models](https://arxiv.org/abs/2610.35138)** [[项目页]](https://codesignbench.github.io/) [[代码]](https://github.com/Wiselnn570/Co-Design-Bench) [[数据集]](https://huggingface.co/datasets/Wiselnn/Co-Design-Bench)
+- <a id="paper-2610-35138"></a>`2026.10` **[Co-Design Bench: Multimodal Collaborative Coding Evaluation for Agentic Models](https://arxiv.org/abs/2610.35138)** [[项目页]](https://codesignbench.github.io/) [[代码]](https://github.com/Wiselnn570/Co-Design-Bench) [[数据集]](https://huggingface.co/datasets/Wiselnn/Co-Design-Bench) [[Demo]](https://codesignbench.github.io/#intro-video)
   > 用源代码、渲染界面和交互证据检查已有应用的修改是否满足隐藏需求，并通过独立反驳阶段复核正向判定。
 
 <!-- mmac-record: {"id": "2610.29014", "scope": "Adjacent", "primary": "1.1", "stage": 1, "type": "paper"} -->
@@ -241,17 +241,17 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2610.10374", "scope": "Adjacent", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-10374"></a>`2026.10` **[TaoD2C-Bench: Benchmarking MLLMs for Industrial UI Code Generation Beyond Visual Fidelity](https://arxiv.org/abs/2610.10374)** [[项目页]](https://taod2c-bench.github.io/)
+- <a id="paper-2610-10374"></a>`2026.10` **[TaoD2C-Bench: Benchmarking MLLMs for Industrial UI Code Generation Beyond Visual Fidelity](https://arxiv.org/abs/2610.10374)** [[项目页]](https://taod2c-bench.github.io/) [[数据集]](https://github.com/TaoD2C-Bench/TaoD2C-Bench/tree/main/data/eval)
   > 将工业 UI 需求推断与代码实现分开评测，结合源码和运行时证据检查组件与布局约束，并独立比较最终渲染忠实度。
 
 <!-- mmac-record: {"id": "2610.33149", "scope": "Adjacent", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-33149"></a>`2026.10` **[WebUniverse: Scaling Verified Training Data for Agentic Web Development](https://arxiv.org/abs/2610.33149)** [[数据集]](https://huggingface.co/datasets/WebUniverse-NSL/WebUniverse-Env) [[数据集]](https://huggingface.co/datasets/WebUniverse-NSL/WebUniverse-Mix) [[项目页]](https://webuniverse-nsl.github.io/)
+- <a id="paper-2610-33149"></a>`2026.10` **[WebUniverse: Scaling Verified Training Data for Agentic Web Development](https://arxiv.org/abs/2610.33149)** [[数据集]](https://huggingface.co/datasets/WebUniverse-NSL/WebUniverse-Env) [[数据集]](https://huggingface.co/datasets/WebUniverse-NSL/WebUniverse-Mix) [[项目页]](https://webuniverse-nsl.github.io/) [[合集]](https://huggingface.co/collections/WebUniverse-NSL/webuniverse-6ad1bc77c51f1a47f876f073)
   > 构建配套网页开发环境与经验证的轨迹，结合功能和视觉检查、独立尝试及失败续写，为 Agent 监督训练提供数据。
 
 <!-- mmac-record: {"id": "2609.32600", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-32600"></a>`2026.09` **[CUA-SWE: When Computer-Use Agents Meet Visual Software Engineering](https://arxiv.org/abs/2609.32600)**
+- <a id="paper-2609-32600"></a>`2026.09` **[CUA-SWE: When Computer-Use Agents Meet Visual Software Engineering](https://arxiv.org/abs/2609.32600)** [[代码]](https://github.com/kingofspace0wzz/cua-swe) [[数据集]](https://huggingface.co/datasets/kingofspace0wzz/CUA-SWE)
   > 在 Web、游戏、移动应用和 DevOps 修复中统一源码编辑与截图驱动的计算机操作，用运行时视觉证据指导后续修改，并通过独立测试检查行为与回归。
 
 <!-- mmac-record: {"id": "2609.15387", "scope": "Adjacent", "primary": "1.1", "stage": 1, "type": "paper"} -->
@@ -271,7 +271,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2604.18224", "scope": "Adjacent", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2604-18224"></a>`2026.04` **[WebCompass: Towards Multimodal Web Coding Evaluation for Code Language Models](https://arxiv.org/abs/2604.18224)** [[代码]](https://github.com/NJU-LINK/WebCompass)
+- <a id="paper-2604-18224"></a>`2026.04` **[WebCompass: Towards Multimodal Web Coding Evaluation for Code Language Models](https://arxiv.org/abs/2604.18224)** [[代码]](https://github.com/NJU-LINK/WebCompass) [[数据集]](https://huggingface.co/datasets/NJU-LINK/WebCompass)
   > 覆盖网页生成、编辑与修复的视觉和交互评测，但不要求同一个 Agent 完成“渲染—观察—再编码”轨迹。
 
 <!-- mmac-record: {"id": "2602.18548", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
@@ -281,12 +281,12 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2507.04952", "scope": "Adjacent", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2507-04952"></a>`2025.07` **[ArtifactsBench: Bridging the Visual-Interactive Gap in LLM Code Generation Evaluation](https://arxiv.org/abs/2507.04952)** [[项目页]](https://artifactsbenchmark.github.io/)
+- <a id="paper-2507-04952"></a>`2025.07` **[ArtifactsBench: Bridging the Visual-Interactive Gap in LLM Code Generation Evaluation](https://arxiv.org/abs/2507.04952)** [[项目页]](https://artifactsbenchmark.github.io/) [[代码]](https://github.com/Tencent-Hunyuan/ArtifactsBenchmark) [[数据集]](https://huggingface.co/datasets/tencent/ArtifactsBenchmark)
   > 通过渲染视觉与运行时行为评估已完成的交互产物，但不会把所得反馈返回给后续编码动作。
 
 <!-- mmac-record: {"id": "2502.18525", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2502-18525"></a>`2025.02` **[Programming with Pixels: Can Computer-Use Agents do Software Engineering?](https://arxiv.org/abs/2502.18525)** [[Demo]](https://programmingwithpixels.com/) [[代码]](https://github.com/ProgrammingwithPixels/PwP)
+- <a id="paper-2502-18525"></a>`2025.02` **[Programming with Pixels: Can Computer-Use Agents do Software Engineering?](https://arxiv.org/abs/2502.18525)** [[Demo]](https://programmingwithpixels.com/) [[代码]](https://github.com/ProgrammingwithPixels/PwP) [[数据集]](https://github.com/ProgrammingWithPixels/PwP/tree/main/pwp_bench) [[Demo]](https://programmingwithpixels.com/#pwp-in-action)
   > 评测必须观察并操作视觉 IDE、而不能只依赖文本工具接口的 Coding Agent。
 
 #### 工具与资源
@@ -298,7 +298,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "res:agent-qa", "scope": "Resource", "primary": "1.1", "stage": 1, "type": "resource"} -->
 
-- <a id="paper-res-agent-qa"></a>**[agent-qa](https://vostride.com)** [[文档]](https://vostride.com/docs/agent-qa/mcp)
+- <a id="paper-res-agent-qa"></a>**[agent-qa](https://vostride.com)** [[文档]](https://vostride.com/docs/agent-qa/mcp) [[代码]](https://github.com/vostride/agent-qa)
   > 向编码 Agent 提供自然语言网页、Android 和 iOS 测试、截图、控制台/网络证据及判定纠正；持久 memidex 记忆与基于证据的自我改进在多次运行间保留已验证经验。
 
 <a id="tool-agent-visual-diff"></a>
@@ -371,7 +371,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2610.26828", "scope": "Adjacent", "primary": "1.2", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-26828"></a>`2026.10` **[Agent World Model in the Wild: Computer-Use Agent Environment Synthesis](https://arxiv.org/abs/2610.26828)** [[代码]](https://github.com/MSR-Orchard/WildAWM) [[数据集]](https://huggingface.co/datasets/ChilleD/WildAWM)
+- <a id="paper-2610-26828"></a>`2026.10` **[Agent World Model in the Wild: Computer-Use Agent Environment Synthesis](https://arxiv.org/abs/2610.26828)** [[代码]](https://github.com/MSR-Orchard/WildAWM) [[数据集]](https://huggingface.co/datasets/ChilleD/WildAWM) [[项目页]](https://msr-orchard.github.io/WildAWM/) [[合集]](https://huggingface.co/collections/ChilleD/agent-world-model-in-the-wild)
   > 合成覆盖 GUI、MCP 和 CLI 的可重放个人电脑世界，以异构执行轨迹和验证器一致性检查生成计算机使用训练的环境—任务包。
 
 <!-- mmac-record: {"id": "2610.37567", "scope": "Core", "primary": "1.2", "stage": 1, "type": "paper"} -->
@@ -401,7 +401,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2606.19930", "scope": "Adjacent", "primary": "1.2", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2606-19930"></a>`2026.06` **[MobileForge: Annotation-Free Adaptation for Mobile GUI Agents with Hierarchical Feedback-Guided Policy Optimization](https://arxiv.org/abs/2606.19930)** [[代码]](https://github.com/kwai/MobileForge) [[合集]](https://huggingface.co/collections/lgy0404/mobileforge-datasets) [[项目页]](https://mobile-forge.github.io/)
+- <a id="paper-2606-19930"></a>`2026.06` **[MobileForge: Annotation-Free Adaptation for Mobile GUI Agents with Hierarchical Feedback-Guided Policy Optimization](https://arxiv.org/abs/2606.19930)** [[代码]](https://github.com/kwai/MobileForge) [[合集]](https://huggingface.co/collections/lgy0404/mobileforge-datasets) [[项目页]](https://mobile-forge.github.io/) [[合集]](https://huggingface.co/collections/lgy0404/mobileforge-models) [[数据集]](https://huggingface.co/datasets/lgy0404/mobileforge-benchmark-results)
   > 从真实 App 探索中挖掘任务，跨尝试复用视觉 Critic 的纠错提示，并把优选决策转为带反馈条件的步骤级策略更新。
 
 <!-- mmac-record: {"id": "2605.25624", "scope": "Core", "primary": "1.2", "stage": 1, "type": "paper"} -->
@@ -483,12 +483,12 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2609.33386", "scope": "Adjacent", "primary": "1.3", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-33386"></a>`2026.09` **[SIVIA-RSI: Source-Grounded Adaptation of Diagramming Skills](https://arxiv.org/abs/2609.33386)**
+- <a id="paper-2609-33386"></a>`2026.09` **[SIVIA-RSI: Source-Grounded Adaptation of Diagramming Skills](https://arxiv.org/abs/2609.33386)** [[代码]](https://github.com/exsinger-hub/Sivia)
   > 根据关联源段落的视觉批评调整可复用栅格绘图指令，并用全新图像评测每个候选，区分选择偏好与跨论文关系忠实度。
 
 <!-- mmac-record: {"id": "2609.15182", "scope": "Core", "primary": "1.3", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-15182"></a>`2026.09` **[VisInteract: Towards Dynamic Interactive Text-to-Visualization under Imperfect Queries](https://arxiv.org/abs/2609.15182)**
+- <a id="paper-2609-15182"></a>`2026.09` **[VisInteract: Towards Dynamic Interactive Text-to-Visualization under Imperfect Queries](https://arxiv.org/abs/2609.15182)** [[代码]](https://github.com/wxxv/VisInteract)
   > 执行 Altair 程序，让模拟用户评阅渲染图表，并将视觉点评与文字澄清反馈用于后续代码搜索，逐步还原不完整需求中的可视化意图。
 
 <!-- mmac-record: {"id": "2608.00548", "scope": "Core", "primary": "1.3", "stage": 1, "type": "paper"} -->
@@ -558,12 +558,12 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2511.02778", "scope": "Core", "primary": "1.3", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2511-02778"></a>`2025.11` **[VCode: a Multimodal Coding Benchmark with SVG as Symbolic Visual Representation](https://arxiv.org/abs/2511.02778)**
+- <a id="paper-2511-02778"></a>`2025.11` **[VCode: a Multimodal Coding Benchmark with SVG as Symbolic Visual Representation](https://arxiv.org/abs/2511.02778)** [[代码]](https://github.com/CSU-JPG/VCode)
   > 以可执行、可编辑的 SVG Code 作为符号化视觉表示，支持并评测其迭代生成。
 
 <!-- mmac-record: {"id": "2510.23642", "scope": "Core", "primary": "1.3", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2510-23642"></a>`2025.10` **[VisCoder2: Building Multi-Language Visualization Coding Agents](https://arxiv.org/abs/2510.23642)** [[Demo]](https://tiger-ai-lab.github.io/VisCoder2/) [[代码]](https://github.com/TIGER-AI-Lab/VisCoder2)
+- <a id="paper-2510-23642"></a>`2025.10` **[VisCoder2: Building Multi-Language Visualization Coding Agents](https://arxiv.org/abs/2510.23642)** [[Demo]](https://tiger-ai-lab.github.io/VisCoder2/) [[代码]](https://github.com/TIGER-AI-Lab/VisCoder2) [[数据集]](https://huggingface.co/datasets/TIGER-Lab/VisCode-Multi-679K) [[数据集]](https://huggingface.co/datasets/TIGER-Lab/VisPlotBench)
   > 使用可执行反馈与面向修复的数据，构建跨编程语言的可视化 Coding Agent。
 
 <a id="application-paper-2509-14778"></a>
@@ -574,7 +574,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2508.15222", "scope": "Core", "primary": "1.3", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2508-15222"></a>`2025.08` **[See it. Say it. Sorted: Agentic System for Compositional Diagram Generation](https://arxiv.org/abs/2508.15222)**
+- <a id="paper-2508-15222"></a>`2025.08` **[See it. Say it. Sorted: Agentic System for Compositional Diagram Generation](https://arxiv.org/abs/2508.15222)** [[代码]](https://github.com/hantaoZhangrichard/see_it_say_it_sorted)
   > 协调视觉理解与基于代码的 SVG 构建，迭代地将草图转成组合式 Diagram。
 
 <!-- mmac-record: {"id": "2506.14837", "scope": "Core", "primary": "1.3", "stage": 1, "type": "paper"} -->
@@ -626,7 +626,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2603.25804", "scope": "Core", "primary": "1.3", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2603-25804"></a>`2026.03` **[RealChart2Code: Advancing Chart-to-Code Generation with Real Data and Multi-Task Evaluation](https://arxiv.org/abs/2603.25804)** [[代码]](https://github.com/Speakn0w/RealChart2Code)
+- <a id="paper-2603-25804"></a>`2026.03` **[RealChart2Code: Advancing Chart-to-Code Generation with Real Data and Multi-Task Evaluation](https://arxiv.org/abs/2603.25804)** [[代码]](https://github.com/Speakn0w/RealChart2Code) [[数据集]](https://huggingface.co/datasets/zjj1233/RealChart2Code)
   > 使用真实图表及其底层数据，评测生成、编辑与迭代式 Chart-to-code。
 
 <!-- mmac-record: {"id": "2603.29139", "scope": "Adjacent", "primary": "1.3", "stage": 1, "type": "paper"} -->
@@ -713,7 +713,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2608.02218", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2608-02218"></a>`2026.08` **[PosterMELD: Multi-Agent Paper-to-Poster Generation for Controllable Design Diversity with Editable Print-Ready Outputs](https://arxiv.org/abs/2608.02218)**
+- <a id="paper-2608-02218"></a>`2026.08` **[PosterMELD: Multi-Agent Paper-to-Poster Generation for Controllable Design Diversity with Editable Print-Ready Outputs](https://arxiv.org/abs/2608.02218)** [[代码]](https://github.com/Shannon4Science/PosterMELD)
   > 协调论文理解、布局规划、渲染和视觉修改，生成可编辑、可直接打印的海报。
 
 <!-- mmac-record: {"id": "2609.00194", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
@@ -728,7 +728,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2606.02915", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2606-02915"></a>`2026.06` **[Any2Poster: Any-Source Poster Generation Across Modalities and Domains](https://arxiv.org/abs/2606.02915)** [[项目页]](https://any2poster.github.io/Any2Poster/)
+- <a id="paper-2606-02915"></a>`2026.06` **[Any2Poster: Any-Source Poster Generation Across Modalities and Domains](https://arxiv.org/abs/2606.02915)** [[项目页]](https://any2poster.github.io/Any2Poster/) [[代码]](https://github.com/Any2Poster/Any2Poster) [[数据集]](https://huggingface.co/datasets/Any2Poster/Any2Poster-Bench)
   > 将异构来源转换为代码渲染海报，并用多模态审阅修复视觉缺陷。
 
 <!-- mmac-record: {"id": "2606.30296", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
@@ -758,12 +758,12 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2512.03042", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2512-03042"></a>`2025.12` **[PPTArena: A Benchmark for PowerPoint Editing](https://arxiv.org/abs/2512.03042)** [[代码]](https://github.com/michaelofengenden/PPTArena)
+- <a id="paper-2512-03042"></a>`2025.12` **[PPTArena: A Benchmark for PowerPoint Editing](https://arxiv.org/abs/2512.03042)** [[代码]](https://github.com/michaelofengenden/PPTArena) [[代码]](https://github.com/michaelofengend/PPTArena)
   > 引入真实 Deck 编辑任务与 PPTPilot，后者在迭代式“规划—编辑—检查”循环中验证 PowerPoint 修改。
 
 <!-- mmac-record: {"id": "2510.05571", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2510-05571"></a>`2025.10` **[Presenting a Paper is an Art: Self-Improvement Aesthetic Agents for Academic Presentations](https://arxiv.org/abs/2510.05571)** [[项目页]](https://evopresent.github.io/) [[代码]](https://github.com/UCSB-AI/EvoPresent)
+- <a id="paper-2510-05571"></a>`2025.10` **[Presenting a Paper is an Art: Self-Improvement Aesthetic Agents for Academic Presentations](https://arxiv.org/abs/2510.05571)** [[项目页]](https://evopresent.github.io/) [[代码]](https://github.com/UCSB-AI/EvoPresent) [[代码]](https://github.com/eric-ai-lab/EvoPresent) [[数据集]](https://huggingface.co/datasets/TobyYang7/EvoPresent)
   > 生成 HTML Presentation，并使用评分视觉设计、返回定向调整的美学 Checker 持续迭代。
 
 <!-- mmac-record: {"id": "2505.17104", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
@@ -790,7 +790,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "system:mka", "scope": "Adjacent", "primary": "1.4", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-system-mka"></a>`2026.11` **[MKA: Evaluating Multimodal Knowledge Agents on end-to-end professional tasks](https://storage.googleapis.com/deepmind-media/papers/mka_tech_paper.pdf)** [[结果]](https://artificialanalysis.ai/evaluations/mka) [[数据集]](https://huggingface.co/datasets/google/multimodal-knowledge-agent)
+- <a id="paper-system-mka"></a>`2026.11` **[MKA: Evaluating Multimodal Knowledge Agents on end-to-end professional tasks](https://storage.googleapis.com/deepmind-media/papers/mka_tech_paper.pdf)** [[结果]](https://artificialanalysis.ai/evaluations/mka) [[数据集]](https://huggingface.co/datasets/google/multimodal-knowledge-agent) [[文章]](https://blog.google/innovation-and-ai/models-and-research/gemini-models/multimodal-knowledge-agent-benchmark/)
   > 通过统一工具Harness、专家加权准则及独立视觉／程序化评审器，评估视觉多文件知识工作与专业交付物。
 
 <!-- mmac-record: {"id": "2611.10592", "scope": "Adjacent", "primary": "1.4", "stage": 1, "type": "paper"} -->
@@ -800,12 +800,12 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2610.37341", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-37341"></a>`2026.10` **[CodeCap-Bench: Can Code Serve as a Good Video Caption?](https://arxiv.org/abs/2610.37341)** [[项目页]](https://codecap-bench.github.io/)
+- <a id="paper-2610-37341"></a>`2026.10` **[CodeCap-Bench: Can Code Serve as a Good Video Caption?](https://arxiv.org/abs/2610.37341)** [[项目页]](https://codecap-bench.github.io/) [[代码]](https://github.com/kevin236-max/CodeCap-Bench) [[数据集]](https://huggingface.co/datasets/kevintank/CodeCap-Dataset)
   > 评测可执行代码对结构化视频的表达能力，Agentic 配置比较同时间戳的浏览器渲染与参考帧后迭代重建。
 
 <!-- mmac-record: {"id": "2610.38425", "scope": "Adjacent", "primary": "1.4", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-38425"></a>`2026.10` **[IntReal: A Real-World Dataset and Benchmark for Multimodal Interleaved Generation](https://arxiv.org/abs/2610.38425)** [[代码]](https://github.com/yushaohan/IntReal) [[数据集]](https://huggingface.co/datasets/yushaohan/IntReal-100K) [[项目页]](https://yushaohan.github.io/IntReal/)
+- <a id="paper-2610-38425"></a>`2026.10` **[IntReal: A Real-World Dataset and Benchmark for Multimodal Interleaved Generation](https://arxiv.org/abs/2610.38425)** [[代码]](https://github.com/yushaohan/IntReal) [[数据集]](https://huggingface.co/datasets/yushaohan/IntReal-100K) [[项目页]](https://yushaohan.github.io/IntReal/) [[合集]](https://huggingface.co/collections/yushaohan/intreal) [[榜单]](https://huggingface.co/spaces/yushaohan/IntReal-Leaderboard)
   > 结合真实来源的图文交错数据与专家评测器，分别诊断整体质量和上下文条件下的图像忠实度，并区分生成后评测与生成器自身的反馈闭环。
 
 <!-- mmac-record: {"id": "2610.35864", "scope": "Adjacent", "primary": "1.4", "stage": 1, "type": "paper"} -->
@@ -815,7 +815,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2606.28593", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2606-28593"></a>`2026.06` **[Animation2Code: Evaluating Temporal Visual Reasoning in Video-to-Code Generation](https://arxiv.org/abs/2606.28593)** [[项目页]](https://anya-ji.github.io/animation2code-website/)
+- <a id="paper-2606-28593"></a>`2026.06` **[Animation2Code: Evaluating Temporal Visual Reasoning in Video-to-Code Generation](https://arxiv.org/abs/2606.28593)** [[项目页]](https://anya-ji.github.io/animation2code-website/) [[代码]](https://github.com/anya-ji/animation2code) [[数据集]](https://huggingface.co/datasets/anim2code/dataset)
   > 评测从视频重建可执行动画时的时间理解与迭代细化。
 
 #### 工具与资源
@@ -880,7 +880,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2610.22341", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-22341"></a>`2026.10` **[3DCodeVerse: Exploring 3D Worlds as Code](https://arxiv.org/abs/2610.22341)** [[项目页]](https://3dcodeverse.com/) [[代码]](https://github.com/gaoypeng/3dcodeverse)
+- <a id="paper-2610-22341"></a>`2026.10` **[3DCodeVerse: Exploring 3D Worlds as Code](https://arxiv.org/abs/2610.22341)** [[项目页]](https://3dcodeverse.com/) [[代码]](https://github.com/gaoypeng/3dcodeverse) [[数据集]](https://huggingface.co/datasets/3dcodeverse/3dcodeverse-2m) [[数据集]](https://huggingface.co/datasets/ilabai/3dcodeverse)
   > 将跨运行环境的 3D 程序语料与 DAG 编程 Harness 结合，把几何测量和多视图视觉点评转为限定文件范围的定向程序修订。
 
 <!-- mmac-record: {"id": "2610.09127", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -900,7 +900,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2610.23121", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-23121"></a>`2026.10` **[Scene-Designer: Learning Design Intelligence for Agentic 3D Scene Generation](https://arxiv.org/abs/2610.23121)** [[代码]](https://github.com/ZJU-OmniAI/Scene-Designer) [[数据集]](https://huggingface.co/datasets/XuanyuLiu/Scene-OTC-Bench) [[项目页]](https://zju-omniai.github.io/Scene-Designer/)
+- <a id="paper-2610-23121"></a>`2026.10` **[Scene-Designer: Learning Design Intelligence for Agentic 3D Scene Generation](https://arxiv.org/abs/2610.23121)** [[代码]](https://github.com/ZJU-OmniAI/Scene-Designer) [[数据集]](https://huggingface.co/datasets/XuanyuLiu/Scene-OTC-Bench) [[项目页]](https://zju-omniai.github.io/Scene-Designer/) [[Demo]](https://zju-omniai.github.io/Scene-Designer/#demo)
   > 从压缩后的编辑轨迹与场景扰动排序中学习构建和批评能力，以渲染观测和 Critic 引导的可执行编辑持续改进室内布局。
 
 <!-- mmac-record: {"id": "2610.09116", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -930,7 +930,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2609.26793", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-26793"></a>`2026.09` **[HARMONY: Hierarchical Agentic Reasoning for MONocular Image-to-Scene Synthesis](https://arxiv.org/abs/2609.26793)** [[项目页]](https://cwchenwang.github.io/harmony/) [[代码]](https://github.com/ShufanSun/harmony-release)
+- <a id="paper-2609-26793"></a>`2026.09` **[HARMONY: Hierarchical Agentic Reasoning for MONocular Image-to-Scene Synthesis](https://arxiv.org/abs/2609.26793)** [[项目页]](https://cwchenwang.github.io/harmony/) [[代码]](https://github.com/ShufanSun/harmony-release) [[数据集]](https://huggingface.co/datasets/ShufanSun/harmony)
   > 将 VLM 空间推理与图像、3D 和几何工具结合，通过逐阶段参考图—渲染点评修订渲染器消费的房间、摆放与灯光规格。
 
 <!-- mmac-record: {"id": "2609.36380", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -940,7 +940,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2609.11499", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-11499"></a>`2026.09` **[Recursive Code World Models: Building Complex Worlds through Recursive Scene Programs](https://arxiv.org/abs/2609.11499)**
+- <a id="paper-2609-11499"></a>`2026.09` **[Recursive Code World Models: Building Complex Worlds through Recursive Scene Programs](https://arxiv.org/abs/2609.11499)** [[代码]](https://github.com/ZhiqiLi-CG/RecursiveCWM_code)
   > 将复杂 Three.js 世界构造成递归场景程序：每个子世界拥有自己的“渲染—观察—改码”闭环，返回的代码还会在父级上下文中重新渲染并联合修复。
 
 <!-- mmac-record: {"id": "2609.22325", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -960,7 +960,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2608.17975", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2608-17975"></a>`2026.08` **[aDSL: Agentic 3D Creation via Joint Agent-Program Design](https://arxiv.org/abs/2608.17975)**
+- <a id="paper-2608-17975"></a>`2026.08` **[aDSL: Agentic 3D Creation via Joint Agent-Program Design](https://arxiv.org/abs/2608.17975)** [[代码]](https://github.com/sig-pku/aDSL)
   > 联合设计 Agent 工作流与领域专用程序表示，以支持迭代式 3D 创建。
 
 <!-- mmac-record: {"id": "2608.24020", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -1000,7 +1000,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2606.13368", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2606-13368"></a>`2026.06` **[IterCAD: An Iterative Multimodal Agent for Visually-Grounded CAD Generation and Editing](https://arxiv.org/abs/2606.13368)**
+- <a id="paper-2606-13368"></a>`2026.06` **[IterCAD: An Iterative Multimodal Agent for Visually-Grounded CAD Generation and Editing](https://arxiv.org/abs/2606.13368)** [[代码]](https://github.com/KnowledgeXLab/IterCAD) [[模型]](https://huggingface.co/KnowledgeXLab/IterCAD-RL) [[数据集]](https://huggingface.co/datasets/KnowledgeXLab/IterCAD_Data)
   > 将多模态 Agent 放入 CAD Sandbox，进行反复执行、视觉检查、编辑与恢复。
 
 <!-- mmac-record: {"id": "2606.02580", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -1020,12 +1020,12 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2603.12238", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2603-12238"></a>`2026.03` **[SceneAssistant: A Visual Feedback Agent for Open-Vocabulary 3D Scene Generation](https://arxiv.org/abs/2603.12238)**
+- <a id="paper-2603-12238"></a>`2026.03` **[SceneAssistant: A Visual Feedback Agent for Open-Vocabulary 3D Scene Generation](https://arxiv.org/abs/2603.12238)** [[代码]](https://github.com/ROUJINN/SceneAssistant)
   > 检查渲染后的 3D 场景，并将物体、布局和外观错误转成后续场景编辑。
 
 <!-- mmac-record: {"id": "2603.29847", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2603-29847"></a>`2026.02` **[CADReasoner: Iterative Program Editing for CAD Reverse Engineering](https://arxiv.org/abs/2603.29847)**
+- <a id="paper-2603-29847"></a>`2026.02` **[CADReasoner: Iterative Program Editing for CAD Reverse Engineering](https://arxiv.org/abs/2603.29847)** [[代码]](https://github.com/zhemdi/CADReasoner) [[模型]](https://huggingface.co/kulibinai/cadreasoner)
   > 根据目标与当前重建的几何差异，结合多视角渲染和点云反馈，逐步重写可运行的 CadQuery 程序。
 
 <a id="application-paper-2603-00805"></a>
@@ -1094,7 +1094,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2610.03715", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-03715"></a>`2026.10` **[4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes](https://arxiv.org/abs/2610.03715)**
+- <a id="paper-2610-03715"></a>`2026.10` **[4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes](https://arxiv.org/abs/2610.03715)** [[代码]](https://github.com/4DCodeBench/4DCodeBench)
   > 要求 Agent 将真实或合成的动态视频重建成可执行图形程序，恢复场景的三维结构及其随时间发生的变化。基准同时比较画面和运动，并利用合成场景的三维真值作更直接的检查；实现方式可以是关键帧、解析轨迹或物理模拟。
 
 <a id="work-blenderworld"></a>
@@ -1105,17 +1105,17 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2610.12452", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-12452"></a>`2026.10` **[BrickBench: Evaluating Agentic Brick Design](https://arxiv.org/abs/2610.12452)** [[项目页]](https://brickben.ch/) [[代码]](https://github.com/kulits/BrickAgent)
+- <a id="paper-2610-12452"></a>`2026.10` **[BrickBench: Evaluating Agentic Brick Design](https://arxiv.org/abs/2610.12452)** [[项目页]](https://brickben.ch/) [[代码]](https://github.com/kulits/BrickAgent) [[数据集]](https://huggingface.co/datasets/kulits/BrickBench-Runs)
   > 在规模与库存约束下评测程序化积木装配，分别检查碰撞／稳定性有效性、多视角语义一致性及人类验证的设计偏好。
 
 <!-- mmac-record: {"id": "2610.16577", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-16577"></a>`2026.10` **[CineRecon: Benchmarking Frontier Models for Agentic Cinematic Reconstruction](https://arxiv.org/abs/2610.16577)** [[项目页]](https://cinerecon.github.io/)
+- <a id="paper-2610-16577"></a>`2026.10` **[CineRecon: Benchmarking Frontier Models for Agentic Cinematic Reconstruction](https://arxiv.org/abs/2610.16577)** [[项目页]](https://cinerecon.github.io/) [[代码]](https://github.com/Unc1eW4ng/CineRecon)
   > 评测依据同时间点渲染—参考对照修订 Blender Python 场景的 Agent，在三档外观细节下分别衡量摄像机、静态与动态一致性。
 
 <!-- mmac-record: {"id": "2610.04292", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-04292"></a>`2026.10` **[LMBuild: Evaluating LLM Agents for Generating Buildable and Functional Structures](https://arxiv.org/abs/2610.04292)** [[代码]](https://github.com/Lumos-Jiateng/LMBuild) [[项目页]](https://lumos-jiateng.github.io/LMBuild/)
+- <a id="paper-2610-04292"></a>`2026.10` **[LMBuild: Evaluating LLM Agents for Generating Buildable and Functional Structures](https://arxiv.org/abs/2610.04292)** [[代码]](https://github.com/Lumos-Jiateng/LMBuild) [[项目页]](https://lumos-jiateng.github.io/LMBuild/) [[数据集]](https://huggingface.co/datasets/Lumos-Jiateng/LMBuild)
   > 通过可执行 CSG 和装配操作构建部件化结构，将渲染视图与诊断返回后续复核轮次，并评测结构健全、功能可供性、设计及物理实现。
 
 <!-- mmac-record: {"id": "2609.40353", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -1125,12 +1125,12 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2609.15478", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-15478"></a>`2026.09` **[BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender](https://arxiv.org/abs/2609.15478)** [[代码]](https://github.com/yunlong10/BVB/blob/main/eval/dual_vqa_metric.py)
+- <a id="paper-2609-15478"></a>`2026.09` **[BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender](https://arxiv.org/abs/2609.15478)** [[代码]](https://github.com/yunlong10/BVB/blob/main/eval/dual_vqa_metric.py) [[项目页]](https://yoloytang.me/BVB/) [[代码]](https://github.com/yoloytang/BVB)
   > 让多模态 Agent 在统一预算和运行环境中，把真实视频重新写成带动画的 Blender 场景。通过渲染相似性以及原视频和重建视频中的时空事实是否一致，检验模型能否把视频理解转化为可复现的程序表达。
 
 <!-- mmac-record: {"id": "2609.16251", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-16251"></a>`2026.09` **[CADWorld: Computer-Use Benchmark for Long-Horizon Computer-Aided Design](https://arxiv.org/abs/2609.16251)** [[项目页]](https://cad-world.github.io/)
+- <a id="paper-2609-16251"></a>`2026.09` **[CADWorld: Computer-Use Benchmark for Long-Horizon Computer-Aided Design](https://arxiv.org/abs/2609.16251)** [[项目页]](https://cad-world.github.io/) [[数据集]](https://huggingface.co/datasets/Zihan1004/CADWORLD) [[模型]](https://huggingface.co/Zihan1004/CADWorld) [[代码]](https://github.com/Zdong104/CADWORLD)
   > 通过持久化原生 CAD 产物的可执行检查，评测截图驱动的 FreeCAD GUI 工作流，为代码生成研究补充工程过程与约束验证。
 
 <!-- mmac-record: {"id": "2609.36777", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -1140,12 +1140,12 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2609.37686", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-37686"></a>`2026.09` **[EngiWorld: What Can Frontier Agents Deliver in Professional Engineering Environments?](https://arxiv.org/abs/2609.37686)** [[项目页]](https://engiworld.github.io)
+- <a id="paper-2609-37686"></a>`2026.09` **[EngiWorld: What Can Frontier Agents Deliver in Professional Engineering Environments?](https://arxiv.org/abs/2609.37686)** [[项目页]](https://engiworld.github.io) [[代码]](https://github.com/Hongcheng-Gao/EngiWorld) [[数据集]](https://huggingface.co/datasets/HongchengGao/EngiWorld-Tasks) [[数据集]](https://huggingface.co/datasets/HongchengGao/EngiWorld-Images)
   > 以产物级几何、物理及跨工具一致性检查评估六类工程领域、26 个软件平台上的 GUI／CLI 工作流，并分析运行时图像访问的影响。
 
 <!-- mmac-record: {"id": "2611.02659", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2611-02659"></a>`2026.09` **[Parametric CAD Bench v3: Evaluating Agentic Parametric CAD Authoring from Text and Engineering Drawings](https://arxiv.org/abs/2611.02659)** [[项目页]](https://cadbench.ai/) [[文章]](https://cadbench.ai/news/cad-bench-v3) [[数据集]](https://huggingface.co/datasets/gnucleus-ai/cad-gen-freecad-bench-v3)
+- <a id="paper-2611-02659"></a>`2026.09` **[Parametric CAD Bench v3: Evaluating Agentic Parametric CAD Authoring from Text and Engineering Drawings](https://arxiv.org/abs/2611.02659)** [[项目页]](https://cadbench.ai/) [[文章]](https://cadbench.ai/news/cad-bench-v3) [[数据集]](https://huggingface.co/datasets/gnucleus-ai/cad-gen-freecad-bench-v3) [[代码]](https://github.com/anniedoris/CADBench)
   > 评测根据文字、先创建再编辑的要求和工程图纸，构建原生参数化 CAD 产物的能力。
 
 <!-- mmac-record: {"id": "2608.05539", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -1155,7 +1155,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2606.01057", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2606-01057"></a>`2026.05` **[3DCodeBench: Benchmarking Agentic Procedural 3D Modeling Via Code](https://arxiv.org/abs/2606.01057)** [[Demo]](https://www.3dcodebench.com/)
+- <a id="paper-2606-01057"></a>`2026.05` **[3DCodeBench: Benchmarking Agentic Procedural 3D Modeling Via Code](https://arxiv.org/abs/2606.01057)** [[Demo]](https://www.3dcodebench.com/) [[代码]](https://github.com/gaoypeng/3dcodebench) [[数据集]](https://huggingface.co/datasets/YipengGao/3DCode)
   > 使用可执行程序和渲染输出评估，测试 Coding Agent 的程序化 3D 建模能力。
 
 <!-- mmac-record: {"id": "2605.07807", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -1217,7 +1217,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "res:blender-lab-mcp-server", "scope": "Resource", "primary": "1.5", "stage": 1, "type": "resource"} -->
 
-- <a id="paper-res-blender-lab-mcp-server"></a>**[Blender Lab MCP Server](https://www.blender.org/lab/mcp-server/)** [[代码]](https://github.com/ahujasid/blender-mcp)
+- <a id="paper-res-blender-lab-mcp-server"></a>**[Blender Lab MCP Server](https://www.blender.org/lab/mcp-server/)** [[代码]](https://github.com/ahujasid/blender-mcp) [[代码]](https://projects.blender.org/lab/blender_mcp)
   > 支持 Agent 在 Blender 中检查场景并执行 Python；社区 Demo 展示参考图到场景、Blender 到 Three.js 等工作流。
 
 <!-- mmac-record: {"id": "res:blender-agent-skills", "scope": "Resource", "primary": "1.5", "stage": 1, "type": "resource"} -->
@@ -1322,7 +1322,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "res:zoo-developer-tools", "scope": "Resource", "primary": "1.5", "stage": 1, "type": "resource"} -->
 
-- <a id="paper-res-zoo-developer-tools"></a>**[Zoo developer tools](https://docs.zoo.dev/docs)**
+- <a id="paper-res-zoo-developer-tools"></a>**[Zoo developer tools](https://docs.zoo.dev/docs)** [[文档]](https://zoo.dev/docs/developer-tools/mcp)
   > 将语言驱动的 KCL 工作流连接到几何执行、快照、检查和调试。
 
 [↑ 返回目录](#contents)
@@ -1346,7 +1346,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2610.05033", "scope": "Adjacent", "primary": "1.6", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-05033"></a>`2026.10` **[Code2Games: Enabling Coding Agents for Gaming World Generation](https://arxiv.org/abs/2610.05033)**
+- <a id="paper-2610-05033"></a>`2026.10` **[Code2Games: Enabling Coding Agents for Gaming World Generation](https://arxiv.org/abs/2610.05033)** [[代码]](https://github.com/AIGeeksGroup/Code2Games)
   > 以持久实体身份连接 Blender 场景结构、视觉引导的玩法摆放与 Unreal Engine 逻辑，并用编译诊断和脚本化玩法测试修复引擎迁移。
 
 <!-- mmac-record: {"id": "2610.16776", "scope": "Core", "primary": "1.6", "stage": 1, "type": "paper"} -->
@@ -1372,7 +1372,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2609.39045", "scope": "Core", "primary": "1.6", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-39045"></a>`2026.09` **[RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement](https://arxiv.org/abs/2609.39045)** [[代码]](https://github.com/WenyiWU0111/RSIGame)
+- <a id="paper-2609-39045"></a>`2026.09` **[RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement](https://arxiv.org/abs/2609.39045)** [[代码]](https://github.com/WenyiWU0111/RSIGame) [[项目页]](https://huggingface.co/spaces/RSIGame/rsigame-page)
   > 通过证据驱动的试玩—编辑—复验循环改进 Godot 与 Phaser 项目，以演化清单和回放比较保留最佳版本，并将成功开发经验用于训练。
 
 <!-- mmac-record: {"id": "2608.25518", "scope": "Core", "primary": "1.6", "stage": 1, "type": "paper"} -->
@@ -1397,7 +1397,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2605.05138", "scope": "Core", "primary": "1.6", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2605-05138"></a>`2026.05` **[Executable World Models for ARC-AGI-3 in the Era of Coding Agents](https://arxiv.org/abs/2605.05138)**
+- <a id="paper-2605-05138"></a>`2026.05` **[Executable World Models for ARC-AGI-3 in the Era of Coding Agents](https://arxiv.org/abs/2605.05138)** [[代码]](https://github.com/astroseger/arc-3-agents-baseline1/tree/main/papers/paper01/secure_baseline1)
   > 随着新游戏观测到来维护、验证和重构 Python 世界模型，再使用它进行规划。
 
 <!-- mmac-record: {"id": "2605.28258", "scope": "Core", "primary": "1.6", "stage": 1, "type": "paper"} -->
@@ -1465,7 +1465,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2609.22308", "scope": "Core", "primary": "1.6", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-22308"></a>`2026.09` **[GameReplica: A Benchmark for Black-Box Visual Game Replication by Vision-Language Agents](https://arxiv.org/abs/2609.22308)**
+- <a id="paper-2609-22308"></a>`2026.09` **[GameReplica: A Benchmark for Black-Box Visual Game Replication by Vision-Language Agents](https://arxiv.org/abs/2609.22308)** [[项目页]](https://qqqqqqby.github.io/GameReplica/)
   > 测试从仅截图探索出发的黑箱游戏复刻，让 Agent 运行、目视检查并修订自己的 HTML 副本，再分别评估实现、规则一致性与外观。
 
 <!-- mmac-record: {"id": "2609.33678", "scope": "Adjacent", "primary": "1.6", "stage": 1, "type": "paper"} -->
@@ -1557,7 +1557,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "res:ziva-playtesting-workflow", "scope": "Resource", "primary": "1.6", "stage": 1, "type": "resource"} -->
 
-- <a id="paper-res-ziva-playtesting-workflow"></a>**[Ziva playtesting workflow](https://ziva.sh/blogs/ai-agent-playtest-godot-game)** [[文档]](https://ziva.sh/docs/playtest)
+- <a id="paper-res-ziva-playtesting-workflow"></a>**[Ziva playtesting workflow](https://ziva.sh/blogs/ai-agent-playtest-godot-game)** [[文档]](https://ziva.sh/docs/playtest) [[仓库]](https://github.com/ziva-sh/ziva-agent-plugin-godot)
   > 完整试玩 Agent 检查现场状态与截图，返回结论、复现步骤及重放证据；它本身不编辑项目，修复需交回开发 Agent。厂商演示不等于独立基准证据。
 
 [↑ 返回目录](#contents)
@@ -1585,7 +1585,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2610.34921", "scope": "Adjacent", "primary": "1.7", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-34921"></a>`2026.10` **[PhysEvolve: Verifier-grounded Self-evolution for Physical Reasoning with Executable Worlds](https://arxiv.org/abs/2610.34921)** [[项目页]](https://yelonhu.github.io/physevolve-page/)
+- <a id="paper-2610-34921"></a>`2026.10` **[PhysEvolve: Verifier-grounded Self-evolution for Physical Reasoning with Executable Worlds](https://arxiv.org/abs/2610.34921)** [[项目页]](https://yelonhu.github.io/physevolve-page/) [[代码]](https://github.com/yelonhu/PhysEvolve) [[模型]](https://huggingface.co/YelonLFT/physevolve-v7i-0851-step100)
   > 通过确定性反事实仿真和绑定准确答案的奖励，共同训练世界程序提议者与视觉解题者，以跨轮策略更新提升物理推理。
 
 <!-- mmac-record: {"id": "2610.36077", "scope": "Adjacent", "primary": "1.7", "stage": 1, "type": "paper"} -->
@@ -1622,12 +1622,12 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 <!-- mmac-record: {"id": "2604.18164", "scope": "Adjacent", "primary": "1.7", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2604-18164"></a>`2026.04` **[MM-JudgeBias: A Benchmark for Evaluating Compositional Biases in MLLM-as-a-Judge](https://arxiv.org/abs/2604.18164)** [[代码]](https://github.com/naver-ai/MM-JudgeBias) [[数据集]](https://huggingface.co/datasets/naver-ai/MM-JudgeBias)
+- <a id="paper-2604-18164"></a>`2026.04` **[MM-JudgeBias: A Benchmark for Evaluating Compositional Biases in MLLM-as-a-Judge](https://arxiv.org/abs/2604.18164)** [[代码]](https://github.com/naver-ai/MM-JudgeBias) [[数据集]](https://huggingface.co/datasets/naver-ai/MM-JudgeBias) [[项目页]](https://mm-judgebias.github.io/)
   > 通过九类受控扰动检验多模态裁判是否利用完整的问题—图像—回答证据，并区分缺失／错配证据敏感性与无关变化下的稳定性。
 
 <!-- mmac-record: {"id": "2511.15567", "scope": "Core", "primary": "1.7", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2511-15567"></a>`2025.11` **[Computer-Use Agents as Judges for Generative User Interface](https://arxiv.org/abs/2511.15567)** [[代码]](https://github.com/showlab/AUI) [[项目页]](https://showlab.github.io/AUI/)
+- <a id="paper-2511-15567"></a>`2025.11` **[Computer-Use Agents as Judges for Generative User Interface](https://arxiv.org/abs/2511.15567)** [[代码]](https://github.com/showlab/AUI) [[项目页]](https://showlab.github.io/AUI/) [[Demo]](https://huggingface.co/spaces/showlab/AUI)
   > 将 Coding Model 与测试生成界面的 Computer-use Agent 配对，并把视觉交互历史返回用于重新设计。
 
 #### 工具与资源
@@ -1715,7 +1715,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2610.38352", "scope": "Core", "primary": "2.2", "stage": 2, "type": "paper"} -->
 
-- <a id="paper-2610-38352"></a>`2026.10` **[WeVisCut: The Whole Editing Room in One Agent From Narration to Long-Form Video](https://arxiv.org/abs/2610.38352)** [[代码]](https://github.com/Tencent/WeVisCut) [[模型]](https://huggingface.co/tencent/WeVisCut) [[项目页]](https://tencent.github.io/WeVisCut/)
+- <a id="paper-2610-38352"></a>`2026.10` **[WeVisCut: The Whole Editing Room in One Agent From Narration to Long-Form Video](https://arxiv.org/abs/2610.38352)** [[代码]](https://github.com/Tencent/WeVisCut) [[模型]](https://huggingface.co/tencent/WeVisCut) [[项目页]](https://tencent.github.io/WeVisCut/) [[Demo]](https://tencent.github.io/WeVisCut/#demo)
   > 训练共享编辑策略构建可执行镜头计划、编排旁白与媒体工具，并依据渲染产物的生产反馈修订模板内容和时间线。
 
 <!-- mmac-record: {"id": "2609.24997", "scope": "Adjacent", "primary": "2.2", "stage": 2, "type": "paper"} -->
@@ -1742,7 +1742,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "res:moviedit", "scope": "Resource", "primary": "2.2", "stage": 2, "type": "resource"} -->
 
-- <a id="paper-res-moviedit"></a>**[MoviEdit](https://arxiv.org/abs/2611.02737)** [[项目页]](https://multi-shot-edit.github.io/) [[项目页]](https://multi-shot-edit.github.io/benchmark.html)
+- <a id="paper-res-moviedit"></a>**[MoviEdit](https://arxiv.org/abs/2611.02737)** [[项目页]](https://multi-shot-edit.github.io/) [[项目页]](https://multi-shot-edit.github.io/benchmark.html) [[数据集]](https://github.com/adobe-research/MoviEdit-Bench)
   > 源视频＋编辑文字或编辑后的参考帧 → 跨镜头一致的编辑视频。以全局草稿指导全分辨率自回归编辑，配套64视频／128场景评测；项目提供演示和评测清单，尚无模型下载入口。
 
 <!-- mmac-record: {"id": "res:omnishowcase-omnidirectional-subject-consistent-video-generation-from-multi-view-images", "scope": "Resource", "primary": "2.2", "stage": 2, "type": "resource"} -->
@@ -1760,7 +1760,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "res:dynamesh", "scope": "Resource", "primary": "2.3", "stage": 2, "type": "resource"} -->
 
-- <a id="paper-res-dynamesh"></a>**[DynaMesh](https://arxiv.org/abs/2610.05529)** [[项目页]](https://threedle.github.io/dynamesh/)
+- <a id="paper-res-dynamesh"></a>**[DynaMesh](https://arxiv.org/abs/2610.05529)** [[项目页]](https://threedle.github.io/dynamesh/) [[代码]](https://github.com/threedle/dynamesh)
   > Mesh + 效果提示词 → 固定 mesh 与随时间变化的纹理序列。将参考视频与 3D 生成器的时序条件、逐形状适配器结合；几何固定而外观演化，可为资产工作流提供表面效果，不是物理动力学模拟。
 
 <!-- mmac-record: {"id": "res:hairdeck-animation-ready-stylized-hair-cards-from-a-single-image", "scope": "Resource", "primary": "2.3", "stage": 2, "type": "resource"} -->
@@ -1828,7 +1828,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2611.04870", "scope": "Adjacent", "primary": "2.4", "stage": 2, "type": "paper"} -->
 
-- <a id="paper-2611-04870"></a>`2026.11` **[PrimeSim: A Generalist World Model Simulator from Large-Scale Cross-Embodiment Demonstrations](https://arxiv.org/abs/2611.04870)** [[项目页]](https://primebottech.github.io/PrimeSim-website)
+- <a id="paper-2611-04870"></a>`2026.11` **[PrimeSim: A Generalist World Model Simulator from Large-Scale Cross-Embodiment Demonstrations](https://arxiv.org/abs/2611.04870)** [[项目页]](https://primebottech.github.io/PrimeSim-website) [[代码]](https://github.com/PrimebotTech/PrimeSim) [[模型]](https://huggingface.co/qiyuan-robot/PrimeSim)
   > 将动作条件多视角视频模型用作闭环策略仿真器，检验策略排序及短预算强化学习收益能否迁回 LIBERO 物理仿真器。
 
 <!-- mmac-record: {"id": "2610.01215", "scope": "Adjacent", "primary": "2.4", "stage": 2, "type": "paper"} -->
@@ -1853,7 +1853,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2610.26811", "scope": "Adjacent", "primary": "2.4", "stage": 2, "type": "paper"} -->
 
-- <a id="paper-2610-26811"></a>`2026.10` **[State World Models: Execute the Rules, Generate the Pixels](https://arxiv.org/abs/2610.26811)** [[代码]](https://github.com/Zhangyr2022/StateWorldModel) [[数据集]](https://huggingface.co/datasets/Louis0411/StateWorldModel) [[项目页]](https://ivg-yanranzhang.github.io/StateWorldModel/)
+- <a id="paper-2610-26811"></a>`2026.10` **[State World Models: Execute the Rules, Generate the Pixels](https://arxiv.org/abs/2610.26811)** [[代码]](https://github.com/Zhangyr2022/StateWorldModel) [[数据集]](https://huggingface.co/datasets/Louis0411/StateWorldModel) [[项目页]](https://ivg-yanranzhang.github.io/StateWorldModel/) [[Demo]](https://ivg-yanranzhang.github.io/StateWorldModel/#worlds)
   > 将 Coding Agent 编写的规则与冻结视频模型的渲染分离，把已结算事件编译成视觉指令，并将符合规则的视频观测纳入后续世界状态。
 
 <!-- mmac-record: {"id": "2610.36925", "scope": "Adjacent", "primary": "2.4", "stage": 2, "type": "paper"} -->
@@ -1870,7 +1870,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "res:cosmos3-nano-sim-auto", "scope": "Resource", "primary": "2.4", "stage": 2, "type": "resource"} -->
 
-- <a id="paper-res-cosmos3-nano-sim-auto"></a>**[Cosmos3-Nano-Sim-Auto](https://huggingface.co/nvidia/Cosmos3-Nano-Sim-Auto)** [[文章]](https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos/) [[文档]](https://github.com/NVIDIA/cosmos-framework/blob/main/docs/inference_sim_auto.md)
+- <a id="paper-res-cosmos3-nano-sim-auto"></a>**[Cosmos3-Nano-Sim-Auto](https://huggingface.co/nvidia/Cosmos3-Nano-Sim-Auto)** [[文章]](https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos/) [[文档]](https://github.com/NVIDIA/cosmos-framework/blob/main/docs/inference_sim_auto.md) [[代码]](https://github.com/NVIDIA/cosmos-framework)
   > 具备公开权重及 Cosmos Framework 推理／适配 Skills 的因果世界模型工具；生成传感器反馈可用于策略评估，相机配置适配与仿真到真实有效性需分别检查。
 
 <!-- mmac-record: {"id": "res:genie-4", "scope": "Resource", "primary": "2.4", "stage": 2, "type": "resource"} -->
@@ -1897,12 +1897,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2611.06083", "scope": "Adjacent", "primary": "2.5", "stage": 2, "type": "paper"} -->
 
-- <a id="paper-2611-06083"></a>`2026.11` **[SleuthVLM: Do We Really Need Audio-in-Video for Omni Video Understanding?](https://arxiv.org/abs/2611.06083)** [[项目页]](https://wpr001.github.io/sleuthVLM/)
+- <a id="paper-2611-06083"></a>`2026.11` **[SleuthVLM: Do We Really Need Audio-in-Video for Omni Video Understanding?](https://arxiv.org/abs/2611.06083)** [[项目页]](https://wpr001.github.io/sleuthVLM/) [[代码]](https://github.com/WPR001/OpenOmniHarness)
   > 将带时间戳的转写用作索引，让 VLM 自适应查看帧与片段，并可调用音频模型补充语音转写无法提供的证据。
 
 <!-- mmac-record: {"id": "2610.06955", "scope": "Adjacent", "primary": "2.5", "stage": 2, "type": "paper"} -->
 
-- <a id="paper-2610-06955"></a>`2026.10` **[ROMA: LLM System for Real-World Object-Centric Multi-Sensory Active Perception](https://arxiv.org/abs/2610.06955)** [[项目页]](https://gewu-lab.github.io/ROMA/) [[代码]](https://github.com/GeWu-Lab/ROMA)
+- <a id="paper-2610-06955"></a>`2026.10` **[ROMA: LLM System for Real-World Object-Centric Multi-Sensory Active Perception](https://arxiv.org/abs/2610.06955)** [[项目页]](https://gewu-lab.github.io/ROMA/) [[代码]](https://github.com/GeWu-Lab/ROMA) [[Demo]](https://huggingface.co/spaces/xxuan01/ROMA-Demo) [[模型]](https://huggingface.co/GeWu-Lab/ROMA-7B) [[数据集]](https://huggingface.co/datasets/GeWu-Lab/ROMA)
   > 通过抓取接口选择物体、物理交互和感官模态以获取缺失证据，再调整后续主动感知决策，而非改写策略代码。
 
 <!-- mmac-record: {"id": "2610.28354", "scope": "Adjacent", "primary": "2.5", "stage": 2, "type": "paper"} -->
@@ -1953,7 +1953,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2610.23334", "scope": "Adjacent", "primary": "2.6", "stage": 2, "type": "paper"} -->
 
-- <a id="paper-2610-23334"></a>`2026.10` **[LAW: Unifying Language, Action, and World Modeling for Agentic Physical Intelligence](https://arxiv.org/abs/2610.23334)** [[代码]](https://github.com/hey-cjj/LAW) [[项目页]](https://hey-cjj.github.io/LAW-project/) [[数据集]](https://huggingface.co/datasets/KAITANG2003/LAW-RoboTwin-VLM-Training)
+- <a id="paper-2610-23334"></a>`2026.10` **[LAW: Unifying Language, Action, and World Modeling for Agentic Physical Intelligence](https://arxiv.org/abs/2610.23334)** [[代码]](https://github.com/hey-cjj/LAW) [[项目页]](https://hey-cjj.github.io/LAW-project/) [[数据集]](https://huggingface.co/datasets/KAITANG2003/LAW-RoboTwin-VLM-Training) [[代码]](https://github.com/hey-cjj/CogWAM) [[合集]](https://huggingface.co/collections/KAITANG2003/law)
   > 用共享骨干的 VLM 专家协调世界动作模型，分别负责子任务规划、动作估值与异步进度检查，根据新的视觉观测调整机器人决策。
 
 <!-- mmac-record: {"id": "2509.19571", "scope": "Adjacent", "primary": "2.6", "stage": 2, "type": "paper"} -->
@@ -1985,7 +1985,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "res:pi-api-beta", "scope": "Resource", "primary": "2.6", "stage": 2, "type": "resource"} -->
 
-- <a id="paper-res-pi-api-beta"></a>**[Pi API beta](https://www.pi.website/blog/api-beta)**
+- <a id="paper-res-pi-api-beta"></a>**[Pi API beta](https://www.pi.website/blog/api-beta)** [[项目页]](https://www.pi.website/waitlist)
   > 开发者适配并部署动作模型，再根据真实机器人失败决定下一轮数据采集；属于需申请 beta 的开发者主导工作流，不代表 LLM 自主修复。
 
 <!-- mmac-record: {"id": "res:vla-corrector", "scope": "Resource", "primary": "2.6", "stage": 2, "type": "resource"} -->
@@ -2058,17 +2058,17 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2610.06843", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-06843"></a>`2026.10` **[Recursive Video In-Context Learning for Agentic Robot](https://arxiv.org/abs/2610.06843)** [[代码]](https://github.com/BWR-hhh/rvicl)
+- <a id="paper-2610-06843"></a>`2026.10` **[Recursive Video In-Context Learning for Agentic Robot](https://arxiv.org/abs/2610.06843)** [[代码]](https://github.com/BWR-hhh/rvicl) [[项目页]](https://bwr-hhh.github.io/rvicl/)
   > 让机器人 Agent 按需查询分层示范视频，与实时相机对比后调整冻结 VLA 和解析动作原语的调用，同时保留底层执行框架。
 
 <!-- mmac-record: {"id": "2610.04929", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-04929"></a>`2026.10` **[RobotUse: Allocating Computation, Context, and Decisions](https://arxiv.org/abs/2610.04929)** [[项目页]](https://robotuse-team.github.io/)
+- <a id="paper-2610-04929"></a>`2026.10` **[RobotUse: Allocating Computation, Context, and Decisions](https://arxiv.org/abs/2610.04929)** [[项目页]](https://robotuse-team.github.io/) [[代码]](https://github.com/robotuse-team/RobotUse)
   > 围绕物理动作组织计算、上下文与决策，并用持久执行手册积累机器人 Agent 的任务经验。
 
 <!-- mmac-record: {"id": "2610.12457", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-12457"></a>`2026.10` **[SpatialHarness: Test-Time Spatial Scaffolding for Fine Robotic Manipulation](https://arxiv.org/abs/2610.12457)** [[项目页]](https://emilia113.github.io/SpatialHarness/)
+- <a id="paper-2610-12457"></a>`2026.10` **[SpatialHarness: Test-Time Spatial Scaffolding for Fine Robotic Manipulation](https://arxiv.org/abs/2610.12457)** [[项目页]](https://emilia113.github.io/SpatialHarness/) [[数据集]](https://huggingface.co/datasets/yzy05/SpatialHarness)
   > 维持与真实执行同步的模拟场景，按任务需要渲染补充视角，为冻结的多模态机器人策略提供空间支架。
 
 <!-- mmac-record: {"id": "2610.30043", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2078,7 +2078,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2609.12541", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-12541"></a>`2026.09` **[Agent as Policy for Robotic Manipulation](https://arxiv.org/abs/2609.12541)**
+- <a id="paper-2609-12541"></a>`2026.09` **[Agent as Policy for Robotic Manipulation](https://arxiv.org/abs/2609.12541)** [[数据集]](https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy) [[代码]](https://github.com/agent-as-policy-2026/agent-as-policy)
   > 让通用 Agent 持续读取视觉证据、编写程序并发出运动指令，根据物理执行结果调整下一步行动。
 
 <!-- mmac-record: {"id": "2609.20822", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2098,12 +2098,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2610.14018", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-14018"></a>`2026.09` **[RoboHarness: A Simple Harness Outperforms VLA and World Action Models](https://arxiv.org/abs/2610.14018)**
+- <a id="paper-2610-14018"></a>`2026.09` **[RoboHarness: A Simple Harness Outperforms VLA and World Action Models](https://arxiv.org/abs/2610.14018)** [[代码]](https://github.com/BinceQu/RoboHarness)
   > 给 LLM Agent 提供视觉几何控制面板，研究简单工具接口能否支持零样本机器人操作。
 
 <!-- mmac-record: {"id": "2609.10522", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-10522"></a>`2026.09` **[Show-Harness: Just a VLM Agent Can Play Robots](https://arxiv.org/abs/2609.10522)** [[项目页]](https://showlab.github.io/Show-Harness)
+- <a id="paper-2609-10522"></a>`2026.09` **[Show-Harness: Just a VLM Agent Can Play Robots](https://arxiv.org/abs/2609.10522)** [[项目页]](https://showlab.github.io/Show-Harness) [[代码]](https://github.com/showlab/Show-Harness) [[模型]](https://huggingface.co/showlab/Show-Harness-VLMs) [[数据集]](https://huggingface.co/datasets/showlab/Show-Harness-Data)
   > 以紧凑语义动作接口连接通用 VLM 与机器人解释器，研究将数字 Agent 式交互迁移到物理控制的条件。
 
 <!-- mmac-record: {"id": "2609.29964", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2123,12 +2123,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2607.05369", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2607-05369"></a>`2026.07` **[GaP: A Graph-as-Policy Multi-Agent Self-Learning Harness For Variational Automation Tasks](https://arxiv.org/abs/2607.05369)** [[项目页]](https://graph-robots.github.io/gap)
+- <a id="paper-2607-05369"></a>`2026.07` **[GaP: A Graph-as-Policy Multi-Agent Self-Learning Harness For Variational Automation Tasks](https://arxiv.org/abs/2607.05369)** [[项目页]](https://graph-robots.github.io/gap) [[代码]](https://github.com/graph-robots/graph-as-policy)
   > 由多 Agent 编写连接感知、规划与控制节点的计算图，以可组合机器人技能库支持可变自动化任务。
 
 <!-- mmac-record: {"id": "2607.16636", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2607-16636"></a>`2026.07` **[PhyAgentOS: A Self-Evolving Operating System for Embodied Agents with Decoupled Cognitive Planning and Physical Execution](https://arxiv.org/abs/2607.16636)**
+- <a id="paper-2607-16636"></a>`2026.07` **[PhyAgentOS: A Self-Evolving Operating System for Embodied Agents with Decoupled Cognitive Planning and Physical Execution](https://arxiv.org/abs/2607.16636)** [[代码]](https://github.com/PhyAgentOS/PhyAgentOS)
   > 用文件化状态契约分离 Agent 推理与机器人执行，让工具调用、状态记录和经验更新能够跨运行层衔接。
 
 <!-- mmac-record: {"id": "2605.26637", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2173,7 +2173,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2312.04474", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2312-04474"></a>`2023.12` **[Chain of Code: Reasoning with a Language Model-Augmented Code Emulator](https://arxiv.org/abs/2312.04474)** [[项目页]](https://chain-of-code.github.io)
+- <a id="paper-2312-04474"></a>`2023.12` **[Chain of Code: Reasoning with a Language Model-Augmented Code Emulator](https://arxiv.org/abs/2312.04474)** [[项目页]](https://chain-of-code.github.io) [[Demo]](https://colab.research.google.com/github/google-research/google-research/blob/master/code_as_policies/coc_demo.ipynb)
   > 用解释器执行明确的程序逻辑，并把未定义的语义计算交给语言模型模拟；机器人实验展示代码与模型调用的组合方式。
 
 <!-- mmac-record: {"id": "2306.09523", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2193,12 +2193,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2209.07753", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2209-07753"></a>`2022.09` **[Code as Policies: Language Model Programs for Embodied Control](https://arxiv.org/abs/2209.07753)** [[项目页]](https://code-as-policies.github.io)
+- <a id="paper-2209-07753"></a>`2022.09` **[Code as Policies: Language Model Programs for Embodied Control](https://arxiv.org/abs/2209.07753)** [[项目页]](https://code-as-policies.github.io) [[代码]](https://github.com/google-research/google-research/tree/master/code_as_policies) [[Demo]](https://huggingface.co/spaces/jackyliang42/code-as-policies)
   > 用语言模型递归生成 Python 策略，组合感知结果、几何计算与控制 API，是机器人 Code-as-Policy 的早期基础；程序内反馈不等于写码模型根据执行结果重写程序。
 
 <!-- mmac-record: {"id": "2209.11302", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2209-11302"></a>`2022.09` **[ProgPrompt: Generating Situated Robot Task Plans using Large Language Models](https://arxiv.org/abs/2209.11302)** [[项目页]](http://progprompt.github.io)
+- <a id="paper-2209-11302"></a>`2022.09` **[ProgPrompt: Generating Situated Robot Task Plans using Large Language Models](https://arxiv.org/abs/2209.11302)** [[项目页]](http://progprompt.github.io) [[代码]](https://github.com/NVlabs/progprompt-vh)
   > 用可用动作、对象和断言组织程序式提示，使语言模型生成能够检查前置条件并恢复的机器人任务计划。
 
 #### 委派已有策略
@@ -2225,17 +2225,17 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2609.29166", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-29166"></a>`2026.09` **[HarnessPAI: An Evolving Harness for Physical AI](https://arxiv.org/abs/2609.29166)** [[项目页]](https://darwin-agent.github.io/HarnessPAI)
+- <a id="paper-2609-29166"></a>`2026.09` **[HarnessPAI: An Evolving Harness for Physical AI](https://arxiv.org/abs/2609.29166)** [[项目页]](https://darwin-agent.github.io/HarnessPAI) [[代码]](https://github.com/Darwin-Agent/HarnessPAI)
   > 以可执行代码组织底层动作原语，并依据交互反馈演化机器人程序，使稳定程序还能生成下游策略训练数据。
 
 <!-- mmac-record: {"id": "2608.11246", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2608-11246"></a>`2026.08` **[Towards the Harness of Embodied Agents](https://arxiv.org/abs/2608.11246)** [[项目页]](https://eit-hai.github.io/thea)
+- <a id="paper-2608-11246"></a>`2026.08` **[Towards the Harness of Embodied Agents](https://arxiv.org/abs/2608.11246)** [[项目页]](https://eit-hai.github.io/thea) [[代码]](https://github.com/EIT-HAI/Thea)
   > 用持久场景图和带成功、失败原因的执行返回值，将机器人能力组织为 Agent 可理解和调用的工具。
 
 <!-- mmac-record: {"id": "2607.08448", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2607-08448"></a>`2026.07` **[Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents](https://arxiv.org/abs/2607.08448)**
+- <a id="paper-2607-08448"></a>`2026.07` **[Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents](https://arxiv.org/abs/2607.08448)** [[代码]](https://github.com/RLinf/RPent)
   > 让 Coding Agent 编排冻结 VLA 与解析动作原语
 
 #### Agent 能力评测
@@ -2262,7 +2262,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2610.00854", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-00854"></a>`2026.10` **[Are Frontier VLM Agents Ready to Be Robot Generalists? An Empirical Study with the Embodied Agent Arena](https://arxiv.org/abs/2610.00854)** [[项目页]](https://embodied-agent-arena.github.io/embodied-agent-arena/)
+- <a id="paper-2610-00854"></a>`2026.10` **[Are Frontier VLM Agents Ready to Be Robot Generalists? An Empirical Study with the Embodied Agent Arena](https://arxiv.org/abs/2610.00854)** [[项目页]](https://embodied-agent-arena.github.io/embodied-agent-arena/) [[代码]](https://github.com/embodied-agent-arena/embodied-agent-arena) [[数据集]](https://huggingface.co/datasets/uuu-Quant/Embodied-Agent-Arena)
   > 在统一预算与源任务接口下比较前沿 VLM Agent 的机器人通用性，并区分修复程序运行与完成物理任务。
 
 <!-- mmac-record: {"id": "2610.07594", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2272,12 +2272,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2610.27039", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-27039"></a>`2026.10` **[Embodied Playground: A Long-Horizon Agentic Robotics Benchmark for Physical, Strategic, and Spatial Reasoning](https://arxiv.org/abs/2610.27039)** [[项目页]](https://winniechen2002.github.io/Agent-bench-website/)
+- <a id="paper-2610-27039"></a>`2026.10` **[Embodied Playground: A Long-Horizon Agentic Robotics Benchmark for Physical, Strategic, and Spatial Reasoning](https://arxiv.org/abs/2610.27039)** [[项目页]](https://winniechen2002.github.io/Agent-bench-website/) [[代码]](https://github.com/Winniechen2002/Embodied-Playground)
   > 以长时序机器人任务评测 Agent 如何协调物理、空间和策略推理，并在执行反馈下保持任务进度。
 
 <!-- mmac-record: {"id": "2610.16238", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-16238"></a>`2026.10` **[Embodied Skill Bench: Benchmarking How Well Agents with Embodied Skills Perform on Physical Tasks](https://arxiv.org/abs/2610.16238)** [[代码]](https://github.com/HanZhi306/EmbodiedSkill-Bench)
+- <a id="paper-2610-16238"></a>`2026.10` **[Embodied Skill Bench: Benchmarking How Well Agents with Embodied Skills Perform on Physical Tasks](https://arxiv.org/abs/2610.16238)** [[代码]](https://github.com/HanZhi306/EmbodiedSkill-Bench) [[代码]](https://github.com/FBddcz/embodied-jev)
   > 在原生控制、仅用技能和 Agent 自主选择或修改技能三种条件下，评测具身 Skills 对物理任务的实际帮助。
 
 <!-- mmac-record: {"id": "2610.30051", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2287,7 +2287,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2610.22471", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-22471"></a>`2026.10` **[Has GPT-6-Astra Achieved Embodied Intelligence?](https://arxiv.org/abs/2610.22471)** [[文章]](https://sensenova.ai/has-gpt-6-astra-achieved-embodied-intelligence)
+- <a id="paper-2610-22471"></a>`2026.10` **[Has GPT-6-Astra Achieved Embodied Intelligence?](https://arxiv.org/abs/2610.22471)** [[文章]](https://sensenova.ai/has-gpt-6-astra-achieved-embodied-intelligence) [[代码]](https://github.com/OpenSenseNova/SenseNova-RoboRSI) [[数据集]](https://huggingface.co/datasets/sensenova/SenseNova-RoboRSI-Log) [[数据集]](https://huggingface.co/datasets/sensenova/SenseNova-RoboRSI-Packages)
   > 在十二项具身基准上研究示范辅助的直接控制与 VLA 动作审查，将扩大交互预算的收益与八种真实机器人配置上的零样本试验分别评估。
 
 <!-- mmac-record: {"id": "2610.34527", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2297,7 +2297,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2610.34649", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-34649"></a>`2026.10` **[RobotAgentBench: Towards Open-world Robot Autonomy](https://arxiv.org/abs/2610.34649)** [[项目页]](https://aetherlabsai.github.io/RobotAgentBench/) [[代码]](https://github.com/AetherLabsAI/RobotAgentBench) [[数据集]](https://huggingface.co/datasets/AetherLabs-AI/RobotAgentBench-assets)
+- <a id="paper-2610-34649"></a>`2026.10` **[RobotAgentBench: Towards Open-world Robot Autonomy](https://arxiv.org/abs/2610.34649)** [[项目页]](https://aetherlabsai.github.io/RobotAgentBench/) [[代码]](https://github.com/AetherLabsAI/RobotAgentBench) [[数据集]](https://huggingface.co/datasets/AetherLabs-AI/RobotAgentBench-assets) [[Demo]](https://aetherlabsai.github.io/RobotAgentBench/#demo) [[模型]](https://huggingface.co/AetherLabs-AI/InternVLA-A1.5-RAB) [[数据集]](https://huggingface.co/datasets/AetherLabs-AI/RobotAgentBench-TrainingData)
   > 通过任务发现、情境推理、物理执行与恢复环节评估开放世界机器人 Agent，而不仅测试给定目标的动作成功率。
 
 <!-- mmac-record: {"id": "2610.10409", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2327,12 +2327,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2609.39507", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-39507"></a>`2026.09` **[LIBERO-Agent: Evaluating General-Purpose Agents for Direct Embodied Manipulation](https://arxiv.org/abs/2609.39507)**
+- <a id="paper-2609-39507"></a>`2026.09` **[LIBERO-Agent: Evaluating General-Purpose Agents for Direct Embodied Manipulation](https://arxiv.org/abs/2609.39507)** [[代码]](https://github.com/dzj441/Libero-Agent)
   > 把 LIBERO 改造成通用 Agent 可主动检查观测、使用自己的工具并发出原生动作的交互测试环境。
 
 <!-- mmac-record: {"id": "2609.40325", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-40325"></a>`2026.09` **[WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents](https://arxiv.org/abs/2609.40325)** [[项目页]](https://ucsb-nlp-chang.github.io/WorldAuditBench/)
+- <a id="paper-2609-40325"></a>`2026.09` **[WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents](https://arxiv.org/abs/2609.40325)** [[项目页]](https://ucsb-nlp-chang.github.io/WorldAuditBench/) [[代码]](https://github.com/UCSB-NLP-Chang/WorldAuditBench)
   > 衡量 Agent 主动探索交互世界、发现异常并提供证据的能力，覆盖物理、空间、时间与语义问题。
 
 <!-- mmac-record: {"id": "2607.04434", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
@@ -2342,7 +2342,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2604.25788", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
 
-- <a id="paper-2604-25788"></a>`2026.04` **[KinDER: A Physical Reasoning Benchmark for Robot Learning and Planning](https://arxiv.org/abs/2604.25788)** [[项目页]](https://prpl-group.com/kinder-site/)
+- <a id="paper-2604-25788"></a>`2026.04` **[KinDER: A Physical Reasoning Benchmark for Robot Learning and Planning](https://arxiv.org/abs/2604.25788)** [[项目页]](https://prpl-group.com/kinder-site/) [[代码]](https://github.com/Princeton-Robot-Planning-and-Learning/kindergarden)
   > 提供可重置的物理推理任务、参数化技能与统一评测接口，已被通用 Coding Agent 求解任务—运动规划的研究直接使用。
 
 <!-- mmac-record: {"id": "2603.22435", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2367,7 +2367,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2311.11183", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2311-11183"></a>`2023.11` **[Deploying and Evaluating LLMs to Program Service Mobile Robots](https://arxiv.org/abs/2311.11183)** [[项目页]](https://amrl.cs.utexas.edu/codebotler/)
+- <a id="paper-2311-11183"></a>`2023.11` **[Deploying and Evaluating LLMs to Program Service Mobile Robots](https://arxiv.org/abs/2311.11183)** [[项目页]](https://amrl.cs.utexas.edu/codebotler/) [[代码]](https://github.com/ut-amrl/codebotler)
   > 提出 CodeBotler 与 RoboEval，用 Python 嵌入式领域语言生成服务机器人程序，并评测动作顺序、条件逻辑和任务执行。
 
 <!-- mmac-record: {"id": "2306.03310", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
@@ -2399,7 +2399,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2505.03728", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
 
-- <a id="paper-2505-03728"></a>`2025.05` **[PyRoki: A Modular Toolkit for Robot Kinematic Optimization](https://arxiv.org/abs/2505.03728)** [[项目页]](https://pyroki-toolkit.github.io)
+- <a id="paper-2505-03728"></a>`2025.05` **[PyRoki: A Modular Toolkit for Robot Kinematic Optimization](https://arxiv.org/abs/2505.03728)** [[项目页]](https://pyroki-toolkit.github.io) [[代码]](https://github.com/chungmin99/pyroki)
   > 以可组合的机器人运动学优化接口承接 Agent 生成的目标与程序，为部分 Coding Agent Harness 提供底层求解能力。
 
 <!-- mmac-record: {"id": "dimos", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
@@ -2414,7 +2414,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "phys-0", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
 
-- <a id="paper-phys-0"></a>**[phys-0](https://jvboid.dev/projects/phys-0)** [[代码]](https://github.com/JacobFV/chem-0)
+- <a id="paper-phys-0"></a>**[phys-0](https://jvboid.dev/projects/phys-0)** [[代码]](https://github.com/JacobFV/chem-0) [[代码]](https://github.com/JacobFV/phys-0)
   > 用统一、带记录的工具接口连接 Coding Agent、可编辑物理场景、SO-101 机械臂和实验台观测，探索同一工作流中的虚拟与真实操作。
 
 <!-- mmac-record: {"id": "robouse", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
@@ -2622,7 +2622,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2608.30821", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2608-30821"></a>`2026.08` **[Lucida: Parse, Generate, and Place for Composable Real-to-Sim Scene Modeling](https://arxiv.org/abs/2608.30821)** [[项目页]](https://lucida-r2s.github.io/)
+- <a id="paper-2608-30821"></a>`2026.08` **[Lucida: Parse, Generate, and Place for Composable Real-to-Sim Scene Modeling](https://arxiv.org/abs/2608.30821)** [[项目页]](https://lucida-r2s.github.io/) [[Demo]](https://lucida-r2s.github.io/#main-result)
   > 先聚合每个物体的多视图证据，再由 GizmoAct 反复看图并编辑姿态完成场景对齐。
 
 <!-- mmac-record: {"id": "2607.19190", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
@@ -2787,7 +2787,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2310.01361", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2310-01361"></a>`2023.10` **[GenSim: Generating Robotic Simulation Tasks via Large Language Models](https://arxiv.org/abs/2310.01361)** [[代码]](https://github.com/liruiw/GenSim) [[项目页]](https://liruiw.github.io/gensim)
+- <a id="paper-2310-01361"></a>`2023.10` **[GenSim: Generating Robotic Simulation Tasks via Large Language Models](https://arxiv.org/abs/2310.01361)** [[代码]](https://github.com/liruiw/GenSim) [[项目页]](https://liruiw.github.io/gensim) [[Demo]](https://huggingface.co/spaces/Gen-Sim/Gen-Sim)
   > 把任务描述变成可执行的机器人任务类，扩展模拟任务库与示范数据。
 
 <!-- mmac-record: {"id": "res:aha-3d", "scope": "Resource", "primary": "3.2", "stage": 3, "type": "resource"} -->
@@ -2832,7 +2832,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2611.02928", "scope": "Core", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2611-02928"></a>`2026.11` **[Lab2Sim: Turning Real-World Experiment Videos into Interactive Virtual Experiments](https://arxiv.org/abs/2611.02928)** [[项目页]](https://black1948.github.io/lab2sim)
+- <a id="paper-2611-02928"></a>`2026.11` **[Lab2Sim: Turning Real-World Experiment Videos into Interactive Virtual Experiments](https://arxiv.org/abs/2611.02928)** [[项目页]](https://black1948.github.io/lab2sim) [[Demo]](https://black1948.github.io/lab2sim/#demo)
   > 逐步重放网页实验，将截图和状态与实拍视频对照，评测交互还原度，并根据独立验证器的诊断修正器材素材或状态机。
 
 <!-- mmac-record: {"id": "2611.13576", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
@@ -2877,7 +2877,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2609.24778", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-24778"></a>`2026.09` **[H2RBench: A Real-to-Sim Benchmark for Evaluating Human-to-Robot Transfer](https://arxiv.org/abs/2609.24778)** [[项目页]](https://davidz2851.github.io/h2rbench.github.io/)
+- <a id="paper-2609-24778"></a>`2026.09` **[H2RBench: A Real-to-Sim Benchmark for Evaluating Human-to-Robot Transfer](https://arxiv.org/abs/2609.24778)** [[项目页]](https://davidz2851.github.io/h2rbench.github.io/) [[代码]](https://github.com/xiaochy/H2RBench)
   > 用四个 real-to-sim 任务比较人类示范到机器人迁移的方法，检验仿真中的排名能否预测实机排名。
 
 <!-- mmac-record: {"id": "2609.27449", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
@@ -2897,7 +2897,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2606.01869", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2606-01869"></a>`2026.06` **[WorldCoder-Bench: Benchmarking Physically Grounded 3D World Synthesis](https://arxiv.org/abs/2606.01869)**
+- <a id="paper-2606-01869"></a>`2026.06` **[WorldCoder-Bench: Benchmarking Physically Grounded 3D World Synthesis](https://arxiv.org/abs/2606.01869)** [[数据集]](https://huggingface.co/datasets/shuolucs/WorldCoder-Bench)
   > 要求模型根据自然语言生成浏览器中的交互式 3D 程序，任务包括模拟、渲染和应用。其 StateProbe 评估器会实际运行程序、执行动作并检查隐藏的状态要求，用来发现画面正常但交互逻辑或状态变化错误的产物。
 
 <!-- mmac-record: {"id": "2605.19136", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
@@ -2917,7 +2917,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2604.13035", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2604-13035"></a>`2026.04` **[SceneCritic: A Symbolic Evaluator for 3D Indoor Scene Synthesis](https://arxiv.org/abs/2604.13035)**
+- <a id="paper-2604-13035"></a>`2026.04` **[SceneCritic: A Symbolic Evaluator for 3D Indoor Scene Synthesis](https://arxiv.org/abs/2604.13035)** [[项目页]](https://lab-spell.github.io/SceneCritic) [[代码]](https://github.com/DIASENGUPTA/SceneCritic)
   > 从已有室内数据中整理空间常识和约束，建立直接检查布局与物体关系的符号评估器，指出具体哪些摆放合理、哪些关系违规。论文还比较规则、文本模型和视觉模型提供的反馈，研究不同反馈怎样影响场景修订。
 
 <!-- mmac-record: {"id": "2603.16432", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
@@ -2937,12 +2937,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2602.13294", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2602-13294"></a>`2026.02` **[VisPhyWorld: Probing Physical Reasoning via Code-Driven Video Reconstruction](https://arxiv.org/abs/2602.13294)**
+- <a id="paper-2602-13294"></a>`2026.02` **[VisPhyWorld: Probing Physical Reasoning via Code-Driven Video Reconstruction](https://arxiv.org/abs/2602.13294)** [[代码]](https://github.com/TIGER-AI-Lab/VisPhyWorld)
   > 要求多模态模型把看到的物理视频写成能够运行的模拟器代码，使其对世界的理解变成可检查、可修改的程序。配套 VisPhyBench 用受控场景比较重建的外观与运动，研究模型能否从视觉线索恢复合理的物理过程。
 
 <!-- mmac-record: {"id": "2512.16881", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2512-16881"></a>`2025.12` **[PolaRiS: Scalable Real-to-Sim Evaluations for Generalist Robot Policies](https://arxiv.org/abs/2512.16881)** [[项目页]](https://polaris-evals.github.io/)
+- <a id="paper-2512-16881"></a>`2025.12` **[PolaRiS: Scalable Real-to-Sim Evaluations for Generalist Robot Policies](https://arxiv.org/abs/2512.16881)** [[项目页]](https://polaris-evals.github.io/) [[代码]](https://github.com/arhanjain/PolaRiS) [[数据集]](https://huggingface.co/datasets/owhan/PolaRiS-Hub)
   > 用神经重建把短视频扫描转成可交互的评测场景，并与通用策略的实机评测配对比较。
 
 <!-- mmac-record: {"id": "2511.03001", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
@@ -2983,17 +2983,17 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2611.06817", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2611-06817"></a>`2026.11` **[Open-HumanWAM: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models](https://arxiv.org/abs/2611.06817)** [[项目页]](https://dagroup-pku.github.io/open-humanwam/) [[代码]](https://github.com/DAGroup-PKU/HumanNet/tree/Open-HumanWAM) [[数据集]](https://huggingface.co/datasets/DAGroup-PKU/Open-HumanWAM-50K)
+- <a id="paper-2611-06817"></a>`2026.11` **[Open-HumanWAM: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models](https://arxiv.org/abs/2611.06817)** [[项目页]](https://dagroup-pku.github.io/open-humanwam/) [[代码]](https://github.com/DAGroup-PKU/HumanNet/tree/Open-HumanWAM) [[数据集]](https://huggingface.co/datasets/DAGroup-PKU/Open-HumanWAM-50K) [[合集]](https://huggingface.co/collections/DAGroup-PKU/open-humanwam)
   > 整理人类操作经验及对齐动作，用于世界—动作模型预训练与机器人适配。
 
 <!-- mmac-record: {"id": "2406.18915", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2406-18915"></a>`2024.06` **[Manipulate-Anything: Automating Real-World Robots using Vision-Language Models](https://arxiv.org/abs/2406.18915)** [[项目页]](https://robot-ma.github.io/)
+- <a id="paper-2406-18915"></a>`2024.06` **[Manipulate-Anything: Automating Real-World Robots using Vision-Language Models](https://arxiv.org/abs/2406.18915)** [[项目页]](https://robot-ma.github.io/) [[代码]](https://github.com/Robot-MA/manipulate-anything)
   > 用视觉语言反馈自动采集真实示范。
 
 <!-- mmac-record: {"id": "2403.12945", "scope": "Resource", "primary": "3.4", "stage": 3, "type": "resource"} -->
 
-- <a id="paper-2403-12945"></a>`2024.03` **[DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset](https://arxiv.org/abs/2403.12945)** [[项目页]](https://droid-dataset.github.io/)
+- <a id="paper-2403-12945"></a>`2024.03` **[DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset](https://arxiv.org/abs/2403.12945)** [[项目页]](https://droid-dataset.github.io/) [[Demo]](https://droid-dataset.github.io/visualizer) [[硬件代码]](https://github.com/droid-dataset/droid) [[策略训练代码]](https://github.com/droid-dataset/droid_policy_learning) [[文档]](https://droid-dataset.github.io/droid/)
   > 提供机器人学习所需的真实观测来源。
 
 #### 合成数据与构造方法
@@ -3010,7 +3010,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2611.05163", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2611-05163"></a>`2026.11` **[RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On](https://arxiv.org/abs/2611.05163)** [[项目页]](https://ryan-seungyong-lee.github.io/RoboTryOn)
+- <a id="paper-2611-05163"></a>`2026.11` **[RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On](https://arxiv.org/abs/2611.05163)** [[项目页]](https://ryan-seungyong-lee.github.io/RoboTryOn) [[代码]](https://github.com/ryan-seungyong-lee/RoboTryOn) [[模型]](https://huggingface.co/RyanL22/RoboTryOn) [[Demo]](https://huggingface.co/spaces/RyanL22/RoboTryOn)
   > 将真人示范转换为目标机器人视频，通过逆动力学和腕部校正生成伪动作，训练策略并在两种真实机器人上评估。
 
 <!-- mmac-record: {"id": "2610.22362", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
@@ -3025,32 +3025,32 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2609.35318", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-35318"></a>`2026.09` **[DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library](https://arxiv.org/abs/2609.35318)** [[项目页]](https://dexagent1.github.io/) [[项目页]](https://dexagent123.github.io/)
+- <a id="paper-2609-35318"></a>`2026.09` **[DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library](https://arxiv.org/abs/2609.35318)** [[项目页]](https://dexagent1.github.io/) [[项目页]](https://dexagent123.github.io/) [[代码]](https://github.com/dexagent1/DexAgent)
   > 把人类视频转为仿真灵巧操作监督。
 
 <!-- mmac-record: {"id": "2609.27308", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-27308"></a>`2026.09` **[EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics](https://arxiv.org/abs/2609.27308)**
+- <a id="paper-2609-27308"></a>`2026.09` **[EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics](https://arxiv.org/abs/2609.27308)** [[代码]](https://github.com/EmbodiedSWE/EmbodiedSWE)
   > 把验证过的机器人程序扩展为合成示范。
 
 <!-- mmac-record: {"id": "2607.23704", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2607-23704"></a>`2026.07` **[LabRobFail: A Benchmark for Robotic Failure Analysis in Chemical Self-driving Laboratory](https://arxiv.org/abs/2607.23704)** [[代码]](https://github.com/Su-ISE-2001/LabRobFail)
+- <a id="paper-2607-23704"></a>`2026.07` **[LabRobFail: A Benchmark for Robotic Failure Analysis in Chemical Self-driving Laboratory](https://arxiv.org/abs/2607.23704)** [[代码]](https://github.com/Su-ISE-2001/LabRobFail) [[代码]](https://github.com/Su-ISE-2001/SciRobo)
   > 构建带有结构化诊断及纠正标签的仿真实验室失败轨迹。
 
 <!-- mmac-record: {"id": "2506.18088", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2506-18088"></a>`2025.06` **[RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation](https://arxiv.org/abs/2506.18088)** [[代码]](https://github.com/RoboTwin-Platform/RoboTwin) [[代码]](https://github.com/robotwin-Platform/robotwin) [[代码]](https://github.com/robotwin-Platform/robotwin/) [[项目页]](https://robotwin-platform.github.io/) [[项目页]](https://robotwin-platform.github.io/doc/)
+- <a id="paper-2506-18088"></a>`2025.06` **[RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation](https://arxiv.org/abs/2506.18088)** [[代码]](https://github.com/RoboTwin-Platform/RoboTwin) [[代码]](https://github.com/robotwin-Platform/robotwin) [[代码]](https://github.com/robotwin-Platform/robotwin/) [[项目页]](https://robotwin-platform.github.io/) [[项目页]](https://robotwin-platform.github.io/doc/) [[数据集]](https://huggingface.co/datasets/TianxingChen/RoboTwin2.0)
   > 生成多样化双臂操作训练轨迹。
 
 <!-- mmac-record: {"id": "2410.03645", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2410-03645"></a>`2024.10` **[GenSim2: Scaling Robot Data Generation with Multi-modal and Reasoning LLMs](https://arxiv.org/abs/2410.03645)** [[项目页]](https://gensim2.github.io/)
+- <a id="paper-2410-03645"></a>`2024.10` **[GenSim2: Scaling Robot Data Generation with Multi-modal and Reasoning LLMs](https://arxiv.org/abs/2410.03645)** [[项目页]](https://gensim2.github.io/) [[代码]](https://github.com/GenSim2/gensim2)
   > 通过生成任务与求解器扩大机器人示范。
 
 <!-- mmac-record: {"id": "2307.14535", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2307-14535"></a>`2023.07` **[Scaling Up and Distilling Down: Language-Guided Robot Skill Acquisition](https://arxiv.org/abs/2307.14535)** [[项目页]](https://www.cs.columbia.edu/~huy/scalingup/)
+- <a id="paper-2307-14535"></a>`2023.07` **[Scaling Up and Distilling Down: Language-Guided Robot Skill Acquisition](https://arxiv.org/abs/2307.14535)** [[项目页]](https://www.cs.columbia.edu/~huy/scalingup/) [[代码]](https://github.com/columbia-ai-robotics/scalingup)
   > 将语言组织的机器人经验蒸馏为动作策略。
 
 [↑ 返回目录](#contents)
@@ -3074,7 +3074,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2610.23288", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-23288"></a>`2026.10` **[CoEvolve: Self-Evolving Code Policies from Skills to Strategies for Humanoid Robots](https://arxiv.org/abs/2610.23288)**
+- <a id="paper-2610-23288"></a>`2026.10` **[CoEvolve: Self-Evolving Code Policies from Skills to Strategies for Humanoid Robots](https://arxiv.org/abs/2610.23288)** [[代码]](https://github.com/Innovationlzc/CoEvolve)
   > 在固定人形技能上演化团队策略。
 
 <!-- mmac-record: {"id": "2610.12369", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3094,7 +3094,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2609.30233", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-30233"></a>`2026.09` **[Coding Agents for Generalized Task and Motion Planning Problems](https://arxiv.org/abs/2609.30233)**
+- <a id="paper-2609-30233"></a>`2026.09` **[Coding Agents for Generalized Task and Motion Planning Problems](https://arxiv.org/abs/2609.30233)** [[代码]](https://github.com/tomsilver/robocode)
   > 编写任务与运动规划求解程序。
 
 <!-- mmac-record: {"id": "2609.30594", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3104,7 +3104,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2609.24145", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-24145"></a>`2026.09` **[MimicAgent: Quadruped Skills via Prompt-to-Trajectory Generation](https://arxiv.org/abs/2609.24145)** [[项目页]](https://luckykantnayak.github.io/mimic-agent/)
+- <a id="paper-2609-24145"></a>`2026.09` **[MimicAgent: Quadruped Skills via Prompt-to-Trajectory Generation](https://arxiv.org/abs/2609.24145)** [[项目页]](https://luckykantnayak.github.io/mimic-agent/) [[代码]](https://github.com/Luckykantnayak/mimicagent-humnaoid)
   > 为四足策略训练生成参考运动。
 
 <!-- mmac-record: {"id": "2609.38982", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3119,7 +3119,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2606.19980", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2606-19980"></a>`2026.06` **[ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](https://arxiv.org/abs/2606.19980)** [[项目页]](https://research.nvidia.com/labs/gear/enpire/)
+- <a id="paper-2606-19980"></a>`2026.06` **[ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](https://arxiv.org/abs/2606.19980)** [[项目页]](https://research.nvidia.com/labs/gear/enpire/) [[代码]](https://github.com/NVlabs/ENPIRE)
   > 利用真实试验证据研发机器人策略。
 
 <!-- mmac-record: {"id": "2606.08610", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3129,7 +3129,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2606.16458", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2606-16458"></a>`2026.06` **[RHO: Your Coding Agent is Secretly a Roboticist](https://arxiv.org/abs/2606.16458)** [[项目页]](https://rho-robotics.github.io)
+- <a id="paper-2606-16458"></a>`2026.06` **[RHO: Your Coding Agent is Secretly a Roboticist](https://arxiv.org/abs/2606.16458)** [[项目页]](https://rho-robotics.github.io) [[代码]](https://github.com/KE7/HELIX)
   > 在部署前搜索可复用机器人策略代码库。
 
 <!-- mmac-record: {"id": "2603.04466", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3154,12 +3154,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2409.01652", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2409-01652"></a>`2024.09` **[ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation](https://arxiv.org/abs/2409.01652)** [[项目页]](https://rekep-robot.github.io/)
+- <a id="paper-2409-01652"></a>`2024.09` **[ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation](https://arxiv.org/abs/2409.01652)** [[项目页]](https://rekep-robot.github.io/) [[代码]](https://github.com/huangwl18/ReKep)
   > 用程序化几何约束指导在线操作。
 
 <!-- mmac-record: {"id": "2406.01967", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2406-01967"></a>`2024.06` **[DrEureka: Language Model Guided Sim-To-Real Transfer](https://arxiv.org/abs/2406.01967)** [[项目页]](https://eureka-research.github.io/dr-eureka/)
+- <a id="paper-2406-01967"></a>`2024.06` **[DrEureka: Language Model Guided Sim-To-Real Transfer](https://arxiv.org/abs/2406.01967)** [[项目页]](https://eureka-research.github.io/dr-eureka/) [[代码]](https://github.com/eureka-research/DrEureka)
   > 用生成奖励和域随机化支持真实迁移。
 
 <!-- mmac-record: {"id": "2402.04764", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3169,17 +3169,17 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2310.12931", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2310-12931"></a>`2023.10` **[Eureka: Human-Level Reward Design via Coding Large Language Models](https://arxiv.org/abs/2310.12931)** [[项目页]](https://eureka-research.github.io/)
+- <a id="paper-2310-12931"></a>`2023.10` **[Eureka: Human-Level Reward Design via Coding Large Language Models](https://arxiv.org/abs/2310.12931)** [[项目页]](https://eureka-research.github.io/) [[代码]](https://github.com/eureka-research/Eureka)
   > 用策略训练反馈搜索奖励程序。
 
 <!-- mmac-record: {"id": "2309.11489", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2309-11489"></a>`2023.09` **[Text2Reward: Reward Shaping with Language Models for Reinforcement Learning](https://arxiv.org/abs/2309.11489)** [[项目页]](https://text-to-reward.github.io/)
+- <a id="paper-2309-11489"></a>`2023.09` **[Text2Reward: Reward Shaping with Language Models for Reinforcement Learning](https://arxiv.org/abs/2309.11489)** [[项目页]](https://text-to-reward.github.io/) [[代码]](https://github.com/xlang-ai/text2reward)
   > 把奖励塑形变成代码生成任务。
 
 <!-- mmac-record: {"id": "2306.08647", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2306-08647"></a>`2023.06` **[Language to Rewards for Robotic Skill Synthesis](https://arxiv.org/abs/2306.08647)** [[项目页]](https://language-to-reward.github.io/)
+- <a id="paper-2306-08647"></a>`2023.06` **[Language to Rewards for Robotic Skill Synthesis](https://arxiv.org/abs/2306.08647)** [[项目页]](https://language-to-reward.github.io/) [[代码]](https://github.com/google-deepmind/language_to_reward_2023)
   > 用生成奖励表达机器人技能目标。
 
 <!-- mmac-record: {"id": "autoresearch-robotics", "scope": "Resource", "primary": "3.5", "stage": 3, "type": "resource"} -->
@@ -3236,7 +3236,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2610.14224", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-14224"></a>`2026.10` **[Harness^2: Recursive Agent Harnessing for an Open World](https://arxiv.org/abs/2610.14224)**
+- <a id="paper-2610-14224"></a>`2026.10` **[Harness^2: Recursive Agent Harnessing for an Open World](https://arxiv.org/abs/2610.14224)** [[代码]](https://github.com/google-research/harness2)
   > 在任务内和跨任务层面演化 Harness。
 
 <!-- mmac-record: {"id": "2610.23098", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3246,7 +3246,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2610.03476", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-03476"></a>`2026.10` **[MobiAgent: Dual-Loop Recursive Policy Self-Improvement for Long-Horizon Mobile Manipulation](https://arxiv.org/abs/2610.03476)** [[代码]](https://github.com/kaiknower/MobiAgent) [[项目页]](https://kaiknower.github.io/mobiagent/)
+- <a id="paper-2610-03476"></a>`2026.10` **[MobiAgent: Dual-Loop Recursive Policy Self-Improvement for Long-Horizon Mobile Manipulation](https://arxiv.org/abs/2610.03476)** [[代码]](https://github.com/kaiknower/MobiAgent) [[项目页]](https://kaiknower.github.io/mobiagent/) [[模型]](https://huggingface.co/Liukaikai/MobiAgent)
   > 将视觉规划与反思连接到可复用动作专家，把核验后的部署轨迹转为离线技能策略更新，而不是生成控制代码的修订。
 
 <!-- mmac-record: {"id": "2610.08995", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3311,7 +3311,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2609.37583", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-37583"></a>`2026.09` **[RoboHarn-Evo: Evolving Hierarchical Physical Knowledge for Self-Improving Robotic Manipulation](https://arxiv.org/abs/2609.37583)**
+- <a id="paper-2609-37583"></a>`2026.09` **[RoboHarn-Evo: Evolving Hierarchical Physical Knowledge for Self-Improving Robotic Manipulation](https://arxiv.org/abs/2609.37583)** [[代码]](https://github.com/RUCKBReasoning/RoboHarn-Evo)
   > 从物理交互积累分层知识。
 
 <!-- mmac-record: {"id": "2609.39304", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3346,7 +3346,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2607.23784", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2607-23784"></a>`2026.07` **[A Few Words Go a Long Way: Language Guided Robot Policy Synthesis](https://arxiv.org/abs/2607.23784)** [[项目页]](https://robo-architect.github.io/)
+- <a id="paper-2607-23784"></a>`2026.07` **[A Few Words Go a Long Way: Language Guided Robot Policy Synthesis](https://arxiv.org/abs/2607.23784)** [[项目页]](https://robo-architect.github.io/) [[代码]](https://github.com/robo-architect/architect-franka)
   > 用语言纠正改进机器人程序。
 
 <!-- mmac-record: {"id": "2607.00272", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3356,12 +3356,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2606.19419", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2606-19419"></a>`2026.06` **[Playful Agentic Robot Learning](https://arxiv.org/abs/2606.19419)** [[项目页]](https://playful-rats.github.io/)
+- <a id="paper-2606-19419"></a>`2026.06` **[Playful Agentic Robot Learning](https://arxiv.org/abs/2606.19419)** [[项目页]](https://playful-rats.github.io/) [[代码]](https://github.com/Playful-RATs/rats)
   > 把无任务探索转化为持久代码技能。
 
 <!-- mmac-record: {"id": "2605.10332", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2605-10332"></a>`2026.05` **[EmbodiSkill: Skill-Aware Reflection for Self-Evolving Embodied Agents](https://arxiv.org/abs/2605.10332)**
+- <a id="paper-2605-10332"></a>`2026.05` **[EmbodiSkill: Skill-Aware Reflection for Self-Evolving Embodied Agents](https://arxiv.org/abs/2605.10332)** [[代码]](https://github.com/air-embodied-brain/EmbodiSkill)
   > 将反思对应到导致失败的具体技能。
 
 <!-- mmac-record: {"id": "2603.02623", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3386,29 +3386,29 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2405.19758", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2405-19758"></a>`2024.05` **[InterPreT: Interactive Predicate Learning from Language Feedback for Generalizable Task Planning](https://arxiv.org/abs/2405.19758)** [[项目页]](https://interpret-robot.github.io)
+- <a id="paper-2405-19758"></a>`2024.05` **[InterPreT: Interactive Predicate Learning from Language Feedback for Generalizable Task Planning](https://arxiv.org/abs/2405.19758)** [[项目页]](https://interpret-robot.github.io) [[代码]](https://github.com/hmz-15/interactive-predicate-learning)
   > 从语言纠正中学习可执行规划谓词。
 
 <!-- mmac-record: {"id": "2305.16744", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2305-16744"></a>`2023.05` **[Demo2Code: From Summarizing Demonstrations to Synthesizing Code via Extended Chain-of-Thought](https://arxiv.org/abs/2305.16744)** [[项目页]](https://portal-cornell.github.io/demo2code/)
+- <a id="paper-2305-16744"></a>`2023.05` **[Demo2Code: From Summarizing Demonstrations to Synthesizing Code via Extended Chain-of-Thought](https://arxiv.org/abs/2305.16744)** [[项目页]](https://portal-cornell.github.io/demo2code/) [[代码]](https://github.com/portal-cornell/demo2code)
   > 从示范总结任务，再合成机器人程序。
 
 #### Coding Agent 后训练
 
 <!-- mmac-record: {"id": "2610.30136", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-30136"></a>`2026.10` **[Agentic World Action Models](https://arxiv.org/abs/2610.30136)** [[项目页]](https://agentic-wam.github.io/)
+- <a id="paper-2610-30136"></a>`2026.10` **[Agentic World Action Models](https://arxiv.org/abs/2610.30136)** [[项目页]](https://agentic-wam.github.io/) [[模型]](https://huggingface.co/miniFranka/agentic-wam-pretrain-yamego3k-soup-e1) [[代码]](https://github.com/ZhuoyangLiu2005/agentic-wam)
   > 联合建模程序、预测视频与机器人动作。
 
 <!-- mmac-record: {"id": "2610.28589", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-28589"></a>`2026.10` **[AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](https://arxiv.org/abs/2610.28589)**
+- <a id="paper-2610-28589"></a>`2026.10` **[AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](https://arxiv.org/abs/2610.28589)** [[代码]](https://github.com/L-CodingSpace/AgenticRoboRL) [[项目页]](https://l-codingspace.github.io/AgenticRoboRL/)
   > 跨不同 Harness 后训练机器人规划模型。
 
 <!-- mmac-record: {"id": "2610.40799", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-40799"></a>`2026.10` **[CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents](https://arxiv.org/abs/2610.40799)** [[代码]](https://github.com/waltstephen/CaPtain) [[代码]](https://github.com/waltstephen/CaPtain-Harness) [[数据集]](https://huggingface.co/datasets/YijiaFan/CaPtain-SFT-Data)
+- <a id="paper-2610-40799"></a>`2026.10` **[CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents](https://arxiv.org/abs/2610.40799)** [[代码]](https://github.com/waltstephen/CaPtain) [[代码]](https://github.com/waltstephen/CaPtain-Harness) [[数据集]](https://huggingface.co/datasets/YijiaFan/CaPtain-SFT-Data) [[项目页]](https://waltstephen.github.io/captain/)
   > 训练小模型通过机器人代码行动。
 
 <!-- mmac-record: {"id": "2610.36013", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3418,7 +3418,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2610.41216", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-41216"></a>`2026.10` **[TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents](https://arxiv.org/abs/2610.41216)** [[项目页]](https://garfield-kh.github.io/TinyAstral/)
+- <a id="paper-2610-41216"></a>`2026.10` **[TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents](https://arxiv.org/abs/2610.41216)** [[项目页]](https://garfield-kh.github.io/TinyAstral/) [[代码]](https://github.com/Garfield-kh/TinyAstral) [[模型]](https://huggingface.co/kehong/TinyAstral-weights) [[数据集]](https://huggingface.co/datasets/kehong/TinyAstral-SFT)
   > 将改进后的教师 Harness 用于小模型训练。
 
 <!-- mmac-record: {"id": "2606.18363", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3475,7 +3475,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2610.20998", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-20998"></a>`2026.10` **[MoCaP: Mobile Code-as-Policies for Zero-Shot Mobile Manipulation from Passive Human Videos](https://arxiv.org/abs/2610.20998)** [[项目页]](https://mocap-7.github.io/MoCAP-page/)
+- <a id="paper-2610-20998"></a>`2026.10` **[MoCaP: Mobile Code-as-Policies for Zero-Shot Mobile Manipulation from Passive Human Videos](https://arxiv.org/abs/2610.20998)** [[项目页]](https://mocap-7.github.io/MoCAP-page/) [[代码]](https://github.com/MoCAP-7/MoCAP)
   > 把人类视频先验用于移动机器人程序。
 
 <!-- mmac-record: {"id": "2609.23133", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
@@ -3485,7 +3485,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2609.30249", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-30249"></a>`2026.09` **[RAPID: Robot Agentic Programming from Demonstrations](https://arxiv.org/abs/2609.30249)** [[项目页]](https://yuyaoliu.me/projects/rapid)
+- <a id="paper-2609-30249"></a>`2026.09` **[RAPID: Robot Agentic Programming from Demonstrations](https://arxiv.org/abs/2609.30249)** [[项目页]](https://yuyaoliu.me/projects/rapid) [[代码]](https://github.com/nature21/RAPID)
   > 从单次视觉演示推导可复用的关系式机器人程序与验证环境。
 
 <!-- mmac-record: {"id": "2503.23875", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
@@ -3495,7 +3495,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2403.07832", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2403-07832"></a>`2024.03` **[DeliGrasp: Inferring Object Properties with LLMs for Adaptive Grasp Policies](https://arxiv.org/abs/2403.07832)** [[项目页]](https://deligrasp.github.io)
+- <a id="paper-2403-07832"></a>`2024.03` **[DeliGrasp: Inferring Object Properties with LLMs for Adaptive Grasp Policies](https://arxiv.org/abs/2403.07832)** [[项目页]](https://deligrasp.github.io) [[代码]](https://github.com/deligrasp/deligrasp)
   > 把物体属性估计用于自适应抓取。
 
 <!-- mmac-record: {"id": "2310.13065", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
@@ -3505,7 +3505,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2307.05973", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2307-05973"></a>`2023.07` **[VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models](https://arxiv.org/abs/2307.05973)** [[项目页]](https://voxposer.github.io)
+- <a id="paper-2307-05973"></a>`2023.07` **[VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models](https://arxiv.org/abs/2307.05973)** [[项目页]](https://voxposer.github.io) [[代码]](https://github.com/huangwl18/VoxPoser)
   > 用代码组合三维价值图来规划操作。
 
 <!-- mmac-record: {"id": "demo:nvidia-factory-operations-blueprint", "scope": "Demo", "primary": "3.6", "stage": 3, "type": "demo"} -->
@@ -3557,7 +3557,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "bespoke-instrument", "scope": "Resource", "primary": "3.6", "stage": 3, "type": "resource"} -->
 
-- <a id="paper-bespoke-instrument"></a>`2026.05` **[AI-designed and AI-implemented control systems for bespoke scientific instrumentation: application to scanning microscopy](https://pubs.rsc.org/en/content/articlelanding/2026/dd/d6dd00177g)** [[论文]](https://www.repository.cam.ac.uk/items/cb2e6fef-94c4-4fe9-903a-aaa198da8f4f)
+- <a id="paper-bespoke-instrument"></a>`2026.05` **[AI-designed and AI-implemented control systems for bespoke scientific instrumentation: application to scanning microscopy](https://pubs.rsc.org/en/content/articlelanding/2026/dd/d6dd00177g)** [[论文]](https://www.repository.cam.ac.uk/items/cb2e6fef-94c4-4fe9-903a-aaa198da8f4f) [[代码]](https://github.com/Okarl96/shem_gui)
   > 在人类监督下开发仪器控制代码。
 
 <!-- mmac-record: {"id": "2509.24978", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
@@ -3594,7 +3594,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2611.08175", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2611-08175"></a>`2026.11` **[PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?](https://arxiv.org/abs/2611.08175)** [[项目页]](https://chip-ai-agent.github.io/research/pcbrouteagent)
+- <a id="paper-2611-08175"></a>`2026.11` **[PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?](https://arxiv.org/abs/2611.08175)** [[项目页]](https://chip-ai-agent.github.io/research/pcbrouteagent) [[代码]](https://github.com/chip-ai-agent/PCBRouteAgent)
   > 依据 KiCad 原生执行反馈修订 PCB 布线指引，以改善电路板连通性。
 
 <!-- mmac-record: {"id": "2611.13344", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
@@ -3619,7 +3619,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2605.17448", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2605-17448"></a>`2026.05` **[Self-Improving CAD Generation Agents with Finite Element Analysis as Feedback](https://arxiv.org/abs/2605.17448)**
+- <a id="paper-2605-17448"></a>`2026.05` **[Self-Improving CAD Generation Agents with Finite Element Analysis as Feedback](https://arxiv.org/abs/2605.17448)** [[代码]](https://github.com/3dlg-hcvc/s2o)
   > 用视觉和有限元反馈改进 CAD 设计。
 
 <!-- mmac-record: {"id": "2408.14307", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
@@ -3661,7 +3661,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "2606.15932", "scope": "Survey", "primary": "SV", "stage": null, "type": "paper"} -->
 
-- <a id="paper-2606-15932"></a>`2026.06` **[Beyond NL2Code: A Structured Survey of Multimodal Code Intelligence](https://arxiv.org/abs/2606.15932)**
+- <a id="paper-2606-15932"></a>`2026.06` **[Beyond NL2Code: A Structured Survey of Multimodal Code Intelligence](https://arxiv.org/abs/2606.15932)** [[合集]](https://github.com/xjywhu/Awesome-Multimodal-LLM-for-Code)
   > 综述 UI、科学可视化、结构化图形和新兴 Agentic 场景中的多模态代码智能。
 
 **相关 Awesome 列表**

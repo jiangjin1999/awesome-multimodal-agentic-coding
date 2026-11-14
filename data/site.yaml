@@ -254,7 +254,19 @@ source_labels:
     en: Data sources and video selection
     zh: 数据来源与视频筛选
     ja: データの出典と動画の選定
+  hardware_code:
+    en: Hardware code
+    zh: 硬件代码
+    ja: ハードウェアコード
+  policy_code:
+    en: Policy training code
+    zh: 策略训练代码
+    ja: 方策学習コード
 source_kind_overrides:
+  https://github.com/droid-dataset/droid: hardware_code
+  https://github.com/droid-dataset/droid_policy_learning: policy_code
+  https://droid-dataset.github.io/droid/: docs
+  https://blog.google/innovation-and-ai/models-and-research/gemini-models/multimodal-knowledge-agent-benchmark/: article
   https://www.mdpi.com/2076-3417/16/16/8291/notes: version_notes
   https://arxiv.org/html/2610.04432#S10.SS1: cross_execution
   https://arxiv.org/html/2610.04432#S8.SS1: data_sources
@@ -279,6 +291,23 @@ source_kind_overrides:
   : results
   https://omnimech.dev/res/omnimech_samples.zip: examples
   https://omnimech.dev/res/omnimech_code.zip: code
+  "https://aetherlabsai.github.io/RobotAgentBench/#demo": demo
+  "https://black1948.github.io/lab2sim/#demo": demo
+  "https://codesignbench.github.io/#intro-video": demo
+  "https://colab.research.google.com/github/google-research/google-research/blob/master/code_as_policies/coc_demo.ipynb": demo
+  "https://droid-dataset.github.io/visualizer": demo
+  "https://github.com/ProgrammingWithPixels/PwP/tree/main/pwp_bench": dataset
+  "https://github.com/TaoD2C-Bench/TaoD2C-Bench/tree/main/data/eval": dataset
+  "https://github.com/adobe-research/MoviEdit-Bench": dataset
+  "https://github.com/ziva-sh/ziva-agent-plugin-godot": repository
+  "https://huggingface.co/spaces/RSIGame/rsigame-page": project
+  "https://huggingface.co/spaces/yushaohan/IntReal-Leaderboard": leaderboard
+  "https://ivg-yanranzhang.github.io/StateWorldModel/#worlds": demo
+  "https://lucida-r2s.github.io/#main-result": demo
+  "https://programmingwithpixels.com/#pwp-in-action": demo
+  "https://projects.blender.org/lab/blender_mcp": code
+  "https://tencent.github.io/WeVisCut/#demo": demo
+  "https://zju-omniai.github.io/Scene-Designer/#demo": demo
 paper_url_aliases:
   https://github.com/QwenLM/BlenderWorld/blob/main/docs/BlenderWorld__Benchmarking_Visual_Agents_for_3D_Creation_from_Real_World_References.pdf: https://arxiv.org/abs/2610.23986
   https://github.com/tettethu/VibeGame/blob/main/technical_report.pdf: https://arxiv.org/abs/2610.33106

@@ -16,6 +16,7 @@
   - https://codesignbench.github.io/
   - https://github.com/Wiselnn570/Co-Design-Bench
   - https://huggingface.co/datasets/Wiselnn/Co-Design-Bench
+  - https://codesignbench.github.io/#intro-video
   verification:
     en: '273 tasks / 2,331 criteria in the paper · strict vs. full completion · model–harness sensitivity; public release:
       96 ME tasks / 521 criteria.'
@@ -67,6 +68,7 @@
   sources:
   - https://arxiv.org/abs/2610.10374
   - https://taod2c-bench.github.io/
+  - https://github.com/TaoD2C-Bench/TaoD2C-Bench/tree/main/data/eval
   verification:
     en: Component type/properties · grouping/alignment/position · requirement inference · final visual fidelity.
     zh: 组件类型／属性 · 分组／对齐／定位 · 需求推断 · 最终视觉忠实度。
@@ -94,6 +96,7 @@
   - https://huggingface.co/datasets/WebUniverse-NSL/WebUniverse-Env
   - https://huggingface.co/datasets/WebUniverse-NSL/WebUniverse-Mix
   - https://webuniverse-nsl.github.io/
+  - https://huggingface.co/collections/WebUniverse-NSL/webuniverse-6ad1bc77c51f1a47f876f073
   verification:
     en: Browser and GUI tests · page–viewport similarity · trajectory integrity and decontamination · matched-budget fine-tuning;
       environment and trajectory releases require access approval.
@@ -119,6 +122,8 @@
     ja: Web、ゲーム、モバイル、DevOps の修正でソース編集とスクリーンショットに基づく操作を統合し、実行時の視覚的証拠で次の編集を導き、独立テストで動作と回帰を検査する。
   sources:
   - https://arxiv.org/abs/2609.32600
+  - https://github.com/kingofspace0wzz/cua-swe
+  - https://huggingface.co/datasets/kingofspace0wzz/CUA-SWE
   verification:
     en: Requested behavior · regression preservation · permitted changes · valid tool use · post-edit interaction evidence.
     zh: 目标行为 · 回归保持 · 允许修改范围 · 工具使用合规 · 修改后交互证据。
@@ -212,6 +217,7 @@
   sources:
   - https://arxiv.org/abs/2604.18224
   - https://github.com/NJU-LINK/WebCompass
+  - https://huggingface.co/datasets/NJU-LINK/WebCompass
   verification:
     en: ''
     zh: ''
@@ -258,6 +264,8 @@
   sources:
   - https://arxiv.org/abs/2507.04952
   - https://artifactsbenchmark.github.io/
+  - https://github.com/Tencent-Hunyuan/ArtifactsBenchmark
+  - https://huggingface.co/datasets/tencent/ArtifactsBenchmark
   verification:
     en: ''
     zh: ''
@@ -283,6 +291,8 @@
   - https://arxiv.org/abs/2502.18525
   - https://github.com/ProgrammingwithPixels/PwP
   - https://programmingwithpixels.com/
+  - https://github.com/ProgrammingWithPixels/PwP/tree/main/pwp_bench
+  - https://programmingwithpixels.com/#pwp-in-action
   verification:
     en: Execution-based task completion · unit-test pass · final IDE state.
     zh: 基于执行的任务完成 · 单元测试通过 · IDE 最终状态。
@@ -354,6 +364,7 @@
   - https://douzj-llm.github.io/WebCoder/
   - https://github.com/douzj-llm/WebCoder
   - https://huggingface.co/datasets/Roy-DOU/Webdev-Bench
+  - https://huggingface.co/Roy-DOU/WebCoder-27B
   verification:
     en: 40 composite Webdev-Bench tasks · 66 Vision2Web L2 tasks · credit-assignment and compaction ablations · gated revision
       cases; the released benchmark translates the original Chinese tasks into English.
@@ -456,6 +467,7 @@
     ja: デスクトップ、Android、Web で参考アプリの探索、ソース実装、実行、視覚検査を交互に行い、検証済みの再構築軌跡で複合操作エージェントを訓練する。
   sources:
   - https://arxiv.org/abs/2609.22000
+  - https://github.com/QwenLM/RecreationWorld
   verification:
     en: Build/launch validity · hidden behavioral and visual assertions · reconstruction fidelity · GUI–code switching · transfer
       after training.
@@ -665,6 +677,7 @@
     ja: スクリーンショットを局所的な視覚証拠へ構造化し、場面理解、コード位置の特定、パッチ生成を繰り返す。
   sources:
   - https://arxiv.org/abs/2602.06090
+  - https://github.com/codefuse-ai/CodeFuse-SVR
   verification:
     en: Resolved rate · repository-test pass · localization and patch correctness.
     zh: 问题解决率 · 仓库测试通过 · 定位与补丁正确性。
@@ -712,6 +725,7 @@
   - https://arxiv.org/abs/2601.04203
   - https://frontalk-benchmark.github.io/
   - https://github.com/shirley-wu/frontalk
+  - https://huggingface.co/datasets/xqwu/FronTalk
   verification:
     en: Interactive pass rate · usability · forgetting/regression rate.
     zh: 交互通过率 · 可用性 · 遗忘／回退率。
@@ -763,6 +777,7 @@
   - https://arxiv.org/abs/2511.06251
   - https://github.com/zheny2751-dotcom/WebVIA
   - https://zheny2751-dotcom.github.io/webvia.github.io/
+  - https://huggingface.co/zai-org/WebVIA-Agent
   verification:
     en: Structural fidelity · end-to-end interaction completion · action validity.
     zh: 结构保真度 · 端到端交互完成率 · 动作有效性。
@@ -1043,6 +1058,8 @@
   - https://arxiv.org/abs/2610.26828
   - https://github.com/MSR-Orchard/WildAWM
   - https://huggingface.co/datasets/ChilleD/WildAWM
+  - https://msr-orchard.github.io/WildAWM/
+  - https://huggingface.co/collections/ChilleD/agent-world-model-in-the-wild
   verification:
     en: Deterministic reset/replay · solvability and difficulty · judge consistency and counterfactual probes · downstream
       computer-use generalization.
@@ -1301,6 +1318,7 @@
   sources:
   - https://arxiv.org/abs/2603.25804
   - https://github.com/Speakn0w/RealChart2Code
+  - https://huggingface.co/datasets/zjj1233/RealChart2Code
   verification:
     en: Sandbox pass rate · eight-axis visual accuracy · data-pattern consistency · design quality.
     zh: 沙箱通过率 · 八维视觉准确性 · 数据模式一致性 · 设计质量。
@@ -1615,6 +1633,7 @@
     ja: 元の段落に関連付けた視覚的批評で再利用可能なラスター作図命令を調整し、各候補を新しく描画した画像で評価する。選好と論文間の関係への忠実度を区別する。
   sources:
   - https://arxiv.org/abs/2609.33386
+  - https://github.com/exsinger-hub/Sivia
   verification:
     en: Source-grounded relations · complete-candidate coverage · fresh-output transfer · prompt/image traceability.
     zh: 源证据支撑的关系 · 全候选覆盖 · 全新输出迁移 · 提示词与图像可追溯。
@@ -1638,6 +1657,7 @@
     ja: Altair プログラムを実行して模擬利用者に図表を評価させ、視覚的な批評と文章による確認を次のコード探索へ返し、不完全な要件から可視化の意図を復元する。
   sources:
   - https://arxiv.org/abs/2609.15182
+  - https://github.com/wxxv/VisInteract
   verification:
     en: Renderability · code/chart key-feature satisfaction · intent alignment · multi-turn task success.
     zh: 可渲染性 · 代码与图表的关键特征满足度 · 意图对齐 · 多轮任务成功率。
@@ -1977,6 +1997,7 @@
     ja: 実行・編集可能な SVG コードを記号的な視覚表現として用い、その反復生成を支援・評価する。
   sources:
   - https://arxiv.org/abs/2511.02778
+  - https://github.com/CSU-JPG/VCode
   verification:
     en: SVG render success · SigLIP semantic fidelity · CodeVQA reasoning preservation.
     zh: SVG 渲染成功 · SigLIP 语义保真度 · CodeVQA 推理保持度。
@@ -2003,6 +2024,8 @@
   - https://arxiv.org/abs/2510.23642
   - https://github.com/TIGER-AI-Lab/VisCoder2
   - https://tiger-ai-lab.github.io/VisCoder2/
+  - https://huggingface.co/datasets/TIGER-Lab/VisCode-Multi-679K
+  - https://huggingface.co/datasets/TIGER-Lab/VisPlotBench
   verification:
     en: Execution pass · instruction compliance · visual similarity · multi-round recovery.
     zh: 执行通过 · 指令遵循 · 视觉相似度 · 多轮恢复能力。
@@ -2043,6 +2066,7 @@
     ja: 視覚理解とコードによる SVG 構築を連携させ、スケッチを合成可能な図へ反復変換する。
   sources:
   - https://arxiv.org/abs/2508.15222
+  - https://github.com/hantaoZhangrichard/see_it_say_it_sorted
   verification:
     en: Sketch-structure fidelity · primitive count and orientation · spatial alignment.
     zh: 草图结构保真度 · 图元数量与方向 · 空间对齐。
@@ -2256,6 +2280,8 @@
   sources:
   - https://arxiv.org/abs/2610.37341
   - https://codecap-bench.github.io/
+  - https://github.com/kevin236-max/CodeCap-Bench
+  - https://huggingface.co/datasets/kevintank/CodeCap-Dataset
   verification:
     en: 323 videos · visual similarity · object spatiotemporal IoU · static/dynamic information retention; agentic visual
       refinement is separate from single-pass baselines.
@@ -2302,6 +2328,8 @@
   sources:
   - https://arxiv.org/abs/2606.28593
   - https://anya-ji.github.io/animation2code-website/
+  - https://github.com/anya-ji/animation2code
+  - https://huggingface.co/datasets/anim2code/dataset
   verification:
     en: Render validity · appearance similarity · temporal motion similarity · human preference alignment.
     zh: 渲染有效性 · 外观相似度 · 时序运动相似度 · 人工偏好对齐。
@@ -2507,6 +2535,7 @@
     ja: 論文理解、配置計画、描画、視覚修正を連携させ、編集できてそのまま印刷できるポスターを生成する。
   sources:
   - https://arxiv.org/abs/2608.02218
+  - https://github.com/Shannon4Science/PosterMELD
   verification:
     en: Print-Ready Rate · geometric/readability/asset/factual gates · CHE aesthetics · keypoint fidelity.
     zh: 可打印率 · 几何／可读性／资产／事实门控 · CHE 美学 · 关键点保真度。
@@ -2582,6 +2611,8 @@
   sources:
   - https://arxiv.org/abs/2606.02915
   - https://any2poster.github.io/Any2Poster/
+  - https://github.com/Any2Poster/Any2Poster
+  - https://huggingface.co/datasets/Any2Poster/Any2Poster-Bench
   verification:
     en: BenchQuiz information recovery · visual/readability quality · source faithfulness · editability.
     zh: BenchQuiz 信息恢复 · 视觉／可读性质量 · 来源忠实度 · 可编辑性。
@@ -2723,6 +2754,7 @@
   sources:
   - https://arxiv.org/abs/2512.03042
   - https://github.com/michaelofengenden/PPTArena
+  - https://github.com/michaelofengend/PPTArena
   verification:
     en: Instruction following · visual quality · layout/alignment/typography/color · deck-wide consistency.
     zh: 指令遵循 · 视觉质量 · 布局／对齐／字体／颜色 · 整份 Deck 一致性。
@@ -2750,6 +2782,8 @@
   - https://arxiv.org/abs/2510.05571
   - https://evopresent.github.io/
   - https://github.com/UCSB-AI/EvoPresent
+  - https://github.com/eric-ai-lab/EvoPresent
+  - https://huggingface.co/datasets/TobyYang7/EvoPresent
   verification:
     en: Content fidelity/clarity/narrative/engagement · layout/hierarchy/color · aesthetic awareness.
     zh: 内容保真／清晰／叙事／吸引力 · 布局／层级／颜色 · 美学感知。
@@ -2985,6 +3019,7 @@
   sources:
   - https://arxiv.org/abs/2610.03715
   - https://arxiv.org/html/2610.03715
+  - https://github.com/4DCodeBench/4DCodeBench
   verification:
     en: Rendered static/dynamic fidelity · 3D geometry · trajectory DTW · motion distribution · executable submission validity.
     zh: 渲染静态/动态保真度 · 三维几何 · 轨迹 DTW · 运动分布 · 可执行提交有效性。
@@ -3044,6 +3079,7 @@
   - https://arxiv.org/abs/2610.12452
   - https://brickben.ch/
   - https://github.com/kulits/BrickAgent
+  - https://huggingface.co/datasets/kulits/BrickBench-Runs
   verification:
     en: Part inventory · collision/stability proxies · visual requirement graphs · pairwise design ratings · human agreement.
     zh: 零件库存 · 碰撞／稳定性代理 · 视觉需求图 · 成对设计评分 · 人类一致性。
@@ -3068,6 +3104,7 @@
   sources:
   - https://arxiv.org/abs/2610.16577
   - https://cinerecon.github.io/
+  - https://github.com/Unc1eW4ng/CineRecon
   verification:
     en: Camera/shot consistency · spatial and appearance fidelity · action timing/contact · human–judge alignment · refinement
       ablations.
@@ -3095,6 +3132,7 @@
   - https://arxiv.org/abs/2610.04292
   - https://github.com/Lumos-Jiateng/LMBuild
   - https://lumos-jiateng.github.io/LMBuild/
+  - https://huggingface.co/datasets/Lumos-Jiateng/LMBuild
   verification:
     en: Assembly soundness · functional-part completeness · kinematic correctness · rendered design quality · physical operability.
     zh: 装配健全 · 功能部件完整性 · 运动学正确性 · 渲染设计质量 · 物理可操作性。
@@ -3147,6 +3185,8 @@
   - https://arxiv.org/abs/2609.15478
   - https://arxiv.org/html/2609.15478
   - https://github.com/yunlong10/BVB/blob/main/eval/dual_vqa_metric.py
+  - https://yoloytang.me/BVB/
+  - https://github.com/yoloytang/BVB
   verification:
     en: Dual VQA semantic retention · V-JEPA latent similarity · balanced overall score · per-scene cost. Use the option-aware
       Dual VQA evaluator and refreshed source-answer cache (2026-10-19).
@@ -3172,6 +3212,9 @@
   sources:
   - https://arxiv.org/abs/2609.16251
   - https://cad-world.github.io/
+  - https://huggingface.co/datasets/Zihan1004/CADWORLD
+  - https://huggingface.co/Zihan1004/CADWorld
+  - https://github.com/Zdong104/CADWORLD
   verification:
     en: Task-specific geometry and constraints · native artifact structure · manufacturing/simulation state · task success.
     zh: 任务特定几何与约束 · 原生产物结构 · 制造／仿真状态 · 任务成功率。
@@ -3223,6 +3266,9 @@
   sources:
   - https://arxiv.org/abs/2609.37686
   - https://engiworld.github.io
+  - https://github.com/Hongcheng-Gao/EngiWorld
+  - https://huggingface.co/datasets/HongchengGao/EngiWorld-Tasks
+  - https://huggingface.co/datasets/HongchengGao/EngiWorld-Images
   verification:
     en: Native artifact validity · geometric/physical constraints · cross-tool consistency · feasibility-gated design quality.
     zh: 原生产物有效性 · 几何与物理约束 · 跨工具一致性 · 可行性门控的设计质量。
@@ -3250,6 +3296,7 @@
   - https://cadbench.ai/
   - https://cadbench.ai/news/cad-bench-v3
   - https://huggingface.co/datasets/gnucleus-ai/cad-gen-freecad-bench-v3
+  - https://github.com/anniedoris/CADBench
   verification:
     en: Pinned FreeCAD/Harbor environment · 30/30/40 task split · native-history constraints · continuous reward and inspectable
       trial artifacts; reported rankings are point estimates.
@@ -3301,6 +3348,8 @@
   sources:
   - https://arxiv.org/abs/2606.01057
   - https://www.3dcodebench.com/
+  - https://github.com/gaoypeng/3dcodebench
+  - https://huggingface.co/datasets/YipengGao/3DCode
   verification:
     en: Blender execution · multi-view SigLIP/DINO · Chamfer/Uni3D geometry · human-preference Elo.
     zh: Blender 执行 · 多视图 SigLIP／DINO · Chamfer／Uni3D 几何 · 人工偏好 Elo。
@@ -3449,6 +3498,8 @@
   - https://arxiv.org/abs/2610.22341
   - https://3dcodeverse.com/
   - https://github.com/gaoypeng/3dcodeverse
+  - https://huggingface.co/datasets/3dcodeverse/3dcodeverse-2m
+  - https://huggingface.co/datasets/ilabai/3dcodeverse
   verification:
     en: Execution validity · contact/collision and joint-sweep gates · rendered appearance · recorded repair trajectories
       · human preference · open-model fine-tuning.
@@ -3553,6 +3604,7 @@
   - https://github.com/ZJU-OmniAI/Scene-Designer
   - https://huggingface.co/datasets/XuanyuLiu/Scene-OTC-Bench
   - https://zju-omniai.github.io/Scene-Designer/
+  - https://zju-omniai.github.io/Scene-Designer/#demo
   verification:
     en: Collision/boundary checks · accessibility and functional organization · scene-ranking accuracy · correction efficiency
       · training and test-time critic ablations; published evaluation data is distinct from the training collections.
@@ -3699,6 +3751,7 @@
   - https://arxiv.org/abs/2609.26793
   - https://cwchenwang.github.io/harmony/
   - https://github.com/ShufanSun/harmony-release
+  - https://huggingface.co/datasets/ShufanSun/harmony
   verification:
     en: Matched-view appearance · synthetic-scene geometry · placement/feedback ablations · human preference · runtime.
     zh: 同视角外观 · 合成场景几何 · 摆放／反馈消融 · 人工偏好 · 运行时间。
@@ -3751,6 +3804,7 @@
     ja: 複雑な Three.js 世界を再帰的な場面プログラムとして構築する。各部分世界が描画・観察・修正ループを持ち、返されたコードを親の文脈で再描画して共同修復する。
   sources:
   - https://arxiv.org/abs/2609.11499
+  - https://github.com/ZhiqiLi-CG/RecursiveCWM_code
   verification:
     en: PSNR/SSIM · edge F1 · LPIPS/CLIP similarity · local-detail fidelity · recursive-depth and parent-revisitation ablations.
     zh: PSNR／SSIM · Edge F1 · LPIPS／CLIP 相似度 · 局部细节保真度 · 递归深度与父级回访消融。
@@ -3848,6 +3902,7 @@
     ja: エージェントのワークフローと領域専用のプログラム表現を共同設計し、反復的な 3D 制作を支援する。
   sources:
   - https://arxiv.org/abs/2608.17975
+  - https://github.com/sig-pku/aDSL
   verification:
     en: Prompt alignment · geometric and visual quality · text/image-to-shape similarity.
     zh: 提示对齐 · 几何与视觉质量 · 文本／图像到形状相似度。
@@ -4036,6 +4091,9 @@
     ja: マルチモーダルエージェントを CAD サンドボックスに置き、実行、視覚検査、編集、回復を繰り返す。
   sources:
   - https://arxiv.org/abs/2606.13368
+  - https://github.com/KnowledgeXLab/IterCAD
+  - https://huggingface.co/KnowledgeXLab/IterCAD-RL
+  - https://huggingface.co/datasets/KnowledgeXLab/IterCAD_Data
   verification:
     en: Invalid rate · turn-result AUC · Chamfer distance · topology preservation.
     zh: 无效率 · 轮次结果 AUC · Chamfer 距离 · 拓扑保持度。
@@ -4128,6 +4186,7 @@
     ja: 描画された 3D 場面を検査し、物体、配置、外観の誤りを後続の場面編集へ変換する。
   sources:
   - https://arxiv.org/abs/2603.12238
+  - https://github.com/ROUJINN/SceneAssistant
   verification:
     en: Layout correctness · object quality · human preference.
     zh: 布局正确性 · 物体质量 · 人工偏好。
@@ -4150,6 +4209,8 @@
     ja: 目標と現在の再構築の幾何差を基に、多視点描画と点群フィードバックを組み合わせ、動作する CadQuery プログラムを書き直す。
   sources:
   - https://arxiv.org/abs/2603.29847
+  - https://github.com/zhemdi/CADReasoner
+  - https://huggingface.co/kulibinai/cadreasoner
   verification:
     en: Median Chamfer Distance · volumetric IoU · Invalid Rate · best-so-far quality across refinement steps.
     zh: 中位数 Chamfer Distance · volumetric IoU · Invalid Rate · 多步细化中的最佳质量。
@@ -4381,6 +4442,7 @@
   sources:
   - https://www.blender.org/lab/mcp-server/
   - https://github.com/ahujasid/blender-mcp
+  - https://projects.blender.org/lab/blender_mcp
 - id: res:cadquery-mcp-server
   title: CadQuery MCP server
   url: https://github.com/CadQuery/cadquery-contrib/tree/master/mcp-server
@@ -4470,6 +4532,7 @@
     ja: 言語で指示する KCL ワークフローを、幾何実行、スナップショット、検査、デバッグにつなぐ。
   sources:
   - https://docs.zoo.dev/docs
+  - https://zoo.dev/docs/developer-tools/mcp
 - id: '2610.26098'
   title: 'From Code to Playable Systems: CEGame-Bench for Long-Horizon Game Creation Agents'
   url: https://arxiv.org/abs/2610.26098
@@ -4680,6 +4743,7 @@
     ja: スクリーンショットだけの探索からブラックボックスのゲームを複製させる。エージェントは HTML の複製を実行、目視検査、修正し、実装、ルール、外観を別々に評価される。
   sources:
   - https://arxiv.org/abs/2609.22308
+  - https://qqqqqqby.github.io/GameReplica/
   verification:
     en: Executable implementation · rule consistency · visual fidelity · difficulty scaling · self-check and repair behavior.
     zh: 可执行实现 · 规则一致性 · 视觉保真度 · 难度扩展 · 自检与修复行为。
@@ -4849,6 +4913,7 @@
     ja: 持続する実体 ID で Blender の場面構造、視覚に基づくゲーム配置、Unreal Engine のロジックを結び、コンパイル診断とスクリプト化したゲームテストで移植を修復する。
   sources:
   - https://arxiv.org/abs/2610.05033
+  - https://github.com/AIGeeksGroup/Code2Games
   verification:
     en: Build reliability · gameplay objectives · interaction/physics adherence · visual and motion quality · human playability
       ratings.
@@ -4980,6 +5045,7 @@
   sources:
   - https://arxiv.org/abs/2609.39045
   - https://github.com/WenyiWU0111/RSIGame
+  - https://huggingface.co/spaces/RSIGame/rsigame-page
   verification:
     en: Replay-based mechanics/visual quality · grounded diagnosis · regression detection · checkpoint selection · development
       cost.
@@ -5108,6 +5174,7 @@
     ja: 新しいゲーム観測に応じて Python の世界モデルを維持、検証、再構成し、計画に利用する。
   sources:
   - https://arxiv.org/abs/2605.05138
+  - https://github.com/astroseger/arc-3-agents-baseline1/tree/main/papers/paper01/secure_baseline1
   verification:
     en: Recorded-transition replay · predicted/observed frame match · planner reachability · game score.
     zh: 已记录转移回放 · 预测／观测帧匹配 · Planner 可达性 · 游戏得分。
@@ -5302,6 +5369,7 @@
   sources:
   - https://ziva.sh/blogs/ai-agent-playtest-godot-game
   - https://ziva.sh/docs/playtest
+  - https://github.com/ziva-sh/ziva-agent-plugin-godot
 - id: '2610.22355'
   title: 'OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling'
   url: https://arxiv.org/abs/2610.22355
@@ -5413,6 +5481,7 @@
   - https://aclanthology.org/2026.acl-long.1162/
   - https://github.com/naver-ai/MM-JudgeBias
   - https://huggingface.co/datasets/naver-ai/MM-JudgeBias
+  - https://mm-judgebias.github.io/
   verification:
     en: 1,804 samples from 29 benchmarks · 26 judges · distinct Bias-Deviation/Bias-Conformity metrics · released evaluation
       data and code; not a closed-loop repair benchmark.
@@ -5438,6 +5507,7 @@
   - https://arxiv.org/abs/2511.15567
   - https://github.com/showlab/AUI
   - https://showlab.github.io/AUI/
+  - https://huggingface.co/spaces/showlab/AUI
   verification:
     en: GUI task success · interaction solvability · verifier–human agreement.
     zh: GUI 任务成功率 · 交互可解性 · 验证器与人工一致性。
@@ -5489,6 +5559,8 @@
   sources:
   - https://arxiv.org/abs/2610.34921
   - https://yelonhu.github.io/physevolve-page/
+  - https://github.com/yelonhu/PhysEvolve
+  - https://huggingface.co/YelonLFT/physevolve-v7i-0851-step100
   verification:
     en: PhysBench, CausalPhys, and ContPhy transfer · paired-branch and proposer-update ablations · reward-hacking audit;
       video reasoning rather than hardware control.
@@ -5664,6 +5736,7 @@
   - https://github.com/Tencent/WeVisCut
   - https://huggingface.co/tencent/WeVisCut
   - https://tencent.github.io/WeVisCut/
+  - https://tencent.github.io/WeVisCut/#demo
   verification:
     en: 100 held-out tasks · execution and delivery traces · quality/cost diagnostics · blinded human ratings; production
       feedback is separate from read-only final evaluation.
@@ -5830,6 +5903,8 @@
   sources:
   - https://arxiv.org/abs/2611.04870
   - https://primebottech.github.io/PrimeSim-website
+  - https://github.com/PrimebotTech/PrimeSim
+  - https://huggingface.co/qiyuan-robot/PrimeSim
   verification:
     en: Eight-policy ranking fidelity · fixed initial states · RL gains checked in LIBERO; no real-robot transfer test.
     zh: 八策略排序保真度、固定初始状态、在 LIBERO 验证强化学习收益；未测试实机迁移。
@@ -5926,6 +6001,7 @@
   - https://github.com/Zhangyr2022/StateWorldModel
   - https://huggingface.co/datasets/Louis0411/StateWorldModel
   - https://ivg-yanranzhang.github.io/StateWorldModel/
+  - https://ivg-yanranzhang.github.io/StateWorldModel/#worlds
   verification:
     en: Hidden-state counterfactual pairs · required and forbidden outcomes · matched frozen-backbone comparison · multi-turn
       examples; runtime state feedback keeps the rule program fixed.
@@ -5977,6 +6053,7 @@
   - https://huggingface.co/nvidia/Cosmos3-Nano-Sim-Auto
   - https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos/
   - https://github.com/NVIDIA/cosmos-framework/blob/main/docs/inference_sim_auto.md
+  - https://github.com/NVIDIA/cosmos-framework
 - id: res:worldfoundry
   title: WorldFoundry
   url: https://arxiv.org/abs/2611.10771
@@ -6009,6 +6086,9 @@
   - https://arxiv.org/abs/2610.06955
   - https://gewu-lab.github.io/ROMA/
   - https://github.com/GeWu-Lab/ROMA
+  - https://huggingface.co/spaces/xxuan01/ROMA-Demo
+  - https://huggingface.co/GeWu-Lab/ROMA-7B
+  - https://huggingface.co/datasets/GeWu-Lab/ROMA
   verification:
     en: Offline perception-chain accuracy · separate real-arm tasks · localization/grasp failures · modality selection · interaction
       cost.
@@ -6250,6 +6330,7 @@
     ja: 開発者が行動モデルを適応・配備し、実ロボットの失敗から次のデータ収集を決める。申請制ベータの開発者主導手順であり、LLM の自律修復を意味しない。
   sources:
   - https://www.pi.website/blog/api-beta
+  - https://www.pi.website/waitlist
 - id: res:vla-corrector
   title: 'VLA-Corrector: Lightweight Detect-and-Correct Inference for Adaptive Action Horizon'
   url: https://arxiv.org/abs/2607.01804
@@ -6349,6 +6430,8 @@
   sources:
   - https://arxiv.org/abs/2610.00854
   - https://embodied-agent-arena.github.io/embodied-agent-arena/
+  - https://github.com/embodied-agent-arena/embodied-agent-arena
+  - https://huggingface.co/datasets/uuu-Quant/Embodied-Agent-Arena
   verification:
     en: Repairing a program so that it runs and completing the physical task are evaluated separately.
     zh: 将程序修复至可运行与完成物理任务分开评估。
@@ -6385,6 +6468,7 @@
   sources:
   - https://arxiv.org/abs/2610.27039
   - https://winniechen2002.github.io/Agent-bench-website/
+  - https://github.com/Winniechen2002/Embodied-Playground
   verification:
     en: Task progress and execution feedback are central; environment presence does not make this a simulator-quality benchmark.
     zh: 重点是任务进展与执行反馈；使用仿真环境不代表评测对象是模拟器质量。
@@ -6403,6 +6487,7 @@
   sources:
   - https://arxiv.org/abs/2610.16238
   - https://github.com/HanZhi306/EmbodiedSkill-Bench
+  - https://github.com/FBddcz/embodied-jev
   verification:
     en: Skill packages may contain code, instructions or action-model calls; hidden scoring signals are not necessarily agent
       inputs.
@@ -6442,6 +6527,9 @@
   sources:
   - https://arxiv.org/abs/2610.22471
   - https://sensenova.ai/has-gpt-6-astra-achieved-embodied-intelligence
+  - https://github.com/OpenSenseNova/SenseNova-RoboRSI
+  - https://huggingface.co/datasets/sensenova/SenseNova-RoboRSI-Log
+  - https://huggingface.co/datasets/sensenova/SenseNova-RoboRSI-Packages
   verification:
     en: Standard versus up-to-10× step budgets · frozen in-context knowledge · action-interface and token-cost ablations ·
       human context/safety supervision · hardware contact, latency, and recovery limits.
@@ -6495,6 +6583,9 @@
   - https://aetherlabsai.github.io/RobotAgentBench/
   - https://github.com/AetherLabsAI/RobotAgentBench
   - https://huggingface.co/datasets/AetherLabs-AI/RobotAgentBench-assets
+  - https://aetherlabsai.github.io/RobotAgentBench/#demo
+  - https://huggingface.co/AetherLabs-AI/InternVLA-A1.5-RAB
+  - https://huggingface.co/datasets/AetherLabs-AI/RobotAgentBench-TrainingData
   verification:
     en: 50 simulated layouts · five task-level capabilities and four open-ended scenarios · matched sim/real subset · harness
       ablations; coding-agent and standalone-policy tracks are evaluated separately, with human-assisted scene calibration.
@@ -6620,6 +6711,7 @@
     ja: LIBERO を、汎用エージェントが能動的に観測を調べ、自分のツールを使い、ネイティブ行動を発行できる対話的なテスト環境へ変える。
   sources:
   - https://arxiv.org/abs/2609.39507
+  - https://github.com/dzj441/Libero-Agent
   verification:
     en: The 30-task primary simulation suite separates perception, short-horizon manipulation and long-horizon composition
       within a 200-task framework. Primary runs use full observations, no demonstrations and a 1,800-second wall-clock limit;
@@ -6642,6 +6734,7 @@
   - https://arxiv.org/abs/2609.40325
   - https://arxiv.org/html/2609.40325
   - https://ucsb-nlp-chang.github.io/WorldAuditBench/
+  - https://github.com/UCSB-NLP-Chang/WorldAuditBench
   verification:
     en: Anomaly identification · exploration budget · evidence gathering · action–reasoning coupling.
     zh: 异常识别 · 探索预算 · 证据获取 · 动作与推理耦合。
@@ -6686,6 +6779,7 @@
   sources:
   - https://arxiv.org/abs/2604.25788
   - https://prpl-group.com/kinder-site/
+  - https://github.com/Princeton-Robot-Planning-and-Learning/kindergarden
   verification:
     en: A supporting benchmark used by coding-agent task-and-motion planning studies, not itself a new agent.
     zh: 为 Coding Agent 的任务与运动规划研究提供评测支持，基准本身不是新的 Agent。
@@ -6781,6 +6875,7 @@
   sources:
   - https://arxiv.org/abs/2311.11183
   - https://amrl.cs.utexas.edu/codebotler/
+  - https://github.com/ut-amrl/codebotler
   verification:
     en: Program validity and successful physical execution are separate outcomes.
     zh: 程序有效性与真实物理执行成功是不同的结果。
@@ -6911,6 +7006,7 @@
   sources:
   - https://arxiv.org/abs/2609.29166
   - https://darwin-agent.github.io/HarnessPAI
+  - https://github.com/Darwin-Agent/HarnessPAI
   verification:
     en: A program is fixed within a rollout; feedback used inside that program differs from later LLM-driven program revision.
     zh: 同一次执行中，程序根据观察检查抓取或放置是否成立，再决定是否推进；执行结束后的轨迹与失败信息才用于下一轮改程序和整理技能。
@@ -6929,6 +7025,7 @@
   sources:
   - https://arxiv.org/abs/2608.11246
   - https://eit-hai.github.io/thea
+  - https://github.com/EIT-HAI/Thea
   verification:
     en: Skills and existing policies execute below the agent; feedback specifies success or the cause of failure.
     zh: 模型每轮读取最新观测、持久场景信息和带语义的执行结果，判断是否成功、失败原因以及下一步；上下文和记忆管理控制哪些历史继续保留。
@@ -6947,6 +7044,7 @@
     ja: コーディングエージェントに、固定 VLA と解析的な行動プリミティブを組み合わせさせる。
   sources:
   - https://arxiv.org/abs/2607.08448
+  - https://github.com/RLinf/RPent
   verification:
     en: After each call, images, depth, robot state and diagnostics inform whether to retry, change the scene or continue;
       VLA execution has its own observation loop.
@@ -7021,6 +7119,7 @@
   sources:
   - https://arxiv.org/abs/2505.03728
   - https://pyroki-toolkit.github.io
+  - https://github.com/chungmin99/pyroki
   verification:
     en: 'A solver resource: control and optimization capabilities should not be attributed to the language model.'
     zh: 这是求解器资源；控制和优化能力不应归因于语言模型本身。
@@ -7073,6 +7172,7 @@
   sources:
   - https://jvboid.dev/projects/phys-0
   - https://github.com/JacobFV/chem-0
+  - https://github.com/JacobFV/phys-0
   verification:
     en: The author distinguishes animation, screen recordings and camera observations; verified hardware support is limited
       to SO-101.
@@ -7358,6 +7458,7 @@
   sources:
   - https://arxiv.org/abs/2610.06843
   - https://github.com/BWR-hhh/rvicl
+  - https://bwr-hhh.github.io/rvicl/
   verification:
     en: LIBERO-PRO/Plus success · demonstration-access ablations · retrieval budgets · failure-conditioned re-entry.
     zh: LIBERO-PRO／Plus 成功率 · 示范访问消融 · 检索预算 · 失败驱动的再次查询。
@@ -7381,6 +7482,7 @@
   sources:
   - https://arxiv.org/abs/2610.04929
   - https://robotuse-team.github.io/
+  - https://github.com/robotuse-team/RobotUse
   verification:
     en: Perception and motion backends realize geometric choices; persistent execution guidance is a separate source of experience.
     zh: 候选姿态与执行结果可供视觉检查；局部详细交互保存在子 Agent 上下文，主 Agent 接收任务结果、当前状态和仍未解决的约束。
@@ -7399,6 +7501,7 @@
   sources:
   - https://arxiv.org/abs/2610.12457
   - https://emilia113.github.io/SpatialHarness/
+  - https://huggingface.co/datasets/yzy05/SpatialHarness
   verification:
     en: Spatial scaffolding supports a frozen policy; synchronized geometry does not by itself demonstrate accurate full dynamics.
     zh: 动作后用新观测修正数字场景，向模型提供更新的物体位姿和补充视角；模型据此检查遮挡、空间关系与操作位置，再决定下一步。
@@ -7440,6 +7543,8 @@
     ja: 汎用 Agent が視覚的な証拠を継続的に読み、プログラムと運動指令を生成し、物理的な実行結果に応じて次の行動を調整する。
   sources:
   - https://arxiv.org/abs/2609.12541
+  - https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy
+  - https://github.com/agent-as-policy-2026/agent-as-policy
   verification:
     en: Subsequent decisions depend on physical execution results, with the actual observation and action interface defining
       the setting.
@@ -7515,6 +7620,7 @@
     ja: LLM Agent に視覚幾何の操作パネルを与え、単純なツールインターフェースがゼロショットのロボット操作を支えられるか調べる。
   sources:
   - https://arxiv.org/abs/2610.14018
+  - https://github.com/BinceQu/RoboHarness
   verification:
     en: Results concern the complete harness-and-model configuration, not a standalone action model.
     zh: 结果对应完整的 Harness 与模型配置，而非独立动作模型的能力。
@@ -7533,6 +7639,9 @@
   sources:
   - https://arxiv.org/abs/2609.10522
   - https://showlab.github.io/Show-Harness
+  - https://github.com/showlab/Show-Harness
+  - https://huggingface.co/showlab/Show-Harness-VLMs
+  - https://huggingface.co/datasets/showlab/Show-Harness-Data
   verification:
     en: The interface delegates motion realization; model reasoning and downstream control are separate responsibilities.
     zh: 接口将运动实现委派给下游模块；模型推理与底层控制承担不同职责。
@@ -7616,6 +7725,7 @@
   sources:
   - https://arxiv.org/abs/2607.05369
   - https://graph-robots.github.io/gap
+  - https://github.com/graph-robots/graph-as-policy
   verification:
     en: The optimized graph can execute without invoking the LLM at every action.
     zh: 内部仿真执行图后返回任务结果与问题，Agent 在部署前据此修订；优化后的图由解释器在机器人上重复执行，不要求每次动作都调用 LLM。
@@ -7635,6 +7745,7 @@
     ja: ファイルで表す状態契約によって Agent の推論とロボットの実行を分離し、ツール呼び出し、状態記録、経験の更新を実行層の間でつなぐ。
   sources:
   - https://arxiv.org/abs/2607.16636
+  - https://github.com/PhyAgentOS/PhyAgentOS
   verification:
     en: Track which state and experience reach the agent across runtime boundaries.
     zh: 需要明确哪些状态与经验跨越运行时边界，实际到达 Agent。
@@ -7801,6 +7912,7 @@
   sources:
   - https://arxiv.org/abs/2312.04474
   - https://chain-of-code.github.io
+  - https://colab.research.google.com/github/google-research/google-research/blob/master/code_as_policies/coc_demo.ipynb
   verification:
     en: Robot examples demonstrate composition of code and model calls, not a universal physical controller.
     zh: 除通用推理实验外，附录有实体机器人任务；本目录只引用其机器人代码/API 使用贡献。
@@ -7877,6 +7989,8 @@
   sources:
   - https://arxiv.org/abs/2209.07753
   - https://code-as-policies.github.io
+  - https://github.com/google-research/google-research/tree/master/code_as_policies
+  - https://huggingface.co/spaces/jackyliang42/code-as-policies
   verification:
     en: The generated program uses feedback; this does not establish that the language model observes every action and rewrites
       code.
@@ -7897,6 +8011,7 @@
   sources:
   - https://arxiv.org/abs/2209.11302
   - http://progprompt.github.io
+  - https://github.com/NVlabs/progprompt-vh
   verification:
     en: Program assertions and action-success feedback available to the model are different mechanisms.
     zh: 执行时检查动作前提是否成立，例如抓取前是否已靠近目标；不成立时运行计划中的恢复步骤。论文也指出，动作成功反馈并未全面提供给 Agent。
@@ -8628,6 +8743,7 @@
   - https://arxiv.org/abs/2608.30821
   - https://arxiv.org/html/2608.30821v1
   - https://lucida-r2s.github.io/
+  - https://lucida-r2s.github.io/#main-result
   verification:
     en: R2S, CA-1M and ADT evaluations measure 3D detection, pose accuracy and scene geometry. Physical interaction and hardware
       transfer are not tested.
@@ -9243,6 +9359,7 @@
   - https://arxiv.org/html/2310.01361v2
   - https://github.com/liruiw/GenSim
   - https://liruiw.github.io/gensim
+  - https://huggingface.co/spaces/Gen-Sim/Gen-Sim
   verification:
     en: Seventy GPT-4-generated tasks support pretraining; twelve real tasks evaluate downstream policies. Real-task success
       concerns learned policies, not automatic calibration of generated environments.
@@ -9312,6 +9429,7 @@
   sources:
   - https://arxiv.org/abs/2611.02928
   - https://black1948.github.io/lab2sim
+  - https://black1948.github.io/lab2sim/#demo
   verification:
     en: Runnable rate vs. operation and transition fidelity · invalid-action tests · repair ablations.
     zh: 区分可运行率与操作／状态还原度；测试非法操作及修复消融。
@@ -9523,6 +9641,7 @@
   sources:
   - https://arxiv.org/abs/2606.01869
   - https://arxiv.org/html/2606.01869
+  - https://huggingface.co/datasets/shuolucs/WorldCoder-Bench
   verification:
     en: Its suite also contains rendering and application tasks. The physical subset offers contract checks, not proof of
       real-world parameter calibration.
@@ -9577,6 +9696,8 @@
   sources:
   - https://arxiv.org/abs/2604.13035
   - https://arxiv.org/html/2604.13035
+  - https://lab-spell.github.io/SceneCritic
+  - https://github.com/DIASENGUPTA/SceneCritic
   verification:
     en: These are chiefly static semantic and geometric checks, not validation of physical time evolution.
     zh: 偏静态语义和几何质量，不直接验证物理时间演化；并非仅针对 Coding Agent。
@@ -9650,6 +9771,7 @@
   sources:
   - https://arxiv.org/abs/2602.13294
   - https://arxiv.org/html/2602.13294
+  - https://github.com/TIGER-AI-Lab/VisPhyWorld
   verification:
     en: These visual and judgment proxies do not establish comprehensive recovery of real physical parameters.
     zh: 主要指标是视觉／运动及评审代理量，不是全面的真实物理参数恢复；输入还可含首帧结构信息。
@@ -9740,6 +9862,7 @@
   - https://dagroup-pku.github.io/open-humanwam/
   - https://github.com/DAGroup-PKU/HumanNet/tree/Open-HumanWAM
   - https://huggingface.co/datasets/DAGroup-PKU/Open-HumanWAM-50K
+  - https://huggingface.co/collections/DAGroup-PKU/open-humanwam
   verification:
     en: RoboTwin and RoboDojo simulation · 20-task real-robot zero-shot study · data-scale, diversity and action-alignment
       ablations · goal-conditioned demonstrations; long-horizon policies receive task-specific post-training.
@@ -9764,6 +9887,7 @@
   sources:
   - https://arxiv.org/abs/2406.18915
   - https://robot-ma.github.io/
+  - https://github.com/Robot-MA/manipulate-anything
   verification:
     en: Real trajectories train a downstream policy; initial human-provided code examples are part of the setup.
     zh: 真实轨迹训练下游策略，初始化包含人工提供的代码例子。
@@ -9782,6 +9906,10 @@
   sources:
   - https://arxiv.org/abs/2403.12945
   - https://droid-dataset.github.io/
+  - https://droid-dataset.github.io/visualizer
+  - https://github.com/droid-dataset/droid
+  - https://github.com/droid-dataset/droid_policy_learning
+  - https://droid-dataset.github.io/droid/
   verification:
     en: Released teleoperation data do not inherently contain agent reasoning, tool calls or code-repair traces.
     zh: 开放遥操作数据本身不包含 Agent 推理、工具调用或代码修复轨迹。
@@ -9893,6 +10021,7 @@
   - https://arxiv.org/abs/2609.35318
   - https://dexagent1.github.io/
   - https://dexagent123.github.io/
+  - https://github.com/dexagent1/DexAgent
   verification:
     en: Real input videos and simulated output demonstrations have different provenance.
     zh: 真实输入视频与合成输出示范具有不同来源。
@@ -9910,6 +10039,7 @@
     ja: 検証済みのロボットプログラムを合成実演へ拡張する。
   sources:
   - https://arxiv.org/abs/2609.27308
+  - https://github.com/EmbodiedSWE/EmbodiedSWE
   verification:
     en: The main pipeline runs in simulation; a separate physical long-horizon task tests a policy trained on synthetic data.
     zh: 主体在仿真中开发与生成数据，另以合成数据训练策略完成一项实机长任务。
@@ -9928,6 +10058,7 @@
   sources:
   - https://arxiv.org/abs/2607.23704
   - https://github.com/Su-ISE-2001/LabRobFail
+  - https://github.com/Su-ISE-2001/SciRobo
   verification:
     en: Reports over 20,000 trajectories, six diagnostic tasks with unseen-object/scene splits, and downstream OpenVLA/ACT
       recovery. Text correction scores and simulated recovery do not establish real laboratory safety or coding-agent post-training.
@@ -9952,6 +10083,7 @@
   - https://github.com/robotwin-Platform/robotwin/
   - https://robotwin-platform.github.io/
   - https://robotwin-platform.github.io/doc/
+  - https://huggingface.co/datasets/TianxingChen/RoboTwin2.0
   verification:
     en: Simulation refinement, dataset generation and real-policy tests provide different evidence; refinement is not real-world
       calibration.
@@ -9971,6 +10103,7 @@
   sources:
   - https://arxiv.org/abs/2410.03645
   - https://gensim2.github.io/
+  - https://github.com/GenSim2/gensim2
   verification:
     en: Generated tasks, solvers and demonstrations support policy learning, not post-training of the task-writing LLM.
     zh: 任务、求解器与示范支持下游策略学习，不是任务生成 LLM 后训练。
@@ -9989,6 +10122,7 @@
   sources:
   - https://arxiv.org/abs/2307.14535
   - https://www.cs.columbia.edu/~huy/scalingup/
+  - https://github.com/columbia-ai-robotics/scalingup
   verification:
     en: Generated demonstrations train a visuomotor policy; the coding LLM is not the learned policy.
     zh: 生成示范训练的是视觉运动策略，不是写码 LLM。
@@ -10159,6 +10293,7 @@
     ja: タスク内とタスク間の両方で Harness を進化させる。
   sources:
   - https://arxiv.org/abs/2610.14224
+  - https://github.com/google-research/harness2
   verification:
     en: Recursive update descriptions alone do not establish the full multimodal code-repair chain.
     zh: 递归更新叙述本身不足以证明完整多模态代码修复链。
@@ -10196,6 +10331,7 @@
   - https://arxiv.org/abs/2610.03476
   - https://github.com/kaiknower/MobiAgent
   - https://kaiknower.github.io/mobiagent/
+  - https://huggingface.co/Liukaikai/MobiAgent
   verification:
     en: Long-horizon simulation/real-robot success · recovery/replanning · deployment-to-training rounds · component ablations.
     zh: 长时仿真／真实机器人成功率 · 恢复／重规划 · 部署后训练轮次 · 组件消融。
@@ -10448,6 +10584,7 @@
     ja: 物理的な相互作用から階層的な知識を蓄積する。
   sources:
   - https://arxiv.org/abs/2609.37583
+  - https://github.com/RUCKBReasoning/RoboHarn-Evo
   verification:
     en: The persisted knowledge is external to the base model; later-task tests establish its value.
     zh: 持久知识位于基模之外，其作用由后续任务检验。
@@ -10583,6 +10720,7 @@
   sources:
   - https://arxiv.org/abs/2607.23784
   - https://robo-architect.github.io/
+  - https://github.com/robo-architect/architect-franka
   verification:
     en: Franka tests allow up to five expert corrections; automatic VLM correction is a separate ablation.
     zh: Franka 实验允许最多五轮专家纠正，自动 VLM 纠正属于独立消融。
@@ -10626,6 +10764,7 @@
   sources:
   - https://arxiv.org/abs/2606.19419
   - https://playful-rats.github.io/
+  - https://github.com/Playful-RATs/rats
   verification:
     en: Skill discovery must be distinguished from immediate retries; later execution measures retained capability.
     zh: 技能发现与当前回合重试应区分，后续执行衡量能力是否保留。
@@ -10643,6 +10782,7 @@
     ja: 失敗を引き起こした具体的なスキルに内省を対応付ける。
   sources:
   - https://arxiv.org/abs/2605.10332
+  - https://github.com/air-embodied-brain/EmbodiSkill
   verification:
     en: The learning object is skill-level experience; performance claims require later task execution rather than reflection
       text alone.
@@ -10738,6 +10878,7 @@
   sources:
   - https://arxiv.org/abs/2405.19758
   - https://interpret-robot.github.io
+  - https://github.com/hmz-15/interactive-predicate-learning
   verification:
     en: Generalization concerns predicates and planning models; human feedback remains part of the learning setup.
     zh: 泛化针对谓词与规划模型，人工反馈是学习配置的一部分。
@@ -10756,6 +10897,7 @@
   sources:
   - https://arxiv.org/abs/2305.16744
   - https://portal-cornell.github.io/demo2code/
+  - https://github.com/portal-cornell/demo2code
   verification:
     en: Program synthesis and task execution evaluate demonstration-to-code transfer; this does not imply updating the foundation
       model.
@@ -10775,6 +10917,8 @@
   sources:
   - https://arxiv.org/abs/2610.30136
   - https://agentic-wam.github.io/
+  - https://huggingface.co/miniFranka/agentic-wam-pretrain-yamego3k-soup-e1
+  - https://github.com/ZhuoyangLiu2005/agentic-wam
   verification:
     en: RoboTwin clean/random conditions · two physical bimanual platforms · code-expert ablations · hybrid-execution trade-offs.
     zh: RoboTwin 常规／随机化条件 · 两类双臂实机平台 · 代码专家消融 · 混合执行权衡。
@@ -10797,6 +10941,8 @@
     ja: 異なる Harness をまたいでロボットの計画モデルを事後学習する。
   sources:
   - https://arxiv.org/abs/2610.28589
+  - https://github.com/L-CodingSpace/AgenticRoboRL
+  - https://l-codingspace.github.io/AgenticRoboRL/
   verification:
     en: Planner weight updates are distinct from harness improvement; interface-specific results should not be collapsed into
       one control mechanism.
@@ -10818,6 +10964,7 @@
   - https://github.com/waltstephen/CaPtain
   - https://github.com/waltstephen/CaPtain-Harness
   - https://huggingface.co/datasets/YijiaFan/CaPtain-SFT-Data
+  - https://waltstephen.github.io/captain/
   verification:
     en: Host versus explicit-finish success · privileged critic used only during training · cross-simulator API adaptation
       · twin-adapted XR1 demonstrations.
@@ -10843,6 +10990,9 @@
   sources:
   - https://arxiv.org/abs/2610.41216
   - https://garfield-kh.github.io/TinyAstral/
+  - https://github.com/Garfield-kh/TinyAstral
+  - https://huggingface.co/kehong/TinyAstral-weights
+  - https://huggingface.co/datasets/kehong/TinyAstral-SFT
   verification:
     en: Harness evolution and student weight learning are separate stages.
     zh: Harness 演化与学生模型权重学习分为两个阶段。
@@ -10936,6 +11086,7 @@
     ja: 固定した人型ロボットのスキルを使い、チームの戦略を進化させる。
   sources:
   - https://arxiv.org/abs/2610.23288
+  - https://github.com/Innovationlzc/CoEvolve
   verification:
     en: Strategy-code improvement should not be credited as learning the underlying motion skills.
     zh: 策略代码改进不能归因为学会了底层运动技能。
@@ -11021,6 +11172,7 @@
     ja: タスク計画と運動計画を解くプログラムを記述する。
   sources:
   - https://arxiv.org/abs/2609.30233
+  - https://github.com/tomsilver/robocode
   verification:
     en: KinDER and PDDLStream experiments concern solver behavior and generalization, not a general learned robot policy.
     zh: KinDER 与 PDDLStream 实验检验求解器行为和泛化，不等于通用学习式机器人策略。
@@ -11064,6 +11216,7 @@
   sources:
   - https://arxiv.org/abs/2609.24145
   - https://luckykantnayak.github.io/mimic-agent/
+  - https://github.com/Luckykantnayak/mimicagent-humnaoid
   verification:
     en: Kinematically generated reference motion is not guaranteed dynamically feasible; RL learns executable tracking.
     zh: 运动学生成的参考不保证动力学可行，RL 负责学习可执行跟踪。
@@ -11119,6 +11272,7 @@
   sources:
   - https://arxiv.org/abs/2606.19980
   - https://research.nvidia.com/labs/gear/enpire/
+  - https://github.com/NVlabs/ENPIRE
   verification:
     en: Rollout success and recovery · reward precision/recall · inference latency · multimodal outcome checks.
     zh: Rollout 成功与恢复 · 奖励精确率／召回率 · 推理延迟 · 多模态结果检查。
@@ -11160,6 +11314,7 @@
   sources:
   - https://arxiv.org/abs/2606.16458
   - https://rho-robotics.github.io
+  - https://github.com/KE7/HELIX
   verification:
     en: Development search and deployed program execution have different compute and feedback requirements.
     zh: 开发期搜索与部署期程序执行具有不同计算和反馈条件。
@@ -11254,6 +11409,7 @@
   sources:
   - https://arxiv.org/abs/2409.01652
   - https://rekep-robot.github.io/
+  - https://github.com/huangwl18/ReKep
   verification:
     en: Execution tests constraint-based control; rerunning an optimizer is distinct from rewriting constraints or training
       the LLM.
@@ -11273,6 +11429,7 @@
   sources:
   - https://arxiv.org/abs/2406.01967
   - https://eureka-research.github.io/dr-eureka/
+  - https://github.com/eureka-research/DrEureka
   verification:
     en: Simulation and hardware comparisons measure policy transfer, not post-training of the coding model.
     zh: 仿真与实机对照衡量策略迁移，不是编程模型后训练。
@@ -11308,6 +11465,7 @@
   sources:
   - https://arxiv.org/abs/2310.12931
   - https://eureka-research.github.io/
+  - https://github.com/eureka-research/Eureka
   verification:
     en: Reward search and robot-policy optimization are separate from LLM weight updates.
     zh: 奖励搜索与机器人策略优化不等于 LLM 权重学习。
@@ -11326,6 +11484,7 @@
   sources:
   - https://arxiv.org/abs/2309.11489
   - https://text-to-reward.github.io/
+  - https://github.com/xlang-ai/text2reward
   verification:
     en: Some feedback is supplied by people watching rollouts; the updated model is the downstream RL policy.
     zh: 部分反馈由人观看 rollout 提供，训练对象是下游 RL 策略。
@@ -11344,6 +11503,7 @@
   sources:
   - https://arxiv.org/abs/2306.08647
   - https://language-to-reward.github.io/
+  - https://github.com/google-deepmind/language_to_reward_2023
   verification:
     en: Behavior optimization and user-guided corrections concern the controller objective, not LLM post-training.
     zh: 行为优化和用户纠正改变控制目标，不是 LLM 后训练。
@@ -11530,6 +11690,7 @@
   sources:
   - https://pubs.rsc.org/en/content/articlelanding/2026/dd/d6dd00177g
   - https://www.repository.cam.ac.uk/items/cb2e6fef-94c4-4fe9-903a-aaa198da8f4f
+  - https://github.com/Okarl96/shem_gui
   verification:
     en: Real SHeM imaging and diffraction validate the instrument; development, review and deployment remain human-led.
     zh: 真实 SHeM 成像与衍射验证仪器，开发、审阅和部署仍由人主导。
@@ -11658,6 +11819,7 @@
   sources:
   - https://arxiv.org/abs/2611.08175
   - https://chip-ai-agent.github.io/research/pcbrouteagent
+  - https://github.com/chip-ai-agent/PCBRouteAgent
   verification:
     en: 247 PCBWorld boards · connectivity plus zero error-level DRC · fixed initial images with evolving spatial feedback;
       D3-B includes recovery steps, and no fabricated-board validation is reported.
@@ -11775,6 +11937,7 @@
     ja: 視覚と有限要素解析のフィードバックによって CAD 設計を改善する。
   sources:
   - https://arxiv.org/abs/2605.17448
+  - https://github.com/3dlg-hcvc/s2o
   verification:
     en: CAD/STEP execution · stress/displacement/modal/buckling/contact/clearance requirements · strict and mean requirement
       pass.
@@ -11937,6 +12100,7 @@
   sources:
   - https://arxiv.org/abs/2610.20998
   - https://mocap-7.github.io/MoCAP-page/
+  - https://github.com/MoCAP-7/MoCAP
   verification:
     en: Real YOR navigation and two grasping tasks · memory/approach-prior ablations · collision-aware baseline · single-environment
       feasibility, not broad cross-home generalization.
@@ -11986,6 +12150,7 @@
   sources:
   - https://arxiv.org/abs/2609.30249
   - https://yuyaoliu.me/projects/rapid
+  - https://github.com/nature21/RAPID
   verification:
     en: Inferred-predicate verification · hidden task success · scene-variation generalization · real-robot deployment.
     zh: 推导谓词验证 · 隐藏任务成功率 · 场景变体泛化 · 实体机器人部署。
@@ -12028,6 +12193,7 @@
   sources:
   - https://arxiv.org/abs/2403.07832
   - https://deligrasp.github.io
+  - https://github.com/deligrasp/deligrasp
   verification:
     en: Grasping tests use estimated properties; successful handling does not establish exact physical-parameter recovery.
     zh: 抓取使用推断属性，操作成功不能证明物理参数被准确恢复。
@@ -12064,6 +12230,7 @@
   sources:
   - https://arxiv.org/abs/2307.05973
   - https://voxposer.github.io
+  - https://github.com/huangwl18/VoxPoser
   verification:
     en: Recomputing maps from new observations differs from having the LLM revise its generated code.
     zh: 根据新观测重算价值图与 LLM 重写代码应分开。
@@ -12154,6 +12321,7 @@
     ja: UI、科学的可視化、構造化グラフィックス、新たな Agentic 用途におけるマルチモーダルなコード知能を概観する。
   sources:
   - https://arxiv.org/abs/2606.15932
+  - https://github.com/xjywhu/Awesome-Multimodal-LLM-for-Code
   verification:
     en: ''
     zh: ''
@@ -12249,6 +12417,8 @@
   - https://github.com/hey-cjj/LAW
   - https://hey-cjj.github.io/LAW-project/
   - https://huggingface.co/datasets/KAITANG2003/LAW-RoboTwin-VLM-Training
+  - https://github.com/hey-cjj/CogWAM
+  - https://huggingface.co/collections/KAITANG2003/law
   verification:
     en: 50-task RoboTwin success · three real-robot tasks with task-specific demonstrations · action-selection, memory and
       expert ablations; future video generation is used in training, not explicit inference-time rollout scoring.
@@ -12302,6 +12472,8 @@
   - https://github.com/kwai/MobileForge
   - https://huggingface.co/collections/lgy0404/mobileforge-datasets
   - https://mobile-forge.github.io/
+  - https://huggingface.co/collections/lgy0404/mobileforge-models
+  - https://huggingface.co/datasets/lgy0404/mobileforge-benchmark-results
   verification:
     en: AndroidWorld Pass@1/2/3 · held-out MobileWorld transfer · hint, evaluator and task-filtering ablations; learns the
       operator rather than constructing the app.
@@ -12379,6 +12551,7 @@
   - https://storage.googleapis.com/deepmind-media/papers/mka_tech_paper.pdf
   - https://artificialanalysis.ai/evaluations/mka
   - https://huggingface.co/datasets/google/multimodal-knowledge-agent
+  - https://blog.google/innovation-and-ai/models-and-research/gemini-models/multimodal-knowledge-agent-benchmark/
   verification:
     en: 200 private tasks · image-tool ablation · 50-task autorater agreement study · 10 disjoint public showcase tasks; final
       grading is separate from the generation trajectory.
@@ -12406,6 +12579,8 @@
   - https://github.com/yushaohan/IntReal
   - https://huggingface.co/datasets/yushaohan/IntReal-100K
   - https://yushaohan.github.io/IntReal/
+  - https://huggingface.co/collections/yushaohan/intreal
+  - https://huggingface.co/spaces/yushaohan/IntReal-Leaderboard
   verification:
     en: 600 test tasks across four categories · seven metrics · expert-preference agreement · selected cross-judge ranking
       checks · post-training utility; image-count and human-preference checks are distinct.
@@ -12527,6 +12702,9 @@
   sources:
   - https://arxiv.org/abs/2611.05163
   - https://ryan-seungyong-lee.github.io/RoboTryOn
+  - https://github.com/ryan-seungyong-lee/RoboTryOn
+  - https://huggingface.co/RyanL22/RoboTryOn
+  - https://huggingface.co/spaces/RyanL22/RoboTryOn
   verification:
     en: Open-loop action replay in simulation · two real robots and 11 tasks · visual/action-gap ablations.
     zh: 仿真开环动作回放、两种实机与 11 个任务、视觉及动作差距消融。
@@ -12550,6 +12728,7 @@
   sources:
   - https://arxiv.org/abs/2611.06083
   - https://wpr001.github.io/sleuthVLM/
+  - https://github.com/WPR001/OpenOmniHarness
   verification:
     en: Four audiovisual QA benchmarks · transcript/timestamp ablations · optional audio-captioning study · logged access
       audit; evidence acquisition rather than artifact repair.
@@ -12623,6 +12802,7 @@
   - https://arxiv.org/abs/2611.02737
   - https://multi-shot-edit.github.io/
   - https://multi-shot-edit.github.io/benchmark.html
+  - https://github.com/adobe-research/MoviEdit-Bench
 - id: res:semo3d
   title: SeMo3D
   url: https://arxiv.org/abs/2611.02568
@@ -12726,6 +12906,7 @@
   sources:
   - https://arxiv.org/abs/2610.05529
   - https://threedle.github.io/dynamesh/
+  - https://github.com/threedle/dynamesh
 - id: res:tex-zero
   title: Tex-Zero
   url: https://arxiv.org/abs/2609.34621
@@ -12874,6 +13055,7 @@
   sources:
   - https://vostride.com
   - https://vostride.com/docs/agent-qa/mcp
+  - https://github.com/vostride/agent-qa
 - id: res:shotback
   title: Shotback
   url: https://github.com/DCCA/shotback
@@ -13599,6 +13781,8 @@
   sources:
   - https://arxiv.org/abs/2512.16881
   - https://polaris-evals.github.io/
+  - https://github.com/arhanjain/PolaRiS
+  - https://huggingface.co/datasets/owhan/PolaRiS-Hub
   verification:
     en: Paired simulated and real evaluations; the authors report that reconstruction alone leaves gaps and add simulation-data
       co-training to raise real-to-sim correlation.
@@ -13618,6 +13802,7 @@
   - https://arxiv.org/abs/2609.24778
   - https://arxiv.org/html/2609.24778v3
   - https://davidz2851.github.io/h2rbench.github.io/
+  - https://github.com/xiaochy/H2RBench
   verification:
     en: Across method–task pairs, simulated and real rankings agree with Pearson r = 0.89, Spearman rho = 0.85 and MMRV = 0.06.
     zh: 在方法—任务组合上，仿真与实机排名的 Pearson r 为 0.89，Spearman ρ 为 0.85，MMRV 为 0.06。

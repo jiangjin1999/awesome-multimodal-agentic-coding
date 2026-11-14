@@ -104,7 +104,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2610.23104", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-23104"></a>`2026.10` **[WebCoder: Scaling General Frontend Development with Artifact-Grounded Agentic Reinforcement Learning](https://arxiv.org/abs/2610.23104)** [[Project page]](https://douzj-llm.github.io/WebCoder/) [[Code]](https://github.com/douzj-llm/WebCoder) [[Dataset]](https://huggingface.co/datasets/Roy-DOU/Webdev-Bench)
+- <a id="paper-2610-23104"></a>`2026.10` **[WebCoder: Scaling General Frontend Development with Artifact-Grounded Agentic Reinforcement Learning](https://arxiv.org/abs/2610.23104)** [[Project page]](https://douzj-llm.github.io/WebCoder/) [[Code]](https://github.com/douzj-llm/WebCoder) [[Dataset]](https://huggingface.co/datasets/Roy-DOU/Webdev-Bench) [[Model]](https://huggingface.co/Roy-DOU/WebCoder-27B)
   > Trains a frontend builder with artifact-grounded reinforcement learning, using rendered feedback to revise a persistent application and assigning long-horizon credit through changes in requirement satisfaction.
 
 <!-- mmac-record: {"id": "2610.02617", "scope": "Adjacent", "primary": "1.1", "stage": 1, "type": "paper"} -->
@@ -124,7 +124,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2609.22000", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-22000"></a>`2026.09` **[RecreationWorld: Scalable and Verifiable Environments for Hybrid Computer-Use Agents](https://arxiv.org/abs/2609.22000)**
+- <a id="paper-2609-22000"></a>`2026.09` **[RecreationWorld: Scalable and Verifiable Environments for Hybrid Computer-Use Agents](https://arxiv.org/abs/2609.22000)** [[Code]](https://github.com/QwenLM/RecreationWorld)
   > Recreates applications across desktop, Android, and Web by interleaving reference exploration, source implementation, execution, and visual checks, and trains hybrid agents on verified reconstruction trajectories.
 
 <!-- mmac-record: {"id": "2609.02088", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
@@ -174,7 +174,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2602.06090", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2602-06090"></a>`2026.02` **[SVRepair: Structured Visual Reasoning for Automated Program Repair](https://arxiv.org/abs/2602.06090)**
+- <a id="paper-2602-06090"></a>`2026.02` **[SVRepair: Structured Visual Reasoning for Automated Program Repair](https://arxiv.org/abs/2602.06090)** [[Code]](https://github.com/codefuse-ai/CodeFuse-SVR)
   > Structures screenshots into localized visual evidence and iterates between scene understanding, code localization, and patching.
 
 <!-- mmac-record: {"id": "2602.05998", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
@@ -184,7 +184,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2601.04203", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2601-04203"></a>`2025.12` **[FronTalk: Benchmarking Front-End Development as Conversational Code Generation with Multi-Modal Feedback](https://arxiv.org/abs/2601.04203)** [[Project page]](https://frontalk-benchmark.github.io/) [[Code]](https://github.com/shirley-wu/frontalk)
+- <a id="paper-2601-04203"></a>`2025.12` **[FronTalk: Benchmarking Front-End Development as Conversational Code Generation with Multi-Modal Feedback](https://arxiv.org/abs/2601.04203)** [[Project page]](https://frontalk-benchmark.github.io/) [[Code]](https://github.com/shirley-wu/frontalk) [[Dataset]](https://huggingface.co/datasets/xqwu/FronTalk)
   > Introduces multi-turn visual front-end conversations and AceCoder, which interacts with rendered sites, critiques failures, and regenerates improved code.
 
 <!-- mmac-record: {"id": "2511.08195", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
@@ -194,7 +194,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2511.06251", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2511-06251"></a>`2025.11` **[WebVIA: A Web-based Vision-Language Agentic Framework for Interactive and Verifiable UI-to-Code Generation](https://arxiv.org/abs/2511.06251)** [[Demo]](https://zheny2751-dotcom.github.io/webvia.github.io/) [[Code]](https://github.com/zheny2751-dotcom/WebVIA)
+- <a id="paper-2511-06251"></a>`2025.11` **[WebVIA: A Web-based Vision-Language Agentic Framework for Interactive and Verifiable UI-to-Code Generation](https://arxiv.org/abs/2511.06251)** [[Demo]](https://zheny2751-dotcom.github.io/webvia.github.io/) [[Code]](https://github.com/zheny2751-dotcom/WebVIA) [[Model]](https://huggingface.co/zai-org/WebVIA-Agent)
   > Explores source interfaces through repeated perception-action-verification, synthesizes executable interactive code, and validates recovered behaviors.
 
 <!-- mmac-record: {"id": "2510.11498", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
@@ -231,7 +231,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2610.35138", "scope": "Adjacent", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-35138"></a>`2026.10` **[Co-Design Bench: Multimodal Collaborative Coding Evaluation for Agentic Models](https://arxiv.org/abs/2610.35138)** [[Project page]](https://codesignbench.github.io/) [[Code]](https://github.com/Wiselnn570/Co-Design-Bench) [[Dataset]](https://huggingface.co/datasets/Wiselnn/Co-Design-Bench)
+- <a id="paper-2610-35138"></a>`2026.10` **[Co-Design Bench: Multimodal Collaborative Coding Evaluation for Agentic Models](https://arxiv.org/abs/2610.35138)** [[Project page]](https://codesignbench.github.io/) [[Code]](https://github.com/Wiselnn570/Co-Design-Bench) [[Dataset]](https://huggingface.co/datasets/Wiselnn/Co-Design-Bench) [[Demo]](https://codesignbench.github.io/#intro-video)
   > Evaluates edits to existing applications against hidden requirements using source, rendered interfaces, and interaction evidence, with an independent refutation stage that challenges positive judgments.
 
 <!-- mmac-record: {"id": "2610.29014", "scope": "Adjacent", "primary": "1.1", "stage": 1, "type": "paper"} -->
@@ -241,17 +241,17 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2610.10374", "scope": "Adjacent", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-10374"></a>`2026.10` **[TaoD2C-Bench: Benchmarking MLLMs for Industrial UI Code Generation Beyond Visual Fidelity](https://arxiv.org/abs/2610.10374)** [[Project page]](https://taod2c-bench.github.io/)
+- <a id="paper-2610-10374"></a>`2026.10` **[TaoD2C-Bench: Benchmarking MLLMs for Industrial UI Code Generation Beyond Visual Fidelity](https://arxiv.org/abs/2610.10374)** [[Project page]](https://taod2c-bench.github.io/) [[Dataset]](https://github.com/TaoD2C-Bench/TaoD2C-Bench/tree/main/data/eval)
   > Separates industrial UI requirement inference from code realization, evaluating generated component and layout constraints through source/runtime evidence alongside final rendered fidelity.
 
 <!-- mmac-record: {"id": "2610.33149", "scope": "Adjacent", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-33149"></a>`2026.10` **[WebUniverse: Scaling Verified Training Data for Agentic Web Development](https://arxiv.org/abs/2610.33149)** [[Dataset]](https://huggingface.co/datasets/WebUniverse-NSL/WebUniverse-Env) [[Dataset]](https://huggingface.co/datasets/WebUniverse-NSL/WebUniverse-Mix) [[Project page]](https://webuniverse-nsl.github.io/)
+- <a id="paper-2610-33149"></a>`2026.10` **[WebUniverse: Scaling Verified Training Data for Agentic Web Development](https://arxiv.org/abs/2610.33149)** [[Dataset]](https://huggingface.co/datasets/WebUniverse-NSL/WebUniverse-Env) [[Dataset]](https://huggingface.co/datasets/WebUniverse-NSL/WebUniverse-Mix) [[Project page]](https://webuniverse-nsl.github.io/) [[Collection]](https://huggingface.co/collections/WebUniverse-NSL/webuniverse-6ad1bc77c51f1a47f876f073)
   > Builds paired web-development environments and verified trajectories, combining functional and visual checks with independent attempts and failure continuations for supervised agent training.
 
 <!-- mmac-record: {"id": "2609.32600", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-32600"></a>`2026.09` **[CUA-SWE: When Computer-Use Agents Meet Visual Software Engineering](https://arxiv.org/abs/2609.32600)**
+- <a id="paper-2609-32600"></a>`2026.09` **[CUA-SWE: When Computer-Use Agents Meet Visual Software Engineering](https://arxiv.org/abs/2609.32600)** [[Code]](https://github.com/kingofspace0wzz/cua-swe) [[Dataset]](https://huggingface.co/datasets/kingofspace0wzz/CUA-SWE)
   > Unifies source editing and screenshot-based computer use across web, game, mobile, and DevOps repairs, with visual runtime evidence guiding further edits and independent tests checking behavior and regressions.
 
 <!-- mmac-record: {"id": "2609.15387", "scope": "Adjacent", "primary": "1.1", "stage": 1, "type": "paper"} -->
@@ -271,7 +271,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2604.18224", "scope": "Adjacent", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2604-18224"></a>`2026.04` **[WebCompass: Towards Multimodal Web Coding Evaluation for Code Language Models](https://arxiv.org/abs/2604.18224)** [[Code]](https://github.com/NJU-LINK/WebCompass)
+- <a id="paper-2604-18224"></a>`2026.04` **[WebCompass: Towards Multimodal Web Coding Evaluation for Code Language Models](https://arxiv.org/abs/2604.18224)** [[Code]](https://github.com/NJU-LINK/WebCompass) [[Dataset]](https://huggingface.co/datasets/NJU-LINK/WebCompass)
   > Covers web generation, editing, and repair with visual and interactive evaluation, but does not require a same-agent render-observe-recode trajectory.
 
 <!-- mmac-record: {"id": "2602.18548", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
@@ -281,12 +281,12 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2507.04952", "scope": "Adjacent", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2507-04952"></a>`2025.07` **[ArtifactsBench: Bridging the Visual-Interactive Gap in LLM Code Generation Evaluation](https://arxiv.org/abs/2507.04952)** [[Project page]](https://artifactsbenchmark.github.io/)
+- <a id="paper-2507-04952"></a>`2025.07` **[ArtifactsBench: Bridging the Visual-Interactive Gap in LLM Code Generation Evaluation](https://arxiv.org/abs/2507.04952)** [[Project page]](https://artifactsbenchmark.github.io/) [[Code]](https://github.com/Tencent-Hunyuan/ArtifactsBenchmark) [[Dataset]](https://huggingface.co/datasets/tencent/ArtifactsBenchmark)
   > Evaluates completed interactive artifacts through rendered visuals and runtime behavior, without returning the resulting feedback to a later coding action.
 
 <!-- mmac-record: {"id": "2502.18525", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2502-18525"></a>`2025.02` **[Programming with Pixels: Can Computer-Use Agents do Software Engineering?](https://arxiv.org/abs/2502.18525)** [[Demo]](https://programmingwithpixels.com/) [[Code]](https://github.com/ProgrammingwithPixels/PwP)
+- <a id="paper-2502-18525"></a>`2025.02` **[Programming with Pixels: Can Computer-Use Agents do Software Engineering?](https://arxiv.org/abs/2502.18525)** [[Demo]](https://programmingwithpixels.com/) [[Code]](https://github.com/ProgrammingwithPixels/PwP) [[Dataset]](https://github.com/ProgrammingWithPixels/PwP/tree/main/pwp_bench) [[Demo]](https://programmingwithpixels.com/#pwp-in-action)
   > Evaluates coding agents that must observe and operate a visual IDE rather than relying on direct text-only tool access.
 
 #### Tools & resources
@@ -298,7 +298,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "res:agent-qa", "scope": "Resource", "primary": "1.1", "stage": 1, "type": "resource"} -->
 
-- <a id="paper-res-agent-qa"></a>**[agent-qa](https://vostride.com)** [[Documentation]](https://vostride.com/docs/agent-qa/mcp)
+- <a id="paper-res-agent-qa"></a>**[agent-qa](https://vostride.com)** [[Documentation]](https://vostride.com/docs/agent-qa/mcp) [[Code]](https://github.com/vostride/agent-qa)
   > Exposes natural-language web, Android and iOS tests, screenshots, console/network evidence and verdict corrections to coding agents; persistent memidex memory and evidence-gated self-improvement retain validated lessons across runs.
 
 <a id="tool-agent-visual-diff"></a>
@@ -371,7 +371,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2610.26828", "scope": "Adjacent", "primary": "1.2", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-26828"></a>`2026.10` **[Agent World Model in the Wild: Computer-Use Agent Environment Synthesis](https://arxiv.org/abs/2610.26828)** [[Code]](https://github.com/MSR-Orchard/WildAWM) [[Dataset]](https://huggingface.co/datasets/ChilleD/WildAWM)
+- <a id="paper-2610-26828"></a>`2026.10` **[Agent World Model in the Wild: Computer-Use Agent Environment Synthesis](https://arxiv.org/abs/2610.26828)** [[Code]](https://github.com/MSR-Orchard/WildAWM) [[Dataset]](https://huggingface.co/datasets/ChilleD/WildAWM) [[Project page]](https://msr-orchard.github.io/WildAWM/) [[Collection]](https://huggingface.co/collections/ChilleD/agent-world-model-in-the-wild)
   > Synthesizes replayable personal-computer worlds spanning GUI, MCP, and CLI, using heterogeneous rollouts and verifier-consistency gates to produce environment–task packages for computer-use training.
 
 <!-- mmac-record: {"id": "2610.37567", "scope": "Core", "primary": "1.2", "stage": 1, "type": "paper"} -->
@@ -401,7 +401,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2606.19930", "scope": "Adjacent", "primary": "1.2", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2606-19930"></a>`2026.06` **[MobileForge: Annotation-Free Adaptation for Mobile GUI Agents with Hierarchical Feedback-Guided Policy Optimization](https://arxiv.org/abs/2606.19930)** [[Code]](https://github.com/kwai/MobileForge) [[Collection]](https://huggingface.co/collections/lgy0404/mobileforge-datasets) [[Project page]](https://mobile-forge.github.io/)
+- <a id="paper-2606-19930"></a>`2026.06` **[MobileForge: Annotation-Free Adaptation for Mobile GUI Agents with Hierarchical Feedback-Guided Policy Optimization](https://arxiv.org/abs/2606.19930)** [[Code]](https://github.com/kwai/MobileForge) [[Collection]](https://huggingface.co/collections/lgy0404/mobileforge-datasets) [[Project page]](https://mobile-forge.github.io/) [[Collection]](https://huggingface.co/collections/lgy0404/mobileforge-models) [[Dataset]](https://huggingface.co/datasets/lgy0404/mobileforge-benchmark-results)
   > Adapts mobile GUI operators by mining tasks from real-app exploration, reusing visual-critic hints across attempts, and converting selected decisions into feedback-conditioned step-level policy updates.
 
 <!-- mmac-record: {"id": "2605.25624", "scope": "Core", "primary": "1.2", "stage": 1, "type": "paper"} -->
@@ -483,12 +483,12 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2609.33386", "scope": "Adjacent", "primary": "1.3", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-33386"></a>`2026.09` **[SIVIA-RSI: Source-Grounded Adaptation of Diagramming Skills](https://arxiv.org/abs/2609.33386)**
+- <a id="paper-2609-33386"></a>`2026.09` **[SIVIA-RSI: Source-Grounded Adaptation of Diagramming Skills](https://arxiv.org/abs/2609.33386)** [[Code]](https://github.com/exsinger-hub/Sivia)
   > Adapts reusable raster-diagram instructions from source-linked visual critiques and evaluates every proposed skill on fresh diagrams, separating selection preference from cross-paper relation fidelity.
 
 <!-- mmac-record: {"id": "2609.15182", "scope": "Core", "primary": "1.3", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-15182"></a>`2026.09` **[VisInteract: Towards Dynamic Interactive Text-to-Visualization under Imperfect Queries](https://arxiv.org/abs/2609.15182)**
+- <a id="paper-2609-15182"></a>`2026.09` **[VisInteract: Towards Dynamic Interactive Text-to-Visualization under Imperfect Queries](https://arxiv.org/abs/2609.15182)** [[Code]](https://github.com/wxxv/VisInteract)
   > Executes Altair programs and uses a simulated user's rendered-chart critiques and textual clarifications to steer subsequent code search toward underspecified visualization intent.
 
 <!-- mmac-record: {"id": "2608.00548", "scope": "Core", "primary": "1.3", "stage": 1, "type": "paper"} -->
@@ -558,12 +558,12 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2511.02778", "scope": "Core", "primary": "1.3", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2511-02778"></a>`2025.11` **[VCode: a Multimodal Coding Benchmark with SVG as Symbolic Visual Representation](https://arxiv.org/abs/2511.02778)**
+- <a id="paper-2511-02778"></a>`2025.11` **[VCode: a Multimodal Coding Benchmark with SVG as Symbolic Visual Representation](https://arxiv.org/abs/2511.02778)** [[Code]](https://github.com/CSU-JPG/VCode)
   > Evaluates and supports iterative generation of executable, editable SVG code as a symbolic visual representation.
 
 <!-- mmac-record: {"id": "2510.23642", "scope": "Core", "primary": "1.3", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2510-23642"></a>`2025.10` **[VisCoder2: Building Multi-Language Visualization Coding Agents](https://arxiv.org/abs/2510.23642)** [[Demo]](https://tiger-ai-lab.github.io/VisCoder2/) [[Code]](https://github.com/TIGER-AI-Lab/VisCoder2)
+- <a id="paper-2510-23642"></a>`2025.10` **[VisCoder2: Building Multi-Language Visualization Coding Agents](https://arxiv.org/abs/2510.23642)** [[Demo]](https://tiger-ai-lab.github.io/VisCoder2/) [[Code]](https://github.com/TIGER-AI-Lab/VisCoder2) [[Dataset]](https://huggingface.co/datasets/TIGER-Lab/VisCode-Multi-679K) [[Dataset]](https://huggingface.co/datasets/TIGER-Lab/VisPlotBench)
   > Builds visualization coding agents across programming languages with executable feedback and repair-oriented data.
 
 <a id="application-paper-2509-14778"></a>
@@ -574,7 +574,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2508.15222", "scope": "Core", "primary": "1.3", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2508-15222"></a>`2025.08` **[See it. Say it. Sorted: Agentic System for Compositional Diagram Generation](https://arxiv.org/abs/2508.15222)**
+- <a id="paper-2508-15222"></a>`2025.08` **[See it. Say it. Sorted: Agentic System for Compositional Diagram Generation](https://arxiv.org/abs/2508.15222)** [[Code]](https://github.com/hantaoZhangrichard/see_it_say_it_sorted)
   > Coordinates visual understanding and code-based SVG construction to iteratively turn sketches into compositional diagrams.
 
 <!-- mmac-record: {"id": "2506.14837", "scope": "Core", "primary": "1.3", "stage": 1, "type": "paper"} -->
@@ -626,7 +626,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2603.25804", "scope": "Core", "primary": "1.3", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2603-25804"></a>`2026.03` **[RealChart2Code: Advancing Chart-to-Code Generation with Real Data and Multi-Task Evaluation](https://arxiv.org/abs/2603.25804)** [[Code]](https://github.com/Speakn0w/RealChart2Code)
+- <a id="paper-2603-25804"></a>`2026.03` **[RealChart2Code: Advancing Chart-to-Code Generation with Real Data and Multi-Task Evaluation](https://arxiv.org/abs/2603.25804)** [[Code]](https://github.com/Speakn0w/RealChart2Code) [[Dataset]](https://huggingface.co/datasets/zjj1233/RealChart2Code)
   > Uses real charts and underlying data to evaluate generation, editing, and iterative chart-code refinement.
 
 <!-- mmac-record: {"id": "2603.29139", "scope": "Adjacent", "primary": "1.3", "stage": 1, "type": "paper"} -->
@@ -713,7 +713,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2608.02218", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2608-02218"></a>`2026.08` **[PosterMELD: Multi-Agent Paper-to-Poster Generation for Controllable Design Diversity with Editable Print-Ready Outputs](https://arxiv.org/abs/2608.02218)**
+- <a id="paper-2608-02218"></a>`2026.08` **[PosterMELD: Multi-Agent Paper-to-Poster Generation for Controllable Design Diversity with Editable Print-Ready Outputs](https://arxiv.org/abs/2608.02218)** [[Code]](https://github.com/Shannon4Science/PosterMELD)
   > Coordinates paper understanding, layout planning, rendering, and visual revision to produce editable print-ready posters.
 
 <!-- mmac-record: {"id": "2609.00194", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
@@ -728,7 +728,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2606.02915", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2606-02915"></a>`2026.06` **[Any2Poster: Any-Source Poster Generation Across Modalities and Domains](https://arxiv.org/abs/2606.02915)** [[Project page]](https://any2poster.github.io/Any2Poster/)
+- <a id="paper-2606-02915"></a>`2026.06` **[Any2Poster: Any-Source Poster Generation Across Modalities and Domains](https://arxiv.org/abs/2606.02915)** [[Project page]](https://any2poster.github.io/Any2Poster/) [[Code]](https://github.com/Any2Poster/Any2Poster) [[Dataset]](https://huggingface.co/datasets/Any2Poster/Any2Poster-Bench)
   > Transforms heterogeneous source material into code-rendered posters and uses multimodal review to repair visual defects.
 
 <!-- mmac-record: {"id": "2606.30296", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
@@ -758,12 +758,12 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2512.03042", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2512-03042"></a>`2025.12` **[PPTArena: A Benchmark for PowerPoint Editing](https://arxiv.org/abs/2512.03042)** [[Code]](https://github.com/michaelofengenden/PPTArena)
+- <a id="paper-2512-03042"></a>`2025.12` **[PPTArena: A Benchmark for PowerPoint Editing](https://arxiv.org/abs/2512.03042)** [[Code]](https://github.com/michaelofengenden/PPTArena) [[Code]](https://github.com/michaelofengend/PPTArena)
   > Introduces real-deck editing tasks and PPTPilot, which verifies PowerPoint edits in an iterative plan-edit-check loop.
 
 <!-- mmac-record: {"id": "2510.05571", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2510-05571"></a>`2025.10` **[Presenting a Paper is an Art: Self-Improvement Aesthetic Agents for Academic Presentations](https://arxiv.org/abs/2510.05571)** [[Project page]](https://evopresent.github.io/) [[Code]](https://github.com/UCSB-AI/EvoPresent)
+- <a id="paper-2510-05571"></a>`2025.10` **[Presenting a Paper is an Art: Self-Improvement Aesthetic Agents for Academic Presentations](https://arxiv.org/abs/2510.05571)** [[Project page]](https://evopresent.github.io/) [[Code]](https://github.com/UCSB-AI/EvoPresent) [[Code]](https://github.com/eric-ai-lab/EvoPresent) [[Dataset]](https://huggingface.co/datasets/TobyYang7/EvoPresent)
   > Generates HTML presentations and iterates with an aesthetic checker that scores visual design and returns targeted adjustments.
 
 <!-- mmac-record: {"id": "2505.17104", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
@@ -790,7 +790,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "system:mka", "scope": "Adjacent", "primary": "1.4", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-system-mka"></a>`2026.11` **[MKA: Evaluating Multimodal Knowledge Agents on end-to-end professional tasks](https://storage.googleapis.com/deepmind-media/papers/mka_tech_paper.pdf)** [[Results]](https://artificialanalysis.ai/evaluations/mka) [[Dataset]](https://huggingface.co/datasets/google/multimodal-knowledge-agent)
+- <a id="paper-system-mka"></a>`2026.11` **[MKA: Evaluating Multimodal Knowledge Agents on end-to-end professional tasks](https://storage.googleapis.com/deepmind-media/papers/mka_tech_paper.pdf)** [[Results]](https://artificialanalysis.ai/evaluations/mka) [[Dataset]](https://huggingface.co/datasets/google/multimodal-knowledge-agent) [[Article]](https://blog.google/innovation-and-ai/models-and-research/gemini-models/multimodal-knowledge-agent-benchmark/)
   > Evaluates visual multi-file knowledge work and professional deliverables with a shared tool harness, expert-weighted rubrics and a separate visual/programmatic autorater.
 
 <!-- mmac-record: {"id": "2611.10592", "scope": "Adjacent", "primary": "1.4", "stage": 1, "type": "paper"} -->
@@ -800,12 +800,12 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2610.37341", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-37341"></a>`2026.10` **[CodeCap-Bench: Can Code Serve as a Good Video Caption?](https://arxiv.org/abs/2610.37341)** [[Project page]](https://codecap-bench.github.io/)
+- <a id="paper-2610-37341"></a>`2026.10` **[CodeCap-Bench: Can Code Serve as a Good Video Caption?](https://arxiv.org/abs/2610.37341)** [[Project page]](https://codecap-bench.github.io/) [[Code]](https://github.com/kevin236-max/CodeCap-Bench) [[Dataset]](https://huggingface.co/datasets/kevintank/CodeCap-Dataset)
   > Evaluates executable code as a representation of structured video, with agentic configurations comparing timestamp-aligned browser renders to reference frames before refining the reconstruction.
 
 <!-- mmac-record: {"id": "2610.38425", "scope": "Adjacent", "primary": "1.4", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-38425"></a>`2026.10` **[IntReal: A Real-World Dataset and Benchmark for Multimodal Interleaved Generation](https://arxiv.org/abs/2610.38425)** [[Code]](https://github.com/yushaohan/IntReal) [[Dataset]](https://huggingface.co/datasets/yushaohan/IntReal-100K) [[Project page]](https://yushaohan.github.io/IntReal/)
+- <a id="paper-2610-38425"></a>`2026.10` **[IntReal: A Real-World Dataset and Benchmark for Multimodal Interleaved Generation](https://arxiv.org/abs/2610.38425)** [[Code]](https://github.com/yushaohan/IntReal) [[Dataset]](https://huggingface.co/datasets/yushaohan/IntReal-100K) [[Project page]](https://yushaohan.github.io/IntReal/) [[Collection]](https://huggingface.co/collections/yushaohan/intreal) [[Leaderboard]](https://huggingface.co/spaces/yushaohan/IntReal-Leaderboard)
   > Pairs real-source interleaved text–image data with specialist evaluators for holistic quality and context-conditioned fidelity, distinguishing post-generation evaluation from the generator’s own feedback loop.
 
 <!-- mmac-record: {"id": "2610.35864", "scope": "Adjacent", "primary": "1.4", "stage": 1, "type": "paper"} -->
@@ -815,7 +815,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2606.28593", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2606-28593"></a>`2026.06` **[Animation2Code: Evaluating Temporal Visual Reasoning in Video-to-Code Generation](https://arxiv.org/abs/2606.28593)** [[Project page]](https://anya-ji.github.io/animation2code-website/)
+- <a id="paper-2606-28593"></a>`2026.06` **[Animation2Code: Evaluating Temporal Visual Reasoning in Video-to-Code Generation](https://arxiv.org/abs/2606.28593)** [[Project page]](https://anya-ji.github.io/animation2code-website/) [[Code]](https://github.com/anya-ji/animation2code) [[Dataset]](https://huggingface.co/datasets/anim2code/dataset)
   > Evaluates temporal understanding and iterative refinement when reconstructing executable animations from video.
 
 #### Tools & resources
@@ -880,7 +880,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2610.22341", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-22341"></a>`2026.10` **[3DCodeVerse: Exploring 3D Worlds as Code](https://arxiv.org/abs/2610.22341)** [[Project page]](https://3dcodeverse.com/) [[Code]](https://github.com/gaoypeng/3dcodeverse)
+- <a id="paper-2610-22341"></a>`2026.10` **[3DCodeVerse: Exploring 3D Worlds as Code](https://arxiv.org/abs/2610.22341)** [[Project page]](https://3dcodeverse.com/) [[Code]](https://github.com/gaoypeng/3dcodeverse) [[Dataset]](https://huggingface.co/datasets/3dcodeverse/3dcodeverse-2m) [[Dataset]](https://huggingface.co/datasets/ilabai/3dcodeverse)
   > Couples a multi-runtime 3D program corpus with a DAG-based coding harness that converts geometric measurements and multiview visual critiques into targeted, file-scoped program revisions.
 
 <!-- mmac-record: {"id": "2610.09127", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -900,7 +900,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2610.23121", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-23121"></a>`2026.10` **[Scene-Designer: Learning Design Intelligence for Agentic 3D Scene Generation](https://arxiv.org/abs/2610.23121)** [[Code]](https://github.com/ZJU-OmniAI/Scene-Designer) [[Dataset]](https://huggingface.co/datasets/XuanyuLiu/Scene-OTC-Bench) [[Project page]](https://zju-omniai.github.io/Scene-Designer/)
+- <a id="paper-2610-23121"></a>`2026.10` **[Scene-Designer: Learning Design Intelligence for Agentic 3D Scene Generation](https://arxiv.org/abs/2610.23121)** [[Code]](https://github.com/ZJU-OmniAI/Scene-Designer) [[Dataset]](https://huggingface.co/datasets/XuanyuLiu/Scene-OTC-Bench) [[Project page]](https://zju-omniai.github.io/Scene-Designer/) [[Demo]](https://zju-omniai.github.io/Scene-Designer/#demo)
   > Learns scene construction and critique from consolidated editing trajectories and ranked scene perturbations, using rendered observations and critic-guided executable edits to improve indoor layouts.
 
 <!-- mmac-record: {"id": "2610.09116", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -930,7 +930,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2609.26793", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-26793"></a>`2026.09` **[HARMONY: Hierarchical Agentic Reasoning for MONocular Image-to-Scene Synthesis](https://arxiv.org/abs/2609.26793)** [[Project page]](https://cwchenwang.github.io/harmony/) [[Code]](https://github.com/ShufanSun/harmony-release)
+- <a id="paper-2609-26793"></a>`2026.09` **[HARMONY: Hierarchical Agentic Reasoning for MONocular Image-to-Scene Synthesis](https://arxiv.org/abs/2609.26793)** [[Project page]](https://cwchenwang.github.io/harmony/) [[Code]](https://github.com/ShufanSun/harmony-release) [[Dataset]](https://huggingface.co/datasets/ShufanSun/harmony)
   > Combines VLM spatial reasoning with image, 3D, and geometry tools, revising renderer-consumed room, placement, and lighting specifications through staged reference–render critique.
 
 <!-- mmac-record: {"id": "2609.36380", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -940,7 +940,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2609.11499", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-11499"></a>`2026.09` **[Recursive Code World Models: Building Complex Worlds through Recursive Scene Programs](https://arxiv.org/abs/2609.11499)**
+- <a id="paper-2609-11499"></a>`2026.09` **[Recursive Code World Models: Building Complex Worlds through Recursive Scene Programs](https://arxiv.org/abs/2609.11499)** [[Code]](https://github.com/ZhiqiLi-CG/RecursiveCWM_code)
   > Builds complex Three.js worlds as recursive scene programs: each subworld receives its own render-observe-edit loop, then returned code is re-rendered and jointly repaired in the parent context.
 
 <!-- mmac-record: {"id": "2609.22325", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -960,7 +960,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2608.17975", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2608-17975"></a>`2026.08` **[aDSL: Agentic 3D Creation via Joint Agent-Program Design](https://arxiv.org/abs/2608.17975)**
+- <a id="paper-2608-17975"></a>`2026.08` **[aDSL: Agentic 3D Creation via Joint Agent-Program Design](https://arxiv.org/abs/2608.17975)** [[Code]](https://github.com/sig-pku/aDSL)
   > Jointly designs the agent workflow and a domain-specific program representation for iterative 3D creation.
 
 <!-- mmac-record: {"id": "2608.24020", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -1000,7 +1000,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2606.13368", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2606-13368"></a>`2026.06` **[IterCAD: An Iterative Multimodal Agent for Visually-Grounded CAD Generation and Editing](https://arxiv.org/abs/2606.13368)**
+- <a id="paper-2606-13368"></a>`2026.06` **[IterCAD: An Iterative Multimodal Agent for Visually-Grounded CAD Generation and Editing](https://arxiv.org/abs/2606.13368)** [[Code]](https://github.com/KnowledgeXLab/IterCAD) [[Model]](https://huggingface.co/KnowledgeXLab/IterCAD-RL) [[Dataset]](https://huggingface.co/datasets/KnowledgeXLab/IterCAD_Data)
   > Places a multimodal agent inside a CAD sandbox for repeated execution, visual inspection, editing, and recovery.
 
 <!-- mmac-record: {"id": "2606.02580", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -1020,12 +1020,12 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2603.12238", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2603-12238"></a>`2026.03` **[SceneAssistant: A Visual Feedback Agent for Open-Vocabulary 3D Scene Generation](https://arxiv.org/abs/2603.12238)**
+- <a id="paper-2603-12238"></a>`2026.03` **[SceneAssistant: A Visual Feedback Agent for Open-Vocabulary 3D Scene Generation](https://arxiv.org/abs/2603.12238)** [[Code]](https://github.com/ROUJINN/SceneAssistant)
   > Inspects rendered 3D scenes and translates detected object, layout, and appearance errors into further scene edits.
 
 <!-- mmac-record: {"id": "2603.29847", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2603-29847"></a>`2026.02` **[CADReasoner: Iterative Program Editing for CAD Reverse Engineering](https://arxiv.org/abs/2603.29847)**
+- <a id="paper-2603-29847"></a>`2026.02` **[CADReasoner: Iterative Program Editing for CAD Reverse Engineering](https://arxiv.org/abs/2603.29847)** [[Code]](https://github.com/zhemdi/CADReasoner) [[Model]](https://huggingface.co/kulibinai/cadreasoner)
   > Rewrites runnable CadQuery programs using discrepancies between the target and the current reconstruction, combining multi-view renders with point-cloud feedback at each step.
 
 <a id="application-paper-2603-00805"></a>
@@ -1094,7 +1094,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2610.03715", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-03715"></a>`2026.10` **[4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes](https://arxiv.org/abs/2610.03715)**
+- <a id="paper-2610-03715"></a>`2026.10` **[4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes](https://arxiv.org/abs/2610.03715)** [[Code]](https://github.com/4DCodeBench/4DCodeBench)
   > Measures inverse graphics of dynamic videos through executable scene programs.
 
 <a id="work-blenderworld"></a>
@@ -1105,17 +1105,17 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2610.12452", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-12452"></a>`2026.10` **[BrickBench: Evaluating Agentic Brick Design](https://arxiv.org/abs/2610.12452)** [[Project page]](https://brickben.ch/) [[Code]](https://github.com/kulits/BrickAgent)
+- <a id="paper-2610-12452"></a>`2026.10` **[BrickBench: Evaluating Agentic Brick Design](https://arxiv.org/abs/2610.12452)** [[Project page]](https://brickben.ch/) [[Code]](https://github.com/kulits/BrickAgent) [[Dataset]](https://huggingface.co/datasets/kulits/BrickBench-Runs)
   > Benchmarks programmatic brick assemblies under size and inventory constraints, separately assessing collision/stability validity, multiview semantic alignment, and human-validated design preference.
 
 <!-- mmac-record: {"id": "2610.16577", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-16577"></a>`2026.10` **[CineRecon: Benchmarking Frontier Models for Agentic Cinematic Reconstruction](https://arxiv.org/abs/2610.16577)** [[Project page]](https://cinerecon.github.io/)
+- <a id="paper-2610-16577"></a>`2026.10` **[CineRecon: Benchmarking Frontier Models for Agentic Cinematic Reconstruction](https://arxiv.org/abs/2610.16577)** [[Project page]](https://cinerecon.github.io/) [[Code]](https://github.com/Unc1eW4ng/CineRecon)
   > Benchmarks agents that revise Blender Python scenes from time-aligned render–reference comparisons, separating camera, static, and dynamic fidelity across three appearance-detail settings.
 
 <!-- mmac-record: {"id": "2610.04292", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-04292"></a>`2026.10` **[LMBuild: Evaluating LLM Agents for Generating Buildable and Functional Structures](https://arxiv.org/abs/2610.04292)** [[Code]](https://github.com/Lumos-Jiateng/LMBuild) [[Project page]](https://lumos-jiateng.github.io/LMBuild/)
+- <a id="paper-2610-04292"></a>`2026.10` **[LMBuild: Evaluating LLM Agents for Generating Buildable and Functional Structures](https://arxiv.org/abs/2610.04292)** [[Code]](https://github.com/Lumos-Jiateng/LMBuild) [[Project page]](https://lumos-jiateng.github.io/LMBuild/) [[Dataset]](https://huggingface.co/datasets/Lumos-Jiateng/LMBuild)
   > Builds part-based structures with executable CSG and assembly operations, feeding rendered views and diagnostics into later review rounds while evaluating soundness, affordance, design, and physical realization.
 
 <!-- mmac-record: {"id": "2609.40353", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -1125,12 +1125,12 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2609.15478", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-15478"></a>`2026.09` **[BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender](https://arxiv.org/abs/2609.15478)** [[Code]](https://github.com/yunlong10/BVB/blob/main/eval/dual_vqa_metric.py)
+- <a id="paper-2609-15478"></a>`2026.09` **[BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender](https://arxiv.org/abs/2609.15478)** [[Code]](https://github.com/yunlong10/BVB/blob/main/eval/dual_vqa_metric.py) [[Project page]](https://yoloytang.me/BVB/) [[Code]](https://github.com/yoloytang/BVB)
   > Uses programmatic Blender reconstruction to test agentic video understanding.
 
 <!-- mmac-record: {"id": "2609.16251", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-16251"></a>`2026.09` **[CADWorld: Computer-Use Benchmark for Long-Horizon Computer-Aided Design](https://arxiv.org/abs/2609.16251)** [[Project page]](https://cad-world.github.io/)
+- <a id="paper-2609-16251"></a>`2026.09` **[CADWorld: Computer-Use Benchmark for Long-Horizon Computer-Aided Design](https://arxiv.org/abs/2609.16251)** [[Project page]](https://cad-world.github.io/) [[Dataset]](https://huggingface.co/datasets/Zihan1004/CADWORLD) [[Model]](https://huggingface.co/Zihan1004/CADWorld) [[Code]](https://github.com/Zdong104/CADWORLD)
   > Evaluates screenshot-guided GUI workflows in FreeCAD through executable checks on persistent native CAD artifacts, complementing code-driven generation with engineering-process and constraint validation.
 
 <!-- mmac-record: {"id": "2609.36777", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -1140,12 +1140,12 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2609.37686", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-37686"></a>`2026.09` **[EngiWorld: What Can Frontier Agents Deliver in Professional Engineering Environments?](https://arxiv.org/abs/2609.37686)** [[Project page]](https://engiworld.github.io)
+- <a id="paper-2609-37686"></a>`2026.09` **[EngiWorld: What Can Frontier Agents Deliver in Professional Engineering Environments?](https://arxiv.org/abs/2609.37686)** [[Project page]](https://engiworld.github.io) [[Code]](https://github.com/Hongcheng-Gao/EngiWorld) [[Dataset]](https://huggingface.co/datasets/HongchengGao/EngiWorld-Tasks) [[Dataset]](https://huggingface.co/datasets/HongchengGao/EngiWorld-Images)
   > Evaluates GUI- and CLI-based engineering workflows across six domains and 26 software platforms through artifact-level geometric, physical, and cross-tool consistency checks, including runtime-image-access ablations.
 
 <!-- mmac-record: {"id": "2611.02659", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2611-02659"></a>`2026.09` **[Parametric CAD Bench v3: Evaluating Agentic Parametric CAD Authoring from Text and Engineering Drawings](https://arxiv.org/abs/2611.02659)** [[Project page]](https://cadbench.ai/) [[Article]](https://cadbench.ai/news/cad-bench-v3) [[Dataset]](https://huggingface.co/datasets/gnucleus-ai/cad-gen-freecad-bench-v3)
+- <a id="paper-2611-02659"></a>`2026.09` **[Parametric CAD Bench v3: Evaluating Agentic Parametric CAD Authoring from Text and Engineering Drawings](https://arxiv.org/abs/2611.02659)** [[Project page]](https://cadbench.ai/) [[Article]](https://cadbench.ai/news/cad-bench-v3) [[Dataset]](https://huggingface.co/datasets/gnucleus-ai/cad-gen-freecad-bench-v3) [[Code]](https://github.com/anniedoris/CADBench)
   > Tests native parametric CAD authoring from text, create-and-edit requests and engineering drawings.
 
 <!-- mmac-record: {"id": "2608.05539", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -1155,7 +1155,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2606.01057", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2606-01057"></a>`2026.05` **[3DCodeBench: Benchmarking Agentic Procedural 3D Modeling Via Code](https://arxiv.org/abs/2606.01057)** [[Demo]](https://www.3dcodebench.com/)
+- <a id="paper-2606-01057"></a>`2026.05` **[3DCodeBench: Benchmarking Agentic Procedural 3D Modeling Via Code](https://arxiv.org/abs/2606.01057)** [[Demo]](https://www.3dcodebench.com/) [[Code]](https://github.com/gaoypeng/3dcodebench) [[Dataset]](https://huggingface.co/datasets/YipengGao/3DCode)
   > Benchmarks coding agents on procedural 3D modeling with executable programs and rendered output evaluation.
 
 <!-- mmac-record: {"id": "2605.07807", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -1217,7 +1217,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "res:blender-lab-mcp-server", "scope": "Resource", "primary": "1.5", "stage": 1, "type": "resource"} -->
 
-- <a id="paper-res-blender-lab-mcp-server"></a>**[Blender Lab MCP Server](https://www.blender.org/lab/mcp-server/)** [[Code]](https://github.com/ahujasid/blender-mcp)
+- <a id="paper-res-blender-lab-mcp-server"></a>**[Blender Lab MCP Server](https://www.blender.org/lab/mcp-server/)** [[Code]](https://github.com/ahujasid/blender-mcp) [[Code]](https://projects.blender.org/lab/blender_mcp)
   > Gives agents scene inspection and Python operations inside Blender; community demos show reference-image-to-scene and Blender-to-Three.js workflows.
 
 <!-- mmac-record: {"id": "res:blender-agent-skills", "scope": "Resource", "primary": "1.5", "stage": 1, "type": "resource"} -->
@@ -1322,7 +1322,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "res:zoo-developer-tools", "scope": "Resource", "primary": "1.5", "stage": 1, "type": "resource"} -->
 
-- <a id="paper-res-zoo-developer-tools"></a>**[Zoo developer tools](https://docs.zoo.dev/docs)**
+- <a id="paper-res-zoo-developer-tools"></a>**[Zoo developer tools](https://docs.zoo.dev/docs)** [[Documentation]](https://zoo.dev/docs/developer-tools/mcp)
   > Connects language-driven KCL workflows to geometric execution, snapshots, inspection, and debugging.
 
 [↑ Back to contents](#contents)
@@ -1346,7 +1346,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2610.05033", "scope": "Adjacent", "primary": "1.6", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-05033"></a>`2026.10` **[Code2Games: Enabling Coding Agents for Gaming World Generation](https://arxiv.org/abs/2610.05033)**
+- <a id="paper-2610-05033"></a>`2026.10` **[Code2Games: Enabling Coding Agents for Gaming World Generation](https://arxiv.org/abs/2610.05033)** [[Code]](https://github.com/AIGeeksGroup/Code2Games)
   > Connects Blender scene structure, visually guided gameplay placement, and Unreal Engine logic through persistent element identities, repairing engine adaptation with compilation diagnostics and scripted gameplay tests.
 
 <!-- mmac-record: {"id": "2610.16776", "scope": "Core", "primary": "1.6", "stage": 1, "type": "paper"} -->
@@ -1372,7 +1372,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2609.39045", "scope": "Core", "primary": "1.6", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-39045"></a>`2026.09` **[RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement](https://arxiv.org/abs/2609.39045)** [[Code]](https://github.com/WenyiWU0111/RSIGame)
+- <a id="paper-2609-39045"></a>`2026.09` **[RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement](https://arxiv.org/abs/2609.39045)** [[Code]](https://github.com/WenyiWU0111/RSIGame) [[Project page]](https://huggingface.co/spaces/RSIGame/rsigame-page)
   > Improves Godot and Phaser projects through evidence-grounded playtest–edit–verify loops, using an evolving checklist and replay-based checkpoint comparison to preserve progress before distilling successful development experience.
 
 <!-- mmac-record: {"id": "2608.25518", "scope": "Core", "primary": "1.6", "stage": 1, "type": "paper"} -->
@@ -1397,7 +1397,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2605.05138", "scope": "Core", "primary": "1.6", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2605-05138"></a>`2026.05` **[Executable World Models for ARC-AGI-3 in the Era of Coding Agents](https://arxiv.org/abs/2605.05138)**
+- <a id="paper-2605-05138"></a>`2026.05` **[Executable World Models for ARC-AGI-3 in the Era of Coding Agents](https://arxiv.org/abs/2605.05138)** [[Code]](https://github.com/astroseger/arc-3-agents-baseline1/tree/main/papers/paper01/secure_baseline1)
   > Maintains, validates, and refactors a Python world model as new game observations arrive, then uses it for planning.
 
 <!-- mmac-record: {"id": "2605.28258", "scope": "Core", "primary": "1.6", "stage": 1, "type": "paper"} -->
@@ -1465,7 +1465,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2609.22308", "scope": "Core", "primary": "1.6", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-22308"></a>`2026.09` **[GameReplica: A Benchmark for Black-Box Visual Game Replication by Vision-Language Agents](https://arxiv.org/abs/2609.22308)**
+- <a id="paper-2609-22308"></a>`2026.09` **[GameReplica: A Benchmark for Black-Box Visual Game Replication by Vision-Language Agents](https://arxiv.org/abs/2609.22308)** [[Project page]](https://qqqqqqby.github.io/GameReplica/)
   > Tests black-box game replication from screenshot-only exploration, then has agents run, visually inspect, and revise their HTML replicas before separate implementation, rule-consistency, and appearance evaluation.
 
 <!-- mmac-record: {"id": "2609.33678", "scope": "Adjacent", "primary": "1.6", "stage": 1, "type": "paper"} -->
@@ -1557,7 +1557,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "res:ziva-playtesting-workflow", "scope": "Resource", "primary": "1.6", "stage": 1, "type": "resource"} -->
 
-- <a id="paper-res-ziva-playtesting-workflow"></a>**[Ziva playtesting workflow](https://ziva.sh/blogs/ai-agent-playtest-godot-game)** [[Documentation]](https://ziva.sh/docs/playtest)
+- <a id="paper-res-ziva-playtesting-workflow"></a>**[Ziva playtesting workflow](https://ziva.sh/blogs/ai-agent-playtest-godot-game)** [[Documentation]](https://ziva.sh/docs/playtest) [[Repository]](https://github.com/ziva-sh/ziva-agent-plugin-godot)
   > The full playtest agent inspects live state and screenshots, returning verdicts, reproduction steps, and replay evidence; it does not edit the project, so repairs must be handed back to the development agent. Vendor demonstrations are not independent benchmark evidence.
 
 [↑ Back to contents](#contents)
@@ -1585,7 +1585,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2610.34921", "scope": "Adjacent", "primary": "1.7", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-34921"></a>`2026.10` **[PhysEvolve: Verifier-grounded Self-evolution for Physical Reasoning with Executable Worlds](https://arxiv.org/abs/2610.34921)** [[Project page]](https://yelonhu.github.io/physevolve-page/)
+- <a id="paper-2610-34921"></a>`2026.10` **[PhysEvolve: Verifier-grounded Self-evolution for Physical Reasoning with Executable Worlds](https://arxiv.org/abs/2610.34921)** [[Project page]](https://yelonhu.github.io/physevolve-page/) [[Code]](https://github.com/yelonhu/PhysEvolve) [[Model]](https://huggingface.co/YelonLFT/physevolve-v7i-0851-step100)
   > Co-trains a world-program proposer and visual solver through deterministic counterfactual simulations and exact answer-bound rewards, improving physical reasoning through policy updates across rounds.
 
 <!-- mmac-record: {"id": "2610.36077", "scope": "Adjacent", "primary": "1.7", "stage": 1, "type": "paper"} -->
@@ -1622,12 +1622,12 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2604.18164", "scope": "Adjacent", "primary": "1.7", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2604-18164"></a>`2026.04` **[MM-JudgeBias: A Benchmark for Evaluating Compositional Biases in MLLM-as-a-Judge](https://arxiv.org/abs/2604.18164)** [[Code]](https://github.com/naver-ai/MM-JudgeBias) [[Dataset]](https://huggingface.co/datasets/naver-ai/MM-JudgeBias)
+- <a id="paper-2604-18164"></a>`2026.04` **[MM-JudgeBias: A Benchmark for Evaluating Compositional Biases in MLLM-as-a-Judge](https://arxiv.org/abs/2604.18164)** [[Code]](https://github.com/naver-ai/MM-JudgeBias) [[Dataset]](https://huggingface.co/datasets/naver-ai/MM-JudgeBias) [[Project page]](https://mm-judgebias.github.io/)
   > Tests whether multimodal judges use the full query–image–response evidence through nine controlled perturbations, separating sensitivity to missing or mismatched evidence from stability under irrelevant changes.
 
 <!-- mmac-record: {"id": "2511.15567", "scope": "Core", "primary": "1.7", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2511-15567"></a>`2025.11` **[Computer-Use Agents as Judges for Generative User Interface](https://arxiv.org/abs/2511.15567)** [[Code]](https://github.com/showlab/AUI) [[Project page]](https://showlab.github.io/AUI/)
+- <a id="paper-2511-15567"></a>`2025.11` **[Computer-Use Agents as Judges for Generative User Interface](https://arxiv.org/abs/2511.15567)** [[Code]](https://github.com/showlab/AUI) [[Project page]](https://showlab.github.io/AUI/) [[Demo]](https://huggingface.co/spaces/showlab/AUI)
   > Pairs a coding model with a computer-use agent that tests generated interfaces and returns visual interaction histories for redesign.
 
 #### Tools & resources
@@ -1715,7 +1715,7 @@ The agent **calls other models through code** — image, video and world generat
 
 <!-- mmac-record: {"id": "2610.38352", "scope": "Core", "primary": "2.2", "stage": 2, "type": "paper"} -->
 
-- <a id="paper-2610-38352"></a>`2026.10` **[WeVisCut: The Whole Editing Room in One Agent From Narration to Long-Form Video](https://arxiv.org/abs/2610.38352)** [[Code]](https://github.com/Tencent/WeVisCut) [[Model]](https://huggingface.co/tencent/WeVisCut) [[Project page]](https://tencent.github.io/WeVisCut/)
+- <a id="paper-2610-38352"></a>`2026.10` **[WeVisCut: The Whole Editing Room in One Agent From Narration to Long-Form Video](https://arxiv.org/abs/2610.38352)** [[Code]](https://github.com/Tencent/WeVisCut) [[Model]](https://huggingface.co/tencent/WeVisCut) [[Project page]](https://tencent.github.io/WeVisCut/) [[Demo]](https://tencent.github.io/WeVisCut/#demo)
   > Trains a shared editing policy to construct executable shot plans, orchestrate narration and media tools, and revise template content and timelines from render-grounded production feedback.
 
 <!-- mmac-record: {"id": "2609.24997", "scope": "Adjacent", "primary": "2.2", "stage": 2, "type": "paper"} -->
@@ -1742,7 +1742,7 @@ The agent **calls other models through code** — image, video and world generat
 
 <!-- mmac-record: {"id": "res:moviedit", "scope": "Resource", "primary": "2.2", "stage": 2, "type": "resource"} -->
 
-- <a id="paper-res-moviedit"></a>**[MoviEdit](https://arxiv.org/abs/2611.02737)** [[Project page]](https://multi-shot-edit.github.io/) [[Project page]](https://multi-shot-edit.github.io/benchmark.html)
+- <a id="paper-res-moviedit"></a>**[MoviEdit](https://arxiv.org/abs/2611.02737)** [[Project page]](https://multi-shot-edit.github.io/) [[Project page]](https://multi-shot-edit.github.io/benchmark.html) [[Dataset]](https://github.com/adobe-research/MoviEdit-Bench)
   > Source video + edit text or edited reference frames → consistently edited multi-shot video. A global draft guides full-resolution autoregressive editing; 64-video/128-scenario benchmark materials accompany the method. The project provides demonstrations and evaluation manifests, without a released model download.
 
 <!-- mmac-record: {"id": "res:omnishowcase-omnidirectional-subject-consistent-video-generation-from-multi-view-images", "scope": "Resource", "primary": "2.2", "stage": 2, "type": "resource"} -->
@@ -1760,7 +1760,7 @@ The agent **calls other models through code** — image, video and world generat
 
 <!-- mmac-record: {"id": "res:dynamesh", "scope": "Resource", "primary": "2.3", "stage": 2, "type": "resource"} -->
 
-- <a id="paper-res-dynamesh"></a>**[DynaMesh](https://arxiv.org/abs/2610.05529)** [[Project page]](https://threedle.github.io/dynamesh/)
+- <a id="paper-res-dynamesh"></a>**[DynaMesh](https://arxiv.org/abs/2610.05529)** [[Project page]](https://threedle.github.io/dynamesh/) [[Code]](https://github.com/threedle/dynamesh)
   > Mesh + effect prompt → one fixed mesh with a time-varying texture sequence. Combines a reference video with temporal conditioning and per-shape adapters on a 3D generator; appearance evolves while geometry stays fixed, supplying reusable surface effects rather than physical dynamics.
 
 <!-- mmac-record: {"id": "res:hairdeck-animation-ready-stylized-hair-cards-from-a-single-image", "scope": "Resource", "primary": "2.3", "stage": 2, "type": "resource"} -->
@@ -1828,7 +1828,7 @@ The agent **calls other models through code** — image, video and world generat
 
 <!-- mmac-record: {"id": "2611.04870", "scope": "Adjacent", "primary": "2.4", "stage": 2, "type": "paper"} -->
 
-- <a id="paper-2611-04870"></a>`2026.11` **[PrimeSim: A Generalist World Model Simulator from Large-Scale Cross-Embodiment Demonstrations](https://arxiv.org/abs/2611.04870)** [[Project page]](https://primebottech.github.io/PrimeSim-website)
+- <a id="paper-2611-04870"></a>`2026.11` **[PrimeSim: A Generalist World Model Simulator from Large-Scale Cross-Embodiment Demonstrations](https://arxiv.org/abs/2611.04870)** [[Project page]](https://primebottech.github.io/PrimeSim-website) [[Code]](https://github.com/PrimebotTech/PrimeSim) [[Model]](https://huggingface.co/qiyuan-robot/PrimeSim)
   > Uses an action-conditioned multiview video model as a closed-loop policy simulator and tests whether policy rankings and short-budget RL gains transfer back to the LIBERO physics simulator.
 
 <!-- mmac-record: {"id": "2610.01215", "scope": "Adjacent", "primary": "2.4", "stage": 2, "type": "paper"} -->
@@ -1853,7 +1853,7 @@ The agent **calls other models through code** — image, video and world generat
 
 <!-- mmac-record: {"id": "2610.26811", "scope": "Adjacent", "primary": "2.4", "stage": 2, "type": "paper"} -->
 
-- <a id="paper-2610-26811"></a>`2026.10` **[State World Models: Execute the Rules, Generate the Pixels](https://arxiv.org/abs/2610.26811)** [[Code]](https://github.com/Zhangyr2022/StateWorldModel) [[Dataset]](https://huggingface.co/datasets/Louis0411/StateWorldModel) [[Project page]](https://ivg-yanranzhang.github.io/StateWorldModel/)
+- <a id="paper-2610-26811"></a>`2026.10` **[State World Models: Execute the Rules, Generate the Pixels](https://arxiv.org/abs/2610.26811)** [[Code]](https://github.com/Zhangyr2022/StateWorldModel) [[Dataset]](https://huggingface.co/datasets/Louis0411/StateWorldModel) [[Project page]](https://ivg-yanranzhang.github.io/StateWorldModel/) [[Demo]](https://ivg-yanranzhang.github.io/StateWorldModel/#worlds)
   > Separates coding-agent-authored rules from frozen video rendering, compiling settled events into visual instructions and admitting rule-compatible video observations into subsequent world state.
 
 <!-- mmac-record: {"id": "2610.36925", "scope": "Adjacent", "primary": "2.4", "stage": 2, "type": "paper"} -->
@@ -1870,7 +1870,7 @@ The agent **calls other models through code** — image, video and world generat
 
 <!-- mmac-record: {"id": "res:cosmos3-nano-sim-auto", "scope": "Resource", "primary": "2.4", "stage": 2, "type": "resource"} -->
 
-- <a id="paper-res-cosmos3-nano-sim-auto"></a>**[Cosmos3-Nano-Sim-Auto](https://huggingface.co/nvidia/Cosmos3-Nano-Sim-Auto)** [[Article]](https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos/) [[Documentation]](https://github.com/NVIDIA/cosmos-framework/blob/main/docs/inference_sim_auto.md)
+- <a id="paper-res-cosmos3-nano-sim-auto"></a>**[Cosmos3-Nano-Sim-Auto](https://huggingface.co/nvidia/Cosmos3-Nano-Sim-Auto)** [[Article]](https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos/) [[Documentation]](https://github.com/NVIDIA/cosmos-framework/blob/main/docs/inference_sim_auto.md) [[Code]](https://github.com/NVIDIA/cosmos-framework)
   > A causal world-model tool with released weights and Cosmos Framework inference/adaptation skills; generated sensor feedback supports policy evaluation, with camera-rig and sim-to-real validity requiring separate checks.
 
 <!-- mmac-record: {"id": "res:genie-4", "scope": "Resource", "primary": "2.4", "stage": 2, "type": "resource"} -->
@@ -1897,12 +1897,12 @@ The agent **calls other models through code** — image, video and world generat
 
 <!-- mmac-record: {"id": "2611.06083", "scope": "Adjacent", "primary": "2.5", "stage": 2, "type": "paper"} -->
 
-- <a id="paper-2611-06083"></a>`2026.11` **[SleuthVLM: Do We Really Need Audio-in-Video for Omni Video Understanding?](https://arxiv.org/abs/2611.06083)** [[Project page]](https://wpr001.github.io/sleuthVLM/)
+- <a id="paper-2611-06083"></a>`2026.11` **[SleuthVLM: Do We Really Need Audio-in-Video for Omni Video Understanding?](https://arxiv.org/abs/2611.06083)** [[Project page]](https://wpr001.github.io/sleuthVLM/) [[Code]](https://github.com/WPR001/OpenOmniHarness)
   > Uses timed transcription as an index for a VLM to inspect frames and clips adaptively, with an optional audio-model tool for evidence that speech transcripts cannot supply.
 
 <!-- mmac-record: {"id": "2610.06955", "scope": "Adjacent", "primary": "2.5", "stage": 2, "type": "paper"} -->
 
-- <a id="paper-2610-06955"></a>`2026.10` **[ROMA: LLM System for Real-World Object-Centric Multi-Sensory Active Perception](https://arxiv.org/abs/2610.06955)** [[Project page]](https://gewu-lab.github.io/ROMA/) [[Code]](https://github.com/GeWu-Lab/ROMA)
+- <a id="paper-2610-06955"></a>`2026.10` **[ROMA: LLM System for Real-World Object-Centric Multi-Sensory Active Perception](https://arxiv.org/abs/2610.06955)** [[Project page]](https://gewu-lab.github.io/ROMA/) [[Code]](https://github.com/GeWu-Lab/ROMA) [[Demo]](https://huggingface.co/spaces/xxuan01/ROMA-Demo) [[Model]](https://huggingface.co/GeWu-Lab/ROMA-7B) [[Dataset]](https://huggingface.co/datasets/GeWu-Lab/ROMA)
   > Selects objects, physical interactions, and sensory modalities to acquire missing evidence through a grasping interface, updating subsequent perception decisions without rewriting policy code.
 
 <!-- mmac-record: {"id": "2610.28354", "scope": "Adjacent", "primary": "2.5", "stage": 2, "type": "paper"} -->
@@ -1953,7 +1953,7 @@ The agent **calls other models through code** — image, video and world generat
 
 <!-- mmac-record: {"id": "2610.23334", "scope": "Adjacent", "primary": "2.6", "stage": 2, "type": "paper"} -->
 
-- <a id="paper-2610-23334"></a>`2026.10` **[LAW: Unifying Language, Action, and World Modeling for Agentic Physical Intelligence](https://arxiv.org/abs/2610.23334)** [[Code]](https://github.com/hey-cjj/LAW) [[Project page]](https://hey-cjj.github.io/LAW-project/) [[Dataset]](https://huggingface.co/datasets/KAITANG2003/LAW-RoboTwin-VLM-Training)
+- <a id="paper-2610-23334"></a>`2026.10` **[LAW: Unifying Language, Action, and World Modeling for Agentic Physical Intelligence](https://arxiv.org/abs/2610.23334)** [[Code]](https://github.com/hey-cjj/LAW) [[Project page]](https://hey-cjj.github.io/LAW-project/) [[Dataset]](https://huggingface.co/datasets/KAITANG2003/LAW-RoboTwin-VLM-Training) [[Code]](https://github.com/hey-cjj/CogWAM) [[Collection]](https://huggingface.co/collections/KAITANG2003/law)
   > Coordinates a world-action model with shared-backbone VLM experts for subtask planning, action valuation, and asynchronous progress checks, adapting robot decisions to fresh visual observations without rewriting policy code.
 
 <!-- mmac-record: {"id": "2509.19571", "scope": "Adjacent", "primary": "2.6", "stage": 2, "type": "paper"} -->
@@ -1985,7 +1985,7 @@ The agent **calls other models through code** — image, video and world generat
 
 <!-- mmac-record: {"id": "res:pi-api-beta", "scope": "Resource", "primary": "2.6", "stage": 2, "type": "resource"} -->
 
-- <a id="paper-res-pi-api-beta"></a>**[Pi API beta](https://www.pi.website/blog/api-beta)**
+- <a id="paper-res-pi-api-beta"></a>**[Pi API beta](https://www.pi.website/blog/api-beta)** [[Project page]](https://www.pi.website/waitlist)
   > Lets developers adapt and deploy action models, then use real-robot failures to choose the next data collection round; this is a developer-led workflow with beta access, not an autonomous LLM repair claim.
 
 <!-- mmac-record: {"id": "res:vla-corrector", "scope": "Resource", "primary": "2.6", "stage": 2, "type": "resource"} -->
@@ -2058,17 +2058,17 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2610.06843", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-06843"></a>`2026.10` **[Recursive Video In-Context Learning for Agentic Robot](https://arxiv.org/abs/2610.06843)** [[Code]](https://github.com/BWR-hhh/rvicl)
+- <a id="paper-2610-06843"></a>`2026.10` **[Recursive Video In-Context Learning for Agentic Robot](https://arxiv.org/abs/2610.06843)** [[Code]](https://github.com/BWR-hhh/rvicl) [[Project page]](https://bwr-hhh.github.io/rvicl/)
   > Lets robot agents query a hierarchical demonstration on demand and compare it with live camera views to adapt frozen VLA and analytic primitive calls, while retaining the underlying execution harness.
 
 <!-- mmac-record: {"id": "2610.04929", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-04929"></a>`2026.10` **[RobotUse: Allocating Computation, Context, and Decisions](https://arxiv.org/abs/2610.04929)** [[Project page]](https://robotuse-team.github.io/)
+- <a id="paper-2610-04929"></a>`2026.10` **[RobotUse: Allocating Computation, Context, and Decisions](https://arxiv.org/abs/2610.04929)** [[Project page]](https://robotuse-team.github.io/) [[Code]](https://github.com/robotuse-team/RobotUse)
   > Allocates physical task decisions and detailed interactions to subagents while the parent receives compact results and constraints.
 
 <!-- mmac-record: {"id": "2610.12457", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-12457"></a>`2026.10` **[SpatialHarness: Test-Time Spatial Scaffolding for Fine Robotic Manipulation](https://arxiv.org/abs/2610.12457)** [[Project page]](https://emilia113.github.io/SpatialHarness/)
+- <a id="paper-2610-12457"></a>`2026.10` **[SpatialHarness: Test-Time Spatial Scaffolding for Fine Robotic Manipulation](https://arxiv.org/abs/2610.12457)** [[Project page]](https://emilia113.github.io/SpatialHarness/) [[Dataset]](https://huggingface.co/datasets/yzy05/SpatialHarness)
   > Maintains a simulation scene synchronized with real execution and renders task-specific auxiliary viewpoints.
 
 <!-- mmac-record: {"id": "2610.30043", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2078,7 +2078,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2609.12541", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-12541"></a>`2026.09` **[Agent as Policy for Robotic Manipulation](https://arxiv.org/abs/2609.12541)**
+- <a id="paper-2609-12541"></a>`2026.09` **[Agent as Policy for Robotic Manipulation](https://arxiv.org/abs/2609.12541)** [[Dataset]](https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy) [[Code]](https://github.com/agent-as-policy-2026/agent-as-policy)
   > Lets a general agent inspect visual evidence, write programs and issue motion requests throughout a manipulation episode.
 
 <!-- mmac-record: {"id": "2609.20822", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2098,12 +2098,12 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2610.14018", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-14018"></a>`2026.09` **[RoboHarness: A Simple Harness Outperforms VLA and World Action Models](https://arxiv.org/abs/2610.14018)**
+- <a id="paper-2610-14018"></a>`2026.09` **[RoboHarness: A Simple Harness Outperforms VLA and World Action Models](https://arxiv.org/abs/2610.14018)** [[Code]](https://github.com/BinceQu/RoboHarness)
   > Gives an LLM a visual-geometric control panel for zero-shot manipulation using existing robot tools.
 
 <!-- mmac-record: {"id": "2609.10522", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-10522"></a>`2026.09` **[Show-Harness: Just a VLM Agent Can Play Robots](https://arxiv.org/abs/2609.10522)** [[Project page]](https://showlab.github.io/Show-Harness)
+- <a id="paper-2609-10522"></a>`2026.09` **[Show-Harness: Just a VLM Agent Can Play Robots](https://arxiv.org/abs/2609.10522)** [[Project page]](https://showlab.github.io/Show-Harness) [[Code]](https://github.com/showlab/Show-Harness) [[Model]](https://huggingface.co/showlab/Show-Harness-VLMs) [[Dataset]](https://huggingface.co/datasets/showlab/Show-Harness-Data)
   > Connects a general VLM to a robot interpreter through a compact semantic action interface.
 
 <!-- mmac-record: {"id": "2609.29964", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2123,12 +2123,12 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2607.05369", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2607-05369"></a>`2026.07` **[GaP: A Graph-as-Policy Multi-Agent Self-Learning Harness For Variational Automation Tasks](https://arxiv.org/abs/2607.05369)** [[Project page]](https://graph-robots.github.io/gap)
+- <a id="paper-2607-05369"></a>`2026.07` **[GaP: A Graph-as-Policy Multi-Agent Self-Learning Harness For Variational Automation Tasks](https://arxiv.org/abs/2607.05369)** [[Project page]](https://graph-robots.github.io/gap) [[Code]](https://github.com/graph-robots/graph-as-policy)
   > Builds typed computation graphs connecting perception, planning and control skills, then rehearses and revises the graph in simulation.
 
 <!-- mmac-record: {"id": "2607.16636", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2607-16636"></a>`2026.07` **[PhyAgentOS: A Self-Evolving Operating System for Embodied Agents with Decoupled Cognitive Planning and Physical Execution](https://arxiv.org/abs/2607.16636)**
+- <a id="paper-2607-16636"></a>`2026.07` **[PhyAgentOS: A Self-Evolving Operating System for Embodied Agents with Decoupled Cognitive Planning and Physical Execution](https://arxiv.org/abs/2607.16636)** [[Code]](https://github.com/PhyAgentOS/PhyAgentOS)
   > Separates cognitive planning from physical execution through file-based state contracts, tools and persistent execution records.
 
 <!-- mmac-record: {"id": "2605.26637", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2173,7 +2173,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2312.04474", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2312-04474"></a>`2023.12` **[Chain of Code: Reasoning with a Language Model-Augmented Code Emulator](https://arxiv.org/abs/2312.04474)** [[Project page]](https://chain-of-code.github.io)
+- <a id="paper-2312-04474"></a>`2023.12` **[Chain of Code: Reasoning with a Language Model-Augmented Code Emulator](https://arxiv.org/abs/2312.04474)** [[Project page]](https://chain-of-code.github.io) [[Demo]](https://colab.research.google.com/github/google-research/google-research/blob/master/code_as_policies/coc_demo.ipynb)
   > Executes explicit program logic in an interpreter and asks a language model to emulate unresolved semantic operations.
 
 <!-- mmac-record: {"id": "2306.09523", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2193,12 +2193,12 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2209.07753", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2209-07753"></a>`2022.09` **[Code as Policies: Language Model Programs for Embodied Control](https://arxiv.org/abs/2209.07753)** [[Project page]](https://code-as-policies.github.io)
+- <a id="paper-2209-07753"></a>`2022.09` **[Code as Policies: Language Model Programs for Embodied Control](https://arxiv.org/abs/2209.07753)** [[Project page]](https://code-as-policies.github.io) [[Code]](https://github.com/google-research/google-research/tree/master/code_as_policies) [[Demo]](https://huggingface.co/spaces/jackyliang42/code-as-policies)
   > Recursively generates Python policies that combine perception results, geometric calculations and robot APIs.
 
 <!-- mmac-record: {"id": "2209.11302", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2209-11302"></a>`2022.09` **[ProgPrompt: Generating Situated Robot Task Plans using Large Language Models](https://arxiv.org/abs/2209.11302)** [[Project page]](http://progprompt.github.io)
+- <a id="paper-2209-11302"></a>`2022.09` **[ProgPrompt: Generating Situated Robot Task Plans using Large Language Models](https://arxiv.org/abs/2209.11302)** [[Project page]](http://progprompt.github.io) [[Code]](https://github.com/NVlabs/progprompt-vh)
   > Generates program-like plans using available objects, actions and assertions, with recovery steps when action preconditions fail.
 
 #### Delegation to existing policies
@@ -2225,17 +2225,17 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2609.29166", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-29166"></a>`2026.09` **[HarnessPAI: An Evolving Harness for Physical AI](https://arxiv.org/abs/2609.29166)** [[Project page]](https://darwin-agent.github.io/HarnessPAI)
+- <a id="paper-2609-29166"></a>`2026.09` **[HarnessPAI: An Evolving Harness for Physical AI](https://arxiv.org/abs/2609.29166)** [[Project page]](https://darwin-agent.github.io/HarnessPAI) [[Code]](https://github.com/Darwin-Agent/HarnessPAI)
   > Synthesizes programs over perception and motion primitives, then evolves them across rollouts and extracts reusable skills.
 
 <!-- mmac-record: {"id": "2608.11246", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2608-11246"></a>`2026.08` **[Towards the Harness of Embodied Agents](https://arxiv.org/abs/2608.11246)** [[Project page]](https://eit-hai.github.io/thea)
+- <a id="paper-2608-11246"></a>`2026.08` **[Towards the Harness of Embodied Agents](https://arxiv.org/abs/2608.11246)** [[Project page]](https://eit-hai.github.io/thea) [[Code]](https://github.com/EIT-HAI/Thea)
   > Uses a persistent scene graph and semantically meaningful tool returns to organize robot abilities and task progress.
 
 <!-- mmac-record: {"id": "2607.08448", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2607-08448"></a>`2026.07` **[Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents](https://arxiv.org/abs/2607.08448)**
+- <a id="paper-2607-08448"></a>`2026.07` **[Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents](https://arxiv.org/abs/2607.08448)** [[Code]](https://github.com/RLinf/RPent)
   > Lets a coding agent combine analytic motion primitives with calls to a frozen VLA, assigning language subgoals, budgets and stopping conditions.
 
 #### Agent capability evaluation
@@ -2262,7 +2262,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2610.00854", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-00854"></a>`2026.10` **[Are Frontier VLM Agents Ready to Be Robot Generalists? An Empirical Study with the Embodied Agent Arena](https://arxiv.org/abs/2610.00854)** [[Project page]](https://embodied-agent-arena.github.io/embodied-agent-arena/)
+- <a id="paper-2610-00854"></a>`2026.10` **[Are Frontier VLM Agents Ready to Be Robot Generalists? An Empirical Study with the Embodied Agent Arena](https://arxiv.org/abs/2610.00854)** [[Project page]](https://embodied-agent-arena.github.io/embodied-agent-arena/) [[Code]](https://github.com/embodied-agent-arena/embodied-agent-arena) [[Dataset]](https://huggingface.co/datasets/uuu-Quant/Embodied-Agent-Arena)
   > Compares frontier VLM robot agents under shared budgets and source-task interfaces.
 
 <!-- mmac-record: {"id": "2610.07594", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2272,12 +2272,12 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2610.27039", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-27039"></a>`2026.10` **[Embodied Playground: A Long-Horizon Agentic Robotics Benchmark for Physical, Strategic, and Spatial Reasoning](https://arxiv.org/abs/2610.27039)** [[Project page]](https://winniechen2002.github.io/Agent-bench-website/)
+- <a id="paper-2610-27039"></a>`2026.10` **[Embodied Playground: A Long-Horizon Agentic Robotics Benchmark for Physical, Strategic, and Spatial Reasoning](https://arxiv.org/abs/2610.27039)** [[Project page]](https://winniechen2002.github.io/Agent-bench-website/) [[Code]](https://github.com/Winniechen2002/Embodied-Playground)
   > Tests coordination of physical, strategic and spatial reasoning in long-horizon robot tasks.
 
 <!-- mmac-record: {"id": "2610.16238", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-16238"></a>`2026.10` **[Embodied Skill Bench: Benchmarking How Well Agents with Embodied Skills Perform on Physical Tasks](https://arxiv.org/abs/2610.16238)** [[Code]](https://github.com/HanZhi306/EmbodiedSkill-Bench)
+- <a id="paper-2610-16238"></a>`2026.10` **[Embodied Skill Bench: Benchmarking How Well Agents with Embodied Skills Perform on Physical Tasks](https://arxiv.org/abs/2610.16238)** [[Code]](https://github.com/HanZhi306/EmbodiedSkill-Bench) [[Code]](https://github.com/FBddcz/embodied-jev)
   > Compares native control, skill-only execution and agent selection or modification of embodied skills.
 
 <!-- mmac-record: {"id": "2610.30051", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2287,7 +2287,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2610.22471", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-22471"></a>`2026.10` **[Has GPT-6-Astra Achieved Embodied Intelligence?](https://arxiv.org/abs/2610.22471)** [[Article]](https://sensenova.ai/has-gpt-6-astra-achieved-embodied-intelligence)
+- <a id="paper-2610-22471"></a>`2026.10` **[Has GPT-6-Astra Achieved Embodied Intelligence?](https://arxiv.org/abs/2610.22471)** [[Article]](https://sensenova.ai/has-gpt-6-astra-achieved-embodied-intelligence) [[Code]](https://github.com/OpenSenseNova/SenseNova-RoboRSI) [[Dataset]](https://huggingface.co/datasets/sensenova/SenseNova-RoboRSI-Log) [[Dataset]](https://huggingface.co/datasets/sensenova/SenseNova-RoboRSI-Packages)
   > Studies demonstration-informed direct control and VLA-action review across twelve embodied benchmarks, separating gains from extended interaction budgets from zero-shot trials on eight real robot configurations.
 
 <!-- mmac-record: {"id": "2610.34527", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2297,7 +2297,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2610.34649", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-34649"></a>`2026.10` **[RobotAgentBench: Towards Open-world Robot Autonomy](https://arxiv.org/abs/2610.34649)** [[Project page]](https://aetherlabsai.github.io/RobotAgentBench/) [[Code]](https://github.com/AetherLabsAI/RobotAgentBench) [[Dataset]](https://huggingface.co/datasets/AetherLabs-AI/RobotAgentBench-assets)
+- <a id="paper-2610-34649"></a>`2026.10` **[RobotAgentBench: Towards Open-world Robot Autonomy](https://arxiv.org/abs/2610.34649)** [[Project page]](https://aetherlabsai.github.io/RobotAgentBench/) [[Code]](https://github.com/AetherLabsAI/RobotAgentBench) [[Dataset]](https://huggingface.co/datasets/AetherLabs-AI/RobotAgentBench-assets) [[Demo]](https://aetherlabsai.github.io/RobotAgentBench/#demo) [[Model]](https://huggingface.co/AetherLabs-AI/InternVLA-A1.5-RAB) [[Dataset]](https://huggingface.co/datasets/AetherLabs-AI/RobotAgentBench-TrainingData)
   > Benchmarks household robot autonomy with code-based, learned and hybrid executors, including visual-feedback-driven program execution and reusable control-tool refinement in its coding-agent configurations.
 
 <!-- mmac-record: {"id": "2610.10409", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2327,12 +2327,12 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2609.39507", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-39507"></a>`2026.09` **[LIBERO-Agent: Evaluating General-Purpose Agents for Direct Embodied Manipulation](https://arxiv.org/abs/2609.39507)**
+- <a id="paper-2609-39507"></a>`2026.09` **[LIBERO-Agent: Evaluating General-Purpose Agents for Direct Embodied Manipulation](https://arxiv.org/abs/2609.39507)** [[Code]](https://github.com/dzj441/Libero-Agent)
   > Turns LIBERO into an interactive setting where general agents inspect observations, use their own tools and issue native actions.
 
 <!-- mmac-record: {"id": "2609.40325", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-40325"></a>`2026.09` **[WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents](https://arxiv.org/abs/2609.40325)** [[Project page]](https://ucsb-nlp-chang.github.io/WorldAuditBench/)
+- <a id="paper-2609-40325"></a>`2026.09` **[WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents](https://arxiv.org/abs/2609.40325)** [[Project page]](https://ucsb-nlp-chang.github.io/WorldAuditBench/) [[Code]](https://github.com/UCSB-NLP-Chang/WorldAuditBench)
   > Measures an agent’s ability to explore interactive worlds and substantiate anomalies with evidence.
 
 <!-- mmac-record: {"id": "2607.04434", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
@@ -2342,7 +2342,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2604.25788", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
 
-- <a id="paper-2604-25788"></a>`2026.04` **[KinDER: A Physical Reasoning Benchmark for Robot Learning and Planning](https://arxiv.org/abs/2604.25788)** [[Project page]](https://prpl-group.com/kinder-site/)
+- <a id="paper-2604-25788"></a>`2026.04` **[KinDER: A Physical Reasoning Benchmark for Robot Learning and Planning](https://arxiv.org/abs/2604.25788)** [[Project page]](https://prpl-group.com/kinder-site/) [[Code]](https://github.com/Princeton-Robot-Planning-and-Learning/kindergarden)
   > Provides resettable physical-reasoning tasks, parameterized skills and an evaluation interface for planning and learning.
 
 <!-- mmac-record: {"id": "2603.22435", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2367,7 +2367,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2311.11183", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2311-11183"></a>`2023.11` **[Deploying and Evaluating LLMs to Program Service Mobile Robots](https://arxiv.org/abs/2311.11183)** [[Project page]](https://amrl.cs.utexas.edu/codebotler/)
+- <a id="paper-2311-11183"></a>`2023.11` **[Deploying and Evaluating LLMs to Program Service Mobile Robots](https://arxiv.org/abs/2311.11183)** [[Project page]](https://amrl.cs.utexas.edu/codebotler/) [[Code]](https://github.com/ut-amrl/codebotler)
   > CodeBotler generates service-robot programs in a Python-embedded language; RoboEval tests action order, conditions and task execution.
 
 <!-- mmac-record: {"id": "2306.03310", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
@@ -2399,7 +2399,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2505.03728", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
 
-- <a id="paper-2505-03728"></a>`2025.05` **[PyRoki: A Modular Toolkit for Robot Kinematic Optimization](https://arxiv.org/abs/2505.03728)** [[Project page]](https://pyroki-toolkit.github.io)
+- <a id="paper-2505-03728"></a>`2025.05` **[PyRoki: A Modular Toolkit for Robot Kinematic Optimization](https://arxiv.org/abs/2505.03728)** [[Project page]](https://pyroki-toolkit.github.io) [[Code]](https://github.com/chungmin99/pyroki)
   > Provides composable kinematic optimization interfaces that realize agent-selected targets and motion programs.
 
 <!-- mmac-record: {"id": "dimos", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
@@ -2414,7 +2414,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "phys-0", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
 
-- <a id="paper-phys-0"></a>**[phys-0](https://jvboid.dev/projects/phys-0)** [[Code]](https://github.com/JacobFV/chem-0)
+- <a id="paper-phys-0"></a>**[phys-0](https://jvboid.dev/projects/phys-0)** [[Code]](https://github.com/JacobFV/chem-0) [[Code]](https://github.com/JacobFV/phys-0)
   > Connects editable physical scenes, a SO-101 arm and laboratory observations through logged agent tools.
 
 <!-- mmac-record: {"id": "robouse", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
@@ -2622,7 +2622,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2608.30821", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2608-30821"></a>`2026.08` **[Lucida: Parse, Generate, and Place for Composable Real-to-Sim Scene Modeling](https://arxiv.org/abs/2608.30821)** [[Project page]](https://lucida-r2s.github.io/)
+- <a id="paper-2608-30821"></a>`2026.08` **[Lucida: Parse, Generate, and Place for Composable Real-to-Sim Scene Modeling](https://arxiv.org/abs/2608.30821)** [[Project page]](https://lucida-r2s.github.io/) [[Demo]](https://lucida-r2s.github.io/#main-result)
   > A visual editing agent aligns generated assets to measured scene evidence.
 
 <!-- mmac-record: {"id": "2607.19190", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
@@ -2787,7 +2787,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2310.01361", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2310-01361"></a>`2023.10` **[GenSim: Generating Robotic Simulation Tasks via Large Language Models](https://arxiv.org/abs/2310.01361)** [[Code]](https://github.com/liruiw/GenSim) [[Project page]](https://liruiw.github.io/gensim)
+- <a id="paper-2310-01361"></a>`2023.10` **[GenSim: Generating Robotic Simulation Tasks via Large Language Models](https://arxiv.org/abs/2310.01361)** [[Code]](https://github.com/liruiw/GenSim) [[Project page]](https://liruiw.github.io/gensim) [[Demo]](https://huggingface.co/spaces/Gen-Sim/Gen-Sim)
   > Executable task generation scales demonstration collection and downstream robot-policy training.
 
 <!-- mmac-record: {"id": "res:aha-3d", "scope": "Resource", "primary": "3.2", "stage": 3, "type": "resource"} -->
@@ -2832,7 +2832,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2611.02928", "scope": "Core", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2611-02928"></a>`2026.11` **[Lab2Sim: Turning Real-World Experiment Videos into Interactive Virtual Experiments](https://arxiv.org/abs/2611.02928)** [[Project page]](https://black1948.github.io/lab2sim)
+- <a id="paper-2611-02928"></a>`2026.11` **[Lab2Sim: Turning Real-World Experiment Videos into Interactive Virtual Experiments](https://arxiv.org/abs/2611.02928)** [[Project page]](https://black1948.github.io/lab2sim) [[Demo]](https://black1948.github.io/lab2sim/#demo)
   > Benchmarks interactive browser reconstructions of filmed experiments and uses a separate verifier to compare replayed states with video evidence before revising assets or state-machine logic.
 
 <!-- mmac-record: {"id": "2611.13576", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
@@ -2877,7 +2877,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2609.24778", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-24778"></a>`2026.09` **[H2RBench: A Real-to-Sim Benchmark for Evaluating Human-to-Robot Transfer](https://arxiv.org/abs/2609.24778)** [[Project page]](https://davidz2851.github.io/h2rbench.github.io/)
+- <a id="paper-2609-24778"></a>`2026.09` **[H2RBench: A Real-to-Sim Benchmark for Evaluating Human-to-Robot Transfer](https://arxiv.org/abs/2609.24778)** [[Project page]](https://davidz2851.github.io/h2rbench.github.io/) [[Code]](https://github.com/xiaochy/H2RBench)
   > Uses four real-to-sim tasks to test whether simulated rankings of human-to-robot transfer methods predict real-robot rankings.
 
 <!-- mmac-record: {"id": "2609.27449", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
@@ -2897,7 +2897,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2606.01869", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2606-01869"></a>`2026.06` **[WorldCoder-Bench: Benchmarking Physically Grounded 3D World Synthesis](https://arxiv.org/abs/2606.01869)**
+- <a id="paper-2606-01869"></a>`2026.06` **[WorldCoder-Bench: Benchmarking Physically Grounded 3D World Synthesis](https://arxiv.org/abs/2606.01869)** [[Dataset]](https://huggingface.co/datasets/shuolucs/WorldCoder-Bench)
   > Tests whether generated interactive 3D programs satisfy executable world contracts.
 
 <!-- mmac-record: {"id": "2605.19136", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
@@ -2917,7 +2917,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2604.13035", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2604-13035"></a>`2026.04` **[SceneCritic: A Symbolic Evaluator for 3D Indoor Scene Synthesis](https://arxiv.org/abs/2604.13035)**
+- <a id="paper-2604-13035"></a>`2026.04` **[SceneCritic: A Symbolic Evaluator for 3D Indoor Scene Synthesis](https://arxiv.org/abs/2604.13035)** [[Project page]](https://lab-spell.github.io/SceneCritic) [[Code]](https://github.com/DIASENGUPTA/SceneCritic)
   > Provides explainable symbolic assessment of indoor layouts and feedback for revision.
 
 <!-- mmac-record: {"id": "2603.16432", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
@@ -2937,12 +2937,12 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2602.13294", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2602-13294"></a>`2026.02` **[VisPhyWorld: Probing Physical Reasoning via Code-Driven Video Reconstruction](https://arxiv.org/abs/2602.13294)**
+- <a id="paper-2602-13294"></a>`2026.02` **[VisPhyWorld: Probing Physical Reasoning via Code-Driven Video Reconstruction](https://arxiv.org/abs/2602.13294)** [[Code]](https://github.com/TIGER-AI-Lab/VisPhyWorld)
   > Probes physical reasoning by reconstructing controlled videos as simulator programs.
 
 <!-- mmac-record: {"id": "2512.16881", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2512-16881"></a>`2025.12` **[PolaRiS: Scalable Real-to-Sim Evaluations for Generalist Robot Policies](https://arxiv.org/abs/2512.16881)** [[Project page]](https://polaris-evals.github.io/)
+- <a id="paper-2512-16881"></a>`2025.12` **[PolaRiS: Scalable Real-to-Sim Evaluations for Generalist Robot Policies](https://arxiv.org/abs/2512.16881)** [[Project page]](https://polaris-evals.github.io/) [[Code]](https://github.com/arhanjain/PolaRiS) [[Dataset]](https://huggingface.co/datasets/owhan/PolaRiS-Hub)
   > Reconstructs interactive evaluation scenes from short video scans and pairs them with real evaluations of generalist policies.
 
 <!-- mmac-record: {"id": "2511.03001", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
@@ -2983,17 +2983,17 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2611.06817", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2611-06817"></a>`2026.11` **[Open-HumanWAM: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models](https://arxiv.org/abs/2611.06817)** [[Project page]](https://dagroup-pku.github.io/open-humanwam/) [[Code]](https://github.com/DAGroup-PKU/HumanNet/tree/Open-HumanWAM) [[Dataset]](https://huggingface.co/datasets/DAGroup-PKU/Open-HumanWAM-50K)
+- <a id="paper-2611-06817"></a>`2026.11` **[Open-HumanWAM: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models](https://arxiv.org/abs/2611.06817)** [[Project page]](https://dagroup-pku.github.io/open-humanwam/) [[Code]](https://github.com/DAGroup-PKU/HumanNet/tree/Open-HumanWAM) [[Dataset]](https://huggingface.co/datasets/DAGroup-PKU/Open-HumanWAM-50K) [[Collection]](https://huggingface.co/collections/DAGroup-PKU/open-humanwam)
   > Curates human manipulation experience and aligned actions for world–action model pretraining and robot adaptation.
 
 <!-- mmac-record: {"id": "2406.18915", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2406-18915"></a>`2024.06` **[Manipulate-Anything: Automating Real-World Robots using Vision-Language Models](https://arxiv.org/abs/2406.18915)** [[Project page]](https://robot-ma.github.io/)
+- <a id="paper-2406-18915"></a>`2024.06` **[Manipulate-Anything: Automating Real-World Robots using Vision-Language Models](https://arxiv.org/abs/2406.18915)** [[Project page]](https://robot-ma.github.io/) [[Code]](https://github.com/Robot-MA/manipulate-anything)
   > Collects real demonstrations with visual-language feedback.
 
 <!-- mmac-record: {"id": "2403.12945", "scope": "Resource", "primary": "3.4", "stage": 3, "type": "resource"} -->
 
-- <a id="paper-2403-12945"></a>`2024.03` **[DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset](https://arxiv.org/abs/2403.12945)** [[Project page]](https://droid-dataset.github.io/)
+- <a id="paper-2403-12945"></a>`2024.03` **[DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset](https://arxiv.org/abs/2403.12945)** [[Project page]](https://droid-dataset.github.io/) [[Demo]](https://droid-dataset.github.io/visualizer) [[Hardware code]](https://github.com/droid-dataset/droid) [[Policy training code]](https://github.com/droid-dataset/droid_policy_learning) [[Documentation]](https://droid-dataset.github.io/droid/)
   > Supplies real observations for robot-learning pipelines.
 
 #### Synthetic data and production methods
@@ -3010,7 +3010,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2611.05163", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2611-05163"></a>`2026.11` **[RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On](https://arxiv.org/abs/2611.05163)** [[Project page]](https://ryan-seungyong-lee.github.io/RoboTryOn)
+- <a id="paper-2611-05163"></a>`2026.11` **[RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On](https://arxiv.org/abs/2611.05163)** [[Project page]](https://ryan-seungyong-lee.github.io/RoboTryOn) [[Code]](https://github.com/ryan-seungyong-lee/RoboTryOn) [[Model]](https://huggingface.co/RyanL22/RoboTryOn) [[Demo]](https://huggingface.co/spaces/RyanL22/RoboTryOn)
   > Translates human demonstrations into target-robot videos, infers pseudo-actions with inverse dynamics and wrist correction, and uses the resulting data to train policies evaluated on two real robot platforms.
 
 <!-- mmac-record: {"id": "2610.22362", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
@@ -3025,32 +3025,32 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2609.35318", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-35318"></a>`2026.09` **[DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library](https://arxiv.org/abs/2609.35318)** [[Project page]](https://dexagent1.github.io/) [[Project page]](https://dexagent123.github.io/)
+- <a id="paper-2609-35318"></a>`2026.09` **[DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library](https://arxiv.org/abs/2609.35318)** [[Project page]](https://dexagent1.github.io/) [[Project page]](https://dexagent123.github.io/) [[Code]](https://github.com/dexagent1/DexAgent)
   > Converts human videos into simulated dexterous supervision.
 
 <!-- mmac-record: {"id": "2609.27308", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-27308"></a>`2026.09` **[EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics](https://arxiv.org/abs/2609.27308)**
+- <a id="paper-2609-27308"></a>`2026.09` **[EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics](https://arxiv.org/abs/2609.27308)** [[Code]](https://github.com/EmbodiedSWE/EmbodiedSWE)
   > Scales verified robot programs into synthetic demonstrations.
 
 <!-- mmac-record: {"id": "2607.23704", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2607-23704"></a>`2026.07` **[LabRobFail: A Benchmark for Robotic Failure Analysis in Chemical Self-driving Laboratory](https://arxiv.org/abs/2607.23704)** [[Code]](https://github.com/Su-ISE-2001/LabRobFail)
+- <a id="paper-2607-23704"></a>`2026.07` **[LabRobFail: A Benchmark for Robotic Failure Analysis in Chemical Self-driving Laboratory](https://arxiv.org/abs/2607.23704)** [[Code]](https://github.com/Su-ISE-2001/LabRobFail) [[Code]](https://github.com/Su-ISE-2001/SciRobo)
   > Builds simulated laboratory failure trajectories with structured diagnoses and correction labels.
 
 <!-- mmac-record: {"id": "2506.18088", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2506-18088"></a>`2025.06` **[RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation](https://arxiv.org/abs/2506.18088)** [[Code]](https://github.com/RoboTwin-Platform/RoboTwin) [[Code]](https://github.com/robotwin-Platform/robotwin) [[Code]](https://github.com/robotwin-Platform/robotwin/) [[Project page]](https://robotwin-platform.github.io/) [[Project page]](https://robotwin-platform.github.io/doc/)
+- <a id="paper-2506-18088"></a>`2025.06` **[RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation](https://arxiv.org/abs/2506.18088)** [[Code]](https://github.com/RoboTwin-Platform/RoboTwin) [[Code]](https://github.com/robotwin-Platform/robotwin) [[Code]](https://github.com/robotwin-Platform/robotwin/) [[Project page]](https://robotwin-platform.github.io/) [[Project page]](https://robotwin-platform.github.io/doc/) [[Dataset]](https://huggingface.co/datasets/TianxingChen/RoboTwin2.0)
   > Generates diverse bimanual training trajectories.
 
 <!-- mmac-record: {"id": "2410.03645", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2410-03645"></a>`2024.10` **[GenSim2: Scaling Robot Data Generation with Multi-modal and Reasoning LLMs](https://arxiv.org/abs/2410.03645)** [[Project page]](https://gensim2.github.io/)
+- <a id="paper-2410-03645"></a>`2024.10` **[GenSim2: Scaling Robot Data Generation with Multi-modal and Reasoning LLMs](https://arxiv.org/abs/2410.03645)** [[Project page]](https://gensim2.github.io/) [[Code]](https://github.com/GenSim2/gensim2)
   > Scales robot demonstrations through generated tasks and solvers.
 
 <!-- mmac-record: {"id": "2307.14535", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2307-14535"></a>`2023.07` **[Scaling Up and Distilling Down: Language-Guided Robot Skill Acquisition](https://arxiv.org/abs/2307.14535)** [[Project page]](https://www.cs.columbia.edu/~huy/scalingup/)
+- <a id="paper-2307-14535"></a>`2023.07` **[Scaling Up and Distilling Down: Language-Guided Robot Skill Acquisition](https://arxiv.org/abs/2307.14535)** [[Project page]](https://www.cs.columbia.edu/~huy/scalingup/) [[Code]](https://github.com/columbia-ai-robotics/scalingup)
   > Distills generated robot experience into a visuomotor policy.
 
 [↑ Back to contents](#contents)
@@ -3074,7 +3074,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2610.23288", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-23288"></a>`2026.10` **[CoEvolve: Self-Evolving Code Policies from Skills to Strategies for Humanoid Robots](https://arxiv.org/abs/2610.23288)**
+- <a id="paper-2610-23288"></a>`2026.10` **[CoEvolve: Self-Evolving Code Policies from Skills to Strategies for Humanoid Robots](https://arxiv.org/abs/2610.23288)** [[Code]](https://github.com/Innovationlzc/CoEvolve)
   > Evolves team strategies over fixed humanoid skills.
 
 <!-- mmac-record: {"id": "2610.12369", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3094,7 +3094,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2609.30233", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-30233"></a>`2026.09` **[Coding Agents for Generalized Task and Motion Planning Problems](https://arxiv.org/abs/2609.30233)**
+- <a id="paper-2609-30233"></a>`2026.09` **[Coding Agents for Generalized Task and Motion Planning Problems](https://arxiv.org/abs/2609.30233)** [[Code]](https://github.com/tomsilver/robocode)
   > Programs solvers for task-and-motion planning.
 
 <!-- mmac-record: {"id": "2609.30594", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3104,7 +3104,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2609.24145", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-24145"></a>`2026.09` **[MimicAgent: Quadruped Skills via Prompt-to-Trajectory Generation](https://arxiv.org/abs/2609.24145)** [[Project page]](https://luckykantnayak.github.io/mimic-agent/)
+- <a id="paper-2609-24145"></a>`2026.09` **[MimicAgent: Quadruped Skills via Prompt-to-Trajectory Generation](https://arxiv.org/abs/2609.24145)** [[Project page]](https://luckykantnayak.github.io/mimic-agent/) [[Code]](https://github.com/Luckykantnayak/mimicagent-humnaoid)
   > Generates reference motion for quadruped policy training.
 
 <!-- mmac-record: {"id": "2609.38982", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3119,7 +3119,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2606.19980", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2606-19980"></a>`2026.06` **[ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](https://arxiv.org/abs/2606.19980)** [[Project page]](https://research.nvidia.com/labs/gear/enpire/)
+- <a id="paper-2606-19980"></a>`2026.06` **[ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](https://arxiv.org/abs/2606.19980)** [[Project page]](https://research.nvidia.com/labs/gear/enpire/) [[Code]](https://github.com/NVlabs/ENPIRE)
   > Develops robot policies from physical trial evidence.
 
 <!-- mmac-record: {"id": "2606.08610", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3129,7 +3129,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2606.16458", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2606-16458"></a>`2026.06` **[RHO: Your Coding Agent is Secretly a Roboticist](https://arxiv.org/abs/2606.16458)** [[Project page]](https://rho-robotics.github.io)
+- <a id="paper-2606-16458"></a>`2026.06` **[RHO: Your Coding Agent is Secretly a Roboticist](https://arxiv.org/abs/2606.16458)** [[Project page]](https://rho-robotics.github.io) [[Code]](https://github.com/KE7/HELIX)
   > Searches reusable policy repositories before deployment.
 
 <!-- mmac-record: {"id": "2603.04466", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3154,12 +3154,12 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2409.01652", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2409-01652"></a>`2024.09` **[ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation](https://arxiv.org/abs/2409.01652)** [[Project page]](https://rekep-robot.github.io/)
+- <a id="paper-2409-01652"></a>`2024.09` **[ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation](https://arxiv.org/abs/2409.01652)** [[Project page]](https://rekep-robot.github.io/) [[Code]](https://github.com/huangwl18/ReKep)
   > Programs geometric constraints for online manipulation.
 
 <!-- mmac-record: {"id": "2406.01967", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2406-01967"></a>`2024.06` **[DrEureka: Language Model Guided Sim-To-Real Transfer](https://arxiv.org/abs/2406.01967)** [[Project page]](https://eureka-research.github.io/dr-eureka/)
+- <a id="paper-2406-01967"></a>`2024.06` **[DrEureka: Language Model Guided Sim-To-Real Transfer](https://arxiv.org/abs/2406.01967)** [[Project page]](https://eureka-research.github.io/dr-eureka/) [[Code]](https://github.com/eureka-research/DrEureka)
   > Uses generated rewards and randomization for sim-to-real.
 
 <!-- mmac-record: {"id": "2402.04764", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3169,17 +3169,17 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2310.12931", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2310-12931"></a>`2023.10` **[Eureka: Human-Level Reward Design via Coding Large Language Models](https://arxiv.org/abs/2310.12931)** [[Project page]](https://eureka-research.github.io/)
+- <a id="paper-2310-12931"></a>`2023.10` **[Eureka: Human-Level Reward Design via Coding Large Language Models](https://arxiv.org/abs/2310.12931)** [[Project page]](https://eureka-research.github.io/) [[Code]](https://github.com/eureka-research/Eureka)
   > Searches reward programs using policy-training feedback.
 
 <!-- mmac-record: {"id": "2309.11489", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2309-11489"></a>`2023.09` **[Text2Reward: Reward Shaping with Language Models for Reinforcement Learning](https://arxiv.org/abs/2309.11489)** [[Project page]](https://text-to-reward.github.io/)
+- <a id="paper-2309-11489"></a>`2023.09` **[Text2Reward: Reward Shaping with Language Models for Reinforcement Learning](https://arxiv.org/abs/2309.11489)** [[Project page]](https://text-to-reward.github.io/) [[Code]](https://github.com/xlang-ai/text2reward)
   > Makes reward shaping a code-generation problem.
 
 <!-- mmac-record: {"id": "2306.08647", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2306-08647"></a>`2023.06` **[Language to Rewards for Robotic Skill Synthesis](https://arxiv.org/abs/2306.08647)** [[Project page]](https://language-to-reward.github.io/)
+- <a id="paper-2306-08647"></a>`2023.06` **[Language to Rewards for Robotic Skill Synthesis](https://arxiv.org/abs/2306.08647)** [[Project page]](https://language-to-reward.github.io/) [[Code]](https://github.com/google-deepmind/language_to_reward_2023)
   > Expresses desired robot skills through generated rewards.
 
 <!-- mmac-record: {"id": "autoresearch-robotics", "scope": "Resource", "primary": "3.5", "stage": 3, "type": "resource"} -->
@@ -3236,7 +3236,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2610.14224", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-14224"></a>`2026.10` **[Harness^2: Recursive Agent Harnessing for an Open World](https://arxiv.org/abs/2610.14224)**
+- <a id="paper-2610-14224"></a>`2026.10` **[Harness^2: Recursive Agent Harnessing for an Open World](https://arxiv.org/abs/2610.14224)** [[Code]](https://github.com/google-research/harness2)
   > Evolves harnesses within and across tasks.
 
 <!-- mmac-record: {"id": "2610.23098", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3246,7 +3246,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2610.03476", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-03476"></a>`2026.10` **[MobiAgent: Dual-Loop Recursive Policy Self-Improvement for Long-Horizon Mobile Manipulation](https://arxiv.org/abs/2610.03476)** [[Code]](https://github.com/kaiknower/MobiAgent) [[Project page]](https://kaiknower.github.io/mobiagent/)
+- <a id="paper-2610-03476"></a>`2026.10` **[MobiAgent: Dual-Loop Recursive Policy Self-Improvement for Long-Horizon Mobile Manipulation](https://arxiv.org/abs/2610.03476)** [[Code]](https://github.com/kaiknower/MobiAgent) [[Project page]](https://kaiknower.github.io/mobiagent/) [[Model]](https://huggingface.co/Liukaikai/MobiAgent)
   > Combines visual planning and reflection with reusable action experts, recycling verified deployment rollouts into offline skill-policy updates rather than generated control-code revisions.
 
 <!-- mmac-record: {"id": "2610.08995", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3311,7 +3311,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2609.37583", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-37583"></a>`2026.09` **[RoboHarn-Evo: Evolving Hierarchical Physical Knowledge for Self-Improving Robotic Manipulation](https://arxiv.org/abs/2609.37583)**
+- <a id="paper-2609-37583"></a>`2026.09` **[RoboHarn-Evo: Evolving Hierarchical Physical Knowledge for Self-Improving Robotic Manipulation](https://arxiv.org/abs/2609.37583)** [[Code]](https://github.com/RUCKBReasoning/RoboHarn-Evo)
   > Accumulates hierarchical knowledge from physical interaction.
 
 <!-- mmac-record: {"id": "2609.39304", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3346,7 +3346,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2607.23784", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2607-23784"></a>`2026.07` **[A Few Words Go a Long Way: Language Guided Robot Policy Synthesis](https://arxiv.org/abs/2607.23784)** [[Project page]](https://robo-architect.github.io/)
+- <a id="paper-2607-23784"></a>`2026.07` **[A Few Words Go a Long Way: Language Guided Robot Policy Synthesis](https://arxiv.org/abs/2607.23784)** [[Project page]](https://robo-architect.github.io/) [[Code]](https://github.com/robo-architect/architect-franka)
   > Uses language corrections to improve robot programs.
 
 <!-- mmac-record: {"id": "2607.00272", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3356,12 +3356,12 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2606.19419", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2606-19419"></a>`2026.06` **[Playful Agentic Robot Learning](https://arxiv.org/abs/2606.19419)** [[Project page]](https://playful-rats.github.io/)
+- <a id="paper-2606-19419"></a>`2026.06` **[Playful Agentic Robot Learning](https://arxiv.org/abs/2606.19419)** [[Project page]](https://playful-rats.github.io/) [[Code]](https://github.com/Playful-RATs/rats)
   > Turns task-free exploration into persistent code skills.
 
 <!-- mmac-record: {"id": "2605.10332", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2605-10332"></a>`2026.05` **[EmbodiSkill: Skill-Aware Reflection for Self-Evolving Embodied Agents](https://arxiv.org/abs/2605.10332)**
+- <a id="paper-2605-10332"></a>`2026.05` **[EmbodiSkill: Skill-Aware Reflection for Self-Evolving Embodied Agents](https://arxiv.org/abs/2605.10332)** [[Code]](https://github.com/air-embodied-brain/EmbodiSkill)
   > Links reflection to the skills responsible for failures.
 
 <!-- mmac-record: {"id": "2603.02623", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3386,29 +3386,29 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2405.19758", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2405-19758"></a>`2024.05` **[InterPreT: Interactive Predicate Learning from Language Feedback for Generalizable Task Planning](https://arxiv.org/abs/2405.19758)** [[Project page]](https://interpret-robot.github.io)
+- <a id="paper-2405-19758"></a>`2024.05` **[InterPreT: Interactive Predicate Learning from Language Feedback for Generalizable Task Planning](https://arxiv.org/abs/2405.19758)** [[Project page]](https://interpret-robot.github.io) [[Code]](https://github.com/hmz-15/interactive-predicate-learning)
   > Learns planning predicates from language corrections.
 
 <!-- mmac-record: {"id": "2305.16744", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2305-16744"></a>`2023.05` **[Demo2Code: From Summarizing Demonstrations to Synthesizing Code via Extended Chain-of-Thought](https://arxiv.org/abs/2305.16744)** [[Project page]](https://portal-cornell.github.io/demo2code/)
+- <a id="paper-2305-16744"></a>`2023.05` **[Demo2Code: From Summarizing Demonstrations to Synthesizing Code via Extended Chain-of-Thought](https://arxiv.org/abs/2305.16744)** [[Project page]](https://portal-cornell.github.io/demo2code/) [[Code]](https://github.com/portal-cornell/demo2code)
   > Turns demonstrations into reusable robot programs.
 
 #### Post-training the coding agent
 
 <!-- mmac-record: {"id": "2610.30136", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-30136"></a>`2026.10` **[Agentic World Action Models](https://arxiv.org/abs/2610.30136)** [[Project page]](https://agentic-wam.github.io/)
+- <a id="paper-2610-30136"></a>`2026.10` **[Agentic World Action Models](https://arxiv.org/abs/2610.30136)** [[Project page]](https://agentic-wam.github.io/) [[Model]](https://huggingface.co/miniFranka/agentic-wam-pretrain-yamego3k-soup-e1) [[Code]](https://github.com/ZhuoyangLiu2005/agentic-wam)
   > Models programs, predicted video and robot actions together.
 
 <!-- mmac-record: {"id": "2610.28589", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-28589"></a>`2026.10` **[AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](https://arxiv.org/abs/2610.28589)**
+- <a id="paper-2610-28589"></a>`2026.10` **[AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](https://arxiv.org/abs/2610.28589)** [[Code]](https://github.com/L-CodingSpace/AgenticRoboRL) [[Project page]](https://l-codingspace.github.io/AgenticRoboRL/)
   > Post-trains robot planners across different harnesses.
 
 <!-- mmac-record: {"id": "2610.40799", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-40799"></a>`2026.10` **[CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents](https://arxiv.org/abs/2610.40799)** [[Code]](https://github.com/waltstephen/CaPtain) [[Code]](https://github.com/waltstephen/CaPtain-Harness) [[Dataset]](https://huggingface.co/datasets/YijiaFan/CaPtain-SFT-Data)
+- <a id="paper-2610-40799"></a>`2026.10` **[CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents](https://arxiv.org/abs/2610.40799)** [[Code]](https://github.com/waltstephen/CaPtain) [[Code]](https://github.com/waltstephen/CaPtain-Harness) [[Dataset]](https://huggingface.co/datasets/YijiaFan/CaPtain-SFT-Data) [[Project page]](https://waltstephen.github.io/captain/)
   > Trains a small model to act through robot code.
 
 <!-- mmac-record: {"id": "2610.36013", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3418,7 +3418,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2610.41216", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-41216"></a>`2026.10` **[TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents](https://arxiv.org/abs/2610.41216)** [[Project page]](https://garfield-kh.github.io/TinyAstral/)
+- <a id="paper-2610-41216"></a>`2026.10` **[TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents](https://arxiv.org/abs/2610.41216)** [[Project page]](https://garfield-kh.github.io/TinyAstral/) [[Code]](https://github.com/Garfield-kh/TinyAstral) [[Model]](https://huggingface.co/kehong/TinyAstral-weights) [[Dataset]](https://huggingface.co/datasets/kehong/TinyAstral-SFT)
   > Transfers a refined teacher harness to a small agent.
 
 <!-- mmac-record: {"id": "2606.18363", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3475,7 +3475,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2610.20998", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-20998"></a>`2026.10` **[MoCaP: Mobile Code-as-Policies for Zero-Shot Mobile Manipulation from Passive Human Videos](https://arxiv.org/abs/2610.20998)** [[Project page]](https://mocap-7.github.io/MoCAP-page/)
+- <a id="paper-2610-20998"></a>`2026.10` **[MoCaP: Mobile Code-as-Policies for Zero-Shot Mobile Manipulation from Passive Human Videos](https://arxiv.org/abs/2610.20998)** [[Project page]](https://mocap-7.github.io/MoCAP-page/) [[Code]](https://github.com/MoCAP-7/MoCAP)
   > Transfers human-video priors to mobile robot programs.
 
 <!-- mmac-record: {"id": "2609.23133", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
@@ -3485,7 +3485,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2609.30249", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-30249"></a>`2026.09` **[RAPID: Robot Agentic Programming from Demonstrations](https://arxiv.org/abs/2609.30249)** [[Project page]](https://yuyaoliu.me/projects/rapid)
+- <a id="paper-2609-30249"></a>`2026.09` **[RAPID: Robot Agentic Programming from Demonstrations](https://arxiv.org/abs/2609.30249)** [[Project page]](https://yuyaoliu.me/projects/rapid) [[Code]](https://github.com/nature21/RAPID)
   > Infers reusable relational robot programs and a verification environment from one visual demonstration.
 
 <!-- mmac-record: {"id": "2503.23875", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
@@ -3495,7 +3495,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2403.07832", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2403-07832"></a>`2024.03` **[DeliGrasp: Inferring Object Properties with LLMs for Adaptive Grasp Policies](https://arxiv.org/abs/2403.07832)** [[Project page]](https://deligrasp.github.io)
+- <a id="paper-2403-07832"></a>`2024.03` **[DeliGrasp: Inferring Object Properties with LLMs for Adaptive Grasp Policies](https://arxiv.org/abs/2403.07832)** [[Project page]](https://deligrasp.github.io) [[Code]](https://github.com/deligrasp/deligrasp)
   > Combines object-property estimates with adaptive grasping.
 
 <!-- mmac-record: {"id": "2310.13065", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
@@ -3505,7 +3505,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2307.05973", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2307-05973"></a>`2023.07` **[VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models](https://arxiv.org/abs/2307.05973)** [[Project page]](https://voxposer.github.io)
+- <a id="paper-2307-05973"></a>`2023.07` **[VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models](https://arxiv.org/abs/2307.05973)** [[Project page]](https://voxposer.github.io) [[Code]](https://github.com/huangwl18/VoxPoser)
   > Builds spatial value maps for manipulation.
 
 <!-- mmac-record: {"id": "demo:nvidia-factory-operations-blueprint", "scope": "Demo", "primary": "3.6", "stage": 3, "type": "demo"} -->
@@ -3557,7 +3557,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "bespoke-instrument", "scope": "Resource", "primary": "3.6", "stage": 3, "type": "resource"} -->
 
-- <a id="paper-bespoke-instrument"></a>`2026.05` **[AI-designed and AI-implemented control systems for bespoke scientific instrumentation: application to scanning microscopy](https://pubs.rsc.org/en/content/articlelanding/2026/dd/d6dd00177g)** [[Paper]](https://www.repository.cam.ac.uk/items/cb2e6fef-94c4-4fe9-903a-aaa198da8f4f)
+- <a id="paper-bespoke-instrument"></a>`2026.05` **[AI-designed and AI-implemented control systems for bespoke scientific instrumentation: application to scanning microscopy](https://pubs.rsc.org/en/content/articlelanding/2026/dd/d6dd00177g)** [[Paper]](https://www.repository.cam.ac.uk/items/cb2e6fef-94c4-4fe9-903a-aaa198da8f4f) [[Code]](https://github.com/Okarl96/shem_gui)
   > Develops instrument-control code with human oversight.
 
 <!-- mmac-record: {"id": "2509.24978", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
@@ -3594,7 +3594,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2611.08175", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2611-08175"></a>`2026.11` **[PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?](https://arxiv.org/abs/2611.08175)** [[Project page]](https://chip-ai-agent.github.io/research/pcbrouteagent)
+- <a id="paper-2611-08175"></a>`2026.11` **[PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?](https://arxiv.org/abs/2611.08175)** [[Project page]](https://chip-ai-agent.github.io/research/pcbrouteagent) [[Code]](https://github.com/chip-ai-agent/PCBRouteAgent)
   > Revises PCB routing guides from native KiCad execution feedback to improve board connectivity.
 
 <!-- mmac-record: {"id": "2611.13344", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
@@ -3619,7 +3619,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2605.17448", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2605-17448"></a>`2026.05` **[Self-Improving CAD Generation Agents with Finite Element Analysis as Feedback](https://arxiv.org/abs/2605.17448)**
+- <a id="paper-2605-17448"></a>`2026.05` **[Self-Improving CAD Generation Agents with Finite Element Analysis as Feedback](https://arxiv.org/abs/2605.17448)** [[Code]](https://github.com/3dlg-hcvc/s2o)
   > Uses visual and finite-element feedback to improve CAD.
 
 <!-- mmac-record: {"id": "2408.14307", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
@@ -3661,7 +3661,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2606.15932", "scope": "Survey", "primary": "SV", "stage": null, "type": "paper"} -->
 
-- <a id="paper-2606-15932"></a>`2026.06` **[Beyond NL2Code: A Structured Survey of Multimodal Code Intelligence](https://arxiv.org/abs/2606.15932)**
+- <a id="paper-2606-15932"></a>`2026.06` **[Beyond NL2Code: A Structured Survey of Multimodal Code Intelligence](https://arxiv.org/abs/2606.15932)** [[Collection]](https://github.com/xjywhu/Awesome-Multimodal-LLM-for-Code)
   > Surveys multimodal code intelligence across UI, scientific visualization, structured graphics, and emerging agentic settings.
 
 **Related awesome lists**

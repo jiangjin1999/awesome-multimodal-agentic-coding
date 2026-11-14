@@ -107,7 +107,7 @@
 
 <!-- mmac-record: {"id": "2610.23104", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-23104"></a>`2026.10` **[WebCoder: Scaling General Frontend Development with Artifact-Grounded Agentic Reinforcement Learning](https://arxiv.org/abs/2610.23104)** [[プロジェクトページ]](https://douzj-llm.github.io/WebCoder/) [[コード]](https://github.com/douzj-llm/WebCoder) [[データセット]](https://huggingface.co/datasets/Roy-DOU/Webdev-Bench)
+- <a id="paper-2610-23104"></a>`2026.10` **[WebCoder: Scaling General Frontend Development with Artifact-Grounded Agentic Reinforcement Learning](https://arxiv.org/abs/2610.23104)** [[プロジェクトページ]](https://douzj-llm.github.io/WebCoder/) [[コード]](https://github.com/douzj-llm/WebCoder) [[データセット]](https://huggingface.co/datasets/Roy-DOU/Webdev-Bench) [[モデル]](https://huggingface.co/Roy-DOU/WebCoder-27B)
   > 成果物の進展を基にフロントエンド構築者を訓練し、描画フィードバックで同一アプリを継続的に修正する。要件充足度の変化で長い強化学習軌跡の寄与を割り当てる。
 
 <!-- mmac-record: {"id": "2610.02617", "scope": "Adjacent", "primary": "1.1", "stage": 1, "type": "paper"} -->
@@ -127,7 +127,7 @@
 
 <!-- mmac-record: {"id": "2609.22000", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-22000"></a>`2026.09` **[RecreationWorld: Scalable and Verifiable Environments for Hybrid Computer-Use Agents](https://arxiv.org/abs/2609.22000)**
+- <a id="paper-2609-22000"></a>`2026.09` **[RecreationWorld: Scalable and Verifiable Environments for Hybrid Computer-Use Agents](https://arxiv.org/abs/2609.22000)** [[コード]](https://github.com/QwenLM/RecreationWorld)
   > デスクトップ、Android、Web で参考アプリの探索、ソース実装、実行、視覚検査を交互に行い、検証済みの再構築軌跡で複合操作エージェントを訓練する。
 
 <!-- mmac-record: {"id": "2609.02088", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
@@ -177,7 +177,7 @@
 
 <!-- mmac-record: {"id": "2602.06090", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2602-06090"></a>`2026.02` **[SVRepair: Structured Visual Reasoning for Automated Program Repair](https://arxiv.org/abs/2602.06090)**
+- <a id="paper-2602-06090"></a>`2026.02` **[SVRepair: Structured Visual Reasoning for Automated Program Repair](https://arxiv.org/abs/2602.06090)** [[コード]](https://github.com/codefuse-ai/CodeFuse-SVR)
   > スクリーンショットを局所的な視覚証拠へ構造化し、場面理解、コード位置の特定、パッチ生成を繰り返す。
 
 <!-- mmac-record: {"id": "2602.05998", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
@@ -187,7 +187,7 @@
 
 <!-- mmac-record: {"id": "2601.04203", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2601-04203"></a>`2025.12` **[FronTalk: Benchmarking Front-End Development as Conversational Code Generation with Multi-Modal Feedback](https://arxiv.org/abs/2601.04203)** [[プロジェクトページ]](https://frontalk-benchmark.github.io/) [[コード]](https://github.com/shirley-wu/frontalk)
+- <a id="paper-2601-04203"></a>`2025.12` **[FronTalk: Benchmarking Front-End Development as Conversational Code Generation with Multi-Modal Feedback](https://arxiv.org/abs/2601.04203)** [[プロジェクトページ]](https://frontalk-benchmark.github.io/) [[コード]](https://github.com/shirley-wu/frontalk) [[データセット]](https://huggingface.co/datasets/xqwu/FronTalk)
   > 複数ターンの視覚的なフロントエンド対話と AceCoder を導入する。AceCoder は描画サイトを操作し、失敗を批評して改善したコードを再生成する。
 
 <!-- mmac-record: {"id": "2511.08195", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
@@ -197,7 +197,7 @@
 
 <!-- mmac-record: {"id": "2511.06251", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2511-06251"></a>`2025.11` **[WebVIA: A Web-based Vision-Language Agentic Framework for Interactive and Verifiable UI-to-Code Generation](https://arxiv.org/abs/2511.06251)** [[デモ]](https://zheny2751-dotcom.github.io/webvia.github.io/) [[コード]](https://github.com/zheny2751-dotcom/WebVIA)
+- <a id="paper-2511-06251"></a>`2025.11` **[WebVIA: A Web-based Vision-Language Agentic Framework for Interactive and Verifiable UI-to-Code Generation](https://arxiv.org/abs/2511.06251)** [[デモ]](https://zheny2751-dotcom.github.io/webvia.github.io/) [[コード]](https://github.com/zheny2751-dotcom/WebVIA) [[モデル]](https://huggingface.co/zai-org/WebVIA-Agent)
   > 知覚・行動・検証を繰り返して元の画面を探索し、実行可能な操作コードを合成して復元した動作を検証する。
 
 <!-- mmac-record: {"id": "2510.11498", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
@@ -234,7 +234,7 @@
 
 <!-- mmac-record: {"id": "2610.35138", "scope": "Adjacent", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-35138"></a>`2026.10` **[Co-Design Bench: Multimodal Collaborative Coding Evaluation for Agentic Models](https://arxiv.org/abs/2610.35138)** [[プロジェクトページ]](https://codesignbench.github.io/) [[コード]](https://github.com/Wiselnn570/Co-Design-Bench) [[データセット]](https://huggingface.co/datasets/Wiselnn/Co-Design-Bench)
+- <a id="paper-2610-35138"></a>`2026.10` **[Co-Design Bench: Multimodal Collaborative Coding Evaluation for Agentic Models](https://arxiv.org/abs/2610.35138)** [[プロジェクトページ]](https://codesignbench.github.io/) [[コード]](https://github.com/Wiselnn570/Co-Design-Bench) [[データセット]](https://huggingface.co/datasets/Wiselnn/Co-Design-Bench) [[デモ]](https://codesignbench.github.io/#intro-video)
   > ソースコード、描画された画面、操作の証拠で変更が隠された要件を満たすかを検査し、独立した反証段階で肯定的な判定を再確認する。
 
 <!-- mmac-record: {"id": "2610.29014", "scope": "Adjacent", "primary": "1.1", "stage": 1, "type": "paper"} -->
@@ -244,17 +244,17 @@
 
 <!-- mmac-record: {"id": "2610.10374", "scope": "Adjacent", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-10374"></a>`2026.10` **[TaoD2C-Bench: Benchmarking MLLMs for Industrial UI Code Generation Beyond Visual Fidelity](https://arxiv.org/abs/2610.10374)** [[プロジェクトページ]](https://taod2c-bench.github.io/)
+- <a id="paper-2610-10374"></a>`2026.10` **[TaoD2C-Bench: Benchmarking MLLMs for Industrial UI Code Generation Beyond Visual Fidelity](https://arxiv.org/abs/2610.10374)** [[プロジェクトページ]](https://taod2c-bench.github.io/) [[データセット]](https://github.com/TaoD2C-Bench/TaoD2C-Bench/tree/main/data/eval)
   > 産業用 UI の要件推論とコード実装を別々に評価し、ソースと実行時の証拠で構成要素や配置の制約を検査しつつ、最終的な描画忠実度を独立に比較する。
 
 <!-- mmac-record: {"id": "2610.33149", "scope": "Adjacent", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-33149"></a>`2026.10` **[WebUniverse: Scaling Verified Training Data for Agentic Web Development](https://arxiv.org/abs/2610.33149)** [[データセット]](https://huggingface.co/datasets/WebUniverse-NSL/WebUniverse-Env) [[データセット]](https://huggingface.co/datasets/WebUniverse-NSL/WebUniverse-Mix) [[プロジェクトページ]](https://webuniverse-nsl.github.io/)
+- <a id="paper-2610-33149"></a>`2026.10` **[WebUniverse: Scaling Verified Training Data for Agentic Web Development](https://arxiv.org/abs/2610.33149)** [[データセット]](https://huggingface.co/datasets/WebUniverse-NSL/WebUniverse-Env) [[データセット]](https://huggingface.co/datasets/WebUniverse-NSL/WebUniverse-Mix) [[プロジェクトページ]](https://webuniverse-nsl.github.io/) [[コレクション]](https://huggingface.co/collections/WebUniverse-NSL/webuniverse-6ad1bc77c51f1a47f876f073)
   > 対応する Web 開発環境と検証済み軌跡を構築し、機能・視覚チェック、独立した試行、失敗後の継続を組み合わせてエージェントの教師あり学習データを作る。
 
 <!-- mmac-record: {"id": "2609.32600", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-32600"></a>`2026.09` **[CUA-SWE: When Computer-Use Agents Meet Visual Software Engineering](https://arxiv.org/abs/2609.32600)**
+- <a id="paper-2609-32600"></a>`2026.09` **[CUA-SWE: When Computer-Use Agents Meet Visual Software Engineering](https://arxiv.org/abs/2609.32600)** [[コード]](https://github.com/kingofspace0wzz/cua-swe) [[データセット]](https://huggingface.co/datasets/kingofspace0wzz/CUA-SWE)
   > Web、ゲーム、モバイル、DevOps の修正でソース編集とスクリーンショットに基づく操作を統合し、実行時の視覚的証拠で次の編集を導き、独立テストで動作と回帰を検査する。
 
 <!-- mmac-record: {"id": "2609.15387", "scope": "Adjacent", "primary": "1.1", "stage": 1, "type": "paper"} -->
@@ -274,7 +274,7 @@
 
 <!-- mmac-record: {"id": "2604.18224", "scope": "Adjacent", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2604-18224"></a>`2026.04` **[WebCompass: Towards Multimodal Web Coding Evaluation for Code Language Models](https://arxiv.org/abs/2604.18224)** [[コード]](https://github.com/NJU-LINK/WebCompass)
+- <a id="paper-2604-18224"></a>`2026.04` **[WebCompass: Towards Multimodal Web Coding Evaluation for Code Language Models](https://arxiv.org/abs/2604.18224)** [[コード]](https://github.com/NJU-LINK/WebCompass) [[データセット]](https://huggingface.co/datasets/NJU-LINK/WebCompass)
   > Web ページの生成、編集、修復を視覚と操作の面から評価するが、同じエージェントによる描画・観察・再コーディングの軌跡は必須としない。
 
 <!-- mmac-record: {"id": "2602.18548", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
@@ -284,12 +284,12 @@
 
 <!-- mmac-record: {"id": "2507.04952", "scope": "Adjacent", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2507-04952"></a>`2025.07` **[ArtifactsBench: Bridging the Visual-Interactive Gap in LLM Code Generation Evaluation](https://arxiv.org/abs/2507.04952)** [[プロジェクトページ]](https://artifactsbenchmark.github.io/)
+- <a id="paper-2507-04952"></a>`2025.07` **[ArtifactsBench: Bridging the Visual-Interactive Gap in LLM Code Generation Evaluation](https://arxiv.org/abs/2507.04952)** [[プロジェクトページ]](https://artifactsbenchmark.github.io/) [[コード]](https://github.com/Tencent-Hunyuan/ArtifactsBenchmark) [[データセット]](https://huggingface.co/datasets/tencent/ArtifactsBenchmark)
   > 完成したインタラクティブ成果物を描画と実行時の動作で評価するが、そのフィードバックを後続のコーディングには返さない。
 
 <!-- mmac-record: {"id": "2502.18525", "scope": "Core", "primary": "1.1", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2502-18525"></a>`2025.02` **[Programming with Pixels: Can Computer-Use Agents do Software Engineering?](https://arxiv.org/abs/2502.18525)** [[デモ]](https://programmingwithpixels.com/) [[コード]](https://github.com/ProgrammingwithPixels/PwP)
+- <a id="paper-2502-18525"></a>`2025.02` **[Programming with Pixels: Can Computer-Use Agents do Software Engineering?](https://arxiv.org/abs/2502.18525)** [[デモ]](https://programmingwithpixels.com/) [[コード]](https://github.com/ProgrammingwithPixels/PwP) [[データセット]](https://github.com/ProgrammingWithPixels/PwP/tree/main/pwp_bench) [[デモ]](https://programmingwithpixels.com/#pwp-in-action)
   > テキストのツールインターフェースだけではなく、視覚的な IDE を観察して操作する必要があるコーディングエージェントを評価する。
 
 #### ツールとリソース
@@ -301,7 +301,7 @@
 
 <!-- mmac-record: {"id": "res:agent-qa", "scope": "Resource", "primary": "1.1", "stage": 1, "type": "resource"} -->
 
-- <a id="paper-res-agent-qa"></a>**[agent-qa](https://vostride.com)** [[ドキュメント]](https://vostride.com/docs/agent-qa/mcp)
+- <a id="paper-res-agent-qa"></a>**[agent-qa](https://vostride.com)** [[ドキュメント]](https://vostride.com/docs/agent-qa/mcp) [[コード]](https://github.com/vostride/agent-qa)
   > コーディング Agent に、自然言語によるウェブ・Android・iOS のテスト、画面、コンソールとネットワークの証拠、判定の訂正を提供する。永続的な memidex 記憶と証拠に基づく自己改善で、検証済みの経験を実行間に保持する。
 
 <a id="tool-agent-visual-diff"></a>
@@ -374,7 +374,7 @@
 
 <!-- mmac-record: {"id": "2610.26828", "scope": "Adjacent", "primary": "1.2", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-26828"></a>`2026.10` **[Agent World Model in the Wild: Computer-Use Agent Environment Synthesis](https://arxiv.org/abs/2610.26828)** [[コード]](https://github.com/MSR-Orchard/WildAWM) [[データセット]](https://huggingface.co/datasets/ChilleD/WildAWM)
+- <a id="paper-2610-26828"></a>`2026.10` **[Agent World Model in the Wild: Computer-Use Agent Environment Synthesis](https://arxiv.org/abs/2610.26828)** [[コード]](https://github.com/MSR-Orchard/WildAWM) [[データセット]](https://huggingface.co/datasets/ChilleD/WildAWM) [[プロジェクトページ]](https://msr-orchard.github.io/WildAWM/) [[コレクション]](https://huggingface.co/collections/ChilleD/agent-world-model-in-the-wild)
   > GUI、MCP、CLI を含む再生可能な PC 世界を合成し、多様な実行軌跡と検証器の一致確認から、計算機操作の訓練用環境・タスク群を作る。
 
 <!-- mmac-record: {"id": "2610.37567", "scope": "Core", "primary": "1.2", "stage": 1, "type": "paper"} -->
@@ -404,7 +404,7 @@
 
 <!-- mmac-record: {"id": "2606.19930", "scope": "Adjacent", "primary": "1.2", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2606-19930"></a>`2026.06` **[MobileForge: Annotation-Free Adaptation for Mobile GUI Agents with Hierarchical Feedback-Guided Policy Optimization](https://arxiv.org/abs/2606.19930)** [[コード]](https://github.com/kwai/MobileForge) [[コレクション]](https://huggingface.co/collections/lgy0404/mobileforge-datasets) [[プロジェクトページ]](https://mobile-forge.github.io/)
+- <a id="paper-2606-19930"></a>`2026.06` **[MobileForge: Annotation-Free Adaptation for Mobile GUI Agents with Hierarchical Feedback-Guided Policy Optimization](https://arxiv.org/abs/2606.19930)** [[コード]](https://github.com/kwai/MobileForge) [[コレクション]](https://huggingface.co/collections/lgy0404/mobileforge-datasets) [[プロジェクトページ]](https://mobile-forge.github.io/) [[コレクション]](https://huggingface.co/collections/lgy0404/mobileforge-models) [[データセット]](https://huggingface.co/datasets/lgy0404/mobileforge-benchmark-results)
   > 実際のアプリ探索からタスクを抽出し、視覚 Critic の修正指示を試行間で再利用する。優れた判断をフィードバック条件付きのステップ単位の方策更新に変換する。
 
 <!-- mmac-record: {"id": "2605.25624", "scope": "Core", "primary": "1.2", "stage": 1, "type": "paper"} -->
@@ -486,12 +486,12 @@
 
 <!-- mmac-record: {"id": "2609.33386", "scope": "Adjacent", "primary": "1.3", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-33386"></a>`2026.09` **[SIVIA-RSI: Source-Grounded Adaptation of Diagramming Skills](https://arxiv.org/abs/2609.33386)**
+- <a id="paper-2609-33386"></a>`2026.09` **[SIVIA-RSI: Source-Grounded Adaptation of Diagramming Skills](https://arxiv.org/abs/2609.33386)** [[コード]](https://github.com/exsinger-hub/Sivia)
   > 元の段落に関連付けた視覚的批評で再利用可能なラスター作図命令を調整し、各候補を新しく描画した画像で評価する。選好と論文間の関係への忠実度を区別する。
 
 <!-- mmac-record: {"id": "2609.15182", "scope": "Core", "primary": "1.3", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-15182"></a>`2026.09` **[VisInteract: Towards Dynamic Interactive Text-to-Visualization under Imperfect Queries](https://arxiv.org/abs/2609.15182)**
+- <a id="paper-2609-15182"></a>`2026.09` **[VisInteract: Towards Dynamic Interactive Text-to-Visualization under Imperfect Queries](https://arxiv.org/abs/2609.15182)** [[コード]](https://github.com/wxxv/VisInteract)
   > Altair プログラムを実行して模擬利用者に図表を評価させ、視覚的な批評と文章による確認を次のコード探索へ返し、不完全な要件から可視化の意図を復元する。
 
 <!-- mmac-record: {"id": "2608.00548", "scope": "Core", "primary": "1.3", "stage": 1, "type": "paper"} -->
@@ -561,12 +561,12 @@
 
 <!-- mmac-record: {"id": "2511.02778", "scope": "Core", "primary": "1.3", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2511-02778"></a>`2025.11` **[VCode: a Multimodal Coding Benchmark with SVG as Symbolic Visual Representation](https://arxiv.org/abs/2511.02778)**
+- <a id="paper-2511-02778"></a>`2025.11` **[VCode: a Multimodal Coding Benchmark with SVG as Symbolic Visual Representation](https://arxiv.org/abs/2511.02778)** [[コード]](https://github.com/CSU-JPG/VCode)
   > 実行・編集可能な SVG コードを記号的な視覚表現として用い、その反復生成を支援・評価する。
 
 <!-- mmac-record: {"id": "2510.23642", "scope": "Core", "primary": "1.3", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2510-23642"></a>`2025.10` **[VisCoder2: Building Multi-Language Visualization Coding Agents](https://arxiv.org/abs/2510.23642)** [[デモ]](https://tiger-ai-lab.github.io/VisCoder2/) [[コード]](https://github.com/TIGER-AI-Lab/VisCoder2)
+- <a id="paper-2510-23642"></a>`2025.10` **[VisCoder2: Building Multi-Language Visualization Coding Agents](https://arxiv.org/abs/2510.23642)** [[デモ]](https://tiger-ai-lab.github.io/VisCoder2/) [[コード]](https://github.com/TIGER-AI-Lab/VisCoder2) [[データセット]](https://huggingface.co/datasets/TIGER-Lab/VisCode-Multi-679K) [[データセット]](https://huggingface.co/datasets/TIGER-Lab/VisPlotBench)
   > 実行可能なフィードバックと修復向けデータで、複数のプログラミング言語に対応する可視化コーディングエージェントを構築する。
 
 <a id="application-paper-2509-14778"></a>
@@ -577,7 +577,7 @@
 
 <!-- mmac-record: {"id": "2508.15222", "scope": "Core", "primary": "1.3", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2508-15222"></a>`2025.08` **[See it. Say it. Sorted: Agentic System for Compositional Diagram Generation](https://arxiv.org/abs/2508.15222)**
+- <a id="paper-2508-15222"></a>`2025.08` **[See it. Say it. Sorted: Agentic System for Compositional Diagram Generation](https://arxiv.org/abs/2508.15222)** [[コード]](https://github.com/hantaoZhangrichard/see_it_say_it_sorted)
   > 視覚理解とコードによる SVG 構築を連携させ、スケッチを合成可能な図へ反復変換する。
 
 <!-- mmac-record: {"id": "2506.14837", "scope": "Core", "primary": "1.3", "stage": 1, "type": "paper"} -->
@@ -629,7 +629,7 @@
 
 <!-- mmac-record: {"id": "2603.25804", "scope": "Core", "primary": "1.3", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2603-25804"></a>`2026.03` **[RealChart2Code: Advancing Chart-to-Code Generation with Real Data and Multi-Task Evaluation](https://arxiv.org/abs/2603.25804)** [[コード]](https://github.com/Speakn0w/RealChart2Code)
+- <a id="paper-2603-25804"></a>`2026.03` **[RealChart2Code: Advancing Chart-to-Code Generation with Real Data and Multi-Task Evaluation](https://arxiv.org/abs/2603.25804)** [[コード]](https://github.com/Speakn0w/RealChart2Code) [[データセット]](https://huggingface.co/datasets/zjj1233/RealChart2Code)
   > 実際の図表と元データを用いて、生成、編集、反復的な図表からコードへの変換を評価する。
 
 <!-- mmac-record: {"id": "2603.29139", "scope": "Adjacent", "primary": "1.3", "stage": 1, "type": "paper"} -->
@@ -716,7 +716,7 @@
 
 <!-- mmac-record: {"id": "2608.02218", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2608-02218"></a>`2026.08` **[PosterMELD: Multi-Agent Paper-to-Poster Generation for Controllable Design Diversity with Editable Print-Ready Outputs](https://arxiv.org/abs/2608.02218)**
+- <a id="paper-2608-02218"></a>`2026.08` **[PosterMELD: Multi-Agent Paper-to-Poster Generation for Controllable Design Diversity with Editable Print-Ready Outputs](https://arxiv.org/abs/2608.02218)** [[コード]](https://github.com/Shannon4Science/PosterMELD)
   > 論文理解、配置計画、描画、視覚修正を連携させ、編集できてそのまま印刷できるポスターを生成する。
 
 <!-- mmac-record: {"id": "2609.00194", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
@@ -731,7 +731,7 @@
 
 <!-- mmac-record: {"id": "2606.02915", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2606-02915"></a>`2026.06` **[Any2Poster: Any-Source Poster Generation Across Modalities and Domains](https://arxiv.org/abs/2606.02915)** [[プロジェクトページ]](https://any2poster.github.io/Any2Poster/)
+- <a id="paper-2606-02915"></a>`2026.06` **[Any2Poster: Any-Source Poster Generation Across Modalities and Domains](https://arxiv.org/abs/2606.02915)** [[プロジェクトページ]](https://any2poster.github.io/Any2Poster/) [[コード]](https://github.com/Any2Poster/Any2Poster) [[データセット]](https://huggingface.co/datasets/Any2Poster/Any2Poster-Bench)
   > 異種の情報源をコードで描画するポスターへ変換し、マルチモーダルなレビューで視覚的欠陥を修復する。
 
 <!-- mmac-record: {"id": "2606.30296", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
@@ -761,12 +761,12 @@
 
 <!-- mmac-record: {"id": "2512.03042", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2512-03042"></a>`2025.12` **[PPTArena: A Benchmark for PowerPoint Editing](https://arxiv.org/abs/2512.03042)** [[コード]](https://github.com/michaelofengenden/PPTArena)
+- <a id="paper-2512-03042"></a>`2025.12` **[PPTArena: A Benchmark for PowerPoint Editing](https://arxiv.org/abs/2512.03042)** [[コード]](https://github.com/michaelofengenden/PPTArena) [[コード]](https://github.com/michaelofengend/PPTArena)
   > 実際のスライド編集タスクと PPTPilot を導入し、計画・編集・検査の反復ループで PowerPoint の変更を検証する。
 
 <!-- mmac-record: {"id": "2510.05571", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2510-05571"></a>`2025.10` **[Presenting a Paper is an Art: Self-Improvement Aesthetic Agents for Academic Presentations](https://arxiv.org/abs/2510.05571)** [[プロジェクトページ]](https://evopresent.github.io/) [[コード]](https://github.com/UCSB-AI/EvoPresent)
+- <a id="paper-2510-05571"></a>`2025.10` **[Presenting a Paper is an Art: Self-Improvement Aesthetic Agents for Academic Presentations](https://arxiv.org/abs/2510.05571)** [[プロジェクトページ]](https://evopresent.github.io/) [[コード]](https://github.com/UCSB-AI/EvoPresent) [[コード]](https://github.com/eric-ai-lab/EvoPresent) [[データセット]](https://huggingface.co/datasets/TobyYang7/EvoPresent)
   > HTML プレゼンテーションを生成し、視覚デザインを採点して具体的な調整を返す美的評価器で改善を繰り返す。
 
 <!-- mmac-record: {"id": "2505.17104", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
@@ -793,7 +793,7 @@
 
 <!-- mmac-record: {"id": "system:mka", "scope": "Adjacent", "primary": "1.4", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-system-mka"></a>`2026.11` **[MKA: Evaluating Multimodal Knowledge Agents on end-to-end professional tasks](https://storage.googleapis.com/deepmind-media/papers/mka_tech_paper.pdf)** [[結果]](https://artificialanalysis.ai/evaluations/mka) [[データセット]](https://huggingface.co/datasets/google/multimodal-knowledge-agent)
+- <a id="paper-system-mka"></a>`2026.11` **[MKA: Evaluating Multimodal Knowledge Agents on end-to-end professional tasks](https://storage.googleapis.com/deepmind-media/papers/mka_tech_paper.pdf)** [[結果]](https://artificialanalysis.ai/evaluations/mka) [[データセット]](https://huggingface.co/datasets/google/multimodal-knowledge-agent) [[記事]](https://blog.google/innovation-and-ai/models-and-research/gemini-models/multimodal-knowledge-agent-benchmark/)
   > 統一されたツール Harness、専門家による重み付きの基準、独立した視覚・プログラム評価器を使い、視覚情報を伴う複数ファイルの知識作業と専門的な成果物を評価する。
 
 <!-- mmac-record: {"id": "2611.10592", "scope": "Adjacent", "primary": "1.4", "stage": 1, "type": "paper"} -->
@@ -803,12 +803,12 @@
 
 <!-- mmac-record: {"id": "2610.37341", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-37341"></a>`2026.10` **[CodeCap-Bench: Can Code Serve as a Good Video Caption?](https://arxiv.org/abs/2610.37341)** [[プロジェクトページ]](https://codecap-bench.github.io/)
+- <a id="paper-2610-37341"></a>`2026.10` **[CodeCap-Bench: Can Code Serve as a Good Video Caption?](https://arxiv.org/abs/2610.37341)** [[プロジェクトページ]](https://codecap-bench.github.io/) [[コード]](https://github.com/kevin236-max/CodeCap-Bench) [[データセット]](https://huggingface.co/datasets/kevintank/CodeCap-Dataset)
   > 実行可能なコードが構造化動画をどこまで表現できるかを評価する。エージェント設定では同じ時刻のブラウザ描画と参考フレームを比較して再構築を繰り返す。
 
 <!-- mmac-record: {"id": "2610.38425", "scope": "Adjacent", "primary": "1.4", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-38425"></a>`2026.10` **[IntReal: A Real-World Dataset and Benchmark for Multimodal Interleaved Generation](https://arxiv.org/abs/2610.38425)** [[コード]](https://github.com/yushaohan/IntReal) [[データセット]](https://huggingface.co/datasets/yushaohan/IntReal-100K) [[プロジェクトページ]](https://yushaohan.github.io/IntReal/)
+- <a id="paper-2610-38425"></a>`2026.10` **[IntReal: A Real-World Dataset and Benchmark for Multimodal Interleaved Generation](https://arxiv.org/abs/2610.38425)** [[コード]](https://github.com/yushaohan/IntReal) [[データセット]](https://huggingface.co/datasets/yushaohan/IntReal-100K) [[プロジェクトページ]](https://yushaohan.github.io/IntReal/) [[コレクション]](https://huggingface.co/collections/yushaohan/intreal) [[リーダーボード]](https://huggingface.co/spaces/yushaohan/IntReal-Leaderboard)
   > 実際の出典に由来する画像と文章が交互に現れるデータと専門評価器を組み合わせ、全体品質と文脈条件下での画像の忠実度を別々に診断する。生成後の評価と生成器自身のフィードバックループを区別する。
 
 <!-- mmac-record: {"id": "2610.35864", "scope": "Adjacent", "primary": "1.4", "stage": 1, "type": "paper"} -->
@@ -818,7 +818,7 @@
 
 <!-- mmac-record: {"id": "2606.28593", "scope": "Core", "primary": "1.4", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2606-28593"></a>`2026.06` **[Animation2Code: Evaluating Temporal Visual Reasoning in Video-to-Code Generation](https://arxiv.org/abs/2606.28593)** [[プロジェクトページ]](https://anya-ji.github.io/animation2code-website/)
+- <a id="paper-2606-28593"></a>`2026.06` **[Animation2Code: Evaluating Temporal Visual Reasoning in Video-to-Code Generation](https://arxiv.org/abs/2606.28593)** [[プロジェクトページ]](https://anya-ji.github.io/animation2code-website/) [[コード]](https://github.com/anya-ji/animation2code) [[データセット]](https://huggingface.co/datasets/anim2code/dataset)
   > 動画から実行可能なアニメーションを再構築する際の時間的理解と反復改善を評価する。
 
 #### ツールとリソース
@@ -883,7 +883,7 @@
 
 <!-- mmac-record: {"id": "2610.22341", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-22341"></a>`2026.10` **[3DCodeVerse: Exploring 3D Worlds as Code](https://arxiv.org/abs/2610.22341)** [[プロジェクトページ]](https://3dcodeverse.com/) [[コード]](https://github.com/gaoypeng/3dcodeverse)
+- <a id="paper-2610-22341"></a>`2026.10` **[3DCodeVerse: Exploring 3D Worlds as Code](https://arxiv.org/abs/2610.22341)** [[プロジェクトページ]](https://3dcodeverse.com/) [[コード]](https://github.com/gaoypeng/3dcodeverse) [[データセット]](https://huggingface.co/datasets/3dcodeverse/3dcodeverse-2m) [[データセット]](https://huggingface.co/datasets/ilabai/3dcodeverse)
   > 異なる実行環境の 3D プログラム群と DAG プログラミングハーネスを組み合わせ、形状測定と多視点の視覚的批評を対象ファイルを限定した修正へ変換する。
 
 <!-- mmac-record: {"id": "2610.09127", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -903,7 +903,7 @@
 
 <!-- mmac-record: {"id": "2610.23121", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-23121"></a>`2026.10` **[Scene-Designer: Learning Design Intelligence for Agentic 3D Scene Generation](https://arxiv.org/abs/2610.23121)** [[コード]](https://github.com/ZJU-OmniAI/Scene-Designer) [[データセット]](https://huggingface.co/datasets/XuanyuLiu/Scene-OTC-Bench) [[プロジェクトページ]](https://zju-omniai.github.io/Scene-Designer/)
+- <a id="paper-2610-23121"></a>`2026.10` **[Scene-Designer: Learning Design Intelligence for Agentic 3D Scene Generation](https://arxiv.org/abs/2610.23121)** [[コード]](https://github.com/ZJU-OmniAI/Scene-Designer) [[データセット]](https://huggingface.co/datasets/XuanyuLiu/Scene-OTC-Bench) [[プロジェクトページ]](https://zju-omniai.github.io/Scene-Designer/) [[デモ]](https://zju-omniai.github.io/Scene-Designer/#demo)
   > 圧縮した編集軌跡と場面の摂動順位から構築・批評能力を学び、描画観測と批評器に導かれる実行可能な編集で室内配置を改善する。
 
 <!-- mmac-record: {"id": "2610.09116", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -933,7 +933,7 @@
 
 <!-- mmac-record: {"id": "2609.26793", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-26793"></a>`2026.09` **[HARMONY: Hierarchical Agentic Reasoning for MONocular Image-to-Scene Synthesis](https://arxiv.org/abs/2609.26793)** [[プロジェクトページ]](https://cwchenwang.github.io/harmony/) [[コード]](https://github.com/ShufanSun/harmony-release)
+- <a id="paper-2609-26793"></a>`2026.09` **[HARMONY: Hierarchical Agentic Reasoning for MONocular Image-to-Scene Synthesis](https://arxiv.org/abs/2609.26793)** [[プロジェクトページ]](https://cwchenwang.github.io/harmony/) [[コード]](https://github.com/ShufanSun/harmony-release) [[データセット]](https://huggingface.co/datasets/ShufanSun/harmony)
   > VLM の空間推論と画像・3D・幾何ツールを組み合わせ、段階ごとの参考画像と描画への批評から、レンダラが使う部屋・配置・照明の仕様を修正する。
 
 <!-- mmac-record: {"id": "2609.36380", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -943,7 +943,7 @@
 
 <!-- mmac-record: {"id": "2609.11499", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-11499"></a>`2026.09` **[Recursive Code World Models: Building Complex Worlds through Recursive Scene Programs](https://arxiv.org/abs/2609.11499)**
+- <a id="paper-2609-11499"></a>`2026.09` **[Recursive Code World Models: Building Complex Worlds through Recursive Scene Programs](https://arxiv.org/abs/2609.11499)** [[コード]](https://github.com/ZhiqiLi-CG/RecursiveCWM_code)
   > 複雑な Three.js 世界を再帰的な場面プログラムとして構築する。各部分世界が描画・観察・修正ループを持ち、返されたコードを親の文脈で再描画して共同修復する。
 
 <!-- mmac-record: {"id": "2609.22325", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -963,7 +963,7 @@
 
 <!-- mmac-record: {"id": "2608.17975", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2608-17975"></a>`2026.08` **[aDSL: Agentic 3D Creation via Joint Agent-Program Design](https://arxiv.org/abs/2608.17975)**
+- <a id="paper-2608-17975"></a>`2026.08` **[aDSL: Agentic 3D Creation via Joint Agent-Program Design](https://arxiv.org/abs/2608.17975)** [[コード]](https://github.com/sig-pku/aDSL)
   > エージェントのワークフローと領域専用のプログラム表現を共同設計し、反復的な 3D 制作を支援する。
 
 <!-- mmac-record: {"id": "2608.24020", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -1003,7 +1003,7 @@
 
 <!-- mmac-record: {"id": "2606.13368", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2606-13368"></a>`2026.06` **[IterCAD: An Iterative Multimodal Agent for Visually-Grounded CAD Generation and Editing](https://arxiv.org/abs/2606.13368)**
+- <a id="paper-2606-13368"></a>`2026.06` **[IterCAD: An Iterative Multimodal Agent for Visually-Grounded CAD Generation and Editing](https://arxiv.org/abs/2606.13368)** [[コード]](https://github.com/KnowledgeXLab/IterCAD) [[モデル]](https://huggingface.co/KnowledgeXLab/IterCAD-RL) [[データセット]](https://huggingface.co/datasets/KnowledgeXLab/IterCAD_Data)
   > マルチモーダルエージェントを CAD サンドボックスに置き、実行、視覚検査、編集、回復を繰り返す。
 
 <!-- mmac-record: {"id": "2606.02580", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -1023,12 +1023,12 @@
 
 <!-- mmac-record: {"id": "2603.12238", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2603-12238"></a>`2026.03` **[SceneAssistant: A Visual Feedback Agent for Open-Vocabulary 3D Scene Generation](https://arxiv.org/abs/2603.12238)**
+- <a id="paper-2603-12238"></a>`2026.03` **[SceneAssistant: A Visual Feedback Agent for Open-Vocabulary 3D Scene Generation](https://arxiv.org/abs/2603.12238)** [[コード]](https://github.com/ROUJINN/SceneAssistant)
   > 描画された 3D 場面を検査し、物体、配置、外観の誤りを後続の場面編集へ変換する。
 
 <!-- mmac-record: {"id": "2603.29847", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2603-29847"></a>`2026.02` **[CADReasoner: Iterative Program Editing for CAD Reverse Engineering](https://arxiv.org/abs/2603.29847)**
+- <a id="paper-2603-29847"></a>`2026.02` **[CADReasoner: Iterative Program Editing for CAD Reverse Engineering](https://arxiv.org/abs/2603.29847)** [[コード]](https://github.com/zhemdi/CADReasoner) [[モデル]](https://huggingface.co/kulibinai/cadreasoner)
   > 目標と現在の再構築の幾何差を基に、多視点描画と点群フィードバックを組み合わせ、動作する CadQuery プログラムを書き直す。
 
 <a id="application-paper-2603-00805"></a>
@@ -1097,7 +1097,7 @@
 
 <!-- mmac-record: {"id": "2610.03715", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-03715"></a>`2026.10` **[4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes](https://arxiv.org/abs/2610.03715)**
+- <a id="paper-2610-03715"></a>`2026.10` **[4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes](https://arxiv.org/abs/2610.03715)** [[コード]](https://github.com/4DCodeBench/4DCodeBench)
   > 実写または合成の動的動画を実行可能なグラフィックスプログラムへ再構築し、三次元構造と時間変化を復元する。画面と動きを比較し、合成場面の三次元正解でも検査する。実装にはキーフレーム、解析的軌道、物理シミュレーションを使える。
 
 <a id="work-blenderworld"></a>
@@ -1108,17 +1108,17 @@
 
 <!-- mmac-record: {"id": "2610.12452", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-12452"></a>`2026.10` **[BrickBench: Evaluating Agentic Brick Design](https://arxiv.org/abs/2610.12452)** [[プロジェクトページ]](https://brickben.ch/) [[コード]](https://github.com/kulits/BrickAgent)
+- <a id="paper-2610-12452"></a>`2026.10` **[BrickBench: Evaluating Agentic Brick Design](https://arxiv.org/abs/2610.12452)** [[プロジェクトページ]](https://brickben.ch/) [[コード]](https://github.com/kulits/BrickAgent) [[データセット]](https://huggingface.co/datasets/kulits/BrickBench-Runs)
   > 規模と在庫の制約下でプログラムによるブロック組立を評価し、衝突・安定性、複数視点の意味的一致、人間が確認した設計の好みを別々に検査する。
 
 <!-- mmac-record: {"id": "2610.16577", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-16577"></a>`2026.10` **[CineRecon: Benchmarking Frontier Models for Agentic Cinematic Reconstruction](https://arxiv.org/abs/2610.16577)** [[プロジェクトページ]](https://cinerecon.github.io/)
+- <a id="paper-2610-16577"></a>`2026.10` **[CineRecon: Benchmarking Frontier Models for Agentic Cinematic Reconstruction](https://arxiv.org/abs/2610.16577)** [[プロジェクトページ]](https://cinerecon.github.io/) [[コード]](https://github.com/Unc1eW4ng/CineRecon)
   > 同時刻の描画と参考画像を比較して Blender Python の場面を修正するエージェントを評価し、外観詳細の三段階でカメラ・静的内容・動きの一致を測る。
 
 <!-- mmac-record: {"id": "2610.04292", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-04292"></a>`2026.10` **[LMBuild: Evaluating LLM Agents for Generating Buildable and Functional Structures](https://arxiv.org/abs/2610.04292)** [[コード]](https://github.com/Lumos-Jiateng/LMBuild) [[プロジェクトページ]](https://lumos-jiateng.github.io/LMBuild/)
+- <a id="paper-2610-04292"></a>`2026.10` **[LMBuild: Evaluating LLM Agents for Generating Buildable and Functional Structures](https://arxiv.org/abs/2610.04292)** [[コード]](https://github.com/Lumos-Jiateng/LMBuild) [[プロジェクトページ]](https://lumos-jiateng.github.io/LMBuild/) [[データセット]](https://huggingface.co/datasets/Lumos-Jiateng/LMBuild)
   > 実行可能な CSG と組立操作で部品構造を作り、描画と診断を次のレビューへ返す。構造の健全性、機能的な利用可能性、設計、物理的実現を評価する。
 
 <!-- mmac-record: {"id": "2609.40353", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -1128,12 +1128,12 @@
 
 <!-- mmac-record: {"id": "2609.15478", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-15478"></a>`2026.09` **[BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender](https://arxiv.org/abs/2609.15478)** [[コード]](https://github.com/yunlong10/BVB/blob/main/eval/dual_vqa_metric.py)
+- <a id="paper-2609-15478"></a>`2026.09` **[BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender](https://arxiv.org/abs/2609.15478)** [[コード]](https://github.com/yunlong10/BVB/blob/main/eval/dual_vqa_metric.py) [[プロジェクトページ]](https://yoloytang.me/BVB/) [[コード]](https://github.com/yoloytang/BVB)
   > 同じ予算と実行環境で、マルチモーダルエージェントが実写動画をアニメーション付き Blender 場面へ書き直す。描画類似度と時空間的事実の一致で、動画理解を再現可能なプログラムにできるかを検査する。
 
 <!-- mmac-record: {"id": "2609.16251", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-16251"></a>`2026.09` **[CADWorld: Computer-Use Benchmark for Long-Horizon Computer-Aided Design](https://arxiv.org/abs/2609.16251)** [[プロジェクトページ]](https://cad-world.github.io/)
+- <a id="paper-2609-16251"></a>`2026.09` **[CADWorld: Computer-Use Benchmark for Long-Horizon Computer-Aided Design](https://arxiv.org/abs/2609.16251)** [[プロジェクトページ]](https://cad-world.github.io/) [[データセット]](https://huggingface.co/datasets/Zihan1004/CADWORLD) [[モデル]](https://huggingface.co/Zihan1004/CADWorld) [[コード]](https://github.com/Zdong104/CADWORLD)
   > 保存されたネイティブ CAD 成果物の実行可能な検査で、画像に基づく FreeCAD GUI の作業を評価し、コード生成研究に工程と制約の検証を補う。
 
 <!-- mmac-record: {"id": "2609.36777", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -1143,12 +1143,12 @@
 
 <!-- mmac-record: {"id": "2609.37686", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-37686"></a>`2026.09` **[EngiWorld: What Can Frontier Agents Deliver in Professional Engineering Environments?](https://arxiv.org/abs/2609.37686)** [[プロジェクトページ]](https://engiworld.github.io)
+- <a id="paper-2609-37686"></a>`2026.09` **[EngiWorld: What Can Frontier Agents Deliver in Professional Engineering Environments?](https://arxiv.org/abs/2609.37686)** [[プロジェクトページ]](https://engiworld.github.io) [[コード]](https://github.com/Hongcheng-Gao/EngiWorld) [[データセット]](https://huggingface.co/datasets/HongchengGao/EngiWorld-Tasks) [[データセット]](https://huggingface.co/datasets/HongchengGao/EngiWorld-Images)
   > 六つの工学領域と 26 のソフトウェア上の GUI・CLI 作業を、成果物の形状、物理、ツール間の一貫性で評価し、実行時画像へのアクセスの効果を分析する。
 
 <!-- mmac-record: {"id": "2611.02659", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2611-02659"></a>`2026.09` **[Parametric CAD Bench v3: Evaluating Agentic Parametric CAD Authoring from Text and Engineering Drawings](https://arxiv.org/abs/2611.02659)** [[プロジェクトページ]](https://cadbench.ai/) [[記事]](https://cadbench.ai/news/cad-bench-v3) [[データセット]](https://huggingface.co/datasets/gnucleus-ai/cad-gen-freecad-bench-v3)
+- <a id="paper-2611-02659"></a>`2026.09` **[Parametric CAD Bench v3: Evaluating Agentic Parametric CAD Authoring from Text and Engineering Drawings](https://arxiv.org/abs/2611.02659)** [[プロジェクトページ]](https://cadbench.ai/) [[記事]](https://cadbench.ai/news/cad-bench-v3) [[データセット]](https://huggingface.co/datasets/gnucleus-ai/cad-gen-freecad-bench-v3) [[コード]](https://github.com/anniedoris/CADBench)
   > 文章、作成後の編集要求、工学図面から、ネイティブなパラメトリック CAD 成果物を構築する能力を評価する。
 
 <!-- mmac-record: {"id": "2608.05539", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -1158,7 +1158,7 @@
 
 <!-- mmac-record: {"id": "2606.01057", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2606-01057"></a>`2026.05` **[3DCodeBench: Benchmarking Agentic Procedural 3D Modeling Via Code](https://arxiv.org/abs/2606.01057)** [[デモ]](https://www.3dcodebench.com/)
+- <a id="paper-2606-01057"></a>`2026.05` **[3DCodeBench: Benchmarking Agentic Procedural 3D Modeling Via Code](https://arxiv.org/abs/2606.01057)** [[デモ]](https://www.3dcodebench.com/) [[コード]](https://github.com/gaoypeng/3dcodebench) [[データセット]](https://huggingface.co/datasets/YipengGao/3DCode)
   > 実行可能なプログラムと描画出力の評価を用い、コーディングエージェントのプログラムによる 3D モデリング能力を測る。
 
 <!-- mmac-record: {"id": "2605.07807", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -1220,7 +1220,7 @@
 
 <!-- mmac-record: {"id": "res:blender-lab-mcp-server", "scope": "Resource", "primary": "1.5", "stage": 1, "type": "resource"} -->
 
-- <a id="paper-res-blender-lab-mcp-server"></a>**[Blender Lab MCP Server](https://www.blender.org/lab/mcp-server/)** [[コード]](https://github.com/ahujasid/blender-mcp)
+- <a id="paper-res-blender-lab-mcp-server"></a>**[Blender Lab MCP Server](https://www.blender.org/lab/mcp-server/)** [[コード]](https://github.com/ahujasid/blender-mcp) [[コード]](https://projects.blender.org/lab/blender_mcp)
   > エージェントによる Blender 内の場面検査と Python 実行を支援する。コミュニティのデモは参考画像から場面への変換や Blender から Three.js への制作手順を示す。
 
 <!-- mmac-record: {"id": "res:blender-agent-skills", "scope": "Resource", "primary": "1.5", "stage": 1, "type": "resource"} -->
@@ -1325,7 +1325,7 @@
 
 <!-- mmac-record: {"id": "res:zoo-developer-tools", "scope": "Resource", "primary": "1.5", "stage": 1, "type": "resource"} -->
 
-- <a id="paper-res-zoo-developer-tools"></a>**[Zoo developer tools](https://docs.zoo.dev/docs)**
+- <a id="paper-res-zoo-developer-tools"></a>**[Zoo developer tools](https://docs.zoo.dev/docs)** [[ドキュメント]](https://zoo.dev/docs/developer-tools/mcp)
   > 言語で指示する KCL ワークフローを、幾何実行、スナップショット、検査、デバッグにつなぐ。
 
 [↑ 目次に戻る](#contents)
@@ -1349,7 +1349,7 @@
 
 <!-- mmac-record: {"id": "2610.05033", "scope": "Adjacent", "primary": "1.6", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-05033"></a>`2026.10` **[Code2Games: Enabling Coding Agents for Gaming World Generation](https://arxiv.org/abs/2610.05033)**
+- <a id="paper-2610-05033"></a>`2026.10` **[Code2Games: Enabling Coding Agents for Gaming World Generation](https://arxiv.org/abs/2610.05033)** [[コード]](https://github.com/AIGeeksGroup/Code2Games)
   > 持続する実体 ID で Blender の場面構造、視覚に基づくゲーム配置、Unreal Engine のロジックを結び、コンパイル診断とスクリプト化したゲームテストで移植を修復する。
 
 <!-- mmac-record: {"id": "2610.16776", "scope": "Core", "primary": "1.6", "stage": 1, "type": "paper"} -->
@@ -1375,7 +1375,7 @@
 
 <!-- mmac-record: {"id": "2609.39045", "scope": "Core", "primary": "1.6", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-39045"></a>`2026.09` **[RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement](https://arxiv.org/abs/2609.39045)** [[コード]](https://github.com/WenyiWU0111/RSIGame)
+- <a id="paper-2609-39045"></a>`2026.09` **[RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement](https://arxiv.org/abs/2609.39045)** [[コード]](https://github.com/WenyiWU0111/RSIGame) [[プロジェクトページ]](https://huggingface.co/spaces/RSIGame/rsigame-page)
   > 証拠に基づく試遊・編集・再検証で Godot と Phaser のプロジェクトを改善する。進化するチェックリストと再生比較で最良版を保持し、成功した開発経験を訓練に用いる。
 
 <!-- mmac-record: {"id": "2608.25518", "scope": "Core", "primary": "1.6", "stage": 1, "type": "paper"} -->
@@ -1400,7 +1400,7 @@
 
 <!-- mmac-record: {"id": "2605.05138", "scope": "Core", "primary": "1.6", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2605-05138"></a>`2026.05` **[Executable World Models for ARC-AGI-3 in the Era of Coding Agents](https://arxiv.org/abs/2605.05138)**
+- <a id="paper-2605-05138"></a>`2026.05` **[Executable World Models for ARC-AGI-3 in the Era of Coding Agents](https://arxiv.org/abs/2605.05138)** [[コード]](https://github.com/astroseger/arc-3-agents-baseline1/tree/main/papers/paper01/secure_baseline1)
   > 新しいゲーム観測に応じて Python の世界モデルを維持、検証、再構成し、計画に利用する。
 
 <!-- mmac-record: {"id": "2605.28258", "scope": "Core", "primary": "1.6", "stage": 1, "type": "paper"} -->
@@ -1468,7 +1468,7 @@
 
 <!-- mmac-record: {"id": "2609.22308", "scope": "Core", "primary": "1.6", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-22308"></a>`2026.09` **[GameReplica: A Benchmark for Black-Box Visual Game Replication by Vision-Language Agents](https://arxiv.org/abs/2609.22308)**
+- <a id="paper-2609-22308"></a>`2026.09` **[GameReplica: A Benchmark for Black-Box Visual Game Replication by Vision-Language Agents](https://arxiv.org/abs/2609.22308)** [[プロジェクトページ]](https://qqqqqqby.github.io/GameReplica/)
   > スクリーンショットだけの探索からブラックボックスのゲームを複製させる。エージェントは HTML の複製を実行、目視検査、修正し、実装、ルール、外観を別々に評価される。
 
 <!-- mmac-record: {"id": "2609.33678", "scope": "Adjacent", "primary": "1.6", "stage": 1, "type": "paper"} -->
@@ -1560,7 +1560,7 @@
 
 <!-- mmac-record: {"id": "res:ziva-playtesting-workflow", "scope": "Resource", "primary": "1.6", "stage": 1, "type": "resource"} -->
 
-- <a id="paper-res-ziva-playtesting-workflow"></a>**[Ziva playtesting workflow](https://ziva.sh/blogs/ai-agent-playtest-godot-game)** [[ドキュメント]](https://ziva.sh/docs/playtest)
+- <a id="paper-res-ziva-playtesting-workflow"></a>**[Ziva playtesting workflow](https://ziva.sh/blogs/ai-agent-playtest-godot-game)** [[ドキュメント]](https://ziva.sh/docs/playtest) [[リポジトリ]](https://github.com/ziva-sh/ziva-agent-plugin-godot)
   > 試遊エージェントが現場の状態と画像を検査し、判定、再現手順、再生証拠を返す。プロジェクト自体は編集せず、開発エージェントへ修復を渡す。ベンダーのデモは独立評価とは区別する。
 
 [↑ 目次に戻る](#contents)
@@ -1588,7 +1588,7 @@
 
 <!-- mmac-record: {"id": "2610.34921", "scope": "Adjacent", "primary": "1.7", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-34921"></a>`2026.10` **[PhysEvolve: Verifier-grounded Self-evolution for Physical Reasoning with Executable Worlds](https://arxiv.org/abs/2610.34921)** [[プロジェクトページ]](https://yelonhu.github.io/physevolve-page/)
+- <a id="paper-2610-34921"></a>`2026.10` **[PhysEvolve: Verifier-grounded Self-evolution for Physical Reasoning with Executable Worlds](https://arxiv.org/abs/2610.34921)** [[プロジェクトページ]](https://yelonhu.github.io/physevolve-page/) [[コード]](https://github.com/yelonhu/PhysEvolve) [[モデル]](https://huggingface.co/YelonLFT/physevolve-v7i-0851-step100)
   > 決定論的な反実仮想シミュレーションと正解に結び付いた報酬で、世界プログラムの提案者と視覚的な解答者を共同訓練し、ラウンド間の方策更新で物理推論を改善する。
 
 <!-- mmac-record: {"id": "2610.36077", "scope": "Adjacent", "primary": "1.7", "stage": 1, "type": "paper"} -->
@@ -1625,12 +1625,12 @@
 
 <!-- mmac-record: {"id": "2604.18164", "scope": "Adjacent", "primary": "1.7", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2604-18164"></a>`2026.04` **[MM-JudgeBias: A Benchmark for Evaluating Compositional Biases in MLLM-as-a-Judge](https://arxiv.org/abs/2604.18164)** [[コード]](https://github.com/naver-ai/MM-JudgeBias) [[データセット]](https://huggingface.co/datasets/naver-ai/MM-JudgeBias)
+- <a id="paper-2604-18164"></a>`2026.04` **[MM-JudgeBias: A Benchmark for Evaluating Compositional Biases in MLLM-as-a-Judge](https://arxiv.org/abs/2604.18164)** [[コード]](https://github.com/naver-ai/MM-JudgeBias) [[データセット]](https://huggingface.co/datasets/naver-ai/MM-JudgeBias) [[プロジェクトページ]](https://mm-judgebias.github.io/)
   > 九種類の制御された摂動で、マルチモーダル評価者が質問・画像・回答の証拠全体を使うかを検査する。欠落・不一致への感度と、無関係な変化への安定性を分ける。
 
 <!-- mmac-record: {"id": "2511.15567", "scope": "Core", "primary": "1.7", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2511-15567"></a>`2025.11` **[Computer-Use Agents as Judges for Generative User Interface](https://arxiv.org/abs/2511.15567)** [[コード]](https://github.com/showlab/AUI) [[プロジェクトページ]](https://showlab.github.io/AUI/)
+- <a id="paper-2511-15567"></a>`2025.11` **[Computer-Use Agents as Judges for Generative User Interface](https://arxiv.org/abs/2511.15567)** [[コード]](https://github.com/showlab/AUI) [[プロジェクトページ]](https://showlab.github.io/AUI/) [[デモ]](https://huggingface.co/spaces/showlab/AUI)
   > コーディングモデルと生成画面をテストする計算機操作エージェントを組ませ、視覚的な操作履歴を再設計へ返す。
 
 #### ツールとリソース
@@ -1718,7 +1718,7 @@
 
 <!-- mmac-record: {"id": "2610.38352", "scope": "Core", "primary": "2.2", "stage": 2, "type": "paper"} -->
 
-- <a id="paper-2610-38352"></a>`2026.10` **[WeVisCut: The Whole Editing Room in One Agent From Narration to Long-Form Video](https://arxiv.org/abs/2610.38352)** [[コード]](https://github.com/Tencent/WeVisCut) [[モデル]](https://huggingface.co/tencent/WeVisCut) [[プロジェクトページ]](https://tencent.github.io/WeVisCut/)
+- <a id="paper-2610-38352"></a>`2026.10` **[WeVisCut: The Whole Editing Room in One Agent From Narration to Long-Form Video](https://arxiv.org/abs/2610.38352)** [[コード]](https://github.com/Tencent/WeVisCut) [[モデル]](https://huggingface.co/tencent/WeVisCut) [[プロジェクトページ]](https://tencent.github.io/WeVisCut/) [[デモ]](https://tencent.github.io/WeVisCut/#demo)
   > 共通の編集方策を訓練して実行可能なショット計画を作り、ナレーションとメディアツールを編成する。描画成果物への制作フィードバックでテンプレートと時間軸を修正する。
 
 <!-- mmac-record: {"id": "2609.24997", "scope": "Adjacent", "primary": "2.2", "stage": 2, "type": "paper"} -->
@@ -1745,7 +1745,7 @@
 
 <!-- mmac-record: {"id": "res:moviedit", "scope": "Resource", "primary": "2.2", "stage": 2, "type": "resource"} -->
 
-- <a id="paper-res-moviedit"></a>**[MoviEdit](https://arxiv.org/abs/2611.02737)** [[プロジェクトページ]](https://multi-shot-edit.github.io/) [[プロジェクトページ]](https://multi-shot-edit.github.io/benchmark.html)
+- <a id="paper-res-moviedit"></a>**[MoviEdit](https://arxiv.org/abs/2611.02737)** [[プロジェクトページ]](https://multi-shot-edit.github.io/) [[プロジェクトページ]](https://multi-shot-edit.github.io/benchmark.html) [[データセット]](https://github.com/adobe-research/MoviEdit-Bench)
   > 元動画と編集指示、または編集後の参照フレームから、ショット間で一貫した編集動画を生成する。全体の下書きでフル解像度の自己回帰編集を導き、64 動画・128 シーンの評価を備える。デモと評価一覧は公開されているが、モデルのダウンロード先はまだない。
 
 <!-- mmac-record: {"id": "res:omnishowcase-omnidirectional-subject-consistent-video-generation-from-multi-view-images", "scope": "Resource", "primary": "2.2", "stage": 2, "type": "resource"} -->
@@ -1763,7 +1763,7 @@
 
 <!-- mmac-record: {"id": "res:dynamesh", "scope": "Resource", "primary": "2.3", "stage": 2, "type": "resource"} -->
 
-- <a id="paper-res-dynamesh"></a>**[DynaMesh](https://arxiv.org/abs/2610.05529)** [[プロジェクトページ]](https://threedle.github.io/dynamesh/)
+- <a id="paper-res-dynamesh"></a>**[DynaMesh](https://arxiv.org/abs/2610.05529)** [[プロジェクトページ]](https://threedle.github.io/dynamesh/) [[コード]](https://github.com/threedle/dynamesh)
   > メッシュと効果の指示から、固定したメッシュと時間変化するテクスチャ列を生成する。参照動画、3D 生成器の時間条件、形状別のアダプターを組み合わせる。幾何を変えずに表面の外観を変化させる機能であり、物理的な動力学シミュレーションではない。
 
 <!-- mmac-record: {"id": "res:hairdeck-animation-ready-stylized-hair-cards-from-a-single-image", "scope": "Resource", "primary": "2.3", "stage": 2, "type": "resource"} -->
@@ -1831,7 +1831,7 @@
 
 <!-- mmac-record: {"id": "2611.04870", "scope": "Adjacent", "primary": "2.4", "stage": 2, "type": "paper"} -->
 
-- <a id="paper-2611-04870"></a>`2026.11` **[PrimeSim: A Generalist World Model Simulator from Large-Scale Cross-Embodiment Demonstrations](https://arxiv.org/abs/2611.04870)** [[プロジェクトページ]](https://primebottech.github.io/PrimeSim-website)
+- <a id="paper-2611-04870"></a>`2026.11` **[PrimeSim: A Generalist World Model Simulator from Large-Scale Cross-Embodiment Demonstrations](https://arxiv.org/abs/2611.04870)** [[プロジェクトページ]](https://primebottech.github.io/PrimeSim-website) [[コード]](https://github.com/PrimebotTech/PrimeSim) [[モデル]](https://huggingface.co/qiyuan-robot/PrimeSim)
   > 行動条件付き多視点動画モデルを閉ループの方策シミュレータに使い、方策の順位と短い予算での強化学習の利得が LIBERO の物理シミュレータへ移るかを検査する。
 
 <!-- mmac-record: {"id": "2610.01215", "scope": "Adjacent", "primary": "2.4", "stage": 2, "type": "paper"} -->
@@ -1856,7 +1856,7 @@
 
 <!-- mmac-record: {"id": "2610.26811", "scope": "Adjacent", "primary": "2.4", "stage": 2, "type": "paper"} -->
 
-- <a id="paper-2610-26811"></a>`2026.10` **[State World Models: Execute the Rules, Generate the Pixels](https://arxiv.org/abs/2610.26811)** [[コード]](https://github.com/Zhangyr2022/StateWorldModel) [[データセット]](https://huggingface.co/datasets/Louis0411/StateWorldModel) [[プロジェクトページ]](https://ivg-yanranzhang.github.io/StateWorldModel/)
+- <a id="paper-2610-26811"></a>`2026.10` **[State World Models: Execute the Rules, Generate the Pixels](https://arxiv.org/abs/2610.26811)** [[コード]](https://github.com/Zhangyr2022/StateWorldModel) [[データセット]](https://huggingface.co/datasets/Louis0411/StateWorldModel) [[プロジェクトページ]](https://ivg-yanranzhang.github.io/StateWorldModel/) [[デモ]](https://ivg-yanranzhang.github.io/StateWorldModel/#worlds)
   > エージェントが書くルールと凍結動画モデルの描画を分離し、確定した出来事を視覚指示へ変換する。ルールに沿う動画観測を後続の世界状態へ取り込む。
 
 <!-- mmac-record: {"id": "2610.36925", "scope": "Adjacent", "primary": "2.4", "stage": 2, "type": "paper"} -->
@@ -1873,7 +1873,7 @@
 
 <!-- mmac-record: {"id": "res:cosmos3-nano-sim-auto", "scope": "Resource", "primary": "2.4", "stage": 2, "type": "resource"} -->
 
-- <a id="paper-res-cosmos3-nano-sim-auto"></a>**[Cosmos3-Nano-Sim-Auto](https://huggingface.co/nvidia/Cosmos3-Nano-Sim-Auto)** [[記事]](https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos/) [[ドキュメント]](https://github.com/NVIDIA/cosmos-framework/blob/main/docs/inference_sim_auto.md)
+- <a id="paper-res-cosmos3-nano-sim-auto"></a>**[Cosmos3-Nano-Sim-Auto](https://huggingface.co/nvidia/Cosmos3-Nano-Sim-Auto)** [[記事]](https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos/) [[ドキュメント]](https://github.com/NVIDIA/cosmos-framework/blob/main/docs/inference_sim_auto.md) [[コード]](https://github.com/NVIDIA/cosmos-framework)
   > 重みと Cosmos Framework の推論・適応スキルが公開された因果的世界モデルツール。生成センサ情報は方策評価に使えるが、カメラ構成との適合や実世界への妥当性は個別の検査を要する。
 
 <!-- mmac-record: {"id": "res:genie-4", "scope": "Resource", "primary": "2.4", "stage": 2, "type": "resource"} -->
@@ -1900,12 +1900,12 @@
 
 <!-- mmac-record: {"id": "2611.06083", "scope": "Adjacent", "primary": "2.5", "stage": 2, "type": "paper"} -->
 
-- <a id="paper-2611-06083"></a>`2026.11` **[SleuthVLM: Do We Really Need Audio-in-Video for Omni Video Understanding?](https://arxiv.org/abs/2611.06083)** [[プロジェクトページ]](https://wpr001.github.io/sleuthVLM/)
+- <a id="paper-2611-06083"></a>`2026.11` **[SleuthVLM: Do We Really Need Audio-in-Video for Omni Video Understanding?](https://arxiv.org/abs/2611.06083)** [[プロジェクトページ]](https://wpr001.github.io/sleuthVLM/) [[コード]](https://github.com/WPR001/OpenOmniHarness)
   > タイムスタンプ付きの文字起こしを索引として使い、VLM がフレームやクリップを適応的に確認する。音声モデルを呼び出し、文字起こしでは得られない証拠を補うこともできる。
 
 <!-- mmac-record: {"id": "2610.06955", "scope": "Adjacent", "primary": "2.5", "stage": 2, "type": "paper"} -->
 
-- <a id="paper-2610-06955"></a>`2026.10` **[ROMA: LLM System for Real-World Object-Centric Multi-Sensory Active Perception](https://arxiv.org/abs/2610.06955)** [[プロジェクトページ]](https://gewu-lab.github.io/ROMA/) [[コード]](https://github.com/GeWu-Lab/ROMA)
+- <a id="paper-2610-06955"></a>`2026.10` **[ROMA: LLM System for Real-World Object-Centric Multi-Sensory Active Perception](https://arxiv.org/abs/2610.06955)** [[プロジェクトページ]](https://gewu-lab.github.io/ROMA/) [[コード]](https://github.com/GeWu-Lab/ROMA) [[デモ]](https://huggingface.co/spaces/xxuan01/ROMA-Demo) [[モデル]](https://huggingface.co/GeWu-Lab/ROMA-7B) [[データセット]](https://huggingface.co/datasets/GeWu-Lab/ROMA)
   > 把持インターフェースを通じて物体、物理的相互作用、感覚モダリティを選び、不足する証拠を得て次の能動知覚を調整する。方策コードは書き換えない。
 
 <!-- mmac-record: {"id": "2610.28354", "scope": "Adjacent", "primary": "2.5", "stage": 2, "type": "paper"} -->
@@ -1956,7 +1956,7 @@
 
 <!-- mmac-record: {"id": "2610.23334", "scope": "Adjacent", "primary": "2.6", "stage": 2, "type": "paper"} -->
 
-- <a id="paper-2610-23334"></a>`2026.10` **[LAW: Unifying Language, Action, and World Modeling for Agentic Physical Intelligence](https://arxiv.org/abs/2610.23334)** [[コード]](https://github.com/hey-cjj/LAW) [[プロジェクトページ]](https://hey-cjj.github.io/LAW-project/) [[データセット]](https://huggingface.co/datasets/KAITANG2003/LAW-RoboTwin-VLM-Training)
+- <a id="paper-2610-23334"></a>`2026.10` **[LAW: Unifying Language, Action, and World Modeling for Agentic Physical Intelligence](https://arxiv.org/abs/2610.23334)** [[コード]](https://github.com/hey-cjj/LAW) [[プロジェクトページ]](https://hey-cjj.github.io/LAW-project/) [[データセット]](https://huggingface.co/datasets/KAITANG2003/LAW-RoboTwin-VLM-Training) [[コード]](https://github.com/hey-cjj/CogWAM) [[コレクション]](https://huggingface.co/collections/KAITANG2003/law)
   > 共通の基盤を持つ VLM エキスパートが世界・動作モデルを調整し、サブタスク計画、動作価値の推定、非同期の進捗確認を分担する。新しい視覚観測に応じてロボットの判断を更新する。
 
 <!-- mmac-record: {"id": "2509.19571", "scope": "Adjacent", "primary": "2.6", "stage": 2, "type": "paper"} -->
@@ -1988,7 +1988,7 @@
 
 <!-- mmac-record: {"id": "res:pi-api-beta", "scope": "Resource", "primary": "2.6", "stage": 2, "type": "resource"} -->
 
-- <a id="paper-res-pi-api-beta"></a>**[Pi API beta](https://www.pi.website/blog/api-beta)**
+- <a id="paper-res-pi-api-beta"></a>**[Pi API beta](https://www.pi.website/blog/api-beta)** [[プロジェクトページ]](https://www.pi.website/waitlist)
   > 開発者が行動モデルを適応・配備し、実ロボットの失敗から次のデータ収集を決める。申請制ベータの開発者主導手順であり、LLM の自律修復を意味しない。
 
 <!-- mmac-record: {"id": "res:vla-corrector", "scope": "Resource", "primary": "2.6", "stage": 2, "type": "resource"} -->
@@ -2061,17 +2061,17 @@
 
 <!-- mmac-record: {"id": "2610.06843", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-06843"></a>`2026.10` **[Recursive Video In-Context Learning for Agentic Robot](https://arxiv.org/abs/2610.06843)** [[コード]](https://github.com/BWR-hhh/rvicl)
+- <a id="paper-2610-06843"></a>`2026.10` **[Recursive Video In-Context Learning for Agentic Robot](https://arxiv.org/abs/2610.06843)** [[コード]](https://github.com/BWR-hhh/rvicl) [[プロジェクトページ]](https://bwr-hhh.github.io/rvicl/)
   > ロボット Agent が階層化された実演動画を必要に応じて参照し、実時間のカメラ映像と比較して、重みを固定した VLA と解析的な基本動作の呼び出しを調整する。低レベルの実行基盤は維持する。
 
 <!-- mmac-record: {"id": "2610.04929", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-04929"></a>`2026.10` **[RobotUse: Allocating Computation, Context, and Decisions](https://arxiv.org/abs/2610.04929)** [[プロジェクトページ]](https://robotuse-team.github.io/)
+- <a id="paper-2610-04929"></a>`2026.10` **[RobotUse: Allocating Computation, Context, and Decisions](https://arxiv.org/abs/2610.04929)** [[プロジェクトページ]](https://robotuse-team.github.io/) [[コード]](https://github.com/robotuse-team/RobotUse)
   > 物理的な行動を中心に計算、コンテキスト、意思決定を構成し、永続的な実行マニュアルにロボット Agent のタスク経験を蓄積する。
 
 <!-- mmac-record: {"id": "2610.12457", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-12457"></a>`2026.10` **[SpatialHarness: Test-Time Spatial Scaffolding for Fine Robotic Manipulation](https://arxiv.org/abs/2610.12457)** [[プロジェクトページ]](https://emilia113.github.io/SpatialHarness/)
+- <a id="paper-2610-12457"></a>`2026.10` **[SpatialHarness: Test-Time Spatial Scaffolding for Fine Robotic Manipulation](https://arxiv.org/abs/2610.12457)** [[プロジェクトページ]](https://emilia113.github.io/SpatialHarness/) [[データセット]](https://huggingface.co/datasets/yzy05/SpatialHarness)
   > 実際の実行と同期する模擬シーンを維持し、タスクに応じて補助視点をレンダリングすることで、重みを固定したマルチモーダルロボット方策に空間的な手掛かりを与える。
 
 <!-- mmac-record: {"id": "2610.30043", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2081,7 +2081,7 @@
 
 <!-- mmac-record: {"id": "2609.12541", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-12541"></a>`2026.09` **[Agent as Policy for Robotic Manipulation](https://arxiv.org/abs/2609.12541)**
+- <a id="paper-2609-12541"></a>`2026.09` **[Agent as Policy for Robotic Manipulation](https://arxiv.org/abs/2609.12541)** [[データセット]](https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy) [[コード]](https://github.com/agent-as-policy-2026/agent-as-policy)
   > 汎用 Agent が視覚的な証拠を継続的に読み、プログラムと運動指令を生成し、物理的な実行結果に応じて次の行動を調整する。
 
 <!-- mmac-record: {"id": "2609.20822", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2101,12 +2101,12 @@
 
 <!-- mmac-record: {"id": "2610.14018", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-14018"></a>`2026.09` **[RoboHarness: A Simple Harness Outperforms VLA and World Action Models](https://arxiv.org/abs/2610.14018)**
+- <a id="paper-2610-14018"></a>`2026.09` **[RoboHarness: A Simple Harness Outperforms VLA and World Action Models](https://arxiv.org/abs/2610.14018)** [[コード]](https://github.com/BinceQu/RoboHarness)
   > LLM Agent に視覚幾何の操作パネルを与え、単純なツールインターフェースがゼロショットのロボット操作を支えられるか調べる。
 
 <!-- mmac-record: {"id": "2609.10522", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-10522"></a>`2026.09` **[Show-Harness: Just a VLM Agent Can Play Robots](https://arxiv.org/abs/2609.10522)** [[プロジェクトページ]](https://showlab.github.io/Show-Harness)
+- <a id="paper-2609-10522"></a>`2026.09` **[Show-Harness: Just a VLM Agent Can Play Robots](https://arxiv.org/abs/2609.10522)** [[プロジェクトページ]](https://showlab.github.io/Show-Harness) [[コード]](https://github.com/showlab/Show-Harness) [[モデル]](https://huggingface.co/showlab/Show-Harness-VLMs) [[データセット]](https://huggingface.co/datasets/showlab/Show-Harness-Data)
   > 簡潔な意味的動作インターフェースで汎用 VLM とロボットインタープリターを接続し、デジタル Agent 型の対話を物理制御に移す条件を検討する。
 
 <!-- mmac-record: {"id": "2609.29964", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2126,12 +2126,12 @@
 
 <!-- mmac-record: {"id": "2607.05369", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2607-05369"></a>`2026.07` **[GaP: A Graph-as-Policy Multi-Agent Self-Learning Harness For Variational Automation Tasks](https://arxiv.org/abs/2607.05369)** [[プロジェクトページ]](https://graph-robots.github.io/gap)
+- <a id="paper-2607-05369"></a>`2026.07` **[GaP: A Graph-as-Policy Multi-Agent Self-Learning Harness For Variational Automation Tasks](https://arxiv.org/abs/2607.05369)** [[プロジェクトページ]](https://graph-robots.github.io/gap) [[コード]](https://github.com/graph-robots/graph-as-policy)
   > 複数の Agent が知覚・計画・制御ノードを接続する計算グラフを記述し、組み合わせ可能なロボットスキルライブラリで多様な自動化タスクを支える。
 
 <!-- mmac-record: {"id": "2607.16636", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2607-16636"></a>`2026.07` **[PhyAgentOS: A Self-Evolving Operating System for Embodied Agents with Decoupled Cognitive Planning and Physical Execution](https://arxiv.org/abs/2607.16636)**
+- <a id="paper-2607-16636"></a>`2026.07` **[PhyAgentOS: A Self-Evolving Operating System for Embodied Agents with Decoupled Cognitive Planning and Physical Execution](https://arxiv.org/abs/2607.16636)** [[コード]](https://github.com/PhyAgentOS/PhyAgentOS)
   > ファイルで表す状態契約によって Agent の推論とロボットの実行を分離し、ツール呼び出し、状態記録、経験の更新を実行層の間でつなぐ。
 
 <!-- mmac-record: {"id": "2605.26637", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2176,7 +2176,7 @@
 
 <!-- mmac-record: {"id": "2312.04474", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2312-04474"></a>`2023.12` **[Chain of Code: Reasoning with a Language Model-Augmented Code Emulator](https://arxiv.org/abs/2312.04474)** [[プロジェクトページ]](https://chain-of-code.github.io)
+- <a id="paper-2312-04474"></a>`2023.12` **[Chain of Code: Reasoning with a Language Model-Augmented Code Emulator](https://arxiv.org/abs/2312.04474)** [[プロジェクトページ]](https://chain-of-code.github.io) [[デモ]](https://colab.research.google.com/github/google-research/google-research/blob/master/code_as_policies/coc_demo.ipynb)
   > 明示的なプログラムロジックをインタープリターで実行し、未定義の意味的な計算を言語モデルによる模擬実行に任せる。ロボット実験でコードとモデル呼び出しの組み合わせを示す。
 
 <!-- mmac-record: {"id": "2306.09523", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2196,12 +2196,12 @@
 
 <!-- mmac-record: {"id": "2209.07753", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2209-07753"></a>`2022.09` **[Code as Policies: Language Model Programs for Embodied Control](https://arxiv.org/abs/2209.07753)** [[プロジェクトページ]](https://code-as-policies.github.io)
+- <a id="paper-2209-07753"></a>`2022.09` **[Code as Policies: Language Model Programs for Embodied Control](https://arxiv.org/abs/2209.07753)** [[プロジェクトページ]](https://code-as-policies.github.io) [[コード]](https://github.com/google-research/google-research/tree/master/code_as_policies) [[デモ]](https://huggingface.co/spaces/jackyliang42/code-as-policies)
   > 言語モデルが Python 方策を再帰的に生成し、知覚結果、幾何計算、制御 API を組み合わせる、ロボット Code-as-Policy の初期的な基盤。プログラム内のフィードバックは、コードを書くモデルが実行結果からプログラムを書き直すことを意味しない。
 
 <!-- mmac-record: {"id": "2209.11302", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2209-11302"></a>`2022.09` **[ProgPrompt: Generating Situated Robot Task Plans using Large Language Models](https://arxiv.org/abs/2209.11302)** [[プロジェクトページ]](http://progprompt.github.io)
+- <a id="paper-2209-11302"></a>`2022.09` **[ProgPrompt: Generating Situated Robot Task Plans using Large Language Models](https://arxiv.org/abs/2209.11302)** [[プロジェクトページ]](http://progprompt.github.io) [[コード]](https://github.com/NVlabs/progprompt-vh)
   > 利用可能な動作、物体、アサーションを使って手続き的なプロンプトを構成し、前提条件の確認と復帰処理を行えるロボットタスク計画を言語モデルに生成させる。
 
 #### 既存ポリシーへの委任
@@ -2228,17 +2228,17 @@
 
 <!-- mmac-record: {"id": "2609.29166", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-29166"></a>`2026.09` **[HarnessPAI: An Evolving Harness for Physical AI](https://arxiv.org/abs/2609.29166)** [[プロジェクトページ]](https://darwin-agent.github.io/HarnessPAI)
+- <a id="paper-2609-29166"></a>`2026.09` **[HarnessPAI: An Evolving Harness for Physical AI](https://arxiv.org/abs/2609.29166)** [[プロジェクトページ]](https://darwin-agent.github.io/HarnessPAI) [[コード]](https://github.com/Darwin-Agent/HarnessPAI)
   > 実行可能なコードで下位の行動プリミティブをまとめ、相互作用のフィードバックでロボットプログラムを進化させる。安定したプログラムは下流方策の訓練データも生成できる。
 
 <!-- mmac-record: {"id": "2608.11246", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2608-11246"></a>`2026.08` **[Towards the Harness of Embodied Agents](https://arxiv.org/abs/2608.11246)** [[プロジェクトページ]](https://eit-hai.github.io/thea)
+- <a id="paper-2608-11246"></a>`2026.08` **[Towards the Harness of Embodied Agents](https://arxiv.org/abs/2608.11246)** [[プロジェクトページ]](https://eit-hai.github.io/thea) [[コード]](https://github.com/EIT-HAI/Thea)
   > 持続的なシーングラフと、成功・失敗理由を含む実行結果で、ロボットの能力をエージェントが理解して呼び出せるツールにまとめる。
 
 <!-- mmac-record: {"id": "2607.08448", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2607-08448"></a>`2026.07` **[Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents](https://arxiv.org/abs/2607.08448)**
+- <a id="paper-2607-08448"></a>`2026.07` **[Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents](https://arxiv.org/abs/2607.08448)** [[コード]](https://github.com/RLinf/RPent)
   > コーディングエージェントに、固定 VLA と解析的な行動プリミティブを組み合わせさせる。
 
 #### エージェント能力の評価
@@ -2265,7 +2265,7 @@
 
 <!-- mmac-record: {"id": "2610.00854", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-00854"></a>`2026.10` **[Are Frontier VLM Agents Ready to Be Robot Generalists? An Empirical Study with the Embodied Agent Arena](https://arxiv.org/abs/2610.00854)** [[プロジェクトページ]](https://embodied-agent-arena.github.io/embodied-agent-arena/)
+- <a id="paper-2610-00854"></a>`2026.10` **[Are Frontier VLM Agents Ready to Be Robot Generalists? An Empirical Study with the Embodied Agent Arena](https://arxiv.org/abs/2610.00854)** [[プロジェクトページ]](https://embodied-agent-arena.github.io/embodied-agent-arena/) [[コード]](https://github.com/embodied-agent-arena/embodied-agent-arena) [[データセット]](https://huggingface.co/datasets/uuu-Quant/Embodied-Agent-Arena)
   > 統一予算と元タスクのインターフェースで先端 VLM エージェントのロボット汎用性を比較し、プログラムを動かす修復と物理タスクの達成を区別する。
 
 <!-- mmac-record: {"id": "2610.07594", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2275,12 +2275,12 @@
 
 <!-- mmac-record: {"id": "2610.27039", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-27039"></a>`2026.10` **[Embodied Playground: A Long-Horizon Agentic Robotics Benchmark for Physical, Strategic, and Spatial Reasoning](https://arxiv.org/abs/2610.27039)** [[プロジェクトページ]](https://winniechen2002.github.io/Agent-bench-website/)
+- <a id="paper-2610-27039"></a>`2026.10` **[Embodied Playground: A Long-Horizon Agentic Robotics Benchmark for Physical, Strategic, and Spatial Reasoning](https://arxiv.org/abs/2610.27039)** [[プロジェクトページ]](https://winniechen2002.github.io/Agent-bench-website/) [[コード]](https://github.com/Winniechen2002/Embodied-Playground)
   > 長期ロボットタスクで、エージェントが物理・空間・方策の推論を連携させ、実行フィードバックの下で進捗を維持する能力を評価する。
 
 <!-- mmac-record: {"id": "2610.16238", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-16238"></a>`2026.10` **[Embodied Skill Bench: Benchmarking How Well Agents with Embodied Skills Perform on Physical Tasks](https://arxiv.org/abs/2610.16238)** [[コード]](https://github.com/HanZhi306/EmbodiedSkill-Bench)
+- <a id="paper-2610-16238"></a>`2026.10` **[Embodied Skill Bench: Benchmarking How Well Agents with Embodied Skills Perform on Physical Tasks](https://arxiv.org/abs/2610.16238)** [[コード]](https://github.com/HanZhi306/EmbodiedSkill-Bench) [[コード]](https://github.com/FBddcz/embodied-jev)
   > ネイティブ制御、スキルのみ、エージェントによるスキルの選択・修正という三条件で、具身スキルが物理タスクに実際に役立つかを評価する。
 
 <!-- mmac-record: {"id": "2610.30051", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2290,7 +2290,7 @@
 
 <!-- mmac-record: {"id": "2610.22471", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-22471"></a>`2026.10` **[Has GPT-6-Astra Achieved Embodied Intelligence?](https://arxiv.org/abs/2610.22471)** [[記事]](https://sensenova.ai/has-gpt-6-astra-achieved-embodied-intelligence)
+- <a id="paper-2610-22471"></a>`2026.10` **[Has GPT-6-Astra Achieved Embodied Intelligence?](https://arxiv.org/abs/2610.22471)** [[記事]](https://sensenova.ai/has-gpt-6-astra-achieved-embodied-intelligence) [[コード]](https://github.com/OpenSenseNova/SenseNova-RoboRSI) [[データセット]](https://huggingface.co/datasets/sensenova/SenseNova-RoboRSI-Log) [[データセット]](https://huggingface.co/datasets/sensenova/SenseNova-RoboRSI-Packages)
   > 十二の具身ベンチマークで実演を使う直接制御と VLA 行動レビューを研究する。操作予算を増やす効果と、八つの実機構成でのゼロショット試験を別々に評価する。
 
 <!-- mmac-record: {"id": "2610.34527", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2300,7 +2300,7 @@
 
 <!-- mmac-record: {"id": "2610.34649", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-34649"></a>`2026.10` **[RobotAgentBench: Towards Open-world Robot Autonomy](https://arxiv.org/abs/2610.34649)** [[プロジェクトページ]](https://aetherlabsai.github.io/RobotAgentBench/) [[コード]](https://github.com/AetherLabsAI/RobotAgentBench) [[データセット]](https://huggingface.co/datasets/AetherLabs-AI/RobotAgentBench-assets)
+- <a id="paper-2610-34649"></a>`2026.10` **[RobotAgentBench: Towards Open-world Robot Autonomy](https://arxiv.org/abs/2610.34649)** [[プロジェクトページ]](https://aetherlabsai.github.io/RobotAgentBench/) [[コード]](https://github.com/AetherLabsAI/RobotAgentBench) [[データセット]](https://huggingface.co/datasets/AetherLabs-AI/RobotAgentBench-assets) [[デモ]](https://aetherlabsai.github.io/RobotAgentBench/#demo) [[モデル]](https://huggingface.co/AetherLabs-AI/InternVLA-A1.5-RAB) [[データセット]](https://huggingface.co/datasets/AetherLabs-AI/RobotAgentBench-TrainingData)
   > 与えられた目標の達成率だけでなく、タスク発見、状況推論、物理実行、回復を通じてオープンワールドのロボットエージェントを評価する。
 
 <!-- mmac-record: {"id": "2610.10409", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2330,12 +2330,12 @@
 
 <!-- mmac-record: {"id": "2609.39507", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-39507"></a>`2026.09` **[LIBERO-Agent: Evaluating General-Purpose Agents for Direct Embodied Manipulation](https://arxiv.org/abs/2609.39507)**
+- <a id="paper-2609-39507"></a>`2026.09` **[LIBERO-Agent: Evaluating General-Purpose Agents for Direct Embodied Manipulation](https://arxiv.org/abs/2609.39507)** [[コード]](https://github.com/dzj441/Libero-Agent)
   > LIBERO を、汎用エージェントが能動的に観測を調べ、自分のツールを使い、ネイティブ行動を発行できる対話的なテスト環境へ変える。
 
 <!-- mmac-record: {"id": "2609.40325", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-40325"></a>`2026.09` **[WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents](https://arxiv.org/abs/2609.40325)** [[プロジェクトページ]](https://ucsb-nlp-chang.github.io/WorldAuditBench/)
+- <a id="paper-2609-40325"></a>`2026.09` **[WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents](https://arxiv.org/abs/2609.40325)** [[プロジェクトページ]](https://ucsb-nlp-chang.github.io/WorldAuditBench/) [[コード]](https://github.com/UCSB-NLP-Chang/WorldAuditBench)
   > 対話世界を能動的に探索して異常を見つけ、証拠を示す能力を測る。物理、空間、時間、意味の問題を扱う。
 
 <!-- mmac-record: {"id": "2607.04434", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
@@ -2345,7 +2345,7 @@
 
 <!-- mmac-record: {"id": "2604.25788", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
 
-- <a id="paper-2604-25788"></a>`2026.04` **[KinDER: A Physical Reasoning Benchmark for Robot Learning and Planning](https://arxiv.org/abs/2604.25788)** [[プロジェクトページ]](https://prpl-group.com/kinder-site/)
+- <a id="paper-2604-25788"></a>`2026.04` **[KinDER: A Physical Reasoning Benchmark for Robot Learning and Planning](https://arxiv.org/abs/2604.25788)** [[プロジェクトページ]](https://prpl-group.com/kinder-site/) [[コード]](https://github.com/Princeton-Robot-Planning-and-Learning/kindergarden)
   > リセット可能な物理推論タスク、パラメトリックなスキル、統一評価インターフェースを提供し、汎用コーディングエージェントによるタスク・運動計画の研究で直接利用されている。
 
 <!-- mmac-record: {"id": "2603.22435", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2370,7 +2370,7 @@
 
 <!-- mmac-record: {"id": "2311.11183", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2311-11183"></a>`2023.11` **[Deploying and Evaluating LLMs to Program Service Mobile Robots](https://arxiv.org/abs/2311.11183)** [[プロジェクトページ]](https://amrl.cs.utexas.edu/codebotler/)
+- <a id="paper-2311-11183"></a>`2023.11` **[Deploying and Evaluating LLMs to Program Service Mobile Robots](https://arxiv.org/abs/2311.11183)** [[プロジェクトページ]](https://amrl.cs.utexas.edu/codebotler/) [[コード]](https://github.com/ut-amrl/codebotler)
   > CodeBotler と RoboEval を提案し、Python 内の専用言語でサービスロボットのプログラムを生成して、動作順序、条件分岐、タスク実行を評価する。
 
 <!-- mmac-record: {"id": "2306.03310", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
@@ -2402,7 +2402,7 @@
 
 <!-- mmac-record: {"id": "2505.03728", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
 
-- <a id="paper-2505-03728"></a>`2025.05` **[PyRoki: A Modular Toolkit for Robot Kinematic Optimization](https://arxiv.org/abs/2505.03728)** [[プロジェクトページ]](https://pyroki-toolkit.github.io)
+- <a id="paper-2505-03728"></a>`2025.05` **[PyRoki: A Modular Toolkit for Robot Kinematic Optimization](https://arxiv.org/abs/2505.03728)** [[プロジェクトページ]](https://pyroki-toolkit.github.io) [[コード]](https://github.com/chungmin99/pyroki)
   > 組み合わせ可能なロボット運動学最適化インターフェースで、エージェントの目標やプログラムを受け、一部のハーネスに下位の求解能力を提供する。
 
 <!-- mmac-record: {"id": "dimos", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
@@ -2417,7 +2417,7 @@
 
 <!-- mmac-record: {"id": "phys-0", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
 
-- <a id="paper-phys-0"></a>**[phys-0](https://jvboid.dev/projects/phys-0)** [[コード]](https://github.com/JacobFV/chem-0)
+- <a id="paper-phys-0"></a>**[phys-0](https://jvboid.dev/projects/phys-0)** [[コード]](https://github.com/JacobFV/chem-0) [[コード]](https://github.com/JacobFV/phys-0)
   > 統一した記録付きツールでエージェント、編集可能な物理場面、SO-101 アーム、実験台の観測を結び、同じ手順で仮想・実操作を探究する。
 
 <!-- mmac-record: {"id": "robouse", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
@@ -2625,7 +2625,7 @@
 
 <!-- mmac-record: {"id": "2608.30821", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2608-30821"></a>`2026.08` **[Lucida: Parse, Generate, and Place for Composable Real-to-Sim Scene Modeling](https://arxiv.org/abs/2608.30821)** [[プロジェクトページ]](https://lucida-r2s.github.io/)
+- <a id="paper-2608-30821"></a>`2026.08` **[Lucida: Parse, Generate, and Place for Composable Real-to-Sim Scene Modeling](https://arxiv.org/abs/2608.30821)** [[プロジェクトページ]](https://lucida-r2s.github.io/) [[デモ]](https://lucida-r2s.github.io/#main-result)
   > 各物体の複数視点の証拠を集約し、GizmoAct が画像の確認と姿勢編集を繰り返してシーンを整合させる。
 
 <!-- mmac-record: {"id": "2607.19190", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
@@ -2790,7 +2790,7 @@
 
 <!-- mmac-record: {"id": "2310.01361", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2310-01361"></a>`2023.10` **[GenSim: Generating Robotic Simulation Tasks via Large Language Models](https://arxiv.org/abs/2310.01361)** [[コード]](https://github.com/liruiw/GenSim) [[プロジェクトページ]](https://liruiw.github.io/gensim)
+- <a id="paper-2310-01361"></a>`2023.10` **[GenSim: Generating Robotic Simulation Tasks via Large Language Models](https://arxiv.org/abs/2310.01361)** [[コード]](https://github.com/liruiw/GenSim) [[プロジェクトページ]](https://liruiw.github.io/gensim) [[デモ]](https://huggingface.co/spaces/Gen-Sim/Gen-Sim)
   > タスク記述を実行可能なロボットタスクのクラスに変換し、シミュレーションタスク集と実演データを拡張する。
 
 <!-- mmac-record: {"id": "res:aha-3d", "scope": "Resource", "primary": "3.2", "stage": 3, "type": "resource"} -->
@@ -2835,7 +2835,7 @@
 
 <!-- mmac-record: {"id": "2611.02928", "scope": "Core", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2611-02928"></a>`2026.11` **[Lab2Sim: Turning Real-World Experiment Videos into Interactive Virtual Experiments](https://arxiv.org/abs/2611.02928)** [[プロジェクトページ]](https://black1948.github.io/lab2sim)
+- <a id="paper-2611-02928"></a>`2026.11` **[Lab2Sim: Turning Real-World Experiment Videos into Interactive Virtual Experiments](https://arxiv.org/abs/2611.02928)** [[プロジェクトページ]](https://black1948.github.io/lab2sim) [[デモ]](https://black1948.github.io/lab2sim/#demo)
   > ウェブ上の実験を段階的に再生し、画面と状態を実写動画と照合して操作の再現性を評価する。独立した検証器の診断に基づいて、器具の素材や状態機械を修正する。
 
 <!-- mmac-record: {"id": "2611.13576", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
@@ -2880,7 +2880,7 @@
 
 <!-- mmac-record: {"id": "2609.24778", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-24778"></a>`2026.09` **[H2RBench: A Real-to-Sim Benchmark for Evaluating Human-to-Robot Transfer](https://arxiv.org/abs/2609.24778)** [[プロジェクトページ]](https://davidz2851.github.io/h2rbench.github.io/)
+- <a id="paper-2609-24778"></a>`2026.09` **[H2RBench: A Real-to-Sim Benchmark for Evaluating Human-to-Robot Transfer](https://arxiv.org/abs/2609.24778)** [[プロジェクトページ]](https://davidz2851.github.io/h2rbench.github.io/) [[コード]](https://github.com/xiaochy/H2RBench)
   > 四つの real-to-sim タスクで人間から機械への転移手法を比較し、シミュレーション上の順位が実機の順位を予測できるかを確かめる。
 
 <!-- mmac-record: {"id": "2609.27449", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
@@ -2900,7 +2900,7 @@
 
 <!-- mmac-record: {"id": "2606.01869", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2606-01869"></a>`2026.06` **[WorldCoder-Bench: Benchmarking Physically Grounded 3D World Synthesis](https://arxiv.org/abs/2606.01869)**
+- <a id="paper-2606-01869"></a>`2026.06` **[WorldCoder-Bench: Benchmarking Physically Grounded 3D World Synthesis](https://arxiv.org/abs/2606.01869)** [[データセット]](https://huggingface.co/datasets/shuolucs/WorldCoder-Bench)
   > 自然言語から、ブラウザーで動く対話型 3D プログラムを生成する課題を設け、シミュレーション、レンダリング、アプリを扱う。StateProbe はプログラムを実行して操作と隠れた状態要件を確認し、見た目は正常でも操作ロジックや状態変化が誤った成果物を検出する。
 
 <!-- mmac-record: {"id": "2605.19136", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
@@ -2920,7 +2920,7 @@
 
 <!-- mmac-record: {"id": "2604.13035", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2604-13035"></a>`2026.04` **[SceneCritic: A Symbolic Evaluator for 3D Indoor Scene Synthesis](https://arxiv.org/abs/2604.13035)**
+- <a id="paper-2604-13035"></a>`2026.04` **[SceneCritic: A Symbolic Evaluator for 3D Indoor Scene Synthesis](https://arxiv.org/abs/2604.13035)** [[プロジェクトページ]](https://lab-spell.github.io/SceneCritic) [[コード]](https://github.com/DIASENGUPTA/SceneCritic)
   > 既存の室内データから空間常識と制約を整理し、配置と物体関係を直接確認する記号的評価器を構築する。妥当な配置と違反する関係を具体的に示し、規則、テキストモデル、視覚モデルのフィードバックがシーン修正に与える影響を比較する。
 
 <!-- mmac-record: {"id": "2603.16432", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
@@ -2940,12 +2940,12 @@
 
 <!-- mmac-record: {"id": "2602.13294", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2602-13294"></a>`2026.02` **[VisPhyWorld: Probing Physical Reasoning via Code-Driven Video Reconstruction](https://arxiv.org/abs/2602.13294)**
+- <a id="paper-2602-13294"></a>`2026.02` **[VisPhyWorld: Probing Physical Reasoning via Code-Driven Video Reconstruction](https://arxiv.org/abs/2602.13294)** [[コード]](https://github.com/TIGER-AI-Lab/VisPhyWorld)
   > マルチモーダルモデルが観察した物理動画を実行可能なシミュレーターコードにし、世界の理解を検査・修正できるプログラムとして表す。VisPhyBench は制御されたシーンで外観と運動の再構成を比較し、視覚情報から妥当な物理過程を復元できるか調べる。
 
 <!-- mmac-record: {"id": "2512.16881", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2512-16881"></a>`2025.12` **[PolaRiS: Scalable Real-to-Sim Evaluations for Generalist Robot Policies](https://arxiv.org/abs/2512.16881)** [[プロジェクトページ]](https://polaris-evals.github.io/)
+- <a id="paper-2512-16881"></a>`2025.12` **[PolaRiS: Scalable Real-to-Sim Evaluations for Generalist Robot Policies](https://arxiv.org/abs/2512.16881)** [[プロジェクトページ]](https://polaris-evals.github.io/) [[コード]](https://github.com/arhanjain/PolaRiS) [[データセット]](https://huggingface.co/datasets/owhan/PolaRiS-Hub)
   > 短い動画スキャンからニューラル再構成で対話可能な評価シーンを作り、汎用方策の実機評価と対にして比較する。
 
 <!-- mmac-record: {"id": "2511.03001", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
@@ -2986,17 +2986,17 @@
 
 <!-- mmac-record: {"id": "2611.06817", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2611-06817"></a>`2026.11` **[Open-HumanWAM: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models](https://arxiv.org/abs/2611.06817)** [[プロジェクトページ]](https://dagroup-pku.github.io/open-humanwam/) [[コード]](https://github.com/DAGroup-PKU/HumanNet/tree/Open-HumanWAM) [[データセット]](https://huggingface.co/datasets/DAGroup-PKU/Open-HumanWAM-50K)
+- <a id="paper-2611-06817"></a>`2026.11` **[Open-HumanWAM: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models](https://arxiv.org/abs/2611.06817)** [[プロジェクトページ]](https://dagroup-pku.github.io/open-humanwam/) [[コード]](https://github.com/DAGroup-PKU/HumanNet/tree/Open-HumanWAM) [[データセット]](https://huggingface.co/datasets/DAGroup-PKU/Open-HumanWAM-50K) [[コレクション]](https://huggingface.co/collections/DAGroup-PKU/open-humanwam)
   > 人の操作経験と対応する動作を整理し、世界・動作モデルの事前学習とロボットへの適応に利用する。
 
 <!-- mmac-record: {"id": "2406.18915", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2406-18915"></a>`2024.06` **[Manipulate-Anything: Automating Real-World Robots using Vision-Language Models](https://arxiv.org/abs/2406.18915)** [[プロジェクトページ]](https://robot-ma.github.io/)
+- <a id="paper-2406-18915"></a>`2024.06` **[Manipulate-Anything: Automating Real-World Robots using Vision-Language Models](https://arxiv.org/abs/2406.18915)** [[プロジェクトページ]](https://robot-ma.github.io/) [[コード]](https://github.com/Robot-MA/manipulate-anything)
   > 視覚言語フィードバックを使い、実環境での実演を自動収集する。
 
 <!-- mmac-record: {"id": "2403.12945", "scope": "Resource", "primary": "3.4", "stage": 3, "type": "resource"} -->
 
-- <a id="paper-2403-12945"></a>`2024.03` **[DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset](https://arxiv.org/abs/2403.12945)** [[プロジェクトページ]](https://droid-dataset.github.io/)
+- <a id="paper-2403-12945"></a>`2024.03` **[DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset](https://arxiv.org/abs/2403.12945)** [[プロジェクトページ]](https://droid-dataset.github.io/) [[デモ]](https://droid-dataset.github.io/visualizer) [[ハードウェアコード]](https://github.com/droid-dataset/droid) [[方策学習コード]](https://github.com/droid-dataset/droid_policy_learning) [[ドキュメント]](https://droid-dataset.github.io/droid/)
   > ロボット学習に必要な実際の観測データ源を提供する。
 
 #### 合成データと生成手法
@@ -3013,7 +3013,7 @@
 
 <!-- mmac-record: {"id": "2611.05163", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2611-05163"></a>`2026.11` **[RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On](https://arxiv.org/abs/2611.05163)** [[プロジェクトページ]](https://ryan-seungyong-lee.github.io/RoboTryOn)
+- <a id="paper-2611-05163"></a>`2026.11` **[RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On](https://arxiv.org/abs/2611.05163)** [[プロジェクトページ]](https://ryan-seungyong-lee.github.io/RoboTryOn) [[コード]](https://github.com/ryan-seungyong-lee/RoboTryOn) [[モデル]](https://huggingface.co/RyanL22/RoboTryOn) [[デモ]](https://huggingface.co/spaces/RyanL22/RoboTryOn)
   > 人の実演を対象ロボットの動画へ変換し、逆動力学と手首補正で疑似動作を生成する。方策を訓練し、二種類の実機ロボットで評価する。
 
 <!-- mmac-record: {"id": "2610.22362", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
@@ -3028,32 +3028,32 @@
 
 <!-- mmac-record: {"id": "2609.35318", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-35318"></a>`2026.09` **[DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library](https://arxiv.org/abs/2609.35318)** [[プロジェクトページ]](https://dexagent1.github.io/) [[プロジェクトページ]](https://dexagent123.github.io/)
+- <a id="paper-2609-35318"></a>`2026.09` **[DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library](https://arxiv.org/abs/2609.35318)** [[プロジェクトページ]](https://dexagent1.github.io/) [[プロジェクトページ]](https://dexagent123.github.io/) [[コード]](https://github.com/dexagent1/DexAgent)
   > 人の動画を、シミュレーション内の器用な操作を学ぶための教師データに変換する。
 
 <!-- mmac-record: {"id": "2609.27308", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-27308"></a>`2026.09` **[EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics](https://arxiv.org/abs/2609.27308)**
+- <a id="paper-2609-27308"></a>`2026.09` **[EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics](https://arxiv.org/abs/2609.27308)** [[コード]](https://github.com/EmbodiedSWE/EmbodiedSWE)
   > 検証済みのロボットプログラムを合成実演へ拡張する。
 
 <!-- mmac-record: {"id": "2607.23704", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2607-23704"></a>`2026.07` **[LabRobFail: A Benchmark for Robotic Failure Analysis in Chemical Self-driving Laboratory](https://arxiv.org/abs/2607.23704)** [[コード]](https://github.com/Su-ISE-2001/LabRobFail)
+- <a id="paper-2607-23704"></a>`2026.07` **[LabRobFail: A Benchmark for Robotic Failure Analysis in Chemical Self-driving Laboratory](https://arxiv.org/abs/2607.23704)** [[コード]](https://github.com/Su-ISE-2001/LabRobFail) [[コード]](https://github.com/Su-ISE-2001/SciRobo)
   > 構造化された診断と修正ラベルを持つ、模擬実験室での失敗軌跡を構築する。
 
 <!-- mmac-record: {"id": "2506.18088", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2506-18088"></a>`2025.06` **[RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation](https://arxiv.org/abs/2506.18088)** [[コード]](https://github.com/RoboTwin-Platform/RoboTwin) [[コード]](https://github.com/robotwin-Platform/robotwin) [[コード]](https://github.com/robotwin-Platform/robotwin/) [[プロジェクトページ]](https://robotwin-platform.github.io/) [[プロジェクトページ]](https://robotwin-platform.github.io/doc/)
+- <a id="paper-2506-18088"></a>`2025.06` **[RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation](https://arxiv.org/abs/2506.18088)** [[コード]](https://github.com/RoboTwin-Platform/RoboTwin) [[コード]](https://github.com/robotwin-Platform/robotwin) [[コード]](https://github.com/robotwin-Platform/robotwin/) [[プロジェクトページ]](https://robotwin-platform.github.io/) [[プロジェクトページ]](https://robotwin-platform.github.io/doc/) [[データセット]](https://huggingface.co/datasets/TianxingChen/RoboTwin2.0)
   > 多様な双腕操作の訓練軌道を生成する。
 
 <!-- mmac-record: {"id": "2410.03645", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2410-03645"></a>`2024.10` **[GenSim2: Scaling Robot Data Generation with Multi-modal and Reasoning LLMs](https://arxiv.org/abs/2410.03645)** [[プロジェクトページ]](https://gensim2.github.io/)
+- <a id="paper-2410-03645"></a>`2024.10` **[GenSim2: Scaling Robot Data Generation with Multi-modal and Reasoning LLMs](https://arxiv.org/abs/2410.03645)** [[プロジェクトページ]](https://gensim2.github.io/) [[コード]](https://github.com/GenSim2/gensim2)
   > タスクとソルバーの生成によってロボットの実演データを拡張する。
 
 <!-- mmac-record: {"id": "2307.14535", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2307-14535"></a>`2023.07` **[Scaling Up and Distilling Down: Language-Guided Robot Skill Acquisition](https://arxiv.org/abs/2307.14535)** [[プロジェクトページ]](https://www.cs.columbia.edu/~huy/scalingup/)
+- <a id="paper-2307-14535"></a>`2023.07` **[Scaling Up and Distilling Down: Language-Guided Robot Skill Acquisition](https://arxiv.org/abs/2307.14535)** [[プロジェクトページ]](https://www.cs.columbia.edu/~huy/scalingup/) [[コード]](https://github.com/columbia-ai-robotics/scalingup)
   > 言語によって整理したロボットの経験を動作方策へ蒸留する。
 
 [↑ 目次に戻る](#contents)
@@ -3077,7 +3077,7 @@
 
 <!-- mmac-record: {"id": "2610.23288", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-23288"></a>`2026.10` **[CoEvolve: Self-Evolving Code Policies from Skills to Strategies for Humanoid Robots](https://arxiv.org/abs/2610.23288)**
+- <a id="paper-2610-23288"></a>`2026.10` **[CoEvolve: Self-Evolving Code Policies from Skills to Strategies for Humanoid Robots](https://arxiv.org/abs/2610.23288)** [[コード]](https://github.com/Innovationlzc/CoEvolve)
   > 固定した人型ロボットのスキルを使い、チームの戦略を進化させる。
 
 <!-- mmac-record: {"id": "2610.12369", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3097,7 +3097,7 @@
 
 <!-- mmac-record: {"id": "2609.30233", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-30233"></a>`2026.09` **[Coding Agents for Generalized Task and Motion Planning Problems](https://arxiv.org/abs/2609.30233)**
+- <a id="paper-2609-30233"></a>`2026.09` **[Coding Agents for Generalized Task and Motion Planning Problems](https://arxiv.org/abs/2609.30233)** [[コード]](https://github.com/tomsilver/robocode)
   > タスク計画と運動計画を解くプログラムを記述する。
 
 <!-- mmac-record: {"id": "2609.30594", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3107,7 +3107,7 @@
 
 <!-- mmac-record: {"id": "2609.24145", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-24145"></a>`2026.09` **[MimicAgent: Quadruped Skills via Prompt-to-Trajectory Generation](https://arxiv.org/abs/2609.24145)** [[プロジェクトページ]](https://luckykantnayak.github.io/mimic-agent/)
+- <a id="paper-2609-24145"></a>`2026.09` **[MimicAgent: Quadruped Skills via Prompt-to-Trajectory Generation](https://arxiv.org/abs/2609.24145)** [[プロジェクトページ]](https://luckykantnayak.github.io/mimic-agent/) [[コード]](https://github.com/Luckykantnayak/mimicagent-humnaoid)
   > 四足歩行方策の訓練に向けた参照運動を生成する。
 
 <!-- mmac-record: {"id": "2609.38982", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3122,7 +3122,7 @@
 
 <!-- mmac-record: {"id": "2606.19980", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2606-19980"></a>`2026.06` **[ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](https://arxiv.org/abs/2606.19980)** [[プロジェクトページ]](https://research.nvidia.com/labs/gear/enpire/)
+- <a id="paper-2606-19980"></a>`2026.06` **[ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](https://arxiv.org/abs/2606.19980)** [[プロジェクトページ]](https://research.nvidia.com/labs/gear/enpire/) [[コード]](https://github.com/NVlabs/ENPIRE)
   > 実際の試験から得た証拠を使ってロボット方策を開発する。
 
 <!-- mmac-record: {"id": "2606.08610", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3132,7 +3132,7 @@
 
 <!-- mmac-record: {"id": "2606.16458", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2606-16458"></a>`2026.06` **[RHO: Your Coding Agent is Secretly a Roboticist](https://arxiv.org/abs/2606.16458)** [[プロジェクトページ]](https://rho-robotics.github.io)
+- <a id="paper-2606-16458"></a>`2026.06` **[RHO: Your Coding Agent is Secretly a Roboticist](https://arxiv.org/abs/2606.16458)** [[プロジェクトページ]](https://rho-robotics.github.io) [[コード]](https://github.com/KE7/HELIX)
   > 配備前に、再利用可能なロボット方策のコードライブラリを探索する。
 
 <!-- mmac-record: {"id": "2603.04466", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3157,12 +3157,12 @@
 
 <!-- mmac-record: {"id": "2409.01652", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2409-01652"></a>`2024.09` **[ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation](https://arxiv.org/abs/2409.01652)** [[プロジェクトページ]](https://rekep-robot.github.io/)
+- <a id="paper-2409-01652"></a>`2024.09` **[ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation](https://arxiv.org/abs/2409.01652)** [[プロジェクトページ]](https://rekep-robot.github.io/) [[コード]](https://github.com/huangwl18/ReKep)
   > プログラムで表した幾何制約によりオンラインの操作を導く。
 
 <!-- mmac-record: {"id": "2406.01967", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2406-01967"></a>`2024.06` **[DrEureka: Language Model Guided Sim-To-Real Transfer](https://arxiv.org/abs/2406.01967)** [[プロジェクトページ]](https://eureka-research.github.io/dr-eureka/)
+- <a id="paper-2406-01967"></a>`2024.06` **[DrEureka: Language Model Guided Sim-To-Real Transfer](https://arxiv.org/abs/2406.01967)** [[プロジェクトページ]](https://eureka-research.github.io/dr-eureka/) [[コード]](https://github.com/eureka-research/DrEureka)
   > 生成した報酬とドメインランダム化を使い、実環境への転移を支援する。
 
 <!-- mmac-record: {"id": "2402.04764", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3172,17 +3172,17 @@
 
 <!-- mmac-record: {"id": "2310.12931", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2310-12931"></a>`2023.10` **[Eureka: Human-Level Reward Design via Coding Large Language Models](https://arxiv.org/abs/2310.12931)** [[プロジェクトページ]](https://eureka-research.github.io/)
+- <a id="paper-2310-12931"></a>`2023.10` **[Eureka: Human-Level Reward Design via Coding Large Language Models](https://arxiv.org/abs/2310.12931)** [[プロジェクトページ]](https://eureka-research.github.io/) [[コード]](https://github.com/eureka-research/Eureka)
   > 方策の訓練フィードバックを使って報酬プログラムを探索する。
 
 <!-- mmac-record: {"id": "2309.11489", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2309-11489"></a>`2023.09` **[Text2Reward: Reward Shaping with Language Models for Reinforcement Learning](https://arxiv.org/abs/2309.11489)** [[プロジェクトページ]](https://text-to-reward.github.io/)
+- <a id="paper-2309-11489"></a>`2023.09` **[Text2Reward: Reward Shaping with Language Models for Reinforcement Learning](https://arxiv.org/abs/2309.11489)** [[プロジェクトページ]](https://text-to-reward.github.io/) [[コード]](https://github.com/xlang-ai/text2reward)
   > 報酬の設計をコード生成タスクとして扱う。
 
 <!-- mmac-record: {"id": "2306.08647", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2306-08647"></a>`2023.06` **[Language to Rewards for Robotic Skill Synthesis](https://arxiv.org/abs/2306.08647)** [[プロジェクトページ]](https://language-to-reward.github.io/)
+- <a id="paper-2306-08647"></a>`2023.06` **[Language to Rewards for Robotic Skill Synthesis](https://arxiv.org/abs/2306.08647)** [[プロジェクトページ]](https://language-to-reward.github.io/) [[コード]](https://github.com/google-deepmind/language_to_reward_2023)
   > 生成した報酬によってロボットスキルの目標を表す。
 
 <!-- mmac-record: {"id": "autoresearch-robotics", "scope": "Resource", "primary": "3.5", "stage": 3, "type": "resource"} -->
@@ -3239,7 +3239,7 @@
 
 <!-- mmac-record: {"id": "2610.14224", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-14224"></a>`2026.10` **[Harness^2: Recursive Agent Harnessing for an Open World](https://arxiv.org/abs/2610.14224)**
+- <a id="paper-2610-14224"></a>`2026.10` **[Harness^2: Recursive Agent Harnessing for an Open World](https://arxiv.org/abs/2610.14224)** [[コード]](https://github.com/google-research/harness2)
   > タスク内とタスク間の両方で Harness を進化させる。
 
 <!-- mmac-record: {"id": "2610.23098", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3249,7 +3249,7 @@
 
 <!-- mmac-record: {"id": "2610.03476", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-03476"></a>`2026.10` **[MobiAgent: Dual-Loop Recursive Policy Self-Improvement for Long-Horizon Mobile Manipulation](https://arxiv.org/abs/2610.03476)** [[コード]](https://github.com/kaiknower/MobiAgent) [[プロジェクトページ]](https://kaiknower.github.io/mobiagent/)
+- <a id="paper-2610-03476"></a>`2026.10` **[MobiAgent: Dual-Loop Recursive Policy Self-Improvement for Long-Horizon Mobile Manipulation](https://arxiv.org/abs/2610.03476)** [[コード]](https://github.com/kaiknower/MobiAgent) [[プロジェクトページ]](https://kaiknower.github.io/mobiagent/) [[モデル]](https://huggingface.co/Liukaikai/MobiAgent)
   > 視覚的な計画と内省を再利用可能な動作エキスパートにつなぎ、検証済みの運用軌跡をオフラインのスキル方策更新に利用する。生成した制御コードの修正とは区別される。
 
 <!-- mmac-record: {"id": "2610.08995", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3314,7 +3314,7 @@
 
 <!-- mmac-record: {"id": "2609.37583", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-37583"></a>`2026.09` **[RoboHarn-Evo: Evolving Hierarchical Physical Knowledge for Self-Improving Robotic Manipulation](https://arxiv.org/abs/2609.37583)**
+- <a id="paper-2609-37583"></a>`2026.09` **[RoboHarn-Evo: Evolving Hierarchical Physical Knowledge for Self-Improving Robotic Manipulation](https://arxiv.org/abs/2609.37583)** [[コード]](https://github.com/RUCKBReasoning/RoboHarn-Evo)
   > 物理的な相互作用から階層的な知識を蓄積する。
 
 <!-- mmac-record: {"id": "2609.39304", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3349,7 +3349,7 @@
 
 <!-- mmac-record: {"id": "2607.23784", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2607-23784"></a>`2026.07` **[A Few Words Go a Long Way: Language Guided Robot Policy Synthesis](https://arxiv.org/abs/2607.23784)** [[プロジェクトページ]](https://robo-architect.github.io/)
+- <a id="paper-2607-23784"></a>`2026.07` **[A Few Words Go a Long Way: Language Guided Robot Policy Synthesis](https://arxiv.org/abs/2607.23784)** [[プロジェクトページ]](https://robo-architect.github.io/) [[コード]](https://github.com/robo-architect/architect-franka)
   > 言語による訂正を使ってロボットプログラムを改善する。
 
 <!-- mmac-record: {"id": "2607.00272", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3359,12 +3359,12 @@
 
 <!-- mmac-record: {"id": "2606.19419", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2606-19419"></a>`2026.06` **[Playful Agentic Robot Learning](https://arxiv.org/abs/2606.19419)** [[プロジェクトページ]](https://playful-rats.github.io/)
+- <a id="paper-2606-19419"></a>`2026.06` **[Playful Agentic Robot Learning](https://arxiv.org/abs/2606.19419)** [[プロジェクトページ]](https://playful-rats.github.io/) [[コード]](https://github.com/Playful-RATs/rats)
   > タスクを指定しない探索を、永続的なコードスキルへ変換する。
 
 <!-- mmac-record: {"id": "2605.10332", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2605-10332"></a>`2026.05` **[EmbodiSkill: Skill-Aware Reflection for Self-Evolving Embodied Agents](https://arxiv.org/abs/2605.10332)**
+- <a id="paper-2605-10332"></a>`2026.05` **[EmbodiSkill: Skill-Aware Reflection for Self-Evolving Embodied Agents](https://arxiv.org/abs/2605.10332)** [[コード]](https://github.com/air-embodied-brain/EmbodiSkill)
   > 失敗を引き起こした具体的なスキルに内省を対応付ける。
 
 <!-- mmac-record: {"id": "2603.02623", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3389,29 +3389,29 @@
 
 <!-- mmac-record: {"id": "2405.19758", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2405-19758"></a>`2024.05` **[InterPreT: Interactive Predicate Learning from Language Feedback for Generalizable Task Planning](https://arxiv.org/abs/2405.19758)** [[プロジェクトページ]](https://interpret-robot.github.io)
+- <a id="paper-2405-19758"></a>`2024.05` **[InterPreT: Interactive Predicate Learning from Language Feedback for Generalizable Task Planning](https://arxiv.org/abs/2405.19758)** [[プロジェクトページ]](https://interpret-robot.github.io) [[コード]](https://github.com/hmz-15/interactive-predicate-learning)
   > 言語による訂正から、実行可能な計画用の述語を学ぶ。
 
 <!-- mmac-record: {"id": "2305.16744", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2305-16744"></a>`2023.05` **[Demo2Code: From Summarizing Demonstrations to Synthesizing Code via Extended Chain-of-Thought](https://arxiv.org/abs/2305.16744)** [[プロジェクトページ]](https://portal-cornell.github.io/demo2code/)
+- <a id="paper-2305-16744"></a>`2023.05` **[Demo2Code: From Summarizing Demonstrations to Synthesizing Code via Extended Chain-of-Thought](https://arxiv.org/abs/2305.16744)** [[プロジェクトページ]](https://portal-cornell.github.io/demo2code/) [[コード]](https://github.com/portal-cornell/demo2code)
   > 実演からタスクを要約し、ロボットプログラムを合成する。
 
 #### コーディングエージェントの事後学習
 
 <!-- mmac-record: {"id": "2610.30136", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-30136"></a>`2026.10` **[Agentic World Action Models](https://arxiv.org/abs/2610.30136)** [[プロジェクトページ]](https://agentic-wam.github.io/)
+- <a id="paper-2610-30136"></a>`2026.10` **[Agentic World Action Models](https://arxiv.org/abs/2610.30136)** [[プロジェクトページ]](https://agentic-wam.github.io/) [[モデル]](https://huggingface.co/miniFranka/agentic-wam-pretrain-yamego3k-soup-e1) [[コード]](https://github.com/ZhuoyangLiu2005/agentic-wam)
   > プログラム、予測動画、ロボット動作を共同でモデル化する。
 
 <!-- mmac-record: {"id": "2610.28589", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-28589"></a>`2026.10` **[AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](https://arxiv.org/abs/2610.28589)**
+- <a id="paper-2610-28589"></a>`2026.10` **[AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](https://arxiv.org/abs/2610.28589)** [[コード]](https://github.com/L-CodingSpace/AgenticRoboRL) [[プロジェクトページ]](https://l-codingspace.github.io/AgenticRoboRL/)
   > 異なる Harness をまたいでロボットの計画モデルを事後学習する。
 
 <!-- mmac-record: {"id": "2610.40799", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-40799"></a>`2026.10` **[CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents](https://arxiv.org/abs/2610.40799)** [[コード]](https://github.com/waltstephen/CaPtain) [[コード]](https://github.com/waltstephen/CaPtain-Harness) [[データセット]](https://huggingface.co/datasets/YijiaFan/CaPtain-SFT-Data)
+- <a id="paper-2610-40799"></a>`2026.10` **[CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents](https://arxiv.org/abs/2610.40799)** [[コード]](https://github.com/waltstephen/CaPtain) [[コード]](https://github.com/waltstephen/CaPtain-Harness) [[データセット]](https://huggingface.co/datasets/YijiaFan/CaPtain-SFT-Data) [[プロジェクトページ]](https://waltstephen.github.io/captain/)
   > ロボットコードを通して行動する小型モデルを訓練する。
 
 <!-- mmac-record: {"id": "2610.36013", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3421,7 +3421,7 @@
 
 <!-- mmac-record: {"id": "2610.41216", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-41216"></a>`2026.10` **[TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents](https://arxiv.org/abs/2610.41216)** [[プロジェクトページ]](https://garfield-kh.github.io/TinyAstral/)
+- <a id="paper-2610-41216"></a>`2026.10` **[TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents](https://arxiv.org/abs/2610.41216)** [[プロジェクトページ]](https://garfield-kh.github.io/TinyAstral/) [[コード]](https://github.com/Garfield-kh/TinyAstral) [[モデル]](https://huggingface.co/kehong/TinyAstral-weights) [[データセット]](https://huggingface.co/datasets/kehong/TinyAstral-SFT)
   > 改善した教師 Harness を小型モデルの訓練に利用する。
 
 <!-- mmac-record: {"id": "2606.18363", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -3478,7 +3478,7 @@
 
 <!-- mmac-record: {"id": "2610.20998", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-20998"></a>`2026.10` **[MoCaP: Mobile Code-as-Policies for Zero-Shot Mobile Manipulation from Passive Human Videos](https://arxiv.org/abs/2610.20998)** [[プロジェクトページ]](https://mocap-7.github.io/MoCAP-page/)
+- <a id="paper-2610-20998"></a>`2026.10` **[MoCaP: Mobile Code-as-Policies for Zero-Shot Mobile Manipulation from Passive Human Videos](https://arxiv.org/abs/2610.20998)** [[プロジェクトページ]](https://mocap-7.github.io/MoCAP-page/) [[コード]](https://github.com/MoCAP-7/MoCAP)
   > 人の動画から得た事前知識を移動ロボットのプログラムに利用する。
 
 <!-- mmac-record: {"id": "2609.23133", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
@@ -3488,7 +3488,7 @@
 
 <!-- mmac-record: {"id": "2609.30249", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-30249"></a>`2026.09` **[RAPID: Robot Agentic Programming from Demonstrations](https://arxiv.org/abs/2609.30249)** [[プロジェクトページ]](https://yuyaoliu.me/projects/rapid)
+- <a id="paper-2609-30249"></a>`2026.09` **[RAPID: Robot Agentic Programming from Demonstrations](https://arxiv.org/abs/2609.30249)** [[プロジェクトページ]](https://yuyaoliu.me/projects/rapid) [[コード]](https://github.com/nature21/RAPID)
   > 一度の視覚的な実演から、再利用可能な関係ベースのロボットプログラムと検証環境を導く。
 
 <!-- mmac-record: {"id": "2503.23875", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
@@ -3498,7 +3498,7 @@
 
 <!-- mmac-record: {"id": "2403.07832", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2403-07832"></a>`2024.03` **[DeliGrasp: Inferring Object Properties with LLMs for Adaptive Grasp Policies](https://arxiv.org/abs/2403.07832)** [[プロジェクトページ]](https://deligrasp.github.io)
+- <a id="paper-2403-07832"></a>`2024.03` **[DeliGrasp: Inferring Object Properties with LLMs for Adaptive Grasp Policies](https://arxiv.org/abs/2403.07832)** [[プロジェクトページ]](https://deligrasp.github.io) [[コード]](https://github.com/deligrasp/deligrasp)
   > 物体属性の推定を適応的な把持に利用する。
 
 <!-- mmac-record: {"id": "2310.13065", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
@@ -3508,7 +3508,7 @@
 
 <!-- mmac-record: {"id": "2307.05973", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2307-05973"></a>`2023.07` **[VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models](https://arxiv.org/abs/2307.05973)** [[プロジェクトページ]](https://voxposer.github.io)
+- <a id="paper-2307-05973"></a>`2023.07` **[VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models](https://arxiv.org/abs/2307.05973)** [[プロジェクトページ]](https://voxposer.github.io) [[コード]](https://github.com/huangwl18/VoxPoser)
   > コードで三次元の価値マップを組み合わせ、操作を計画する。
 
 <!-- mmac-record: {"id": "demo:nvidia-factory-operations-blueprint", "scope": "Demo", "primary": "3.6", "stage": 3, "type": "demo"} -->
@@ -3560,7 +3560,7 @@
 
 <!-- mmac-record: {"id": "bespoke-instrument", "scope": "Resource", "primary": "3.6", "stage": 3, "type": "resource"} -->
 
-- <a id="paper-bespoke-instrument"></a>`2026.05` **[AI-designed and AI-implemented control systems for bespoke scientific instrumentation: application to scanning microscopy](https://pubs.rsc.org/en/content/articlelanding/2026/dd/d6dd00177g)** [[論文]](https://www.repository.cam.ac.uk/items/cb2e6fef-94c4-4fe9-903a-aaa198da8f4f)
+- <a id="paper-bespoke-instrument"></a>`2026.05` **[AI-designed and AI-implemented control systems for bespoke scientific instrumentation: application to scanning microscopy](https://pubs.rsc.org/en/content/articlelanding/2026/dd/d6dd00177g)** [[論文]](https://www.repository.cam.ac.uk/items/cb2e6fef-94c4-4fe9-903a-aaa198da8f4f) [[コード]](https://github.com/Okarl96/shem_gui)
   > 人の監督下で計測器の制御コードを開発する。
 
 <!-- mmac-record: {"id": "2509.24978", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
@@ -3597,7 +3597,7 @@
 
 <!-- mmac-record: {"id": "2611.08175", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2611-08175"></a>`2026.11` **[PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?](https://arxiv.org/abs/2611.08175)** [[プロジェクトページ]](https://chip-ai-agent.github.io/research/pcbrouteagent)
+- <a id="paper-2611-08175"></a>`2026.11` **[PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?](https://arxiv.org/abs/2611.08175)** [[プロジェクトページ]](https://chip-ai-agent.github.io/research/pcbrouteagent) [[コード]](https://github.com/chip-ai-agent/PCBRouteAgent)
   > KiCad 本来の実行フィードバックに基づいて PCB 配線の指針を修正し、基板の接続性を改善する。
 
 <!-- mmac-record: {"id": "2611.13344", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
@@ -3622,7 +3622,7 @@
 
 <!-- mmac-record: {"id": "2605.17448", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2605-17448"></a>`2026.05` **[Self-Improving CAD Generation Agents with Finite Element Analysis as Feedback](https://arxiv.org/abs/2605.17448)**
+- <a id="paper-2605-17448"></a>`2026.05` **[Self-Improving CAD Generation Agents with Finite Element Analysis as Feedback](https://arxiv.org/abs/2605.17448)** [[コード]](https://github.com/3dlg-hcvc/s2o)
   > 視覚と有限要素解析のフィードバックによって CAD 設計を改善する。
 
 <!-- mmac-record: {"id": "2408.14307", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
@@ -3664,7 +3664,7 @@
 
 <!-- mmac-record: {"id": "2606.15932", "scope": "Survey", "primary": "SV", "stage": null, "type": "paper"} -->
 
-- <a id="paper-2606-15932"></a>`2026.06` **[Beyond NL2Code: A Structured Survey of Multimodal Code Intelligence](https://arxiv.org/abs/2606.15932)**
+- <a id="paper-2606-15932"></a>`2026.06` **[Beyond NL2Code: A Structured Survey of Multimodal Code Intelligence](https://arxiv.org/abs/2606.15932)** [[コレクション]](https://github.com/xjywhu/Awesome-Multimodal-LLM-for-Code)
   > UI、科学的可視化、構造化グラフィックス、新たな Agentic 用途におけるマルチモーダルなコード知能を概観する。
 
 **関連する Awesome リスト**

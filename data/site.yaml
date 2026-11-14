@@ -52,6 +52,10 @@ text:
     en: Contents
     zh: 目录
     ja: 目次
+  back_to_contents:
+    en: Back to contents
+    zh: 返回目录
+    ja: 目次に戻る
   start_with:
     en: Start with
     zh: 入门必读

@@ -266,6 +266,7 @@ def render(site, works, lang):
             see = list((site.get('see_also') or {}).get(sec, [])) + stage_see.get(sec, [])
             if see:
                 o(f"*{t(site, 'see_also', lang)}:* {link_list(see, byid)}\n")
+            o(f"[↑ {t(site, 'back_to_contents', lang)}](#contents)\n")
 
     # surveys & related
     named_anchor('related')

@@ -353,6 +353,8 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 - <a id="paper-demo-wild-atlas"></a>**[Wild Atlas](https://x.com/_IamAlam/status/2107480596926939638)**
   > 将百科应用分为界面、统一风格动物资产及卡片／旋转／信息面板交互三个阶段；旋转展示不代表已公开完整 3D 场景。
 
+[↑ 返回目录](#contents)
+
 <a id="methods-gui-environments"></a>
 <a id="evaluation-gui-environments"></a>
 <a id="data-gui-environments"></a>
@@ -413,6 +415,8 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 - <a id="paper-2610-41432"></a>`2026.10` **[Hybrid Computer Use: A Unified Programmatic, Semantic, and Visual Interface for General Agents](https://arxiv.org/abs/2610.41432)**
   > 让 Agent 组合程序工具、可访问性动作与视觉交互，通过实时状态检查、批次内验证及返回的 AX 变化指导后续操作。
+
+[↑ 返回目录](#contents)
 
 <a id="visualization"></a>
 <a id="svg-diagrams"></a>
@@ -657,6 +661,8 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 - <a id="paper-res-mermaid-mcp-server"></a>**[Mermaid MCP server](https://mermaid.ai/docs/ai/mcp-server)**
   > 验证 Diagram 语法并返回可供检查与修复的 SVG/PNG 渲染。
 
+[↑ 返回目录](#contents)
+
 <a id="documents-video"></a>
 <a id="methods-media"></a>
 <a id="evaluation-media"></a>
@@ -843,6 +849,8 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 - <a id="paper-res-rendley-video-editing-skill"></a>**[Rendley video-editing-skill](https://github.com/rendleyhq/video-editing-skill)** [[文档]](https://github.com/rendleyhq/video-editing-skill/blob/main/SKILL.md)
   > 经 MCP／REST 将编辑需求与媒体交给 Rendley 托管 Agent，返回可编辑项目；MIT Skill 属于需服务连接的集成层，不是本地剪辑引擎。
+
+[↑ 返回目录](#contents)
 
 <a id="3d-cad"></a>
 <a id="methods-cad-3d"></a>
@@ -1317,6 +1325,8 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 - <a id="paper-res-zoo-developer-tools"></a>**[Zoo developer tools](https://docs.zoo.dev/docs)**
   > 将语言驱动的 KCL 工作流连接到几何执行、快照、检查和调试。
 
+[↑ 返回目录](#contents)
+
 <a id="games"></a>
 <a id="methods-games"></a>
 <a id="evaluation-games"></a>
@@ -1550,6 +1560,8 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 - <a id="paper-res-ziva-playtesting-workflow"></a>**[Ziva playtesting workflow](https://ziva.sh/blogs/ai-agent-playtest-godot-game)** [[文档]](https://ziva.sh/docs/playtest)
   > 完整试玩 Agent 检查现场状态与截图，返回结论、复现步骤及重放证据；它本身不编辑项目，修复需交回开发 Agent。厂商演示不等于独立基准证据。
 
+[↑ 返回目录](#contents)
+
 <a id="section-1-3"></a>
 <a id="visual-diff"></a>
 <a id="benchmarks-and-evaluation"></a>
@@ -1630,6 +1642,8 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 - <a id="paper-reading-z-ai-autoclaw-team-glm-5-3-flash-more-intelligence-with-less-compute"></a>`2026.08` **[Z.ai / AutoClaw Team — GLM-5.3-Flash: More Intelligence with Less Compute](https://autoclaw.z.ai/blog/model/glm-5.3-flash/)** [[模型]](https://huggingface.co/zai-org/GLM-5.3-Flash)
   > “Vision therefore becomes part of execution and verification rather than a separate input capability.” *与本主题的关联：* 模型被明确描述为能够检查渲染结果、判断下一步行动，并在文档、界面等视觉产物上继续改进。
 
+[↑ 返回目录](#contents)
+
 <a id="trilogy-models-as-tools"></a>
 <a id="section-1-4"></a>
 <a id="methods-and-systems"></a>
@@ -1667,6 +1681,8 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
   > 文本 → 自回归语义 token → 扩散渲染图像。将语义学习与像素渲染分开，用语言监督的视觉 token 为扩散渲染器提供条件；为文本生图提供语义与渲染分工的模型组件。
 
 *另见:* [Stride](#paper-2610-13502) · [Editable Visual Design](#paper-2609-04034)
+
+[↑ 返回目录](#contents)
 
 <a id="s2-2"></a>
 
@@ -1734,6 +1750,8 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-res-omnishowcase-omnidirectional-subject-consistent-video-generation-from-multi-view-images"></a>**[OmniShowcase: Omnidirectional Subject-Consistent Video Generation from Multi-View Images](https://arxiv.org/abs/2610.35684)** [[代码]](https://github.com/justin4ai/OmniShowcase) [[项目页]](https://justin4ai.github.io/OmniShowcase/)
   > 多张参考图 + 相机运动提示 → 以重建法线转台为条件的主体一致视频。结合多视角重建与 LoRA 视频生成器，支持围绕静态主体的视角变化；非刚体运动仍受限，代码和数据处于发布计划中。
 
+[↑ 返回目录](#contents)
+
 <a id="s2-3"></a>
 
 ### 2.3 3D 生成模型 × 3D 资产与场景
@@ -1796,6 +1814,8 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
   > 带 UV 的 mesh + 文本，可选参考图 → 基色、粗糙度、金属度和高度贴图。用视频扩散模型联合生成材质本征属性的多视图，再烘焙为可渲染纹理；是已有文档说明的资产生成能力，不等于 Agent 自主修复或真实物理迁移。
 
 *另见:* [SceneBloom](#paper-2610-32978) · [SAGE](#paper-2602-10116) · [Gen2Sim](#paper-2310-18308) · [PhysX-Omni](#paper-2605-21572) · [HARMONY](#paper-2609-26793) · [GATOR](#paper-2610-11215) · [3AGameFactory](#paper-system-3agamefactory) · [Lucida](#paper-2608-30821)
+
+[↑ 返回目录](#contents)
 
 <a id="s2-4"></a>
 
@@ -1868,6 +1888,8 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-res-worldfoundry"></a>**[WorldFoundry](https://arxiv.org/abs/2611.10771)** [[代码]](https://github.com/OpenEnvision/WorldFoundry)
   > 将模型各自的输入、运行要求及输出产物接入统一推理和评测工作流，明确区分准备状态和评测资格。
 
+[↑ 返回目录](#contents)
+
 <a id="section-5-1"></a>
 <a id="s2-5"></a>
 
@@ -1906,6 +1928,8 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
   > 用共享编码器和 OmniSchema 在十类解析任务中提供可追溯到来源的内容，为 Agent 感知与检查提供接口；密集内容的自回归解码吞吐量仍受限。
 
 *另见:* [GRASE](#paper-2610-21498) · [SceneAgent](#paper-2610-34745) · [Real2Gym](#paper-2609-37089) · [LiteReality-Agent](#paper-2610-01863) · [Instruct2Act](#paper-2305-11176) · [Plumb](#paper-system-plumb)
+
+[↑ 返回目录](#contents)
 
 <a id="section-5-4"></a>
 <a id="s2-6"></a>
@@ -1975,6 +1999,8 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
   > 传感器流 + 冻结策略动作 + 健康步态参考 → 故障诊断与修复后的策略输入。MBD／PRR通过可加性代理诊断传感器故障并修复输入，无需策略梯度；验证限于仿真四足机器人，未展示LLM编排或硬件部署。
 
 *另见:* [REA](#paper-2610-42053) · [Harness VLA](#paper-2607-08448) · [The Harness](#paper-system-the-harness-corl2026) · [CarryOn](#paper-2610-21453) · [Seeing Through the Illusion](#paper-2611-03585)
+
+[↑ 返回目录](#contents)
 
 <a id="trilogy-digital-physical"></a>
 <a id="stage-3"></a>
@@ -2421,6 +2447,8 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-res-webots-mcp"></a>**[Webots MCP](https://github.com/MHasaan/webotMCP)**
   > 向Agent开放场景编辑、控制器代码、机器人动作、多视图截图、运动轨迹与接触事件；模拟器真值和反应式控制分别区别于学习式感知与规划。
 
+[↑ 返回目录](#contents)
+
 <a id="methods-physical-assets"></a>
 <a id="world-models"></a>
 <a id="methods-world-models"></a>
@@ -2772,6 +2800,8 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-mujoco-workbench"></a>**[mujoco-workbench](https://github.com/Hebbian-Robotics/mujoco-workbench)**
   > CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。
 
+[↑ 返回目录](#contents)
+
 <a id="evaluation-physical-assets"></a>
 <a id="evaluation-world-models"></a>
 <a id="evaluation-real-to-sim"></a>
@@ -2937,6 +2967,8 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 *另见:* [Frontier3DBench](#paper-2611-09017) · [4DCodeBench](#paper-2610-03715) · [BlenderWorld](#paper-system-blenderworld) · [BVB](#paper-2609-15478) · [Code4Scene](#paper-2609-36777) · [Parametric CAD Bench v3](#paper-2611-02659) · [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786)
 
+[↑ 返回目录](#contents)
+
 <a id="data-physical-assets"></a>
 <a id="data-real-to-sim"></a>
 <a id="data-robot-programs"></a>
@@ -3020,6 +3052,8 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 - <a id="paper-2307-14535"></a>`2023.07` **[Scaling Up and Distilling Down: Language-Guided Robot Skill Acquisition](https://arxiv.org/abs/2307.14535)** [[项目页]](https://www.cs.columbia.edu/~huy/scalingup/)
   > 将语言组织的机器人经验蒸馏为动作策略。
+
+[↑ 返回目录](#contents)
 
 <a id="robotics"></a>
 <a id="methods-robot-programs"></a>
@@ -3404,6 +3438,8 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 *另见:* [BlenderFORGE](#paper-2611-10768)
 
+[↑ 返回目录](#contents)
+
 <a id="methods-real2sim2real"></a>
 <a id="section-6-4"></a>
 <a id="s3-6"></a>
@@ -3600,6 +3636,8 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 - <a id="paper-ai-cad"></a>**[ai-cad](https://github.com/BorjaLL/ai-cad)** [[结果]](https://github.com/BorjaLL/ai-cad/blob/1ef2bf72de799006d069498d3ee146dae2e4f075/data/fits-measured.json)
   > 连接参数化 CAD 与人工打印试配。
+
+[↑ 返回目录](#contents)
 
 <a id="surveys-and-related-collections"></a>
 <a id="related"></a>

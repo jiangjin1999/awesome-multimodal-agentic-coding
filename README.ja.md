@@ -356,6 +356,8 @@
 - <a id="paper-demo-wild-atlas"></a>**[Wild Atlas](https://x.com/_IamAlam/status/2107480596926939638)**
   > 百科アプリを、画面、統一した様式の動物アセット、カード・回転・情報パネルの操作という三段階に分ける。回転表示があることは、完全な 3D シーンの公開を意味しない。
 
+[↑ 目次に戻る](#contents)
+
 <a id="methods-gui-environments"></a>
 <a id="evaluation-gui-environments"></a>
 <a id="data-gui-environments"></a>
@@ -416,6 +418,8 @@
 
 - <a id="paper-2610-41432"></a>`2026.10` **[Hybrid Computer Use: A Unified Programmatic, Semantic, and Visual Interface for General Agents](https://arxiv.org/abs/2610.41432)**
   > Agent がプログラムによるツール、アクセシビリティ操作、視覚的な操作を組み合わせ、実時間の状態確認、バッチ内の検証、返された AX の変化によって後続の操作を導く。
+
+[↑ 目次に戻る](#contents)
 
 <a id="visualization"></a>
 <a id="svg-diagrams"></a>
@@ -660,6 +664,8 @@
 - <a id="paper-res-mermaid-mcp-server"></a>**[Mermaid MCP server](https://mermaid.ai/docs/ai/mcp-server)**
   > 図の構文を検証し、検査と修復に利用できる SVG/PNG の描画結果を返す。
 
+[↑ 目次に戻る](#contents)
+
 <a id="documents-video"></a>
 <a id="methods-media"></a>
 <a id="evaluation-media"></a>
@@ -846,6 +852,8 @@
 
 - <a id="paper-res-rendley-video-editing-skill"></a>**[Rendley video-editing-skill](https://github.com/rendleyhq/video-editing-skill)** [[ドキュメント]](https://github.com/rendleyhq/video-editing-skill/blob/main/SKILL.md)
   > MCP／REST を介して編集要求とメディアを Rendley のホスト型 Agent に渡し、編集可能なプロジェクトを受け取る。MIT ライセンスの Skill はサービス接続が必要な統合層で、ローカルの編集エンジンではない。
+
+[↑ 目次に戻る](#contents)
 
 <a id="3d-cad"></a>
 <a id="methods-cad-3d"></a>
@@ -1320,6 +1328,8 @@
 - <a id="paper-res-zoo-developer-tools"></a>**[Zoo developer tools](https://docs.zoo.dev/docs)**
   > 言語で指示する KCL ワークフローを、幾何実行、スナップショット、検査、デバッグにつなぐ。
 
+[↑ 目次に戻る](#contents)
+
 <a id="games"></a>
 <a id="methods-games"></a>
 <a id="evaluation-games"></a>
@@ -1553,6 +1563,8 @@
 - <a id="paper-res-ziva-playtesting-workflow"></a>**[Ziva playtesting workflow](https://ziva.sh/blogs/ai-agent-playtest-godot-game)** [[ドキュメント]](https://ziva.sh/docs/playtest)
   > 試遊エージェントが現場の状態と画像を検査し、判定、再現手順、再生証拠を返す。プロジェクト自体は編集せず、開発エージェントへ修復を渡す。ベンダーのデモは独立評価とは区別する。
 
+[↑ 目次に戻る](#contents)
+
 <a id="section-1-3"></a>
 <a id="visual-diff"></a>
 <a id="benchmarks-and-evaluation"></a>
@@ -1633,6 +1645,8 @@
 - <a id="paper-reading-z-ai-autoclaw-team-glm-5-3-flash-more-intelligence-with-less-compute"></a>`2026.08` **[Z.ai / AutoClaw Team — GLM-5.3-Flash: More Intelligence with Less Compute](https://autoclaw.z.ai/blog/model/glm-5.3-flash/)** [[モデル]](https://huggingface.co/zai-org/GLM-5.3-Flash)
   > 視覚を独立した入力能力にとどめず、実行と検証の一部として位置付ける。モデルは描画結果を確認して次の行動を判断し、文書や UI などの視覚的な成果物を継続的に改善できると説明されている。
 
+[↑ 目次に戻る](#contents)
+
 <a id="trilogy-models-as-tools"></a>
 <a id="section-1-4"></a>
 <a id="methods-and-systems"></a>
@@ -1670,6 +1684,8 @@
   > テキストから自己回帰的な意味トークンを生成し、拡散モデルで画像を描画する。意味学習とピクセル描画を分離し、言語で教師付けした視覚トークンを条件として使う、テキストからの画像生成に向けたモデル部品。
 
 *関連:* [Stride](#paper-2610-13502) · [Editable Visual Design](#paper-2609-04034)
+
+[↑ 目次に戻る](#contents)
 
 <a id="s2-2"></a>
 
@@ -1737,6 +1753,8 @@
 - <a id="paper-res-omnishowcase-omnidirectional-subject-consistent-video-generation-from-multi-view-images"></a>**[OmniShowcase: Omnidirectional Subject-Consistent Video Generation from Multi-View Images](https://arxiv.org/abs/2610.35684)** [[コード]](https://github.com/justin4ai/OmniShowcase) [[プロジェクトページ]](https://justin4ai.github.io/OmniShowcase/)
   > 複数の参照画像とカメラ移動の指示から、再構成した法線のターンテーブルを条件に、被写体が一貫した動画を生成する。多視点再構成と LoRA 動画生成器を組み合わせて静的な被写体の周囲の視点変化に対応するが、非剛体の運動には制限があり、コードとデータは公開予定。
 
+[↑ 目次に戻る](#contents)
+
 <a id="s2-3"></a>
 
 ### 2.3 3D 生成モデル × 3D アセット・シーン
@@ -1799,6 +1817,8 @@
   > UV 付きメッシュ、テキスト、任意の参照画像から、ベースカラー、粗さ、金属度、高さのマップを生成する。動画拡散モデルで材質の固有属性を多視点で共同生成し、描画可能なテクスチャへベイクする。文書化されたアセット生成機能であり、Agent の自律修正や実世界への物理転移を意味しない。
 
 *関連:* [SceneBloom](#paper-2610-32978) · [SAGE](#paper-2602-10116) · [Gen2Sim](#paper-2310-18308) · [PhysX-Omni](#paper-2605-21572) · [HARMONY](#paper-2609-26793) · [GATOR](#paper-2610-11215) · [3AGameFactory](#paper-system-3agamefactory) · [Lucida](#paper-2608-30821)
+
+[↑ 目次に戻る](#contents)
 
 <a id="s2-4"></a>
 
@@ -1871,6 +1891,8 @@
 - <a id="paper-res-worldfoundry"></a>**[WorldFoundry](https://arxiv.org/abs/2611.10771)** [[コード]](https://github.com/OpenEnvision/WorldFoundry)
   > 各モデルの入力、実行条件、出力を統一した推論・評価手順へ接続し、準備が整った状態と評価対象としての適格性を明確に分ける。
 
+[↑ 目次に戻る](#contents)
+
 <a id="section-5-1"></a>
 <a id="s2-5"></a>
 
@@ -1909,6 +1931,8 @@
   > 共有エンコーダと OmniSchema で十種類の解析タスクに出典へ遡れる内容を提供し、エージェントの知覚・検査を支援する。密な内容の自己回帰復号には処理速度の制約が残る。
 
 *関連:* [GRASE](#paper-2610-21498) · [SceneAgent](#paper-2610-34745) · [Real2Gym](#paper-2609-37089) · [LiteReality-Agent](#paper-2610-01863) · [Instruct2Act](#paper-2305-11176) · [Plumb](#paper-system-plumb)
+
+[↑ 目次に戻る](#contents)
 
 <a id="section-5-4"></a>
 <a id="s2-6"></a>
@@ -1978,6 +2002,8 @@
   > センサーストリーム、固定した方策の動作、正常歩行の参照から、故障診断と修復済みの方策入力を得る。MBD／PRR は加法的な代理モデルでセンサーを診断・補正し、方策の勾配を必要としない。検証は模擬四足ロボットに限られ、LLM による編成や実機配備は示していない。
 
 *関連:* [REA](#paper-2610-42053) · [Harness VLA](#paper-2607-08448) · [The Harness](#paper-system-the-harness-corl2026) · [CarryOn](#paper-2610-21453) · [Seeing Through the Illusion](#paper-2611-03585)
+
+[↑ 目次に戻る](#contents)
 
 <a id="trilogy-digital-physical"></a>
 <a id="stage-3"></a>
@@ -2424,6 +2450,8 @@
 - <a id="paper-res-webots-mcp"></a>**[Webots MCP](https://github.com/MHasaan/webotMCP)**
   > 場面編集、制御コード、ロボット動作、多視点画像、運動軌跡、接触イベントを公開する。シミュレータの真値と反応制御は、学習型の知覚・計画と区別する。
 
+[↑ 目次に戻る](#contents)
+
 <a id="methods-physical-assets"></a>
 <a id="world-models"></a>
 <a id="methods-world-models"></a>
@@ -2775,6 +2803,8 @@
 - <a id="paper-mujoco-workbench"></a>**[mujoco-workbench](https://github.com/Hebbian-Robotics/mujoco-workbench)**
   > CLI と Agent Skills により、MuJoCo シーンの迅速な構築と確認を支援する。
 
+[↑ 目次に戻る](#contents)
+
 <a id="evaluation-physical-assets"></a>
 <a id="evaluation-world-models"></a>
 <a id="evaluation-real-to-sim"></a>
@@ -2940,6 +2970,8 @@
 
 *関連:* [Frontier3DBench](#paper-2611-09017) · [4DCodeBench](#paper-2610-03715) · [BlenderWorld](#paper-system-blenderworld) · [BVB](#paper-2609-15478) · [Code4Scene](#paper-2609-36777) · [Parametric CAD Bench v3](#paper-2611-02659) · [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786)
 
+[↑ 目次に戻る](#contents)
+
 <a id="data-physical-assets"></a>
 <a id="data-real-to-sim"></a>
 <a id="data-robot-programs"></a>
@@ -3023,6 +3055,8 @@
 
 - <a id="paper-2307-14535"></a>`2023.07` **[Scaling Up and Distilling Down: Language-Guided Robot Skill Acquisition](https://arxiv.org/abs/2307.14535)** [[プロジェクトページ]](https://www.cs.columbia.edu/~huy/scalingup/)
   > 言語によって整理したロボットの経験を動作方策へ蒸留する。
+
+[↑ 目次に戻る](#contents)
 
 <a id="robotics"></a>
 <a id="methods-robot-programs"></a>
@@ -3407,6 +3441,8 @@
 
 *関連:* [BlenderFORGE](#paper-2611-10768)
 
+[↑ 目次に戻る](#contents)
+
 <a id="methods-real2sim2real"></a>
 <a id="section-6-4"></a>
 <a id="s3-6"></a>
@@ -3603,6 +3639,8 @@
 
 - <a id="paper-ai-cad"></a>**[ai-cad](https://github.com/BorjaLL/ai-cad)** [[結果]](https://github.com/BorjaLL/ai-cad/blob/1ef2bf72de799006d069498d3ee146dae2e4f075/data/fits-measured.json)
   > パラメトリック CAD と、人による印刷物の試し合わせをつなぐ。
+
+[↑ 目次に戻る](#contents)
 
 <a id="surveys-and-related-collections"></a>
 <a id="related"></a>

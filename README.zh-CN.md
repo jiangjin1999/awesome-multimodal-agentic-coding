@@ -3650,7 +3650,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/engine-map/engine-strengths-zh-dark.svg">
-  <img src="assets/engine-map/engine-strengths-zh-light.svg" alt="仿真工具强项对比热力表：8 个工具在 8 个维度上各评 1 到 3 档。各维度首推：接触精度 Drake（MuJoCo、Newton 也强）；画面逼真 Isaac Sim/Lab；GPU 并行 Isaac Sim/Lab（SAPIEN/ManiSkill、Genesis、Newton 也强）；软体布料 Genesis（Newton 也强）；关节物体 SAPIEN/ManiSkill；规划优化 Drake；ROS 与真机 Gazebo/Webots；对 Coding Agent 友好 MuJoCo（PyBullet 也强）。" width="100%">
+  <img src="assets/engine-map/engine-strengths-zh-light.svg" alt="仿真工具强项对比热力表：8 个工具在 8 个维度上各评 1 到 3 档，维度按覆盖图的四块分组。各维度首推：A 造世界——关节物体 SAPIEN/ManiSkill，Agent 友好 MuJoCo（PyBullet 也强）；B 算物理——接触精度 Drake（MuJoCo、Newton 也强），软体布料 Genesis（Newton 也强）；C 给观察——画面逼真 Isaac Sim/Lab；D 练技能——GPU 并行 Isaac Sim/Lab（SAPIEN/ManiSkill、Genesis、Newton 也强），规划优化 Drake，ROS 与真机 Gazebo/Webots。" width="100%">
 </picture>
 
 <details>

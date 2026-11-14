@@ -3653,7 +3653,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/engine-map/engine-strengths-ja-dark.svg">
-  <img src="assets/engine-map/engine-strengths-ja-light.svg" alt="シミュレーションツールの強みのヒートマップ。8 つのツールを 8 つの観点で 1〜3 段階に評価している。各観点の第一候補：接触精度は Drake（MuJoCo と Newton も強い）、写実的な描画は Isaac Sim/Lab、GPU 並列は Isaac Sim/Lab（SAPIEN/ManiSkill、Genesis、Newton も強い）、柔軟物は Genesis（Newton も強い）、関節物体は SAPIEN/ManiSkill、計画・最適化は Drake、ROS・実機は Gazebo/Webots、コーディングエージェントへの向きやすさは MuJoCo（PyBullet も強い）。" width="100%">
+  <img src="assets/engine-map/engine-strengths-ja-light.svg" alt="シミュレーションツールの強みのヒートマップ。8 つのツールを 8 つの観点で 1〜3 段階に評価し、観点は対応範囲の図と同じ四つに分けている。各観点の第一候補：A 世界をつくる——関節物体は SAPIEN/ManiSkill、エージェント向きは MuJoCo（PyBullet も強い）。B 物理計算——接触精度は Drake（MuJoCo と Newton も強い）、柔軟物は Genesis（Newton も強い）。C 観測——写実的な描画は Isaac Sim/Lab。D 技能の練習——GPU 並列は Isaac Sim/Lab（SAPIEN/ManiSkill、Genesis、Newton も強い）、計画・最適化は Drake、ROS・実機は Gazebo/Webots。" width="100%">
 </picture>
 
 <details>

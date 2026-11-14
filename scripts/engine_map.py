@@ -252,7 +252,7 @@ HEAT = {
     'light': {3: ('#0B7266', '#FFFFFF'), 2: ('#8FCFC6', '#10302B'), 1: ('#E6F3F1', '#59636E'), 'star': '#A35C0A'},
     'dark': {3: ('#45C3B3', '#0D1117'), 2: ('#22645C', '#E6EDF3'), 1: ('#14262A', '#9198A1'), 'star': '#E3A251'},
 }
-S_ROW_H, S_HEAD_H = 46, 50
+S_ROW_H, S_HEAD_H, GROUP_GAP = 46, 50, 16
 
 
 def parse_scores(text):
@@ -280,6 +280,13 @@ def validate_strengths(site):
                 errors.append(f'engine_strengths: {where} missing {lang}')
     if len(es.get('columns') or []) != 8:
         errors.append('engine_strengths: expected 8 columns')
+    groups = es.get('groups') or []
+    if groups and sum(g.get('span', 1) for g in groups) != 8:
+        errors.append('engine_strengths: groups must span 8 columns')
+    for i, g in enumerate(groups):
+        for lang in LANGS:
+            if not g.get(lang):
+                errors.append(f'engine_strengths: groups[{i}] missing {lang}')
     stars = [0] * 8
     for row in es.get('rows') or []:
         try:
@@ -322,11 +329,19 @@ def dots(o, cx, cy, value, color, r=4.6, step=14):
 def render_strengths(site, lang, theme):
     es = site['engine_strengths']
     pal, heat = PALETTE[theme], HEAT[theme]
-    columns, rows = es['columns'], es['rows']
+    columns, rows, groups = es['columns'], es['rows'], es.get('groups') or []
     grid_x = PAD + NAME_W
-    width = grid_x + 8 * CELL_W + 7 * GAP + PAD
-    col_x = [grid_x + i * (CELL_W + GAP) for i in range(8)]
-    y_head = PAD + LEGEND_H
+    # Columns follow the coverage map's blocks; a wider gap separates one block from the next.
+    starts = {sum(g.get('span', 1) for g in groups[:k]) for k in range(1, len(groups))}
+    col_x, x = [], grid_x
+    for i in range(8):
+        if i in starts:
+            x += GROUP_GAP - GAP
+        col_x.append(x)
+        x += CELL_W + GAP
+    width = col_x[-1] + CELL_W + PAD
+    y_group = PAD + LEGEND_H
+    y_head = y_group + (GROUP_H + 8 if groups else 0)
     y_rows = y_head + S_HEAD_H + 8
     height = y_rows + len(rows) * (S_ROW_H + ROW_GAP) - ROW_GAP + PAD
     title = localize(es['text']['title'], lang)
@@ -349,6 +364,16 @@ def render_strengths(site, lang, theme):
         x += 60 + text_width(text, FS_CELL) + 22
     o(f'<polygon points="{star_points(x + 9, ly, 8)}" fill="{heat["star"]}"/>')
     o(f'<text x="{x + 24}" y="{ly + 4.5}" font-size="{FS_CELL}" fill="{pal["sub"]}">{escape(localize(legend["star"], lang))}</text>')
+
+    # Group bands, coloured like the coverage map's blocks.
+    col = 0
+    for g in groups:
+        span = g.get('span', 1)
+        k, soft = pal[g['block']]
+        gx, gw = col_x[col], col_x[col + span - 1] + CELL_W - col_x[col]
+        o(f'<rect x="{gx}" y="{y_group}" width="{gw}" height="{GROUP_H}" rx="4" fill="{soft}"/>')
+        o(f'<text x="{gx + gw / 2:g}" y="{y_group + 19}" text-anchor="middle" font-size="{FS_HEAD}" font-weight="700" fill="{k}">{escape(localize(g, lang))}</text>')
+        col += span
 
     # Column heads: dimension, then a short hint.
     for i, c in enumerate(columns):

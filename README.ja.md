@@ -3649,6 +3649,13 @@
   <img src="assets/engine-map/engine-map-ja-light.svg" alt="シミュレーションツールの対応範囲。横軸は素材、シーン記述、物理パラメータ、物理ソルバ、レンダリング、センサー、ロボット制御、タスクと学習の八工程。MuJoCo は物理計算が中心で、robosuite と RoboCasa がその上に制御、タスク、学習を加える。Isaac Sim は素材から制御までを担い、物理には PhysX を使う。Isaac Lab はその上で並列学習を担う。SAPIEN/ManiSkill は操作タスクの全工程を扱う。Genesis は物理計算に加えてセンサー、逆運動学、動作計画を備える。Newton/Warp、Drake、PyBullet は物理計算が中心で、Drake は計画と最適化にも強い。Gazebo/Webots はセンサーと ROS に強い。Blender は比較用で、モデリングと描画に強いが、物理は見た目重視にとどまる。" width="100%">
 </picture>
 
+次の図は、各ツールがどの点で特に強いかを比べたものです。評価はおおまかな判断で、★ は各項目の第一候補です。
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/engine-map/engine-strengths-ja-dark.svg">
+  <img src="assets/engine-map/engine-strengths-ja-light.svg" alt="シミュレーションツールの強みのヒートマップ。8 つのツールを 8 つの観点で 1〜3 段階に評価している。各観点の第一候補：接触精度は Drake（MuJoCo と Newton も強い）、写実的な描画は Isaac Sim/Lab、GPU 並列は Isaac Sim/Lab（SAPIEN/ManiSkill、Genesis、Newton も強い）、柔軟物は Genesis（Newton も強い）、関節物体は SAPIEN/ManiSkill、計画・最適化は Drake、ROS・実機は Gazebo/Webots、コーディングエージェントへの向きやすさは MuJoCo（PyBullet も強い）。" width="100%">
+</picture>
+
 <details>
 <summary>ツールのドキュメントとサンプル</summary>
 

@@ -3646,6 +3646,13 @@ Read across a row to see which steps of a simulator each tool handles. Coverage 
   <img src="assets/engine-map/engine-map-en-light.svg" alt="Coverage map of simulation tools across eight steps: assets, scene file, physical parameters, physics solver, rendering, sensors, control, and tasks and training. MuJoCo centres on physics solving; robosuite and RoboCasa are built on it and add control, tasks and training. Isaac Sim covers assets through control and uses PhysX for physics; Isaac Lab is built on it and adds parallel training. SAPIEN/ManiSkill covers the whole manipulation pipeline. Genesis adds sensors, inverse kinematics and motion planning to its physics. Newton/Warp, Drake and PyBullet centre on physics solving, and Drake is also strong in planning and optimization. Gazebo/Webots are strong in sensors and ROS. Blender is shown for contrast: it models and renders well, but its physics only aims to look right." width="100%">
 </picture>
 
+The next figure compares where each tool is especially strong. Ratings are broad judgments; ★ marks the top pick for each column.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/engine-map/engine-strengths-en-dark.svg">
+  <img src="assets/engine-map/engine-strengths-en-light.svg" alt="Heatmap of simulation tool strengths: eight tools rated from 1 to 3 on eight dimensions. Top picks: contact accuracy, Drake (MuJoCo and Newton are also strong); visual realism, Isaac Sim/Lab; GPU scale, Isaac Sim/Lab (SAPIEN/ManiSkill, Genesis and Newton are also strong); deformables, Genesis (Newton is also strong); articulated objects, SAPIEN/ManiSkill; planning and optimization, Drake; ROS and real robots, Gazebo/Webots; friendliness to coding agents, MuJoCo (PyBullet is also strong)." width="100%">
+</picture>
+
 <details>
 <summary>Tool documentation and examples</summary>
 

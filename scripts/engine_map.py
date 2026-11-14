@@ -1,4 +1,5 @@
-"""Render the Stage 3 simulation-tool coverage map from `engine_map` in data/site.yaml.
+"""Render the Stage 3 simulation-tool figures from data/site.yaml: the coverage map
+(`engine_map`) and the strengths heatmap (`engine_strengths`).
 
 Each language gets a light and a dark SVG under assets/engine-map/. build_readme.py writes
 them and `--check` fails when one is out of date, exactly like the READMEs.
@@ -243,18 +244,167 @@ def render(site, lang, theme):
     return '\n'.join(out) + '\n'
 
 
-def picture(site, lang):
-    """README markup: the light map, swapped for the dark one under a dark theme."""
-    alt = escape(localize(site['engine_map']['text']['alt'], lang), quote=True)
-    base = f'{OUT_DIR}/engine-map-{lang}'
+# ------------------------------------------------------------------ strengths heatmap
+# `engine_strengths`: one row per tool with eight scores (1–3) written as a string such as
+# "3 1 2 1 2 1 1 3*"; a trailing * marks the column's top pick (exactly one per column).
+
+HEAT = {
+    'light': {3: ('#0B7266', '#FFFFFF'), 2: ('#8FCFC6', '#10302B'), 1: ('#E6F3F1', '#59636E'), 'star': '#A35C0A'},
+    'dark': {3: ('#45C3B3', '#0D1117'), 2: ('#22645C', '#E6EDF3'), 1: ('#14262A', '#9198A1'), 'star': '#E3A251'},
+}
+S_ROW_H, S_HEAD_H = 46, 50
+
+
+def parse_scores(text):
+    out = []
+    for token in str(text).split():
+        star = token.endswith('*')
+        out.append((int(token.rstrip('*')), star))
+    return out
+
+
+def validate_strengths(site):
+    es = site.get('engine_strengths')
+    if not es:
+        return []
+    errors = []
+    text = es.get('text') or {}
+    localized = [('text.title', text.get('title')), ('text.alt', text.get('alt'))]
+    localized += [(f'text.legend.{k}', (text.get('legend') or {}).get(k)) for k in ('3', '2', '1', 'star')]
+    localized += [(f'columns[{i}].name', c.get('name')) for i, c in enumerate(es.get('columns') or [])]
+    localized += [(f'columns[{i}].hint', c.get('hint')) for i, c in enumerate(es.get('columns') or [])]
+    localized += [(f"rows.{r.get('name')}.note", r.get('note')) for r in es.get('rows') or []]
+    for where, value in localized:
+        for lang in LANGS:
+            if not (value or {}).get(lang):
+                errors.append(f'engine_strengths: {where} missing {lang}')
+    if len(es.get('columns') or []) != 8:
+        errors.append('engine_strengths: expected 8 columns')
+    stars = [0] * 8
+    for row in es.get('rows') or []:
+        try:
+            scores = parse_scores(row.get('scores', ''))
+        except ValueError:
+            errors.append(f"engine_strengths: row {row.get('name')} has a non-numeric score")
+            continue
+        if len(scores) != 8 or any(v not in (1, 2, 3) for v, _ in scores):
+            errors.append(f"engine_strengths: row {row.get('name')} needs eight scores from 1 to 3")
+            continue
+        for i, (v, star) in enumerate(scores):
+            if star:
+                stars[i] += 1
+                if v != 3:
+                    errors.append(f"engine_strengths: row {row.get('name')} stars a score below 3")
+    if any(n != 1 for n in stars):
+        errors.append('engine_strengths: each column needs exactly one top pick (*)')
+    return errors
+
+
+def star_points(cx, cy, r):
+    import math
+    pts = []
+    for k in range(10):
+        rad = r if k % 2 == 0 else r * 0.45
+        a = -math.pi / 2 + k * math.pi / 5
+        pts.append(f'{cx + rad * math.cos(a):.1f},{cy + rad * math.sin(a):.1f}')
+    return ' '.join(pts)
+
+
+def dots(o, cx, cy, value, color, r=4.6, step=14):
+    for k in range(3):
+        x = cx + (k - 1) * step
+        if k < value:
+            o(f'<circle cx="{x:g}" cy="{cy:g}" r="{r}" fill="{color}"/>')
+        else:
+            o(f'<circle cx="{x:g}" cy="{cy:g}" r="{r - .7:g}" fill="none" stroke="{color}" stroke-width="1.4"/>')
+
+
+def render_strengths(site, lang, theme):
+    es = site['engine_strengths']
+    pal, heat = PALETTE[theme], HEAT[theme]
+    columns, rows = es['columns'], es['rows']
+    grid_x = PAD + NAME_W
+    width = grid_x + 8 * CELL_W + 7 * GAP + PAD
+    col_x = [grid_x + i * (CELL_W + GAP) for i in range(8)]
+    y_head = PAD + LEGEND_H
+    y_rows = y_head + S_HEAD_H + 8
+    height = y_rows + len(rows) * (S_ROW_H + ROW_GAP) - ROW_GAP + PAD
+    title = localize(es['text']['title'], lang)
+    out = []
+    o = out.append
+    o(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="{width}" height="{height}" '
+      f'role="img" aria-label="{escape(title)}" font-family="{escape(FONTS[lang])}">')
+    o(f'<title>{escape(title)}</title>')
+    o(f'<rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="10" fill="{pal["bg"]}" stroke="{pal["frame"]}"/>')
+
+    # Legend: three score samples, then the top-pick star.
+    legend = es['text']['legend']
+    x, ly = PAD, PAD + 12
+    for v in (3, 2, 1):
+        fill, ink = heat[v]
+        o(f'<rect x="{x}" y="{ly - 11}" width="52" height="22" rx="4" fill="{fill}"/>')
+        dots(o, x + 26, ly, v, ink, r=3.6, step=11)
+        text = localize(legend[str(v)], lang)
+        o(f'<text x="{x + 60}" y="{ly + 4.5}" font-size="{FS_CELL}" fill="{pal["sub"]}">{escape(text)}</text>')
+        x += 60 + text_width(text, FS_CELL) + 22
+    o(f'<polygon points="{star_points(x + 9, ly, 8)}" fill="{heat["star"]}"/>')
+    o(f'<text x="{x + 24}" y="{ly + 4.5}" font-size="{FS_CELL}" fill="{pal["sub"]}">{escape(localize(legend["star"], lang))}</text>')
+
+    # Column heads: dimension, then a short hint.
+    for i, c in enumerate(columns):
+        cx = col_x[i] + CELL_W / 2
+        o(f'<text x="{cx:g}" y="{y_head + 18}" text-anchor="middle" font-size="{FS_HEAD}" font-weight="700" fill="{pal["ink"]}">{escape(localize(c["name"], lang))}</text>')
+        o(f'<text x="{cx:g}" y="{y_head + 37}" text-anchor="middle" font-size="{FS_KIND}" fill="{pal["sub"]}">{escape(localize(c["hint"], lang))}</text>')
+
+    for r, row in enumerate(rows):
+        ry = y_rows + r * (S_ROW_H + ROW_GAP)
+        o(f'<text x="{PAD}" y="{ry + 19}" font-size="{FS_NAME}" font-weight="700" fill="{pal["ink"]}">{escape(row["name"])}</text>')
+        o(f'<text x="{PAD}" y="{ry + 37}" font-size="{FS_KIND}" fill="{pal["sub"]}">{escape(localize(row["note"], lang))}</text>')
+        for i, (v, star) in enumerate(parse_scores(row['scores'])):
+            x = col_x[i]
+            fill, ink = heat[v]
+            o(f'<rect x="{x}" y="{ry}" width="{CELL_W}" height="{S_ROW_H}" rx="4" fill="{fill}"/>')
+            dots(o, x + CELL_W / 2, ry + S_ROW_H / 2, v, ink)
+            if star:
+                sc = heat['star']
+                o(f'<rect x="{x + 1.25}" y="{ry + 1.25}" width="{CELL_W - 2.5}" height="{S_ROW_H - 2.5}" rx="3.5" fill="none" stroke="{sc}" stroke-width="2.5"/>')
+                o(f'<circle cx="{x + CELL_W - 12}" cy="{ry + 12}" r="9" fill="{pal["bg"]}"/>')
+                o(f'<polygon points="{star_points(x + CELL_W - 12, ry + 12.5, 7.5)}" fill="{sc}"/>')
+    o('</svg>')
+    return '\n'.join(out) + '\n'
+
+
+# ------------------------------------------------------------------ README hooks
+FIGURES = (('engine_map', 'engine-map', render), ('engine_strengths', 'engine-strengths', render_strengths))
+
+
+def picture(site, lang, key='engine_map'):
+    """README markup: the light figure, swapped for the dark one under a dark system theme."""
+    name = dict((k, n) for k, n, _ in FIGURES)[key]
+    alt = escape(localize(site[key]['text']['alt'], lang), quote=True)
+    base = f'{OUT_DIR}/{name}-{lang}'
     return (f'<picture>\n  <source media="(prefers-color-scheme: dark)" srcset="{base}-dark.svg">\n'
             f'  <img src="{base}-light.svg" alt="{alt}" width="100%">\n</picture>')
 
 
+def fill_placeholders(site, lang, body):
+    """Replace {engine_map} and {engine_strengths} in an extras body with their figures."""
+    for key, _, _ in FIGURES:
+        token = '{' + key + '}'
+        if token in body and site.get(key):
+            body = body.replace(token, picture(site, lang, key))
+    return body
+
+
+def validate_all(site):
+    return validate(site) + validate_strengths(site)
+
+
 def outputs(site):
-    """Yield (relative path, SVG text) for every language and theme."""
-    if not site.get('engine_map'):
-        return
-    for lang in LANGS:
-        for theme in THEMES:
-            yield f'{OUT_DIR}/engine-map-{lang}-{theme}.svg', render(site, lang, theme)
+    """Yield (relative path, SVG text) for every figure, language and theme."""
+    for key, name, fn in FIGURES:
+        if not site.get(key):
+            continue
+        for lang in LANGS:
+            for theme in THEMES:
+                yield f'{OUT_DIR}/{name}-{lang}-{theme}.svg', fn(site, lang, theme)

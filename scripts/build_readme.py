@@ -69,7 +69,7 @@ def validate(site, works, strict_ja):
         for k in ks:
             if k not in byid:
                 errors.append(f'see_also {sec}: id {k} not found')
-    errors += engine_map.validate(site)
+    errors += engine_map.validate_all(site)
     return errors, warnings
 
 
@@ -281,10 +281,7 @@ def render(site, works, lang):
         for extra in st.get('extras') or []:
             named_anchor(extra['anchor'])
             o(f"### {extra['title'][lang]}\n")
-            body = extra['body'][lang].strip()
-            if '{engine_map}' in body:
-                body = body.replace('{engine_map}', engine_map.picture(site, lang))
-            o(body + '\n')
+            o(engine_map.fill_placeholders(site, lang, extra['body'][lang].strip()) + '\n')
             o(f"[↑ {t(site, 'back_to_contents', lang)}](#contents)\n")
 
     # surveys & related

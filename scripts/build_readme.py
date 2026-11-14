@@ -11,6 +11,7 @@ import re
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
+from urllib.parse import urlsplit
 
 import yaml
 
@@ -90,18 +91,60 @@ def sort_key(w):
     return (-int(d.replace('.', '')), w['title'].lower())
 
 
+def source_kind(url, site, demo_url=None):
+    override = site.get('source_kind_overrides', {}).get(url)
+    if override:
+        return override
+    parsed = urlsplit(url)
+    host = parsed.hostname
+    path = parsed.path.lower().rstrip('/')
+    if host == 'arxiv.org' or path.endswith('.pdf') or host in {
+        'aclanthology.org', 'doi.org', 'journals.aps.org', 'openaccess.thecvf.com',
+        'openreview.net', 'pmc.ncbi.nlm.nih.gov', 'proceedings.neurips.cc',
+        'www.cambridge.org', 'www.mdpi.com', 'www.nature.com', 'www.repository.cam.ac.uk',
+    }:
+        return 'paper'
+    if host == 'huggingface.co':
+        if path.startswith('/datasets/'):
+            return 'dataset'
+        if path.startswith('/collections/'):
+            return 'collection'
+        if path.startswith('/papers/'):
+            return 'paper'
+        if path.startswith('/spaces/'):
+            return 'demo'
+        return 'model'
+    if '/docs/' in path or path.endswith('/skill.md'):
+        return 'docs'
+    if '/blog/' in path or '/news/' in path or path.startswith('/index/'):
+        return 'article'
+    if path.endswith('/leaderboard'):
+        return 'leaderboard'
+    if host == 'github.com':
+        if '/awesome-' in path:
+            return 'collection'
+        return 'code' if path.count('/') >= 2 else 'repository'
+    if url == demo_url or host in {'youtube.com', 'www.youtube.com', 'youtu.be'}:
+        return 'demo'
+    return 'project'
+
+
 def entry(w, lang, site):
     date = f"`{w['date']}` " if w.get('date') else ''
-    demo = f" [[demo]]({w['demo']})" if w.get('demo') else ''
     tl = (w['tldr'].get(lang) or w['tldr']['en']).strip()
     target = anchor(w['id'])
     aliases = ''.join(f'<a id="{a}"></a>\n' for a, dest in site.get('anchor_aliases', {}).items() if dest == target)
     metadata = {'id': w['id'], 'scope': w['scope'].title(), 'primary': w['section'],
                 'stage': int(w['section'][0]) if w['section'] != 'SV' else None, 'type': w['type']}
-    sources = [u for u in w.get('sources', []) if u not in (w['url'], w.get('demo'))]
-    extra = ''.join(f' [[{t(site, "source", lang)} {i}]]({url})' for i, url in enumerate(sources, 2))
+    urls = [w.get('demo'), *w.get('sources', [])]
+    sources = [url for url in dict.fromkeys(urls) if url and url != w['url']]
+    labels = site['source_labels']
+    extra = ''.join(
+        f' [[{labels[source_kind(url, site, w.get("demo"))][lang]}]]({url})'
+        for url in sources
+    )
     return (f'{aliases}<!-- mmac-record: {json.dumps(metadata, ensure_ascii=False)} -->\n\n'
-            f'- <a id="{target}"></a>{date}**[{w["title"]}]({w["url"]})**{demo}{extra}\n'
+            f'- <a id="{target}"></a>{date}**[{w["title"]}]({w["url"]})**{extra}\n'
             f'  > {tl}\n')
 
 

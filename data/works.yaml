@@ -11445,7 +11445,6 @@
     ja: プログラミング Agent が利用できる実験室ロボットのキットを提供する。
   sources:
   - https://arxiv.org/abs/2609.18435
-  - http://AGENTS.md
   - https://github.com/tsudalab/WetRobo
   verification:
     en: Human calibration, device preparation and skill teaching remain part of the setup.
@@ -11978,7 +11977,6 @@
     ja: 複数ロボットのプログラム形式の方策を生成・修正し、配備する。
   sources:
   - https://arxiv.org/abs/2503.23875
-  - http://alike.The
   - https://github.com/WindyLab/GenSwarm
   - https://www.nature.com/articles/s44182-025-00065-w
   verification:

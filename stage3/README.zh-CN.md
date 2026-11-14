@@ -58,7 +58,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-11-01` · Tsinghua University; University of California, Berkeley
 
-[完整书目](../README.zh-CN.md#paper-2611-01560) · [证据 1](https://arxiv.org/abs/2611.01560) · [证据 2](https://github.com/Open-RUA/uni-robot-agent) · [证据 3](https://openrua.ai/uni-robot-agent)
+[完整书目](../README.zh-CN.md#paper-2611-01560) · [论文](https://arxiv.org/abs/2611.01560) · [代码](https://github.com/Open-RUA/uni-robot-agent) · [项目页](https://openrua.ai/uni-robot-agent)
 
 让 Qwen3.8-Flash-Next 和 GPT-6 Astra 通过统一接口调用感知与运动工具，运行几何检查，观察动作结果并调整下一步操作。
 
@@ -73,7 +73,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-10-31` · StellarEdge AI Technical Team
 
-[完整书目](../README.zh-CN.md#paper-2611-01112) · [证据 1](https://arxiv.org/abs/2611.01112) · [证据 2](https://auriga.stelledge.com/) · [证据 3](https://github.com/lose4578/Auriga)
+[完整书目](../README.zh-CN.md#paper-2611-01112) · [论文](https://arxiv.org/abs/2611.01112) · [项目页](https://auriga.stelledge.com/) · [代码](https://github.com/lose4578/Auriga)
 
 让模型在任务信念、三维测量、轨迹预览与统一执行入口之上选择工具或编写多步 Python 程序。
 
@@ -86,7 +86,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-10-21` · Zhejiang University; Fudan University
 
-[一手来源 1](https://arxiv.org/abs/2610.30043) · [一手来源 2](https://xuyicheng-zju.github.io/TARSphere/) · [一手来源 3](https://github.com/xuyicheng-zju/TARSphere)
+[论文](https://arxiv.org/abs/2610.30043) · [项目页](https://xuyicheng-zju.github.io/TARSphere/) · [代码](https://github.com/xuyicheng-zju/TARSphere)
 
 为冻结多模态模型提供分层可执行技能、任务记忆和执行反馈，组织长时序机器人行动及环境变化处理。
 
@@ -99,7 +99,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-10-16` · HexaFuture
 
-[完整书目](../README.zh-CN.md#paper-2610-23479) · [证据 1](https://arxiv.org/abs/2610.23479) · [证据 2](https://github.com/HexaFuture/HexaShell)
+[完整书目](../README.zh-CN.md#paper-2610-23479) · [论文](https://arxiv.org/abs/2610.23479) · [代码](https://github.com/HexaFuture/HexaShell)
 
 让机器人编程 Agent 在每轮编写一段 Python，调用共享的运动、感知与状态工具，也可复用从历史执行记录提炼的任务 Skills。
 
@@ -116,7 +116,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-10-09` · Stanford University; University of California, Berkeley; NVIDIA
 
-[完整书目](../README.zh-CN.md#paper-2610-13862) · [证据 1](https://arxiv.org/abs/2610.13862)
+[完整书目](../README.zh-CN.md#paper-2610-13862) · [论文](https://arxiv.org/abs/2610.13862)
 
 通过固定行为树 Skill 组织感知与物理动作工具，以结构化失败反馈重试或改变任务决策，本地 Guard 则监督经操作员批准的机载运动。
 
@@ -129,7 +129,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-10-08` · Fudan University; Singapore Management University
 
-[一手来源 1](https://arxiv.org/abs/2610.12457) · [一手来源 2](https://emilia113.github.io/SpatialHarness/)
+[论文](https://arxiv.org/abs/2610.12457) · [项目页](https://emilia113.github.io/SpatialHarness/)
 
 维持与真实执行同步的模拟场景，按任务需要渲染补充视角，为冻结的多模态机器人策略提供空间支架。
 
@@ -144,7 +144,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-10-04` · KAIST; Seoul National University
 
-[一手来源 1](https://arxiv.org/abs/2610.04929) · [一手来源 2](https://robotuse-team.github.io/)
+[论文](https://arxiv.org/abs/2610.04929) · [项目页](https://robotuse-team.github.io/)
 
 围绕物理动作组织计算、上下文与决策，并用持久执行手册积累机器人 Agent 的任务经验。
 
@@ -161,7 +161,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-10-01` · University College London; Carnegie Mellon University
 
-[一手来源 1](https://arxiv.org/abs/2610.02459) · [一手来源 2](https://github.com/terminalworld/OpenRUA)
+[论文](https://arxiv.org/abs/2610.02459) · [代码](https://github.com/terminalworld/OpenRUA)
 
 仅向现成 Coding Agent 提供终端、ROS 2 文档与机器人工作区，检验直接编程使用原生机器人接口的零样本能力。
 
@@ -176,7 +176,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-10-01` · Peking University; National University of Singapore; NVIDIA; Impossible Research
 
-[一手来源 1](https://arxiv.org/abs/2610.01939)
+[论文](https://arxiv.org/abs/2610.01939)
 
 让 Agent 在 Python 单元中组合机器人原语、局部检查和重试，减少回传上下文，并探索小型编程模型的强化学习。
 
@@ -193,7 +193,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-09-29` · Zhejiang University
 
-[一手来源 1](https://arxiv.org/abs/2610.14018)
+[论文](https://arxiv.org/abs/2610.14018)
 
 给 LLM Agent 提供视觉几何控制面板，研究简单工具接口能否支持零样本机器人操作。
 
@@ -206,7 +206,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-09-29` · University of Illinois Urbana-Champaign
 
-[一手来源 1](https://arxiv.org/abs/2609.38078)
+[论文](https://arxiv.org/abs/2609.38078)
 
 用中层动作、确定性控制和异步监测连接通用 VLM 与机械臂，考察推理频率与执行可靠性的关系。
 
@@ -221,7 +221,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-09-24` · The Chinese University of Hong Kong; The Hong Kong University of Science and Technology (Guangzhou); Knowin AI
 
-[一手来源 1](https://arxiv.org/abs/2609.29389)
+[论文](https://arxiv.org/abs/2609.29389)
 
 把三维感知作为可调用工具提供给 Robot-Use Agent，增强几何定位能力而不重新训练视觉编码器。
 
@@ -236,7 +236,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-09-17` · University of Southern California; University of Central Florida; University of California, Santa Barbara
 
-[完整书目](../README.zh-CN.md#paper-2609-20822) · [证据 1](https://arxiv.org/abs/2609.20822)
+[完整书目](../README.zh-CN.md#paper-2609-20822) · [论文](https://arxiv.org/abs/2609.20822)
 
 为 Code-as-policy Agent 增加视觉定位的路径检查与接触约束，并在执行遭遇障碍或未建模物理限制时，根据观测到的停止位姿重新规划后续动作。
 
@@ -251,7 +251,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-09-11` · University of Notre Dame; University of California San Diego; San Diego State University
 
-[一手来源 1](https://arxiv.org/abs/2609.12541)
+[论文](https://arxiv.org/abs/2609.12541)
 
 让通用 Agent 持续读取视觉证据、编写程序并发出运动指令，根据物理执行结果调整下一步行动。
 
@@ -264,7 +264,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-09-09` · Show Lab, National University of Singapore
 
-[一手来源 1](https://arxiv.org/abs/2609.10522) · [一手来源 2](https://showlab.github.io/Show-Harness)
+[论文](https://arxiv.org/abs/2609.10522) · [项目页](https://showlab.github.io/Show-Harness)
 
 以紧凑语义动作接口连接通用 VLM 与机器人解释器，研究将数字 Agent 式交互迁移到物理控制的条件。
 
@@ -277,7 +277,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-08-20` · 单位未明确
 
-[一手来源 1](https://www.mdpi.com/2076-3417/16/16/8291) · [一手来源 2](https://www.mdpi.com/2076-3417/16/16/8291/notes)
+[论文](https://www.mdpi.com/2076-3417/16/16/8291) · [论文](https://www.mdpi.com/2076-3417/16/16/8291/notes)
 
 让 Agent 从带出处的设备手册生成驱动内容，在确定性协议骨架和硬件测试中修复错误，再把可复用接口提供给后续实验 Agent。
 
@@ -290,7 +290,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-08-04` · Shanghai Innovation Institute; Fudan University; Jilin University; Nanjing University; Zhejiang University
 
-[一手来源 1](https://arxiv.org/abs/2608.03924)
+[论文](https://arxiv.org/abs/2608.03924)
 
 通过 OpenETA 将观察、标记目标与运动能力接入 Codex 等数字 Agent，研究轻量接口如何支持物理任务。
 
@@ -305,7 +305,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-07-18` · X-Era Lab; Sun Yat-sen University; Peng Cheng Laboratory
 
-[一手来源 1](https://arxiv.org/abs/2607.16636)
+[论文](https://arxiv.org/abs/2607.16636)
 
 用文件化状态契约分离 Agent 推理与机器人执行，让工具调用、状态记录和经验更新能够跨运行层衔接。
 
@@ -318,7 +318,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-07-06` · University of California, Berkeley; Bosch; NVIDIA
 
-[一手来源 1](https://arxiv.org/abs/2607.05369) · [一手来源 2](https://graph-robots.github.io/gap)
+[论文](https://arxiv.org/abs/2607.05369) · [项目页](https://graph-robots.github.io/gap)
 
 由多 Agent 编写连接感知、规划与控制节点的计算图，以可组合机器人技能库支持可变自动化任务。
 
@@ -333,7 +333,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-05-26` · Huazhong University of Science and Technology; Hebei University of Technology; Tianjin University; Lehigh University; Tsinghua University
 
-[一手来源 1](https://arxiv.org/abs/2605.26637)
+[论文](https://arxiv.org/abs/2605.26637)
 
 提出 Embodied Tool Protocol，将机器人感知、推理与执行能力统一为可注册、发现和调用的工具，支撑 Agent 组合现有能力。
 
@@ -346,7 +346,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2025-11-02` · University of Pennsylvania
 
-[一手来源 1](https://arxiv.org/abs/2511.00917) · [一手来源 2](https://maestro-robot.github.io) · [一手来源 3](https://github.com/penn-pal-lab/maestro)
+[论文](https://arxiv.org/abs/2511.00917) · [项目页](https://maestro-robot.github.io) · [代码](https://github.com/penn-pal-lab/maestro)
 
 让 VLM 编写机器人程序来组织感知、规划和控制模块，通过视觉与执行反馈验证结果及恢复失败。
 
@@ -361,7 +361,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2025-10-24` · Sungkyunkwan University
 
-[一手来源 1](https://arxiv.org/abs/2510.21302)
+[论文](https://arxiv.org/abs/2510.21302)
 
 将机器人策略代码生成与符号验证结合，通过探索程序补全缺失观测并验证行动条件。
 
@@ -374,7 +374,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2025-05-12` · Robotec.AI; Warsaw University of Technology
 
-[一手来源 1](https://arxiv.org/abs/2505.07532)
+[论文](https://arxiv.org/abs/2505.07532)
 
 以模块化工具接口把语言模型、多 Agent、ROS 与仿真连接起来，为机器人 Agent 提供可复用的运行基础。
 
@@ -387,7 +387,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2025-03-27` · Technical University of Munich; Ludwig Maximilian University of Munich; Beijing Academy of Artificial Intelligence; Nanjing University
 
-[一手来源 1](https://arxiv.org/abs/2503.21969)
+[论文](https://arxiv.org/abs/2503.21969)
 
 用递进式上下文生成机器人程序，再由视觉报告器在每轮执行后总结结果并指导重规划。
 
@@ -400,7 +400,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2024-12-05` · Beihang University; Peking University; Beijing Academy of Artificial Intelligence; Galbot
 
-[一手来源 1](https://arxiv.org/abs/2412.04455) · [一手来源 2](https://zhoues.github.io/Code-as-Monitor/)
+[论文](https://arxiv.org/abs/2412.04455) · [项目页](https://zhoues.github.io/Code-as-Monitor/)
 
 让 VLM 编写可执行的时空约束监测程序，利用视觉跟踪检查机器人执行中的失败和潜在违规。
 
@@ -415,7 +415,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2024-10-11` · 单位未明确
 
-[一手来源 1](https://proceedings.mlr.press/v270/oelerich25a.html) · [一手来源 2](https://www.acin.tuwien.ac.at/42d2/)
+[项目页](https://proceedings.mlr.press/v270/oelerich25a.html) · [项目页](https://www.acin.tuwien.ac.at/42d2/)
 
 让语言模型根据视觉信息编写 Python 调用受约束路径规划器，再由 BoundMPC 执行平滑轨迹，连接语义推理与机器人运动约束。
 
@@ -428,7 +428,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2024-10-09` · NASA Jet Propulsion Laboratory; California Institute of Technology
 
-[一手来源 1](https://arxiv.org/abs/2410.06472)
+[论文](https://arxiv.org/abs/2410.06472)
 
 将 ROS 查询、诊断与操作封装为语言 Agent 可调用的工具，支持不同机器人平台的自然语言任务交互。
 
@@ -441,7 +441,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2023-12-07` · Stanford University; Google DeepMind; University of California, Berkeley
 
-[一手来源 1](https://arxiv.org/abs/2312.04474) · [一手来源 2](https://chain-of-code.github.io)
+[论文](https://arxiv.org/abs/2312.04474) · [项目页](https://chain-of-code.github.io)
 
 用解释器执行明确的程序逻辑，并把未定义的语义计算交给语言模型模拟；机器人实验展示代码与模型调用的组合方式。
 
@@ -454,7 +454,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2023-06-15` · University of Colorado Boulder
 
-[一手来源 1](https://arxiv.org/abs/2306.09523)
+[论文](https://arxiv.org/abs/2306.09523)
 
 用生成的 Python 中间层连接语言推理、视觉环境描述和移动机器人导航接口，支持依赖上下文的导航指令。
 
@@ -467,7 +467,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2023-05-18` · Shanghai Jiao Tong University; Shanghai AI Laboratory; University of Chinese Academy of Sciences; Peking University; The Chinese University of Hong Kong
 
-[一手来源 1](https://arxiv.org/abs/2305.11176) · [一手来源 2](https://github.com/OpenGVLab/Instruct2Act)
+[论文](https://arxiv.org/abs/2305.11176) · [代码](https://github.com/OpenGVLab/Instruct2Act)
 
 由 LLM 生成 Python 程序，调用 SAM、CLIP 与动作 API，把多模态指令组织成感知、规划和执行流程。
 
@@ -482,7 +482,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2023-02-20` · Scaled Foundations; Microsoft Autonomous Systems and Robotics Research
 
-[一手来源 1](https://arxiv.org/abs/2306.17582) · [一手来源 2](https://www.microsoft.com/en-us/research/publication/chatgpt-for-robotics-design-principles-and-model-abilities/)
+[论文](https://arxiv.org/abs/2306.17582) · [项目页](https://www.microsoft.com/en-us/research/publication/chatgpt-for-robotics-design-principles-and-model-abilities/)
 
 通过函数库、提示设计和人机对话，让 ChatGPT 为机械臂、无人机与移动机器人编写和修改任务程序。
 
@@ -497,7 +497,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2022-09-22` · University of Southern California; NVIDIA
 
-[一手来源 1](https://arxiv.org/abs/2209.11302) · [一手来源 2](http://progprompt.github.io)
+[论文](https://arxiv.org/abs/2209.11302) · [项目页](http://progprompt.github.io)
 
 用可用动作、对象和断言组织程序式提示，使语言模型生成能够检查前置条件并恢复的机器人任务计划。
 
@@ -512,7 +512,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2022-09-16` · Robotics at Google
 
-[一手来源 1](https://arxiv.org/abs/2209.07753) · [一手来源 2](https://code-as-policies.github.io)
+[论文](https://arxiv.org/abs/2209.07753) · [项目页](https://code-as-policies.github.io)
 
 用语言模型递归生成 Python 策略，组合感知结果、几何计算与控制 API，是机器人 Code-as-Policy 的早期基础；程序内反馈不等于写码模型根据执行结果重写程序。
 
@@ -529,7 +529,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-11-02` · Huawei Technologies Canada; University of British Columbia
 
-[完整书目](../README.zh-CN.md#paper-2611-03585) · [证据 1](https://arxiv.org/abs/2611.03585)
+[完整书目](../README.zh-CN.md#paper-2611-03585) · [论文](https://arxiv.org/abs/2611.03585)
 
 组合动作有效性、想象运动的逆动力学一致性与任务进度，为冻结世界—动作模型选择候选轨迹，执行动作块后依据新观测重规划。
 
@@ -544,7 +544,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-11` · University of Michigan; Nanyang Technological University; EPFL; Princeton University; University of Virginia; LMMs-Lab
 
-[一手来源 1](https://web.eecs.umich.edu/~stellayu/publication/2026harnessCoRLL.html) · [一手来源 2](https://web.eecs.umich.edu/~stellayu/publication/doc/2026harnessCoRLL.pdf)
+[项目页](https://web.eecs.umich.edu/~stellayu/publication/2026harnessCoRLL.html) · [论文](https://web.eecs.umich.edu/~stellayu/publication/doc/2026harnessCoRLL.pdf)
 
 把 Agent 编写的程序、有界 VLA 技能和快速反应守卫组合成共享控制层级。
 
@@ -559,7 +559,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-10-30` · National University of Singapore, HPC-AI Lab; InfRec, Cardinal AI Lab; University of California, Berkeley; The University of Tokyo; Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences; Hong Kong University of Science and Technology
 
-[完整书目](../README.zh-CN.md#paper-2610-42053) · [证据 1](https://arxiv.org/abs/2610.42053) · [证据 2](https://mikeeeeeeeeeeeeee.github.io/REA/)
+[完整书目](../README.zh-CN.md#paper-2610-42053) · [论文](https://arxiv.org/abs/2610.42053) · [项目页](https://mikeeeeeeeeeeeeee.github.io/REA/)
 
 将快速机器人执行与异步模型判断、路径选择分离，在策略返回边界通过视觉结果检查协调固定代码策略和动作模型。
 
@@ -574,7 +574,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-10-15` · Hong Kong University of Science and Technology; The Chinese University of Hong Kong; SmartMore
 
-[完整书目](../README.zh-CN.md#paper-2610-21453) · [证据 1](https://arxiv.org/abs/2610.21453) · [证据 2](https://vincent2311.github.io/Projects/CarryOn/) · [证据 3](https://github.com/JIA-Lab-research/CarryOn)
+[完整书目](../README.zh-CN.md#paper-2610-21453) · [论文](https://arxiv.org/abs/2610.21453) · [项目页](https://vincent2311.github.io/Projects/CarryOn/) · [代码](https://github.com/JIA-Lab-research/CarryOn)
 
 协调持久用户／场景记忆、冻结 VLA、几何安全过滤与视觉失败恢复，并通过离线反思修订恢复策略和参数，供后续尝试复用。
 
@@ -589,7 +589,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-09-24` · Xiaomi Inc.; Tsinghua University; Nanjing University; Shanghai Jiao Tong University; East China Normal University; University College London; King’s College London; Imperial College London; Institute of Automation, Chinese Academy of Sciences; Shanghai Innovation Institute; University of Oxford; University of Edinburgh; Nanyang Technological University
 
-[一手来源 1](https://arxiv.org/abs/2609.29166) · [一手来源 2](https://darwin-agent.github.io/HarnessPAI)
+[论文](https://arxiv.org/abs/2609.29166) · [项目页](https://darwin-agent.github.io/HarnessPAI)
 
 以可执行代码组织底层动作原语，并依据交互反馈演化机器人程序，使稳定程序还能生成下游策略训练数据。
 
@@ -606,7 +606,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-08-03` · Eastern Institute of Technology, Ningbo
 
-[一手来源 1](https://arxiv.org/abs/2608.11246) · [一手来源 2](https://eit-hai.github.io/thea)
+[论文](https://arxiv.org/abs/2608.11246) · [项目页](https://eit-hai.github.io/thea)
 
 用持久场景图和带成功、失败原因的执行返回值，将机器人能力组织为 Agent 可理解和调用的工具。
 
@@ -621,7 +621,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-07-09` · Tsinghua University; Striding AI; Purdue University; Institute of Automation, Chinese Academy of Sciences; Infinigence AI; Hong Kong University of Science and Technology; Zhongguancun Academy
 
-[一手来源 1](https://arxiv.org/abs/2607.08448)
+[论文](https://arxiv.org/abs/2607.08448)
 
 让 Coding Agent 编排冻结 VLA 与解析动作原语
 
@@ -638,7 +638,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-11-09` · Northwestern University; Carnegie Mellon University; University of California Berkeley; University of Washington; Stanford University; UNC-Chapel Hill; Texas A&M University; University of Texas at Austin
 
-[一手来源 1](https://arxiv.org/abs/2611.12177) · [一手来源 2](https://arxiv.org/html/2611.12177)
+[论文](https://arxiv.org/abs/2611.12177) · [论文](https://arxiv.org/html/2611.12177)
 
 跨机器人形态检验通用 Agent 的具身任务能力，明确比较观测权限、重置预算和执行时钟不同的运行方式。
 
@@ -655,7 +655,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-11-05` · Stanford University
 
-[完整书目](../README.zh-CN.md#paper-2611-08209) · [证据 1](https://arxiv.org/abs/2611.08209) · [证据 2](http://roboarcade.org)
+[完整书目](../README.zh-CN.md#paper-2611-08209) · [论文](https://arxiv.org/abs/2611.08209) · [项目页](http://roboarcade.org)
 
 在随机化长程 MuJoCo 任务上评测视觉机器人控制 Agent，分别比较接口、上下文示范和跨尝试文本工作流优化。
 
@@ -668,7 +668,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-11-02` · National University of Singapore; University of Washington; Stanford University; University of North Carolina at Chapel Hill; Allen Institute for AI; University of Oxford; Hugging Face; BitRobot; Singapore Embodied AI Centre
 
-[完整书目](../README.zh-CN.md#paper-2611-02497) · [证据 1](https://arxiv.org/abs/2611.02497) · [证据 2](https://robocolosseum.ai/) · [证据 3](https://github.com/RoboColosseum)
+[完整书目](../README.zh-CN.md#paper-2611-02497) · [论文](https://arxiv.org/abs/2611.02497) · [项目页](https://robocolosseum.ai/) · [仓库](https://github.com/RoboColosseum)
 
 通过跨站点、条件匹配的盲测实机试验比较冻结 Agent 与 VLA，并另设适配赛道分析不同机器人上的排名变化。
 
@@ -681,7 +681,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-10-26` · Aether AI; University of California San Diego; University of California Davis
 
-[完整书目](../README.zh-CN.md#paper-2610-34649) · [证据 1](https://arxiv.org/abs/2610.34649) · [证据 2](https://aetherlabsai.github.io/RobotAgentBench/)
+[完整书目](../README.zh-CN.md#paper-2610-34649) · [论文](https://arxiv.org/abs/2610.34649) · [项目页](https://aetherlabsai.github.io/RobotAgentBench/)
 
 通过任务发现、情境推理、物理执行与恢复环节评估开放世界机器人 Agent，而不仅测试给定目标的动作成功率。
 
@@ -694,7 +694,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-10-25` · Tuojing Intelligence; The University of Hong Kong; Chinese Academy of Sciences; Nanyang Technological University; University of Michigan, Ann Arbor; Southeast University; Sapient Intelligence; SimpleAI; Mohamed bin Zayed University of Artificial Intelligence; Stanford University; Imperial College London; Tsinghua University; Carnegie Mellon University
 
-[完整书目](../README.zh-CN.md#paper-2610-34527) · [证据 1](https://arxiv.org/abs/2610.34527) · [证据 2](https://github.com/LLM4Robot/LLM4Robot-Bench) · [证据 3](https://llm4robot.github.io/bench/)
+[完整书目](../README.zh-CN.md#paper-2610-34527) · [论文](https://arxiv.org/abs/2610.34527) · [代码](https://github.com/LLM4Robot/LLM4Robot-Bench) · [项目页](https://llm4robot.github.io/bench/)
 
 在配对的仿真与真实双臂任务中，测量 GPT-6 Astra 在几何对齐、力调节和接触重配置中的表现，基准原名 PhysLadder。
 
@@ -707,7 +707,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-10-21` · The University of Texas at Dallas
 
-[一手来源 1](https://arxiv.org/abs/2610.30051) · [一手来源 2](https://irvlutd.github.io/LLM-LIBERO/) · [一手来源 3](https://github.com/IRVLUTD/LLM_LIBERO)
+[论文](https://arxiv.org/abs/2610.30051) · [项目页](https://irvlutd.github.io/LLM-LIBERO/) · [代码](https://github.com/IRVLUTD/LLM_LIBERO)
 
 在统一闭环与控制接口下比较前沿模型执行 LIBERO-10 操作任务的表现，避免把模型更换与接口更换混为一谈。
 
@@ -720,7 +720,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-10-19` · The University of Hong Kong; Sharpa; Tsinghua University; Stanford University; University of North Carolina at Chapel Hill; Massachusetts Institute of Technology; Transcengram
 
-[一手来源 1](https://arxiv.org/abs/2610.27039) · [一手来源 2](https://winniechen2002.github.io/Agent-bench-website/)
+[论文](https://arxiv.org/abs/2610.27039) · [项目页](https://winniechen2002.github.io/Agent-bench-website/)
 
 以长时序机器人任务评测 Agent 如何协调物理、空间和策略推理，并在执行反馈下保持任务进度。
 
@@ -733,7 +733,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-10-18` · Robocurve; University of Southern California; University of California, Irvine
 
-[一手来源 1](https://arxiv.org/abs/2610.25287)
+[论文](https://arxiv.org/abs/2610.25287)
 
 在物理机械臂上比较通用多模态模型通过控制接口执行任务的能力，观察模型、工具与执行设置对结果的影响。
 
@@ -746,7 +746,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-10-15` · SenseNova and Joint Research Team
 
-[完整书目](../README.zh-CN.md#paper-2610-22471) · [证据 1](https://arxiv.org/abs/2610.22471) · [证据 2](https://sensenova.ai/has-gpt-6-astra-achieved-embodied-intelligence)
+[完整书目](../README.zh-CN.md#paper-2610-22471) · [论文](https://arxiv.org/abs/2610.22471) · [文章](https://sensenova.ai/has-gpt-6-astra-achieved-embodied-intelligence)
 
 在十二项具身基准上研究示范辅助的直接控制与 VLA 动作审查，将扩大交互预算的收益与八种真实机器人配置上的零样本试验分别评估。
 
@@ -759,7 +759,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-10-12` · Shanghai Jiao Tong University; Shanghai Artificial Intelligence Laboratory; Sun Yat-Sen University; Jilin University; Beihang University
 
-[一手来源 1](https://arxiv.org/abs/2610.16238) · [一手来源 2](https://github.com/HanZhi306/EmbodiedSkill-Bench)
+[论文](https://arxiv.org/abs/2610.16238) · [代码](https://github.com/HanZhi306/EmbodiedSkill-Bench)
 
 在原生控制、仅用技能和 Agent 自主选择或修改技能三种条件下，评测具身 Skills 对物理任务的实际帮助。
 
@@ -774,7 +774,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-10-07` · The Hong Kong University of Science and Technology; The Chinese University of Hong Kong; Peking University; Stanford University; University of California, Berkeley; National University of Singapore; Massachusetts Institute of Technology; Tsinghua University; Carnegie Mellon University; Fudan University; The University of Hong Kong
 
-[完整书目](../README.zh-CN.md#paper-2610-10409) · [证据 1](https://arxiv.org/abs/2610.10409) · [证据 2](https://github.com/robotworldai/robotworld) · [证据 3](https://robotworldai.github.io/)
+[完整书目](../README.zh-CN.md#paper-2610-10409) · [论文](https://arxiv.org/abs/2610.10409) · [代码](https://github.com/robotworldai/robotworld) · [项目页](https://robotworldai.github.io/)
 
 在 84 项仿真任务和多种本体上评测图像、状态驱动的机器人工具使用，区分辅助计算与可选的环境侧控制代码。
 
@@ -787,7 +787,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-10-06` · Imperial College London
 
-[一手来源 1](https://arxiv.org/abs/2610.07594) · [一手来源 2](https://github.com/swirl-uk/BiGym2)
+[论文](https://arxiv.org/abs/2610.07594) · [代码](https://github.com/swirl-uk/BiGym2)
 
 在一致的机载观测和全身控制器下比较人形机器人学习策略与 Agent 开发的程序，并发布仿真中的人类 VR 示范。
 
@@ -800,7 +800,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-10-01` · The Hong Kong University of Science and Technology (Guangzhou); The Chinese University of Hong Kong; Knowin AI
 
-[一手来源 1](https://arxiv.org/abs/2610.00854) · [一手来源 2](https://embodied-agent-arena.github.io/embodied-agent-arena/)
+[论文](https://arxiv.org/abs/2610.00854) · [项目页](https://embodied-agent-arena.github.io/embodied-agent-arena/)
 
 在统一预算与源任务接口下比较前沿 VLM Agent 的机器人通用性，并区分修复程序运行与完成物理任务。
 
@@ -813,7 +813,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-09-30` · University of California Santa Barbara; MIT CSAIL; MIT-IBM Watson AI Lab
 
-[完整书目](../README.zh-CN.md#paper-2609-40325) · [证据 1](https://arxiv.org/abs/2609.40325) · [证据 2](https://arxiv.org/html/2609.40325) · [证据 3](https://ucsb-nlp-chang.github.io/WorldAuditBench/)
+[完整书目](../README.zh-CN.md#paper-2609-40325) · [论文](https://arxiv.org/abs/2609.40325) · [论文](https://arxiv.org/html/2609.40325) · [项目页](https://ucsb-nlp-chang.github.io/WorldAuditBench/)
 
 衡量 Agent 主动探索交互世界、发现异常并提供证据的能力，覆盖物理、空间、时间与语义问题。
 
@@ -830,7 +830,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-09-30` · Fudan University; Shanghai Innovation Institute
 
-[一手来源 1](https://arxiv.org/abs/2609.39507)
+[论文](https://arxiv.org/abs/2609.39507)
 
 把 LIBERO 改造成通用 Agent 可主动检查观测、使用自己的工具并发出原生动作的交互测试环境。
 
@@ -843,7 +843,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-09-27` · Nanyang Technological University
 
-[完整书目](../README.zh-CN.md#paper-2609-33807) · [证据 1](https://arxiv.org/abs/2609.33807) · [证据 2](https://github.com/lyhkk/CodeActionBench) · [证据 3](https://codeactionbench.org/)
+[完整书目](../README.zh-CN.md#paper-2609-33807) · [论文](https://arxiv.org/abs/2609.33807) · [代码](https://github.com/lyhkk/CodeActionBench) · [项目页](https://codeactionbench.org/)
 
 在 RoboTwin 2.0 双臂仿真中，Agent 执行 Python 操控程序，根据相机画面、机器人状态和接触反馈修订策略。隐藏验收器独立核对最终状态和 Agent 的完成声明。
 
@@ -858,7 +858,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-09-01` · Drone AI Team, NAVER Cloud
 
-[完整书目](../README.zh-CN.md#paper-2609-01404) · [证据 1](https://arxiv.org/abs/2609.01404) · [证据 2](https://github.com/naver-ai/DroneCATS) · [证据 3](https://huggingface.co/datasets/naver-ai/DroneCATS-Pilot-54K)
+[完整书目](../README.zh-CN.md#paper-2609-01404) · [论文](https://arxiv.org/abs/2609.01404) · [代码](https://github.com/naver-ai/DroneCATS) · [数据集](https://huggingface.co/datasets/naver-ai/DroneCATS-Pilot-54K)
 
 在仿真器与真实 Tello 飞行中评测图像条件动作及指挥员—子 Agent 协作，分析延迟与到达声明失误。
 
@@ -873,7 +873,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-07-05` · MMLab@HKU; UC Berkeley; THU; PKU; Stanford; MIT; UNC; Princeton; CMU; NUS; NTU; CUHK; IC; SJTU; NU; HKUST (GZ); ZJU; Yale
 
-[一手来源 1](https://arxiv.org/abs/2607.04434) · [一手来源 2](http://robodojo-benchmark.com/) · [一手来源 3](https://robodojo-benchmark.com/) · [一手来源 4](https://github.com/RoboDojo-Benchmark/RoboDojo) · [一手来源 5](https://robodojo-benchmark.com/leaderboard)
+[论文](https://arxiv.org/abs/2607.04434) · [项目页](http://robodojo-benchmark.com/) · [项目页](https://robodojo-benchmark.com/) · [代码](https://github.com/RoboDojo-Benchmark/RoboDojo) · [榜单](https://robodojo-benchmark.com/leaderboard)
 
 提供统一仿真与实机操作评测协议，已被 CaPtain 等编程 Agent 研究用于检验跨任务和跨环境表现。
 
@@ -886,7 +886,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-04-28` · University of Cambridge; Georgia Institute of Technology; Princeton University; NVIDIA; Massachusetts Institute of Technology; Carnegie Mellon University
 
-[一手来源 1](https://arxiv.org/abs/2604.25788) · [一手来源 2](https://prpl-group.com/kinder-site/)
+[论文](https://arxiv.org/abs/2604.25788) · [项目页](https://prpl-group.com/kinder-site/)
 
 提供可重置的物理推理任务、参数化技能与统一评测接口，已被通用 Coding Agent 求解任务—运动规划的研究直接使用。
 
@@ -899,7 +899,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-03-23` · NVIDIA; University of California, Berkeley; Stanford University; Carnegie Mellon University
 
-[完整书目](../README.zh-CN.md#paper-2603-22435) · [证据 1](https://arxiv.org/abs/2603.22435)
+[完整书目](../README.zh-CN.md#paper-2603-22435) · [论文](https://arxiv.org/abs/2603.22435)
 
 评测并改进编写操作代码、执行、观察结果和修复失败行为的 Agent。
 
@@ -912,7 +912,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-01-28` · Independent researchers
 
-[一手来源 1](https://arxiv.org/abs/2601.20334) · [一手来源 2](https://github.com/robiemusketeer/faea-sim)
+[论文](https://arxiv.org/abs/2601.20334) · [代码](https://github.com/robiemusketeer/faea-sim)
 
 将原用于软件工程的 Agent 框架直接接入机器人控制，在可读取特权环境状态的设置中评估免示范任务执行。
 
@@ -925,7 +925,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-01-27` · Technology Innovation Institute; Dublin City University
 
-[一手来源 1](https://arxiv.org/abs/2601.19510)
+[论文](https://arxiv.org/abs/2601.19510)
 
 在同一 ReAct 框架下比较生成控制代码与逐步调用工具两种机器人执行模式，并提供语言多样化操作任务。
 
@@ -938,7 +938,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2024-02-22` · OpenGVLab, Shanghai AI Laboratory; ETH Zurich; The University of Hong Kong; Shanghai Jiao Tong University; Tsinghua University; University of California, Berkeley
 
-[一手来源 1](https://arxiv.org/abs/2402.14623)
+[论文](https://arxiv.org/abs/2402.14623)
 
 把机器人代码生成接入 ROS、感知与运动工具，并以仿真和实机任务检验程序的可执行性与部署差距。
 
@@ -953,7 +953,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2023-11-18` · The University of Texas at Austin; Northeastern University; Wellesley College
 
-[一手来源 1](https://arxiv.org/abs/2311.11183) · [一手来源 2](https://amrl.cs.utexas.edu/codebotler/)
+[论文](https://arxiv.org/abs/2311.11183) · [项目页](https://amrl.cs.utexas.edu/codebotler/)
 
 提出 CodeBotler 与 RoboEval，用 Python 嵌入式领域语言生成服务机器人程序，并评测动作顺序、条件逻辑和任务执行。
 
@@ -966,7 +966,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2023-06-05` · The University of Texas at Austin; Sony AI; Tsinghua University
 
-[一手来源 1](https://arxiv.org/abs/2306.03310) · [一手来源 2](https://libero-project.github.io)
+[论文](https://arxiv.org/abs/2306.03310) · [项目页](https://libero-project.github.io)
 
 提供可重置的长期机器人学习任务、统一接口与示范，是 Code-as-Policy Agent 与后训练研究常用的执行和评测底座。
 
@@ -981,7 +981,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-10-15` · 单位未明确
 
-[一手来源 1](https://github.com/stacx-lab/kinex)
+[代码](https://github.com/stacx-lab/kinex)
 
 把设备、工具、技能和会话执行组织成 Coding Agent 可使用的机器人运行层，并提供仿真与实机适配入口。
 
@@ -994,7 +994,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-09-20` · 单位未明确
 
-[一手来源 1](https://github.com/QwenLM/Qwen-MM-Plugins) · [一手来源 2](https://qwenlm.github.io/qwen-mm-plugins-hub/plugins/mhs/cookbook/)
+[代码](https://github.com/QwenLM/Qwen-MM-Plugins) · [项目页](https://qwenlm.github.io/qwen-mm-plugins-hub/plugins/mhs/cookbook/)
 
 将物理硬件操作封装为多模态 Agent 插件，为 Qwen 等模型提供连接现实设备的能力入口。
 
@@ -1007,7 +1007,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-07` · 单位未明确
 
-[一手来源 1](https://github.com/MaxNaeg/safe_lab_agents) · [一手来源 2](https://safe-lab-agents.org/)
+[代码](https://github.com/MaxNaeg/safe_lab_agents) · [项目页](https://safe-lab-agents.org/)
 
 通过宿主机 MCP 与 Python 接口，让隔离环境中的 Coding Agent 编写扫描和分析脚本、调用实验工具，并保存结构化过程记录。
 
@@ -1020,7 +1020,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2025-05-06` · University of California, Berkeley
 
-[一手来源 1](https://arxiv.org/abs/2505.03728) · [一手来源 2](https://pyroki-toolkit.github.io)
+[论文](https://arxiv.org/abs/2505.03728) · [项目页](https://pyroki-toolkit.github.io)
 
 以可组合的机器人运动学优化接口承接 Agent 生成的目标与程序，为部分 Coding Agent Harness 提供底层求解能力。
 
@@ -1033,7 +1033,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `首发日期未明确` · 单位未明确
 
-[一手来源 1](https://jvboid.dev/projects/phys-0) · [一手来源 2](https://github.com/JacobFV/chem-0)
+[项目页](https://jvboid.dev/projects/phys-0) · [代码](https://github.com/JacobFV/chem-0)
 
 用统一、带记录的工具接口连接 Coding Agent、可编辑物理场景、SO-101 机械臂和实验台观测，探索同一工作流中的虚拟与真实操作。
 
@@ -1046,7 +1046,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `首发日期未明确` · 单位未明确
 
-[一手来源 1](https://github.com/VitaDynamics/vbot-lab)
+[代码](https://github.com/VitaDynamics/vbot-lab)
 
 用 API、类型定义、程序样例与 Skills 为 Coding Agent 提供面向 VBOT 机器人的应用开发环境。
 
@@ -1059,7 +1059,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `首发日期未明确` · 单位未明确
 
-[一手来源 1](https://github.com/arpitg1304/robotics-agent-skills)
+[代码](https://github.com/arpitg1304/robotics-agent-skills)
 
 以可复用技能文件提供 ROS 软件开发、诊断和机器人工作流知识，帮助 Coding Agent 组织工具与项目操作。
 
@@ -1072,7 +1072,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `首发日期未明确` · 单位未明确
 
-[一手来源 1](https://github.com/benchflow-ai/robouse)
+[代码](https://github.com/benchflow-ai/robouse)
 
 通过统一的命令行和 episode 服务，让 Coding Agent 访问机器人仿真任务、提交动作并读取结果。
 
@@ -1085,7 +1085,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `首发日期未明确` · 单位未明确
 
-[一手来源 1](https://github.com/ros-claw/rosclaw)
+[代码](https://github.com/ros-claw/rosclaw)
 
 把 Codex、Claude 等 Agent 接入 ROS 工作区，通过执行回执和状态接口组织机器人任务及程序运行。
 
@@ -1098,7 +1098,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `首发日期未明确` · 单位未明确
 
-[一手来源 1](https://github.com/robotmcp/ros-mcp-server)
+[代码](https://github.com/robotmcp/ros-mcp-server)
 
 向 Codex、Claude Code 等客户端开放 ROS 主题、服务、动作和传感图像，让 Agent 同时读取机器人状态并调用控制能力。
 
@@ -1111,7 +1111,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `首发日期未明确` · 单位未明确
 
-[一手来源 1](https://github.com/NVIDIA/skills)
+[代码](https://github.com/NVIDIA/skills)
 
 提供面向 Coding Agent 的机器人、仿真与 Isaac 工作流技能，将任务编写、数据管线、数字孪生和验证步骤组织为可调用过程知识。
 
@@ -1124,7 +1124,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `首发日期未明确` · 单位未明确
 
-[一手来源 1](https://github.com/dimensionalOS/dimos)
+[代码](https://github.com/dimensionalOS/dimos)
 
 以 Python 模块、感知流和机器人控制接口构成 Agent 可编排的机器人软件底座，并提供 CLI 与工具调用入口。
 
@@ -1268,7 +1268,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-11-08` · Hong Kong Baptist University; ByteDance Seed
 
-[完整书目](../README.zh-CN.md#paper-2611-11344) · [证据 1](https://arxiv.org/abs/2611.11344) · [证据 2](https://github.com/tmlr-group/Spatial-Harness) · [证据 3](https://arxiv.org/html/2611.11344v1)
+[完整书目](../README.zh-CN.md#paper-2611-11344) · [论文](https://arxiv.org/abs/2611.11344) · [代码](https://github.com/tmlr-group/Spatial-Harness) · [论文](https://arxiv.org/html/2611.11344v1)
 
 可执行代理场景将空间推理落实到明确几何状态。
 
@@ -1296,7 +1296,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-11-07` · Universidade da Coruña; CITENI; Grupo Integrado de Ingeniería
 
-[一手来源 1](https://arxiv.org/abs/2611.10602) · [一手来源 2](https://arxiv.org/html/2611.10602v2)
+[论文](https://arxiv.org/abs/2611.10602) · [论文](https://arxiv.org/html/2611.10602v2)
 
 SimuLean 为 Agent 提供经过验证的制造系统建模组件。
 
@@ -1324,7 +1324,7 @@ SimuLean 为 Agent 提供经过验证的制造系统建模组件。领域命令�
 
 `2026-11-02` · Stanford University; ETH Zurich; NVIDIA Research; microagi
 
-[一手来源 1](https://arxiv.org/abs/2611.02691) · [一手来源 2](https://arxiv.org/html/2611.02691v1) · [一手来源 3](https://cue-dynamics.github.io/)
+[论文](https://arxiv.org/abs/2611.02691) · [论文](https://arxiv.org/html/2611.02691v1) · [项目页](https://cue-dynamics.github.io/)
 
 通过自主击球探索获取动力学证据，让 Agent 同时构建轨迹测量、拟合仿真参数并选择下一次实验。
 
@@ -1352,7 +1352,7 @@ CUE 针对仅看图片难以恢复摩擦和恢复系数的动力学缺口，让 
 
 `2026-10-31` · 单位未明确
 
-[完整书目](../README.zh-CN.md#paper-2611-00513) · [证据 1](https://arxiv.org/abs/2611.00513) · [证据 2](https://arxiv.org/html/2611.00513v1)
+[完整书目](../README.zh-CN.md#paper-2611-00513) · [论文](https://arxiv.org/abs/2611.00513) · [论文](https://arxiv.org/html/2611.00513v1)
 
 从 RGB-D 和任务构造可修订的最小运动学草图，让几何规划器据此选择接触与全身运动。
 
@@ -1380,7 +1380,7 @@ WorldSketch 让 VLM 决定任务需要哪些部件和机制，由深度测量提
 
 `2026-10-29` · Carnegie Mellon University
 
-[一手来源 1](https://arxiv.org/abs/2610.40565) · [一手来源 2](https://arxiv.org/html/2610.40565v1) · [一手来源 3](https://gym-anything.github.io/robotics)
+[论文](https://arxiv.org/abs/2610.40565) · [论文](https://arxiv.org/html/2610.40565v1) · [项目页](https://gym-anything.github.io/robotics)
 
 把仿真器本身作为 Coding Agent 任务，用独立物理审计反复修订场景、动力学和验证证据。
 
@@ -1408,7 +1408,7 @@ Gym-Anything for Robotics 将构建与检验物理仿真转化为 Coding Agent �
 
 `2026-10-29` · Stanford University; University of Cambridge
 
-[完整书目](../README.zh-CN.md#paper-2610-40754) · [证据 1](https://arxiv.org/abs/2610.40754) · [证据 2](https://arxiv.org/html/2610.40754v1) · [证据 3](https://dy-craft.github.io/)
+[完整书目](../README.zh-CN.md#paper-2610-40754) · [论文](https://arxiv.org/abs/2610.40754) · [论文](https://arxiv.org/html/2610.40754v1) · [项目页](https://dy-craft.github.io/)
 
 分镜与逐帧诊断引导程序修复，构建长时序动画场景。
 
@@ -1436,7 +1436,7 @@ Gym-Anything for Robotics 将构建与检验物理仿真转化为 Coding Agent �
 
 `2026-10-27` · Princeton University; Stanford University; University of Chicago; New York University; Oregon State University; University of Illinois at Urbana-Champaign; University of Texas at Austin
 
-[一手来源 1](https://arxiv.org/abs/2610.36592) · [一手来源 2](https://arxiv.org/html/2610.36592v1)
+[论文](https://arxiv.org/abs/2610.36592) · [论文](https://arxiv.org/html/2610.36592v1)
 
 从实验视频构建可编辑的资产、场景、轨迹和事件，把操作事件转换为空间时间约束。
 
@@ -1464,7 +1464,7 @@ LabWorld 将实验室视频中的设备、空间布局和操作过程转为可�
 
 `2026-10-26` · Harvard University
 
-[完整书目](../README.zh-CN.md#paper-2610-34745) · [证据 1](https://arxiv.org/abs/2610.34745) · [证据 2](https://arxiv.org/html/2610.34745v1) · [证据 3](https://computationalrobotics.seas.harvard.edu/SceneAgent/)
+[完整书目](../README.zh-CN.md#paper-2610-34745) · [论文](https://arxiv.org/abs/2610.34745) · [论文](https://arxiv.org/html/2610.34745v1) · [项目页](https://computationalrobotics.seas.harvard.edu/SceneAgent/)
 
 把 3D/4D 采集组织成可交互仿真，利用分步视觉检查与修订统一物体重建、关节及材料行为。
 
@@ -1492,7 +1492,7 @@ SceneAgent 从多类 3D 捕获和动态视频构建可交互场景，协调物�
 
 `2026-10-23` · New York University; University of California, San Diego
 
-[完整书目](../README.zh-CN.md#paper-2610-32978) · [证据 1](https://arxiv.org/abs/2610.32978) · [证据 2](https://arxiv.org/pdf/2610.32978v1) · [证据 3](https://tinaliu0123.github.io/scenebloom/)
+[完整书目](../README.zh-CN.md#paper-2610-32978) · [论文](https://arxiv.org/abs/2610.32978) · [论文](https://arxiv.org/pdf/2610.32978v1) · [项目页](https://tinaliu0123.github.io/scenebloom/)
 
 先生成带资产身份的视觉布局提案，再用关系约束把它编译为几何可行的 3D 房间。
 
@@ -1520,7 +1520,7 @@ SceneBloom 将视觉生成模型提供的布局先验与几何编译结合，用
 
 `2026-10-22` · Xspark AI; Tsinghua University; The University of Hong Kong; University College London; Peking University
 
-[完整书目](../README.zh-CN.md#paper-2610-31834) · [证据 1](https://arxiv.org/abs/2610.31834) · [证据 2](https://arxiv.org/html/2610.31834v1) · [证据 3](https://worldmirror-page.github.io/)
+[完整书目](../README.zh-CN.md#paper-2610-31834) · [论文](https://arxiv.org/abs/2610.31834) · [论文](https://arxiv.org/html/2610.31834v1) · [项目页](https://worldmirror-page.github.io/)
 
 把真实机器人视频与记录轨迹重建为相机对齐的可编辑世界，用逐阶段验证修订到原轨迹可直接重放。
 
@@ -1548,7 +1548,7 @@ WorldMirror 以真实机器人示范和相应轨迹构建数字孪生。固定�
 
 `2026-10-21` · Westlake University; The University of Hong Kong
 
-[一手来源 1](https://yubel426.github.io/Plumb/) · [一手来源 2](https://github.com/Inception3D/Plumb)
+[项目页](https://yubel426.github.io/Plumb/) · [代码](https://github.com/Inception3D/Plumb)
 
 把视频中的跟踪、深度和相机测量交给 Coding Agent，用可重放的 MuJoCo 模型重建动态场景。
 
@@ -1576,7 +1576,7 @@ Plumb 探讨 Coding Agent 如何从视频恢复可执行的物理场景，以 3D
 
 `2026-10-19` · Shanghai Jiao Tong University; Meituan
 
-[完整书目](../README.zh-CN.md#paper-2610-33060) · [证据 1](https://arxiv.org/abs/2610.33060) · [证据 2](https://arxiv.org/html/2610.33060v1) · [证据 3](https://demianmusk.github.io/MARC-Home/)
+[完整书目](../README.zh-CN.md#paper-2610-33060) · [论文](https://arxiv.org/abs/2610.33060) · [论文](https://arxiv.org/html/2610.33060v1) · [项目页](https://demianmusk.github.io/MARC-Home/)
 
 让关节机构代码共享运动学图，用连接级数值诊断定位闭链和耦合运动错误，再按原路径重测修订。
 
@@ -1604,7 +1604,7 @@ MARC 面向闭链与耦合机构中“能加载但不能按预期运动”的问
 
 `2026-10-15` · Xi’an Jiaotong University; Fuzhou University; Adobe Systems; Westlake University
 
-[完整书目](../README.zh-CN.md#paper-2610-21498) · [证据 1](https://arxiv.org/abs/2610.21498) · [证据 2](https://arxiv.org/html/2610.21498v1)
+[完整书目](../README.zh-CN.md#paper-2610-21498) · [论文](https://arxiv.org/abs/2610.21498) · [论文](https://arxiv.org/html/2610.21498v1)
 
 持续对照输入视频，逐层修订房间外壳、物体位姿和局部部件，重建可编辑静态几何。
 
@@ -1630,7 +1630,7 @@ GRASE 将输入视频作为整个重建过程的持续参照，避免一次性�
 
 `2026-10-13` · University of California, Berkeley; NVIDIA
 
-[一手来源 1](https://arxiv.org/abs/2610.18835) · [一手来源 2](https://arxiv.org/html/2610.18835v2) · [一手来源 3](https://robosimstudio.github.io)
+[论文](https://arxiv.org/abs/2610.18835) · [论文](https://arxiv.org/html/2610.18835v2) · [项目页](https://robosimstudio.github.io)
 
 以可编辑求解器、接触模型和参数支撑视频驱动的多物理构建，并展示真实失败反推场景约束修订。
 
@@ -1658,7 +1658,7 @@ RoboSimStudio 暴露求解器、接触模型和物理参数，让人和 Coding A
 
 `2026-10-12` · Geek+
 
-[一手来源 1](https://arxiv.org/abs/2610.17114) · [一手来源 2](https://arxiv.org/html/2610.17114v1)
+[论文](https://arxiv.org/abs/2610.17114) · [论文](https://arxiv.org/html/2610.17114v1)
 
 让机器人一边行动一边用真实测量校正自己编写的显式数字孪生。
 
@@ -1686,7 +1686,7 @@ D-World 把世界模型表示为 Agent 可直接检查和修订的数字孪生�
 
 `2026-10-09` · Nanyang Technological University; ETH Zurich; Microsoft; University of Cambridge; University of Oxford
 
-[完整书目](../README.zh-CN.md#paper-2610-13947) · [证据 1](https://arxiv.org/abs/2610.13947) · [证据 2](https://arxiv.org/html/2610.13947v3) · [证据 3](https://physicalvision.github.io/artisan/)
+[完整书目](../README.zh-CN.md#paper-2610-13947) · [论文](https://arxiv.org/abs/2610.13947) · [论文](https://arxiv.org/html/2610.13947v3) · [项目页](https://physicalvision.github.io/artisan/)
 
 以设计、编码和审阅 Agent 联合 MuJoCo 检查，修订能运动、站稳且保留目标功能的关节资产。
 
@@ -1714,7 +1714,7 @@ Artisan 将资产生成目标从几何外观扩展到碰撞、稳定性、质量
 
 `2026-10-08` · NVIDIA; Nanyang Technological University; Peking University
 
-[完整书目](../README.zh-CN.md#paper-2610-11322) · [证据 1](https://arxiv.org/abs/2610.11322) · [证据 2](https://arxiv.org/html/2610.11322v1) · [证据 3](https://xingyoujun.github.io/usdcraft/)
+[完整书目](../README.zh-CN.md#paper-2610-11322) · [论文](https://arxiv.org/abs/2610.11322) · [论文](https://arxiv.org/html/2610.11322v1) · [项目页](https://xingyoujun.github.io/usdcraft/)
 
 用可执行程序重建有关节的 USD 资产，把缺失的已观测表面与尚未观测的空间分开处理。
 
@@ -1742,7 +1742,7 @@ USDCraft 将关节资产重建写成以部分几何证据为依据的程序建�
 
 `2026-10-07` · Sun Yat-sen University; The Hong Kong University of Science and Technology (Guangzhou)
 
-[完整书目](../README.zh-CN.md#paper-2610-10479) · [证据 1](https://arxiv.org/abs/2610.10479) · [证据 2](https://arxiv.org/html/2610.10479v2)
+[完整书目](../README.zh-CN.md#paper-2610-10479) · [论文](https://arxiv.org/abs/2610.10479) · [论文](https://arxiv.org/html/2610.10479v2)
 
 把参考视频的场景修订与操作策略开发串在同一任务中，形成可从仿真迁移到真机的程序。
 
@@ -1770,7 +1770,7 @@ Agentic RSR 将场景重建、策略开发和真机执行连接到同一个操�
 
 `2026-10-01` · 单位未明确
 
-[完整书目](../README.zh-CN.md#paper-2610-02274) · [证据 1](https://arxiv.org/abs/2610.02274) · [证据 2](https://arxiv.org/html/2610.02274v1)
+[完整书目](../README.zh-CN.md#paper-2610-02274) · [论文](https://arxiv.org/abs/2610.02274) · [论文](https://arxiv.org/html/2610.02274v1)
 
 把资产生成、单图重建、文本场景规划和可重放示范连接起来，以模块级验证和有限修订获得可仿真的世界。
 
@@ -1798,7 +1798,7 @@ Awomo-SimDataEngine 把仿真资产、世界构建和机器人示范合成整合
 
 `2026-09-29` · Tsinghua University; Carnegie Mellon University; Genesis AI; Shanghai Qi Zhi Institute
 
-[完整书目](../README.zh-CN.md#paper-2609-36593) · [证据 1](https://arxiv.org/abs/2609.36593) · [证据 2](https://arxiv.org/html/2609.36593v2)
+[完整书目](../README.zh-CN.md#paper-2609-36593) · [论文](https://arxiv.org/abs/2609.36593) · [论文](https://arxiv.org/html/2609.36593v2)
 
 把物理过程需求拆成场景、物体、动作和渲染程序，并按执行证据定向修复。
 
@@ -1826,7 +1826,7 @@ Text2Sim 将文字描述转成可执行且可编辑的物理动态案例，协�
 
 `2026-09-29` · Shanghai Artificial Intelligence Laboratory; Shanghai Jiao Tong University; Zhejiang University; University of Science and Technology of China; The Chinese University of Hong Kong; The University of Hong Kong
 
-[一手来源 1](https://arxiv.org/abs/2609.37089) · [一手来源 2](https://arxiv.org/html/2609.37089v1) · [一手来源 3](https://real2gym.github.io/)
+[论文](https://arxiv.org/abs/2609.37089) · [论文](https://arxiv.org/html/2609.37089v1) · [项目页](https://real2gym.github.io/)
 
 把人类或机器人演示变成视觉对齐、物理可执行的 Gym，并以执行结果修订场景与动作。
 
@@ -1854,7 +1854,7 @@ Text2Sim 将文字描述转成可执行且可编辑的物理动态案例，协�
 
 `2026-09-29` · ShanghaiTech University
 
-[一手来源 1](https://arxiv.org/abs/2609.37067) · [一手来源 2](https://arxiv.org/html/2609.37067v2)
+[论文](https://arxiv.org/abs/2609.37067) · [论文](https://arxiv.org/html/2609.37067v2)
 
 把关节孪生分为几何、接触和动态保真三阶段，用局部测量与仿真残差驱动 Agent 修改模型。
 
@@ -1882,7 +1882,7 @@ FACT 以共享部件身份和坐标系逐阶段构建关节数字孪生。Agent 
 
 `2026-09-28` · Tsinghua University; Carnegie Mellon University; Genesis AI
 
-[完整书目](../README.zh-CN.md#paper-2609-36024) · [证据 1](https://arxiv.org/abs/2609.36024) · [证据 2](https://arxiv.org/html/2609.36024v3) · [证据 3](https://shuzhaoxie.github.io/CoDimRecon/)
+[完整书目](../README.zh-CN.md#paper-2609-36024) · [论文](https://arxiv.org/abs/2609.36024) · [论文](https://arxiv.org/html/2609.36024v3) · [项目页](https://shuzhaoxie.github.io/CoDimRecon/)
 
 用几何与生成参考指导可编辑场景重建，并分别构造可仿真的线、面、体软物体。
 
@@ -1910,7 +1910,7 @@ CoDimRecon 将可组合场景重建扩展到具有不同几何维度的可变形
 
 `2026-09-27` · University of British Columbia; VAST; Zhejiang University; University of Utah; The University of Texas at Austin; University of California, Los Angeles
 
-[完整书目](../README.zh-CN.md#paper-2609-33208) · [证据 1](https://arxiv.org/abs/2609.33208) · [证据 2](https://arxiv.org/html/2609.33208v1)
+[完整书目](../README.zh-CN.md#paper-2609-33208) · [论文](https://arxiv.org/abs/2609.33208) · [论文](https://arxiv.org/html/2609.33208v1)
 
 将故事、实体、空间关系和镜头写成世界规格，以几何和仿真检查持续修订物理世界。
 
@@ -1938,7 +1938,7 @@ WorldAgent 将复杂世界构建看作规格与验证共同驱动的过程，要
 
 `2026-09-19` · University of British Columbia; National University of Singapore; University of Cambridge; Friedrich-Alexander-Universität Erlangen-Nürnberg; University of Wisconsin–Madison
 
-[完整书目](../README.zh-CN.md#paper-2609-23103) · [证据 1](https://arxiv.org/abs/2609.23103) · [证据 2](https://arxiv.org/html/2609.23103v1) · [证据 3](https://diaggen.github.io/)
+[完整书目](../README.zh-CN.md#paper-2609-23103) · [论文](https://arxiv.org/abs/2609.23103) · [论文](https://arxiv.org/html/2609.23103v1) · [项目页](https://diaggen.github.io/)
 
 让诊断 Agent 主动抓取和扰动生成资产，把行为异常回送给负责的生成阶段。
 
@@ -1966,7 +1966,7 @@ DiagGen 将生成后的物理响应变成可行动的诊断信号，弥补仅静
 
 `2026-09-16` · Nankai University; Rightly Robotics, A4x
 
-[完整书目](../README.zh-CN.md#paper-2609-18620) · [证据 1](https://arxiv.org/abs/2609.18620) · [证据 2](https://arxiv.org/html/2609.18620v2) · [证据 3](https://can-lee.github.io/DeformSmith_web/)
+[完整书目](../README.zh-CN.md#paper-2609-18620) · [论文](https://arxiv.org/abs/2609.18620) · [论文](https://arxiv.org/html/2609.18620v2) · [项目页](https://can-lee.github.io/DeformSmith_web/)
 
 分层建立几何、物理模型和材料，再用受约束物理探测与机器人交互修订可变形资产。
 
@@ -1994,7 +1994,7 @@ DeformSmith 面向可抓取的体积软物体，把几何、物理条件、材�
 
 `2026-09-05` · Galbot; Peking University; Zhejiang University; The University of Hong Kong; Tsinghua University; Beijing Academy of Artificial Intelligence
 
-[一手来源 1](https://arxiv.org/abs/2609.05927) · [一手来源 2](https://fufumeichi.github.io/gif-project-page/) · [一手来源 3](https://fufumeichi.github.io/gif-project-page/assets/paper.pdf)
+[论文](https://arxiv.org/abs/2609.05927) · [项目页](https://fufumeichi.github.io/gif-project-page/) · [论文](https://fufumeichi.github.io/gif-project-page/assets/paper.pdf)
 
 用图像与 3D 模型生成独立物体，再修正精细接触关系，构成可以用于机器人训练的操作场景。
 
@@ -2022,7 +2022,7 @@ GIF 将精确物体组合分解为独立资产重建和相对位姿恢复。互�
 
 `2026-09-04` · The University of Hong Kong; University of Electronic Science and Technology of China
 
-[一手来源 1](https://arxiv.org/abs/2609.05594) · [一手来源 2](https://arxiv.org/html/2609.05594) · [一手来源 3](https://github.com/rxjfighting/SceneMosaic) · [一手来源 4](https://rxjfighting.github.io/SceneMosaic/)
+[论文](https://arxiv.org/abs/2609.05594) · [论文](https://arxiv.org/html/2609.05594) · [代码](https://github.com/rxjfighting/SceneMosaic) · [项目页](https://rxjfighting.github.io/SceneMosaic/)
 
 先从一张图快速重建，再让 Agent 分块调整布局，组合出多个可仿真的场景。
 
@@ -2050,7 +2050,7 @@ GIF 将精确物体组合分解为独立资产重建和相对位姿恢复。互�
 
 `2026-08-31` · ByteDance Seed; Peking University; Zhejiang University
 
-[一手来源 1](https://arxiv.org/abs/2608.30821) · [一手来源 2](https://arxiv.org/html/2608.30821v1) · [一手来源 3](https://lucida-r2s.github.io/)
+[论文](https://arxiv.org/abs/2608.30821) · [论文](https://arxiv.org/html/2608.30821v1) · [项目页](https://lucida-r2s.github.io/)
 
 先聚合每个物体的多视图证据，再由 GizmoAct 反复看图并编辑姿态完成场景对齐。
 
@@ -2078,7 +2078,7 @@ Lucida 按解析、生成和放置三步重建可编辑真实场景，将准确�
 
 `2026-08-27` · MirroS; Tsinghua University; Peking University; Nanyang Technological University
 
-[完整书目](../README.zh-CN.md#paper-2608-27549) · [证据 1](https://arxiv.org/abs/2608.27549) · [证据 2](https://arxiv.org/html/2608.27549v2) · [证据 3](https://mirros-lab.github.io/code-as-world)
+[完整书目](../README.zh-CN.md#paper-2608-27549) · [论文](https://arxiv.org/abs/2608.27549) · [论文](https://arxiv.org/html/2608.27549v2) · [项目页](https://mirros-lab.github.io/code-as-world)
 
 将文字或视频解释成可执行世界程序，通过投影与观测差异迭代修订物体、状态和外观。
 
@@ -2106,7 +2106,7 @@ Code as Worlds 把世界分成可独立编辑的组成、动态和外观，并�
 
 `2026-08-19` · Shanghai Jiao Tong University; Meituan
 
-[一手来源 1](https://arxiv.org/abs/2608.18840) · [一手来源 2](https://arxiv.org/html/2608.18840)
+[论文](https://arxiv.org/abs/2608.18840) · [论文](https://arxiv.org/html/2608.18840)
 
 用程序同时构建房间、可动资产和使用规则，让“按按钮开灯”等跨部件交互真正发生。
 
@@ -2136,7 +2136,7 @@ RoomWright 将代码场景的目标从“摆放和关节”扩展到物体如何
 
 官方项目文章：2026-08-04；arXiv v1：2026-10-01。
 
-[完整书目](../README.zh-CN.md#paper-2610-01863) · [证据 1](https://arxiv.org/abs/2610.01863) · [证据 2](https://arxiv.org/html/2610.01863v1) · [证据 3](https://litereality.github.io/agent/)
+[完整书目](../README.zh-CN.md#paper-2610-01863) · [论文](https://arxiv.org/abs/2610.01863) · [论文](https://arxiv.org/html/2610.01863v1) · [项目页](https://litereality.github.io/agent/)
 
 把 RGB-D 房间重建写成可执行的 Room.py，并通过观察、编辑和检查持续完善。
 
@@ -2164,7 +2164,7 @@ LiteReality-Agent 从 RGB-D 扫描构建真实、带关节且可交互的室内�
 
 `2026-07-23` · University of Massachusetts Amherst; Genesis AI
 
-[一手来源 1](https://arxiv.org/abs/2607.21522) · [一手来源 2](https://arxiv.org/html/2607.21522) · [一手来源 3](https://umass-embodied-agi.github.io/gs-agent/)
+[论文](https://arxiv.org/abs/2607.21522) · [论文](https://arxiv.org/html/2607.21522) · [项目页](https://umass-embodied-agi.github.io/gs-agent/)
 
 Agent 编写物体、材料、运动与镜头程序，在物理引擎中运行并修订动态世界。
 
@@ -2192,7 +2192,7 @@ GS-Agent 将实体构建、物理参数与拍摄过程交给能够编程和互�
 
 `2026-07-21` · University of British Columbia; National University of Singapore; Johns Hopkins University; Friedrich-Alexander-Universität Erlangen-Nürnberg; University of Cambridge; Columbia University; University of California, Los Angeles; Style3D
 
-[一手来源 1](https://arxiv.org/abs/2607.19190) · [一手来源 2](https://arxiv.org/html/2607.19190v5) · [一手来源 3](https://agentic-real2sim.github.io/)
+[论文](https://arxiv.org/abs/2607.19190) · [论文](https://arxiv.org/html/2607.19190v5) · [项目页](https://agentic-real2sim.github.io/)
 
 由视觉语言 Agent 编排感知、物理先验与重放优化，把真实机器人交互变成可运行孪生。
 
@@ -2220,7 +2220,7 @@ Agentic Real2Sim 将真实交互记录转换成能够再次执行而非仅观看
 
 `2026-07-15` · Zhejiang University; Manycore Tech; University of Electronic Science and Technology of China
 
-[完整书目](../README.zh-CN.md#paper-2607-13586) · [证据 1](https://arxiv.org/abs/2607.13586) · [证据 2](https://github.com/breezexian/UniPhysGen) · [证据 3](https://huggingface.co/datasets/spatialverse/UniPhys-Bench)
+[完整书目](../README.zh-CN.md#paper-2607-13586) · [论文](https://arxiv.org/abs/2607.13586) · [代码](https://github.com/breezexian/UniPhysGen) · [数据集](https://huggingface.co/datasets/spatialverse/UniPhys-Bench)
 
 资产分解与物理语义学习生成可仿真的关节资产。
 
@@ -2248,7 +2248,7 @@ Agentic Real2Sim 将真实交互记录转换成能够再次执行而非仅观看
 
 `2026-07-08` · Horizon Robotics; WuwenAI
 
-[一手来源 1](https://arxiv.org/abs/2607.07459) · [一手来源 2](https://arxiv.org/html/2607.07459v3) · [一手来源 3](https://horizonrobotics.github.io/EmbodiedGen/)
+[论文](https://arxiv.org/abs/2607.07459) · [论文](https://arxiv.org/html/2607.07459v3) · [项目页](https://horizonrobotics.github.io/EmbodiedGen/)
 
 以统一物理资产表示、场景图放置和有状态编辑，把任务意图变成可执行 3D 世界。
 
@@ -2276,7 +2276,7 @@ EmbodiedGen V2 联合仿真资产加工、交互 affordance、任务世界、多
 
 `2026-07-02` · Carnegie Mellon University; Harvard University; University of California, Merced
 
-[一手来源 1](https://arxiv.org/abs/2607.01766) · [一手来源 2](https://arxiv.org/html/2607.01766v1) · [一手来源 3](https://dynsimworlds.github.io/)
+[论文](https://arxiv.org/abs/2607.01766) · [论文](https://arxiv.org/html/2607.01766v1) · [项目页](https://dynsimworlds.github.io/)
 
 以固定构建阶段和场景协议约束 Blender 编程，联合渲染评审与引擎状态检查修复动态世界。
 
@@ -2304,7 +2304,7 @@ SimWorlds 针对看起来运动正确却使用错误机制的动态场景，加�
 
 `2026-06-26` · NVIDIA; Georgia Institute of Technology; Stanford University; The University of Texas at Austin; University of Toronto
 
-[一手来源 1](https://arxiv.org/abs/2606.28276) · [一手来源 2](https://arxiv.org/html/2606.28276v4) · [一手来源 3](https://research.nvidia.com/labs/gear/simfoundry/) · [一手来源 4](https://github.com/NVlabs/SimFoundry)
+[论文](https://arxiv.org/abs/2606.28276) · [论文](https://arxiv.org/html/2606.28276v4) · [项目页](https://research.nvidia.com/labs/gear/simfoundry/) · [代码](https://github.com/NVlabs/SimFoundry)
 
 把一段现实视频转成可交互数字孪生，再沿物体、布局和任务三个维度生成可训练的变体。
 
@@ -2332,7 +2332,7 @@ SimFoundry 从单段现实视频自动重建可模拟场景，同时支持物体
 
 `2026-06-12` · East China Normal University; Fudan University; Shanghai Jiao Tong University
 
-[一手来源 1](https://arxiv.org/abs/2606.14168) · [一手来源 2](https://arxiv.org/html/2606.14168) · [一手来源 3](https://xujay111.github.io/muse_githubio/)
+[论文](https://arxiv.org/abs/2606.14168) · [论文](https://arxiv.org/html/2606.14168) · [项目页](https://xujay111.github.io/muse_githubio/)
 
 把场景要求拆成逐项可验证的目标，在局部编辑时保护已经正确的内容。
 
@@ -2360,7 +2360,7 @@ MUSE 研究如何在持续构建中保留已经完成的工作。它用需求程
 
 `2026-06-02` · Université de Montréal; Mila – Quebec AI Institute
 
-[一手来源 1](https://arxiv.org/abs/2606.04226) · [一手来源 2](https://arxiv.org/html/2606.04226v1) · [一手来源 3](https://percept-twin.github.io/)
+[论文](https://arxiv.org/abs/2606.04226) · [论文](https://arxiv.org/html/2606.04226v1) · [项目页](https://percept-twin.github.io/)
 
 把机器人感知得到的开放词汇地图转成可操作的场景，用于审查和修订任务计划。
 
@@ -2388,7 +2388,7 @@ PerceptTwin 从机器人感知地图自动构造一个可解释、可交互的�
 
 `2026-05-20` · Nanyang Technological University; ACE Robotics
 
-[一手来源 1](https://arxiv.org/abs/2605.21572) · [一手来源 2](https://arxiv.org/html/2605.21572v1) · [一手来源 3](https://physx-omni.github.io/)
+[论文](https://arxiv.org/abs/2605.21572) · [论文](https://arxiv.org/html/2605.21572v1) · [项目页](https://physx-omni.github.io/)
 
 以模板游程编码让 VLM 直接预测高分辨几何与物理属性，统一生成多类可仿真资产。
 
@@ -2416,7 +2416,7 @@ PhysX-Omni 的独立方法贡献是面向 VLM 的模板 RLE 几何表示及全�
 
 `2026-05-19` · The Chinese University of Hong Kong; Shanghai Jiao Tong University; Shanghai AI Laboratory; Microsoft; University of Oxford
 
-[一手来源 1](https://arxiv.org/abs/2605.19587) · [一手来源 2](https://arxiv.org/html/2605.19587v1) · [一手来源 3](https://scene-code.github.io/) · [一手来源 4](https://github.com/wangpuyi/SceneCode)
+[论文](https://arxiv.org/abs/2605.19587) · [论文](https://arxiv.org/html/2605.19587v1) · [项目页](https://scene-code.github.io/) · [代码](https://github.com/wangpuyi/SceneCode)
 
 把房间里的每个物体继续拆成可执行的部件程序，再编译为带关节和物理属性的场景。
 
@@ -2444,7 +2444,7 @@ SceneCode 将可交互室内场景生成表述为程序化世界构建，以显�
 
 `2026-05-14` · University of Wisconsin–Madison
 
-[完整书目](../README.zh-CN.md#paper-2605-14398) · [证据 1](https://arxiv.org/abs/2605.14398) · [证据 2](https://arxiv.org/html/2605.14398v3) · [证据 3](https://uwsbel.github.io/chrono-agentic-website/)
+[完整书目](../README.zh-CN.md#paper-2605-14398) · [论文](https://arxiv.org/abs/2605.14398) · [论文](https://arxiv.org/html/2605.14398v3) · [项目页](https://uwsbel.github.io/chrono-agentic-website/)
 
 从人可审阅的物理仿真计划出发，生成、执行并逐步修复独立 PyChrono 程序。
 
@@ -2472,7 +2472,7 @@ ChronoAgentic 通过可执行代码构建显式物理世界，让专门角色处
 
 `2026-05-14` · University of Cambridge; University of Oxford; Nanyang Technological University
 
-[一手来源 1](https://arxiv.org/abs/2605.15187) · [一手来源 2](https://arxiv.org/html/2605.15187v1) · [一手来源 3](https://articraft3d.github.io/)
+[论文](https://arxiv.org/abs/2605.15187) · [论文](https://arxiv.org/html/2605.15187v1) · [项目页](https://articraft3d.github.io/)
 
 用受限 SDK 编写可执行关节资产程序，并通过结构检查与几何探针迭代修复。
 
@@ -2500,7 +2500,7 @@ Articraft 将关节 3D 资产生成写成小而专用的程序编写问题，通
 
 `2026-05-10` · UC San Diego; New York University
 
-[一手来源 1](https://arxiv.org/abs/2605.09423) · [一手来源 2](https://arxiv.org/html/2605.09423v2) · [一手来源 3](https://github.com/SimWorld-AI/SimWorld-Studio)
+[论文](https://arxiv.org/abs/2605.09423) · [论文](https://arxiv.org/html/2605.09423v2) · [代码](https://github.com/SimWorld-AI/SimWorld-Studio)
 
 让 Coding Agent 在 UE5 中持续开发任务环境，并根据学习者表现调整后续训练场景。
 
@@ -2528,7 +2528,7 @@ SimWorld Studio 用工具和技能增强的 Coding Agent 自动构建可供具�
 
 `2026-05-10` · Nankai University; Zhejiang University; Southern University of Science and Technology; Rightly Robotics, A4X; University of Science and Technology of China
 
-[一手来源 1](https://arxiv.org/abs/2605.09586) · [一手来源 2](https://arxiv.org/html/2605.09586v2) · [一手来源 3](https://can-lee.github.io/deformmaster-web/)
+[论文](https://arxiv.org/abs/2605.09586) · [论文](https://arxiv.org/html/2605.09586v2) · [项目页](https://can-lee.github.io/deformmaster-web/)
 
 从真实交互视频优化可执行软体动力学，将物理滚动、神经残差和高斯外观耦合。
 
@@ -2556,7 +2556,7 @@ DeformMaster 从真实物体交互建立可响应新动作、材料设置和视�
 
 `2026-04-13` · Beihang University; Zhejiang University; The University of Hong Kong
 
-[完整书目](../README.zh-CN.md#paper-2604-10992) · [证据 1](https://arxiv.org/abs/2604.10992) · [证据 2](https://arxiv.org/html/2604.10992v2) · [证据 3](https://shui-yuan.github.io/articad/)
+[完整书目](../README.zh-CN.md#paper-2604-10992) · [论文](https://arxiv.org/abs/2604.10992) · [论文](https://arxiv.org/html/2604.10992v2) · [项目页](https://shui-yuan.github.io/articad/)
 
 预先约定部件连接器，再通过多 Agent 代码生成、装配和回滚构造可动 CAD。
 
@@ -2584,7 +2584,7 @@ ArtiCAD 将多部件可动模型生成拆成设计、部件代码、确定性装
 
 `2026-02-10` · NVIDIA; University of Illinois Urbana-Champaign; Cornell University; Stanford University
 
-[一手来源 1](https://arxiv.org/abs/2602.10116) · [一手来源 2](https://arxiv.org/html/2602.10116v2) · [一手来源 3](https://research.nvidia.com/labs/dir/sage/)
+[论文](https://arxiv.org/abs/2602.10116) · [论文](https://arxiv.org/html/2602.10116v2) · [项目页](https://research.nvidia.com/labs/dir/sage/)
 
 用可组合的场景工具和双重 critic，把机器人任务变为稳定的可交互 3D 场景。
 
@@ -2612,7 +2612,7 @@ SAGE 从用户任务自动组织布局、物体组合和场景校验工具，以
 
 `2026-02-09` · Massachusetts Institute of Technology; Toyota Research Institute
 
-[一手来源 1](https://arxiv.org/abs/2602.09153) · [一手来源 2](https://arxiv.org/html/2602.09153v2) · [一手来源 3](https://scenesmith.github.io/)
+[论文](https://arxiv.org/abs/2602.09153) · [论文](https://arxiv.org/html/2602.09153v2) · [项目页](https://scenesmith.github.io/)
 
 从建筑到家具再到小物体，逐层生成可直接进入物理模拟的密集室内场景。
 
@@ -2640,7 +2640,7 @@ SceneSmith 面向家庭机器人训练和评估，生成包含密集杂物、可
 
 `2025-09-24` · State Key Laboratory of General Artificial Intelligence, BIGAI; Tsinghua University
 
-[一手来源 1](https://arxiv.org/abs/2509.20414) · [一手来源 2](https://arxiv.org/html/2509.20414v2) · [一手来源 3](https://scene-weaver.github.io/) · [一手来源 4](https://github.com/Scene-Weaver/SceneWeaver) · [一手来源 5](https://proceedings.neurips.cc/paper_files/paper/2025/hash/cd2b3c429c8a2ca57656970e010b4b60-Abstract-Conference.html)
+[论文](https://arxiv.org/abs/2509.20414) · [论文](https://arxiv.org/html/2509.20414v2) · [项目页](https://scene-weaver.github.io/) · [代码](https://github.com/Scene-Weaver/SceneWeaver) · [论文](https://proceedings.neurips.cc/paper_files/paper/2025/hash/cd2b3c429c8a2ca57656970e010b4b60-Abstract-Conference.html)
 
 按当前场景最需要解决的问题选择构建工具，在渲染与几何反馈中逐步完善室内环境。
 
@@ -2668,7 +2668,7 @@ SceneWeaver 以可扩展工具接口统一多种场景合成方式，让语言�
 
 `2024-11-04` · University of Pennsylvania
 
-[一手来源 1](https://arxiv.org/abs/2411.01775) · [一手来源 2](https://arxiv.org/html/2411.01775v1) · [一手来源 3](https://eureka-research.github.io/eurekaverse/)
+[论文](https://arxiv.org/abs/2411.01775) · [论文](https://arxiv.org/html/2411.01775v1) · [项目页](https://eureka-research.github.io/eurekaverse/)
 
 根据四足策略的学习表现迭代生成可执行地形代码，形成适应能力的跑酷课程。
 
@@ -2696,7 +2696,7 @@ Eurekaverse 将无监督环境设计写成 LLM 可编辑的地形程序，并让
 
 `2024-10-20` · NVIDIA; Stanford University
 
-[一手来源 1](https://arxiv.org/abs/2410.15536) · [一手来源 2](https://openaccess.thecvf.com/content/CVPR2025W/CV2/papers/Zook_GRS_Generating_Robotic_Simulation_Tasks_from_Real-World_Images_CVPRW_2025_paper.pdf)
+[论文](https://arxiv.org/abs/2410.15536) · [论文](https://openaccess.thecvf.com/content/CVPR2025W/CV2/papers/Zook_GRS_Generating_Robotic_Simulation_Tasks_from_Real-World_Images_CVPRW_2025_paper.pdf)
 
 从单张 RGB-D 图生成可运行的机器人任务与测试，再由错误路由选择修订仿真或测试。
 
@@ -2724,7 +2724,7 @@ GRS 将单幅 RGB-D 观测转化为包含可解任务的仿真。系统先理解
 
 `2024-10-03` · University of Pennsylvania
 
-[一手来源 1](https://arxiv.org/abs/2410.13882) · [一手来源 2](https://arxiv.org/html/2410.13882v4) · [一手来源 3](https://articulate-anything.github.io/) · [一手来源 4](https://github.com/vlongle/articulate-anything)
+[论文](https://arxiv.org/abs/2410.13882) · [论文](https://arxiv.org/html/2410.13882v4) · [项目页](https://articulate-anything.github.io/) · [代码](https://github.com/vlongle/articulate-anything)
 
 让 VLM 编写可编译为 URDF 的 Python，并对照参考与模拟运动反复修正关节资产。
 
@@ -2752,7 +2752,7 @@ Articulate-Anything 从文字、图像或视频构建带关节的交互物体，
 
 `2024-09-26` · Stanford University; NVIDIA
 
-[一手来源 1](https://arxiv.org/abs/2409.17652) · [一手来源 2](https://arxiv.org/html/2409.17652v2) · [一手来源 3](https://cs.stanford.edu/~sunfanyun/factorsim/)
+[论文](https://arxiv.org/abs/2409.17652) · [论文](https://arxiv.org/html/2409.17652v2) · [项目页](https://cs.stanford.edu/~sunfanyun/factorsim/)
 
 用因子化 POMDP 限制每步需要的代码上下文，从语言规格生成完整仿真。
 
@@ -2780,7 +2780,7 @@ FactorSim 针对长规格下语言模型容易遗漏条件或修改无关代码�
 
 `2024-09-04` · The University of Hong Kong; Shanghai AI Laboratory; Shenzhen University; AgileX Robotics; Institute of Automation, Chinese Academy of Sciences
 
-[一手来源 1](https://arxiv.org/abs/2409.02920) · [一手来源 2](https://arxiv.org/html/2409.02920v3) · [一手来源 3](https://robotwin-benchmark.github.io/early-version/)
+[论文](https://arxiv.org/abs/2409.02920) · [论文](https://arxiv.org/html/2409.02920v3) · [项目页](https://robotwin-benchmark.github.io/early-version/)
 
 以单张真实图像生成物体数字孪生，并围绕功能坐标系生成双臂专家轨迹程序。
 
@@ -2808,7 +2808,7 @@ RoboTwin 早期版把真实遥操作数据与生成式数字孪生中的合成�
 
 `2024-06-12` · Stanford University; Columbia University
 
-[一手来源 1](https://arxiv.org/abs/2406.08474) · [一手来源 2](https://arxiv.org/html/2406.08474v2) · [一手来源 3](https://real2code.github.io/)
+[论文](https://arxiv.org/abs/2406.08474) · [论文](https://arxiv.org/html/2406.08474v2) · [项目页](https://real2code.github.io/)
 
 用部件包围盒连接视觉重建与代码生成，预测可以直接模拟的对象关节结构。
 
@@ -2836,7 +2836,7 @@ Real2Code 从视觉观测重建物体的部件几何，再用定向包围盒把�
 
 `2024-05-24` · Imperial College London; University of British Columbia; Vector Institute
 
-[一手来源 1](https://arxiv.org/abs/2405.15568) · [一手来源 2](https://arxiv.org/html/2405.15568v3) · [一手来源 3](https://dub.sh/omniepic)
+[论文](https://arxiv.org/abs/2405.15568) · [论文](https://arxiv.org/html/2405.15568v3) · [项目页](https://dub.sh/omniepic)
 
 借助任务档案和学习反馈持续编写新的环境、奖励与成功判定代码。
 
@@ -2864,7 +2864,7 @@ OMNI-EPIC 将开放式探索扩展到以代码定义环境，联合生成场景�
 
 `2023-12-14` · University of Pennsylvania; Stanford University; Allen Institute for Artificial Intelligence; University of Washington
 
-[一手来源 1](https://arxiv.org/abs/2312.09067) · [一手来源 2](https://arxiv.org/html/2312.09067v2) · [一手来源 3](https://yueyang1996.github.io/holodeck/) · [一手来源 4](https://github.com/allenai/Holodeck)
+[论文](https://arxiv.org/abs/2312.09067) · [论文](https://arxiv.org/html/2312.09067v2) · [项目页](https://yueyang1996.github.io/holodeck/) · [代码](https://github.com/allenai/Holodeck)
 
 把文字里的房间需求拆成建筑结构、物体清单和空间约束，组装为可导航的室内环境。
 
@@ -2892,7 +2892,7 @@ Holodeck 根据自然语言自动构建多样化的具身 AI 室内环境，利�
 
 `2023-11-02` · Carnegie Mellon University; Tsinghua University; Massachusetts Institute of Technology; University of Massachusetts Amherst; MIT-IBM AI Lab
 
-[一手来源 1](https://arxiv.org/abs/2311.01455) · [一手来源 2](https://arxiv.org/html/2311.01455v3) · [一手来源 3](https://robogen-ai.github.io/)
+[论文](https://arxiv.org/abs/2311.01455) · [论文](https://arxiv.org/html/2311.01455v3) · [项目页](https://robogen-ai.github.io/)
 
 让 LLM 提议任务、组合场景并选择学习算法，批量形成机器人技能训练问题。
 
@@ -2920,7 +2920,7 @@ RoboGen 将基础模型用于生成机器人学习所需的任务、场景和监
 
 `2023-10-27` · Carnegie Mellon University
 
-[一手来源 1](https://arxiv.org/abs/2310.18308) · [一手来源 2](https://arxiv.org/html/2310.18308v1) · [一手来源 3](https://gen2sim.github.io/)
+[论文](https://arxiv.org/abs/2310.18308) · [论文](https://arxiv.org/html/2310.18308v1) · [项目页](https://gen2sim.github.io/)
 
 把物体图像转成带物理属性的资产，再由 LLM 生成任务分解与奖励程序。
 
@@ -2948,7 +2948,7 @@ Gen2Sim 用预训练视觉与语言生成模型减少人工制作机器人训练
 
 `2023-10-02` · MIT CSAIL; UC San Diego; University of Washington; CMU; Tsinghua University; Shanghai Jiao Tong University
 
-[一手来源 1](https://arxiv.org/abs/2310.01361) · [一手来源 2](https://arxiv.org/html/2310.01361v2) · [一手来源 3](https://liruiw.github.io/gensim) · [一手来源 4](https://github.com/liruiw/GenSim)
+[论文](https://arxiv.org/abs/2310.01361) · [论文](https://arxiv.org/html/2310.01361v2) · [项目页](https://liruiw.github.io/gensim) · [代码](https://github.com/liruiw/GenSim)
 
 把任务描述变成可执行的机器人任务类，扩展模拟任务库与示范数据。
 
@@ -2976,7 +2976,7 @@ GenSim 利用 LLM 的推理和代码能力自动扩展机器人模拟任务，�
 
 `首发日期未明确` · Hebbian Robotics
 
-[一手来源 1](https://github.com/Hebbian-Robotics/mujoco-workbench)
+[代码](https://github.com/Hebbian-Robotics/mujoco-workbench)
 
 CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。
 
@@ -3070,7 +3070,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-11-10` · University of Illinois Chicago
 
-[完整书目](../README.zh-CN.md#paper-2611-13576) · [证据 1](https://arxiv.org/abs/2611.13576) · [证据 2](https://github.com/chenyil6/phyRubric) · [证据 3](https://huggingface.co/datasets/kittyhy/PhyRubric-Bench)
+[完整书目](../README.zh-CN.md#paper-2611-13576) · [论文](https://arxiv.org/abs/2611.13576) · [代码](https://github.com/chenyil6/phyRubric) · [数据集](https://huggingface.co/datasets/kittyhy/PhyRubric-Bench)
 
 以针对描述预先制定的 rubric，逐项诊断生成视频中可见的物理常识错误。
 
@@ -3089,7 +3089,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-11-06` · Navers Lab; Einsia.AI; Tsinghua University
 
-[完整书目](../README.zh-CN.md#paper-2611-09017) · [证据 1](https://arxiv.org/abs/2611.09017) · [证据 2](https://arxiv.org/html/2611.09017)
+[完整书目](../README.zh-CN.md#paper-2611-09017) · [论文](https://arxiv.org/abs/2611.09017) · [论文](https://arxiv.org/html/2611.09017)
 
 跨 Blender 与 Unreal Engine 评测代码生成的物体、场景和交互世界，连接可视化产物与可执行任务要求。
 
@@ -3108,7 +3108,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-11-04` · University of Washington; Tencent AI Lab; HKUST; USTC; Shanghai Jiao Tong University
 
-[一手来源 1](https://arxiv.org/abs/2611.05802) · [一手来源 2](https://arxiv.org/html/2611.05802)
+[论文](https://arxiv.org/abs/2611.05802) · [论文](https://arxiv.org/html/2611.05802)
 
 提出一个检查生成房间的评估 Agent：根据具体场景主动寻找问题，调用几何工具并选择观察视角，从物理有效性、视觉协调和日常使用逻辑三个方面给出分数与诊断报告。报告还能作为反馈，帮助生成系统修订场景。
 
@@ -3127,7 +3127,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-27` · University of Western Australia; University of British Columbia
 
-[完整书目](../README.zh-CN.md#paper-2610-37326) · [证据 1](https://arxiv.org/abs/2610.37326) · [证据 2](https://arxiv.org/html/2610.37326)
+[完整书目](../README.zh-CN.md#paper-2610-37326) · [论文](https://arxiv.org/abs/2610.37326) · [论文](https://arxiv.org/html/2610.37326)
 
 把文字生成的室内场景放进物理仿真，按统一协议执行推、开合和表面探测等动作，检查场景是否真的支持交互。它要揭示的是：物体摆得合理、静止时没有明显错误，并不保证动起来以后仍然可用。
 
@@ -3146,7 +3146,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-14` · Zhejiang University; Alibaba Token Hub, Alibaba Group; The Chinese University of Hong Kong; Fudan University; National University of Singapore
 
-[完整书目](../README.zh-CN.md#paper-system-blenderworld) · [证据 1](https://arxiv.org/abs/2610.23986) · [证据 2](https://arxiv.org/html/2610.23986) · [证据 3](https://blenderworld.github.io/)
+[完整书目](../README.zh-CN.md#paper-system-blenderworld) · [论文](https://arxiv.org/abs/2610.23986) · [论文](https://arxiv.org/html/2610.23986) · [项目页](https://blenderworld.github.io/)
 
 提供来自建筑、产品、自然环境和科学可视化的 3D 创作任务，让 Agent 根据文字、图片、视频或规格文件，用 Blender 创建或编辑可复用的场景。评估时结合多视角渲染、原生场景检查和逐任务要求，判断最终作品是否完成创作意图。
 
@@ -3165,7 +3165,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-13` · AI Robot Association (AIRoA); Waseda University
 
-[一手来源 1](https://arxiv.org/abs/2610.17521) · [一手来源 2](https://arxiv.org/html/2610.17521) · [一手来源 3](https://research.airoa.io/publications/yubi-real2sim/) · [一手来源 4](https://huggingface.co/datasets/airoa-org/yubi-real2sim-assets) · [一手来源 5](https://github.com/airoa-org/yubi-real2sim)
+[论文](https://arxiv.org/abs/2610.17521) · [论文](https://arxiv.org/html/2610.17521) · [项目页](https://research.airoa.io/publications/yubi-real2sim/) · [数据集](https://huggingface.co/datasets/airoa-org/yubi-real2sim-assets) · [代码](https://github.com/airoa-org/yubi-real2sim)
 
 把真实机器人场景重建为 3D 高斯视觉场景，并接入 MuJoCo 进行策略测试；通过真实与仿真的配对实验，研究重建中的孔洞、漂浮伪影等缺陷会怎样改变策略表现和排名。重点是判断这样的数字场景能否可靠地替代部分实机评测。
 
@@ -3184,7 +3184,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-12` · Shanghai Jiao Tong University; Sun Yat-sen University; Shanghai Innovation Institute; Southeast University; Nanyang Technological University; Carnegie Mellon University
 
-[完整书目](../README.zh-CN.md#paper-2610-17288) · [证据 1](https://arxiv.org/abs/2610.17288) · [证据 2](https://arxiv.org/html/2610.17288)
+[完整书目](../README.zh-CN.md#paper-2610-17288) · [论文](https://arxiv.org/abs/2610.17288) · [论文](https://arxiv.org/html/2610.17288)
 
 让 Coding Agent 观察物理过程的视频，自主编写、运行和修订 Blender 场景程序，重建刚体、液体、可变形物体及风驱动现象。除了比较重建画面，还检查程序和场景中的物理机制，并在部分任务中改变条件后重新仿真。
 
@@ -3203,7 +3203,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-10` · University of Science and Technology of China; The Chinese University of Hong Kong
 
-[完整书目](../README.zh-CN.md#paper-2610-15166) · [证据 1](https://arxiv.org/abs/2610.15166) · [证据 2](https://arxiv.org/html/2610.15166)
+[完整书目](../README.zh-CN.md#paper-2610-15166) · [论文](https://arxiv.org/abs/2610.15166) · [论文](https://arxiv.org/html/2610.15166)
 
 让 Coding Agent 从视觉参考或高层目标出发，编写一个能够运行的 3D 世界；任务从单个机械机制逐步扩展到多阶段联动系统和目标驱动的世界设计。它研究模型能否把对结构、运动和因果关系的理解落实为可执行产物。
 
@@ -3222,7 +3222,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-06` · NLPR & MAIS, CASIA; Peking University; Huawei Noah’s Ark Lab
 
-[完整书目](../README.zh-CN.md#paper-2610-08720) · [证据 1](https://arxiv.org/abs/2610.08720) · [证据 2](https://arxiv.org/html/2610.08720)
+[完整书目](../README.zh-CN.md#paper-2610-08720) · [论文](https://arxiv.org/abs/2610.08720) · [论文](https://arxiv.org/html/2610.08720)
 
 把经典物理模拟问题变成编程任务：给 Agent 一个已经准备好场景和执行接口的代码框架，让它补全决定系统如何随时间演化的求解器。随后运行程序，分别检查执行成功、目标现象的再现程度和物理合理性。
 
@@ -3241,7 +3241,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-03` · Aether AI; University of California San Diego
 
-[完整书目](../README.zh-CN.md#paper-2610-04432) · [证据 1](https://arxiv.org/abs/2610.04432) · [证据 2](https://arxiv.org/html/2610.04432) · [证据 3](https://github.com/AetherLabsAI/Video2World/blob/main/docs/benchmark.md)
+[完整书目](../README.zh-CN.md#paper-2610-04432) · [论文](https://arxiv.org/abs/2610.04432) · [论文](https://arxiv.org/html/2610.04432) · [文档](https://github.com/AetherLabsAI/Video2World/blob/main/docs/benchmark.md)
 
 把机器人或人类示范视频转化为一项端到端软件工程任务：Agent 既要重建模拟环境，也要编写对应的机器人行为，并根据执行反馈反复修改。最终检查空间结构、动态过程和交互任务能否在生成世界中重现。
 
@@ -3260,7 +3260,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-02` · Johns Hopkins University; Stanford University; Max Planck Institute for Intelligent Systems; Massachusetts Institute of Technology
 
-[完整书目](../README.zh-CN.md#paper-2610-03715) · [证据 1](https://arxiv.org/abs/2610.03715) · [证据 2](https://arxiv.org/html/2610.03715)
+[完整书目](../README.zh-CN.md#paper-2610-03715) · [论文](https://arxiv.org/abs/2610.03715) · [论文](https://arxiv.org/html/2610.03715)
 
 要求 Agent 将真实或合成的动态视频重建成可执行图形程序，恢复场景的三维结构及其随时间发生的变化。基准同时比较画面和运动，并利用合成场景的三维真值作更直接的检查；实现方式可以是关键帧、解析轨迹或物理模拟。
 
@@ -3279,7 +3279,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-09-29` · University of California San Diego; University of California Berkeley
 
-[完整书目](../README.zh-CN.md#paper-2609-36777) · [证据 1](https://arxiv.org/abs/2609.36777) · [证据 2](https://arxiv.org/html/2609.36777)
+[完整书目](../README.zh-CN.md#paper-2609-36777) · [论文](https://arxiv.org/abs/2609.36777) · [论文](https://arxiv.org/html/2609.36777)
 
 在统一 Unreal Engine 接口下研究两类任务：根据文字构建新场景，以及根据参考图精确修改已有场景。它直接检查引擎中的场景状态，特别关注目标是否实现、资产是否完整，以及修改一个地方时有没有破坏其他内容。
 
@@ -3300,7 +3300,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 官方基准首发：2026-09-21；arXiv v1：2026-11-02。
 
-[完整书目](../README.zh-CN.md#paper-2611-02659) · [证据 1](https://arxiv.org/abs/2611.02659) · [证据 2](https://cadbench.ai/news/cad-bench-v3) · [证据 3](https://huggingface.co/datasets/gnucleus-ai/cad-gen-freecad-bench-v3)
+[完整书目](../README.zh-CN.md#paper-2611-02659) · [论文](https://arxiv.org/abs/2611.02659) · [文章](https://cadbench.ai/news/cad-bench-v3) · [数据集](https://huggingface.co/datasets/gnucleus-ai/cad-gen-freecad-bench-v3)
 
 评测根据文字、先创建再编辑的要求和工程图纸，构建原生参数化 CAD 产物的能力。
 
@@ -3319,7 +3319,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-09-14` · University of Rochester; Sony Group Corporation; Carnegie Mellon University; University of Washington
 
-[完整书目](../README.zh-CN.md#paper-2609-15478) · [证据 1](https://arxiv.org/abs/2609.15478) · [证据 2](https://arxiv.org/html/2609.15478)
+[完整书目](../README.zh-CN.md#paper-2609-15478) · [论文](https://arxiv.org/abs/2609.15478) · [论文](https://arxiv.org/html/2609.15478)
 
 让多模态 Agent 在统一预算和运行环境中，把真实视频重新写成带动画的 Blender 场景。通过渲染相似性以及原视频和重建视频中的时空事实是否一致，检验模型能否把视频理解转化为可复现的程序表达。
 
@@ -3338,7 +3338,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-06-01` · NLPR & MAIS, CASIA; Huawei Noah’s Ark Lab
 
-[一手来源 1](https://arxiv.org/abs/2606.01869) · [一手来源 2](https://arxiv.org/html/2606.01869)
+[论文](https://arxiv.org/abs/2606.01869) · [论文](https://arxiv.org/html/2606.01869)
 
 要求模型根据自然语言生成浏览器中的交互式 3D 程序，任务包括模拟、渲染和应用。其 StateProbe 评估器会实际运行程序、执行动作并检查隐藏的状态要求，用来发现画面正常但交互逻辑或状态变化错误的产物。
 
@@ -3357,7 +3357,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-06-01` · Cornell University
 
-[一手来源 1](https://arxiv.org/abs/2606.01538) · [一手来源 2](https://arxiv.org/html/2606.01538)
+[论文](https://arxiv.org/abs/2606.01538) · [论文](https://arxiv.org/html/2606.01538)
 
 构建包含可变形体、流体和多种材料的二维 MPM 模拟数据，让模型根据一段已观测视频及不同程度的场景信息预测后续过程。它对比两条路线：生成并运行模拟程序，或者直接生成未来视频，研究两者在物理推断和长时外推上的差别。
 
@@ -3376,7 +3376,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-05-20` · Cornell University; Amazon
 
-[一手来源 1](https://arxiv.org/abs/2605.20576) · [一手来源 2](https://arxiv.org/html/2605.20576)
+[论文](https://arxiv.org/abs/2605.20576) · [论文](https://arxiv.org/html/2605.20576)
 
 训练视觉语言模型从视频运动线索中推断物体形状、初始状态、物理属性和相机参数，并以结构化文本输出完整场景配置。配置交给物理引擎重新模拟，再通过采样和搜索改进匹配，研究语言表示能否连接视频理解与刚体动力学重建。
 
@@ -3395,7 +3395,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-04-26` · Nanjing University; Skywork AI; Jilin University; Great Wall Motor; Tianjin University
 
-[一手来源 1](https://arxiv.org/abs/2604.23580) · [一手来源 2](https://arxiv.org/html/2604.23580)
+[论文](https://arxiv.org/abs/2604.23580) · [论文](https://arxiv.org/html/2604.23580)
 
 将自然语言描述的物理现象转化为模拟代码生成任务，检查程序是否运行、画面是否符合要求以及物理断言是否成立。论文还提出专门负责生成与物理纠错的多 Agent 流程，研究有针对性的错误修正能否提升模拟的物理准确性。
 
@@ -3414,7 +3414,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-04-14` · Stony Brook University
 
-[一手来源 1](https://arxiv.org/abs/2604.13035) · [一手来源 2](https://arxiv.org/html/2604.13035)
+[论文](https://arxiv.org/abs/2604.13035) · [论文](https://arxiv.org/html/2604.13035)
 
 从已有室内数据中整理空间常识和约束，建立直接检查布局与物体关系的符号评估器，指出具体哪些摆放合理、哪些关系违规。论文还比较规则、文本模型和视觉模型提供的反馈，研究不同反馈怎样影响场景修订。
 
@@ -3433,7 +3433,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-03-31` · École Polytechnique; Dassault Systèmes; Stanford University; Università della Svizzera italiana
 
-[一手来源 1](https://arxiv.org/abs/2603.29798) · [一手来源 2](https://arxiv.org/html/2603.29798)
+[论文](https://arxiv.org/abs/2603.29798) · [论文](https://arxiv.org/html/2603.29798)
 
 输入一个室内场景、一项活动以及执行者的身体条件，把活动拆成针对物体的具体动作，再检查可达范围、操作空间和路径是否允许这些动作。系统返回失败原因，并利用这些验证反馈训练视觉语言模型，使其更准确判断场景能否支持活动。
 
@@ -3452,7 +3452,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-03-17` · Hamad Bin Khalifa University; Texas A&M University
 
-[一手来源 1](https://arxiv.org/abs/2603.16432) · [一手来源 2](https://arxiv.org/html/2603.16432)
+[论文](https://arxiv.org/abs/2603.16432) · [论文](https://arxiv.org/html/2603.16432)
 
 提供带独立物理测量和不确定性标注的真实动态视频，要求方法从视频推断系统的物理参数或支配方程。它建立统一协议，检查推断是否准确、参数能否辨认，以及恢复的模型能否解释后续时间和不同条件下的运动。
 
@@ -3471,7 +3471,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-02-11` · Mohamed bin Zayed University of Artificial Intelligence; Sun Yat-sen University
 
-[一手来源 1](https://arxiv.org/abs/2602.10840) · [一手来源 2](https://arxiv.org/html/2602.10840)
+[论文](https://arxiv.org/abs/2602.10840) · [论文](https://arxiv.org/html/2602.10840)
 
 围绕多种物理概念收集动画场景描述，训练和评测 LLM 编写可执行代码，把这些现象表现为动画。论文还让视觉语言模型检查生成视频，并把视觉奖励用于强化学习；目标是物理启发动画的表达质量，而非严格验证动力学求解。
 
@@ -3490,7 +3490,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-02-09` · University of Waterloo; Autodesk AI Lab; independent researcher
 
-[一手来源 1](https://arxiv.org/abs/2602.13294) · [一手来源 2](https://arxiv.org/html/2602.13294)
+[论文](https://arxiv.org/abs/2602.13294) · [论文](https://arxiv.org/html/2602.13294)
 
 要求多模态模型把看到的物理视频写成能够运行的模拟器代码，使其对世界的理解变成可检查、可修改的程序。配套 VisPhyBench 用受控场景比较重建的外观与运动，研究模型能否从视觉线索恢复合理的物理过程。
 
@@ -3509,7 +3509,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2025-11-04` · Yonsei University; POSTECH
 
-[一手来源 1](https://arxiv.org/abs/2511.03001) · [一手来源 2](https://arxiv.org/html/2511.03001)
+[论文](https://arxiv.org/abs/2511.03001) · [论文](https://arxiv.org/html/2511.03001)
 
 针对文字生成 3D 场景，提供带人工约束标注和参考场景的 LEGO 数据，并提出 LEGO-Eval。评估器把一句描述拆成物体、属性和相对位置等具体要求，再调用工具逐项核对，从而说明生成场景到底满足或遗漏了什么。
 
@@ -3528,7 +3528,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2025-06-29` · The Chinese University of Hong Kong; Tianjin University; EPFL; HKUST; Xiamen University; Massachusetts Institute of Technology
 
-[一手来源 1](https://arxiv.org/abs/2506.23329) · [一手来源 2](https://arxiv.org/html/2506.23329)
+[论文](https://arxiv.org/abs/2506.23329) · [论文](https://arxiv.org/html/2506.23329)
 
 给视觉语言 Agent 一张输入图，要求它主动使用编程和渲染工具，重新构造图像背后的三维场景。通过位置、数量、空间关系和外观等指标检查重建结果，研究模型是否能用实际创作展示场景理解，而不只是回答描述性问题。
 
@@ -3547,7 +3547,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2025-04-02` · Stanford University
 
-[一手来源 1](https://arxiv.org/abs/2504.01786) · [一手来源 2](https://arxiv.org/html/2504.01786)
+[论文](https://arxiv.org/abs/2504.01786) · [论文](https://arxiv.org/html/2504.01786)
 
 给 Agent 起始场景和目标效果，让它通过修改 Blender Python 程序完成几何、材质、光照、位置或形变编辑。基准量化编辑结果，并进一步研究如何在生成候选与验证候选之间分配推理计算，以提高图形编辑质量。
 
@@ -3566,7 +3566,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2025-03-18` · Simon Fraser University; Amii
 
-[一手来源 1](https://arxiv.org/abs/2503.14756) · [一手来源 2](https://arxiv.org/html/2503.14756)
+[论文](https://arxiv.org/abs/2503.14756) · [论文](https://arxiv.org/html/2503.14756)
 
 为文字条件的室内场景生成建立一套细粒度评估框架和标注测试集。它同时核对文字明确提出的物体、属性与关系，以及用户通常不会写出的支撑、碰撞和通行要求，提供可解释的场景质量诊断。
 
@@ -3585,7 +3585,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2024-05-09` · University of California San Diego; Stanford University; University of California Berkeley; Google DeepMind
 
-[一手来源 1](https://arxiv.org/abs/2405.05941) · [一手来源 2](https://arxiv.org/html/2405.05941)
+[论文](https://arxiv.org/abs/2405.05941) · [论文](https://arxiv.org/html/2405.05941)
 
 针对实机策略评测昂贵且难复现的问题，构建与常见真实机器人设置对应的仿真环境，并减少视觉与控制差异。通过同一策略在仿真和实机中的配对测试，检查仿真能否反映真实表现及其对环境变化的敏感性。
 
@@ -3604,7 +3604,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `首发日期未明确` · Momentum Research Labs
 
-[一手来源 1](https://www.real2sim.bot/)
+[项目页](https://www.real2sim.bot/)
 
 给 Coding Agent 真实机器人片段、相机标定和动作记录，让它重建对应的仿真场景。提交后冻结场景，再分别比较渲染结果、重放真实动作的结果和固定机器人策略的闭环表现，以检查重建世界的外观及使用价值。
 
@@ -3699,7 +3699,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-11-04` · Peking University; National University of Singapore; Massachusetts Institute of Technology; University of California, Santa Barbara; NVIDIA
 
-[完整书目](../README.zh-CN.md#paper-2611-06817) · [证据 1](https://arxiv.org/abs/2611.06817) · [证据 2](https://dagroup-pku.github.io/open-humanwam/) · [证据 3](https://github.com/DAGroup-PKU/HumanNet/tree/Open-HumanWAM)
+[完整书目](../README.zh-CN.md#paper-2611-06817) · [论文](https://arxiv.org/abs/2611.06817) · [项目页](https://dagroup-pku.github.io/open-humanwam/) · [代码](https://github.com/DAGroup-PKU/HumanNet/tree/Open-HumanWAM)
 
 整理人类操作经验及对齐动作，用于世界—动作模型预训练与机器人适配。
 
@@ -3716,7 +3716,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2024-06-27` · University of Washington; Universidad Católica San Pablo; Allen Institute for Artificial Intelligence; NVIDIA
 
-[一手来源 1](https://arxiv.org/abs/2406.18915) · [一手来源 2](https://robot-ma.github.io/)
+[论文](https://arxiv.org/abs/2406.18915) · [项目页](https://robot-ma.github.io/)
 
 用视觉语言反馈自动采集真实示范。
 
@@ -3731,7 +3731,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2024-03-19` · Stanford University; University of California, Berkeley; Toyota Research Institute; Carnegie Mellon University; University of Texas at Austin; University of Montreal; University of Edinburgh; Princeton University; University of Washington; KAIST; University of California, San Diego; Google DeepMind; University of California, Davis; University of Pennsylvania; Columbia University; Yonsei University
 
-[一手来源 1](https://arxiv.org/abs/2403.12945) · [一手来源 2](https://droid-dataset.github.io/)
+[论文](https://arxiv.org/abs/2403.12945) · [项目页](https://droid-dataset.github.io/)
 
 提供机器人学习所需的真实观测来源。
 
@@ -3748,7 +3748,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-11-09` · Hong Kong University of Science and Technology; Alibaba Token Hub; Alibaba Group
 
-[完整书目](../README.zh-CN.md#paper-2611-12411) · [证据 1](https://arxiv.org/abs/2611.12411) · [证据 2](https://haroldchen19.github.io/PhysOPSD-site/)
+[完整书目](../README.zh-CN.md#paper-2611-12411) · [论文](https://arxiv.org/abs/2611.12411) · [项目页](https://haroldchen19.github.io/PhysOPSD-site/)
 
 构建可执行物理场景及配对视觉监督，用于视频生成器后训练。
 
@@ -3765,7 +3765,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-11-03` · Peking University; NVIDIA
 
-[完整书目](../README.zh-CN.md#paper-2611-05320) · [证据 1](https://arxiv.org/abs/2611.05320) · [证据 2](https://dagroup-pku.github.io/PyRUA-Lean/DataFarm) · [证据 3](https://github.com/DAGroup-PKU/PyRUA-Lean/tree/DataFarm)
+[完整书目](../README.zh-CN.md#paper-2611-05320) · [论文](https://arxiv.org/abs/2611.05320) · [项目页](https://dagroup-pku.github.io/PyRUA-Lean/DataFarm) · [代码](https://github.com/DAGroup-PKU/PyRUA-Lean/tree/DataFarm)
 
 组合代码与视频模型生成动作标注数据。
 
@@ -3780,7 +3780,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-15` · University of Illinois Urbana-Champaign; Chinese University of Hong Kong, Shenzhen; Amazon
 
-[完整书目](../README.zh-CN.md#paper-2610-22362) · [证据 1](https://arxiv.org/abs/2610.22362) · [证据 2](https://plan-lab.github.io/projects/coda/)
+[完整书目](../README.zh-CN.md#paper-2610-22362) · [论文](https://arxiv.org/abs/2610.22362) · [项目页](https://plan-lab.github.io/projects/coda/)
 
 共同演化数据生成程序与机器人策略。
 
@@ -3797,7 +3797,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-06` · HKUST (Guangzhou); Xiaomi Robotics; Southeastern University; Tsinghua University; Zhejiang University; Westlake University; Symbiosis Robotics; Peking University; Xi’an Jiaotong University; Beijing Academy of Artificial Intelligence
 
-[一手来源 1](https://arxiv.org/abs/2610.07969)
+[论文](https://arxiv.org/abs/2610.07969)
 
 构建可自改进的仿真数据引擎。
 
@@ -3812,7 +3812,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-09-28` · Stanford University; Columbia University
 
-[一手来源 1](https://arxiv.org/abs/2609.35318) · [一手来源 2](https://dexagent1.github.io/) · [一手来源 3](https://dexagent123.github.io/)
+[论文](https://arxiv.org/abs/2609.35318) · [项目页](https://dexagent1.github.io/) · [项目页](https://dexagent123.github.io/)
 
 把人类视频转为仿真灵巧操作监督。
 
@@ -3829,7 +3829,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-09-23` · ByteDance Seed; Yale University; Princeton University; Carnegie Mellon University; Stanford University; University of California, Los Angeles; University of Washington
 
-[一手来源 1](https://arxiv.org/abs/2609.27308)
+[论文](https://arxiv.org/abs/2609.27308)
 
 把验证过的机器人程序扩展为合成示范。
 
@@ -3846,7 +3846,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-07-26` · Dalian University of Technology; Shenzhen Loop Area Institute; Harbin Institute of Technology; Shanghai AI Laboratory; HKUST; Chinese University of Hong Kong
 
-[一手来源 1](https://arxiv.org/abs/2607.23704) · [一手来源 2](https://github.com/Su-ISE-2001/LabRobFail)
+[论文](https://arxiv.org/abs/2607.23704) · [代码](https://github.com/Su-ISE-2001/LabRobFail)
 
 构建带有结构化诊断及纠正标签的仿真实验室失败轨迹。
 
@@ -3863,7 +3863,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2025-06-22` · Lumina EAI; Shanghai AI Lab; Shenzhen University; Nanjing University; TeleAI; Fudan University; Sun Yat-sen University; USTC; Central South University; SUSTech; Tsinghua University; D-Robotics; Shanghai Jiao Tong University; HKU; Northeastern University
 
-[一手来源 1](https://arxiv.org/abs/2506.18088) · [一手来源 2](https://robotwin-platform.github.io/) · [一手来源 3](https://github.com/robotwin-Platform/robotwin/) · [一手来源 4](https://github.com/robotwin-Platform/robotwin) · [一手来源 5](https://robotwin-platform.github.io/doc/) · [一手来源 6](https://github.com/RoboTwin-Platform/RoboTwin)
+[论文](https://arxiv.org/abs/2506.18088) · [项目页](https://robotwin-platform.github.io/) · [代码](https://github.com/robotwin-Platform/robotwin/) · [代码](https://github.com/robotwin-Platform/robotwin) · [项目页](https://robotwin-platform.github.io/doc/) · [代码](https://github.com/RoboTwin-Platform/RoboTwin)
 
 生成多样化双臂操作训练轨迹。
 
@@ -3880,7 +3880,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2024-10-04` · Tsinghua University; University of California, San Diego; Shanghai Jiao Tong University; MIT CSAIL
 
-[一手来源 1](https://arxiv.org/abs/2410.03645) · [一手来源 2](https://gensim2.github.io/)
+[论文](https://arxiv.org/abs/2410.03645) · [项目页](https://gensim2.github.io/)
 
 通过生成任务与求解器扩大机器人示范。
 
@@ -3897,7 +3897,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2023-07-26` · Columbia University; Google DeepMind
 
-[一手来源 1](https://arxiv.org/abs/2307.14535) · [一手来源 2](https://www.cs.columbia.edu/~huy/scalingup/)
+[论文](https://arxiv.org/abs/2307.14535) · [项目页](https://www.cs.columbia.edu/~huy/scalingup/)
 
 将语言组织的机器人经验蒸馏为动作策略。
 
@@ -3987,7 +3987,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-27` · Washington University in St. Louis
 
-[完整书目](../README.zh-CN.md#paper-2610-36533) · [证据 1](https://arxiv.org/abs/2610.36533) · [证据 2](https://roboauto-ai.github.io/)
+[完整书目](../README.zh-CN.md#paper-2610-36533) · [论文](https://arxiv.org/abs/2610.36533) · [项目页](https://roboauto-ai.github.io/)
 
 通过分阶段物理诊断搜索程序。
 
@@ -4004,7 +4004,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-16` · Peking University; Renmin University of China; Beijing XYZ Embodied AI Co., Ltd.; Beijing Academy of Artificial Intelligence (BAAI)
 
-[一手来源 1](https://arxiv.org/abs/2610.23288)
+[论文](https://arxiv.org/abs/2610.23288)
 
 在固定人形技能上演化团队策略。
 
@@ -4021,7 +4021,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-13` · Luma AI
 
-[一手来源 1](https://arxiv.org/abs/2610.18792)
+[论文](https://arxiv.org/abs/2610.18792)
 
 比较多种机器人自改进模式。
 
@@ -4038,7 +4038,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-08` · Nanyang Technological University; Ropedia
 
-[完整书目](../README.zh-CN.md#paper-2610-12369) · [证据 1](https://arxiv.org/abs/2610.12369)
+[完整书目](../README.zh-CN.md#paper-2610-12369) · [论文](https://arxiv.org/abs/2610.12369)
 
 开发带显式状态的程序并部署执行。
 
@@ -4055,7 +4055,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-07` · Technische Universität Berlin, Germany; logsight.ai, Berlin, Germany
 
-[完整书目](../README.zh-CN.md#paper-2610-09588) · [证据 1](https://arxiv.org/abs/2610.09588)
+[完整书目](../README.zh-CN.md#paper-2610-09588) · [论文](https://arxiv.org/abs/2610.09588)
 
 在世界状态变化后热更新机器人工作流。
 
@@ -4072,7 +4072,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-09-30` · Amazon FAR (Frontier AI & Robotics); The University of Texas at Austin; Carnegie Mellon University
 
-[一手来源 1](https://arxiv.org/abs/2609.38982) · [一手来源 2](https://robo-simex.github.io/)
+[论文](https://arxiv.org/abs/2609.38982) · [项目页](https://robo-simex.github.io/)
 
 结合仿真研发与少量实机反馈。
 
@@ -4089,7 +4089,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-09-24` · University of California, Berkeley; ShanghaiTech University; Google DeepMind; Nomagic
 
-[完整书目](../README.zh-CN.md#paper-2609-30594) · [证据 1](https://arxiv.org/abs/2609.30594) · [证据 2](https://iconlab.negarmehr.com/HuGo/)
+[完整书目](../README.zh-CN.md#paper-2609-30594) · [论文](https://arxiv.org/abs/2609.30594) · [项目页](https://iconlab.negarmehr.com/HuGo/)
 
 设计人形机器人的高层策略程序。
 
@@ -4106,7 +4106,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-09-24` · Fondazione Bruno Kessler; Carnegie Mellon University; Princeton University
 
-[一手来源 1](https://arxiv.org/abs/2609.30233)
+[论文](https://arxiv.org/abs/2609.30233)
 
 编写任务与运动规划求解程序。
 
@@ -4123,7 +4123,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-09-21` · Carnegie Mellon University
 
-[一手来源 1](https://arxiv.org/abs/2609.24145) · [一手来源 2](https://luckykantnayak.github.io/mimic-agent/)
+[论文](https://arxiv.org/abs/2609.24145) · [项目页](https://luckykantnayak.github.io/mimic-agent/)
 
 为四足策略训练生成参考运动。
 
@@ -4140,7 +4140,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-08-02` · Independent Researcher, United States
 
-[一手来源 1](https://arxiv.org/abs/2608.07555)
+[论文](https://arxiv.org/abs/2608.07555)
 
 组织可重复的机器人策略研发循环。
 
@@ -4157,7 +4157,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-06-18` · NVIDIA; Carnegie Mellon University; University of California, Berkeley
 
-[完整书目](../README.zh-CN.md#paper-2606-19980) · [证据 1](https://arxiv.org/abs/2606.19980) · [证据 2](https://research.nvidia.com/labs/gear/enpire/)
+[完整书目](../README.zh-CN.md#paper-2606-19980) · [论文](https://arxiv.org/abs/2606.19980) · [项目页](https://research.nvidia.com/labs/gear/enpire/)
 
 利用真实试验证据研发机器人策略。
 
@@ -4174,7 +4174,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-06-15` · University of California, Berkeley; Embodied Science; AMD
 
-[一手来源 1](https://arxiv.org/abs/2606.16458) · [一手来源 2](https://rho-robotics.github.io)
+[论文](https://arxiv.org/abs/2606.16458) · [项目页](https://rho-robotics.github.io)
 
 在部署前搜索可复用机器人策略代码库。
 
@@ -4191,7 +4191,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-06-07` · TU Darmstadt; Honda Research Institute Europe; Columbia University; Tongji University; Shanghai Research Institute for Intelligent Autonomous Systems; University of Würzburg; Hessian.AI
 
-[一手来源 1](https://arxiv.org/abs/2606.08610)
+[论文](https://arxiv.org/abs/2606.08610)
 
 把机器人 RL 研发组织为 Agent 工作环境。
 
@@ -4208,7 +4208,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-03-03` · General Bionix
 
-[完整书目](../README.zh-CN.md#paper-2603-04466) · [证据 1](https://arxiv.org/abs/2603.04466)
+[完整书目](../README.zh-CN.md#paper-2603-04466) · [论文](https://arxiv.org/abs/2603.04466)
 
 依据执行与视觉反馈改写控制程序。
 
@@ -4225,7 +4225,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2025-08-04` · Northeastern University; D-Robotics; HKU MMLab; Shanghai AI Lab; Shenzhen University; SUSTech; Shanghai Jiao Tong University; Tsinghua University
 
-[完整书目](../README.zh-CN.md#paper-2508-02629) · [证据 1](https://arxiv.org/abs/2508.02629)
+[完整书目](../README.zh-CN.md#paper-2508-02629) · [论文](https://arxiv.org/abs/2508.02629)
 
 结合可执行策略与多模态监控。
 
@@ -4242,7 +4242,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2025-03-17` · Cornell University
 
-[一手来源 1](https://arxiv.org/abs/2503.13660)
+[论文](https://arxiv.org/abs/2503.13660)
 
 用形式验证反例修复机器人控制器。
 
@@ -4259,7 +4259,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2024-10-24` · Northeastern University; University of Texas at Austin
 
-[一手来源 1](https://arxiv.org/abs/2410.18893)
+[论文](https://arxiv.org/abs/2410.18893)
 
 修复程序时复用已经完成的任务步骤。
 
@@ -4276,7 +4276,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2024-09-03` · Stanford University; Columbia University
 
-[一手来源 1](https://arxiv.org/abs/2409.01652) · [一手来源 2](https://rekep-robot.github.io/)
+[论文](https://arxiv.org/abs/2409.01652) · [项目页](https://rekep-robot.github.io/)
 
 用程序化几何约束指导在线操作。
 
@@ -4293,7 +4293,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2024-06-04` · University of Pennsylvania; NVIDIA; University of Texas, Austin
 
-[一手来源 1](https://arxiv.org/abs/2406.01967) · [一手来源 2](https://eureka-research.github.io/dr-eureka/)
+[论文](https://arxiv.org/abs/2406.01967) · [项目页](https://eureka-research.github.io/dr-eureka/)
 
 用生成奖励和域随机化支持真实迁移。
 
@@ -4310,7 +4310,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2024-02-07` · Mila; McGill University; Google DeepMind; University of California, Berkeley
 
-[一手来源 1](https://arxiv.org/abs/2402.04764)
+[论文](https://arxiv.org/abs/2402.04764)
 
 把视觉任务理解编译为奖励代码。
 
@@ -4327,7 +4327,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2023-10-19` · University of Pennsylvania; Caltech; NVIDIA; University of Texas at Austin
 
-[一手来源 1](https://arxiv.org/abs/2310.12931) · [一手来源 2](https://eureka-research.github.io/)
+[论文](https://arxiv.org/abs/2310.12931) · [项目页](https://eureka-research.github.io/)
 
 用策略训练反馈搜索奖励程序。
 
@@ -4344,7 +4344,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2023-09-20` · The University of Hong Kong; Carnegie Mellon University; Nanjing University; Microsoft Research; University of Waterloo
 
-[一手来源 1](https://arxiv.org/abs/2309.11489) · [一手来源 2](https://text-to-reward.github.io/)
+[论文](https://arxiv.org/abs/2309.11489) · [项目页](https://text-to-reward.github.io/)
 
 把奖励塑形变成代码生成任务。
 
@@ -4361,7 +4361,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2023-06-14` · Google DeepMind
 
-[一手来源 1](https://arxiv.org/abs/2306.08647) · [一手来源 2](https://language-to-reward.github.io/)
+[论文](https://arxiv.org/abs/2306.08647) · [项目页](https://language-to-reward.github.io/)
 
 用生成奖励表达机器人技能目标。
 
@@ -4378,7 +4378,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `首发日期未明确` · 未明确
 
-[一手来源 1](https://github.com/jellyheadandrew/autoresearch-robotics)
+[代码](https://github.com/jellyheadandrew/autoresearch-robotics)
 
 提供社区机器人 RL 研发实例。
 
@@ -4397,7 +4397,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-11-10` · 独立团队
 
-[一手来源 1](https://arxiv.org/abs/2611.14432)
+[论文](https://arxiv.org/abs/2611.14432)
 
 将家庭任务 VLA 与任务专属的 Coding Agent 练习会话结合，并在评测前冻结会话。
 
@@ -4414,7 +4414,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-11-09` · Huazhong University of Science and Technology; ArcheOne AI
 
-[完整书目](../README.zh-CN.md#paper-2611-12885) · [证据 1](https://arxiv.org/abs/2611.12885) · [证据 2](https://archeone-ai.github.io/RoboScript/) · [证据 3](https://github.com/ArcheOne-AI/RoboScript)
+[完整书目](../README.zh-CN.md#paper-2611-12885) · [论文](https://arxiv.org/abs/2611.12885) · [项目页](https://archeone-ai.github.io/RoboScript/) · [代码](https://github.com/ArcheOne-AI/RoboScript)
 
 利用仿真排练形成可迁移的任务记忆，基础模型参数保持冻结。
 
@@ -4431,7 +4431,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-11-04` · Peking University; EngineAI; National University of Singapore
 
-[完整书目](../README.zh-CN.md#paper-2611-06768) · [证据 1](https://arxiv.org/abs/2611.06768) · [证据 2](https://dagroup-pku.github.io/PyRUA-Lean/real/) · [证据 3](https://github.com/DAGroup-PKU/PyRUA-Lean/tree/REAL)
+[完整书目](../README.zh-CN.md#paper-2611-06768) · [论文](https://arxiv.org/abs/2611.06768) · [项目页](https://dagroup-pku.github.io/PyRUA-Lean/real/) · [代码](https://github.com/DAGroup-PKU/PyRUA-Lean/tree/REAL)
 
 从真实机器人探索学习可复用代码。
 
@@ -4448,7 +4448,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-30` · Stanford University
 
-[完整书目](../README.zh-CN.md#paper-2610-42141) · [证据 1](https://arxiv.org/abs/2610.42141) · [证据 2](https://github.com/roboarchitect-ai/RoboArchitect) · [证据 3](https://roboarchitect-ai.github.io/)
+[完整书目](../README.zh-CN.md#paper-2610-42141) · [论文](https://arxiv.org/abs/2610.42141) · [代码](https://github.com/roboarchitect-ai/RoboArchitect) · [项目页](https://roboarchitect-ai.github.io/)
 
 演化持久记忆与机器人控制代码。
 
@@ -4465,7 +4465,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-21` · University of Science and Technology of China; Shanghai Artificial Intelligence Laboratory; Shanghai Jiao Tong University; Mohamed bin Zayed University of Artificial Intelligence; Zhejiang University
 
-[一手来源 1](https://arxiv.org/abs/2610.29560)
+[论文](https://arxiv.org/abs/2610.29560)
 
 为依赖历史的任务改进 Harness 上下文。
 
@@ -4482,7 +4482,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-18` · Beijing Ou Rui Ling Shi Technology; ChangingTek Robotics Technology (Suzhou); Shanghai Yunfan Intelligent Control Robot Technology
 
-[一手来源 1](https://arxiv.org/abs/2610.25114) · [一手来源 2](https://github.com/Orillusion/embodied-skill-rsi)
+[论文](https://arxiv.org/abs/2610.25114) · [代码](https://github.com/Orillusion/embodied-skill-rsi)
 
 离线构造技能并冻结复用。
 
@@ -4499,7 +4499,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-16` · ShanghaiTech University, Shanghai, China.; InstAdapt, Shanghai, China.
 
-[一手来源 1](https://arxiv.org/abs/2610.23098)
+[论文](https://arxiv.org/abs/2610.23098)
 
 为异构机器人团队保留修复后的协作程序。
 
@@ -4516,7 +4516,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-15` · Nanjing University; Princeton University; Carnegie Mellon University; Johns Hopkins University; Mondo Robotics
 
-[一手来源 1](https://arxiv.org/abs/2610.22736) · [一手来源 2](https://ba-fa-3344.github.io/)
+[论文](https://arxiv.org/abs/2610.22736) · [项目页](https://ba-fa-3344.github.io/)
 
 编写供另一 Agent 使用的空间记忆。
 
@@ -4533,7 +4533,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-15` · Harvard University; NVIDIA; University of California, Berkeley; Massachusetts Institute of Technology; Stanford University
 
-[一手来源 1](https://arxiv.org/abs/2610.22496) · [一手来源 2](https://robot-agent-exploration.com/) · [一手来源 3](https://huggingface.co/datasets/robot-agent-exploration/robot-session-logs) · [一手来源 4](https://github.com/robot-agent-exploration/skills-lib) · [一手来源 5](https://github.com/robot-agent-exploration/rax)
+[论文](https://arxiv.org/abs/2610.22496) · [项目页](https://robot-agent-exploration.com/) · [数据集](https://huggingface.co/datasets/robot-agent-exploration/robot-session-logs) · [代码](https://github.com/robot-agent-exploration/skills-lib) · [代码](https://github.com/robot-agent-exploration/rax)
 
 研究探索预算如何转化为机器人经验。
 
@@ -4550,7 +4550,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-13` · Navers Lab, Einsia.AI, Tsinghua University
 
-[一手来源 1](https://arxiv.org/abs/2610.18867)
+[论文](https://arxiv.org/abs/2610.18867)
 
 将可执行技能与诊断经验分别积累。
 
@@ -4567,7 +4567,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-13` · University of Southern California; University of Central Florida; Stony Brook University
 
-[一手来源 1](https://arxiv.org/abs/2610.18874)
+[论文](https://arxiv.org/abs/2610.18874)
 
 把外部记忆编译成自主执行的动作块。
 
@@ -4584,7 +4584,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-09` · Google Cloud AI Research; Northwestern University
 
-[一手来源 1](https://arxiv.org/abs/2610.14224)
+[论文](https://arxiv.org/abs/2610.14224)
 
 在任务内和跨任务层面演化 Harness。
 
@@ -4601,7 +4601,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-07` · Columbia University; Princeton University
 
-[一手来源 1](https://arxiv.org/abs/2610.10498)
+[论文](https://arxiv.org/abs/2610.10498)
 
 通过显式假设选择机器人探索。
 
@@ -4618,7 +4618,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-06` · University of Chinese Academy of Sciences; Institute of Automation, Chinese Academy of Sciences; Tsinghua University; Independent researcher
 
-[完整书目](../README.zh-CN.md#paper-2610-08995) · [证据 1](https://arxiv.org/abs/2610.08995)
+[完整书目](../README.zh-CN.md#paper-2610-08995) · [论文](https://arxiv.org/abs/2610.08995)
 
 保持模型冻结并改进机器人工具。
 
@@ -4635,7 +4635,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-01` · University of California, San Diego; University of Texas at Austin; NVIDIA
 
-[一手来源 1](https://arxiv.org/abs/2610.01178) · [一手来源 2](https://www.liuisabella.com/Recova)
+[论文](https://arxiv.org/abs/2610.01178) · [项目页](https://www.liuisabella.com/Recova)
 
 先在数字孪生中练习恢复再执行实机任务。
 
@@ -4652,7 +4652,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-01` · UC Berkeley; MIT; Amazon FAR; University of Chicago
 
-[一手来源 1](https://arxiv.org/abs/2610.02204) · [一手来源 2](https://rpg-robot.github.io/)
+[论文](https://arxiv.org/abs/2610.02204) · [项目页](https://rpg-robot.github.io/)
 
 利用重建练习环境改进具身 Agent。
 
@@ -4669,7 +4669,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-09-30` · 未明确
 
-[一手来源 1](https://arxiv.org/abs/2609.39304)
+[论文](https://arxiv.org/abs/2609.39304)
 
 研究 Harness 优化中的规模与筛选。
 
@@ -4686,7 +4686,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-09-30` · HexaFuture; Peking University; Beijing Institute of Technology; Tsinghua University
 
-[一手来源 1](https://arxiv.org/abs/2609.39018)
+[论文](https://arxiv.org/abs/2609.39018)
 
 让 Agent 编写并演化自己的执行工具。
 
@@ -4703,7 +4703,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-09-30` · Nanyang Technological University; Nanjing University
 
-[一手来源 1](https://arxiv.org/abs/2609.40306) · [一手来源 2](https://denghaoyuan123.github.io/Dynaharness_page/)
+[论文](https://arxiv.org/abs/2609.40306) · [项目页](https://denghaoyuan123.github.io/Dynaharness_page/)
 
 用物理执行契约约束 Harness 演化。
 
@@ -4720,7 +4720,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-09-30` · NVIDIA; University of California, San Diego; The University of Texas at Austin
 
-[一手来源 1](https://arxiv.org/abs/2609.39207) · [一手来源 2](https://research.nvidia.com/labs/gear/asena)
+[论文](https://arxiv.org/abs/2609.39207) · [项目页](https://research.nvidia.com/labs/gear/asena)
 
 把导航修复用于后续环境。
 
@@ -4737,7 +4737,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-09-29` · Renmin University of China; XYZ Embodied AI; Tsinghua University
 
-[一手来源 1](https://arxiv.org/abs/2609.37583)
+[论文](https://arxiv.org/abs/2609.37583)
 
 从物理交互积累分层知识。
 
@@ -4754,7 +4754,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-09-28` · 未明确
 
-[完整书目](../README.zh-CN.md#paper-2609-35432) · [证据 1](https://arxiv.org/abs/2609.35432)
+[完整书目](../README.zh-CN.md#paper-2609-35432) · [论文](https://arxiv.org/abs/2609.35432)
 
 用显式世界与策略代码改进机器人工具。
 
@@ -4771,7 +4771,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-09-27` · Seoul National University; Korea Advanced Institute of Science and Technology
 
-[一手来源 1](https://arxiv.org/abs/2609.33378)
+[论文](https://arxiv.org/abs/2609.33378)
 
 在 Agent 间迁移外部 Harness 指导。
 
@@ -4788,7 +4788,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-09-26` · Nanyang Technological University; Beihang University; National University of Singapore; Cloud Butterfly Technology; Shanghai Jiao Tong University
 
-[一手来源 1](https://arxiv.org/abs/2609.32862) · [一手来源 2](https://jingsongliang.com/robofoundry)
+[论文](https://arxiv.org/abs/2609.32862) · [项目页](https://jingsongliang.com/robofoundry)
 
 把机器人支持系统作为可演化策略。
 
@@ -4805,7 +4805,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-09-24` · Chinese University of Hong Kong; HKUST (Guangzhou); Knowin AI
 
-[一手来源 1](https://arxiv.org/abs/2609.29394)
+[论文](https://arxiv.org/abs/2609.29394)
 
 将在线决策与可演化机器人 API 分开。
 
@@ -4822,7 +4822,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-09-23` · National University of Singapore
 
-[一手来源 1](https://arxiv.org/abs/2609.31760)
+[论文](https://arxiv.org/abs/2609.31760)
 
 分析反复修改代码与技能为何仍可能无法形成累积的任务成功。
 
@@ -4839,7 +4839,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-08-17` · Institute for AI Industry Research (AIR), Tsinghua University; Z-Trans AI
 
-[一手来源 1](https://arxiv.org/abs/2608.16590)
+[论文](https://arxiv.org/abs/2608.16590)
 
 围绕冻结动作策略演化监控器与恢复技能。
 
@@ -4856,7 +4856,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-08-11` · Northeastern University; Microsoft Research
 
-[一手来源 1](https://arxiv.org/abs/2608.11350)
+[论文](https://arxiv.org/abs/2608.11350)
 
 共同演化技能与执行 Harness。
 
@@ -4873,7 +4873,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-08-10` · Northwestern University; University of Minnesota; Stanford University
 
-[完整书目](../README.zh-CN.md#paper-2608-09410) · [证据 1](https://arxiv.org/abs/2608.09410)
+[完整书目](../README.zh-CN.md#paper-2608-09410) · [论文](https://arxiv.org/abs/2608.09410)
 
 结合学习式技能与程序化记忆。
 
@@ -4890,7 +4890,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-07-26` · University of Washington; Microsoft Research; Massachusetts Institute of Technology
 
-[一手来源 1](https://arxiv.org/abs/2607.23784) · [一手来源 2](https://robo-architect.github.io/)
+[论文](https://arxiv.org/abs/2607.23784) · [项目页](https://robo-architect.github.io/)
 
 用语言纠正改进机器人程序。
 
@@ -4907,7 +4907,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-06-30` · NVIDIA; Carnegie Mellon University; University of California, Berkeley; University of Michigan; University of Illinois Urbana-Champaign
 
-[完整书目](../README.zh-CN.md#paper-2607-00272) · [证据 1](https://arxiv.org/abs/2607.00272) · [证据 2](https://github.com/NVlabs/ASPIRE) · [证据 3](https://research.nvidia.com/labs/gear/aspire/)
+[完整书目](../README.zh-CN.md#paper-2607-00272) · [论文](https://arxiv.org/abs/2607.00272) · [代码](https://github.com/NVlabs/ASPIRE) · [项目页](https://research.nvidia.com/labs/gear/aspire/)
 
 把经过验证的代码修复提炼为技能。
 
@@ -4924,7 +4924,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-06-17` · University of California, Berkeley  Impossible Research
 
-[一手来源 1](https://arxiv.org/abs/2606.19419) · [一手来源 2](https://playful-rats.github.io/)
+[论文](https://arxiv.org/abs/2606.19419) · [项目页](https://playful-rats.github.io/)
 
 把无任务探索转化为持久代码技能。
 
@@ -4941,7 +4941,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-05-11` · Huazhong University of Science and Technology; University of Science and Technology of China; Microsoft Research; Institute for AI Industry Research (AIR), Tsinghua University
 
-[一手来源 1](https://arxiv.org/abs/2605.10332)
+[论文](https://arxiv.org/abs/2605.10332)
 
 将反思对应到导致失败的具体技能。
 
@@ -4958,7 +4958,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-03-03` · Institute of Computing Technology, Chinese Academy of Sciences; University of Chinese Academy of Sciences
 
-[一手来源 1](https://arxiv.org/abs/2603.02623)
+[论文](https://arxiv.org/abs/2603.02623)
 
 维护可持续演化的机器人技能仓库。
 
@@ -4975,7 +4975,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2025-09-23` · Beijing Academy of Artificial Intelligence; XYZ Embodied AI
 
-[完整书目](../README.zh-CN.md#paper-2509-18597) · [证据 1](https://arxiv.org/abs/2509.18597) · [证据 2](https://github.com/Ghiara/LYRA) · [证据 3](https://ghiara.github.io/LYRA/)
+[完整书目](../README.zh-CN.md#paper-2509-18597) · [论文](https://arxiv.org/abs/2509.18597) · [代码](https://github.com/Ghiara/LYRA) · [项目页](https://ghiara.github.io/LYRA/)
 
 把人工纠错积累为长时序代码技能。
 
@@ -4992,7 +4992,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2024-06-26` · University of Groningen
 
-[一手来源 1](https://arxiv.org/abs/2406.18746) · [一手来源 2](https://gtziafas.github.io/LRLL_project)
+[论文](https://arxiv.org/abs/2406.18746) · [项目页](https://gtziafas.github.io/LRLL_project)
 
 持续积累可组合的机器人控制程序库。
 
@@ -5009,7 +5009,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2024-06-06` · CUHK; SmartMore
 
-[一手来源 1](https://arxiv.org/abs/2406.03757)
+[论文](https://arxiv.org/abs/2406.03757)
 
 通过复用基础技能组合复杂机器人任务。
 
@@ -5026,7 +5026,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2024-05-30` · University of California, Los Angeles; University of Texas at Austin
 
-[一手来源 1](https://arxiv.org/abs/2405.19758) · [一手来源 2](https://interpret-robot.github.io)
+[论文](https://arxiv.org/abs/2405.19758) · [项目页](https://interpret-robot.github.io)
 
 从语言纠正中学习可执行规划谓词。
 
@@ -5043,7 +5043,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2023-05-26` · Cornell University
 
-[一手来源 1](https://arxiv.org/abs/2305.16744) · [一手来源 2](https://portal-cornell.github.io/demo2code/)
+[论文](https://arxiv.org/abs/2305.16744) · [项目页](https://portal-cornell.github.io/demo2code/)
 
 从示范总结任务，再合成机器人程序。
 
@@ -5062,7 +5062,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-11-07` · Hong Kong University of Science and Technology; SenseTime Research
 
-[完整书目](../README.zh-CN.md#paper-2611-10768) · [证据 1](https://arxiv.org/abs/2611.10768) · [证据 2](https://sensetime-fvg.github.io/BlenderFORGE/)
+[完整书目](../README.zh-CN.md#paper-2611-10768) · [论文](https://arxiv.org/abs/2611.10768) · [项目页](https://sensetime-fvg.github.io/BlenderFORGE/)
 
 通过可执行编辑与渲染反馈，训练开放权重 Coding Agent 修订显式 Blender 场景。
 
@@ -5079,7 +5079,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-30` · Huawei Technologies Co., Ltd; Huawei Noah Research Institute
 
-[一手来源 1](https://arxiv.org/abs/2610.41216) · [一手来源 2](https://garfield-kh.github.io/TinyAstral/)
+[论文](https://arxiv.org/abs/2610.41216) · [项目页](https://garfield-kh.github.io/TinyAstral/)
 
 将改进后的教师 Harness 用于小模型训练。
 
@@ -5096,7 +5096,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-29` · MMLab, The Chinese University of Hong Kong; NovaXBot
 
-[完整书目](../README.zh-CN.md#paper-2610-40799) · [证据 1](https://arxiv.org/abs/2610.40799) · [证据 2](https://github.com/waltstephen/CaPtain) · [证据 3](https://github.com/waltstephen/CaPtain-Harness)
+[完整书目](../README.zh-CN.md#paper-2610-40799) · [论文](https://arxiv.org/abs/2610.40799) · [代码](https://github.com/waltstephen/CaPtain) · [代码](https://github.com/waltstephen/CaPtain-Harness)
 
 训练小模型通过机器人代码行动。
 
@@ -5113,7 +5113,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-21` · University of California, Berkeley; NVIDIA; University of Pennsylvania
 
-[完整书目](../README.zh-CN.md#paper-2610-30136) · [证据 1](https://arxiv.org/abs/2610.30136) · [证据 2](https://agentic-wam.github.io/)
+[完整书目](../README.zh-CN.md#paper-2610-30136) · [论文](https://arxiv.org/abs/2610.30136) · [项目页](https://agentic-wam.github.io/)
 
 联合建模程序、预测视频与机器人动作。
 
@@ -5130,7 +5130,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-20` · University of Central Florida; University of Southern California; Michigan State University
 
-[一手来源 1](https://arxiv.org/abs/2610.28589)
+[论文](https://arxiv.org/abs/2610.28589)
 
 跨不同 Harness 后训练机器人规划模型。
 
@@ -5147,7 +5147,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-06-16` · University of Maryland College Park; University of Illinois Urbana-Champaign; University of Waterloo; Mohamed bin Zayed University of Artificial Intelligence; University of Pennsylvania; Amazon FAR
 
-[一手来源 1](https://arxiv.org/abs/2606.18363)
+[论文](https://arxiv.org/abs/2606.18363)
 
 通过机器人 Harness 蒸馏前沿模型能力。
 
@@ -5164,7 +5164,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2025-01-08` · Institute of Computing Technology, Chinese Academy of Sciences; University of Chinese Academy of Sciences
 
-[一手来源 1](https://arxiv.org/abs/2501.04268)
+[论文](https://arxiv.org/abs/2501.04268)
 
 用真实视频合成代码监督并训练机器人编程模型。
 
@@ -5181,7 +5181,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2024-02-25` · University of Hong Kong; OpenGVLab, Shanghai AI Laboratory; ETH Zurich; Shanghai Jiao Tong University; Chinese University of Hong Kong; Tsinghua University; University of California, Berkeley
 
-[一手来源 1](https://arxiv.org/abs/2402.16117)
+[论文](https://arxiv.org/abs/2402.16117)
 
 训练多模态模型生成机器人行为程序。
 
@@ -5269,7 +5269,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-11-05` · Beijing Institute of Technology; University of Bristol; Xi’an Jiaotong-Liverpool University
 
-[完整书目](../README.zh-CN.md#paper-2611-07881) · [证据 1](https://arxiv.org/abs/2611.07881) · [证据 2](https://yijionglin.github.io/tactilelab/)
+[完整书目](../README.zh-CN.md#paper-2611-07881) · [论文](https://arxiv.org/abs/2611.07881) · [项目页](https://yijionglin.github.io/tactilelab/)
 
 利用真实／仿真配对的触觉表示迁移仿真训练的操作策略。
 
@@ -5286,7 +5286,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-11-05` · 未明确
 
-[完整书目](../README.zh-CN.md#paper-2611-08321) · [证据 1](https://arxiv.org/abs/2611.08321) · [证据 2](https://github.com/Apolotary/controlanything)
+[完整书目](../README.zh-CN.md#paper-2611-08321) · [论文](https://arxiv.org/abs/2611.08321) · [代码](https://github.com/Apolotary/controlanything)
 
 生成连接手势与设备的交互接口。
 
@@ -5301,7 +5301,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-22` · University of Illinois Urbana-Champaign; Tsinghua University
 
-[完整书目](../README.zh-CN.md#paper-2610-31841) · [证据 1](https://arxiv.org/abs/2610.31841) · [证据 2](https://tanoom.github.io/forca/)
+[完整书目](../README.zh-CN.md#paper-2610-31841) · [论文](https://arxiv.org/abs/2610.31841) · [项目页](https://tanoom.github.io/forca/)
 
 联合视觉和力轨迹修复接触操作代码。
 
@@ -5316,7 +5316,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-14` · New York University; Fudan University; NYU Shanghai
 
-[完整书目](../README.zh-CN.md#paper-2610-20998) · [证据 1](https://arxiv.org/abs/2610.20998) · [证据 2](https://mocap-7.github.io/MoCAP-page/)
+[完整书目](../README.zh-CN.md#paper-2610-20998) · [论文](https://arxiv.org/abs/2610.20998) · [项目页](https://mocap-7.github.io/MoCAP-page/)
 
 把人类视频先验用于移动机器人程序。
 
@@ -5331,7 +5331,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-08` · Seoul National University; Carnegie Mellon University; University of Maryland, College Park; All Purpose AI; Kyung Hee University
 
-[一手来源 1](https://arxiv.org/abs/2610.12549) · [一手来源 2](https://fly-by-code.github.io/)
+[论文](https://arxiv.org/abs/2610.12549) · [项目页](https://fly-by-code.github.io/)
 
 用主动观测和物理探测编写空中操作程序。
 
@@ -5346,7 +5346,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-09-24` · Massachusetts Institute of Technology; National University of Singapore; University of Pennsylvania; NVIDIA
 
-[完整书目](../README.zh-CN.md#paper-2609-30249) · [证据 1](https://arxiv.org/abs/2609.30249) · [证据 2](https://yuyaoliu.me/projects/rapid)
+[完整书目](../README.zh-CN.md#paper-2609-30249) · [论文](https://arxiv.org/abs/2609.30249) · [项目页](https://yuyaoliu.me/projects/rapid)
 
 从单次视觉演示推导可复用的关系式机器人程序与验证环境。
 
@@ -5361,7 +5361,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-09-19` · Sun Yat-sen University; Dalian University of Technology; BIXOCEAN; Southern Marine Science and Engineering Guangdong Laboratory
 
-[完整书目](../README.zh-CN.md#paper-2609-23133) · [证据 1](https://arxiv.org/abs/2609.23133)
+[完整书目](../README.zh-CN.md#paper-2609-23133) · [论文](https://arxiv.org/abs/2609.23133)
 
 依据执行反馈调整水下机器人程序。
 
@@ -5376,7 +5376,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2025-03-31` · Department of Artificial Intelligence, Westlake University, Hangzhou, China; School of Automation Science and Electrical Engineering, Beihang University, Beijing, China; Institute of Engineering and Technology, University of Groningen, Groningen, Netherlands; Department of Computer Science, Technical University of Darmstadt, Darmstadt, Germany; School of Electrical and Electronic Engineering, The University of Sheffield, Sheffield, UK
 
-[一手来源 1](https://arxiv.org/abs/2503.23875) · [一手来源 2](http://alike.The) · [一手来源 3](https://github.com/WindyLab/GenSwarm) · [一手来源 4](https://www.nature.com/articles/s44182-025-00065-w)
+[论文](https://arxiv.org/abs/2503.23875) · [代码](https://github.com/WindyLab/GenSwarm) · [论文](https://www.nature.com/articles/s44182-025-00065-w)
 
 生成、修订并部署多机器人程序策略。
 
@@ -5391,7 +5391,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2024-03-12` · University of Colorado Boulder
 
-[一手来源 1](https://arxiv.org/abs/2403.07832) · [一手来源 2](https://deligrasp.github.io)
+[论文](https://arxiv.org/abs/2403.07832) · [项目页](https://deligrasp.github.io)
 
 把物体属性估计用于自适应抓取。
 
@@ -5406,7 +5406,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2023-10-19` · Carnegie Mellon University; Google DeepMind
 
-[一手来源 1](https://arxiv.org/abs/2310.13065) · [一手来源 2](https://creative-robotool.github.io/)
+[论文](https://arxiv.org/abs/2310.13065) · [项目页](https://creative-robotool.github.io/)
 
 通过程序组织机器人的物理工具使用。
 
@@ -5421,7 +5421,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2023-07-12` · Stanford University; University of Illinois Urbana-Champaign
 
-[一手来源 1](https://arxiv.org/abs/2307.05973) · [一手来源 2](https://voxposer.github.io)
+[论文](https://arxiv.org/abs/2307.05973) · [项目页](https://voxposer.github.io)
 
 用代码组合三维价值图来规划操作。
 
@@ -5438,7 +5438,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-30` · Massachusetts Institute of Technology; Boston College; University of Washington
 
-[一手来源 1](https://arxiv.org/abs/2610.41717) · [一手来源 2](https://github.com/caidish/instrMCP) · [一手来源 3](https://github.com/caidish/qdevbench)
+[论文](https://arxiv.org/abs/2610.41717) · [代码](https://github.com/caidish/instrMCP) · [代码](https://github.com/caidish/qdevbench)
 
 通过可编程仪器工具检验实验推理。
 
@@ -5453,7 +5453,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-30` · Shanghai Jiao Tong University; University of Sussex
 
-[一手来源 1](https://arxiv.org/abs/2610.41383)
+[论文](https://arxiv.org/abs/2610.41383)
 
 通过教学与实现补齐实验室技能。
 
@@ -5468,7 +5468,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-27` · HKUST(GZ); ZJU; Alibaba Group; HKUST
 
-[完整书目](../README.zh-CN.md#paper-2610-37649) · [证据 1](https://arxiv.org/abs/2610.37649) · [证据 2](https://zhenyangcs.github.io/LongChang-website/) · [证据 3](https://github.com/EnVision-Research/LongChang)
+[完整书目](../README.zh-CN.md#paper-2610-37649) · [论文](https://arxiv.org/abs/2610.37649) · [项目页](https://zhenyangcs.github.io/LongChang-website/) · [代码](https://github.com/EnVision-Research/LongChang)
 
 检验对模拟物理规律的开放探索。
 
@@ -5483,7 +5483,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-26` · HexaFuture; Tsinghua University; National University of Singapore; Peking University
 
-[一手来源 1](https://arxiv.org/abs/2610.35385) · [一手来源 2](https://github.com/HexaFuture/EmbodiedLab) · [一手来源 3](https://hexafuture.ai/benchmarks/embodiedlab/)
+[论文](https://arxiv.org/abs/2610.35385) · [代码](https://github.com/HexaFuture/EmbodiedLab) · [项目页](https://hexafuture.ai/benchmarks/embodiedlab/)
 
 评测通过行动获取科学证据的 Agent。
 
@@ -5498,7 +5498,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-16` · University of Toronto; Vector Institute; Acceleration Consortium; University of Amsterdam; CIFAR; NVIDIA
 
-[一手来源 1](https://arxiv.org/abs/2610.23826) · [一手来源 2](https://self-building-labs.github.io/)
+[论文](https://arxiv.org/abs/2610.23826) · [项目页](https://self-building-labs.github.io/)
 
 将实验装置纳入可编程研究对象。
 
@@ -5513,7 +5513,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-09-16` · University of Tokyo; RIKEN; New York University; Google DeepMind; National Institute for Materials Science
 
-[一手来源 1](https://arxiv.org/abs/2609.18435) · [一手来源 2](http://AGENTS.md) · [一手来源 3](https://github.com/tsudalab/WetRobo)
+[论文](https://arxiv.org/abs/2609.18435) · [代码](https://github.com/tsudalab/WetRobo)
 
 提供编程 Agent 可用的实验室机器人套件。
 
@@ -5528,7 +5528,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-08-03` · East China University of Science and Technology; Ruijin Hospital, Shanghai Jiao Tong University School of Medicine; Shanghai AI Laboratory
 
-[一手来源 1](https://arxiv.org/abs/2608.01690)
+[论文](https://arxiv.org/abs/2608.01690)
 
 把实验协议编译为机器人动作。
 
@@ -5543,7 +5543,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-07-25` · University of Science and Technology of China; Center for Scientific Intelligence Innovation, Hefei; University of Birmingham
 
-[一手来源 1](https://arxiv.org/abs/2607.23045)
+[论文](https://arxiv.org/abs/2607.23045)
 
 在机器人实验室流程中检验编程 Agent。
 
@@ -5560,7 +5560,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-05-08` · University of Cambridge
 
-[一手来源 1](https://pubs.rsc.org/en/content/articlelanding/2026/dd/d6dd00177g) · [一手来源 2](https://www.repository.cam.ac.uk/items/cb2e6fef-94c4-4fe9-903a-aaa198da8f4f)
+[项目页](https://pubs.rsc.org/en/content/articlelanding/2026/dd/d6dd00177g) · [论文](https://www.repository.cam.ac.uk/items/cb2e6fef-94c4-4fe9-903a-aaa198da8f4f)
 
 在人类监督下开发仪器控制代码。
 
@@ -5577,7 +5577,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2025-09-30` · Pacific Northwest National Laboratory, Richland, Washington, WA, USA
 
-[一手来源 1](https://arxiv.org/abs/2509.25651) · [一手来源 2](https://github.com/pnnl/autolabs) · [一手来源 3](https://doi.org/10.1038/s41598-026-45593-z)
+[论文](https://arxiv.org/abs/2509.25651) · [代码](https://github.com/pnnl/autolabs) · [论文](https://doi.org/10.1038/s41598-026-45593-z)
 
 生成经过检查的实验室可执行协议。
 
@@ -5592,7 +5592,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2025-09-29` · Max Planck Institute for the Science of Light, Staudtstraße 2, 91058 Erlangen, Germany; Department of Physics, Friedrich-Alexander Universität Erlangen-Nürnberg, Staudtstraße 5, 91058 Erlangen, Germany
 
-[一手来源 1](https://arxiv.org/abs/2509.24978) · [一手来源 2](https://github.com/MaxNaeg/SciExplorer) · [一手来源 3](https://journals.aps.org/prx/abstract/10.1103/xnqc-q6nt)
+[论文](https://arxiv.org/abs/2509.24978) · [代码](https://github.com/MaxNaeg/SciExplorer) · [论文](https://journals.aps.org/prx/abstract/10.1103/xnqc-q6nt)
 
 通过程序化数值实验探索物理模型。
 
@@ -5607,7 +5607,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2024-07-30` · 未明确
 
-[一手来源 1](https://doi.org/10.1021/jacs.4c17738) · [一手来源 2](https://www.cambridge.org/engage/chemrxiv/article-details/66a8c11bc9c6a5c07a7a59c0)
+[论文](https://doi.org/10.1021/jacs.4c17738) · [论文](https://www.cambridge.org/engage/chemrxiv/article-details/66a8c11bc9c6a5c07a7a59c0)
 
 通过生成 API 程序协调机器人化学研究。
 
@@ -5624,7 +5624,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2023-04-11` · 未明确
 
-[一手来源 1](https://arxiv.org/abs/2304.05332) · [一手来源 2](https://pmc.ncbi.nlm.nih.gov/articles/PMC10733136/) · [一手来源 3](https://github.com/gomesgroup/coscientist)
+[论文](https://arxiv.org/abs/2304.05332) · [论文](https://pmc.ncbi.nlm.nih.gov/articles/PMC10733136/) · [代码](https://github.com/gomesgroup/coscientist)
 
 用语言模型组织自动化化学实验。
 
@@ -5639,7 +5639,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `首发日期未明确` · Stanford University; SLAC National Accelerator Laboratory; University of Texas at Austin; Carnegie Mellon University; Northeastern University; Howard University; Massachusetts Institute of Technology
 
-[一手来源 1](https://www.nature.com/articles/s42256-026-01261-5) · [一手来源 2](https://github.com/zhantaochen/llm4xray)
+[论文](https://www.nature.com/articles/s42256-026-01261-5) · [代码](https://github.com/zhantaochen/llm4xray)
 
 把实验 Agent 接入 X 射线仪器。
 
@@ -5658,7 +5658,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-11-09` · Oxford Robotics Institute, University of Oxford
 
-[完整书目](../README.zh-CN.md#paper-2611-13344) · [证据 1](https://arxiv.org/abs/2611.13344)
+[完整书目](../README.zh-CN.md#paper-2611-13344) · [论文](https://arxiv.org/abs/2611.13344)
 
 通过可执行设计程序与仿真批评，迭代联合设计软体气动机器人的形态及驱动。
 
@@ -5675,7 +5675,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-11-05` · University of Texas at Dallas; Texas Instruments; Iowa State University
 
-[完整书目](../README.zh-CN.md#paper-2611-08175) · [证据 1](https://arxiv.org/abs/2611.08175) · [证据 2](https://chip-ai-agent.github.io/research/pcbrouteagent)
+[完整书目](../README.zh-CN.md#paper-2611-08175) · [论文](https://arxiv.org/abs/2611.08175) · [项目页](https://chip-ai-agent.github.io/research/pcbrouteagent)
 
 依据 KiCad 原生执行反馈修订 PCB 布线指引，以改善电路板连通性。
 
@@ -5692,7 +5692,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-22` · Carnegie Mellon University; Independent Researcher; Stanford University
 
-[完整书目](../README.zh-CN.md#paper-2610-31651) · [证据 1](https://arxiv.org/abs/2610.31651) · [证据 2](https://github.com/avalovelace1/brickwright) · [证据 3](https://avalovelace1.github.io/brickwright/)
+[完整书目](../README.zh-CN.md#paper-2610-31651) · [论文](https://arxiv.org/abs/2610.31651) · [代码](https://github.com/avalovelace1/brickwright) · [项目页](https://avalovelace1.github.io/brickwright/)
 
 检查程序化积木设计的结构可行性。
 
@@ -5707,7 +5707,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-10-13` · ShanghaiTech University
 
-[完整书目](../README.zh-CN.md#paper-2610-17881) · [证据 1](https://arxiv.org/abs/2610.17881) · [证据 2](https://roboforge-project.github.io/)
+[完整书目](../README.zh-CN.md#paper-2610-17881) · [论文](https://arxiv.org/abs/2610.17881) · [项目页](https://roboforge-project.github.io/)
 
 联合开发机器人形态和可执行行为。
 
@@ -5724,7 +5724,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-09-08` · University of Science and Technology of China; University of North Carolina at Chapel Hill; University of Central Florida
 
-[完整书目](../README.zh-CN.md#paper-2609-08220) · [证据 1](https://arxiv.org/abs/2609.08220) · [证据 2](https://github.com/UNITES-Lab/AID-SR)
+[完整书目](../README.zh-CN.md#paper-2609-08220) · [论文](https://arxiv.org/abs/2609.08220) · [代码](https://github.com/UNITES-Lab/AID-SR)
 
 用物理反馈改进连续体机器人设计。
 
@@ -5739,7 +5739,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2026-05-17` · Seoul National University; OneLineAI; Sungkyunkwan University; Ewha Womans University
 
-[完整书目](../README.zh-CN.md#paper-2605-17448) · [证据 1](https://arxiv.org/abs/2605.17448)
+[完整书目](../README.zh-CN.md#paper-2605-17448) · [论文](https://arxiv.org/abs/2605.17448)
 
 用视觉和有限元反馈改进 CAD 设计。
 
@@ -5756,7 +5756,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `2024-08-26` · Carnegie Mellon University
 
-[一手来源 1](https://arxiv.org/abs/2408.14307) · [一手来源 2](https://github.com/BaratiLab/LLM-3D-Print-Large-Language-Models-To-Monitor-and-Control-3D-Printing)
+[论文](https://arxiv.org/abs/2408.14307) · [代码](https://github.com/BaratiLab/LLM-3D-Print-Large-Language-Models-To-Monitor-and-Control-3D-Printing)
 
 将打印图像反馈接入真实制造控制。
 
@@ -5771,7 +5771,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `首发日期未明确` · 未明确
 
-[一手来源 1](https://github.com/BorjaLL/ai-cad) · [一手来源 2](https://github.com/BorjaLL/ai-cad/blob/1ef2bf72de799006d069498d3ee146dae2e4f075/data/fits-measured.json)
+[代码](https://github.com/BorjaLL/ai-cad) · [结果](https://github.com/BorjaLL/ai-cad/blob/1ef2bf72de799006d069498d3ee146dae2e4f075/data/fits-measured.json)
 
 连接参数化 CAD 与人工打印试配。
 
@@ -5786,7 +5786,7 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 `首发日期未明确` · 未明确
 
-[一手来源 1](https://github.com/jabarkle/AgenticAI-FDM-Printing) · [一手来源 2](https://github.com/BaratiLab/LLM-3D-Print-Large-Language-Models-To-Monitor-and-Control-3D-Printing)
+[代码](https://github.com/jabarkle/AgenticAI-FDM-Printing) · [代码](https://github.com/BaratiLab/LLM-3D-Print-Large-Language-Models-To-Monitor-and-Control-3D-Printing)
 
 记录复用式 Agent 打印工作流。
 

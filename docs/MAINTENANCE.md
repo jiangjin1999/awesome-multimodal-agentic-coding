@@ -19,6 +19,8 @@
 | `verification` | Retained English and Chinese evidence for Core entries: construction, execution, multimodal observation, subsequent revision, and what is checked. |
 | `see_also` | Other relevant section IDs linking back to this record. Add only for a supported contribution. |
 
+The generator names supporting links by destination type using the localized `source_labels` in `data/site.yaml`. Record URL exceptions in `source_kind_overrides` when the destination cannot be inferred from its address. Stage 3 reading entries use the same labels.
+
 Stage 1 covers visual feedback in artifact construction; Stage 2 covers models used as tools; Stage 3 covers the digital–physical loop. Method, evaluation, data, training, and resource roles remain distinct within these perspectives. A dataset release, a data-construction method, and experimental data are different contributions.
 
 Scope identities stay in canonical data and metadata comments for maintenance. Public entries display the title, source links, and summary without scope badges. Every generated entry has a `mmac-record` comment with `id`, `scope`, `primary`, `stage`, and `type`, and a stable `paper-…` anchor. `site.yaml` also retains older anchors through `anchor_aliases`. Update local references to current anchors while keeping published aliases working. Preserve source URLs when reorganizing entries; a primary link alone is insufficient if earlier entries included supporting code or data.

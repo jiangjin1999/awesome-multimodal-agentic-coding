@@ -177,10 +177,81 @@ text:
     en: Last updated
     zh: 最后更新
     ja: 最終更新
-  source:
-    en: source
-    zh: 来源
-    ja: 資料
+source_labels:
+  paper:
+    en: Paper
+    zh: 论文
+    ja: 論文
+  code:
+    en: Code
+    zh: 代码
+    ja: コード
+  project:
+    en: Project page
+    zh: 项目页
+    ja: プロジェクトページ
+  demo:
+    en: Demo
+    zh: Demo
+    ja: デモ
+  dataset:
+    en: Dataset
+    zh: 数据集
+    ja: データセット
+  model:
+    en: Model
+    zh: 模型
+    ja: モデル
+  docs:
+    en: Documentation
+    zh: 文档
+    ja: ドキュメント
+  article:
+    en: Article
+    zh: 文章
+    ja: 記事
+  leaderboard:
+    en: Leaderboard
+    zh: 榜单
+    ja: リーダーボード
+  collection:
+    en: Collection
+    zh: 合集
+    ja: コレクション
+  results:
+    en: Results
+    zh: 结果
+    ja: 結果
+  examples:
+    en: Examples
+    zh: 示例
+    ja: サンプル
+  repository:
+    en: Repository
+    zh: 仓库
+    ja: リポジトリ
+source_kind_overrides:
+  https://human-atlas-seven.vercel.app/: demo
+  https://haoyue-yang.github.io/GameGo/games/: demo
+  https://arc-agi-3-twin.vercel.app/: demo
+  https://continual-game-generation.vercel.app/: demo
+  https://autodesign.designanything.ai/: demo
+  https://dub.sh/omniepic: project
+  https://sensenova.ai/has-gpt-6-astra-achieved-embodied-intelligence: article
+  https://cadbench.ai/news/cad-bench-v3: article
+  ? https://github.com/Orkas-AI/Orkas/blob/c7c0e21fad7ff55f5a72a575b7a464f3cf9bc3a1/resources/builtin/marketplace/agents/bcfcb4921dce/agent.json
+  : docs
+  ? https://github.com/Orkas-AI/Orkas/blob/c7c0e21fad7ff55f5a72a575b7a464f3cf9bc3a1/resources/builtin/marketplace/agents/bcfcb4921dce/skills/ui-design-source/SKILL.md#L156-L165
+  : docs
+  https://github.com/whuang37/genxr-bench/tree/master/tasks: dataset
+  https://github.com/WikiVizEvolution/viz-revisions-dataset: dataset
+  https://artificialanalysis.ai/evaluations/mka: results
+  https://github.com/RobLe3/cc-blender-skill/blob/main/docs/test-results/v1.4.0-integration.md: results
+  https://github.com/BorjaLL/ai-cad/blob/1ef2bf72de799006d069498d3ee146dae2e4f075/data/fits-measured.json: results
+  ? https://huggingface.co/datasets/michaelgold/blenderbench-direct-results/blob/7c2c43be4517aee4d76d2b445578988de186970c/results/results-summary.json
+  : results
+  https://omnimech.dev/res/omnimech_samples.zip: examples
+  https://omnimech.dev/res/omnimech_code.zip: code
 stages:
 - id: 1
   name:

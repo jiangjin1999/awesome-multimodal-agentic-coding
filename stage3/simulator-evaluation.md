@@ -4,6 +4,11 @@
 
 Works from [3.3 Simulator quality evaluation](../README.md#s3-3), organized by fidelity level; method details are in the [Stage 3 guide](README.md#section-3).
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/eval-ladder/eval-ladder-en-dark.svg">
+  <img src="../assets/eval-ladder/eval-ladder-en-light.svg" alt="Simulator evaluation levels illustrated with one kitchen simulation. Eight cards in five stages (look only, left at rest, poke it, let it run, put it to use); each shows how the level checks the kitchen, the question it asks, the fake simulation it exposes, and how many works it holds." width="100%">
+</picture>
+
 ## Contents
 
 - [Overview](#overview)

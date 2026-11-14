@@ -1,0 +1,342 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 1038" width="1120" height="1038" role="img" aria-label="Simulator quality evaluation: each level exposes one kind of fake" font-family="-apple-system, &#x27;Segoe UI&#x27;, Helvetica, Arial, &#x27;Noto Sans&#x27;, sans-serif">
+<title>Simulator quality evaluation: each level exposes one kind of fake</title>
+<defs>
+<marker id="arr-3987E5" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#3987E5"/></marker>
+<marker id="arr-4E95E8" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#4E95E8"/></marker>
+<marker id="arr-6DA7EC" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#6DA7EC"/></marker>
+<marker id="arr-86B6EF" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#86B6EF"/></marker>
+<marker id="arr-9198A1" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#9198A1"/></marker>
+<marker id="arr-9EC5F4" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#9EC5F4"/></marker>
+<clipPath id="card-0"><rect x="28" y="158" width="248" height="372" rx="10"/></clipPath>
+<clipPath id="card-1"><rect x="300" y="158" width="248" height="372" rx="10"/></clipPath>
+<clipPath id="card-2"><rect x="572" y="158" width="248" height="372" rx="10"/></clipPath>
+<clipPath id="card-3"><rect x="844" y="158" width="248" height="372" rx="10"/></clipPath>
+<clipPath id="card-4"><rect x="28" y="586" width="248" height="372" rx="10"/></clipPath>
+<clipPath id="card-5"><rect x="300" y="586" width="248" height="372" rx="10"/></clipPath>
+<clipPath id="card-6"><rect x="572" y="586" width="248" height="372" rx="10"/></clipPath>
+<clipPath id="card-7"><rect x="844" y="586" width="248" height="372" rx="10"/></clipPath>
+</defs>
+<rect x="0.5" y="0.5" width="1119" height="1037" rx="12" fill="#0D1117" stroke="#3D444D"/>
+<text x="28" y="52" font-size="22" font-weight="700" fill="#E6EDF3">Simulator quality evaluation: each level exposes one kind of fake</text>
+<text x="28" y="84" font-size="14.5" fill="#9198A1">Example: an agent builds a kitchen simulation for a robot (a table, a cup, a cabinet with a door). All eight levels ask about it, and each</text>
+<text x="28" y="106" font-size="14.5" fill="#9198A1">exposes a fake that the earlier levels cannot catch.</text>
+<path d="M29 150 V144 H547 V150" fill="none" stroke="#3987E5" stroke-width="2"/>
+<rect x="246.41" y="133" width="83.18" height="22" rx="11" fill="#0D1117" stroke="#3987E5" stroke-width="2"/>
+<text x="288" y="148.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Look only</text>
+<path d="M573 150 V144 H819 V150" fill="none" stroke="#4E95E8" stroke-width="2"/>
+<rect x="645.18" y="133" width="101.64" height="22" rx="11" fill="#0D1117" stroke="#4E95E8" stroke-width="2"/>
+<text x="696" y="148.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Left at rest</text>
+<path d="M845 150 V144 H1091 V150" fill="none" stroke="#6DA7EC" stroke-width="2"/>
+<rect x="933.69" y="133" width="68.62" height="22" rx="11" fill="#0D1117" stroke="#6DA7EC" stroke-width="2"/>
+<text x="968" y="148.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Poke it</text>
+<path d="M29 578 V572 H819 V578" fill="none" stroke="#86B6EF" stroke-width="2"/>
+<rect x="380.46" y="561" width="87.08" height="22" rx="11" fill="#0D1117" stroke="#86B6EF" stroke-width="2"/>
+<text x="424" y="576.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Let it run</text>
+<path d="M845 578 V572 H1091 V578" fill="none" stroke="#9EC5F4" stroke-width="2"/>
+<rect x="915.23" y="561" width="105.54" height="22" rx="11" fill="#0D1117" stroke="#9EC5F4" stroke-width="2"/>
+<text x="968" y="576.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Put it to use</text>
+<circle cx="288" cy="184" r="11" fill="#0D1117" stroke="#9198A1" stroke-width="1.2"/>
+<text x="288" y="188" text-anchor="middle" font-size="11.5" fill="#9198A1">or</text>
+<line x1="552" y1="184" x2="566" y2="184" stroke="#9198A1" stroke-width="1.6" marker-end="url(#arr-9198A1)"/>
+<line x1="824" y1="184" x2="838" y2="184" stroke="#9198A1" stroke-width="1.6" marker-end="url(#arr-9198A1)"/>
+<line x1="280" y1="612" x2="294" y2="612" stroke="#9198A1" stroke-width="1.6" marker-end="url(#arr-9198A1)"/>
+<line x1="552" y1="612" x2="566" y2="612" stroke="#9198A1" stroke-width="1.6" marker-end="url(#arr-9198A1)"/>
+<line x1="824" y1="612" x2="838" y2="612" stroke="#9198A1" stroke-width="1.6" marker-end="url(#arr-9198A1)"/>
+<path d="M968 532 V543 H88 V564" fill="none" stroke="#9198A1" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arr-9198A1)"/>
+<rect x="28.5" y="158.5" width="247" height="371" rx="10" fill="#0D1117" stroke="#3D444D"/>
+<rect x="28" y="158" width="248" height="5" fill="#3987E5" clip-path="url(#card-0)"/>
+<rect x="42" y="174" width="37.92" height="21" rx="4" fill="none" stroke="#3987E5" stroke-width="1.8"/>
+<text x="49" y="189" font-size="13" font-weight="700" fill="#E6EDF3">L0a</text>
+<text x="87.92" y="190" font-size="15" font-weight="700" fill="#E6EDF3">Semantic fidelity</text>
+<rect x="42" y="204" width="220" height="104" rx="6" fill="#161B22"/>
+<g transform="translate(42 204)">
+<rect x="12" y="10" width="76" height="86" rx="4" fill="#161B22" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="37" y="5" width="26" height="9" rx="2" fill="#262C36" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M21 31 l3 3.5 l6 -7" fill="none" stroke="#E6EDF3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="36" y="35" text-anchor="start" font-size="11.5" fill="#E6EDF3">Table</text>
+<path d="M21 53 l3 3.5 l6 -7" fill="none" stroke="#E6EDF3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="36" y="57" text-anchor="start" font-size="11.5" fill="#E6EDF3">Cabinet</text>
+<path d="M21 71 l8 8 M29 71 l-8 8" stroke="#F85149" stroke-width="1.8" stroke-linecap="round"/>
+<text x="36" y="79" text-anchor="start" font-size="11.5" fill="#E6EDF3">Cup</text>
+<line x1="98" y1="96" x2="212" y2="96" stroke="#9198A1" stroke-width="1.2"/>
+<rect x="102" y="58" width="68" height="6" rx="1.5" fill="#262C36" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="109" y1="64" x2="109" y2="96" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="163" y1="64" x2="163" y2="96" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="178" y="26" width="32" height="70" rx="2" fill="#262C36" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="202" y1="55" x2="202" y2="67" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<g><path d="M128 40 L144 40 L142 58 L130 58 Z" fill="#161B22" stroke="#3987E5" stroke-width="1.6" stroke-linejoin="round" stroke-dasharray="3 2.5"/><path d="M143.5 44 q7 1 5 7 q-1 3 -6 3" fill="none" stroke="#3987E5" stroke-width="1.6" stroke-dasharray="3 2.5"/></g>
+<text x="136" y="32" text-anchor="middle" font-size="15" font-weight="700" fill="#3987E5">?</text>
+</g>
+<text x="42" y="334" font-size="14" font-weight="600" fill="#E6EDF3">Are the table, cabinet and cup</text>
+<text x="42" y="354" font-size="14" font-weight="600" fill="#E6EDF3">all there, in the right</text>
+<text x="42" y="374" font-size="14" font-weight="600" fill="#E6EDF3">places?</text>
+<line x1="42" y1="404" x2="262" y2="404" stroke="#3D444D" stroke-dasharray="3 3"/>
+<text x="42" y="422" font-size="11.5" fill="#9198A1">Fake it exposes</text>
+<path d="M44 433 l8 8 M52 433 l-8 8" stroke="#F85149" stroke-width="2" stroke-linecap="round"/>
+<text x="60" y="442" font-size="13" fill="#E6EDF3">The cup is missing, or not on</text>
+<text x="60" y="462" font-size="13" fill="#E6EDF3">the table</text>
+<circle cx="46" cy="512" r="3.8" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="58" cy="512" r="3.8" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="70" cy="512" r="3.8" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="82" cy="512" r="4.5" fill="#9198A1"/>
+<text x="96" y="516" font-size="11.5" fill="#9198A1">4 works</text>
+<rect x="300.5" y="158.5" width="247" height="371" rx="10" fill="#0D1117" stroke="#3D444D"/>
+<rect x="300" y="158" width="248" height="5" fill="#3987E5" clip-path="url(#card-1)"/>
+<rect x="314" y="174" width="37.92" height="21" rx="4" fill="none" stroke="#3987E5" stroke-width="1.8"/>
+<text x="321" y="189" font-size="13" font-weight="700" fill="#E6EDF3">L0b</text>
+<text x="359.92" y="190" font-size="15" font-weight="700" fill="#E6EDF3">Visual fidelity</text>
+<rect x="314" y="204" width="220" height="104" rx="6" fill="#161B22"/>
+<g transform="translate(314 204)">
+<rect x="10" y="12" width="84" height="70" rx="3" fill="#161B22" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="16" y="18" width="72" height="58" fill="#262C36"/>
+<line x1="20" y1="70" x2="84" y2="70" stroke="#9198A1" stroke-width="1"/>
+<rect x="24" y="46" width="32" height="3" fill="#E6EDF3"/><line x1="27" y1="49" x2="27" y2="70" stroke="#E6EDF3" stroke-width="1.2"/><line x1="53" y1="49" x2="53" y2="70" stroke="#E6EDF3" stroke-width="1.2"/>
+<rect x="62" y="30" width="18" height="40" fill="none" stroke="#E6EDF3" stroke-width="1.2"/>
+<path d="M36 46 l8 0 l-1 -8 l-6 0 Z" fill="none" stroke="#E6EDF3" stroke-width="1.2"/>
+<text x="52" y="97" text-anchor="middle" font-size="11" fill="#9198A1">Reference</text>
+<text x="112" y="54" text-anchor="middle" font-size="16" font-weight="700" fill="#3987E5">≈?</text>
+<line x1="130" y1="80" x2="214" y2="80" stroke="#9198A1" stroke-width="1.2"/>
+<rect x="134" y="50" width="42" height="6" rx="1.5" fill="#262C36" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="141" y1="56" x2="141" y2="80" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="169" y1="56" x2="169" y2="80" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="182" y="22" width="26" height="58" rx="2" fill="#262C36" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="200" y1="45" x2="200" y2="57" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<g><path d="M145 32 L161 32 L159 50 L147 50 Z" fill="#161B22" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round"/><path d="M160.5 36 q7 1 5 7 q-1 3 -6 3" fill="none" stroke="#E6EDF3" stroke-width="1.6"/></g>
+<text x="172" y="97" text-anchor="middle" font-size="11" fill="#9198A1">Built</text>
+</g>
+<text x="314" y="334" font-size="14" font-weight="600" fill="#E6EDF3">Does it look like the kitchen</text>
+<text x="314" y="354" font-size="14" font-weight="600" fill="#E6EDF3">in the reference photo?</text>
+<line x1="314" y1="404" x2="534" y2="404" stroke="#3D444D" stroke-dasharray="3 3"/>
+<text x="314" y="422" font-size="11.5" fill="#9198A1">Fake it exposes</text>
+<path d="M316 433 l8 8 M324 433 l-8 8" stroke="#F85149" stroke-width="2" stroke-linecap="round"/>
+<text x="332" y="442" font-size="13" fill="#E6EDF3">Layout and looks differ from</text>
+<text x="332" y="462" font-size="13" fill="#E6EDF3">the photo</text>
+<circle cx="318" cy="512" r="4.5" fill="#9198A1"/>
+<circle cx="330" cy="512" r="4.5" fill="#9198A1"/>
+<circle cx="342" cy="512" r="4.5" fill="#9198A1"/>
+<circle cx="354" cy="512" r="4.5" fill="#9198A1"/>
+<circle cx="366" cy="512" r="4.5" fill="#9198A1"/>
+<circle cx="378" cy="512" r="4.5" fill="#9198A1"/>
+<text x="392" y="516" font-size="11.5" fill="#9198A1">6 works</text>
+<rect x="572.5" y="158.5" width="247" height="371" rx="10" fill="#0D1117" stroke="#3D444D"/>
+<rect x="572" y="158" width="248" height="5" fill="#4E95E8" clip-path="url(#card-2)"/>
+<rect x="586" y="174" width="30.64" height="21" rx="4" fill="none" stroke="#4E95E8" stroke-width="1.8"/>
+<text x="593" y="189" font-size="13" font-weight="700" fill="#E6EDF3">L1</text>
+<text x="624.64" y="190" font-size="15" font-weight="700" fill="#E6EDF3">Static plausibility</text>
+<rect x="586" y="204" width="220" height="104" rx="6" fill="#161B22"/>
+<g transform="translate(586 204)">
+<line x1="8" y1="96" x2="212" y2="96" stroke="#9198A1" stroke-width="1.2"/>
+<rect x="40" y="64" width="132" height="6" rx="1.5" fill="#262C36" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="47" y1="70" x2="47" y2="96" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="165" y1="70" x2="165" y2="96" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="178" y="26" width="32" height="70" rx="2" fill="#262C36" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="202" y1="55" x2="202" y2="67" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<g><path d="M92 32 L108 32 L106 50 L94 50 Z" fill="#161B22" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round"/><path d="M107.5 36 q7 1 5 7 q-1 3 -6 3" fill="none" stroke="#E6EDF3" stroke-width="1.6"/></g>
+<line x1="90" y1="57" x2="110" y2="57" stroke="#F85149" stroke-width="1.4" stroke-dasharray="2.5 2"/>
+<circle cx="100" cy="56" r="21" fill="none" stroke="#4E95E8" stroke-width="2.4"/>
+<line x1="115" y1="71" x2="128" y2="84" stroke="#4E95E8" stroke-width="4" stroke-linecap="round"/>
+<text x="74" y="40" text-anchor="end" font-size="12" font-weight="700" fill="#F85149">Floating?</text>
+</g>
+<text x="586" y="334" font-size="14" font-weight="600" fill="#E6EDF3">Is the cup floating or sunk</text>
+<text x="586" y="354" font-size="14" font-weight="600" fill="#E6EDF3">into the table? Can the robot</text>
+<text x="586" y="374" font-size="14" font-weight="600" fill="#E6EDF3">get through?</text>
+<line x1="586" y1="404" x2="806" y2="404" stroke="#3D444D" stroke-dasharray="3 3"/>
+<text x="586" y="422" font-size="11.5" fill="#9198A1">Fake it exposes</text>
+<path d="M588 433 l8 8 M596 433 l-8 8" stroke="#F85149" stroke-width="2" stroke-linecap="round"/>
+<text x="604" y="442" font-size="13" fill="#E6EDF3">Looks right, but the cup</text>
+<text x="604" y="462" font-size="13" fill="#E6EDF3">floats above the table</text>
+<circle cx="590" cy="512" r="3.8" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="602" cy="512" r="3.8" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<text x="616" y="516" font-size="11.5" fill="#9198A1">2 works</text>
+<rect x="844.5" y="158.5" width="247" height="371" rx="10" fill="#0D1117" stroke="#3D444D"/>
+<rect x="844" y="158" width="248" height="5" fill="#6DA7EC" clip-path="url(#card-3)"/>
+<rect x="858" y="174" width="30.64" height="21" rx="4" fill="none" stroke="#6DA7EC" stroke-width="1.8"/>
+<text x="865" y="189" font-size="13" font-weight="700" fill="#E6EDF3">L2</text>
+<text x="896.64" y="190" font-size="15" font-weight="700" fill="#E6EDF3">Interaction</text>
+<rect x="858" y="204" width="220" height="104" rx="6" fill="#161B22"/>
+<g transform="translate(858 204)">
+<line x1="8" y1="96" x2="212" y2="96" stroke="#9198A1" stroke-width="1.2"/>
+<rect x="84" y="14" width="78" height="82" rx="2" fill="#262C36" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="88" y1="56" x2="158" y2="56" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<g><path d="M115 38 L131 38 L129 56 L117 56 Z" fill="#161B22" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round"/><path d="M130.5 42 q7 1 5 7 q-1 3 -6 3" fill="none" stroke="#E6EDF3" stroke-width="1.6"/></g>
+<path d="M84 16 L46 26 L46 86 L84 94 Z" fill="#161B22" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="52" y1="52" x2="52" y2="62" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="84" cy="28" r="2.6" fill="#6DA7EC"/>
+<circle cx="84" cy="82" r="2.6" fill="#6DA7EC"/>
+<path d="M154 30 A 64 34 0 0 0 54 20" fill="none" stroke="#6DA7EC" stroke-width="2.2" marker-end="url(#arr-6DA7EC)"/>
+<text x="25" y="48" text-anchor="middle" font-size="12.5" font-weight="700" fill="#6DA7EC">Pull</text>
+<line x1="42" y1="57" x2="12" y2="57" stroke="#6DA7EC" stroke-width="2.2" marker-end="url(#arr-6DA7EC)"/>
+</g>
+<text x="858" y="334" font-size="14" font-weight="600" fill="#E6EDF3">Pull the cabinet door: does it</text>
+<text x="858" y="354" font-size="14" font-weight="600" fill="#E6EDF3">swing open on its hinge?</text>
+<line x1="858" y1="404" x2="1078" y2="404" stroke="#3D444D" stroke-dasharray="3 3"/>
+<text x="858" y="422" font-size="11.5" fill="#9198A1">Fake it exposes</text>
+<path d="M860 433 l8 8 M868 433 l-8 8" stroke="#F85149" stroke-width="2" stroke-linecap="round"/>
+<text x="876" y="442" font-size="13" fill="#E6EDF3">The door is fixed and will not</text>
+<text x="876" y="462" font-size="13" fill="#E6EDF3">open</text>
+<circle cx="862" cy="512" r="4.5" fill="#9198A1"/>
+<circle cx="874" cy="512" r="4.5" fill="#9198A1"/>
+<circle cx="886" cy="512" r="4.5" fill="#9198A1"/>
+<circle cx="898" cy="512" r="3.8" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<text x="912" y="516" font-size="11.5" fill="#9198A1">4 works</text>
+<rect x="28.5" y="586.5" width="247" height="371" rx="10" fill="#0D1117" stroke="#3D444D"/>
+<rect x="28" y="586" width="248" height="5" fill="#86B6EF" clip-path="url(#card-4)"/>
+<rect x="42" y="602" width="37.92" height="21" rx="4" fill="none" stroke="#86B6EF" stroke-width="1.8"/>
+<text x="49" y="617" font-size="13" font-weight="700" fill="#E6EDF3">L3a</text>
+<text x="87.92" y="618" font-size="15" font-weight="700" fill="#E6EDF3">Looks right</text>
+<rect x="42" y="632" width="220" height="104" rx="6" fill="#161B22"/>
+<g transform="translate(42 632)">
+<line x1="6" y1="96" x2="130" y2="96" stroke="#9198A1" stroke-width="1.2"/>
+<rect x="8" y="40" width="64" height="6" rx="1.5" fill="#262C36" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="15" y1="46" x2="15" y2="96" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="65" y1="46" x2="65" y2="96" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<g opacity="0.45"><path d="M50 22 L66 22 L64 40 L52 40 Z" fill="#161B22" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round"/><path d="M65.5 26 q7 1 5 7 q-1 3 -6 3" fill="none" stroke="#E6EDF3" stroke-width="1.6"/></g>
+<path d="M68 30 Q 96 26 100 76" fill="none" stroke="#86B6EF" stroke-width="1.8" stroke-dasharray="3 3" marker-end="url(#arr-86B6EF)"/>
+<g transform="rotate(90 104 87)"><path d="M96 78 L112 78 L110 96 L98 96 Z" fill="#161B22" stroke="#86B6EF" stroke-width="1.6" stroke-linejoin="round"/><path d="M111.5 82 q7 1 5 7 q-1 3 -6 3" fill="none" stroke="#86B6EF" stroke-width="1.6"/></g>
+<rect x="152" y="8" width="58" height="84" rx="3" fill="#E6EDF3"/>
+<rect x="155" y="12" width="5" height="7" rx="1" fill="#161B22"/><rect x="202" y="12" width="5" height="7" rx="1" fill="#161B22"/>
+<rect x="155" y="25.5" width="5" height="7" rx="1" fill="#161B22"/><rect x="202" y="25.5" width="5" height="7" rx="1" fill="#161B22"/>
+<rect x="155" y="39" width="5" height="7" rx="1" fill="#161B22"/><rect x="202" y="39" width="5" height="7" rx="1" fill="#161B22"/>
+<rect x="155" y="52.5" width="5" height="7" rx="1" fill="#161B22"/><rect x="202" y="52.5" width="5" height="7" rx="1" fill="#161B22"/>
+<rect x="155" y="66" width="5" height="7" rx="1" fill="#161B22"/><rect x="202" y="66" width="5" height="7" rx="1" fill="#161B22"/>
+<rect x="155" y="79.5" width="5" height="7" rx="1" fill="#161B22"/><rect x="202" y="79.5" width="5" height="7" rx="1" fill="#161B22"/>
+<rect x="163" y="12" width="36" height="22" rx="1" fill="#161B22"/>
+<rect x="169" y="20" width="6" height="7" fill="#9198A1" transform="rotate(0 172 26)"/>
+<rect x="163" y="38.5" width="36" height="22" rx="1" fill="#161B22"/>
+<rect x="178" y="48.5" width="6" height="7" fill="#9198A1" transform="rotate(45 181 54.5)"/>
+<rect x="163" y="65" width="36" height="22" rx="1" fill="#161B22"/>
+<rect x="187" y="77" width="6" height="7" fill="#9198A1" transform="rotate(90 190 83)"/>
+<text x="181" y="103" text-anchor="middle" font-size="11" fill="#9198A1">Footage</text>
+<text x="132" y="52" text-anchor="middle" font-size="15" font-weight="700" fill="#86B6EF">≈?</text>
+</g>
+<text x="42" y="762" font-size="14" font-weight="600" fill="#E6EDF3">Knock the cup off the table:</text>
+<text x="42" y="782" font-size="14" font-weight="600" fill="#E6EDF3">does the fall match real</text>
+<text x="42" y="802" font-size="14" font-weight="600" fill="#E6EDF3">footage?</text>
+<line x1="42" y1="832" x2="262" y2="832" stroke="#3D444D" stroke-dasharray="3 3"/>
+<text x="42" y="850" font-size="11.5" fill="#9198A1">Fake it exposes</text>
+<path d="M44 861 l8 8 M52 861 l-8 8" stroke="#F85149" stroke-width="2" stroke-linecap="round"/>
+<text x="60" y="870" font-size="13" fill="#E6EDF3">The fall plainly does not</text>
+<text x="60" y="890" font-size="13" fill="#E6EDF3">look real</text>
+<circle cx="46" cy="940" r="4.5" fill="#9198A1"/>
+<circle cx="58" cy="940" r="4.5" fill="#9198A1"/>
+<circle cx="70" cy="940" r="4.5" fill="#9198A1"/>
+<circle cx="82" cy="940" r="4.5" fill="#9198A1"/>
+<circle cx="94" cy="940" r="3.8" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="106" cy="940" r="4.5" fill="#9198A1"/>
+<circle cx="118" cy="940" r="4.5" fill="#9198A1"/>
+<circle cx="130" cy="940" r="4.5" fill="#9198A1"/>
+<text x="144" y="944" font-size="11.5" fill="#9198A1">8 works</text>
+<rect x="300.5" y="586.5" width="247" height="371" rx="10" fill="#0D1117" stroke="#3D444D"/>
+<rect x="300" y="586" width="248" height="5" fill="#86B6EF" clip-path="url(#card-5)"/>
+<rect x="314" y="602" width="37.92" height="21" rx="4" fill="none" stroke="#86B6EF" stroke-width="1.8"/>
+<text x="321" y="617" font-size="13" font-weight="700" fill="#E6EDF3">L3b</text>
+<text x="359.92" y="618" font-size="15" font-weight="700" fill="#E6EDF3">Truly simulated</text>
+<rect x="314" y="632" width="220" height="104" rx="6" fill="#161B22"/>
+<g transform="translate(314 632)">
+<line x1="8" y1="96" x2="212" y2="96" stroke="#9198A1" stroke-width="1.2"/>
+<path d="M10 96 L10 70 L88 96 Z" fill="#262C36" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<g transform="rotate(18.4349 42.76 70.92)"><path d="M34.76 61.92 L50.76 61.92 L48.76 79.92 L36.76 79.92 Z" fill="#161B22" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round"/><path d="M50.26 65.92 q7 1 5 7 q-1 3 -6 3" fill="none" stroke="#E6EDF3" stroke-width="1.6"/></g>
+<path d="M84 92 Q 94 92 102 95" fill="none" stroke="#9198A1" stroke-width="1.8" stroke-dasharray="3 3" marker-end="url(#arr-9198A1)"/>
+<text x="10" y="58" text-anchor="start" font-size="11.5" fill="#9198A1">Before</text>
+<path d="M116 96 L116 44 L180 96 Z" fill="#262C36" stroke="#E6EDF3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<g transform="rotate(39.0939 142.88 55.84)"><path d="M134.88 46.84 L150.88 46.84 L148.88 64.84 L136.88 64.84 Z" fill="#161B22" stroke="#86B6EF" stroke-width="1.6" stroke-linejoin="round"/><path d="M150.38 50.84 q7 1 5 7 q-1 3 -6 3" fill="none" stroke="#86B6EF" stroke-width="1.6"/></g>
+<path d="M176 92 Q 186 92 204 95" fill="none" stroke="#86B6EF" stroke-width="1.8" stroke-dasharray="3 3" marker-end="url(#arr-86B6EF)"/>
+<text x="116" y="32" text-anchor="start" font-size="11.5" font-weight="700" fill="#86B6EF">Tilted, heavier</text>
+</g>
+<text x="314" y="762" font-size="14" font-weight="600" fill="#E6EDF3">Tilt the table or make the cup</text>
+<text x="314" y="782" font-size="14" font-weight="600" fill="#E6EDF3">heavier and rerun: does the</text>
+<text x="314" y="802" font-size="14" font-weight="600" fill="#E6EDF3">outcome change?</text>
+<line x1="314" y1="832" x2="534" y2="832" stroke="#3D444D" stroke-dasharray="3 3"/>
+<text x="314" y="850" font-size="11.5" fill="#9198A1">Fake it exposes</text>
+<path d="M316 861 l8 8 M324 861 l-8 8" stroke="#F85149" stroke-width="2" stroke-linecap="round"/>
+<text x="332" y="870" font-size="13" fill="#E6EDF3">Hand-made animation:</text>
+<text x="332" y="890" font-size="13" fill="#E6EDF3">conditions change, motion</text>
+<text x="332" y="910" font-size="13" fill="#E6EDF3">does not</text>
+<circle cx="318" cy="940" r="4.5" fill="#9198A1"/>
+<circle cx="330" cy="940" r="4.5" fill="#9198A1"/>
+<circle cx="342" cy="940" r="4.5" fill="#9198A1"/>
+<circle cx="354" cy="940" r="3.8" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<text x="368" y="944" font-size="11.5" fill="#9198A1">4 works</text>
+<rect x="572.5" y="586.5" width="247" height="371" rx="10" fill="#0D1117" stroke="#3D444D"/>
+<rect x="572" y="586" width="248" height="5" fill="#86B6EF" clip-path="url(#card-6)"/>
+<rect x="586" y="602" width="37.92" height="21" rx="4" fill="none" stroke="#86B6EF" stroke-width="1.8"/>
+<text x="593" y="617" font-size="13" font-weight="700" fill="#E6EDF3">L3c</text>
+<text x="631.92" y="618" font-size="15" font-weight="700" fill="#E6EDF3">Numerically accurate</text>
+<rect x="586" y="632" width="220" height="104" rx="6" fill="#161B22"/>
+<g transform="translate(586 632)">
+<line x1="16" y1="84" x2="208" y2="84" stroke="#9198A1" stroke-width="1.2" marker-end="url(#arr-9198A1)"/>
+<line x1="16" y1="84" x2="16" y2="10" stroke="#9198A1" stroke-width="1.2"/>
+<path d="M16 78 C 40 74, 60 40, 84 34" fill="none" stroke="#E6EDF3" stroke-width="2.2"/>
+<path d="M84 34 C 108 28, 130 46, 150 56 S 188 66, 204 64" fill="none" stroke="#86B6EF" stroke-width="2.2" stroke-dasharray="5 4"/>
+<line x1="84" y1="12" x2="84" y2="84" stroke="#9198A1" stroke-width="1" stroke-dasharray="2 3"/>
+<text x="50" y="98" text-anchor="middle" font-size="11" fill="#9198A1">First seconds</text>
+<text x="146" y="98" text-anchor="middle" font-size="11" font-weight="700" fill="#86B6EF">Predicted</text>
+<rect x="143.93" y="8" width="68.07" height="18" rx="9" fill="#161B22" stroke="#86B6EF" stroke-width="1.4"/>
+<text x="177.965" y="21" text-anchor="middle" font-size="10.5" fill="#E6EDF3">friction μ</text>
+<rect x="93.38" y="8" width="44.55" height="18" rx="9" fill="#161B22" stroke="#86B6EF" stroke-width="1.4"/>
+<text x="115.655" y="21" text-anchor="middle" font-size="10.5" fill="#E6EDF3">mass m</text>
+</g>
+<text x="586" y="762" font-size="14" font-weight="600" fill="#E6EDF3">Do mass and friction match</text>
+<text x="586" y="782" font-size="14" font-weight="600" fill="#E6EDF3">measurements? From the first</text>
+<text x="586" y="802" font-size="14" font-weight="600" fill="#E6EDF3">seconds, can it predict the</text>
+<text x="586" y="822" font-size="14" font-weight="600" fill="#E6EDF3">rest?</text>
+<line x1="586" y1="832" x2="806" y2="832" stroke="#3D444D" stroke-dasharray="3 3"/>
+<text x="586" y="850" font-size="11.5" fill="#9198A1">Fake it exposes</text>
+<path d="M588 861 l8 8 M596 861 l-8 8" stroke="#F85149" stroke-width="2" stroke-linecap="round"/>
+<text x="604" y="870" font-size="13" fill="#E6EDF3">Wrong parameters that cancel</text>
+<text x="604" y="890" font-size="13" fill="#E6EDF3">out to fit the trajectory</text>
+<circle cx="590" cy="940" r="4.5" fill="#9198A1"/>
+<circle cx="602" cy="940" r="4.5" fill="#9198A1"/>
+<circle cx="614" cy="940" r="4.5" fill="#9198A1"/>
+<text x="628" y="944" font-size="11.5" fill="#9198A1">3 works</text>
+<rect x="844.5" y="586.5" width="247" height="371" rx="10" fill="#0D1117" stroke="#3D444D"/>
+<rect x="844" y="586" width="248" height="5" fill="#9EC5F4" clip-path="url(#card-7)"/>
+<rect x="858" y="602" width="30.64" height="21" rx="4" fill="none" stroke="#9EC5F4" stroke-width="1.8"/>
+<text x="865" y="617" font-size="13" font-weight="700" fill="#E6EDF3">L4</text>
+<text x="896.64" y="618" font-size="15" font-weight="700" fill="#E6EDF3">Sim-to-real</text>
+<rect x="858" y="632" width="220" height="104" rx="6" fill="#161B22"/>
+<g transform="translate(858 632)">
+<text x="48" y="13" text-anchor="middle" font-size="11.5" font-weight="700" fill="#E6EDF3">In sim</text>
+<text x="172" y="13" text-anchor="middle" font-size="11.5" font-weight="700" fill="#E6EDF3">Real</text>
+<line x1="60" y1="34" x2="160" y2="34" stroke="#9EC5F4" stroke-width="2.4"/>
+<line x1="60" y1="60" x2="160" y2="86" stroke="#9198A1" stroke-width="1.6"/>
+<line x1="60" y1="86" x2="160" y2="60" stroke="#9198A1" stroke-width="1.6"/>
+<circle cx="48" cy="34" r="10" fill="#161B22" stroke="#9EC5F4" stroke-width="1.8"/>
+<text x="48" y="38" text-anchor="middle" font-size="11.5" font-weight="700" fill="#E6EDF3">A</text>
+<circle cx="172" cy="34" r="10" fill="#161B22" stroke="#9EC5F4" stroke-width="1.8"/>
+<text x="172" y="38" text-anchor="middle" font-size="11.5" font-weight="700" fill="#E6EDF3">A</text>
+<circle cx="48" cy="60" r="10" fill="#161B22" stroke="#9198A1" stroke-width="1.8"/>
+<text x="48" y="64" text-anchor="middle" font-size="11.5" font-weight="700" fill="#E6EDF3">B</text>
+<circle cx="172" cy="86" r="10" fill="#161B22" stroke="#9198A1" stroke-width="1.8"/>
+<text x="172" y="90" text-anchor="middle" font-size="11.5" font-weight="700" fill="#E6EDF3">B</text>
+<circle cx="48" cy="86" r="10" fill="#161B22" stroke="#9198A1" stroke-width="1.8"/>
+<text x="48" y="90" text-anchor="middle" font-size="11.5" font-weight="700" fill="#E6EDF3">C</text>
+<circle cx="172" cy="60" r="10" fill="#161B22" stroke="#9198A1" stroke-width="1.8"/>
+<text x="172" y="64" text-anchor="middle" font-size="11.5" font-weight="700" fill="#E6EDF3">C</text>
+<text x="19" y="38" text-anchor="middle" font-size="10.5" fill="#9198A1">#1</text>
+<text x="19" y="64" text-anchor="middle" font-size="10.5" fill="#9198A1">#2</text>
+<text x="19" y="90" text-anchor="middle" font-size="10.5" fill="#9198A1">#3</text>
+<text x="110" y="26" text-anchor="middle" font-size="11" font-weight="700" fill="#9EC5F4">Same order?</text>
+</g>
+<text x="858" y="762" font-size="14" font-weight="600" fill="#E6EDF3">Does the policy that ranks</text>
+<text x="858" y="782" font-size="14" font-weight="600" fill="#E6EDF3">first here also rank first in</text>
+<text x="858" y="802" font-size="14" font-weight="600" fill="#E6EDF3">a real kitchen?</text>
+<line x1="858" y1="832" x2="1078" y2="832" stroke="#3D444D" stroke-dasharray="3 3"/>
+<text x="858" y="850" font-size="11.5" fill="#9198A1">Fake it exposes</text>
+<path d="M860 861 l8 8 M868 861 l-8 8" stroke="#F85149" stroke-width="2" stroke-linecap="round"/>
+<text x="876" y="870" font-size="13" fill="#E6EDF3">Everything looks right, yet</text>
+<text x="876" y="890" font-size="13" fill="#E6EDF3">conclusions fail on real</text>
+<text x="876" y="910" font-size="13" fill="#E6EDF3">robots</text>
+<circle cx="862" cy="940" r="4.5" fill="#9198A1"/>
+<circle cx="874" cy="940" r="4.5" fill="#9198A1"/>
+<circle cx="886" cy="940" r="4.5" fill="#9198A1"/>
+<circle cx="898" cy="940" r="4.5" fill="#9198A1"/>
+<circle cx="910" cy="940" r="4.5" fill="#9198A1"/>
+<text x="924" y="944" font-size="11.5" fill="#9198A1">5 works</text>
+<text x="28" y="1000" font-size="12.5" fill="#9198A1">Each level catches a different kind of error; it is not a cumulative score. Most works sit at L0 and L3a; the later levels are</text>
+<text x="28" y="1018" font-size="12.5" fill="#9198A1">harder to test and have fewer works.</text>
+<circle cx="902.25" cy="996" r="4.5" fill="#9198A1"/>
+<text x="912.75" y="1000" font-size="12.5" fill="#9198A1">a work</text>
+<circle cx="973" cy="996" r="3.8" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<text x="983.5" y="1000" font-size="12.5" fill="#9198A1">an evaluator †</text>
+</svg>

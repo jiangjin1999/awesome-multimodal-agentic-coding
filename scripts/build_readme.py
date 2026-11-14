@@ -256,6 +256,8 @@ def render(site, works, lang):
     o(f"{t(site, 'citation', lang)}:\n\n```bibtex\n{site['citation'].rstrip()}\n```\n")
     o(f"## {t(site, 'license_title', lang)}\n")
     o(t(site, 'license', lang) + ' ' + t(site, 'hero_credit', lang) + '\n')
+    o(f"## {t(site, 'acknowledgments_title', lang)}\n")
+    o(t(site, 'acknowledgments', lang) + '\n')
     text = '\n'.join(out)
     text = re.sub(r'\n{3,}', '\n\n', text).rstrip() + '\n'
     return text

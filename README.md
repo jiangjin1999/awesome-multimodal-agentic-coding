@@ -3608,3 +3608,7 @@ If you find this repository useful, please cite:
 ## License
 
 This repository is released under the [MIT License](./LICENSE). Linked papers, code, datasets and media keep their own licenses. Hero image is generated from code in `assets/hero/`.
+
+## Acknowledgments
+
+We thank Liangcai Gao, Wenshan Wu, Haoling Yang, and Yu Chen.

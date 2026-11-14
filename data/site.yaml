@@ -173,6 +173,14 @@ text:
     en: Hero image is generated from code in `assets/hero/`.
     zh: 头图由 `assets/hero/` 中的代码生成。
     ja: ヘッダー画像は `assets/hero/` のコードから生成しています。
+  acknowledgments_title:
+    en: Acknowledgments
+    zh: 致谢
+    ja: 謝辞
+  acknowledgments:
+    en: We thank Liangcai Gao, Wenshan Wu, Haoling Yang, and Yu Chen.
+    zh: 感谢 Liangcai Gao、Wenshan Wu、Haoling Yang 和 Yu Chen。
+    ja: Liangcai Gao、Wenshan Wu、Haoling Yang、Yu Chen の皆様に感謝します。
   updated:
     en: Last updated
     zh: 最后更新

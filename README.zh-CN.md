@@ -3608,3 +3608,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 ## 许可证
 
 本仓库采用 [MIT 许可证](./LICENSE)。所链接的论文、代码、数据集和媒体遵循各自的许可证。 头图由 `assets/hero/` 中的代码生成。
+
+## 致谢
+
+感谢 Liangcai Gao、Wenshan Wu、Haoling Yang 和 Yu Chen。

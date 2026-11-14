@@ -238,7 +238,22 @@ source_labels:
     en: Repository
     zh: 仓库
     ja: リポジトリ
+  full_text:
+    en: Full text
+    zh: 全文
+    ja: 全文
+  cross_execution:
+    en: Cross-execution diagnostics
+    zh: 交叉执行诊断
+    ja: 交差実行の診断
+  data_sources:
+    en: Data sources and video selection
+    zh: 数据来源与视频筛选
+    ja: データの出典と動画の選定
 source_kind_overrides:
+  https://arxiv.org/html/2610.04432: full_text
+  https://arxiv.org/html/2610.04432#S10.SS1: cross_execution
+  https://arxiv.org/html/2610.04432#S8.SS1: data_sources
   https://human-atlas-seven.vercel.app/: demo
   https://haoyue-yang.github.io/GameGo/games/: demo
   https://arc-agi-3-twin.vercel.app/: demo

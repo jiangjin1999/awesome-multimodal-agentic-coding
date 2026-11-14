@@ -2806,7 +2806,7 @@
 
 <!-- mmac-record: {"id": "2610.04432", "scope": "Core", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-04432"></a>`2026.10` **[Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos](https://arxiv.org/abs/2610.04432)** [[プロジェクトページ]](https://aetherlabsai.github.io/Video2World) [[論文]](https://arxiv.org/html/2610.04432) [[コード]](https://github.com/AetherLabsAI/Video2World) [[ドキュメント]](https://github.com/AetherLabsAI/Video2World/blob/main/docs/benchmark.md) [[データセット]](https://huggingface.co/datasets/AetherLabs-AI/Video2World) [[論文]](https://arxiv.org/html/2610.04432#S10.SS1) [[論文]](https://arxiv.org/html/2610.04432#S8.SS1)
+- <a id="paper-2610-04432"></a>`2026.10` **[Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos](https://arxiv.org/abs/2610.04432)** [[プロジェクトページ]](https://aetherlabsai.github.io/Video2World) [[全文]](https://arxiv.org/html/2610.04432) [[コード]](https://github.com/AetherLabsAI/Video2World) [[ドキュメント]](https://github.com/AetherLabsAI/Video2World/blob/main/docs/benchmark.md) [[データセット]](https://huggingface.co/datasets/AetherLabs-AI/Video2World) [[交差実行の診断]](https://arxiv.org/html/2610.04432#S10.SS1) [[データの出典と動画の選定]](https://arxiv.org/html/2610.04432#S8.SS1)
   > ロボットまたは人の実演動画を、一貫したソフトウェア開発タスクに変換する。Agent は模擬環境と対応するロボット動作を作り、実行フィードバックで反復修正する。生成世界が空間構造、動的過程、操作タスクを再現できるかを最終的に確認する。
 
 <!-- mmac-record: {"id": "2610.08720", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->

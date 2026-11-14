@@ -12,9 +12,9 @@ This page reorganizes the works related to [3.3 Simulator quality evaluation](..
 - [3. L1 Static physical plausibility](#3-l1-static-physical-plausibility)
 - [4. L2 Interaction plausibility](#4-l2-interaction-plausibility)
 - [5. L3 Dynamics fidelity](#5-l3-dynamics-fidelity)
-  - [5.1 L3a Motion fidelity](#51-l3a-motion-fidelity)
-  - [5.2 L3b Model verification](#52-l3b-model-verification)
-  - [5.3 L3c Validation and system identification](#53-l3c-validation-and-system-identification)
+  - [5.1 L3a Dynamics: looks right](#51-l3a-dynamics-looks-right)
+  - [5.2 L3b Dynamics: truly simulated](#52-l3b-dynamics-truly-simulated)
+  - [5.3 L3c Dynamics: numerically accurate](#53-l3c-dynamics-numerically-accurate)
 - [6. L4 Sim-to-real predictivity](#6-l4-sim-to-real-predictivity)
 - [7. Cross-cutting observations](#7-cross-cutting-observations)
 - [8. Terminology sources](#8-terminology-sources)
@@ -33,16 +33,16 @@ This page reorganizes the works related to [3.3 Simulator quality evaluation](..
 
 ### Levels at a glance
 
-| Level | Core question | State of the world |
-|---|---|---|
-| L0a Semantic fidelity | Does it meet the given requirements? | Static |
-| L0b Visual / reconstruction fidelity | Does it match the reference? | Static |
-| L1 Static physical plausibility | Does it stand and remain usable while at rest? | A frozen moment |
-| L2 Interaction plausibility / functional fidelity | When poked, does it respond correctly? | Under external actions |
-| L3a Motion fidelity | Does the trajectory match? | Evolving over time |
-| L3b Model verification | Is the motion really produced by a suitable physical model? | Evolving over time |
-| L3c Validation and system identification | Are parameters accurate, and does it predict unseen periods? | Evolving over time |
-| L4 Sim-to-real predictivity | Do conclusions drawn in this world hold in the real world? | Put to use |
+| No. | Level | Formal term | Core question | State of the world |
+|---|---|---|---|---|
+| L0a | Semantic fidelity | Semantic Fidelity | Does it do what the requirements say? | Static |
+| L0b | Visual / reconstruction fidelity | Visual / Reconstruction Fidelity | Does it look the same as the reference? | Static |
+| L1 | Static physical plausibility | Static Physical Plausibility | Left at rest, does it stand stably and can people get through? | A frozen moment |
+| L2 | Interaction plausibility | Interaction Plausibility / Functional Fidelity | Push it or open it: does it respond correctly? | Under external actions |
+| L3a | Dynamics: looks right | Motion Fidelity | Does the motion match the reference video? (Only frames and trajectories are compared, so hand-written animation can also score well.) | Evolving over time |
+| L3b | Dynamics: truly simulated | Model Verification | Rerun under changed conditions (a steeper ramp, a heavier ball): does the result change correctly? | Evolving over time |
+| L3c | Dynamics: numerically accurate | Validation & System Identification | Do parameters such as mass and friction match reality? Given the first few seconds, can it predict what follows? | Evolving over time |
+| L4 | Sim-to-real predictivity | Sim-to-Real Predictivity | Used for evaluation or training, do the conclusions hold in the real world? | Put to use |
 
 ```
   Requirement-driven: L0a semantic ──┐
@@ -56,7 +56,7 @@ This page reorganizes the works related to [3.3 Simulator quality evaluation](..
 ### Placement rules
 
 - Each work is placed at the level of its **main claimed contribution**; other levels it touches are listed under "Also".
-- ★ marks works whose main contribution is an **evaluation tool** (an evaluator); they are placed by the property they evaluate.
+- † marks evaluators, works whose main contribution is an **evaluation tool**; they are placed by the property they evaluate.
 - Work names link to entries in the [full research map](../README.md#contents); "guide" links to the detailed note in the Stage 3 guide.
 
 ### Tags
@@ -73,7 +73,7 @@ This page reorganizes the works related to [3.3 Simulator quality evaluation](..
 
 ## 1. L0a Semantic fidelity
 
-**Does it meet the given requirements?**
+**Does it do what the requirements say?**
 
 - **How:** Decompose requirements into checkable constraints (objects, attributes, counts, relative positions) and verify each. Requirements come from **explicit instructions** ("the bed against the wall, a nightstand on each side") and from **implicit expectations** users do not write (spatial commonsense derived from data).
 - **Catches:** Missing objects, wrong relations, implausible scale, layouts that violate commonsense.
@@ -81,16 +81,16 @@ This page reorganizes the works related to [3.3 Simulator quality evaluation](..
 
 | Work | Also | Reference | Agent freedom | Role |
 |---|---|---|---|---|
-| [SceneEval](../README.md#paper-2503-14756) ★ · [guide](README.md#work-2503-14756) | L1 | Text plus implicit commonsense | — | Evaluator |
-| [Apples on the Table? (LEGO-Eval)](../README.md#paper-2511-03001) ★ · [guide](README.md#work-2511-03001) | — | Text | — | Evaluator |
-| [SceneCritic](../README.md#paper-2604-13035) ★ · [guide](README.md#work-2604-13035) | L1 | Commonsense from data | — | Evaluator |
+| [SceneEval](../README.md#paper-2503-14756) † · [guide](README.md#work-2503-14756) | L1 | Text plus implicit commonsense | — | Evaluator |
+| [Apples on the Table? (LEGO-Eval)](../README.md#paper-2511-03001) † · [guide](README.md#work-2511-03001) | — | Text | — | Evaluator |
+| [SceneCritic](../README.md#paper-2604-13035) † · [guide](README.md#work-2604-13035) | L1 | Commonsense from data | — | Evaluator |
 | [Code4Scene](../README.md#paper-2609-36777) · [guide](README.md#work-2609-36777) | L1 | Task requirements | Writes programs | Benchmark |
 
 ---
 
 ## 2. L0b Visual and reconstruction fidelity
 
-**Does it look like the reference?**
+**Does it look the same as the reference?**
 
 - **How:** Given a target image, video, scene or engineering drawing, the agent reconstructs or edits with code, and the two are compared. Two kinds of evidence differ:
   - **Rendered similarity** (LPIPS, DINO, masks): "does it look the same";
@@ -111,7 +111,7 @@ This page reorganizes the works related to [3.3 Simulator quality evaluation](..
 
 ## 3. L1 Static physical plausibility
 
-**Does it stand and remain usable while at rest?**
+**Left at rest, does it stand stably and can people get through?**
 
 - **Why "static":** Only a frozen moment of the scene is examined; time does not advance and no dynamics run. The checks are **geometric computations**:
   - **Physical feasibility:** collision (mesh intersection), support (resting on a surface), bounds;
@@ -121,8 +121,8 @@ This page reorganizes the works related to [3.3 Simulator quality evaluation](..
 
 | Work | Also | Reference | Agent freedom | Role |
 |---|---|---|---|---|
-| [GREP](../README.md#paper-2611-05802) ★ · [guide](README.md#work-2611-05802) | L0a | Principles plus the specific scene | — | Evaluator |
-| [SceneTeract](../README.md#paper-2603-29798) ★ · [guide](README.md#work-2603-29798) | — | Activity plus user conditions | — | Evaluator (also used for training) |
+| [GREP](../README.md#paper-2611-05802) † · [guide](README.md#work-2611-05802) | L0a | Principles plus the specific scene | — | Evaluator |
+| [SceneTeract](../README.md#paper-2603-29798) † · [guide](README.md#work-2603-29798) | — | Activity plus user conditions | — | Evaluator (also used for training) |
 
 GREP's evaluation agent actively chooses views and calls geometric tools; that is a capability of the **evaluator**, not evidence of a repair loop in the constructing agent. SceneTeract adds user conditions and asks whether a scene is usable *for this person*.
 
@@ -130,7 +130,7 @@ GREP's evaluation agent actively chooses views and calls geometric tools; that i
 
 ## 4. L2 Interaction plausibility
 
-**Interaction plausibility / functional fidelity · When poked, does it respond correctly?**
+**Interaction plausibility / functional fidelity · Push it or open it: does it respond correctly?**
 
 - **How:** Apply actions to the world and check the response, moving from looking at the artifact to **probing** it. Two kinds:
   - **(a) Physical interaction response:** whether pushing, opening or surface probing produces plausible physics;
@@ -157,9 +157,9 @@ Take "a ball rolls down a ramp and hits a box". This level asks three questions 
 
 | Sub-question | What it asks | How | What can fool it |
 |---|---|---|---|
-| **L3a Motion fidelity** | Does the trajectory match? | Frame-wise positions, optical flow, masks, or VLM judging | Keyframed animation |
-| **L3b Model verification** | Is the motion produced by a suitable physical model, and does it stay correct when conditions change? | Counterfactual interventions, physical assertions, conservation checks | Hard to fool, provided interventions are actually run |
-| **L3c Validation and system identification** | Are physical quantities accurate, and can it predict unseen periods? | Comparison with independently measured parameters; held-out future periods | Compensating parameters can fool trajectories but not extrapolation or real measurements |
+| **L3a Dynamics: looks right** | Does the motion match the reference video? | Frame-wise positions, optical flow, masks, or VLM judging | Hand-written keyframe animation |
+| **L3b Dynamics: truly simulated** | Rerun under changed conditions (a steeper ramp, a heavier ball): does the result change correctly? | Counterfactual interventions, physical assertions, conservation checks | Hard to fool, provided interventions are actually run |
+| **L3c Dynamics: numerically accurate** | Do parameters such as mass and friction match reality? Given the first few seconds, can it predict what follows? | Comparison with independently measured parameters; held-out future periods | Compensating parameters can fool trajectories but not extrapolation or real measurements |
 
 **What "the right mechanism" means depends on what the agent is responsible for.** With an existing engine (Blender, MuJoCo), the engine supplies the physical laws; the agent must pose the right problem and actually let the engine solve it. When the agent writes its own solver, the laws are its responsibility too. Agent freedom forms a spectrum:
 
@@ -170,9 +170,9 @@ Parameters only  →  Write within a framework  →  Write from scratch
 
 More freedom means more ways to fail: bypassing the engine with scripted animation, choosing the wrong physical model (cloth as a rigid body), misconfiguring numerics (a large time step causing tunneling), or writing wrong update rules.
 
-### 5.1 L3a Motion fidelity
+### 5.1 L3a Dynamics: looks right
 
-**Does the trajectory match?** Correct motion that is *acted out* by animation and correct motion that is *computed* by physics can score the same here.
+**Motion fidelity · Does the motion match the reference video?** Correct motion that is *acted out* by animation and correct motion that is *computed* by physics can score the same here.
 
 | Work | Also | Reference | Agent freedom | Role |
 |---|---|---|---|---|
@@ -180,12 +180,12 @@ More freedom means more ways to fail: bypassing the engine with scripted animati
 | [4DCodeBench](../README.md#paper-2610-03715) · [guide](README.md#work-2610-03715) | L0b | Reference videos (synthetic and real) | Writes programs; keyframes allowed | Benchmark |
 | [VisPhyWorld](../README.md#paper-2602-13294) · [guide](README.md#work-2602-13294) | L0b | Video | Writes programs | Benchmark |
 | [Physics-Inspired Animations](../README.md#paper-2602-10840) · [guide](README.md#work-2602-10840) | — | Physics concept descriptions | Writes programs | Benchmark (also used for training) |
-| [PhyRubric](../README.md#paper-2611-13576) ★ · [guide](README.md#work-2611-13576) | — | Pre-specified rubrics | N/A (evaluates generated videos) | Evaluator (adjacent) |
+| [PhyRubric](../README.md#paper-2611-13576) † · [guide](README.md#work-2611-13576) | — | Pre-specified rubrics | N/A (evaluates generated videos) | Evaluator (adjacent) |
 | [Latent Prediction Error and Physical Surprise](../README.md#paper-2611-01815) | — | Physical violations vs. appearance changes | N/A (evaluates video world models) | Diagnostic study (adjacent) |
 
-### 5.2 L3b Model verification
+### 5.2 L3b Dynamics: truly simulated
 
-**Is the motion really produced by a suitable physical model?** Counterfactual intervention is the key tool separating L3a from L3b: change the ramp angle or the ball's mass and rerun; a real simulation responds, a scripted animation does not.
+**Model verification · Rerun under changed conditions: does the result change correctly?** Counterfactual intervention is the key tool separating L3a from L3b: change the ramp angle or the ball's mass and rerun; a real simulation responds, a scripted animation does not.
 
 | Work | Also | Reference | Agent freedom | Role |
 |---|---|---|---|---|
@@ -193,9 +193,9 @@ More freedom means more ways to fail: bypassing the engine with scripted animati
 | [PhysCodeBench](../README.md#paper-2604-23580) · [guide](README.md#work-2604-23580) | L3a | Text-described physical phenomena | Writes programs | Benchmark (also proposes a method) |
 | [WorldSolver](../README.md#paper-2610-08720) · [guide](README.md#work-2610-08720) | — | Classical physics problems | Writes a solver within a given framework | Benchmark |
 
-### 5.3 L3c Validation and system identification
+### 5.3 L3c Dynamics: numerically accurate
 
-**Are parameters accurate, and can it predict unseen periods?** Many parameter sets yield similar trajectories (non-identifiability), so independently measured references or held-out future periods are needed.
+**Validation and system identification · Do parameters match reality? Given the first few seconds, can it predict what follows?** Many parameter sets yield similar trajectories (non-identifiability), so independently measured references or held-out future periods are needed.
 
 | Work | Also | Reference | Agent freedom | Role |
 |---|---|---|---|---|
@@ -209,7 +209,7 @@ MPMWorlds extrapolates in video space only, without reading particle states or p
 
 ## 6. L4 Sim-to-real predictivity
 
-**Do conclusions drawn in this world hold in the real world?**
+**Used for evaluation or training, do the conclusions hold in the real world?**
 
 - **How:** Instead of the world itself, check whether **conclusions drawn in it** transfer. Two kinds:
   - **(a) Evaluation proxy:** run the same policies in simulation and on real robots and compare performance and rankings (for example Pearson correlation and MMRV);
@@ -232,7 +232,7 @@ YUBI-Real2Sim varies only background artifacts while fixing objects and physics,
 
 1. **The levels are not strictly cumulative.** Passing a higher level does not imply passing a lower one: an L4 task can succeed with wrong L3 parameters, and an L2 contract can hold despite L1 interpenetration. Each level corresponds to a different failure mode.
 2. **Higher levels tend to use real-world references, but not always.** IRIS already uses real measurements at L3, and Lab2Sim uses real recordings at L2.
-3. **Coverage is uneven.** Work concentrates in L0 and L3a; few works check mechanisms, parameters or downstream usefulness. Evaluators (★) appear only in L0, L1 and L3a; L2 to L4 have no dedicated evaluation tools yet.
+3. **Coverage is uneven.** Work concentrates in L0 and L3a; few works check mechanisms, parameters or downstream usefulness. Evaluators (†) appear only in L0, L1 and L3a; L2 to L4 have no dedicated evaluation tools yet.
 4. **Open question: which lower-level checks predict higher-level failures?** YUBI-Real2Sim provides a counterexample: visual quality does not predict policy rankings. How to calibrate acceptance thresholds to real-world errors and their uncertainty remains open.
 
 ---

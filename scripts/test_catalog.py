@@ -4,6 +4,7 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
 
+import engine_map
 from build_readme import render, validate
 from catalog import anchor, canonical_records, check_local_links, load
 
@@ -74,6 +75,17 @@ class CatalogTests(unittest.TestCase):
             self.assertEqual(check_local_links(root), [])
             doc.write_text('[translation](../CONTRIBUTING.ja.md)\n')
             self.assertTrue(any('missing local target' in e for e in check_local_links(root)))
+
+    def test_engine_map_images_are_current_and_rows_are_complete(self):
+        for rel, svg in engine_map.outputs(self.site):
+            self.assertEqual((ROOT / rel).read_text(encoding='utf-8'), svg, rel)
+        site = deepcopy(self.site)
+        row = next(r for r in site['engine_map']['rows'] if r.get('name') == 'MuJoCo')
+        row['cells'] = row['cells'][:-1]
+        del row['kind']['ja']
+        errors = validate(site, self.works, True)[0]
+        self.assertTrue(any('covers 7 columns' in e for e in errors))
+        self.assertTrue(any('kind missing ja' in e for e in errors))
 
     def test_compatibility_targets_must_exist(self):
         site = deepcopy(self.site)

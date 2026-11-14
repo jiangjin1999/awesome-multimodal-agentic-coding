@@ -3642,22 +3642,19 @@
 
 ### シミュレーションエンジン一覧
 
-代表作ごとに、論文と公開実装で使われるエンジンと、物理計算・描画・最適化・出力での用途を示す。
+行を横に見ると、そのツールがシミュレータのどの工程を担うかがわかります。対応範囲はおおまかな判断で、役割分担を示すためのものです。厳密な評価ではありません。
 
-**ロボットアームによる操作で選ぶなら：** 関節角や物体姿勢などの状態を入力とし、正確な接触が必要 → MuJoCo；カメラ画像を入力とする、または大規模な合成データが必要 → Isaac Sim / Isaac Lab または ManiSkill；引き出しや扉などの関節物体を主に操作する → SAPIEN / ManiSkill；布、ケーブル、柔軟物を扱う → Genesis または Newton。
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/engine-map/engine-map-ja-dark.svg">
+  <img src="assets/engine-map/engine-map-ja-light.svg" alt="シミュレーションツールの対応範囲。横軸は素材、シーン記述、物理パラメータ、物理ソルバ、レンダリング、センサー、ロボット制御、タスクと学習の八工程。MuJoCo は物理計算が中心で、robosuite と RoboCasa がその上に制御、タスク、学習を加える。Isaac Sim は素材から制御までを担い、物理には PhysX を使う。Isaac Lab はその上で並列学習を担う。SAPIEN/ManiSkill は操作タスクの全工程を扱う。Genesis は物理計算に加えてセンサー、逆運動学、動作計画を備える。Newton/Warp、Drake、PyBullet は物理計算が中心で、Drake は計画と最適化にも強い。Gazebo/Webots はセンサーと ROS に強い。Blender は比較用で、モデリングと描画に強いが、物理は見た目重視にとどまる。" width="100%">
+</picture>
 
-| 分類 | エンジン | ひとことで | ロボットアーム操作での使い方 | 代表作 |
-|---|---|---|---|---|
-| 物理エンジン | [MuJoCo](https://mujoco.readthedocs.io/en/stable/overview.html) | Google DeepMind が保守するオープンソース物理エンジン。ロボットと物体を 1 つの XML ファイルに書けば、接触と関節の運動を高速かつ正確に計算する | **第一候補**。接触が正確で、状態入力の方策、強化学習、実データに基づくパラメータ較正に向く。カメラ画像の描画にも対応し、視覚方策に使える。写実的な合成データが必要なら、描画機能が充実したプラットフォームも候補になる | [Real2Code](#paper-2406-08474) — 論文・コードともに関節のシミュレーションに MuJoCo、描画に Blender を使用。<br>[LiteReality-Agent](#paper-2610-01863) — 論文・コードともにシーン出力と再生に MuJoCo、描画に Blender を使用。<br>[GIF](#paper-2609-05927) — 論文は物理計算に MuJoCo、配置最適化に Drake、描画に Isaac Sim を使用（コード公開予定）。 |
-| | [PyBullet](https://pybullet.org/) / [Bullet](https://github.com/bulletphysics/bullet3) | 定番の軽量物理エンジン。pip でインストールすればすぐ使える | 利用可。素早い試作に向く。精度と描画はそこそこ | [GenSim](#paper-2310-01361) — 論文・コードともに PyBullet ベースの CLIPort を使用。<br>[Instruct2Act](#paper-2305-11176) — 論文・コードともに PyBullet ベースの VIMABench を使用。<br>[OMNI-EPIC](#paper-2405-15568) — 論文・コードともにタスクを PyBullet で実行。<br>[RoboGen](#paper-2311-01455) — 論文は Genesis、公開の再実装は PyBullet を使用。 |
-| | [Drake](https://drake.mit.edu/) | Toyota Research Institute（TRI）が中心となって開発するロボティクスツールボックス。厳密なモデルと数理最適化を重視する | 利用可。動作計画や、配置が安定しているか・めり込みがないかの検査に向く。大規模な学習には向かない | [SceneSmith](#paper-2602-09153) — 論文・コードともに Drake を使い、公開コードは MuJoCo と USD にも出力可能。<br>[GIF](#paper-2609-05927) — 論文は物理計算に MuJoCo、配置最適化に Drake、描画に Isaac Sim を使用（コード公開予定）。 |
-| | [Genesis](https://genesis-world.readthedocs.io/en/latest/) | 新世代の Python ネイティブ物理プラットフォーム。剛体、布、流体、柔軟物を同じインターフェースで扱う | 利用可。布や柔軟物を含む操作に特に向く。エコシステムはまだ新しい | [RoboGen](#paper-2311-01455) — 論文は Genesis、公開の再実装は PyBullet を使用。<br>[GS-Agent](#paper-2607-21522) — 論文は Genesis を使用（公開コードは[サンプルスクリプト](https://github.com/UMass-Embodied-AGI/gs-agent/tree/gh-pages/static/code)のみ）。 |
-| | [Newton](https://newton-physics.github.io/newton/) | Warp は Python で GPU シミュレーションのコードを書くための NVIDIA のフレームワーク。Newton は NVIDIA、Google DeepMind、Disney Research が Warp 上で共同開発したオープンソース物理エンジン | 利用可。GPU で高速化でき微分可能で、布、ケーブル、柔軟物に向く。開発は今も急速に進んでいる | [RoboSimStudio](#paper-2610-18835) — 論文・コードともに Warp 上の Newton を使用し、論文のスポンジ事例では SuperDex も使用。<br>[Gym-Anything](#paper-2610-40565) — 論文は Newton や MuJoCo Warp などのソルバーを報告し、公開の RoboWorld は物理計算に Newton、描画に Isaac Sim を使用。 |
-| | [Warp](https://nvidia.github.io/warp/) | GPU シミュレーションフレームワーク | 変形する素材のための微分可能な独自ソルバーを実装できる。 | [DeformMaster](#paper-2605-09586) — 論文・公開ランタイムともに MPM シミュレーションに Warp を使用。 |
-| シミュレーションプラットフォーム（物理＋リアルな描画＋センサー） | [Isaac Sim](https://docs.isaacsim.omniverse.nvidia.com/latest/index.html) / [Isaac Lab](https://isaac-sim.github.io/IsaacLab/) | NVIDIA のロボットシミュレーションプラットフォーム。物理は PhysX、描画はレイトレーシングで、カメラや LiDAR も模擬できる。Isaac Lab はその上の並列学習フレームワークで、Isaac Gym の後継 | **第一候補**。視覚方策、大規模な合成データ、デジタルツインに向く。NVIDIA GPU が必要で、導入は重い | [SAGE](#paper-2602-10116) — 論文・コードともに物理検証に Isaac Sim、並列データ収集に Isaac Lab を使用。<br>[Gym-Anything](#paper-2610-40565) — 論文は Newton や MuJoCo Warp などのソルバーを報告し、公開の RoboWorld は物理計算に Newton、描画に Isaac Sim を使用。 |
-| | [Isaac Gym](https://github.com/isaac-sim/IsaacGymEnvs) | NVIDIA の従来の GPU 並列シミュレーター | Isaac Gym ベースの学習環境を再現する際に使う。 | [Gen2Sim](#paper-2310-18308) — 論文・学習コードともに Isaac Gym を使用。 |
-| | [SAPIEN](https://github.com/haosulab/SAPIEN) / [ManiSkill](https://maniskill.readthedocs.io/en/latest/) | 操作タスク向けに設計されたシミュレーションプラットフォームで、引き出しや扉などの関節物体モデルを多数備える。ManiSkill はその上に作られた GPU 並列のタスク集 | **第一候補**。関節物体の操作や GPU 並列のデータ収集に向く | [Articulate-Anything](#paper-2410-13882) — 論文・コードともに物理計算に PyBullet、描画に SAPIEN を使用。<br>[EmbodiedGen V2](#paper-2607-07459) — 論文・コードともに物理計算に SAPIEN を使用し、公開の把持評価では ManiSkill も使用。 |
-| ROS 系シミュレータ | [Gazebo](https://gazebosim.org/docs/latest/getstarted/) / [Webots](https://cyberbotics.com/) | システム全体のテスト向け。実機の ROS コードをそのままシミュレーションで動かせる | 利用可。システム全体の統合試験に向く。把持の接触は弱く、大規模なデータ収集には向かない | [Adaptive Code Generation](#paper-2610-09588) — 論文では Gazebo と ROS 2 で評価（実装リンクの記載なし）。<br>[Webots MCP](#paper-res-webots-mcp) — 公開ブリッジとデモは Webots で動作。 |
+<details>
+<summary>ツールのドキュメントとサンプル</summary>
+
+[MuJoCo](https://mujoco.readthedocs.io/en/stable/overview.html) · [PyBullet](https://pybullet.org/) · [Bullet](https://github.com/bulletphysics/bullet3) · [Drake](https://drake.mit.edu/) · [Genesis](https://genesis-world.readthedocs.io/en/latest/) · [Newton](https://newton-physics.github.io/newton/) · [Warp](https://nvidia.github.io/warp/) · [Isaac Sim](https://docs.isaacsim.omniverse.nvidia.com/latest/index.html) · [Isaac Lab](https://isaac-sim.github.io/IsaacLab/) · [Isaac Gym](https://github.com/isaac-sim/IsaacGymEnvs) · [SAPIEN](https://github.com/haosulab/SAPIEN) · [ManiSkill](https://maniskill.readthedocs.io/en/latest/) · [Gazebo](https://gazebosim.org/docs/latest/getstarted/) · [Webots](https://cyberbotics.com/) · [GS-Agent のサンプルスクリプト](https://github.com/UMass-Embodied-AGI/gs-agent/tree/gh-pages/static/code)
+
+</details>
 
 [↑ 目次に戻る](#contents)
 

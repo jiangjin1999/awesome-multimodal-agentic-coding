@@ -3639,22 +3639,19 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 ### 仿真引擎一览
 
-代表工作注明论文和公开代码使用的引擎，以及引擎在物理仿真、渲染、优化或导出中承担的角色。
+横着看一行，就是这个工具负责仿真器的哪些环节。覆盖程度是概括性判断，用来看清分工，不是精确评分。
 
-**做机械臂操作时怎么选：** 策略输入关节角、物体位姿等状态，且要求接触准 → MuJoCo；策略输入相机图像，或需要大规模合成数据 → Isaac Sim / Isaac Lab 或 ManiSkill；主要操作抽屉、柜门等关节物体 → SAPIEN / ManiSkill；涉及布料、绳子、软体 → Genesis 或 Newton。
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/engine-map/engine-map-zh-dark.svg">
+  <img src="assets/engine-map/engine-map-zh-light.svg" alt="仿真工具覆盖图，横轴是八个环节：素材、场景文件、物理参数、物理求解、渲染、传感器、控制接口、任务与训练。MuJoCo 以物理求解为核心，robosuite 和 RoboCasa 建在它之上，补上控制、任务与训练。Isaac Sim 覆盖从素材到控制接口，物理用 PhysX；Isaac Lab 建在它之上，负责并行训练。SAPIEN/ManiSkill 覆盖操作任务的全流程。Genesis 在物理求解之外还提供传感器、逆运动学和运动规划。Newton/Warp、Drake 和 PyBullet 以物理求解为核心，Drake 还擅长规划与优化。Gazebo/Webots 强在传感器和 ROS。Blender 作为对照：建模和渲染强，但物理只求看起来对。" width="100%">
+</picture>
 
-| 类别 | 引擎 | 一句话理解 | 用于机械臂操作 | 代表工作 |
-|---|---|---|---|---|
-| 物理引擎 | [MuJoCo](https://mujoco.readthedocs.io/en/stable/overview.html) | Google DeepMind 维护的开源物理引擎。一个 XML 文件写清机器人和物体，就能又快又准地算出碰撞和关节运动 | **首选**。接触准，适合输入状态的策略、强化学习、按真实数据校准参数；也支持相机渲染和视觉策略。需要写实合成数据时，可考虑渲染能力更强的平台 | [Real2Code](#paper-2406-08474) — 论文和代码均用 MuJoCo 仿真关节、Blender 渲染。<br>[LiteReality-Agent](#paper-2610-01863) — 论文和代码均用 MuJoCo 导出和回放场景、Blender 渲染。<br>[GIF](#paper-2609-05927) — 论文用 MuJoCo 仿真、Drake 优化摆放、Isaac Sim 渲染（代码待发布）。 |
-| | [PyBullet](https://pybullet.org/) / [Bullet](https://github.com/bulletphysics/bullet3) | 老牌轻量物理引擎，pip 装上就能用 | 可用。适合快速做原型；精度和画面一般 | [GenSim](#paper-2310-01361) — 论文和代码均用基于 PyBullet 的 CLIPort。<br>[Instruct2Act](#paper-2305-11176) — 论文和代码均用基于 PyBullet 的 VIMABench。<br>[OMNI-EPIC](#paper-2405-15568) — 论文和代码均用 PyBullet 运行任务。<br>[RoboGen](#paper-2311-01455) — 论文用 Genesis，公开复现用 PyBullet。 |
-| | [Drake](https://drake.mit.edu/) | 丰田研究院（TRI）主导开发的机器人工具箱，强调模型严谨和数学优化 | 可用。适合运动规划，以及检查放置稳不稳、有没有穿模；不适合大规模训练 | [SceneSmith](#paper-2602-09153) — 论文和代码均用 Drake，公开代码还支持导出到 MuJoCo 和 USD。<br>[GIF](#paper-2609-05927) — 论文用 MuJoCo 仿真、Drake 优化摆放、Isaac Sim 渲染（代码待发布）。 |
-| | [Genesis](https://genesis-world.readthedocs.io/en/latest/) | 新一代 Python 物理平台，刚体、布料、流体、软体用同一套接口 | 可用。涉及布料、软体的操作更合适；生态还比较新 | [RoboGen](#paper-2311-01455) — 论文用 Genesis，公开复现用 PyBullet。<br>[GS-Agent](#paper-2607-21522) — 论文用 Genesis（仅公开[脚本示例](https://github.com/UMass-Embodied-AGI/gs-agent/tree/gh-pages/static/code)）。 |
-| | [Newton](https://newton-physics.github.io/newton/) | Warp 是 NVIDIA 用 Python 写 GPU 仿真代码的工具；Newton 是 NVIDIA、Google DeepMind、Disney Research 基于 Warp 联合开源的物理引擎 | 可用。GPU 加速、可微，适合布料、绳子、软体；还在快速迭代 | [RoboSimStudio](#paper-2610-18835) — 论文和代码均用基于 Warp 的 Newton，论文的海绵示例还用 SuperDex。<br>[Gym-Anything](#paper-2610-40565) — 论文报告的求解器包括 Newton 和 MuJoCo Warp，公开的 RoboWorld 用 Newton 仿真、Isaac Sim 渲染。 |
-| | [Warp](https://nvidia.github.io/warp/) | GPU 仿真框架 | 可为可变形材料实现自定义可微求解器。 | [DeformMaster](#paper-2605-09586) — 论文和公开运行代码均用 Warp 做 MPM 仿真。 |
-| 仿真平台（物理 + 逼真渲染 + 传感器） | [Isaac Sim](https://docs.isaacsim.omniverse.nvidia.com/latest/index.html) / [Isaac Lab](https://isaac-sim.github.io/IsaacLab/) | NVIDIA 的机器人仿真平台：物理用 PhysX，画面用光线追踪，还能模拟相机和激光雷达。Isaac Lab 是在它上面做并行训练的框架，前身是 Isaac Gym | **首选**。适合视觉策略、大规模合成数据、数字孪生；需要 NVIDIA 显卡，安装较重 | [SAGE](#paper-2602-10116) — 论文和代码均用 Isaac Sim 做物理验证、Isaac Lab 并行采集数据。<br>[Gym-Anything](#paper-2610-40565) — 论文报告的求解器包括 Newton 和 MuJoCo Warp，公开的 RoboWorld 用 Newton 仿真、Isaac Sim 渲染。 |
-| | [Isaac Gym](https://github.com/isaac-sim/IsaacGymEnvs) | NVIDIA 早期的 GPU 并行仿真器 | 可用于复现基于 Isaac Gym 的训练流程。 | [Gen2Sim](#paper-2310-18308) — 论文和训练代码均用 Isaac Gym。 |
-| | [SAPIEN](https://github.com/haosulab/SAPIEN) / [ManiSkill](https://maniskill.readthedocs.io/en/latest/) | 专为操作任务设计的仿真平台，配套大量抽屉、柜门等关节物体模型。ManiSkill 是在它上面做的 GPU 并行任务集 | **首选**。适合关节物体操作、GPU 并行采数据 | [Articulate-Anything](#paper-2410-13882) — 论文和代码均用 PyBullet 做物理计算、SAPIEN 渲染。<br>[EmbodiedGen V2](#paper-2607-07459) — 论文和代码均用 SAPIEN 做物理仿真，公开的抓取评估还用 ManiSkill。 |
-| ROS 生态仿真器 | [Gazebo](https://gazebosim.org/docs/latest/getstarted/) / [Webots](https://cyberbotics.com/) | 面向整机系统测试：真机的 ROS 代码可以直接放进仿真里跑 | 可用。适合整套系统联调；抓取接触较弱，不适合大规模采数据 | [Adaptive Code Generation](#paper-2610-09588) — 论文用 Gazebo 和 ROS 2 做评估（未附实现链接）。<br>[Webots MCP](#paper-res-webots-mcp) — 公开桥接代码和示例均在 Webots 中运行。 |
+<details>
+<summary>工具文档与示例</summary>
+
+[MuJoCo](https://mujoco.readthedocs.io/en/stable/overview.html) · [PyBullet](https://pybullet.org/) · [Bullet](https://github.com/bulletphysics/bullet3) · [Drake](https://drake.mit.edu/) · [Genesis](https://genesis-world.readthedocs.io/en/latest/) · [Newton](https://newton-physics.github.io/newton/) · [Warp](https://nvidia.github.io/warp/) · [Isaac Sim](https://docs.isaacsim.omniverse.nvidia.com/latest/index.html) · [Isaac Lab](https://isaac-sim.github.io/IsaacLab/) · [Isaac Gym](https://github.com/isaac-sim/IsaacGymEnvs) · [SAPIEN](https://github.com/haosulab/SAPIEN) · [ManiSkill](https://maniskill.readthedocs.io/en/latest/) · [Gazebo](https://gazebosim.org/docs/latest/getstarted/) · [Webots](https://cyberbotics.com/) · [GS-Agent 脚本示例](https://github.com/UMass-Embodied-AGI/gs-agent/tree/gh-pages/static/code)
+
+</details>
 
 [↑ 返回目录](#contents)
 

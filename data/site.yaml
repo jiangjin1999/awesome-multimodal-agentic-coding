@@ -447,6 +447,209 @@ stages:
         [MuJoCo](https://mujoco.readthedocs.io/en/stable/overview.html) · [PyBullet](https://pybullet.org/) · [Bullet](https://github.com/bulletphysics/bullet3) · [Drake](https://drake.mit.edu/) · [Genesis](https://genesis-world.readthedocs.io/en/latest/) · [Newton](https://newton-physics.github.io/newton/) · [Warp](https://nvidia.github.io/warp/) · [Isaac Sim](https://docs.isaacsim.omniverse.nvidia.com/latest/index.html) · [Isaac Lab](https://isaac-sim.github.io/IsaacLab/) · [Isaac Gym](https://github.com/isaac-sim/IsaacGymEnvs) · [SAPIEN](https://github.com/haosulab/SAPIEN) · [ManiSkill](https://maniskill.readthedocs.io/en/latest/) · [Gazebo](https://gazebosim.org/docs/latest/getstarted/) · [Webots](https://cyberbotics.com/) · [GS-Agent のサンプルスクリプト](https://github.com/UMass-Embodied-AGI/gs-agent/tree/gh-pages/static/code)
 
         </details>
+# Overview figure at the top of stage3/simulator-evaluation.md and .zh-CN.md (scripts/eval_ladder.py).
+# Works are counted per level; keep them in step with the tables in that guide.
+eval_ladder:
+  text:
+    title:
+      en: 'Simulator quality evaluation: each level exposes one kind of fake'
+      zh: 仿真器质量评估：每一层拆穿一种“假”
+    alt:
+      en: 'Simulator evaluation levels illustrated with one kitchen simulation. Eight cards in five stages (look only, left at rest, poke it, let it run, put it to use); each shows how the level checks the kitchen, the question it asks, the fake simulation it exposes, and how many works it holds.'
+      zh: 用同一个厨房仿真说明各个检验层级：8 张卡片分为只看、放着不动、碰一下、让它自己动、拿去用五个阶段，每张给出这一层怎么检查、问什么、拆穿哪种假仿真，以及收录的作品数。
+    lead:
+      en: 'Example: an agent builds a kitchen simulation for a robot (a table, a cup, a cabinet with a door). All eight levels ask about it, and each exposes a fake that the earlier levels cannot catch.'
+      zh: 例子：Agent 给机器人搭了一个厨房仿真（桌子、杯子、带门的柜子）。8 个层级都拿它来问，每一层都能拆穿前面几层发现不了的“假仿真”。
+    note:
+      en: Each level catches a different kind of error; it is not a cumulative score. Most works sit at L0 and L3a; the later levels are harder to test and have fewer works.
+      zh: 各层查的是不同的错，不是累加分数。作品多集中在 L0 和 L3a，越往后越难检验，工作也越少。
+    fake:
+      en: Fake it exposes
+      zh: 拆穿的假仿真
+    or:
+      en: or
+      zh: 或
+    work:
+      en: a work
+      zh: 收录作品
+    evaluator:
+      en: an evaluator †
+      zh: 评估器 †
+    count:
+      en: '{n} works'
+      zh: '{n} 项'
+  pic:
+    table:
+      en: Table
+      zh: 桌子
+    cabinet:
+      en: Cabinet
+      zh: 柜子
+    cup:
+      en: Cup
+      zh: 杯子
+    reference:
+      en: Reference
+      zh: 参照照片
+    built:
+      en: Built
+      zh: 搭出来的
+    floating:
+      en: Floating?
+      zh: 悬空？
+    pull:
+      en: Pull
+      zh: 拉
+    footage:
+      en: Footage
+      zh: 录像
+    before:
+      en: Before
+      zh: 原来
+    after:
+      en: Tilted, heavier
+      zh: 调斜、加重
+    given:
+      en: First seconds
+      zh: 前几秒（给定）
+    predicted:
+      en: Predicted
+      zh: 预测后面
+    mass:
+      en: mass m
+      zh: 质量 m
+    friction:
+      en: friction μ
+      zh: 摩擦 μ
+    in_sim:
+      en: In sim
+      zh: 仿真里
+    in_real:
+      en: Real
+      zh: 真实中
+    rank:
+      en: '#{n}'
+      zh: 第{n}
+    same:
+      en: Same order?
+      zh: 一致吗？
+  stages:
+  - name:
+      en: Look only
+      zh: 只看，不运行
+    levels:
+    - code: L0a
+      pic: checklist
+      name:
+        en: Semantic fidelity
+        zh: 需求符合
+      question:
+        en: Are the table, cabinet and cup all there, in the right places?
+        zh: 要的桌子、柜子、杯子都有吗？位置对吗？
+      fake:
+        en: The cup is missing, or not on the table
+        zh: 漏了杯子，或杯子没放在桌上
+      works: ['2503.14756 †', '2511.03001 †', '2604.13035 †', '2609.36777']
+    - code: L0b
+      pic: photo
+      name:
+        en: Visual fidelity
+        zh: 参照还原
+      question:
+        en: Does it look like the kitchen in the reference photo?
+        zh: 和参照照片里的厨房长得一样吗？
+      fake:
+        en: Layout and looks differ from the photo
+        zh: 布局、样子和照片对不上
+      works: ['2506.23329', '2504.01786', 'system:blenderworld', '2611.02659', '2609.15478', '2611.09017']
+  - name:
+      en: Left at rest
+      zh: 放着不动
+    levels:
+    - code: L1
+      pic: floating
+      name:
+        en: Static plausibility
+        zh: 静态合理性
+      question:
+        en: Is the cup floating or sunk into the table? Can the robot get through?
+        zh: 杯子悬空、穿进桌面了吗？机器人过得去吗？
+      fake:
+        en: Looks right, but the cup floats above the table
+        zh: 外观都对，但杯子浮在桌面上
+      works: ['2611.05802 †', '2603.29798 †']
+  - name:
+      en: Poke it
+      zh: 碰一下
+    levels:
+    - code: L2
+      pic: door
+      name:
+        en: Interaction
+        zh: 交互响应
+      question:
+        en: 'Pull the cabinet door: does it swing open on its hinge?'
+        zh: 拉一下柜门，会绕着铰链转开吗？
+      fake:
+        en: The door is fixed and will not open
+        zh: 柜门是死的，一拉不动
+      works: ['2610.37326', '2606.01869', '2611.02928', '2605.19136 †']
+  - name:
+      en: Let it run
+      zh: 让它自己动
+    levels:
+    - code: L3a
+      pic: film
+      name:
+        en: Looks right
+        zh: 看起来对
+      question:
+        en: 'Knock the cup off the table: does the fall match real footage?'
+        zh: 杯子被碰倒、滚下桌的过程，和录像像吗？
+      fake:
+        en: The fall plainly does not look real
+        zh: 倒下的样子一看就不像真的
+      works: ['2610.15166', '2610.03715', '2602.13294', '2602.10840', '2611.13576 †', '2611.01815', '2610.04432', 'real2sim-benchmark']
+    - code: L3b
+      pic: ramps
+      name:
+        en: Truly simulated
+        zh: 真在模拟
+      question:
+        en: 'Tilt the table or make the cup heavier and rerun: does the outcome change?'
+        zh: 桌面调斜、杯子换重，再跑一遍，结果跟着变吗？
+      fake:
+        en: 'Hand-made animation: conditions change, motion does not'
+        zh: 手写动画：条件变了，动作照旧
+      works: ['2610.17288', '2604.23580', '2610.08720', '2609.13194 †']
+    - code: L3c
+      pic: predict
+      name:
+        en: Numerically accurate
+        zh: 数值准确
+      question:
+        en: Do mass and friction match measurements? From the first seconds, can it predict the rest?
+        zh: 质量、摩擦和实测一致吗？只看前几秒，能预测后面吗？
+      fake:
+        en: Wrong parameters that cancel out to fit the trajectory
+        zh: 参数错了，靠互相抵消凑对轨迹
+      works: ['2603.16432', '2605.20576', '2606.01538']
+  - name:
+      en: Put it to use
+      zh: 拿去用
+    levels:
+    - code: L4
+      pic: rank
+      name:
+        en: Sim-to-real
+        zh: 下游效用
+      question:
+        en: Does the policy that ranks first here also rank first in a real kitchen?
+        zh: 在这里排第一的策略，到真厨房里也排第一吗？
+      fake:
+        en: Everything looks right, yet conclusions fail on real robots
+        zh: 处处都像，实机上结论却不成立
+      works: ['2405.05941', '2610.17521', '2609.27449', '2512.16881', '2609.24778']
 engine_map:
   text:
     title:

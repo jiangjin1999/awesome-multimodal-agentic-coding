@@ -16,6 +16,7 @@ from urllib.parse import urlsplit
 import yaml
 
 import engine_map
+import eval_ladder
 from catalog import LAYOUT, validate_catalog, check_local_links
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -70,6 +71,7 @@ def validate(site, works, strict_ja):
             if k not in byid:
                 errors.append(f'see_also {sec}: id {k} not found')
     errors += engine_map.validate_all(site)
+    errors += eval_ladder.validate(site, works)
     return errors, warnings
 
 
@@ -328,6 +330,7 @@ def main():
     stale = []
     generated = [(ROOT / site['languages'][lang]['file'], render(site, works, lang)) for lang in LANGS]
     generated += [(ROOT / rel, svg) for rel, svg in engine_map.outputs(site)]
+    generated += [(ROOT / rel, svg) for rel, svg in eval_ladder.outputs(site)]
     for path, text in generated:
         if args.check:
             if not path.exists() or path.read_text(encoding='utf-8') != text:

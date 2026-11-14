@@ -5,6 +5,7 @@ from tempfile import TemporaryDirectory
 import unittest
 
 import engine_map
+import eval_ladder
 from build_readme import render, validate
 from catalog import anchor, canonical_records, check_local_links, load
 
@@ -89,6 +90,19 @@ class CatalogTests(unittest.TestCase):
         site = deepcopy(self.site)
         site['engine_strengths']['rows'][0]['scores'] = '3 1 2 1 2 1 1 3'  # drops the only star in its column
         self.assertTrue(any('exactly one top pick' in e for e in validate(site, self.works, True)[0]))
+
+    def test_eval_ladder_images_are_current_and_levels_are_complete(self):
+        for rel, svg in eval_ladder.outputs(self.site):
+            self.assertEqual((ROOT / rel).read_text(encoding='utf-8'), svg, rel)
+        site = deepcopy(self.site)
+        level = site['eval_ladder']['stages'][0]['levels'][0]
+        level['works'].append('9999.99999')
+        level['pic'] = 'unknown'
+        del level['fake']['zh']
+        errors = validate(site, self.works, True)[0]
+        self.assertTrue(any('work 9999.99999 not found' in e for e in errors))
+        self.assertTrue(any('unknown pictogram' in e for e in errors))
+        self.assertTrue(any('L0a.fake missing zh' in e for e in errors))
 
     def test_compatibility_targets_must_exist(self):
         site = deepcopy(self.site)

@@ -4,6 +4,11 @@
 
 按“检验层级”整理 [3.3 仿真器质量评估](../README.zh-CN.md#s3-3) 的工作；各篇的方法细节见 [Stage 3 导读](README.zh-CN.md#section-3)。
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/eval-ladder/eval-ladder-zh-dark.svg">
+  <img src="../assets/eval-ladder/eval-ladder-zh-light.svg" alt="用同一个厨房仿真说明各个检验层级：8 张卡片分为只看、放着不动、碰一下、让它自己动、拿去用五个阶段，每张给出这一层怎么检查、问什么、拆穿哪种假仿真，以及收录的作品数。" width="100%">
+</picture>
+
 ## 目录
 
 - [总览](#总览)

@@ -1296,7 +1296,7 @@ Harness 为多模态 Coding Agent 提供观测、执行接口、运行状态、S
 
 `2026-11-07` · Universidade da Coruña; CITENI; Grupo Integrado de Ingeniería
 
-[论文](https://arxiv.org/abs/2611.10602)
+[论文](https://arxiv.org/abs/2611.10602) · [代码](https://github.com/simulean/SimuLean)
 
 SimuLean 为 Agent 提供经过验证的制造系统建模组件。
 
@@ -1380,7 +1380,7 @@ WorldSketch 让 VLM 决定任务需要哪些部件和机制，由深度测量提
 
 `2026-10-29` · Carnegie Mellon University
 
-[论文](https://arxiv.org/abs/2610.40565) · [项目页](https://gym-anything.github.io/robotics)
+[论文](https://arxiv.org/abs/2610.40565) · [项目页](https://gym-anything.github.io/robotics) · [代码](https://github.com/gym-anything/robotics)
 
 把仿真器本身作为 Coding Agent 任务，用独立物理审计反复修订场景、动力学和验证证据。
 
@@ -1630,7 +1630,7 @@ GRASE 将输入视频作为整个重建过程的持续参照，避免一次性�
 
 `2026-10-13` · University of California, Berkeley; NVIDIA
 
-[论文](https://arxiv.org/abs/2610.18835) · [项目页](https://robosimstudio.github.io)
+[论文](https://arxiv.org/abs/2610.18835) · [项目页](https://robosimstudio.github.io) · [代码](https://github.com/robosimstudio/robosimstudio)
 
 以可编辑求解器、接触模型和参数支撑视频驱动的多物理构建，并展示真实失败反推场景约束修订。
 
@@ -1686,7 +1686,7 @@ D-World 把世界模型表示为 Agent 可直接检查和修订的数字孪生�
 
 `2026-10-09` · Nanyang Technological University; ETH Zurich; Microsoft; University of Cambridge; University of Oxford
 
-[完整书目](../README.zh-CN.md#paper-2610-13947) · [论文](https://arxiv.org/abs/2610.13947) · [项目页](https://physicalvision.github.io/artisan/)
+[完整书目](../README.zh-CN.md#paper-2610-13947) · [论文](https://arxiv.org/abs/2610.13947) · [项目页](https://physicalvision.github.io/artisan/) · [代码](https://github.com/physicalvision/artisan) · [数据集](https://huggingface.co/datasets/mastercai/Artisan-Benchmark)
 
 以设计、编码和审阅 Agent 联合 MuJoCo 检查，修订能运动、站稳且保留目标功能的关节资产。
 
@@ -1714,7 +1714,7 @@ Artisan 将资产生成目标从几何外观扩展到碰撞、稳定性、质量
 
 `2026-10-08` · NVIDIA; Nanyang Technological University; Peking University
 
-[完整书目](../README.zh-CN.md#paper-2610-11322) · [论文](https://arxiv.org/abs/2610.11322) · [项目页](https://xingyoujun.github.io/usdcraft/)
+[完整书目](../README.zh-CN.md#paper-2610-11322) · [论文](https://arxiv.org/abs/2610.11322) · [项目页](https://xingyoujun.github.io/usdcraft/) · [代码](https://github.com/NVlabs/USDCraft)
 
 用可执行程序重建有关节的 USD 资产，把缺失的已观测表面与尚未观测的空间分开处理。
 
@@ -1826,7 +1826,7 @@ Text2Sim 将文字描述转成可执行且可编辑的物理动态案例，协�
 
 `2026-09-29` · Shanghai Artificial Intelligence Laboratory; Shanghai Jiao Tong University; Zhejiang University; University of Science and Technology of China; The Chinese University of Hong Kong; The University of Hong Kong
 
-[论文](https://arxiv.org/abs/2609.37089) · [项目页](https://real2gym.github.io/)
+[论文](https://arxiv.org/abs/2609.37089) · [项目页](https://real2gym.github.io/) · [代码](https://github.com/real2gym/Real2Gym) · [代码](https://github.com/real2gym/R2G_Agent)
 
 把人类或机器人演示变成视觉对齐、物理可执行的 Gym，并以执行结果修订场景与动作。
 
@@ -1938,7 +1938,7 @@ WorldAgent 将复杂世界构建看作规格与验证共同驱动的过程，要
 
 `2026-09-19` · University of British Columbia; National University of Singapore; University of Cambridge; Friedrich-Alexander-Universität Erlangen-Nürnberg; University of Wisconsin–Madison
 
-[完整书目](../README.zh-CN.md#paper-2609-23103) · [论文](https://arxiv.org/abs/2609.23103) · [项目页](https://diaggen.github.io/)
+[完整书目](../README.zh-CN.md#paper-2609-23103) · [论文](https://arxiv.org/abs/2609.23103) · [项目页](https://diaggen.github.io/) · [代码](https://github.com/diaggen/diaggen)
 
 让诊断 Agent 主动抓取和扰动生成资产，把行为异常回送给负责的生成阶段。
 
@@ -2078,7 +2078,7 @@ Lucida 按解析、生成和放置三步重建可编辑真实场景，将准确�
 
 `2026-08-27` · MirroS; Tsinghua University; Peking University; Nanyang Technological University
 
-[完整书目](../README.zh-CN.md#paper-2608-27549) · [论文](https://arxiv.org/abs/2608.27549) · [项目页](https://mirros-lab.github.io/code-as-world)
+[完整书目](../README.zh-CN.md#paper-2608-27549) · [论文](https://arxiv.org/abs/2608.27549) · [项目页](https://mirros-lab.github.io/code-as-world) · [代码](https://github.com/MirroS-Lab/Code-as-World)
 
 将文字或视频解释成可执行世界程序，通过投影与观测差异迭代修订物体、状态和外观。
 
@@ -2136,7 +2136,7 @@ RoomWright 将代码场景的目标从“摆放和关节”扩展到物体如何
 
 官方项目文章：2026-08-04；arXiv v1：2026-10-01。
 
-[完整书目](../README.zh-CN.md#paper-2610-01863) · [论文](https://arxiv.org/abs/2610.01863) · [项目页](https://litereality.github.io/agent/)
+[完整书目](../README.zh-CN.md#paper-2610-01863) · [论文](https://arxiv.org/abs/2610.01863) · [项目页](https://litereality.github.io/agent/) · [代码](https://github.com/LiteReality/LiteReality-Agent)
 
 把 RGB-D 房间重建写成可执行的 Room.py，并通过观察、编辑和检查持续完善。
 
@@ -2192,7 +2192,7 @@ GS-Agent 将实体构建、物理参数与拍摄过程交给能够编程和互�
 
 `2026-07-21` · University of British Columbia; National University of Singapore; Johns Hopkins University; Friedrich-Alexander-Universität Erlangen-Nürnberg; University of Cambridge; Columbia University; University of California, Los Angeles; Style3D
 
-[论文](https://arxiv.org/abs/2607.19190) · [项目页](https://agentic-real2sim.github.io/)
+[论文](https://arxiv.org/abs/2607.19190) · [项目页](https://agentic-real2sim.github.io/) · [代码](https://github.com/agentic-real2sim/agentic_real2sim)
 
 由视觉语言 Agent 编排感知、物理先验与重放优化，把真实机器人交互变成可运行孪生。
 
@@ -2248,7 +2248,7 @@ Agentic Real2Sim 将真实交互记录转换成能够再次执行而非仅观看
 
 `2026-07-08` · Horizon Robotics; WuwenAI
 
-[论文](https://arxiv.org/abs/2607.07459) · [项目页](https://horizonrobotics.github.io/EmbodiedGen/)
+[论文](https://arxiv.org/abs/2607.07459) · [项目页](https://horizonrobotics.github.io/EmbodiedGen/) · [代码](https://github.com/HorizonRobotics/EmbodiedGen) · [数据集](https://huggingface.co/datasets/HorizonRobotics/EmbodiedGenData)
 
 以统一物理资产表示、场景图放置和有状态编辑，把任务意图变成可执行 3D 世界。
 
@@ -2360,7 +2360,7 @@ MUSE 研究如何在持续构建中保留已经完成的工作。它用需求程
 
 `2026-06-02` · Université de Montréal; Mila – Quebec AI Institute
 
-[论文](https://arxiv.org/abs/2606.04226) · [项目页](https://percept-twin.github.io/)
+[论文](https://arxiv.org/abs/2606.04226) · [项目页](https://percept-twin.github.io/) · [代码](https://github.com/Velythyl/PerceptTwin)
 
 把机器人感知得到的开放词汇地图转成可操作的场景，用于审查和修订任务计划。
 
@@ -2388,7 +2388,7 @@ PerceptTwin 从机器人感知地图自动构造一个可解释、可交互的�
 
 `2026-05-20` · Nanyang Technological University; ACE Robotics
 
-[论文](https://arxiv.org/abs/2605.21572) · [项目页](https://physx-omni.github.io/)
+[论文](https://arxiv.org/abs/2605.21572) · [项目页](https://physx-omni.github.io/) · [代码](https://github.com/ziangcao0312/PhysX-Omni) · [数据集](https://huggingface.co/datasets/PhysX-Omni/PhysXVerse)
 
 以模板游程编码让 VLM 直接预测高分辨几何与物理属性，统一生成多类可仿真资产。
 
@@ -2472,7 +2472,7 @@ ChronoAgentic 通过可执行代码构建显式物理世界，让专门角色处
 
 `2026-05-14` · University of Cambridge; University of Oxford; Nanyang Technological University
 
-[论文](https://arxiv.org/abs/2605.15187) · [项目页](https://articraft3d.github.io/)
+[论文](https://arxiv.org/abs/2605.15187) · [项目页](https://articraft3d.github.io/) · [代码](https://github.com/articraftresearch/Articraft)
 
 用受限 SDK 编写可执行关节资产程序，并通过结构检查与几何探针迭代修复。
 
@@ -2528,7 +2528,7 @@ SimWorld Studio 用工具和技能增强的 Coding Agent 自动构建可供具�
 
 `2026-05-10` · Nankai University; Zhejiang University; Southern University of Science and Technology; Rightly Robotics, A4X; University of Science and Technology of China
 
-[论文](https://arxiv.org/abs/2605.09586) · [项目页](https://can-lee.github.io/deformmaster-web/)
+[论文](https://arxiv.org/abs/2605.09586) · [项目页](https://can-lee.github.io/deformmaster-web/) · [代码](https://github.com/CAN-Lee/DeformMaster) · [数据集](https://huggingface.co/datasets/Canlee/DeformMaster-Assets)
 
 从真实交互视频优化可执行软体动力学，将物理滚动、神经残差和高斯外观耦合。
 
@@ -2584,7 +2584,7 @@ ArtiCAD 将多部件可动模型生成拆成设计、部件代码、确定性装
 
 `2026-02-10` · NVIDIA; University of Illinois Urbana-Champaign; Cornell University; Stanford University
 
-[论文](https://arxiv.org/abs/2602.10116) · [项目页](https://research.nvidia.com/labs/dir/sage/)
+[论文](https://arxiv.org/abs/2602.10116) · [项目页](https://research.nvidia.com/labs/dir/sage/) · [代码](https://github.com/NVlabs/sage) · [数据集](https://huggingface.co/datasets/nvidia/SAGE-10k)
 
 用可组合的场景工具和双重 critic，把机器人任务变为稳定的可交互 3D 场景。
 
@@ -2612,7 +2612,7 @@ SAGE 从用户任务自动组织布局、物体组合和场景校验工具，以
 
 `2026-02-09` · Massachusetts Institute of Technology; Toyota Research Institute
 
-[论文](https://arxiv.org/abs/2602.09153) · [项目页](https://scenesmith.github.io/)
+[论文](https://arxiv.org/abs/2602.09153) · [项目页](https://scenesmith.github.io/) · [代码](https://github.com/nepfaff/scenesmith) · [数据集](https://huggingface.co/datasets/nepfaff/scenesmith-example-scenes)
 
 从建筑到家具再到小物体，逐层生成可直接进入物理模拟的密集室内场景。
 
@@ -2668,7 +2668,7 @@ SceneWeaver 以可扩展工具接口统一多种场景合成方式，让语言�
 
 `2024-11-04` · University of Pennsylvania
 
-[论文](https://arxiv.org/abs/2411.01775) · [项目页](https://eureka-research.github.io/eurekaverse/)
+[论文](https://arxiv.org/abs/2411.01775) · [项目页](https://eureka-research.github.io/eurekaverse/) · [代码](https://github.com/eureka-research/eurekaverse)
 
 根据四足策略的学习表现迭代生成可执行地形代码，形成适应能力的跑酷课程。
 
@@ -2752,7 +2752,7 @@ Articulate-Anything 从文字、图像或视频构建带关节的交互物体，
 
 `2024-09-26` · Stanford University; NVIDIA
 
-[论文](https://arxiv.org/abs/2409.17652) · [项目页](https://cs.stanford.edu/~sunfanyun/factorsim/)
+[论文](https://arxiv.org/abs/2409.17652) · [项目页](https://cs.stanford.edu/~sunfanyun/factorsim/) · [代码](https://github.com/sunfanyunn/FactorSim)
 
 用因子化 POMDP 限制每步需要的代码上下文，从语言规格生成完整仿真。
 
@@ -2780,7 +2780,7 @@ FactorSim 针对长规格下语言模型容易遗漏条件或修改无关代码�
 
 `2024-09-04` · The University of Hong Kong; Shanghai AI Laboratory; Shenzhen University; AgileX Robotics; Institute of Automation, Chinese Academy of Sciences
 
-[论文](https://arxiv.org/abs/2409.02920) · [项目页](https://robotwin-benchmark.github.io/early-version/)
+[论文](https://arxiv.org/abs/2409.02920) · [项目页](https://robotwin-benchmark.github.io/early-version/) · [代码](https://github.com/RoboTwin-Platform/RoboTwin/tree/early_version)
 
 以单张真实图像生成物体数字孪生，并围绕功能坐标系生成双臂专家轨迹程序。
 
@@ -2808,7 +2808,7 @@ RoboTwin 早期版把真实遥操作数据与生成式数字孪生中的合成�
 
 `2024-06-12` · Stanford University; Columbia University
 
-[论文](https://arxiv.org/abs/2406.08474) · [项目页](https://real2code.github.io/)
+[论文](https://arxiv.org/abs/2406.08474) · [项目页](https://real2code.github.io/) · [代码](https://github.com/MandiZhao/real2code)
 
 用部件包围盒连接视觉重建与代码生成，预测可以直接模拟的对象关节结构。
 
@@ -2836,7 +2836,7 @@ Real2Code 从视觉观测重建物体的部件几何，再用定向包围盒把�
 
 `2024-05-24` · Imperial College London; University of British Columbia; Vector Institute
 
-[论文](https://arxiv.org/abs/2405.15568) · [项目页](https://dub.sh/omniepic)
+[论文](https://arxiv.org/abs/2405.15568) · [项目页](https://dub.sh/omniepic) · [代码](https://github.com/maxencefaldor/omni-epic)
 
 借助任务档案和学习反馈持续编写新的环境、奖励与成功判定代码。
 
@@ -2892,7 +2892,7 @@ Holodeck 根据自然语言自动构建多样化的具身 AI 室内环境，利�
 
 `2023-11-02` · Carnegie Mellon University; Tsinghua University; Massachusetts Institute of Technology; University of Massachusetts Amherst; MIT-IBM AI Lab
 
-[论文](https://arxiv.org/abs/2311.01455) · [项目页](https://robogen-ai.github.io/)
+[论文](https://arxiv.org/abs/2311.01455) · [项目页](https://robogen-ai.github.io/) · [代码](https://github.com/Genesis-Embodied-AI/RoboGen)
 
 让 LLM 提议任务、组合场景并选择学习算法，批量形成机器人技能训练问题。
 
@@ -2920,7 +2920,7 @@ RoboGen 将基础模型用于生成机器人学习所需的任务、场景和监
 
 `2023-10-27` · Carnegie Mellon University
 
-[论文](https://arxiv.org/abs/2310.18308) · [项目页](https://gen2sim.github.io/)
+[论文](https://arxiv.org/abs/2310.18308) · [项目页](https://gen2sim.github.io/) · [代码](https://github.com/pushkalkatara/Gen2Sim)
 
 把物体图像转成带物理属性的资产，再由 LLM 生成任务分解与奖励程序。
 

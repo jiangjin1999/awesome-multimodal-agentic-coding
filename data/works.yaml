@@ -7915,6 +7915,7 @@
   sources:
   - https://arxiv.org/abs/2611.10602
   - https://arxiv.org/html/2611.10602v2
+  - https://github.com/simulean/SimuLean
   verification:
     en: Across 18 modeling tasks, one frontier agent builds valid models in 93/108 attempts. A welding-workshop case agrees
       within 1% with a corrected reference; residual errors can survive build/run checks. No hardware deployment is established.
@@ -8116,6 +8117,7 @@
   - https://arxiv.org/abs/2610.40565
   - https://arxiv.org/html/2610.40565v1
   - https://gym-anything.github.io/robotics
+  - https://github.com/gym-anything/robotics
   verification:
     en: Twenty-five RoboWorld simulation families support physics checks, agent evaluation and small-VLA learning from code-generated
       demonstrations. Learning and transfer results are within simulation.
@@ -8194,6 +8196,7 @@
   - https://arxiv.org/abs/2610.18835
   - https://arxiv.org/html/2610.18835v2
   - https://robosimstudio.github.io
+  - https://github.com/robosimstudio/robosimstudio
   verification:
     en: Eighteen contact-rich simulations and a pilot dual-arm wiping experiment illustrate the workflow. They do not constitute
       a large-scale sim-to-real success benchmark.
@@ -8262,6 +8265,8 @@
   - https://arxiv.org/abs/2610.13947
   - https://arxiv.org/html/2610.13947v3
   - https://physicalvision.github.io/artisan/
+  - https://github.com/physicalvision/artisan
+  - https://huggingface.co/datasets/mastercai/Artisan-Benchmark
   verification:
     en: Geometry/appearance · joint-motion collision · gravity stability · mass/material estimates · simulated robot-task
       utility · interactive human assessment.
@@ -8287,6 +8292,7 @@
   - https://arxiv.org/abs/2610.11322
   - https://arxiv.org/html/2610.11322v1
   - https://xingyoujun.github.io/usdcraft/
+  - https://github.com/NVlabs/USDCraft
   verification:
     en: Part recovery · static/articulated geometry · joint axes · harness/feedback ablations · sim-to-real policy transfer.
     zh: 部件恢复 · 静态／关节运动几何 · 关节轴 · 工具框架／反馈消融 · 策略仿真到现实迁移。
@@ -8402,6 +8408,7 @@
   - https://arxiv.org/abs/2609.23103
   - https://arxiv.org/html/2609.23103v1
   - https://diaggen.github.io/
+  - https://github.com/diaggen/diaggen
   verification:
     en: Part–material consistency · paired interaction plausibility · controlled probe replay · repair attribution · simulator
       loadability.
@@ -8463,6 +8470,8 @@
   - https://arxiv.org/abs/2609.37089
   - https://arxiv.org/html/2609.37089v1
   - https://real2gym.github.io/
+  - https://github.com/real2gym/Real2Gym
+  - https://github.com/real2gym/R2G_Agent
   verification:
     en: Twenty-four reconstructed environments test visual fidelity, task success and token cost. Transfer is evaluated on
       four Franka task families and is limited to parallel-gripper settings.
@@ -8569,6 +8578,7 @@
   - https://arxiv.org/abs/2608.27549
   - https://arxiv.org/html/2608.27549v2
   - https://mirros-lab.github.io/code-as-world
+  - https://github.com/MirroS-Lab/Code-as-World
   verification:
     en: Simulator execution · visual alignment (silhouette/depth/RGB) · object IoU · trajectory/velocity fidelity.
     zh: 仿真器执行 · 视觉对齐（轮廓／深度／RGB）· 物体 IoU · 轨迹／速度保真度。
@@ -8592,6 +8602,7 @@
   - https://arxiv.org/abs/2610.01863
   - https://arxiv.org/html/2610.01863v1
   - https://litereality.github.io/agent/
+  - https://github.com/LiteReality/LiteReality-Agent
   verification:
     en: Matched-view fidelity · metric geometry · support/intersection checks · perceptual assessment · articulated simulation
       export.
@@ -8636,6 +8647,7 @@
   - https://arxiv.org/abs/2607.19190
   - https://agentic-real2sim.github.io/
   - https://arxiv.org/html/2607.19190v5
+  - https://github.com/agentic-real2sim/agentic_real2sim
   verification:
     en: Five hundred DROID episodes retain failures in the replay-success denominator. Additional appearance and pose metrics
       and six real-task policy-evaluation comparisons are reported.
@@ -8655,6 +8667,8 @@
   - https://arxiv.org/abs/2607.07459
   - https://arxiv.org/html/2607.07459v3
   - https://horizonrobotics.github.io/EmbodiedGen/
+  - https://github.com/HorizonRobotics/EmbodiedGen
+  - https://huggingface.co/datasets/HorizonRobotics/EmbodiedGenData
   verification:
     en: Asset acceptance, scripted simulated grasp-lift and layout experiments are reported. Real-robot improvements summarized
       in the paper come from separate downstream VLA studies.
@@ -8756,6 +8770,7 @@
   - https://arxiv.org/abs/2606.04226
   - https://arxiv.org/html/2606.04226v1
   - https://percept-twin.github.io/
+  - https://github.com/Velythyl/PerceptTwin
   verification:
     en: Visual reconstruction, a 93-person interpretability study and plan success, error and safety tests are reported. Simulation-based
       plan verification does not establish successful real-robot execution.
@@ -8795,6 +8810,7 @@
   - https://arxiv.org/abs/2605.15187
   - https://articraft3d.github.io/
   - https://arxiv.org/html/2605.15187v1
+  - https://github.com/articraftresearch/Articraft
   verification:
     en: Experiments cover 46 object classes, five prompts each and 125 participants with about 5,000 preferences. Isaac Sim
       demonstrations assess generated joint data; there is no real-robot transfer test.
@@ -8839,6 +8855,8 @@
   - https://arxiv.org/abs/2605.09586
   - https://arxiv.org/html/2605.09586v2
   - https://can-lee.github.io/deformmaster-web/
+  - https://github.com/CAN-Lee/DeformMaster
+  - https://huggingface.co/datasets/Canlee/DeformMaster-Assets
   verification:
     en: Twenty real PhysTwin sequences evaluate future geometry, tracks and images. The model is assessed as a dynamics foundation;
       robot-control transfer is not established, and thin structures remain difficult.
@@ -8858,6 +8876,8 @@
   - https://arxiv.org/abs/2605.21572
   - https://arxiv.org/html/2605.21572v1
   - https://physx-omni.github.io/
+  - https://github.com/ziangcao0312/PhysX-Omni
+  - https://huggingface.co/datasets/PhysX-Omni/PhysXVerse
   verification:
     en: PhysXVerse, PhysXMobility and six-dimensional PhysXBench assess asset properties, with simulation demonstrations.
       These do not establish real-robot transfer; the name does not identify the PhysX engine.
@@ -8961,6 +8981,8 @@
   - https://arxiv.org/abs/2602.10116
   - https://arxiv.org/html/2602.10116v2
   - https://research.nvidia.com/labs/dir/sage/
+  - https://github.com/NVlabs/sage
+  - https://huggingface.co/datasets/nvidia/SAGE-10k
   verification:
     en: Scene appearance, collisions, stability and downstream imitation learning are evaluated in simulation. SAGE-10k provides
       generated environments; real-robot transfer is not established.
@@ -8980,6 +9002,8 @@
   - https://arxiv.org/abs/2602.09153
   - https://arxiv.org/html/2602.09153v2
   - https://scenesmith.github.io/
+  - https://github.com/nepfaff/scenesmith
+  - https://huggingface.co/datasets/nepfaff/scenesmith-example-scenes
   verification:
     en: Evaluation uses 210 prompts, 205 participants and SceneEval. Drake tests on 179 rooms report collision and stability
       measures; these remain simulation checks.
@@ -9020,6 +9044,7 @@
   - https://arxiv.org/abs/2411.01775
   - https://arxiv.org/html/2411.01775v1
   - https://eureka-research.github.io/eurekaverse/
+  - https://github.com/eureka-research/eurekaverse
   verification:
     en: Twenty simulated obstacles and real Go1 parkour evaluate downstream locomotion. Improvements update terrain curricula
       and control policies, not the coding model weights.
@@ -9077,6 +9102,7 @@
   - https://arxiv.org/abs/2409.17652
   - https://arxiv.org/html/2409.17652v2
   - https://cs.stanford.edu/~sunfanyun/factorsim/
+  - https://github.com/sunfanyunn/FactorSim
   verification:
     en: Eight games and 50 GenSim tasks assess code validity, human-rated requirements and simulated reinforcement-learning
       transfer. Oracle-controller checks constrain the interpretation of task solvability.
@@ -9096,6 +9122,7 @@
   - https://arxiv.org/abs/2409.02920
   - https://arxiv.org/html/2409.02920v3
   - https://robotwin-benchmark.github.io/early-version/
+  - https://github.com/RoboTwin-Platform/RoboTwin/tree/early_version
   verification:
     en: The early RoboTwin study evaluates six tasks with 10, 20 and 50 demonstrations for DP3. Policy-learning gains measure
       data utility, not calibrated scene physics or visual repair by the generator.
@@ -9115,6 +9142,7 @@
   - https://arxiv.org/abs/2406.08474
   - https://arxiv.org/html/2406.08474v2
   - https://real2code.github.io/
+  - https://github.com/MandiZhao/real2code
   verification:
     en: PartNet-based tests measure mesh distance and joint errors, including unseen objects with up to ten parts and examples
       from real views. Real-policy transfer is not evaluated.
@@ -9134,6 +9162,7 @@
   - https://arxiv.org/abs/2405.15568
   - https://arxiv.org/html/2405.15568v3
   - https://dub.sh/omniepic
+  - https://github.com/maxencefaldor/omni-epic
   verification:
     en: Diversity, open-endedness and simulated policy learning are measured, including long-running task generation. These
       results do not demonstrate physical-robot deployment.
@@ -9173,6 +9202,7 @@
   - https://arxiv.org/abs/2311.01455
   - https://arxiv.org/html/2311.01455v3
   - https://robogen-ai.github.io/
+  - https://github.com/Genesis-Embodied-AI/RoboGen
   verification:
     en: The paper describes 106 diverse tasks and learning results on 69 tasks. Reported simulated success reflects downstream
       skills, without demonstrating learned updates to the environment-writing agent.
@@ -9192,6 +9222,7 @@
   - https://arxiv.org/abs/2310.18308
   - https://arxiv.org/html/2310.18308v1
   - https://gen2sim.github.io/
+  - https://github.com/pushkalkatara/Gen2Sim
   verification:
     en: Isaac Gym experiments assess assets and policy learning. The real demonstration replays optimized trajectories open
       loop; it does not establish closed-loop visual policy transfer.
@@ -13644,6 +13675,7 @@
   - https://arxiv.org/abs/2606.08828
   - https://arxiv.org/html/2606.08828v1
   - https://video2sim2real.github.io/
+  - https://github.com/video2sim2real/video2sim2real
   verification:
     en: Compared with refinement and pure-IL or pure-RL baselines in simulation, and transferred to seven real tasks; it shows its
       own twin is usable for training rather than comparing simulators.
@@ -13681,6 +13713,7 @@
   sources:
   - https://arxiv.org/abs/2510.11689
   - https://phys2real.github.io/
+  - https://github.com/phys2real/phys2real
   verification:
     en: Planar pushing with shifted centers of mass outperforms domain randomization (100% vs 79% and 57% vs 23% success); online
       estimation requires real interaction data.

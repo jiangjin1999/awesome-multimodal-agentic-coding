@@ -15,6 +15,7 @@ from urllib.parse import urlsplit
 
 import yaml
 
+import engine_map
 from catalog import LAYOUT, validate_catalog, check_local_links
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -68,6 +69,7 @@ def validate(site, works, strict_ja):
         for k in ks:
             if k not in byid:
                 errors.append(f'see_also {sec}: id {k} not found')
+    errors += engine_map.validate(site)
     return errors, warnings
 
 
@@ -279,7 +281,10 @@ def render(site, works, lang):
         for extra in st.get('extras') or []:
             named_anchor(extra['anchor'])
             o(f"### {extra['title'][lang]}\n")
-            o(extra['body'][lang].strip() + '\n')
+            body = extra['body'][lang].strip()
+            if '{engine_map}' in body:
+                body = body.replace('{engine_map}', engine_map.picture(site, lang))
+            o(body + '\n')
             o(f"[↑ {t(site, 'back_to_contents', lang)}](#contents)\n")
 
     # surveys & related
@@ -324,15 +329,16 @@ def main():
             print('error:', e)
         sys.exit(1)
     stale = []
-    for lang in LANGS:
-        path = ROOT / site['languages'][lang]['file']
-        text = render(site, works, lang)
+    generated = [(ROOT / site['languages'][lang]['file'], render(site, works, lang)) for lang in LANGS]
+    generated += [(ROOT / rel, svg) for rel, svg in engine_map.outputs(site)]
+    for path, text in generated:
         if args.check:
             if not path.exists() or path.read_text(encoding='utf-8') != text:
-                stale.append(path.name)
+                stale.append(str(path.relative_to(ROOT)))
         else:
+            path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(text, encoding='utf-8')
-            print(f'wrote {path.name} ({len(text) // 1024} KB)')
+            print(f'wrote {path.relative_to(ROOT)} ({len(text) // 1024} KB)')
     if stale:
         print('error: out of date, run `python scripts/build_readme.py`:', ', '.join(stale))
         sys.exit(1)

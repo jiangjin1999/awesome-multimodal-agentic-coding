@@ -19,7 +19,7 @@
 | `verification` | Retained English and Chinese evidence for Core entries: construction, execution, multimodal observation, subsequent revision, and what is checked. |
 | `see_also` | Other relevant section IDs linking back to this record. Add only for a supported contribution. |
 
-The generator names supporting links by destination type using the localized `source_labels` in `data/site.yaml`. Record URL exceptions in `source_kind_overrides` when the destination cannot be inferred from its address. Stage 3 reading entries use the same labels.
+The generator names supporting links by destination type using the localized `source_labels` in `data/site.yaml`. Record URL exceptions in `source_kind_overrides` when the destination cannot be inferred from its address. Stage 3 reading entries use the same labels. Keep all source URLs in the catalog. The generated entry displays one entrance per paper, using the linked title first. Record verified copies across publishers in `paper_url_aliases` and name direct section links in `source_kind_overrides`.
 
 Stage 1 covers visual feedback in artifact construction; Stage 2 covers models used as tools; Stage 3 covers the digital–physical loop. Method, evaluation, data, training, and resource roles remain distinct within these perspectives. A dataset release, a data-construction method, and experimental data are different contributions.
 

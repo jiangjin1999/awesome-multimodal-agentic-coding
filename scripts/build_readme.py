@@ -129,6 +129,33 @@ def source_kind(url, site, demo_url=None):
     return 'project'
 
 
+def paper_key(url, site):
+    """Identify interchangeable entry points while retaining deep links."""
+    if urlsplit(url).fragment:
+        return None
+    canonical = site.get('paper_url_aliases', {}).get(url, url)
+    parsed = urlsplit(canonical)
+    path = parsed.path.rstrip('/')
+    if parsed.hostname == 'arxiv.org':
+        match = re.fullmatch(r'/(?:abs|html|pdf)/(\d{4}\.\d{4,5})(?:v\d+)?(?:\.pdf)?', path)
+        if match:
+            return 'arxiv:' + match[1]
+    if source_kind(canonical, site) == 'paper':
+        return parsed.netloc.lower(), path
+    return None
+
+
+def unique_paper_links(urls, site):
+    seen = set()
+    for url in urls:
+        key = paper_key(url, site)
+        if key is not None:
+            if key in seen:
+                continue
+            seen.add(key)
+        yield url
+
+
 def entry(w, lang, site):
     date = f"`{w['date']}` " if w.get('date') else ''
     tl = (w['tldr'].get(lang) or w['tldr']['en']).strip()
@@ -136,8 +163,9 @@ def entry(w, lang, site):
     aliases = ''.join(f'<a id="{a}"></a>\n' for a, dest in site.get('anchor_aliases', {}).items() if dest == target)
     metadata = {'id': w['id'], 'scope': w['scope'].title(), 'primary': w['section'],
                 'stage': int(w['section'][0]) if w['section'] != 'SV' else None, 'type': w['type']}
-    urls = [w.get('demo'), *w.get('sources', [])]
-    sources = [url for url in dict.fromkeys(urls) if url and url != w['url']]
+    urls = dict.fromkeys([w['url'], w.get('demo'), *w.get('sources', [])])
+    sources = unique_paper_links((url for url in urls if url), site)
+    next(sources)  # The title already links to the first destination.
     labels = site['source_labels']
     extra = ''.join(
         f' [[{labels[source_kind(url, site, w.get("demo"))][lang]}]]({url})'

@@ -1079,7 +1079,7 @@
 
 <!-- mmac-record: {"id": "2611.09017", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2611-09017"></a>`2026.11` **[Frontier3DBench: Benchmarking Coding Agents for 3D Creation across Objects, Scenes, and Interactive Open Worlds](https://arxiv.org/abs/2611.09017)** [[論文]](https://arxiv.org/html/2611.09017) [[コード]](https://github.com/Einsia/Frontier3D) [[プロジェクトページ]](https://lab.einsia.ai/frontier3dbench/)
+- <a id="paper-2611-09017"></a>`2026.11` **[Frontier3DBench: Benchmarking Coding Agents for 3D Creation across Objects, Scenes, and Interactive Open Worlds](https://arxiv.org/abs/2611.09017)** [[コード]](https://github.com/Einsia/Frontier3D) [[プロジェクトページ]](https://lab.einsia.ai/frontier3dbench/)
   > Blender と Unreal Engine でコード生成した物体、場面、対話世界を評価し、視覚成果物と実行可能なタスク要件を結び付ける。
 
 <!-- mmac-record: {"id": "2610.38231", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -1089,13 +1089,13 @@
 
 <!-- mmac-record: {"id": "2610.03715", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-03715"></a>`2026.10` **[4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes](https://arxiv.org/abs/2610.03715)** [[論文]](https://arxiv.org/html/2610.03715)
+- <a id="paper-2610-03715"></a>`2026.10` **[4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes](https://arxiv.org/abs/2610.03715)**
   > 実写または合成の動的動画を実行可能なグラフィックスプログラムへ再構築し、三次元構造と時間変化を復元する。画面と動きを比較し、合成場面の三次元正解でも検査する。実装にはキーフレーム、解析的軌道、物理シミュレーションを使える。
 
 <a id="work-blenderworld"></a>
 <!-- mmac-record: {"id": "system:blenderworld", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-system-blenderworld"></a>`2026.10` **[BlenderWorld: Benchmarking Visual Agents for 3D Creation from Real-World References](https://arxiv.org/abs/2610.23986)** [[論文]](https://arxiv.org/html/2610.23986) [[プロジェクトページ]](https://blenderworld.github.io/) [[コード]](https://github.com/QwenLM/BlenderWorld) [[論文]](https://github.com/QwenLM/BlenderWorld/blob/main/docs/BlenderWorld__Benchmarking_Visual_Agents_for_3D_Creation_from_Real_World_References.pdf) [[データセット]](https://huggingface.co/datasets/Qwen/BlenderWorld)
+- <a id="paper-system-blenderworld"></a>`2026.10` **[BlenderWorld: Benchmarking Visual Agents for 3D Creation from Real-World References](https://arxiv.org/abs/2610.23986)** [[プロジェクトページ]](https://blenderworld.github.io/) [[コード]](https://github.com/QwenLM/BlenderWorld) [[データセット]](https://huggingface.co/datasets/Qwen/BlenderWorld)
   > 建築、製品、自然環境、科学可視化の 3D 制作タスクを提供し、文章・画像・動画・仕様を基に Blender で再利用可能な場面を作成・編集させる。複数視点の描画、ネイティブ場面の検査、個別要件で制作意図の達成を評価する。
 
 <!-- mmac-record: {"id": "2610.12452", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -1120,7 +1120,7 @@
 
 <!-- mmac-record: {"id": "2609.15478", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-15478"></a>`2026.09` **[BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender](https://arxiv.org/abs/2609.15478)** [[論文]](https://arxiv.org/html/2609.15478) [[コード]](https://github.com/yunlong10/BVB/blob/main/eval/dual_vqa_metric.py)
+- <a id="paper-2609-15478"></a>`2026.09` **[BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender](https://arxiv.org/abs/2609.15478)** [[コード]](https://github.com/yunlong10/BVB/blob/main/eval/dual_vqa_metric.py)
   > 同じ予算と実行環境で、マルチモーダルエージェントが実写動画をアニメーション付き Blender 場面へ書き直す。描画類似度と時空間的事実の一致で、動画理解を再現可能なプログラムにできるかを検査する。
 
 <!-- mmac-record: {"id": "2609.16251", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -1130,7 +1130,7 @@
 
 <!-- mmac-record: {"id": "2609.36777", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-36777"></a>`2026.09` **[Code4Scene: Benchmarking Coding Agents for Constructing and Editing 3D Scenes](https://arxiv.org/abs/2609.36777)** [[論文]](https://arxiv.org/html/2609.36777)
+- <a id="paper-2609-36777"></a>`2026.09` **[Code4Scene: Benchmarking Coding Agents for Constructing and Editing 3D Scenes](https://arxiv.org/abs/2609.36777)**
   > 統一 Unreal Engine インターフェースで、文章からの新規場面作成と参考画像に基づく既存場面の精密編集を研究する。エンジン内の状態から目標達成、素材の完全性、他の内容への悪影響を検査する。
 
 <!-- mmac-record: {"id": "2609.37686", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -1160,12 +1160,12 @@
 
 <!-- mmac-record: {"id": "2506.23329", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2506-23329"></a>`2025.06` **[IR3D-Bench: Evaluating Vision-Language Model Scene Understanding as Agentic Inverse Rendering](https://arxiv.org/abs/2506.23329)** [[論文]](https://arxiv.org/html/2506.23329)
+- <a id="paper-2506-23329"></a>`2025.06` **[IR3D-Bench: Evaluating Vision-Language Model Scene Understanding as Agentic Inverse Rendering](https://arxiv.org/abs/2506.23329)**
   > 入力画像から、視覚言語エージェントがプログラミングと描画ツールを能動的に使って三次元場面を再構築する。位置、数、空間関係、外観で検査し、説明への回答だけでなく実制作で場面理解を示せるかを研究する。
 
 <!-- mmac-record: {"id": "2504.01786", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2504-01786"></a>`2025.04` **[BlenderGym: Benchmarking Foundational Model Systems for Graphics Editing](https://arxiv.org/abs/2504.01786)** [[論文]](https://arxiv.org/html/2504.01786)
+- <a id="paper-2504-01786"></a>`2025.04` **[BlenderGym: Benchmarking Foundational Model Systems for Graphics Editing](https://arxiv.org/abs/2504.01786)**
   > 開始場面と目標を与え、Blender Python を修正して形状、材質、照明、位置、変形を編集させる。結果を定量評価し、候補生成と検証への推論計算の配分も研究する。
 
 #### ツールとリソース
@@ -1406,7 +1406,7 @@
 <a id="work-vibegame"></a>
 <!-- mmac-record: {"id": "system:vibegame", "scope": "Core", "primary": "1.6", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-system-vibegame"></a>**[VibeGame: Prompt-to-Game Development with AI-Native Engine and Self-Evolving Adversarial Agent Team](https://arxiv.org/abs/2610.33106)** [[コード]](https://github.com/tettethu/VibeGame) [[論文]](https://github.com/tettethu/VibeGame/blob/main/technical_report.pdf) [[プロジェクトページ]](https://vibegame.tettet.org/)
+- <a id="paper-system-vibegame"></a>**[VibeGame: Prompt-to-Game Development with AI-Native Engine and Self-Evolving Adversarial Agent Team](https://arxiv.org/abs/2610.33106)** [[コード]](https://github.com/tettethu/VibeGame) [[プロジェクトページ]](https://vibegame.tettet.org/)
   > AI ネイティブの Phaser エンジンで編集可能な 2D ゲームを作る。フレーム同期の試遊と対抗的な実行時検証で見つけた失敗を、コード・素材・設定の修正へ返す。
 
 #### 評価とデータ
@@ -1613,7 +1613,7 @@
 
 <!-- mmac-record: {"id": "2604.18164", "scope": "Adjacent", "primary": "1.7", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2604-18164"></a>`2026.04` **[MM-JudgeBias: A Benchmark for Evaluating Compositional Biases in MLLM-as-a-Judge](https://arxiv.org/abs/2604.18164)** [[論文]](https://aclanthology.org/2026.acl-long.1162/) [[コード]](https://github.com/naver-ai/MM-JudgeBias) [[データセット]](https://huggingface.co/datasets/naver-ai/MM-JudgeBias)
+- <a id="paper-2604-18164"></a>`2026.04` **[MM-JudgeBias: A Benchmark for Evaluating Compositional Biases in MLLM-as-a-Judge](https://arxiv.org/abs/2604.18164)** [[コード]](https://github.com/naver-ai/MM-JudgeBias) [[データセット]](https://huggingface.co/datasets/naver-ai/MM-JudgeBias)
   > 九種類の制御された摂動で、マルチモーダル評価者が質問・画像・回答の証拠全体を使うかを検査する。欠落・不一致への感度と、無関係な変化への安定性を分ける。
 
 <!-- mmac-record: {"id": "2511.15567", "scope": "Core", "primary": "1.7", "stage": 1, "type": "paper"} -->
@@ -1682,7 +1682,7 @@
 
 <!-- mmac-record: {"id": "2611.16748", "scope": "Core", "primary": "2.2", "stage": 2, "type": "paper"} -->
 
-- <a id="paper-2611-16748"></a>`2026.11` **[PhysLoop: Harnessing LLMs’ Physics Awareness for Self-Improving Video Generation Models](https://arxiv.org/abs/2611.16748)** [[論文]](https://arxiv.org/html/2611.16748v1) [[プロジェクトページ]](https://chenyx24.github.io/PhysLoop-site/) [[コード]](https://github.com/DAGroup-PKU/PhysLoop)
+- <a id="paper-2611-16748"></a>`2026.11` **[PhysLoop: Harnessing LLMs’ Physics Awareness for Self-Improving Video Generation Models](https://arxiv.org/abs/2611.16748)** [[プロジェクトページ]](https://chenyx24.github.io/PhysLoop-site/) [[コード]](https://github.com/DAGroup-PKU/PhysLoop)
   > コーディングエージェントが実行可能なシミュレーションシーンを構築し、画像と状態のフィードバックに基づいてシーンや動画モデルの入力を修正し、制御可能な動画生成と局所修復を行う。
 
 <!-- mmac-record: {"id": "2611.04418", "scope": "Adjacent", "primary": "2.2", "stage": 2, "type": "paper"} -->
@@ -1692,7 +1692,7 @@
 
 <!-- mmac-record: {"id": "2611.16217", "scope": "Adjacent", "primary": "2.2", "stage": 2, "type": "paper"} -->
 
-- <a id="paper-2611-16217"></a>`2026.11` **[WorldDraft: If Code Builds the World, Can Video Models Just Render It?](https://arxiv.org/abs/2611.16217)** [[論文]](https://arxiv.org/html/2611.16217v1) [[プロジェクトページ]](https://haroldchen19.github.io/WorldDraft-site/) [[コード]](https://github.com/KevinHuge/WorldDraft) [[データセット]](https://huggingface.co/datasets/KevinHuge/WorldDraft)
+- <a id="paper-2611-16217"></a>`2026.11` **[WorldDraft: If Code Builds the World, Can Video Models Just Render It?](https://arxiv.org/abs/2611.16217)** [[プロジェクトページ]](https://haroldchen19.github.io/WorldDraft-site/) [[コード]](https://github.com/KevinHuge/WorldDraft) [[データセット]](https://huggingface.co/datasets/KevinHuge/WorldDraft)
   > 運動とカメラ軌道を固定した実行可能な4Dドラフトを用い、動画モデルが世界の構造を保持しつつ指定された外観を実現できるかを評価する。
 
 <!-- mmac-record: {"id": "2610.20571", "scope": "Adjacent", "primary": "2.2", "stage": 2, "type": "paper"} -->
@@ -2090,7 +2090,7 @@
 
 <!-- mmac-record: {"id": "chemautoagent", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-chemautoagent"></a>`2026.08` **[ChemAutoAgent: A Multi-Agent System for Evidence-Controlled Laboratory Instrument Driver Generation from Text-Based Manuals](https://www.mdpi.com/2076-3417/16/16/8291)** [[論文]](https://www.mdpi.com/2076-3417/16/16/8291/notes)
+- <a id="paper-chemautoagent"></a>`2026.08` **[ChemAutoAgent: A Multi-Agent System for Evidence-Controlled Laboratory Instrument Driver Generation from Text-Based Manuals](https://www.mdpi.com/2076-3417/16/16/8291)** [[バージョン履歴]](https://www.mdpi.com/2076-3417/16/16/8291/notes)
   > 出典付きの機器マニュアルから Agent がドライバーを生成し、決定的なプロトコルの骨格とハードウェア試験を使って誤りを修正する。その後、再利用可能なインターフェースを実験 Agent に提供する。
 
 <!-- mmac-record: {"id": "2608.03924", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2219,12 +2219,12 @@
 
 <!-- mmac-record: {"id": "2611.12177", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2611-12177"></a>`2026.11` **[Embodied First Exam](https://arxiv.org/abs/2611.12177)** [[論文]](https://arxiv.org/html/2611.12177)
+- <a id="paper-2611-12177"></a>`2026.11` **[Embodied First Exam](https://arxiv.org/abs/2611.12177)**
   > 異なるロボット形態で汎用エージェントの具身タスク能力を調べ、観測権限、リセット予算、実行時計が異なる方式を明示的に比較する。
 
 <!-- mmac-record: {"id": "2611.16009", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2611-16009"></a>`2026.11` **[JustRUA: A Controlled Study of GPT-6 Robot-Use Agents](https://arxiv.org/abs/2611.16009)** [[論文]](https://arxiv.org/html/2611.16009v1) [[プロジェクトページ]](https://zefanw.github.io/JustRUA/) [[コード]](https://github.com/ZefanW/JustRUA) [[デモ]](https://huggingface.co/spaces/ZefanW/robodojo-replay-explorer)
+- <a id="paper-2611-16009"></a>`2026.11` **[JustRUA: A Controlled Study of GPT-6 Robot-Use Agents](https://arxiv.org/abs/2611.16009)** [[プロジェクトページ]](https://zefanw.github.io/JustRUA/) [[コード]](https://github.com/ZefanW/JustRUA) [[デモ]](https://huggingface.co/spaces/ZefanW/robodojo-replay-explorer)
   > RoboDojoのシミュレーションで、エピソードの全履歴、短い動作、深度情報、座標を求めるコードが汎用エージェントの操作性能に与える影響を比較する。
 
 <!-- mmac-record: {"id": "2611.08209", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2309,7 +2309,7 @@
 
 <!-- mmac-record: {"id": "2609.40325", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-40325"></a>`2026.09` **[WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents](https://arxiv.org/abs/2609.40325)** [[論文]](https://arxiv.org/html/2609.40325) [[プロジェクトページ]](https://ucsb-nlp-chang.github.io/WorldAuditBench/)
+- <a id="paper-2609-40325"></a>`2026.09` **[WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents](https://arxiv.org/abs/2609.40325)** [[プロジェクトページ]](https://ucsb-nlp-chang.github.io/WorldAuditBench/)
   > 対話世界を能動的に探索して異常を見つけ、証拠を示す能力を測る。物理、空間、時間、意味の問題を扱う。
 
 <!-- mmac-record: {"id": "2607.04434", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
@@ -2437,17 +2437,17 @@
 
 <!-- mmac-record: {"id": "2611.10602", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2611-10602"></a>`2026.11` **[Agentic discrete-event simulation for manufacturing system design: an open 3D simulator, a benchmark and an industrial case](https://arxiv.org/abs/2611.10602)** [[論文]](https://arxiv.org/html/2611.10602v2)
+- <a id="paper-2611-10602"></a>`2026.11` **[Agentic discrete-event simulation for manufacturing system design: an open 3D simulator, a benchmark and an industrial case](https://arxiv.org/abs/2611.10602)**
   > SimuLean は、検証済みの製造システムモデリング部品を Agent に提供する。
 
 <!-- mmac-record: {"id": "2611.02691", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2611-02691"></a>`2026.11` **[Closing the Dynamics Gap through Self-Directed Robotic Interaction](https://arxiv.org/abs/2611.02691)** [[論文]](https://arxiv.org/html/2611.02691v1) [[プロジェクトページ]](https://cue-dynamics.github.io/)
+- <a id="paper-2611-02691"></a>`2026.11` **[Closing the Dynamics Gap through Self-Directed Robotic Interaction](https://arxiv.org/abs/2611.02691)** [[プロジェクトページ]](https://cue-dynamics.github.io/)
   > 自律的な打撃探索から力学的な証拠を得て、Agent が軌道計測の構築、シミュレーションパラメーターの推定、次の実験の選択を行う。
 
 <!-- mmac-record: {"id": "2611.11344", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2611-11344"></a>`2026.11` **[Spatial Harness: Grounding Spatial Reasoning in Executable World States with Physics Engines](https://arxiv.org/abs/2611.11344)** [[論文]](https://arxiv.org/html/2611.11344v1) [[コード]](https://github.com/tmlr-group/Spatial-Harness)
+- <a id="paper-2611-11344"></a>`2026.11` **[Spatial Harness: Grounding Spatial Reasoning in Executable World States with Physics Engines](https://arxiv.org/abs/2611.11344)** [[コード]](https://github.com/tmlr-group/Spatial-Harness)
   > 実行可能な代理シーンによって、空間推論を明示的な幾何状態に結び付ける。
 
 <!-- mmac-record: {"id": "2610.30679", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
@@ -2457,42 +2457,42 @@
 
 <!-- mmac-record: {"id": "2610.10479", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-10479"></a>`2026.10` **[Agentic RSR: Real-to-Sim-to-Real through Scene Reconstruction and Execution-Grounded Robot Policies](https://arxiv.org/abs/2610.10479)** [[論文]](https://arxiv.org/html/2610.10479v2)
+- <a id="paper-2610-10479"></a>`2026.10` **[Agentic RSR: Real-to-Sim-to-Real through Scene Reconstruction and Execution-Grounded Robot Policies](https://arxiv.org/abs/2610.10479)**
   > 参照動画に基づくシーン修正と操作方策の開発を一つのタスクでつなぎ、シミュレーションから実機へ移せるプログラムを構築する。
 
 <!-- mmac-record: {"id": "2610.02274", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-02274"></a>`2026.10` **[Awomo-SimDataEngine: Agentic Simulation-Ready World Generation](https://arxiv.org/abs/2610.02274)** [[論文]](https://arxiv.org/html/2610.02274v1)
+- <a id="paper-2610-02274"></a>`2026.10` **[Awomo-SimDataEngine: Agentic Simulation-Ready World Generation](https://arxiv.org/abs/2610.02274)**
   > アセット生成、単一画像からの再構成、テキストによるシーン計画、再生可能な実演をつなぎ、モジュール単位の検証と限定的な修正でシミュレーション可能な世界を得る。
 
 <!-- mmac-record: {"id": "2610.17114", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-17114"></a>`2026.10` **[D-World: An Explicit World-Language-Action Model with Recursive Self-Improvement under Dual Control](https://arxiv.org/abs/2610.17114)** [[論文]](https://arxiv.org/html/2610.17114v1)
+- <a id="paper-2610-17114"></a>`2026.10` **[D-World: An Explicit World-Language-Action Model with Recursive Self-Improvement under Dual Control](https://arxiv.org/abs/2610.17114)**
   > ロボットが行動しながら、実測値を使って自ら記述した明示的なデジタルツインを補正する。
 
 <!-- mmac-record: {"id": "2610.40754", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-40754"></a>`2026.10` **[DyCraft: An Agentic System for Long-Horizon 4D Scene Generation](https://arxiv.org/abs/2610.40754)** [[論文]](https://arxiv.org/html/2610.40754v1) [[プロジェクトページ]](https://dy-craft.github.io/) [[コード]](https://github.com/jefftan969/dycraft) [[データセット]](https://huggingface.co/datasets/jefftan969/dycraft-films)
+- <a id="paper-2610-40754"></a>`2026.10` **[DyCraft: An Agentic System for Long-Horizon 4D Scene Generation](https://arxiv.org/abs/2610.40754)** [[プロジェクトページ]](https://dy-craft.github.io/) [[コード]](https://github.com/jefftan969/dycraft) [[データセット]](https://huggingface.co/datasets/jefftan969/dycraft-films)
   > 絵コンテとフレームごとの診断でプログラム修正を導き、長時間のアニメーションシーンを構築する。
 
 <!-- mmac-record: {"id": "2610.21498", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-21498"></a>`2026.10` **[GRASE: Geometry-native Real-to-sim Agentic Scene Modeling from Video](https://arxiv.org/abs/2610.21498)** [[論文]](https://arxiv.org/html/2610.21498v1)
+- <a id="paper-2610-21498"></a>`2026.10` **[GRASE: Geometry-native Real-to-sim Agentic Scene Modeling from Video](https://arxiv.org/abs/2610.21498)**
   > 入力動画と継続的に照合し、部屋の外形、物体の姿勢、局所部品を段階的に修正して、編集可能な静的幾何を再構成する。
 
 <!-- mmac-record: {"id": "2610.40565", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-40565"></a>`2026.10` **[Gym-Anything for Robotics: Scaling physical simulations with digital agents](https://arxiv.org/abs/2610.40565)** [[論文]](https://arxiv.org/html/2610.40565v1) [[プロジェクトページ]](https://gym-anything.github.io/robotics)
+- <a id="paper-2610-40565"></a>`2026.10` **[Gym-Anything for Robotics: Scaling physical simulations with digital agents](https://arxiv.org/abs/2610.40565)** [[プロジェクトページ]](https://gym-anything.github.io/robotics)
   > シミュレーター自体を Coding Agent のタスクとし、独立した物理監査によってシーン、力学、検証の証拠を繰り返し修正する。
 
 <!-- mmac-record: {"id": "2610.36592", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-36592"></a>`2026.10` **[LabWorld: Learning Interactive 4D Worlds for Scientific Experimentation](https://arxiv.org/abs/2610.36592)** [[論文]](https://arxiv.org/html/2610.36592v1)
+- <a id="paper-2610-36592"></a>`2026.10` **[LabWorld: Learning Interactive 4D Worlds for Scientific Experimentation](https://arxiv.org/abs/2610.36592)**
   > 実験動画から編集可能なアセット、シーン、軌道、イベントを構築し、操作イベントを時空間制約に変換する。
 
 <!-- mmac-record: {"id": "2610.33060", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-33060"></a>`2026.10` **[MARC: Mechanism-Aware Reflective Correction for Articulated Object Code Generation](https://arxiv.org/abs/2610.33060)** [[論文]](https://arxiv.org/html/2610.33060v1) [[プロジェクトページ]](https://demianmusk.github.io/MARC-Home/)
+- <a id="paper-2610-33060"></a>`2026.10` **[MARC: Mechanism-Aware Reflective Correction for Articulated Object Code Generation](https://arxiv.org/abs/2610.33060)** [[プロジェクトページ]](https://demianmusk.github.io/MARC-Home/)
   > 関節機構のコードで運動学グラフを共有し、接続単位の数値診断で閉ループ機構や連動運動の誤りを特定して、修正後に同じ経路を再試験する。
 
 <!-- mmac-record: {"id": "system:plumb", "scope": "Resource", "primary": "3.2", "stage": 3, "type": "resource"} -->
@@ -2502,122 +2502,122 @@
 
 <!-- mmac-record: {"id": "2610.18835", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-18835"></a>`2026.10` **[RoboSimStudio: An Interactive Toolkit for Human and Agent Rapid Real2Sim of Robot Manipulation Tasks](https://arxiv.org/abs/2610.18835)** [[論文]](https://arxiv.org/html/2610.18835v2) [[プロジェクトページ]](https://robosimstudio.github.io)
+- <a id="paper-2610-18835"></a>`2026.10` **[RoboSimStudio: An Interactive Toolkit for Human and Agent Rapid Real2Sim of Robot Manipulation Tasks](https://arxiv.org/abs/2610.18835)** [[プロジェクトページ]](https://robosimstudio.github.io)
   > 編集可能なソルバー、接触モデル、パラメーターを使って動画から複数の物理現象を構築し、実際の失敗からシーン制約を修正する例を示す。
 
 <!-- mmac-record: {"id": "2610.34745", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-34745"></a>`2026.10` **[SceneAgent: An Agentic Pipeline from 3D and 4D Captures to Simulation Environments](https://arxiv.org/abs/2610.34745)** [[論文]](https://arxiv.org/html/2610.34745v1) [[プロジェクトページ]](https://computationalrobotics.seas.harvard.edu/SceneAgent/)
+- <a id="paper-2610-34745"></a>`2026.10` **[SceneAgent: An Agentic Pipeline from 3D and 4D Captures to Simulation Environments](https://arxiv.org/abs/2610.34745)** [[プロジェクトページ]](https://computationalrobotics.seas.harvard.edu/SceneAgent/)
   > 3D/4D の計測を対話可能なシミュレーションにまとめ、段階的な視覚確認と修正によって物体再構成、関節、材料の挙動を統合する。
 
 <!-- mmac-record: {"id": "2610.32978", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-32978"></a>`2026.10` **[SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning](https://arxiv.org/abs/2610.32978)** [[論文]](https://arxiv.org/pdf/2610.32978v1) [[コード]](https://github.com/Tinaliu0123/scenebloom) [[プロジェクトページ]](https://tinaliu0123.github.io/scenebloom/)
+- <a id="paper-2610-32978"></a>`2026.10` **[SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning](https://arxiv.org/abs/2610.32978)** [[コード]](https://github.com/Tinaliu0123/scenebloom) [[プロジェクトページ]](https://tinaliu0123.github.io/scenebloom/)
   > まずアセットの識別情報を含む視覚的な配置案を生成し、関係制約によって幾何学的に成立する 3D の部屋へ変換する。
 
 <!-- mmac-record: {"id": "2610.13947", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-13947"></a>`2026.10` **[Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark](https://arxiv.org/abs/2610.13947)** [[論文]](https://arxiv.org/html/2610.13947v3) [[プロジェクトページ]](https://physicalvision.github.io/artisan/)
+- <a id="paper-2610-13947"></a>`2026.10` **[Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark](https://arxiv.org/abs/2610.13947)** [[プロジェクトページ]](https://physicalvision.github.io/artisan/)
   > 設計・コーディング・レビューの Agent と MuJoCo による確認を組み合わせ、動作し、安定して立ち、目的の機能を保つ関節アセットへ修正する。
 
 <!-- mmac-record: {"id": "2610.11322", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-11322"></a>`2026.10` **[USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation](https://arxiv.org/abs/2610.11322)** [[論文]](https://arxiv.org/html/2610.11322v1) [[プロジェクトページ]](https://xingyoujun.github.io/usdcraft/)
+- <a id="paper-2610-11322"></a>`2026.10` **[USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation](https://arxiv.org/abs/2610.11322)** [[プロジェクトページ]](https://xingyoujun.github.io/usdcraft/)
   > 実行可能なプログラムで関節を持つ USD アセットを再構成し、観測済みなのに欠けている表面と、まだ観測されていない空間を分けて扱う。
 
 <!-- mmac-record: {"id": "2610.31834", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-31834"></a>`2026.10` **[WorldMirror: Agentic Real-to-Sim Generation of Interactive Worlds from In-the-Wild Robot Demonstrations](https://arxiv.org/abs/2610.31834)** [[論文]](https://arxiv.org/html/2610.31834v1) [[プロジェクトページ]](https://worldmirror-page.github.io/)
+- <a id="paper-2610-31834"></a>`2026.10` **[WorldMirror: Agentic Real-to-Sim Generation of Interactive Worlds from In-the-Wild Robot Demonstrations](https://arxiv.org/abs/2610.31834)** [[プロジェクトページ]](https://worldmirror-page.github.io/)
   > 実機ロボットの動画と記録軌道から、カメラに整合する編集可能な世界を再構成する。元の軌道を直接再生できるよう、段階ごとに検証・修正する。
 
 <!-- mmac-record: {"id": "2611.00513", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2611-00513"></a>`2026.10` **[WorldSketch: Sketching World Models for Zero-Shot Mobile Manipulation](https://arxiv.org/abs/2611.00513)** [[論文]](https://arxiv.org/html/2611.00513v1)
+- <a id="paper-2611-00513"></a>`2026.10` **[WorldSketch: Sketching World Models for Zero-Shot Mobile Manipulation](https://arxiv.org/abs/2611.00513)**
   > RGB-D とタスクから修正可能な最小限の運動学スケッチを構築し、幾何プランナーがそれに基づいて接触と全身運動を選択する。
 
 <!-- mmac-record: {"id": "2609.36024", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-36024"></a>`2026.09` **[CoDimRecon: Agentic Reconstruction of Sim-Ready 3D Scenes with Deformable Curves, Surfaces, and Volumes](https://arxiv.org/abs/2609.36024)** [[論文]](https://arxiv.org/html/2609.36024v3) [[プロジェクトページ]](https://shuzhaoxie.github.io/CoDimRecon/)
+- <a id="paper-2609-36024"></a>`2026.09` **[CoDimRecon: Agentic Reconstruction of Sim-Ready 3D Scenes with Deformable Curves, Surfaces, and Volumes](https://arxiv.org/abs/2609.36024)** [[プロジェクトページ]](https://shuzhaoxie.github.io/CoDimRecon/)
   > 幾何情報と生成した参照画像で編集可能なシーン再構成を導き、線状・面状・体積を持つ軟体をそれぞれシミュレーション可能な形で構築する。
 
 <!-- mmac-record: {"id": "2609.18620", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-18620"></a>`2026.09` **[DeformSmith: Physics Harness-Guided Hierarchical Generation of Deformable Assets for Robot Manipulation](https://arxiv.org/abs/2609.18620)** [[論文]](https://arxiv.org/html/2609.18620v2) [[プロジェクトページ]](https://can-lee.github.io/DeformSmith_web/)
+- <a id="paper-2609-18620"></a>`2026.09` **[DeformSmith: Physics Harness-Guided Hierarchical Generation of Deformable Assets for Robot Manipulation](https://arxiv.org/abs/2609.18620)** [[プロジェクトページ]](https://can-lee.github.io/DeformSmith_web/)
   > 幾何、物理モデル、材料を階層的に構築し、制約付きの物理的な試行とロボットとの相互作用によって変形可能なアセットを修正する。
 
 <!-- mmac-record: {"id": "2609.23103", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-23103"></a>`2026.09` **[DiagGen: Agentic Generation of Deformable Assets with Sim-based Diagnostics for Robotic Simulation](https://arxiv.org/abs/2609.23103)** [[論文]](https://arxiv.org/html/2609.23103v1) [[プロジェクトページ]](https://diaggen.github.io/)
+- <a id="paper-2609-23103"></a>`2026.09` **[DiagGen: Agentic Generation of Deformable Assets with Sim-based Diagnostics for Robotic Simulation](https://arxiv.org/abs/2609.23103)** [[プロジェクトページ]](https://diaggen.github.io/)
   > 診断 Agent が生成アセットを能動的につかんだり揺さぶったりし、挙動の異常を担当する生成段階へ返す。
 
 <!-- mmac-record: {"id": "2609.37067", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-37067"></a>`2026.09` **[FACT: Fidelity-Aware Construction of Articulated Twins](https://arxiv.org/abs/2609.37067)** [[論文]](https://arxiv.org/html/2609.37067v2)
+- <a id="paper-2609-37067"></a>`2026.09` **[FACT: Fidelity-Aware Construction of Articulated Twins](https://arxiv.org/abs/2609.37067)**
   > 関節を持つデジタルツインを幾何・接触・動力学の忠実度という三段階に分け、局所計測とシミュレーション残差によって Agent のモデル修正を導く。
 
 <!-- mmac-record: {"id": "2609.05927", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-05927"></a>`2026.09` **[GIF: Agentic Generation of Interactive and Functional Object Compositions for Robot Learning](https://arxiv.org/abs/2609.05927)** [[プロジェクトページ]](https://fufumeichi.github.io/gif-project-page/) [[論文]](https://fufumeichi.github.io/gif-project-page/assets/paper.pdf)
+- <a id="paper-2609-05927"></a>`2026.09` **[GIF: Agentic Generation of Interactive and Functional Object Compositions for Robot Learning](https://arxiv.org/abs/2609.05927)** [[プロジェクトページ]](https://fufumeichi.github.io/gif-project-page/)
   > 画像と 3D モデルから独立した物体を生成し、細かな接触関係を修正して、ロボット訓練に利用できる操作シーンを構築する。
 
 <!-- mmac-record: {"id": "2609.37089", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-37089"></a>`2026.09` **[Real2Gym: Building Gyms from Videos, Bringing Skills to Robots](https://arxiv.org/abs/2609.37089)** [[論文]](https://arxiv.org/html/2609.37089v1) [[プロジェクトページ]](https://real2gym.github.io/)
+- <a id="paper-2609-37089"></a>`2026.09` **[Real2Gym: Building Gyms from Videos, Bringing Skills to Robots](https://arxiv.org/abs/2609.37089)** [[プロジェクトページ]](https://real2gym.github.io/)
   > 人やロボットの実演を、視覚的に整合し物理的に実行できる Gym 環境へ変換し、実行結果でシーンと動作を修正する。
 
 <!-- mmac-record: {"id": "2609.05594", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-05594"></a>`2026.09` **[SceneMosaic: Efficient and Diverse Simulation-Ready Scene Generation via Hybrid Agentic Layout Evolution](https://arxiv.org/abs/2609.05594)** [[論文]](https://arxiv.org/html/2609.05594) [[コード]](https://github.com/rxjfighting/SceneMosaic) [[プロジェクトページ]](https://rxjfighting.github.io/SceneMosaic/)
+- <a id="paper-2609-05594"></a>`2026.09` **[SceneMosaic: Efficient and Diverse Simulation-Ready Scene Generation via Hybrid Agentic Layout Evolution](https://arxiv.org/abs/2609.05594)** [[コード]](https://github.com/rxjfighting/SceneMosaic) [[プロジェクトページ]](https://rxjfighting.github.io/SceneMosaic/)
   > まず一枚の画像から素早く再構成し、Agent が領域ごとに配置を調整して、複数のシミュレーション可能なシーンを組み立てる。
 
 <!-- mmac-record: {"id": "2609.36593", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-36593"></a>`2026.09` **[Text2Sim: Agentic Physics-Based Simulation Generation with Distilled Expertise](https://arxiv.org/abs/2609.36593)** [[論文]](https://arxiv.org/html/2609.36593v2)
+- <a id="paper-2609-36593"></a>`2026.09` **[Text2Sim: Agentic Physics-Based Simulation Generation with Distilled Expertise](https://arxiv.org/abs/2609.36593)**
   > 物理過程の要件をシーン、物体、動作、レンダリングのプログラムに分解し、実行の証拠に基づいて対象を絞って修正する。
 
 <!-- mmac-record: {"id": "2609.33208", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-33208"></a>`2026.09` **[WorldAgent: Verification-Guided Agentic Physical World Construction](https://arxiv.org/abs/2609.33208)** [[論文]](https://arxiv.org/html/2609.33208v1)
+- <a id="paper-2609-33208"></a>`2026.09` **[WorldAgent: Verification-Guided Agentic Physical World Construction](https://arxiv.org/abs/2609.33208)**
   > 物語、実体、空間関係、カメラを世界の仕様として記述し、幾何とシミュレーションの確認によって物理世界を継続的に修正する。
 
 <!-- mmac-record: {"id": "2608.18840", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2608-18840"></a>`2026.08` **[Beyond Placement and Articulation: Usage-Driven Code Scenes for Embodied Interaction](https://arxiv.org/abs/2608.18840)** [[論文]](https://arxiv.org/html/2608.18840)
+- <a id="paper-2608-18840"></a>`2026.08` **[Beyond Placement and Articulation: Usage-Driven Code Scenes for Embodied Interaction](https://arxiv.org/abs/2608.18840)**
   > プログラムで部屋、可動アセット、使用規則を同時に構築し、「ボタンを押すと照明が点く」といった部品間の相互作用を実現する。
 
 <!-- mmac-record: {"id": "2608.27549", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2608-27549"></a>`2026.08` **[Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning](https://arxiv.org/abs/2608.27549)** [[論文]](https://arxiv.org/html/2608.27549v2) [[プロジェクトページ]](https://mirros-lab.github.io/code-as-world)
+- <a id="paper-2608-27549"></a>`2026.08` **[Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning](https://arxiv.org/abs/2608.27549)** [[プロジェクトページ]](https://mirros-lab.github.io/code-as-world)
   > 文章や動画を実行可能な世界プログラムとして解釈し、投影像と観測の差を使って物体、状態、外観を反復的に修正する。
 
 <!-- mmac-record: {"id": "2610.01863", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-01863"></a>`2026.08` **[LiteReality-Agent: An Agentic System for Interactable 3D Indoor Scene Reconstruction](https://arxiv.org/abs/2610.01863)** [[論文]](https://arxiv.org/html/2610.01863v1) [[プロジェクトページ]](https://litereality.github.io/agent/)
+- <a id="paper-2610-01863"></a>`2026.08` **[LiteReality-Agent: An Agentic System for Interactable 3D Indoor Scene Reconstruction](https://arxiv.org/abs/2610.01863)** [[プロジェクトページ]](https://litereality.github.io/agent/)
   > RGB-D による部屋の再構成を実行可能な Room.py として記述し、観察、編集、確認によって継続的に改善する。
 
 <!-- mmac-record: {"id": "2608.30821", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2608-30821"></a>`2026.08` **[Lucida: Parse, Generate, and Place for Composable Real-to-Sim Scene Modeling](https://arxiv.org/abs/2608.30821)** [[論文]](https://arxiv.org/html/2608.30821v1) [[プロジェクトページ]](https://lucida-r2s.github.io/)
+- <a id="paper-2608-30821"></a>`2026.08` **[Lucida: Parse, Generate, and Place for Composable Real-to-Sim Scene Modeling](https://arxiv.org/abs/2608.30821)** [[プロジェクトページ]](https://lucida-r2s.github.io/)
   > 各物体の複数視点の証拠を集約し、GizmoAct が画像の確認と姿勢編集を繰り返してシーンを整合させる。
 
 <!-- mmac-record: {"id": "2607.19190", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2607-19190"></a>`2026.07` **[Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents](https://arxiv.org/abs/2607.19190)** [[プロジェクトページ]](https://agentic-real2sim.github.io/) [[論文]](https://arxiv.org/html/2607.19190v5)
+- <a id="paper-2607-19190"></a>`2026.07` **[Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents](https://arxiv.org/abs/2607.19190)** [[プロジェクトページ]](https://agentic-real2sim.github.io/)
   > 視覚言語 Agent が知覚、物理的な事前知識、再生の最適化を組み合わせ、実際のロボットとの相互作用を動作可能なデジタルツインへ変換する。
 
 <!-- mmac-record: {"id": "2607.07459", "scope": "Resource", "primary": "3.2", "stage": 3, "type": "resource"} -->
 
-- <a id="paper-2607-07459"></a>`2026.07` **[EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI](https://arxiv.org/abs/2607.07459)** [[論文]](https://arxiv.org/html/2607.07459v3) [[プロジェクトページ]](https://horizonrobotics.github.io/EmbodiedGen/)
+- <a id="paper-2607-07459"></a>`2026.07` **[EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI](https://arxiv.org/abs/2607.07459)** [[プロジェクトページ]](https://horizonrobotics.github.io/EmbodiedGen/)
   > 統一された物理アセット表現、シーングラフによる配置、状態を持つ編集を使い、タスクの意図を実行可能な 3D 世界へ変換する。
 
 <!-- mmac-record: {"id": "2607.21522", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2607-21522"></a>`2026.07` **[GS-Agent: Creating 4D Physical Worlds With Generative Simulation](https://arxiv.org/abs/2607.21522)** [[論文]](https://arxiv.org/html/2607.21522) [[プロジェクトページ]](https://umass-embodied-agi.github.io/gs-agent/)
+- <a id="paper-2607-21522"></a>`2026.07` **[GS-Agent: Creating 4D Physical Worlds With Generative Simulation](https://arxiv.org/abs/2607.21522)** [[プロジェクトページ]](https://umass-embodied-agi.github.io/gs-agent/)
   > Agent が物体、材料、運動、カメラのプログラムを書き、物理エンジンで実行して動的な世界を修正する。
 
 <!-- mmac-record: {"id": "2607.01766", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2607-01766"></a>`2026.07` **[SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation](https://arxiv.org/abs/2607.01766)** [[論文]](https://arxiv.org/html/2607.01766v1) [[プロジェクトページ]](https://dynsimworlds.github.io/)
+- <a id="paper-2607-01766"></a>`2026.07` **[SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation](https://arxiv.org/abs/2607.01766)** [[プロジェクトページ]](https://dynsimworlds.github.io/)
   > 固定した構築段階とシーンの規約で Blender プログラミングを制約し、レンダリングのレビューとエンジン状態の確認を組み合わせて動的な世界を修正する。
 
 <!-- mmac-record: {"id": "2607.13586", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
@@ -2627,52 +2627,52 @@
 
 <!-- mmac-record: {"id": "2606.14168", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2606-14168"></a>`2026.06` **[MUSE: Agentic 3D Scene Authoring via Memory-Grounded Incremental Requirement Satisfaction](https://arxiv.org/abs/2606.14168)** [[論文]](https://arxiv.org/html/2606.14168) [[プロジェクトページ]](https://xujay111.github.io/muse_githubio/)
+- <a id="paper-2606-14168"></a>`2026.06` **[MUSE: Agentic 3D Scene Authoring via Memory-Grounded Incremental Requirement Satisfaction](https://arxiv.org/abs/2606.14168)** [[プロジェクトページ]](https://xujay111.github.io/muse_githubio/)
   > シーン要件を個別に検証できる目標へ分解し、局所編集の際にすでに正しい内容を保護する。
 
 <!-- mmac-record: {"id": "2606.04226", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2606-04226"></a>`2026.06` **[PerceptTwin: Semantic Scene Reconstruction for Iterative LLM Planning and Verification](https://arxiv.org/abs/2606.04226)** [[論文]](https://arxiv.org/html/2606.04226v1) [[プロジェクトページ]](https://percept-twin.github.io/)
+- <a id="paper-2606-04226"></a>`2026.06` **[PerceptTwin: Semantic Scene Reconstruction for Iterative LLM Planning and Verification](https://arxiv.org/abs/2606.04226)** [[プロジェクトページ]](https://percept-twin.github.io/)
   > ロボットの知覚から得たオープン語彙の地図を操作可能なシーンへ変換し、タスク計画の点検と修正に用いる。
 
 <!-- mmac-record: {"id": "2606.28276", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2606-28276"></a>`2026.06` **[SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation](https://arxiv.org/abs/2606.28276)** [[論文]](https://arxiv.org/html/2606.28276v4) [[コード]](https://github.com/NVlabs/SimFoundry) [[プロジェクトページ]](https://research.nvidia.com/labs/gear/simfoundry/)
+- <a id="paper-2606-28276"></a>`2026.06` **[SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation](https://arxiv.org/abs/2606.28276)** [[コード]](https://github.com/NVlabs/SimFoundry) [[プロジェクトページ]](https://research.nvidia.com/labs/gear/simfoundry/)
   > 現実の動画を対話可能なデジタルツインへ変換し、物体・配置・タスクの三つの軸で訓練用の派生環境を生成する。
 
 <!-- mmac-record: {"id": "2605.15187", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2605-15187"></a>`2026.05` **[Articraft: An Agentic System for Scalable Articulated 3D Asset Generation](https://arxiv.org/abs/2605.15187)** [[プロジェクトページ]](https://articraft3d.github.io/) [[論文]](https://arxiv.org/html/2605.15187v1)
+- <a id="paper-2605-15187"></a>`2026.05` **[Articraft: An Agentic System for Scalable Articulated 3D Asset Generation](https://arxiv.org/abs/2605.15187)** [[プロジェクトページ]](https://articraft3d.github.io/)
   > 制約された SDK で実行可能な関節アセットのプログラムを書き、構造の確認と幾何プローブによって反復的に修正する。
 
 <!-- mmac-record: {"id": "2605.14398", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2605-14398"></a>`2026.05` **[ChronoAgentic: A Code-based Multi-Agent World Simulator for Physically Grounded Simulation Construction](https://arxiv.org/abs/2605.14398)** [[論文]](https://arxiv.org/html/2605.14398v3) [[プロジェクトページ]](https://uwsbel.github.io/chrono-agentic-website/)
+- <a id="paper-2605-14398"></a>`2026.05` **[ChronoAgentic: A Code-based Multi-Agent World Simulator for Physically Grounded Simulation Construction](https://arxiv.org/abs/2605.14398)** [[プロジェクトページ]](https://uwsbel.github.io/chrono-agentic-website/)
   > 人が確認できる物理シミュレーション計画から出発し、独立した PyChrono プログラムを生成・実行して段階的に修正する。
 
 <!-- mmac-record: {"id": "2605.09586", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2605-09586"></a>`2026.05` **[DeformMaster: An Interactive Physics-Neural World Model for Deformable Objects from Videos](https://arxiv.org/abs/2605.09586)** [[論文]](https://arxiv.org/html/2605.09586v2) [[プロジェクトページ]](https://can-lee.github.io/deformmaster-web/)
+- <a id="paper-2605-09586"></a>`2026.05` **[DeformMaster: An Interactive Physics-Neural World Model for Deformable Objects from Videos](https://arxiv.org/abs/2605.09586)** [[プロジェクトページ]](https://can-lee.github.io/deformmaster-web/)
   > 実際の相互作用を記録した動画から実行可能な軟体力学を最適化し、物理シミュレーションの展開、ニューラル残差、ガウス表現による外観を結合する。
 
 <!-- mmac-record: {"id": "2605.21572", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2605-21572"></a>`2026.05` **[PhysX-Omni: Unified Simulation-Ready Physical 3D Generation for Rigid, Deformable, and Articulated Objects](https://arxiv.org/abs/2605.21572)** [[論文]](https://arxiv.org/html/2605.21572v1) [[プロジェクトページ]](https://physx-omni.github.io/)
+- <a id="paper-2605-21572"></a>`2026.05` **[PhysX-Omni: Unified Simulation-Ready Physical 3D Generation for Rigid, Deformable, and Articulated Objects](https://arxiv.org/abs/2605.21572)** [[プロジェクトページ]](https://physx-omni.github.io/)
   > テンプレートのランレングス符号化によって VLM が高解像度の幾何と物理属性を直接予測し、複数種のシミュレーション可能なアセットを統一的に生成する。
 
 <!-- mmac-record: {"id": "2605.19587", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2605-19587"></a>`2026.05` **[SceneCode: Executable World Programs for Editable Indoor Scenes with Articulated Objects](https://arxiv.org/abs/2605.19587)** [[論文]](https://arxiv.org/html/2605.19587v1) [[コード]](https://github.com/wangpuyi/SceneCode) [[プロジェクトページ]](https://scene-code.github.io/)
+- <a id="paper-2605-19587"></a>`2026.05` **[SceneCode: Executable World Programs for Editable Indoor Scenes with Articulated Objects](https://arxiv.org/abs/2605.19587)** [[コード]](https://github.com/wangpuyi/SceneCode) [[プロジェクトページ]](https://scene-code.github.io/)
   > 部屋にある各物体を実行可能な部品プログラムへさらに分解し、関節と物理属性を持つシーンへコンパイルする。
 
 <!-- mmac-record: {"id": "2605.09423", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2605-09423"></a>`2026.05` **[SimWorld Studio: Automatic Environment Generation with Evolving Coding Agent for Embodied Agent Learning](https://arxiv.org/abs/2605.09423)** [[論文]](https://arxiv.org/html/2605.09423v2) [[コード]](https://github.com/SimWorld-AI/SimWorld-Studio)
+- <a id="paper-2605-09423"></a>`2026.05` **[SimWorld Studio: Automatic Environment Generation with Evolving Coding Agent for Embodied Agent Learning](https://arxiv.org/abs/2605.09423)** [[コード]](https://github.com/SimWorld-AI/SimWorld-Studio)
   > Coding Agent が UE5 でタスク環境を継続的に開発し、学習者の成績に応じて後続の訓練シーンを調整する。
 
 <!-- mmac-record: {"id": "2604.10992", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2604-10992"></a>`2026.04` **[ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation](https://arxiv.org/abs/2604.10992)** [[論文]](https://arxiv.org/html/2604.10992v2) [[プロジェクトページ]](https://shui-yuan.github.io/articad/)
+- <a id="paper-2604-10992"></a>`2026.04` **[ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation](https://arxiv.org/abs/2604.10992)** [[プロジェクトページ]](https://shui-yuan.github.io/articad/)
   > 部品間の接続仕様をあらかじめ定め、複数 Agent によるコード生成、組み立て、ロールバックを通じて可動 CAD を構築する。
 
 <!-- mmac-record: {"id": "2602.12311", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
@@ -2682,72 +2682,72 @@
 
 <!-- mmac-record: {"id": "2602.10116", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2602-10116"></a>`2026.02` **[SAGE: Scalable Agentic 3D Scene Generation for Embodied AI](https://arxiv.org/abs/2602.10116)** [[論文]](https://arxiv.org/html/2602.10116v2) [[プロジェクトページ]](https://research.nvidia.com/labs/dir/sage/)
+- <a id="paper-2602-10116"></a>`2026.02` **[SAGE: Scalable Agentic 3D Scene Generation for Embodied AI](https://arxiv.org/abs/2602.10116)** [[プロジェクトページ]](https://research.nvidia.com/labs/dir/sage/)
   > 組み合わせ可能なシーンツールと二つの critic を使い、ロボットタスクを安定した対話可能な 3D シーンへ変換する。
 
 <!-- mmac-record: {"id": "2602.09153", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2602-09153"></a>`2026.02` **[SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes](https://arxiv.org/abs/2602.09153)** [[論文]](https://arxiv.org/html/2602.09153v2) [[プロジェクトページ]](https://scenesmith.github.io/)
+- <a id="paper-2602-09153"></a>`2026.02` **[SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes](https://arxiv.org/abs/2602.09153)** [[プロジェクトページ]](https://scenesmith.github.io/)
   > 建築、家具、小物の順に段階的に生成し、物理シミュレーションへ直接投入できる密な室内シーンを構築する。
 
 <!-- mmac-record: {"id": "2509.20414", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2509-20414"></a>`2025.09` **[SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent](https://arxiv.org/abs/2509.20414)** [[論文]](https://arxiv.org/html/2509.20414v2) [[コード]](https://github.com/Scene-Weaver/SceneWeaver) [[論文]](https://proceedings.neurips.cc/paper_files/paper/2025/hash/cd2b3c429c8a2ca57656970e010b4b60-Abstract-Conference.html) [[プロジェクトページ]](https://scene-weaver.github.io/)
+- <a id="paper-2509-20414"></a>`2025.09` **[SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent](https://arxiv.org/abs/2509.20414)** [[コード]](https://github.com/Scene-Weaver/SceneWeaver) [[プロジェクトページ]](https://scene-weaver.github.io/)
   > 現在のシーンで最も解決が必要な問題に応じて構築ツールを選び、レンダリングと幾何のフィードバックで室内環境を段階的に改善する。
 
 <!-- mmac-record: {"id": "2411.01775", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2411-01775"></a>`2024.11` **[Eurekaverse: Environment Curriculum Generation via Large Language Models](https://arxiv.org/abs/2411.01775)** [[論文]](https://arxiv.org/html/2411.01775v1) [[プロジェクトページ]](https://eureka-research.github.io/eurekaverse/)
+- <a id="paper-2411-01775"></a>`2024.11` **[Eurekaverse: Environment Curriculum Generation via Large Language Models](https://arxiv.org/abs/2411.01775)** [[プロジェクトページ]](https://eureka-research.github.io/eurekaverse/)
   > 四足歩行方策の学習成績に応じて実行可能な地形コードを反復生成し、適応能力を養うパルクールのカリキュラムを作る。
 
 <!-- mmac-record: {"id": "2410.13882", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2410-13882"></a>`2024.10` **[Articulate-Anything: Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model](https://arxiv.org/abs/2410.13882)** [[プロジェクトページ]](https://articulate-anything.github.io/) [[論文]](https://arxiv.org/html/2410.13882v4) [[コード]](https://github.com/vlongle/articulate-anything)
+- <a id="paper-2410-13882"></a>`2024.10` **[Articulate-Anything: Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model](https://arxiv.org/abs/2410.13882)** [[プロジェクトページ]](https://articulate-anything.github.io/) [[コード]](https://github.com/vlongle/articulate-anything)
   > VLM が URDF にコンパイルできる Python を書き、参照資料とシミュレーション中の運動を比較して関節アセットを繰り返し修正する。
 
 <!-- mmac-record: {"id": "2410.15536", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2410-15536"></a>`2024.10` **[GRS: Generating Robotic Simulation Tasks from Real-World Images](https://arxiv.org/abs/2410.15536)** [[論文]](https://openaccess.thecvf.com/content/CVPR2025W/CV2/papers/Zook_GRS_Generating_Robotic_Simulation_Tasks_from_Real-World_Images_CVPRW_2025_paper.pdf)
+- <a id="paper-2410-15536"></a>`2024.10` **[GRS: Generating Robotic Simulation Tasks from Real-World Images](https://arxiv.org/abs/2410.15536)**
   > 一枚の RGB-D 画像から実行可能なロボットタスクとテストを生成し、エラーの振り分けによってシミュレーションとテストのどちらを修正するか選択する。
 
 <!-- mmac-record: {"id": "2409.17652", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2409-17652"></a>`2024.09` **[FactorSim: Generative Simulation via Factorized Representation](https://arxiv.org/abs/2409.17652)** [[論文]](https://arxiv.org/html/2409.17652v2) [[プロジェクトページ]](https://cs.stanford.edu/~sunfanyun/factorsim/)
+- <a id="paper-2409-17652"></a>`2024.09` **[FactorSim: Generative Simulation via Factorized Representation](https://arxiv.org/abs/2409.17652)** [[プロジェクトページ]](https://cs.stanford.edu/~sunfanyun/factorsim/)
   > 因子化 POMDP により各段階で必要なコードのコンテキストを制限し、言語による仕様から完全なシミュレーションを生成する。
 
 <!-- mmac-record: {"id": "2409.02920", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2409-02920"></a>`2024.09` **[RoboTwin: Dual-Arm Robot Benchmark with Generative Digital Twins](https://arxiv.org/abs/2409.02920)** [[論文]](https://arxiv.org/html/2409.02920v3) [[プロジェクトページ]](https://robotwin-benchmark.github.io/early-version/)
+- <a id="paper-2409-02920"></a>`2024.09` **[RoboTwin: Dual-Arm Robot Benchmark with Generative Digital Twins](https://arxiv.org/abs/2409.02920)** [[プロジェクトページ]](https://robotwin-benchmark.github.io/early-version/)
   > 一枚の実画像から物体のデジタルツインを生成し、機能に対応した座標系を基準に双腕のエキスパート軌道プログラムを生成する。
 
 <!-- mmac-record: {"id": "2406.08474", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2406-08474"></a>`2024.06` **[Real2Code: Reconstruct Articulated Objects via Code Generation](https://arxiv.org/abs/2406.08474)** [[論文]](https://arxiv.org/html/2406.08474v2) [[プロジェクトページ]](https://real2code.github.io/)
+- <a id="paper-2406-08474"></a>`2024.06` **[Real2Code: Reconstruct Articulated Objects via Code Generation](https://arxiv.org/abs/2406.08474)** [[プロジェクトページ]](https://real2code.github.io/)
   > 部品のバウンディングボックスで視覚再構成とコード生成をつなぎ、そのままシミュレーションできる物体の関節構造を予測する。
 
 <!-- mmac-record: {"id": "2405.15568", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2405-15568"></a>`2024.05` **[OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code](https://arxiv.org/abs/2405.15568)** [[論文]](https://arxiv.org/html/2405.15568v3) [[プロジェクトページ]](https://dub.sh/omniepic)
+- <a id="paper-2405-15568"></a>`2024.05` **[OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code](https://arxiv.org/abs/2405.15568)** [[プロジェクトページ]](https://dub.sh/omniepic)
   > タスクのアーカイブと学習フィードバックを利用し、新しい環境、報酬、成功判定のコードを継続的に記述する。
 
 <!-- mmac-record: {"id": "2312.09067", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2312-09067"></a>`2023.12` **[Holodeck: Language Guided Generation of 3D Embodied AI Environments](https://arxiv.org/abs/2312.09067)** [[論文]](https://arxiv.org/html/2312.09067v2) [[コード]](https://github.com/allenai/Holodeck) [[プロジェクトページ]](https://yueyang1996.github.io/holodeck/)
+- <a id="paper-2312-09067"></a>`2023.12` **[Holodeck: Language Guided Generation of 3D Embodied AI Environments](https://arxiv.org/abs/2312.09067)** [[コード]](https://github.com/allenai/Holodeck) [[プロジェクトページ]](https://yueyang1996.github.io/holodeck/)
   > 文章中の部屋の要件を建築構造、物体一覧、空間制約へ分解し、移動可能な室内環境として組み立てる。
 
 <!-- mmac-record: {"id": "2311.01455", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2311-01455"></a>`2023.11` **[RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation](https://arxiv.org/abs/2311.01455)** [[論文]](https://arxiv.org/html/2311.01455v3) [[プロジェクトページ]](https://robogen-ai.github.io/)
+- <a id="paper-2311-01455"></a>`2023.11` **[RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation](https://arxiv.org/abs/2311.01455)** [[プロジェクトページ]](https://robogen-ai.github.io/)
   > LLM がタスクを提案し、シーンを組み合わせ、学習アルゴリズムを選び、多数のロボットスキル訓練課題を作る。
 
 <!-- mmac-record: {"id": "2310.18308", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2310-18308"></a>`2023.10` **[Gen2Sim: Scaling up Robot Learning in Simulation with Generative Models](https://arxiv.org/abs/2310.18308)** [[論文]](https://arxiv.org/html/2310.18308v1) [[プロジェクトページ]](https://gen2sim.github.io/)
+- <a id="paper-2310-18308"></a>`2023.10` **[Gen2Sim: Scaling up Robot Learning in Simulation with Generative Models](https://arxiv.org/abs/2310.18308)** [[プロジェクトページ]](https://gen2sim.github.io/)
   > 物体画像を物理属性付きのアセットに変換し、LLM がタスク分解と報酬のプログラムを生成する。
 
 <!-- mmac-record: {"id": "2310.01361", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2310-01361"></a>`2023.10` **[GenSim: Generating Robotic Simulation Tasks via Large Language Models](https://arxiv.org/abs/2310.01361)** [[論文]](https://arxiv.org/html/2310.01361v2) [[コード]](https://github.com/liruiw/GenSim) [[プロジェクトページ]](https://liruiw.github.io/gensim)
+- <a id="paper-2310-01361"></a>`2023.10` **[GenSim: Generating Robotic Simulation Tasks via Large Language Models](https://arxiv.org/abs/2310.01361)** [[コード]](https://github.com/liruiw/GenSim) [[プロジェクトページ]](https://liruiw.github.io/gensim)
   > タスク記述を実行可能なロボットタスクのクラスに変換し、シミュレーションタスク集と実演データを拡張する。
 
 <!-- mmac-record: {"id": "res:aha-3d", "scope": "Resource", "primary": "3.2", "stage": 3, "type": "resource"} -->
@@ -2771,7 +2771,7 @@
 
 <!-- mmac-record: {"id": "2611.05802", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2611-05802"></a>`2026.11` **[GREP: Grounding Generated Room Evaluation in Principles](https://arxiv.org/abs/2611.05802)** [[論文]](https://arxiv.org/html/2611.05802)
+- <a id="paper-2611-05802"></a>`2026.11` **[GREP: Grounding Generated Room Evaluation in Principles](https://arxiv.org/abs/2611.05802)**
   > 生成した部屋を点検する評価 Agent を提案する。シーンに応じて能動的に問題を探し、幾何ツールと観察視点を選び、物理的な妥当性、視覚的な調和、日常利用の論理を採点・診断する。報告は生成システムによるシーン修正にも利用できる。
 
 <!-- mmac-record: {"id": "2611.02928", "scope": "Core", "primary": "3.3", "stage": 3, "type": "paper"} -->
@@ -2791,92 +2791,92 @@
 
 <!-- mmac-record: {"id": "2610.15166", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-15166"></a>`2026.10` **[ExeWorldBench: Benchmarking Code-Based Executable 3D World Modeling](https://arxiv.org/abs/2610.15166)** [[論文]](https://arxiv.org/html/2610.15166) [[プロジェクトページ]](https://helen1p.github.io/ExeWorldBench/) [[データセット]](https://huggingface.co/datasets/HelenPeng/ExeWorldBench)
+- <a id="paper-2610-15166"></a>`2026.10` **[ExeWorldBench: Benchmarking Code-Based Executable 3D World Modeling](https://arxiv.org/abs/2610.15166)** [[プロジェクトページ]](https://helen1p.github.io/ExeWorldBench/) [[データセット]](https://huggingface.co/datasets/HelenPeng/ExeWorldBench)
   > 視覚的な参照や高水準の目標から、Coding Agent が動作する 3D 世界を記述する。単一の機械機構から多段階の連動システム、目標に沿う世界設計へとタスクを拡張し、構造・運動・因果関係の理解を実行可能な成果物にできるか調べる。
 
 <!-- mmac-record: {"id": "2610.17288", "scope": "Core", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-17288"></a>`2026.10` **[PhysCodeGym: Benchmarking Coding Agents for Physically Verifiable 4D Reconstruction](https://arxiv.org/abs/2610.17288)** [[論文]](https://arxiv.org/html/2610.17288) [[コード]](https://github.com/ShaoShuai0605/PhysCodeGym)
+- <a id="paper-2610-17288"></a>`2026.10` **[PhysCodeGym: Benchmarking Coding Agents for Physically Verifiable 4D Reconstruction](https://arxiv.org/abs/2610.17288)** [[コード]](https://github.com/ShaoShuai0605/PhysCodeGym)
   > Coding Agent が物理過程の動画を観察し、Blender のシーンプログラムを自律的に記述・実行・修正して、剛体、液体、変形体、風による現象を再構成する。映像比較に加えてプログラムとシーンの物理機構を確認し、一部のタスクでは条件を変えて再シミュレーションする。
 
 <!-- mmac-record: {"id": "2610.37326", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-37326"></a>`2026.10` **[ScIntBench: Physical Interaction Plausibility in 3D Scene Generation](https://arxiv.org/abs/2610.37326)** [[論文]](https://arxiv.org/html/2610.37326) [[プロジェクトページ]](https://scintbench.github.io/)
+- <a id="paper-2610-37326"></a>`2026.10` **[ScIntBench: Physical Interaction Plausibility in 3D Scene Generation](https://arxiv.org/abs/2610.37326)** [[プロジェクトページ]](https://scintbench.github.io/)
   > テキストから生成した室内シーンを物理シミュレーションに入れ、統一手順で押す、開閉する、表面を探るなどの動作を行い、実際に操作できるか確認する。配置や静止状態が妥当に見えても、動かした際の使用可能性は保証されないことを調べる。
 
 <!-- mmac-record: {"id": "2610.04432", "scope": "Core", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-04432"></a>`2026.10` **[Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos](https://arxiv.org/abs/2610.04432)** [[プロジェクトページ]](https://aetherlabsai.github.io/Video2World) [[全文]](https://arxiv.org/html/2610.04432) [[コード]](https://github.com/AetherLabsAI/Video2World) [[ドキュメント]](https://github.com/AetherLabsAI/Video2World/blob/main/docs/benchmark.md) [[データセット]](https://huggingface.co/datasets/AetherLabs-AI/Video2World) [[交差実行の診断]](https://arxiv.org/html/2610.04432#S10.SS1) [[データの出典と動画の選定]](https://arxiv.org/html/2610.04432#S8.SS1)
+- <a id="paper-2610-04432"></a>`2026.10` **[Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos](https://arxiv.org/abs/2610.04432)** [[プロジェクトページ]](https://aetherlabsai.github.io/Video2World) [[コード]](https://github.com/AetherLabsAI/Video2World) [[ドキュメント]](https://github.com/AetherLabsAI/Video2World/blob/main/docs/benchmark.md) [[データセット]](https://huggingface.co/datasets/AetherLabs-AI/Video2World) [[交差実行の診断]](https://arxiv.org/html/2610.04432#S10.SS1) [[データの出典と動画の選定]](https://arxiv.org/html/2610.04432#S8.SS1)
   > ロボットまたは人の実演動画を、一貫したソフトウェア開発タスクに変換する。Agent は模擬環境と対応するロボット動作を作り、実行フィードバックで反復修正する。生成世界が空間構造、動的過程、操作タスクを再現できるかを最終的に確認する。
 
 <!-- mmac-record: {"id": "2610.08720", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-08720"></a>`2026.10` **[WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?](https://arxiv.org/abs/2610.08720)** [[論文]](https://arxiv.org/html/2610.08720) [[コード]](https://github.com/sirujiang/WorldSolver)
+- <a id="paper-2610-08720"></a>`2026.10` **[WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?](https://arxiv.org/abs/2610.08720)** [[コード]](https://github.com/sirujiang/WorldSolver)
   > 古典的な物理シミュレーション問題をプログラミング課題にする。シーンと実行 API を備えたコードのひな形を Agent に与え、時間発展を決めるソルバーを補完させる。実行の成功、対象現象の再現度、物理的な妥当性をそれぞれ確認する。
 
 <!-- mmac-record: {"id": "2610.17521", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-17521"></a>`2026.10` **[YUBI-Real2Sim: 3DGS Scene Verification for Reliable Policy Evaluation](https://arxiv.org/abs/2610.17521)** [[論文]](https://arxiv.org/html/2610.17521) [[コード]](https://github.com/airoa-org/yubi-real2sim) [[データセット]](https://huggingface.co/datasets/airoa-org/yubi-real2sim-assets) [[プロジェクトページ]](https://research.airoa.io/publications/yubi-real2sim/)
+- <a id="paper-2610-17521"></a>`2026.10` **[YUBI-Real2Sim: 3DGS Scene Verification for Reliable Policy Evaluation](https://arxiv.org/abs/2610.17521)** [[コード]](https://github.com/airoa-org/yubi-real2sim) [[データセット]](https://huggingface.co/datasets/airoa-org/yubi-real2sim-assets) [[プロジェクトページ]](https://research.airoa.io/publications/yubi-real2sim/)
   > 実機ロボットのシーンを 3D ガウス表現で再構成し、MuJoCo に接続して方策を試験する。実環境と模擬環境の対応実験で、穴や浮遊アーティファクトなどの再構成の欠陥が方策の成績や順位に与える影響を調べ、実機評価の一部を代替できるか検討する。
 
 <!-- mmac-record: {"id": "2606.01538", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2606-01538"></a>`2026.06` **[MPMWorlds: Material-Point-Method Simulations for Inferring and Extrapolating Physical Dynamics](https://arxiv.org/abs/2606.01538)** [[論文]](https://arxiv.org/html/2606.01538)
+- <a id="paper-2606-01538"></a>`2026.06` **[MPMWorlds: Material-Point-Method Simulations for Inferring and Extrapolating Physical Dynamics](https://arxiv.org/abs/2606.01538)**
   > 変形体、流体、複数の材料を含む二次元 MPM データを構築し、観測済みの動画と詳細度の異なるシーン情報から後続の過程を予測させる。シミュレーションプログラムの生成・実行と、未来動画の直接生成を比較し、物理推論と長期外挿の違いを調べる。
 
 <!-- mmac-record: {"id": "2606.01869", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2606-01869"></a>`2026.06` **[WorldCoder-Bench: Benchmarking Physically Grounded 3D World Synthesis](https://arxiv.org/abs/2606.01869)** [[論文]](https://arxiv.org/html/2606.01869)
+- <a id="paper-2606-01869"></a>`2026.06` **[WorldCoder-Bench: Benchmarking Physically Grounded 3D World Synthesis](https://arxiv.org/abs/2606.01869)**
   > 自然言語から、ブラウザーで動く対話型 3D プログラムを生成する課題を設け、シミュレーション、レンダリング、アプリを扱う。StateProbe はプログラムを実行して操作と隠れた状態要件を確認し、見た目は正常でも操作ロジックや状態変化が誤った成果物を検出する。
 
 <!-- mmac-record: {"id": "2605.20576", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2605-20576"></a>`2026.05` **[Δynamics: Language-Based Representation for Inferring Rigid-Body Dynamics From Videos](https://arxiv.org/abs/2605.20576)** [[論文]](https://arxiv.org/html/2605.20576)
+- <a id="paper-2605-20576"></a>`2026.05` **[Δynamics: Language-Based Representation for Inferring Rigid-Body Dynamics From Videos](https://arxiv.org/abs/2605.20576)**
   > 視覚言語モデルを訓練し、動画の運動から物体形状、初期状態、物理属性、カメラパラメーターを推定して、完全なシーン設定を構造化テキストで出力する。物理エンジンで再シミュレーションし、サンプリングと探索で一致を改善して、言語表現による動画理解と剛体力学再構成の接続を研究する。
 
 <!-- mmac-record: {"id": "2604.23580", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2604-23580"></a>`2026.04` **[PhysCodeBench: Benchmarking Physics-Aware Symbolic Simulation of 3D Scenes via Self-Corrective Multi-Agent Refinement](https://arxiv.org/abs/2604.23580)** [[論文]](https://arxiv.org/html/2604.23580)
+- <a id="paper-2604-23580"></a>`2026.04` **[PhysCodeBench: Benchmarking Physics-Aware Symbolic Simulation of 3D Scenes via Self-Corrective Multi-Agent Refinement](https://arxiv.org/abs/2604.23580)**
   > 自然言語による物理現象の記述をシミュレーションコード生成の課題とし、プログラムの動作、画面の要件充足、物理的なアサーションを確認する。生成と物理的な誤りの修正を分担する複数 Agent の流れも提案し、対象を絞った修正が物理精度を高めるか調べる。
 
 <!-- mmac-record: {"id": "2604.13035", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2604-13035"></a>`2026.04` **[SceneCritic: A Symbolic Evaluator for 3D Indoor Scene Synthesis](https://arxiv.org/abs/2604.13035)** [[論文]](https://arxiv.org/html/2604.13035)
+- <a id="paper-2604-13035"></a>`2026.04` **[SceneCritic: A Symbolic Evaluator for 3D Indoor Scene Synthesis](https://arxiv.org/abs/2604.13035)**
   > 既存の室内データから空間常識と制約を整理し、配置と物体関係を直接確認する記号的評価器を構築する。妥当な配置と違反する関係を具体的に示し、規則、テキストモデル、視覚モデルのフィードバックがシーン修正に与える影響を比較する。
 
 <!-- mmac-record: {"id": "2603.16432", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2603-16432"></a>`2026.03` **[IRIS: A Real-World Benchmark for Inverse Recovery and Identification of Physical Dynamic Systems from Monocular Video](https://arxiv.org/abs/2603.16432)** [[論文]](https://arxiv.org/html/2603.16432)
+- <a id="paper-2603-16432"></a>`2026.03` **[IRIS: A Real-World Benchmark for Inverse Recovery and Identification of Physical Dynamic Systems from Monocular Video](https://arxiv.org/abs/2603.16432)**
   > 独立した物理計測と不確実性の注釈を備える実際の動的動画を提供し、物理パラメーターや支配方程式を推定させる。統一手順で推定精度、パラメーターの識別可能性、復元モデルによる後続時間や異なる条件での運動の説明能力を確認する。
 
 <!-- mmac-record: {"id": "2603.29798", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2603-29798"></a>`2026.03` **[SceneTeract: Probing and Improving Agent-Aware Activity Reasoning in 3D Indoor Scenes](https://arxiv.org/abs/2603.29798)** [[論文]](https://arxiv.org/html/2603.29798)
+- <a id="paper-2603-29798"></a>`2026.03` **[SceneTeract: Probing and Improving Agent-Aware Activity Reasoning in 3D Indoor Scenes](https://arxiv.org/abs/2603.29798)**
   > 室内シーン、活動、実行者の身体条件を入力し、活動を物体に対する具体的な動作へ分解する。到達範囲、操作空間、経路が動作を許すか確認して失敗理由を返し、その検証フィードバックで視覚言語モデルを訓練して、活動を支えられるシーンの判定を改善する。
 
 <!-- mmac-record: {"id": "2602.10840", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2602-10840"></a>`2026.02` **[Training and Benchmarking Code Generation for Physics-Inspired Animations](https://arxiv.org/abs/2602.10840)** [[論文]](https://arxiv.org/html/2602.10840)
+- <a id="paper-2602-10840"></a>`2026.02` **[Training and Benchmarking Code Generation for Physics-Inspired Animations](https://arxiv.org/abs/2602.10840)**
   > さまざまな物理概念を含むアニメーションの記述を集め、実行可能なコードで現象を表す LLM を訓練・評価する。視覚言語モデルによる動画確認と視覚報酬を使う強化学習も行う。対象は物理に着想を得たアニメーションの表現品質であり、力学ソルバーの厳密な検証ではない。
 
 <!-- mmac-record: {"id": "2602.13294", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2602-13294"></a>`2026.02` **[VisPhyWorld: Probing Physical Reasoning via Code-Driven Video Reconstruction](https://arxiv.org/abs/2602.13294)** [[論文]](https://arxiv.org/html/2602.13294)
+- <a id="paper-2602-13294"></a>`2026.02` **[VisPhyWorld: Probing Physical Reasoning via Code-Driven Video Reconstruction](https://arxiv.org/abs/2602.13294)**
   > マルチモーダルモデルが観察した物理動画を実行可能なシミュレーターコードにし、世界の理解を検査・修正できるプログラムとして表す。VisPhyBench は制御されたシーンで外観と運動の再構成を比較し、視覚情報から妥当な物理過程を復元できるか調べる。
 
 <!-- mmac-record: {"id": "2511.03001", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2511-03001"></a>`2025.11` **[Apples on the Table? Evaluating Text-Guided 3D Scene Synthesis via Fine-Grained Constraint Verification](https://arxiv.org/abs/2511.03001)** [[論文]](https://arxiv.org/html/2511.03001)
+- <a id="paper-2511-03001"></a>`2025.11` **[Apples on the Table? Evaluating Text-Guided 3D Scene Synthesis via Fine-Grained Constraint Verification](https://arxiv.org/abs/2511.03001)**
   > テキストからの 3D シーン生成に向け、人が制約を注釈した LEGO データと参照シーン、LEGO-Eval を提供する。評価器は記述を物体、属性、相対位置などの要件に分解し、ツールで個別に照合して、生成シーンが満たす条件と欠落を示す。
 
 <!-- mmac-record: {"id": "2503.14756", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2503-14756"></a>`2025.03` **[SceneEval: Evaluating Semantic Coherence in Text-Conditioned 3D Indoor Scene Synthesis](https://arxiv.org/abs/2503.14756)** [[論文]](https://arxiv.org/html/2503.14756)
+- <a id="paper-2503-14756"></a>`2025.03` **[SceneEval: Evaluating Semantic Coherence in Text-Conditioned 3D Indoor Scene Synthesis](https://arxiv.org/abs/2503.14756)**
   > テキスト条件の室内シーン生成に対する詳細な評価枠組みと注釈付きテストセットを構築する。明示された物体・属性・関係に加え、通常は記述されない支持、衝突、通行の要件を確認し、説明可能な品質診断を行う。
 
 <!-- mmac-record: {"id": "2405.05941", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2405-05941"></a>`2024.05` **[Evaluating Real-World Robot Manipulation Policies in Simulation](https://arxiv.org/abs/2405.05941)** [[論文]](https://arxiv.org/html/2405.05941)
+- <a id="paper-2405-05941"></a>`2024.05` **[Evaluating Real-World Robot Manipulation Policies in Simulation](https://arxiv.org/abs/2405.05941)**
   > 高コストで再現が難しい実機方策の評価に対し、一般的な実ロボット設定に対応した模擬環境を構築して、視覚と制御の差を減らす。同じ方策を実機とシミュレーションで比較し、実際の成績と環境変化への感度を模擬環境が反映できるか確認する。
 
 <!-- mmac-record: {"id": "real2sim-benchmark", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
@@ -3398,7 +3398,7 @@
 
 <!-- mmac-record: {"id": "2503.23875", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2503-23875"></a>`2025.03` **[GenSwarm: Scalable Multi-Robot Code-Policy Generation and Deployment via Language Models](https://arxiv.org/abs/2503.23875)** [[コード]](https://github.com/WindyLab/GenSwarm) [[論文]](https://www.nature.com/articles/s44182-025-00065-w)
+- <a id="paper-2503-23875"></a>`2025.03` **[GenSwarm: Scalable Multi-Robot Code-Policy Generation and Deployment via Language Models](https://arxiv.org/abs/2503.23875)** [[コード]](https://github.com/WindyLab/GenSwarm)
   > 複数ロボットのプログラム形式の方策を生成・修正し、配備する。
 
 <!-- mmac-record: {"id": "2403.07832", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
@@ -3470,22 +3470,22 @@
 
 <!-- mmac-record: {"id": "2509.24978", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2509-24978"></a>`2025.09` **[Agentic Exploration of Physics Models](https://arxiv.org/abs/2509.24978)** [[コード]](https://github.com/MaxNaeg/SciExplorer) [[論文]](https://journals.aps.org/prx/abstract/10.1103/xnqc-q6nt)
+- <a id="paper-2509-24978"></a>`2025.09` **[Agentic Exploration of Physics Models](https://arxiv.org/abs/2509.24978)** [[コード]](https://github.com/MaxNaeg/SciExplorer)
   > プログラムによる数値実験を通じて物理モデルを探索する。
 
 <!-- mmac-record: {"id": "2509.25651", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2509-25651"></a>`2025.09` **[AutoLabs: cognitive multi-agent systems with self-correction for autonomous chemical experimentation](https://arxiv.org/abs/2509.25651)** [[論文]](https://doi.org/10.1038/s41598-026-45593-z) [[コード]](https://github.com/pnnl/autolabs)
+- <a id="paper-2509-25651"></a>`2025.09` **[AutoLabs: cognitive multi-agent systems with self-correction for autonomous chemical experimentation](https://arxiv.org/abs/2509.25651)** [[コード]](https://github.com/pnnl/autolabs)
   > 確認済みの、実験室で実行可能なプロトコルを生成する。
 
 <!-- mmac-record: {"id": "chemagents", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-chemagents"></a>`2024.07` **[A Multiagent-Driven Robotic AI Chemist Enabling Autonomous Chemical Research On Demand](https://doi.org/10.1021/jacs.4c17738)** [[論文]](https://www.cambridge.org/engage/chemrxiv/article-details/66a8c11bc9c6a5c07a7a59c0)
+- <a id="paper-chemagents"></a>`2024.07` **[A Multiagent-Driven Robotic AI Chemist Enabling Autonomous Chemical Research On Demand](https://doi.org/10.1021/jacs.4c17738)**
   > API を呼び出すプログラムの生成によってロボット化学研究を調整する。
 
 <!-- mmac-record: {"id": "2304.05332", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2304-05332"></a>`2023.04` **[Autonomous chemical research with large language models](https://arxiv.org/abs/2304.05332)** [[コード]](https://github.com/gomesgroup/coscientist) [[論文]](https://pmc.ncbi.nlm.nih.gov/articles/PMC10733136/)
+- <a id="paper-2304-05332"></a>`2023.04` **[Autonomous chemical research with large language models](https://arxiv.org/abs/2304.05332)** [[コード]](https://github.com/gomesgroup/coscientist)
   > 言語モデルを使って自動化された化学実験を構成する。
 
 <!-- mmac-record: {"id": "xray-scientist", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->

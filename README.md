@@ -1076,7 +1076,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2611.09017", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2611-09017"></a>`2026.11` **[Frontier3DBench: Benchmarking Coding Agents for 3D Creation across Objects, Scenes, and Interactive Open Worlds](https://arxiv.org/abs/2611.09017)** [[Paper]](https://arxiv.org/html/2611.09017) [[Code]](https://github.com/Einsia/Frontier3D) [[Project page]](https://lab.einsia.ai/frontier3dbench/)
+- <a id="paper-2611-09017"></a>`2026.11` **[Frontier3DBench: Benchmarking Coding Agents for 3D Creation across Objects, Scenes, and Interactive Open Worlds](https://arxiv.org/abs/2611.09017)** [[Code]](https://github.com/Einsia/Frontier3D) [[Project page]](https://lab.einsia.ai/frontier3dbench/)
   > Evaluates code-authored objects, scenes and interactive worlds across Blender and Unreal Engine.
 
 <!-- mmac-record: {"id": "2610.38231", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -1086,13 +1086,13 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2610.03715", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2610-03715"></a>`2026.10` **[4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes](https://arxiv.org/abs/2610.03715)** [[Paper]](https://arxiv.org/html/2610.03715)
+- <a id="paper-2610-03715"></a>`2026.10` **[4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes](https://arxiv.org/abs/2610.03715)**
   > Measures inverse graphics of dynamic videos through executable scene programs.
 
 <a id="work-blenderworld"></a>
 <!-- mmac-record: {"id": "system:blenderworld", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-system-blenderworld"></a>`2026.10` **[BlenderWorld: Benchmarking Visual Agents for 3D Creation from Real-World References](https://arxiv.org/abs/2610.23986)** [[Paper]](https://arxiv.org/html/2610.23986) [[Project page]](https://blenderworld.github.io/) [[Code]](https://github.com/QwenLM/BlenderWorld) [[Paper]](https://github.com/QwenLM/BlenderWorld/blob/main/docs/BlenderWorld__Benchmarking_Visual_Agents_for_3D_Creation_from_Real_World_References.pdf) [[Dataset]](https://huggingface.co/datasets/Qwen/BlenderWorld)
+- <a id="paper-system-blenderworld"></a>`2026.10` **[BlenderWorld: Benchmarking Visual Agents for 3D Creation from Real-World References](https://arxiv.org/abs/2610.23986)** [[Project page]](https://blenderworld.github.io/) [[Code]](https://github.com/QwenLM/BlenderWorld) [[Dataset]](https://huggingface.co/datasets/Qwen/BlenderWorld)
   > Evaluates reusable Blender creations produced from real-world references and specifications.
 
 <!-- mmac-record: {"id": "2610.12452", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -1117,7 +1117,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2609.15478", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-15478"></a>`2026.09` **[BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender](https://arxiv.org/abs/2609.15478)** [[Paper]](https://arxiv.org/html/2609.15478) [[Code]](https://github.com/yunlong10/BVB/blob/main/eval/dual_vqa_metric.py)
+- <a id="paper-2609-15478"></a>`2026.09` **[BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender](https://arxiv.org/abs/2609.15478)** [[Code]](https://github.com/yunlong10/BVB/blob/main/eval/dual_vqa_metric.py)
   > Uses programmatic Blender reconstruction to test agentic video understanding.
 
 <!-- mmac-record: {"id": "2609.16251", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -1127,7 +1127,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2609.36777", "scope": "Core", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2609-36777"></a>`2026.09` **[Code4Scene: Benchmarking Coding Agents for Constructing and Editing 3D Scenes](https://arxiv.org/abs/2609.36777)** [[Paper]](https://arxiv.org/html/2609.36777)
+- <a id="paper-2609-36777"></a>`2026.09` **[Code4Scene: Benchmarking Coding Agents for Constructing and Editing 3D Scenes](https://arxiv.org/abs/2609.36777)**
   > Tests scene construction and precise editing through a shared Unreal Engine interface.
 
 <!-- mmac-record: {"id": "2609.37686", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
@@ -1157,12 +1157,12 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2506.23329", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2506-23329"></a>`2025.06` **[IR3D-Bench: Evaluating Vision-Language Model Scene Understanding as Agentic Inverse Rendering](https://arxiv.org/abs/2506.23329)** [[Paper]](https://arxiv.org/html/2506.23329)
+- <a id="paper-2506-23329"></a>`2025.06` **[IR3D-Bench: Evaluating Vision-Language Model Scene Understanding as Agentic Inverse Rendering](https://arxiv.org/abs/2506.23329)**
   > Uses agentic inverse rendering to test whether visual understanding can produce an executable scene.
 
 <!-- mmac-record: {"id": "2504.01786", "scope": "Adjacent", "primary": "1.5", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2504-01786"></a>`2025.04` **[BlenderGym: Benchmarking Foundational Model Systems for Graphics Editing](https://arxiv.org/abs/2504.01786)** [[Paper]](https://arxiv.org/html/2504.01786)
+- <a id="paper-2504-01786"></a>`2025.04` **[BlenderGym: Benchmarking Foundational Model Systems for Graphics Editing](https://arxiv.org/abs/2504.01786)**
   > Benchmarks programmatic graphics edits and allocation of generation and verification compute.
 
 #### Tools & resources
@@ -1403,7 +1403,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 <a id="work-vibegame"></a>
 <!-- mmac-record: {"id": "system:vibegame", "scope": "Core", "primary": "1.6", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-system-vibegame"></a>**[VibeGame: Prompt-to-Game Development with AI-Native Engine and Self-Evolving Adversarial Agent Team](https://arxiv.org/abs/2610.33106)** [[Code]](https://github.com/tettethu/VibeGame) [[Paper]](https://github.com/tettethu/VibeGame/blob/main/technical_report.pdf) [[Project page]](https://vibegame.tettet.org/)
+- <a id="paper-system-vibegame"></a>**[VibeGame: Prompt-to-Game Development with AI-Native Engine and Self-Evolving Adversarial Agent Team](https://arxiv.org/abs/2610.33106)** [[Code]](https://github.com/tettethu/VibeGame) [[Project page]](https://vibegame.tettet.org/)
   > Builds editable 2D games with an AI-native Phaser engine whose frame-synchronous play-testing and adversarial runtime verification route observed failures back into code, asset, and configuration revisions.
 
 #### Evaluation & data
@@ -1610,7 +1610,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 <!-- mmac-record: {"id": "2604.18164", "scope": "Adjacent", "primary": "1.7", "stage": 1, "type": "paper"} -->
 
-- <a id="paper-2604-18164"></a>`2026.04` **[MM-JudgeBias: A Benchmark for Evaluating Compositional Biases in MLLM-as-a-Judge](https://arxiv.org/abs/2604.18164)** [[Paper]](https://aclanthology.org/2026.acl-long.1162/) [[Code]](https://github.com/naver-ai/MM-JudgeBias) [[Dataset]](https://huggingface.co/datasets/naver-ai/MM-JudgeBias)
+- <a id="paper-2604-18164"></a>`2026.04` **[MM-JudgeBias: A Benchmark for Evaluating Compositional Biases in MLLM-as-a-Judge](https://arxiv.org/abs/2604.18164)** [[Code]](https://github.com/naver-ai/MM-JudgeBias) [[Dataset]](https://huggingface.co/datasets/naver-ai/MM-JudgeBias)
   > Tests whether multimodal judges use the full query–image–response evidence through nine controlled perturbations, separating sensitivity to missing or mismatched evidence from stability under irrelevant changes.
 
 <!-- mmac-record: {"id": "2511.15567", "scope": "Core", "primary": "1.7", "stage": 1, "type": "paper"} -->
@@ -1679,7 +1679,7 @@ The agent **calls other models through code** — image, video and world generat
 
 <!-- mmac-record: {"id": "2611.16748", "scope": "Core", "primary": "2.2", "stage": 2, "type": "paper"} -->
 
-- <a id="paper-2611-16748"></a>`2026.11` **[PhysLoop: Harnessing LLMs’ Physics Awareness for Self-Improving Video Generation Models](https://arxiv.org/abs/2611.16748)** [[Paper]](https://arxiv.org/html/2611.16748v1) [[Project page]](https://chenyx24.github.io/PhysLoop-site/) [[Code]](https://github.com/DAGroup-PKU/PhysLoop)
+- <a id="paper-2611-16748"></a>`2026.11` **[PhysLoop: Harnessing LLMs’ Physics Awareness for Self-Improving Video Generation Models](https://arxiv.org/abs/2611.16748)** [[Project page]](https://chenyx24.github.io/PhysLoop-site/) [[Code]](https://github.com/DAGroup-PKU/PhysLoop)
   > A coding agent builds simulator scenes and uses visual and state feedback to revise them or adjust a video refiner, supporting controlled video generation and local repair.
 
 <!-- mmac-record: {"id": "2611.04418", "scope": "Adjacent", "primary": "2.2", "stage": 2, "type": "paper"} -->
@@ -1689,7 +1689,7 @@ The agent **calls other models through code** — image, video and world generat
 
 <!-- mmac-record: {"id": "2611.16217", "scope": "Adjacent", "primary": "2.2", "stage": 2, "type": "paper"} -->
 
-- <a id="paper-2611-16217"></a>`2026.11` **[WorldDraft: If Code Builds the World, Can Video Models Just Render It?](https://arxiv.org/abs/2611.16217)** [[Paper]](https://arxiv.org/html/2611.16217v1) [[Project page]](https://haroldchen19.github.io/WorldDraft-site/) [[Code]](https://github.com/KevinHuge/WorldDraft) [[Dataset]](https://huggingface.co/datasets/KevinHuge/WorldDraft)
+- <a id="paper-2611-16217"></a>`2026.11` **[WorldDraft: If Code Builds the World, Can Video Models Just Render It?](https://arxiv.org/abs/2611.16217)** [[Project page]](https://haroldchen19.github.io/WorldDraft-site/) [[Code]](https://github.com/KevinHuge/WorldDraft) [[Dataset]](https://huggingface.co/datasets/KevinHuge/WorldDraft)
   > Benchmarks video models as renderers of executable 4D drafts, testing whether they preserve motion and camera paths while applying requested appearances.
 
 <!-- mmac-record: {"id": "2610.20571", "scope": "Adjacent", "primary": "2.2", "stage": 2, "type": "paper"} -->
@@ -2087,7 +2087,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "chemautoagent", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-chemautoagent"></a>`2026.08` **[ChemAutoAgent: A Multi-Agent System for Evidence-Controlled Laboratory Instrument Driver Generation from Text-Based Manuals](https://www.mdpi.com/2076-3417/16/16/8291)** [[Paper]](https://www.mdpi.com/2076-3417/16/16/8291/notes)
+- <a id="paper-chemautoagent"></a>`2026.08` **[ChemAutoAgent: A Multi-Agent System for Evidence-Controlled Laboratory Instrument Driver Generation from Text-Based Manuals](https://www.mdpi.com/2076-3417/16/16/8291)** [[Version notes]](https://www.mdpi.com/2076-3417/16/16/8291/notes)
   > Builds instrument drivers from source-linked manuals within deterministic protocol scaffolds, repairing them through hardware tests.
 
 <!-- mmac-record: {"id": "2608.03924", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2216,12 +2216,12 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2611.12177", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2611-12177"></a>`2026.11` **[Embodied First Exam](https://arxiv.org/abs/2611.12177)** [[Paper]](https://arxiv.org/html/2611.12177)
+- <a id="paper-2611-12177"></a>`2026.11` **[Embodied First Exam](https://arxiv.org/abs/2611.12177)**
   > Tests general-purpose agents across robot embodiments while varying observation access, reset budgets and execution timing.
 
 <!-- mmac-record: {"id": "2611.16009", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2611-16009"></a>`2026.11` **[JustRUA: A Controlled Study of GPT-6 Robot-Use Agents](https://arxiv.org/abs/2611.16009)** [[Paper]](https://arxiv.org/html/2611.16009v1) [[Project page]](https://zefanw.github.io/JustRUA/) [[Code]](https://github.com/ZefanW/JustRUA) [[Demo]](https://huggingface.co/spaces/ZefanW/robodojo-replay-explorer)
+- <a id="paper-2611-16009"></a>`2026.11` **[JustRUA: A Controlled Study of GPT-6 Robot-Use Agents](https://arxiv.org/abs/2611.16009)** [[Project page]](https://zefanw.github.io/JustRUA/) [[Code]](https://github.com/ZefanW/JustRUA) [[Demo]](https://huggingface.co/spaces/ZefanW/robodojo-replay-explorer)
   > Studies how episode history, short motions, geometry and coordinate-solving code shape a general-purpose agent’s RoboDojo manipulation performance.
 
 <!-- mmac-record: {"id": "2611.08209", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2306,7 +2306,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2609.40325", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-40325"></a>`2026.09` **[WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents](https://arxiv.org/abs/2609.40325)** [[Paper]](https://arxiv.org/html/2609.40325) [[Project page]](https://ucsb-nlp-chang.github.io/WorldAuditBench/)
+- <a id="paper-2609-40325"></a>`2026.09` **[WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents](https://arxiv.org/abs/2609.40325)** [[Project page]](https://ucsb-nlp-chang.github.io/WorldAuditBench/)
   > Measures an agent’s ability to explore interactive worlds and substantiate anomalies with evidence.
 
 <!-- mmac-record: {"id": "2607.04434", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
@@ -2434,17 +2434,17 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2611.10602", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2611-10602"></a>`2026.11` **[Agentic discrete-event simulation for manufacturing system design: an open 3D simulator, a benchmark and an industrial case](https://arxiv.org/abs/2611.10602)** [[Paper]](https://arxiv.org/html/2611.10602v2)
+- <a id="paper-2611-10602"></a>`2026.11` **[Agentic discrete-event simulation for manufacturing system design: an open 3D simulator, a benchmark and an industrial case](https://arxiv.org/abs/2611.10602)**
   > SimuLean gives agents verified modeling components for manufacturing simulation.
 
 <!-- mmac-record: {"id": "2611.02691", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2611-02691"></a>`2026.11` **[Closing the Dynamics Gap through Self-Directed Robotic Interaction](https://arxiv.org/abs/2611.02691)** [[Paper]](https://arxiv.org/html/2611.02691v1) [[Project page]](https://cue-dynamics.github.io/)
+- <a id="paper-2611-02691"></a>`2026.11` **[Closing the Dynamics Gap through Self-Directed Robotic Interaction](https://arxiv.org/abs/2611.02691)** [[Project page]](https://cue-dynamics.github.io/)
   > An agent designs physical probes, measures their outcomes and calibrates an executable model.
 
 <!-- mmac-record: {"id": "2611.11344", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2611-11344"></a>`2026.11` **[Spatial Harness: Grounding Spatial Reasoning in Executable World States with Physics Engines](https://arxiv.org/abs/2611.11344)** [[Paper]](https://arxiv.org/html/2611.11344v1) [[Code]](https://github.com/tmlr-group/Spatial-Harness)
+- <a id="paper-2611-11344"></a>`2026.11` **[Spatial Harness: Grounding Spatial Reasoning in Executable World States with Physics Engines](https://arxiv.org/abs/2611.11344)** [[Code]](https://github.com/tmlr-group/Spatial-Harness)
   > An executable proxy scene grounds spatial reasoning in explicit geometry.
 
 <!-- mmac-record: {"id": "2610.30679", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
@@ -2454,42 +2454,42 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2610.10479", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-10479"></a>`2026.10` **[Agentic RSR: Real-to-Sim-to-Real through Scene Reconstruction and Execution-Grounded Robot Policies](https://arxiv.org/abs/2610.10479)** [[Paper]](https://arxiv.org/html/2610.10479v2)
+- <a id="paper-2610-10479"></a>`2026.10` **[Agentic RSR: Real-to-Sim-to-Real through Scene Reconstruction and Execution-Grounded Robot Policies](https://arxiv.org/abs/2610.10479)**
   > Scene reconstruction and executable policy development share a task-specific sim-to-real workflow.
 
 <!-- mmac-record: {"id": "2610.02274", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-02274"></a>`2026.10` **[Awomo-SimDataEngine: Agentic Simulation-Ready World Generation](https://arxiv.org/abs/2610.02274)** [[Paper]](https://arxiv.org/html/2610.02274v1)
+- <a id="paper-2610-02274"></a>`2026.10` **[Awomo-SimDataEngine: Agentic Simulation-Ready World Generation](https://arxiv.org/abs/2610.02274)**
   > Asset generation, image reconstruction and text-based layout meet in a verified simulation data engine.
 
 <!-- mmac-record: {"id": "2610.17114", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-17114"></a>`2026.10` **[D-World: An Explicit World-Language-Action Model with Recursive Self-Improvement under Dual Control](https://arxiv.org/abs/2610.17114)** [[Paper]](https://arxiv.org/html/2610.17114v1)
+- <a id="paper-2610-17114"></a>`2026.10` **[D-World: An Explicit World-Language-Action Model with Recursive Self-Improvement under Dual Control](https://arxiv.org/abs/2610.17114)**
   > Real action measurements continually correct an agent-authored digital twin.
 
 <!-- mmac-record: {"id": "2610.40754", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-40754"></a>`2026.10` **[DyCraft: An Agentic System for Long-Horizon 4D Scene Generation](https://arxiv.org/abs/2610.40754)** [[Paper]](https://arxiv.org/html/2610.40754v1) [[Project page]](https://dy-craft.github.io/) [[Code]](https://github.com/jefftan969/dycraft) [[Dataset]](https://huggingface.co/datasets/jefftan969/dycraft-films)
+- <a id="paper-2610-40754"></a>`2026.10` **[DyCraft: An Agentic System for Long-Horizon 4D Scene Generation](https://arxiv.org/abs/2610.40754)** [[Project page]](https://dy-craft.github.io/) [[Code]](https://github.com/jefftan969/dycraft) [[Dataset]](https://huggingface.co/datasets/jefftan969/dycraft-films)
   > Storyboards and frame-level diagnostics guide code repair for long-horizon animated scenes.
 
 <!-- mmac-record: {"id": "2610.21498", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-21498"></a>`2026.10` **[GRASE: Geometry-native Real-to-sim Agentic Scene Modeling from Video](https://arxiv.org/abs/2610.21498)** [[Paper]](https://arxiv.org/html/2610.21498v1)
+- <a id="paper-2610-21498"></a>`2026.10` **[GRASE: Geometry-native Real-to-sim Agentic Scene Modeling from Video](https://arxiv.org/abs/2610.21498)**
   > Video-aligned rendering guides local revision of editable room geometry.
 
 <!-- mmac-record: {"id": "2610.40565", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-40565"></a>`2026.10` **[Gym-Anything for Robotics: Scaling physical simulations with digital agents](https://arxiv.org/abs/2610.40565)** [[Paper]](https://arxiv.org/html/2610.40565v1) [[Project page]](https://gym-anything.github.io/robotics)
+- <a id="paper-2610-40565"></a>`2026.10` **[Gym-Anything for Robotics: Scaling physical simulations with digital agents](https://arxiv.org/abs/2610.40565)** [[Project page]](https://gym-anything.github.io/robotics)
   > Coding agents construct physical simulators and revise them using independent audits.
 
 <!-- mmac-record: {"id": "2610.36592", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-36592"></a>`2026.10` **[LabWorld: Learning Interactive 4D Worlds for Scientific Experimentation](https://arxiv.org/abs/2610.36592)** [[Paper]](https://arxiv.org/html/2610.36592v1)
+- <a id="paper-2610-36592"></a>`2026.10` **[LabWorld: Learning Interactive 4D Worlds for Scientific Experimentation](https://arxiv.org/abs/2610.36592)**
   > Laboratory videos become editable assets, trajectories and spatially constrained events.
 
 <!-- mmac-record: {"id": "2610.33060", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-33060"></a>`2026.10` **[MARC: Mechanism-Aware Reflective Correction for Articulated Object Code Generation](https://arxiv.org/abs/2610.33060)** [[Paper]](https://arxiv.org/html/2610.33060v1) [[Project page]](https://demianmusk.github.io/MARC-Home/)
+- <a id="paper-2610-33060"></a>`2026.10` **[MARC: Mechanism-Aware Reflective Correction for Articulated Object Code Generation](https://arxiv.org/abs/2610.33060)** [[Project page]](https://demianmusk.github.io/MARC-Home/)
   > Connection-level diagnostics help agents repair executable mechanisms with loops and coupled motion.
 
 <!-- mmac-record: {"id": "system:plumb", "scope": "Resource", "primary": "3.2", "stage": 3, "type": "resource"} -->
@@ -2499,122 +2499,122 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2610.18835", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-18835"></a>`2026.10` **[RoboSimStudio: An Interactive Toolkit for Human and Agent Rapid Real2Sim of Robot Manipulation Tasks](https://arxiv.org/abs/2610.18835)** [[Paper]](https://arxiv.org/html/2610.18835v2) [[Project page]](https://robosimstudio.github.io)
+- <a id="paper-2610-18835"></a>`2026.10` **[RoboSimStudio: An Interactive Toolkit for Human and Agent Rapid Real2Sim of Robot Manipulation Tasks](https://arxiv.org/abs/2610.18835)** [[Project page]](https://robosimstudio.github.io)
   > Editable multiphysics models connect video-based construction with robot interaction feedback.
 
 <!-- mmac-record: {"id": "2610.34745", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-34745"></a>`2026.10` **[SceneAgent: An Agentic Pipeline from 3D and 4D Captures to Simulation Environments](https://arxiv.org/abs/2610.34745)** [[Paper]](https://arxiv.org/html/2610.34745v1) [[Project page]](https://computationalrobotics.seas.harvard.edu/SceneAgent/)
+- <a id="paper-2610-34745"></a>`2026.10` **[SceneAgent: An Agentic Pipeline from 3D and 4D Captures to Simulation Environments](https://arxiv.org/abs/2610.34745)** [[Project page]](https://computationalrobotics.seas.harvard.edu/SceneAgent/)
   > An agent assembles captured geometry and dynamic observations into interactive simulation scenes.
 
 <!-- mmac-record: {"id": "2610.32978", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-32978"></a>`2026.10` **[SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning](https://arxiv.org/abs/2610.32978)** [[Paper]](https://arxiv.org/pdf/2610.32978v1) [[Code]](https://github.com/Tinaliu0123/scenebloom) [[Project page]](https://tinaliu0123.github.io/scenebloom/)
+- <a id="paper-2610-32978"></a>`2026.10` **[SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning](https://arxiv.org/abs/2610.32978)** [[Code]](https://github.com/Tinaliu0123/scenebloom) [[Project page]](https://tinaliu0123.github.io/scenebloom/)
   > Visual layout proposals are compiled into geometrically feasible indoor environments.
 
 <!-- mmac-record: {"id": "2610.13947", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-13947"></a>`2026.10` **[Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark](https://arxiv.org/abs/2610.13947)** [[Paper]](https://arxiv.org/html/2610.13947v3) [[Project page]](https://physicalvision.github.io/artisan/)
+- <a id="paper-2610-13947"></a>`2026.10` **[Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark](https://arxiv.org/abs/2610.13947)** [[Project page]](https://physicalvision.github.io/artisan/)
   > Agent teams revise articulated assets using motion, collision and stability evidence.
 
 <!-- mmac-record: {"id": "2610.11322", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-11322"></a>`2026.10` **[USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation](https://arxiv.org/abs/2610.11322)** [[Paper]](https://arxiv.org/html/2610.11322v1) [[Project page]](https://xingyoujun.github.io/usdcraft/)
+- <a id="paper-2610-11322"></a>`2026.10` **[USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation](https://arxiv.org/abs/2610.11322)** [[Project page]](https://xingyoujun.github.io/usdcraft/)
   > Programs reconstruct articulated USD assets while distinguishing missing observed surfaces from unseen space.
 
 <!-- mmac-record: {"id": "2610.31834", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-31834"></a>`2026.10` **[WorldMirror: Agentic Real-to-Sim Generation of Interactive Worlds from In-the-Wild Robot Demonstrations](https://arxiv.org/abs/2610.31834)** [[Paper]](https://arxiv.org/html/2610.31834v1) [[Project page]](https://worldmirror-page.github.io/)
+- <a id="paper-2610-31834"></a>`2026.10` **[WorldMirror: Agentic Real-to-Sim Generation of Interactive Worlds from In-the-Wild Robot Demonstrations](https://arxiv.org/abs/2610.31834)** [[Project page]](https://worldmirror-page.github.io/)
   > Recorded robot demonstrations guide construction of editable worlds that support direct trajectory replay.
 
 <!-- mmac-record: {"id": "2611.00513", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2611-00513"></a>`2026.10` **[WorldSketch: Sketching World Models for Zero-Shot Mobile Manipulation](https://arxiv.org/abs/2611.00513)** [[Paper]](https://arxiv.org/html/2611.00513v1)
+- <a id="paper-2611-00513"></a>`2026.10` **[WorldSketch: Sketching World Models for Zero-Shot Mobile Manipulation](https://arxiv.org/abs/2611.00513)**
   > A task-specific kinematic sketch connects RGB-D observations to geometric action planning.
 
 <!-- mmac-record: {"id": "2609.36024", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-36024"></a>`2026.09` **[CoDimRecon: Agentic Reconstruction of Sim-Ready 3D Scenes with Deformable Curves, Surfaces, and Volumes](https://arxiv.org/abs/2609.36024)** [[Paper]](https://arxiv.org/html/2609.36024v3) [[Project page]](https://shuzhaoxie.github.io/CoDimRecon/)
+- <a id="paper-2609-36024"></a>`2026.09` **[CoDimRecon: Agentic Reconstruction of Sim-Ready 3D Scenes with Deformable Curves, Surfaces, and Volumes](https://arxiv.org/abs/2609.36024)** [[Project page]](https://shuzhaoxie.github.io/CoDimRecon/)
   > Editable reconstruction separates line, surface and volume models for deformable simulation.
 
 <!-- mmac-record: {"id": "2609.18620", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-18620"></a>`2026.09` **[DeformSmith: Physics Harness-Guided Hierarchical Generation of Deformable Assets for Robot Manipulation](https://arxiv.org/abs/2609.18620)** [[Paper]](https://arxiv.org/html/2609.18620v2) [[Project page]](https://can-lee.github.io/DeformSmith_web/)
+- <a id="paper-2609-18620"></a>`2026.09` **[DeformSmith: Physics Harness-Guided Hierarchical Generation of Deformable Assets for Robot Manipulation](https://arxiv.org/abs/2609.18620)** [[Project page]](https://can-lee.github.io/DeformSmith_web/)
   > Layered physical tests guide construction and repair of deformable assets.
 
 <!-- mmac-record: {"id": "2609.23103", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-23103"></a>`2026.09` **[DiagGen: Agentic Generation of Deformable Assets with Sim-based Diagnostics for Robotic Simulation](https://arxiv.org/abs/2609.23103)** [[Paper]](https://arxiv.org/html/2609.23103v1) [[Project page]](https://diaggen.github.io/)
+- <a id="paper-2609-23103"></a>`2026.09` **[DiagGen: Agentic Generation of Deformable Assets with Sim-based Diagnostics for Robotic Simulation](https://arxiv.org/abs/2609.23103)** [[Project page]](https://diaggen.github.io/)
   > Active manipulation probes route asset defects back to their generating stages.
 
 <!-- mmac-record: {"id": "2609.37067", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-37067"></a>`2026.09` **[FACT: Fidelity-Aware Construction of Articulated Twins](https://arxiv.org/abs/2609.37067)** [[Paper]](https://arxiv.org/html/2609.37067v2)
+- <a id="paper-2609-37067"></a>`2026.09` **[FACT: Fidelity-Aware Construction of Articulated Twins](https://arxiv.org/abs/2609.37067)**
   > Geometry, contact and response fidelity are developed as distinct stages of articulated-twin construction.
 
 <!-- mmac-record: {"id": "2609.05927", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-05927"></a>`2026.09` **[GIF: Agentic Generation of Interactive and Functional Object Compositions for Robot Learning](https://arxiv.org/abs/2609.05927)** [[Project page]](https://fufumeichi.github.io/gif-project-page/) [[Paper]](https://fufumeichi.github.io/gif-project-page/assets/paper.pdf)
+- <a id="paper-2609-05927"></a>`2026.09` **[GIF: Agentic Generation of Interactive and Functional Object Compositions for Robot Learning](https://arxiv.org/abs/2609.05927)** [[Project page]](https://fufumeichi.github.io/gif-project-page/)
   > Generated object combinations are refined for functional contact relationships.
 
 <!-- mmac-record: {"id": "2609.37089", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-37089"></a>`2026.09` **[Real2Gym: Building Gyms from Videos, Bringing Skills to Robots](https://arxiv.org/abs/2609.37089)** [[Paper]](https://arxiv.org/html/2609.37089v1) [[Project page]](https://real2gym.github.io/)
+- <a id="paper-2609-37089"></a>`2026.09` **[Real2Gym: Building Gyms from Videos, Bringing Skills to Robots](https://arxiv.org/abs/2609.37089)** [[Project page]](https://real2gym.github.io/)
   > Human or robot demonstrations become visually aligned, executable task environments.
 
 <!-- mmac-record: {"id": "2609.05594", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-05594"></a>`2026.09` **[SceneMosaic: Efficient and Diverse Simulation-Ready Scene Generation via Hybrid Agentic Layout Evolution](https://arxiv.org/abs/2609.05594)** [[Paper]](https://arxiv.org/html/2609.05594) [[Code]](https://github.com/rxjfighting/SceneMosaic) [[Project page]](https://rxjfighting.github.io/SceneMosaic/)
+- <a id="paper-2609-05594"></a>`2026.09` **[SceneMosaic: Efficient and Diverse Simulation-Ready Scene Generation via Hybrid Agentic Layout Evolution](https://arxiv.org/abs/2609.05594)** [[Code]](https://github.com/rxjfighting/SceneMosaic) [[Project page]](https://rxjfighting.github.io/SceneMosaic/)
   > Local layout units make simulation-ready scene variation more efficient.
 
 <!-- mmac-record: {"id": "2609.36593", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-36593"></a>`2026.09` **[Text2Sim: Agentic Physics-Based Simulation Generation with Distilled Expertise](https://arxiv.org/abs/2609.36593)** [[Paper]](https://arxiv.org/html/2609.36593v2)
+- <a id="paper-2609-36593"></a>`2026.09` **[Text2Sim: Agentic Physics-Based Simulation Generation with Distilled Expertise](https://arxiv.org/abs/2609.36593)**
   > A planner delegates simulation modules and directs repairs using execution evidence.
 
 <!-- mmac-record: {"id": "2609.33208", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2609-33208"></a>`2026.09` **[WorldAgent: Verification-Guided Agentic Physical World Construction](https://arxiv.org/abs/2609.33208)** [[Paper]](https://arxiv.org/html/2609.33208v1)
+- <a id="paper-2609-33208"></a>`2026.09` **[WorldAgent: Verification-Guided Agentic Physical World Construction](https://arxiv.org/abs/2609.33208)**
   > World specifications make physical scene construction and revision addressable by object and time.
 
 <!-- mmac-record: {"id": "2608.18840", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2608-18840"></a>`2026.08` **[Beyond Placement and Articulation: Usage-Driven Code Scenes for Embodied Interaction](https://arxiv.org/abs/2608.18840)** [[Paper]](https://arxiv.org/html/2608.18840)
+- <a id="paper-2608-18840"></a>`2026.08` **[Beyond Placement and Articulation: Usage-Driven Code Scenes for Embodied Interaction](https://arxiv.org/abs/2608.18840)**
   > Usage requirements become articulated rooms with executable interaction rules.
 
 <!-- mmac-record: {"id": "2608.27549", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2608-27549"></a>`2026.08` **[Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning](https://arxiv.org/abs/2608.27549)** [[Paper]](https://arxiv.org/html/2608.27549v2) [[Project page]](https://mirros-lab.github.io/code-as-world)
+- <a id="paper-2608-27549"></a>`2026.08` **[Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning](https://arxiv.org/abs/2608.27549)** [[Project page]](https://mirros-lab.github.io/code-as-world)
   > Executable world hypotheses connect multimodal evidence to inspectable representations.
 
 <!-- mmac-record: {"id": "2610.01863", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-01863"></a>`2026.08` **[LiteReality-Agent: An Agentic System for Interactable 3D Indoor Scene Reconstruction](https://arxiv.org/abs/2610.01863)** [[Paper]](https://arxiv.org/html/2610.01863v1) [[Project page]](https://litereality.github.io/agent/)
+- <a id="paper-2610-01863"></a>`2026.08` **[LiteReality-Agent: An Agentic System for Interactable 3D Indoor Scene Reconstruction](https://arxiv.org/abs/2610.01863)** [[Project page]](https://litereality.github.io/agent/)
   > An editable room program unifies scan geometry, generated assets and reconstruction feedback.
 
 <!-- mmac-record: {"id": "2608.30821", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2608-30821"></a>`2026.08` **[Lucida: Parse, Generate, and Place for Composable Real-to-Sim Scene Modeling](https://arxiv.org/abs/2608.30821)** [[Paper]](https://arxiv.org/html/2608.30821v1) [[Project page]](https://lucida-r2s.github.io/)
+- <a id="paper-2608-30821"></a>`2026.08` **[Lucida: Parse, Generate, and Place for Composable Real-to-Sim Scene Modeling](https://arxiv.org/abs/2608.30821)** [[Project page]](https://lucida-r2s.github.io/)
   > A visual editing agent aligns generated assets to measured scene evidence.
 
 <!-- mmac-record: {"id": "2607.19190", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2607-19190"></a>`2026.07` **[Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents](https://arxiv.org/abs/2607.19190)** [[Project page]](https://agentic-real2sim.github.io/) [[Paper]](https://arxiv.org/html/2607.19190v5)
+- <a id="paper-2607-19190"></a>`2026.07` **[Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents](https://arxiv.org/abs/2607.19190)** [[Project page]](https://agentic-real2sim.github.io/)
   > Robot episodes are reconstructed and refined through recorded-trajectory replay.
 
 <!-- mmac-record: {"id": "2607.07459", "scope": "Resource", "primary": "3.2", "stage": 3, "type": "resource"} -->
 
-- <a id="paper-2607-07459"></a>`2026.07` **[EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI](https://arxiv.org/abs/2607.07459)** [[Paper]](https://arxiv.org/html/2607.07459v3) [[Project page]](https://horizonrobotics.github.io/EmbodiedGen/)
+- <a id="paper-2607-07459"></a>`2026.07` **[EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI](https://arxiv.org/abs/2607.07459)** [[Project page]](https://horizonrobotics.github.io/EmbodiedGen/)
   > Physical assets, relational placement and stateful editing form a reusable world-building pipeline.
 
 <!-- mmac-record: {"id": "2607.21522", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2607-21522"></a>`2026.07` **[GS-Agent: Creating 4D Physical Worlds With Generative Simulation](https://arxiv.org/abs/2607.21522)** [[Paper]](https://arxiv.org/html/2607.21522) [[Project page]](https://umass-embodied-agi.github.io/gs-agent/)
+- <a id="paper-2607-21522"></a>`2026.07` **[GS-Agent: Creating 4D Physical Worlds With Generative Simulation](https://arxiv.org/abs/2607.21522)** [[Project page]](https://umass-embodied-agi.github.io/gs-agent/)
   > Generative simulation connects scene language to editable physical programs.
 
 <!-- mmac-record: {"id": "2607.01766", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2607-01766"></a>`2026.07` **[SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation](https://arxiv.org/abs/2607.01766)** [[Paper]](https://arxiv.org/html/2607.01766v1) [[Project page]](https://dynsimworlds.github.io/)
+- <a id="paper-2607-01766"></a>`2026.07` **[SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation](https://arxiv.org/abs/2607.01766)** [[Project page]](https://dynsimworlds.github.io/)
   > A staged coding system builds editable scenes that include animated and simulated processes.
 
 <!-- mmac-record: {"id": "2607.13586", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
@@ -2624,52 +2624,52 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2606.14168", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2606-14168"></a>`2026.06` **[MUSE: Agentic 3D Scene Authoring via Memory-Grounded Incremental Requirement Satisfaction](https://arxiv.org/abs/2606.14168)** [[Paper]](https://arxiv.org/html/2606.14168) [[Project page]](https://xujay111.github.io/muse_githubio/)
+- <a id="paper-2606-14168"></a>`2026.06` **[MUSE: Agentic 3D Scene Authoring via Memory-Grounded Incremental Requirement Satisfaction](https://arxiv.org/abs/2606.14168)** [[Project page]](https://xujay111.github.io/muse_githubio/)
   > An architect–builder–inspector workflow incrementally realizes editable indoor requirements.
 
 <!-- mmac-record: {"id": "2606.04226", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2606-04226"></a>`2026.06` **[PerceptTwin: Semantic Scene Reconstruction for Iterative LLM Planning and Verification](https://arxiv.org/abs/2606.04226)** [[Paper]](https://arxiv.org/html/2606.04226v1) [[Project page]](https://percept-twin.github.io/)
+- <a id="paper-2606-04226"></a>`2026.06` **[PerceptTwin: Semantic Scene Reconstruction for Iterative LLM Planning and Verification](https://arxiv.org/abs/2606.04226)** [[Project page]](https://percept-twin.github.io/)
   > An object-centric reconstruction adds executable affordances for checking robot plans.
 
 <!-- mmac-record: {"id": "2606.28276", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2606-28276"></a>`2026.06` **[SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation](https://arxiv.org/abs/2606.28276)** [[Paper]](https://arxiv.org/html/2606.28276v4) [[Code]](https://github.com/NVlabs/SimFoundry) [[Project page]](https://research.nvidia.com/labs/gear/simfoundry/)
+- <a id="paper-2606-28276"></a>`2026.06` **[SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation](https://arxiv.org/abs/2606.28276)** [[Code]](https://github.com/NVlabs/SimFoundry) [[Project page]](https://research.nvidia.com/labs/gear/simfoundry/)
   > Real-video reconstruction expands into task-conditioned digital cousins for policy evaluation and training.
 
 <!-- mmac-record: {"id": "2605.15187", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2605-15187"></a>`2026.05` **[Articraft: An Agentic System for Scalable Articulated 3D Asset Generation](https://arxiv.org/abs/2605.15187)** [[Project page]](https://articraft3d.github.io/) [[Paper]](https://arxiv.org/html/2605.15187v1)
+- <a id="paper-2605-15187"></a>`2026.05` **[Articraft: An Agentic System for Scalable Articulated 3D Asset Generation](https://arxiv.org/abs/2605.15187)** [[Project page]](https://articraft3d.github.io/)
   > A single editable part program is tested with geometric and articulation probes before export.
 
 <!-- mmac-record: {"id": "2605.14398", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2605-14398"></a>`2026.05` **[ChronoAgentic: A Code-based Multi-Agent World Simulator for Physically Grounded Simulation Construction](https://arxiv.org/abs/2605.14398)** [[Paper]](https://arxiv.org/html/2605.14398v3) [[Project page]](https://uwsbel.github.io/chrono-agentic-website/)
+- <a id="paper-2605-14398"></a>`2026.05` **[ChronoAgentic: A Code-based Multi-Agent World Simulator for Physically Grounded Simulation Construction](https://arxiv.org/abs/2605.14398)** [[Project page]](https://uwsbel.github.io/chrono-agentic-website/)
   > A coding agent uses visual and numerical execution reports to build Chrono simulations.
 
 <!-- mmac-record: {"id": "2605.09586", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2605-09586"></a>`2026.05` **[DeformMaster: An Interactive Physics-Neural World Model for Deformable Objects from Videos](https://arxiv.org/abs/2605.09586)** [[Paper]](https://arxiv.org/html/2605.09586v2) [[Project page]](https://can-lee.github.io/deformmaster-web/)
+- <a id="paper-2605-09586"></a>`2026.05` **[DeformMaster: An Interactive Physics-Neural World Model for Deformable Objects from Videos](https://arxiv.org/abs/2605.09586)** [[Project page]](https://can-lee.github.io/deformmaster-web/)
   > A differentiable deformable model recovers material behavior and contact from video.
 
 <!-- mmac-record: {"id": "2605.21572", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2605-21572"></a>`2026.05` **[PhysX-Omni: Unified Simulation-Ready Physical 3D Generation for Rigid, Deformable, and Articulated Objects](https://arxiv.org/abs/2605.21572)** [[Paper]](https://arxiv.org/html/2605.21572v1) [[Project page]](https://physx-omni.github.io/)
+- <a id="paper-2605-21572"></a>`2026.05` **[PhysX-Omni: Unified Simulation-Ready Physical 3D Generation for Rigid, Deformable, and Articulated Objects](https://arxiv.org/abs/2605.21572)** [[Project page]](https://physx-omni.github.io/)
   > A multimodal asset model predicts geometry together with articulated and physical structure.
 
 <!-- mmac-record: {"id": "2605.19587", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2605-19587"></a>`2026.05` **[SceneCode: Executable World Programs for Editable Indoor Scenes with Articulated Objects](https://arxiv.org/abs/2605.19587)** [[Paper]](https://arxiv.org/html/2605.19587v1) [[Code]](https://github.com/wangpuyi/SceneCode) [[Project page]](https://scene-code.github.io/)
+- <a id="paper-2605-19587"></a>`2026.05` **[SceneCode: Executable World Programs for Editable Indoor Scenes with Articulated Objects](https://arxiv.org/abs/2605.19587)** [[Code]](https://github.com/wangpuyi/SceneCode) [[Project page]](https://scene-code.github.io/)
   > Room planning and part-level programs produce editable scenes with physical asset metadata.
 
 <!-- mmac-record: {"id": "2605.09423", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2605-09423"></a>`2026.05` **[SimWorld Studio: Automatic Environment Generation with Evolving Coding Agent for Embodied Agent Learning](https://arxiv.org/abs/2605.09423)** [[Paper]](https://arxiv.org/html/2605.09423v2) [[Code]](https://github.com/SimWorld-AI/SimWorld-Studio)
+- <a id="paper-2605-09423"></a>`2026.05` **[SimWorld Studio: Automatic Environment Generation with Evolving Coding Agent for Embodied Agent Learning](https://arxiv.org/abs/2605.09423)** [[Code]](https://github.com/SimWorld-AI/SimWorld-Studio)
   > Environment construction and policy-learning feedback jointly shape simulated task curricula.
 
 <!-- mmac-record: {"id": "2604.10992", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2604-10992"></a>`2026.04` **[ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation](https://arxiv.org/abs/2604.10992)** [[Paper]](https://arxiv.org/html/2604.10992v2) [[Project page]](https://shui-yuan.github.io/articad/)
+- <a id="paper-2604-10992"></a>`2026.04` **[ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation](https://arxiv.org/abs/2604.10992)** [[Project page]](https://shui-yuan.github.io/articad/)
   > Part-local CAD programs and explicit connectors support repairable articulated assembly.
 
 <!-- mmac-record: {"id": "2602.12311", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
@@ -2679,72 +2679,72 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2602.10116", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2602-10116"></a>`2026.02` **[SAGE: Scalable Agentic 3D Scene Generation for Embodied AI](https://arxiv.org/abs/2602.10116)** [[Paper]](https://arxiv.org/html/2602.10116v2) [[Project page]](https://research.nvidia.com/labs/dir/sage/)
+- <a id="paper-2602-10116"></a>`2026.02` **[SAGE: Scalable Agentic 3D Scene Generation for Embodied AI](https://arxiv.org/abs/2602.10116)** [[Project page]](https://research.nvidia.com/labs/dir/sage/)
   > Visual and physical critics guide the generation of diverse robot-learning scenes.
 
 <!-- mmac-record: {"id": "2602.09153", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2602-09153"></a>`2026.02` **[SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes](https://arxiv.org/abs/2602.09153)** [[Paper]](https://arxiv.org/html/2602.09153v2) [[Project page]](https://scenesmith.github.io/)
+- <a id="paper-2602-09153"></a>`2026.02` **[SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes](https://arxiv.org/abs/2602.09153)** [[Project page]](https://scenesmith.github.io/)
   > Hierarchical agents generate physical scenes from architecture down to small objects.
 
 <!-- mmac-record: {"id": "2509.20414", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2509-20414"></a>`2025.09` **[SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent](https://arxiv.org/abs/2509.20414)** [[Paper]](https://arxiv.org/html/2509.20414v2) [[Code]](https://github.com/Scene-Weaver/SceneWeaver) [[Paper]](https://proceedings.neurips.cc/paper_files/paper/2025/hash/cd2b3c429c8a2ca57656970e010b4b60-Abstract-Conference.html) [[Project page]](https://scene-weaver.github.io/)
+- <a id="paper-2509-20414"></a>`2025.09` **[SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent](https://arxiv.org/abs/2509.20414)** [[Code]](https://github.com/Scene-Weaver/SceneWeaver) [[Project page]](https://scene-weaver.github.io/)
   > Persistent scene state supports iterative generation, completion and local editing.
 
 <!-- mmac-record: {"id": "2411.01775", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2411-01775"></a>`2024.11` **[Eurekaverse: Environment Curriculum Generation via Large Language Models](https://arxiv.org/abs/2411.01775)** [[Paper]](https://arxiv.org/html/2411.01775v1) [[Project page]](https://eureka-research.github.io/eurekaverse/)
+- <a id="paper-2411-01775"></a>`2024.11` **[Eurekaverse: Environment Curriculum Generation via Large Language Models](https://arxiv.org/abs/2411.01775)** [[Project page]](https://eureka-research.github.io/eurekaverse/)
   > Policy-learning outcomes drive an expanding curriculum of procedurally coded terrains.
 
 <!-- mmac-record: {"id": "2410.13882", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2410-13882"></a>`2024.10` **[Articulate-Anything: Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model](https://arxiv.org/abs/2410.13882)** [[Project page]](https://articulate-anything.github.io/) [[Paper]](https://arxiv.org/html/2410.13882v4) [[Code]](https://github.com/vlongle/articulate-anything)
+- <a id="paper-2410-13882"></a>`2024.10` **[Articulate-Anything: Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model](https://arxiv.org/abs/2410.13882)** [[Project page]](https://articulate-anything.github.io/) [[Code]](https://github.com/vlongle/articulate-anything)
   > Image and motion feedback guide code that reconstructs articulated objects.
 
 <!-- mmac-record: {"id": "2410.15536", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2410-15536"></a>`2024.10` **[GRS: Generating Robotic Simulation Tasks from Real-World Images](https://arxiv.org/abs/2410.15536)** [[Paper]](https://openaccess.thecvf.com/content/CVPR2025W/CV2/papers/Zook_GRS_Generating_Robotic_Simulation_Tasks_from_Real-World_Images_CVPRW_2025_paper.pdf)
+- <a id="paper-2410-15536"></a>`2024.10` **[GRS: Generating Robotic Simulation Tasks from Real-World Images](https://arxiv.org/abs/2410.15536)**
   > Real RGB-D scenes seed executable robot tasks whose code and tests are iteratively repaired.
 
 <!-- mmac-record: {"id": "2409.17652", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2409-17652"></a>`2024.09` **[FactorSim: Generative Simulation via Factorized Representation](https://arxiv.org/abs/2409.17652)** [[Paper]](https://arxiv.org/html/2409.17652v2) [[Project page]](https://cs.stanford.edu/~sunfanyun/factorsim/)
+- <a id="paper-2409-17652"></a>`2024.09` **[FactorSim: Generative Simulation via Factorized Representation](https://arxiv.org/abs/2409.17652)** [[Project page]](https://cs.stanford.edu/~sunfanyun/factorsim/)
   > Factored state and transition models help generate task environments with limited context.
 
 <!-- mmac-record: {"id": "2409.02920", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2409-02920"></a>`2024.09` **[RoboTwin: Dual-Arm Robot Benchmark with Generative Digital Twins](https://arxiv.org/abs/2409.02920)** [[Paper]](https://arxiv.org/html/2409.02920v3) [[Project page]](https://robotwin-benchmark.github.io/early-version/)
+- <a id="paper-2409-02920"></a>`2024.09` **[RoboTwin: Dual-Arm Robot Benchmark with Generative Digital Twins](https://arxiv.org/abs/2409.02920)** [[Project page]](https://robotwin-benchmark.github.io/early-version/)
   > Reconstructed assets and language-generated motion programs produce bimanual demonstrations.
 
 <!-- mmac-record: {"id": "2406.08474", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2406-08474"></a>`2024.06` **[Real2Code: Reconstruct Articulated Objects via Code Generation](https://arxiv.org/abs/2406.08474)** [[Paper]](https://arxiv.org/html/2406.08474v2) [[Project page]](https://real2code.github.io/)
+- <a id="paper-2406-08474"></a>`2024.06` **[Real2Code: Reconstruct Articulated Objects via Code Generation](https://arxiv.org/abs/2406.08474)** [[Project page]](https://real2code.github.io/)
   > Multiview reconstruction and a specialized code model recover articulated object descriptions.
 
 <!-- mmac-record: {"id": "2405.15568", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2405-15568"></a>`2024.05` **[OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code](https://arxiv.org/abs/2405.15568)** [[Paper]](https://arxiv.org/html/2405.15568v3) [[Project page]](https://dub.sh/omniepic)
+- <a id="paper-2405-15568"></a>`2024.05` **[OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code](https://arxiv.org/abs/2405.15568)** [[Project page]](https://dub.sh/omniepic)
   > An archive of task outcomes supports open-ended generation of executable learning environments.
 
 <!-- mmac-record: {"id": "2312.09067", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2312-09067"></a>`2023.12` **[Holodeck: Language Guided Generation of 3D Embodied AI Environments](https://arxiv.org/abs/2312.09067)** [[Paper]](https://arxiv.org/html/2312.09067v2) [[Code]](https://github.com/allenai/Holodeck) [[Project page]](https://yueyang1996.github.io/holodeck/)
+- <a id="paper-2312-09067"></a>`2023.12` **[Holodeck: Language Guided Generation of 3D Embodied AI Environments](https://arxiv.org/abs/2312.09067)** [[Code]](https://github.com/allenai/Holodeck) [[Project page]](https://yueyang1996.github.io/holodeck/)
   > Language-guided spatial constraints turn retrieved assets into interactive indoor environments.
 
 <!-- mmac-record: {"id": "2311.01455", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2311-01455"></a>`2023.11` **[RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation](https://arxiv.org/abs/2311.01455)** [[Paper]](https://arxiv.org/html/2311.01455v3) [[Project page]](https://robogen-ai.github.io/)
+- <a id="paper-2311-01455"></a>`2023.11` **[RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation](https://arxiv.org/abs/2311.01455)** [[Project page]](https://robogen-ai.github.io/)
   > Task, environment and supervision generation automate diverse simulated robot-skill learning.
 
 <!-- mmac-record: {"id": "2310.18308", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2310-18308"></a>`2023.10` **[Gen2Sim: Scaling up Robot Learning in Simulation with Generative Models](https://arxiv.org/abs/2310.18308)** [[Paper]](https://arxiv.org/html/2310.18308v1) [[Project page]](https://gen2sim.github.io/)
+- <a id="paper-2310-18308"></a>`2023.10` **[Gen2Sim: Scaling up Robot Learning in Simulation with Generative Models](https://arxiv.org/abs/2310.18308)** [[Project page]](https://gen2sim.github.io/)
   > Image-derived physical assets and generated rewards support simulated manipulation learning.
 
 <!-- mmac-record: {"id": "2310.01361", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2310-01361"></a>`2023.10` **[GenSim: Generating Robotic Simulation Tasks via Large Language Models](https://arxiv.org/abs/2310.01361)** [[Paper]](https://arxiv.org/html/2310.01361v2) [[Code]](https://github.com/liruiw/GenSim) [[Project page]](https://liruiw.github.io/gensim)
+- <a id="paper-2310-01361"></a>`2023.10` **[GenSim: Generating Robotic Simulation Tasks via Large Language Models](https://arxiv.org/abs/2310.01361)** [[Code]](https://github.com/liruiw/GenSim) [[Project page]](https://liruiw.github.io/gensim)
   > Executable task generation scales demonstration collection and downstream robot-policy training.
 
 <!-- mmac-record: {"id": "res:aha-3d", "scope": "Resource", "primary": "3.2", "stage": 3, "type": "resource"} -->
@@ -2768,7 +2768,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2611.05802", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2611-05802"></a>`2026.11` **[GREP: Grounding Generated Room Evaluation in Principles](https://arxiv.org/abs/2611.05802)** [[Paper]](https://arxiv.org/html/2611.05802)
+- <a id="paper-2611-05802"></a>`2026.11` **[GREP: Grounding Generated Room Evaluation in Principles](https://arxiv.org/abs/2611.05802)**
   > An evaluation agent diagnoses generated rooms using scene-specific principles and active inspection.
 
 <!-- mmac-record: {"id": "2611.02928", "scope": "Core", "primary": "3.3", "stage": 3, "type": "paper"} -->
@@ -2788,92 +2788,92 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2610.15166", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-15166"></a>`2026.10` **[ExeWorldBench: Benchmarking Code-Based Executable 3D World Modeling](https://arxiv.org/abs/2610.15166)** [[Paper]](https://arxiv.org/html/2610.15166) [[Project page]](https://helen1p.github.io/ExeWorldBench/) [[Dataset]](https://huggingface.co/datasets/HelenPeng/ExeWorldBench)
+- <a id="paper-2610-15166"></a>`2026.10` **[ExeWorldBench: Benchmarking Code-Based Executable 3D World Modeling](https://arxiv.org/abs/2610.15166)** [[Project page]](https://helen1p.github.io/ExeWorldBench/) [[Dataset]](https://huggingface.co/datasets/HelenPeng/ExeWorldBench)
   > Evaluates executable worlds spanning isolated mechanisms, coupled systems and goal-driven design.
 
 <!-- mmac-record: {"id": "2610.17288", "scope": "Core", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-17288"></a>`2026.10` **[PhysCodeGym: Benchmarking Coding Agents for Physically Verifiable 4D Reconstruction](https://arxiv.org/abs/2610.17288)** [[Paper]](https://arxiv.org/html/2610.17288) [[Code]](https://github.com/ShaoShuai0605/PhysCodeGym)
+- <a id="paper-2610-17288"></a>`2026.10` **[PhysCodeGym: Benchmarking Coding Agents for Physically Verifiable 4D Reconstruction](https://arxiv.org/abs/2610.17288)** [[Code]](https://github.com/ShaoShuai0605/PhysCodeGym)
   > Tests coding agents that reconstruct physical video phenomena as executable Blender scenes.
 
 <!-- mmac-record: {"id": "2610.37326", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-37326"></a>`2026.10` **[ScIntBench: Physical Interaction Plausibility in 3D Scene Generation](https://arxiv.org/abs/2610.37326)** [[Paper]](https://arxiv.org/html/2610.37326) [[Project page]](https://scintbench.github.io/)
+- <a id="paper-2610-37326"></a>`2026.10` **[ScIntBench: Physical Interaction Plausibility in 3D Scene Generation](https://arxiv.org/abs/2610.37326)** [[Project page]](https://scintbench.github.io/)
   > Tests whether generated indoor scenes support prescribed physical interactions.
 
 <!-- mmac-record: {"id": "2610.04432", "scope": "Core", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-04432"></a>`2026.10` **[Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos](https://arxiv.org/abs/2610.04432)** [[Project page]](https://aetherlabsai.github.io/Video2World) [[Full text]](https://arxiv.org/html/2610.04432) [[Code]](https://github.com/AetherLabsAI/Video2World) [[Documentation]](https://github.com/AetherLabsAI/Video2World/blob/main/docs/benchmark.md) [[Dataset]](https://huggingface.co/datasets/AetherLabs-AI/Video2World) [[Cross-execution diagnostics]](https://arxiv.org/html/2610.04432#S10.SS1) [[Data sources and video selection]](https://arxiv.org/html/2610.04432#S8.SS1)
+- <a id="paper-2610-04432"></a>`2026.10` **[Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos](https://arxiv.org/abs/2610.04432)** [[Project page]](https://aetherlabsai.github.io/Video2World) [[Code]](https://github.com/AetherLabsAI/Video2World) [[Documentation]](https://github.com/AetherLabsAI/Video2World/blob/main/docs/benchmark.md) [[Dataset]](https://huggingface.co/datasets/AetherLabs-AI/Video2World) [[Cross-execution diagnostics]](https://arxiv.org/html/2610.04432#S10.SS1) [[Data sources and video selection]](https://arxiv.org/html/2610.04432#S8.SS1)
   > Evaluates joint reconstruction of simulated environments and robot behavior from embodied videos.
 
 <!-- mmac-record: {"id": "2610.08720", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-08720"></a>`2026.10` **[WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?](https://arxiv.org/abs/2610.08720)** [[Paper]](https://arxiv.org/html/2610.08720) [[Code]](https://github.com/sirujiang/WorldSolver)
+- <a id="paper-2610-08720"></a>`2026.10` **[WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?](https://arxiv.org/abs/2610.08720)** [[Code]](https://github.com/sirujiang/WorldSolver)
   > Asks language-model agents to implement the dynamics solver within a prepared simulation framework.
 
 <!-- mmac-record: {"id": "2610.17521", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2610-17521"></a>`2026.10` **[YUBI-Real2Sim: 3DGS Scene Verification for Reliable Policy Evaluation](https://arxiv.org/abs/2610.17521)** [[Paper]](https://arxiv.org/html/2610.17521) [[Code]](https://github.com/airoa-org/yubi-real2sim) [[Dataset]](https://huggingface.co/datasets/airoa-org/yubi-real2sim-assets) [[Project page]](https://research.airoa.io/publications/yubi-real2sim/)
+- <a id="paper-2610-17521"></a>`2026.10` **[YUBI-Real2Sim: 3DGS Scene Verification for Reliable Policy Evaluation](https://arxiv.org/abs/2610.17521)** [[Code]](https://github.com/airoa-org/yubi-real2sim) [[Dataset]](https://huggingface.co/datasets/airoa-org/yubi-real2sim-assets) [[Project page]](https://research.airoa.io/publications/yubi-real2sim/)
   > Studies whether reconstructed 3DGS scenes preserve real robot policy rankings.
 
 <!-- mmac-record: {"id": "2606.01538", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2606-01538"></a>`2026.06` **[MPMWorlds: Material-Point-Method Simulations for Inferring and Extrapolating Physical Dynamics](https://arxiv.org/abs/2606.01538)** [[Paper]](https://arxiv.org/html/2606.01538)
+- <a id="paper-2606-01538"></a>`2026.06` **[MPMWorlds: Material-Point-Method Simulations for Inferring and Extrapolating Physical Dynamics](https://arxiv.org/abs/2606.01538)**
   > Compares program-based physical inference with video prediction in synthetic 2D material-point worlds.
 
 <!-- mmac-record: {"id": "2606.01869", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2606-01869"></a>`2026.06` **[WorldCoder-Bench: Benchmarking Physically Grounded 3D World Synthesis](https://arxiv.org/abs/2606.01869)** [[Paper]](https://arxiv.org/html/2606.01869)
+- <a id="paper-2606-01869"></a>`2026.06` **[WorldCoder-Bench: Benchmarking Physically Grounded 3D World Synthesis](https://arxiv.org/abs/2606.01869)**
   > Tests whether generated interactive 3D programs satisfy executable world contracts.
 
 <!-- mmac-record: {"id": "2605.20576", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2605-20576"></a>`2026.05` **[Δynamics: Language-Based Representation for Inferring Rigid-Body Dynamics From Videos](https://arxiv.org/abs/2605.20576)** [[Paper]](https://arxiv.org/html/2605.20576)
+- <a id="paper-2605-20576"></a>`2026.05` **[Δynamics: Language-Based Representation for Inferring Rigid-Body Dynamics From Videos](https://arxiv.org/abs/2605.20576)**
   > Represents video-inferred rigid-body systems as structured simulator configurations.
 
 <!-- mmac-record: {"id": "2604.23580", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2604-23580"></a>`2026.04` **[PhysCodeBench: Benchmarking Physics-Aware Symbolic Simulation of 3D Scenes via Self-Corrective Multi-Agent Refinement](https://arxiv.org/abs/2604.23580)** [[Paper]](https://arxiv.org/html/2604.23580)
+- <a id="paper-2604-23580"></a>`2026.04` **[PhysCodeBench: Benchmarking Physics-Aware Symbolic Simulation of 3D Scenes via Self-Corrective Multi-Agent Refinement](https://arxiv.org/abs/2604.23580)**
   > Evaluates simulation code for described physical phenomena and studies targeted multi-agent correction.
 
 <!-- mmac-record: {"id": "2604.13035", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2604-13035"></a>`2026.04` **[SceneCritic: A Symbolic Evaluator for 3D Indoor Scene Synthesis](https://arxiv.org/abs/2604.13035)** [[Paper]](https://arxiv.org/html/2604.13035)
+- <a id="paper-2604-13035"></a>`2026.04` **[SceneCritic: A Symbolic Evaluator for 3D Indoor Scene Synthesis](https://arxiv.org/abs/2604.13035)**
   > Provides explainable symbolic assessment of indoor layouts and feedback for revision.
 
 <!-- mmac-record: {"id": "2603.16432", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2603-16432"></a>`2026.03` **[IRIS: A Real-World Benchmark for Inverse Recovery and Identification of Physical Dynamic Systems from Monocular Video](https://arxiv.org/abs/2603.16432)** [[Paper]](https://arxiv.org/html/2603.16432)
+- <a id="paper-2603-16432"></a>`2026.03` **[IRIS: A Real-World Benchmark for Inverse Recovery and Identification of Physical Dynamic Systems from Monocular Video](https://arxiv.org/abs/2603.16432)**
   > Benchmarks inverse identification of physical systems using real videos and independent measurements.
 
 <!-- mmac-record: {"id": "2603.29798", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2603-29798"></a>`2026.03` **[SceneTeract: Probing and Improving Agent-Aware Activity Reasoning in 3D Indoor Scenes](https://arxiv.org/abs/2603.29798)** [[Paper]](https://arxiv.org/html/2603.29798)
+- <a id="paper-2603-29798"></a>`2026.03` **[SceneTeract: Probing and Improving Agent-Aware Activity Reasoning in 3D Indoor Scenes](https://arxiv.org/abs/2603.29798)**
   > Tests whether a scene can support an activity for a specified body and uses verification feedback to improve activity reasoning.
 
 <!-- mmac-record: {"id": "2602.10840", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2602-10840"></a>`2026.02` **[Training and Benchmarking Code Generation for Physics-Inspired Animations](https://arxiv.org/abs/2602.10840)** [[Paper]](https://arxiv.org/html/2602.10840)
+- <a id="paper-2602-10840"></a>`2026.02` **[Training and Benchmarking Code Generation for Physics-Inspired Animations](https://arxiv.org/abs/2602.10840)**
   > Trains and evaluates language models that express physical concepts through executable animations.
 
 <!-- mmac-record: {"id": "2602.13294", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2602-13294"></a>`2026.02` **[VisPhyWorld: Probing Physical Reasoning via Code-Driven Video Reconstruction](https://arxiv.org/abs/2602.13294)** [[Paper]](https://arxiv.org/html/2602.13294)
+- <a id="paper-2602-13294"></a>`2026.02` **[VisPhyWorld: Probing Physical Reasoning via Code-Driven Video Reconstruction](https://arxiv.org/abs/2602.13294)**
   > Probes physical reasoning by reconstructing controlled videos as simulator programs.
 
 <!-- mmac-record: {"id": "2511.03001", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2511-03001"></a>`2025.11` **[Apples on the Table? Evaluating Text-Guided 3D Scene Synthesis via Fine-Grained Constraint Verification](https://arxiv.org/abs/2511.03001)** [[Paper]](https://arxiv.org/html/2511.03001)
+- <a id="paper-2511-03001"></a>`2025.11` **[Apples on the Table? Evaluating Text-Guided 3D Scene Synthesis via Fine-Grained Constraint Verification](https://arxiv.org/abs/2511.03001)**
   > Evaluates text-guided scenes by verifying fine-grained requirements individually.
 
 <!-- mmac-record: {"id": "2503.14756", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2503-14756"></a>`2025.03` **[SceneEval: Evaluating Semantic Coherence in Text-Conditioned 3D Indoor Scene Synthesis](https://arxiv.org/abs/2503.14756)** [[Paper]](https://arxiv.org/html/2503.14756)
+- <a id="paper-2503-14756"></a>`2025.03` **[SceneEval: Evaluating Semantic Coherence in Text-Conditioned 3D Indoor Scene Synthesis](https://arxiv.org/abs/2503.14756)**
   > Provides fine-grained semantic and static checks for text-conditioned indoor scene generation.
 
 <!-- mmac-record: {"id": "2405.05941", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2405-05941"></a>`2024.05` **[Evaluating Real-World Robot Manipulation Policies in Simulation](https://arxiv.org/abs/2405.05941)** [[Paper]](https://arxiv.org/html/2405.05941)
+- <a id="paper-2405-05941"></a>`2024.05` **[Evaluating Real-World Robot Manipulation Policies in Simulation](https://arxiv.org/abs/2405.05941)**
   > Studies whether simulation can predict real-world manipulation policy performance.
 
 <!-- mmac-record: {"id": "real2sim-benchmark", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
@@ -3395,7 +3395,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2503.23875", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2503-23875"></a>`2025.03` **[GenSwarm: Scalable Multi-Robot Code-Policy Generation and Deployment via Language Models](https://arxiv.org/abs/2503.23875)** [[Code]](https://github.com/WindyLab/GenSwarm) [[Paper]](https://www.nature.com/articles/s44182-025-00065-w)
+- <a id="paper-2503-23875"></a>`2025.03` **[GenSwarm: Scalable Multi-Robot Code-Policy Generation and Deployment via Language Models](https://arxiv.org/abs/2503.23875)** [[Code]](https://github.com/WindyLab/GenSwarm)
   > Generates and deploys multi-robot code policies.
 
 <!-- mmac-record: {"id": "2403.07832", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
@@ -3467,22 +3467,22 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 <!-- mmac-record: {"id": "2509.24978", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2509-24978"></a>`2025.09` **[Agentic Exploration of Physics Models](https://arxiv.org/abs/2509.24978)** [[Code]](https://github.com/MaxNaeg/SciExplorer) [[Paper]](https://journals.aps.org/prx/abstract/10.1103/xnqc-q6nt)
+- <a id="paper-2509-24978"></a>`2025.09` **[Agentic Exploration of Physics Models](https://arxiv.org/abs/2509.24978)** [[Code]](https://github.com/MaxNaeg/SciExplorer)
   > Uses programmed numerical experiments to study physics.
 
 <!-- mmac-record: {"id": "2509.25651", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2509-25651"></a>`2025.09` **[AutoLabs: cognitive multi-agent systems with self-correction for autonomous chemical experimentation](https://arxiv.org/abs/2509.25651)** [[Paper]](https://doi.org/10.1038/s41598-026-45593-z) [[Code]](https://github.com/pnnl/autolabs)
+- <a id="paper-2509-25651"></a>`2025.09` **[AutoLabs: cognitive multi-agent systems with self-correction for autonomous chemical experimentation](https://arxiv.org/abs/2509.25651)** [[Code]](https://github.com/pnnl/autolabs)
   > Produces checked, hardware-ready laboratory protocols.
 
 <!-- mmac-record: {"id": "chemagents", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-chemagents"></a>`2024.07` **[A Multiagent-Driven Robotic AI Chemist Enabling Autonomous Chemical Research On Demand](https://doi.org/10.1021/jacs.4c17738)** [[Paper]](https://www.cambridge.org/engage/chemrxiv/article-details/66a8c11bc9c6a5c07a7a59c0)
+- <a id="paper-chemagents"></a>`2024.07` **[A Multiagent-Driven Robotic AI Chemist Enabling Autonomous Chemical Research On Demand](https://doi.org/10.1021/jacs.4c17738)**
   > Coordinates robot chemistry through generated API programs.
 
 <!-- mmac-record: {"id": "2304.05332", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
-- <a id="paper-2304-05332"></a>`2023.04` **[Autonomous chemical research with large language models](https://arxiv.org/abs/2304.05332)** [[Code]](https://github.com/gomesgroup/coscientist) [[Paper]](https://pmc.ncbi.nlm.nih.gov/articles/PMC10733136/)
+- <a id="paper-2304-05332"></a>`2023.04` **[Autonomous chemical research with large language models](https://arxiv.org/abs/2304.05332)** [[Code]](https://github.com/gomesgroup/coscientist)
   > Connects language reasoning to automated chemistry.
 
 <!-- mmac-record: {"id": "xray-scientist", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->

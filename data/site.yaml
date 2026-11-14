@@ -238,10 +238,10 @@ source_labels:
     en: Repository
     zh: 仓库
     ja: リポジトリ
-  full_text:
-    en: Full text
-    zh: 全文
-    ja: 全文
+  version_notes:
+    en: Version notes
+    zh: 版本记录
+    ja: バージョン履歴
   cross_execution:
     en: Cross-execution diagnostics
     zh: 交叉执行诊断
@@ -251,7 +251,7 @@ source_labels:
     zh: 数据来源与视频筛选
     ja: データの出典と動画の選定
 source_kind_overrides:
-  https://arxiv.org/html/2610.04432: full_text
+  https://www.mdpi.com/2076-3417/16/16/8291/notes: version_notes
   https://arxiv.org/html/2610.04432#S10.SS1: cross_execution
   https://arxiv.org/html/2610.04432#S8.SS1: data_sources
   https://human-atlas-seven.vercel.app/: demo
@@ -275,6 +275,18 @@ source_kind_overrides:
   : results
   https://omnimech.dev/res/omnimech_samples.zip: examples
   https://omnimech.dev/res/omnimech_code.zip: code
+paper_url_aliases:
+  https://github.com/QwenLM/BlenderWorld/blob/main/docs/BlenderWorld__Benchmarking_Visual_Agents_for_3D_Creation_from_Real_World_References.pdf: https://arxiv.org/abs/2610.23986
+  https://github.com/tettethu/VibeGame/blob/main/technical_report.pdf: https://arxiv.org/abs/2610.33106
+  https://aclanthology.org/2026.acl-long.1162/: https://arxiv.org/abs/2604.18164
+  https://fufumeichi.github.io/gif-project-page/assets/paper.pdf: https://arxiv.org/abs/2609.05927
+  https://proceedings.neurips.cc/paper_files/paper/2025/hash/cd2b3c429c8a2ca57656970e010b4b60-Abstract-Conference.html: https://arxiv.org/abs/2509.20414
+  https://openaccess.thecvf.com/content/CVPR2025W/CV2/papers/Zook_GRS_Generating_Robotic_Simulation_Tasks_from_Real-World_Images_CVPRW_2025_paper.pdf: https://arxiv.org/abs/2410.15536
+  https://journals.aps.org/prx/abstract/10.1103/xnqc-q6nt: https://arxiv.org/abs/2509.24978
+  https://doi.org/10.1038/s41598-026-45593-z: https://arxiv.org/abs/2509.25651
+  https://www.cambridge.org/engage/chemrxiv/article-details/66a8c11bc9c6a5c07a7a59c0: https://doi.org/10.1021/jacs.4c17738
+  https://pmc.ncbi.nlm.nih.gov/articles/PMC10733136/: https://arxiv.org/abs/2304.05332
+  https://www.nature.com/articles/s44182-025-00065-w: https://arxiv.org/abs/2503.23875
 stages:
 - id: 1
   name:

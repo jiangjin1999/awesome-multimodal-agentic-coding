@@ -277,7 +277,7 @@ Connects a general VLM to a robot interpreter through a compact semantic action 
 
 `2026-08-20` · Affiliation not established
 
-[Paper](https://www.mdpi.com/2076-3417/16/16/8291) · [Paper](https://www.mdpi.com/2076-3417/16/16/8291/notes)
+[Paper](https://www.mdpi.com/2076-3417/16/16/8291) · [Version notes](https://www.mdpi.com/2076-3417/16/16/8291/notes)
 
 Builds instrument drivers from source-linked manuals within deterministic protocol scaffolds, repairing them through hardware tests.
 
@@ -638,7 +638,7 @@ Lets a coding agent combine analytic motion primitives with calls to a frozen VL
 
 `2026-11-09` · Northwestern University; Carnegie Mellon University; University of California Berkeley; University of Washington; Stanford University; UNC-Chapel Hill; Texas A&M University; University of Texas at Austin
 
-[Paper](https://arxiv.org/abs/2611.12177) · [Paper](https://arxiv.org/html/2611.12177)
+[Paper](https://arxiv.org/abs/2611.12177)
 
 Tests general-purpose agents across robot embodiments while varying observation access, reset budgets and execution timing.
 
@@ -813,7 +813,7 @@ Compares frontier VLM robot agents under shared budgets and source-task interfac
 
 `2026-09-30` · University of California Santa Barbara; MIT CSAIL; MIT-IBM Watson AI Lab
 
-[Bibliographic record](../README.md#paper-2609-40325) · [Paper](https://arxiv.org/abs/2609.40325) · [Paper](https://arxiv.org/html/2609.40325) · [Project page](https://ucsb-nlp-chang.github.io/WorldAuditBench/)
+[Bibliographic record](../README.md#paper-2609-40325) · [Paper](https://arxiv.org/abs/2609.40325) · [Project page](https://ucsb-nlp-chang.github.io/WorldAuditBench/)
 
 Measures an agent’s ability to explore interactive worlds and substantiate anomalies with evidence.
 
@@ -1268,7 +1268,7 @@ Construction feedback belongs to the generation procedure: a render, compiler er
 
 `2026-11-08` · Hong Kong Baptist University; ByteDance Seed
 
-[Bibliographic record](../README.md#paper-2611-11344) · [Paper](https://arxiv.org/abs/2611.11344) · [Code](https://github.com/tmlr-group/Spatial-Harness) · [Paper](https://arxiv.org/html/2611.11344v1)
+[Bibliographic record](../README.md#paper-2611-11344) · [Paper](https://arxiv.org/abs/2611.11344) · [Code](https://github.com/tmlr-group/Spatial-Harness)
 
 An executable proxy scene grounds spatial reasoning in explicit geometry.
 
@@ -1296,7 +1296,7 @@ An executable proxy scene grounds spatial reasoning in explicit geometry. A perc
 
 `2026-11-07` · Universidade da Coruña; CITENI; Grupo Integrado de Ingeniería
 
-[Paper](https://arxiv.org/abs/2611.10602) · [Paper](https://arxiv.org/html/2611.10602v2)
+[Paper](https://arxiv.org/abs/2611.10602)
 
 SimuLean gives agents verified modeling components for manufacturing simulation.
 
@@ -1324,7 +1324,7 @@ SimuLean gives agents verified modeling components for manufacturing simulation.
 
 `2026-11-02` · Stanford University; ETH Zurich; NVIDIA Research; microagi
 
-[Paper](https://arxiv.org/abs/2611.02691) · [Paper](https://arxiv.org/html/2611.02691v1) · [Project page](https://cue-dynamics.github.io/)
+[Paper](https://arxiv.org/abs/2611.02691) · [Project page](https://cue-dynamics.github.io/)
 
 An agent designs physical probes, measures their outcomes and calibrates an executable model.
 
@@ -1352,7 +1352,7 @@ An agent designs physical probes, measures their outcomes and calibrates an exec
 
 `2026-10-31` · Affiliation not established
 
-[Bibliographic record](../README.md#paper-2611-00513) · [Paper](https://arxiv.org/abs/2611.00513) · [Paper](https://arxiv.org/html/2611.00513v1)
+[Bibliographic record](../README.md#paper-2611-00513) · [Paper](https://arxiv.org/abs/2611.00513)
 
 A task-specific kinematic sketch connects RGB-D observations to geometric action planning.
 
@@ -1380,7 +1380,7 @@ A task-specific kinematic sketch connects RGB-D observations to geometric action
 
 `2026-10-29` · Carnegie Mellon University
 
-[Paper](https://arxiv.org/abs/2610.40565) · [Paper](https://arxiv.org/html/2610.40565v1) · [Project page](https://gym-anything.github.io/robotics)
+[Paper](https://arxiv.org/abs/2610.40565) · [Project page](https://gym-anything.github.io/robotics)
 
 Coding agents construct physical simulators and revise them using independent audits.
 
@@ -1408,7 +1408,7 @@ Coding agents construct physical simulators and revise them using independent au
 
 `2026-10-29` · Stanford University; University of Cambridge
 
-[Bibliographic record](../README.md#paper-2610-40754) · [Paper](https://arxiv.org/abs/2610.40754) · [Paper](https://arxiv.org/html/2610.40754v1) · [Project page](https://dy-craft.github.io/)
+[Bibliographic record](../README.md#paper-2610-40754) · [Paper](https://arxiv.org/abs/2610.40754) · [Project page](https://dy-craft.github.io/)
 
 Storyboards and frame-level diagnostics guide code repair for long-horizon animated scenes.
 
@@ -1436,7 +1436,7 @@ Verified key poses divide long animations into local motion problems. The agent 
 
 `2026-10-27` · Princeton University; Stanford University; University of Chicago; New York University; Oregon State University; University of Illinois at Urbana-Champaign; University of Texas at Austin
 
-[Paper](https://arxiv.org/abs/2610.36592) · [Paper](https://arxiv.org/html/2610.36592v1)
+[Paper](https://arxiv.org/abs/2610.36592)
 
 Laboratory videos become editable assets, trajectories and spatially constrained events.
 
@@ -1464,7 +1464,7 @@ Laboratory videos become editable assets, trajectories and spatially constrained
 
 `2026-10-26` · Harvard University
 
-[Bibliographic record](../README.md#paper-2610-34745) · [Paper](https://arxiv.org/abs/2610.34745) · [Paper](https://arxiv.org/html/2610.34745v1) · [Project page](https://computationalrobotics.seas.harvard.edu/SceneAgent/)
+[Bibliographic record](../README.md#paper-2610-34745) · [Paper](https://arxiv.org/abs/2610.34745) · [Project page](https://computationalrobotics.seas.harvard.edu/SceneAgent/)
 
 An agent assembles captured geometry and dynamic observations into interactive simulation scenes.
 
@@ -1492,7 +1492,7 @@ An agent assembles captured geometry and dynamic observations into interactive s
 
 `2026-10-23` · New York University; University of California, San Diego
 
-[Bibliographic record](../README.md#paper-2610-32978) · [Paper](https://arxiv.org/abs/2610.32978) · [Paper](https://arxiv.org/pdf/2610.32978v1) · [Project page](https://tinaliu0123.github.io/scenebloom/)
+[Bibliographic record](../README.md#paper-2610-32978) · [Paper](https://arxiv.org/abs/2610.32978) · [Project page](https://tinaliu0123.github.io/scenebloom/)
 
 Visual layout proposals are compiled into geometrically feasible indoor environments.
 
@@ -1520,7 +1520,7 @@ Visual layout proposals are compiled into geometrically feasible indoor environm
 
 `2026-10-22` · Xspark AI; Tsinghua University; The University of Hong Kong; University College London; Peking University
 
-[Bibliographic record](../README.md#paper-2610-31834) · [Paper](https://arxiv.org/abs/2610.31834) · [Paper](https://arxiv.org/html/2610.31834v1) · [Project page](https://worldmirror-page.github.io/)
+[Bibliographic record](../README.md#paper-2610-31834) · [Paper](https://arxiv.org/abs/2610.31834) · [Project page](https://worldmirror-page.github.io/)
 
 Recorded robot demonstrations guide construction of editable worlds that support direct trajectory replay.
 
@@ -1576,7 +1576,7 @@ A coding agent uses measured video geometry to reconstruct replayable MuJoCo sce
 
 `2026-10-19` · Shanghai Jiao Tong University; Meituan
 
-[Bibliographic record](../README.md#paper-2610-33060) · [Paper](https://arxiv.org/abs/2610.33060) · [Paper](https://arxiv.org/html/2610.33060v1) · [Project page](https://demianmusk.github.io/MARC-Home/)
+[Bibliographic record](../README.md#paper-2610-33060) · [Paper](https://arxiv.org/abs/2610.33060) · [Project page](https://demianmusk.github.io/MARC-Home/)
 
 Connection-level diagnostics help agents repair executable mechanisms with loops and coupled motion.
 
@@ -1604,7 +1604,7 @@ Connection-level diagnostics help agents repair executable mechanisms with loops
 
 `2026-10-15` · Xi’an Jiaotong University; Fuzhou University; Adobe Systems; Westlake University
 
-[Bibliographic record](../README.md#paper-2610-21498) · [Paper](https://arxiv.org/abs/2610.21498) · [Paper](https://arxiv.org/html/2610.21498v1)
+[Bibliographic record](../README.md#paper-2610-21498) · [Paper](https://arxiv.org/abs/2610.21498)
 
 Video-aligned rendering guides local revision of editable room geometry.
 
@@ -1630,7 +1630,7 @@ Video-aligned rendering guides local revision of editable room geometry. Multivi
 
 `2026-10-13` · University of California, Berkeley; NVIDIA
 
-[Paper](https://arxiv.org/abs/2610.18835) · [Paper](https://arxiv.org/html/2610.18835v2) · [Project page](https://robosimstudio.github.io)
+[Paper](https://arxiv.org/abs/2610.18835) · [Project page](https://robosimstudio.github.io)
 
 Editable multiphysics models connect video-based construction with robot interaction feedback.
 
@@ -1658,7 +1658,7 @@ Editable multiphysics models connect video-based construction with robot interac
 
 `2026-10-12` · Geek+
 
-[Paper](https://arxiv.org/abs/2610.17114) · [Paper](https://arxiv.org/html/2610.17114v1)
+[Paper](https://arxiv.org/abs/2610.17114)
 
 Real action measurements continually correct an agent-authored digital twin.
 
@@ -1686,7 +1686,7 @@ Real action measurements continually correct an agent-authored digital twin. Sen
 
 `2026-10-09` · Nanyang Technological University; ETH Zurich; Microsoft; University of Cambridge; University of Oxford
 
-[Bibliographic record](../README.md#paper-2610-13947) · [Paper](https://arxiv.org/abs/2610.13947) · [Paper](https://arxiv.org/html/2610.13947v3) · [Project page](https://physicalvision.github.io/artisan/)
+[Bibliographic record](../README.md#paper-2610-13947) · [Paper](https://arxiv.org/abs/2610.13947) · [Project page](https://physicalvision.github.io/artisan/)
 
 Agent teams revise articulated assets using motion, collision and stability evidence.
 
@@ -1714,7 +1714,7 @@ Agent teams revise articulated assets using motion, collision and stability evid
 
 `2026-10-08` · NVIDIA; Nanyang Technological University; Peking University
 
-[Bibliographic record](../README.md#paper-2610-11322) · [Paper](https://arxiv.org/abs/2610.11322) · [Paper](https://arxiv.org/html/2610.11322v1) · [Project page](https://xingyoujun.github.io/usdcraft/)
+[Bibliographic record](../README.md#paper-2610-11322) · [Paper](https://arxiv.org/abs/2610.11322) · [Project page](https://xingyoujun.github.io/usdcraft/)
 
 Programs reconstruct articulated USD assets while distinguishing missing observed surfaces from unseen space.
 
@@ -1742,7 +1742,7 @@ Programs reconstruct articulated USD assets while distinguishing missing observe
 
 `2026-10-07` · Sun Yat-sen University; The Hong Kong University of Science and Technology (Guangzhou)
 
-[Bibliographic record](../README.md#paper-2610-10479) · [Paper](https://arxiv.org/abs/2610.10479) · [Paper](https://arxiv.org/html/2610.10479v2)
+[Bibliographic record](../README.md#paper-2610-10479) · [Paper](https://arxiv.org/abs/2610.10479)
 
 Scene reconstruction and executable policy development share a task-specific sim-to-real workflow.
 
@@ -1770,7 +1770,7 @@ Scene reconstruction and executable policy development share a task-specific sim
 
 `2026-10-01` · Affiliation not established
 
-[Bibliographic record](../README.md#paper-2610-02274) · [Paper](https://arxiv.org/abs/2610.02274) · [Paper](https://arxiv.org/html/2610.02274v1)
+[Bibliographic record](../README.md#paper-2610-02274) · [Paper](https://arxiv.org/abs/2610.02274)
 
 Asset generation, image reconstruction and text-based layout meet in a verified simulation data engine.
 
@@ -1798,7 +1798,7 @@ Asset generation, image reconstruction and text-based layout meet in a verified 
 
 `2026-09-29` · Tsinghua University; Carnegie Mellon University; Genesis AI; Shanghai Qi Zhi Institute
 
-[Bibliographic record](../README.md#paper-2609-36593) · [Paper](https://arxiv.org/abs/2609.36593) · [Paper](https://arxiv.org/html/2609.36593v2)
+[Bibliographic record](../README.md#paper-2609-36593) · [Paper](https://arxiv.org/abs/2609.36593)
 
 A planner delegates simulation modules and directs repairs using execution evidence.
 
@@ -1826,7 +1826,7 @@ A planner delegates simulation modules and directs repairs using execution evide
 
 `2026-09-29` · Shanghai Artificial Intelligence Laboratory; Shanghai Jiao Tong University; Zhejiang University; University of Science and Technology of China; The Chinese University of Hong Kong; The University of Hong Kong
 
-[Paper](https://arxiv.org/abs/2609.37089) · [Paper](https://arxiv.org/html/2609.37089v1) · [Project page](https://real2gym.github.io/)
+[Paper](https://arxiv.org/abs/2609.37089) · [Project page](https://real2gym.github.io/)
 
 Human or robot demonstrations become visually aligned, executable task environments.
 
@@ -1854,7 +1854,7 @@ Human or robot demonstrations become visually aligned, executable task environme
 
 `2026-09-29` · ShanghaiTech University
 
-[Paper](https://arxiv.org/abs/2609.37067) · [Paper](https://arxiv.org/html/2609.37067v2)
+[Paper](https://arxiv.org/abs/2609.37067)
 
 Geometry, contact and response fidelity are developed as distinct stages of articulated-twin construction.
 
@@ -1882,7 +1882,7 @@ Geometry, contact and response fidelity are developed as distinct stages of arti
 
 `2026-09-28` · Tsinghua University; Carnegie Mellon University; Genesis AI
 
-[Bibliographic record](../README.md#paper-2609-36024) · [Paper](https://arxiv.org/abs/2609.36024) · [Paper](https://arxiv.org/html/2609.36024v3) · [Project page](https://shuzhaoxie.github.io/CoDimRecon/)
+[Bibliographic record](../README.md#paper-2609-36024) · [Paper](https://arxiv.org/abs/2609.36024) · [Project page](https://shuzhaoxie.github.io/CoDimRecon/)
 
 Editable reconstruction separates line, surface and volume models for deformable simulation.
 
@@ -1910,7 +1910,7 @@ Editable reconstruction separates line, surface and volume models for deformable
 
 `2026-09-27` · University of British Columbia; VAST; Zhejiang University; University of Utah; The University of Texas at Austin; University of California, Los Angeles
 
-[Bibliographic record](../README.md#paper-2609-33208) · [Paper](https://arxiv.org/abs/2609.33208) · [Paper](https://arxiv.org/html/2609.33208v1)
+[Bibliographic record](../README.md#paper-2609-33208) · [Paper](https://arxiv.org/abs/2609.33208)
 
 World specifications make physical scene construction and revision addressable by object and time.
 
@@ -1938,7 +1938,7 @@ World specifications make physical scene construction and revision addressable b
 
 `2026-09-19` · University of British Columbia; National University of Singapore; University of Cambridge; Friedrich-Alexander-Universität Erlangen-Nürnberg; University of Wisconsin–Madison
 
-[Bibliographic record](../README.md#paper-2609-23103) · [Paper](https://arxiv.org/abs/2609.23103) · [Paper](https://arxiv.org/html/2609.23103v1) · [Project page](https://diaggen.github.io/)
+[Bibliographic record](../README.md#paper-2609-23103) · [Paper](https://arxiv.org/abs/2609.23103) · [Project page](https://diaggen.github.io/)
 
 Active manipulation probes route asset defects back to their generating stages.
 
@@ -1966,7 +1966,7 @@ Active manipulation probes route asset defects back to their generating stages. 
 
 `2026-09-16` · Nankai University; Rightly Robotics, A4x
 
-[Bibliographic record](../README.md#paper-2609-18620) · [Paper](https://arxiv.org/abs/2609.18620) · [Paper](https://arxiv.org/html/2609.18620v2) · [Project page](https://can-lee.github.io/DeformSmith_web/)
+[Bibliographic record](../README.md#paper-2609-18620) · [Paper](https://arxiv.org/abs/2609.18620) · [Project page](https://can-lee.github.io/DeformSmith_web/)
 
 Layered physical tests guide construction and repair of deformable assets.
 
@@ -1994,7 +1994,7 @@ Layered physical tests guide construction and repair of deformable assets. Geome
 
 `2026-09-05` · Galbot; Peking University; Zhejiang University; The University of Hong Kong; Tsinghua University; Beijing Academy of Artificial Intelligence
 
-[Paper](https://arxiv.org/abs/2609.05927) · [Project page](https://fufumeichi.github.io/gif-project-page/) · [Paper](https://fufumeichi.github.io/gif-project-page/assets/paper.pdf)
+[Paper](https://arxiv.org/abs/2609.05927) · [Project page](https://fufumeichi.github.io/gif-project-page/)
 
 Generated object combinations are refined for functional contact relationships.
 
@@ -2022,7 +2022,7 @@ Generated object combinations are refined for functional contact relationships. 
 
 `2026-09-04` · The University of Hong Kong; University of Electronic Science and Technology of China
 
-[Paper](https://arxiv.org/abs/2609.05594) · [Paper](https://arxiv.org/html/2609.05594) · [Code](https://github.com/rxjfighting/SceneMosaic) · [Project page](https://rxjfighting.github.io/SceneMosaic/)
+[Paper](https://arxiv.org/abs/2609.05594) · [Code](https://github.com/rxjfighting/SceneMosaic) · [Project page](https://rxjfighting.github.io/SceneMosaic/)
 
 Local layout units make simulation-ready scene variation more efficient.
 
@@ -2050,7 +2050,7 @@ Local layout units make simulation-ready scene variation more efficient. SAM3 se
 
 `2026-08-31` · ByteDance Seed; Peking University; Zhejiang University
 
-[Paper](https://arxiv.org/abs/2608.30821) · [Paper](https://arxiv.org/html/2608.30821v1) · [Project page](https://lucida-r2s.github.io/)
+[Paper](https://arxiv.org/abs/2608.30821) · [Project page](https://lucida-r2s.github.io/)
 
 A visual editing agent aligns generated assets to measured scene evidence.
 
@@ -2078,7 +2078,7 @@ A visual editing agent aligns generated assets to measured scene evidence. Posed
 
 `2026-08-27` · MirroS; Tsinghua University; Peking University; Nanyang Technological University
 
-[Bibliographic record](../README.md#paper-2608-27549) · [Paper](https://arxiv.org/abs/2608.27549) · [Paper](https://arxiv.org/html/2608.27549v2) · [Project page](https://mirros-lab.github.io/code-as-world)
+[Bibliographic record](../README.md#paper-2608-27549) · [Paper](https://arxiv.org/abs/2608.27549) · [Project page](https://mirros-lab.github.io/code-as-world)
 
 Executable world hypotheses connect multimodal evidence to inspectable representations.
 
@@ -2106,7 +2106,7 @@ Executable world hypotheses connect multimodal evidence to inspectable represent
 
 `2026-08-19` · Shanghai Jiao Tong University; Meituan
 
-[Paper](https://arxiv.org/abs/2608.18840) · [Paper](https://arxiv.org/html/2608.18840)
+[Paper](https://arxiv.org/abs/2608.18840)
 
 Usage requirements become articulated rooms with executable interaction rules.
 
@@ -2136,7 +2136,7 @@ Usage requirements become articulated rooms with executable interaction rules. T
 
 Official project article: 2026-08-04; arXiv v1: 2026-10-01.
 
-[Bibliographic record](../README.md#paper-2610-01863) · [Paper](https://arxiv.org/abs/2610.01863) · [Paper](https://arxiv.org/html/2610.01863v1) · [Project page](https://litereality.github.io/agent/)
+[Bibliographic record](../README.md#paper-2610-01863) · [Paper](https://arxiv.org/abs/2610.01863) · [Project page](https://litereality.github.io/agent/)
 
 An editable room program unifies scan geometry, generated assets and reconstruction feedback.
 
@@ -2164,7 +2164,7 @@ An editable room program unifies scan geometry, generated assets and reconstruct
 
 `2026-07-23` · University of Massachusetts Amherst; Genesis AI
 
-[Paper](https://arxiv.org/abs/2607.21522) · [Paper](https://arxiv.org/html/2607.21522) · [Project page](https://umass-embodied-agi.github.io/gs-agent/)
+[Paper](https://arxiv.org/abs/2607.21522) · [Project page](https://umass-embodied-agi.github.io/gs-agent/)
 
 Generative simulation connects scene language to editable physical programs.
 
@@ -2192,7 +2192,7 @@ Generative simulation connects scene language to editable physical programs. The
 
 `2026-07-21` · University of British Columbia; National University of Singapore; Johns Hopkins University; Friedrich-Alexander-Universität Erlangen-Nürnberg; University of Cambridge; Columbia University; University of California, Los Angeles; Style3D
 
-[Paper](https://arxiv.org/abs/2607.19190) · [Paper](https://arxiv.org/html/2607.19190v5) · [Project page](https://agentic-real2sim.github.io/)
+[Paper](https://arxiv.org/abs/2607.19190) · [Project page](https://agentic-real2sim.github.io/)
 
 Robot episodes are reconstructed and refined through recorded-trajectory replay.
 
@@ -2248,7 +2248,7 @@ Asset decomposition and learned physical grounding produce articulated simulatio
 
 `2026-07-08` · Horizon Robotics; WuwenAI
 
-[Paper](https://arxiv.org/abs/2607.07459) · [Paper](https://arxiv.org/html/2607.07459v3) · [Project page](https://horizonrobotics.github.io/EmbodiedGen/)
+[Paper](https://arxiv.org/abs/2607.07459) · [Project page](https://horizonrobotics.github.io/EmbodiedGen/)
 
 Physical assets, relational placement and stateful editing form a reusable world-building pipeline.
 
@@ -2276,7 +2276,7 @@ Physical assets, relational placement and stateful editing form a reusable world
 
 `2026-07-02` · Carnegie Mellon University; Harvard University; University of California, Merced
 
-[Paper](https://arxiv.org/abs/2607.01766) · [Paper](https://arxiv.org/html/2607.01766v1) · [Project page](https://dynsimworlds.github.io/)
+[Paper](https://arxiv.org/abs/2607.01766) · [Project page](https://dynsimworlds.github.io/)
 
 A staged coding system builds editable scenes that include animated and simulated processes.
 
@@ -2304,7 +2304,7 @@ A staged coding system builds editable scenes that include animated and simulate
 
 `2026-06-26` · NVIDIA; Georgia Institute of Technology; Stanford University; The University of Texas at Austin; University of Toronto
 
-[Paper](https://arxiv.org/abs/2606.28276) · [Paper](https://arxiv.org/html/2606.28276v4) · [Project page](https://research.nvidia.com/labs/gear/simfoundry/) · [Code](https://github.com/NVlabs/SimFoundry)
+[Paper](https://arxiv.org/abs/2606.28276) · [Project page](https://research.nvidia.com/labs/gear/simfoundry/) · [Code](https://github.com/NVlabs/SimFoundry)
 
 Real-video reconstruction expands into task-conditioned digital cousins for policy evaluation and training.
 
@@ -2332,7 +2332,7 @@ Real-video reconstruction expands into task-conditioned digital cousins for poli
 
 `2026-06-12` · East China Normal University; Fudan University; Shanghai Jiao Tong University
 
-[Paper](https://arxiv.org/abs/2606.14168) · [Paper](https://arxiv.org/html/2606.14168) · [Project page](https://xujay111.github.io/muse_githubio/)
+[Paper](https://arxiv.org/abs/2606.14168) · [Project page](https://xujay111.github.io/muse_githubio/)
 
 An architect–builder–inspector workflow incrementally realizes editable indoor requirements.
 
@@ -2360,7 +2360,7 @@ An architect–builder–inspector workflow incrementally realizes editable indo
 
 `2026-06-02` · Université de Montréal; Mila – Quebec AI Institute
 
-[Paper](https://arxiv.org/abs/2606.04226) · [Paper](https://arxiv.org/html/2606.04226v1) · [Project page](https://percept-twin.github.io/)
+[Paper](https://arxiv.org/abs/2606.04226) · [Project page](https://percept-twin.github.io/)
 
 An object-centric reconstruction adds executable affordances for checking robot plans.
 
@@ -2388,7 +2388,7 @@ An object-centric reconstruction adds executable affordances for checking robot 
 
 `2026-05-20` · Nanyang Technological University; ACE Robotics
 
-[Paper](https://arxiv.org/abs/2605.21572) · [Paper](https://arxiv.org/html/2605.21572v1) · [Project page](https://physx-omni.github.io/)
+[Paper](https://arxiv.org/abs/2605.21572) · [Project page](https://physx-omni.github.io/)
 
 A multimodal asset model predicts geometry together with articulated and physical structure.
 
@@ -2416,7 +2416,7 @@ A multimodal asset model predicts geometry together with articulated and physica
 
 `2026-05-19` · The Chinese University of Hong Kong; Shanghai Jiao Tong University; Shanghai AI Laboratory; Microsoft; University of Oxford
 
-[Paper](https://arxiv.org/abs/2605.19587) · [Paper](https://arxiv.org/html/2605.19587v1) · [Project page](https://scene-code.github.io/) · [Code](https://github.com/wangpuyi/SceneCode)
+[Paper](https://arxiv.org/abs/2605.19587) · [Project page](https://scene-code.github.io/) · [Code](https://github.com/wangpuyi/SceneCode)
 
 Room planning and part-level programs produce editable scenes with physical asset metadata.
 
@@ -2444,7 +2444,7 @@ Room planning and part-level programs produce editable scenes with physical asse
 
 `2026-05-14` · University of Wisconsin–Madison
 
-[Bibliographic record](../README.md#paper-2605-14398) · [Paper](https://arxiv.org/abs/2605.14398) · [Paper](https://arxiv.org/html/2605.14398v3) · [Project page](https://uwsbel.github.io/chrono-agentic-website/)
+[Bibliographic record](../README.md#paper-2605-14398) · [Paper](https://arxiv.org/abs/2605.14398) · [Project page](https://uwsbel.github.io/chrono-agentic-website/)
 
 A coding agent uses visual and numerical execution reports to build Chrono simulations.
 
@@ -2472,7 +2472,7 @@ A coding agent uses visual and numerical execution reports to build Chrono simul
 
 `2026-05-14` · University of Cambridge; University of Oxford; Nanyang Technological University
 
-[Paper](https://arxiv.org/abs/2605.15187) · [Paper](https://arxiv.org/html/2605.15187v1) · [Project page](https://articraft3d.github.io/)
+[Paper](https://arxiv.org/abs/2605.15187) · [Project page](https://articraft3d.github.io/)
 
 A single editable part program is tested with geometric and articulation probes before export.
 
@@ -2500,7 +2500,7 @@ A single editable part program is tested with geometric and articulation probes 
 
 `2026-05-10` · UC San Diego; New York University
 
-[Paper](https://arxiv.org/abs/2605.09423) · [Paper](https://arxiv.org/html/2605.09423v2) · [Code](https://github.com/SimWorld-AI/SimWorld-Studio)
+[Paper](https://arxiv.org/abs/2605.09423) · [Code](https://github.com/SimWorld-AI/SimWorld-Studio)
 
 Environment construction and policy-learning feedback jointly shape simulated task curricula.
 
@@ -2528,7 +2528,7 @@ Environment construction and policy-learning feedback jointly shape simulated ta
 
 `2026-05-10` · Nankai University; Zhejiang University; Southern University of Science and Technology; Rightly Robotics, A4X; University of Science and Technology of China
 
-[Paper](https://arxiv.org/abs/2605.09586) · [Paper](https://arxiv.org/html/2605.09586v2) · [Project page](https://can-lee.github.io/deformmaster-web/)
+[Paper](https://arxiv.org/abs/2605.09586) · [Project page](https://can-lee.github.io/deformmaster-web/)
 
 A differentiable deformable model recovers material behavior and contact from video.
 
@@ -2556,7 +2556,7 @@ A differentiable deformable model recovers material behavior and contact from vi
 
 `2026-04-13` · Beihang University; Zhejiang University; The University of Hong Kong
 
-[Bibliographic record](../README.md#paper-2604-10992) · [Paper](https://arxiv.org/abs/2604.10992) · [Paper](https://arxiv.org/html/2604.10992v2) · [Project page](https://shui-yuan.github.io/articad/)
+[Bibliographic record](../README.md#paper-2604-10992) · [Paper](https://arxiv.org/abs/2604.10992) · [Project page](https://shui-yuan.github.io/articad/)
 
 Part-local CAD programs and explicit connectors support repairable articulated assembly.
 
@@ -2584,7 +2584,7 @@ Part-local CAD programs and explicit connectors support repairable articulated a
 
 `2026-02-10` · NVIDIA; University of Illinois Urbana-Champaign; Cornell University; Stanford University
 
-[Paper](https://arxiv.org/abs/2602.10116) · [Paper](https://arxiv.org/html/2602.10116v2) · [Project page](https://research.nvidia.com/labs/dir/sage/)
+[Paper](https://arxiv.org/abs/2602.10116) · [Project page](https://research.nvidia.com/labs/dir/sage/)
 
 Visual and physical critics guide the generation of diverse robot-learning scenes.
 
@@ -2612,7 +2612,7 @@ Visual and physical critics guide the generation of diverse robot-learning scene
 
 `2026-02-09` · Massachusetts Institute of Technology; Toyota Research Institute
 
-[Paper](https://arxiv.org/abs/2602.09153) · [Paper](https://arxiv.org/html/2602.09153v2) · [Project page](https://scenesmith.github.io/)
+[Paper](https://arxiv.org/abs/2602.09153) · [Project page](https://scenesmith.github.io/)
 
 Hierarchical agents generate physical scenes from architecture down to small objects.
 
@@ -2640,7 +2640,7 @@ Hierarchical agents generate physical scenes from architecture down to small obj
 
 `2025-09-24` · State Key Laboratory of General Artificial Intelligence, BIGAI; Tsinghua University
 
-[Paper](https://arxiv.org/abs/2509.20414) · [Paper](https://arxiv.org/html/2509.20414v2) · [Project page](https://scene-weaver.github.io/) · [Code](https://github.com/Scene-Weaver/SceneWeaver) · [Paper](https://proceedings.neurips.cc/paper_files/paper/2025/hash/cd2b3c429c8a2ca57656970e010b4b60-Abstract-Conference.html)
+[Paper](https://arxiv.org/abs/2509.20414) · [Project page](https://scene-weaver.github.io/) · [Code](https://github.com/Scene-Weaver/SceneWeaver)
 
 Persistent scene state supports iterative generation, completion and local editing.
 
@@ -2668,7 +2668,7 @@ Persistent scene state supports iterative generation, completion and local editi
 
 `2024-11-04` · University of Pennsylvania
 
-[Paper](https://arxiv.org/abs/2411.01775) · [Paper](https://arxiv.org/html/2411.01775v1) · [Project page](https://eureka-research.github.io/eurekaverse/)
+[Paper](https://arxiv.org/abs/2411.01775) · [Project page](https://eureka-research.github.io/eurekaverse/)
 
 Policy-learning outcomes drive an expanding curriculum of procedurally coded terrains.
 
@@ -2696,7 +2696,7 @@ Policy-learning outcomes drive an expanding curriculum of procedurally coded ter
 
 `2024-10-20` · NVIDIA; Stanford University
 
-[Paper](https://arxiv.org/abs/2410.15536) · [Paper](https://openaccess.thecvf.com/content/CVPR2025W/CV2/papers/Zook_GRS_Generating_Robotic_Simulation_Tasks_from_Real-World_Images_CVPRW_2025_paper.pdf)
+[Paper](https://arxiv.org/abs/2410.15536)
 
 Real RGB-D scenes seed executable robot tasks whose code and tests are iteratively repaired.
 
@@ -2724,7 +2724,7 @@ Real RGB-D scenes seed executable robot tasks whose code and tests are iterative
 
 `2024-10-03` · University of Pennsylvania
 
-[Paper](https://arxiv.org/abs/2410.13882) · [Paper](https://arxiv.org/html/2410.13882v4) · [Project page](https://articulate-anything.github.io/) · [Code](https://github.com/vlongle/articulate-anything)
+[Paper](https://arxiv.org/abs/2410.13882) · [Project page](https://articulate-anything.github.io/) · [Code](https://github.com/vlongle/articulate-anything)
 
 Image and motion feedback guide code that reconstructs articulated objects.
 
@@ -2752,7 +2752,7 @@ Image and motion feedback guide code that reconstructs articulated objects. Retr
 
 `2024-09-26` · Stanford University; NVIDIA
 
-[Paper](https://arxiv.org/abs/2409.17652) · [Paper](https://arxiv.org/html/2409.17652v2) · [Project page](https://cs.stanford.edu/~sunfanyun/factorsim/)
+[Paper](https://arxiv.org/abs/2409.17652) · [Project page](https://cs.stanford.edu/~sunfanyun/factorsim/)
 
 Factored state and transition models help generate task environments with limited context.
 
@@ -2780,7 +2780,7 @@ Factored state and transition models help generate task environments with limite
 
 `2024-09-04` · The University of Hong Kong; Shanghai AI Laboratory; Shenzhen University; AgileX Robotics; Institute of Automation, Chinese Academy of Sciences
 
-[Paper](https://arxiv.org/abs/2409.02920) · [Paper](https://arxiv.org/html/2409.02920v3) · [Project page](https://robotwin-benchmark.github.io/early-version/)
+[Paper](https://arxiv.org/abs/2409.02920) · [Project page](https://robotwin-benchmark.github.io/early-version/)
 
 Reconstructed assets and language-generated motion programs produce bimanual demonstrations.
 
@@ -2808,7 +2808,7 @@ Reconstructed assets and language-generated motion programs produce bimanual dem
 
 `2024-06-12` · Stanford University; Columbia University
 
-[Paper](https://arxiv.org/abs/2406.08474) · [Paper](https://arxiv.org/html/2406.08474v2) · [Project page](https://real2code.github.io/)
+[Paper](https://arxiv.org/abs/2406.08474) · [Project page](https://real2code.github.io/)
 
 Multiview reconstruction and a specialized code model recover articulated object descriptions.
 
@@ -2836,7 +2836,7 @@ Multiview reconstruction and a specialized code model recover articulated object
 
 `2024-05-24` · Imperial College London; University of British Columbia; Vector Institute
 
-[Paper](https://arxiv.org/abs/2405.15568) · [Paper](https://arxiv.org/html/2405.15568v3) · [Project page](https://dub.sh/omniepic)
+[Paper](https://arxiv.org/abs/2405.15568) · [Project page](https://dub.sh/omniepic)
 
 An archive of task outcomes supports open-ended generation of executable learning environments.
 
@@ -2864,7 +2864,7 @@ An archive of task outcomes supports open-ended generation of executable learnin
 
 `2023-12-14` · University of Pennsylvania; Stanford University; Allen Institute for Artificial Intelligence; University of Washington
 
-[Paper](https://arxiv.org/abs/2312.09067) · [Paper](https://arxiv.org/html/2312.09067v2) · [Project page](https://yueyang1996.github.io/holodeck/) · [Code](https://github.com/allenai/Holodeck)
+[Paper](https://arxiv.org/abs/2312.09067) · [Project page](https://yueyang1996.github.io/holodeck/) · [Code](https://github.com/allenai/Holodeck)
 
 Language-guided spatial constraints turn retrieved assets into interactive indoor environments.
 
@@ -2892,7 +2892,7 @@ Language-guided spatial constraints turn retrieved assets into interactive indoo
 
 `2023-11-02` · Carnegie Mellon University; Tsinghua University; Massachusetts Institute of Technology; University of Massachusetts Amherst; MIT-IBM AI Lab
 
-[Paper](https://arxiv.org/abs/2311.01455) · [Paper](https://arxiv.org/html/2311.01455v3) · [Project page](https://robogen-ai.github.io/)
+[Paper](https://arxiv.org/abs/2311.01455) · [Project page](https://robogen-ai.github.io/)
 
 Task, environment and supervision generation automate diverse simulated robot-skill learning.
 
@@ -2920,7 +2920,7 @@ Task, environment and supervision generation automate diverse simulated robot-sk
 
 `2023-10-27` · Carnegie Mellon University
 
-[Paper](https://arxiv.org/abs/2310.18308) · [Paper](https://arxiv.org/html/2310.18308v1) · [Project page](https://gen2sim.github.io/)
+[Paper](https://arxiv.org/abs/2310.18308) · [Project page](https://gen2sim.github.io/)
 
 Image-derived physical assets and generated rewards support simulated manipulation learning.
 
@@ -2948,7 +2948,7 @@ Image-derived physical assets and generated rewards support simulated manipulati
 
 `2023-10-02` · MIT CSAIL; UC San Diego; University of Washington; CMU; Tsinghua University; Shanghai Jiao Tong University
 
-[Paper](https://arxiv.org/abs/2310.01361) · [Paper](https://arxiv.org/html/2310.01361v2) · [Project page](https://liruiw.github.io/gensim) · [Code](https://github.com/liruiw/GenSim)
+[Paper](https://arxiv.org/abs/2310.01361) · [Project page](https://liruiw.github.io/gensim) · [Code](https://github.com/liruiw/GenSim)
 
 Executable task generation scales demonstration collection and downstream robot-policy training.
 
@@ -3089,7 +3089,7 @@ Diagnoses visible physical-commonsense failures in generated videos through capt
 
 `2026-11-06` · Navers Lab; Einsia.AI; Tsinghua University
 
-[Bibliographic record](../README.md#paper-2611-09017) · [Paper](https://arxiv.org/abs/2611.09017) · [Paper](https://arxiv.org/html/2611.09017)
+[Bibliographic record](../README.md#paper-2611-09017) · [Paper](https://arxiv.org/abs/2611.09017)
 
 Evaluates code-authored objects, scenes and interactive worlds across Blender and Unreal Engine.
 
@@ -3108,7 +3108,7 @@ Evaluates code-authored objects, scenes and interactive worlds across Blender an
 
 `2026-11-04` · University of Washington; Tencent AI Lab; HKUST; USTC; Shanghai Jiao Tong University
 
-[Paper](https://arxiv.org/abs/2611.05802) · [Paper](https://arxiv.org/html/2611.05802)
+[Paper](https://arxiv.org/abs/2611.05802)
 
 An evaluation agent diagnoses generated rooms using scene-specific principles and active inspection.
 
@@ -3127,7 +3127,7 @@ An evaluation agent diagnoses generated rooms using scene-specific principles an
 
 `2026-10-27` · University of Western Australia; University of British Columbia
 
-[Bibliographic record](../README.md#paper-2610-37326) · [Paper](https://arxiv.org/abs/2610.37326) · [Paper](https://arxiv.org/html/2610.37326)
+[Bibliographic record](../README.md#paper-2610-37326) · [Paper](https://arxiv.org/abs/2610.37326)
 
 Tests whether generated indoor scenes support prescribed physical interactions.
 
@@ -3146,7 +3146,7 @@ Tests whether generated indoor scenes support prescribed physical interactions.
 
 `2026-10-14` · Zhejiang University; Alibaba Token Hub, Alibaba Group; The Chinese University of Hong Kong; Fudan University; National University of Singapore
 
-[Bibliographic record](../README.md#paper-system-blenderworld) · [Paper](https://arxiv.org/abs/2610.23986) · [Paper](https://arxiv.org/html/2610.23986) · [Project page](https://blenderworld.github.io/)
+[Bibliographic record](../README.md#paper-system-blenderworld) · [Paper](https://arxiv.org/abs/2610.23986) · [Project page](https://blenderworld.github.io/)
 
 Evaluates reusable Blender creations produced from real-world references and specifications.
 
@@ -3165,7 +3165,7 @@ Evaluates reusable Blender creations produced from real-world references and spe
 
 `2026-10-13` · AI Robot Association (AIRoA); Waseda University
 
-[Paper](https://arxiv.org/abs/2610.17521) · [Paper](https://arxiv.org/html/2610.17521) · [Project page](https://research.airoa.io/publications/yubi-real2sim/) · [Dataset](https://huggingface.co/datasets/airoa-org/yubi-real2sim-assets) · [Code](https://github.com/airoa-org/yubi-real2sim)
+[Paper](https://arxiv.org/abs/2610.17521) · [Project page](https://research.airoa.io/publications/yubi-real2sim/) · [Dataset](https://huggingface.co/datasets/airoa-org/yubi-real2sim-assets) · [Code](https://github.com/airoa-org/yubi-real2sim)
 
 Studies whether reconstructed 3DGS scenes preserve real robot policy rankings.
 
@@ -3184,7 +3184,7 @@ Studies whether reconstructed 3DGS scenes preserve real robot policy rankings.
 
 `2026-10-12` · Shanghai Jiao Tong University; Sun Yat-sen University; Shanghai Innovation Institute; Southeast University; Nanyang Technological University; Carnegie Mellon University
 
-[Bibliographic record](../README.md#paper-2610-17288) · [Paper](https://arxiv.org/abs/2610.17288) · [Paper](https://arxiv.org/html/2610.17288)
+[Bibliographic record](../README.md#paper-2610-17288) · [Paper](https://arxiv.org/abs/2610.17288)
 
 Tests coding agents that reconstruct physical video phenomena as executable Blender scenes.
 
@@ -3203,7 +3203,7 @@ Tests coding agents that reconstruct physical video phenomena as executable Blen
 
 `2026-10-10` · University of Science and Technology of China; The Chinese University of Hong Kong
 
-[Bibliographic record](../README.md#paper-2610-15166) · [Paper](https://arxiv.org/abs/2610.15166) · [Paper](https://arxiv.org/html/2610.15166)
+[Bibliographic record](../README.md#paper-2610-15166) · [Paper](https://arxiv.org/abs/2610.15166)
 
 Evaluates executable worlds spanning isolated mechanisms, coupled systems and goal-driven design.
 
@@ -3222,7 +3222,7 @@ Evaluates executable worlds spanning isolated mechanisms, coupled systems and go
 
 `2026-10-06` · NLPR & MAIS, CASIA; Peking University; Huawei Noah’s Ark Lab
 
-[Bibliographic record](../README.md#paper-2610-08720) · [Paper](https://arxiv.org/abs/2610.08720) · [Paper](https://arxiv.org/html/2610.08720)
+[Bibliographic record](../README.md#paper-2610-08720) · [Paper](https://arxiv.org/abs/2610.08720)
 
 Asks language-model agents to implement the dynamics solver within a prepared simulation framework.
 
@@ -3241,7 +3241,7 @@ Asks language-model agents to implement the dynamics solver within a prepared si
 
 `2026-10-03` · Aether AI; University of California San Diego
 
-[Bibliographic record](../README.md#paper-2610-04432) · [Paper](https://arxiv.org/abs/2610.04432) · [Paper](https://arxiv.org/html/2610.04432) · [Documentation](https://github.com/AetherLabsAI/Video2World/blob/main/docs/benchmark.md)
+[Bibliographic record](../README.md#paper-2610-04432) · [Paper](https://arxiv.org/abs/2610.04432) · [Documentation](https://github.com/AetherLabsAI/Video2World/blob/main/docs/benchmark.md)
 
 Evaluates joint reconstruction of simulated environments and robot behavior from embodied videos.
 
@@ -3260,7 +3260,7 @@ Evaluates joint reconstruction of simulated environments and robot behavior from
 
 `2026-10-02` · Johns Hopkins University; Stanford University; Max Planck Institute for Intelligent Systems; Massachusetts Institute of Technology
 
-[Bibliographic record](../README.md#paper-2610-03715) · [Paper](https://arxiv.org/abs/2610.03715) · [Paper](https://arxiv.org/html/2610.03715)
+[Bibliographic record](../README.md#paper-2610-03715) · [Paper](https://arxiv.org/abs/2610.03715)
 
 Measures inverse graphics of dynamic videos through executable scene programs.
 
@@ -3279,7 +3279,7 @@ Measures inverse graphics of dynamic videos through executable scene programs.
 
 `2026-09-29` · University of California San Diego; University of California Berkeley
 
-[Bibliographic record](../README.md#paper-2609-36777) · [Paper](https://arxiv.org/abs/2609.36777) · [Paper](https://arxiv.org/html/2609.36777)
+[Bibliographic record](../README.md#paper-2609-36777) · [Paper](https://arxiv.org/abs/2609.36777)
 
 Tests scene construction and precise editing through a shared Unreal Engine interface.
 
@@ -3319,7 +3319,7 @@ Tests native parametric CAD authoring from text, create-and-edit requests and en
 
 `2026-09-14` · University of Rochester; Sony Group Corporation; Carnegie Mellon University; University of Washington
 
-[Bibliographic record](../README.md#paper-2609-15478) · [Paper](https://arxiv.org/abs/2609.15478) · [Paper](https://arxiv.org/html/2609.15478)
+[Bibliographic record](../README.md#paper-2609-15478) · [Paper](https://arxiv.org/abs/2609.15478)
 
 Uses programmatic Blender reconstruction to test agentic video understanding.
 
@@ -3338,7 +3338,7 @@ Uses programmatic Blender reconstruction to test agentic video understanding.
 
 `2026-06-01` · NLPR & MAIS, CASIA; Huawei Noah’s Ark Lab
 
-[Paper](https://arxiv.org/abs/2606.01869) · [Paper](https://arxiv.org/html/2606.01869)
+[Paper](https://arxiv.org/abs/2606.01869)
 
 Tests whether generated interactive 3D programs satisfy executable world contracts.
 
@@ -3357,7 +3357,7 @@ Tests whether generated interactive 3D programs satisfy executable world contrac
 
 `2026-06-01` · Cornell University
 
-[Paper](https://arxiv.org/abs/2606.01538) · [Paper](https://arxiv.org/html/2606.01538)
+[Paper](https://arxiv.org/abs/2606.01538)
 
 Compares program-based physical inference with video prediction in synthetic 2D material-point worlds.
 
@@ -3376,7 +3376,7 @@ Compares program-based physical inference with video prediction in synthetic 2D 
 
 `2026-05-20` · Cornell University; Amazon
 
-[Paper](https://arxiv.org/abs/2605.20576) · [Paper](https://arxiv.org/html/2605.20576)
+[Paper](https://arxiv.org/abs/2605.20576)
 
 Represents video-inferred rigid-body systems as structured simulator configurations.
 
@@ -3395,7 +3395,7 @@ Represents video-inferred rigid-body systems as structured simulator configurati
 
 `2026-04-26` · Nanjing University; Skywork AI; Jilin University; Great Wall Motor; Tianjin University
 
-[Paper](https://arxiv.org/abs/2604.23580) · [Paper](https://arxiv.org/html/2604.23580)
+[Paper](https://arxiv.org/abs/2604.23580)
 
 Evaluates simulation code for described physical phenomena and studies targeted multi-agent correction.
 
@@ -3414,7 +3414,7 @@ Evaluates simulation code for described physical phenomena and studies targeted 
 
 `2026-04-14` · Stony Brook University
 
-[Paper](https://arxiv.org/abs/2604.13035) · [Paper](https://arxiv.org/html/2604.13035)
+[Paper](https://arxiv.org/abs/2604.13035)
 
 Provides explainable symbolic assessment of indoor layouts and feedback for revision.
 
@@ -3433,7 +3433,7 @@ Provides explainable symbolic assessment of indoor layouts and feedback for revi
 
 `2026-03-31` · École Polytechnique; Dassault Systèmes; Stanford University; Università della Svizzera italiana
 
-[Paper](https://arxiv.org/abs/2603.29798) · [Paper](https://arxiv.org/html/2603.29798)
+[Paper](https://arxiv.org/abs/2603.29798)
 
 Tests whether a scene can support an activity for a specified body and uses verification feedback to improve activity reasoning.
 
@@ -3452,7 +3452,7 @@ Tests whether a scene can support an activity for a specified body and uses veri
 
 `2026-03-17` · Hamad Bin Khalifa University; Texas A&M University
 
-[Paper](https://arxiv.org/abs/2603.16432) · [Paper](https://arxiv.org/html/2603.16432)
+[Paper](https://arxiv.org/abs/2603.16432)
 
 Benchmarks inverse identification of physical systems using real videos and independent measurements.
 
@@ -3471,7 +3471,7 @@ Benchmarks inverse identification of physical systems using real videos and inde
 
 `2026-02-11` · Mohamed bin Zayed University of Artificial Intelligence; Sun Yat-sen University
 
-[Paper](https://arxiv.org/abs/2602.10840) · [Paper](https://arxiv.org/html/2602.10840)
+[Paper](https://arxiv.org/abs/2602.10840)
 
 Trains and evaluates language models that express physical concepts through executable animations.
 
@@ -3490,7 +3490,7 @@ Trains and evaluates language models that express physical concepts through exec
 
 `2026-02-09` · University of Waterloo; Autodesk AI Lab; independent researcher
 
-[Paper](https://arxiv.org/abs/2602.13294) · [Paper](https://arxiv.org/html/2602.13294)
+[Paper](https://arxiv.org/abs/2602.13294)
 
 Probes physical reasoning by reconstructing controlled videos as simulator programs.
 
@@ -3509,7 +3509,7 @@ Probes physical reasoning by reconstructing controlled videos as simulator progr
 
 `2025-11-04` · Yonsei University; POSTECH
 
-[Paper](https://arxiv.org/abs/2511.03001) · [Paper](https://arxiv.org/html/2511.03001)
+[Paper](https://arxiv.org/abs/2511.03001)
 
 Evaluates text-guided scenes by verifying fine-grained requirements individually.
 
@@ -3528,7 +3528,7 @@ Evaluates text-guided scenes by verifying fine-grained requirements individually
 
 `2025-06-29` · The Chinese University of Hong Kong; Tianjin University; EPFL; HKUST; Xiamen University; Massachusetts Institute of Technology
 
-[Paper](https://arxiv.org/abs/2506.23329) · [Paper](https://arxiv.org/html/2506.23329)
+[Paper](https://arxiv.org/abs/2506.23329)
 
 Uses agentic inverse rendering to test whether visual understanding can produce an executable scene.
 
@@ -3547,7 +3547,7 @@ Uses agentic inverse rendering to test whether visual understanding can produce 
 
 `2025-04-02` · Stanford University
 
-[Paper](https://arxiv.org/abs/2504.01786) · [Paper](https://arxiv.org/html/2504.01786)
+[Paper](https://arxiv.org/abs/2504.01786)
 
 Benchmarks programmatic graphics edits and allocation of generation and verification compute.
 
@@ -3566,7 +3566,7 @@ Benchmarks programmatic graphics edits and allocation of generation and verifica
 
 `2025-03-18` · Simon Fraser University; Amii
 
-[Paper](https://arxiv.org/abs/2503.14756) · [Paper](https://arxiv.org/html/2503.14756)
+[Paper](https://arxiv.org/abs/2503.14756)
 
 Provides fine-grained semantic and static checks for text-conditioned indoor scene generation.
 
@@ -3585,7 +3585,7 @@ Provides fine-grained semantic and static checks for text-conditioned indoor sce
 
 `2024-05-09` · University of California San Diego; Stanford University; University of California Berkeley; Google DeepMind
 
-[Paper](https://arxiv.org/abs/2405.05941) · [Paper](https://arxiv.org/html/2405.05941)
+[Paper](https://arxiv.org/abs/2405.05941)
 
 Studies whether simulation can predict real-world manipulation policy performance.
 
@@ -5376,7 +5376,7 @@ Adapts underwater programs using execution feedback.
 
 `2025-03-31` · Department of Artificial Intelligence, Westlake University, Hangzhou, China; School of Automation Science and Electrical Engineering, Beihang University, Beijing, China; Institute of Engineering and Technology, University of Groningen, Groningen, Netherlands; Department of Computer Science, Technical University of Darmstadt, Darmstadt, Germany; School of Electrical and Electronic Engineering, The University of Sheffield, Sheffield, UK
 
-[Paper](https://arxiv.org/abs/2503.23875) · [Code](https://github.com/WindyLab/GenSwarm) · [Paper](https://www.nature.com/articles/s44182-025-00065-w)
+[Paper](https://arxiv.org/abs/2503.23875) · [Code](https://github.com/WindyLab/GenSwarm)
 
 Generates and deploys multi-robot code policies.
 
@@ -5577,7 +5577,7 @@ Develops instrument-control code with human oversight.
 
 `2025-09-30` · Pacific Northwest National Laboratory, Richland, Washington, WA, USA
 
-[Paper](https://arxiv.org/abs/2509.25651) · [Code](https://github.com/pnnl/autolabs) · [Paper](https://doi.org/10.1038/s41598-026-45593-z)
+[Paper](https://arxiv.org/abs/2509.25651) · [Code](https://github.com/pnnl/autolabs)
 
 Produces checked, hardware-ready laboratory protocols.
 
@@ -5592,7 +5592,7 @@ Produces checked, hardware-ready laboratory protocols.
 
 `2025-09-29` · Max Planck Institute for the Science of Light, Staudtstraße 2, 91058 Erlangen, Germany; Department of Physics, Friedrich-Alexander Universität Erlangen-Nürnberg, Staudtstraße 5, 91058 Erlangen, Germany
 
-[Paper](https://arxiv.org/abs/2509.24978) · [Code](https://github.com/MaxNaeg/SciExplorer) · [Paper](https://journals.aps.org/prx/abstract/10.1103/xnqc-q6nt)
+[Paper](https://arxiv.org/abs/2509.24978) · [Code](https://github.com/MaxNaeg/SciExplorer)
 
 Uses programmed numerical experiments to study physics.
 
@@ -5607,7 +5607,7 @@ Uses programmed numerical experiments to study physics.
 
 `2024-07-30` · Not reported
 
-[Paper](https://doi.org/10.1021/jacs.4c17738) · [Paper](https://www.cambridge.org/engage/chemrxiv/article-details/66a8c11bc9c6a5c07a7a59c0)
+[Paper](https://doi.org/10.1021/jacs.4c17738)
 
 Coordinates robot chemistry through generated API programs.
 
@@ -5624,7 +5624,7 @@ Coordinates robot chemistry through generated API programs.
 
 `2023-04-11` · Not reported
 
-[Paper](https://arxiv.org/abs/2304.05332) · [Paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC10733136/) · [Code](https://github.com/gomesgroup/coscientist)
+[Paper](https://arxiv.org/abs/2304.05332) · [Code](https://github.com/gomesgroup/coscientist)
 
 Connects language reasoning to automated chemistry.
 

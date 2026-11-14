@@ -13,7 +13,7 @@
 
 A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to the physical world.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-641-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--14-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-650-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--14-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -58,11 +58,11 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [2.6 Action models × robot manipulation](#s2-6) (12)
 - [Stage 3 · Bridging Digital & Physical Worlds](#stage-3)
   - [3.1 Embodied harnesses](#s3-1) (84)
-  - [3.2 Simulator construction](#s3-2) (65)
-  - [3.3 Simulator quality evaluation](#s3-3) (23)
+  - [3.2 Simulator construction](#s3-2) (68)
+  - [3.3 Simulator quality evaluation](#s3-3) (28)
   - [3.4 Data](#s3-4) (14)
   - [3.5 Training and capability improvement](#s3-5) (73)
-  - [3.6 Physical applications and experiments](#s3-6) (36)
+  - [3.6 Physical applications and experiments](#s3-6) (37)
 - [Surveys and related collections](#related)
 - [Contact and contributing](#contact) · [Citation](#citation)
 
@@ -2637,6 +2637,11 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 - <a id="paper-2606-28276"></a>`2026.06` **[SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation](https://arxiv.org/abs/2606.28276)** [[Code]](https://github.com/NVlabs/SimFoundry) [[Project page]](https://research.nvidia.com/labs/gear/simfoundry/)
   > Real-video reconstruction expands into task-conditioned digital cousins for policy evaluation and training.
 
+<!-- mmac-record: {"id": "2606.08828", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2606-08828"></a>`2026.06` **[Video2Sim2Real: Full-Stack Autonomous Dexterous Skill Acquisition from a Single Human Video](https://arxiv.org/abs/2606.08828)** [[Project page]](https://video2sim2real.github.io/)
+  > Builds a simulation-ready digital twin from one human video, refines retargeted motion and trains a dexterous policy for real transfer.
+
 <!-- mmac-record: {"id": "2605.15187", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2605-15187"></a>`2026.05` **[Articraft: An Agentic System for Scalable Articulated 3D Asset Generation](https://arxiv.org/abs/2605.15187)** [[Project page]](https://articraft3d.github.io/)
@@ -2686,6 +2691,16 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 - <a id="paper-2602-09153"></a>`2026.02` **[SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes](https://arxiv.org/abs/2602.09153)** [[Project page]](https://scenesmith.github.io/)
   > Hierarchical agents generate physical scenes from architecture down to small objects.
+
+<!-- mmac-record: {"id": "2602.19359", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2602-19359"></a>`2026.02` **[Vid2Sid: Videos Can Help Close the Sim2Real Gap](https://arxiv.org/abs/2602.19359)**
+  > A VLM compares paired simulated and real videos and proposes physics-parameter updates with rationales.
+
+<!-- mmac-record: {"id": "2510.11689", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2510-11689"></a>`2025.10` **[Phys2Real: Fusing VLM Priors with Interactive Online Adaptation for Uncertainty-Aware Sim-to-Real Manipulation](https://arxiv.org/abs/2510.11689)** [[Project page]](https://phys2real.github.io/)
+  > Fuses VLM-inferred physical-parameter priors with online estimation under ensemble uncertainty for real-to-sim-to-real RL.
 
 <!-- mmac-record: {"id": "2509.20414", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -2771,11 +2786,11 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 | L0a | Semantic fidelity | Does it do what the requirements say? | [SceneEval](#paper-2503-14756) † · [LEGO-Eval](#paper-2511-03001) † · [SceneCritic](#paper-2604-13035) † · [Code4Scene](#paper-2609-36777) |
 | L0b | Visual / reconstruction fidelity | Does it look the same as the reference? | [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786) · [BlenderWorld](#paper-system-blenderworld) · [Parametric CAD Bench v3](#paper-2611-02659) · [BVB](#paper-2609-15478) · [Frontier3DBench](#paper-2611-09017) |
 | L1 | Static physical plausibility | Left at rest, does it stand stably and can people get through? | [GREP](#paper-2611-05802) † · [SceneTeract](#paper-2603-29798) † |
-| L2 | Interaction plausibility | Push it or open it: does it respond correctly? | [ScIntBench](#paper-2610-37326) · [WorldCoder-Bench](#paper-2606-01869) · [Lab2Sim](#paper-2611-02928) |
+| L2 | Interaction plausibility | Push it or open it: does it respond correctly? | [ScIntBench](#paper-2610-37326) · [WorldCoder-Bench](#paper-2606-01869) · [Lab2Sim](#paper-2611-02928) · [Articulated Simulation Physics](#paper-2605-19136) † |
 | L3a | Dynamics: looks right | Does the motion match the reference video? (Only frames and trajectories are compared, so hand-written animation can also score well.) | [ExeWorldBench](#paper-2610-15166) · [4DCodeBench](#paper-2610-03715) · [VisPhyWorld](#paper-2602-13294) · [Physics-Inspired Animations](#paper-2602-10840) · [PhyRubric](#paper-2611-13576) † · [Latent Prediction Error](#paper-2611-01815) · [Video2World](#paper-2610-04432) · [Real2Sim Benchmark](#paper-real2sim-benchmark) |
-| L3b | Dynamics: truly simulated | Rerun under changed conditions (a steeper ramp, a heavier ball): does the result change correctly? | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) |
+| L3b | Dynamics: truly simulated | Rerun under changed conditions (a steeper ramp, a heavier ball): does the result change correctly? | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) · [Polynomial Invariants](#paper-2609-13194) † |
 | L3c | Dynamics: numerically accurate | Do parameters such as mass and friction match reality? Given the first few seconds, can it predict what follows? | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
-| L4a | Downstream: evaluation proxy | Used for evaluation, do policy rankings match the real world? | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) |
+| L4a | Downstream: evaluation proxy | Used for evaluation, do policy rankings match the real world? | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) |
 | L4b | Downstream: training utility | Used for training, do the trained policies work in the real world? | None yet |
 
 † marks evaluators, works whose main contribution is an evaluation tool. Each work is placed by its main claimed contribution. Full explanation: [Simulator quality evaluation: a fidelity ladder](stage3/simulator-evaluation.md).
@@ -2830,6 +2845,21 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 - <a id="paper-2610-17521"></a>`2026.10` **[YUBI-Real2Sim: 3DGS Scene Verification for Reliable Policy Evaluation](https://arxiv.org/abs/2610.17521)** [[Code]](https://github.com/airoa-org/yubi-real2sim) [[Dataset]](https://huggingface.co/datasets/airoa-org/yubi-real2sim-assets) [[Project page]](https://research.airoa.io/publications/yubi-real2sim/)
   > Studies whether reconstructed 3DGS scenes preserve real robot policy rankings.
 
+<!-- mmac-record: {"id": "2609.24778", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2609-24778"></a>`2026.09` **[H2RBench: A Real-to-Sim Benchmark for Evaluating Human-to-Robot Transfer](https://arxiv.org/abs/2609.24778)** [[Project page]](https://davidz2851.github.io/h2rbench.github.io/)
+  > Uses four real-to-sim tasks to test whether simulated rankings of human-to-robot transfer methods predict real-robot rankings.
+
+<!-- mmac-record: {"id": "2609.27449", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2609-27449"></a>`2026.09` **[X2Real: an eXtensive simulation benchmark for real-world generalist policies](https://arxiv.org/abs/2609.27449)** [[Code]](https://github.com/X-Square-Robot/x2real) [[Project page]](https://x2robot.com/en/pages/x2real)
+  > Calibrates simulation visuals and physics to real hardware and checks whether simulated scores track real-robot scores.
+
+<!-- mmac-record: {"id": "2609.13194", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2609-13194"></a>`2026.08` **[Diagnosing Faults in Reinforcement Learning Simulators with Canonical Polynomial Invariants](https://arxiv.org/abs/2609.13194)** [[Project page]](https://www.github.com/TesfayZ/algebraicRLtest.git)
+  > Recovers polynomial invariants from trajectories to locate which physical constraint a simulator violates and which parameter causes it.
+
 <!-- mmac-record: {"id": "2606.01538", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-01538"></a>`2026.06` **[MPMWorlds: Material-Point-Method Simulations for Inferring and Extrapolating Physical Dynamics](https://arxiv.org/abs/2606.01538)**
@@ -2839,6 +2869,11 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 - <a id="paper-2606-01869"></a>`2026.06` **[WorldCoder-Bench: Benchmarking Physically Grounded 3D World Synthesis](https://arxiv.org/abs/2606.01869)**
   > Tests whether generated interactive 3D programs satisfy executable world contracts.
+
+<!-- mmac-record: {"id": "2605.19136", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2605-19136"></a>`2026.05` **[Automatically Improving Simulation Physics for Articulated Objects](https://arxiv.org/abs/2605.19136)**
+  > Defines interaction-readiness for articulated assets, evaluates it, and refines physical properties with VLM priors and simulator feedback.
 
 <!-- mmac-record: {"id": "2605.20576", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
@@ -2874,6 +2909,11 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 - <a id="paper-2602-13294"></a>`2026.02` **[VisPhyWorld: Probing Physical Reasoning via Code-Driven Video Reconstruction](https://arxiv.org/abs/2602.13294)**
   > Probes physical reasoning by reconstructing controlled videos as simulator programs.
+
+<!-- mmac-record: {"id": "2512.16881", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2512-16881"></a>`2025.12` **[PolaRiS: Scalable Real-to-Sim Evaluations for Generalist Robot Policies](https://arxiv.org/abs/2512.16881)** [[Project page]](https://polaris-evals.github.io/)
+  > Reconstructs interactive evaluation scenes from short video scans and pairs them with real evaluations of generalist policies.
 
 <!-- mmac-record: {"id": "2511.03001", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
@@ -3381,6 +3421,11 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 - <a id="paper-2611-07881"></a>`2026.11` **[TactileLab: Sim-to-Real Dexterous Robot Manipulation with Efficient Shear-Sensitive Tactile Simulation](https://arxiv.org/abs/2611.07881)** [[Project page]](https://yijionglin.github.io/tactilelab/)
   > Transfers simulation-trained manipulation policies using paired real/sim tactile representations.
+
+<!-- mmac-record: {"id": "2611.03268", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-03268"></a>`2026.11` **[VerifLM: Physically Verified Image-Edit-Guided Goal Pose Generation for Robotic Manipulation](https://arxiv.org/abs/2611.03268)** [[Project page]](https://veriflm.github.io/VerifLM-webpage/) [[Code]](https://github.com/trustworthyrobotics/VerifLM) [[Demo]](https://youtu.be/HTQgtDVdVBo)
+  > Turns a VLM-edited goal image into a 6-DoF goal pose that is checked for collision, penetration and stability in MuJoCo.
 
 <!-- mmac-record: {"id": "2610.12549", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 

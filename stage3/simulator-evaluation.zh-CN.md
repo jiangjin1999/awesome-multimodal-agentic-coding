@@ -84,6 +84,7 @@ L0a、L0b 是平行起点；各层检查不同的失败模式，不是累积分�
 | [ScIntBench](../README.zh-CN.md#paper-2610-37326) | 对生成场景统一执行推、开合、表面探测，检查交互是否合理 |
 | [WorldCoder-Bench](../README.zh-CN.md#paper-2606-01869) | 执行预设动作后读取运行时状态，用带容差的隐藏断言（含守恒律）核对 |
 | [Lab2Sim](../README.zh-CN.md#paper-2611-02928) | 逐步重放网页实验，与真实实验录像对照截图和状态 |
+| [Automatically Improving Simulation Physics for Articulated Objects](../README.zh-CN.md#paper-2605-19136) † | 定义关节资产的“可交互就绪度”并评估稳定性、与人工判断的一致性 |
 
 ## L3 动力学保真
 
@@ -117,6 +118,7 @@ L0a、L0b 是平行起点；各层检查不同的失败模式，不是累积分�
 | [PhysCodeGym](../README.zh-CN.md#paper-2610-17288) | 要求运动由物理机制产生，并在反事实干预后重新仿真 |
 | [PhysCodeBench](../README.zh-CN.md#paper-2604-23580) | 在视觉指标之外，用专家物理断言和守恒检查验证模拟代码 |
 | [WorldSolver](../README.zh-CN.md#paper-2610-08720) | 场景和框架给定，只让 Agent 写求解器，检查运行、事件与物理行为 |
+| [Polynomial Invariants for Simulator Faults](../README.zh-CN.md#paper-2609-13194) † | 从轨迹恢复多项式不变量，定位被违反的物理约束及出错参数；在注入故障上验证 |
 
 ### L3c 动态：数值准确
 
@@ -139,17 +141,20 @@ L0a、L0b 是平行起点；各层检查不同的失败模式，不是累积分�
 |---|---|
 | [SIMPLER](../README.zh-CN.md#paper-2405-05941) | 同一批策略在仿真与实机上运行，比较表现与排名（Pearson、MMRV） |
 | [YUBI-Real2Sim](../README.zh-CN.md#paper-2610-17521) | 只改变重建背景伪影，发现视觉分数无法预测策略排名的失败 |
+| [X2Real](../README.zh-CN.md#paper-2609-27449) | 按真实硬件校准画面与物理，仿真与实机评分线性相关 0.84 |
+| [PolaRiS](../README.zh-CN.md#paper-2512-16881) | 从短视频扫描重建评测场景，与通用策略的实机评测配对比较 |
+| [H2RBench](../README.zh-CN.md#paper-2609-24778) | 人类到机器人迁移方法的仿真排名与实机排名比较（Pearson 0.89，MMRV 0.06） |
 
 ### L4b 下游：训练效用
 
 **检查：** 在仿真器中训练策略，再到真实世界（或高保真参照）中测试。\
 **局限：** 结果依赖学习算法与训练设置。
 
-暂无：目前没有在统一协议下横向比较不同仿真器训练效用的工作。
+暂无：目前没有在统一协议下横向比较不同仿真器训练效用的工作。相关的方法论文只证明自身仿真器可用于训练，如 [SimFoundry](../README.zh-CN.md#paper-2606-28276)、[Video2Sim2Real](../README.zh-CN.md#paper-2606-08828)、[Phys2Real](../README.zh-CN.md#paper-2510-11689)。
 
 ## 观察
 
-- **分布不均：** 工作集中在 L0 与 L3a；检验机制、参数与下游效用的工作偏少，评估器也只出现在 L0、L1、L3a；L4b 目前为空。
+- **分布不均：** 工作集中在 L0 与 L3a；检验机制、参数与下游效用的工作偏少；L4 还没有评估器，L4b 目前为空。
 - **开放问题：** 哪些低层检查能预测高层失败？YUBI-Real2Sim 给出了反例：视觉质量不能预测策略排名。
 
 ## 术语来源

@@ -84,6 +84,7 @@ L0a and L0b are parallel starting points; each level checks a different failure 
 | [ScIntBench](../README.md#paper-2610-37326) | Standard pushes, openings and surface probes on generated scenes |
 | [WorldCoder-Bench](../README.md#paper-2606-01869) | Runtime state after scripted actions, against hidden assertions with tolerances (including conservation laws) |
 | [Lab2Sim](../README.md#paper-2611-02928) | Step-by-step replay of web experiments, compared with real experiment footage |
+| [Automatically Improving Simulation Physics for Articulated Objects](../README.md#paper-2605-19136) † | Interaction-readiness of articulated assets, evaluated on stability and agreement with human judgments |
 
 ## L3 Dynamics fidelity
 
@@ -117,6 +118,7 @@ With an existing engine, the engine supplies the physical laws, so the check is 
 | [PhysCodeGym](../README.md#paper-2610-17288) | Motion must come from physical mechanisms; scenes are re-simulated after counterfactual interventions |
 | [PhysCodeBench](../README.md#paper-2604-23580) | Expert physical assertions and conservation checks beyond visual metrics |
 | [WorldSolver](../README.md#paper-2610-08720) | Solver code written within a given scene and framework, checked for execution, events and physical behavior |
+| [Polynomial Invariants for Simulator Faults](../README.md#paper-2609-13194) † | Polynomial invariants recovered from trajectories locate the violated physical constraint and faulty parameter; validated on injected faults |
 
 ### L3c Dynamics: numerically accurate
 
@@ -139,17 +141,20 @@ A simulator has two downstream uses: evaluating policies that are already traine
 |---|---|
 | [SIMPLER](../README.md#paper-2405-05941) | The same policies in simulation and on real robots, compared on performance and ranking (Pearson, MMRV) |
 | [YUBI-Real2Sim](../README.md#paper-2610-17521) | Only reconstruction artifacts vary; visual scores fail to predict policy-ranking failures |
+| [X2Real](../README.md#paper-2609-27449) | Visuals and physics calibrated to real hardware; simulated and real scores correlate at 0.84 |
+| [PolaRiS](../README.md#paper-2512-16881) | Evaluation scenes reconstructed from short video scans, paired with real evaluations of generalist policies |
+| [H2RBench](../README.md#paper-2609-24778) | Simulated versus real rankings of human-to-robot transfer methods (Pearson 0.89, MMRV 0.06) |
 
 ### L4b Downstream: training utility
 
 **Checks:** Train policies in the simulator, then test them in the real world (or a high-fidelity reference).\
 **Limit:** Results depend on the learning algorithm and training setup.
 
-None yet: no work compares the training utility of different simulators under a common protocol.
+None yet: no work compares the training utility of different simulators under a common protocol. Related method papers only show that their own simulator supports training, such as [SimFoundry](../README.md#paper-2606-28276), [Video2Sim2Real](../README.md#paper-2606-08828) and [Phys2Real](../README.md#paper-2510-11689).
 
 ## Observations
 
-- **Uneven coverage:** Work concentrates in L0 and L3a; few works check mechanisms, parameters or downstream use, and evaluators appear only in L0, L1 and L3a; L4b is empty.
+- **Uneven coverage:** Work concentrates in L0 and L3a; few works check mechanisms, parameters or downstream use; L4 has no evaluators yet, and L4b is empty.
 - **Open question:** Which lower-level checks predict higher-level failures? YUBI-Real2Sim is a counterexample: visual quality does not predict policy rankings.
 
 ## Terminology sources

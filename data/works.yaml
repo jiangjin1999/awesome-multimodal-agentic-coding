@@ -13534,3 +13534,176 @@
       cap together.
     zh: 42 项任务的 111 个仿真回合。最终配置同时加入坐标求解代码并取消决策次数上限。
   sub: capability-eval
+- id: '2609.27449'
+  title: 'X2Real: an eXtensive simulation benchmark for real-world generalist policies'
+  url: https://arxiv.org/abs/2609.27449
+  date: '2026.09'
+  section: '3.3'
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Calibrates simulation visuals and physics to real hardware and checks whether simulated scores track real-robot scores.
+    zh: 按真实硬件校准仿真画面与物理，构建 44 个长时程任务，检验仿真评分能否跟随实机评分。
+    ja: 実機に合わせてシミュレーションの見た目と物理を校正し、44 の長期タスクでシミュレーションの評価が実機の評価に追従するかを確かめる。
+  sources:
+  - https://arxiv.org/abs/2609.27449
+  - https://arxiv.org/html/2609.27449v2
+  - https://github.com/X-Square-Robot/x2real
+  - https://x2robot.com/en/pages/x2real
+  verification:
+    en: Reports a 0.84 linear correlation between simulated and real-robot scores for a policy trained only on real data; this
+      measures evaluation agreement, not training utility.
+    zh: 对仅用真实数据训练的策略，仿真与实机评分的线性相关为 0.84；衡量的是评测一致性，不是训练效用。
+- id: '2512.16881'
+  title: 'PolaRiS: Scalable Real-to-Sim Evaluations for Generalist Robot Policies'
+  url: https://arxiv.org/abs/2512.16881
+  date: '2025.12'
+  section: '3.3'
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Reconstructs interactive evaluation scenes from short video scans and pairs them with real evaluations of generalist policies.
+    zh: 用神经重建把短视频扫描转成可交互的评测场景，并与通用策略的实机评测配对比较。
+    ja: 短い動画スキャンからニューラル再構成で対話可能な評価シーンを作り、汎用方策の実機評価と対にして比較する。
+  sources:
+  - https://arxiv.org/abs/2512.16881
+  - https://polaris-evals.github.io/
+  verification:
+    en: Paired simulated and real evaluations; the authors report that reconstruction alone leaves gaps and add simulation-data
+      co-training to raise real-to-sim correlation.
+    zh: 仿真与实机评测配对比较；作者指出单靠重建仍有差距，另以仿真数据协同训练提高仿真—实机相关性。
+- id: '2609.24778'
+  title: 'H2RBench: A Real-to-Sim Benchmark for Evaluating Human-to-Robot Transfer'
+  url: https://arxiv.org/abs/2609.24778
+  date: '2026.09'
+  section: '3.3'
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Uses four real-to-sim tasks to test whether simulated rankings of human-to-robot transfer methods predict real-robot rankings.
+    zh: 用四个 real-to-sim 任务比较人类示范到机器人迁移的方法，检验仿真中的排名能否预测实机排名。
+    ja: 四つの real-to-sim タスクで人間から機械への転移手法を比較し、シミュレーション上の順位が実機の順位を予測できるかを確かめる。
+  sources:
+  - https://arxiv.org/abs/2609.24778
+  - https://arxiv.org/html/2609.24778v3
+  - https://davidz2851.github.io/h2rbench.github.io/
+  verification:
+    en: Across method–task pairs, simulated and real rankings agree with Pearson r = 0.89, Spearman rho = 0.85 and MMRV = 0.06.
+    zh: 在方法—任务组合上，仿真与实机排名的 Pearson r 为 0.89，Spearman ρ 为 0.85，MMRV 为 0.06。
+- id: '2609.13194'
+  title: Diagnosing Faults in Reinforcement Learning Simulators with Canonical Polynomial Invariants
+  url: https://arxiv.org/abs/2609.13194
+  date: '2026.08'
+  section: '3.3'
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Recovers polynomial invariants from trajectories to locate which physical constraint a simulator violates and which parameter
+      causes it.
+    zh: 从轨迹中恢复多项式不变量，定位仿真器违反了哪条物理约束，以及由哪个参数引起。
+    ja: 軌跡から多項式の不変量を復元し、シミュレータがどの物理的制約に違反しているか、どのパラメータが原因かを特定する。
+  sources:
+  - https://arxiv.org/abs/2609.13194
+  - https://arxiv.org/html/2609.13194v2
+  - https://www.github.com/TesfayZ/algebraicRLtest.git
+  verification:
+    en: On 15 injected faults with known ground truth, screening localizes every fault without false alarms when observations are
+      noise-free; attribution identifies the parameter in all 7 single-parameter faults.
+    zh: 在 15 个已知真值的注入故障上，无观测噪声时全部定位且无误报；7 个单参数故障均能归因到正确参数。
+- id: '2605.19136'
+  title: Automatically Improving Simulation Physics for Articulated Objects
+  url: https://arxiv.org/abs/2605.19136
+  date: '2026.05'
+  section: '3.3'
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Defines interaction-readiness for articulated assets, evaluates it, and refines physical properties with VLM priors and
+      simulator feedback.
+    zh: 为关节资产定义“可交互就绪度”并给出评估框架，再用 VLM 先验和仿真反馈迭代修正物理属性。
+    ja: 関節アセットの「インタラクション準備度」を定義して評価枠組みを示し、VLM の事前知識とシミュレータからのフィードバックで物理特性を反復修正する。
+  sources:
+  - https://arxiv.org/abs/2605.19136
+  - https://arxiv.org/html/2605.19136v1
+  verification:
+    en: A PhD thesis; experiments cover stability, agreement with human judgments, zero-shot VLA behavior and policy learning.
+    zh: 博士论文；实验涵盖稳定性、与人工判断的一致性、零样本 VLA 行为与策略学习。
+- id: '2606.08828'
+  title: 'Video2Sim2Real: Full-Stack Autonomous Dexterous Skill Acquisition from a Single Human Video'
+  url: https://arxiv.org/abs/2606.08828
+  date: '2026.06'
+  section: '3.2'
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Builds a simulation-ready digital twin from one human video, refines retargeted motion and trains a dexterous policy for
+      real transfer.
+    zh: 从一段人类视频构建可仿真的数字孪生，修正重定向动作，并训练灵巧操作策略迁移到实机。
+    ja: 一本の人間の動画からシミュレーション可能なデジタルツインを作り、リターゲットした動作を修正して、実機へ移す器用な操作方策を学習する。
+  sources:
+  - https://arxiv.org/abs/2606.08828
+  - https://arxiv.org/html/2606.08828v1
+  - https://video2sim2real.github.io/
+  verification:
+    en: Compared with refinement and pure-IL or pure-RL baselines in simulation, and transferred to seven real tasks; it shows its
+      own twin is usable for training rather than comparing simulators.
+    zh: 在仿真中与动作修正、纯模仿学习和纯 RL 基线比较，并在 7 个真实任务上迁移；证明的是自身孪生可用于训练，而非横向比较仿真器。
+- id: '2602.19359'
+  title: 'Vid2Sid: Videos Can Help Close the Sim2Real Gap'
+  url: https://arxiv.org/abs/2602.19359
+  date: '2026.02'
+  section: '3.2'
+  type: paper
+  scope: adjacent
+  tldr:
+    en: A VLM compares paired simulated and real videos and proposes physics-parameter updates with rationales.
+    zh: 由 VLM 对比配对的仿真与真实视频，提出摩擦、阻尼、刚度等物理参数的更新及理由。
+    ja: VLM が対になったシミュレーション動画と実動画を比べ、摩擦・減衰・剛性などの物理パラメータの更新案と理由を示す。
+  sources:
+  - https://arxiv.org/abs/2602.19359
+  - https://arxiv.org/html/2602.19359v1
+  verification:
+    en: Tested on a tendon-driven finger and a soft tentacle with held-out hardware controls; sim-to-sim parameter error stays
+      below 13% against 28–98% for black-box optimizers.
+    zh: 在腱驱动手指和软体触手上用留出的实机控制检验；sim-to-sim 参数相对误差低于 13%，黑盒优化基线为 28% 至 98%。
+- id: '2510.11689'
+  title: 'Phys2Real: Fusing VLM Priors with Interactive Online Adaptation for Uncertainty-Aware Sim-to-Real Manipulation'
+  url: https://arxiv.org/abs/2510.11689
+  date: '2025.10'
+  section: '3.2'
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Fuses VLM-inferred physical-parameter priors with online estimation under ensemble uncertainty for real-to-sim-to-real
+      RL.
+    zh: 把 VLM 推断的物理参数先验与在线估计按集成不确定性融合，用于 real-to-sim-to-real 强化学习。
+    ja: VLM が推定した物理パラメータの事前分布とオンライン推定を、アンサンブルの不確かさで融合し、real-to-sim-to-real の強化学習に用いる。
+  sources:
+  - https://arxiv.org/abs/2510.11689
+  - https://phys2real.github.io/
+  verification:
+    en: Planar pushing with shifted centers of mass outperforms domain randomization (100% vs 79% and 57% vs 23% success); online
+      estimation requires real interaction data.
+    zh: 在质心偏移的平面推动任务上优于域随机化（成功率 100% 对 79%、57% 对 23%）；在线估计需要真实交互数据。
+- id: '2611.03268'
+  title: 'VerifLM: Physically Verified Image-Edit-Guided Goal Pose Generation for Robotic Manipulation'
+  url: https://arxiv.org/abs/2611.03268
+  date: '2026.11'
+  section: '3.6'
+  sub: robot-interaction
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Turns a VLM-edited goal image into a 6-DoF goal pose that is checked for collision, penetration and stability in MuJoCo.
+    zh: 把 VLM 编辑的目标图像转成 6 自由度目标位姿，并在 MuJoCo 中检查碰撞、穿透与稳定性。
+    ja: VLM が編集した目標画像を 6 自由度の目標姿勢に変換し、MuJoCo で衝突・貫通・安定性を確かめる。
+  sources:
+  - https://arxiv.org/abs/2611.03268
+  - https://arxiv.org/html/2611.03268v1
+  - https://veriflm.github.io/VerifLM-webpage/
+  - https://github.com/trustworthyrobotics/VerifLM
+  - https://youtu.be/HTQgtDVdVBo
+  verification:
+    en: Nine KUKA iiwa tasks with 24 trials each reach 71.8% execution success against 47.2% for the best baseline; validation
+      targets goal poses, not the simulator.
+    zh: 9 个 KUKA iiwa 任务各 24 次试验，执行成功率 71.8%，最佳基线为 47.2%；验证对象是目标位姿，不是仿真器。

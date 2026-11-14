@@ -13,7 +13,7 @@
 
 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从数字世界延伸到物理世界。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-641-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--14-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-650-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--14-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · **简体中文** · [日本語](./README.ja.md)
 
@@ -58,11 +58,11 @@
   - [2.6 动作模型 × 机器人操作](#s2-6) (12)
 - [Stage 3 · 打通数字世界与物理世界](#stage-3)
   - [3.1 具身框架（Harness）](#s3-1) (84)
-  - [3.2 仿真器构建](#s3-2) (65)
-  - [3.3 仿真器质量评估](#s3-3) (23)
+  - [3.2 仿真器构建](#s3-2) (68)
+  - [3.3 仿真器质量评估](#s3-3) (28)
   - [3.4 数据](#s3-4) (14)
   - [3.5 训练与能力提升](#s3-5) (73)
-  - [3.6 物理应用与实验](#s3-6) (36)
+  - [3.6 物理应用与实验](#s3-6) (37)
 - [综述与相关合集](#related)
 - [联系与贡献](#contact) · [引用](#citation)
 
@@ -2637,6 +2637,11 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-2606-28276"></a>`2026.06` **[SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation](https://arxiv.org/abs/2606.28276)** [[代码]](https://github.com/NVlabs/SimFoundry) [[项目页]](https://research.nvidia.com/labs/gear/simfoundry/)
   > 把一段现实视频转成可交互数字孪生，再沿物体、布局和任务三个维度生成可训练的变体。
 
+<!-- mmac-record: {"id": "2606.08828", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2606-08828"></a>`2026.06` **[Video2Sim2Real: Full-Stack Autonomous Dexterous Skill Acquisition from a Single Human Video](https://arxiv.org/abs/2606.08828)** [[项目页]](https://video2sim2real.github.io/)
+  > 从一段人类视频构建可仿真的数字孪生，修正重定向动作，并训练灵巧操作策略迁移到实机。
+
 <!-- mmac-record: {"id": "2605.15187", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2605-15187"></a>`2026.05` **[Articraft: An Agentic System for Scalable Articulated 3D Asset Generation](https://arxiv.org/abs/2605.15187)** [[项目页]](https://articraft3d.github.io/)
@@ -2686,6 +2691,16 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 - <a id="paper-2602-09153"></a>`2026.02` **[SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes](https://arxiv.org/abs/2602.09153)** [[项目页]](https://scenesmith.github.io/)
   > 从建筑到家具再到小物体，逐层生成可直接进入物理模拟的密集室内场景。
+
+<!-- mmac-record: {"id": "2602.19359", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2602-19359"></a>`2026.02` **[Vid2Sid: Videos Can Help Close the Sim2Real Gap](https://arxiv.org/abs/2602.19359)**
+  > 由 VLM 对比配对的仿真与真实视频，提出摩擦、阻尼、刚度等物理参数的更新及理由。
+
+<!-- mmac-record: {"id": "2510.11689", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2510-11689"></a>`2025.10` **[Phys2Real: Fusing VLM Priors with Interactive Online Adaptation for Uncertainty-Aware Sim-to-Real Manipulation](https://arxiv.org/abs/2510.11689)** [[项目页]](https://phys2real.github.io/)
+  > 把 VLM 推断的物理参数先验与在线估计按集成不确定性融合，用于 real-to-sim-to-real 强化学习。
 
 <!-- mmac-record: {"id": "2509.20414", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -2771,11 +2786,11 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 | L0a | 需求符合 | 做到了要求里说的吗？ | [SceneEval](#paper-2503-14756) † · [LEGO-Eval](#paper-2511-03001) † · [SceneCritic](#paper-2604-13035) † · [Code4Scene](#paper-2609-36777) |
 | L0b | 参照还原 | 和参照看起来一样吗？ | [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786) · [BlenderWorld](#paper-system-blenderworld) · [Parametric CAD Bench v3](#paper-2611-02659) · [BVB](#paper-2609-15478) · [Frontier3DBench](#paper-2611-09017) |
 | L1 | 静态合理性 | 放着不动时，站得住、走得通吗？ | [GREP](#paper-2611-05802) † · [SceneTeract](#paper-2603-29798) † |
-| L2 | 交互响应 | 推一下、开一下，反应对吗？ | [ScIntBench](#paper-2610-37326) · [WorldCoder-Bench](#paper-2606-01869) · [Lab2Sim](#paper-2611-02928) |
+| L2 | 交互响应 | 推一下、开一下，反应对吗？ | [ScIntBench](#paper-2610-37326) · [WorldCoder-Bench](#paper-2606-01869) · [Lab2Sim](#paper-2611-02928) · [Articulated Simulation Physics](#paper-2605-19136) † |
 | L3a | 动态：看起来对 | 动起来的过程和参照视频一样吗？（只比画面和轨迹，手写动画也能得高分） | [ExeWorldBench](#paper-2610-15166) · [4DCodeBench](#paper-2610-03715) · [VisPhyWorld](#paper-2602-13294) · [Physics-Inspired Animations](#paper-2602-10840) · [PhyRubric](#paper-2611-13576) † · [Latent Prediction Error](#paper-2611-01815) · [Video2World](#paper-2610-04432) · [Real2Sim Benchmark](#paper-real2sim-benchmark) |
-| L3b | 动态：真在模拟 | 换个条件（斜坡更陡、球更重）重跑，结果会跟着正确变化吗？ | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) |
+| L3b | 动态：真在模拟 | 换个条件（斜坡更陡、球更重）重跑，结果会跟着正确变化吗？ | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) · [Polynomial Invariants](#paper-2609-13194) † |
 | L3c | 动态：数值准确 | 质量、摩擦等参数和真实一致吗？只看前几秒，能预测后面的过程吗？ | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
-| L4a | 下游：评测代理 | 拿去评测，策略排名和真实世界一致吗？ | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) |
+| L4a | 下游：评测代理 | 拿去评测，策略排名和真实世界一致吗？ | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) |
 | L4b | 下游：训练效用 | 拿去训练，训出的策略在真实世界好用吗？ | 暂无 |
 
 † 表示评估器，即主要贡献是评估工具的工作。每篇按论文主打的创新点归层。完整说明见 [仿真器质量评估：检验层级](stage3/simulator-evaluation.zh-CN.md)。
@@ -2830,6 +2845,21 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-2610-17521"></a>`2026.10` **[YUBI-Real2Sim: 3DGS Scene Verification for Reliable Policy Evaluation](https://arxiv.org/abs/2610.17521)** [[代码]](https://github.com/airoa-org/yubi-real2sim) [[数据集]](https://huggingface.co/datasets/airoa-org/yubi-real2sim-assets) [[项目页]](https://research.airoa.io/publications/yubi-real2sim/)
   > 把真实机器人场景重建为 3D 高斯视觉场景，并接入 MuJoCo 进行策略测试；通过真实与仿真的配对实验，研究重建中的孔洞、漂浮伪影等缺陷会怎样改变策略表现和排名。重点是判断这样的数字场景能否可靠地替代部分实机评测。
 
+<!-- mmac-record: {"id": "2609.24778", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2609-24778"></a>`2026.09` **[H2RBench: A Real-to-Sim Benchmark for Evaluating Human-to-Robot Transfer](https://arxiv.org/abs/2609.24778)** [[项目页]](https://davidz2851.github.io/h2rbench.github.io/)
+  > 用四个 real-to-sim 任务比较人类示范到机器人迁移的方法，检验仿真中的排名能否预测实机排名。
+
+<!-- mmac-record: {"id": "2609.27449", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2609-27449"></a>`2026.09` **[X2Real: an eXtensive simulation benchmark for real-world generalist policies](https://arxiv.org/abs/2609.27449)** [[代码]](https://github.com/X-Square-Robot/x2real) [[项目页]](https://x2robot.com/en/pages/x2real)
+  > 按真实硬件校准仿真画面与物理，构建 44 个长时程任务，检验仿真评分能否跟随实机评分。
+
+<!-- mmac-record: {"id": "2609.13194", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2609-13194"></a>`2026.08` **[Diagnosing Faults in Reinforcement Learning Simulators with Canonical Polynomial Invariants](https://arxiv.org/abs/2609.13194)** [[项目页]](https://www.github.com/TesfayZ/algebraicRLtest.git)
+  > 从轨迹中恢复多项式不变量，定位仿真器违反了哪条物理约束，以及由哪个参数引起。
+
 <!-- mmac-record: {"id": "2606.01538", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-01538"></a>`2026.06` **[MPMWorlds: Material-Point-Method Simulations for Inferring and Extrapolating Physical Dynamics](https://arxiv.org/abs/2606.01538)**
@@ -2839,6 +2869,11 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 - <a id="paper-2606-01869"></a>`2026.06` **[WorldCoder-Bench: Benchmarking Physically Grounded 3D World Synthesis](https://arxiv.org/abs/2606.01869)**
   > 要求模型根据自然语言生成浏览器中的交互式 3D 程序，任务包括模拟、渲染和应用。其 StateProbe 评估器会实际运行程序、执行动作并检查隐藏的状态要求，用来发现画面正常但交互逻辑或状态变化错误的产物。
+
+<!-- mmac-record: {"id": "2605.19136", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2605-19136"></a>`2026.05` **[Automatically Improving Simulation Physics for Articulated Objects](https://arxiv.org/abs/2605.19136)**
+  > 为关节资产定义“可交互就绪度”并给出评估框架，再用 VLM 先验和仿真反馈迭代修正物理属性。
 
 <!-- mmac-record: {"id": "2605.20576", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
@@ -2874,6 +2909,11 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 - <a id="paper-2602-13294"></a>`2026.02` **[VisPhyWorld: Probing Physical Reasoning via Code-Driven Video Reconstruction](https://arxiv.org/abs/2602.13294)**
   > 要求多模态模型把看到的物理视频写成能够运行的模拟器代码，使其对世界的理解变成可检查、可修改的程序。配套 VisPhyBench 用受控场景比较重建的外观与运动，研究模型能否从视觉线索恢复合理的物理过程。
+
+<!-- mmac-record: {"id": "2512.16881", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2512-16881"></a>`2025.12` **[PolaRiS: Scalable Real-to-Sim Evaluations for Generalist Robot Policies](https://arxiv.org/abs/2512.16881)** [[项目页]](https://polaris-evals.github.io/)
+  > 用神经重建把短视频扫描转成可交互的评测场景，并与通用策略的实机评测配对比较。
 
 <!-- mmac-record: {"id": "2511.03001", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
@@ -3381,6 +3421,11 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 - <a id="paper-2611-07881"></a>`2026.11` **[TactileLab: Sim-to-Real Dexterous Robot Manipulation with Efficient Shear-Sensitive Tactile Simulation](https://arxiv.org/abs/2611.07881)** [[项目页]](https://yijionglin.github.io/tactilelab/)
   > 利用真实／仿真配对的触觉表示迁移仿真训练的操作策略。
+
+<!-- mmac-record: {"id": "2611.03268", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-03268"></a>`2026.11` **[VerifLM: Physically Verified Image-Edit-Guided Goal Pose Generation for Robotic Manipulation](https://arxiv.org/abs/2611.03268)** [[项目页]](https://veriflm.github.io/VerifLM-webpage/) [[代码]](https://github.com/trustworthyrobotics/VerifLM) [[Demo]](https://youtu.be/HTQgtDVdVBo)
+  > 把 VLM 编辑的目标图像转成 6 自由度目标位姿，并在 MuJoCo 中检查碰撞、穿透与稳定性。
 
 <!-- mmac-record: {"id": "2610.12549", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 

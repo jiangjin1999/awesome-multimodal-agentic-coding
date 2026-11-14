@@ -13,7 +13,7 @@
 
 マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——デジタル世界から物理世界まで。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-641-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--14-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-650-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--14-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語**
 
@@ -61,11 +61,11 @@
   - [2.6 行動モデル × ロボット操作](#s2-6) (12)
 - [Stage 3 · デジタルと物理世界の架け橋](#stage-3)
   - [3.1 身体性ハーネス](#s3-1) (84)
-  - [3.2 シミュレータ構築](#s3-2) (65)
-  - [3.3 シミュレータ品質評価](#s3-3) (23)
+  - [3.2 シミュレータ構築](#s3-2) (68)
+  - [3.3 シミュレータ品質評価](#s3-3) (28)
   - [3.4 データ](#s3-4) (14)
   - [3.5 学習と能力向上](#s3-5) (73)
-  - [3.6 物理応用と実験](#s3-6) (36)
+  - [3.6 物理応用と実験](#s3-6) (37)
 - [サーベイと関連コレクション](#related)
 - [連絡とコントリビュート](#contact) · [引用](#citation)
 
@@ -2640,6 +2640,11 @@
 - <a id="paper-2606-28276"></a>`2026.06` **[SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation](https://arxiv.org/abs/2606.28276)** [[コード]](https://github.com/NVlabs/SimFoundry) [[プロジェクトページ]](https://research.nvidia.com/labs/gear/simfoundry/)
   > 現実の動画を対話可能なデジタルツインへ変換し、物体・配置・タスクの三つの軸で訓練用の派生環境を生成する。
 
+<!-- mmac-record: {"id": "2606.08828", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2606-08828"></a>`2026.06` **[Video2Sim2Real: Full-Stack Autonomous Dexterous Skill Acquisition from a Single Human Video](https://arxiv.org/abs/2606.08828)** [[プロジェクトページ]](https://video2sim2real.github.io/)
+  > 一本の人間の動画からシミュレーション可能なデジタルツインを作り、リターゲットした動作を修正して、実機へ移す器用な操作方策を学習する。
+
 <!-- mmac-record: {"id": "2605.15187", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2605-15187"></a>`2026.05` **[Articraft: An Agentic System for Scalable Articulated 3D Asset Generation](https://arxiv.org/abs/2605.15187)** [[プロジェクトページ]](https://articraft3d.github.io/)
@@ -2689,6 +2694,16 @@
 
 - <a id="paper-2602-09153"></a>`2026.02` **[SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes](https://arxiv.org/abs/2602.09153)** [[プロジェクトページ]](https://scenesmith.github.io/)
   > 建築、家具、小物の順に段階的に生成し、物理シミュレーションへ直接投入できる密な室内シーンを構築する。
+
+<!-- mmac-record: {"id": "2602.19359", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2602-19359"></a>`2026.02` **[Vid2Sid: Videos Can Help Close the Sim2Real Gap](https://arxiv.org/abs/2602.19359)**
+  > VLM が対になったシミュレーション動画と実動画を比べ、摩擦・減衰・剛性などの物理パラメータの更新案と理由を示す。
+
+<!-- mmac-record: {"id": "2510.11689", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2510-11689"></a>`2025.10` **[Phys2Real: Fusing VLM Priors with Interactive Online Adaptation for Uncertainty-Aware Sim-to-Real Manipulation](https://arxiv.org/abs/2510.11689)** [[プロジェクトページ]](https://phys2real.github.io/)
+  > VLM が推定した物理パラメータの事前分布とオンライン推定を、アンサンブルの不確かさで融合し、real-to-sim-to-real の強化学習に用いる。
 
 <!-- mmac-record: {"id": "2509.20414", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -2774,11 +2789,11 @@
 | L0a | 意味的忠実度 | 要件に書かれたことを満たしているか？ | [SceneEval](#paper-2503-14756) † · [LEGO-Eval](#paper-2511-03001) † · [SceneCritic](#paper-2604-13035) † · [Code4Scene](#paper-2609-36777) |
 | L0b | 視覚・再構成の忠実度 | 参照と同じに見えるか？ | [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786) · [BlenderWorld](#paper-system-blenderworld) · [Parametric CAD Bench v3](#paper-2611-02659) · [BVB](#paper-2609-15478) · [Frontier3DBench](#paper-2611-09017) |
 | L1 | 静的な物理的妥当性 | 静止した状態で、倒れず、通り抜けられるか？ | [GREP](#paper-2611-05802) † · [SceneTeract](#paper-2603-29798) † |
-| L2 | インタラクションの妥当性 | 押したり開けたりしたとき、正しく反応するか？ | [ScIntBench](#paper-2610-37326) · [WorldCoder-Bench](#paper-2606-01869) · [Lab2Sim](#paper-2611-02928) |
+| L2 | インタラクションの妥当性 | 押したり開けたりしたとき、正しく反応するか？ | [ScIntBench](#paper-2610-37326) · [WorldCoder-Bench](#paper-2606-01869) · [Lab2Sim](#paper-2611-02928) · [Articulated Simulation Physics](#paper-2605-19136) † |
 | L3a | 動態：見た目が正しい | 動きの過程は参照動画と同じか？（画面と軌跡だけを比べるため、手書きのアニメーションでも高得点になりうる） | [ExeWorldBench](#paper-2610-15166) · [4DCodeBench](#paper-2610-03715) · [VisPhyWorld](#paper-2602-13294) · [Physics-Inspired Animations](#paper-2602-10840) · [PhyRubric](#paper-2611-13576) † · [Latent Prediction Error](#paper-2611-01815) · [Video2World](#paper-2610-04432) · [Real2Sim Benchmark](#paper-real2sim-benchmark) |
-| L3b | 動態：本当にシミュレーション | 条件を変えて（坂をより急に、球をより重く）再実行すると、結果は正しく変わるか？ | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) |
+| L3b | 動態：本当にシミュレーション | 条件を変えて（坂をより急に、球をより重く）再実行すると、結果は正しく変わるか？ | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) · [Polynomial Invariants](#paper-2609-13194) † |
 | L3c | 動態：数値が正確 | 質量や摩擦などのパラメータは現実と一致するか？最初の数秒だけから、その後を予測できるか？ | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
-| L4a | 下流：評価の代理 | 評価に使ったとき、方策の順位は現実世界と一致するか？ | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) |
+| L4a | 下流：評価の代理 | 評価に使ったとき、方策の順位は現実世界と一致するか？ | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) |
 | L4b | 下流：学習効用 | 学習に使ったとき、学習した方策は現実世界で機能するか？ | まだなし |
 
 † は評価器、つまり主な貢献が評価ツールである作品を示します。各作品は論文が主張する主な貢献で配置しています。詳しい説明は英語版 [Simulator quality evaluation: a fidelity ladder](stage3/simulator-evaluation.md) を参照してください。
@@ -2833,6 +2848,21 @@
 - <a id="paper-2610-17521"></a>`2026.10` **[YUBI-Real2Sim: 3DGS Scene Verification for Reliable Policy Evaluation](https://arxiv.org/abs/2610.17521)** [[コード]](https://github.com/airoa-org/yubi-real2sim) [[データセット]](https://huggingface.co/datasets/airoa-org/yubi-real2sim-assets) [[プロジェクトページ]](https://research.airoa.io/publications/yubi-real2sim/)
   > 実機ロボットのシーンを 3D ガウス表現で再構成し、MuJoCo に接続して方策を試験する。実環境と模擬環境の対応実験で、穴や浮遊アーティファクトなどの再構成の欠陥が方策の成績や順位に与える影響を調べ、実機評価の一部を代替できるか検討する。
 
+<!-- mmac-record: {"id": "2609.24778", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2609-24778"></a>`2026.09` **[H2RBench: A Real-to-Sim Benchmark for Evaluating Human-to-Robot Transfer](https://arxiv.org/abs/2609.24778)** [[プロジェクトページ]](https://davidz2851.github.io/h2rbench.github.io/)
+  > 四つの real-to-sim タスクで人間から機械への転移手法を比較し、シミュレーション上の順位が実機の順位を予測できるかを確かめる。
+
+<!-- mmac-record: {"id": "2609.27449", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2609-27449"></a>`2026.09` **[X2Real: an eXtensive simulation benchmark for real-world generalist policies](https://arxiv.org/abs/2609.27449)** [[コード]](https://github.com/X-Square-Robot/x2real) [[プロジェクトページ]](https://x2robot.com/en/pages/x2real)
+  > 実機に合わせてシミュレーションの見た目と物理を校正し、44 の長期タスクでシミュレーションの評価が実機の評価に追従するかを確かめる。
+
+<!-- mmac-record: {"id": "2609.13194", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2609-13194"></a>`2026.08` **[Diagnosing Faults in Reinforcement Learning Simulators with Canonical Polynomial Invariants](https://arxiv.org/abs/2609.13194)** [[プロジェクトページ]](https://www.github.com/TesfayZ/algebraicRLtest.git)
+  > 軌跡から多項式の不変量を復元し、シミュレータがどの物理的制約に違反しているか、どのパラメータが原因かを特定する。
+
 <!-- mmac-record: {"id": "2606.01538", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-01538"></a>`2026.06` **[MPMWorlds: Material-Point-Method Simulations for Inferring and Extrapolating Physical Dynamics](https://arxiv.org/abs/2606.01538)**
@@ -2842,6 +2872,11 @@
 
 - <a id="paper-2606-01869"></a>`2026.06` **[WorldCoder-Bench: Benchmarking Physically Grounded 3D World Synthesis](https://arxiv.org/abs/2606.01869)**
   > 自然言語から、ブラウザーで動く対話型 3D プログラムを生成する課題を設け、シミュレーション、レンダリング、アプリを扱う。StateProbe はプログラムを実行して操作と隠れた状態要件を確認し、見た目は正常でも操作ロジックや状態変化が誤った成果物を検出する。
+
+<!-- mmac-record: {"id": "2605.19136", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2605-19136"></a>`2026.05` **[Automatically Improving Simulation Physics for Articulated Objects](https://arxiv.org/abs/2605.19136)**
+  > 関節アセットの「インタラクション準備度」を定義して評価枠組みを示し、VLM の事前知識とシミュレータからのフィードバックで物理特性を反復修正する。
 
 <!-- mmac-record: {"id": "2605.20576", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
@@ -2877,6 +2912,11 @@
 
 - <a id="paper-2602-13294"></a>`2026.02` **[VisPhyWorld: Probing Physical Reasoning via Code-Driven Video Reconstruction](https://arxiv.org/abs/2602.13294)**
   > マルチモーダルモデルが観察した物理動画を実行可能なシミュレーターコードにし、世界の理解を検査・修正できるプログラムとして表す。VisPhyBench は制御されたシーンで外観と運動の再構成を比較し、視覚情報から妥当な物理過程を復元できるか調べる。
+
+<!-- mmac-record: {"id": "2512.16881", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2512-16881"></a>`2025.12` **[PolaRiS: Scalable Real-to-Sim Evaluations for Generalist Robot Policies](https://arxiv.org/abs/2512.16881)** [[プロジェクトページ]](https://polaris-evals.github.io/)
+  > 短い動画スキャンからニューラル再構成で対話可能な評価シーンを作り、汎用方策の実機評価と対にして比較する。
 
 <!-- mmac-record: {"id": "2511.03001", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
@@ -3384,6 +3424,11 @@
 
 - <a id="paper-2611-07881"></a>`2026.11` **[TactileLab: Sim-to-Real Dexterous Robot Manipulation with Efficient Shear-Sensitive Tactile Simulation](https://arxiv.org/abs/2611.07881)** [[プロジェクトページ]](https://yijionglin.github.io/tactilelab/)
   > 実環境と模擬環境で対応付けた触覚表現を使い、シミュレーションで訓練した操作方策を転移する。
+
+<!-- mmac-record: {"id": "2611.03268", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-03268"></a>`2026.11` **[VerifLM: Physically Verified Image-Edit-Guided Goal Pose Generation for Robotic Manipulation](https://arxiv.org/abs/2611.03268)** [[プロジェクトページ]](https://veriflm.github.io/VerifLM-webpage/) [[コード]](https://github.com/trustworthyrobotics/VerifLM) [[デモ]](https://youtu.be/HTQgtDVdVBo)
+  > VLM が編集した目標画像を 6 自由度の目標姿勢に変換し、MuJoCo で衝突・貫通・安定性を確かめる。
 
 <!-- mmac-record: {"id": "2610.12549", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 

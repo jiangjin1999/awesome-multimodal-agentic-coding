@@ -63,6 +63,7 @@
   - [3.4 数据](#s3-4) (14)
   - [3.5 训练与能力提升](#s3-5) (73)
   - [3.6 物理应用与实验](#s3-6) (37)
+  - [仿真引擎一览](#s3-engines)
 - [综述与相关合集](#related)
 - [联系与贡献](#contact) · [引用](#citation)
 
@@ -2017,8 +2018,6 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 ### 3.1 具身框架（Harness）
 
-*常用执行环境:* [MuJoCo](https://mujoco.readthedocs.io/en/stable/overview.html) · [Isaac Sim](https://docs.isaacsim.omniverse.nvidia.com/latest/index.html) · [Gazebo](https://gazebosim.org/docs/latest/getstarted/) · [PyBullet](https://github.com/bulletphysics/bullet3)
-
 #### 工具与控制接口
 
 <!-- mmac-record: {"id": "2611.01560", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2457,8 +2456,6 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <a id="s3-2"></a>
 
 ### 3.2 仿真器构建
-
-*常用执行环境:* [MuJoCo](https://mujoco.readthedocs.io/en/stable/overview.html) · [Isaac Sim](https://docs.isaacsim.omniverse.nvidia.com/latest/index.html) · [Gazebo](https://gazebosim.org/docs/latest/getstarted/) · [PyBullet](https://github.com/bulletphysics/bullet3)
 
 <!-- mmac-record: {"id": "2611.10602", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -3635,6 +3632,27 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 - <a id="paper-ai-cad"></a>**[ai-cad](https://github.com/BorjaLL/ai-cad)** [[结果]](https://github.com/BorjaLL/ai-cad/blob/1ef2bf72de799006d069498d3ee146dae2e4f075/data/fits-measured.json)
   > 连接参数化 CAD 与人工打印试配。
+
+[↑ 返回目录](#contents)
+
+<a id="s3-engines"></a>
+
+### 仿真引擎一览
+
+Stage 3 工作中常用的物理仿真引擎。代表工作从以该引擎为主平台的工作中选取，按引用数和 GitHub star 排序。
+
+**做机械臂操作时怎么选：** 策略输入关节角、物体位姿等状态，且要求接触准 → MuJoCo；策略输入相机图像，或需要大规模合成数据 → Isaac Sim / Isaac Lab 或 ManiSkill；主要操作抽屉、柜门等关节物体 → SAPIEN / ManiSkill；涉及布料、绳子、软体 → Genesis 或 Newton。
+
+| 类别 | 引擎 | 一句话理解 | 用于机械臂操作 | 代表工作 |
+|---|---|---|---|---|
+| 物理引擎（只算物理，画面简单） | [MuJoCo](https://mujoco.readthedocs.io/en/stable/overview.html) | Google DeepMind 维护的开源物理引擎。一个 XML 文件写清机器人和物体，就能又快又准地算出碰撞和关节运动 | **首选**。接触准，适合输入状态的策略、强化学习、按真实数据校准参数；画面简单，不适合视觉策略 | [Real2Code](#paper-2406-08474) · [Articulate-Anything](#paper-2410-13882) · [LiteReality-Agent](#paper-2610-01863) |
+| | [PyBullet](https://pybullet.org/) | 老牌轻量物理引擎，pip 装上就能用 | 可用。适合快速做原型；精度和画面一般 | [GenSim](#paper-2310-01361) · [Instruct2Act](#paper-2305-11176) · [OMNI-EPIC](#paper-2405-15568) |
+| | [Drake](https://drake.mit.edu/) | 丰田研究院（TRI）主导开发的机器人工具箱，强调模型严谨和数学优化 | 可用。适合运动规划，以及检查放置稳不稳、有没有穿模；不适合大规模训练 | [SceneSmith](#paper-2602-09153) · [GIF](#paper-2609-05927) |
+| | [Genesis](https://genesis-world.readthedocs.io/en/latest/) | 新一代 Python 物理平台，刚体、布料、流体、软体用同一套接口 | 可用。涉及布料、软体的操作更合适；生态还比较新 | [RoboGen](#paper-2311-01455) · [GS-Agent](#paper-2607-21522) |
+| | [Newton](https://newton-physics.github.io/newton/) / [Warp](https://nvidia.github.io/warp/) | Warp 是 NVIDIA 用 Python 写 GPU 仿真代码的工具；Newton 是 NVIDIA、Google DeepMind、Disney Research 基于 Warp 联合开源的物理引擎 | 可用。GPU 加速、可微，适合布料、绳子、软体；还在快速迭代 | [RoboSimStudio](#paper-2610-18835) · [Gym-Anything](#paper-2610-40565) · [DeformMaster](#paper-2605-09586) |
+| 仿真平台（物理 + 逼真渲染 + 传感器） | [Isaac Sim](https://docs.isaacsim.omniverse.nvidia.com/latest/index.html) / [Isaac Lab](https://isaac-sim.github.io/IsaacLab/) | NVIDIA 的机器人仿真平台：物理用 PhysX，画面用光线追踪，还能模拟相机和激光雷达。Isaac Lab 是在它上面做并行训练的框架，前身是 Isaac Gym | **首选**。适合视觉策略、大规模合成数据、数字孪生；需要 NVIDIA 显卡，安装较重 | [SAGE](#paper-2602-10116) · [Gen2Sim](#paper-2310-18308) |
+| | [SAPIEN](https://github.com/haosulab/SAPIEN) / [ManiSkill](https://maniskill.readthedocs.io/en/latest/) | 专为操作任务设计的仿真平台，配套大量抽屉、柜门等关节物体模型。ManiSkill 是在它上面做的 GPU 并行任务集 | **首选**。适合关节物体操作、GPU 并行采数据 | [Articulate-Anything](#paper-2410-13882) · [EmbodiedGen V2](#paper-2607-07459) |
+| ROS 生态仿真器 | [Gazebo](https://gazebosim.org/docs/latest/getstarted/) / [Webots](https://cyberbotics.com/) | 面向整机系统测试：真机的 ROS 代码可以直接放进仿真里跑 | 可用。适合整套系统联调；抓取接触较弱，不适合大规模采数据 | [Adaptive Code Generation](#paper-2610-09588) · [Webots MCP](#paper-res-webots-mcp) |
 
 [↑ 返回目录](#contents)
 

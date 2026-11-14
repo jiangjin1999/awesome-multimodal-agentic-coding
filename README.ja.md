@@ -66,6 +66,7 @@
   - [3.4 データ](#s3-4) (14)
   - [3.5 学習と能力向上](#s3-5) (73)
   - [3.6 物理応用と実験](#s3-6) (37)
+  - [シミュレーションエンジン一覧](#s3-engines)
 - [サーベイと関連コレクション](#related)
 - [連絡とコントリビュート](#contact) · [引用](#citation)
 
@@ -2020,8 +2021,6 @@
 
 ### 3.1 身体性ハーネス
 
-*主な実行環境:* [MuJoCo](https://mujoco.readthedocs.io/en/stable/overview.html) · [Isaac Sim](https://docs.isaacsim.omniverse.nvidia.com/latest/index.html) · [Gazebo](https://gazebosim.org/docs/latest/getstarted/) · [PyBullet](https://github.com/bulletphysics/bullet3)
-
 #### ツールと制御インターフェース
 
 <!-- mmac-record: {"id": "2611.01560", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -2460,8 +2459,6 @@
 <a id="s3-2"></a>
 
 ### 3.2 シミュレータ構築
-
-*主な実行環境:* [MuJoCo](https://mujoco.readthedocs.io/en/stable/overview.html) · [Isaac Sim](https://docs.isaacsim.omniverse.nvidia.com/latest/index.html) · [Gazebo](https://gazebosim.org/docs/latest/getstarted/) · [PyBullet](https://github.com/bulletphysics/bullet3)
 
 <!-- mmac-record: {"id": "2611.10602", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -3638,6 +3635,27 @@
 
 - <a id="paper-ai-cad"></a>**[ai-cad](https://github.com/BorjaLL/ai-cad)** [[結果]](https://github.com/BorjaLL/ai-cad/blob/1ef2bf72de799006d069498d3ee146dae2e4f075/data/fits-measured.json)
   > パラメトリック CAD と、人による印刷物の試し合わせをつなぐ。
+
+[↑ 目次に戻る](#contents)
+
+<a id="s3-engines"></a>
+
+### シミュレーションエンジン一覧
+
+Stage 3 の作品でよく使われる物理シミュレーションエンジンです。代表作は、そのエンジンを主なプラットフォームとして使う作品から、被引用数と GitHub スター数の順に選んでいます。
+
+**ロボットアームによる操作で選ぶなら：** 関節角や物体姿勢などの状態を入力とし、正確な接触が必要 → MuJoCo；カメラ画像を入力とする、または大規模な合成データが必要 → Isaac Sim / Isaac Lab または ManiSkill；引き出しや扉などの関節物体を主に操作する → SAPIEN / ManiSkill；布、ケーブル、柔軟物を扱う → Genesis または Newton。
+
+| 分類 | エンジン | ひとことで | ロボットアーム操作での使い方 | 代表作 |
+|---|---|---|---|---|
+| 物理エンジン（物理計算のみ、描画は簡素） | [MuJoCo](https://mujoco.readthedocs.io/en/stable/overview.html) | Google DeepMind が保守するオープンソース物理エンジン。ロボットと物体を 1 つの XML ファイルに書けば、接触と関節の運動を高速かつ正確に計算する | **第一候補**。接触が正確で、状態入力の方策、強化学習、実データに基づくパラメータ較正に向く。描画は簡素で、視覚方策には向かない | [Real2Code](#paper-2406-08474) · [Articulate-Anything](#paper-2410-13882) · [LiteReality-Agent](#paper-2610-01863) |
+| | [PyBullet](https://pybullet.org/) | 定番の軽量物理エンジン。pip でインストールすればすぐ使える | 利用可。素早い試作に向く。精度と描画はそこそこ | [GenSim](#paper-2310-01361) · [Instruct2Act](#paper-2305-11176) · [OMNI-EPIC](#paper-2405-15568) |
+| | [Drake](https://drake.mit.edu/) | Toyota Research Institute（TRI）が中心となって開発するロボティクスツールボックス。厳密なモデルと数理最適化を重視する | 利用可。動作計画や、配置が安定しているか・めり込みがないかの検査に向く。大規模な学習には向かない | [SceneSmith](#paper-2602-09153) · [GIF](#paper-2609-05927) |
+| | [Genesis](https://genesis-world.readthedocs.io/en/latest/) | 新世代の Python ネイティブ物理プラットフォーム。剛体、布、流体、柔軟物を同じインターフェースで扱う | 利用可。布や柔軟物を含む操作に特に向く。エコシステムはまだ新しい | [RoboGen](#paper-2311-01455) · [GS-Agent](#paper-2607-21522) |
+| | [Newton](https://newton-physics.github.io/newton/) / [Warp](https://nvidia.github.io/warp/) | Warp は Python で GPU シミュレーションのコードを書くための NVIDIA のフレームワーク。Newton は NVIDIA、Google DeepMind、Disney Research が Warp 上で共同開発したオープンソース物理エンジン | 利用可。GPU で高速化でき微分可能で、布、ケーブル、柔軟物に向く。開発は今も急速に進んでいる | [RoboSimStudio](#paper-2610-18835) · [Gym-Anything](#paper-2610-40565) · [DeformMaster](#paper-2605-09586) |
+| シミュレーションプラットフォーム（物理＋リアルな描画＋センサー） | [Isaac Sim](https://docs.isaacsim.omniverse.nvidia.com/latest/index.html) / [Isaac Lab](https://isaac-sim.github.io/IsaacLab/) | NVIDIA のロボットシミュレーションプラットフォーム。物理は PhysX、描画はレイトレーシングで、カメラや LiDAR も模擬できる。Isaac Lab はその上の並列学習フレームワークで、Isaac Gym の後継 | **第一候補**。視覚方策、大規模な合成データ、デジタルツインに向く。NVIDIA GPU が必要で、導入は重い | [SAGE](#paper-2602-10116) · [Gen2Sim](#paper-2310-18308) |
+| | [SAPIEN](https://github.com/haosulab/SAPIEN) / [ManiSkill](https://maniskill.readthedocs.io/en/latest/) | 操作タスク向けに設計されたシミュレーションプラットフォームで、引き出しや扉などの関節物体モデルを多数備える。ManiSkill はその上に作られた GPU 並列のタスク集 | **第一候補**。関節物体の操作や GPU 並列のデータ収集に向く | [Articulate-Anything](#paper-2410-13882) · [EmbodiedGen V2](#paper-2607-07459) |
+| ROS 系シミュレータ | [Gazebo](https://gazebosim.org/docs/latest/getstarted/) / [Webots](https://cyberbotics.com/) | システム全体のテスト向け。実機の ROS コードをそのままシミュレーションで動かせる | 利用可。システム全体の統合試験に向く。把持の接触は弱く、大規模なデータ収集には向かない | [Adaptive Code Generation](#paper-2610-09588) · [Webots MCP](#paper-res-webots-mcp) |
 
 [↑ 目次に戻る](#contents)
 

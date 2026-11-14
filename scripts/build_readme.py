@@ -58,6 +58,12 @@ def validate(site, works, strict_ja):
         for k in st['start_with']:
             if k not in byid:
                 errors.append(f"stage {st['id']}: start_with id {k} not found")
+        for extra in st.get('extras') or []:
+            if not re.fullmatch(r'[a-z0-9-]+', extra.get('anchor') or '') or extra['anchor'] in {sec_anchor(s) for s in secs}:
+                errors.append(f"stage {st['id']}: invalid extra anchor {extra.get('anchor')!r}")
+            for lang in LANGS:
+                if not (extra.get('title') or {}).get(lang) or not (extra.get('body') or {}).get(lang, '').strip():
+                    errors.append(f"stage {st['id']}: extra {extra.get('anchor')} missing title/body for {lang}")
     for sec, ks in (site.get('see_also') or {}).items():
         for k in ks:
             if k not in byid:
@@ -238,6 +244,8 @@ def render(site, works, lang):
         o(f"- [Stage {st['id']} · {st['name'][lang]}](#stage-{st['id']})")
         for sec in st['sections']:
             o(f"  - [{sec} {site['sections'][sec][lang]}](#{sec_anchor(sec)}) ({sec_count.get(sec, 0)})")
+        for extra in st.get('extras') or []:
+            o(f"  - [{extra['title'][lang]}](#{extra['anchor']})")
     o(f"- [{t(site, 'related_title', lang)}](#related)")
     o(f"- [{t(site, 'contact_title', lang)}](#contact) · [{t(site, 'citation_title', lang)}](#citation)\n")
 
@@ -266,6 +274,12 @@ def render(site, works, lang):
             see = list((site.get('see_also') or {}).get(sec, [])) + stage_see.get(sec, [])
             if see:
                 o(f"*{t(site, 'see_also', lang)}:* {link_list(see, byid)}\n")
+            o(f"[↑ {t(site, 'back_to_contents', lang)}](#contents)\n")
+        # Unnumbered reference blocks: listed in the contents, but hold no entries.
+        for extra in st.get('extras') or []:
+            named_anchor(extra['anchor'])
+            o(f"### {extra['title'][lang]}\n")
+            o(extra['body'][lang].strip() + '\n')
             o(f"[↑ {t(site, 'back_to_contents', lang)}](#contents)\n")
 
     # surveys & related

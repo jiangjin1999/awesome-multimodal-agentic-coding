@@ -21,6 +21,8 @@
 
 A section in `site.yaml` may carry an optional `guide` (one Markdown block per language) rendered under its heading; section 3.3 uses it for a fidelity-level overview table that links to `stage3/simulator-evaluation.md`. Keep its work links in sync when entries move.
 
+A stage may also carry `extras`: unnumbered reference blocks, each with an `anchor` and a localized `title` and `body`. They are rendered after the stage's numbered sections and listed in the contents without a count. They hold no entries and do not change the 19 numbered sections. Stage 3 uses one (`s3-engines`) for the simulation-engine overview; its representative works are chosen from works that use the engine as their main platform, ranked by citations and GitHub stars.
+
 The generator names supporting links by destination type using the localized `source_labels` in `data/site.yaml`. Record URL exceptions in `source_kind_overrides` when the destination cannot be inferred from its address. Stage 3 reading entries use the same labels. Keep all source URLs in the catalog. The generated entry displays one entrance per paper, using the linked title first. Record verified copies across publishers in `paper_url_aliases` and name direct section links in `source_kind_overrides`.
 
 For new and revised entries, follow resource links from the official project page, paper, or repository. Add direct links to public code, datasets, demos, and model releases. Check that code links lead to implementation files and label repositories that contain only documentation or compiled releases by their actual contents.

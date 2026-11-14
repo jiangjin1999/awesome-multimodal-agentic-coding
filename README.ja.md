@@ -3649,6 +3649,13 @@
   <img src="assets/engine-map/engine-map-ja-light.svg" alt="シミュレーションツールの対応範囲。横軸は素材、シーン記述、物理パラメータ、物理ソルバ、レンダリング、センサー、ロボット制御、タスクと学習の八工程。MuJoCo は物理計算が中心で、robosuite と RoboCasa がその上に制御、タスク、学習を加える。Isaac Sim は素材から制御までを担い、物理には PhysX を使う。Isaac Lab はその上で並列学習を担う。SAPIEN/ManiSkill は操作タスクの全工程を扱う。Genesis は物理計算に加えてセンサー、逆運動学、動作計画を備える。Newton/Warp、Drake、PyBullet は物理計算が中心で、Drake は計画と最適化にも強い。Gazebo/Webots はセンサーと ROS に強い。Blender は比較用で、モデリングと描画に強いが、物理は見た目重視にとどまる。" width="100%">
 </picture>
 
+<details>
+<summary>ツールのドキュメントとサンプル</summary>
+
+[MuJoCo](https://mujoco.readthedocs.io/en/stable/overview.html) · [PyBullet](https://pybullet.org/) · [Bullet](https://github.com/bulletphysics/bullet3) · [Drake](https://drake.mit.edu/) · [Genesis](https://genesis-world.readthedocs.io/en/latest/) · [Newton](https://newton-physics.github.io/newton/) · [Warp](https://nvidia.github.io/warp/) · [Isaac Sim](https://docs.isaacsim.omniverse.nvidia.com/latest/index.html) · [Isaac Lab](https://isaac-sim.github.io/IsaacLab/) · [Isaac Gym](https://github.com/isaac-sim/IsaacGymEnvs) · [SAPIEN](https://github.com/haosulab/SAPIEN) · [ManiSkill](https://maniskill.readthedocs.io/en/latest/) · [Gazebo](https://gazebosim.org/docs/latest/getstarted/) · [Webots](https://cyberbotics.com/) · [GS-Agent のサンプルスクリプト](https://github.com/UMass-Embodied-AGI/gs-agent/tree/gh-pages/static/code)
+
+</details>
+
 [↑ 目次に戻る](#contents)
 
 <a id="surveys-and-related-collections"></a>

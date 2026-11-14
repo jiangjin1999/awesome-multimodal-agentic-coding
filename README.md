@@ -3646,6 +3646,13 @@ Read across a row to see which steps of a simulator each tool handles. Coverage 
   <img src="assets/engine-map/engine-map-en-light.svg" alt="Coverage map of simulation tools across eight steps: assets, scene file, physical parameters, physics solver, rendering, sensors, control, and tasks and training. MuJoCo centres on physics solving; robosuite and RoboCasa are built on it and add control, tasks and training. Isaac Sim covers assets through control and uses PhysX for physics; Isaac Lab is built on it and adds parallel training. SAPIEN/ManiSkill covers the whole manipulation pipeline. Genesis adds sensors, inverse kinematics and motion planning to its physics. Newton/Warp, Drake and PyBullet centre on physics solving, and Drake is also strong in planning and optimization. Gazebo/Webots are strong in sensors and ROS. Blender is shown for contrast: it models and renders well, but its physics only aims to look right." width="100%">
 </picture>
 
+<details>
+<summary>Tool documentation and examples</summary>
+
+[MuJoCo](https://mujoco.readthedocs.io/en/stable/overview.html) · [PyBullet](https://pybullet.org/) · [Bullet](https://github.com/bulletphysics/bullet3) · [Drake](https://drake.mit.edu/) · [Genesis](https://genesis-world.readthedocs.io/en/latest/) · [Newton](https://newton-physics.github.io/newton/) · [Warp](https://nvidia.github.io/warp/) · [Isaac Sim](https://docs.isaacsim.omniverse.nvidia.com/latest/index.html) · [Isaac Lab](https://isaac-sim.github.io/IsaacLab/) · [Isaac Gym](https://github.com/isaac-sim/IsaacGymEnvs) · [SAPIEN](https://github.com/haosulab/SAPIEN) · [ManiSkill](https://maniskill.readthedocs.io/en/latest/) · [Gazebo](https://gazebosim.org/docs/latest/getstarted/) · [Webots](https://cyberbotics.com/) · [GS-Agent example scripts](https://github.com/UMass-Embodied-AGI/gs-agent/tree/gh-pages/static/code)
+
+</details>
+
 [↑ Back to contents](#contents)
 
 <a id="surveys-and-related-collections"></a>

@@ -3646,6 +3646,13 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
   <img src="assets/engine-map/engine-map-zh-light.svg" alt="仿真工具覆盖图，横轴是八个环节：素材、场景文件、物理参数、物理求解、渲染、传感器、控制接口、任务与训练。MuJoCo 以物理求解为核心，robosuite 和 RoboCasa 建在它之上，补上控制、任务与训练。Isaac Sim 覆盖从素材到控制接口，物理用 PhysX；Isaac Lab 建在它之上，负责并行训练。SAPIEN/ManiSkill 覆盖操作任务的全流程。Genesis 在物理求解之外还提供传感器、逆运动学和运动规划。Newton/Warp、Drake 和 PyBullet 以物理求解为核心，Drake 还擅长规划与优化。Gazebo/Webots 强在传感器和 ROS。Blender 作为对照：建模和渲染强，但物理只求看起来对。" width="100%">
 </picture>
 
+<details>
+<summary>工具文档与示例</summary>
+
+[MuJoCo](https://mujoco.readthedocs.io/en/stable/overview.html) · [PyBullet](https://pybullet.org/) · [Bullet](https://github.com/bulletphysics/bullet3) · [Drake](https://drake.mit.edu/) · [Genesis](https://genesis-world.readthedocs.io/en/latest/) · [Newton](https://newton-physics.github.io/newton/) · [Warp](https://nvidia.github.io/warp/) · [Isaac Sim](https://docs.isaacsim.omniverse.nvidia.com/latest/index.html) · [Isaac Lab](https://isaac-sim.github.io/IsaacLab/) · [Isaac Gym](https://github.com/isaac-sim/IsaacGymEnvs) · [SAPIEN](https://github.com/haosulab/SAPIEN) · [ManiSkill](https://maniskill.readthedocs.io/en/latest/) · [Gazebo](https://gazebosim.org/docs/latest/getstarted/) · [Webots](https://cyberbotics.com/) · [GS-Agent 脚本示例](https://github.com/UMass-Embodied-AGI/gs-agent/tree/gh-pages/static/code)
+
+</details>
+
 [↑ 返回目录](#contents)
 
 <a id="surveys-and-related-collections"></a>

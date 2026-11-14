@@ -2820,8 +2820,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 | L3a | 动态：看起来对 | 动起来的过程和参照视频一样吗？（只比画面和轨迹，手写动画也能得高分） | [ExeWorldBench](#paper-2610-15166) · [4DCodeBench](#paper-2610-03715) · [VisPhyWorld](#paper-2602-13294) · [Physics-Inspired Animations](#paper-2602-10840) · [PhyRubric](#paper-2611-13576) † · [Latent Prediction Error](#paper-2611-01815) · [Video2World](#paper-2610-04432) · [Real2Sim Benchmark](#paper-real2sim-benchmark) |
 | L3b | 动态：真在模拟 | 换个条件（斜坡更陡、球更重）重跑，结果会跟着正确变化吗？ | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) · [Polynomial Invariants](#paper-2609-13194) † |
 | L3c | 动态：数值准确 | 质量、摩擦等参数和真实一致吗？只看前几秒，能预测后面的过程吗？ | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
-| L4a | 下游：评测代理 | 拿去评测，策略排名和真实世界一致吗？ | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) |
-| L4b | 下游：训练效用 | 拿去训练，训出的策略在真实世界好用吗？ | 暂无 |
+| L4 | 下游效用 | 拿去评测或训练，结论在真实世界成立吗？ | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) |
 
 † 表示评估器，即主要贡献是评估工具的工作。每篇按论文主打的创新点归层。完整说明见 [仿真器质量评估：检验层级](stage3/simulator-evaluation.zh-CN.md)。
 

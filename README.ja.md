@@ -2823,8 +2823,7 @@
 | L3a | 動態：見た目が正しい | 動きの過程は参照動画と同じか？（画面と軌跡だけを比べるため、手書きのアニメーションでも高得点になりうる） | [ExeWorldBench](#paper-2610-15166) · [4DCodeBench](#paper-2610-03715) · [VisPhyWorld](#paper-2602-13294) · [Physics-Inspired Animations](#paper-2602-10840) · [PhyRubric](#paper-2611-13576) † · [Latent Prediction Error](#paper-2611-01815) · [Video2World](#paper-2610-04432) · [Real2Sim Benchmark](#paper-real2sim-benchmark) |
 | L3b | 動態：本当にシミュレーション | 条件を変えて（坂をより急に、球をより重く）再実行すると、結果は正しく変わるか？ | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) · [Polynomial Invariants](#paper-2609-13194) † |
 | L3c | 動態：数値が正確 | 質量や摩擦などのパラメータは現実と一致するか？最初の数秒だけから、その後を予測できるか？ | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
-| L4a | 下流：評価の代理 | 評価に使ったとき、方策の順位は現実世界と一致するか？ | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) |
-| L4b | 下流：学習効用 | 学習に使ったとき、学習した方策は現実世界で機能するか？ | まだなし |
+| L4 | Sim-to-Real 予測性 | 評価や学習に使ったとき、結論は現実世界でも成り立つか？ | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) |
 
 † は評価器、つまり主な貢献が評価ツールである作品を示します。各作品は論文が主張する主な貢献で配置しています。詳しい説明は英語版 [Simulator quality evaluation: a fidelity ladder](stage3/simulator-evaluation.md) を参照してください。
 

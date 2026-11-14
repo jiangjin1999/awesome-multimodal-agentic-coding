@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1084 546" width="1084" height="546" role="img" aria-label="仿真工具强项对比" font-family="&#x27;PingFang SC&#x27;, &#x27;Hiragino Sans GB&#x27;, &#x27;Microsoft YaHei&#x27;, &#x27;Noto Sans CJK SC&#x27;, &#x27;Noto Sans SC&#x27;, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1114 582" width="1114" height="582" role="img" aria-label="仿真工具强项对比" font-family="&#x27;PingFang SC&#x27;, &#x27;Hiragino Sans GB&#x27;, &#x27;Microsoft YaHei&#x27;, &#x27;Noto Sans CJK SC&#x27;, &#x27;Noto Sans SC&#x27;, sans-serif">
 <title>仿真工具强项对比</title>
-<rect x="0.5" y="0.5" width="1083" height="545" rx="10" fill="#0D1117" stroke="#3D444D"/>
+<rect x="0.5" y="0.5" width="1113" height="581" rx="10" fill="#0D1117" stroke="#3D444D"/>
 <rect x="22" y="23" width="52" height="22" rx="4" fill="#45C3B3"/>
 <circle cx="37" cy="34" r="3.6" fill="#0D1117"/>
 <circle cx="48" cy="34" r="3.6" fill="#0D1117"/>
@@ -18,316 +18,324 @@
 <text x="285.0" y="38.5" font-size="13" fill="#9198A1">弱或要靠外部工具</text>
 <polygon points="420.0,26.0 422.1,31.1 427.6,31.5 423.4,35.1 424.7,40.5 420.0,37.6 415.3,40.5 416.6,35.1 412.4,31.5 417.9,31.1" fill="#E3A251"/>
 <text x="435.0" y="38.5" font-size="13" fill="#9198A1">这一项的首推</text>
-<text x="285" y="74" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E6EDF3">接触精度</text>
-<text x="285" y="93" text-anchor="middle" font-size="12" fill="#9198A1">抓取、插孔</text>
-<text x="389" y="74" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E6EDF3">画面逼真</text>
-<text x="389" y="93" text-anchor="middle" font-size="12" fill="#9198A1">看图做决策</text>
-<text x="493" y="74" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E6EDF3">GPU 并行</text>
-<text x="493" y="93" text-anchor="middle" font-size="12" fill="#9198A1">同时开几千份</text>
-<text x="597" y="74" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E6EDF3">软体布料</text>
-<text x="597" y="93" text-anchor="middle" font-size="12" fill="#9198A1">布、绳、流体</text>
-<text x="701" y="74" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E6EDF3">关节物体</text>
-<text x="701" y="93" text-anchor="middle" font-size="12" fill="#9198A1">抽屉、柜门</text>
-<text x="805" y="74" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E6EDF3">规划优化</text>
-<text x="805" y="93" text-anchor="middle" font-size="12" fill="#9198A1">IK、轨迹</text>
-<text x="909" y="74" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E6EDF3">ROS 与真机</text>
-<text x="909" y="93" text-anchor="middle" font-size="12" fill="#9198A1">代码上真机</text>
-<text x="1013" y="74" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E6EDF3">Agent 友好</text>
-<text x="1013" y="93" text-anchor="middle" font-size="12" fill="#9198A1">好写好改</text>
-<text x="22" y="133" font-size="15" font-weight="700" fill="#E6EDF3">MuJoCo</text>
-<text x="22" y="151" font-size="12" fill="#9198A1">接触准，Agent 好写</text>
-<rect x="236" y="114" width="98" height="46" rx="4" fill="#45C3B3"/>
-<circle cx="271" cy="137" r="4.6" fill="#0D1117"/>
-<circle cx="285" cy="137" r="4.6" fill="#0D1117"/>
-<circle cx="299" cy="137" r="4.6" fill="#0D1117"/>
-<rect x="340" y="114" width="98" height="46" rx="4" fill="#14262A"/>
-<circle cx="375" cy="137" r="4.6" fill="#9198A1"/>
-<circle cx="389" cy="137" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<circle cx="403" cy="137" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<rect x="444" y="114" width="98" height="46" rx="4" fill="#22645C"/>
-<circle cx="479" cy="137" r="4.6" fill="#E6EDF3"/>
-<circle cx="493" cy="137" r="4.6" fill="#E6EDF3"/>
-<circle cx="507" cy="137" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
-<rect x="548" y="114" width="98" height="46" rx="4" fill="#14262A"/>
-<circle cx="583" cy="137" r="4.6" fill="#9198A1"/>
-<circle cx="597" cy="137" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<circle cx="611" cy="137" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<rect x="652" y="114" width="98" height="46" rx="4" fill="#22645C"/>
-<circle cx="687" cy="137" r="4.6" fill="#E6EDF3"/>
-<circle cx="701" cy="137" r="4.6" fill="#E6EDF3"/>
-<circle cx="715" cy="137" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
-<rect x="756" y="114" width="98" height="46" rx="4" fill="#14262A"/>
-<circle cx="791" cy="137" r="4.6" fill="#9198A1"/>
-<circle cx="805" cy="137" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<circle cx="819" cy="137" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<rect x="860" y="114" width="98" height="46" rx="4" fill="#14262A"/>
-<circle cx="895" cy="137" r="4.6" fill="#9198A1"/>
-<circle cx="909" cy="137" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<circle cx="923" cy="137" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<rect x="964" y="114" width="98" height="46" rx="4" fill="#45C3B3"/>
-<circle cx="999" cy="137" r="4.6" fill="#0D1117"/>
-<circle cx="1013" cy="137" r="4.6" fill="#0D1117"/>
-<circle cx="1027" cy="137" r="4.6" fill="#0D1117"/>
-<rect x="965.25" y="115.25" width="95.5" height="43.5" rx="3.5" fill="none" stroke="#E3A251" stroke-width="2.5"/>
-<circle cx="1050" cy="126" r="9" fill="#0D1117"/>
-<polygon points="1050.0,119.0 1052.0,123.8 1057.1,124.2 1053.2,127.5 1054.4,132.6 1050.0,129.9 1045.6,132.6 1046.8,127.5 1042.9,124.2 1048.0,123.8" fill="#E3A251"/>
-<text x="22" y="185" font-size="15" font-weight="700" fill="#E6EDF3">Isaac Sim / Lab</text>
-<text x="22" y="203" font-size="12" fill="#9198A1">画面逼真，大规模并行</text>
-<rect x="236" y="166" width="98" height="46" rx="4" fill="#22645C"/>
-<circle cx="271" cy="189" r="4.6" fill="#E6EDF3"/>
-<circle cx="285" cy="189" r="4.6" fill="#E6EDF3"/>
-<circle cx="299" cy="189" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
-<rect x="340" y="166" width="98" height="46" rx="4" fill="#45C3B3"/>
-<circle cx="375" cy="189" r="4.6" fill="#0D1117"/>
-<circle cx="389" cy="189" r="4.6" fill="#0D1117"/>
-<circle cx="403" cy="189" r="4.6" fill="#0D1117"/>
-<rect x="341.25" y="167.25" width="95.5" height="43.5" rx="3.5" fill="none" stroke="#E3A251" stroke-width="2.5"/>
-<circle cx="426" cy="178" r="9" fill="#0D1117"/>
-<polygon points="426.0,171.0 428.0,175.8 433.1,176.2 429.2,179.5 430.4,184.6 426.0,181.9 421.6,184.6 422.8,179.5 418.9,176.2 424.0,175.8" fill="#E3A251"/>
-<rect x="444" y="166" width="98" height="46" rx="4" fill="#45C3B3"/>
-<circle cx="479" cy="189" r="4.6" fill="#0D1117"/>
-<circle cx="493" cy="189" r="4.6" fill="#0D1117"/>
-<circle cx="507" cy="189" r="4.6" fill="#0D1117"/>
-<rect x="445.25" y="167.25" width="95.5" height="43.5" rx="3.5" fill="none" stroke="#E3A251" stroke-width="2.5"/>
-<circle cx="530" cy="178" r="9" fill="#0D1117"/>
-<polygon points="530.0,171.0 532.0,175.8 537.1,176.2 533.2,179.5 534.4,184.6 530.0,181.9 525.6,184.6 526.8,179.5 522.9,176.2 528.0,175.8" fill="#E3A251"/>
-<rect x="548" y="166" width="98" height="46" rx="4" fill="#22645C"/>
-<circle cx="583" cy="189" r="4.6" fill="#E6EDF3"/>
-<circle cx="597" cy="189" r="4.6" fill="#E6EDF3"/>
-<circle cx="611" cy="189" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
-<rect x="652" y="166" width="98" height="46" rx="4" fill="#22645C"/>
-<circle cx="687" cy="189" r="4.6" fill="#E6EDF3"/>
-<circle cx="701" cy="189" r="4.6" fill="#E6EDF3"/>
-<circle cx="715" cy="189" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
-<rect x="756" y="166" width="98" height="46" rx="4" fill="#22645C"/>
-<circle cx="791" cy="189" r="4.6" fill="#E6EDF3"/>
-<circle cx="805" cy="189" r="4.6" fill="#E6EDF3"/>
-<circle cx="819" cy="189" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
-<rect x="860" y="166" width="98" height="46" rx="4" fill="#22645C"/>
-<circle cx="895" cy="189" r="4.6" fill="#E6EDF3"/>
-<circle cx="909" cy="189" r="4.6" fill="#E6EDF3"/>
-<circle cx="923" cy="189" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
-<rect x="964" y="166" width="98" height="46" rx="4" fill="#14262A"/>
-<circle cx="999" cy="189" r="4.6" fill="#9198A1"/>
-<circle cx="1013" cy="189" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<circle cx="1027" cy="189" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<text x="22" y="237" font-size="15" font-weight="700" fill="#E6EDF3">SAPIEN / ManiSkill</text>
-<text x="22" y="255" font-size="12" fill="#9198A1">关节物体，GPU 并行</text>
-<rect x="236" y="218" width="98" height="46" rx="4" fill="#22645C"/>
-<circle cx="271" cy="241" r="4.6" fill="#E6EDF3"/>
-<circle cx="285" cy="241" r="4.6" fill="#E6EDF3"/>
-<circle cx="299" cy="241" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
-<rect x="340" y="218" width="98" height="46" rx="4" fill="#22645C"/>
-<circle cx="375" cy="241" r="4.6" fill="#E6EDF3"/>
-<circle cx="389" cy="241" r="4.6" fill="#E6EDF3"/>
-<circle cx="403" cy="241" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
-<rect x="444" y="218" width="98" height="46" rx="4" fill="#45C3B3"/>
-<circle cx="479" cy="241" r="4.6" fill="#0D1117"/>
-<circle cx="493" cy="241" r="4.6" fill="#0D1117"/>
-<circle cx="507" cy="241" r="4.6" fill="#0D1117"/>
-<rect x="548" y="218" width="98" height="46" rx="4" fill="#14262A"/>
-<circle cx="583" cy="241" r="4.6" fill="#9198A1"/>
-<circle cx="597" cy="241" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<circle cx="611" cy="241" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<rect x="652" y="218" width="98" height="46" rx="4" fill="#45C3B3"/>
-<circle cx="687" cy="241" r="4.6" fill="#0D1117"/>
-<circle cx="701" cy="241" r="4.6" fill="#0D1117"/>
-<circle cx="715" cy="241" r="4.6" fill="#0D1117"/>
-<rect x="653.25" y="219.25" width="95.5" height="43.5" rx="3.5" fill="none" stroke="#E3A251" stroke-width="2.5"/>
-<circle cx="738" cy="230" r="9" fill="#0D1117"/>
-<polygon points="738.0,223.0 740.0,227.8 745.1,228.2 741.2,231.5 742.4,236.6 738.0,233.9 733.6,236.6 734.8,231.5 730.9,228.2 736.0,227.8" fill="#E3A251"/>
-<rect x="756" y="218" width="98" height="46" rx="4" fill="#22645C"/>
-<circle cx="791" cy="241" r="4.6" fill="#E6EDF3"/>
-<circle cx="805" cy="241" r="4.6" fill="#E6EDF3"/>
-<circle cx="819" cy="241" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
-<rect x="860" y="218" width="98" height="46" rx="4" fill="#14262A"/>
-<circle cx="895" cy="241" r="4.6" fill="#9198A1"/>
-<circle cx="909" cy="241" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<circle cx="923" cy="241" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<rect x="964" y="218" width="98" height="46" rx="4" fill="#22645C"/>
-<circle cx="999" cy="241" r="4.6" fill="#E6EDF3"/>
-<circle cx="1013" cy="241" r="4.6" fill="#E6EDF3"/>
-<circle cx="1027" cy="241" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
-<text x="22" y="289" font-size="15" font-weight="700" fill="#E6EDF3">Genesis</text>
-<text x="22" y="307" font-size="12" fill="#9198A1">软体、布料、流体</text>
-<rect x="236" y="270" width="98" height="46" rx="4" fill="#22645C"/>
-<circle cx="271" cy="293" r="4.6" fill="#E6EDF3"/>
-<circle cx="285" cy="293" r="4.6" fill="#E6EDF3"/>
-<circle cx="299" cy="293" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
-<rect x="340" y="270" width="98" height="46" rx="4" fill="#22645C"/>
-<circle cx="375" cy="293" r="4.6" fill="#E6EDF3"/>
-<circle cx="389" cy="293" r="4.6" fill="#E6EDF3"/>
-<circle cx="403" cy="293" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
-<rect x="444" y="270" width="98" height="46" rx="4" fill="#45C3B3"/>
-<circle cx="479" cy="293" r="4.6" fill="#0D1117"/>
-<circle cx="493" cy="293" r="4.6" fill="#0D1117"/>
-<circle cx="507" cy="293" r="4.6" fill="#0D1117"/>
-<rect x="548" y="270" width="98" height="46" rx="4" fill="#45C3B3"/>
-<circle cx="583" cy="293" r="4.6" fill="#0D1117"/>
-<circle cx="597" cy="293" r="4.6" fill="#0D1117"/>
-<circle cx="611" cy="293" r="4.6" fill="#0D1117"/>
-<rect x="549.25" y="271.25" width="95.5" height="43.5" rx="3.5" fill="none" stroke="#E3A251" stroke-width="2.5"/>
-<circle cx="634" cy="282" r="9" fill="#0D1117"/>
-<polygon points="634.0,275.0 636.0,279.8 641.1,280.2 637.2,283.5 638.4,288.6 634.0,285.9 629.6,288.6 630.8,283.5 626.9,280.2 632.0,279.8" fill="#E3A251"/>
-<rect x="652" y="270" width="98" height="46" rx="4" fill="#22645C"/>
-<circle cx="687" cy="293" r="4.6" fill="#E6EDF3"/>
-<circle cx="701" cy="293" r="4.6" fill="#E6EDF3"/>
-<circle cx="715" cy="293" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
-<rect x="756" y="270" width="98" height="46" rx="4" fill="#22645C"/>
-<circle cx="791" cy="293" r="4.6" fill="#E6EDF3"/>
-<circle cx="805" cy="293" r="4.6" fill="#E6EDF3"/>
-<circle cx="819" cy="293" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
-<rect x="860" y="270" width="98" height="46" rx="4" fill="#14262A"/>
-<circle cx="895" cy="293" r="4.6" fill="#9198A1"/>
-<circle cx="909" cy="293" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<circle cx="923" cy="293" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<rect x="964" y="270" width="98" height="46" rx="4" fill="#22645C"/>
-<circle cx="999" cy="293" r="4.6" fill="#E6EDF3"/>
-<circle cx="1013" cy="293" r="4.6" fill="#E6EDF3"/>
-<circle cx="1027" cy="293" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
-<text x="22" y="341" font-size="15" font-weight="700" fill="#E6EDF3">Newton / Warp</text>
-<text x="22" y="359" font-size="12" fill="#9198A1">GPU 可微，擅长软体</text>
-<rect x="236" y="322" width="98" height="46" rx="4" fill="#45C3B3"/>
-<circle cx="271" cy="345" r="4.6" fill="#0D1117"/>
-<circle cx="285" cy="345" r="4.6" fill="#0D1117"/>
-<circle cx="299" cy="345" r="4.6" fill="#0D1117"/>
-<rect x="340" y="322" width="98" height="46" rx="4" fill="#14262A"/>
-<circle cx="375" cy="345" r="4.6" fill="#9198A1"/>
-<circle cx="389" cy="345" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<circle cx="403" cy="345" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<rect x="444" y="322" width="98" height="46" rx="4" fill="#45C3B3"/>
-<circle cx="479" cy="345" r="4.6" fill="#0D1117"/>
-<circle cx="493" cy="345" r="4.6" fill="#0D1117"/>
-<circle cx="507" cy="345" r="4.6" fill="#0D1117"/>
-<rect x="548" y="322" width="98" height="46" rx="4" fill="#45C3B3"/>
-<circle cx="583" cy="345" r="4.6" fill="#0D1117"/>
-<circle cx="597" cy="345" r="4.6" fill="#0D1117"/>
-<circle cx="611" cy="345" r="4.6" fill="#0D1117"/>
-<rect x="652" y="322" width="98" height="46" rx="4" fill="#22645C"/>
-<circle cx="687" cy="345" r="4.6" fill="#E6EDF3"/>
-<circle cx="701" cy="345" r="4.6" fill="#E6EDF3"/>
-<circle cx="715" cy="345" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
-<rect x="756" y="322" width="98" height="46" rx="4" fill="#14262A"/>
-<circle cx="791" cy="345" r="4.6" fill="#9198A1"/>
-<circle cx="805" cy="345" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<circle cx="819" cy="345" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<rect x="860" y="322" width="98" height="46" rx="4" fill="#14262A"/>
-<circle cx="895" cy="345" r="4.6" fill="#9198A1"/>
-<circle cx="909" cy="345" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<circle cx="923" cy="345" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<rect x="964" y="322" width="98" height="46" rx="4" fill="#22645C"/>
-<circle cx="999" cy="345" r="4.6" fill="#E6EDF3"/>
-<circle cx="1013" cy="345" r="4.6" fill="#E6EDF3"/>
-<circle cx="1027" cy="345" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
-<text x="22" y="393" font-size="15" font-weight="700" fill="#E6EDF3">Drake</text>
-<text x="22" y="411" font-size="12" fill="#9198A1">严谨接触，规划优化</text>
-<rect x="236" y="374" width="98" height="46" rx="4" fill="#45C3B3"/>
-<circle cx="271" cy="397" r="4.6" fill="#0D1117"/>
-<circle cx="285" cy="397" r="4.6" fill="#0D1117"/>
-<circle cx="299" cy="397" r="4.6" fill="#0D1117"/>
-<rect x="237.25" y="375.25" width="95.5" height="43.5" rx="3.5" fill="none" stroke="#E3A251" stroke-width="2.5"/>
-<circle cx="322" cy="386" r="9" fill="#0D1117"/>
-<polygon points="322.0,379.0 324.0,383.8 329.1,384.2 325.2,387.5 326.4,392.6 322.0,389.9 317.6,392.6 318.8,387.5 314.9,384.2 320.0,383.8" fill="#E3A251"/>
-<rect x="340" y="374" width="98" height="46" rx="4" fill="#14262A"/>
-<circle cx="375" cy="397" r="4.6" fill="#9198A1"/>
-<circle cx="389" cy="397" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<circle cx="403" cy="397" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<rect x="444" y="374" width="98" height="46" rx="4" fill="#14262A"/>
-<circle cx="479" cy="397" r="4.6" fill="#9198A1"/>
-<circle cx="493" cy="397" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<circle cx="507" cy="397" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<rect x="548" y="374" width="98" height="46" rx="4" fill="#22645C"/>
-<circle cx="583" cy="397" r="4.6" fill="#E6EDF3"/>
-<circle cx="597" cy="397" r="4.6" fill="#E6EDF3"/>
-<circle cx="611" cy="397" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
-<rect x="652" y="374" width="98" height="46" rx="4" fill="#22645C"/>
-<circle cx="687" cy="397" r="4.6" fill="#E6EDF3"/>
-<circle cx="701" cy="397" r="4.6" fill="#E6EDF3"/>
-<circle cx="715" cy="397" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
-<rect x="756" y="374" width="98" height="46" rx="4" fill="#45C3B3"/>
-<circle cx="791" cy="397" r="4.6" fill="#0D1117"/>
-<circle cx="805" cy="397" r="4.6" fill="#0D1117"/>
-<circle cx="819" cy="397" r="4.6" fill="#0D1117"/>
-<rect x="757.25" y="375.25" width="95.5" height="43.5" rx="3.5" fill="none" stroke="#E3A251" stroke-width="2.5"/>
-<circle cx="842" cy="386" r="9" fill="#0D1117"/>
-<polygon points="842.0,379.0 844.0,383.8 849.1,384.2 845.2,387.5 846.4,392.6 842.0,389.9 837.6,392.6 838.8,387.5 834.9,384.2 840.0,383.8" fill="#E3A251"/>
-<rect x="860" y="374" width="98" height="46" rx="4" fill="#14262A"/>
-<circle cx="895" cy="397" r="4.6" fill="#9198A1"/>
-<circle cx="909" cy="397" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<circle cx="923" cy="397" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<rect x="964" y="374" width="98" height="46" rx="4" fill="#22645C"/>
-<circle cx="999" cy="397" r="4.6" fill="#E6EDF3"/>
-<circle cx="1013" cy="397" r="4.6" fill="#E6EDF3"/>
-<circle cx="1027" cy="397" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
-<text x="22" y="445" font-size="15" font-weight="700" fill="#E6EDF3">PyBullet</text>
-<text x="22" y="463" font-size="12" fill="#9198A1">轻量，上手最快</text>
-<rect x="236" y="426" width="98" height="46" rx="4" fill="#22645C"/>
-<circle cx="271" cy="449" r="4.6" fill="#E6EDF3"/>
-<circle cx="285" cy="449" r="4.6" fill="#E6EDF3"/>
-<circle cx="299" cy="449" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
-<rect x="340" y="426" width="98" height="46" rx="4" fill="#14262A"/>
-<circle cx="375" cy="449" r="4.6" fill="#9198A1"/>
-<circle cx="389" cy="449" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<circle cx="403" cy="449" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<rect x="444" y="426" width="98" height="46" rx="4" fill="#14262A"/>
-<circle cx="479" cy="449" r="4.6" fill="#9198A1"/>
-<circle cx="493" cy="449" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<circle cx="507" cy="449" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<rect x="548" y="426" width="98" height="46" rx="4" fill="#14262A"/>
-<circle cx="583" cy="449" r="4.6" fill="#9198A1"/>
-<circle cx="597" cy="449" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<circle cx="611" cy="449" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<rect x="652" y="426" width="98" height="46" rx="4" fill="#22645C"/>
-<circle cx="687" cy="449" r="4.6" fill="#E6EDF3"/>
-<circle cx="701" cy="449" r="4.6" fill="#E6EDF3"/>
-<circle cx="715" cy="449" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
-<rect x="756" y="426" width="98" height="46" rx="4" fill="#14262A"/>
-<circle cx="791" cy="449" r="4.6" fill="#9198A1"/>
-<circle cx="805" cy="449" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<circle cx="819" cy="449" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<rect x="860" y="426" width="98" height="46" rx="4" fill="#14262A"/>
-<circle cx="895" cy="449" r="4.6" fill="#9198A1"/>
-<circle cx="909" cy="449" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<circle cx="923" cy="449" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<rect x="964" y="426" width="98" height="46" rx="4" fill="#45C3B3"/>
-<circle cx="999" cy="449" r="4.6" fill="#0D1117"/>
-<circle cx="1013" cy="449" r="4.6" fill="#0D1117"/>
-<circle cx="1027" cy="449" r="4.6" fill="#0D1117"/>
-<text x="22" y="497" font-size="15" font-weight="700" fill="#E6EDF3">Gazebo / Webots</text>
-<text x="22" y="515" font-size="12" fill="#9198A1">对接 ROS，上真机</text>
-<rect x="236" y="478" width="98" height="46" rx="4" fill="#14262A"/>
-<circle cx="271" cy="501" r="4.6" fill="#9198A1"/>
-<circle cx="285" cy="501" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<circle cx="299" cy="501" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<rect x="340" y="478" width="98" height="46" rx="4" fill="#22645C"/>
-<circle cx="375" cy="501" r="4.6" fill="#E6EDF3"/>
-<circle cx="389" cy="501" r="4.6" fill="#E6EDF3"/>
-<circle cx="403" cy="501" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
-<rect x="444" y="478" width="98" height="46" rx="4" fill="#14262A"/>
-<circle cx="479" cy="501" r="4.6" fill="#9198A1"/>
-<circle cx="493" cy="501" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<circle cx="507" cy="501" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<rect x="548" y="478" width="98" height="46" rx="4" fill="#14262A"/>
-<circle cx="583" cy="501" r="4.6" fill="#9198A1"/>
-<circle cx="597" cy="501" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<circle cx="611" cy="501" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<rect x="652" y="478" width="98" height="46" rx="4" fill="#14262A"/>
-<circle cx="687" cy="501" r="4.6" fill="#9198A1"/>
-<circle cx="701" cy="501" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<circle cx="715" cy="501" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<rect x="756" y="478" width="98" height="46" rx="4" fill="#14262A"/>
-<circle cx="791" cy="501" r="4.6" fill="#9198A1"/>
-<circle cx="805" cy="501" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<circle cx="819" cy="501" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
-<rect x="860" y="478" width="98" height="46" rx="4" fill="#45C3B3"/>
-<circle cx="895" cy="501" r="4.6" fill="#0D1117"/>
-<circle cx="909" cy="501" r="4.6" fill="#0D1117"/>
-<circle cx="923" cy="501" r="4.6" fill="#0D1117"/>
-<rect x="861.25" y="479.25" width="95.5" height="43.5" rx="3.5" fill="none" stroke="#E3A251" stroke-width="2.5"/>
-<circle cx="946" cy="490" r="9" fill="#0D1117"/>
-<polygon points="946.0,483.0 948.0,487.8 953.1,488.2 949.2,491.5 950.4,496.6 946.0,493.9 941.6,496.6 942.8,491.5 938.9,488.2 944.0,487.8" fill="#E3A251"/>
-<rect x="964" y="478" width="98" height="46" rx="4" fill="#22645C"/>
-<circle cx="999" cy="501" r="4.6" fill="#E6EDF3"/>
-<circle cx="1013" cy="501" r="4.6" fill="#E6EDF3"/>
-<circle cx="1027" cy="501" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="236" y="56" width="202" height="28" rx="4" fill="#3A2914"/>
+<text x="337" y="75" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E3A251">A 造世界</text>
+<rect x="454" y="56" width="202" height="28" rx="4" fill="#10302B"/>
+<text x="555" y="75" text-anchor="middle" font-size="13.5" font-weight="700" fill="#45C3B3">B 算物理</text>
+<rect x="672" y="56" width="98" height="28" rx="4" fill="#18243B"/>
+<text x="721" y="75" text-anchor="middle" font-size="13.5" font-weight="700" fill="#8AACEF">C 给观察</text>
+<rect x="786" y="56" width="306" height="28" rx="4" fill="#3A1A24"/>
+<text x="939" y="75" text-anchor="middle" font-size="13.5" font-weight="700" fill="#EA8099">D 训练与部署</text>
+<text x="285" y="110" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E6EDF3">关节物体</text>
+<text x="285" y="129" text-anchor="middle" font-size="12" fill="#9198A1">抽屉、柜门</text>
+<text x="389" y="110" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E6EDF3">Agent 友好</text>
+<text x="389" y="129" text-anchor="middle" font-size="12" fill="#9198A1">场景好写好改</text>
+<text x="503" y="110" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E6EDF3">接触精度</text>
+<text x="503" y="129" text-anchor="middle" font-size="12" fill="#9198A1">抓取、插孔</text>
+<text x="607" y="110" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E6EDF3">软体布料</text>
+<text x="607" y="129" text-anchor="middle" font-size="12" fill="#9198A1">布、绳、流体</text>
+<text x="721" y="110" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E6EDF3">画面逼真</text>
+<text x="721" y="129" text-anchor="middle" font-size="12" fill="#9198A1">看图做决策</text>
+<text x="835" y="110" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E6EDF3">GPU 并行</text>
+<text x="835" y="129" text-anchor="middle" font-size="12" fill="#9198A1">同时开几千份</text>
+<text x="939" y="110" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E6EDF3">规划优化</text>
+<text x="939" y="129" text-anchor="middle" font-size="12" fill="#9198A1">IK、轨迹</text>
+<text x="1043" y="110" text-anchor="middle" font-size="13.5" font-weight="700" fill="#E6EDF3">ROS 与真机</text>
+<text x="1043" y="129" text-anchor="middle" font-size="12" fill="#9198A1">代码上真机</text>
+<text x="22" y="169" font-size="15" font-weight="700" fill="#E6EDF3">MuJoCo</text>
+<text x="22" y="187" font-size="12" fill="#9198A1">接触准，Agent 好写</text>
+<rect x="236" y="150" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="271" cy="173" r="4.6" fill="#E6EDF3"/>
+<circle cx="285" cy="173" r="4.6" fill="#E6EDF3"/>
+<circle cx="299" cy="173" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="340" y="150" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="375" cy="173" r="4.6" fill="#0D1117"/>
+<circle cx="389" cy="173" r="4.6" fill="#0D1117"/>
+<circle cx="403" cy="173" r="4.6" fill="#0D1117"/>
+<rect x="341.25" y="151.25" width="95.5" height="43.5" rx="3.5" fill="none" stroke="#E3A251" stroke-width="2.5"/>
+<circle cx="426" cy="162" r="9" fill="#0D1117"/>
+<polygon points="426.0,155.0 428.0,159.8 433.1,160.2 429.2,163.5 430.4,168.6 426.0,165.9 421.6,168.6 422.8,163.5 418.9,160.2 424.0,159.8" fill="#E3A251"/>
+<rect x="454" y="150" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="489" cy="173" r="4.6" fill="#0D1117"/>
+<circle cx="503" cy="173" r="4.6" fill="#0D1117"/>
+<circle cx="517" cy="173" r="4.6" fill="#0D1117"/>
+<rect x="558" y="150" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="593" cy="173" r="4.6" fill="#9198A1"/>
+<circle cx="607" cy="173" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="621" cy="173" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="672" y="150" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="707" cy="173" r="4.6" fill="#9198A1"/>
+<circle cx="721" cy="173" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="735" cy="173" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="786" y="150" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="821" cy="173" r="4.6" fill="#E6EDF3"/>
+<circle cx="835" cy="173" r="4.6" fill="#E6EDF3"/>
+<circle cx="849" cy="173" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="890" y="150" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="925" cy="173" r="4.6" fill="#9198A1"/>
+<circle cx="939" cy="173" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="953" cy="173" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="994" y="150" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="1029" cy="173" r="4.6" fill="#9198A1"/>
+<circle cx="1043" cy="173" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="1057" cy="173" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<text x="22" y="221" font-size="15" font-weight="700" fill="#E6EDF3">Isaac Sim / Lab</text>
+<text x="22" y="239" font-size="12" fill="#9198A1">画面逼真，大规模并行</text>
+<rect x="236" y="202" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="271" cy="225" r="4.6" fill="#E6EDF3"/>
+<circle cx="285" cy="225" r="4.6" fill="#E6EDF3"/>
+<circle cx="299" cy="225" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="340" y="202" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="375" cy="225" r="4.6" fill="#9198A1"/>
+<circle cx="389" cy="225" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="403" cy="225" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="454" y="202" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="489" cy="225" r="4.6" fill="#E6EDF3"/>
+<circle cx="503" cy="225" r="4.6" fill="#E6EDF3"/>
+<circle cx="517" cy="225" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="558" y="202" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="593" cy="225" r="4.6" fill="#E6EDF3"/>
+<circle cx="607" cy="225" r="4.6" fill="#E6EDF3"/>
+<circle cx="621" cy="225" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="672" y="202" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="707" cy="225" r="4.6" fill="#0D1117"/>
+<circle cx="721" cy="225" r="4.6" fill="#0D1117"/>
+<circle cx="735" cy="225" r="4.6" fill="#0D1117"/>
+<rect x="673.25" y="203.25" width="95.5" height="43.5" rx="3.5" fill="none" stroke="#E3A251" stroke-width="2.5"/>
+<circle cx="758" cy="214" r="9" fill="#0D1117"/>
+<polygon points="758.0,207.0 760.0,211.8 765.1,212.2 761.2,215.5 762.4,220.6 758.0,217.9 753.6,220.6 754.8,215.5 750.9,212.2 756.0,211.8" fill="#E3A251"/>
+<rect x="786" y="202" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="821" cy="225" r="4.6" fill="#0D1117"/>
+<circle cx="835" cy="225" r="4.6" fill="#0D1117"/>
+<circle cx="849" cy="225" r="4.6" fill="#0D1117"/>
+<rect x="787.25" y="203.25" width="95.5" height="43.5" rx="3.5" fill="none" stroke="#E3A251" stroke-width="2.5"/>
+<circle cx="872" cy="214" r="9" fill="#0D1117"/>
+<polygon points="872.0,207.0 874.0,211.8 879.1,212.2 875.2,215.5 876.4,220.6 872.0,217.9 867.6,220.6 868.8,215.5 864.9,212.2 870.0,211.8" fill="#E3A251"/>
+<rect x="890" y="202" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="925" cy="225" r="4.6" fill="#E6EDF3"/>
+<circle cx="939" cy="225" r="4.6" fill="#E6EDF3"/>
+<circle cx="953" cy="225" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="994" y="202" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="1029" cy="225" r="4.6" fill="#E6EDF3"/>
+<circle cx="1043" cy="225" r="4.6" fill="#E6EDF3"/>
+<circle cx="1057" cy="225" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<text x="22" y="273" font-size="15" font-weight="700" fill="#E6EDF3">SAPIEN / ManiSkill</text>
+<text x="22" y="291" font-size="12" fill="#9198A1">关节物体，GPU 并行</text>
+<rect x="236" y="254" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="271" cy="277" r="4.6" fill="#0D1117"/>
+<circle cx="285" cy="277" r="4.6" fill="#0D1117"/>
+<circle cx="299" cy="277" r="4.6" fill="#0D1117"/>
+<rect x="237.25" y="255.25" width="95.5" height="43.5" rx="3.5" fill="none" stroke="#E3A251" stroke-width="2.5"/>
+<circle cx="322" cy="266" r="9" fill="#0D1117"/>
+<polygon points="322.0,259.0 324.0,263.8 329.1,264.2 325.2,267.5 326.4,272.6 322.0,269.9 317.6,272.6 318.8,267.5 314.9,264.2 320.0,263.8" fill="#E3A251"/>
+<rect x="340" y="254" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="375" cy="277" r="4.6" fill="#E6EDF3"/>
+<circle cx="389" cy="277" r="4.6" fill="#E6EDF3"/>
+<circle cx="403" cy="277" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="454" y="254" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="489" cy="277" r="4.6" fill="#E6EDF3"/>
+<circle cx="503" cy="277" r="4.6" fill="#E6EDF3"/>
+<circle cx="517" cy="277" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="558" y="254" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="593" cy="277" r="4.6" fill="#9198A1"/>
+<circle cx="607" cy="277" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="621" cy="277" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="672" y="254" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="707" cy="277" r="4.6" fill="#E6EDF3"/>
+<circle cx="721" cy="277" r="4.6" fill="#E6EDF3"/>
+<circle cx="735" cy="277" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="786" y="254" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="821" cy="277" r="4.6" fill="#0D1117"/>
+<circle cx="835" cy="277" r="4.6" fill="#0D1117"/>
+<circle cx="849" cy="277" r="4.6" fill="#0D1117"/>
+<rect x="890" y="254" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="925" cy="277" r="4.6" fill="#E6EDF3"/>
+<circle cx="939" cy="277" r="4.6" fill="#E6EDF3"/>
+<circle cx="953" cy="277" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="994" y="254" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="1029" cy="277" r="4.6" fill="#9198A1"/>
+<circle cx="1043" cy="277" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="1057" cy="277" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<text x="22" y="325" font-size="15" font-weight="700" fill="#E6EDF3">Genesis</text>
+<text x="22" y="343" font-size="12" fill="#9198A1">软体、布料、流体</text>
+<rect x="236" y="306" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="271" cy="329" r="4.6" fill="#E6EDF3"/>
+<circle cx="285" cy="329" r="4.6" fill="#E6EDF3"/>
+<circle cx="299" cy="329" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="340" y="306" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="375" cy="329" r="4.6" fill="#E6EDF3"/>
+<circle cx="389" cy="329" r="4.6" fill="#E6EDF3"/>
+<circle cx="403" cy="329" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="454" y="306" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="489" cy="329" r="4.6" fill="#E6EDF3"/>
+<circle cx="503" cy="329" r="4.6" fill="#E6EDF3"/>
+<circle cx="517" cy="329" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="558" y="306" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="593" cy="329" r="4.6" fill="#0D1117"/>
+<circle cx="607" cy="329" r="4.6" fill="#0D1117"/>
+<circle cx="621" cy="329" r="4.6" fill="#0D1117"/>
+<rect x="559.25" y="307.25" width="95.5" height="43.5" rx="3.5" fill="none" stroke="#E3A251" stroke-width="2.5"/>
+<circle cx="644" cy="318" r="9" fill="#0D1117"/>
+<polygon points="644.0,311.0 646.0,315.8 651.1,316.2 647.2,319.5 648.4,324.6 644.0,321.9 639.6,324.6 640.8,319.5 636.9,316.2 642.0,315.8" fill="#E3A251"/>
+<rect x="672" y="306" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="707" cy="329" r="4.6" fill="#E6EDF3"/>
+<circle cx="721" cy="329" r="4.6" fill="#E6EDF3"/>
+<circle cx="735" cy="329" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="786" y="306" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="821" cy="329" r="4.6" fill="#0D1117"/>
+<circle cx="835" cy="329" r="4.6" fill="#0D1117"/>
+<circle cx="849" cy="329" r="4.6" fill="#0D1117"/>
+<rect x="890" y="306" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="925" cy="329" r="4.6" fill="#E6EDF3"/>
+<circle cx="939" cy="329" r="4.6" fill="#E6EDF3"/>
+<circle cx="953" cy="329" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="994" y="306" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="1029" cy="329" r="4.6" fill="#9198A1"/>
+<circle cx="1043" cy="329" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="1057" cy="329" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<text x="22" y="377" font-size="15" font-weight="700" fill="#E6EDF3">Newton / Warp</text>
+<text x="22" y="395" font-size="12" fill="#9198A1">GPU 可微，擅长软体</text>
+<rect x="236" y="358" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="271" cy="381" r="4.6" fill="#E6EDF3"/>
+<circle cx="285" cy="381" r="4.6" fill="#E6EDF3"/>
+<circle cx="299" cy="381" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="340" y="358" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="375" cy="381" r="4.6" fill="#E6EDF3"/>
+<circle cx="389" cy="381" r="4.6" fill="#E6EDF3"/>
+<circle cx="403" cy="381" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="454" y="358" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="489" cy="381" r="4.6" fill="#0D1117"/>
+<circle cx="503" cy="381" r="4.6" fill="#0D1117"/>
+<circle cx="517" cy="381" r="4.6" fill="#0D1117"/>
+<rect x="558" y="358" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="593" cy="381" r="4.6" fill="#0D1117"/>
+<circle cx="607" cy="381" r="4.6" fill="#0D1117"/>
+<circle cx="621" cy="381" r="4.6" fill="#0D1117"/>
+<rect x="672" y="358" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="707" cy="381" r="4.6" fill="#9198A1"/>
+<circle cx="721" cy="381" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="735" cy="381" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="786" y="358" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="821" cy="381" r="4.6" fill="#0D1117"/>
+<circle cx="835" cy="381" r="4.6" fill="#0D1117"/>
+<circle cx="849" cy="381" r="4.6" fill="#0D1117"/>
+<rect x="890" y="358" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="925" cy="381" r="4.6" fill="#9198A1"/>
+<circle cx="939" cy="381" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="953" cy="381" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="994" y="358" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="1029" cy="381" r="4.6" fill="#9198A1"/>
+<circle cx="1043" cy="381" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="1057" cy="381" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<text x="22" y="429" font-size="15" font-weight="700" fill="#E6EDF3">Drake</text>
+<text x="22" y="447" font-size="12" fill="#9198A1">严谨接触，规划优化</text>
+<rect x="236" y="410" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="271" cy="433" r="4.6" fill="#E6EDF3"/>
+<circle cx="285" cy="433" r="4.6" fill="#E6EDF3"/>
+<circle cx="299" cy="433" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="340" y="410" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="375" cy="433" r="4.6" fill="#E6EDF3"/>
+<circle cx="389" cy="433" r="4.6" fill="#E6EDF3"/>
+<circle cx="403" cy="433" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="454" y="410" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="489" cy="433" r="4.6" fill="#0D1117"/>
+<circle cx="503" cy="433" r="4.6" fill="#0D1117"/>
+<circle cx="517" cy="433" r="4.6" fill="#0D1117"/>
+<rect x="455.25" y="411.25" width="95.5" height="43.5" rx="3.5" fill="none" stroke="#E3A251" stroke-width="2.5"/>
+<circle cx="540" cy="422" r="9" fill="#0D1117"/>
+<polygon points="540.0,415.0 542.0,419.8 547.1,420.2 543.2,423.5 544.4,428.6 540.0,425.9 535.6,428.6 536.8,423.5 532.9,420.2 538.0,419.8" fill="#E3A251"/>
+<rect x="558" y="410" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="593" cy="433" r="4.6" fill="#E6EDF3"/>
+<circle cx="607" cy="433" r="4.6" fill="#E6EDF3"/>
+<circle cx="621" cy="433" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="672" y="410" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="707" cy="433" r="4.6" fill="#9198A1"/>
+<circle cx="721" cy="433" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="735" cy="433" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="786" y="410" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="821" cy="433" r="4.6" fill="#9198A1"/>
+<circle cx="835" cy="433" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="849" cy="433" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="890" y="410" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="925" cy="433" r="4.6" fill="#0D1117"/>
+<circle cx="939" cy="433" r="4.6" fill="#0D1117"/>
+<circle cx="953" cy="433" r="4.6" fill="#0D1117"/>
+<rect x="891.25" y="411.25" width="95.5" height="43.5" rx="3.5" fill="none" stroke="#E3A251" stroke-width="2.5"/>
+<circle cx="976" cy="422" r="9" fill="#0D1117"/>
+<polygon points="976.0,415.0 978.0,419.8 983.1,420.2 979.2,423.5 980.4,428.6 976.0,425.9 971.6,428.6 972.8,423.5 968.9,420.2 974.0,419.8" fill="#E3A251"/>
+<rect x="994" y="410" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="1029" cy="433" r="4.6" fill="#9198A1"/>
+<circle cx="1043" cy="433" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="1057" cy="433" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<text x="22" y="481" font-size="15" font-weight="700" fill="#E6EDF3">PyBullet</text>
+<text x="22" y="499" font-size="12" fill="#9198A1">轻量，上手最快</text>
+<rect x="236" y="462" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="271" cy="485" r="4.6" fill="#E6EDF3"/>
+<circle cx="285" cy="485" r="4.6" fill="#E6EDF3"/>
+<circle cx="299" cy="485" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="340" y="462" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="375" cy="485" r="4.6" fill="#0D1117"/>
+<circle cx="389" cy="485" r="4.6" fill="#0D1117"/>
+<circle cx="403" cy="485" r="4.6" fill="#0D1117"/>
+<rect x="454" y="462" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="489" cy="485" r="4.6" fill="#E6EDF3"/>
+<circle cx="503" cy="485" r="4.6" fill="#E6EDF3"/>
+<circle cx="517" cy="485" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="558" y="462" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="593" cy="485" r="4.6" fill="#9198A1"/>
+<circle cx="607" cy="485" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="621" cy="485" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="672" y="462" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="707" cy="485" r="4.6" fill="#9198A1"/>
+<circle cx="721" cy="485" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="735" cy="485" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="786" y="462" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="821" cy="485" r="4.6" fill="#9198A1"/>
+<circle cx="835" cy="485" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="849" cy="485" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="890" y="462" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="925" cy="485" r="4.6" fill="#9198A1"/>
+<circle cx="939" cy="485" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="953" cy="485" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="994" y="462" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="1029" cy="485" r="4.6" fill="#9198A1"/>
+<circle cx="1043" cy="485" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="1057" cy="485" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<text x="22" y="533" font-size="15" font-weight="700" fill="#E6EDF3">Gazebo / Webots</text>
+<text x="22" y="551" font-size="12" fill="#9198A1">对接 ROS，上真机</text>
+<rect x="236" y="514" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="271" cy="537" r="4.6" fill="#9198A1"/>
+<circle cx="285" cy="537" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="299" cy="537" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="340" y="514" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="375" cy="537" r="4.6" fill="#E6EDF3"/>
+<circle cx="389" cy="537" r="4.6" fill="#E6EDF3"/>
+<circle cx="403" cy="537" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="454" y="514" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="489" cy="537" r="4.6" fill="#9198A1"/>
+<circle cx="503" cy="537" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="517" cy="537" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="558" y="514" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="593" cy="537" r="4.6" fill="#9198A1"/>
+<circle cx="607" cy="537" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="621" cy="537" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="672" y="514" width="98" height="46" rx="4" fill="#22645C"/>
+<circle cx="707" cy="537" r="4.6" fill="#E6EDF3"/>
+<circle cx="721" cy="537" r="4.6" fill="#E6EDF3"/>
+<circle cx="735" cy="537" r="3.9" fill="none" stroke="#E6EDF3" stroke-width="1.4"/>
+<rect x="786" y="514" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="821" cy="537" r="4.6" fill="#9198A1"/>
+<circle cx="835" cy="537" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="849" cy="537" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="890" y="514" width="98" height="46" rx="4" fill="#14262A"/>
+<circle cx="925" cy="537" r="4.6" fill="#9198A1"/>
+<circle cx="939" cy="537" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<circle cx="953" cy="537" r="3.9" fill="none" stroke="#9198A1" stroke-width="1.4"/>
+<rect x="994" y="514" width="98" height="46" rx="4" fill="#45C3B3"/>
+<circle cx="1029" cy="537" r="4.6" fill="#0D1117"/>
+<circle cx="1043" cy="537" r="4.6" fill="#0D1117"/>
+<circle cx="1057" cy="537" r="4.6" fill="#0D1117"/>
+<rect x="995.25" y="515.25" width="95.5" height="43.5" rx="3.5" fill="none" stroke="#E3A251" stroke-width="2.5"/>
+<circle cx="1080" cy="526" r="9" fill="#0D1117"/>
+<polygon points="1080.0,519.0 1082.0,523.8 1087.1,524.2 1083.2,527.5 1084.4,532.6 1080.0,529.9 1075.6,532.6 1076.8,527.5 1072.9,524.2 1078.0,523.8" fill="#E3A251"/>
 </svg>

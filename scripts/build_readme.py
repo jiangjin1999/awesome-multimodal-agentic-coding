@@ -254,6 +254,8 @@ def render(site, works, lang):
             if meta.get('engines'):
                 eng = ' · '.join(f'[{e}]({site["engines"][e]})' for e in meta['engines'])
                 o(f"*{t(site, 'engines', lang)}:* {eng}\n")
+            if meta.get('guide'):
+                o(meta['guide'][lang].strip() + '\n')
             for sub in meta['subs']:
                 items = groups.get((sec, sub), [])
                 if not items:

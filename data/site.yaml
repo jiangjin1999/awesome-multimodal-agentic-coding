@@ -539,6 +539,61 @@ sections:
     ja: シミュレータ品質評価
     subs:
     - null
+    guide:
+      en: |-
+        <details>
+        <summary>Read by fidelity level (L0–L4) · click to expand</summary>
+
+        | Level | Core question | Works |
+        |---|---|---|
+        | L0a Semantic fidelity | Does it meet the given requirements? | [SceneEval](#paper-2503-14756) ★ · [LEGO-Eval](#paper-2511-03001) ★ · [SceneCritic](#paper-2604-13035) ★ · [Code4Scene](#paper-2609-36777) |
+        | L0b Visual / reconstruction fidelity | Does it match the reference? | [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786) · [BlenderWorld](#paper-system-blenderworld) · [Parametric CAD Bench v3](#paper-2611-02659) · [BVB](#paper-2609-15478) · [Frontier3DBench](#paper-2611-09017) |
+        | L1 Static physical plausibility | Does it stand and stay usable at rest? | [GREP](#paper-2611-05802) ★ · [SceneTeract](#paper-2603-29798) ★ |
+        | L2 Interaction plausibility | When poked, does it respond correctly? | [ScIntBench](#paper-2610-37326) · [WorldCoder-Bench](#paper-2606-01869) · [Lab2Sim](#paper-2611-02928) |
+        | L3a Motion fidelity | Does the trajectory match? | [ExeWorldBench](#paper-2610-15166) · [4DCodeBench](#paper-2610-03715) · [VisPhyWorld](#paper-2602-13294) · [Physics-Inspired Animations](#paper-2602-10840) · [PhyRubric](#paper-2611-13576) ★ · [Latent Prediction Error](#paper-2611-01815) |
+        | L3b Model verification | Is the motion produced by a suitable physical model? | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) |
+        | L3c Validation & system identification | Are parameters accurate; does it extrapolate? | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
+        | L4 Sim-to-real predictivity | Do conclusions hold in the real world? | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [Video2World](#paper-2610-04432) · [Real2Sim Benchmark](#paper-real2sim-benchmark) |
+
+        ★ marks works whose main contribution is an evaluation tool. Each work is placed by its main claimed contribution. Full explanation: [Simulator quality evaluation: a fidelity ladder](stage3/simulator-evaluation.md).
+
+        </details>
+      zh: |-
+        <details>
+        <summary>按检验层级阅读（L0–L4）· 点击展开</summary>
+
+        | 层级 | 核心问题 | 作品 |
+        |---|---|---|
+        | L0a 需求符合 | 满足给定需求吗？ | [SceneEval](#paper-2503-14756) ★ · [LEGO-Eval](#paper-2511-03001) ★ · [SceneCritic](#paper-2604-13035) ★ · [Code4Scene](#paper-2609-36777) |
+        | L0b 参照还原 | 和参照像吗？ | [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786) · [BlenderWorld](#paper-system-blenderworld) · [Parametric CAD Bench v3](#paper-2611-02659) · [BVB](#paper-2609-15478) · [Frontier3DBench](#paper-2611-09017) |
+        | L1 静态合理性 | 不动时站得住、用得了吗？ | [GREP](#paper-2611-05802) ★ · [SceneTeract](#paper-2603-29798) ★ |
+        | L2 交互响应 | 碰一下，反应对吗？ | [ScIntBench](#paper-2610-37326) · [WorldCoder-Bench](#paper-2606-01869) · [Lab2Sim](#paper-2611-02928) |
+        | L3a 运动一致 | 轨迹像吗？ | [ExeWorldBench](#paper-2610-15166) · [4DCodeBench](#paper-2610-03715) · [VisPhyWorld](#paper-2602-13294) · [Physics-Inspired Animations](#paper-2602-10840) · [PhyRubric](#paper-2611-13576) ★ · [Latent Prediction Error](#paper-2611-01815) |
+        | L3b 机制来源 | 运动真由合适的物理模型产生吗？ | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) |
+        | L3c 参数与外推 | 参数准、能预测未来吗？ | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
+        | L4 下游效用 | 结论在真实世界成立吗？ | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [Video2World](#paper-2610-04432) · [Real2Sim Benchmark](#paper-real2sim-benchmark) |
+
+        ★ 表示主要贡献是评估工具；每篇按论文主打的创新点归层。完整说明见 [仿真器质量评估：检验层级](stage3/simulator-evaluation.zh-CN.md)。
+
+        </details>
+      ja: |-
+        <details>
+        <summary>検証レベル別に読む（L0–L4）· クリックで展開</summary>
+
+        | レベル | 中心となる問い | 作品 |
+        |---|---|---|
+        | L0a 意味的忠実度 | 与えられた要件を満たすか？ | [SceneEval](#paper-2503-14756) ★ · [LEGO-Eval](#paper-2511-03001) ★ · [SceneCritic](#paper-2604-13035) ★ · [Code4Scene](#paper-2609-36777) |
+        | L0b 視覚・再構成の忠実度 | 参照と一致するか？ | [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786) · [BlenderWorld](#paper-system-blenderworld) · [Parametric CAD Bench v3](#paper-2611-02659) · [BVB](#paper-2609-15478) · [Frontier3DBench](#paper-2611-09017) |
+        | L1 静的な物理的妥当性 | 静止時に成り立ち、使えるか？ | [GREP](#paper-2611-05802) ★ · [SceneTeract](#paper-2603-29798) ★ |
+        | L2 インタラクションの妥当性 | 触れたとき正しく応答するか？ | [ScIntBench](#paper-2610-37326) · [WorldCoder-Bench](#paper-2606-01869) · [Lab2Sim](#paper-2611-02928) |
+        | L3a 運動の忠実度 | 軌跡は一致するか？ | [ExeWorldBench](#paper-2610-15166) · [4DCodeBench](#paper-2610-03715) · [VisPhyWorld](#paper-2602-13294) · [Physics-Inspired Animations](#paper-2602-10840) · [PhyRubric](#paper-2611-13576) ★ · [Latent Prediction Error](#paper-2611-01815) |
+        | L3b モデル検証 | 運動は適切な物理モデルから生じているか？ | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) |
+        | L3c 妥当性確認とシステム同定 | パラメータは正確で、未来を予測できるか？ | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
+        | L4 Sim-to-Real 予測性 | 結論は現実世界で成り立つか？ | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [Video2World](#paper-2610-04432) · [Real2Sim Benchmark](#paper-real2sim-benchmark) |
+
+        ★ は主な貢献が評価ツールであることを示します。各作品は論文が主張する主な貢献で配置しています。詳しい説明は英語版 [Simulator quality evaluation: a fidelity ladder](stage3/simulator-evaluation.md) を参照してください。
+
+        </details>
   '3.4':
     en: Data
     zh: 数据

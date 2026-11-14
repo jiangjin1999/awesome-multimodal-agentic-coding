@@ -3648,7 +3648,7 @@ Stage 3 の作品でよく使われる物理シミュレーションエンジン
 
 | 分類 | エンジン | ひとことで | ロボットアーム操作での使い方 | 代表作 |
 |---|---|---|---|---|
-| 物理エンジン（物理計算のみ、描画は簡素） | [MuJoCo](https://mujoco.readthedocs.io/en/stable/overview.html) | Google DeepMind が保守するオープンソース物理エンジン。ロボットと物体を 1 つの XML ファイルに書けば、接触と関節の運動を高速かつ正確に計算する | **第一候補**。接触が正確で、状態入力の方策、強化学習、実データに基づくパラメータ較正に向く。描画は簡素で、視覚方策には向かない | [Real2Code](#paper-2406-08474) · [Articulate-Anything](#paper-2410-13882) · [LiteReality-Agent](#paper-2610-01863) |
+| 物理エンジン | [MuJoCo](https://mujoco.readthedocs.io/en/stable/overview.html) | Google DeepMind が保守するオープンソース物理エンジン。ロボットと物体を 1 つの XML ファイルに書けば、接触と関節の運動を高速かつ正確に計算する | **第一候補**。接触が正確で、状態入力の方策、強化学習、実データに基づくパラメータ較正に向く。カメラ画像の描画にも対応し、視覚方策に使える。写実的な合成データが必要なら、描画機能が充実したプラットフォームも候補になる | [Real2Code](#paper-2406-08474) · [Articulate-Anything](#paper-2410-13882) · [LiteReality-Agent](#paper-2610-01863) |
 | | [PyBullet](https://pybullet.org/) | 定番の軽量物理エンジン。pip でインストールすればすぐ使える | 利用可。素早い試作に向く。精度と描画はそこそこ | [GenSim](#paper-2310-01361) · [Instruct2Act](#paper-2305-11176) · [OMNI-EPIC](#paper-2405-15568) |
 | | [Drake](https://drake.mit.edu/) | Toyota Research Institute（TRI）が中心となって開発するロボティクスツールボックス。厳密なモデルと数理最適化を重視する | 利用可。動作計画や、配置が安定しているか・めり込みがないかの検査に向く。大規模な学習には向かない | [SceneSmith](#paper-2602-09153) · [GIF](#paper-2609-05927) |
 | | [Genesis](https://genesis-world.readthedocs.io/en/latest/) | 新世代の Python ネイティブ物理プラットフォーム。剛体、布、流体、柔軟物を同じインターフェースで扱う | 利用可。布や柔軟物を含む操作に特に向く。エコシステムはまだ新しい | [RoboGen](#paper-2311-01455) · [GS-Agent](#paper-2607-21522) |

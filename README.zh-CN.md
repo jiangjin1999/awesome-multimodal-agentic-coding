@@ -3645,7 +3645,7 @@ Stage 3 工作中常用的物理仿真引擎。代表工作从以该引擎为主
 
 | 类别 | 引擎 | 一句话理解 | 用于机械臂操作 | 代表工作 |
 |---|---|---|---|---|
-| 物理引擎（只算物理，画面简单） | [MuJoCo](https://mujoco.readthedocs.io/en/stable/overview.html) | Google DeepMind 维护的开源物理引擎。一个 XML 文件写清机器人和物体，就能又快又准地算出碰撞和关节运动 | **首选**。接触准，适合输入状态的策略、强化学习、按真实数据校准参数；画面简单，不适合视觉策略 | [Real2Code](#paper-2406-08474) · [Articulate-Anything](#paper-2410-13882) · [LiteReality-Agent](#paper-2610-01863) |
+| 物理引擎 | [MuJoCo](https://mujoco.readthedocs.io/en/stable/overview.html) | Google DeepMind 维护的开源物理引擎。一个 XML 文件写清机器人和物体，就能又快又准地算出碰撞和关节运动 | **首选**。接触准，适合输入状态的策略、强化学习、按真实数据校准参数；也支持相机渲染和视觉策略。需要写实合成数据时，可考虑渲染能力更强的平台 | [Real2Code](#paper-2406-08474) · [Articulate-Anything](#paper-2410-13882) · [LiteReality-Agent](#paper-2610-01863) |
 | | [PyBullet](https://pybullet.org/) | 老牌轻量物理引擎，pip 装上就能用 | 可用。适合快速做原型；精度和画面一般 | [GenSim](#paper-2310-01361) · [Instruct2Act](#paper-2305-11176) · [OMNI-EPIC](#paper-2405-15568) |
 | | [Drake](https://drake.mit.edu/) | 丰田研究院（TRI）主导开发的机器人工具箱，强调模型严谨和数学优化 | 可用。适合运动规划，以及检查放置稳不稳、有没有穿模；不适合大规模训练 | [SceneSmith](#paper-2602-09153) · [GIF](#paper-2609-05927) |
 | | [Genesis](https://genesis-world.readthedocs.io/en/latest/) | 新一代 Python 物理平台，刚体、布料、流体、软体用同一套接口 | 可用。涉及布料、软体的操作更合适；生态还比较新 | [RoboGen](#paper-2311-01455) · [GS-Agent](#paper-2607-21522) |

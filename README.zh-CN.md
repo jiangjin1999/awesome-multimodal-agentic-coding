@@ -13,7 +13,7 @@
 
 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从数字世界延伸到物理世界。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-638-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--14-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-641-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--14-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · **简体中文** · [日本語](./README.ja.md)
 
@@ -51,13 +51,13 @@
   - [1.7 跨任务：视觉评估器、经验与训练](#s1-7) (12)
 - [Stage 2 · 把模型当作工具来编排](#stage-2)
   - [2.1 图像生成模型 × 图像与视觉设计](#s2-1) (3)
-  - [2.2 视频生成模型 × 视频创作与编辑](#s2-2) (10)
+  - [2.2 视频生成模型 × 视频创作与编辑](#s2-2) (12)
   - [2.3 3D 生成模型 × 3D 资产与场景](#s2-3) (11)
   - [2.4 生成式世界模型 × 可交互环境](#s2-4) (13)
   - [2.5 感知模型 × 场景理解与重建](#s2-5) (6)
   - [2.6 动作模型 × 机器人操作](#s2-6) (12)
 - [Stage 3 · 打通数字世界与物理世界](#stage-3)
-  - [3.1 具身框架（Harness）](#s3-1) (83)
+  - [3.1 具身框架（Harness）](#s3-1) (84)
   - [3.2 仿真器构建](#s3-2) (65)
   - [3.3 仿真器质量评估](#s3-3) (23)
   - [3.4 数据](#s3-4) (14)
@@ -1677,10 +1677,20 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-2611-06518"></a>`2026.11` **[EmoReward: Self-Evolving Reward Calibration for Emotional Video Generation RL](https://arxiv.org/abs/2611.06518)** [[来源 2]](https://emoreward-project.github.io/) [[来源 3]](https://github.com/Tencent-Hunyuan/EmoReward)
   > 以当前视频的证据有效性门控和既往训练轨迹生成的冻结权重表校准异构情绪评分器，为视频生成器训练提供更有依据的奖励。
 
+<!-- mmac-record: {"id": "2611.16748", "scope": "Core", "primary": "2.2", "stage": 2, "type": "paper"} -->
+
+- <a id="paper-2611-16748"></a>`2026.11` **[PhysLoop: Harnessing LLMs’ Physics Awareness for Self-Improving Video Generation Models](https://arxiv.org/abs/2611.16748)** [[来源 2]](https://arxiv.org/html/2611.16748v1) [[来源 3]](https://chenyx24.github.io/PhysLoop-site/) [[来源 4]](https://github.com/DAGroup-PKU/PhysLoop)
+  > 编码 Agent 构建可执行仿真场景，并依据画面和状态反馈修订场景或调整视频模型输入，支持可控视频生成与局部修复。
+
 <!-- mmac-record: {"id": "2611.04418", "scope": "Adjacent", "primary": "2.2", "stage": 2, "type": "paper"} -->
 
 - <a id="paper-2611-04418"></a>`2026.11` **[VidUEU-Agent: A Data-Curation Agent for Multimodal Understanding, Editing, and Unified Tasks](https://arxiv.org/abs/2611.04418)** [[来源 2]](https://github.com/LRuca/VidUEU-Agent) [[来源 3]](https://huggingface.co/datasets/Lruca/VidUEU100k)
   > 组织视觉工具与 VLM 检查，从视频构造10万条可追溯的理解、编辑和统一任务指令，再根据下游训练反馈调整采样与路由。
+
+<!-- mmac-record: {"id": "2611.16217", "scope": "Adjacent", "primary": "2.2", "stage": 2, "type": "paper"} -->
+
+- <a id="paper-2611-16217"></a>`2026.11` **[WorldDraft: If Code Builds the World, Can Video Models Just Render It?](https://arxiv.org/abs/2611.16217)** [[来源 2]](https://arxiv.org/html/2611.16217v1) [[来源 3]](https://haroldchen19.github.io/WorldDraft-site/) [[来源 4]](https://github.com/KevinHuge/WorldDraft) [[来源 5]](https://huggingface.co/datasets/KevinHuge/WorldDraft)
+  > 用固定运动和镜头轨迹的可执行 4D 草稿，评测视频模型能否保留世界结构并实现目标外观。
 
 <!-- mmac-record: {"id": "2610.20571", "scope": "Adjacent", "primary": "2.2", "stage": 2, "type": "paper"} -->
 
@@ -2208,6 +2218,11 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 - <a id="paper-2611-12177"></a>`2026.11` **[Embodied First Exam](https://arxiv.org/abs/2611.12177)** [[来源 2]](https://arxiv.org/html/2611.12177)
   > 跨机器人形态检验通用 Agent 的具身任务能力，明确比较观测权限、重置预算和执行时钟不同的运行方式。
+
+<!-- mmac-record: {"id": "2611.16009", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-16009"></a>`2026.11` **[JustRUA: A Controlled Study of GPT-6 Robot-Use Agents](https://arxiv.org/abs/2611.16009)** [[来源 2]](https://arxiv.org/html/2611.16009v1) [[来源 3]](https://zefanw.github.io/JustRUA/) [[来源 4]](https://github.com/ZefanW/JustRUA) [[来源 5]](https://huggingface.co/spaces/ZefanW/robodojo-replay-explorer)
+  > 在 RoboDojo 仿真中比较完整回合历史、短动作、深度与坐标求解代码对通用 Agent 操控的影响。
 
 <!-- mmac-record: {"id": "2611.08209", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 

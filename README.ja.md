@@ -13,7 +13,7 @@
 
 マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——デジタル世界から物理世界まで。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-638-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--14-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-641-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--14-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語**
 
@@ -54,13 +54,13 @@
   - [1.7 タスク横断：視覚評価器・経験・学習](#s1-7) (12)
 - [Stage 2 · モデルをツールとして編成する](#stage-2)
   - [2.1 画像生成モデル × 画像・ビジュアルデザイン](#s2-1) (3)
-  - [2.2 動画生成モデル × 動画制作・編集](#s2-2) (10)
+  - [2.2 動画生成モデル × 動画制作・編集](#s2-2) (12)
   - [2.3 3D 生成モデル × 3D アセット・シーン](#s2-3) (11)
   - [2.4 生成的世界モデル × インタラクティブ環境](#s2-4) (13)
   - [2.5 知覚モデル × シーン理解・再構成](#s2-5) (6)
   - [2.6 行動モデル × ロボット操作](#s2-6) (12)
 - [Stage 3 · デジタルと物理世界の架け橋](#stage-3)
-  - [3.1 身体性ハーネス](#s3-1) (83)
+  - [3.1 身体性ハーネス](#s3-1) (84)
   - [3.2 シミュレータ構築](#s3-2) (65)
   - [3.3 シミュレータ品質評価](#s3-3) (23)
   - [3.4 データ](#s3-4) (14)
@@ -1680,10 +1680,20 @@
 - <a id="paper-2611-06518"></a>`2026.11` **[EmoReward: Self-Evolving Reward Calibration for Emotional Video Generation RL](https://arxiv.org/abs/2611.06518)** [[資料 2]](https://emoreward-project.github.io/) [[資料 3]](https://github.com/Tencent-Hunyuan/EmoReward)
   > 現在の動画の証拠の有効性と、過去の訓練軌跡から作った固定重み表で異種の感情評価器を校正し、動画生成器の学習に根拠のある報酬を与える。
 
+<!-- mmac-record: {"id": "2611.16748", "scope": "Core", "primary": "2.2", "stage": 2, "type": "paper"} -->
+
+- <a id="paper-2611-16748"></a>`2026.11` **[PhysLoop: Harnessing LLMs’ Physics Awareness for Self-Improving Video Generation Models](https://arxiv.org/abs/2611.16748)** [[資料 2]](https://arxiv.org/html/2611.16748v1) [[資料 3]](https://chenyx24.github.io/PhysLoop-site/) [[資料 4]](https://github.com/DAGroup-PKU/PhysLoop)
+  > コーディングエージェントが実行可能なシミュレーションシーンを構築し、画像と状態のフィードバックに基づいてシーンや動画モデルの入力を修正し、制御可能な動画生成と局所修復を行う。
+
 <!-- mmac-record: {"id": "2611.04418", "scope": "Adjacent", "primary": "2.2", "stage": 2, "type": "paper"} -->
 
 - <a id="paper-2611-04418"></a>`2026.11` **[VidUEU-Agent: A Data-Curation Agent for Multimodal Understanding, Editing, and Unified Tasks](https://arxiv.org/abs/2611.04418)** [[資料 2]](https://github.com/LRuca/VidUEU-Agent) [[資料 3]](https://huggingface.co/datasets/Lruca/VidUEU100k)
   > 視覚ツールと VLM の検査を組み合わせ、動画から追跡可能な理解・編集・統合タスクの指示を 10 万件作る。下流の訓練結果から抽出と振り分けを調整する。
+
+<!-- mmac-record: {"id": "2611.16217", "scope": "Adjacent", "primary": "2.2", "stage": 2, "type": "paper"} -->
+
+- <a id="paper-2611-16217"></a>`2026.11` **[WorldDraft: If Code Builds the World, Can Video Models Just Render It?](https://arxiv.org/abs/2611.16217)** [[資料 2]](https://arxiv.org/html/2611.16217v1) [[資料 3]](https://haroldchen19.github.io/WorldDraft-site/) [[資料 4]](https://github.com/KevinHuge/WorldDraft) [[資料 5]](https://huggingface.co/datasets/KevinHuge/WorldDraft)
+  > 運動とカメラ軌道を固定した実行可能な4Dドラフトを用い、動画モデルが世界の構造を保持しつつ指定された外観を実現できるかを評価する。
 
 <!-- mmac-record: {"id": "2610.20571", "scope": "Adjacent", "primary": "2.2", "stage": 2, "type": "paper"} -->
 
@@ -2211,6 +2221,11 @@
 
 - <a id="paper-2611-12177"></a>`2026.11` **[Embodied First Exam](https://arxiv.org/abs/2611.12177)** [[資料 2]](https://arxiv.org/html/2611.12177)
   > 異なるロボット形態で汎用エージェントの具身タスク能力を調べ、観測権限、リセット予算、実行時計が異なる方式を明示的に比較する。
+
+<!-- mmac-record: {"id": "2611.16009", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-16009"></a>`2026.11` **[JustRUA: A Controlled Study of GPT-6 Robot-Use Agents](https://arxiv.org/abs/2611.16009)** [[資料 2]](https://arxiv.org/html/2611.16009v1) [[資料 3]](https://zefanw.github.io/JustRUA/) [[資料 4]](https://github.com/ZefanW/JustRUA) [[資料 5]](https://huggingface.co/spaces/ZefanW/robodojo-replay-explorer)
+  > RoboDojoのシミュレーションで、エピソードの全履歴、短い動作、深度情報、座標を求めるコードが汎用エージェントの操作性能に与える影響を比較する。
 
 <!-- mmac-record: {"id": "2611.08209", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 

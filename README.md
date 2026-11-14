@@ -13,7 +13,7 @@
 
 A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to the physical world.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-638-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--14-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-641-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--14-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -51,13 +51,13 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [1.7 Cross-task: visual evaluators, experience and training](#s1-7) (12)
 - [Stage 2 · Orchestrating Models as Tools](#stage-2)
   - [2.1 Image generation models × image and visual design](#s2-1) (3)
-  - [2.2 Video generation models × video creation and editing](#s2-2) (10)
+  - [2.2 Video generation models × video creation and editing](#s2-2) (12)
   - [2.3 3D generation models × 3D assets and scenes](#s2-3) (11)
   - [2.4 Generative world models × interactive environments](#s2-4) (13)
   - [2.5 Perception models × scene understanding and reconstruction](#s2-5) (6)
   - [2.6 Action models × robot manipulation](#s2-6) (12)
 - [Stage 3 · Bridging Digital & Physical Worlds](#stage-3)
-  - [3.1 Embodied harnesses](#s3-1) (83)
+  - [3.1 Embodied harnesses](#s3-1) (84)
   - [3.2 Simulator construction](#s3-2) (65)
   - [3.3 Simulator quality evaluation](#s3-3) (23)
   - [3.4 Data](#s3-4) (14)
@@ -1677,10 +1677,20 @@ The agent **calls other models through code** — image, video and world generat
 - <a id="paper-2611-06518"></a>`2026.11` **[EmoReward: Self-Evolving Reward Calibration for Emotional Video Generation RL](https://arxiv.org/abs/2611.06518)** [[source 2]](https://emoreward-project.github.io/) [[source 3]](https://github.com/Tencent-Hunyuan/EmoReward)
   > Calibrates heterogeneous emotion-reward providers using current-video validity gates and a frozen table derived from earlier training traces, supplying better-grounded rewards for video-generator training.
 
+<!-- mmac-record: {"id": "2611.16748", "scope": "Core", "primary": "2.2", "stage": 2, "type": "paper"} -->
+
+- <a id="paper-2611-16748"></a>`2026.11` **[PhysLoop: Harnessing LLMs’ Physics Awareness for Self-Improving Video Generation Models](https://arxiv.org/abs/2611.16748)** [[source 2]](https://arxiv.org/html/2611.16748v1) [[source 3]](https://chenyx24.github.io/PhysLoop-site/) [[source 4]](https://github.com/DAGroup-PKU/PhysLoop)
+  > A coding agent builds simulator scenes and uses visual and state feedback to revise them or adjust a video refiner, supporting controlled video generation and local repair.
+
 <!-- mmac-record: {"id": "2611.04418", "scope": "Adjacent", "primary": "2.2", "stage": 2, "type": "paper"} -->
 
 - <a id="paper-2611-04418"></a>`2026.11` **[VidUEU-Agent: A Data-Curation Agent for Multimodal Understanding, Editing, and Unified Tasks](https://arxiv.org/abs/2611.04418)** [[source 2]](https://github.com/LRuca/VidUEU-Agent) [[source 3]](https://huggingface.co/datasets/Lruca/VidUEU100k)
   > Coordinates visual tools and VLM checks to curate 100K traceable understanding/editing/unified instructions from videos, then adjusts sampling and routing from downstream training feedback.
+
+<!-- mmac-record: {"id": "2611.16217", "scope": "Adjacent", "primary": "2.2", "stage": 2, "type": "paper"} -->
+
+- <a id="paper-2611-16217"></a>`2026.11` **[WorldDraft: If Code Builds the World, Can Video Models Just Render It?](https://arxiv.org/abs/2611.16217)** [[source 2]](https://arxiv.org/html/2611.16217v1) [[source 3]](https://haroldchen19.github.io/WorldDraft-site/) [[source 4]](https://github.com/KevinHuge/WorldDraft) [[source 5]](https://huggingface.co/datasets/KevinHuge/WorldDraft)
+  > Benchmarks video models as renderers of executable 4D drafts, testing whether they preserve motion and camera paths while applying requested appearances.
 
 <!-- mmac-record: {"id": "2610.20571", "scope": "Adjacent", "primary": "2.2", "stage": 2, "type": "paper"} -->
 
@@ -2208,6 +2218,11 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 - <a id="paper-2611-12177"></a>`2026.11` **[Embodied First Exam](https://arxiv.org/abs/2611.12177)** [[source 2]](https://arxiv.org/html/2611.12177)
   > Tests general-purpose agents across robot embodiments while varying observation access, reset budgets and execution timing.
+
+<!-- mmac-record: {"id": "2611.16009", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-16009"></a>`2026.11` **[JustRUA: A Controlled Study of GPT-6 Robot-Use Agents](https://arxiv.org/abs/2611.16009)** [[source 2]](https://arxiv.org/html/2611.16009v1) [[source 3]](https://zefanw.github.io/JustRUA/) [[source 4]](https://github.com/ZefanW/JustRUA) [[source 5]](https://huggingface.co/spaces/ZefanW/robodojo-replay-explorer)
+  > Studies how episode history, short motions, geometry and coordinate-solving code shape a general-purpose agent’s RoboDojo manipulation performance.
 
 <!-- mmac-record: {"id": "2611.08209", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 

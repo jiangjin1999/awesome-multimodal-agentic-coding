@@ -13470,3 +13470,69 @@
     ja: 実験的なプレビューとして、編集・描画・デバッグのための Unreal MCP と、生成モデルのツールを組み合わせる Canvas を追加する。指示、参照、シーンから編集操作、画像、3D・動画アセット、実行状態の確認を扱う。公式発表は統合機能の説明であり、自律開発のベンチマークではない。
   sources:
   - https://forums.unrealengine.com/t/unreal-engine-5-9-megajam-preview/2852840
+- id: '2611.16748'
+  title: 'PhysLoop: Harnessing LLMs’ Physics Awareness for Self-Improving Video Generation Models'
+  url: https://arxiv.org/abs/2611.16748
+  date: '2026.11'
+  section: '2.2'
+  type: paper
+  scope: core
+  tldr:
+    en: A coding agent builds simulator scenes and uses visual and state feedback to revise them or adjust a video refiner,
+      supporting controlled video generation and local repair.
+    zh: 编码 Agent 构建可执行仿真场景，并依据画面和状态反馈修订场景或调整视频模型输入，支持可控视频生成与局部修复。
+    ja: コーディングエージェントが実行可能なシミュレーションシーンを構築し、画像と状態のフィードバックに基づいてシーンや動画モデルの入力を修正し、制御可能な動画生成と局所修復を行う。
+  sources:
+  - https://arxiv.org/abs/2611.16748
+  - https://arxiv.org/html/2611.16748v1
+  - https://chenyx24.github.io/PhysLoop-site/
+  - https://github.com/DAGroup-PKU/PhysLoop
+  verification:
+    en: Camera previews and simulation/video checks guide revisions in the same run. Evaluation covers 100 generation
+      and 50 repair tasks; recursive model training remains future work.
+    zh: 预览画面与仿真／成片检查驱动同次运行内的修订。评测覆盖 100 个生成任务和 50 个修复任务，递归模型训练留待后续验证。
+- id: '2611.16217'
+  title: 'WorldDraft: If Code Builds the World, Can Video Models Just Render It?'
+  url: https://arxiv.org/abs/2611.16217
+  date: '2026.11'
+  section: '2.2'
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Benchmarks video models as renderers of executable 4D drafts, testing whether they preserve motion and camera
+      paths while applying requested appearances.
+    zh: 用固定运动和镜头轨迹的可执行 4D 草稿，评测视频模型能否保留世界结构并实现目标外观。
+    ja: 運動とカメラ軌道を固定した実行可能な4Dドラフトを用い、動画モデルが世界の構造を保持しつつ指定された外観を実現できるかを評価する。
+  sources:
+  - https://arxiv.org/abs/2611.16217
+  - https://arxiv.org/html/2611.16217v1
+  - https://haroldchen19.github.io/WorldDraft-site/
+  - https://github.com/KevinHuge/WorldDraft
+  - https://huggingface.co/datasets/KevinHuge/WorldDraft
+  verification:
+    en: 432 paired cases from 48 executable world families and 12 renderers; separate metrics for structural preservation,
+      rendering fidelity and appearance persistence.
+    zh: 48 类可执行场景构成 432 个配对样例，比较 12 个视频模型，分别量化结构保留、外观实现和跨帧一致性。
+- id: '2611.16009'
+  title: 'JustRUA: A Controlled Study of GPT-6 Robot-Use Agents'
+  url: https://arxiv.org/abs/2611.16009
+  date: '2026.11'
+  section: '3.1'
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Studies how episode history, short motions, geometry and coordinate-solving code shape a general-purpose agent’s
+      RoboDojo manipulation performance.
+    zh: 在 RoboDojo 仿真中比较完整回合历史、短动作、深度与坐标求解代码对通用 Agent 操控的影响。
+    ja: RoboDojoのシミュレーションで、エピソードの全履歴、短い動作、深度情報、座標を求めるコードが汎用エージェントの操作性能に与える影響を比較する。
+  sources:
+  - https://arxiv.org/abs/2611.16009
+  - https://arxiv.org/html/2611.16009v1
+  - https://zefanw.github.io/JustRUA/
+  - https://github.com/ZefanW/JustRUA
+  - https://huggingface.co/spaces/ZefanW/robodojo-replay-explorer
+  verification:
+    en: 111 simulated episodes across 42 tasks; the final configuration adds coordinate-solving code and lifts the decision
+      cap together.
+    zh: 42 项任务的 111 个仿真回合。最终配置同时加入坐标求解代码并取消决策次数上限。
+  sub: capability-eval

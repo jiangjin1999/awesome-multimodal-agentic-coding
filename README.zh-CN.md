@@ -63,6 +63,7 @@
   - [3.4 数据](#s3-4) (14)
   - [3.5 训练与能力提升](#s3-5) (73)
   - [3.6 物理应用与实验](#s3-6) (37)
+    - [科学实验（AI4Science）](#s3-6-experiments) (15)
   - [仿真引擎一览](#s3-engines)
 - [综述与相关合集](#related)
 - [联系与贡献](#contact) · [引用](#citation)
@@ -3741,7 +3742,9 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-demo-nvidia-factory-operations-blueprint"></a>**[NVIDIA — Factory Operations Blueprint](https://developer.nvidia.com/blog/how-nvidia-factory-operations-blueprint-coordinates-ai-agents-to-investigate-production-issues/)**
   > 管理 Agent 编排视觉检查、时序分析与车队专家；运输在 Isaac Sim／ROS 2 中演示，真实设备接入、批准及人工返修仍属部署环节。
 
-#### 实验、测量与发现
+<a id="s3-6-experiments"></a>
+
+#### 科学实验（AI4Science）
 
 <!-- mmac-record: {"id": "2610.41383", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
@@ -3823,6 +3826,8 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 - <a id="paper-demo-google-deepmind-agentic-cheminformatics"></a>**[Google DeepMind — Agentic cheminformatics](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/)**
   > Antigravity 调用 RDKit 和效力模型提出宏环候选，科学家审阅图表和预测；合成与实验验证仍需另行完成。
+
+*另见:* [Lab2Sim](#paper-2611-02928) · [LabWorld](#paper-2610-36592) · [ChemAutoAgent](#paper-chemautoagent) · [LabRobFail](#paper-2607-23704) · [Safe Lab Agents](#paper-safe-lab-agents)
 
 #### 物理设计、制造与验证
 

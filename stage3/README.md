@@ -5255,7 +5255,7 @@ Physical applications test whether generated programs, models and designs meet a
 | Application | Artifact and interface | What the experiment must establish |
 |---|---|---|
 | Robot manipulation | Motion programs, control policies, force/tactile interfaces and executable skills. | Task success and recovery across poses, objects and contact conditions; separately identify simulator trials, physical trials and human assistance. [RAPID](#work-2609-30249) tests demonstration-derived programs, while [FORCA](#work-2610-31841) studies force-aware programming. |
-| Scientific experiments and measurement | Instrument drivers, laboratory layouts, robot procedures and analysis programs. | Instrument commissioning, calibrated measurements and reproducible experimental outcomes. [Self-Building Labs](#work-2610-23826) connects laboratory configuration with executable procedures; physical observations must support the scientific conclusion as well as successful tool calls. |
+| Scientific experiments (AI4Science) | Instrument drivers, laboratory layouts, robot procedures and analysis programs. | Instrument commissioning, calibrated measurements and reproducible experimental outcomes. [Self-Building Labs](#work-2610-23826) connects laboratory configuration with executable procedures; physical observations must support the scientific conclusion as well as successful tool calls. |
 | Design, manufacturing and verification | CAD, robot morphology, actuation programs, PCB routes and fabrication plans. | Geometric or solver checks, manufacturability, and physical testing are successive forms of evidence. [PneuGen](#work-2611-13344) fabricates selected simulated designs; [PCBRouteAgent](#work-2611-08175) reports routing checks without fabricated-board validation. |
 
 For each result, identify the **agent's contribution**, the **controller or solver's contribution**, and the **feedback used for revision**. A physical demonstration can validate a frozen design or program without making hardware part of its optimization loop. Conversely, a policy developed through real robot trials can still require a separate reliability test after development is finished.
@@ -5431,7 +5431,11 @@ Builds spatial value maps for manipulation.
 
 **Verification:** Recomputing maps from new observations differs from having the LLM revise its generated code.
 
-### Experiments, measurement and discovery
+<a id="section-6-science"></a>
+
+### Scientific experiments (AI4Science)
+
+**Primary entries in other sections:** [ChemAutoAgent](#work-chemautoagent) (1. Embodied Harnesses) · [Safe Lab Agents](#work-safe-lab-agents) (1. Embodied Harnesses) · [LabWorld](#work-2610-36592) (2. Simulator Construction) · [Lab2Sim](../README.md#paper-2611-02928) (3. Simulator Quality Evaluation) · [LabRobFail](#work-2607-23704) (4. Data)
 
 <a id="work-2610-41717"></a>
 <!-- stage3-record: {"id": "2610.41717", "scope": "Adjacent", "section": 6} -->

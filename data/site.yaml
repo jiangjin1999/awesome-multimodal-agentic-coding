@@ -136,10 +136,9 @@ text:
       zh: 机器人交互与操作
       ja: ロボットのインタラクションと操作
     experiments:
-      en: Experiments
-      measurement and discovery: null
-      zh: 实验、测量与发现
-      ja: 実験・計測・発見
+      en: Scientific experiments (AI4Science)
+      zh: 科学实验（AI4Science）
+      ja: 科学実験（AI4Science）
     physical-design:
       en: Physical design
       fabrication and validation: null
@@ -1215,6 +1214,15 @@ sections:
     - robot-interaction
     - experiments
     - physical-design
+    contents_subs:
+    - experiments
+    sub_see_also:
+      experiments:
+      - chemautoagent
+      - safe-lab-agents
+      - '2610.36592'
+      - '2611.02928'
+      - '2607.23704'
 engines:
   HTML: https://developer.mozilla.org/en-US/docs/Web/HTML
   Three.js: https://threejs.org/docs/

@@ -63,6 +63,7 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [3.4 Data](#s3-4) (14)
   - [3.5 Training and capability improvement](#s3-5) (73)
   - [3.6 Physical applications and experiments](#s3-6) (37)
+    - [Scientific experiments (AI4Science)](#s3-6-experiments) (15)
   - [Simulation engines at a glance](#s3-engines)
 - [Surveys and related collections](#related)
 - [Contact and contributing](#contact) · [Citation](#citation)
@@ -3741,7 +3742,9 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 - <a id="paper-demo-nvidia-factory-operations-blueprint"></a>**[NVIDIA — Factory Operations Blueprint](https://developer.nvidia.com/blog/how-nvidia-factory-operations-blueprint-coordinates-ai-agents-to-investigate-production-issues/)**
   > A manager coordinates visual inspection, time-series analysis and fleet specialists; transport is demonstrated in Isaac Sim/ROS 2, while physical integration, approval and human rework remain deployment steps.
 
-#### Experiments
+<a id="s3-6-experiments"></a>
+
+#### Scientific experiments (AI4Science)
 
 <!-- mmac-record: {"id": "2610.41383", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
@@ -3823,6 +3826,8 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 - <a id="paper-demo-google-deepmind-agentic-cheminformatics"></a>**[Google DeepMind — Agentic cheminformatics](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/)**
   > Antigravity uses RDKit and potency models to propose macrocycles; a scientist inspects the plots and predictions, and synthesis and experimental validation remain necessary.
+
+*See also:* [Lab2Sim](#paper-2611-02928) · [LabWorld](#paper-2610-36592) · [ChemAutoAgent](#paper-chemautoagent) · [LabRobFail](#paper-2607-23704) · [Safe Lab Agents](#paper-safe-lab-agents)
 
 #### Physical design
 

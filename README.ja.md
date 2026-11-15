@@ -66,6 +66,7 @@
   - [3.4 データ](#s3-4) (14)
   - [3.5 学習と能力向上](#s3-5) (73)
   - [3.6 物理応用と実験](#s3-6) (37)
+    - [科学実験（AI4Science）](#s3-6-experiments) (15)
   - [シミュレーションエンジン一覧](#s3-engines)
 - [サーベイと関連コレクション](#related)
 - [連絡とコントリビュート](#contact) · [引用](#citation)
@@ -3744,7 +3745,9 @@
 - <a id="paper-demo-nvidia-factory-operations-blueprint"></a>**[NVIDIA — Factory Operations Blueprint](https://developer.nvidia.com/blog/how-nvidia-factory-operations-blueprint-coordinates-ai-agents-to-investigate-production-issues/)**
   > 管理 Agent が視覚検査、時系列分析、車両群の専門 Agent を調整する。搬送は Isaac Sim／ROS 2 で実演され、実機への接続、承認、人による再作業は配備時に必要となる。
 
-#### 実験・計測・発見
+<a id="s3-6-experiments"></a>
+
+#### 科学実験（AI4Science）
 
 <!-- mmac-record: {"id": "2610.41383", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
@@ -3826,6 +3829,8 @@
 
 - <a id="paper-demo-google-deepmind-agentic-cheminformatics"></a>**[Google DeepMind — Agentic cheminformatics](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/)**
   > Antigravity が RDKit と活性予測モデルを呼び出して大環状化合物の候補を提案し、科学者が図表と予測を確認する。合成と実験的検証は別途必要となる。
+
+*関連:* [Lab2Sim](#paper-2611-02928) · [LabWorld](#paper-2610-36592) · [ChemAutoAgent](#paper-chemautoagent) · [LabRobFail](#paper-2607-23704) · [Safe Lab Agents](#paper-safe-lab-agents)
 
 #### 物理設計・製造・検証
 

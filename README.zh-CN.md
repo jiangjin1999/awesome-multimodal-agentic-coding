@@ -3122,91 +3122,117 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 ### 3.4 数据
 
-#### 真实观测与交互记录
+<table>
+<thead>
+<tr><th>来源</th><th>类型</th><th>画面</th><th>轨迹</th><th>作品</th></tr>
+</thead>
+<tbody>
+<tr><td rowspan="3" align="center"><b>Real</b></td><td rowspan="2" nowrap>示范</td><td>真机多视角立体 RGB</td><td>人遥操作</td><td><a href="#paper-2403-12945">DROID</a></td></tr>
+<tr><td>真机单路 RGB-D</td><td>Agent 操作真机</td><td><a href="#paper-2406-18915">Manipulate-Anything</a></td></tr>
+<tr><td nowrap>人类视频</td><td>第一视角单目 RGB</td><td>人手腕部位姿与开合，不是机器人动作</td><td><a href="#paper-2611-06817">Open-HumanWAM</a></td></tr>
+</tbody>
+<tbody>
+<tr><td rowspan="3" align="center"><b>Sim</b></td><td rowspan="2" nowrap>示范</td><td>仿真渲染 RGB</td><td>规划器、求解器，或 Agent 写的程序</td><td><a href="#paper-2307-14535">Scaling Up and Distilling Down</a> · <a href="#paper-2506-18088">RoboTwin 2.0</a> · <a href="#paper-2609-27308">EmbodiedSWE</a> · <a href="#paper-2610-07969">EmbodiedSmith</a> ↻ · <a href="#paper-2610-22362">CoDA</a> ↻</td></tr>
+<tr><td>多路 RGB-D 融合的点云</td><td>规划与强化学习求解器</td><td><a href="#paper-2410-03645">GenSim2</a></td></tr>
+<tr><td nowrap>示范 + 失败标签</td><td>仿真渲染的多视角 RGB</td><td>故意注入失败</td><td><a href="#paper-2607-23704">LabRobFail</a></td></tr>
+</tbody>
+<tbody>
+<tr><td rowspan="3" align="center"><b>Real+Sim</b></td><td nowrap>示范</td><td>合成的单路头部视角视频</td><td>从视频推断的伪动作</td><td><a href="#paper-2611-05163">RoboTryOn</a></td></tr>
+<tr><td nowrap>环境 + 示范</td><td>照真实视频复刻环境，渲染后改成真实外观</td><td>在复刻的环境里求解</td><td><a href="#paper-2609-35318">DexAgent</a> · <a href="#paper-2611-05320">PyRUA-DataFarm</a></td></tr>
+<tr><td nowrap>环境 + 视频</td><td>照真实视频写成仿真程序，再渲染</td><td>无</td><td><a href="#paper-2611-12411">PhysOPSD</a></td></tr>
+</tbody>
+</table>
+
+示范 = 画面 + 机器人动作。↻ 表示闭环：生成器根据训练反馈改写自己。
+
+#### Real
 
 <!-- mmac-record: {"id": "2611.06817", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-06817"></a>`2026.11` **[Open-HumanWAM: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models](https://arxiv.org/abs/2611.06817)** [[项目页]](https://dagroup-pku.github.io/open-humanwam/) [[代码]](https://github.com/DAGroup-PKU/HumanNet/tree/Open-HumanWAM) [[数据集]](https://huggingface.co/datasets/DAGroup-PKU/Open-HumanWAM-50K) [[合集]](https://huggingface.co/collections/DAGroup-PKU/open-humanwam)
-  > 整理人类操作经验及对齐动作，用于世界—动作模型预训练与机器人适配。<br>
+  > 整理 5 万小时第一视角人类视频，预训练世界—动作模型，再在机器人上后训练。画面：第一视角单目 RGB；轨迹：双手腕部 3D 位姿与开合度，统一到同一动作空间；标注：语言描述。<br>
   > 🖥️ **仿真** SAPIEN + Isaac Sim（AgileX ALOHA、ARX X5） · 🦾 **真机** AgileX Cobot Magic
 
 <!-- mmac-record: {"id": "2406.18915", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2406-18915"></a>`2024.06` **[Manipulate-Anything: Automating Real-World Robots using Vision-Language Models](https://arxiv.org/abs/2406.18915)** [[项目页]](https://robot-ma.github.io/) [[代码]](https://github.com/Robot-MA/manipulate-anything)
-  > 用视觉语言反馈自动采集真实示范。<br>
+  > VLM Agent 自主操作真机、自查子任务成败，自动生成行为克隆示范。画面：真机为单个正面 RGB-D 相机，由点云重渲染出多视角（仿真中为 4 路 RGB-D）；轨迹：6 自由度夹爪位姿与开合的路点；标注：语言指令。<br>
   > 🖥️ **仿真** CoppeliaSim（Franka Panda） · 🦾 **真机** Franka Panda
 
 <!-- mmac-record: {"id": "2403.12945", "scope": "Resource", "primary": "3.4", "stage": 3, "type": "resource"} -->
 
 - <a id="paper-2403-12945"></a>`2024.03` **[DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset](https://arxiv.org/abs/2403.12945)** [[项目页]](https://droid-dataset.github.io/) [[Demo]](https://droid-dataset.github.io/visualizer) [[硬件代码]](https://github.com/droid-dataset/droid) [[策略训练代码]](https://github.com/droid-dataset/droid_policy_learning) [[文档]](https://droid-dataset.github.io/droid/)
-  > 提供机器人学习所需的真实观测来源。
+  > 在 564 个场景、84 类任务中遥操作 Franka，采集 7.6 万条轨迹（350 小时）。画面：两路外部、一路腕部立体相机 RGB，原始数据附相机标定、可算深度；轨迹：关节与末端状态、动作；标注：每条 3 句语言指令。<br>
+  > 🦾 **真机** Franka Panda
 
-#### 合成数据与构造方法
-
-<!-- mmac-record: {"id": "2611.12411", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
-
-- <a id="paper-2611-12411"></a>`2026.11` **[PhysOPSD: Code as Privilege for Physically Plausible Video Generation](https://arxiv.org/abs/2611.12411)** [[项目页]](https://haroldchen19.github.io/PhysOPSD-site/)
-  > 构建可执行物理场景及配对视觉监督，用于视频生成器后训练。<br>
-  > 🖥️ **仿真** Blender + Genesis + MuJoCo
-
-<!-- mmac-record: {"id": "2611.05320", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
-
-- <a id="paper-2611-05320"></a>`2026.11` **[PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data](https://arxiv.org/abs/2611.05320)** [[项目页]](https://dagroup-pku.github.io/PyRUA-Lean/DataFarm) [[代码]](https://github.com/DAGroup-PKU/PyRUA-Lean/tree/DataFarm)
-  > 组合代码与视频模型生成动作标注数据。<br>
-  > 🖥️ **仿真** SAPIEN + Isaac Sim
-
-<!-- mmac-record: {"id": "2611.05163", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
-
-- <a id="paper-2611-05163"></a>`2026.11` **[RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On](https://arxiv.org/abs/2611.05163)** [[项目页]](https://ryan-seungyong-lee.github.io/RoboTryOn) [[代码]](https://github.com/ryan-seungyong-lee/RoboTryOn) [[模型]](https://huggingface.co/RyanL22/RoboTryOn) [[Demo]](https://huggingface.co/spaces/RyanL22/RoboTryOn)
-  > 将真人示范转换为目标机器人视频，通过逆动力学和腕部校正生成伪动作，训练策略并在两种真实机器人上评估。<br>
-  > 🦾 **真机** OpenArm、Inspire RH56F1、Rainbow RB-Y1、WujiHand2
+#### Sim
 
 <!-- mmac-record: {"id": "2610.22362", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-22362"></a>`2026.10` **[CoDA: Co-Evolution of Data Engines and Action Policies](https://arxiv.org/abs/2610.22362)** [[项目页]](https://plan-lab.github.io/projects/coda/)
-  > 共同演化数据生成程序与机器人策略。<br>
+  > 数据引擎与策略共同演化：把 VLM 对策略失败的诊断写成生成程序，造出针对性的环境，并转成分阶段的稠密奖励。画面：正面与腕部 RGB；轨迹：10 Hz 的 7 维末端增量与夹爪动作；另有规划器生成的示范。<br>
   > 🖥️ **仿真** MuJoCo（Franka Panda）
 
 <!-- mmac-record: {"id": "2610.07969", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-07969"></a>`2026.10` **[EmbodiedSmith: Scaling Embodied Data through Recursive Self-Improvement Flywheel in Simulation](https://arxiv.org/abs/2610.07969)**
-  > 构建可自改进的仿真数据引擎。<br>
+  > Agent 一体化生成资产、场景与任务，并让场景生成与任务生成互相修订，构成可自我改进的仿真数据引擎，覆盖移动操作、人形、灵巧手及柔性物体与流体。画面与轨迹：时间对齐的画面、本体与物体状态、控制动作；标注：执行阶段与成败记录。<br>
   > 🖥️ **仿真** Isaac Sim（Franka FR3、Sharpa Wave）
-
-<!-- mmac-record: {"id": "2609.35318", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
-
-- <a id="paper-2609-35318"></a>`2026.09` **[DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library](https://arxiv.org/abs/2609.35318)** [[项目页]](https://dexagent1.github.io/) [[项目页]](https://dexagent123.github.io/) [[代码]](https://github.com/dexagent1/DexAgent)
-  > 把人类视频转为仿真灵巧操作监督。<br>
-  > 🖥️ **仿真** Blender + MuJoCo + Isaac Sim（Sharpa Wave） · 🦾 **真机** I2RT YAM、Sharpa Wave
 
 <!-- mmac-record: {"id": "2609.27308", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-27308"></a>`2026.09` **[EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics](https://arxiv.org/abs/2609.27308)** [[代码]](https://github.com/EmbodiedSWE/EmbodiedSWE)
-  > 把验证过的机器人程序扩展为合成示范。<br>
+  > Coding Agent 在仿真中解长程灵巧任务，再把通过评分的解法按物理参数与视觉条件扩展成大量示范；用它微调的 VLA 完成了一项真机长任务。画面：外部与腕部渲染 RGB；轨迹：关节位置、夹爪状态与关节目标动作。<br>
   > 🖥️ **仿真** Isaac Lab + Newton（Franka Panda、xArm7、Kinova Gen3、Unitree G1） · 🦾 **真机** Franka Panda
 
 <!-- mmac-record: {"id": "2607.23704", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2607-23704"></a>`2026.07` **[LabRobFail: A Benchmark for Robotic Failure Analysis in Chemical Self-driving Laboratory](https://arxiv.org/abs/2607.23704)** [[代码]](https://github.com/Su-ISE-2001/LabRobFail) [[代码]](https://github.com/Su-ISE-2001/SciRobo)
-  > 构建带有结构化诊断及纠正标签的仿真实验室失败轨迹。
+  > 在仿真化学实验室中按控制、物理、语义三级注入失败，构建 2 万余条轨迹（70 多个任务场景、11 种失败类型），训练失败诊断 VLM。画面：同步多视角 RGB 视频；标注：任务指令、是否失败、失败时刻、类型、严重度与纠正建议。
 
 <!-- mmac-record: {"id": "2506.18088", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2506-18088"></a>`2025.06` **[RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation](https://arxiv.org/abs/2506.18088)** [[代码]](https://github.com/RoboTwin-Platform/RoboTwin) [[代码]](https://github.com/robotwin-Platform/robotwin) [[代码]](https://github.com/robotwin-Platform/robotwin/) [[项目页]](https://robotwin-platform.github.io/) [[项目页]](https://robotwin-platform.github.io/doc/) [[数据集]](https://huggingface.co/datasets/TianxingChen/RoboTwin2.0)
-  > 生成多样化双臂操作训练轨迹。<br>
+  > MLLM 生成任务代码并在仿真中试跑修正，配合五类域随机化，为 5 种双臂机器人的 50 个任务生成 10 万余条专家轨迹。画面：头部与双腕多视角 RGB，可另导出深度与点云；轨迹：关节角与末端位姿；标注：语言指令。<br>
   > 🖥️ **仿真** SAPIEN（AgileX ALOHA、AgileX PiPER、ARX X5、Franka Panda、UR5）
 
 <!-- mmac-record: {"id": "2410.03645", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2410-03645"></a>`2024.10` **[GenSim2: Scaling Robot Data Generation with Multi-modal and Reasoning LLMs](https://arxiv.org/abs/2410.03645)** [[项目页]](https://gensim2.github.io/) [[代码]](https://github.com/GenSim2/gensim2)
-  > 通过生成任务与求解器扩大机器人示范。<br>
+  > LLM 编写最多 100 个铰接物体任务，规划与强化学习求解器批量生成示范，训练点云策略并零样本迁移到真机。画面：多路 RGB-D 融合成的点云；轨迹：本体状态与动作；标注：语言指令。<br>
   > 🖥️ **仿真** SAPIEN（Franka Panda） · 🦾 **真机** Franka FR3
 
 <!-- mmac-record: {"id": "2307.14535", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2307-14535"></a>`2023.07` **[Scaling Up and Distilling Down: Language-Guided Robot Skill Acquisition](https://arxiv.org/abs/2307.14535)** [[项目页]](https://www.cs.columbia.edu/~huy/scalingup/) [[代码]](https://github.com/columbia-ai-robotics/scalingup)
-  > 将语言组织的机器人经验蒸馏为动作策略。<br>
+  > LLM 规划任务并写出成功判定代码，驱动采样式规划器在仿真中批量探索，再把成功轨迹蒸馏成视觉运动策略。画面：全局与腕部两路 RGB；轨迹：本体状态与末端动作；标注：语言与成败；每个任务至少 500 条成功轨迹。<br>
   > 🖥️ **仿真** MuJoCo（UR5e） · 🦾 **真机** UR5e
+
+#### Real+Sim
+
+<!-- mmac-record: {"id": "2611.12411", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-12411"></a>`2026.11` **[PhysOPSD: Code as Privilege for Physically Plausible Video Generation](https://arxiv.org/abs/2611.12411)** [[项目页]](https://haroldchen19.github.io/PhysOPSD-site/)
+  > Coding Agent 把真实参照视频中的物理过程写成可验证的仿真程序，构建 PhysOPSD-3K，作为视频生成器后训练的特权信息。每个样本：仿真程序、不同抽象层级的渲染草图、依据执行结果写的提示词与物理参数，另有改变物理参数的配对变体。<br>
+  > 🖥️ **仿真** Blender + Genesis + MuJoCo
+
+<!-- mmac-record: {"id": "2611.05320", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-05320"></a>`2026.11` **[PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data](https://arxiv.org/abs/2611.05320)** [[项目页]](https://dagroup-pku.github.io/PyRUA-Lean/DataFarm) [[代码]](https://github.com/DAGroup-PKU/PyRUA-Lean/tree/DataFarm)
+  > Coding Agent 接替遥操作员：依据一段真机标定录像在仿真中重建任务，写出场景、专家控制器和成功判定，再用以真实图像为条件的视频模型渲染成照片级画面。画面：头部与双腕三路同步视频；轨迹：仿真给出的精确关节动作。<br>
+  > 🖥️ **仿真** SAPIEN + Isaac Sim
+
+<!-- mmac-record: {"id": "2611.05163", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-05163"></a>`2026.11` **[RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On](https://arxiv.org/abs/2611.05163)** [[项目页]](https://ryan-seungyong-lee.github.io/RoboTryOn) [[代码]](https://github.com/ryan-seungyong-lee/RoboTryOn) [[模型]](https://huggingface.co/RyanL22/RoboTryOn) [[Demo]](https://huggingface.co/spaces/RyanL22/RoboTryOn)
+  > 把从机器人头部视角拍的真人示范“换装”成目标机器人视频，用带深度特征的逆动力学模型和腕部校正推断伪动作，训练策略并在两种真实机器人平台上评估。画面：单路合成的头部视角视频；轨迹：推断出的手臂与灵巧手动作。<br>
+  > 🦾 **真机** OpenArm、Inspire RH56F1、Rainbow RB-Y1、WujiHand2
+
+<!-- mmac-record: {"id": "2609.35318", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2609-35318"></a>`2026.09` **[DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library](https://arxiv.org/abs/2609.35318)** [[项目页]](https://dexagent1.github.io/) [[项目页]](https://dexagent123.github.io/) [[代码]](https://github.com/dexagent1/DexAgent)
+  > 从单段第一视角人类视频出发，Agent 在仿真中按物体属性重建场景、优化灵巧手轨迹，再改变物体与机器人状态批量生成数据，工具库随使用不断扩充。画面：变换视角后的仿真渲染，重贴纹理以贴近真实；轨迹：灵巧手与手臂动作。<br>
+  > 🖥️ **仿真** Blender + MuJoCo + Isaac Sim（Sharpa Wave） · 🦾 **真机** I2RT YAM、Sharpa Wave
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 

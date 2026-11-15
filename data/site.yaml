@@ -110,13 +110,17 @@ text:
       zh: Skills、工具桥与运行资源
       ja: スキル・ブリッジ・ランタイム資源
     real-data:
-      en: Real observations and interaction records
-      zh: 真实观测与交互记录
-      ja: 実観測とインタラクション記録
-    synthetic-data:
-      en: Synthetic data and production methods
-      zh: 合成数据与构造方法
-      ja: 合成データと生成手法
+      en: Real
+      zh: Real
+      ja: Real
+    sim-data:
+      en: Sim
+      zh: Sim
+      ja: Sim
+    mixed-data:
+      en: Real+Sim
+      zh: Real+Sim
+      ja: Real+Sim
     program-policy:
       en: Program and policy development
       zh: 程序与策略研发
@@ -1197,7 +1201,78 @@ sections:
     ja: データ
     subs:
     - real-data
-    - synthetic-data
+    - sim-data
+    - mixed-data
+    guide:
+      en: |-
+        <table>
+        <thead>
+        <tr><th>Source</th><th>Type</th><th>Frames</th><th>Trajectory</th><th>Works</th></tr>
+        </thead>
+        <tbody>
+        <tr><td rowspan="3" align="center"><b>Real</b></td><td rowspan="2" nowrap>Demonstrations</td><td>Multi-view stereo RGB on the real robot</td><td>Teleoperated by a person</td><td><a href="#paper-2403-12945">DROID</a></td></tr>
+        <tr><td>One RGB-D camera on the real robot</td><td>An agent operating the real robot</td><td><a href="#paper-2406-18915">Manipulate-Anything</a></td></tr>
+        <tr><td nowrap>Human video</td><td>First-person monocular RGB</td><td>Wrist pose and grip of human hands, not robot actions</td><td><a href="#paper-2611-06817">Open-HumanWAM</a></td></tr>
+        </tbody>
+        <tbody>
+        <tr><td rowspan="3" align="center"><b>Sim</b></td><td rowspan="2" nowrap>Demonstrations</td><td>Rendered RGB</td><td>Planners, solvers, or programs written by an agent</td><td><a href="#paper-2307-14535">Scaling Up and Distilling Down</a> · <a href="#paper-2506-18088">RoboTwin 2.0</a> · <a href="#paper-2609-27308">EmbodiedSWE</a> · <a href="#paper-2610-07969">EmbodiedSmith</a> ↻ · <a href="#paper-2610-22362">CoDA</a> ↻</td></tr>
+        <tr><td>Point clouds fused from RGB-D cameras</td><td>Planning and RL solvers</td><td><a href="#paper-2410-03645">GenSim2</a></td></tr>
+        <tr><td nowrap>Demonstrations<br>+ failure labels</td><td>Rendered multi-view RGB</td><td>Failures injected on purpose</td><td><a href="#paper-2607-23704">LabRobFail</a></td></tr>
+        </tbody>
+        <tbody>
+        <tr><td rowspan="3" align="center"><b>Real+Sim</b></td><td nowrap>Demonstrations</td><td>One synthesized head-camera view</td><td>Pseudo-actions inferred from the video</td><td><a href="#paper-2611-05163">RoboTryOn</a></td></tr>
+        <tr><td nowrap>Environment<br>+ demonstrations</td><td>Rendered in an environment replicated from real video, then given a real appearance</td><td>Solved in the replicated environment</td><td><a href="#paper-2609-35318">DexAgent</a> · <a href="#paper-2611-05320">PyRUA-DataFarm</a></td></tr>
+        <tr><td nowrap>Environment + video</td><td>Rendered from a simulation program written from a real video</td><td>None</td><td><a href="#paper-2611-12411">PhysOPSD</a></td></tr>
+        </tbody>
+        </table>
+
+        Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator rewrites itself from training feedback.
+      zh: |-
+        <table>
+        <thead>
+        <tr><th>来源</th><th>类型</th><th>画面</th><th>轨迹</th><th>作品</th></tr>
+        </thead>
+        <tbody>
+        <tr><td rowspan="3" align="center"><b>Real</b></td><td rowspan="2" nowrap>示范</td><td>真机多视角立体 RGB</td><td>人遥操作</td><td><a href="#paper-2403-12945">DROID</a></td></tr>
+        <tr><td>真机单路 RGB-D</td><td>Agent 操作真机</td><td><a href="#paper-2406-18915">Manipulate-Anything</a></td></tr>
+        <tr><td nowrap>人类视频</td><td>第一视角单目 RGB</td><td>人手腕部位姿与开合，不是机器人动作</td><td><a href="#paper-2611-06817">Open-HumanWAM</a></td></tr>
+        </tbody>
+        <tbody>
+        <tr><td rowspan="3" align="center"><b>Sim</b></td><td rowspan="2" nowrap>示范</td><td>仿真渲染 RGB</td><td>规划器、求解器，或 Agent 写的程序</td><td><a href="#paper-2307-14535">Scaling Up and Distilling Down</a> · <a href="#paper-2506-18088">RoboTwin 2.0</a> · <a href="#paper-2609-27308">EmbodiedSWE</a> · <a href="#paper-2610-07969">EmbodiedSmith</a> ↻ · <a href="#paper-2610-22362">CoDA</a> ↻</td></tr>
+        <tr><td>多路 RGB-D 融合的点云</td><td>规划与强化学习求解器</td><td><a href="#paper-2410-03645">GenSim2</a></td></tr>
+        <tr><td nowrap>示范 + 失败标签</td><td>仿真渲染的多视角 RGB</td><td>故意注入失败</td><td><a href="#paper-2607-23704">LabRobFail</a></td></tr>
+        </tbody>
+        <tbody>
+        <tr><td rowspan="3" align="center"><b>Real+Sim</b></td><td nowrap>示范</td><td>合成的单路头部视角视频</td><td>从视频推断的伪动作</td><td><a href="#paper-2611-05163">RoboTryOn</a></td></tr>
+        <tr><td nowrap>环境 + 示范</td><td>照真实视频复刻环境，渲染后改成真实外观</td><td>在复刻的环境里求解</td><td><a href="#paper-2609-35318">DexAgent</a> · <a href="#paper-2611-05320">PyRUA-DataFarm</a></td></tr>
+        <tr><td nowrap>环境 + 视频</td><td>照真实视频写成仿真程序，再渲染</td><td>无</td><td><a href="#paper-2611-12411">PhysOPSD</a></td></tr>
+        </tbody>
+        </table>
+
+        示范 = 画面 + 机器人动作。↻ 表示闭环：生成器根据训练反馈改写自己。
+      ja: |-
+        <table>
+        <thead>
+        <tr><th>出所</th><th>種類</th><th>映像</th><th>軌跡</th><th>作品</th></tr>
+        </thead>
+        <tbody>
+        <tr><td rowspan="3" align="center"><b>Real</b></td><td rowspan="2" nowrap>実演</td><td>実機の多視点ステレオ RGB</td><td>人の遠隔操作</td><td><a href="#paper-2403-12945">DROID</a></td></tr>
+        <tr><td>実機の RGB-D カメラ 1 台</td><td>エージェントによる実機操作</td><td><a href="#paper-2406-18915">Manipulate-Anything</a></td></tr>
+        <tr><td nowrap>人の動画</td><td>一人称の単眼 RGB</td><td>人の手首の姿勢と開閉（ロボットの動作ではない）</td><td><a href="#paper-2611-06817">Open-HumanWAM</a></td></tr>
+        </tbody>
+        <tbody>
+        <tr><td rowspan="3" align="center"><b>Sim</b></td><td rowspan="2" nowrap>実演</td><td>レンダリングした RGB</td><td>プランナー、ソルバー、またはエージェントが書いたプログラム</td><td><a href="#paper-2307-14535">Scaling Up and Distilling Down</a> · <a href="#paper-2506-18088">RoboTwin 2.0</a> · <a href="#paper-2609-27308">EmbodiedSWE</a> · <a href="#paper-2610-07969">EmbodiedSmith</a> ↻ · <a href="#paper-2610-22362">CoDA</a> ↻</td></tr>
+        <tr><td>複数の RGB-D カメラを統合した点群</td><td>計画・強化学習のソルバー</td><td><a href="#paper-2410-03645">GenSim2</a></td></tr>
+        <tr><td nowrap>実演 + 失敗ラベル</td><td>レンダリングした多視点 RGB</td><td>意図的に注入した失敗</td><td><a href="#paper-2607-23704">LabRobFail</a></td></tr>
+        </tbody>
+        <tbody>
+        <tr><td rowspan="3" align="center"><b>Real+Sim</b></td><td nowrap>実演</td><td>合成した頭部視点 1 本</td><td>動画から推定した疑似動作</td><td><a href="#paper-2611-05163">RoboTryOn</a></td></tr>
+        <tr><td nowrap>環境 + 実演</td><td>実際の動画から複製した環境でレンダリングし、実写の見た目に変える</td><td>複製した環境の中で求解</td><td><a href="#paper-2609-35318">DexAgent</a> · <a href="#paper-2611-05320">PyRUA-DataFarm</a></td></tr>
+        <tr><td nowrap>環境 + 動画</td><td>実際の動画をもとに書いたシミュレーションプログラムからレンダリング</td><td>なし</td><td><a href="#paper-2611-12411">PhysOPSD</a></td></tr>
+        </tbody>
+        </table>
+
+        実演＝映像＋ロボットの動作。↻ は閉ループ（生成器が学習のフィードバックから自らを書き換える）を示します。
   '3.5':
     en: Training and capability improvement
     zh: 训练与能力提升

@@ -3125,91 +3125,117 @@
 
 ### 3.4 データ
 
-#### 実観測とインタラクション記録
+<table>
+<thead>
+<tr><th>出所</th><th>種類</th><th>映像</th><th>軌跡</th><th>作品</th></tr>
+</thead>
+<tbody>
+<tr><td rowspan="3" align="center"><b>Real</b></td><td rowspan="2" nowrap>実演</td><td>実機の多視点ステレオ RGB</td><td>人の遠隔操作</td><td><a href="#paper-2403-12945">DROID</a></td></tr>
+<tr><td>実機の RGB-D カメラ 1 台</td><td>エージェントによる実機操作</td><td><a href="#paper-2406-18915">Manipulate-Anything</a></td></tr>
+<tr><td nowrap>人の動画</td><td>一人称の単眼 RGB</td><td>人の手首の姿勢と開閉（ロボットの動作ではない）</td><td><a href="#paper-2611-06817">Open-HumanWAM</a></td></tr>
+</tbody>
+<tbody>
+<tr><td rowspan="3" align="center"><b>Sim</b></td><td rowspan="2" nowrap>実演</td><td>レンダリングした RGB</td><td>プランナー、ソルバー、またはエージェントが書いたプログラム</td><td><a href="#paper-2307-14535">Scaling Up and Distilling Down</a> · <a href="#paper-2506-18088">RoboTwin 2.0</a> · <a href="#paper-2609-27308">EmbodiedSWE</a> · <a href="#paper-2610-07969">EmbodiedSmith</a> ↻ · <a href="#paper-2610-22362">CoDA</a> ↻</td></tr>
+<tr><td>複数の RGB-D カメラを統合した点群</td><td>計画・強化学習のソルバー</td><td><a href="#paper-2410-03645">GenSim2</a></td></tr>
+<tr><td nowrap>実演 + 失敗ラベル</td><td>レンダリングした多視点 RGB</td><td>意図的に注入した失敗</td><td><a href="#paper-2607-23704">LabRobFail</a></td></tr>
+</tbody>
+<tbody>
+<tr><td rowspan="3" align="center"><b>Real+Sim</b></td><td nowrap>実演</td><td>合成した頭部視点 1 本</td><td>動画から推定した疑似動作</td><td><a href="#paper-2611-05163">RoboTryOn</a></td></tr>
+<tr><td nowrap>環境 + 実演</td><td>実際の動画から複製した環境でレンダリングし、実写の見た目に変える</td><td>複製した環境の中で求解</td><td><a href="#paper-2609-35318">DexAgent</a> · <a href="#paper-2611-05320">PyRUA-DataFarm</a></td></tr>
+<tr><td nowrap>環境 + 動画</td><td>実際の動画をもとに書いたシミュレーションプログラムからレンダリング</td><td>なし</td><td><a href="#paper-2611-12411">PhysOPSD</a></td></tr>
+</tbody>
+</table>
+
+実演＝映像＋ロボットの動作。↻ は閉ループ（生成器が学習のフィードバックから自らを書き換える）を示します。
+
+#### Real
 
 <!-- mmac-record: {"id": "2611.06817", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-06817"></a>`2026.11` **[Open-HumanWAM: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models](https://arxiv.org/abs/2611.06817)** [[プロジェクトページ]](https://dagroup-pku.github.io/open-humanwam/) [[コード]](https://github.com/DAGroup-PKU/HumanNet/tree/Open-HumanWAM) [[データセット]](https://huggingface.co/datasets/DAGroup-PKU/Open-HumanWAM-50K) [[コレクション]](https://huggingface.co/collections/DAGroup-PKU/open-humanwam)
-  > 人の操作経験と対応する動作を整理し、世界・動作モデルの事前学習とロボットへの適応に利用する。<br>
+  > 一人称の人の動画 5 万時間を整理して世界・動作モデルを事前学習し、ロボットで事後学習する。映像：一人称の単眼 RGB。軌跡：両手首の 3D 姿勢と開閉度を共通の動作空間にそろえたもの。注釈：言語による説明。<br>
   > 🖥️ **シミュレーション** SAPIEN + Isaac Sim（AgileX ALOHA、ARX X5） · 🦾 **実機** AgileX Cobot Magic
 
 <!-- mmac-record: {"id": "2406.18915", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2406-18915"></a>`2024.06` **[Manipulate-Anything: Automating Real-World Robots using Vision-Language Models](https://arxiv.org/abs/2406.18915)** [[プロジェクトページ]](https://robot-ma.github.io/) [[コード]](https://github.com/Robot-MA/manipulate-anything)
-  > 視覚言語フィードバックを使い、実環境での実演を自動収集する。<br>
+  > VLM エージェントが実機を操作してサブタスクの成否を自ら確認し、行動模倣用の実演を自動生成する。映像：実機は正面の RGB-D カメラ 1 台で、点群から多視点を再レンダリング（シミュレーションでは RGB-D カメラ 4 台）。軌跡：6 自由度のグリッパ姿勢と開閉のウェイポイント。注釈：言語指示。<br>
   > 🖥️ **シミュレーション** CoppeliaSim（Franka Panda） · 🦾 **実機** Franka Panda
 
 <!-- mmac-record: {"id": "2403.12945", "scope": "Resource", "primary": "3.4", "stage": 3, "type": "resource"} -->
 
 - <a id="paper-2403-12945"></a>`2024.03` **[DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset](https://arxiv.org/abs/2403.12945)** [[プロジェクトページ]](https://droid-dataset.github.io/) [[デモ]](https://droid-dataset.github.io/visualizer) [[ハードウェアコード]](https://github.com/droid-dataset/droid) [[方策学習コード]](https://github.com/droid-dataset/droid_policy_learning) [[ドキュメント]](https://droid-dataset.github.io/droid/)
-  > ロボット学習に必要な実際の観測データ源を提供する。
+  > 564 シーン・84 タスクで Franka を遠隔操作し、7.6 万本の軌跡（350 時間）を収集。映像：外部 2 台と手首 1 台のステレオカメラの RGB（生データはカメラ較正付きで深度を計算可能）。軌跡：関節・手先の状態と動作。注釈：1 本ごとに 3 つの言語指示。<br>
+  > 🦾 **実機** Franka Panda
 
-#### 合成データと生成手法
-
-<!-- mmac-record: {"id": "2611.12411", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
-
-- <a id="paper-2611-12411"></a>`2026.11` **[PhysOPSD: Code as Privilege for Physically Plausible Video Generation](https://arxiv.org/abs/2611.12411)** [[プロジェクトページ]](https://haroldchen19.github.io/PhysOPSD-site/)
-  > 実行可能な物理シーンと対応する視覚教師データを構築し、動画生成モデルの事後学習に用いる。<br>
-  > 🖥️ **シミュレーション** Blender + Genesis + MuJoCo
-
-<!-- mmac-record: {"id": "2611.05320", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
-
-- <a id="paper-2611-05320"></a>`2026.11` **[PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data](https://arxiv.org/abs/2611.05320)** [[プロジェクトページ]](https://dagroup-pku.github.io/PyRUA-Lean/DataFarm) [[コード]](https://github.com/DAGroup-PKU/PyRUA-Lean/tree/DataFarm)
-  > コードモデルと動画モデルを組み合わせ、動作の注釈が付いたデータを生成する。<br>
-  > 🖥️ **シミュレーション** SAPIEN + Isaac Sim
-
-<!-- mmac-record: {"id": "2611.05163", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
-
-- <a id="paper-2611-05163"></a>`2026.11` **[RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On](https://arxiv.org/abs/2611.05163)** [[プロジェクトページ]](https://ryan-seungyong-lee.github.io/RoboTryOn) [[コード]](https://github.com/ryan-seungyong-lee/RoboTryOn) [[モデル]](https://huggingface.co/RyanL22/RoboTryOn) [[デモ]](https://huggingface.co/spaces/RyanL22/RoboTryOn)
-  > 人の実演を対象ロボットの動画へ変換し、逆動力学と手首補正で疑似動作を生成する。方策を訓練し、二種類の実機ロボットで評価する。<br>
-  > 🦾 **実機** OpenArm、Inspire RH56F1、Rainbow RB-Y1、WujiHand2
+#### Sim
 
 <!-- mmac-record: {"id": "2610.22362", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-22362"></a>`2026.10` **[CoDA: Co-Evolution of Data Engines and Action Policies](https://arxiv.org/abs/2610.22362)** [[プロジェクトページ]](https://plan-lab.github.io/projects/coda/)
-  > データ生成プログラムとロボット方策を共に進化させる。<br>
+  > データエンジンと方策が共進化する。VLM による方策の失敗診断を生成プログラムにして狙いを定めた環境を作り、段階的な密な報酬に変える。映像：正面と手首の RGB。軌跡：10 Hz の 7 次元の手先変位とグリッパ指令。プランナーによる実演も加える。<br>
   > 🖥️ **シミュレーション** MuJoCo（Franka Panda）
 
 <!-- mmac-record: {"id": "2610.07969", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-07969"></a>`2026.10` **[EmbodiedSmith: Scaling Embodied Data through Recursive Self-Improvement Flywheel in Simulation](https://arxiv.org/abs/2610.07969)**
-  > 自己改善可能なシミュレーションデータエンジンを構築する。<br>
+  > エージェントがアセット・シーン・タスクを一体で生成し、シーン生成とタスク生成を互いに修正させる自己改善型のシミュレーションデータエンジン。移動マニピュレータ、ヒューマノイド、多指ハンド、柔軟物や流体に対応する。映像と軌跡：時刻をそろえた映像、ロボットと物体の状態、制御動作。注釈：実行段階と成否の記録。<br>
   > 🖥️ **シミュレーション** Isaac Sim（Franka FR3、Sharpa Wave）
-
-<!-- mmac-record: {"id": "2609.35318", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
-
-- <a id="paper-2609-35318"></a>`2026.09` **[DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library](https://arxiv.org/abs/2609.35318)** [[プロジェクトページ]](https://dexagent1.github.io/) [[プロジェクトページ]](https://dexagent123.github.io/) [[コード]](https://github.com/dexagent1/DexAgent)
-  > 人の動画を、シミュレーション内の器用な操作を学ぶための教師データに変換する。<br>
-  > 🖥️ **シミュレーション** Blender + MuJoCo + Isaac Sim（Sharpa Wave） · 🦾 **実機** I2RT YAM、Sharpa Wave
 
 <!-- mmac-record: {"id": "2609.27308", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-27308"></a>`2026.09` **[EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics](https://arxiv.org/abs/2609.27308)** [[コード]](https://github.com/EmbodiedSWE/EmbodiedSWE)
-  > 検証済みのロボットプログラムを合成実演へ拡張する。<br>
+  > コーディングエージェントがシミュレーションで長期の器用な操作タスクを解き、採点を通った解を物理パラメータと見た目の条件に沿って大量の実演へ拡張する。これで微調整した VLA が実機で長いタスクを 1 つ達成する。映像：外部と手首のレンダリング RGB。軌跡：関節位置、グリッパ状態、関節目標の動作。<br>
   > 🖥️ **シミュレーション** Isaac Lab + Newton（Franka Panda、xArm7、Kinova Gen3、Unitree G1） · 🦾 **実機** Franka Panda
 
 <!-- mmac-record: {"id": "2607.23704", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2607-23704"></a>`2026.07` **[LabRobFail: A Benchmark for Robotic Failure Analysis in Chemical Self-driving Laboratory](https://arxiv.org/abs/2607.23704)** [[コード]](https://github.com/Su-ISE-2001/LabRobFail) [[コード]](https://github.com/Su-ISE-2001/SciRobo)
-  > 構造化された診断と修正ラベルを持つ、模擬実験室での失敗軌跡を構築する。
+  > シミュレーションの化学実験室で制御・物理・意味の 3 レベルの失敗を注入し、2 万本超の軌跡（70 以上のタスク場面、11 種の失敗タイプ）を構築して失敗診断 VLM を学習する。映像：同期した多視点 RGB 動画。注釈：タスク指示、失敗の有無と時刻、種類、深刻度、修正案。
 
 <!-- mmac-record: {"id": "2506.18088", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2506-18088"></a>`2025.06` **[RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation](https://arxiv.org/abs/2506.18088)** [[コード]](https://github.com/RoboTwin-Platform/RoboTwin) [[コード]](https://github.com/robotwin-Platform/robotwin) [[コード]](https://github.com/robotwin-Platform/robotwin/) [[プロジェクトページ]](https://robotwin-platform.github.io/) [[プロジェクトページ]](https://robotwin-platform.github.io/doc/) [[データセット]](https://huggingface.co/datasets/TianxingChen/RoboTwin2.0)
-  > 多様な双腕操作の訓練軌道を生成する。<br>
+  > MLLM がタスクのコードを書いてシミュレーションで試行・修正し、5 種類のドメインランダム化と組み合わせて、5 種類の双腕ロボット・50 タスクで 10 万本超の専門家軌跡を生成する。映像：頭部と両手首カメラの多視点 RGB（深度と点群も出力可）。軌跡：関節角と手先姿勢。注釈：言語指示。<br>
   > 🖥️ **シミュレーション** SAPIEN（AgileX ALOHA、AgileX PiPER、ARX X5、Franka Panda、UR5）
 
 <!-- mmac-record: {"id": "2410.03645", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2410-03645"></a>`2024.10` **[GenSim2: Scaling Robot Data Generation with Multi-modal and Reasoning LLMs](https://arxiv.org/abs/2410.03645)** [[プロジェクトページ]](https://gensim2.github.io/) [[コード]](https://github.com/GenSim2/gensim2)
-  > タスクとソルバーの生成によってロボットの実演データを拡張する。<br>
+  > LLM が最大 100 の関節物体タスクを書き、計画・強化学習のソルバーが実演を大量生成して点群方策を学習し、実機へゼロショット転移する。映像：複数の RGB-D カメラを統合した点群。軌跡：固有受容状態と動作。注釈：言語指示。<br>
   > 🖥️ **シミュレーション** SAPIEN（Franka Panda） · 🦾 **実機** Franka FR3
 
 <!-- mmac-record: {"id": "2307.14535", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2307-14535"></a>`2023.07` **[Scaling Up and Distilling Down: Language-Guided Robot Skill Acquisition](https://arxiv.org/abs/2307.14535)** [[プロジェクトページ]](https://www.cs.columbia.edu/~huy/scalingup/) [[コード]](https://github.com/columbia-ai-robotics/scalingup)
-  > 言語によって整理したロボットの経験を動作方策へ蒸留する。<br>
+  > LLM がタスクを計画して成功判定のコードを書き、サンプリング型プランナーにシミュレーション内を探索させ、成功軌跡を視覚運動方策に蒸留する。映像：全体視点と手首の RGB。軌跡：固有受容状態と手先の動作。注釈：言語と成否。各タスク 500 本以上の成功軌跡。<br>
   > 🖥️ **シミュレーション** MuJoCo（UR5e） · 🦾 **実機** UR5e
+
+#### Real+Sim
+
+<!-- mmac-record: {"id": "2611.12411", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-12411"></a>`2026.11` **[PhysOPSD: Code as Privilege for Physically Plausible Video Generation](https://arxiv.org/abs/2611.12411)** [[プロジェクトページ]](https://haroldchen19.github.io/PhysOPSD-site/)
+  > コーディングエージェントが実際の参照動画の物理過程を検証可能なシミュレーションプログラムに書き直し、動画生成モデルの事後学習用の特権情報として PhysOPSD-3K を構築する。各サンプルはプログラム、抽象度の異なるレンダリング下書き、実行結果に基づくプロンプト、物理パラメータからなり、物理パラメータを変えた対の変種を持つ。<br>
+  > 🖥️ **シミュレーション** Blender + Genesis + MuJoCo
+
+<!-- mmac-record: {"id": "2611.05320", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-05320"></a>`2026.11` **[PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data](https://arxiv.org/abs/2611.05320)** [[プロジェクトページ]](https://dagroup-pku.github.io/PyRUA-Lean/DataFarm) [[コード]](https://github.com/DAGroup-PKU/PyRUA-Lean/tree/DataFarm)
+  > コーディングエージェントが遠隔操作者の代わりを務める。実機の較正エピソード 1 本からシミュレーションでタスクを再構築してシーン・専門家コントローラ・成功判定を書き、実画像を条件とする動画モデルで実写の映像にする。映像：頭部と両手首の同期した 3 視点。軌跡：シミュレーションによる正確な関節動作。<br>
+  > 🖥️ **シミュレーション** SAPIEN + Isaac Sim
+
+<!-- mmac-record: {"id": "2611.05163", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-05163"></a>`2026.11` **[RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On](https://arxiv.org/abs/2611.05163)** [[プロジェクトページ]](https://ryan-seungyong-lee.github.io/RoboTryOn) [[コード]](https://github.com/ryan-seungyong-lee/RoboTryOn) [[モデル]](https://huggingface.co/RyanL22/RoboTryOn) [[デモ]](https://huggingface.co/spaces/RyanL22/RoboTryOn)
+  > ロボットの頭部カメラ位置から撮った人の実演を、仮想試着の要領で対象ロボットの動画に変換し、深度特徴を使う逆動力学モデルと手首補正で疑似動作を推定する。学習した方策を 2 種類の実機プラットフォームで評価する。映像：合成した頭部視点 1 本。軌跡：推定した腕と多指ハンドの動作。<br>
+  > 🦾 **実機** OpenArm、Inspire RH56F1、Rainbow RB-Y1、WujiHand2
+
+<!-- mmac-record: {"id": "2609.35318", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2609-35318"></a>`2026.09` **[DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library](https://arxiv.org/abs/2609.35318)** [[プロジェクトページ]](https://dexagent1.github.io/) [[プロジェクトページ]](https://dexagent123.github.io/) [[コード]](https://github.com/dexagent1/DexAgent)
+  > 一人称の人の動画 1 本から、エージェントが物体の性質に基づいてシミュレーションでシーンを再構成し、多指ハンドの軌跡を最適化し、物体とロボットの状態を変えてデータを生成する。ツールライブラリは使うほど拡張される。映像：視点を変えたシミュレーションのレンダリングを、実写に近づけるよう再テクスチャ。軌跡：多指ハンドと腕の動作。<br>
+  > 🖥️ **シミュレーション** Blender + MuJoCo + Isaac Sim（Sharpa Wave） · 🦾 **実機** I2RT YAM、Sharpa Wave
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 

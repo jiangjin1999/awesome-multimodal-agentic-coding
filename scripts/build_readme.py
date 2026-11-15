@@ -11,7 +11,7 @@ import re
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import quote, urlsplit
 
 import yaml
 
@@ -270,8 +270,10 @@ def render(site, works, lang):
     o(f"- [{t(site, 'related_title', lang)}](#related)")
     o(f"- [{t(site, 'contact_title', lang)}](#contact) · [{t(site, 'citation_title', lang)}](#citation)\n")
 
-    # A right-aligned key-cap button, so it reads as navigation rather than as an entry.
-    back_to_contents = f'<p align="right"><a href="#contents"><kbd>↑ {t(site, "back_to_contents", lang)}</kbd></a></p>\n'
+    # A right-aligned button badge (GitHub pins <kbd> at 11px, so a badge is the way to make it larger).
+    back_label = '↑ ' + t(site, 'back_to_contents', lang)
+    back_badge = 'https://img.shields.io/badge/' + quote(back_label.replace('-', '--').replace('_', '__')) + '-30363d?style=flat-square'
+    back_to_contents = f'<p align="right"><a href="#contents"><img src="{back_badge}" alt="{back_label}" height="24"></a></p>\n'
 
     # stages
     for st in site['stages']:

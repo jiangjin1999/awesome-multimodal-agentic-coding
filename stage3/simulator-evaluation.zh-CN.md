@@ -29,9 +29,9 @@
 | L0b | 参照还原 | 和参照看起来一样吗？ | Visual / Reconstruction Fidelity |
 | L1 | 静态合理性 | 放着不动时，站得住、走得通吗？ | Static Physical Plausibility |
 | L2 | 交互响应 | 推一下、开一下，反应对吗？ | Interaction Plausibility |
-| L3a | 动态：看起来对 | 动起来的过程和参照视频一样吗？ | Motion Fidelity |
-| L3b | 动态：真在模拟 | 换个条件重跑，结果会跟着正确变化吗？ | Model Verification |
-| L3c | 动态：数值准确 | 参数和真实一致吗？只看前几秒，能预测后面吗？ | Validation & System Identification |
+| L3a | 动态：看起来对 | 动起来的样子像不像？ | Motion Fidelity |
+| L3b | 动态：真在模拟 | 动作是物理算出来的，还是写死的？ | Model Verification |
+| L3c | 动态：数值准确 | 和真实世界的数对得上吗？ | Validation & System Identification |
 | L4 | 下游效用 | 拿去评测或训练，结论在真实世界成立吗？ | Sim-to-Real Predictivity |
 
 ```

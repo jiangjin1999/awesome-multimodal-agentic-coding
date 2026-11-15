@@ -29,9 +29,9 @@ Works from [3.3 Simulator quality evaluation](../README.md#s3-3), organized by f
 | L0b | Visual / reconstruction fidelity | Does it look the same as the reference? |
 | L1 | Static physical plausibility | Left at rest, does it stand stably and can people get through? |
 | L2 | Interaction plausibility | Push it or open it: does it respond correctly? |
-| L3a | Dynamics: looks right (motion fidelity) | Does the motion match the reference video? |
-| L3b | Dynamics: truly simulated (model verification) | Rerun under changed conditions: does the result change correctly? |
-| L3c | Dynamics: numerically accurate (validation & system identification) | Do parameters match reality? Given the first seconds, can it predict the rest? |
+| L3a | Dynamics: looks right (motion fidelity) | Does the motion look right? |
+| L3b | Dynamics: truly simulated (model verification) | Is the motion computed by physics, or scripted? |
+| L3c | Dynamics: numerically accurate (validation & system identification) | Do the numbers match the real world? |
 | L4 | Sim-to-real predictivity | Used for evaluation or training, do the conclusions hold in the real world? |
 
 ```

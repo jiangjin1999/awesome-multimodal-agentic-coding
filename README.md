@@ -3121,6 +3121,18 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 ### 3.4 Data
 
+Grouped by where the data comes from and how it is made, the works follow five routes.
+
+| Route | How the data is made | Main difficulty | Works |
+|---|---|---|---|
+| Real-robot collection | Record on the real robot, teleoperated by a person or run by an agent | Every episode costs robot and operator time | [DROID](#paper-2403-12945) · [Manipulate-Anything](#paper-2406-18915) |
+| Translating human video | Turn videos of people doing tasks into data a robot can learn from | Human hands and robots differ in form | [DexAgent](#paper-2609-35318) · [RoboTryOn](#paper-2611-05163) · [Open-HumanWAM](#paper-2611-06817) |
+| Programmatic generation | An agent writes the task, scene, expert program and success check, runs them at scale in simulation, and keeps the successes | The gap between simulation and reality | [Scaling Up and Distilling Down](#paper-2307-14535) · [GenSim2](#paper-2410-03645) · [RoboTwin 2.0](#paper-2506-18088) · [EmbodiedSWE](#paper-2609-27308) · [PyRUA-DataFarm](#paper-2611-05320) |
+| Closed-loop data engines | Rewrite the generator itself from feedback, so each round yields better-targeted data | Telling exactly what the data is missing | [EmbodiedSmith](#paper-2610-07969) · [CoDA](#paper-2610-22362) |
+| Beyond demonstrations | Instead of successful demonstrations, produce failure-diagnosis labels or physics supervision | Failures and physics must stay close to reality | [LabRobFail](#paper-2607-23704) · [PhysOPSD](#paper-2611-12411) |
+
+The first two routes draw on the real world; the last three build data with programs in simulation. The agent's role shifts with them: from operating the real robot in a person's place, to writing the programs that generate data, to rewriting those programs from feedback. Most of this data trains robot policies; Open-HumanWAM pretrains a world–action model, LabRobFail trains a failure-diagnosis model, and PhysOPSD post-trains a video generator.
+
 #### Real observations and interaction records
 
 <!-- mmac-record: {"id": "2611.06817", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->

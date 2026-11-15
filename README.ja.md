@@ -13,7 +13,7 @@
 
 マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——デジタル世界から物理世界まで。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-651-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--15-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-664-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--15-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語**
 
@@ -64,8 +64,9 @@
   - [3.2 シミュレータ構築](#s3-2) (68)
   - [3.3 シミュレータ品質評価](#s3-3) (29)
   - [3.4 データ](#s3-4) (14)
-  - [3.5 学習と能力向上](#s3-5) (73)
-  - [3.6 物理応用と実験](#s3-6) (37)
+  - [3.5 学習と能力向上](#s3-5) (74)
+  - [3.6 物理応用と実験](#s3-6) (49)
+    - [科学実験（AI4Science）](#s3-6-experiments) (27)
   - [シミュレーションエンジン一覧](#s3-engines)
 - [サーベイと関連コレクション](#related)
 - [連絡とコントリビュート](#contact) · [引用](#citation)
@@ -357,7 +358,7 @@
 - <a id="paper-demo-wild-atlas"></a>**[Wild Atlas](https://x.com/_IamAlam/status/2107480596926939638)**
   > 百科アプリを、画面、統一した様式の動物アセット、カード・回転・情報パネルの操作という三段階に分ける。回転表示があることは、完全な 3D シーンの公開を意味しない。
 
-[↑ 目次に戻る](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
 <a id="methods-gui-environments"></a>
 <a id="evaluation-gui-environments"></a>
@@ -420,7 +421,7 @@
 - <a id="paper-2610-41432"></a>`2026.10` **[Hybrid Computer Use: A Unified Programmatic, Semantic, and Visual Interface for General Agents](https://arxiv.org/abs/2610.41432)**
   > Agent がプログラムによるツール、アクセシビリティ操作、視覚的な操作を組み合わせ、実時間の状態確認、バッチ内の検証、返された AX の変化によって後続の操作を導く。
 
-[↑ 目次に戻る](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
 <a id="visualization"></a>
 <a id="svg-diagrams"></a>
@@ -665,7 +666,7 @@
 - <a id="paper-res-mermaid-mcp-server"></a>**[Mermaid MCP server](https://mermaid.ai/docs/ai/mcp-server)**
   > 図の構文を検証し、検査と修復に利用できる SVG/PNG の描画結果を返す。
 
-[↑ 目次に戻る](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
 <a id="documents-video"></a>
 <a id="methods-media"></a>
@@ -854,7 +855,7 @@
 - <a id="paper-res-rendley-video-editing-skill"></a>**[Rendley video-editing-skill](https://github.com/rendleyhq/video-editing-skill)** [[ドキュメント]](https://github.com/rendleyhq/video-editing-skill/blob/main/SKILL.md)
   > MCP／REST を介して編集要求とメディアを Rendley のホスト型 Agent に渡し、編集可能なプロジェクトを受け取る。MIT ライセンスの Skill はサービス接続が必要な統合層で、ローカルの編集エンジンではない。
 
-[↑ 目次に戻る](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
 <a id="3d-cad"></a>
 <a id="methods-cad-3d"></a>
@@ -1329,7 +1330,7 @@
 - <a id="paper-res-zoo-developer-tools"></a>**[Zoo developer tools](https://docs.zoo.dev/docs)** [[ドキュメント]](https://zoo.dev/docs/developer-tools/mcp)
   > 言語で指示する KCL ワークフローを、幾何実行、スナップショット、検査、デバッグにつなぐ。
 
-[↑ 目次に戻る](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
 <a id="games"></a>
 <a id="methods-games"></a>
@@ -1564,7 +1565,7 @@
 - <a id="paper-res-ziva-playtesting-workflow"></a>**[Ziva playtesting workflow](https://ziva.sh/blogs/ai-agent-playtest-godot-game)** [[ドキュメント]](https://ziva.sh/docs/playtest) [[リポジトリ]](https://github.com/ziva-sh/ziva-agent-plugin-godot)
   > 試遊エージェントが現場の状態と画像を検査し、判定、再現手順、再生証拠を返す。プロジェクト自体は編集せず、開発エージェントへ修復を渡す。ベンダーのデモは独立評価とは区別する。
 
-[↑ 目次に戻る](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
 <a id="section-1-3"></a>
 <a id="visual-diff"></a>
@@ -1646,7 +1647,7 @@
 - <a id="paper-reading-z-ai-autoclaw-team-glm-5-3-flash-more-intelligence-with-less-compute"></a>`2026.08` **[Z.ai / AutoClaw Team — GLM-5.3-Flash: More Intelligence with Less Compute](https://autoclaw.z.ai/blog/model/glm-5.3-flash/)** [[モデル]](https://huggingface.co/zai-org/GLM-5.3-Flash)
   > 視覚を独立した入力能力にとどめず、実行と検証の一部として位置付ける。モデルは描画結果を確認して次の行動を判断し、文書や UI などの視覚的な成果物を継続的に改善できると説明されている。
 
-[↑ 目次に戻る](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
 <a id="trilogy-models-as-tools"></a>
 <a id="section-1-4"></a>
@@ -1686,7 +1687,7 @@
 
 *関連:* [Stride](#paper-2610-13502) · [Editable Visual Design](#paper-2609-04034)
 
-[↑ 目次に戻る](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
 <a id="s2-2"></a>
 
@@ -1754,7 +1755,7 @@
 - <a id="paper-res-omnishowcase-omnidirectional-subject-consistent-video-generation-from-multi-view-images"></a>**[OmniShowcase: Omnidirectional Subject-Consistent Video Generation from Multi-View Images](https://arxiv.org/abs/2610.35684)** [[コード]](https://github.com/justin4ai/OmniShowcase) [[プロジェクトページ]](https://justin4ai.github.io/OmniShowcase/)
   > 複数の参照画像とカメラ移動の指示から、再構成した法線のターンテーブルを条件に、被写体が一貫した動画を生成する。多視点再構成と LoRA 動画生成器を組み合わせて静的な被写体の周囲の視点変化に対応するが、非剛体の運動には制限があり、コードとデータは公開予定。
 
-[↑ 目次に戻る](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
 <a id="s2-3"></a>
 
@@ -1819,7 +1820,7 @@
 
 *関連:* [SceneBloom](#paper-2610-32978) · [SAGE](#paper-2602-10116) · [Gen2Sim](#paper-2310-18308) · [PhysX-Omni](#paper-2605-21572) · [HARMONY](#paper-2609-26793) · [GATOR](#paper-2610-11215) · [3AGameFactory](#paper-system-3agamefactory) · [Lucida](#paper-2608-30821)
 
-[↑ 目次に戻る](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
 <a id="s2-4"></a>
 
@@ -1892,7 +1893,7 @@
 - <a id="paper-res-worldfoundry"></a>**[WorldFoundry](https://arxiv.org/abs/2611.10771)** [[コード]](https://github.com/OpenEnvision/WorldFoundry)
   > 各モデルの入力、実行条件、出力を統一した推論・評価手順へ接続し、準備が整った状態と評価対象としての適格性を明確に分ける。
 
-[↑ 目次に戻る](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
 <a id="section-5-1"></a>
 <a id="s2-5"></a>
@@ -1933,7 +1934,7 @@
 
 *関連:* [GRASE](#paper-2610-21498) · [SceneAgent](#paper-2610-34745) · [Real2Gym](#paper-2609-37089) · [LiteReality-Agent](#paper-2610-01863) · [Instruct2Act](#paper-2305-11176) · [Plumb](#paper-system-plumb)
 
-[↑ 目次に戻る](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
 <a id="section-5-4"></a>
 <a id="s2-6"></a>
@@ -2004,7 +2005,7 @@
 
 *関連:* [REA](#paper-2610-42053) · [Harness VLA](#paper-2607-08448) · [The Harness](#paper-system-the-harness-corl2026) · [CarryOn](#paper-2610-21453) · [Seeing Through the Illusion](#paper-2611-03585)
 
-[↑ 目次に戻る](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
 <a id="trilogy-digital-physical"></a>
 <a id="stage-3"></a>
@@ -2513,7 +2514,7 @@
 - <a id="paper-res-webots-mcp"></a>**[Webots MCP](https://github.com/MHasaan/webotMCP)**
   > 場面編集、制御コード、ロボット動作、多視点画像、運動軌跡、接触イベントを公開する。シミュレータの真値と反応制御は、学習型の知覚・計画と区別する。
 
-[↑ 目次に戻る](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
 <a id="methods-physical-assets"></a>
 <a id="world-models"></a>
@@ -2920,7 +2921,7 @@
 - <a id="paper-mujoco-workbench"></a>**[mujoco-workbench](https://github.com/Hebbian-Robotics/mujoco-workbench)**
   > CLI と Agent Skills により、MuJoCo シーンの迅速な構築と確認を支援する。
 
-[↑ 目次に戻る](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
 <a id="evaluation-physical-assets"></a>
 <a id="evaluation-world-models"></a>
@@ -3112,7 +3113,7 @@
 
 *関連:* [Frontier3DBench](#paper-2611-09017) · [4DCodeBench](#paper-2610-03715) · [BlenderWorld](#paper-system-blenderworld) · [BVB](#paper-2609-15478) · [Code4Scene](#paper-2609-36777) · [Parametric CAD Bench v3](#paper-2611-02659) · [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786)
 
-[↑ 目次に戻る](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
 <a id="data-physical-assets"></a>
 <a id="data-real-to-sim"></a>
@@ -3236,7 +3237,7 @@
   > 一人称の人の動画 1 本から、エージェントが物体の性質に基づいてシミュレーションでシーンを再構成し、多指ハンドの軌跡を最適化し、物体とロボットの状態を変えてデータを生成する。ツールライブラリは使うほど拡張される。映像：視点を変えたシミュレーションのレンダリングを、実写に近づけるよう再テクスチャ。軌跡：多指ハンドと腕の動作。<br>
   > 🖥️ **シミュレーション** Blender + MuJoCo + Isaac Sim（Sharpa Wave） · 🦾 **実機** I2RT YAM、Sharpa Wave
 
-[↑ 目次に戻る](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
 <a id="robotics"></a>
 <a id="methods-robot-programs"></a>
@@ -3659,6 +3660,12 @@
   > 操作とナビゲーションのエキスパートを小型のマルチモーダル Agent に蒸留して専用ツールを調整する。評価基準に沿った実行フィードバックを注意事項と検証済み軌跡に変換し、継続学習に利用する。<br>
   > 🖥️ **シミュレーション** MuJoCo + SAPIEN + Habitat（Franka Panda、AgileX ALOHA）
 
+<!-- mmac-record: {"id": "2610.35817", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2610-35817"></a>`2026.10` **[Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics](https://arxiv.org/abs/2610.35817)** [[プロジェクトページ]](https://zero-real.github.io/)
+  > シミュレーションでの自らの成功軌跡だけで、小型オープン VLM Agent に運動制御を身につけさせる。<br>
+  > 🖥️ **シミュレーション** Isaac Sim + Isaac Lab（I2RT YAM、Franka） · 🦾 **実機** I2RT YAM
+
 <!-- mmac-record: {"id": "2610.41216", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-41216"></a>`2026.10` **[TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents](https://arxiv.org/abs/2610.41216)** [[プロジェクトページ]](https://garfield-kh.github.io/TinyAstral/) [[コード]](https://github.com/Garfield-kh/TinyAstral) [[モデル]](https://huggingface.co/kehong/TinyAstral-weights) [[データセット]](https://huggingface.co/datasets/kehong/TinyAstral-SFT)
@@ -3685,13 +3692,15 @@
 
 *関連:* [BlenderFORGE](#paper-2611-10768)
 
-[↑ 目次に戻る](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
 <a id="methods-real2sim2real"></a>
 <a id="section-6-4"></a>
 <a id="s3-6"></a>
 
 ### 3.6 物理応用と実験
+
+関連するデジタルデモ · [Google DeepMind — Agentic cheminformatics](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/)
 
 #### ロボットのインタラクションと操作
 
@@ -3770,7 +3779,10 @@
 - <a id="paper-demo-nvidia-factory-operations-blueprint"></a>**[NVIDIA — Factory Operations Blueprint](https://developer.nvidia.com/blog/how-nvidia-factory-operations-blueprint-coordinates-ai-agents-to-investigate-production-issues/)**
   > 管理 Agent が視覚検査、時系列分析、車両群の専門 Agent を調整する。搬送は Isaac Sim／ROS 2 で実演され、実機への接続、承認、人による再作業は配備時に必要となる。
 
-#### 実験・計測・発見
+<a id="paper-demo-google-deepmind-agentic-cheminformatics"></a>
+<a id="s3-6-experiments"></a>
+
+#### 科学実験（AI4Science）
 
 <!-- mmac-record: {"id": "2610.41383", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
@@ -3817,10 +3829,37 @@
 - <a id="paper-2607-23045"></a>`2026.07` **[Stress-testing large language model agents in a robotic chemistry laboratory](https://arxiv.org/abs/2607.23045)**
   > ロボット実験室のワークフローでプログラミング Agent を評価する。
 
+<!-- mmac-record: {"id": "2606.27231", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2606-27231"></a>`2026.06` **[A hardware-safety-gated system for LLM-written native ARTIQ control code on a trapped-ion platform](https://arxiv.org/abs/2606.27231)** [[コード]](https://gitlab.oit.duke.edu/dw346/artiq_mcp)
+  > LLM エージェントが MCP を通じてイオントラップ実験用のネイティブ ARTIQ Python を書き、LLM を使わない安全ゲートが各スクリプトをシミュレーションで装置の上限と照合してからハードウェアに渡す。<br>
+  > 🖥️ **シミュレーション** dax.sim
+
+<!-- mmac-record: {"id": "2606.31763", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2606-31763"></a>`2026.06` **[A Self-Evolving Agentic System for Automated Generation and Execution of Biological Protocols](https://arxiv.org/abs/2606.31763)**
+  > 自然言語の要求を SOP と液体ハンドリング装置のコードに変換し、コロニー PCR やシーケンスなどのウェット実験の結果からプロトコルを修正する。
+
 <!-- mmac-record: {"id": "bespoke-instrument", "scope": "Resource", "primary": "3.6", "stage": 3, "type": "resource"} -->
 
 - <a id="paper-bespoke-instrument"></a>`2026.05` **[AI-designed and AI-implemented control systems for bespoke scientific instrumentation: application to scanning microscopy](https://pubs.rsc.org/en/content/articlelanding/2026/dd/d6dd00177g)** [[論文]](https://www.repository.cam.ac.uk/items/cb2e6fef-94c4-4fe9-903a-aaa198da8f4f) [[コード]](https://github.com/Okarl96/shem_gui)
   > 人の監督下で計測器の制御コードを開発する。
+
+<!-- mmac-record: {"id": "2603.08801", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2603-08801"></a>`2026.03` **[Large Language Model-Assisted Superconducting Qubit Experiments](https://arxiv.org/abs/2603.08801)** [[コード]](https://github.com/clelandlab/HAL)
+  > 計画役と開発役の LLM が実験室の知識文書に従い、超伝導量子ビットの制御ハードウェアで Python を書いて実行する。
+
+<!-- mmac-record: {"id": "2602.15294", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2602-15294"></a>`2026.02` **[EAA: Automating materials characterization with vision language model agents](https://arxiv.org/abs/2602.15294)** [[コード]](https://github.com/AdvancedPhotonSource/EAA)
+  > 視覚言語モデルのエージェントが装置ツールを呼び出し Python を書いて Advanced Photon Source で X 線顕微鏡実験を行い、返ってきた画像を見て次の操作を決める。
+
+<!-- mmac-record: {"id": "2601.05356", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2601-05356"></a>`2026.01` **[PRISM: Protocol Refinement through Intelligent Simulation Modeling](https://arxiv.org/abs/2601.05356)** [[コード]](https://github.com/ramanathanlab/PRISM) [[論文]](https://pubs.rsc.org/en/content/articlelanding/2026/dd/d6dd00004e)
+  > Web から集めた手順をエージェントがロボットのプロトコルに変換し、NVIDIA Omniverse のデジタルツインで試験してシミュレータのエラーから修正したうえで、実機に実行させる。<br>
+  > 🖥️ **シミュレーション** NVIDIA Omniverse · 🦾 **実機** Opentrons OT-2、PF400
 
 <!-- mmac-record: {"id": "2509.24978", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
@@ -3832,10 +3871,44 @@
 - <a id="paper-2509-25651"></a>`2025.09` **[AutoLabs: cognitive multi-agent systems with self-correction for autonomous chemical experimentation](https://arxiv.org/abs/2509.25651)** [[コード]](https://github.com/pnnl/autolabs)
   > 確認済みの、実験室で実行可能なプロトコルを生成する。
 
+<!-- mmac-record: {"id": "2507.01485", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2507-01485"></a>`2025.07` **[BioMARS: A Multi-Agent Robotic System for Autonomous Biological Experiments](https://arxiv.org/abs/2507.01485)** [[コード]](https://github.com/AlexandreQ27/BioMARS)
+  > 生物学者エージェントがプロトコルを起草し、技術者エージェントがロボットのプリミティブコードに変換し、視覚検査エージェントが実行を監視して誤りがあれば再計画を起動する。
+
+<!-- mmac-record: {"id": "2505.17985", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2505-17985"></a>`2025.05` **[AI-Driven Robotics for Optics](https://arxiv.org/abs/2505.17985)** [[コード]](https://github.com/sachin4594/OptSetGen)
+  > ファインチューニングした LLM が自由空間光学系を設計し、別の LLM が xArm7 で部品を配置する Python を書き、カメラによる確認とビームに基づく調整を組み合わせる。<br>
+  > 🦾 **実機** xArm7
+
+<!-- mmac-record: {"id": "2505.14030", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2505-14030"></a>`2025.05` **[AutoBio: A Simulation and Benchmark for Robotic Automation in Digital Biology Laboratory](https://arxiv.org/abs/2505.14030)** [[コード]](https://github.com/autobio-bench/AutoBio) [[データセット]](https://huggingface.co/autobio-bench)
+  > MuJoCo にねじ山、デテント、準静的な液体モデルを加え、生物実験室の 16 タスクでロボットを評価する。<br>
+  > 🖥️ **シミュレーション** MuJoCo（UR5e、Aloha）
+
+<!-- mmac-record: {"id": "2505.22634", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2505-22634"></a>`2025.05` **[LabUtopia: High-Fidelity Simulation and Hierarchical Benchmark for Scientific Embodied Agents](https://arxiv.org/abs/2505.22634)** [[プロジェクトページ]](https://rui-li023.github.io/labutopia-site) [[コード]](https://github.com/Rui-li023/LabUtopia) [[データセット]](https://huggingface.co/datasets/Ruinwalker/LabUtopia-Dataset)
+  > 化学エンジンと手続き的な実験室シーンを備えたシミュレータを Isaac Sim 上に構築し、科学向け身体性エージェントの 5 段階ベンチマークを提供する。<br>
+  > 🖥️ **シミュレーション** Isaac Sim（Franka Panda、Fetch、Clearpath Ridgeback）
+
+<!-- mmac-record: {"id": "2501.10385", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2501-10385"></a>`2024.12` **[Evaluating large language model agents for automation of atomic force microscopy](https://www.nature.com/articles/s41467-025-64105-7)** [[論文]](https://arxiv.org/abs/2501.10385) [[コード]](https://github.com/M3RG-IITD/AILA)
+  > マルチエージェント LLM フレームワーク AILA が Nanosurf AFM の API を呼ぶ Python コードを書いて実際の顕微鏡実験を行い、AFMBench の 100 タスクで評価する。
+
 <!-- mmac-record: {"id": "chemagents", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-chemagents"></a>`2024.07` **[A Multiagent-Driven Robotic AI Chemist Enabling Autonomous Chemical Research On Demand](https://doi.org/10.1021/jacs.4c17738)**
   > API を呼び出すプログラムの生成によってロボット化学研究を調整する。
+
+<!-- mmac-record: {"id": "2401.06949", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2401-06949"></a>`2024.01` **[ORGANA: A Robotic Assistant for Automated Chemistry Experimentation and Characterization](https://arxiv.org/abs/2401.06949)** [[プロジェクトページ]](https://ac-rad.github.io/organa/) [[コード]](https://github.com/ac-rad/organa)
+  > 化学者と対話して実験目標を定め、CLAIRify が生成した XDL を通してロボットの手順を計画し、測定結果を予想と照合する。<br>
+  > 🦾 **実機** Franka Panda
 
 <!-- mmac-record: {"id": "2304.05332", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
@@ -3843,15 +3916,24 @@
   > 言語モデルを使って自動化された化学実験を構成する。<br>
   > 🦾 **実機** Opentrons OT-2
 
+<!-- mmac-record: {"id": "2304.10267", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2304-10267"></a>`2023.04` **[LLMs can generate robotic scripts from goal-oriented instructions in biological laboratory automation](https://arxiv.org/abs/2304.10267)** [[コード]](https://github.com/labauto/Inagaki_2023_GPT4OT2)
+  > GPT-4 が手順指示または目標指向の指示から Opentrons OT-2 の Python スクリプトを書き、Opentrons シミュレータのエラーをもとに修正する。<br>
+  > 🖥️ **シミュレーション** Opentrons simulator（Opentrons OT-2）
+
+<!-- mmac-record: {"id": "2303.14100", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2303-14100"></a>`2023.03` **[Errors are Useful Prompts: Instruction Guided Task Programming with Verifier-Assisted Iterative Prompting](https://arxiv.org/abs/2303.14100)** [[プロジェクトページ]](https://ac-rad.github.io/clairify/) [[コード]](https://github.com/ac-rad/xdl-generation)
+  > CLAIRify は LLM で XDL の化学実験計画を生成し、検証器のエラーを返して計画が妥当になるまで直し、タスク・動作計画を通してロボットアームで実行する。<br>
+  > 🦾 **実機** Franka Panda
+
 <!-- mmac-record: {"id": "xray-scientist", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-xray-scientist"></a>**[An agentic artificially intelligent X-ray scientist](https://www.nature.com/articles/s42256-026-01261-5)** [[コード]](https://github.com/zhantaochen/llm4xray)
   > 実験 Agent を X 線装置に接続する。
 
-<!-- mmac-record: {"id": "demo:google-deepmind-agentic-cheminformatics", "scope": "Demo", "primary": "3.6", "stage": 3, "type": "demo"} -->
-
-- <a id="paper-demo-google-deepmind-agentic-cheminformatics"></a>**[Google DeepMind — Agentic cheminformatics](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/)**
-  > Antigravity が RDKit と活性予測モデルを呼び出して大環状化合物の候補を提案し、科学者が図表と予測を確認する。合成と実験的検証は別途必要となる。
+*関連:* [Lab2Sim](#paper-2611-02928) · [LabWorld](#paper-2610-36592) · [ChemAutoAgent](#paper-chemautoagent) · [LabRobFail](#paper-2607-23704) · [Safe Lab Agents](#paper-safe-lab-agents)
 
 #### 物理設計・製造・検証
 
@@ -3905,7 +3987,7 @@
 - <a id="paper-ai-cad"></a>**[ai-cad](https://github.com/BorjaLL/ai-cad)** [[結果]](https://github.com/BorjaLL/ai-cad/blob/1ef2bf72de799006d069498d3ee146dae2e4f075/data/fits-measured.json)
   > パラメトリック CAD と、人による印刷物の試し合わせをつなぐ。
 
-[↑ 目次に戻る](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
 <a id="s3-engines"></a>
 
@@ -3932,7 +4014,7 @@
 
 </details>
 
-[↑ 目次に戻る](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
 <a id="surveys-and-related-collections"></a>
 <a id="related"></a>

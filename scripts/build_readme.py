@@ -11,12 +11,13 @@ import re
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import quote, urlsplit
 
 import yaml
 
 import engine_map
 import eval_ladder
+import triage
 from catalog import LAYOUT, validate_catalog, check_local_links
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -56,6 +57,18 @@ def validate(site, works, strict_ja):
         for s in w.get('see_also') or []:
             if s not in secs:
                 errors.append(f'{where}: see_also section {s} unknown')
+    for sec, meta in secs.items():
+        for sub in meta.get('contents_subs') or []:
+            if not sub or sub not in meta['subs']:
+                errors.append(f'{sec}: contents_subs {sub!r} is not a subgroup of the section')
+        for sub, ks in (meta.get('sub_see_also') or {}).items():
+            if sub not in meta['subs']:
+                errors.append(f'{sec}: sub_see_also {sub!r} is not a subgroup of the section')
+            for k in ks:
+                if k not in byid:
+                    errors.append(f'{sec}/{sub}: sub_see_also id {k} not found')
+                elif (byid[k]['section'], byid[k].get('sub')) == (sec, sub):
+                    errors.append(f'{sec}/{sub}: sub_see_also id {k} is already listed there')
     for st in site['stages']:
         for k in st['start_with']:
             if k not in byid:
@@ -82,6 +95,10 @@ def anchor(wid):
 
 def sec_anchor(sec):
     return 's' + sec.replace('.', '-')
+
+
+def sub_anchor(sec, sub):
+    return f'{sec_anchor(sec)}-{sub}'
 
 
 def short_title(title):
@@ -264,11 +281,20 @@ def render(site, works, lang):
     for st in site['stages']:
         o(f"- [Stage {st['id']} · {st['name'][lang]}](#stage-{st['id']})")
         for sec in st['sections']:
-            o(f"  - [{sec} {site['sections'][sec][lang]}](#{sec_anchor(sec)}) ({sec_count.get(sec, 0)})")
+            meta = site['sections'][sec]
+            o(f"  - [{sec} {meta[lang]}](#{sec_anchor(sec)}) ({sec_count.get(sec, 0)})")
+            # Selected subgroups are also listed in the contents, indented under their section.
+            for sub in meta.get('contents_subs') or []:
+                o(f"    - [{site['text']['subs'][sub][lang]}](#{sub_anchor(sec, sub)}) ({len(groups.get((sec, sub), []))})")
         for extra in st.get('extras') or []:
             o(f"  - [{extra['title'][lang]}](#{extra['anchor']})")
     o(f"- [{t(site, 'related_title', lang)}](#related)")
     o(f"- [{t(site, 'contact_title', lang)}](#contact) · [{t(site, 'citation_title', lang)}](#citation)\n")
+
+    # A right-aligned button badge (GitHub pins <kbd> at 11px, so a badge is the way to make it larger).
+    back_label = '↑ ' + t(site, 'back_to_contents', lang)
+    back_badge = 'https://img.shields.io/badge/' + quote(back_label.replace('-', '--').replace('_', '__')) + '-30363d?style=flat-square'
+    back_to_contents = f'<p align="right"><a href="#contents"><img src="{back_badge}" alt="{back_label}" height="24"></a></p>\n'
 
     # stages
     for st in site['stages']:
@@ -289,19 +315,25 @@ def render(site, works, lang):
                 items = groups.get((sec, sub), [])
                 if not items:
                     continue
+                if sub in (meta.get('contents_subs') or []):
+                    named_anchor(sub_anchor(sec, sub))
                 if sub:
                     o(f"#### {site['text']['subs'][sub][lang]}\n")
                 o('\n'.join(entry(w, lang, site) for w in items))
+                # Works whose primary entry lives in another section but belong to this subgroup's topic.
+                sub_see = sorted((meta.get('sub_see_also') or {}).get(sub, []), key=lambda k: sort_key(byid[k]))
+                if sub_see:
+                    o(f"*{t(site, 'see_also', lang)}:* {link_list(sub_see, byid)}\n")
             see = list((site.get('see_also') or {}).get(sec, [])) + stage_see.get(sec, [])
             if see:
                 o(f"*{t(site, 'see_also', lang)}:* {link_list(see, byid)}\n")
-            o(f"[↑ {t(site, 'back_to_contents', lang)}](#contents)\n")
+            o(back_to_contents)
         # Unnumbered reference blocks: listed in the contents, but hold no entries.
         for extra in st.get('extras') or []:
             named_anchor(extra['anchor'])
             o(f"### {extra['title'][lang]}\n")
             o(engine_map.fill_placeholders(site, lang, extra['body'][lang].strip()) + '\n')
-            o(f"[↑ {t(site, 'back_to_contents', lang)}](#contents)\n")
+            o(back_to_contents)
 
     # surveys & related
     named_anchor('related')
@@ -336,6 +368,7 @@ def main():
     args = ap.parse_args()
     site, works = load()
     errors, warnings = validate(site, works, strict_ja=not args.allow_missing_ja)
+    errors += triage.validate(works, triage.load(ROOT))
     for w in warnings[:10]:
         print('warning:', w)
     if len(warnings) > 10:

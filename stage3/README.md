@@ -15,7 +15,7 @@ How can multimodal coding agents interact with the physical world, build verifia
 | [3. Simulator Quality Evaluation](#section-3) | 29 | Artifact quality → usable verification evidence |
 | [4. Data](#section-4) | 13 | Observations, code, actions and outcomes → learning material |
 | [5. Training and Capability Improvement](#section-5) | 71 | Program / skill / model updates → transfer |
-| [6. Physical Applications and Experiments](#section-6) | 34 | Composed mechanisms → task outcomes and physical validation |
+| [6. Physical Applications and Experiments](#section-6) | 47 | Composed mechanisms → task outcomes and physical validation |
 
 **Build verifiable environments → collect interaction experience → improve coding agents** is the connecting research agenda. Individual works establish different parts of this chain; an end-to-end scalable loop requires joint validation. The environment builder, operator and downstream action policy may be different models.
 
@@ -5255,7 +5255,7 @@ Physical applications test whether generated programs, models and designs meet a
 | Application | Artifact and interface | What the experiment must establish |
 |---|---|---|
 | Robot manipulation | Motion programs, control policies, force/tactile interfaces and executable skills. | Task success and recovery across poses, objects and contact conditions; separately identify simulator trials, physical trials and human assistance. [RAPID](#work-2609-30249) tests demonstration-derived programs, while [FORCA](#work-2610-31841) studies force-aware programming. |
-| Scientific experiments and measurement | Instrument drivers, laboratory layouts, robot procedures and analysis programs. | Instrument commissioning, calibrated measurements and reproducible experimental outcomes. [Self-Building Labs](#work-2610-23826) connects laboratory configuration with executable procedures; physical observations must support the scientific conclusion as well as successful tool calls. |
+| Scientific experiments (AI4Science) | Instrument drivers, laboratory layouts, robot procedures and analysis programs. | Instrument commissioning, calibrated measurements and reproducible experimental outcomes. [Self-Building Labs](#work-2610-23826) connects laboratory configuration with executable procedures; physical observations must support the scientific conclusion as well as successful tool calls. |
 | Design, manufacturing and verification | CAD, robot morphology, actuation programs, PCB routes and fabrication plans. | Geometric or solver checks, manufacturability, and physical testing are successive forms of evidence. [PneuGen](#work-2611-13344) fabricates selected simulated designs; [PCBRouteAgent](#work-2611-08175) reports routing checks without fabricated-board validation. |
 
 For each result, identify the **agent's contribution**, the **controller or solver's contribution**, and the **feedback used for revision**. A physical demonstration can validate a frozen design or program without making hardware part of its optimization loop. Conversely, a policy developed through real robot trials can still require a separate reliability test after development is finished.
@@ -5431,7 +5431,11 @@ Builds spatial value maps for manipulation.
 
 **Verification:** Recomputing maps from new observations differs from having the LLM revise its generated code.
 
-### Experiments, measurement and discovery
+<a id="section-6-science"></a>
+
+### Scientific experiments (AI4Science)
+
+**Primary entries in other sections:** [ChemAutoAgent](#work-chemautoagent) (1. Embodied Harnesses) · [Safe Lab Agents](#work-safe-lab-agents) (1. Embodied Harnesses) · [LabWorld](#work-2610-36592) (2. Simulator Construction) · [Lab2Sim](../README.md#paper-2611-02928) (3. Simulator Quality Evaluation) · [LabRobFail](#work-2607-23704) (4. Data)
 
 <a id="work-2610-41717"></a>
 <!-- stage3-record: {"id": "2610.41717", "scope": "Adjacent", "section": 6} -->
@@ -5555,6 +5559,36 @@ Tests coding agents on laboratory workflows.
 
 **Related:** [1. Embodied Harnesses](#section-1)
 
+<a id="work-2606-31763"></a>
+<!-- stage3-record: {"id": "2606.31763", "scope": "Adjacent", "section": 6} -->
+
+#### A Self-Evolving Agentic System for Automated Generation and Execution of Biological Protocols
+
+`2026-06-30` · Shanghai Artificial Intelligence Laboratory; Genoria AI
+
+[Bibliographic record](../README.md#paper-2606-31763) · [Paper](https://arxiv.org/abs/2606.31763)
+
+Turns natural-language requests into protocols, device code and robot runs, then refines them from wet-lab results.
+
+**Method:** An orchestrator keeps workflow state while specialized agents draft protocols, expand SOPs, map steps to devices and write SDK-gated code; a skill-refinement loop improves protocol-to-code conversion. Wet-lab readouts such as gels, colony PCR and sequencing lead to redesigned steps, for example new primers after a nonspecific band.
+
+**Verification:** In offline protocol-to-code tests, Opentrons code passes the gate at 88.2% versus 32.4% for OpenTrons-AI; the gate checks syntax, parameters and SDK export rather than physical runs. Wet-lab cloning, mutagenesis and assembly are confirmed, e.g. 24/24 colony-PCR-positive clones and 8/8 RLuc mutants. Clarification turns and human checkpoints remain available.
+
+<a id="work-2606-27231"></a>
+<!-- stage3-record: {"id": "2606.27231", "scope": "Adjacent", "section": 6} -->
+
+#### A hardware-safety-gated system for LLM-written native ARTIQ control code on a trapped-ion platform
+
+`2026-06-25` · Duke University; Joint Quantum Institute, University of Maryland; National Quantum Laboratory (QLab), University of Maryland
+
+[Bibliographic record](../README.md#paper-2606-27231) · [Paper](https://arxiv.org/abs/2606.27231) · [Code](https://gitlab.oit.duke.edu/dw346/artiq_mcp)
+
+Lets an LLM agent write native ARTIQ control code for a trapped-ion experiment behind a hardware-safety gate.
+
+**Method:** The agent submits ARTIQ Python through an MCP server and reads datasets and logs returned as JSON. Before a script reaches hardware, a gate without a language model screens it with an AST denylist, simulates it in dax.sim against per-device bounds, and requires single-use authorization tokens, with human-issued tokens for sensitive operations.
+
+**Verification:** On a 40Ca+/40CaOH+ crystal the agent reaches sideband cooling to n̄ = 0.20 ± 0.06 and a Ramsey T2* of 904 ± 32 µs; a second 171Yb+ system tests only the interface. The gate checks hardware bounds rather than physical sense, the simulation follows one measurement branch, and operators guided metric choices for cooling and compensation.
+
 <a id="work-bespoke-instrument"></a>
 <!-- stage3-record: {"id": "bespoke-instrument", "scope": "Resource", "section": 6} -->
 
@@ -5571,6 +5605,51 @@ Develops instrument-control code with human oversight.
 **Verification:** Real SHeM imaging and diffraction validate the instrument; development, review and deployment remain human-led.
 
 **Related:** [2. Simulator Construction](#section-2)
+
+<a id="work-2603-08801"></a>
+<!-- stage3-record: {"id": "2603.08801", "scope": "Adjacent", "section": 6} -->
+
+#### Large Language Model-Assisted Superconducting Qubit Experiments
+
+`2026-03-09` · University of Chicago; Aalto University; Rensselaer Polytechnic Institute; Applied Materials
+
+[Bibliographic record](../README.md#paper-2603-08801) · [Paper](https://arxiv.org/abs/2603.08801) · [Code](https://github.com/clelandlab/HAL)
+
+Runs superconducting-qubit experiments through LLM-written Python guided by laboratory knowledge.
+
+**Method:** A planner writes natural-language steps and a developer writes Python that runs in a sandboxed runtime against QICK RFSoC boards, a VNA and voltage sources. Retrieved knowledge documents supply lab procedures, and each run returns a short text signal and a data-file path to the planner.
+
+**Verification:** Resonator characterization over five cycles finds 4 and then 8 resonators after a human widens the frequency range, and the system reproduces a readout-induced leakage benchmark (L = 0.124 ± 0.017). Humans write the knowledge documents and approve steps; the model does not inspect raw data or plots.
+
+<a id="work-2602-15294"></a>
+<!-- stage3-record: {"id": "2602.15294", "scope": "Core", "section": 6} -->
+
+#### EAA: Automating materials characterization with vision language model agents
+
+`2026-02-17` · Argonne National Laboratory; Northwestern University
+
+[Bibliographic record](../README.md#paper-2602-15294) · [Paper](https://arxiv.org/abs/2602.15294) · [Code](https://github.com/AdvancedPhotonSource/EAA)
+
+Automates X-ray microscopy with vision-language-model agents that read returned images.
+
+**Method:** Agent actions are tool calls dispatched to Python tool classes, which can also be served or consumed through MCP; a coding sub-agent writes Python and Bash for experiment control and data processing. Image-producing tools return pictures to the model, and out-of-range parameters raise exceptions the agent can act on.
+
+**Verification:** Demonstrated at Advanced Photon Source beamlines: zone-plate focusing from line scans and fitted widths over 8 positions, feature search described in natural language, and interactive XRF acquisition at 2-ID-D. Python and Bash calls need human approval by default, and hard range checks guard instrument parameters.
+
+<a id="work-2601-05356"></a>
+<!-- stage3-record: {"id": "2601.05356", "scope": "Adjacent", "section": 6} -->
+
+#### PRISM: Protocol Refinement through Intelligent Simulation Modeling
+
+`2026-01-08` · Argonne National Laboratory; University of Chicago
+
+[Bibliographic record](../README.md#paper-2601-05356) · [Paper](https://arxiv.org/abs/2601.05356) · [Paper](https://pubs.rsc.org/en/content/articlelanding/2026/dd/d6dd00004e) · [Code](https://github.com/ramanathanlab/PRISM)
+
+Validates LLM-generated laboratory protocols in a digital twin before robots run them.
+
+**Method:** Agents gather procedures from the web and turn them into structured steps through planning, critique and validation, then emit protocols in Argonne's MADSci format. An NVIDIA Omniverse digital twin with CAD models of the instruments returns text errors such as collisions, unreachable positions or missing plates, and the model revises until the protocol is physically valid.
+
+**Verification:** A Luna qPCR protocol ran end to end on an Opentrons OT-2, PF400 arm, plate sealer/peeler and plate reader, with strong amplification signals; Cell Painting was validated only in simulation. The twin does not model liquids or biology and missed a missing peel command, and a researcher reviews the final protocol.
 
 <a id="work-2509-25651"></a>
 <!-- stage3-record: {"id": "2509.25651", "scope": "Adjacent", "section": 6} -->
@@ -5602,6 +5681,81 @@ Uses programmed numerical experiments to study physics.
 
 **Verification:** The experiments are numerical simulations, not real robot experiments or discoveries of new real-world laws.
 
+<a id="work-2507-01485"></a>
+<!-- stage3-record: {"id": "2507.01485", "scope": "Core", "section": 6} -->
+
+#### BioMARS: A Multi-Agent Robotic System for Autonomous Biological Experiments
+
+`2025-07-02` · University of Science and Technology of China; Suzhou Institute for Advanced Research, USTC
+
+[Bibliographic record](../README.md#paper-2507-01485) · [Paper](https://arxiv.org/abs/2507.01485) · [Code](https://github.com/AlexandreQ27/BioMARS)
+
+Coordinates biologist, technician and inspector agents to run cell-culture experiments on a dual-arm robot.
+
+**Method:** The biologist agent drafts protocols with retrieval, and the technician agent turns them into pseudo-code of robot primitives such as `add_liquid` and `centrifuge`, checked before execution and dispatched as ROS actions. The inspector screens camera keyframes with a ViT detector and asks a VLM to confirm anomalies; a confirmed error aborts the action and sends the workflow back to planning and code generation.
+
+**Verification:** Instruction matching reaches 96.4% over 300 steps; keyframe detection F1 is 88.7% and VLM validation precision 95.7%. HeLa, Y79 and DC2.4 passaging matches manual viability, with 12–18% lower variation for HeLa and Y79. The RPE differentiation optimization uses a public dataset rather than new runs, and pipetting volumes and centrifugation still need occasional human oversight.
+
+<a id="work-2505-22634"></a>
+<!-- stage3-record: {"id": "2505.22634", "scope": "Adjacent", "section": 6} -->
+
+#### LabUtopia: High-Fidelity Simulation and Hierarchical Benchmark for Scientific Embodied Agents
+
+`2025-05-28` · Shanghai AI Laboratory; Peking University; University of Oxford; The Chinese University of Hong Kong; Harbin Institute of Technology; University of Science and Technology of China
+
+[Bibliographic record](../README.md#paper-2505-22634) · [Paper](https://arxiv.org/abs/2505.22634) · [Project page](https://rui-li023.github.io/labutopia-site) · [Code](https://github.com/Rui-li023/LabUtopia) · [Dataset](https://huggingface.co/datasets/Ruinwalker/LabUtopia-Dataset)
+
+Provides a laboratory simulator and hierarchical benchmark for scientific embodied agents.
+
+**Method:** LabSim, built on Isaac Sim, adds a chemistry engine that combines a 200-substance PubChem database with GPT-4o reasoning to predict reaction outcomes, plus GPU position-based fluids. LabScene procedurally generates over 100 laboratory scenes, and LabBench spans five levels from atomic manipulation to long-horizon mobile manipulation; scripted planners produce the expert demonstrations.
+
+**Verification:** ACT, Diffusion Policy and π0 are evaluated, e.g. 67.5% and 50.0% on pouring liquid and 86.7% and 25.0% on heating a beaker (ACT/DP). The benchmark runs entirely in simulation, evaluates no LLM planner, and shows little generalization to new object shapes.
+
+<a id="work-2505-14030"></a>
+<!-- stage3-record: {"id": "2505.14030", "scope": "Adjacent", "section": 6} -->
+
+#### AutoBio: A Simulation and Benchmark for Robotic Automation in Digital Biology Laboratory
+
+`2025-05-20` · The University of Hong Kong; Tsinghua University; Shanghai Jiao Tong University; TeleAI; Shanghai Intelligent Computing Center
+
+[Bibliographic record](../README.md#paper-2505-14030) · [Paper](https://arxiv.org/abs/2505.14030) · [Code](https://github.com/autobio-bench/AutoBio) · [Dataset](https://huggingface.co/autobio-bench)
+
+Benchmarks robot policies on high-precision biology-laboratory tasks in an extended MuJoCo.
+
+**Method:** AutoBio adds plugins for screw threads, detents, eccentric mixers and quasi-static liquids, digitizes instruments with 3D Gaussian splatting, and offers Blender Cycles rendering and reactive instrument interfaces. Its 16 tasks span three difficulty levels, with demonstrations generated by scripted inverse kinematics and trajectory optimization.
+
+**Verification:** With 100 demonstrations per task, π0 and RDT close a thermal-cycler lid at 99.7% and 100%, but π0 reaches only 21.3% on unscrewing a centrifuge-tube cap and 14.7% on loading a centrifuge rotor. There are no real-robot experiments, and simulated physics and rendering may miss real laboratory noise.
+
+<a id="work-2505-17985"></a>
+<!-- stage3-record: {"id": "2505.17985", "scope": "Adjacent", "section": 6} -->
+
+#### AI-Driven Robotics for Optics
+
+`2025-05-07` · Massachusetts Institute of Technology; NSF Institute for Artificial Intelligence and Fundamental Interactions
+
+[Bibliographic record](../README.md#paper-2505-17985) · [Paper](https://arxiv.org/abs/2505.17985) · [Code](https://github.com/sachin4594/OptSetGen)
+
+Designs free-space optical setups with an LLM and assembles them with an LLM-programmed robot arm.
+
+**Method:** A LLaMA 3.1 8B model fine-tuned with QuanTA outputs component positions and orientations, and layout-validation failures return to it in a loop. A second LLM writes a Python main routine over wrapper functions for initialization, vision-guided pickup, placement and homing on an xArm7; stereo cameras, depth sensing and ArUco markers locate components, and a camera-equipped tool supports alignment.
+
+**Verification:** Placement reaches about ±0.5 mm and ±0.2°, beam angles vary by about ±0.05° across 230 measurements, and beam-expansion tuning reaches f2/f1 = 2.08 in about ten iterations. Placement re-checks and gradient-based alignment are fixed routines; the paper does not describe the LLM revising code from camera images.
+
+<a id="work-2501-10385"></a>
+<!-- stage3-record: {"id": "2501.10385", "scope": "Adjacent", "section": 6} -->
+
+#### Evaluating large language model agents for automation of atomic force microscopy
+
+`2024-12-18` · Indian Institute of Technology Delhi; Aalborg University; Leibniz Institute of Photonic Technology; University of Jena
+
+[Bibliographic record](../README.md#paper-2501-10385) · [Paper](https://www.nature.com/articles/s41467-025-64105-7) · [Paper](https://arxiv.org/abs/2501.10385) · [Code](https://github.com/M3RG-IITD/AILA)
+
+Evaluates LLM agents that write Python to run a real atomic force microscope.
+
+**Method:** AILA's planner routes work to an AFM handler agent, which retrieves software documentation and writes Python for the Nanosurf API, and to a data handler agent with tools for PID optimization and image analysis. Code errors return to the handler for retries, and AFMBench's 100 tasks require physical execution on the instrument.
+
+**Verification:** GPT-4o succeeds on 88.3% of documentation tasks but has a 29% total error rate, mostly code generation; the authors also observe 'sleepwalking', where agents take unrequested and potentially risky actions. Experiments use a Nanosurf DriveAFM under researcher supervision.
+
 <a id="work-chemagents"></a>
 <!-- stage3-record: {"id": "chemagents", "scope": "Adjacent", "section": 6} -->
 
@@ -5619,6 +5773,36 @@ Coordinates robot chemistry through generated API programs.
 
 **Related:** [1. Embodied Harnesses](#section-1)
 
+<a id="work-2401-06949"></a>
+<!-- stage3-record: {"id": "2401.06949", "scope": "Adjacent", "section": 6} -->
+
+#### ORGANA: A Robotic Assistant for Automated Chemistry Experimentation and Characterization
+
+`2024-01-13` · University of Toronto; Vector Institute; Acceleration Consortium; NVIDIA; Georgia Institute of Technology
+
+[Bibliographic record](../README.md#paper-2401-06949) · [Paper](https://arxiv.org/abs/2401.06949) · [Project page](https://ac-rad.github.io/organa/) · [Code](https://github.com/ac-rad/organa)
+
+Assists chemists with an LLM-driven robot that plans, runs and characterizes chemistry experiments.
+
+**Method:** GPT-4 handles dialogue and reasoning to identify goals, CLAIRify produces XDL that becomes PDDL problems for planning, and the robot uses vision to locate vessels and measure turbidity. An analyzer compares measured pH and redox values with expectations and reports inconsistencies to the user.
+
+**Verification:** A Franka Panda with laboratory instruments runs solubility, recrystallization, pH and electrochemistry experiments; three electrochemistry runs give slopes of −61.0 to −61.8 mV/pH, and parallel execution cuts each buffer test from 1,346 s to 1,071 s. In an eight-chemist study users saved 80.3% of their time; there is no online replanning.
+
+<a id="work-2304-10267"></a>
+<!-- stage3-record: {"id": "2304.10267", "scope": "Adjacent", "section": 6} -->
+
+#### LLMs can generate robotic scripts from goal-oriented instructions in biological laboratory automation
+
+`2023-04-18` · Laboratory Automation Supplier's Association; Nagoya University; RIKEN Center for Biosystems Dynamics Research; Keio University; Osaka University; University of Tsukuba
+
+[Bibliographic record](../README.md#paper-2304-10267) · [Paper](https://arxiv.org/abs/2304.10267) · [Code](https://github.com/labauto/Inagaki_2023_GPT4OT2)
+
+Generates Opentrons OT-2 scripts with GPT-4 and repairs them from simulator errors.
+
+**Method:** The pipeline extracts a Python script from the model output, runs it with the Opentrons simulator, and sends any error message back for correction, for up to five iterations. Prompts are either step-by-step procedures with exact labware names or goal-oriented requests such as exchanging cell-culture medium.
+
+**Verification:** With GPT-4, 21 of 22 step-by-step sessions and 12 of 17 goal-oriented sessions succeed within five iterations, compared with 5/10 and 2/12 for the paper's gpt-3-turbo baseline. Success means the script completes in the simulator; the paper does not execute scripts on a physical OT-2.
+
 <a id="work-2304-05332"></a>
 <!-- stage3-record: {"id": "2304.05332", "scope": "Adjacent", "section": 6} -->
 
@@ -5633,6 +5817,21 @@ Connects language reasoning to automated chemistry.
 **Method:** An LLM combines literature retrieval, Python calculations and experiment-device APIs to plan and execute chemistry procedures.
 
 **Verification:** Physical chemistry demonstrations use human-configured equipment; the simplified release is not the full deployed system.
+
+<a id="work-2303-14100"></a>
+<!-- stage3-record: {"id": "2303.14100", "scope": "Adjacent", "section": 6} -->
+
+#### Errors are Useful Prompts: Instruction Guided Task Programming with Verifier-Assisted Iterative Prompting
+
+`2023-03-24` · University of Toronto; Vector Institute; University of Toronto Schools; NVIDIA
+
+[Bibliographic record](../README.md#paper-2303-14100) · [Paper](https://arxiv.org/abs/2303.14100) · [Project page](https://ac-rad.github.io/clairify/) · [Code](https://github.com/ac-rad/xdl-generation)
+
+Generates chemistry robot plans in XDL with verifier-guided iterative prompting (CLAIRify).
+
+**Method:** A GPT-3 model writes XDL from natural-language instructions with the language description in the prompt; a verifier checks XML structure, allowed actions, required properties and available hardware and reagents, and its errors are appended to the next prompt for up to 10 rounds. Valid plans are turned into robot trajectories through task and motion planning.
+
+**Verification:** CLAIRify produces plans for 105/108 Chem-RnD and 40/40 Chem-EDU instructions, versus 92/108 and 0/40 for SynthReader, and experts preferred 75 of the 108 plans. Feedback is text only, and robot execution on a Franka Panda with a scale and stirrer is shown for selected educational experiments.
 
 <a id="work-xray-scientist"></a>
 <!-- stage3-record: {"id": "xray-scientist", "scope": "Adjacent", "section": 6} -->

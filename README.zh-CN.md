@@ -13,7 +13,7 @@
 
 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从数字世界延伸到物理世界。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-651-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--15-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-664-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--15-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · **简体中文** · [日本語](./README.ja.md)
 
@@ -61,8 +61,9 @@
   - [3.2 仿真器构建](#s3-2) (68)
   - [3.3 仿真器质量评估](#s3-3) (29)
   - [3.4 数据](#s3-4) (14)
-  - [3.5 训练与能力提升](#s3-5) (73)
-  - [3.6 物理应用与实验](#s3-6) (37)
+  - [3.5 训练与能力提升](#s3-5) (74)
+  - [3.6 物理应用与实验](#s3-6) (49)
+    - [科学实验（AI4Science）](#s3-6-experiments) (27)
   - [仿真引擎一览](#s3-engines)
 - [综述与相关合集](#related)
 - [联系与贡献](#contact) · [引用](#citation)
@@ -354,7 +355,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 - <a id="paper-demo-wild-atlas"></a>**[Wild Atlas](https://x.com/_IamAlam/status/2107480596926939638)**
   > 将百科应用分为界面、统一风格动物资产及卡片／旋转／信息面板交互三个阶段；旋转展示不代表已公开完整 3D 场景。
 
-[↑ 返回目录](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
 <a id="methods-gui-environments"></a>
 <a id="evaluation-gui-environments"></a>
@@ -417,7 +418,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 - <a id="paper-2610-41432"></a>`2026.10` **[Hybrid Computer Use: A Unified Programmatic, Semantic, and Visual Interface for General Agents](https://arxiv.org/abs/2610.41432)**
   > 让 Agent 组合程序工具、可访问性动作与视觉交互，通过实时状态检查、批次内验证及返回的 AX 变化指导后续操作。
 
-[↑ 返回目录](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
 <a id="visualization"></a>
 <a id="svg-diagrams"></a>
@@ -662,7 +663,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 - <a id="paper-res-mermaid-mcp-server"></a>**[Mermaid MCP server](https://mermaid.ai/docs/ai/mcp-server)**
   > 验证 Diagram 语法并返回可供检查与修复的 SVG/PNG 渲染。
 
-[↑ 返回目录](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
 <a id="documents-video"></a>
 <a id="methods-media"></a>
@@ -851,7 +852,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 - <a id="paper-res-rendley-video-editing-skill"></a>**[Rendley video-editing-skill](https://github.com/rendleyhq/video-editing-skill)** [[文档]](https://github.com/rendleyhq/video-editing-skill/blob/main/SKILL.md)
   > 经 MCP／REST 将编辑需求与媒体交给 Rendley 托管 Agent，返回可编辑项目；MIT Skill 属于需服务连接的集成层，不是本地剪辑引擎。
 
-[↑ 返回目录](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
 <a id="3d-cad"></a>
 <a id="methods-cad-3d"></a>
@@ -1326,7 +1327,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 - <a id="paper-res-zoo-developer-tools"></a>**[Zoo developer tools](https://docs.zoo.dev/docs)** [[文档]](https://zoo.dev/docs/developer-tools/mcp)
   > 将语言驱动的 KCL 工作流连接到几何执行、快照、检查和调试。
 
-[↑ 返回目录](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
 <a id="games"></a>
 <a id="methods-games"></a>
@@ -1561,7 +1562,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 - <a id="paper-res-ziva-playtesting-workflow"></a>**[Ziva playtesting workflow](https://ziva.sh/blogs/ai-agent-playtest-godot-game)** [[文档]](https://ziva.sh/docs/playtest) [[仓库]](https://github.com/ziva-sh/ziva-agent-plugin-godot)
   > 完整试玩 Agent 检查现场状态与截图，返回结论、复现步骤及重放证据；它本身不编辑项目，修复需交回开发 Agent。厂商演示不等于独立基准证据。
 
-[↑ 返回目录](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
 <a id="section-1-3"></a>
 <a id="visual-diff"></a>
@@ -1643,7 +1644,7 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 - <a id="paper-reading-z-ai-autoclaw-team-glm-5-3-flash-more-intelligence-with-less-compute"></a>`2026.08` **[Z.ai / AutoClaw Team — GLM-5.3-Flash: More Intelligence with Less Compute](https://autoclaw.z.ai/blog/model/glm-5.3-flash/)** [[模型]](https://huggingface.co/zai-org/GLM-5.3-Flash)
   > “Vision therefore becomes part of execution and verification rather than a separate input capability.” *与本主题的关联：* 模型被明确描述为能够检查渲染结果、判断下一步行动，并在文档、界面等视觉产物上继续改进。
 
-[↑ 返回目录](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
 <a id="trilogy-models-as-tools"></a>
 <a id="section-1-4"></a>
@@ -1683,7 +1684,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 *另见:* [Stride](#paper-2610-13502) · [Editable Visual Design](#paper-2609-04034)
 
-[↑ 返回目录](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
 <a id="s2-2"></a>
 
@@ -1751,7 +1752,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-res-omnishowcase-omnidirectional-subject-consistent-video-generation-from-multi-view-images"></a>**[OmniShowcase: Omnidirectional Subject-Consistent Video Generation from Multi-View Images](https://arxiv.org/abs/2610.35684)** [[代码]](https://github.com/justin4ai/OmniShowcase) [[项目页]](https://justin4ai.github.io/OmniShowcase/)
   > 多张参考图 + 相机运动提示 → 以重建法线转台为条件的主体一致视频。结合多视角重建与 LoRA 视频生成器，支持围绕静态主体的视角变化；非刚体运动仍受限，代码和数据处于发布计划中。
 
-[↑ 返回目录](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
 <a id="s2-3"></a>
 
@@ -1816,7 +1817,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 *另见:* [SceneBloom](#paper-2610-32978) · [SAGE](#paper-2602-10116) · [Gen2Sim](#paper-2310-18308) · [PhysX-Omni](#paper-2605-21572) · [HARMONY](#paper-2609-26793) · [GATOR](#paper-2610-11215) · [3AGameFactory](#paper-system-3agamefactory) · [Lucida](#paper-2608-30821)
 
-[↑ 返回目录](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
 <a id="s2-4"></a>
 
@@ -1889,7 +1890,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-res-worldfoundry"></a>**[WorldFoundry](https://arxiv.org/abs/2611.10771)** [[代码]](https://github.com/OpenEnvision/WorldFoundry)
   > 将模型各自的输入、运行要求及输出产物接入统一推理和评测工作流，明确区分准备状态和评测资格。
 
-[↑ 返回目录](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
 <a id="section-5-1"></a>
 <a id="s2-5"></a>
@@ -1930,7 +1931,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 *另见:* [GRASE](#paper-2610-21498) · [SceneAgent](#paper-2610-34745) · [Real2Gym](#paper-2609-37089) · [LiteReality-Agent](#paper-2610-01863) · [Instruct2Act](#paper-2305-11176) · [Plumb](#paper-system-plumb)
 
-[↑ 返回目录](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
 <a id="section-5-4"></a>
 <a id="s2-6"></a>
@@ -2001,7 +2002,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 *另见:* [REA](#paper-2610-42053) · [Harness VLA](#paper-2607-08448) · [The Harness](#paper-system-the-harness-corl2026) · [CarryOn](#paper-2610-21453) · [Seeing Through the Illusion](#paper-2611-03585)
 
-[↑ 返回目录](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
 <a id="trilogy-digital-physical"></a>
 <a id="stage-3"></a>
@@ -2510,7 +2511,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-res-webots-mcp"></a>**[Webots MCP](https://github.com/MHasaan/webotMCP)**
   > 向Agent开放场景编辑、控制器代码、机器人动作、多视图截图、运动轨迹与接触事件；模拟器真值和反应式控制分别区别于学习式感知与规划。
 
-[↑ 返回目录](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
 <a id="methods-physical-assets"></a>
 <a id="world-models"></a>
@@ -2917,7 +2918,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-mujoco-workbench"></a>**[mujoco-workbench](https://github.com/Hebbian-Robotics/mujoco-workbench)**
   > CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。
 
-[↑ 返回目录](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
 <a id="evaluation-physical-assets"></a>
 <a id="evaluation-world-models"></a>
@@ -3109,7 +3110,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 *另见:* [Frontier3DBench](#paper-2611-09017) · [4DCodeBench](#paper-2610-03715) · [BlenderWorld](#paper-system-blenderworld) · [BVB](#paper-2609-15478) · [Code4Scene](#paper-2609-36777) · [Parametric CAD Bench v3](#paper-2611-02659) · [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786)
 
-[↑ 返回目录](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
 <a id="data-physical-assets"></a>
 <a id="data-real-to-sim"></a>
@@ -3233,7 +3234,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
   > 从单段第一视角人类视频出发，Agent 在仿真中按物体属性重建场景、优化灵巧手轨迹，再改变物体与机器人状态批量生成数据，工具库随使用不断扩充。画面：变换视角后的仿真渲染，重贴纹理以贴近真实；轨迹：灵巧手与手臂动作。<br>
   > 🖥️ **仿真** Blender + MuJoCo + Isaac Sim（Sharpa Wave） · 🦾 **真机** I2RT YAM、Sharpa Wave
 
-[↑ 返回目录](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
 <a id="robotics"></a>
 <a id="methods-robot-programs"></a>
@@ -3656,6 +3657,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
   > 将操控与导航专家蒸馏为紧凑的多模态 Agent 来协调专用工具，并把 rubric 引导的执行反馈转为提醒与已验证轨迹以持续学习。<br>
   > 🖥️ **仿真** MuJoCo + SAPIEN + Habitat（Franka Panda、AgileX ALOHA）
 
+<!-- mmac-record: {"id": "2610.35817", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2610-35817"></a>`2026.10` **[Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics](https://arxiv.org/abs/2610.35817)** [[项目页]](https://zero-real.github.io/)
+  > 仅凭自身在仿真中的成功轨迹，为小型开源 VLM Agent 补上运动控制能力。<br>
+  > 🖥️ **仿真** Isaac Sim + Isaac Lab（I2RT YAM、Franka） · 🦾 **真机** I2RT YAM
+
 <!-- mmac-record: {"id": "2610.41216", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-41216"></a>`2026.10` **[TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents](https://arxiv.org/abs/2610.41216)** [[项目页]](https://garfield-kh.github.io/TinyAstral/) [[代码]](https://github.com/Garfield-kh/TinyAstral) [[模型]](https://huggingface.co/kehong/TinyAstral-weights) [[数据集]](https://huggingface.co/datasets/kehong/TinyAstral-SFT)
@@ -3682,13 +3689,15 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 *另见:* [BlenderFORGE](#paper-2611-10768)
 
-[↑ 返回目录](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
 <a id="methods-real2sim2real"></a>
 <a id="section-6-4"></a>
 <a id="s3-6"></a>
 
 ### 3.6 物理应用与实验
+
+相关数字 Demo · [Google DeepMind — Agentic cheminformatics](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/)
 
 #### 机器人交互与操作
 
@@ -3767,7 +3776,10 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-demo-nvidia-factory-operations-blueprint"></a>**[NVIDIA — Factory Operations Blueprint](https://developer.nvidia.com/blog/how-nvidia-factory-operations-blueprint-coordinates-ai-agents-to-investigate-production-issues/)**
   > 管理 Agent 编排视觉检查、时序分析与车队专家；运输在 Isaac Sim／ROS 2 中演示，真实设备接入、批准及人工返修仍属部署环节。
 
-#### 实验、测量与发现
+<a id="paper-demo-google-deepmind-agentic-cheminformatics"></a>
+<a id="s3-6-experiments"></a>
+
+#### 科学实验（AI4Science）
 
 <!-- mmac-record: {"id": "2610.41383", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
@@ -3814,10 +3826,37 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-2607-23045"></a>`2026.07` **[Stress-testing large language model agents in a robotic chemistry laboratory](https://arxiv.org/abs/2607.23045)**
   > 在机器人实验室流程中检验编程 Agent。
 
+<!-- mmac-record: {"id": "2606.27231", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2606-27231"></a>`2026.06` **[A hardware-safety-gated system for LLM-written native ARTIQ control code on a trapped-ion platform](https://arxiv.org/abs/2606.27231)** [[代码]](https://gitlab.oit.duke.edu/dw346/artiq_mcp)
+  > LLM Agent 通过 MCP 编写原生 ARTIQ Python 控制离子阱实验；不使用 LLM 的安全门先在仿真中按设备界限检查每个脚本，再交给硬件执行。<br>
+  > 🖥️ **仿真** dax.sim
+
+<!-- mmac-record: {"id": "2606.31763", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2606-31763"></a>`2026.06` **[A Self-Evolving Agentic System for Automated Generation and Execution of Biological Protocols](https://arxiv.org/abs/2606.31763)**
+  > 把自然语言需求转成 SOP 与液体工作站设备代码，再根据菌落 PCR、测序等湿实验结果修订协议。
+
 <!-- mmac-record: {"id": "bespoke-instrument", "scope": "Resource", "primary": "3.6", "stage": 3, "type": "resource"} -->
 
 - <a id="paper-bespoke-instrument"></a>`2026.05` **[AI-designed and AI-implemented control systems for bespoke scientific instrumentation: application to scanning microscopy](https://pubs.rsc.org/en/content/articlelanding/2026/dd/d6dd00177g)** [[论文]](https://www.repository.cam.ac.uk/items/cb2e6fef-94c4-4fe9-903a-aaa198da8f4f) [[代码]](https://github.com/Okarl96/shem_gui)
   > 在人类监督下开发仪器控制代码。
+
+<!-- mmac-record: {"id": "2603.08801", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2603-08801"></a>`2026.03` **[Large Language Model-Assisted Superconducting Qubit Experiments](https://arxiv.org/abs/2603.08801)** [[代码]](https://github.com/clelandlab/HAL)
+  > 规划与开发两个 LLM 角色依据实验室知识文档，编写并运行控制超导量子比特硬件的 Python 代码。
+
+<!-- mmac-record: {"id": "2602.15294", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2602-15294"></a>`2026.02` **[EAA: Automating materials characterization with vision language model agents](https://arxiv.org/abs/2602.15294)** [[代码]](https://github.com/AdvancedPhotonSource/EAA)
+  > 视觉语言模型 Agent 调用仪器工具并编写 Python，在先进光子源（APS）开展 X 射线显微实验，并读取返回图像决定下一步。
+
+<!-- mmac-record: {"id": "2601.05356", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2601-05356"></a>`2026.01` **[PRISM: Protocol Refinement through Intelligent Simulation Modeling](https://arxiv.org/abs/2601.05356)** [[代码]](https://github.com/ramanathanlab/PRISM) [[论文]](https://pubs.rsc.org/en/content/articlelanding/2026/dd/d6dd00004e)
+  > Agent 把网络检索到的实验流程转成机器人协议，先在 NVIDIA Omniverse 数字孪生中测试，根据仿真报错修订后再交给真实仪器执行。<br>
+  > 🖥️ **仿真** NVIDIA Omniverse · 🦾 **真机** Opentrons OT-2、PF400
 
 <!-- mmac-record: {"id": "2509.24978", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
@@ -3829,10 +3868,44 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-2509-25651"></a>`2025.09` **[AutoLabs: cognitive multi-agent systems with self-correction for autonomous chemical experimentation](https://arxiv.org/abs/2509.25651)** [[代码]](https://github.com/pnnl/autolabs)
   > 生成经过检查的实验室可执行协议。
 
+<!-- mmac-record: {"id": "2507.01485", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2507-01485"></a>`2025.07` **[BioMARS: A Multi-Agent Robotic System for Autonomous Biological Experiments](https://arxiv.org/abs/2507.01485)** [[代码]](https://github.com/AlexandreQ27/BioMARS)
+  > 生物学家 Agent 起草协议，技术员 Agent 编译为机器人原语代码，视觉检查 Agent 监控执行并在出错时触发重新规划。
+
+<!-- mmac-record: {"id": "2505.17985", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2505-17985"></a>`2025.05` **[AI-Driven Robotics for Optics](https://arxiv.org/abs/2505.17985)** [[代码]](https://github.com/sachin4594/OptSetGen)
+  > 微调的 LLM 设计自由空间光路，另一 LLM 编写驱动 xArm7 摆放元件的 Python 代码，配合相机检查与基于光束的对准。<br>
+  > 🦾 **真机** xArm7
+
+<!-- mmac-record: {"id": "2505.14030", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2505-14030"></a>`2025.05` **[AutoBio: A Simulation and Benchmark for Robotic Automation in Digital Biology Laboratory](https://arxiv.org/abs/2505.14030)** [[代码]](https://github.com/autobio-bench/AutoBio) [[数据集]](https://huggingface.co/autobio-bench)
+  > 为 MuJoCo 增加螺纹、卡位与准静态液体模型，在 16 项生物实验室任务上评测机器人。<br>
+  > 🖥️ **仿真** MuJoCo（UR5e、Aloha）
+
+<!-- mmac-record: {"id": "2505.22634", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2505-22634"></a>`2025.05` **[LabUtopia: High-Fidelity Simulation and Hierarchical Benchmark for Scientific Embodied Agents](https://arxiv.org/abs/2505.22634)** [[项目页]](https://rui-li023.github.io/labutopia-site) [[代码]](https://github.com/Rui-li023/LabUtopia) [[数据集]](https://huggingface.co/datasets/Ruinwalker/LabUtopia-Dataset)
+  > 在 Isaac Sim 上构建带化学引擎和程序化实验室场景的仿真器，并提供面向科学具身 Agent 的五级任务基准。<br>
+  > 🖥️ **仿真** Isaac Sim（Franka Panda、Fetch、Clearpath Ridgeback）
+
+<!-- mmac-record: {"id": "2501.10385", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2501-10385"></a>`2024.12` **[Evaluating large language model agents for automation of atomic force microscopy](https://www.nature.com/articles/s41467-025-64105-7)** [[论文]](https://arxiv.org/abs/2501.10385) [[代码]](https://github.com/M3RG-IITD/AILA)
+  > 多 Agent LLM 框架 AILA 编写调用 Nanosurf AFM 接口的 Python 代码，运行真实显微实验；AFMBench 提供 100 项评测任务。
+
 <!-- mmac-record: {"id": "chemagents", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-chemagents"></a>`2024.07` **[A Multiagent-Driven Robotic AI Chemist Enabling Autonomous Chemical Research On Demand](https://doi.org/10.1021/jacs.4c17738)**
   > 通过生成 API 程序协调机器人化学研究。
+
+<!-- mmac-record: {"id": "2401.06949", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2401-06949"></a>`2024.01` **[ORGANA: A Robotic Assistant for Automated Chemistry Experimentation and Characterization](https://arxiv.org/abs/2401.06949)** [[项目页]](https://ac-rad.github.io/organa/) [[代码]](https://github.com/ac-rad/organa)
+  > 与化学家对话明确实验目标，经 CLAIRify 生成的 XDL 规划机器人流程，并将测量结果与预期对照。<br>
+  > 🦾 **真机** Franka Panda
 
 <!-- mmac-record: {"id": "2304.05332", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
@@ -3840,15 +3913,24 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
   > 用语言模型组织自动化化学实验。<br>
   > 🦾 **真机** Opentrons OT-2
 
+<!-- mmac-record: {"id": "2304.10267", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2304-10267"></a>`2023.04` **[LLMs can generate robotic scripts from goal-oriented instructions in biological laboratory automation](https://arxiv.org/abs/2304.10267)** [[代码]](https://github.com/labauto/Inagaki_2023_GPT4OT2)
+  > GPT-4 根据分步或目标式指令编写 Opentrons OT-2 Python 脚本，并依据 Opentrons 模拟器报错修复。<br>
+  > 🖥️ **仿真** Opentrons simulator（Opentrons OT-2）
+
+<!-- mmac-record: {"id": "2303.14100", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2303-14100"></a>`2023.03` **[Errors are Useful Prompts: Instruction Guided Task Programming with Verifier-Assisted Iterative Prompting](https://arxiv.org/abs/2303.14100)** [[项目页]](https://ac-rad.github.io/clairify/) [[代码]](https://github.com/ac-rad/xdl-generation)
+  > CLAIRify 用 LLM 生成 XDL 化学实验计划，把校验器报错反馈回去直到计划合法，再经任务与运动规划在机械臂上执行。<br>
+  > 🦾 **真机** Franka Panda
+
 <!-- mmac-record: {"id": "xray-scientist", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-xray-scientist"></a>**[An agentic artificially intelligent X-ray scientist](https://www.nature.com/articles/s42256-026-01261-5)** [[代码]](https://github.com/zhantaochen/llm4xray)
   > 把实验 Agent 接入 X 射线仪器。
 
-<!-- mmac-record: {"id": "demo:google-deepmind-agentic-cheminformatics", "scope": "Demo", "primary": "3.6", "stage": 3, "type": "demo"} -->
-
-- <a id="paper-demo-google-deepmind-agentic-cheminformatics"></a>**[Google DeepMind — Agentic cheminformatics](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/)**
-  > Antigravity 调用 RDKit 和效力模型提出宏环候选，科学家审阅图表和预测；合成与实验验证仍需另行完成。
+*另见:* [Lab2Sim](#paper-2611-02928) · [LabWorld](#paper-2610-36592) · [ChemAutoAgent](#paper-chemautoagent) · [LabRobFail](#paper-2607-23704) · [Safe Lab Agents](#paper-safe-lab-agents)
 
 #### 物理设计、制造与验证
 
@@ -3902,7 +3984,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-ai-cad"></a>**[ai-cad](https://github.com/BorjaLL/ai-cad)** [[结果]](https://github.com/BorjaLL/ai-cad/blob/1ef2bf72de799006d069498d3ee146dae2e4f075/data/fits-measured.json)
   > 连接参数化 CAD 与人工打印试配。
 
-[↑ 返回目录](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
 <a id="s3-engines"></a>
 
@@ -3929,7 +4011,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 </details>
 
-[↑ 返回目录](#contents)
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
 <a id="surveys-and-related-collections"></a>
 <a id="related"></a>

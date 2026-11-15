@@ -6,6 +6,7 @@ import unittest
 
 import engine_map
 import eval_ladder
+import triage
 from build_readme import render, validate
 from catalog import anchor, canonical_records, check_local_links, load
 
@@ -118,10 +119,43 @@ class CatalogTests(unittest.TestCase):
             work['setup'] = bad
             self.assertTrue(any('setup' in e for e in validate(self.site, rows, True)[0]), bad)
 
+    def test_contents_subgroups_and_subgroup_links_are_checked(self):
+        zh = render(self.site, self.works, 'zh')
+        count = sum(1 for w in self.works if (w['section'], w.get('sub')) == ('3.6', 'experiments'))
+        self.assertIn(f'    - [科学实验（AI4Science）](#s3-6-experiments) ({count})', zh)
+        self.assertIn('<a id="s3-6-experiments"></a>\n\n#### 科学实验（AI4Science）', zh)
+        self.assertIn('[ChemAutoAgent](#paper-chemautoagent)', zh.split('#### 物理设计')[0].split('#### 科学实验')[-1])
+        site = deepcopy(self.site)
+        meta = site['sections']['3.6']
+        meta['contents_subs'].append('unknown-sub')
+        meta['sub_see_also']['experiments'] += ['9999.99999', '2610.23826']  # missing, and already primary there
+        errors = validate(site, self.works, True)[0]
+        self.assertTrue(any("contents_subs 'unknown-sub'" in e for e in errors))
+        self.assertTrue(any('9999.99999 not found' in e for e in errors))
+        self.assertTrue(any('2610.23826 is already listed there' in e for e in errors))
+
     def test_compatibility_targets_must_exist(self):
         site = deepcopy(self.site)
         site['anchor_aliases']['old-link'] = 'missing-entry'
         self.assertTrue(any('compatibility anchor' in e for e in validate(site, self.works, True)[0]))
+
+    def test_triage_log_agrees_with_catalog(self):
+        log = triage.load(ROOT)
+        self.assertIsNotNone(log)
+        self.assertEqual(triage.validate(self.works, log), [])
+
+    def test_triage_decisions_cannot_drift_from_catalog(self):
+        log = deepcopy(triage.load(ROOT))
+        pending = next(c for c in log['candidates'] if c['decision'] == 'pending')
+        added = next(c for c in log['candidates'] if c['decision'] == 'added')
+        rows = deepcopy(self.works)
+        extra = deepcopy(rows[0]); extra['id'] = pending['id']
+        rows = [w for w in rows if w['id'] != added['id']] + [extra]
+        errors = triage.validate(rows, log)
+        self.assertTrue(any('mark it added or updated' in e for e in errors))
+        self.assertTrue(any('is not in data/works.yaml' in e for e in errors))
+        pending.update(decision='excluded', decided=pending['found'])
+        self.assertTrue(any('requires a reason' in e for e in triage.validate(self.works, log)))
 
 
 if __name__ == '__main__':

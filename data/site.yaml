@@ -1149,6 +1149,157 @@ sections:
     ja: シミュレータ構築
     subs:
     - null
+    guide:
+      en: |-
+        **Input**
+
+        | Source | Input data | Core question | Typical scenes | Works |
+        |---|---|---|---|---|
+        | Generative | Text description | From a description alone, can it build a world that meets the requirements and holds up physically? | Rooms, tabletop tasks, physical phenomena | [Holodeck](#paper-2312-09067) · [SceneSmith](#paper-2602-09153) · [GenSim](#paper-2310-01361) · [RoboGen](#paper-2311-01455) · [Text2Sim](#paper-2609-36593) · [Gym-Anything](#paper-2610-40565) |
+        | Sim2Sim | Asset and simulation files | Can existing models or scenes gain physics, move to another engine, or be expanded into variants? | Object assets, tabletops, rooms | [UniPhysGen](#paper-2607-13586) · [EmbodiedGen V2](#paper-2607-07459) · [SimFoundry](#paper-2606-28276) (variant-expansion stage) |
+        |  | Simulation renders | Given simulated footage whose ground truth is known, can it write the original world back? (Mainly used to test and train methods) | Physical phenomena, tabletops, synthetic dynamic scenes | [CUE](#paper-2611-02691) (sim-to-sim tests) · [SceneAgent](#paper-2610-34745) (synthetic dynamic scenes) · [4DCodeBench](#paper-2610-03715) · [MPMWorlds](#paper-2606-01538) (the last two are in 3.3) |
+        | Real2Sim | Single image | One photo hides the back, the scale, and the joints: can it recover a simulatable object? | Single objects | [DiagGen](#paper-2609-23103) · [Gen2Sim](#paper-2310-18308) · [PhysX-Omni](#paper-2605-21572) · [RoboTwin](#paper-2409-02920) |
+        |  | RGB-D and 3D scans | With complete geometry at true scale, can it be split into interactive objects and scenes? | Rooms, tabletops | [LiteReality](#paper-2610-01863) · [SceneAgent](#paper-2610-34745) · [Lucida](#paper-2608-30821) · [GRS](#paper-2410-15536) |
+        |  | Video without an operator | From footage alone, can it recover the geometry, and even how objects move on their own? | Rooms, physical phenomena, articulated objects | [GRASE](#paper-2610-21498) · [Plumb](#paper-system-plumb) · [FACT](#paper-2609-37067) · [Code as Worlds](#paper-2608-27549) |
+        |  | Human manipulation video | After watching a person do it once, can it build an environment where a robot can practise the task? | Tabletop manipulation, lab benches | [Video2Sim2Real](#paper-2606-08828) · [Real2Gym](#paper-2609-37089) · [LabWorld](#paper-2610-36592) · [RoboSimStudio](#paper-2610-18835) |
+        |  | Robot manipulation video + trajectories | With the robot's actions known, can the episode be replayed exactly in simulation? | Tabletop manipulation | [WorldMirror](#paper-2610-31834) · [Agentic Real2Sim](#paper-2607-19190) · [Vid2Sid](#paper-2602-19359) |
+        |  | Active robot interaction | By trying things itself, can it measure parameters such as friction and restitution accurately? | Tabletop manipulation | [CUE](#paper-2611-02691) · [D-World](#paper-2610-17114) · [Phys2Real](#paper-2510-11689) |
+
+        Works are representative; one work may appear in several rows.
+
+        **Build process: four groups, nine steps**
+
+        Building a simulator is split into four groups and nine steps: A Perception & Planning (① task planning, ② perception & measurement) · B Scene Construction (③ object assets, ④ articulation, ⑤ layout & alignment) · C Physics Modeling (⑥ physical parameters, ⑦ physics engine) · D Task & Control (⑧ robot control, ⑨ task definition). B plus C is the simulator itself; adding D gives an environment you can train and evaluate in. A work without a ⑦ physics engine has only built a scene. Verification & revision and variant expansion are not parts of a simulator, so they are left out of the nine steps.
+
+        Read across a row to see who does each step of that work. **Bold**: the Agent or VLM does it itself; plain: handed to a specialised tool, model or engine; *italic*: given in advance (input, fixed rule or human); —: not involved or not stated. "Sim-ready" in column ⑦ means the result can be loaded into a physics engine, but the method does not run one.
+
+        | Organization | Work | ① Task planning | ② Perception & measurement | ③ Object assets | ④ Articulation | ⑤ Layout & alignment | ⑥ Physical parameters | ⑦ Physics engine | ⑧ Robot control | ⑨ Task definition |
+        |---|---|---|---|---|---|---|---|---|---|---|
+        | Bench | [RoboDojo](#paper-2607-04434) | *Human* | — | Meshy · asset library | *Existing assets* | *Hand-written YAML* | *Human* | Isaac Sim · Isaac Lab | *Policy under test* | *Hand-written YAML* |
+        |  | [Video2World](#paper-2610-04432) | **Agent** | **Agent** | **Agent** | — | **Agent** | **Agent** | Isaac Sim | **Agent** | *Given by the task* |
+        | Agentic End-to-End | [Plumb](#paper-system-plumb) | **Agent** | SAM3 · Pi3X | **Agent** | — | **Agent** | **Agent** | MuJoCo | **Agent** | — |
+        |  | [CUE](#paper-2611-02691) | **Agent** | **Agent** | **Agent** | — | **Agent** | CMA-ES | MuJoCo | **Agent** | — |
+        |  | [Real2Gym](#paper-2609-37089) | **Agent** | MoGe-3 · Pi3X · SAM2 | **Agent** | — | **Agent** | **Agent** | MuJoCo | **Agent** | **Agent** |
+        |  | [DyCraft](#paper-2610-40754) (scene only) | **Agent** | — | **Agent** | **Agent** | **Agent** | — | ✗ No physics engine | CMU mocap · IK · Blender | — |
+        | Closed-loop Workflow | [Agentic Real2Sim](#paper-2607-19190) | **Vision Agent** | SAM 3 · FoundationPose | SAM 3D | — | **Scene Agent** | **Physics Agent** | MuJoCo | *Given* | — |
+        |  | [WorldMirror](#paper-2610-31834) | *Fixed dependency graph* | 3D Gaussians | Meshy · Articraft | — | **Calibration and layout Agents** | — | Isaac Sim | *Given* | — |
+        |  | [Text2Sim](#paper-2609-36593) | **Planner** | — | Meshy | — | **Scene Writer** | **Body Writer** | Genesis | **Action Writer** | — |
+        |  | [SceneSmith](#paper-2602-09153) | **Planner** | — | SAM3 · SAM3D | ArtVIP | **Designer** | **VLM** | Drake | — | — |
+        |  | [Articulate-Anything](#paper-2410-13882) | **VLM** | CoTracker | PartNet-Mobility | **Actor** | **Actor** | — | PyBullet · SAPIEN | — | — |
+        |  | [Gym-Anything](#paper-2610-40565) | **Creation Agent** | — | **Creation Agent** | — | **Creation Agent** | **Creation Agent** | MuJoCo · Warp, etc. | **Creation Agent** | **Task-creation Agent** |
+        | Open-loop Workflow | [GenSim](#paper-2310-01361) | **GPT-4** | — | *Given* | — | **GPT-4** | — | PyBullet | Ravens scripts | **GPT-4** |
+        |  | [Holodeck](#paper-2312-09067) | **GPT-4** | — | Objaverse · ProcTHOR | — | Constraint solver | — | AI2-THOR | — | — |
+        |  | [SimFoundry](#paper-2606-28276) | **VLM** | SAM3 · PriorDepthAnything | Hunyuan3D · TRELLIS.2 | **Actor–Critic** | FoundationPose | **VLM** | PyBullet | — | **VLM** |
+        | Model-based (without Agent) | [PhysX-Omni](#paper-2605-21572) (sim-ready) | Fine-tuned Qwen2.5-VL | — | Qwen2.5-VL · TRELLIS | Fine-tuned Qwen2.5-VL | — | Fine-tuned Qwen2.5-VL | Sim-ready | — | — |
+        |  | [Real2Code](#paper-2406-08474) | — | Fine-tuned SAM · DUSt3R | Shape-completion model | Fine-tuned CodeLlama | DUSt3R point cloud | — | MuJoCo | — | — |
+
+        Decide the organization in this order:
+
+        1. No general-purpose LLM or VLM takes part in building; trained models, differentiable simulation or optimizers produce the result directly: **Model-based (without Agent)**.
+        2. One main Agent is responsible for every building step and decides at run time which tools or sub-agents to use: **Agentic End-to-End**.
+        3. The division of labour is designed in advance: if a problem is sent back to the step responsible, it is a **Closed-loop Workflow**; if the steps run once in a fixed order and failures are discarded or retried only inside one module, it is an **Open-loop Workflow**.
+
+        The two Bench rows are for reference only: RoboDojo is built by hand, while Video2World asks the Agent under test to build the simulation itself. Works are representative.
+      zh: |-
+        **输入**
+
+        | 来源 | 输入数据 | 核心问题 | 常见场景 | 作品 |
+        |---|---|---|---|---|
+        | Generative | 文字描述 | 只有一段描述，能造出满足要求、物理上站得住的世界吗？ | 房间、桌面任务、物理现象 | [Holodeck](#paper-2312-09067) · [SceneSmith](#paper-2602-09153) · [GenSim](#paper-2310-01361) · [RoboGen](#paper-2311-01455) · [Text2Sim](#paper-2609-36593) · [Gym-Anything](#paper-2610-40565) |
+        | Sim2Sim | 资产与仿真文件 | 已有的模型或场景，能补上物理、换个引擎、扩出更多变体吗？ | 物体资产、桌面、房间 | [UniPhysGen](#paper-2607-13586) · [EmbodiedGen V2](#paper-2607-07459) · [SimFoundry](#paper-2606-28276)（扩变体阶段） |
+        |  | 仿真渲染画面 | 拿一段答案已知的仿真画面，能把原来的世界写回来吗？（主要用于测试和训练方法） | 物理现象、桌面、合成动态场景 | [CUE](#paper-2611-02691)（sim-to-sim 测试）· [SceneAgent](#paper-2610-34745)（合成动态场景）· [4DCodeBench](#paper-2610-03715) · [MPMWorlds](#paper-2606-01538)（后两项在 3.3） |
+        | Real2Sim | 单张图像 | 一张照片看不到背面、尺度和关节，能复原出可仿真的物体吗？ | 单个物体 | [DiagGen](#paper-2609-23103) · [Gen2Sim](#paper-2310-18308) · [PhysX-Omni](#paper-2605-21572) · [RoboTwin](#paper-2409-02920) |
+        |  | RGB-D 与 3D 扫描 | 有了带尺度的完整几何，能拆成可交互的物体和场景吗？ | 房间、桌面 | [LiteReality](#paper-2610-01863) · [SceneAgent](#paper-2610-34745) · [Lucida](#paper-2608-30821) · [GRS](#paper-2410-15536) |
+        |  | 无操作者视频 | 只看画面，能复原几何，甚至物体自己怎么动吗？ | 房间、物理现象、关节物体 | [GRASE](#paper-2610-21498) · [Plumb](#paper-system-plumb) · [FACT](#paper-2609-37067) · [Code as Worlds](#paper-2608-27549) |
+        |  | 人类操作视频 | 看人做一遍，能造出机器人可以照着练的环境吗？ | 桌面操作、实验台 | [Video2Sim2Real](#paper-2606-08828) · [Real2Gym](#paper-2609-37089) · [LabWorld](#paper-2610-36592) · [RoboSimStudio](#paper-2610-18835) |
+        |  | 机器人操作视频 + 轨迹 | 已知机器人做了什么动作，能把这段操作在仿真里原样重放吗？ | 桌面操作 | [WorldMirror](#paper-2610-31834) · [Agentic Real2Sim](#paper-2607-19190) · [Vid2Sid](#paper-2602-19359) |
+        |  | 机器人主动交互 | 自己动手试，能把摩擦、弹性这些参数测准吗？ | 桌面操作 | [CUE](#paper-2611-02691) · [D-World](#paper-2610-17114) · [Phys2Real](#paper-2510-11689) |
+
+        作品只列代表，同一项工作可能出现在多行。
+
+        **构建流程：四组九步**
+
+        把造一个仿真器拆成四组九步：A 输入理解（① 任务规划、② 感知测量）· B 场景构建（③ 物体资产、④ 关节结构、⑤ 布局对齐）· C 物理建模（⑥ 物理参数、⑦ 物理引擎）· D 任务与控制（⑧ 机器人控制、⑨ 任务定义）。B 加 C 是仿真器本身，再加上 D 就是能拿来训练和评测的环境；没有 ⑦ 物理引擎的工作只建了场景。检查与修订、变体扩增不算仿真器的组成部分，没有放进九步。
+
+        下表横着看一行，就是这项工作的每一步由谁来做。**粗体**：Agent 或 VLM 自己做；普通：交给专用工具、模型或引擎；*斜体*：事先给定（输入、固定规则或人工）；—：不涉及或没写明。⑦ 列的「仿真就绪」表示可以导入物理引擎，但方法里没有运行。
+
+        | 组织方式 | 工作 | ① 任务规划 | ② 感知测量 | ③ 物体资产 | ④ 关节结构 | ⑤ 布局对齐 | ⑥ 物理参数 | ⑦ 物理引擎 | ⑧ 机器人控制 | ⑨ 任务定义 |
+        |---|---|---|---|---|---|---|---|---|---|---|
+        | Bench | [RoboDojo](#paper-2607-04434) | *人工* | — | Meshy · 资产库 | *现成资产* | *人工 YAML* | *人工* | Isaac Sim · Isaac Lab | *被测策略* | *人工 YAML* |
+        |  | [Video2World](#paper-2610-04432) | **Agent** | **Agent** | **Agent** | — | **Agent** | **Agent** | Isaac Sim | **Agent** | *题目给定* |
+        | Agentic End-to-End | [Plumb](#paper-system-plumb) | **Agent** | SAM3 · Pi3X | **Agent** | — | **Agent** | **Agent** | MuJoCo | **Agent** | — |
+        |  | [CUE](#paper-2611-02691) | **Agent** | **Agent** | **Agent** | — | **Agent** | CMA-ES | MuJoCo | **Agent** | — |
+        |  | [Real2Gym](#paper-2609-37089) | **Agent** | MoGe-3 · Pi3X · SAM2 | **Agent** | — | **Agent** | **Agent** | MuJoCo | **Agent** | **Agent** |
+        |  | [DyCraft](#paper-2610-40754)（只建场景） | **Agent** | — | **Agent** | **Agent** | **Agent** | — | ✗ 没有物理引擎 | CMU 动捕 · IK · Blender | — |
+        | Closed-loop Workflow | [Agentic Real2Sim](#paper-2607-19190) | **视觉 Agent** | SAM 3 · FoundationPose | SAM 3D | — | **场景 Agent** | **物理 Agent** | MuJoCo | *给定* | — |
+        |  | [WorldMirror](#paper-2610-31834) | *固定依赖图* | 3D 高斯 | Meshy · Articraft | — | **校准、布局 Agent** | — | Isaac Sim | *给定* | — |
+        |  | [Text2Sim](#paper-2609-36593) | **Planner** | — | Meshy | — | **Scene Writer** | **Body Writer** | Genesis | **Action Writer** | — |
+        |  | [SceneSmith](#paper-2602-09153) | **Planner** | — | SAM3 · SAM3D | ArtVIP | **Designer** | **VLM** | Drake | — | — |
+        |  | [Articulate-Anything](#paper-2410-13882) | **VLM** | CoTracker | PartNet-Mobility | **Actor** | **Actor** | — | PyBullet · SAPIEN | — | — |
+        |  | [Gym-Anything](#paper-2610-40565) | **创建 Agent** | — | **创建 Agent** | — | **创建 Agent** | **创建 Agent** | MuJoCo · Warp 等 | **创建 Agent** | **任务创建 Agent** |
+        | Open-loop Workflow | [GenSim](#paper-2310-01361) | **GPT-4** | — | *给定* | — | **GPT-4** | — | PyBullet | Ravens 脚本 | **GPT-4** |
+        |  | [Holodeck](#paper-2312-09067) | **GPT-4** | — | Objaverse · ProcTHOR | — | 约束求解器 | — | AI2-THOR | — | — |
+        |  | [SimFoundry](#paper-2606-28276) | **VLM** | SAM3 · PriorDepthAnything | Hunyuan3D · TRELLIS.2 | **Actor–Critic** | FoundationPose | **VLM** | PyBullet | — | **VLM** |
+        | Model-based (without Agent) | [PhysX-Omni](#paper-2605-21572)（仿真就绪） | 微调 Qwen2.5-VL | — | Qwen2.5-VL · TRELLIS | 微调 Qwen2.5-VL | — | 微调 Qwen2.5-VL | 仿真就绪 | — | — |
+        |  | [Real2Code](#paper-2406-08474) | — | 微调 SAM · DUSt3R | 形状补全模型 | 微调 CodeLlama | DUSt3R 点云 | — | MuJoCo | — | — |
+
+        组织方式按下面的顺序判断：
+
+        1. 没有通用 LLM 或 VLM 参与构建，只靠训练好的模型、可微仿真或优化器直接出结果：**Model-based (without Agent)**。
+        2. 同一个主 Agent 负责所有构建步骤，用什么工具、要不要派子 Agent 都由它运行时决定：**Agentic End-to-End**。
+        3. 分工事先设计好：发现问题会送回负责的那一步重做，是 **Closed-loop Workflow**；按固定顺序只跑一遍，出错就丢弃或只在单个模块内重试，是 **Open-loop Workflow**。
+
+        Bench 两行只作参照：RoboDojo 由人工搭建，Video2World 要求被测 Agent 自己搭。表中工作只列代表。
+      ja: |-
+        **入力**
+
+        | 入力元 | 入力データ | 中心となる問い | よくある場面 | 作品 |
+        |---|---|---|---|---|
+        | Generative | テキスト記述 | 記述だけから、要件を満たし物理的に成り立つ世界を作れるか？ | 部屋、卓上タスク、物理現象 | [Holodeck](#paper-2312-09067) · [SceneSmith](#paper-2602-09153) · [GenSim](#paper-2310-01361) · [RoboGen](#paper-2311-01455) · [Text2Sim](#paper-2609-36593) · [Gym-Anything](#paper-2610-40565) |
+        | Sim2Sim | アセット・シミュレーションファイル | 既存のモデルやシーンに物理を補い、別のエンジンへ移し、バリエーションを増やせるか？ | 物体アセット、卓上、部屋 | [UniPhysGen](#paper-2607-13586) · [EmbodiedGen V2](#paper-2607-07459) · [SimFoundry](#paper-2606-28276)（バリエーション拡張の段階） |
+        |  | シミュレーションのレンダリング映像 | 正解が分かっているシミュレーション映像から、元の世界を書き戻せるか？（主に手法のテストと学習に使う） | 物理現象、卓上、合成された動的シーン | [CUE](#paper-2611-02691)（sim-to-sim テスト）· [SceneAgent](#paper-2610-34745)（合成動的シーン）· [4DCodeBench](#paper-2610-03715) · [MPMWorlds](#paper-2606-01538)（後の 2 件は 3.3） |
+        | Real2Sim | 単一画像 | 写真 1 枚では裏側・スケール・関節が見えない。シミュレーション可能な物体を復元できるか？ | 単一物体 | [DiagGen](#paper-2609-23103) · [Gen2Sim](#paper-2310-18308) · [PhysX-Omni](#paper-2605-21572) · [RoboTwin](#paper-2409-02920) |
+        |  | RGB-D・3D スキャン | 実スケールの完全な形状から、インタラクション可能な物体とシーンに分解できるか？ | 部屋、卓上 | [LiteReality](#paper-2610-01863) · [SceneAgent](#paper-2610-34745) · [Lucida](#paper-2608-30821) · [GRS](#paper-2410-15536) |
+        |  | 操作者のいない動画 | 映像だけから、形状、さらには物体がひとりでにどう動くかまで復元できるか？ | 部屋、物理現象、関節物体 | [GRASE](#paper-2610-21498) · [Plumb](#paper-system-plumb) · [FACT](#paper-2609-37067) · [Code as Worlds](#paper-2608-27549) |
+        |  | 人の操作動画 | 人が一度やるのを見て、ロボットがまねて練習できる環境を作れるか？ | 卓上操作、実験台 | [Video2Sim2Real](#paper-2606-08828) · [Real2Gym](#paper-2609-37089) · [LabWorld](#paper-2610-36592) · [RoboSimStudio](#paper-2610-18835) |
+        |  | ロボット操作動画＋軌跡 | ロボットの動作が分かっているとき、その操作をシミュレーションでそのまま再生できるか？ | 卓上操作 | [WorldMirror](#paper-2610-31834) · [Agentic Real2Sim](#paper-2607-19190) · [Vid2Sid](#paper-2602-19359) |
+        |  | ロボットの能動的インタラクション | 自分で試して、摩擦や反発係数などのパラメータを正確に測れるか？ | 卓上操作 | [CUE](#paper-2611-02691) · [D-World](#paper-2610-17114) · [Phys2Real](#paper-2510-11689) |
+
+        作品は代表例のみです。同じ作品が複数の行に現れることがあります。
+
+        **構築プロセス：4 グループ 9 ステップ**
+
+        シミュレータの構築を 4 グループ 9 ステップに分けます：A 入力理解（① タスク計画、② 知覚・計測）· B シーン構築（③ 物体アセット、④ 関節構造、⑤ 配置・位置合わせ）· C 物理モデリング（⑥ 物理パラメータ、⑦ 物理エンジン）· D タスクと制御（⑧ ロボット制御、⑨ タスク定義）。B と C がシミュレータ本体で、D を加えると学習や評価に使える環境になります。⑦ 物理エンジンを持たない作品は、シーンを作っただけです。検査と修正、バリエーション拡張はシミュレータの構成要素ではないため、9 ステップには入れていません。
+
+        1 行を横に読むと、その作品で各ステップを誰が担当するかが分かります。**太字**：Agent または VLM 自身が行う；標準：専用のツール・モデル・エンジンに任せる；*斜体*：事前に与えられる（入力、固定ルール、人手）；—：関与しない、または記載なし。⑦ 列の「シム対応」は、物理エンジンに読み込めるものの、手法の中では実行していないことを示します。
+
+        | 構成方式 | 作品 | ① タスク計画 | ② 知覚・計測 | ③ 物体アセット | ④ 関節構造 | ⑤ 配置・位置合わせ | ⑥ 物理パラメータ | ⑦ 物理エンジン | ⑧ ロボット制御 | ⑨ タスク定義 |
+        |---|---|---|---|---|---|---|---|---|---|---|
+        | Bench | [RoboDojo](#paper-2607-04434) | *人手* | — | Meshy · アセットライブラリ | *既存アセット* | *手書き YAML* | *人手* | Isaac Sim · Isaac Lab | *評価対象の方策* | *手書き YAML* |
+        |  | [Video2World](#paper-2610-04432) | **Agent** | **Agent** | **Agent** | — | **Agent** | **Agent** | Isaac Sim | **Agent** | *課題で指定* |
+        | Agentic End-to-End | [Plumb](#paper-system-plumb) | **Agent** | SAM3 · Pi3X | **Agent** | — | **Agent** | **Agent** | MuJoCo | **Agent** | — |
+        |  | [CUE](#paper-2611-02691) | **Agent** | **Agent** | **Agent** | — | **Agent** | CMA-ES | MuJoCo | **Agent** | — |
+        |  | [Real2Gym](#paper-2609-37089) | **Agent** | MoGe-3 · Pi3X · SAM2 | **Agent** | — | **Agent** | **Agent** | MuJoCo | **Agent** | **Agent** |
+        |  | [DyCraft](#paper-2610-40754)（シーンのみ） | **Agent** | — | **Agent** | **Agent** | **Agent** | — | ✗ 物理エンジンなし | CMU モーキャプ · IK · Blender | — |
+        | Closed-loop Workflow | [Agentic Real2Sim](#paper-2607-19190) | **視覚 Agent** | SAM 3 · FoundationPose | SAM 3D | — | **シーン Agent** | **物理 Agent** | MuJoCo | *所与* | — |
+        |  | [WorldMirror](#paper-2610-31834) | *固定の依存グラフ* | 3D ガウシアン | Meshy · Articraft | — | **較正・配置 Agent** | — | Isaac Sim | *所与* | — |
+        |  | [Text2Sim](#paper-2609-36593) | **Planner** | — | Meshy | — | **Scene Writer** | **Body Writer** | Genesis | **Action Writer** | — |
+        |  | [SceneSmith](#paper-2602-09153) | **Planner** | — | SAM3 · SAM3D | ArtVIP | **Designer** | **VLM** | Drake | — | — |
+        |  | [Articulate-Anything](#paper-2410-13882) | **VLM** | CoTracker | PartNet-Mobility | **Actor** | **Actor** | — | PyBullet · SAPIEN | — | — |
+        |  | [Gym-Anything](#paper-2610-40565) | **作成 Agent** | — | **作成 Agent** | — | **作成 Agent** | **作成 Agent** | MuJoCo · Warp など | **作成 Agent** | **タスク作成 Agent** |
+        | Open-loop Workflow | [GenSim](#paper-2310-01361) | **GPT-4** | — | *所与* | — | **GPT-4** | — | PyBullet | Ravens スクリプト | **GPT-4** |
+        |  | [Holodeck](#paper-2312-09067) | **GPT-4** | — | Objaverse · ProcTHOR | — | 制約ソルバー | — | AI2-THOR | — | — |
+        |  | [SimFoundry](#paper-2606-28276) | **VLM** | SAM3 · PriorDepthAnything | Hunyuan3D · TRELLIS.2 | **Actor–Critic** | FoundationPose | **VLM** | PyBullet | — | **VLM** |
+        | Model-based (without Agent) | [PhysX-Omni](#paper-2605-21572)（シム対応） | 微調整済み Qwen2.5-VL | — | Qwen2.5-VL · TRELLIS | 微調整済み Qwen2.5-VL | — | 微調整済み Qwen2.5-VL | シム対応 | — | — |
+        |  | [Real2Code](#paper-2406-08474) | — | 微調整済み SAM · DUSt3R | 形状補完モデル | 微調整済み CodeLlama | DUSt3R 点群 | — | MuJoCo | — | — |
+
+        構成方式は次の順に判断します：
+
+        1. 汎用の LLM や VLM が構築に関与せず、学習済みモデル、微分可能シミュレーション、最適化器が直接結果を出す：**Model-based (without Agent)**。
+        2. 1 つのメイン Agent がすべての構築ステップを担い、使うツールやサブ Agent を実行時に決める：**Agentic End-to-End**。
+        3. 分担が事前に設計されている：問題を担当ステップへ差し戻すなら **Closed-loop Workflow**、固定の順序で 1 回だけ流し、失敗は破棄するか 1 つのモジュール内でだけ再試行するなら **Open-loop Workflow**。
+
+        Bench の 2 行は参照用です：RoboDojo は人手で構築され、Video2World は評価対象の Agent 自身に構築させます。作品は代表例のみです。
   '3.3':
     en: Simulator quality evaluation
     zh: 仿真器质量评估

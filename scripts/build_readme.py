@@ -57,6 +57,18 @@ def validate(site, works, strict_ja):
         for s in w.get('see_also') or []:
             if s not in secs:
                 errors.append(f'{where}: see_also section {s} unknown')
+    for sec, meta in secs.items():
+        for sub in meta.get('contents_subs') or []:
+            if not sub or sub not in meta['subs']:
+                errors.append(f'{sec}: contents_subs {sub!r} is not a subgroup of the section')
+        for sub, ks in (meta.get('sub_see_also') or {}).items():
+            if sub not in meta['subs']:
+                errors.append(f'{sec}: sub_see_also {sub!r} is not a subgroup of the section')
+            for k in ks:
+                if k not in byid:
+                    errors.append(f'{sec}/{sub}: sub_see_also id {k} not found')
+                elif (byid[k]['section'], byid[k].get('sub')) == (sec, sub):
+                    errors.append(f'{sec}/{sub}: sub_see_also id {k} is already listed there')
     for st in site['stages']:
         for k in st['start_with']:
             if k not in byid:
@@ -83,6 +95,10 @@ def anchor(wid):
 
 def sec_anchor(sec):
     return 's' + sec.replace('.', '-')
+
+
+def sub_anchor(sec, sub):
+    return f'{sec_anchor(sec)}-{sub}'
 
 
 def short_title(title):
@@ -265,7 +281,11 @@ def render(site, works, lang):
     for st in site['stages']:
         o(f"- [Stage {st['id']} · {st['name'][lang]}](#stage-{st['id']})")
         for sec in st['sections']:
-            o(f"  - [{sec} {site['sections'][sec][lang]}](#{sec_anchor(sec)}) ({sec_count.get(sec, 0)})")
+            meta = site['sections'][sec]
+            o(f"  - [{sec} {meta[lang]}](#{sec_anchor(sec)}) ({sec_count.get(sec, 0)})")
+            # Selected subgroups are also listed in the contents, indented under their section.
+            for sub in meta.get('contents_subs') or []:
+                o(f"    - [{site['text']['subs'][sub][lang]}](#{sub_anchor(sec, sub)}) ({len(groups.get((sec, sub), []))})")
         for extra in st.get('extras') or []:
             o(f"  - [{extra['title'][lang]}](#{extra['anchor']})")
     o(f"- [{t(site, 'related_title', lang)}](#related)")
@@ -295,9 +315,15 @@ def render(site, works, lang):
                 items = groups.get((sec, sub), [])
                 if not items:
                     continue
+                if sub in (meta.get('contents_subs') or []):
+                    named_anchor(sub_anchor(sec, sub))
                 if sub:
                     o(f"#### {site['text']['subs'][sub][lang]}\n")
                 o('\n'.join(entry(w, lang, site) for w in items))
+                # Works whose primary entry lives in another section but belong to this subgroup's topic.
+                sub_see = sorted((meta.get('sub_see_also') or {}).get(sub, []), key=lambda k: sort_key(byid[k]))
+                if sub_see:
+                    o(f"*{t(site, 'see_also', lang)}:* {link_list(sub_see, byid)}\n")
             see = list((site.get('see_also') or {}).get(sec, [])) + stage_see.get(sec, [])
             if see:
                 o(f"*{t(site, 'see_also', lang)}:* {link_list(see, byid)}\n")

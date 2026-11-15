@@ -13083,21 +13083,6 @@
   verification:
     en: People relay real instrument commands as a fixed intermediary; the virtual beamline is researcher-built.
     zh: 真实命令由人转交作为固定中介，虚拟光束线由研究者构建。
-- id: demo:google-deepmind-agentic-cheminformatics
-  title: Google DeepMind — Agentic cheminformatics
-  url: https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/
-  date: null
-  section: '3.6'
-  sub: experiments
-  type: demo
-  scope: demo
-  tldr:
-    en: Antigravity uses RDKit and potency models to propose macrocycles; a scientist inspects the plots and predictions,
-      and synthesis and experimental validation remain necessary.
-    zh: Antigravity 调用 RDKit 和效力模型提出宏环候选，科学家审阅图表和预测；合成与实验验证仍需另行完成。
-    ja: Antigravity が RDKit と活性予測モデルを呼び出して大環状化合物の候補を提案し、科学者が図表と予測を確認する。合成と実験的検証は別途必要となる。
-  sources:
-  - https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/
 - id: '2611.08175'
   title: 'PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?'
   url: https://arxiv.org/abs/2611.08175
@@ -15393,3 +15378,313 @@
   tags:
   - Benchmark
   - Verification
+- id: '2606.31763'
+  title: A Self-Evolving Agentic System for Automated Generation and Execution of Biological Protocols
+  url: https://arxiv.org/abs/2606.31763
+  date: '2026.06'
+  section: '3.6'
+  sub: experiments
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Turns natural-language requests into SOPs and device code for liquid-handling robots, then refines protocols from
+      wet-lab results such as colony PCR and sequencing.
+    zh: 把自然语言需求转成 SOP 与液体工作站设备代码，再根据菌落 PCR、测序等湿实验结果修订协议。
+    ja: 自然言語の要求を SOP と液体ハンドリング装置のコードに変換し、コロニー PCR やシーケンスなどのウェット実験の結果からプロトコルを修正する。
+  sources:
+  - https://arxiv.org/abs/2606.31763
+  verification:
+    en: On offline protocol-to-code tasks, Opentrons code passes the gate at 88.2% versus 32.4% for OpenTrons-AI; wet-lab
+      cloning and mutagenesis are confirmed, e.g. 7/8 GLuc and 8/8 RLuc mutants. Code gates check syntax and SDK export, not
+      physical runs, and human checkpoints remain optional.
+    zh: 离线协议转代码任务中，Opentrons 代码通过率 88.2%（OpenTrons-AI 为 32.4%）；湿实验克隆与突变实验得到确认，如 GLuc 突变 7/8、RLuc 8/8。代码关卡检查语法与 SDK 导出，不等于逐条真机执行；人工检查点可选。
+- id: '2601.05356'
+  title: 'PRISM: Protocol Refinement through Intelligent Simulation Modeling'
+  url: https://arxiv.org/abs/2601.05356
+  date: '2026.01'
+  section: '3.6'
+  sub: experiments
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Agents turn web-sourced procedures into robot protocols, test them in an NVIDIA Omniverse digital twin and revise
+      them from simulator errors before real instruments run them.
+    zh: Agent 把网络检索到的实验流程转成机器人协议，先在 NVIDIA Omniverse 数字孪生中测试，根据仿真报错修订后再交给真实仪器执行。
+    ja: Web から集めた手順をエージェントがロボットのプロトコルに変換し、NVIDIA Omniverse のデジタルツインで試験してシミュレータのエラーから修正したうえで、実機に実行させる。
+  setup:
+    engines:
+    - NVIDIA Omniverse
+    real_robots:
+    - Opentrons OT-2
+    - PF400
+  sources:
+  - https://arxiv.org/abs/2601.05356
+  - https://github.com/ramanathanlab/PRISM
+  - https://pubs.rsc.org/en/content/articlelanding/2026/dd/d6dd00004e
+  verification:
+    en: Simulator feedback is text (collisions, reach, missing plates). A Luna qPCR protocol ran end to end on hardware, while
+      Cell Painting stayed in simulation; no liquid or biological physics is simulated, and a researcher reviews final protocols.
+    zh: 仿真反馈为文本报错（碰撞、够不到、缺少板）。Luna qPCR 协议在真机上完整运行，Cell Painting 仅在仿真中验证；仿真不含液体与生物过程，最终协议由研究者审阅。
+- id: '2507.01485'
+  title: 'BioMARS: A Multi-Agent Robotic System for Autonomous Biological Experiments'
+  url: https://arxiv.org/abs/2507.01485
+  date: '2025.07'
+  section: '3.6'
+  sub: experiments
+  type: paper
+  scope: core
+  tldr:
+    en: A biologist agent drafts protocols, a technician agent compiles them into robot primitive code, and a vision inspector
+      checks execution and triggers replanning on errors.
+    zh: 生物学家 Agent 起草协议，技术员 Agent 编译为机器人原语代码，视觉检查 Agent 监控执行并在出错时触发重新规划。
+    ja: 生物学者エージェントがプロトコルを起草し、技術者エージェントがロボットのプリミティブコードに変換し、視覚検査エージェントが実行を監視して誤りがあれば再計画を起動する。
+  sources:
+  - https://arxiv.org/abs/2507.01485
+  - https://github.com/AlexandreQ27/BioMARS
+  verification:
+    en: Generated code matches instructions on 96.4% of 300 steps. Camera frames are screened by a ViT detector (F1 88.7%)
+      and validated by a VLM (precision 95.7%); a confirmed error aborts the action and returns to replanning and code generation.
+      Real HeLa, Y79 and DC2.4 passaging matches manual viability, though pipetting volumes and centrifugation still need
+      occasional human oversight.
+    zh: 生成代码在 300 个步骤上的指令匹配率为 96.4%。相机帧先经 ViT 检测（F1 88.7%），再由 VLM 核验（精确率 95.7%）；确认错误后中止动作，回到重新规划与代码生成。真实 HeLa、Y79、DC2.4 细胞传代的存活率与人工相当，移液体积与离心参数仍需偶尔人工监督。
+- id: '2304.10267'
+  title: LLMs can generate robotic scripts from goal-oriented instructions in biological laboratory automation
+  url: https://arxiv.org/abs/2304.10267
+  date: '2023.04'
+  section: '3.6'
+  sub: experiments
+  type: paper
+  scope: adjacent
+  tldr:
+    en: GPT-4 writes Opentrons OT-2 Python scripts from step-by-step or goal-oriented instructions and repairs them from Opentrons
+      simulator errors.
+    zh: GPT-4 根据分步或目标式指令编写 Opentrons OT-2 Python 脚本，并依据 Opentrons 模拟器报错修复。
+    ja: GPT-4 が手順指示または目標指向の指示から Opentrons OT-2 の Python スクリプトを書き、Opentrons シミュレータのエラーをもとに修正する。
+  setup:
+    engines:
+    - Opentrons simulator
+    sim_robots:
+    - Opentrons OT-2
+  sources:
+  - https://arxiv.org/abs/2304.10267
+  - https://github.com/labauto/Inagaki_2023_GPT4OT2
+  verification:
+    en: For cell-culture medium exchange, 21/22 GPT-4 sessions succeed within five repair rounds with step-by-step prompts
+      and 12/17 with goal-oriented ones. Success means the script runs in the simulator; the paper does not run the scripts
+      on a physical OT-2.
+    zh: 细胞培养换液任务中，分步指令下 GPT-4 在 5 轮修复内 21/22 次成功，目标式指令 12/17 次。成功指脚本能在模拟器中运行，论文未在实体 OT-2 上执行脚本。
+- id: '2303.14100'
+  title: 'Errors are Useful Prompts: Instruction Guided Task Programming with Verifier-Assisted Iterative Prompting'
+  url: https://arxiv.org/abs/2303.14100
+  date: '2023.03'
+  section: '3.6'
+  sub: experiments
+  type: paper
+  scope: adjacent
+  tldr:
+    en: CLAIRify generates XDL chemistry plans with an LLM, feeds verifier errors back until the plan is valid, then executes
+      it on a robot arm through task and motion planning.
+    zh: CLAIRify 用 LLM 生成 XDL 化学实验计划，把校验器报错反馈回去直到计划合法，再经任务与运动规划在机械臂上执行。
+    ja: CLAIRify は LLM で XDL の化学実験計画を生成し、検証器のエラーを返して計画が妥当になるまで直し、タスク・動作計画を通してロボットアームで実行する。
+  setup:
+    real_robots:
+    - Franka Panda
+  sources:
+  - https://arxiv.org/abs/2303.14100
+  - https://ac-rad.github.io/clairify/
+  - https://github.com/ac-rad/xdl-generation
+  verification:
+    en: Valid plans for 105/108 Chem-RnD and 40/40 Chem-EDU instructions, versus 92/108 and 0/40 for SynthReader; experts
+      preferred 75/108 plans. Verifier feedback is text only, and robot execution is shown on selected educational experiments.
+    zh: Chem-RnD 108 条中 105 条、Chem-EDU 40 条全部生成合法计划（SynthReader 为 92/108、0/40），专家偏好 75/108。校验反馈只有文本；机器人执行仅演示了部分教学实验。
+- id: '2401.06949'
+  title: 'ORGANA: A Robotic Assistant for Automated Chemistry Experimentation and Characterization'
+  url: https://arxiv.org/abs/2401.06949
+  date: '2024.01'
+  section: '3.6'
+  sub: experiments
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Talks with chemists to fix experiment goals, plans robot procedures through CLAIRify-generated XDL, and checks measured
+      results against expectations.
+    zh: 与化学家对话明确实验目标，经 CLAIRify 生成的 XDL 规划机器人流程，并将测量结果与预期对照。
+    ja: 化学者と対話して実験目標を定め、CLAIRify が生成した XDL を通してロボットの手順を計画し、測定結果を予想と照合する。
+  setup:
+    real_robots:
+    - Franka Panda
+  sources:
+  - https://arxiv.org/abs/2401.06949
+  - https://ac-rad.github.io/organa/
+  - https://github.com/ac-rad/organa
+  verification:
+    en: The real robot runs solubility, recrystallization, pH and electrochemistry experiments; three electrochemistry runs
+      give slopes of −61.0 to −61.8 mV/pH. Vision measures turbidity, and inconsistent results go to the user for troubleshooting
+      rather than triggering online replanning.
+    zh: 真机完成溶解度、重结晶、pH 与电化学实验；3 次电化学运行的斜率为 −61.0 至 −61.8 mV/pH。视觉用于测量浊度，结果不一致时交给用户排查，不做在线重规划。
+- id: '2505.22634'
+  title: 'LabUtopia: High-Fidelity Simulation and Hierarchical Benchmark for Scientific Embodied Agents'
+  url: https://arxiv.org/abs/2505.22634
+  date: '2025.05'
+  section: '3.6'
+  sub: experiments
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Builds an Isaac Sim laboratory simulator with a chemistry engine, procedural lab scenes and a five-level benchmark
+      for scientific embodied agents.
+    zh: 在 Isaac Sim 上构建带化学引擎和程序化实验室场景的仿真器，并提供面向科学具身 Agent 的五级任务基准。
+    ja: 化学エンジンと手続き的な実験室シーンを備えたシミュレータを Isaac Sim 上に構築し、科学向け身体性エージェントの 5 段階ベンチマークを提供する。
+  setup:
+    engines:
+    - Isaac Sim
+    sim_robots:
+    - Franka Panda
+    - Fetch
+    - Clearpath Ridgeback
+  sources:
+  - https://arxiv.org/abs/2505.22634
+  - https://rui-li023.github.io/labutopia-site
+  - https://github.com/Rui-li023/LabUtopia
+  - https://huggingface.co/datasets/Ruinwalker/LabUtopia-Dataset
+  verification:
+    en: ACT, Diffusion Policy and π0 are trained on scripted demonstrations, e.g. 67.5% and 50.0% on pouring liquid (ACT/DP).
+      Simulation only, with no LLM planner evaluated; policies barely generalize to new object shapes.
+    zh: 用脚本示范训练并评测 ACT、Diffusion Policy 与 π0，如倒液任务 67.5%／50.0%（ACT／DP）。仅仿真，未评测 LLM 规划器；策略对新形状物体几乎不能泛化。
+- id: '2505.14030'
+  title: 'AutoBio: A Simulation and Benchmark for Robotic Automation in Digital Biology Laboratory'
+  url: https://arxiv.org/abs/2505.14030
+  date: '2025.05'
+  section: '3.6'
+  sub: experiments
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Extends MuJoCo with screw threads, detents and a quasi-static liquid model to benchmark robots on 16 biology-laboratory
+      tasks.
+    zh: 为 MuJoCo 增加螺纹、卡位与准静态液体模型，在 16 项生物实验室任务上评测机器人。
+    ja: MuJoCo にねじ山、デテント、準静的な液体モデルを加え、生物実験室の 16 タスクでロボットを評価する。
+  setup:
+    engines:
+    - MuJoCo
+    sim_robots:
+    - UR5e
+    - Aloha
+  sources:
+  - https://arxiv.org/abs/2505.14030
+  - https://github.com/autobio-bench/AutoBio
+  - https://huggingface.co/autobio-bench
+  verification:
+    en: Fine-tuned π0 and RDT close a thermal-cycler lid almost every time but reach at most 21.3% on unscrewing a tube cap
+      or loading a centrifuge rotor. Demonstrations are scripted, and no real-robot experiments are reported.
+    zh: 微调后的 π0 与 RDT 关闭 PCR 仪盖几乎全部成功，拧开离心管盖、装载离心机转子最高仅 21.3%。示范由脚本生成，未报告真机实验。
+- id: '2501.10385'
+  title: Evaluating large language model agents for automation of atomic force microscopy
+  url: https://www.nature.com/articles/s41467-025-64105-7
+  date: '2024.12'
+  section: '3.6'
+  sub: experiments
+  type: paper
+  scope: adjacent
+  tldr:
+    en: AILA, a multi-agent LLM framework, writes Python against a Nanosurf AFM API to run real microscopy tasks; AFMBench
+      provides 100 tasks for evaluation.
+    zh: 多 Agent LLM 框架 AILA 编写调用 Nanosurf AFM 接口的 Python 代码，运行真实显微实验；AFMBench 提供 100 项评测任务。
+    ja: マルチエージェント LLM フレームワーク AILA が Nanosurf AFM の API を呼ぶ Python コードを書いて実際の顕微鏡実験を行い、AFMBench の 100 タスクで評価する。
+  sources:
+  - https://www.nature.com/articles/s41467-025-64105-7
+  - https://arxiv.org/abs/2501.10385
+  - https://github.com/M3RG-IITD/AILA
+  verification:
+    en: Tasks run on a DriveAFM instrument, and code errors return to the handler agent for retries. GPT-4o has a 29% total
+      error rate, mostly code generation, and agents sometimes act beyond their instructions ("sleepwalking").
+    zh: 任务在 DriveAFM 仪器上执行，代码报错返回操作 Agent 重试。GPT-4o 总错误率 29%，以代码生成错误为主；Agent 有时超出指令行动（“梦游”）。
+- id: '2602.15294'
+  title: 'EAA: Automating materials characterization with vision language model agents'
+  url: https://arxiv.org/abs/2602.15294
+  date: '2026.02'
+  section: '3.6'
+  sub: experiments
+  type: paper
+  scope: core
+  tldr:
+    en: Vision-language-model agents call instrument tools and write Python to run X-ray microscopy at the Advanced Photon
+      Source, reading returned images to choose the next action.
+    zh: 视觉语言模型 Agent 调用仪器工具并编写 Python，在先进光子源（APS）开展 X 射线显微实验，并读取返回图像决定下一步。
+    ja: 視覚言語モデルのエージェントが装置ツールを呼び出し Python を書いて Advanced Photon Source で X 線顕微鏡実験を行い、返ってきた画像を見て次の操作を決める。
+  sources:
+  - https://arxiv.org/abs/2602.15294
+  - https://github.com/AdvancedPhotonSource/EAA
+  verification:
+    en: In a zone-plate focusing case the agent runs line scans, reads fitted widths and images, and adjusts its step size
+      across 8 positions; tools that return images pass them back to the model. Python and Bash calls need human approval
+      by default, and instrument parameters have hard range checks.
+    zh: 在波带片聚焦案例中，Agent 做线扫描、读取拟合宽度与图像，并在 8 个位置间调整步长；返回图像的工具把图片交给模型。Python 与 Bash 调用默认需人工批准，仪器参数设有硬性范围检查。
+- id: '2505.17985'
+  title: AI-Driven Robotics for Optics
+  url: https://arxiv.org/abs/2505.17985
+  date: '2025.05'
+  section: '3.6'
+  sub: experiments
+  type: paper
+  scope: adjacent
+  tldr:
+    en: A fine-tuned LLM designs free-space optical setups, and a second LLM writes Python that drives an xArm7 to place components,
+      with camera checks and beam-based alignment.
+    zh: 微调的 LLM 设计自由空间光路，另一 LLM 编写驱动 xArm7 摆放元件的 Python 代码，配合相机检查与基于光束的对准。
+    ja: ファインチューニングした LLM が自由空間光学系を設計し、別の LLM が xArm7 で部品を配置する Python を書き、カメラによる確認とビームに基づく調整を組み合わせる。
+  setup:
+    real_robots:
+    - xArm7
+  sources:
+  - https://arxiv.org/abs/2505.17985
+  - https://github.com/sachin4594/OptSetGen
+  verification:
+    en: Placement reaches about ±0.5 mm and ±0.2°, and beam-expansion tuning reaches f2/f1 = 2.08 in about ten iterations.
+      Camera checks and gradient-based alignment are fixed routines; the LLM receives layout-validation errors, and the paper
+      does not describe it revising code from images.
+    zh: 摆放精度约 ±0.5 mm、±0.2°，扩束调节约 10 轮达到 f2/f1 = 2.08。相机检查与梯度对准是固定程序；LLM 接收布局校验错误，论文未描述它根据图像修改代码。
+- id: '2603.08801'
+  title: Large Language Model-Assisted Superconducting Qubit Experiments
+  url: https://arxiv.org/abs/2603.08801
+  date: '2026.03'
+  section: '3.6'
+  sub: experiments
+  type: paper
+  scope: adjacent
+  tldr:
+    en: A planner and a developer LLM write and run Python on superconducting-qubit control hardware, guided by laboratory
+      knowledge documents.
+    zh: 规划与开发两个 LLM 角色依据实验室知识文档，编写并运行控制超导量子比特硬件的 Python 代码。
+    ja: 計画役と開発役の LLM が実験室の知識文書に従い、超伝導量子ビットの制御ハードウェアで Python を書いて実行する。
+  sources:
+  - https://arxiv.org/abs/2603.08801
+  - https://github.com/clelandlab/HAL
+  verification:
+    en: Characterizes resonators at about 10 mK (4, then 8 after a human widened the frequency range) and reproduces a readout-leakage
+      benchmark. The model receives short text signals and file paths rather than raw data or plots.
+    zh: 在约 10 mK 下完成谐振器表征（先找到 4 个，人工扩大频率范围后找到 8 个），并复现读出泄漏基准。模型接收简短文本信号与文件路径，而非原始数据或图表。
+- id: '2606.27231'
+  title: A hardware-safety-gated system for LLM-written native ARTIQ control code on a trapped-ion platform
+  url: https://arxiv.org/abs/2606.27231
+  date: '2026.06'
+  section: '3.6'
+  sub: experiments
+  type: paper
+  scope: adjacent
+  tldr:
+    en: An LLM agent writes native ARTIQ Python for a trapped-ion experiment through MCP; a safety gate that uses no LLM checks
+      each script in simulation against device bounds before it reaches hardware.
+    zh: LLM Agent 通过 MCP 编写原生 ARTIQ Python 控制离子阱实验；不使用 LLM 的安全门先在仿真中按设备界限检查每个脚本，再交给硬件执行。
+    ja: LLM エージェントが MCP を通じてイオントラップ実験用のネイティブ ARTIQ Python を書き、LLM を使わない安全ゲートが各スクリプトをシミュレーションで装置の上限と照合してからハードウェアに渡す。
+  setup:
+    engines:
+    - dax.sim
+  sources:
+  - https://arxiv.org/abs/2606.27231
+  - https://gitlab.oit.duke.edu/dw346/artiq_mcp
+  verification:
+    en: On a 40Ca+/40CaOH+ crystal the agent iterates on returned datasets and logs, reaching results such as sideband cooling
+      to n̄ = 0.20 ± 0.06 and a Ramsey T2* of 904 ± 32 µs. The gate checks hardware bounds, not physical sense; operators
+      approve irreversible actions and guided parts of the optimization.
+    zh: 在 40Ca+/40CaOH+ 晶体上，Agent 根据返回的数据集与日志迭代，得到边带冷却 n̄ = 0.20 ± 0.06、Ramsey T2* = 904 ± 32 µs 等结果。安全门只检查硬件界限，不判断物理合理性；不可逆操作由操作员批准，部分优化依赖人工指导。

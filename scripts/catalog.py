@@ -124,6 +124,8 @@ def validate_catalog(site, works, strict_ja=True):
             errors.append(f'{w["id"]}: canonical ID differs from source without an explicit alias')
     destinations = set(anchors) | {'contents', 'related', 'contact', 'citation', 'stage-1', 'stage-2', 'stage-3'}
     destinations |= {'s' + s.replace('.', '-') for s in NUMBERED_SECTIONS}
+    destinations |= {'s' + s.replace('.', '-') + '-' + sub
+                     for s, meta in site['sections'].items() for sub in meta.get('contents_subs') or []}
     destinations |= {x['anchor'] for stage in site['stages'] for x in stage.get('extras') or []}
     for old, target in site.get('anchor_aliases', {}).items():
         if old in destinations or target not in destinations or not re.fullmatch(r'[a-z0-9-]+', old):

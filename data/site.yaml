@@ -106,8 +106,7 @@ text:
       zh: Agent 能力评测
       ja: エージェント能力の評価
     skills-runtime:
-      en: Skills
-      bridges and runtime resources: null
+      en: Skills, bridges and runtime resources
       zh: Skills、工具桥与运行资源
       ja: スキル・ブリッジ・ランタイム資源
     real-data:
@@ -123,8 +122,7 @@ text:
       zh: 程序与策略研发
       ja: プログラムとポリシーの開発
     experience-skill:
-      en: Experience
-      memory and skill learning: null
+      en: Experience, memory and skill learning
       zh: 经验、记忆与技能学习
       ja: 経験・記憶・スキル学習
     post-training:
@@ -136,13 +134,11 @@ text:
       zh: 机器人交互与操作
       ja: ロボットのインタラクションと操作
     experiments:
-      en: Experiments
-      measurement and discovery: null
-      zh: 实验、测量与发现
-      ja: 実験・計測・発見
+      en: Scientific experiments (AI4Science)
+      zh: 科学实验（AI4Science）
+      ja: 科学実験（AI4Science）
     physical-design:
-      en: Physical design
-      fabrication and validation: null
+      en: Physical design, fabrication and validation
       zh: 物理设计、制造与验证
       ja: 物理設計・製造・検証
   related_title:
@@ -271,6 +267,9 @@ source_labels:
     zh: 策略训练代码
     ja: 方策学習コード
 source_kind_overrides:
+  https://pubs.rsc.org/en/content/articlelanding/2026/dd/d6dd00004e: paper
+  https://huggingface.co/autobio-bench: dataset
+  https://gitlab.oit.duke.edu/dw346/artiq_mcp: code
   https://github.com/droid-dataset/droid: hardware_code
   https://github.com/droid-dataset/droid_policy_learning: policy_code
   https://droid-dataset.github.io/droid/: docs
@@ -1215,6 +1214,22 @@ sections:
     - robot-interaction
     - experiments
     - physical-design
+    contents_subs:
+    - experiments
+    sub_see_also:
+      experiments:
+      - chemautoagent
+      - safe-lab-agents
+      - '2610.36592'
+      - '2611.02928'
+      - '2607.23704'
+    guide:
+      en: |-
+        Related digital demo · [Google DeepMind — Agentic cheminformatics](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/)
+      zh: |-
+        相关数字 Demo · [Google DeepMind — Agentic cheminformatics](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/)
+      ja: |-
+        関連するデジタルデモ · [Google DeepMind — Agentic cheminformatics](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/)
 engines:
   HTML: https://developer.mozilla.org/en-US/docs/Web/HTML
   Three.js: https://threejs.org/docs/
@@ -1326,6 +1341,7 @@ citation: "@misc{jiang2026awesomemultimodalagenticcoding,\n  author       = {Jia
   }\n"
 layout: three-stages-v1
 anchor_aliases:
+  paper-demo-google-deepmind-agentic-cheminformatics: s3-6-experiments
   multimodal-agentic-coding-trilogy: contents
   trilogy-visual-feedback: stage-1
   trilogy-models-as-tools: stage-2

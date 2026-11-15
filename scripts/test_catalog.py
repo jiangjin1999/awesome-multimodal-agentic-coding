@@ -6,6 +6,7 @@ import unittest
 
 import engine_map
 import eval_ladder
+import triage
 from build_readme import render, validate
 from catalog import anchor, canonical_records, check_local_links, load
 
@@ -137,6 +138,24 @@ class CatalogTests(unittest.TestCase):
         site = deepcopy(self.site)
         site['anchor_aliases']['old-link'] = 'missing-entry'
         self.assertTrue(any('compatibility anchor' in e for e in validate(site, self.works, True)[0]))
+
+    def test_triage_log_agrees_with_catalog(self):
+        log = triage.load(ROOT)
+        self.assertIsNotNone(log)
+        self.assertEqual(triage.validate(self.works, log), [])
+
+    def test_triage_decisions_cannot_drift_from_catalog(self):
+        log = deepcopy(triage.load(ROOT))
+        pending = next(c for c in log['candidates'] if c['decision'] == 'pending')
+        added = next(c for c in log['candidates'] if c['decision'] == 'added')
+        rows = deepcopy(self.works)
+        extra = deepcopy(rows[0]); extra['id'] = pending['id']
+        rows = [w for w in rows if w['id'] != added['id']] + [extra]
+        errors = triage.validate(rows, log)
+        self.assertTrue(any('mark it added or updated' in e for e in errors))
+        self.assertTrue(any('is not in data/works.yaml' in e for e in errors))
+        pending.update(decision='excluded', decided=pending['found'])
+        self.assertTrue(any('requires a reason' in e for e in triage.validate(self.works, log)))
 
 
 if __name__ == '__main__':

@@ -1,0 +1,191 @@
+# Decision log for update runs. Rules: docs/AUTO_UPDATE.md (§7). Checked by scripts/build_readme.py --check.
+# This file is not rendered. It answers "why is this work (not) in the collection?" and holds the queue of
+# candidates still to be read.
+#
+# runs:        one row per run: date, trigger (sweep | report | citations | issue), covered, optional note.
+# candidates:  one row per work:
+#   id         arXiv ID without version, or a stable slug such as web:<name>
+#   title, url official title and primary link
+#   found      date the candidate was found; via: where it came from
+#   decision   pending | added | updated | excluded | deferred
+#   decided    date of the decision (absent while pending)
+#   entry      catalog ID, when it differs from id
+#   precedent  catalog IDs whose placement and scope were followed
+#   reason     required for excluded and deferred
+#   note       optional hint, such as the likely section or nearest catalog entries
+runs:
+- date: '2026-11-15'
+  trigger: report
+  covered: The maintainer reported 2610.35817 as missing. Every reference of 2610.35817 with an arXiv ID or URL was checked
+    against the catalog. Missing works that may fit a scope identity were queued. Cited VLA models, VLA evaluations and
+    LLM reinforcement-learning methods were not queued (no agent, code or tool use). Reference [14] has no URL and was
+    not queued.
+candidates:
+- id: '2610.35817'
+  title: 'Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics'
+  url: https://arxiv.org/abs/2610.35817
+  found: '2026-11-15'
+  via: maintainer report
+  decision: added
+  decided: '2026-11-15'
+  precedent:
+  - '2606.18363'
+  - '2610.41216'
+  note: v1 2026-10-26. No earlier decision was recorded. Adjacent, because the agent issues pose tool calls and writes
+    no code.
+- id: '2609.24170'
+  title: 'An Unexpected Robot Policy: Early Evaluations of GPT-6 Astra on RoboDojo and Beyond'
+  url: https://arxiv.org/abs/2609.24170
+  found: '2026-11-15'
+  via: cited by 2610.35817 [3]
+  decision: pending
+  note: LLM-as-policy evaluation on all 42 RoboDojo tasks. Compare 3.1 capability-eval (2610.25287).
+- id: '2607.11119'
+  title: 'VIA: Visual Interface Agent for Robot Control'
+  url: https://arxiv.org/abs/2607.11119
+  found: '2026-11-15'
+  via: cited by 2610.35817 [87]
+  decision: pending
+  note: An off-the-shelf agent drives a manipulator through a visual interface. Compare 3.1 tools-interfaces (2610.14018).
+- id: '2609.19138'
+  title: In-Context Robot Learning with VLM Agents
+  url: https://arxiv.org/abs/2609.19138
+  found: '2026-11-15'
+  via: cited by 2610.35817 [88]
+  decision: pending
+  note: VLM agents learn from demonstrations and interaction feedback. Check whether they write executable code.
+- id: '2609.22966'
+  title: Transferring the Intelligence of VLMs to Robotic Control
+  url: https://arxiv.org/abs/2609.22966
+  found: '2026-11-15'
+  via: cited by 2610.35817 [89]
+  decision: pending
+  note: RoboDawn exposes discrete motion commands to an agentic VLM. Compare 3.1 tools-interfaces (2609.10522).
+- id: '2512.05955'
+  title: 'SIMPACT: Simulation-Enabled Action Planning using Vision-Language Models'
+  url: https://arxiv.org/abs/2512.05955
+  found: '2026-11-15'
+  via: cited by 2610.35817 [91]
+  decision: pending
+  note: Test-time simulation for VLM action planning. Compare 3.1 tools-interfaces (2610.12457).
+- id: '2610.19600'
+  title: 'Cracking Mobile Manipulation: From Failure Diagnosis to Agentic Robot System'
+  url: https://arxiv.org/abs/2610.19600
+  found: '2026-11-15'
+  via: cited by 2610.35817 [101]
+  decision: pending
+  note: Planning, navigation and recovery around a fixed VLA. Compare 3.1 delegation (2610.21453).
+- id: '2610.20474'
+  title: 'AdaRSI: On-Demand Recursive Self-Improvement for Embodied Agents'
+  url: https://arxiv.org/abs/2610.20474
+  found: '2026-11-15'
+  via: cited by 2610.35817 [103]
+  decision: pending
+  note: A coding agent improves skills and the harness, then fine-tunes the executor on persistent failures. Compare
+    3.5 (2609.33378, 2610.41216).
+- id: '2610.02788'
+  title: 'Skill2Real: Agentic Skill Learning for Zero-Shot Sim-to-Real Robot Manipulation'
+  url: https://arxiv.org/abs/2610.02788
+  found: '2026-11-15'
+  via: cited by 2610.35817 [105]
+  decision: pending
+  note: Learns executable skills through a shared API with a simulation verifier loop. Compare 3.5 experience-skill.
+- id: '2610.02717'
+  title: 'RoboBridge: A Self-Evolving Embodied Agent Framework for Sim-to-Real Transfer'
+  url: https://arxiv.org/abs/2610.02717
+  found: '2026-11-15'
+  via: cited by 2610.35817 [106]
+  decision: pending
+  note: A tool-using agent that adapts after sim-to-real deployment. Compare 3.5 experience-skill (2610.02204).
+- id: '2610.12832'
+  title: 'VLMs are Native Action Models: Unleashing the Manipulation Capabilities of VLMs with Explicit Action-Space Grounding'
+  url: https://arxiv.org/abs/2610.12832
+  found: '2026-11-15'
+  via: cited by 2610.35817 [108]
+  decision: pending
+  note: A VLM predicts actions as text in a grounded action space. Possibly 2.6, or out of scope if there is no agent
+    loop.
+- id: '2608.17129'
+  title: 'MG-VQA: Manipulation Grounded Visual Question Answering with VLMs'
+  url: https://arxiv.org/abs/2608.17129
+  found: '2026-11-15'
+  via: cited by 2610.35817 [109] as "PROBE"
+  decision: pending
+  note: An agent manipulates clutter to reveal hidden evidence before answering. Compare 3.1 capability-eval.
+- id: '2609.23578'
+  title: 'AR-WAM: A Visual-Conditioned Agent-Ready World Action Model for Robotic Manipulation'
+  url: https://arxiv.org/abs/2609.23578
+  found: '2026-11-15'
+  via: cited by 2610.35817 [110]
+  decision: pending
+  note: A world action model conditioned on boxes from an agent instead of language. Possibly a 2.6 Resource.
+- id: '2607.13818'
+  title: Learning Robust Execution in Robotic Manipulation with Agentic Reinforcement Learning
+  url: https://arxiv.org/abs/2607.13818
+  found: '2026-11-15'
+  via: cited by 2610.35817 [124]
+  decision: pending
+  note: Agentic RL over high-level recovery decisions. Compare 3.5 post-training.
+- id: '2606.07017'
+  title: 'The Sim-to-Real Gap of Foundation Model Agents: A Unified MDP Perspective'
+  url: https://arxiv.org/abs/2606.07017
+  found: '2026-11-15'
+  via: cited by 2610.35817 [132]
+  decision: pending
+  note: Position paper. Possibly a Reading, or out of scope.
+- id: '2604.09860'
+  title: 'RoboLab: A High-Fidelity Simulation Benchmark for Analysis of Task Generalist Policies'
+  url: https://arxiv.org/abs/2604.09860
+  found: '2026-11-15'
+  via: cited by 2610.35817 [8]
+  decision: pending
+  note: Isaac Lab benchmark used to evaluate robot agents, including 2610.35817. Compare RoboDojo (2607.04434).
+- id: '2511.16719'
+  title: 'SAM 3: Segment Anything with Concepts'
+  url: https://arxiv.org/abs/2511.16719
+  found: '2026-11-15'
+  via: cited by 2610.35817 [33]
+  decision: pending
+  note: A perception model that robot harnesses call as a tool. Possibly a 2.5 Resource.
+- id: '2502.09560'
+  title: 'EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents'
+  url: https://arxiv.org/abs/2502.09560
+  found: '2026-11-15'
+  via: cited by 2610.35817 [82]
+  decision: pending
+  note: MLLM embodied-agent benchmark. Compare 3.1 capability-eval, and check whether agents act through code or tools.
+- id: web:astranomy
+  title: 'Astranomy: An Empirical Study of GPT-6 Astra as a Native Robot Policy'
+  url: https://research.nvidia.com/labs/srl/projects/astranomy/
+  found: '2026-11-15'
+  via: cited by 2610.35817 [2]
+  decision: pending
+  note: NVIDIA project page. Check for a paper, then for evaluation scale.
+- id: web:robocurve-stationerybench
+  title: GPT-6 Astra vs MolmoAct2 on bimanual robotic manipulation (StationeryBench)
+  url: https://openai.robocurve.org/stationerybench/
+  found: '2026-11-15'
+  via: cited by 2610.35817 [83]
+  decision: pending
+  note: Blog post with a head-to-head evaluation. Possibly a Demo or Reading.
+- id: web:cookiegg-llm-as-policies
+  title: 'GPT-6 Astra × RoboDojo: an independent simulation pilot of LLMs as policies'
+  url: https://cookiegg.github.io/llm-as-policies/
+  found: '2026-11-15'
+  via: cited by 2610.35817 [84]
+  decision: pending
+  note: Independent project page. Possibly a Demo.
+- id: web:inspect-robots
+  title: 'Inspect Robots: The open-source evaluation framework for physical AI'
+  url: https://github.com/robocurve/inspect-robots
+  found: '2026-11-15'
+  via: cited by 2610.35817 [13]
+  decision: pending
+  note: Evaluation harness used for the real-robot baseline in 2610.35817. Possibly a Resource.
+- id: web:understandingrobots-astra
+  title: OpenAI's Astra model is shockingly good at robotics
+  url: https://www.understandingrobots.org/p/openais-astra-model-is-shockingly
+  found: '2026-11-15'
+  via: cited by 2610.35817 [4]
+  decision: pending
+  note: Commentary on Substack. Possibly a Reading.

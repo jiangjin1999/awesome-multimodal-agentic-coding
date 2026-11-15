@@ -13,7 +13,7 @@
 
 A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to the physical world.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-663-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--15-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-664-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--15-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -61,7 +61,7 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [3.2 Simulator construction](#s3-2) (68)
   - [3.3 Simulator quality evaluation](#s3-3) (29)
   - [3.4 Data](#s3-4) (14)
-  - [3.5 Training and capability improvement](#s3-5) (73)
+  - [3.5 Training and capability improvement](#s3-5) (74)
   - [3.6 Physical applications and experiments](#s3-6) (49)
     - [Scientific experiments (AI4Science)](#s3-6-experiments) (27)
   - [Simulation engines at a glance](#s3-engines)
@@ -355,7 +355,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 - <a id="paper-demo-wild-atlas"></a>**[Wild Atlas](https://x.com/_IamAlam/status/2107480596926939638)**
   > Stages an encyclopedia app into its interface, consistent animal assets, and card/rotation/info-panel interactions; a rotating presentation does not establish a released full 3D scene.
 
-[↑ Back to contents](#contents)
+<p align="right"><a href="#contents"><kbd>↑ Back to contents</kbd></a></p>
 
 <a id="methods-gui-environments"></a>
 <a id="evaluation-gui-environments"></a>
@@ -418,7 +418,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 - <a id="paper-2610-41432"></a>`2026.10` **[Hybrid Computer Use: A Unified Programmatic, Semantic, and Visual Interface for General Agents](https://arxiv.org/abs/2610.41432)**
   > Lets agents combine programmatic tools, accessibility actions and visual interaction, using live-state guards, batched verification and returned AX changes to guide subsequent operations.
 
-[↑ Back to contents](#contents)
+<p align="right"><a href="#contents"><kbd>↑ Back to contents</kbd></a></p>
 
 <a id="visualization"></a>
 <a id="svg-diagrams"></a>
@@ -663,7 +663,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 - <a id="paper-res-mermaid-mcp-server"></a>**[Mermaid MCP server](https://mermaid.ai/docs/ai/mcp-server)**
   > Validates diagram syntax and returns SVG/PNG renders that can be inspected and repaired.
 
-[↑ Back to contents](#contents)
+<p align="right"><a href="#contents"><kbd>↑ Back to contents</kbd></a></p>
 
 <a id="documents-video"></a>
 <a id="methods-media"></a>
@@ -852,7 +852,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 - <a id="paper-res-rendley-video-editing-skill"></a>**[Rendley video-editing-skill](https://github.com/rendleyhq/video-editing-skill)** [[Documentation]](https://github.com/rendleyhq/video-editing-skill/blob/main/SKILL.md)
   > Passes an editing brief and media to Rendley's hosted agent through MCP or REST and returns an editable project; the MIT skill is an integration layer requiring a service connection, not a local editing engine.
 
-[↑ Back to contents](#contents)
+<p align="right"><a href="#contents"><kbd>↑ Back to contents</kbd></a></p>
 
 <a id="3d-cad"></a>
 <a id="methods-cad-3d"></a>
@@ -1327,7 +1327,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 - <a id="paper-res-zoo-developer-tools"></a>**[Zoo developer tools](https://docs.zoo.dev/docs)** [[Documentation]](https://zoo.dev/docs/developer-tools/mcp)
   > Connects language-driven KCL workflows to geometric execution, snapshots, inspection, and debugging.
 
-[↑ Back to contents](#contents)
+<p align="right"><a href="#contents"><kbd>↑ Back to contents</kbd></a></p>
 
 <a id="games"></a>
 <a id="methods-games"></a>
@@ -1562,7 +1562,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 - <a id="paper-res-ziva-playtesting-workflow"></a>**[Ziva playtesting workflow](https://ziva.sh/blogs/ai-agent-playtest-godot-game)** [[Documentation]](https://ziva.sh/docs/playtest) [[Repository]](https://github.com/ziva-sh/ziva-agent-plugin-godot)
   > The full playtest agent inspects live state and screenshots, returning verdicts, reproduction steps, and replay evidence; it does not edit the project, so repairs must be handed back to the development agent. Vendor demonstrations are not independent benchmark evidence.
 
-[↑ Back to contents](#contents)
+<p align="right"><a href="#contents"><kbd>↑ Back to contents</kbd></a></p>
 
 <a id="section-1-3"></a>
 <a id="visual-diff"></a>
@@ -1644,7 +1644,7 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 - <a id="paper-reading-z-ai-autoclaw-team-glm-5-3-flash-more-intelligence-with-less-compute"></a>`2026.08` **[Z.ai / AutoClaw Team — GLM-5.3-Flash: More Intelligence with Less Compute](https://autoclaw.z.ai/blog/model/glm-5.3-flash/)** [[Model]](https://huggingface.co/zai-org/GLM-5.3-Flash)
   > “Vision therefore becomes part of execution and verification rather than a separate input capability.” *Topic link:* The model is explicitly framed around inspecting rendered work, determining what should happen next, and continuing refinement across documents, interfaces, and other visual artifacts.
 
-[↑ Back to contents](#contents)
+<p align="right"><a href="#contents"><kbd>↑ Back to contents</kbd></a></p>
 
 <a id="trilogy-models-as-tools"></a>
 <a id="section-1-4"></a>
@@ -1684,7 +1684,7 @@ The agent **calls other models through code** — image, video and world generat
 
 *See also:* [Stride](#paper-2610-13502) · [Editable Visual Design](#paper-2609-04034)
 
-[↑ Back to contents](#contents)
+<p align="right"><a href="#contents"><kbd>↑ Back to contents</kbd></a></p>
 
 <a id="s2-2"></a>
 
@@ -1752,7 +1752,7 @@ The agent **calls other models through code** — image, video and world generat
 - <a id="paper-res-omnishowcase-omnidirectional-subject-consistent-video-generation-from-multi-view-images"></a>**[OmniShowcase: Omnidirectional Subject-Consistent Video Generation from Multi-View Images](https://arxiv.org/abs/2610.35684)** [[Code]](https://github.com/justin4ai/OmniShowcase) [[Project page]](https://justin4ai.github.io/OmniShowcase/)
   > Multiple reference images + motion prompt → subject-consistent video, conditioned on reconstructed surface-normal turntables. Combines multi-view reconstruction with a LoRA-adapted video generator for viewpoint changes around static subjects; non-rigid motion remains limited, and code/data release is planned.
 
-[↑ Back to contents](#contents)
+<p align="right"><a href="#contents"><kbd>↑ Back to contents</kbd></a></p>
 
 <a id="s2-3"></a>
 
@@ -1817,7 +1817,7 @@ The agent **calls other models through code** — image, video and world generat
 
 *See also:* [SceneBloom](#paper-2610-32978) · [SAGE](#paper-2602-10116) · [Gen2Sim](#paper-2310-18308) · [PhysX-Omni](#paper-2605-21572) · [HARMONY](#paper-2609-26793) · [GATOR](#paper-2610-11215) · [3AGameFactory](#paper-system-3agamefactory) · [Lucida](#paper-2608-30821)
 
-[↑ Back to contents](#contents)
+<p align="right"><a href="#contents"><kbd>↑ Back to contents</kbd></a></p>
 
 <a id="s2-4"></a>
 
@@ -1890,7 +1890,7 @@ The agent **calls other models through code** — image, video and world generat
 - <a id="paper-res-worldfoundry"></a>**[WorldFoundry](https://arxiv.org/abs/2611.10771)** [[Code]](https://github.com/OpenEnvision/WorldFoundry)
   > Connects model-specific inputs, runtime requirements and output artifacts to common inference and evaluation workflows, with explicit readiness and eligibility states.
 
-[↑ Back to contents](#contents)
+<p align="right"><a href="#contents"><kbd>↑ Back to contents</kbd></a></p>
 
 <a id="section-5-1"></a>
 <a id="s2-5"></a>
@@ -1931,7 +1931,7 @@ The agent **calls other models through code** — image, video and world generat
 
 *See also:* [GRASE](#paper-2610-21498) · [SceneAgent](#paper-2610-34745) · [Real2Gym](#paper-2609-37089) · [LiteReality-Agent](#paper-2610-01863) · [Instruct2Act](#paper-2305-11176) · [Plumb](#paper-system-plumb)
 
-[↑ Back to contents](#contents)
+<p align="right"><a href="#contents"><kbd>↑ Back to contents</kbd></a></p>
 
 <a id="section-5-4"></a>
 <a id="s2-6"></a>
@@ -2002,7 +2002,7 @@ The agent **calls other models through code** — image, video and world generat
 
 *See also:* [REA](#paper-2610-42053) · [Harness VLA](#paper-2607-08448) · [The Harness](#paper-system-the-harness-corl2026) · [CarryOn](#paper-2610-21453) · [Seeing Through the Illusion](#paper-2611-03585)
 
-[↑ Back to contents](#contents)
+<p align="right"><a href="#contents"><kbd>↑ Back to contents</kbd></a></p>
 
 <a id="trilogy-digital-physical"></a>
 <a id="stage-3"></a>
@@ -2511,7 +2511,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 - <a id="paper-res-webots-mcp"></a>**[Webots MCP](https://github.com/MHasaan/webotMCP)**
   > Exposes scene editing, controller code, robot commands, multiview screenshots, motion traces and contact events to agents; ground-truth simulator readouts and reactive controls are distinguished from learned perception and planning.
 
-[↑ Back to contents](#contents)
+<p align="right"><a href="#contents"><kbd>↑ Back to contents</kbd></a></p>
 
 <a id="methods-physical-assets"></a>
 <a id="world-models"></a>
@@ -2918,7 +2918,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 - <a id="paper-mujoco-workbench"></a>**[mujoco-workbench](https://github.com/Hebbian-Robotics/mujoco-workbench)**
   > A CLI and agent skills support rapid construction and inspection of MuJoCo scenes.
 
-[↑ Back to contents](#contents)
+<p align="right"><a href="#contents"><kbd>↑ Back to contents</kbd></a></p>
 
 <a id="evaluation-physical-assets"></a>
 <a id="evaluation-world-models"></a>
@@ -3110,7 +3110,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 *See also:* [Frontier3DBench](#paper-2611-09017) · [4DCodeBench](#paper-2610-03715) · [BlenderWorld](#paper-system-blenderworld) · [BVB](#paper-2609-15478) · [Code4Scene](#paper-2609-36777) · [Parametric CAD Bench v3](#paper-2611-02659) · [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786)
 
-[↑ Back to contents](#contents)
+<p align="right"><a href="#contents"><kbd>↑ Back to contents</kbd></a></p>
 
 <a id="data-physical-assets"></a>
 <a id="data-real-to-sim"></a>
@@ -3208,7 +3208,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
   > Distills generated robot experience into a visuomotor policy.<br>
   > 🖥️ **Sim** MuJoCo (UR5e) · 🦾 **Real** UR5e
 
-[↑ Back to contents](#contents)
+<p align="right"><a href="#contents"><kbd>↑ Back to contents</kbd></a></p>
 
 <a id="robotics"></a>
 <a id="methods-robot-programs"></a>
@@ -3631,6 +3631,12 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
   > Consolidates manipulation and navigation experts into a compact multimodal agent that coordinates specialist tools, while rubric-guided feedback supplies reminders and verified trajectories for further learning.<br>
   > 🖥️ **Sim** MuJoCo + SAPIEN + Habitat (Franka Panda, AgileX ALOHA)
 
+<!-- mmac-record: {"id": "2610.35817", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2610-35817"></a>`2026.10` **[Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics](https://arxiv.org/abs/2610.35817)** [[Project page]](https://zero-real.github.io/)
+  > Teaches a small open VLM agent motion control from its own successes in simulation.<br>
+  > 🖥️ **Sim** Isaac Sim + Isaac Lab (I2RT YAM, Franka) · 🦾 **Real** I2RT YAM
+
 <!-- mmac-record: {"id": "2610.41216", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-41216"></a>`2026.10` **[TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents](https://arxiv.org/abs/2610.41216)** [[Project page]](https://garfield-kh.github.io/TinyAstral/) [[Code]](https://github.com/Garfield-kh/TinyAstral) [[Model]](https://huggingface.co/kehong/TinyAstral-weights) [[Dataset]](https://huggingface.co/datasets/kehong/TinyAstral-SFT)
@@ -3657,13 +3663,15 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 *See also:* [BlenderFORGE](#paper-2611-10768)
 
-[↑ Back to contents](#contents)
+<p align="right"><a href="#contents"><kbd>↑ Back to contents</kbd></a></p>
 
 <a id="methods-real2sim2real"></a>
 <a id="section-6-4"></a>
 <a id="s3-6"></a>
 
 ### 3.6 Physical applications and experiments
+
+Related digital demo · [Google DeepMind — Agentic cheminformatics](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/)
 
 #### Robot interaction and manipulation
 
@@ -3950,7 +3958,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 - <a id="paper-ai-cad"></a>**[ai-cad](https://github.com/BorjaLL/ai-cad)** [[Results]](https://github.com/BorjaLL/ai-cad/blob/1ef2bf72de799006d069498d3ee146dae2e4f075/data/fits-measured.json)
   > Connects parametric CAD to manual print-fit feedback.
 
-[↑ Back to contents](#contents)
+<p align="right"><a href="#contents"><kbd>↑ Back to contents</kbd></a></p>
 
 <a id="s3-engines"></a>
 
@@ -3977,7 +3985,7 @@ The next figure compares where each tool is especially strong. Ratings are broad
 
 </details>
 
-[↑ Back to contents](#contents)
+<p align="right"><a href="#contents"><kbd>↑ Back to contents</kbd></a></p>
 
 <a id="surveys-and-related-collections"></a>
 <a id="related"></a>

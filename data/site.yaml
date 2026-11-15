@@ -1223,6 +1223,13 @@ sections:
       - '2610.36592'
       - '2611.02928'
       - '2607.23704'
+    guide:
+      en: |-
+        Related digital demo · [Google DeepMind — Agentic cheminformatics](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/)
+      zh: |-
+        相关数字 Demo · [Google DeepMind — Agentic cheminformatics](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/)
+      ja: |-
+        関連するデジタルデモ · [Google DeepMind — Agentic cheminformatics](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/)
 engines:
   HTML: https://developer.mozilla.org/en-US/docs/Web/HTML
   Three.js: https://threejs.org/docs/

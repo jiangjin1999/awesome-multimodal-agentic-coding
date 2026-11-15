@@ -3121,17 +3121,22 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 ### 3.4 Data
 
-Grouped by where the data comes from and how it is made, the works follow five routes.
+Split first by whether the data comes from the real world, from simulation, or from both, then by what one sample contains.
 
-| Route | How the data is made | Main difficulty | Works |
-|---|---|---|---|
-| Real-robot collection | Record on the real robot, teleoperated by a person or run by an agent | Every episode costs robot and operator time | [DROID](#paper-2403-12945) · [Manipulate-Anything](#paper-2406-18915) |
-| Translating human video | Turn videos of people doing tasks into data a robot can learn from | Human hands and robots differ in form | [DexAgent](#paper-2609-35318) · [RoboTryOn](#paper-2611-05163) · [Open-HumanWAM](#paper-2611-06817) |
-| Programmatic generation | An agent writes the task, scene, expert program and success check, runs them at scale in simulation, and keeps the successes | The gap between simulation and reality | [Scaling Up and Distilling Down](#paper-2307-14535) · [GenSim2](#paper-2410-03645) · [RoboTwin 2.0](#paper-2506-18088) · [EmbodiedSWE](#paper-2609-27308) · [PyRUA-DataFarm](#paper-2611-05320) |
-| Closed-loop data engines | Rewrite the generator itself from feedback, so each round yields better-targeted data | Telling exactly what the data is missing | [EmbodiedSmith](#paper-2610-07969) · [CoDA](#paper-2610-22362) |
-| Beyond demonstrations | Instead of successful demonstrations, produce failure-diagnosis labels or physics supervision | Failures and physics must stay close to reality | [LabRobFail](#paper-2607-23704) · [PhysOPSD](#paper-2611-12411) |
+| No. | Type | Frames from | Trajectory from | Works |
+|---|---|---|---|---|
+| | **Real** | | | |
+| R1 | Video + robot trajectory | Filmed on the real robot | A person teleoperating, or an agent operating the real robot | [DROID](#paper-2403-12945) · [Manipulate-Anything](#paper-2406-18915) |
+| R2 | Video + hand trajectory | First-person videos of people | Hand motion annotated from the video | [Open-HumanWAM](#paper-2611-06817) |
+| | **Mixed (real + simulated)** | | | |
+| M1 | Video + robot trajectory | Real human videos, with the person redrawn as a robot | Inferred from the redrawn video | [RoboTryOn](#paper-2611-05163) |
+| M2 | Environment + video + robot trajectory | A simulation environment replicated from real video, rendered and then given a real appearance | Solved in the replicated environment | [DexAgent](#paper-2609-35318) · [PyRUA-DataFarm](#paper-2611-05320) |
+| M3 | Environment + video | The physics in a real video, rewritten as a simulation program and rendered | None | [PhysOPSD](#paper-2611-12411) |
+| | **Simulated** | | | |
+| S1 | Video + robot trajectory | Rendered in simulation | Planners, solvers, or programs written by an agent | [Scaling Up and Distilling Down](#paper-2307-14535) · [GenSim2](#paper-2410-03645) · [RoboTwin 2.0](#paper-2506-18088) · [EmbodiedSWE](#paper-2609-27308) · [EmbodiedSmith](#paper-2610-07969) ↻ · [CoDA](#paper-2610-22362) ↻ |
+| S2 | Video + robot trajectory + failure labels | Rendered in simulation | Failures injected on purpose | [LabRobFail](#paper-2607-23704) |
 
-The first two routes draw on the real world; the last three build data with programs in simulation. The agent's role shifts with them: from operating the real robot in a person's place, to writing the programs that generate data, to rewriting those programs from feedback. Most of this data trains robot policies; Open-HumanWAM pretrains a world–action model, LabRobFail trains a failure-diagnosis model, and PhysOPSD post-trains a video generator.
+Video and trajectory correspond frame by frame: the trajectory gives the action or state at each frame. An environment is a simulator replicated from real video, which can generate data again and again; works whose main contribution is the simulator itself are in [3.2 Simulator construction](#s3-2). In the mixed layer, the synthetic part comes from a simulator or, for RoboTryOn, from a video generation model. ↻ marks a closed loop: the generator rewrites itself from training feedback. Most of this data trains robot policies; Open-HumanWAM pretrains a world–action model, PhysOPSD post-trains a video generator, and LabRobFail trains a failure-diagnosis model.
 
 #### Real observations and interaction records
 

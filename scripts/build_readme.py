@@ -270,6 +270,9 @@ def render(site, works, lang):
     o(f"- [{t(site, 'related_title', lang)}](#related)")
     o(f"- [{t(site, 'contact_title', lang)}](#contact) · [{t(site, 'citation_title', lang)}](#citation)\n")
 
+    # Right-aligned and smaller, so it reads as navigation rather than as an entry.
+    back_to_contents = f'<p align="right"><a href="#contents"><sub>↑ {t(site, "back_to_contents", lang)}</sub></a></p>\n'
+
     # stages
     for st in site['stages']:
         named_anchor(f'stage-{st["id"]}')
@@ -295,13 +298,13 @@ def render(site, works, lang):
             see = list((site.get('see_also') or {}).get(sec, [])) + stage_see.get(sec, [])
             if see:
                 o(f"*{t(site, 'see_also', lang)}:* {link_list(see, byid)}\n")
-            o(f"[↑ {t(site, 'back_to_contents', lang)}](#contents)\n")
+            o(back_to_contents)
         # Unnumbered reference blocks: listed in the contents, but hold no entries.
         for extra in st.get('extras') or []:
             named_anchor(extra['anchor'])
             o(f"### {extra['title'][lang]}\n")
             o(engine_map.fill_placeholders(site, lang, extra['body'][lang].strip()) + '\n')
-            o(f"[↑ {t(site, 'back_to_contents', lang)}](#contents)\n")
+            o(back_to_contents)
 
     # surveys & related
     named_anchor('related')

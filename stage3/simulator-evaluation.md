@@ -34,12 +34,6 @@ Works from [3.3 Simulator quality evaluation](../README.md#s3-3), organized by f
 | L3c | Dynamics: numerically accurate (validation & system identification) | Do the numbers match the real world? |
 | L4 | Sim-to-real predictivity | Used for evaluation or training, do the conclusions hold in the real world? |
 
-```
-  Requirement-driven: L0a semantic ──┐
-                                     ├─→ L1 static → L2 interaction → L3 dynamics → L4 downstream
-  Reference-driven:   L0b visual  ───┘   (at rest)    (poked)          (evolving)     (put to use)
-```
-
 L0a and L0b are parallel starting points; each level checks a different failure mode rather than adding up to a score. † marks evaluators (works whose main contribution is an evaluation tool).
 
 ## L0a Semantic fidelity

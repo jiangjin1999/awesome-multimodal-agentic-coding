@@ -1,0 +1,627 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1268 1989" width="1268" height="1989" role="img" aria-label="シミュレータ構築：各ステップを誰が担うか" font-family="&#x27;Hiragino Sans&#x27;, &#x27;Hiragino Kaku Gothic ProN&#x27;, &#x27;Yu Gothic&#x27;, Meiryo, &#x27;Noto Sans CJK JP&#x27;, &#x27;Noto Sans JP&#x27;, sans-serif">
+<title>シミュレータ構築：各ステップを誰が担うか</title>
+<defs>
+<pattern id="hatch-a" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#3A2914"/><rect width="2.2" height="7" fill="#E3A251"/></pattern>
+<pattern id="hatch-b" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#10302B"/><rect width="2.2" height="7" fill="#45C3B3"/></pattern>
+<pattern id="hatch-c" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#18243B"/><rect width="2.2" height="7" fill="#8AACEF"/></pattern>
+<pattern id="hatch-d" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#3A1A24"/><rect width="2.2" height="7" fill="#EA8099"/></pattern>
+<pattern id="hatch-e" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#241C3A"/><rect width="2.2" height="7" fill="#AE98F0"/></pattern>
+<pattern id="hatch-legend" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.2" height="7" fill="#9198A1"/></pattern>
+</defs>
+<rect x="0.5" y="0.5" width="1267" height="1988" rx="10" fill="#0D1117" stroke="#3D444D"/>
+<rect x="22" y="26" width="26" height="16" rx="3" fill="#9198A1"/>
+<text x="56" y="39" font-size="13" fill="#9198A1">Agent・VLM 自身が行う</text>
+<rect x="220.29999999999998" y="26" width="26" height="16" rx="3" fill="url(#hatch-legend)" stroke="#9198A1"/>
+<text x="254.29999999999998" y="39" font-size="13" fill="#9198A1">専用ツール・モデル・エンジン</text>
+<rect x="457.04999999999995" y="26.75" width="24.5" height="14.5" rx="3" fill="none" stroke="#9198A1" stroke-width="1.5"/>
+<text x="490.29999999999995" y="39" font-size="13" fill="#9198A1">事前に所与、または人手</text>
+<rect x="653.8" y="26.5" width="25" height="15" rx="3" fill="none" stroke="#6E7681" stroke-dasharray="3 3"/>
+<text x="687.3" y="39" font-size="13" fill="#9198A1">関与しない・記載なし</text>
+<rect x="838.3" y="27" width="24" height="14" rx="3" fill="none" stroke="#EA8099" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="871.3" y="39" font-size="13" fill="#9198A1">物理エンジンなし：シーンのみ</text>
+<rect x="22.75" y="50.75" width="24.5" height="14.5" rx="3" fill="none" stroke="#8AACEF" stroke-width="1.5"/>
+<text x="56" y="63" font-size="13" fill="#9198A1">シム対応：読み込めるが未実行</text>
+<rect x="172" y="82" width="234" height="28" rx="5" fill="#3A2914"/>
+<text x="289" y="101" text-anchor="middle" font-size="14.0" font-weight="700" fill="#E3A251">A 入力理解</text>
+<rect x="412" y="82" width="354" height="28" rx="5" fill="#10302B"/>
+<text x="589" y="101" text-anchor="middle" font-size="14.0" font-weight="700" fill="#45C3B3">B シーン構築</text>
+<rect x="772" y="82" width="234" height="28" rx="5" fill="#18243B"/>
+<text x="889" y="101" text-anchor="middle" font-size="14.0" font-weight="700" fill="#8AACEF">C 物理モデリング</text>
+<rect x="1012" y="82" width="234" height="28" rx="5" fill="#3A1A24"/>
+<text x="1129" y="101" text-anchor="middle" font-size="14.0" font-weight="700" fill="#EA8099">D タスクと制御</text>
+<text x="229" y="132" text-anchor="middle" font-size="13.5" fill="#9198A1">①</text>
+<text x="229" y="151" text-anchor="middle" font-size="13.5" font-weight="600" fill="#E6EDF3">タスク計画</text>
+<text x="349" y="132" text-anchor="middle" font-size="13.5" fill="#9198A1">②</text>
+<text x="349" y="151" text-anchor="middle" font-size="13.5" font-weight="600" fill="#E6EDF3">知覚・計測</text>
+<text x="469" y="132" text-anchor="middle" font-size="13.5" fill="#9198A1">③</text>
+<text x="469" y="151" text-anchor="middle" font-size="13.5" font-weight="600" fill="#E6EDF3">物体アセット</text>
+<text x="589" y="132" text-anchor="middle" font-size="13.5" fill="#9198A1">④</text>
+<text x="589" y="151" text-anchor="middle" font-size="13.5" font-weight="600" fill="#E6EDF3">関節構造</text>
+<text x="709" y="132" text-anchor="middle" font-size="13.5" fill="#9198A1">⑤</text>
+<text x="709" y="151" text-anchor="middle" font-size="13.5" font-weight="600" fill="#E6EDF3">配置・</text>
+<text x="709" y="167" text-anchor="middle" font-size="13.5" font-weight="600" fill="#E6EDF3">位置合わせ</text>
+<text x="829" y="132" text-anchor="middle" font-size="13.5" fill="#9198A1">⑥</text>
+<text x="829" y="151" text-anchor="middle" font-size="13.5" font-weight="600" fill="#E6EDF3">物理パラメータ</text>
+<text x="949" y="132" text-anchor="middle" font-size="13.5" fill="#9198A1">⑦</text>
+<text x="949" y="151" text-anchor="middle" font-size="13.5" font-weight="600" fill="#E6EDF3">物理エンジン</text>
+<text x="1069" y="132" text-anchor="middle" font-size="13.5" fill="#9198A1">⑧</text>
+<text x="1069" y="151" text-anchor="middle" font-size="13.5" font-weight="600" fill="#E6EDF3">ロボット制御</text>
+<text x="1189" y="132" text-anchor="middle" font-size="13.5" fill="#9198A1">⑨</text>
+<text x="1189" y="151" text-anchor="middle" font-size="13.5" font-weight="600" fill="#E6EDF3">タスク定義</text>
+<text x="22" y="201" font-size="14.5" font-weight="700" fill="#E6EDF3">Bench · 参照用</text>
+<line x1="142.205" y1="196" x2="1246" y2="196" stroke="#3D444D"/>
+<text x="22" y="258" font-size="15" font-weight="700" fill="#E6EDF3">RoboDojo</text>
+<rect x="22" y="266" width="47.12" height="17" rx="8.5" fill="#241C3A"/>
+<text x="29" y="278.5" font-size="11.5" fill="#AE98F0">Bench</text>
+<rect x="172.75" y="214.75" width="112.5" height="98.5" rx="5" fill="#0D1117" stroke="#E3A251" stroke-width="1.5"/>
+<text x="229" y="259" text-anchor="middle" font-size="13" font-weight="700" fill="#E3A251">人手</text>
+<text x="229" y="276" text-anchor="middle" font-size="12" fill="#9198A1">タスクを設計</text>
+<rect x="292.5" y="214.5" width="113" height="99" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="412.75" y="214.75" width="112.5" height="98.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="416" y="220" width="106" height="88" rx="4" fill="#0D1117"/>
+<text x="469" y="235.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Meshy</text>
+<text x="469" y="251.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">アセットラ</text>
+<text x="469" y="267.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">イブラリ</text>
+<text x="469" y="284.5" text-anchor="middle" font-size="12" fill="#9198A1">物体を再構築・収</text>
+<text x="469" y="299.5" text-anchor="middle" font-size="12" fill="#9198A1">集し、人手で確認</text>
+<rect x="532.75" y="214.75" width="112.5" height="98.5" rx="5" fill="#0D1117" stroke="#45C3B3" stroke-width="1.5"/>
+<text x="589" y="236.5" text-anchor="middle" font-size="13" font-weight="700" fill="#45C3B3">既存アセット</text>
+<text x="589" y="253.5" text-anchor="middle" font-size="12" fill="#9198A1">オープンソー</text>
+<text x="589" y="268.5" text-anchor="middle" font-size="12" fill="#9198A1">スライブラリ、</text>
+<text x="589" y="283.5" text-anchor="middle" font-size="12" fill="#9198A1">3D スキャン、</text>
+<text x="589" y="298.5" text-anchor="middle" font-size="12" fill="#9198A1">ClothesNet</text>
+<rect x="652.75" y="214.75" width="112.5" height="98.5" rx="5" fill="#0D1117" stroke="#45C3B3" stroke-width="1.5"/>
+<text x="709" y="259" text-anchor="middle" font-size="13" font-weight="700" fill="#45C3B3">手書き YAML</text>
+<text x="709" y="276" text-anchor="middle" font-size="12" fill="#9198A1">配置と初期分布</text>
+<rect x="772.75" y="214.75" width="112.5" height="98.5" rx="5" fill="#0D1117" stroke="#8AACEF" stroke-width="1.5"/>
+<text x="829" y="251.5" text-anchor="middle" font-size="13" font-weight="700" fill="#8AACEF">人手</text>
+<text x="829" y="268.5" text-anchor="middle" font-size="12" fill="#9198A1">アセットに物</text>
+<text x="829" y="283.5" text-anchor="middle" font-size="12" fill="#9198A1">理属性が付属</text>
+<rect x="892.75" y="214.75" width="112.5" height="98.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="909.963" y="235.5" width="78.0732" height="57" rx="4" fill="#0D1117"/>
+<text x="949" y="251" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Isaac Sim</text>
+<text x="949" y="267" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Isaac Lab</text>
+<text x="949" y="284" text-anchor="middle" font-size="12" fill="#9198A1">並列評価</text>
+<rect x="1012.75" y="214.75" width="112.5" height="98.5" rx="5" fill="#0D1117" stroke="#EA8099" stroke-width="1.5"/>
+<text x="1069" y="259" text-anchor="middle" font-size="13" font-weight="700" fill="#EA8099">評価対象の方策</text>
+<text x="1069" y="276" text-anchor="middle" font-size="12" fill="#9198A1">行動を出力</text>
+<rect x="1132.75" y="214.75" width="112.5" height="98.5" rx="5" fill="#0D1117" stroke="#EA8099" stroke-width="1.5"/>
+<text x="1189" y="259" text-anchor="middle" font-size="13" font-weight="700" fill="#EA8099">手書き YAML</text>
+<text x="1189" y="276" text-anchor="middle" font-size="12" fill="#9198A1">成功条件</text>
+<text x="22" y="355.5" font-size="15" font-weight="700" fill="#E6EDF3">Video2World</text>
+<rect x="22" y="363.5" width="47.12" height="17" rx="8.5" fill="#241C3A"/>
+<text x="29" y="376" font-size="11.5" fill="#AE98F0">Bench</text>
+<rect x="172" y="320" width="114" height="83" rx="5" fill="#E3A251"/>
+<text x="229" y="349" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="229" y="366" text-anchor="middle" font-size="12" fill="#0D1117">動画とロボット</text>
+<text x="229" y="381" text-anchor="middle" font-size="12" fill="#0D1117">アセットを読む</text>
+<rect x="292" y="320" width="114" height="83" rx="5" fill="#E3A251"/>
+<text x="349" y="349" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="349" y="366" text-anchor="middle" font-size="12" fill="#0D1117">初期フレームの関</text>
+<text x="349" y="381" text-anchor="middle" font-size="12" fill="#0D1117">節を推定し計測</text>
+<rect x="412" y="320" width="114" height="83" rx="5" fill="#45C3B3"/>
+<text x="469" y="349" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="469" y="366" text-anchor="middle" font-size="12" fill="#0D1117">財布と袋の形</text>
+<text x="469" y="381" text-anchor="middle" font-size="12" fill="#0D1117">状・衝突体</text>
+<rect x="532.5" y="320.5" width="113" height="82" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="652" y="320" width="114" height="83" rx="5" fill="#45C3B3"/>
+<text x="709" y="341.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="709" y="358.5" text-anchor="middle" font-size="12" fill="#0D1117">順運動学でカメ</text>
+<text x="709" y="373.5" text-anchor="middle" font-size="12" fill="#0D1117">ラ外部パラメー</text>
+<text x="709" y="388.5" text-anchor="middle" font-size="12" fill="#0D1117">タを求める</text>
+<rect x="772" y="320" width="114" height="83" rx="5" fill="#8AACEF"/>
+<text x="829" y="356.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="829" y="373.5" text-anchor="middle" font-size="12" fill="#0D1117">接触を設定</text>
+<rect x="892.75" y="320.75" width="112.5" height="81.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="902" y="333.5" width="94" height="56" rx="4" fill="#0D1117"/>
+<text x="949" y="349" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Isaac Sim</text>
+<text x="949" y="366" text-anchor="middle" font-size="12" fill="#9198A1">プラットフォー</text>
+<text x="949" y="381" text-anchor="middle" font-size="12" fill="#9198A1">ムが再生を実行</text>
+<rect x="1012" y="320" width="114" height="83" rx="5" fill="#EA8099"/>
+<text x="1069" y="349" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="1069" y="366" text-anchor="middle" font-size="12" fill="#0D1117">actions.npy</text>
+<text x="1069" y="381" text-anchor="middle" font-size="12" fill="#0D1117">を書く</text>
+<rect x="1132.75" y="320.75" width="112.5" height="81.5" rx="5" fill="#0D1117" stroke="#EA8099" stroke-width="1.5"/>
+<text x="1189" y="356.5" text-anchor="middle" font-size="13" font-weight="700" fill="#EA8099">課題で指定</text>
+<text x="1189" y="373.5" text-anchor="middle" font-size="12" fill="#9198A1">成功条件</text>
+<text x="22" y="434" font-size="14.5" font-weight="700" fill="#E6EDF3">Agentic End-to-End · 1 つの Agent が通しで担う</text>
+<line x1="397.347" y1="429" x2="1246" y2="429" stroke="#3D444D"/>
+<text x="22" y="493.5" font-size="15" font-weight="700" fill="#E6EDF3">Plumb</text>
+<rect x="172" y="447" width="114" height="84" rx="5" fill="#E3A251"/>
+<text x="229" y="476.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="229" y="493.5" text-anchor="middle" font-size="12" fill="#0D1117">動画とタス</text>
+<text x="229" y="508.5" text-anchor="middle" font-size="12" fill="#0D1117">クを読む</text>
+<rect x="292.75" y="447.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-a)" stroke="#E3A251" stroke-width="1.5"/>
+<rect x="308" y="453" width="82" height="72" rx="4" fill="#0D1117"/>
+<text x="349" y="468.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">SAM3</text>
+<text x="349" y="484.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Pi3X</text>
+<text x="349" y="501.5" text-anchor="middle" font-size="12" fill="#9198A1">軌跡、深度、</text>
+<text x="349" y="516.5" text-anchor="middle" font-size="12" fill="#9198A1">カメラ</text>
+<rect x="412" y="447" width="114" height="84" rx="5" fill="#45C3B3"/>
+<text x="469" y="476.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="469" y="493.5" text-anchor="middle" font-size="12" fill="#0D1117">MJCF の形</text>
+<text x="469" y="508.5" text-anchor="middle" font-size="12" fill="#0D1117">状を書く</text>
+<rect x="532.5" y="447.5" width="113" height="83" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="652" y="447" width="114" height="84" rx="5" fill="#45C3B3"/>
+<text x="709" y="476.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="709" y="493.5" text-anchor="middle" font-size="12" fill="#0D1117">支持面・傾斜・</text>
+<text x="709" y="508.5" text-anchor="middle" font-size="12" fill="#0D1117">寸法を計測</text>
+<rect x="772" y="447" width="114" height="84" rx="5" fill="#8AACEF"/>
+<text x="829" y="476.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="829" y="493.5" text-anchor="middle" font-size="12" fill="#0D1117">パラメータ推定プ</text>
+<text x="829" y="508.5" text-anchor="middle" font-size="12" fill="#0D1117">ログラムを書く</text>
+<rect x="892.75" y="447.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="919.196" y="468.5" width="59.608" height="41" rx="4" fill="#0D1117"/>
+<text x="949" y="484" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">MuJoCo</text>
+<text x="949" y="501" text-anchor="middle" font-size="12" fill="#9198A1">再生</text>
+<rect x="1012" y="447" width="114" height="84" rx="5" fill="#EA8099"/>
+<text x="1069" y="484" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="1069" y="501" text-anchor="middle" font-size="12" fill="#0D1117">初期状態を書く</text>
+<rect x="1132.5" y="447.5" width="113" height="83" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<text x="22" y="575.5" font-size="15" font-weight="700" fill="#E6EDF3">CUE</text>
+<rect x="172" y="537" width="114" height="68" rx="5" fill="#E3A251"/>
+<text x="229" y="558.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="229" y="575.5" text-anchor="middle" font-size="12" fill="#0D1117">主要パラメータ</text>
+<text x="229" y="590.5" text-anchor="middle" font-size="12" fill="#0D1117">と範囲を選ぶ</text>
+<rect x="292" y="537" width="114" height="68" rx="5" fill="#E3A251"/>
+<text x="349" y="558.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="349" y="575.5" text-anchor="middle" font-size="12" fill="#0D1117">ボール軌跡の</text>
+<text x="349" y="590.5" text-anchor="middle" font-size="12" fill="#0D1117">追跡を書く</text>
+<rect x="412" y="537" width="114" height="68" rx="5" fill="#45C3B3"/>
+<text x="469" y="558.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="469" y="575.5" text-anchor="middle" font-size="12" fill="#0D1117">ビリヤードの</text>
+<text x="469" y="590.5" text-anchor="middle" font-size="12" fill="#0D1117">MJCF を書く</text>
+<rect x="532.5" y="537.5" width="113" height="67" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="652" y="537" width="114" height="68" rx="5" fill="#45C3B3"/>
+<text x="709" y="566" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="709" y="583" text-anchor="middle" font-size="12" fill="#0D1117">画像から台を配置</text>
+<rect x="772.75" y="537.75" width="112.5" height="66.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="776" y="550.5" width="106" height="41" rx="4" fill="#0D1117"/>
+<text x="829" y="566" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">CMA-ES</text>
+<text x="829" y="583" text-anchor="middle" font-size="12" fill="#9198A1">軌跡の差から推定</text>
+<rect x="892.75" y="537.75" width="112.5" height="66.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="919.196" y="550.5" width="59.608" height="41" rx="4" fill="#0D1117"/>
+<text x="949" y="566" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">MuJoCo</text>
+<text x="949" y="583" text-anchor="middle" font-size="12" fill="#9198A1">並列再生</text>
+<rect x="1012" y="537" width="114" height="68" rx="5" fill="#EA8099"/>
+<text x="1069" y="558.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="1069" y="575.5" text-anchor="middle" font-size="12" fill="#0D1117">次のショット</text>
+<text x="1069" y="590.5" text-anchor="middle" font-size="12" fill="#0D1117">を自分で選ぶ</text>
+<rect x="1132.5" y="537.5" width="113" height="67" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<text x="22" y="665.5" font-size="15" font-weight="700" fill="#E6EDF3">Real2Gym</text>
+<rect x="172" y="611" width="114" height="100" rx="5" fill="#E3A251"/>
+<text x="229" y="648.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="229" y="665.5" text-anchor="middle" font-size="12" fill="#0D1117">デモを読み、対</text>
+<text x="229" y="680.5" text-anchor="middle" font-size="12" fill="#0D1117">象物を決める</text>
+<rect x="292.75" y="611.75" width="112.5" height="98.5" rx="5" fill="url(#hatch-a)" stroke="#E3A251" stroke-width="1.5"/>
+<rect x="296" y="617" width="106" height="88" rx="4" fill="#0D1117"/>
+<text x="349" y="632.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">MoGe-3</text>
+<text x="349" y="648.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Pi3X</text>
+<text x="349" y="664.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">SAM2</text>
+<text x="349" y="681.5" text-anchor="middle" font-size="12" fill="#9198A1">形状、カメラ、セ</text>
+<text x="349" y="696.5" text-anchor="middle" font-size="12" fill="#9198A1">グメンテーション</text>
+<rect x="412" y="611" width="114" height="100" rx="5" fill="#45C3B3"/>
+<text x="469" y="648.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="469" y="665.5" text-anchor="middle" font-size="12" fill="#0D1117">輪郭と多視点から</text>
+<text x="469" y="680.5" text-anchor="middle" font-size="12" fill="#0D1117">メッシュを補完</text>
+<rect x="532.5" y="611.5" width="113" height="99" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="652" y="611" width="114" height="100" rx="5" fill="#45C3B3"/>
+<text x="709" y="648.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="709" y="665.5" text-anchor="middle" font-size="12" fill="#0D1117">スケールと</text>
+<text x="709" y="680.5" text-anchor="middle" font-size="12" fill="#0D1117">座標を統一</text>
+<rect x="772" y="611" width="114" height="100" rx="5" fill="#8AACEF"/>
+<text x="829" y="648.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="829" y="665.5" text-anchor="middle" font-size="12" fill="#0D1117">材料属性を書き込</text>
+<text x="829" y="680.5" text-anchor="middle" font-size="12" fill="#0D1117">む（実測推定なし）</text>
+<rect x="892.75" y="611.75" width="112.5" height="98.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="908" y="625.5" width="82" height="71" rx="4" fill="#0D1117"/>
+<text x="949" y="641" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">MuJoCo</text>
+<text x="949" y="658" text-anchor="middle" font-size="12" fill="#9198A1">物理を実行、</text>
+<text x="949" y="673" text-anchor="middle" font-size="12" fill="#9198A1">Blender</text>
+<text x="949" y="688" text-anchor="middle" font-size="12" fill="#9198A1">は描画のみ</text>
+<rect x="1012" y="611" width="114" height="100" rx="5" fill="#EA8099"/>
+<text x="1069" y="648.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="1069" y="665.5" text-anchor="middle" font-size="12" fill="#0D1117">デモを実行・</text>
+<text x="1069" y="680.5" text-anchor="middle" font-size="12" fill="#0D1117">リターゲット</text>
+<rect x="1132" y="611" width="114" height="100" rx="5" fill="#EA8099"/>
+<text x="1189" y="648.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="1189" y="665.5" text-anchor="middle" font-size="12" fill="#0D1117">Gym のタスク</text>
+<text x="1189" y="680.5" text-anchor="middle" font-size="12" fill="#0D1117">段階を書く</text>
+<text x="22" y="768.5" font-size="15" font-weight="700" fill="#E6EDF3">DyCraft</text>
+<rect x="22.5" y="777" width="70.5" height="16" rx="8" fill="none" stroke="#9198A1" stroke-dasharray="3 2"/>
+<text x="29" y="789" font-size="11.5" fill="#9198A1">シーンのみ</text>
+<rect x="172" y="717" width="114" height="115" rx="5" fill="#E3A251"/>
+<text x="229" y="754.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="229" y="771.5" text-anchor="middle" font-size="12" fill="#0D1117">短いプロンプト</text>
+<text x="229" y="786.5" text-anchor="middle" font-size="12" fill="#0D1117">をシーンと動き</text>
+<text x="229" y="801.5" text-anchor="middle" font-size="12" fill="#0D1117">の説明に展開</text>
+<rect x="292.5" y="717.5" width="113" height="114" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="412" y="717" width="114" height="115" rx="5" fill="#45C3B3"/>
+<text x="469" y="754.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="469" y="771.5" text-anchor="middle" font-size="12" fill="#0D1117">物体は CAD、</text>
+<text x="469" y="786.5" text-anchor="middle" font-size="12" fill="#0D1117">キャラクターは</text>
+<text x="469" y="801.5" text-anchor="middle" font-size="12" fill="#0D1117">ライブラリから</text>
+<rect x="532" y="717" width="114" height="115" rx="5" fill="#45C3B3"/>
+<text x="589" y="769.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="589" y="786.5" text-anchor="middle" font-size="12" fill="#0D1117">CAD で関節を定義</text>
+<rect x="652" y="717" width="114" height="115" rx="5" fill="#45C3B3"/>
+<text x="709" y="762" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="709" y="779" text-anchor="middle" font-size="12" fill="#0D1117">キーポーズを配</text>
+<text x="709" y="794" text-anchor="middle" font-size="12" fill="#0D1117">置（3D 絵コンテ）</text>
+<rect x="772.5" y="717.5" width="113" height="114" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="893" y="718" width="112" height="113" rx="5" fill="#0D1117" stroke="#EA8099" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="949" y="746.5" text-anchor="middle" font-size="13" font-weight="700" fill="#EA8099">物理エン</text>
+<text x="949" y="762.5" text-anchor="middle" font-size="13" font-weight="700" fill="#EA8099">ジンなし</text>
+<text x="949" y="779.5" text-anchor="middle" font-size="12" fill="#EA8099">Blender 内蔵</text>
+<text x="949" y="794.5" text-anchor="middle" font-size="12" fill="#EA8099">の物理はアニ</text>
+<text x="949" y="809.5" text-anchor="middle" font-size="12" fill="#EA8099">メーション用</text>
+<rect x="1012.75" y="717.75" width="112.5" height="113.5" rx="5" fill="url(#hatch-d)" stroke="#EA8099" stroke-width="1.5"/>
+<rect x="1016" y="723" width="106" height="103" rx="4" fill="#0D1117"/>
+<text x="1069" y="738.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">CMU モーキャプ</text>
+<text x="1069" y="754.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">IK</text>
+<text x="1069" y="770.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Blender</text>
+<text x="1069" y="787.5" text-anchor="middle" font-size="12" fill="#9198A1">クリップをリタ</text>
+<text x="1069" y="802.5" text-anchor="middle" font-size="12" fill="#9198A1">ーゲット、物理</text>
+<text x="1069" y="817.5" text-anchor="middle" font-size="12" fill="#9198A1">は Blender</text>
+<rect x="1132.5" y="717.5" width="113" height="114" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<text x="22" y="863" font-size="14.5" font-weight="700" fill="#E6EDF3">Closed-loop Workflow · 分担は事前に決まり、問題は担当ステップへ戻す</text>
+<line x1="560.576" y1="858" x2="1246" y2="858" stroke="#3D444D"/>
+<text x="22" y="921" font-size="15" font-weight="700" fill="#E6EDF3">Agentic</text>
+<text x="22" y="940" font-size="15" font-weight="700" fill="#E6EDF3">Real2Sim</text>
+<rect x="172" y="876" width="114" height="100" rx="5" fill="#E3A251"/>
+<text x="229" y="913.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">視覚 Agent</text>
+<text x="229" y="930.5" text-anchor="middle" font-size="12" fill="#0D1117">関係する物体と</text>
+<text x="229" y="945.5" text-anchor="middle" font-size="12" fill="#0D1117">支持物を特定</text>
+<rect x="292.75" y="876.75" width="112.5" height="98.5" rx="5" fill="url(#hatch-a)" stroke="#E3A251" stroke-width="1.5"/>
+<rect x="302" y="882" width="94" height="88" rx="4" fill="#0D1117"/>
+<text x="349" y="897.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">SAM 3</text>
+<text x="349" y="913.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Foundation</text>
+<text x="349" y="929.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Pose</text>
+<text x="349" y="946.5" text-anchor="middle" font-size="12" fill="#9198A1">セグメンテーシ</text>
+<text x="349" y="961.5" text-anchor="middle" font-size="12" fill="#9198A1">ョン、姿勢追跡</text>
+<rect x="412.75" y="876.75" width="112.5" height="98.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="422" y="898" width="94" height="56" rx="4" fill="#0D1117"/>
+<text x="469" y="913.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">SAM 3D</text>
+<text x="469" y="930.5" text-anchor="middle" font-size="12" fill="#9198A1">メッシュを復元</text>
+<text x="469" y="945.5" text-anchor="middle" font-size="12" fill="#9198A1">しスケール調整</text>
+<rect x="532.5" y="876.5" width="113" height="99" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="652" y="876" width="114" height="100" rx="5" fill="#45C3B3"/>
+<text x="709" y="913.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">シーン Agent</text>
+<text x="709" y="930.5" text-anchor="middle" font-size="12" fill="#0D1117">カメラ・床・</text>
+<text x="709" y="945.5" text-anchor="middle" font-size="12" fill="#0D1117">ベースを較正</text>
+<rect x="772" y="876" width="114" height="100" rx="5" fill="#8AACEF"/>
+<text x="829" y="913.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">物理 Agent</text>
+<text x="829" y="930.5" text-anchor="middle" font-size="12" fill="#0D1117">材料からパラ</text>
+<text x="829" y="945.5" text-anchor="middle" font-size="12" fill="#0D1117">メータを推定</text>
+<rect x="892.75" y="876.75" width="112.5" height="98.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="914" y="905.5" width="70" height="41" rx="4" fill="#0D1117"/>
+<text x="949" y="921" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">MuJoCo</text>
+<text x="949" y="938" text-anchor="middle" font-size="12" fill="#9198A1">軌跡を再生</text>
+<rect x="1012.75" y="876.75" width="112.5" height="98.5" rx="5" fill="#0D1117" stroke="#EA8099" stroke-width="1.5"/>
+<text x="1069" y="913.5" text-anchor="middle" font-size="13" font-weight="700" fill="#EA8099">所与</text>
+<text x="1069" y="930.5" text-anchor="middle" font-size="12" fill="#9198A1">記録済みのロ</text>
+<text x="1069" y="945.5" text-anchor="middle" font-size="12" fill="#9198A1">ボット軌跡</text>
+<rect x="1132.5" y="876.5" width="113" height="99" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<text x="22" y="1028.5" font-size="15" font-weight="700" fill="#E6EDF3">WorldMirror</text>
+<rect x="172.75" y="982.75" width="112.5" height="82.5" rx="5" fill="#0D1117" stroke="#E3A251" stroke-width="1.5"/>
+<text x="229" y="1003.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E3A251">固定の依</text>
+<text x="229" y="1019.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E3A251">存グラフ</text>
+<text x="229" y="1036.5" text-anchor="middle" font-size="12" fill="#9198A1">各 Agent</text>
+<text x="229" y="1051.5" text-anchor="middle" font-size="12" fill="#9198A1">を順に呼ぶ</text>
+<rect x="292.75" y="982.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-a)" stroke="#E3A251" stroke-width="1.5"/>
+<rect x="298.664" y="996" width="100.672" height="56" rx="4" fill="#0D1117"/>
+<text x="349" y="1011.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">3D ガウシアン</text>
+<text x="349" y="1028.5" text-anchor="middle" font-size="12" fill="#9198A1">静的な背景</text>
+<text x="349" y="1043.5" text-anchor="middle" font-size="12" fill="#9198A1">を再構築</text>
+<rect x="412.75" y="982.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="428" y="988" width="82" height="72" rx="4" fill="#0D1117"/>
+<text x="469" y="1003.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Meshy</text>
+<text x="469" y="1019.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Articraft</text>
+<text x="469" y="1036.5" text-anchor="middle" font-size="12" fill="#9198A1">操作可能なア</text>
+<text x="469" y="1051.5" text-anchor="middle" font-size="12" fill="#9198A1">セットを生成</text>
+<rect x="532.5" y="982.5" width="113" height="83" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="652" y="982" width="114" height="84" rx="5" fill="#45C3B3"/>
+<text x="709" y="1011" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">較正・配</text>
+<text x="709" y="1027" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">置 Agent</text>
+<text x="709" y="1044" text-anchor="middle" font-size="12" fill="#0D1117">座標を揃えて配置</text>
+<rect x="772.5" y="982.5" width="113" height="83" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="892.75" y="982.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="902" y="1003.5" width="94" height="41" rx="4" fill="#0D1117"/>
+<text x="949" y="1019" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Isaac Sim</text>
+<text x="949" y="1036" text-anchor="middle" font-size="12" fill="#9198A1">元の軌跡を再生</text>
+<rect x="1012.75" y="982.75" width="112.5" height="82.5" rx="5" fill="#0D1117" stroke="#EA8099" stroke-width="1.5"/>
+<text x="1069" y="1011.5" text-anchor="middle" font-size="13" font-weight="700" fill="#EA8099">所与</text>
+<text x="1069" y="1028.5" text-anchor="middle" font-size="12" fill="#9198A1">記録済みのロ</text>
+<text x="1069" y="1043.5" text-anchor="middle" font-size="12" fill="#9198A1">ボット軌跡</text>
+<rect x="1132.5" y="982.5" width="113" height="83" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<text x="22" y="1110.5" font-size="15" font-weight="700" fill="#E6EDF3">Text2Sim</text>
+<rect x="172" y="1072" width="114" height="68" rx="5" fill="#E3A251"/>
+<text x="229" y="1101" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Planner</text>
+<text x="229" y="1118" text-anchor="middle" font-size="12" fill="#0D1117">全体計画を立てる</text>
+<rect x="292.5" y="1072.5" width="113" height="67" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="412.75" y="1072.75" width="112.5" height="66.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="422" y="1078" width="94" height="56" rx="4" fill="#0D1117"/>
+<text x="469" y="1093.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Meshy</text>
+<text x="469" y="1110.5" text-anchor="middle" font-size="12" fill="#9198A1">テキストからメ</text>
+<text x="469" y="1125.5" text-anchor="middle" font-size="12" fill="#9198A1">ッシュを生成</text>
+<rect x="532.5" y="1072.5" width="113" height="67" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="652" y="1072" width="114" height="68" rx="5" fill="#45C3B3"/>
+<text x="709" y="1093.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Scene Writer</text>
+<text x="709" y="1110.5" text-anchor="middle" font-size="12" fill="#0D1117">シーンのプロ</text>
+<text x="709" y="1125.5" text-anchor="middle" font-size="12" fill="#0D1117">グラムを書く</text>
+<rect x="772" y="1072" width="114" height="68" rx="5" fill="#8AACEF"/>
+<text x="829" y="1101" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Body Writer</text>
+<text x="829" y="1118" text-anchor="middle" font-size="12" fill="#0D1117">材料と物理を書く</text>
+<rect x="892.75" y="1072.75" width="112.5" height="66.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="908" y="1085.5" width="82" height="41" rx="4" fill="#0D1117"/>
+<text x="949" y="1101" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Genesis</text>
+<text x="949" y="1118" text-anchor="middle" font-size="12" fill="#9198A1">実行して記録</text>
+<rect x="1012" y="1072" width="114" height="68" rx="5" fill="#EA8099"/>
+<text x="1069" y="1101" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Action Writer</text>
+<text x="1069" y="1118" text-anchor="middle" font-size="12" fill="#0D1117">動きと制御を書く</text>
+<rect x="1132.5" y="1072.5" width="113" height="67" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<text x="22" y="1192.5" font-size="15" font-weight="700" fill="#E6EDF3">SceneSmith</text>
+<rect x="172" y="1146" width="114" height="84" rx="5" fill="#E3A251"/>
+<text x="229" y="1175.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Planner</text>
+<text x="229" y="1192.5" text-anchor="middle" font-size="12" fill="#0D1117">要求を階層</text>
+<text x="229" y="1207.5" text-anchor="middle" font-size="12" fill="#0D1117">ごとに分解</text>
+<rect x="292.5" y="1146.5" width="113" height="83" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="412.75" y="1146.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="422" y="1152" width="94" height="72" rx="4" fill="#0D1117"/>
+<text x="469" y="1167.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">SAM3</text>
+<text x="469" y="1183.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">SAM3D</text>
+<text x="469" y="1200.5" text-anchor="middle" font-size="12" fill="#9198A1">参照画像からメ</text>
+<text x="469" y="1215.5" text-anchor="middle" font-size="12" fill="#9198A1">ッシュを再構築</text>
+<rect x="532.75" y="1146.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="548" y="1160" width="82" height="56" rx="4" fill="#0D1117"/>
+<text x="589" y="1175.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">ArtVIP</text>
+<text x="589" y="1192.5" text-anchor="middle" font-size="12" fill="#9198A1">関節付きアセ</text>
+<text x="589" y="1207.5" text-anchor="middle" font-size="12" fill="#9198A1">ットを検索</text>
+<rect x="652" y="1146" width="114" height="84" rx="5" fill="#45C3B3"/>
+<text x="709" y="1183" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Designer</text>
+<text x="709" y="1200" text-anchor="middle" font-size="12" fill="#0D1117">階層ごとに配置</text>
+<rect x="772" y="1146" width="114" height="84" rx="5" fill="#8AACEF"/>
+<text x="829" y="1175.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">VLM</text>
+<text x="829" y="1192.5" text-anchor="middle" font-size="12" fill="#0D1117">質量・摩擦・</text>
+<text x="829" y="1207.5" text-anchor="middle" font-size="12" fill="#0D1117">慣性を推定</text>
+<rect x="892.75" y="1146.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="908" y="1160" width="82" height="56" rx="4" fill="#0D1117"/>
+<text x="949" y="1175.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Drake</text>
+<text x="949" y="1192.5" text-anchor="middle" font-size="12" fill="#9198A1">貫通を解消し</text>
+<text x="949" y="1207.5" text-anchor="middle" font-size="12" fill="#9198A1">重力で安定化</text>
+<rect x="1012.5" y="1146.5" width="113" height="83" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="1132.5" y="1146.5" width="113" height="83" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<text x="22" y="1273" font-size="15" font-weight="700" fill="#E6EDF3">Articulate-</text>
+<text x="22" y="1292" font-size="15" font-weight="700" fill="#E6EDF3">Anything</text>
+<rect x="172" y="1236" width="114" height="84" rx="5" fill="#E3A251"/>
+<text x="229" y="1265.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">VLM</text>
+<text x="229" y="1282.5" text-anchor="middle" font-size="12" fill="#0D1117">参照を読み、</text>
+<text x="229" y="1297.5" text-anchor="middle" font-size="12" fill="#0D1117">部品を列挙</text>
+<rect x="292.75" y="1236.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-a)" stroke="#E3A251" stroke-width="1.5"/>
+<rect x="308.172" y="1250" width="81.656" height="56" rx="4" fill="#0D1117"/>
+<text x="349" y="1265.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">CoTracker</text>
+<text x="349" y="1282.5" text-anchor="middle" font-size="12" fill="#9198A1">動画内の動</text>
+<text x="349" y="1297.5" text-anchor="middle" font-size="12" fill="#9198A1">きを追跡</text>
+<rect x="412.75" y="1236.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="432.03" y="1242" width="73.9392" height="72" rx="4" fill="#0D1117"/>
+<text x="469" y="1257.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">PartNet-</text>
+<text x="469" y="1273.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Mobility</text>
+<text x="469" y="1290.5" text-anchor="middle" font-size="12" fill="#9198A1">部品メッシ</text>
+<text x="469" y="1305.5" text-anchor="middle" font-size="12" fill="#9198A1">ュを検索</text>
+<rect x="532" y="1236" width="114" height="84" rx="5" fill="#45C3B3"/>
+<text x="589" y="1265.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Actor</text>
+<text x="589" y="1282.5" text-anchor="middle" font-size="12" fill="#0D1117">関節の種類・軸・</text>
+<text x="589" y="1297.5" text-anchor="middle" font-size="12" fill="#0D1117">範囲を書く</text>
+<rect x="652" y="1236" width="114" height="84" rx="5" fill="#45C3B3"/>
+<text x="709" y="1265.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Actor</text>
+<text x="709" y="1282.5" text-anchor="middle" font-size="12" fill="#0D1117">部品の組み</text>
+<text x="709" y="1297.5" text-anchor="middle" font-size="12" fill="#0D1117">立てを書く</text>
+<rect x="772.5" y="1236.5" width="113" height="83" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="892.75" y="1236.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="908" y="1242" width="82" height="72" rx="4" fill="#0D1117"/>
+<text x="949" y="1257.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">PyBullet</text>
+<text x="949" y="1273.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">SAPIEN</text>
+<text x="949" y="1290.5" text-anchor="middle" font-size="12" fill="#9198A1">シミュレーシ</text>
+<text x="949" y="1305.5" text-anchor="middle" font-size="12" fill="#9198A1">ョンと描画</text>
+<rect x="1012.5" y="1236.5" width="113" height="83" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="1132.5" y="1236.5" width="113" height="83" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<text x="22" y="1372.5" font-size="15" font-weight="700" fill="#E6EDF3">Gym-Anything</text>
+<rect x="172" y="1326" width="114" height="84" rx="5" fill="#E3A251"/>
+<text x="229" y="1355.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">作成 Agent</text>
+<text x="229" y="1372.5" text-anchor="middle" font-size="12" fill="#0D1117">活動を調べ、シー</text>
+<text x="229" y="1387.5" text-anchor="middle" font-size="12" fill="#0D1117">ンと方程式を設計</text>
+<rect x="292.5" y="1326.5" width="113" height="83" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="412" y="1326" width="114" height="84" rx="5" fill="#45C3B3"/>
+<text x="469" y="1348" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">作成 Agent</text>
+<text x="469" y="1365" text-anchor="middle" font-size="12" fill="#0D1117">実在アセットを</text>
+<text x="469" y="1380" text-anchor="middle" font-size="12" fill="#0D1117">選び、接触でき</text>
+<text x="469" y="1395" text-anchor="middle" font-size="12" fill="#0D1117">る物体を作る</text>
+<rect x="532.5" y="1326.5" width="113" height="83" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="652" y="1326" width="114" height="84" rx="5" fill="#45C3B3"/>
+<text x="709" y="1355.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">作成 Agent</text>
+<text x="709" y="1372.5" text-anchor="middle" font-size="12" fill="#0D1117">ガウシアン背景＋</text>
+<text x="709" y="1387.5" text-anchor="middle" font-size="12" fill="#0D1117">物理ボディで構成</text>
+<rect x="772" y="1326" width="114" height="84" rx="5" fill="#8AACEF"/>
+<text x="829" y="1348" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">作成 Agent</text>
+<text x="829" y="1365" text-anchor="middle" font-size="12" fill="#0D1117">必要な物理を実</text>
+<text x="829" y="1380" text-anchor="middle" font-size="12" fill="#0D1117">装（エンジンに</text>
+<text x="829" y="1395" text-anchor="middle" font-size="12" fill="#0D1117">ないものも）</text>
+<rect x="892.75" y="1326.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="908" y="1332" width="82" height="72" rx="4" fill="#0D1117"/>
+<text x="949" y="1347.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">MuJoCo</text>
+<text x="949" y="1363.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Warp など</text>
+<text x="949" y="1380.5" text-anchor="middle" font-size="12" fill="#9198A1">複数のバック</text>
+<text x="949" y="1395.5" text-anchor="middle" font-size="12" fill="#9198A1">エンドで実行</text>
+<rect x="1012" y="1326" width="114" height="84" rx="5" fill="#EA8099"/>
+<text x="1069" y="1355.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">作成 Agent</text>
+<text x="1069" y="1372.5" text-anchor="middle" font-size="12" fill="#0D1117">共有カタログの</text>
+<text x="1069" y="1387.5" text-anchor="middle" font-size="12" fill="#0D1117">ロボットを接続</text>
+<rect x="1132" y="1326" width="114" height="84" rx="5" fill="#EA8099"/>
+<text x="1189" y="1347.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">タスク作</text>
+<text x="1189" y="1363.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">成 Agent</text>
+<text x="1189" y="1380.5" text-anchor="middle" font-size="12" fill="#0D1117">目標の難易度で</text>
+<text x="1189" y="1395.5" text-anchor="middle" font-size="12" fill="#0D1117">タスクを作る</text>
+<text x="22" y="1441" font-size="14.5" font-weight="700" fill="#E6EDF3">Open-loop Workflow · 分担は事前に決まり、順に 1 回だけ流す</text>
+<line x1="485.571" y1="1436" x2="1246" y2="1436" stroke="#3D444D"/>
+<text x="22" y="1500.5" font-size="15" font-weight="700" fill="#E6EDF3">GenSim</text>
+<rect x="172" y="1454" width="114" height="84" rx="5" fill="#E3A251"/>
+<text x="229" y="1483.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">GPT-4</text>
+<text x="229" y="1500.5" text-anchor="middle" font-size="12" fill="#0D1117">タスクを提案</text>
+<text x="229" y="1515.5" text-anchor="middle" font-size="12" fill="#0D1117">し仕様を書く</text>
+<rect x="292.5" y="1454.5" width="113" height="83" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="412.75" y="1454.75" width="112.5" height="82.5" rx="5" fill="#0D1117" stroke="#45C3B3" stroke-width="1.5"/>
+<text x="469" y="1483.5" text-anchor="middle" font-size="13" font-weight="700" fill="#45C3B3">所与</text>
+<text x="469" y="1500.5" text-anchor="middle" font-size="12" fill="#9198A1">Ravens の既</text>
+<text x="469" y="1515.5" text-anchor="middle" font-size="12" fill="#9198A1">存アセット</text>
+<rect x="532.5" y="1454.5" width="113" height="83" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="652" y="1454" width="114" height="84" rx="5" fill="#45C3B3"/>
+<text x="709" y="1483.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">GPT-4</text>
+<text x="709" y="1500.5" text-anchor="middle" font-size="12" fill="#0D1117">reset 時の</text>
+<text x="709" y="1515.5" text-anchor="middle" font-size="12" fill="#0D1117">配置を書く</text>
+<rect x="772.5" y="1454.5" width="113" height="83" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="892.75" y="1454.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="908" y="1475.5" width="82" height="41" rx="4" fill="#0D1117"/>
+<text x="949" y="1491" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">PyBullet</text>
+<text x="949" y="1508" text-anchor="middle" font-size="12" fill="#9198A1">タスクを実行</text>
+<rect x="1012.75" y="1454.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-d)" stroke="#EA8099" stroke-width="1.5"/>
+<rect x="1028" y="1460" width="82" height="72" rx="4" fill="#0D1117"/>
+<text x="1069" y="1475.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Ravens ス</text>
+<text x="1069" y="1491.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">クリプト</text>
+<text x="1069" y="1508.5" text-anchor="middle" font-size="12" fill="#9198A1">エキスパート</text>
+<text x="1069" y="1523.5" text-anchor="middle" font-size="12" fill="#9198A1">デモを生成</text>
+<rect x="1132" y="1454" width="114" height="84" rx="5" fill="#EA8099"/>
+<text x="1189" y="1483.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">GPT-4</text>
+<text x="1189" y="1500.5" text-anchor="middle" font-size="12" fill="#0D1117">目標と成功</text>
+<text x="1189" y="1515.5" text-anchor="middle" font-size="12" fill="#0D1117">判定を書く</text>
+<text x="22" y="1583" font-size="15" font-weight="700" fill="#E6EDF3">Holodeck</text>
+<rect x="172" y="1544" width="114" height="69" rx="5" fill="#E3A251"/>
+<text x="229" y="1566" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">GPT-4</text>
+<text x="229" y="1583" text-anchor="middle" font-size="12" fill="#0D1117">部屋と物体の</text>
+<text x="229" y="1598" text-anchor="middle" font-size="12" fill="#0D1117">関係を設計</text>
+<rect x="292.5" y="1544.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="412.75" y="1544.75" width="112.5" height="67.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="422" y="1550" width="94" height="57" rx="4" fill="#0D1117"/>
+<text x="469" y="1565.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Objaverse</text>
+<text x="469" y="1581.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">ProcTHOR</text>
+<text x="469" y="1598.5" text-anchor="middle" font-size="12" fill="#9198A1">メッシュを検索</text>
+<rect x="532.5" y="1544.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="652.75" y="1544.75" width="112.5" height="67.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="656" y="1558" width="106" height="41" rx="4" fill="#0D1117"/>
+<text x="709" y="1573.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">制約ソルバー</text>
+<text x="709" y="1590.5" text-anchor="middle" font-size="12" fill="#9198A1">関係に従って配置</text>
+<rect x="772.5" y="1544.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="892.75" y="1544.75" width="112.5" height="67.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="902" y="1558" width="94" height="41" rx="4" fill="#0D1117"/>
+<text x="949" y="1573.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">AI2-THOR</text>
+<text x="949" y="1590.5" text-anchor="middle" font-size="12" fill="#9198A1">読み込んで実行</text>
+<rect x="1012.5" y="1544.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="1132.5" y="1544.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<text x="22" y="1673.5" font-size="15" font-weight="700" fill="#E6EDF3">SimFoundry</text>
+<rect x="172" y="1619" width="114" height="100" rx="5" fill="#E3A251"/>
+<text x="229" y="1664" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">VLM</text>
+<text x="229" y="1681" text-anchor="middle" font-size="12" fill="#0D1117">物体と意味を列挙</text>
+<rect x="292.75" y="1619.75" width="112.5" height="98.5" rx="5" fill="url(#hatch-a)" stroke="#E3A251" stroke-width="1.5"/>
+<rect x="304.314" y="1625" width="89.3728" height="88" rx="4" fill="#0D1117"/>
+<text x="349" y="1640.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">SAM3</text>
+<text x="349" y="1656.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">PriorDepth</text>
+<text x="349" y="1672.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Anything</text>
+<text x="349" y="1689.5" text-anchor="middle" font-size="12" fill="#9198A1">セグメンテー</text>
+<text x="349" y="1704.5" text-anchor="middle" font-size="12" fill="#9198A1">ション、深度</text>
+<rect x="412.75" y="1619.75" width="112.5" height="98.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="424.865" y="1633" width="88.2704" height="72" rx="4" fill="#0D1117"/>
+<text x="469" y="1648.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Hunyuan3D</text>
+<text x="469" y="1664.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">TRELLIS.2</text>
+<text x="469" y="1681.5" text-anchor="middle" font-size="12" fill="#9198A1">物体ごとにメ</text>
+<text x="469" y="1696.5" text-anchor="middle" font-size="12" fill="#9198A1">ッシュを生成</text>
+<rect x="532" y="1619" width="114" height="100" rx="5" fill="#45C3B3"/>
+<text x="589" y="1656.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Actor–Critic</text>
+<text x="589" y="1673.5" text-anchor="middle" font-size="12" fill="#0D1117">関節を書き、</text>
+<text x="589" y="1688.5" text-anchor="middle" font-size="12" fill="#0D1117">動きを確認</text>
+<rect x="652.75" y="1619.75" width="112.5" height="98.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="662" y="1633" width="94" height="72" rx="4" fill="#0D1117"/>
+<text x="709" y="1648.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Foundation</text>
+<text x="709" y="1664.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Pose</text>
+<text x="709" y="1681.5" text-anchor="middle" font-size="12" fill="#9198A1">姿勢とスケール</text>
+<text x="709" y="1696.5" text-anchor="middle" font-size="12" fill="#9198A1">を位置合わせ</text>
+<rect x="772" y="1619" width="114" height="100" rx="5" fill="#8AACEF"/>
+<text x="829" y="1664" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">VLM</text>
+<text x="829" y="1681" text-anchor="middle" font-size="12" fill="#0D1117">質量・摩擦を推定</text>
+<rect x="892.75" y="1619.75" width="112.5" height="98.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="912.03" y="1641" width="73.9392" height="56" rx="4" fill="#0D1117"/>
+<text x="949" y="1656.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">PyBullet</text>
+<text x="949" y="1673.5" text-anchor="middle" font-size="12" fill="#9198A1">貫通を解消</text>
+<text x="949" y="1688.5" text-anchor="middle" font-size="12" fill="#9198A1">し安定化</text>
+<rect x="1012.5" y="1619.5" width="113" height="99" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="1132" y="1619" width="114" height="100" rx="5" fill="#EA8099"/>
+<text x="1189" y="1656.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">VLM</text>
+<text x="1189" y="1673.5" text-anchor="middle" font-size="12" fill="#0D1117">タスクと成功</text>
+<text x="1189" y="1688.5" text-anchor="middle" font-size="12" fill="#0D1117">条件を提案</text>
+<text x="22" y="1750" font-size="14.5" font-weight="700" fill="#E6EDF3">Model-based (without Agent) · Agent なし、モデルや最適化が直接出力</text>
+<line x1="558.117" y1="1745" x2="1246" y2="1745" stroke="#3D444D"/>
+<text x="22" y="1806.5" font-size="15" font-weight="700" fill="#E6EDF3">PhysX-Omni</text>
+<rect x="22.5" y="1815" width="59" height="16" rx="8" fill="none" stroke="#8AACEF"/>
+<text x="29" y="1827" font-size="11.5" fill="#8AACEF">シム対応</text>
+<rect x="172.75" y="1763.75" width="112.5" height="97.5" rx="5" fill="url(#hatch-a)" stroke="#E3A251" stroke-width="1.5"/>
+<rect x="182.66" y="1769" width="92.68" height="87" rx="4" fill="#0D1117"/>
+<text x="229" y="1784.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">微調整済み</text>
+<text x="229" y="1800.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Qwen2.5-VL</text>
+<text x="229" y="1817.5" text-anchor="middle" font-size="12" fill="#9198A1">カテゴリ・ス</text>
+<text x="229" y="1832.5" text-anchor="middle" font-size="12" fill="#9198A1">ケール・部品</text>
+<text x="229" y="1847.5" text-anchor="middle" font-size="12" fill="#9198A1">階層を推定</text>
+<rect x="292.5" y="1763.5" width="113" height="98" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="412.75" y="1763.75" width="112.5" height="97.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="416" y="1776.5" width="106" height="72" rx="4" fill="#0D1117"/>
+<text x="469" y="1792" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Qwen2.5-VL</text>
+<text x="469" y="1808" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">TRELLIS</text>
+<text x="469" y="1825" text-anchor="middle" font-size="12" fill="#9198A1">ボクセルを生成し</text>
+<text x="469" y="1840" text-anchor="middle" font-size="12" fill="#9198A1">メッシュに復号</text>
+<rect x="532.75" y="1763.75" width="112.5" height="97.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="542.66" y="1784" width="92.68" height="57" rx="4" fill="#0D1117"/>
+<text x="589" y="1799.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">微調整済み</text>
+<text x="589" y="1815.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Qwen2.5-VL</text>
+<text x="589" y="1832.5" text-anchor="middle" font-size="12" fill="#9198A1">関節を予測</text>
+<rect x="652.5" y="1763.5" width="113" height="98" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="772.75" y="1763.75" width="112.5" height="97.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="782" y="1776.5" width="94" height="72" rx="4" fill="#0D1117"/>
+<text x="829" y="1792" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">微調整済み</text>
+<text x="829" y="1808" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Qwen2.5-VL</text>
+<text x="829" y="1825" text-anchor="middle" font-size="12" fill="#9198A1">質量・材料など</text>
+<text x="829" y="1840" text-anchor="middle" font-size="12" fill="#9198A1">の属性を予測</text>
+<rect x="892.75" y="1763.75" width="112.5" height="97.5" rx="5" fill="#0D1117" stroke="#8AACEF" stroke-width="1.5"/>
+<text x="949" y="1800" text-anchor="middle" font-size="13" font-weight="700" fill="#8AACEF">シム対応</text>
+<text x="949" y="1817" text-anchor="middle" font-size="12" fill="#9198A1">読み込めるが手</text>
+<text x="949" y="1832" text-anchor="middle" font-size="12" fill="#9198A1">法内では未実行</text>
+<rect x="1012.5" y="1763.5" width="113" height="98" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="1132.5" y="1763.5" width="113" height="98" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<text x="22" y="1922" font-size="15" font-weight="700" fill="#E6EDF3">Real2Code</text>
+<rect x="172.5" y="1868.5" width="113" height="98" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="292.75" y="1868.75" width="112.5" height="97.5" rx="5" fill="url(#hatch-a)" stroke="#E3A251" stroke-width="1.5"/>
+<rect x="296" y="1889" width="106" height="57" rx="4" fill="#0D1117"/>
+<text x="349" y="1904.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">微調整済み SAM</text>
+<text x="349" y="1920.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">DUSt3R</text>
+<text x="349" y="1937.5" text-anchor="middle" font-size="12" fill="#9198A1">部品分割と点群</text>
+<rect x="412.75" y="1868.75" width="112.5" height="97.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="416" y="1889.5" width="106" height="56" rx="4" fill="#0D1117"/>
+<text x="469" y="1905" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">形状補完モデル</text>
+<text x="469" y="1922" text-anchor="middle" font-size="12" fill="#9198A1">部品メッシ</text>
+<text x="469" y="1937" text-anchor="middle" font-size="12" fill="#9198A1">ュを補完</text>
+<rect x="532.75" y="1868.75" width="112.5" height="97.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="548" y="1874" width="82" height="87" rx="4" fill="#0D1117"/>
+<text x="589" y="1889.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">微調整済み</text>
+<text x="589" y="1905.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">CodeLlama</text>
+<text x="589" y="1922.5" text-anchor="middle" font-size="12" fill="#9198A1">バウンディン</text>
+<text x="589" y="1937.5" text-anchor="middle" font-size="12" fill="#9198A1">グボックスか</text>
+<text x="589" y="1952.5" text-anchor="middle" font-size="12" fill="#9198A1">ら関節を予測</text>
+<rect x="652.75" y="1868.75" width="112.5" height="97.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="656" y="1897" width="106" height="41" rx="4" fill="#0D1117"/>
+<text x="709" y="1912.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">DUSt3R 点群</text>
+<text x="709" y="1929.5" text-anchor="middle" font-size="12" fill="#9198A1">部品の位置と寸法</text>
+<rect x="772.5" y="1868.5" width="113" height="98" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="892.75" y="1868.75" width="112.5" height="97.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="908" y="1889.5" width="82" height="56" rx="4" fill="#0D1117"/>
+<text x="949" y="1905" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">MuJoCo</text>
+<text x="949" y="1922" text-anchor="middle" font-size="12" fill="#9198A1">インスタンス</text>
+<text x="949" y="1937" text-anchor="middle" font-size="12" fill="#9198A1">化して実行</text>
+<rect x="1012.5" y="1868.5" width="113" height="98" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="1132.5" y="1868.5" width="113" height="98" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+</svg>

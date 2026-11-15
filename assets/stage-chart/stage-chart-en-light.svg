@@ -1,0 +1,729 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1268 2201" width="1268" height="2201" role="img" aria-label="Who does each step of building a simulator" font-family="-apple-system, &#x27;Segoe UI&#x27;, Helvetica, Arial, &#x27;Noto Sans&#x27;, sans-serif">
+<title>Who does each step of building a simulator</title>
+<defs>
+<pattern id="hatch-a" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FBEAD2"/><rect width="2.2" height="7" fill="#A35C0A"/></pattern>
+<pattern id="hatch-b" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#D2EEEA"/><rect width="2.2" height="7" fill="#0B7266"/></pattern>
+<pattern id="hatch-c" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#DCE5F6"/><rect width="2.2" height="7" fill="#2B57A4"/></pattern>
+<pattern id="hatch-d" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#F6DCE2"/><rect width="2.2" height="7" fill="#A5324D"/></pattern>
+<pattern id="hatch-e" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#E7E0F6"/><rect width="2.2" height="7" fill="#6748B2"/></pattern>
+<pattern id="hatch-legend" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.2" height="7" fill="#59636E"/></pattern>
+</defs>
+<rect x="0.5" y="0.5" width="1267" height="2200" rx="10" fill="#FFFFFF" stroke="#D1D9E0"/>
+<rect x="22" y="26" width="26" height="16" rx="3" fill="#59636E"/>
+<text x="56" y="39" font-size="13" fill="#59636E">Agent or VLM does it itself</text>
+<rect x="259.82000000000005" y="26" width="26" height="16" rx="3" fill="url(#hatch-legend)" stroke="#59636E"/>
+<text x="293.82000000000005" y="39" font-size="13" fill="#59636E">Specialised tool, model or engine</text>
+<rect x="542.3300000000002" y="26.75" width="24.5" height="14.5" rx="3" fill="none" stroke="#59636E" stroke-width="1.5"/>
+<text x="575.5800000000002" y="39" font-size="13" fill="#59636E">Given in advance or by hand</text>
+<rect x="776.7800000000003" y="26.5" width="25" height="15" rx="3" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="810.2800000000003" y="39" font-size="13" fill="#59636E">Not involved or not stated</text>
+<rect x="23" y="51" width="24" height="14" rx="3" fill="none" stroke="#A5324D" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="56" y="63" font-size="13" fill="#59636E">No physics engine: scene only</text>
+<rect x="275.3900000000001" y="50.75" width="24.5" height="14.5" rx="3" fill="none" stroke="#2B57A4" stroke-width="1.5"/>
+<text x="308.6400000000001" y="63" font-size="13" fill="#59636E">Sim-ready: loadable, not run</text>
+<rect x="172" y="82" width="234" height="28" rx="5" fill="#FBEAD2"/>
+<text x="289" y="101" text-anchor="middle" font-size="14.0" font-weight="700" fill="#A35C0A">A Perception &amp; Planning</text>
+<rect x="412" y="82" width="354" height="28" rx="5" fill="#D2EEEA"/>
+<text x="589" y="101" text-anchor="middle" font-size="14.0" font-weight="700" fill="#0B7266">B Scene Construction</text>
+<rect x="772" y="82" width="234" height="28" rx="5" fill="#DCE5F6"/>
+<text x="889" y="101" text-anchor="middle" font-size="14.0" font-weight="700" fill="#2B57A4">C Physics Modeling</text>
+<rect x="1012" y="82" width="234" height="28" rx="5" fill="#F6DCE2"/>
+<text x="1129" y="101" text-anchor="middle" font-size="14.0" font-weight="700" fill="#A5324D">D Task &amp; Control</text>
+<text x="229" y="132" text-anchor="middle" font-size="13.5" fill="#59636E">①</text>
+<text x="229" y="151" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1F2328">Task planning</text>
+<text x="349" y="132" text-anchor="middle" font-size="13.5" fill="#59636E">②</text>
+<text x="349" y="151" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1F2328">Perception &amp;</text>
+<text x="349" y="167" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1F2328">measurement</text>
+<text x="469" y="132" text-anchor="middle" font-size="13.5" fill="#59636E">③</text>
+<text x="469" y="151" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1F2328">Object assets</text>
+<text x="589" y="132" text-anchor="middle" font-size="13.5" fill="#59636E">④</text>
+<text x="589" y="151" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1F2328">Articulation</text>
+<text x="709" y="132" text-anchor="middle" font-size="13.5" fill="#59636E">⑤</text>
+<text x="709" y="151" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1F2328">Layout &amp;</text>
+<text x="709" y="167" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1F2328">alignment</text>
+<text x="829" y="132" text-anchor="middle" font-size="13.5" fill="#59636E">⑥</text>
+<text x="829" y="151" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1F2328">Physical</text>
+<text x="829" y="167" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1F2328">parameters</text>
+<text x="949" y="132" text-anchor="middle" font-size="13.5" fill="#59636E">⑦</text>
+<text x="949" y="151" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1F2328">Physics</text>
+<text x="949" y="167" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1F2328">engine</text>
+<text x="1069" y="132" text-anchor="middle" font-size="13.5" fill="#59636E">⑧</text>
+<text x="1069" y="151" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1F2328">Robot control</text>
+<text x="1189" y="132" text-anchor="middle" font-size="13.5" fill="#59636E">⑨</text>
+<text x="1189" y="151" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1F2328">Task</text>
+<text x="1189" y="167" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1F2328">definition</text>
+<text x="22" y="201" font-size="14.5" font-weight="700" fill="#1F2328">Bench · reference only</text>
+<line x1="212.599" y1="196" x2="1246" y2="196" stroke="#D1D9E0"/>
+<text x="22" y="265" font-size="15" font-weight="700" fill="#1F2328">RoboDojo</text>
+<rect x="22" y="273" width="47.12" height="17" rx="8.5" fill="#E7E0F6"/>
+<text x="29" y="285.5" font-size="11.5" fill="#6748B2">Bench</text>
+<rect x="172.75" y="214.75" width="112.5" height="112.5" rx="5" fill="#FFFFFF" stroke="#A35C0A" stroke-width="1.5"/>
+<text x="229" y="258.5" text-anchor="middle" font-size="13" font-weight="700" fill="#A35C0A">Human</text>
+<text x="229" y="275.5" text-anchor="middle" font-size="12" fill="#59636E">Designs</text>
+<text x="229" y="290.5" text-anchor="middle" font-size="12" fill="#59636E">the tasks</text>
+<rect x="292.5" y="214.5" width="113" height="113" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="412.75" y="214.75" width="112.5" height="112.5" rx="5" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="416" y="220" width="106" height="102" rx="4" fill="#FFFFFF"/>
+<text x="469" y="235.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Meshy</text>
+<text x="469" y="251.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">asset library</text>
+<text x="469" y="268.5" text-anchor="middle" font-size="12" fill="#59636E">Rebuilds or</text>
+<text x="469" y="283.5" text-anchor="middle" font-size="12" fill="#59636E">collects</text>
+<text x="469" y="298.5" text-anchor="middle" font-size="12" fill="#59636E">objects,</text>
+<text x="469" y="313.5" text-anchor="middle" font-size="12" fill="#59636E">checked by hand</text>
+<rect x="532.75" y="214.75" width="112.5" height="112.5" rx="5" fill="#FFFFFF" stroke="#0B7266" stroke-width="1.5"/>
+<text x="589" y="235.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0B7266">Existing</text>
+<text x="589" y="251.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0B7266">assets</text>
+<text x="589" y="268.5" text-anchor="middle" font-size="12" fill="#59636E">Open-source</text>
+<text x="589" y="283.5" text-anchor="middle" font-size="12" fill="#59636E">libraries,</text>
+<text x="589" y="298.5" text-anchor="middle" font-size="12" fill="#59636E">3D scans,</text>
+<text x="589" y="313.5" text-anchor="middle" font-size="12" fill="#59636E">ClothesNet</text>
+<rect x="652.75" y="214.75" width="112.5" height="112.5" rx="5" fill="#FFFFFF" stroke="#0B7266" stroke-width="1.5"/>
+<text x="709" y="243" text-anchor="middle" font-size="13" font-weight="700" fill="#0B7266">Hand-written</text>
+<text x="709" y="259" text-anchor="middle" font-size="13" font-weight="700" fill="#0B7266">YAML</text>
+<text x="709" y="276" text-anchor="middle" font-size="12" fill="#59636E">Layout and</text>
+<text x="709" y="291" text-anchor="middle" font-size="12" fill="#59636E">initial</text>
+<text x="709" y="306" text-anchor="middle" font-size="12" fill="#59636E">distribution</text>
+<rect x="772.75" y="214.75" width="112.5" height="112.5" rx="5" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
+<text x="829" y="251" text-anchor="middle" font-size="13" font-weight="700" fill="#2B57A4">Human</text>
+<text x="829" y="268" text-anchor="middle" font-size="12" fill="#59636E">Physical</text>
+<text x="829" y="283" text-anchor="middle" font-size="12" fill="#59636E">properties come</text>
+<text x="829" y="298" text-anchor="middle" font-size="12" fill="#59636E">with the assets</text>
+<rect x="892.75" y="214.75" width="112.5" height="112.5" rx="5" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="909.963" y="235" width="78.0732" height="72" rx="4" fill="#FFFFFF"/>
+<text x="949" y="250.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Isaac Sim</text>
+<text x="949" y="266.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Isaac Lab</text>
+<text x="949" y="283.5" text-anchor="middle" font-size="12" fill="#59636E">Parallel</text>
+<text x="949" y="298.5" text-anchor="middle" font-size="12" fill="#59636E">evaluation</text>
+<rect x="1012.75" y="214.75" width="112.5" height="112.5" rx="5" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
+<text x="1069" y="250.5" text-anchor="middle" font-size="13" font-weight="700" fill="#A5324D">Policy</text>
+<text x="1069" y="266.5" text-anchor="middle" font-size="13" font-weight="700" fill="#A5324D">under test</text>
+<text x="1069" y="283.5" text-anchor="middle" font-size="12" fill="#59636E">Outputs the</text>
+<text x="1069" y="298.5" text-anchor="middle" font-size="12" fill="#59636E">actions</text>
+<rect x="1132.75" y="214.75" width="112.5" height="112.5" rx="5" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
+<text x="1189" y="250.5" text-anchor="middle" font-size="13" font-weight="700" fill="#A5324D">Hand-written</text>
+<text x="1189" y="266.5" text-anchor="middle" font-size="13" font-weight="700" fill="#A5324D">YAML</text>
+<text x="1189" y="283.5" text-anchor="middle" font-size="12" fill="#59636E">Success</text>
+<text x="1189" y="298.5" text-anchor="middle" font-size="12" fill="#59636E">conditions</text>
+<text x="22" y="377" font-size="15" font-weight="700" fill="#1F2328">Video2World</text>
+<rect x="22" y="385" width="47.12" height="17" rx="8.5" fill="#E7E0F6"/>
+<text x="29" y="397.5" font-size="11.5" fill="#6748B2">Bench</text>
+<rect x="172" y="334" width="114" height="98" rx="5" fill="#A35C0A"/>
+<text x="229" y="363" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="229" y="380" text-anchor="middle" font-size="12" fill="#FFFFFF">Reads the</text>
+<text x="229" y="395" text-anchor="middle" font-size="12" fill="#FFFFFF">video and</text>
+<text x="229" y="410" text-anchor="middle" font-size="12" fill="#FFFFFF">robot assets</text>
+<rect x="292" y="334" width="114" height="98" rx="5" fill="#A35C0A"/>
+<text x="349" y="355.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="349" y="372.5" text-anchor="middle" font-size="12" fill="#FFFFFF">Estimates</text>
+<text x="349" y="387.5" text-anchor="middle" font-size="12" fill="#FFFFFF">first-frame</text>
+<text x="349" y="402.5" text-anchor="middle" font-size="12" fill="#FFFFFF">joints and</text>
+<text x="349" y="417.5" text-anchor="middle" font-size="12" fill="#FFFFFF">measures</text>
+<rect x="412" y="334" width="114" height="98" rx="5" fill="#0B7266"/>
+<text x="469" y="363" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="469" y="380" text-anchor="middle" font-size="12" fill="#FFFFFF">Wallet and</text>
+<text x="469" y="395" text-anchor="middle" font-size="12" fill="#FFFFFF">bag geometry</text>
+<text x="469" y="410" text-anchor="middle" font-size="12" fill="#FFFFFF">and colliders</text>
+<rect x="532.5" y="334.5" width="113" height="97" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="652" y="334" width="114" height="98" rx="5" fill="#0B7266"/>
+<text x="709" y="355.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="709" y="372.5" text-anchor="middle" font-size="12" fill="#FFFFFF">Solves camera</text>
+<text x="709" y="387.5" text-anchor="middle" font-size="12" fill="#FFFFFF">extrinsics by</text>
+<text x="709" y="402.5" text-anchor="middle" font-size="12" fill="#FFFFFF">forward</text>
+<text x="709" y="417.5" text-anchor="middle" font-size="12" fill="#FFFFFF">kinematics</text>
+<rect x="772" y="334" width="114" height="98" rx="5" fill="#2B57A4"/>
+<text x="829" y="370.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="829" y="387.5" text-anchor="middle" font-size="12" fill="#FFFFFF">Sets up</text>
+<text x="829" y="402.5" text-anchor="middle" font-size="12" fill="#FFFFFF">contacts</text>
+<rect x="892.75" y="334.75" width="112.5" height="96.5" rx="5" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="901.4" y="355" width="95.2" height="56" rx="4" fill="#FFFFFF"/>
+<text x="949" y="370.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Isaac Sim</text>
+<text x="949" y="387.5" text-anchor="middle" font-size="12" fill="#59636E">Platform runs</text>
+<text x="949" y="402.5" text-anchor="middle" font-size="12" fill="#59636E">the replay</text>
+<rect x="1012" y="334" width="114" height="98" rx="5" fill="#A5324D"/>
+<text x="1069" y="370.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="1069" y="387.5" text-anchor="middle" font-size="12" fill="#FFFFFF">Writes</text>
+<text x="1069" y="402.5" text-anchor="middle" font-size="12" fill="#FFFFFF">actions.npy</text>
+<rect x="1132.75" y="334.75" width="112.5" height="96.5" rx="5" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
+<text x="1189" y="362.5" text-anchor="middle" font-size="13" font-weight="700" fill="#A5324D">Given by</text>
+<text x="1189" y="378.5" text-anchor="middle" font-size="13" font-weight="700" fill="#A5324D">the task</text>
+<text x="1189" y="395.5" text-anchor="middle" font-size="12" fill="#59636E">Success</text>
+<text x="1189" y="410.5" text-anchor="middle" font-size="12" fill="#59636E">conditions</text>
+<text x="22" y="463" font-size="14.5" font-weight="700" fill="#1F2328">Agentic End-to-End · one Agent does it all</text>
+<line x1="372.447" y1="458" x2="1246" y2="458" stroke="#D1D9E0"/>
+<text x="22" y="522.5" font-size="15" font-weight="700" fill="#1F2328">Plumb</text>
+<rect x="172" y="476" width="114" height="84" rx="5" fill="#A35C0A"/>
+<text x="229" y="505.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="229" y="522.5" text-anchor="middle" font-size="12" fill="#FFFFFF">Reads the</text>
+<text x="229" y="537.5" text-anchor="middle" font-size="12" fill="#FFFFFF">video and task</text>
+<rect x="292.75" y="476.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="301.88" y="482" width="94.24" height="72" rx="4" fill="#FFFFFF"/>
+<text x="349" y="497.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">SAM3</text>
+<text x="349" y="513.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Pi3X</text>
+<text x="349" y="530.5" text-anchor="middle" font-size="12" fill="#59636E">Tracks,</text>
+<text x="349" y="545.5" text-anchor="middle" font-size="12" fill="#59636E">depth, camera</text>
+<rect x="412" y="476" width="114" height="84" rx="5" fill="#0B7266"/>
+<text x="469" y="505.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="469" y="522.5" text-anchor="middle" font-size="12" fill="#FFFFFF">Writes MJCF</text>
+<text x="469" y="537.5" text-anchor="middle" font-size="12" fill="#FFFFFF">geometry</text>
+<rect x="532.5" y="476.5" width="113" height="83" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="652" y="476" width="114" height="84" rx="5" fill="#0B7266"/>
+<text x="709" y="498" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="709" y="515" text-anchor="middle" font-size="12" fill="#FFFFFF">Measures</text>
+<text x="709" y="530" text-anchor="middle" font-size="12" fill="#FFFFFF">supports,</text>
+<text x="709" y="545" text-anchor="middle" font-size="12" fill="#FFFFFF">slopes, sizes</text>
+<rect x="772" y="476" width="114" height="84" rx="5" fill="#2B57A4"/>
+<text x="829" y="498" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="829" y="515" text-anchor="middle" font-size="12" fill="#FFFFFF">Writes a</text>
+<text x="829" y="530" text-anchor="middle" font-size="12" fill="#FFFFFF">parameter-</text>
+<text x="829" y="545" text-anchor="middle" font-size="12" fill="#FFFFFF">fitting program</text>
+<rect x="892.75" y="476.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="919.196" y="497.5" width="59.608" height="41" rx="4" fill="#FFFFFF"/>
+<text x="949" y="513" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">MuJoCo</text>
+<text x="949" y="530" text-anchor="middle" font-size="12" fill="#59636E">Replay</text>
+<rect x="1012" y="476" width="114" height="84" rx="5" fill="#A5324D"/>
+<text x="1069" y="505.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="1069" y="522.5" text-anchor="middle" font-size="12" fill="#FFFFFF">Writes the</text>
+<text x="1069" y="537.5" text-anchor="middle" font-size="12" fill="#FFFFFF">initial state</text>
+<rect x="1132.5" y="476.5" width="113" height="83" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<text x="22" y="612" font-size="15" font-weight="700" fill="#1F2328">CUE</text>
+<rect x="172" y="566" width="114" height="83" rx="5" fill="#A35C0A"/>
+<text x="229" y="587.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="229" y="604.5" text-anchor="middle" font-size="12" fill="#FFFFFF">Picks key</text>
+<text x="229" y="619.5" text-anchor="middle" font-size="12" fill="#FFFFFF">parameters</text>
+<text x="229" y="634.5" text-anchor="middle" font-size="12" fill="#FFFFFF">and ranges</text>
+<rect x="292" y="566" width="114" height="83" rx="5" fill="#A35C0A"/>
+<text x="349" y="595" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="349" y="612" text-anchor="middle" font-size="12" fill="#FFFFFF">Writes ball</text>
+<text x="349" y="627" text-anchor="middle" font-size="12" fill="#FFFFFF">tracking</text>
+<rect x="412" y="566" width="114" height="83" rx="5" fill="#0B7266"/>
+<text x="469" y="595" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="469" y="612" text-anchor="middle" font-size="12" fill="#FFFFFF">Writes</text>
+<text x="469" y="627" text-anchor="middle" font-size="12" fill="#FFFFFF">billiards MJCF</text>
+<rect x="532.5" y="566.5" width="113" height="82" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="652" y="566" width="114" height="83" rx="5" fill="#0B7266"/>
+<text x="709" y="587.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="709" y="604.5" text-anchor="middle" font-size="12" fill="#FFFFFF">Lays out</text>
+<text x="709" y="619.5" text-anchor="middle" font-size="12" fill="#FFFFFF">the table</text>
+<text x="709" y="634.5" text-anchor="middle" font-size="12" fill="#FFFFFF">from images</text>
+<rect x="772.75" y="566.75" width="112.5" height="81.5" rx="5" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="776" y="579.5" width="106" height="56" rx="4" fill="#FFFFFF"/>
+<text x="829" y="595" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">CMA-ES</text>
+<text x="829" y="612" text-anchor="middle" font-size="12" fill="#59636E">Fits trajectory</text>
+<text x="829" y="627" text-anchor="middle" font-size="12" fill="#59636E">differences</text>
+<rect x="892.75" y="566.75" width="112.5" height="81.5" rx="5" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="896" y="587" width="106" height="41" rx="4" fill="#FFFFFF"/>
+<text x="949" y="602.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">MuJoCo</text>
+<text x="949" y="619.5" text-anchor="middle" font-size="12" fill="#59636E">Parallel replay</text>
+<rect x="1012" y="566" width="114" height="83" rx="5" fill="#A5324D"/>
+<text x="1069" y="587.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="1069" y="604.5" text-anchor="middle" font-size="12" fill="#FFFFFF">Chooses the</text>
+<text x="1069" y="619.5" text-anchor="middle" font-size="12" fill="#FFFFFF">next shot</text>
+<text x="1069" y="634.5" text-anchor="middle" font-size="12" fill="#FFFFFF">itself</text>
+<rect x="1132.5" y="566.5" width="113" height="82" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<text x="22" y="717" font-size="15" font-weight="700" fill="#1F2328">Real2Gym</text>
+<rect x="172" y="655" width="114" height="115" rx="5" fill="#A35C0A"/>
+<text x="229" y="692.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="229" y="709.5" text-anchor="middle" font-size="12" fill="#FFFFFF">Reads the</text>
+<text x="229" y="724.5" text-anchor="middle" font-size="12" fill="#FFFFFF">demo, picks</text>
+<text x="229" y="739.5" text-anchor="middle" font-size="12" fill="#FFFFFF">target objects</text>
+<rect x="292.75" y="655.75" width="112.5" height="113.5" rx="5" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="303.68" y="661" width="90.64" height="103" rx="4" fill="#FFFFFF"/>
+<text x="349" y="676.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">MoGe-3</text>
+<text x="349" y="692.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Pi3X</text>
+<text x="349" y="708.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">SAM2</text>
+<text x="349" y="725.5" text-anchor="middle" font-size="12" fill="#59636E">Geometry,</text>
+<text x="349" y="740.5" text-anchor="middle" font-size="12" fill="#59636E">camera,</text>
+<text x="349" y="755.5" text-anchor="middle" font-size="12" fill="#59636E">segmentation</text>
+<rect x="412" y="655" width="114" height="115" rx="5" fill="#0B7266"/>
+<text x="469" y="685" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="469" y="702" text-anchor="middle" font-size="12" fill="#FFFFFF">Completes</text>
+<text x="469" y="717" text-anchor="middle" font-size="12" fill="#FFFFFF">meshes from</text>
+<text x="469" y="732" text-anchor="middle" font-size="12" fill="#FFFFFF">outlines</text>
+<text x="469" y="747" text-anchor="middle" font-size="12" fill="#FFFFFF">and views</text>
+<rect x="532.5" y="655.5" width="113" height="114" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="652" y="655" width="114" height="115" rx="5" fill="#0B7266"/>
+<text x="709" y="700" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="709" y="717" text-anchor="middle" font-size="12" fill="#FFFFFF">Unifies scale</text>
+<text x="709" y="732" text-anchor="middle" font-size="12" fill="#FFFFFF">and coordinates</text>
+<rect x="772" y="655" width="114" height="115" rx="5" fill="#2B57A4"/>
+<text x="829" y="692.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="829" y="709.5" text-anchor="middle" font-size="12" fill="#FFFFFF">Writes material</text>
+<text x="829" y="724.5" text-anchor="middle" font-size="12" fill="#FFFFFF">properties (not</text>
+<text x="829" y="739.5" text-anchor="middle" font-size="12" fill="#FFFFFF">fitted)</text>
+<rect x="892.75" y="655.75" width="112.5" height="113.5" rx="5" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="901.4" y="677" width="95.2" height="71" rx="4" fill="#FFFFFF"/>
+<text x="949" y="692.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">MuJoCo</text>
+<text x="949" y="709.5" text-anchor="middle" font-size="12" fill="#59636E">Runs physics;</text>
+<text x="949" y="724.5" text-anchor="middle" font-size="12" fill="#59636E">Blender only</text>
+<text x="949" y="739.5" text-anchor="middle" font-size="12" fill="#59636E">renders</text>
+<rect x="1012" y="655" width="114" height="115" rx="5" fill="#A5324D"/>
+<text x="1069" y="700" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="1069" y="717" text-anchor="middle" font-size="12" fill="#FFFFFF">Executes or</text>
+<text x="1069" y="732" text-anchor="middle" font-size="12" fill="#FFFFFF">retargets demos</text>
+<rect x="1132" y="655" width="114" height="115" rx="5" fill="#A5324D"/>
+<text x="1189" y="700" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="1189" y="717" text-anchor="middle" font-size="12" fill="#FFFFFF">Writes Gym</text>
+<text x="1189" y="732" text-anchor="middle" font-size="12" fill="#FFFFFF">task stages</text>
+<text x="22" y="827.5" font-size="15" font-weight="700" fill="#1F2328">DyCraft</text>
+<rect x="22.5" y="836" width="75.33" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
+<text x="29" y="848" font-size="11.5" fill="#59636E">Scene only</text>
+<rect x="172" y="776" width="114" height="115" rx="5" fill="#A35C0A"/>
+<text x="229" y="806" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="229" y="823" text-anchor="middle" font-size="12" fill="#FFFFFF">Expands a</text>
+<text x="229" y="838" text-anchor="middle" font-size="12" fill="#FFFFFF">short prompt</text>
+<text x="229" y="853" text-anchor="middle" font-size="12" fill="#FFFFFF">into scene and</text>
+<text x="229" y="868" text-anchor="middle" font-size="12" fill="#FFFFFF">motion specs</text>
+<rect x="292.5" y="776.5" width="113" height="114" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="412" y="776" width="114" height="115" rx="5" fill="#0B7266"/>
+<text x="469" y="813.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="469" y="830.5" text-anchor="middle" font-size="12" fill="#FFFFFF">Objects in CAD;</text>
+<text x="469" y="845.5" text-anchor="middle" font-size="12" fill="#FFFFFF">characters from</text>
+<text x="469" y="860.5" text-anchor="middle" font-size="12" fill="#FFFFFF">a library</text>
+<rect x="532" y="776" width="114" height="115" rx="5" fill="#0B7266"/>
+<text x="589" y="821" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="589" y="838" text-anchor="middle" font-size="12" fill="#FFFFFF">Defines</text>
+<text x="589" y="853" text-anchor="middle" font-size="12" fill="#FFFFFF">joints in CAD</text>
+<rect x="652" y="776" width="114" height="115" rx="5" fill="#0B7266"/>
+<text x="709" y="813.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="709" y="830.5" text-anchor="middle" font-size="12" fill="#FFFFFF">Poses key</text>
+<text x="709" y="845.5" text-anchor="middle" font-size="12" fill="#FFFFFF">frames (3D</text>
+<text x="709" y="860.5" text-anchor="middle" font-size="12" fill="#FFFFFF">storyboard)</text>
+<rect x="772.5" y="776.5" width="113" height="114" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="893" y="777" width="112" height="113" rx="5" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="949" y="798" text-anchor="middle" font-size="13" font-weight="700" fill="#A5324D">No physics</text>
+<text x="949" y="814" text-anchor="middle" font-size="13" font-weight="700" fill="#A5324D">engine</text>
+<text x="949" y="831" text-anchor="middle" font-size="12" fill="#A5324D">Blender&#x27;s</text>
+<text x="949" y="846" text-anchor="middle" font-size="12" fill="#A5324D">built-in</text>
+<text x="949" y="861" text-anchor="middle" font-size="12" fill="#A5324D">physics only</text>
+<text x="949" y="876" text-anchor="middle" font-size="12" fill="#A5324D">animates</text>
+<rect x="1012.75" y="776.75" width="112.5" height="113.5" rx="5" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="1018.04" y="782" width="101.92" height="103" rx="4" fill="#FFFFFF"/>
+<text x="1069" y="797.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">CMU mocap</text>
+<text x="1069" y="813.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">IK</text>
+<text x="1069" y="829.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Blender</text>
+<text x="1069" y="846.5" text-anchor="middle" font-size="12" fill="#59636E">Retargets</text>
+<text x="1069" y="861.5" text-anchor="middle" font-size="12" fill="#59636E">clips; Blender</text>
+<text x="1069" y="876.5" text-anchor="middle" font-size="12" fill="#59636E">simulates</text>
+<rect x="1132.5" y="776.5" width="113" height="114" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<text x="22" y="922" font-size="14.5" font-weight="700" fill="#1F2328">Closed-loop Workflow · roles fixed in advance, problems go back to the responsible step</text>
+<line x1="733.335" y1="917" x2="1246" y2="917" stroke="#D1D9E0"/>
+<text x="22" y="980" font-size="15" font-weight="700" fill="#1F2328">Agentic</text>
+<text x="22" y="999" font-size="15" font-weight="700" fill="#1F2328">Real2Sim</text>
+<rect x="172" y="935" width="114" height="100" rx="5" fill="#A35C0A"/>
+<text x="229" y="965" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Vision Agent</text>
+<text x="229" y="982" text-anchor="middle" font-size="12" fill="#FFFFFF">Finds relevant</text>
+<text x="229" y="997" text-anchor="middle" font-size="12" fill="#FFFFFF">objects and</text>
+<text x="229" y="1012" text-anchor="middle" font-size="12" fill="#FFFFFF">supports</text>
+<rect x="292.75" y="935.75" width="112.5" height="98.5" rx="5" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="299.84" y="941" width="98.32" height="88" rx="4" fill="#FFFFFF"/>
+<text x="349" y="956.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">SAM 3</text>
+<text x="349" y="972.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Foundation</text>
+<text x="349" y="988.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Pose</text>
+<text x="349" y="1005.5" text-anchor="middle" font-size="12" fill="#59636E">Segmentation,</text>
+<text x="349" y="1020.5" text-anchor="middle" font-size="12" fill="#59636E">pose tracking</text>
+<rect x="412.75" y="935.75" width="112.5" height="98.5" rx="5" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="421.88" y="957" width="94.24" height="56" rx="4" fill="#FFFFFF"/>
+<text x="469" y="972.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">SAM 3D</text>
+<text x="469" y="989.5" text-anchor="middle" font-size="12" fill="#59636E">Recovers and</text>
+<text x="469" y="1004.5" text-anchor="middle" font-size="12" fill="#59636E">scales meshes</text>
+<rect x="532.5" y="935.5" width="113" height="99" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="652" y="935" width="114" height="100" rx="5" fill="#0B7266"/>
+<text x="709" y="965" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Scene Agent</text>
+<text x="709" y="982" text-anchor="middle" font-size="12" fill="#FFFFFF">Calibrates</text>
+<text x="709" y="997" text-anchor="middle" font-size="12" fill="#FFFFFF">camera,</text>
+<text x="709" y="1012" text-anchor="middle" font-size="12" fill="#FFFFFF">ground, base</text>
+<rect x="772" y="935" width="114" height="100" rx="5" fill="#2B57A4"/>
+<text x="829" y="965" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Physics Agent</text>
+<text x="829" y="982" text-anchor="middle" font-size="12" fill="#FFFFFF">Estimates</text>
+<text x="829" y="997" text-anchor="middle" font-size="12" fill="#FFFFFF">parameters</text>
+<text x="829" y="1012" text-anchor="middle" font-size="12" fill="#FFFFFF">from materials</text>
+<rect x="892.75" y="935.75" width="112.5" height="98.5" rx="5" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="908.12" y="957" width="81.76" height="56" rx="4" fill="#FFFFFF"/>
+<text x="949" y="972.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">MuJoCo</text>
+<text x="949" y="989.5" text-anchor="middle" font-size="12" fill="#59636E">Replays the</text>
+<text x="949" y="1004.5" text-anchor="middle" font-size="12" fill="#59636E">trajectory</text>
+<rect x="1012.75" y="935.75" width="112.5" height="98.5" rx="5" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
+<text x="1069" y="972.5" text-anchor="middle" font-size="13" font-weight="700" fill="#A5324D">Given</text>
+<text x="1069" y="989.5" text-anchor="middle" font-size="12" fill="#59636E">Recorded robot</text>
+<text x="1069" y="1004.5" text-anchor="middle" font-size="12" fill="#59636E">trajectory</text>
+<rect x="1132.5" y="935.5" width="113" height="99" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<text x="22" y="1103" font-size="15" font-weight="700" fill="#1F2328">WorldMirror</text>
+<rect x="172.75" y="1041.75" width="112.5" height="113.5" rx="5" fill="#FFFFFF" stroke="#A35C0A" stroke-width="1.5"/>
+<text x="229" y="1070" text-anchor="middle" font-size="13" font-weight="700" fill="#A35C0A">Fixed</text>
+<text x="229" y="1086" text-anchor="middle" font-size="13" font-weight="700" fill="#A35C0A">dependency</text>
+<text x="229" y="1102" text-anchor="middle" font-size="13" font-weight="700" fill="#A35C0A">graph</text>
+<text x="229" y="1119" text-anchor="middle" font-size="12" fill="#59636E">Calls each</text>
+<text x="229" y="1134" text-anchor="middle" font-size="12" fill="#59636E">Agent in order</text>
+<rect x="292.75" y="1041.75" width="112.5" height="113.5" rx="5" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="297.837" y="1063" width="102.326" height="71" rx="4" fill="#FFFFFF"/>
+<text x="349" y="1078.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">3D Gaussians</text>
+<text x="349" y="1095.5" text-anchor="middle" font-size="12" fill="#59636E">Reconstructs</text>
+<text x="349" y="1110.5" text-anchor="middle" font-size="12" fill="#59636E">the static</text>
+<text x="349" y="1125.5" text-anchor="middle" font-size="12" fill="#59636E">background</text>
+<rect x="412.75" y="1041.75" width="112.5" height="113.5" rx="5" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="427.04" y="1055" width="83.92" height="87" rx="4" fill="#FFFFFF"/>
+<text x="469" y="1070.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Meshy</text>
+<text x="469" y="1086.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Articraft</text>
+<text x="469" y="1103.5" text-anchor="middle" font-size="12" fill="#59636E">Generates</text>
+<text x="469" y="1118.5" text-anchor="middle" font-size="12" fill="#59636E">interactive</text>
+<text x="469" y="1133.5" text-anchor="middle" font-size="12" fill="#59636E">assets</text>
+<rect x="532.5" y="1041.5" width="113" height="114" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="652" y="1041" width="114" height="115" rx="5" fill="#0B7266"/>
+<text x="709" y="1062.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Calibration</text>
+<text x="709" y="1078.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">and layout</text>
+<text x="709" y="1094.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agents</text>
+<text x="709" y="1111.5" text-anchor="middle" font-size="12" fill="#FFFFFF">Aligns</text>
+<text x="709" y="1126.5" text-anchor="middle" font-size="12" fill="#FFFFFF">coordinates and</text>
+<text x="709" y="1141.5" text-anchor="middle" font-size="12" fill="#FFFFFF">places objects</text>
+<rect x="772.5" y="1041.5" width="113" height="114" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="892.75" y="1041.75" width="112.5" height="113.5" rx="5" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="908.12" y="1063" width="81.76" height="71" rx="4" fill="#FFFFFF"/>
+<text x="949" y="1078.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Isaac Sim</text>
+<text x="949" y="1095.5" text-anchor="middle" font-size="12" fill="#59636E">Replays the</text>
+<text x="949" y="1110.5" text-anchor="middle" font-size="12" fill="#59636E">original</text>
+<text x="949" y="1125.5" text-anchor="middle" font-size="12" fill="#59636E">trajectory</text>
+<rect x="1012.75" y="1041.75" width="112.5" height="113.5" rx="5" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
+<text x="1069" y="1086" text-anchor="middle" font-size="13" font-weight="700" fill="#A5324D">Given</text>
+<text x="1069" y="1103" text-anchor="middle" font-size="12" fill="#59636E">Recorded robot</text>
+<text x="1069" y="1118" text-anchor="middle" font-size="12" fill="#59636E">trajectory</text>
+<rect x="1132.5" y="1041.5" width="113" height="114" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<text x="22" y="1208" font-size="15" font-weight="700" fill="#1F2328">Text2Sim</text>
+<rect x="172" y="1162" width="114" height="83" rx="5" fill="#A35C0A"/>
+<text x="229" y="1191" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Planner</text>
+<text x="229" y="1208" text-anchor="middle" font-size="12" fill="#FFFFFF">Sets the</text>
+<text x="229" y="1223" text-anchor="middle" font-size="12" fill="#FFFFFF">global plan</text>
+<rect x="292.5" y="1162.5" width="113" height="82" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="412.75" y="1162.75" width="112.5" height="81.5" rx="5" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="423.2" y="1175.5" width="91.6" height="56" rx="4" fill="#FFFFFF"/>
+<text x="469" y="1191" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Meshy</text>
+<text x="469" y="1208" text-anchor="middle" font-size="12" fill="#59636E">Text-to-mesh</text>
+<text x="469" y="1223" text-anchor="middle" font-size="12" fill="#59636E">generation</text>
+<rect x="532.5" y="1162.5" width="113" height="82" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="652" y="1162" width="114" height="83" rx="5" fill="#0B7266"/>
+<text x="709" y="1191" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Scene Writer</text>
+<text x="709" y="1208" text-anchor="middle" font-size="12" fill="#FFFFFF">Writes the</text>
+<text x="709" y="1223" text-anchor="middle" font-size="12" fill="#FFFFFF">scene program</text>
+<rect x="772" y="1162" width="114" height="83" rx="5" fill="#2B57A4"/>
+<text x="829" y="1183.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Body Writer</text>
+<text x="829" y="1200.5" text-anchor="middle" font-size="12" fill="#FFFFFF">Writes</text>
+<text x="829" y="1215.5" text-anchor="middle" font-size="12" fill="#FFFFFF">materials</text>
+<text x="829" y="1230.5" text-anchor="middle" font-size="12" fill="#FFFFFF">and physics</text>
+<rect x="892.75" y="1162.75" width="112.5" height="81.5" rx="5" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="916.44" y="1175.5" width="65.12" height="56" rx="4" fill="#FFFFFF"/>
+<text x="949" y="1191" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Genesis</text>
+<text x="949" y="1208" text-anchor="middle" font-size="12" fill="#59636E">Runs and</text>
+<text x="949" y="1223" text-anchor="middle" font-size="12" fill="#59636E">records</text>
+<rect x="1012" y="1162" width="114" height="83" rx="5" fill="#A5324D"/>
+<text x="1069" y="1191" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Action Writer</text>
+<text x="1069" y="1208" text-anchor="middle" font-size="12" fill="#FFFFFF">Writes motion</text>
+<text x="1069" y="1223" text-anchor="middle" font-size="12" fill="#FFFFFF">and control</text>
+<rect x="1132.5" y="1162.5" width="113" height="82" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<text x="22" y="1305" font-size="15" font-weight="700" fill="#1F2328">SceneSmith</text>
+<rect x="172" y="1251" width="114" height="99" rx="5" fill="#A35C0A"/>
+<text x="229" y="1280.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Planner</text>
+<text x="229" y="1297.5" text-anchor="middle" font-size="12" fill="#FFFFFF">Breaks the</text>
+<text x="229" y="1312.5" text-anchor="middle" font-size="12" fill="#FFFFFF">request down</text>
+<text x="229" y="1327.5" text-anchor="middle" font-size="12" fill="#FFFFFF">by level</text>
+<rect x="292.5" y="1251.5" width="113" height="98" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="412.75" y="1251.75" width="112.5" height="97.5" rx="5" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="416" y="1257" width="106" height="87" rx="4" fill="#FFFFFF"/>
+<text x="469" y="1272.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">SAM3</text>
+<text x="469" y="1288.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">SAM3D</text>
+<text x="469" y="1305.5" text-anchor="middle" font-size="12" fill="#59636E">Rebuilds meshes</text>
+<text x="469" y="1320.5" text-anchor="middle" font-size="12" fill="#59636E">from reference</text>
+<text x="469" y="1335.5" text-anchor="middle" font-size="12" fill="#59636E">images</text>
+<rect x="532.75" y="1251.75" width="112.5" height="97.5" rx="5" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="547.04" y="1265" width="83.92" height="71" rx="4" fill="#FFFFFF"/>
+<text x="589" y="1280.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">ArtVIP</text>
+<text x="589" y="1297.5" text-anchor="middle" font-size="12" fill="#59636E">Retrieves</text>
+<text x="589" y="1312.5" text-anchor="middle" font-size="12" fill="#59636E">articulated</text>
+<text x="589" y="1327.5" text-anchor="middle" font-size="12" fill="#59636E">assets</text>
+<rect x="652" y="1251" width="114" height="99" rx="5" fill="#0B7266"/>
+<text x="709" y="1288" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Designer</text>
+<text x="709" y="1305" text-anchor="middle" font-size="12" fill="#FFFFFF">Places objects</text>
+<text x="709" y="1320" text-anchor="middle" font-size="12" fill="#FFFFFF">level by level</text>
+<rect x="772" y="1251" width="114" height="99" rx="5" fill="#2B57A4"/>
+<text x="829" y="1280.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">VLM</text>
+<text x="829" y="1297.5" text-anchor="middle" font-size="12" fill="#FFFFFF">Estimates mass,</text>
+<text x="829" y="1312.5" text-anchor="middle" font-size="12" fill="#FFFFFF">friction,</text>
+<text x="829" y="1327.5" text-anchor="middle" font-size="12" fill="#FFFFFF">inertia</text>
+<rect x="892.75" y="1251.75" width="112.5" height="97.5" rx="5" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="901.88" y="1257.5" width="94.24" height="86" rx="4" fill="#FFFFFF"/>
+<text x="949" y="1273" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Drake</text>
+<text x="949" y="1290" text-anchor="middle" font-size="12" fill="#59636E">Removes</text>
+<text x="949" y="1305" text-anchor="middle" font-size="12" fill="#59636E">penetration,</text>
+<text x="949" y="1320" text-anchor="middle" font-size="12" fill="#59636E">settles under</text>
+<text x="949" y="1335" text-anchor="middle" font-size="12" fill="#59636E">gravity</text>
+<rect x="1012.5" y="1251.5" width="113" height="98" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="1132.5" y="1251.5" width="113" height="98" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<text x="22" y="1393" font-size="15" font-weight="700" fill="#1F2328">Articulate-</text>
+<text x="22" y="1412" font-size="15" font-weight="700" fill="#1F2328">Anything</text>
+<rect x="172" y="1356" width="114" height="84" rx="5" fill="#A35C0A"/>
+<text x="229" y="1378" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">VLM</text>
+<text x="229" y="1395" text-anchor="middle" font-size="12" fill="#FFFFFF">Reads the</text>
+<text x="229" y="1410" text-anchor="middle" font-size="12" fill="#FFFFFF">reference,</text>
+<text x="229" y="1425" text-anchor="middle" font-size="12" fill="#FFFFFF">lists parts</text>
+<rect x="292.75" y="1356.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="301.4" y="1370" width="95.2" height="56" rx="4" fill="#FFFFFF"/>
+<text x="349" y="1385.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">CoTracker</text>
+<text x="349" y="1402.5" text-anchor="middle" font-size="12" fill="#59636E">Tracks motion</text>
+<text x="349" y="1417.5" text-anchor="middle" font-size="12" fill="#59636E">in the video</text>
+<rect x="412.75" y="1356.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="428.6" y="1362" width="80.8" height="72" rx="4" fill="#FFFFFF"/>
+<text x="469" y="1377.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">PartNet-</text>
+<text x="469" y="1393.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Mobility</text>
+<text x="469" y="1410.5" text-anchor="middle" font-size="12" fill="#59636E">Retrieves</text>
+<text x="469" y="1425.5" text-anchor="middle" font-size="12" fill="#59636E">part meshes</text>
+<rect x="532" y="1356" width="114" height="84" rx="5" fill="#0B7266"/>
+<text x="589" y="1378" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Actor</text>
+<text x="589" y="1395" text-anchor="middle" font-size="12" fill="#FFFFFF">Writes joint</text>
+<text x="589" y="1410" text-anchor="middle" font-size="12" fill="#FFFFFF">types, axes,</text>
+<text x="589" y="1425" text-anchor="middle" font-size="12" fill="#FFFFFF">ranges</text>
+<rect x="652" y="1356" width="114" height="84" rx="5" fill="#0B7266"/>
+<text x="709" y="1385.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Actor</text>
+<text x="709" y="1402.5" text-anchor="middle" font-size="12" fill="#FFFFFF">Writes the</text>
+<text x="709" y="1417.5" text-anchor="middle" font-size="12" fill="#FFFFFF">part assembly</text>
+<rect x="772.5" y="1356.5" width="113" height="83" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="892.75" y="1356.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="901.88" y="1362" width="94.24" height="72" rx="4" fill="#FFFFFF"/>
+<text x="949" y="1377.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">PyBullet</text>
+<text x="949" y="1393.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">SAPIEN</text>
+<text x="949" y="1410.5" text-anchor="middle" font-size="12" fill="#59636E">Simulation</text>
+<text x="949" y="1425.5" text-anchor="middle" font-size="12" fill="#59636E">and rendering</text>
+<rect x="1012.5" y="1356.5" width="113" height="83" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="1132.5" y="1356.5" width="113" height="83" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<text x="22" y="1508" font-size="15" font-weight="700" fill="#1F2328">Gym-Anything</text>
+<rect x="172" y="1446" width="114" height="115" rx="5" fill="#A35C0A"/>
+<text x="229" y="1468" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Creation</text>
+<text x="229" y="1484" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="229" y="1501" text-anchor="middle" font-size="12" fill="#FFFFFF">Researches</text>
+<text x="229" y="1516" text-anchor="middle" font-size="12" fill="#FFFFFF">the activity,</text>
+<text x="229" y="1531" text-anchor="middle" font-size="12" fill="#FFFFFF">designs scene</text>
+<text x="229" y="1546" text-anchor="middle" font-size="12" fill="#FFFFFF">and equations</text>
+<rect x="292.5" y="1446.5" width="113" height="114" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="412" y="1446" width="114" height="115" rx="5" fill="#0B7266"/>
+<text x="469" y="1468" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Creation</text>
+<text x="469" y="1484" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="469" y="1501" text-anchor="middle" font-size="12" fill="#FFFFFF">Picks real</text>
+<text x="469" y="1516" text-anchor="middle" font-size="12" fill="#FFFFFF">assets, builds</text>
+<text x="469" y="1531" text-anchor="middle" font-size="12" fill="#FFFFFF">contactable</text>
+<text x="469" y="1546" text-anchor="middle" font-size="12" fill="#FFFFFF">objects</text>
+<rect x="532.5" y="1446.5" width="113" height="114" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="652" y="1446" width="114" height="115" rx="5" fill="#0B7266"/>
+<text x="709" y="1475.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Creation</text>
+<text x="709" y="1491.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="709" y="1508.5" text-anchor="middle" font-size="12" fill="#FFFFFF">Gaussian</text>
+<text x="709" y="1523.5" text-anchor="middle" font-size="12" fill="#FFFFFF">background +</text>
+<text x="709" y="1538.5" text-anchor="middle" font-size="12" fill="#FFFFFF">physical bodies</text>
+<rect x="772" y="1446" width="114" height="115" rx="5" fill="#2B57A4"/>
+<text x="829" y="1468" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Creation</text>
+<text x="829" y="1484" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="829" y="1501" text-anchor="middle" font-size="12" fill="#FFFFFF">Implements</text>
+<text x="829" y="1516" text-anchor="middle" font-size="12" fill="#FFFFFF">the physics,</text>
+<text x="829" y="1531" text-anchor="middle" font-size="12" fill="#FFFFFF">incl. what</text>
+<text x="829" y="1546" text-anchor="middle" font-size="12" fill="#FFFFFF">engines lack</text>
+<rect x="892.75" y="1446.75" width="112.5" height="113.5" rx="5" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="896.24" y="1467.5" width="105.52" height="72" rx="4" fill="#FFFFFF"/>
+<text x="949" y="1483" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">MuJoCo</text>
+<text x="949" y="1499" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Warp, etc.</text>
+<text x="949" y="1516" text-anchor="middle" font-size="12" fill="#59636E">Runs on several</text>
+<text x="949" y="1531" text-anchor="middle" font-size="12" fill="#59636E">backends</text>
+<rect x="1012" y="1446" width="114" height="115" rx="5" fill="#A5324D"/>
+<text x="1069" y="1475.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Creation</text>
+<text x="1069" y="1491.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="1069" y="1508.5" text-anchor="middle" font-size="12" fill="#FFFFFF">Plugs in</text>
+<text x="1069" y="1523.5" text-anchor="middle" font-size="12" fill="#FFFFFF">robots from a</text>
+<text x="1069" y="1538.5" text-anchor="middle" font-size="12" fill="#FFFFFF">shared catalog</text>
+<rect x="1132" y="1446" width="114" height="115" rx="5" fill="#A5324D"/>
+<text x="1189" y="1467.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Task-</text>
+<text x="1189" y="1483.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">creation</text>
+<text x="1189" y="1499.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Agent</text>
+<text x="1189" y="1516.5" text-anchor="middle" font-size="12" fill="#FFFFFF">Creates tasks</text>
+<text x="1189" y="1531.5" text-anchor="middle" font-size="12" fill="#FFFFFF">at a target</text>
+<text x="1189" y="1546.5" text-anchor="middle" font-size="12" fill="#FFFFFF">difficulty</text>
+<text x="22" y="1592" font-size="14.5" font-weight="700" fill="#1F2328">Open-loop Workflow · roles fixed in advance, run once in order</text>
+<line x1="530.144" y1="1587" x2="1246" y2="1587" stroke="#D1D9E0"/>
+<text x="22" y="1651.5" font-size="15" font-weight="700" fill="#1F2328">GenSim</text>
+<rect x="172" y="1605" width="114" height="84" rx="5" fill="#A35C0A"/>
+<text x="229" y="1634.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">GPT-4</text>
+<text x="229" y="1651.5" text-anchor="middle" font-size="12" fill="#FFFFFF">Proposes tasks,</text>
+<text x="229" y="1666.5" text-anchor="middle" font-size="12" fill="#FFFFFF">writes specs</text>
+<rect x="292.5" y="1605.5" width="113" height="83" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="412.75" y="1605.75" width="112.5" height="82.5" rx="5" fill="#FFFFFF" stroke="#0B7266" stroke-width="1.5"/>
+<text x="469" y="1634.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0B7266">Given</text>
+<text x="469" y="1651.5" text-anchor="middle" font-size="12" fill="#59636E">Existing</text>
+<text x="469" y="1666.5" text-anchor="middle" font-size="12" fill="#59636E">Ravens assets</text>
+<rect x="532.5" y="1605.5" width="113" height="83" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="652" y="1605" width="114" height="84" rx="5" fill="#0B7266"/>
+<text x="709" y="1634.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">GPT-4</text>
+<text x="709" y="1651.5" text-anchor="middle" font-size="12" fill="#FFFFFF">Writes the</text>
+<text x="709" y="1666.5" text-anchor="middle" font-size="12" fill="#FFFFFF">reset placement</text>
+<rect x="772.5" y="1605.5" width="113" height="83" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="892.75" y="1605.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="899.6" y="1626.5" width="98.8" height="41" rx="4" fill="#FFFFFF"/>
+<text x="949" y="1642" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">PyBullet</text>
+<text x="949" y="1659" text-anchor="middle" font-size="12" fill="#59636E">Runs the tasks</text>
+<rect x="1012.75" y="1605.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="1025.24" y="1611" width="87.52" height="72" rx="4" fill="#FFFFFF"/>
+<text x="1069" y="1626.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Ravens</text>
+<text x="1069" y="1642.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">scripts</text>
+<text x="1069" y="1659.5" text-anchor="middle" font-size="12" fill="#59636E">Generates</text>
+<text x="1069" y="1674.5" text-anchor="middle" font-size="12" fill="#59636E">expert demos</text>
+<rect x="1132" y="1605" width="114" height="84" rx="5" fill="#A5324D"/>
+<text x="1189" y="1627" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">GPT-4</text>
+<text x="1189" y="1644" text-anchor="middle" font-size="12" fill="#FFFFFF">Writes goals</text>
+<text x="1189" y="1659" text-anchor="middle" font-size="12" fill="#FFFFFF">and success</text>
+<text x="1189" y="1674" text-anchor="middle" font-size="12" fill="#FFFFFF">checks</text>
+<text x="22" y="1741.5" font-size="15" font-weight="700" fill="#1F2328">Holodeck</text>
+<rect x="172" y="1695" width="114" height="84" rx="5" fill="#A35C0A"/>
+<text x="229" y="1717" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">GPT-4</text>
+<text x="229" y="1734" text-anchor="middle" font-size="12" fill="#FFFFFF">Designs rooms</text>
+<text x="229" y="1749" text-anchor="middle" font-size="12" fill="#FFFFFF">and object</text>
+<text x="229" y="1764" text-anchor="middle" font-size="12" fill="#FFFFFF">relations</text>
+<rect x="292.5" y="1695.5" width="113" height="83" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="412.75" y="1695.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="428.723" y="1701" width="80.5536" height="72" rx="4" fill="#FFFFFF"/>
+<text x="469" y="1716.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Objaverse</text>
+<text x="469" y="1732.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">ProcTHOR</text>
+<text x="469" y="1749.5" text-anchor="middle" font-size="12" fill="#59636E">Retrieves</text>
+<text x="469" y="1764.5" text-anchor="middle" font-size="12" fill="#59636E">meshes</text>
+<rect x="532.5" y="1695.5" width="113" height="83" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="652.75" y="1695.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="658.04" y="1701" width="101.92" height="72" rx="4" fill="#FFFFFF"/>
+<text x="709" y="1716.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Constraint</text>
+<text x="709" y="1732.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">solver</text>
+<text x="709" y="1749.5" text-anchor="middle" font-size="12" fill="#59636E">Places objects</text>
+<text x="709" y="1764.5" text-anchor="middle" font-size="12" fill="#59636E">by relations</text>
+<rect x="772.5" y="1695.5" width="113" height="83" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="892.75" y="1695.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="899.6" y="1716.5" width="98.8" height="41" rx="4" fill="#FFFFFF"/>
+<text x="949" y="1732" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">AI2-THOR</text>
+<text x="949" y="1749" text-anchor="middle" font-size="12" fill="#59636E">Loads and runs</text>
+<rect x="1012.5" y="1695.5" width="113" height="83" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="1132.5" y="1695.5" width="113" height="83" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<text x="22" y="1839.5" font-size="15" font-weight="700" fill="#1F2328">SimFoundry</text>
+<rect x="172" y="1785" width="114" height="100" rx="5" fill="#A35C0A"/>
+<text x="229" y="1822.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">VLM</text>
+<text x="229" y="1839.5" text-anchor="middle" font-size="12" fill="#FFFFFF">Lists objects</text>
+<text x="229" y="1854.5" text-anchor="middle" font-size="12" fill="#FFFFFF">and semantics</text>
+<rect x="292.75" y="1785.75" width="112.5" height="98.5" rx="5" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="299.84" y="1791" width="98.32" height="88" rx="4" fill="#FFFFFF"/>
+<text x="349" y="1806.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">SAM3</text>
+<text x="349" y="1822.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">PriorDepth</text>
+<text x="349" y="1838.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Anything</text>
+<text x="349" y="1855.5" text-anchor="middle" font-size="12" fill="#59636E">Segmentation,</text>
+<text x="349" y="1870.5" text-anchor="middle" font-size="12" fill="#59636E">depth</text>
+<rect x="412.75" y="1785.75" width="112.5" height="98.5" rx="5" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="416.72" y="1799" width="104.56" height="72" rx="4" fill="#FFFFFF"/>
+<text x="469" y="1814.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Hunyuan3D</text>
+<text x="469" y="1830.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">TRELLIS.2</text>
+<text x="469" y="1847.5" text-anchor="middle" font-size="12" fill="#59636E">Generates a</text>
+<text x="469" y="1862.5" text-anchor="middle" font-size="12" fill="#59636E">mesh per object</text>
+<rect x="532" y="1785" width="114" height="100" rx="5" fill="#0B7266"/>
+<text x="589" y="1815" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Actor–Critic</text>
+<text x="589" y="1832" text-anchor="middle" font-size="12" fill="#FFFFFF">Writes</text>
+<text x="589" y="1847" text-anchor="middle" font-size="12" fill="#FFFFFF">joints and</text>
+<text x="589" y="1862" text-anchor="middle" font-size="12" fill="#FFFFFF">checks motion</text>
+<rect x="652.75" y="1785.75" width="112.5" height="98.5" rx="5" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="660.08" y="1799" width="97.84" height="72" rx="4" fill="#FFFFFF"/>
+<text x="709" y="1814.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Foundation</text>
+<text x="709" y="1830.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Pose</text>
+<text x="709" y="1847.5" text-anchor="middle" font-size="12" fill="#59636E">Registers</text>
+<text x="709" y="1862.5" text-anchor="middle" font-size="12" fill="#59636E">pose and scale</text>
+<rect x="772" y="1785" width="114" height="100" rx="5" fill="#2B57A4"/>
+<text x="829" y="1822.5" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">VLM</text>
+<text x="829" y="1839.5" text-anchor="middle" font-size="12" fill="#FFFFFF">Estimates</text>
+<text x="829" y="1854.5" text-anchor="middle" font-size="12" fill="#FFFFFF">mass, friction</text>
+<rect x="892.75" y="1785.75" width="112.5" height="98.5" rx="5" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="903.68" y="1799.5" width="90.64" height="71" rx="4" fill="#FFFFFF"/>
+<text x="949" y="1815" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">PyBullet</text>
+<text x="949" y="1832" text-anchor="middle" font-size="12" fill="#59636E">Removes</text>
+<text x="949" y="1847" text-anchor="middle" font-size="12" fill="#59636E">penetration,</text>
+<text x="949" y="1862" text-anchor="middle" font-size="12" fill="#59636E">stabilises</text>
+<rect x="1012.5" y="1785.5" width="113" height="99" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="1132" y="1785" width="114" height="100" rx="5" fill="#A5324D"/>
+<text x="1189" y="1815" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">VLM</text>
+<text x="1189" y="1832" text-anchor="middle" font-size="12" fill="#FFFFFF">Proposes tasks</text>
+<text x="1189" y="1847" text-anchor="middle" font-size="12" fill="#FFFFFF">and success</text>
+<text x="1189" y="1862" text-anchor="middle" font-size="12" fill="#FFFFFF">conditions</text>
+<text x="22" y="1916" font-size="14.5" font-weight="700" fill="#1F2328">Model-based (without Agent) · models or optimization produce the result</text>
+<line x1="611.605" y1="1911" x2="1246" y2="1911" stroke="#D1D9E0"/>
+<text x="22" y="1980" font-size="15" font-weight="700" fill="#1F2328">PhysX-Omni</text>
+<rect x="22.5" y="1988.5" width="71.88" height="16" rx="8" fill="none" stroke="#2B57A4"/>
+<text x="29" y="2000.5" font-size="11.5" fill="#2B57A4">Sim-ready</text>
+<rect x="172.75" y="1929.75" width="112.5" height="112.5" rx="5" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="182.66" y="1935" width="92.68" height="102" rx="4" fill="#FFFFFF"/>
+<text x="229" y="1950.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Fine-tuned</text>
+<text x="229" y="1966.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Qwen2.5-VL</text>
+<text x="229" y="1983.5" text-anchor="middle" font-size="12" fill="#59636E">Infers</text>
+<text x="229" y="1998.5" text-anchor="middle" font-size="12" fill="#59636E">category,</text>
+<text x="229" y="2013.5" text-anchor="middle" font-size="12" fill="#59636E">scale, part</text>
+<text x="229" y="2028.5" text-anchor="middle" font-size="12" fill="#59636E">hierarchy</text>
+<rect x="292.5" y="1929.5" width="113" height="113" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="412.75" y="1929.75" width="112.5" height="112.5" rx="5" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.52" y="1942.5" width="100.96" height="87" rx="4" fill="#FFFFFF"/>
+<text x="469" y="1958" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Qwen2.5-VL</text>
+<text x="469" y="1974" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">TRELLIS</text>
+<text x="469" y="1991" text-anchor="middle" font-size="12" fill="#59636E">Generates</text>
+<text x="469" y="2006" text-anchor="middle" font-size="12" fill="#59636E">voxels,</text>
+<text x="469" y="2021" text-anchor="middle" font-size="12" fill="#59636E">decodes meshes</text>
+<rect x="532.75" y="1929.75" width="112.5" height="112.5" rx="5" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="536" y="1957.5" width="106" height="57" rx="4" fill="#FFFFFF"/>
+<text x="589" y="1973" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Fine-tuned</text>
+<text x="589" y="1989" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Qwen2.5-VL</text>
+<text x="589" y="2006" text-anchor="middle" font-size="12" fill="#59636E">Predicts joints</text>
+<rect x="652.5" y="1929.5" width="113" height="113" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="772.75" y="1929.75" width="112.5" height="112.5" rx="5" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="778.52" y="1942.5" width="100.96" height="87" rx="4" fill="#FFFFFF"/>
+<text x="829" y="1958" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Fine-tuned</text>
+<text x="829" y="1974" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Qwen2.5-VL</text>
+<text x="829" y="1991" text-anchor="middle" font-size="12" fill="#59636E">Predicts</text>
+<text x="829" y="2006" text-anchor="middle" font-size="12" fill="#59636E">mass, material</text>
+<text x="829" y="2021" text-anchor="middle" font-size="12" fill="#59636E">and more</text>
+<rect x="892.75" y="1929.75" width="112.5" height="112.5" rx="5" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
+<text x="949" y="1966" text-anchor="middle" font-size="13" font-weight="700" fill="#2B57A4">Sim-ready</text>
+<text x="949" y="1983" text-anchor="middle" font-size="12" fill="#59636E">Loadable</text>
+<text x="949" y="1998" text-anchor="middle" font-size="12" fill="#59636E">assets; not run</text>
+<text x="949" y="2013" text-anchor="middle" font-size="12" fill="#59636E">in the method</text>
+<rect x="1012.5" y="1929.5" width="113" height="113" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="1132.5" y="1929.5" width="113" height="113" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<text x="22" y="2118.5" font-size="15" font-weight="700" fill="#1F2328">Real2Code</text>
+<rect x="172.5" y="2049.5" width="113" height="129" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="292.75" y="2049.75" width="112.5" height="128.5" rx="5" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="303.68" y="2055" width="90.64" height="118" rx="4" fill="#FFFFFF"/>
+<text x="349" y="2070.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Fine-tuned</text>
+<text x="349" y="2086.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">SAM</text>
+<text x="349" y="2102.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">DUSt3R</text>
+<text x="349" y="2119.5" text-anchor="middle" font-size="12" fill="#59636E">Part</text>
+<text x="349" y="2134.5" text-anchor="middle" font-size="12" fill="#59636E">segmentation</text>
+<text x="349" y="2149.5" text-anchor="middle" font-size="12" fill="#59636E">and point</text>
+<text x="349" y="2164.5" text-anchor="middle" font-size="12" fill="#59636E">clouds</text>
+<rect x="412.75" y="2049.75" width="112.5" height="128.5" rx="5" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="425.416" y="2070" width="87.168" height="88" rx="4" fill="#FFFFFF"/>
+<text x="469" y="2085.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Shape-</text>
+<text x="469" y="2101.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">completion</text>
+<text x="469" y="2117.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">model</text>
+<text x="469" y="2134.5" text-anchor="middle" font-size="12" fill="#59636E">Completes</text>
+<text x="469" y="2149.5" text-anchor="middle" font-size="12" fill="#59636E">part meshes</text>
+<rect x="532.75" y="2049.75" width="112.5" height="128.5" rx="5" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="538.52" y="2070.5" width="100.96" height="87" rx="4" fill="#FFFFFF"/>
+<text x="589" y="2086" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Fine-tuned</text>
+<text x="589" y="2102" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">CodeLlama</text>
+<text x="589" y="2119" text-anchor="middle" font-size="12" fill="#59636E">Predicts</text>
+<text x="589" y="2134" text-anchor="middle" font-size="12" fill="#59636E">joints from</text>
+<text x="589" y="2149" text-anchor="middle" font-size="12" fill="#59636E">bounding boxes</text>
+<rect x="652.75" y="2049.75" width="112.5" height="128.5" rx="5" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="658.04" y="2078" width="101.92" height="72" rx="4" fill="#FFFFFF"/>
+<text x="709" y="2093.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">DUSt3R</text>
+<text x="709" y="2109.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">point cloud</text>
+<text x="709" y="2126.5" text-anchor="middle" font-size="12" fill="#59636E">Part positions</text>
+<text x="709" y="2141.5" text-anchor="middle" font-size="12" fill="#59636E">and sizes</text>
+<rect x="772.5" y="2049.5" width="113" height="129" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="892.75" y="2049.75" width="112.5" height="128.5" rx="5" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="903.2" y="2086" width="91.6" height="56" rx="4" fill="#FFFFFF"/>
+<text x="949" y="2101.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">MuJoCo</text>
+<text x="949" y="2118.5" text-anchor="middle" font-size="12" fill="#59636E">Instantiates</text>
+<text x="949" y="2133.5" text-anchor="middle" font-size="12" fill="#59636E">and runs</text>
+<rect x="1012.5" y="2049.5" width="113" height="129" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+<rect x="1132.5" y="2049.5" width="113" height="129" rx="5" fill="none" stroke="#8C959F" stroke-dasharray="4 4"/>
+</svg>

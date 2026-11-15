@@ -2542,7 +2542,19 @@ Works are representative; one work may appear in several rows.
 
 Building a simulator is split into four groups and nine steps: A Perception & Planning (① task planning, ② perception & measurement) · B Scene Construction (③ object assets, ④ articulation, ⑤ layout & alignment) · C Physics Modeling (⑥ physical parameters, ⑦ physics engine) · D Task & Control (⑧ robot control, ⑨ task definition). B plus C is the simulator itself; adding D gives an environment you can train and evaluate in. A work without a ⑦ physics engine has only built a scene. Verification & revision and variant expansion are not parts of a simulator, so they are left out of the nine steps.
 
-Read across a row to see who does each step of that work. **Bold**: the Agent or VLM does it itself; plain: handed to a specialised tool, model or engine; *italic*: given in advance (input, fixed rule or human); —: not involved or not stated. "Sim-ready" in column ⑦ means the result can be loaded into a physics engine, but the method does not run one.
+Read across a row to see who does each step of that work: the top line of a cell is who does it, the bottom line what they do. Column ⑦, the physics engine, decides whether the result is a simulator or only a scene.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stage-chart/stage-chart-en-dark.svg">
+  <img src="assets/stage-chart/stage-chart-en-light.svg" alt="Chart of who does each of the nine steps of building a simulator in fifteen representative works and two benchmarks. Columns are grouped as A Perception &amp; Planning (task planning, perception &amp; measurement), B Scene Construction (object assets, articulation, layout &amp; alignment), C Physics Modeling (physical parameters, physics engine) and D Task &amp; Control (robot control, task definition). Rows are grouped by organization: Agentic End-to-End (Plumb, CUE, Real2Gym, DyCraft), Closed-loop Workflow (Agentic Real2Sim, WorldMirror, Text2Sim, SceneSmith, Articulate-Anything, Gym-Anything), Open-loop Workflow (GenSim, Holodeck, SimFoundry) and Model-based (PhysX-Omni, Real2Code). Agents mostly plan, lay out and write control and tasks; perception goes to specialised models; every physics engine is an existing one. DyCraft has no physics engine and only builds a scene; PhysX-Omni stops at sim-ready assets." width="100%">
+</picture>
+
+All 68 works, step by step, including verification & revision and variant expansion: [Simulator construction: every work, step by step](stage3/simulator-construction.md).
+
+<details>
+<summary>Text version with links</summary>
+
+**Bold**: the Agent or VLM does it itself; plain: a specialised tool, model or engine; *italic*: given in advance or by hand; —: not involved or not stated.
 
 | Organization | Work | ① Task planning | ② Perception & measurement | ③ Object assets | ④ Articulation | ⑤ Layout & alignment | ⑥ Physical parameters | ⑦ Physics engine | ⑧ Robot control | ⑨ Task definition |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -2563,6 +2575,8 @@ Read across a row to see who does each step of that work. **Bold**: the Agent or
 |  | [SimFoundry](#paper-2606-28276) | **VLM** | SAM3 · PriorDepthAnything | Hunyuan3D · TRELLIS.2 | **Actor–Critic** | FoundationPose | **VLM** | PyBullet | — | **VLM** |
 | Model-based (without Agent) | [PhysX-Omni](#paper-2605-21572) (sim-ready) | Fine-tuned Qwen2.5-VL | — | Qwen2.5-VL · TRELLIS | Fine-tuned Qwen2.5-VL | — | Fine-tuned Qwen2.5-VL | Sim-ready | — | — |
 |  | [Real2Code](#paper-2406-08474) | — | Fine-tuned SAM · DUSt3R | Shape-completion model | Fine-tuned CodeLlama | DUSt3R point cloud | — | MuJoCo | — | — |
+
+</details>
 
 Decide the organization in this order:
 

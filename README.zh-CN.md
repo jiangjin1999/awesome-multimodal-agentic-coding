@@ -2542,7 +2542,19 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 把造一个仿真器拆成四组九步：A 输入理解（① 任务规划、② 感知测量）· B 场景构建（③ 物体资产、④ 关节结构、⑤ 布局对齐）· C 物理建模（⑥ 物理参数、⑦ 物理引擎）· D 任务与控制（⑧ 机器人控制、⑨ 任务定义）。B 加 C 是仿真器本身，再加上 D 就是能拿来训练和评测的环境；没有 ⑦ 物理引擎的工作只建了场景。检查与修订、变体扩增不算仿真器的组成部分，没有放进九步。
 
-下表横着看一行，就是这项工作的每一步由谁来做。**粗体**：Agent 或 VLM 自己做；普通：交给专用工具、模型或引擎；*斜体*：事先给定（输入、固定规则或人工）；—：不涉及或没写明。⑦ 列的「仿真就绪」表示可以导入物理引擎，但方法里没有运行。
+下图横着看一行，就是这项工作的每一步由谁来做：每格上行是谁做，下行是做什么。⑦ 物理引擎这一列决定造出来的是仿真器，还是只是一个场景。
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stage-chart/stage-chart-zh-dark.svg">
+  <img src="assets/stage-chart/stage-chart-zh-light.svg" alt="仿真器构建九步分别由谁来做，列出 15 项代表工作和两个基准。列分四组：A 输入理解（任务规划、感知测量）、B 场景构建（物体资产、关节结构、布局对齐）、C 物理建模（物理参数、物理引擎）、D 任务与控制（机器人控制、任务定义）。行按组织方式分组：Agentic End-to-End（Plumb、CUE、Real2Gym、DyCraft）、Closed-loop Workflow（Agentic Real2Sim、WorldMirror、Text2Sim、SceneSmith、Articulate-Anything、Gym-Anything）、Open-loop Workflow（GenSim、Holodeck、SimFoundry）、Model-based（PhysX-Omni、Real2Code）。Agent 主要负责规划、布局、控制与任务；感知交给专用模型；物理引擎都用现成的。DyCraft 没有物理引擎，只建了场景；PhysX-Omni 只到仿真就绪。" width="100%">
+</picture>
+
+全部 68 项的逐步对照（含检查与修订、变体扩增）见 [仿真器构建：全部工作逐步对照](stage3/simulator-construction.zh-CN.md)。
+
+<details>
+<summary>文字版（含链接）</summary>
+
+**粗体**：Agent 或 VLM 自己做；普通：专用工具、模型或引擎；*斜体*：事先给定或人工；—：不涉及或没写明。
 
 | 组织方式 | 工作 | ① 任务规划 | ② 感知测量 | ③ 物体资产 | ④ 关节结构 | ⑤ 布局对齐 | ⑥ 物理参数 | ⑦ 物理引擎 | ⑧ 机器人控制 | ⑨ 任务定义 |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -2563,6 +2575,8 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 |  | [SimFoundry](#paper-2606-28276) | **VLM** | SAM3 · PriorDepthAnything | Hunyuan3D · TRELLIS.2 | **Actor–Critic** | FoundationPose | **VLM** | PyBullet | — | **VLM** |
 | Model-based (without Agent) | [PhysX-Omni](#paper-2605-21572)（仿真就绪） | 微调 Qwen2.5-VL | — | Qwen2.5-VL · TRELLIS | 微调 Qwen2.5-VL | — | 微调 Qwen2.5-VL | 仿真就绪 | — | — |
 |  | [Real2Code](#paper-2406-08474) | — | 微调 SAM · DUSt3R | 形状补全模型 | 微调 CodeLlama | DUSt3R 点云 | — | MuJoCo | — | — |
+
+</details>
 
 组织方式按下面的顺序判断：
 

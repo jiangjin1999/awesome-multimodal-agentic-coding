@@ -1231,6 +1231,8 @@ Combines Python modules, perception streams and robot control interfaces into a 
 
 ## 2. Simulator Construction
 
+> A full chart of every work in [3.2 Simulator construction](../README.md#s3-2), labelled step by step across the nine build steps, is in [Simulator construction: every work, step by step](simulator-construction.md).
+
 This section asks what an agent must construct before a physical task can be executed and checked. An environment may be an articulated object, a scene, a task API, a task-specific world sketch or a dynamic model. These products offer different guarantees: a good rendering, an executable reset, a stable contact model and a useful policy-training environment are separate achievements.
 
 | Layer | What is constructed | What to inspect |

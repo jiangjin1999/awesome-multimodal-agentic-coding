@@ -1,0 +1,561 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1268 1695" width="1268" height="1695" role="img" aria-label="仿真器构建：每一步由谁来做" font-family="&#x27;PingFang SC&#x27;, &#x27;Hiragino Sans GB&#x27;, &#x27;Microsoft YaHei&#x27;, &#x27;Noto Sans CJK SC&#x27;, &#x27;Noto Sans SC&#x27;, sans-serif">
+<title>仿真器构建：每一步由谁来做</title>
+<defs>
+<pattern id="hatch-a" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#3A2914"/><rect width="2.2" height="7" fill="#E3A251"/></pattern>
+<pattern id="hatch-b" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#10302B"/><rect width="2.2" height="7" fill="#45C3B3"/></pattern>
+<pattern id="hatch-c" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#18243B"/><rect width="2.2" height="7" fill="#8AACEF"/></pattern>
+<pattern id="hatch-d" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#3A1A24"/><rect width="2.2" height="7" fill="#EA8099"/></pattern>
+<pattern id="hatch-e" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#241C3A"/><rect width="2.2" height="7" fill="#AE98F0"/></pattern>
+<pattern id="hatch-legend" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.2" height="7" fill="#9198A1"/></pattern>
+</defs>
+<rect x="0.5" y="0.5" width="1267" height="1694" rx="10" fill="#0D1117" stroke="#3D444D"/>
+<rect x="22" y="26" width="26" height="16" rx="3" fill="#9198A1"/>
+<text x="56" y="39" font-size="13" fill="#9198A1">Agent 或 VLM 自己做</text>
+<rect x="202.1" y="26" width="26" height="16" rx="3" fill="url(#hatch-legend)" stroke="#9198A1"/>
+<text x="236.1" y="39" font-size="13" fill="#9198A1">交给专用工具、模型或引擎</text>
+<rect x="412.85" y="26.75" width="24.5" height="14.5" rx="3" fill="none" stroke="#9198A1" stroke-width="1.5"/>
+<text x="446.1" y="39" font-size="13" fill="#9198A1">事先给定或人工</text>
+<rect x="557.6" y="26.5" width="25" height="15" rx="3" fill="none" stroke="#6E7681" stroke-dasharray="3 3"/>
+<text x="591.1" y="39" font-size="13" fill="#9198A1">不涉及或没写明</text>
+<rect x="703.1" y="27" width="24" height="14" rx="3" fill="none" stroke="#EA8099" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="736.1" y="39" font-size="13" fill="#9198A1">没有物理引擎：只建了场景</text>
+<rect x="912.85" y="26.75" width="24.5" height="14.5" rx="3" fill="none" stroke="#8AACEF" stroke-width="1.5"/>
+<text x="946.1" y="39" font-size="13" fill="#9198A1">仿真就绪：可导入，方法里没运行</text>
+<rect x="172" y="58" width="234" height="28" rx="5" fill="#3A2914"/>
+<text x="289" y="77" text-anchor="middle" font-size="14.0" font-weight="700" fill="#E3A251">A 输入理解</text>
+<rect x="412" y="58" width="354" height="28" rx="5" fill="#10302B"/>
+<text x="589" y="77" text-anchor="middle" font-size="14.0" font-weight="700" fill="#45C3B3">B 场景构建</text>
+<rect x="772" y="58" width="234" height="28" rx="5" fill="#18243B"/>
+<text x="889" y="77" text-anchor="middle" font-size="14.0" font-weight="700" fill="#8AACEF">C 物理建模</text>
+<rect x="1012" y="58" width="234" height="28" rx="5" fill="#3A1A24"/>
+<text x="1129" y="77" text-anchor="middle" font-size="14.0" font-weight="700" fill="#EA8099">D 任务与控制</text>
+<text x="229" y="108" text-anchor="middle" font-size="13.5" fill="#9198A1">①</text>
+<text x="229" y="127" text-anchor="middle" font-size="13.5" font-weight="600" fill="#E6EDF3">任务规划</text>
+<text x="349" y="108" text-anchor="middle" font-size="13.5" fill="#9198A1">②</text>
+<text x="349" y="127" text-anchor="middle" font-size="13.5" font-weight="600" fill="#E6EDF3">感知测量</text>
+<text x="469" y="108" text-anchor="middle" font-size="13.5" fill="#9198A1">③</text>
+<text x="469" y="127" text-anchor="middle" font-size="13.5" font-weight="600" fill="#E6EDF3">物体资产</text>
+<text x="589" y="108" text-anchor="middle" font-size="13.5" fill="#9198A1">④</text>
+<text x="589" y="127" text-anchor="middle" font-size="13.5" font-weight="600" fill="#E6EDF3">关节结构</text>
+<text x="709" y="108" text-anchor="middle" font-size="13.5" fill="#9198A1">⑤</text>
+<text x="709" y="127" text-anchor="middle" font-size="13.5" font-weight="600" fill="#E6EDF3">布局对齐</text>
+<text x="829" y="108" text-anchor="middle" font-size="13.5" fill="#9198A1">⑥</text>
+<text x="829" y="127" text-anchor="middle" font-size="13.5" font-weight="600" fill="#E6EDF3">物理参数</text>
+<text x="949" y="108" text-anchor="middle" font-size="13.5" fill="#9198A1">⑦</text>
+<text x="949" y="127" text-anchor="middle" font-size="13.5" font-weight="600" fill="#E6EDF3">物理引擎</text>
+<text x="1069" y="108" text-anchor="middle" font-size="13.5" fill="#9198A1">⑧</text>
+<text x="1069" y="127" text-anchor="middle" font-size="13.5" font-weight="600" fill="#E6EDF3">机器人控制</text>
+<text x="1189" y="108" text-anchor="middle" font-size="13.5" fill="#9198A1">⑨</text>
+<text x="1189" y="127" text-anchor="middle" font-size="13.5" font-weight="600" fill="#E6EDF3">任务定义</text>
+<text x="22" y="161" font-size="14.5" font-weight="700" fill="#E6EDF3">Bench · 基准，只作参照</text>
+<line x1="203.685" y1="156" x2="1246" y2="156" stroke="#3D444D"/>
+<text x="22" y="210" font-size="15" font-weight="700" fill="#E6EDF3">RoboDojo</text>
+<rect x="22" y="218" width="47.12" height="17" rx="8.5" fill="#241C3A"/>
+<text x="29" y="230.5" font-size="11.5" fill="#AE98F0">Bench</text>
+<rect x="172.75" y="174.75" width="112.5" height="82.5" rx="5" fill="#0D1117" stroke="#E3A251" stroke-width="1.5"/>
+<text x="229" y="211" text-anchor="middle" font-size="13" font-weight="700" fill="#E3A251">人工</text>
+<text x="229" y="228" text-anchor="middle" font-size="12" fill="#9198A1">设计任务</text>
+<rect x="292.5" y="174.5" width="113" height="83" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="412.75" y="174.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="428" y="180" width="82" height="72" rx="4" fill="#0D1117"/>
+<text x="469" y="195.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Meshy</text>
+<text x="469" y="211.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">资产库</text>
+<text x="469" y="228.5" text-anchor="middle" font-size="12" fill="#9198A1">重建或收集物</text>
+<text x="469" y="243.5" text-anchor="middle" font-size="12" fill="#9198A1">体，人工检查</text>
+<rect x="532.75" y="174.75" width="112.5" height="82.5" rx="5" fill="#0D1117" stroke="#45C3B3" stroke-width="1.5"/>
+<text x="589" y="203.5" text-anchor="middle" font-size="13" font-weight="700" fill="#45C3B3">现成资产</text>
+<text x="589" y="220.5" text-anchor="middle" font-size="12" fill="#9198A1">开源库、3D 扫描、</text>
+<text x="589" y="235.5" text-anchor="middle" font-size="12" fill="#9198A1">ClothesNet</text>
+<rect x="652.75" y="174.75" width="112.5" height="82.5" rx="5" fill="#0D1117" stroke="#45C3B3" stroke-width="1.5"/>
+<text x="709" y="211" text-anchor="middle" font-size="13" font-weight="700" fill="#45C3B3">人工 YAML</text>
+<text x="709" y="228" text-anchor="middle" font-size="12" fill="#9198A1">布局与初始分布</text>
+<rect x="772.75" y="174.75" width="112.5" height="82.5" rx="5" fill="#0D1117" stroke="#8AACEF" stroke-width="1.5"/>
+<text x="829" y="211" text-anchor="middle" font-size="13" font-weight="700" fill="#8AACEF">人工</text>
+<text x="829" y="228" text-anchor="middle" font-size="12" fill="#9198A1">资产库带物理属性</text>
+<rect x="892.75" y="174.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="909.963" y="187.5" width="78.0732" height="57" rx="4" fill="#0D1117"/>
+<text x="949" y="203" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Isaac Sim</text>
+<text x="949" y="219" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Isaac Lab</text>
+<text x="949" y="236" text-anchor="middle" font-size="12" fill="#9198A1">并行评测</text>
+<rect x="1012.75" y="174.75" width="112.5" height="82.5" rx="5" fill="#0D1117" stroke="#EA8099" stroke-width="1.5"/>
+<text x="1069" y="211" text-anchor="middle" font-size="13" font-weight="700" fill="#EA8099">被测策略</text>
+<text x="1069" y="228" text-anchor="middle" font-size="12" fill="#9198A1">输出动作</text>
+<rect x="1132.75" y="174.75" width="112.5" height="82.5" rx="5" fill="#0D1117" stroke="#EA8099" stroke-width="1.5"/>
+<text x="1189" y="211" text-anchor="middle" font-size="13" font-weight="700" fill="#EA8099">人工 YAML</text>
+<text x="1189" y="228" text-anchor="middle" font-size="12" fill="#9198A1">成功条件</text>
+<text x="22" y="292" font-size="15" font-weight="700" fill="#E6EDF3">Video2World</text>
+<rect x="22" y="300" width="47.12" height="17" rx="8.5" fill="#241C3A"/>
+<text x="29" y="312.5" font-size="11.5" fill="#AE98F0">Bench</text>
+<rect x="172" y="264" width="114" height="68" rx="5" fill="#E3A251"/>
+<text x="229" y="285.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="229" y="302.5" text-anchor="middle" font-size="12" fill="#0D1117">读视频和机</text>
+<text x="229" y="317.5" text-anchor="middle" font-size="12" fill="#0D1117">器人资产</text>
+<rect x="292" y="264" width="114" height="68" rx="5" fill="#E3A251"/>
+<text x="349" y="285.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="349" y="302.5" text-anchor="middle" font-size="12" fill="#0D1117">估首帧关节、</text>
+<text x="349" y="317.5" text-anchor="middle" font-size="12" fill="#0D1117">做测量</text>
+<rect x="412" y="264" width="114" height="68" rx="5" fill="#45C3B3"/>
+<text x="469" y="285.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="469" y="302.5" text-anchor="middle" font-size="12" fill="#0D1117">钱包、袋子几</text>
+<text x="469" y="317.5" text-anchor="middle" font-size="12" fill="#0D1117">何与碰撞体</text>
+<rect x="532.5" y="264.5" width="113" height="67" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="652" y="264" width="114" height="68" rx="5" fill="#45C3B3"/>
+<text x="709" y="285.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="709" y="302.5" text-anchor="middle" font-size="12" fill="#0D1117">正运动学求</text>
+<text x="709" y="317.5" text-anchor="middle" font-size="12" fill="#0D1117">相机外参</text>
+<rect x="772" y="264" width="114" height="68" rx="5" fill="#8AACEF"/>
+<text x="829" y="293" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="829" y="310" text-anchor="middle" font-size="12" fill="#0D1117">设置接触</text>
+<rect x="892.75" y="264.75" width="112.5" height="66.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="908" y="277.5" width="82" height="41" rx="4" fill="#0D1117"/>
+<text x="949" y="293" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Isaac Sim</text>
+<text x="949" y="310" text-anchor="middle" font-size="12" fill="#9198A1">平台执行回放</text>
+<rect x="1012" y="264" width="114" height="68" rx="5" fill="#EA8099"/>
+<text x="1069" y="293" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="1069" y="310" text-anchor="middle" font-size="12" fill="#0D1117">写 actions.npy</text>
+<rect x="1132.75" y="264.75" width="112.5" height="66.5" rx="5" fill="#0D1117" stroke="#EA8099" stroke-width="1.5"/>
+<text x="1189" y="293" text-anchor="middle" font-size="13" font-weight="700" fill="#EA8099">题目给定</text>
+<text x="1189" y="310" text-anchor="middle" font-size="12" fill="#9198A1">成功条件</text>
+<text x="22" y="363" font-size="14.5" font-weight="700" fill="#E6EDF3">Agentic End-to-End · 一个 Agent 端到端</text>
+<line x1="336.789" y1="358" x2="1246" y2="358" stroke="#3D444D"/>
+<text x="22" y="415" font-size="15" font-weight="700" fill="#E6EDF3">Plumb</text>
+<rect x="172" y="376" width="114" height="69" rx="5" fill="#E3A251"/>
+<text x="229" y="405.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="229" y="422.5" text-anchor="middle" font-size="12" fill="#0D1117">读视频和任务</text>
+<rect x="292.75" y="376.75" width="112.5" height="67.5" rx="5" fill="url(#hatch-a)" stroke="#E3A251" stroke-width="1.5"/>
+<rect x="296" y="382" width="106" height="57" rx="4" fill="#0D1117"/>
+<text x="349" y="397.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">SAM3</text>
+<text x="349" y="413.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Pi3X</text>
+<text x="349" y="430.5" text-anchor="middle" font-size="12" fill="#9198A1">轨迹、深度、相机</text>
+<rect x="412" y="376" width="114" height="69" rx="5" fill="#45C3B3"/>
+<text x="469" y="405.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="469" y="422.5" text-anchor="middle" font-size="12" fill="#0D1117">写 MJCF 几何</text>
+<rect x="532.5" y="376.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="652" y="376" width="114" height="69" rx="5" fill="#45C3B3"/>
+<text x="709" y="398" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="709" y="415" text-anchor="middle" font-size="12" fill="#0D1117">测支撑面、</text>
+<text x="709" y="430" text-anchor="middle" font-size="12" fill="#0D1117">坡度、尺寸</text>
+<rect x="772" y="376" width="114" height="69" rx="5" fill="#8AACEF"/>
+<text x="829" y="405.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="829" y="422.5" text-anchor="middle" font-size="12" fill="#0D1117">写参数拟合程序</text>
+<rect x="892.75" y="376.75" width="112.5" height="67.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="919.196" y="390" width="59.608" height="41" rx="4" fill="#0D1117"/>
+<text x="949" y="405.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">MuJoCo</text>
+<text x="949" y="422.5" text-anchor="middle" font-size="12" fill="#9198A1">重放</text>
+<rect x="1012" y="376" width="114" height="69" rx="5" fill="#EA8099"/>
+<text x="1069" y="405.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="1069" y="422.5" text-anchor="middle" font-size="12" fill="#0D1117">写初始状态</text>
+<rect x="1132.5" y="376.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<text x="22" y="482.5" font-size="15" font-weight="700" fill="#E6EDF3">CUE</text>
+<rect x="172" y="451" width="114" height="54" rx="5" fill="#E3A251"/>
+<text x="229" y="473" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="229" y="490" text-anchor="middle" font-size="12" fill="#0D1117">选关键参数与范围</text>
+<rect x="292" y="451" width="114" height="54" rx="5" fill="#E3A251"/>
+<text x="349" y="473" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="349" y="490" text-anchor="middle" font-size="12" fill="#0D1117">写球轨迹跟踪</text>
+<rect x="412" y="451" width="114" height="54" rx="5" fill="#45C3B3"/>
+<text x="469" y="473" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="469" y="490" text-anchor="middle" font-size="12" fill="#0D1117">写台球 MJCF</text>
+<rect x="532.5" y="451.5" width="113" height="53" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="652" y="451" width="114" height="54" rx="5" fill="#45C3B3"/>
+<text x="709" y="473" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="709" y="490" text-anchor="middle" font-size="12" fill="#0D1117">从图片摆台面</text>
+<rect x="772.75" y="451.75" width="112.5" height="52.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="788" y="457.5" width="82" height="41" rx="4" fill="#0D1117"/>
+<text x="829" y="473" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">CMA-ES</text>
+<text x="829" y="490" text-anchor="middle" font-size="12" fill="#9198A1">拟合轨迹差异</text>
+<rect x="892.75" y="451.75" width="112.5" height="52.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="919.196" y="457.5" width="59.608" height="41" rx="4" fill="#0D1117"/>
+<text x="949" y="473" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">MuJoCo</text>
+<text x="949" y="490" text-anchor="middle" font-size="12" fill="#9198A1">并行重放</text>
+<rect x="1012" y="451" width="114" height="54" rx="5" fill="#EA8099"/>
+<text x="1069" y="473" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="1069" y="490" text-anchor="middle" font-size="12" fill="#0D1117">自己选下一杆</text>
+<rect x="1132.5" y="451.5" width="113" height="53" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<text x="22" y="558" font-size="15" font-weight="700" fill="#E6EDF3">Real2Gym</text>
+<rect x="172" y="511" width="114" height="85" rx="5" fill="#E3A251"/>
+<text x="229" y="548.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="229" y="565.5" text-anchor="middle" font-size="12" fill="#0D1117">读演示、定目标物</text>
+<rect x="292.75" y="511.75" width="112.5" height="83.5" rx="5" fill="url(#hatch-a)" stroke="#E3A251" stroke-width="1.5"/>
+<rect x="296" y="517" width="106" height="73" rx="4" fill="#0D1117"/>
+<text x="349" y="532.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">MoGe-3</text>
+<text x="349" y="548.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Pi3X</text>
+<text x="349" y="564.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">SAM2</text>
+<text x="349" y="581.5" text-anchor="middle" font-size="12" fill="#9198A1">几何、相机、分割</text>
+<rect x="412" y="511" width="114" height="85" rx="5" fill="#45C3B3"/>
+<text x="469" y="541" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="469" y="558" text-anchor="middle" font-size="12" fill="#0D1117">按轮廓和多视</text>
+<text x="469" y="573" text-anchor="middle" font-size="12" fill="#0D1117">图补全网格</text>
+<rect x="532.5" y="511.5" width="113" height="84" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="652" y="511" width="114" height="85" rx="5" fill="#45C3B3"/>
+<text x="709" y="548.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="709" y="565.5" text-anchor="middle" font-size="12" fill="#0D1117">统一尺度与坐标</text>
+<rect x="772" y="511" width="114" height="85" rx="5" fill="#8AACEF"/>
+<text x="829" y="541" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="829" y="558" text-anchor="middle" font-size="12" fill="#0D1117">写入材料属性</text>
+<text x="829" y="573" text-anchor="middle" font-size="12" fill="#0D1117">（未实测拟合）</text>
+<rect x="892.75" y="511.75" width="112.5" height="83.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="896" y="525.5" width="106" height="56" rx="4" fill="#0D1117"/>
+<text x="949" y="541" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">MuJoCo</text>
+<text x="949" y="558" text-anchor="middle" font-size="12" fill="#9198A1">物理执行；</text>
+<text x="949" y="573" text-anchor="middle" font-size="12" fill="#9198A1">Blender 只做渲染</text>
+<rect x="1012" y="511" width="114" height="85" rx="5" fill="#EA8099"/>
+<text x="1069" y="548.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="1069" y="565.5" text-anchor="middle" font-size="12" fill="#0D1117">执行或重定向示范</text>
+<rect x="1132" y="511" width="114" height="85" rx="5" fill="#EA8099"/>
+<text x="1189" y="548.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="1189" y="565.5" text-anchor="middle" font-size="12" fill="#0D1117">写 Gym 任务阶段</text>
+<text x="22" y="653.5" font-size="15" font-weight="700" fill="#E6EDF3">DyCraft</text>
+<rect x="22.5" y="662" width="59" height="16" rx="8" fill="none" stroke="#9198A1" stroke-dasharray="3 2"/>
+<text x="29" y="674" font-size="11.5" fill="#9198A1">只建场景</text>
+<rect x="172" y="602" width="114" height="115" rx="5" fill="#E3A251"/>
+<text x="229" y="647" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="229" y="664" text-anchor="middle" font-size="12" fill="#0D1117">把简短提示扩写成</text>
+<text x="229" y="679" text-anchor="middle" font-size="12" fill="#0D1117">场景与运动说明</text>
+<rect x="292.5" y="602.5" width="113" height="114" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="412" y="602" width="114" height="115" rx="5" fill="#45C3B3"/>
+<text x="469" y="647" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="469" y="664" text-anchor="middle" font-size="12" fill="#0D1117">CAD 写物体，</text>
+<text x="469" y="679" text-anchor="middle" font-size="12" fill="#0D1117">角色从角色库取</text>
+<rect x="532" y="602" width="114" height="115" rx="5" fill="#45C3B3"/>
+<text x="589" y="647" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="589" y="664" text-anchor="middle" font-size="12" fill="#0D1117">在 CAD 里</text>
+<text x="589" y="679" text-anchor="middle" font-size="12" fill="#0D1117">定义关节</text>
+<rect x="652" y="602" width="114" height="115" rx="5" fill="#45C3B3"/>
+<text x="709" y="647" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Agent</text>
+<text x="709" y="664" text-anchor="middle" font-size="12" fill="#0D1117">摆好关键姿</text>
+<text x="709" y="679" text-anchor="middle" font-size="12" fill="#0D1117">态（3D 分镜）</text>
+<rect x="772.5" y="602.5" width="113" height="114" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="893" y="603" width="112" height="113" rx="5" fill="#0D1117" stroke="#EA8099" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="949" y="647" text-anchor="middle" font-size="13" font-weight="700" fill="#EA8099">没有物理引擎</text>
+<text x="949" y="664" text-anchor="middle" font-size="12" fill="#EA8099">Blender 自带</text>
+<text x="949" y="679" text-anchor="middle" font-size="12" fill="#EA8099">物理只做动画</text>
+<rect x="1012.75" y="602.75" width="112.5" height="113.5" rx="5" fill="url(#hatch-d)" stroke="#EA8099" stroke-width="1.5"/>
+<rect x="1022" y="608" width="94" height="103" rx="4" fill="#0D1117"/>
+<text x="1069" y="623.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">CMU 动捕</text>
+<text x="1069" y="639.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">IK</text>
+<text x="1069" y="655.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Blender</text>
+<text x="1069" y="672.5" text-anchor="middle" font-size="12" fill="#9198A1">选片段重定向，</text>
+<text x="1069" y="687.5" text-anchor="middle" font-size="12" fill="#9198A1">物理交给</text>
+<text x="1069" y="702.5" text-anchor="middle" font-size="12" fill="#9198A1">Blender 仿真</text>
+<rect x="1132.5" y="602.5" width="113" height="114" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<text x="22" y="748" font-size="14.5" font-weight="700" fill="#E6EDF3">Closed-loop Workflow · 分工事先定好，出错回到对应步骤</text>
+<line x1="452.986" y1="743" x2="1246" y2="743" stroke="#3D444D"/>
+<text x="22" y="798.5" font-size="15" font-weight="700" fill="#E6EDF3">Agentic</text>
+<text x="22" y="817.5" font-size="15" font-weight="700" fill="#E6EDF3">Real2Sim</text>
+<rect x="172" y="761" width="114" height="85" rx="5" fill="#E3A251"/>
+<text x="229" y="791" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">视觉 Agent</text>
+<text x="229" y="808" text-anchor="middle" font-size="12" fill="#0D1117">找出相关物</text>
+<text x="229" y="823" text-anchor="middle" font-size="12" fill="#0D1117">体与支撑</text>
+<rect x="292.75" y="761.75" width="112.5" height="83.5" rx="5" fill="url(#hatch-a)" stroke="#E3A251" stroke-width="1.5"/>
+<rect x="302" y="767" width="94" height="73" rx="4" fill="#0D1117"/>
+<text x="349" y="782.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">SAM 3</text>
+<text x="349" y="798.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Foundation</text>
+<text x="349" y="814.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Pose</text>
+<text x="349" y="831.5" text-anchor="middle" font-size="12" fill="#9198A1">分割、位姿追踪</text>
+<rect x="412.75" y="761.75" width="112.5" height="83.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="416.96" y="783" width="104.08" height="41" rx="4" fill="#0D1117"/>
+<text x="469" y="798.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">SAM 3D</text>
+<text x="469" y="815.5" text-anchor="middle" font-size="12" fill="#9198A1">恢复 mesh 并缩放</text>
+<rect x="532.5" y="761.5" width="113" height="84" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="652" y="761" width="114" height="85" rx="5" fill="#45C3B3"/>
+<text x="709" y="791" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">场景 Agent</text>
+<text x="709" y="808" text-anchor="middle" font-size="12" fill="#0D1117">校准相机、</text>
+<text x="709" y="823" text-anchor="middle" font-size="12" fill="#0D1117">地面、基座</text>
+<rect x="772" y="761" width="114" height="85" rx="5" fill="#8AACEF"/>
+<text x="829" y="798.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">物理 Agent</text>
+<text x="829" y="815.5" text-anchor="middle" font-size="12" fill="#0D1117">按材料估参数</text>
+<rect x="892.75" y="761.75" width="112.5" height="83.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="919.196" y="783" width="59.608" height="41" rx="4" fill="#0D1117"/>
+<text x="949" y="798.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">MuJoCo</text>
+<text x="949" y="815.5" text-anchor="middle" font-size="12" fill="#9198A1">重放轨迹</text>
+<rect x="1012.75" y="761.75" width="112.5" height="83.5" rx="5" fill="#0D1117" stroke="#EA8099" stroke-width="1.5"/>
+<text x="1069" y="798.5" text-anchor="middle" font-size="13" font-weight="700" fill="#EA8099">给定</text>
+<text x="1069" y="815.5" text-anchor="middle" font-size="12" fill="#9198A1">记录的机器人轨迹</text>
+<rect x="1132.5" y="761.5" width="113" height="84" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<text x="22" y="891" font-size="15" font-weight="700" fill="#E6EDF3">WorldMirror</text>
+<rect x="172.75" y="852.75" width="112.5" height="67.5" rx="5" fill="#0D1117" stroke="#E3A251" stroke-width="1.5"/>
+<text x="229" y="881.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E3A251">固定依赖图</text>
+<text x="229" y="898.5" text-anchor="middle" font-size="12" fill="#9198A1">按序调用各 Agent</text>
+<rect x="292.75" y="852.75" width="112.5" height="67.5" rx="5" fill="url(#hatch-a)" stroke="#E3A251" stroke-width="1.5"/>
+<rect x="308" y="866" width="82" height="41" rx="4" fill="#0D1117"/>
+<text x="349" y="881.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">3D 高斯</text>
+<text x="349" y="898.5" text-anchor="middle" font-size="12" fill="#9198A1">重建静态背景</text>
+<rect x="412.75" y="852.75" width="112.5" height="67.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="422" y="858" width="94" height="57" rx="4" fill="#0D1117"/>
+<text x="469" y="873.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Meshy</text>
+<text x="469" y="889.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Articraft</text>
+<text x="469" y="906.5" text-anchor="middle" font-size="12" fill="#9198A1">生成可交互资产</text>
+<rect x="532.5" y="852.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="652" y="852" width="114" height="69" rx="5" fill="#45C3B3"/>
+<text x="709" y="873.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">校准、布</text>
+<text x="709" y="889.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">局 Agent</text>
+<text x="709" y="906.5" text-anchor="middle" font-size="12" fill="#0D1117">统一坐标并摆放</text>
+<rect x="772.5" y="852.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="892.75" y="852.75" width="112.5" height="67.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="909.963" y="866" width="78.0732" height="41" rx="4" fill="#0D1117"/>
+<text x="949" y="881.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Isaac Sim</text>
+<text x="949" y="898.5" text-anchor="middle" font-size="12" fill="#9198A1">重放原轨迹</text>
+<rect x="1012.75" y="852.75" width="112.5" height="67.5" rx="5" fill="#0D1117" stroke="#EA8099" stroke-width="1.5"/>
+<text x="1069" y="881.5" text-anchor="middle" font-size="13" font-weight="700" fill="#EA8099">给定</text>
+<text x="1069" y="898.5" text-anchor="middle" font-size="12" fill="#9198A1">记录的机器人轨迹</text>
+<rect x="1132.5" y="852.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<text x="22" y="958.5" font-size="15" font-weight="700" fill="#E6EDF3">Text2Sim</text>
+<rect x="172" y="927" width="114" height="54" rx="5" fill="#E3A251"/>
+<text x="229" y="949" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Planner</text>
+<text x="229" y="966" text-anchor="middle" font-size="12" fill="#0D1117">定全局计划</text>
+<rect x="292.5" y="927.5" width="113" height="53" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="412.75" y="927.75" width="112.5" height="52.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="424.76" y="933.5" width="88.48" height="41" rx="4" fill="#0D1117"/>
+<text x="469" y="949" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Meshy</text>
+<text x="469" y="966" text-anchor="middle" font-size="12" fill="#9198A1">文本生成 mesh</text>
+<rect x="532.5" y="927.5" width="113" height="53" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="652" y="927" width="114" height="54" rx="5" fill="#45C3B3"/>
+<text x="709" y="949" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Scene Writer</text>
+<text x="709" y="966" text-anchor="middle" font-size="12" fill="#0D1117">写场景程序</text>
+<rect x="772" y="927" width="114" height="54" rx="5" fill="#8AACEF"/>
+<text x="829" y="949" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Body Writer</text>
+<text x="829" y="966" text-anchor="middle" font-size="12" fill="#0D1117">写材料与物理</text>
+<rect x="892.75" y="927.75" width="112.5" height="52.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="914" y="933.5" width="70" height="41" rx="4" fill="#0D1117"/>
+<text x="949" y="949" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Genesis</text>
+<text x="949" y="966" text-anchor="middle" font-size="12" fill="#9198A1">执行并记录</text>
+<rect x="1012" y="927" width="114" height="54" rx="5" fill="#EA8099"/>
+<text x="1069" y="949" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Action Writer</text>
+<text x="1069" y="966" text-anchor="middle" font-size="12" fill="#0D1117">写运动与控制</text>
+<rect x="1132.5" y="927.5" width="113" height="53" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<text x="22" y="1026" font-size="15" font-weight="700" fill="#E6EDF3">SceneSmith</text>
+<rect x="172" y="987" width="114" height="69" rx="5" fill="#E3A251"/>
+<text x="229" y="1016.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Planner</text>
+<text x="229" y="1033.5" text-anchor="middle" font-size="12" fill="#0D1117">按层级拆解需求</text>
+<rect x="292.5" y="987.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="412.75" y="987.75" width="112.5" height="67.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="418.76" y="993" width="100.48" height="57" rx="4" fill="#0D1117"/>
+<text x="469" y="1008.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">SAM3</text>
+<text x="469" y="1024.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">SAM3D</text>
+<text x="469" y="1041.5" text-anchor="middle" font-size="12" fill="#9198A1">参考图重建 mesh</text>
+<rect x="532.75" y="987.75" width="112.5" height="67.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="548" y="1001" width="82" height="41" rx="4" fill="#0D1117"/>
+<text x="589" y="1016.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">ArtVIP</text>
+<text x="589" y="1033.5" text-anchor="middle" font-size="12" fill="#9198A1">检索关节资产</text>
+<rect x="652" y="987" width="114" height="69" rx="5" fill="#45C3B3"/>
+<text x="709" y="1016.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Designer</text>
+<text x="709" y="1033.5" text-anchor="middle" font-size="12" fill="#0D1117">逐层摆放</text>
+<rect x="772" y="987" width="114" height="69" rx="5" fill="#8AACEF"/>
+<text x="829" y="1009" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">VLM</text>
+<text x="829" y="1026" text-anchor="middle" font-size="12" fill="#0D1117">估质量、摩</text>
+<text x="829" y="1041" text-anchor="middle" font-size="12" fill="#0D1117">擦、惯量</text>
+<rect x="892.75" y="987.75" width="112.5" height="67.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="896" y="1001" width="106" height="41" rx="4" fill="#0D1117"/>
+<text x="949" y="1016.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Drake</text>
+<text x="949" y="1033.5" text-anchor="middle" font-size="12" fill="#9198A1">去穿透、重力沉降</text>
+<rect x="1012.5" y="987.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="1132.5" y="987.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<text x="22" y="1091.5" font-size="15" font-weight="700" fill="#E6EDF3">Articulate-</text>
+<text x="22" y="1110.5" font-size="15" font-weight="700" fill="#E6EDF3">Anything</text>
+<rect x="172" y="1062" width="114" height="69" rx="5" fill="#E3A251"/>
+<text x="229" y="1091.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">VLM</text>
+<text x="229" y="1108.5" text-anchor="middle" font-size="12" fill="#0D1117">读参考、列部件</text>
+<rect x="292.75" y="1062.75" width="112.5" height="67.5" rx="5" fill="url(#hatch-a)" stroke="#E3A251" stroke-width="1.5"/>
+<rect x="296" y="1076" width="106" height="41" rx="4" fill="#0D1117"/>
+<text x="349" y="1091.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">CoTracker</text>
+<text x="349" y="1108.5" text-anchor="middle" font-size="12" fill="#9198A1">追踪视频里的运动</text>
+<rect x="412.75" y="1062.75" width="112.5" height="67.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="424.76" y="1068" width="88.48" height="57" rx="4" fill="#0D1117"/>
+<text x="469" y="1083.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">PartNet-</text>
+<text x="469" y="1099.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Mobility</text>
+<text x="469" y="1116.5" text-anchor="middle" font-size="12" fill="#9198A1">检索部件 mesh</text>
+<rect x="532" y="1062" width="114" height="69" rx="5" fill="#45C3B3"/>
+<text x="589" y="1084" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Actor</text>
+<text x="589" y="1101" text-anchor="middle" font-size="12" fill="#0D1117">写关节类型、</text>
+<text x="589" y="1116" text-anchor="middle" font-size="12" fill="#0D1117">轴、范围</text>
+<rect x="652" y="1062" width="114" height="69" rx="5" fill="#45C3B3"/>
+<text x="709" y="1091.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Actor</text>
+<text x="709" y="1108.5" text-anchor="middle" font-size="12" fill="#0D1117">写部件装配</text>
+<rect x="772.5" y="1062.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="892.75" y="1062.75" width="112.5" height="67.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="912.03" y="1068" width="73.9392" height="57" rx="4" fill="#0D1117"/>
+<text x="949" y="1083.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">PyBullet</text>
+<text x="949" y="1099.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">SAPIEN</text>
+<text x="949" y="1116.5" text-anchor="middle" font-size="12" fill="#9198A1">仿真与渲染</text>
+<rect x="1012.5" y="1062.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="1132.5" y="1062.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<text x="22" y="1176" font-size="15" font-weight="700" fill="#E6EDF3">Gym-Anything</text>
+<rect x="172" y="1137" width="114" height="69" rx="5" fill="#E3A251"/>
+<text x="229" y="1159" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">创建 Agent</text>
+<text x="229" y="1176" text-anchor="middle" font-size="12" fill="#0D1117">调研活动，设</text>
+<text x="229" y="1191" text-anchor="middle" font-size="12" fill="#0D1117">计场景与方程</text>
+<rect x="292.5" y="1137.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="412" y="1137" width="114" height="69" rx="5" fill="#45C3B3"/>
+<text x="469" y="1159" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">创建 Agent</text>
+<text x="469" y="1176" text-anchor="middle" font-size="12" fill="#0D1117">选真实资产，</text>
+<text x="469" y="1191" text-anchor="middle" font-size="12" fill="#0D1117">建可接触物体</text>
+<rect x="532.5" y="1137.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="652" y="1137" width="114" height="69" rx="5" fill="#45C3B3"/>
+<text x="709" y="1159" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">创建 Agent</text>
+<text x="709" y="1176" text-anchor="middle" font-size="12" fill="#0D1117">高斯背景 + 物</text>
+<text x="709" y="1191" text-anchor="middle" font-size="12" fill="#0D1117">理体拼成场景</text>
+<rect x="772" y="1137" width="114" height="69" rx="5" fill="#8AACEF"/>
+<text x="829" y="1159" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">创建 Agent</text>
+<text x="829" y="1176" text-anchor="middle" font-size="12" fill="#0D1117">实现所需物理，</text>
+<text x="829" y="1191" text-anchor="middle" font-size="12" fill="#0D1117">含引擎缺的</text>
+<rect x="892.75" y="1137.75" width="112.5" height="67.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="914" y="1143" width="70" height="57" rx="4" fill="#0D1117"/>
+<text x="949" y="1158.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">MuJoCo</text>
+<text x="949" y="1174.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Warp 等</text>
+<text x="949" y="1191.5" text-anchor="middle" font-size="12" fill="#9198A1">多后端运行</text>
+<rect x="1012" y="1137" width="114" height="69" rx="5" fill="#EA8099"/>
+<text x="1069" y="1159" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">创建 Agent</text>
+<text x="1069" y="1176" text-anchor="middle" font-size="12" fill="#0D1117">接入共享目录</text>
+<text x="1069" y="1191" text-anchor="middle" font-size="12" fill="#0D1117">里的机器人</text>
+<rect x="1132" y="1137" width="114" height="69" rx="5" fill="#EA8099"/>
+<text x="1189" y="1166.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">任务创建 Agent</text>
+<text x="1189" y="1183.5" text-anchor="middle" font-size="12" fill="#0D1117">按目标难度出任务</text>
+<text x="22" y="1237" font-size="14.5" font-weight="700" fill="#E6EDF3">Open-loop Workflow · 分工事先定好，按顺序跑一遍</text>
+<line x1="405.032" y1="1232" x2="1246" y2="1232" stroke="#3D444D"/>
+<text x="22" y="1281.5" font-size="15" font-weight="700" fill="#E6EDF3">GenSim</text>
+<rect x="172" y="1250" width="114" height="54" rx="5" fill="#E3A251"/>
+<text x="229" y="1272" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">GPT-4</text>
+<text x="229" y="1289" text-anchor="middle" font-size="12" fill="#0D1117">提任务、写规格</text>
+<rect x="292.5" y="1250.5" width="113" height="53" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="412.75" y="1250.75" width="112.5" height="52.5" rx="5" fill="#0D1117" stroke="#45C3B3" stroke-width="1.5"/>
+<text x="469" y="1272" text-anchor="middle" font-size="13" font-weight="700" fill="#45C3B3">给定</text>
+<text x="469" y="1289" text-anchor="middle" font-size="12" fill="#9198A1">Ravens 已有资产</text>
+<rect x="532.5" y="1250.5" width="113" height="53" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="652" y="1250" width="114" height="54" rx="5" fill="#45C3B3"/>
+<text x="709" y="1272" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">GPT-4</text>
+<text x="709" y="1289" text-anchor="middle" font-size="12" fill="#0D1117">写 reset 摆放</text>
+<rect x="772.5" y="1250.5" width="113" height="53" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="892.75" y="1250.75" width="112.5" height="52.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="912.03" y="1256.5" width="73.9392" height="41" rx="4" fill="#0D1117"/>
+<text x="949" y="1272" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">PyBullet</text>
+<text x="949" y="1289" text-anchor="middle" font-size="12" fill="#9198A1">执行任务</text>
+<rect x="1012.75" y="1250.75" width="112.5" height="52.5" rx="5" fill="url(#hatch-d)" stroke="#EA8099" stroke-width="1.5"/>
+<rect x="1024.45" y="1256.5" width="89.0972" height="41" rx="4" fill="#0D1117"/>
+<text x="1069" y="1272" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Ravens 脚本</text>
+<text x="1069" y="1289" text-anchor="middle" font-size="12" fill="#9198A1">生成专家演示</text>
+<rect x="1132" y="1250" width="114" height="54" rx="5" fill="#EA8099"/>
+<text x="1189" y="1272" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">GPT-4</text>
+<text x="1189" y="1289" text-anchor="middle" font-size="12" fill="#0D1117">写目标与成功判定</text>
+<text x="22" y="1349" font-size="15" font-weight="700" fill="#E6EDF3">Holodeck</text>
+<rect x="172" y="1310" width="114" height="69" rx="5" fill="#E3A251"/>
+<text x="229" y="1332" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">GPT-4</text>
+<text x="229" y="1349" text-anchor="middle" font-size="12" fill="#0D1117">设计房间与</text>
+<text x="229" y="1364" text-anchor="middle" font-size="12" fill="#0D1117">物体关系</text>
+<rect x="292.5" y="1310.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="412.75" y="1310.75" width="112.5" height="67.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="428.723" y="1316" width="80.5536" height="57" rx="4" fill="#0D1117"/>
+<text x="469" y="1331.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Objaverse</text>
+<text x="469" y="1347.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">ProcTHOR</text>
+<text x="469" y="1364.5" text-anchor="middle" font-size="12" fill="#9198A1">检索 mesh</text>
+<rect x="532.5" y="1310.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="652.75" y="1310.75" width="112.5" height="67.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="669.55" y="1324" width="78.9" height="41" rx="4" fill="#0D1117"/>
+<text x="709" y="1339.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">约束求解器</text>
+<text x="709" y="1356.5" text-anchor="middle" font-size="12" fill="#9198A1">按关系摆放</text>
+<rect x="772.5" y="1310.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="892.75" y="1310.75" width="112.5" height="67.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="909.274" y="1324" width="79.4512" height="41" rx="4" fill="#0D1117"/>
+<text x="949" y="1339.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">AI2-THOR</text>
+<text x="949" y="1356.5" text-anchor="middle" font-size="12" fill="#9198A1">导入运行</text>
+<rect x="1012.5" y="1310.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="1132.5" y="1310.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<text x="22" y="1432" font-size="15" font-weight="700" fill="#E6EDF3">SimFoundry</text>
+<rect x="172" y="1385" width="114" height="85" rx="5" fill="#E3A251"/>
+<text x="229" y="1422.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">VLM</text>
+<text x="229" y="1439.5" text-anchor="middle" font-size="12" fill="#0D1117">列出物体与语义</text>
+<rect x="292.75" y="1385.75" width="112.5" height="83.5" rx="5" fill="url(#hatch-a)" stroke="#E3A251" stroke-width="1.5"/>
+<rect x="304.314" y="1391" width="89.3728" height="73" rx="4" fill="#0D1117"/>
+<text x="349" y="1406.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">SAM3</text>
+<text x="349" y="1422.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">PriorDepth</text>
+<text x="349" y="1438.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Anything</text>
+<text x="349" y="1455.5" text-anchor="middle" font-size="12" fill="#9198A1">分割、深度</text>
+<rect x="412.75" y="1385.75" width="112.5" height="83.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="418.76" y="1399" width="100.48" height="57" rx="4" fill="#0D1117"/>
+<text x="469" y="1414.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Hunyuan3D</text>
+<text x="469" y="1430.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">TRELLIS.2</text>
+<text x="469" y="1447.5" text-anchor="middle" font-size="12" fill="#9198A1">逐物体生成 mesh</text>
+<rect x="532" y="1385" width="114" height="85" rx="5" fill="#45C3B3"/>
+<text x="589" y="1422.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">Actor–Critic</text>
+<text x="589" y="1439.5" text-anchor="middle" font-size="12" fill="#0D1117">写关节并检查运动</text>
+<rect x="652.75" y="1385.75" width="112.5" height="83.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="662" y="1399" width="94" height="57" rx="4" fill="#0D1117"/>
+<text x="709" y="1414.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Foundation</text>
+<text x="709" y="1430.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Pose</text>
+<text x="709" y="1447.5" text-anchor="middle" font-size="12" fill="#9198A1">配准位姿与尺度</text>
+<rect x="772" y="1385" width="114" height="85" rx="5" fill="#8AACEF"/>
+<text x="829" y="1422.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">VLM</text>
+<text x="829" y="1439.5" text-anchor="middle" font-size="12" fill="#0D1117">估质量、摩擦</text>
+<rect x="892.75" y="1385.75" width="112.5" height="83.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="902" y="1407" width="94" height="41" rx="4" fill="#0D1117"/>
+<text x="949" y="1422.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">PyBullet</text>
+<text x="949" y="1439.5" text-anchor="middle" font-size="12" fill="#9198A1">去穿透、稳定化</text>
+<rect x="1012.5" y="1385.5" width="113" height="84" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="1132" y="1385" width="114" height="85" rx="5" fill="#EA8099"/>
+<text x="1189" y="1415" text-anchor="middle" font-size="13" font-weight="700" fill="#0D1117">VLM</text>
+<text x="1189" y="1432" text-anchor="middle" font-size="12" fill="#0D1117">提出任务与</text>
+<text x="1189" y="1447" text-anchor="middle" font-size="12" fill="#0D1117">成功条件</text>
+<text x="22" y="1501" font-size="14.5" font-weight="700" fill="#E6EDF3">Model-based (without Agent) · 没有 Agent，模型或优化直接产出</text>
+<line x1="512.007" y1="1496" x2="1246" y2="1496" stroke="#3D444D"/>
+<text x="22" y="1550" font-size="15" font-weight="700" fill="#E6EDF3">PhysX-Omni</text>
+<rect x="22.5" y="1558.5" width="59" height="16" rx="8" fill="none" stroke="#8AACEF"/>
+<text x="29" y="1570.5" font-size="11.5" fill="#8AACEF">仿真就绪</text>
+<rect x="172.75" y="1514.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-a)" stroke="#E3A251" stroke-width="1.5"/>
+<rect x="182.66" y="1520" width="92.68" height="72" rx="4" fill="#0D1117"/>
+<text x="229" y="1535.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">微调</text>
+<text x="229" y="1551.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Qwen2.5-VL</text>
+<text x="229" y="1568.5" text-anchor="middle" font-size="12" fill="#9198A1">推断类别、尺</text>
+<text x="229" y="1583.5" text-anchor="middle" font-size="12" fill="#9198A1">度、部件层级</text>
+<rect x="292.5" y="1514.5" width="113" height="83" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="412.75" y="1514.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="422.66" y="1520" width="92.68" height="72" rx="4" fill="#0D1117"/>
+<text x="469" y="1535.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Qwen2.5-VL</text>
+<text x="469" y="1551.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">TRELLIS</text>
+<text x="469" y="1568.5" text-anchor="middle" font-size="12" fill="#9198A1">生成体素，</text>
+<text x="469" y="1583.5" text-anchor="middle" font-size="12" fill="#9198A1">解码 mesh</text>
+<rect x="532.75" y="1514.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="542.66" y="1527.5" width="92.68" height="57" rx="4" fill="#0D1117"/>
+<text x="589" y="1543" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">微调</text>
+<text x="589" y="1559" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Qwen2.5-VL</text>
+<text x="589" y="1576" text-anchor="middle" font-size="12" fill="#9198A1">预测关节</text>
+<rect x="652.5" y="1514.5" width="113" height="83" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="772.75" y="1514.75" width="112.5" height="82.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="782.66" y="1520" width="92.68" height="72" rx="4" fill="#0D1117"/>
+<text x="829" y="1535.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">微调</text>
+<text x="829" y="1551.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">Qwen2.5-VL</text>
+<text x="829" y="1568.5" text-anchor="middle" font-size="12" fill="#9198A1">预测质量、</text>
+<text x="829" y="1583.5" text-anchor="middle" font-size="12" fill="#9198A1">材料等属性</text>
+<rect x="892.75" y="1514.75" width="112.5" height="82.5" rx="5" fill="#0D1117" stroke="#8AACEF" stroke-width="1.5"/>
+<text x="949" y="1543.5" text-anchor="middle" font-size="13" font-weight="700" fill="#8AACEF">仿真就绪</text>
+<text x="949" y="1560.5" text-anchor="middle" font-size="12" fill="#9198A1">资产可导入，</text>
+<text x="949" y="1575.5" text-anchor="middle" font-size="12" fill="#9198A1">方法里没运行</text>
+<rect x="1012.5" y="1514.5" width="113" height="83" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="1132.5" y="1514.5" width="113" height="83" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<text x="22" y="1643" font-size="15" font-weight="700" fill="#E6EDF3">Real2Code</text>
+<rect x="172.5" y="1604.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="292.75" y="1604.75" width="112.5" height="67.5" rx="5" fill="url(#hatch-a)" stroke="#E3A251" stroke-width="1.5"/>
+<rect x="302" y="1610" width="94" height="57" rx="4" fill="#0D1117"/>
+<text x="349" y="1625.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">微调 SAM</text>
+<text x="349" y="1641.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">DUSt3R</text>
+<text x="349" y="1658.5" text-anchor="middle" font-size="12" fill="#9198A1">部件分割与点云</text>
+<rect x="412.75" y="1604.75" width="112.5" height="67.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="422.66" y="1618" width="92.68" height="41" rx="4" fill="#0D1117"/>
+<text x="469" y="1633.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">形状补全模型</text>
+<text x="469" y="1650.5" text-anchor="middle" font-size="12" fill="#9198A1">补全部件 mesh</text>
+<rect x="532.75" y="1604.75" width="112.5" height="67.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="536" y="1610" width="106" height="57" rx="4" fill="#0D1117"/>
+<text x="589" y="1625.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">微调</text>
+<text x="589" y="1641.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">CodeLlama</text>
+<text x="589" y="1658.5" text-anchor="middle" font-size="12" fill="#9198A1">按包围盒预测关节</text>
+<rect x="652.75" y="1604.75" width="112.5" height="67.5" rx="5" fill="url(#hatch-b)" stroke="#45C3B3" stroke-width="1.5"/>
+<rect x="662" y="1618" width="94" height="41" rx="4" fill="#0D1117"/>
+<text x="709" y="1633.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">DUSt3R 点云</text>
+<text x="709" y="1650.5" text-anchor="middle" font-size="12" fill="#9198A1">部件位置与尺寸</text>
+<rect x="772.5" y="1604.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="892.75" y="1604.75" width="112.5" height="67.5" rx="5" fill="url(#hatch-c)" stroke="#8AACEF" stroke-width="1.5"/>
+<rect x="914" y="1618" width="70" height="41" rx="4" fill="#0D1117"/>
+<text x="949" y="1633.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E6EDF3">MuJoCo</text>
+<text x="949" y="1650.5" text-anchor="middle" font-size="12" fill="#9198A1">实例化运行</text>
+<rect x="1012.5" y="1604.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+<rect x="1132.5" y="1604.5" width="113" height="68" rx="5" fill="none" stroke="#6E7681" stroke-dasharray="4 4"/>
+</svg>

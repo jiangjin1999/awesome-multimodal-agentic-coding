@@ -1,0 +1,1259 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1288 3386" width="1288" height="3386" role="img" aria-label="Every Section 3.2 work, step by step" font-family="-apple-system, &#x27;Segoe UI&#x27;, Helvetica, Arial, &#x27;Noto Sans&#x27;, sans-serif">
+<title>Every Section 3.2 work, step by step</title>
+<defs>
+<pattern id="hatch-a" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FBEAD2"/><rect width="2.2" height="7" fill="#A35C0A"/></pattern>
+<pattern id="hatch-b" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#D2EEEA"/><rect width="2.2" height="7" fill="#0B7266"/></pattern>
+<pattern id="hatch-c" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#DCE5F6"/><rect width="2.2" height="7" fill="#2B57A4"/></pattern>
+<pattern id="hatch-d" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#F6DCE2"/><rect width="2.2" height="7" fill="#A5324D"/></pattern>
+<pattern id="hatch-e" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#E7E0F6"/><rect width="2.2" height="7" fill="#6748B2"/></pattern>
+<pattern id="hatch-legend" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.2" height="7" fill="#59636E"/></pattern>
+</defs>
+<rect x="0.5" y="0.5" width="1287" height="3385" rx="10" fill="#FFFFFF" stroke="#D1D9E0"/>
+<rect x="22" y="26" width="26" height="16" rx="3" fill="#59636E"/>
+<text x="56" y="39" font-size="13" fill="#59636E">Agent or VLM does it itself</text>
+<rect x="259.82000000000005" y="26" width="26" height="16" rx="3" fill="url(#hatch-legend)" stroke="#59636E"/>
+<text x="293.82000000000005" y="39" font-size="13" fill="#59636E">Specialised tool, model or engine</text>
+<rect x="542.3300000000002" y="26.75" width="24.5" height="14.5" rx="3" fill="none" stroke="#59636E" stroke-width="1.5"/>
+<text x="575.5800000000002" y="39" font-size="13" fill="#59636E">Given in advance or by hand</text>
+<rect x="776.7800000000003" y="26.5" width="25" height="15" rx="3" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="810.2800000000003" y="39" font-size="13" fill="#59636E">Not involved or not stated</text>
+<rect x="1008.0800000000004" y="27" width="24" height="14" rx="3" fill="none" stroke="#A5324D" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="1041.0800000000004" y="39" font-size="13" fill="#59636E">No physics engine: scene only</text>
+<rect x="22.75" y="50.75" width="24.5" height="14.5" rx="3" fill="none" stroke="#2B57A4" stroke-width="1.5"/>
+<text x="56" y="63" font-size="13" fill="#59636E">Sim-ready: loadable, not run</text>
+<rect x="244" y="82" width="112" height="28" rx="5" fill="#FBEAD2"/>
+<text x="300" y="94.5" text-anchor="middle" font-size="10.5" font-weight="700" fill="#A35C0A">A Perception</text>
+<text x="300" y="106" text-anchor="middle" font-size="10.5" font-weight="700" fill="#A35C0A">&amp; Planning</text>
+<rect x="360" y="82" width="170" height="28" rx="5" fill="#D2EEEA"/>
+<text x="445" y="100" text-anchor="middle" font-size="12" font-weight="700" fill="#0B7266">B Scene Construction</text>
+<rect x="534" y="82" width="112" height="28" rx="5" fill="#DCE5F6"/>
+<text x="590" y="94.5" text-anchor="middle" font-size="10.5" font-weight="700" fill="#2B57A4">C Physics</text>
+<text x="590" y="106" text-anchor="middle" font-size="10.5" font-weight="700" fill="#2B57A4">Modeling</text>
+<rect x="650" y="82" width="112" height="28" rx="5" fill="#F6DCE2"/>
+<text x="706" y="94.5" text-anchor="middle" font-size="10.5" font-weight="700" fill="#A5324D">D Task &amp; Control</text>
+<rect x="778" y="82" width="112" height="28" rx="5" fill="#E7E0F6"/>
+<text x="834" y="94.5" text-anchor="middle" font-size="10.5" font-weight="700" fill="#6748B2">Not parts of</text>
+<text x="834" y="106" text-anchor="middle" font-size="10.5" font-weight="700" fill="#6748B2">a simulator</text>
+<text x="271" y="131" text-anchor="middle" font-size="13.5" fill="#59636E">①</text>
+<text x="271" y="148" text-anchor="middle" font-size="11" font-weight="600" fill="#1F2328">Task</text>
+<text x="271" y="162" text-anchor="middle" font-size="11" font-weight="600" fill="#1F2328">planning</text>
+<text x="329" y="131" text-anchor="middle" font-size="13.5" fill="#59636E">②</text>
+<text x="329" y="148" text-anchor="middle" font-size="11" font-weight="600" fill="#1F2328">Percep-</text>
+<text x="329" y="162" text-anchor="middle" font-size="11" font-weight="600" fill="#1F2328">tion</text>
+<text x="387" y="131" text-anchor="middle" font-size="13.5" fill="#59636E">③</text>
+<text x="387" y="148" text-anchor="middle" font-size="11" font-weight="600" fill="#1F2328">Object</text>
+<text x="387" y="162" text-anchor="middle" font-size="11" font-weight="600" fill="#1F2328">assets</text>
+<text x="445" y="131" text-anchor="middle" font-size="13.5" fill="#59636E">④</text>
+<text x="445" y="148" text-anchor="middle" font-size="11" font-weight="600" fill="#1F2328">Articu-</text>
+<text x="445" y="162" text-anchor="middle" font-size="11" font-weight="600" fill="#1F2328">lation</text>
+<text x="503" y="131" text-anchor="middle" font-size="13.5" fill="#59636E">⑤</text>
+<text x="503" y="148" text-anchor="middle" font-size="11" font-weight="600" fill="#1F2328">Layout</text>
+<text x="561" y="131" text-anchor="middle" font-size="13.5" fill="#59636E">⑥</text>
+<text x="561" y="148" text-anchor="middle" font-size="11" font-weight="600" fill="#1F2328">Physical</text>
+<text x="561" y="162" text-anchor="middle" font-size="11" font-weight="600" fill="#1F2328">params</text>
+<text x="619" y="131" text-anchor="middle" font-size="13.5" fill="#59636E">⑦</text>
+<text x="619" y="148" text-anchor="middle" font-size="11" font-weight="600" fill="#1F2328">Physics</text>
+<text x="619" y="162" text-anchor="middle" font-size="11" font-weight="600" fill="#1F2328">engine</text>
+<text x="677" y="131" text-anchor="middle" font-size="13.5" fill="#59636E">⑧</text>
+<text x="677" y="148" text-anchor="middle" font-size="11" font-weight="600" fill="#1F2328">Robot</text>
+<text x="677" y="162" text-anchor="middle" font-size="11" font-weight="600" fill="#1F2328">control</text>
+<text x="735" y="131" text-anchor="middle" font-size="13.5" fill="#59636E">⑨</text>
+<text x="735" y="148" text-anchor="middle" font-size="11" font-weight="600" fill="#1F2328">Task</text>
+<text x="735" y="162" text-anchor="middle" font-size="11" font-weight="600" fill="#1F2328">def.</text>
+<text x="805" y="148" text-anchor="middle" font-size="11" font-weight="600" fill="#1F2328">Verify &amp;</text>
+<text x="805" y="162" text-anchor="middle" font-size="11" font-weight="600" fill="#1F2328">revise</text>
+<text x="863" y="148" text-anchor="middle" font-size="11" font-weight="600" fill="#1F2328">Variants</text>
+<text x="906" y="148" font-size="11" font-weight="600" fill="#1F2328">How it works</text>
+<text x="22" y="186" font-size="12" fill="#59636E">Totals (68)</text>
+<rect x="244" y="172" width="54" height="8" rx="3" fill="#F0F3F6"/>
+<rect x="244" y="172" width="43.6765" height="8" fill="#A35C0A"/>
+<rect x="287.676" y="172" width="0.794118" height="8" fill="url(#hatch-a)"/>
+<rect x="288.471" y="172" width="4.76471" height="8" fill="#FBEAD2"/>
+<text x="271" y="193" text-anchor="middle" font-size="10.5" fill="#59636E">Agent <tspan font-weight="700" fill="#1F2328">55</tspan></text>
+<text x="271" y="206" text-anchor="middle" font-size="10.5" fill="#59636E">Tool <tspan font-weight="700" fill="#1F2328">1</tspan></text>
+<rect x="302" y="172" width="54" height="8" rx="3" fill="#F0F3F6"/>
+<rect x="302" y="172" width="2.38235" height="8" fill="#A35C0A"/>
+<rect x="304.382" y="172" width="25.4118" height="8" fill="url(#hatch-a)"/>
+<rect x="329.794" y="172" width="0.794118" height="8" fill="#FBEAD2"/>
+<text x="329" y="193" text-anchor="middle" font-size="10.5" fill="#59636E">Agent <tspan font-weight="700" fill="#1F2328">3</tspan></text>
+<text x="329" y="206" text-anchor="middle" font-size="10.5" fill="#59636E">Tool <tspan font-weight="700" fill="#1F2328">32</tspan></text>
+<rect x="360" y="172" width="54" height="8" rx="3" fill="#F0F3F6"/>
+<rect x="360" y="172" width="20.6471" height="8" fill="#0B7266"/>
+<rect x="380.647" y="172" width="29.3824" height="8" fill="url(#hatch-b)"/>
+<rect x="410.029" y="172" width="3.97059" height="8" fill="#D2EEEA"/>
+<text x="387" y="193" text-anchor="middle" font-size="10.5" fill="#59636E">Agent <tspan font-weight="700" fill="#1F2328">26</tspan></text>
+<text x="387" y="206" text-anchor="middle" font-size="10.5" fill="#59636E">Tool <tspan font-weight="700" fill="#1F2328">37</tspan></text>
+<rect x="418" y="172" width="54" height="8" rx="3" fill="#F0F3F6"/>
+<rect x="418" y="172" width="11.9118" height="8" fill="#0B7266"/>
+<rect x="429.912" y="172" width="4.76471" height="8" fill="url(#hatch-b)"/>
+<text x="445" y="193" text-anchor="middle" font-size="10.5" fill="#59636E">Agent <tspan font-weight="700" fill="#1F2328">15</tspan></text>
+<text x="445" y="206" text-anchor="middle" font-size="10.5" fill="#59636E">Tool <tspan font-weight="700" fill="#1F2328">6</tspan></text>
+<rect x="476" y="172" width="54" height="8" rx="3" fill="#F0F3F6"/>
+<rect x="476" y="172" width="34.1471" height="8" fill="#0B7266"/>
+<rect x="510.147" y="172" width="8.73529" height="8" fill="url(#hatch-b)"/>
+<rect x="518.882" y="172" width="0.794118" height="8" fill="#D2EEEA"/>
+<text x="503" y="193" text-anchor="middle" font-size="10.5" fill="#59636E">Agent <tspan font-weight="700" fill="#1F2328">43</tspan></text>
+<text x="503" y="206" text-anchor="middle" font-size="10.5" fill="#59636E">Tool <tspan font-weight="700" fill="#1F2328">11</tspan></text>
+<rect x="534" y="172" width="54" height="8" rx="3" fill="#F0F3F6"/>
+<rect x="534" y="172" width="20.6471" height="8" fill="#2B57A4"/>
+<rect x="554.647" y="172" width="7.94118" height="8" fill="url(#hatch-c)"/>
+<text x="561" y="193" text-anchor="middle" font-size="10.5" fill="#59636E">Agent <tspan font-weight="700" fill="#1F2328">26</tspan></text>
+<text x="561" y="206" text-anchor="middle" font-size="10.5" fill="#59636E">Tool <tspan font-weight="700" fill="#1F2328">10</tspan></text>
+<rect x="592" y="172" width="54" height="8" rx="3" fill="#F0F3F6"/>
+<rect x="592" y="172" width="0.794118" height="8" fill="#2B57A4"/>
+<rect x="592.794" y="172" width="35.7353" height="8" fill="url(#hatch-c)"/>
+<rect x="628.529" y="172" width="7.14706" height="8" fill="#DCE5F6"/>
+<rect x="635.676" y="172" width="7.94118" height="8" fill="#A5324D"/>
+<text x="619" y="193" text-anchor="middle" font-size="10.5" fill="#59636E">Engine <tspan font-weight="700" fill="#1F2328">46</tspan></text>
+<text x="619" y="206" text-anchor="middle" font-size="10.5" fill="#59636E">None <tspan font-weight="700" fill="#1F2328">10</tspan></text>
+<text x="619" y="219" text-anchor="middle" font-size="10.5" fill="#59636E">Ready <tspan font-weight="700" fill="#1F2328">9</tspan></text>
+<rect x="650" y="172" width="54" height="8" rx="3" fill="#F0F3F6"/>
+<rect x="650" y="172" width="16.6765" height="8" fill="#A5324D"/>
+<rect x="666.676" y="172" width="12.7059" height="8" fill="url(#hatch-d)"/>
+<rect x="679.382" y="172" width="2.38235" height="8" fill="#F6DCE2"/>
+<text x="677" y="193" text-anchor="middle" font-size="10.5" fill="#59636E">Agent <tspan font-weight="700" fill="#1F2328">21</tspan></text>
+<text x="677" y="206" text-anchor="middle" font-size="10.5" fill="#59636E">Tool <tspan font-weight="700" fill="#1F2328">16</tspan></text>
+<rect x="708" y="172" width="54" height="8" rx="3" fill="#F0F3F6"/>
+<rect x="708" y="172" width="11.1176" height="8" fill="#A5324D"/>
+<rect x="719.118" y="172" width="6.35294" height="8" fill="#F6DCE2"/>
+<text x="735" y="193" text-anchor="middle" font-size="10.5" fill="#59636E">Agent <tspan font-weight="700" fill="#1F2328">14</tspan></text>
+<text x="735" y="206" text-anchor="middle" font-size="10.5" fill="#59636E">Tool <tspan font-weight="700" fill="#1F2328">0</tspan></text>
+<rect x="778" y="172" width="54" height="8" rx="3" fill="#F0F3F6"/>
+<rect x="778" y="172" width="38.9118" height="8" fill="#6748B2"/>
+<rect x="816.912" y="172" width="0.794118" height="8" fill="url(#hatch-e)"/>
+<rect x="817.706" y="172" width="0.794118" height="8" fill="#E7E0F6"/>
+<text x="805" y="193" text-anchor="middle" font-size="10.5" fill="#59636E">Agent <tspan font-weight="700" fill="#1F2328">49</tspan></text>
+<text x="805" y="206" text-anchor="middle" font-size="10.5" fill="#59636E">Tool <tspan font-weight="700" fill="#1F2328">1</tspan></text>
+<rect x="836" y="172" width="54" height="8" rx="3" fill="#F0F3F6"/>
+<rect x="836" y="172" width="7.14706" height="8" fill="#6748B2"/>
+<rect x="843.147" y="172" width="0.794118" height="8" fill="url(#hatch-e)"/>
+<text x="863" y="193" text-anchor="middle" font-size="10.5" fill="#59636E">Agent <tspan font-weight="700" fill="#1F2328">9</tspan></text>
+<text x="863" y="206" text-anchor="middle" font-size="10.5" fill="#59636E">Tool <tspan font-weight="700" fill="#1F2328">1</tspan></text>
+<line x1="22" y1="227" x2="1266" y2="227" stroke="#D1D9E0"/>
+<text x="22" y="256" font-size="14.0" font-weight="700" fill="#1F2328">Bench · reference only, not counted<tspan font-weight="400" fill="#59636E" dx="10">2 works</tspan></text>
+<line x1="395.679" y1="251" x2="1266" y2="251" stroke="#D1D9E0"/>
+<text x="22" y="283" font-size="13" font-weight="700" fill="#1F2328">RoboDojo</text>
+<rect x="22" y="289" width="47.12" height="17" rx="8.5" fill="#E7E0F6"/>
+<text x="29" y="301.5" font-size="11.5" fill="#6748B2">Bench</text>
+<rect x="74.12" y="289" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="81.12" y="301.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244.75" y="267.75" width="52.5" height="41.5" rx="4" fill="#FFFFFF" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="302.5" y="267.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360.75" y="267.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.75" y="267.75" width="52.5" height="41.5" rx="4" fill="#FFFFFF" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="476.75" y="267.75" width="52.5" height="41.5" rx="4" fill="#FFFFFF" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="534.75" y="267.75" width="52.5" height="41.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="592.75" y="267.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.75" y="267.75" width="52.5" height="41.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708.75" y="267.75" width="52.5" height="41.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="778.75" y="267.75" width="52.5" height="41.5" rx="4" fill="#FFFFFF" stroke="#6748B2" stroke-width="1.5"/>
+<rect x="836.75" y="267.75" width="52.5" height="41.5" rx="4" fill="#FFFFFF" stroke="#6748B2" stroke-width="1.5"/>
+<text x="906" y="292.5" font-size="12" fill="#59636E">Isaac Sim manipulation benchmark built by hand</text>
+<text x="22" y="330" font-size="13" font-weight="700" fill="#1F2328">Video2World</text>
+<rect x="22" y="336" width="47.12" height="17" rx="8.5" fill="#E7E0F6"/>
+<text x="29" y="348.5" font-size="11.5" fill="#6748B2">Bench</text>
+<rect x="74.12" y="336" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="81.12" y="348.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="314" width="54" height="43" rx="4" fill="#A35C0A"/>
+<rect x="302" y="314" width="54" height="43" rx="4" fill="#A35C0A"/>
+<rect x="360" y="314" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="418.5" y="314.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="314" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="534" y="314" width="54" height="43" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="314.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650" y="314" width="54" height="43" rx="4" fill="#A5324D"/>
+<rect x="708.75" y="314.75" width="52.5" height="41.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="778" y="314" width="54" height="43" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="314.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="332" font-size="12" fill="#59636E">Asks the Agent under test to</text>
+<text x="906" y="347" font-size="12" fill="#59636E">build the simulation from video</text>
+<text x="22" y="384" font-size="14.0" font-weight="700" fill="#1F2328">Agentic End-to-End · one Agent does it all<tspan font-weight="400" fill="#59636E" dx="10">22 works</tspan></text>
+<line x1="449.697" y1="379" x2="1266" y2="379" stroke="#D1D9E0"/>
+<text x="22" y="418.5" font-size="13" font-weight="700" fill="#1F2328">SimuLean</text>
+<rect x="93.9392" y="405" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="100.939" y="417.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="395" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="395.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360.75" y="395.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="395.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="395" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534" y="395" width="54" height="38" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="395.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="395.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="395.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="395" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="395.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="410.5" font-size="12" fill="#59636E">Builds discrete-event models with domain</text>
+<text x="906" y="425.5" font-size="12" fill="#59636E">commands; the Agent calibrates job times</text>
+<text x="22" y="460.5" font-size="13" font-weight="700" fill="#1F2328">CUE</text>
+<rect x="56.4576" y="447" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="63.4576" y="459.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="437" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302" y="437" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="360" y="437" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="418.5" y="437.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="437" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534.75" y="437.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="592.75" y="437.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650" y="437" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="708.5" y="437.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="437" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="437.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="452.5" font-size="12" fill="#59636E">Agent models and writes tracking, CMA-ES fits</text>
+<text x="906" y="467.5" font-size="12" fill="#59636E">parameters, then it picks the next experiment</text>
+<text x="22" y="502.5" font-size="13" font-weight="700" fill="#1F2328">DyCraft</text>
+<rect x="86.7224" y="489.5" width="75.33" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
+<text x="93.2224" y="501.5" font-size="11.5" fill="#59636E">Scene only</text>
+<rect x="244" y="479" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="479.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360" y="479" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="418" y="479" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="476" y="479" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="479.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="593" y="480" width="52" height="36" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
+<rect x="650.75" y="479.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708.5" y="479.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="479" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="479.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="494.5" font-size="12" fill="#59636E">Main Agent builds scene and rig in</text>
+<text x="906" y="509.5" font-size="12" fill="#59636E">Blender; motion is retargeted mocap</text>
+<text x="22" y="544.5" font-size="13" font-weight="700" fill="#1F2328">SceneAgent</text>
+<rect x="109.373" y="531" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="116.373" y="543.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="521" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="521.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="521.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.75" y="521.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="476" y="521" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534.75" y="521.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="592.75" y="521.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650" y="521" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="708.5" y="521.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="521" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836" y="521" width="54" height="38" rx="4" fill="#6748B2"/>
+<text x="906" y="536.5" font-size="12" fill="#59636E">Calls segmentation, completion, articulation</text>
+<text x="906" y="551.5" font-size="12" fill="#59636E">and physics tools; makes variants and demos</text>
+<text x="22" y="586.5" font-size="13" font-weight="700" fill="#1F2328">Plumb</text>
+<rect x="69.6864" y="573" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="76.6864" y="585.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="563" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="563.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360" y="563" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="418.5" y="563.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="563" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534" y="563" width="54" height="38" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="563.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650" y="563" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="708.5" y="563.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="563" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="563.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="578.5" font-size="12" fill="#59636E">Coding Agent measures with SAM3 and Pi3X,</text>
+<text x="906" y="593.5" font-size="12" fill="#59636E">then writes the MuJoCo scene and parameters</text>
+<text x="22" y="628.5" font-size="13" font-weight="700" fill="#1F2328">GRASE</text>
+<rect x="74.596" y="615.5" width="75.33" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
+<text x="81.096" y="627.5" font-size="11.5" fill="#59636E">Scene only</text>
+<rect x="244" y="605" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="605.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360" y="605" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="418.5" y="605.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="605" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="605.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="593" y="606" width="52" height="36" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
+<rect x="650.5" y="605.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="605.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="605" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="605.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="620.5" font-size="12" fill="#59636E">Mostly Blender primitives, TRELLIS.2</text>
+<text x="906" y="635.5" font-size="12" fill="#59636E">for small objects; static scene</text>
+<text x="22" y="663" font-size="13" font-weight="700" fill="#1F2328">RoboSimStudio</text>
+<rect x="22" y="669" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="29" y="681.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="647" width="54" height="43" rx="4" fill="#A35C0A"/>
+<rect x="302" y="647" width="54" height="43" rx="4" fill="#A35C0A"/>
+<rect x="360" y="647" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="418.5" y="647.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="647" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="534" y="647" width="54" height="43" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="647.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650" y="647" width="54" height="43" rx="4" fill="#A5324D"/>
+<rect x="708.5" y="647.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="647" width="54" height="43" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="647.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="665" font-size="12" fill="#59636E">Builds the scene from video, picks the</text>
+<text x="906" y="680" font-size="12" fill="#59636E">solver, revises from execution events</text>
+<text x="22" y="717.5" font-size="13" font-weight="700" fill="#1F2328">USDCraft</text>
+<rect x="96.644" y="704.5" width="71.88" height="16" rx="8" fill="none" stroke="#2B57A4"/>
+<text x="103.144" y="716.5" font-size="11.5" fill="#2B57A4">Sim-ready</text>
+<rect x="244" y="694" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="694.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360" y="694" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="418" y="694" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="476.5" y="694.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="534" y="694" width="54" height="38" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="694.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="694.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="694.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="694" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="694.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="709.5" font-size="12" fill="#59636E">Metric slices help the Agent write</text>
+<text x="906" y="724.5" font-size="12" fill="#59636E">parametric assets and PhysX parameters</text>
+<text x="22" y="759.5" font-size="13" font-weight="700" fill="#1F2328">Agentic RSR</text>
+<rect x="115.712" y="746" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="122.712" y="758.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="736" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="736.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="736.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="736.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="736" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="736.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="736.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650" y="736" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="708.75" y="736.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="778" y="736" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836" y="736" width="54" height="38" rx="4" fill="#6748B2"/>
+<text x="906" y="751.5" font-size="12" fill="#59636E">Blender checks appearance, MuJoCo probes</text>
+<text x="906" y="766.5" font-size="12" fill="#59636E">interaction; develops a policy and randomizes</text>
+<text x="22" y="801.5" font-size="13" font-weight="700" fill="#1F2328">Real2Gym</text>
+<rect x="95.0416" y="788" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="102.042" y="800.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="778" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="778.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360" y="778" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="418.5" y="778.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="778" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534" y="778" width="54" height="38" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="778.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650" y="778" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="708" y="778" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="778" y="778" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836" y="778" width="54" height="38" rx="4" fill="#6748B2"/>
+<text x="906" y="793.5" font-size="12" fill="#59636E">Agent rebuilds with perception tools, checks</text>
+<text x="906" y="808.5" font-size="12" fill="#59636E">against the video, then expands variants</text>
+<text x="22" y="843.5" font-size="13" font-weight="700" fill="#1F2328">FACT</text>
+<rect x="65.2768" y="830" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="72.2768" y="842.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="820" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="820.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360" y="820" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="418" y="820" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="476.5" y="820.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="534.75" y="820.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="592.75" y="820.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="820.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="820.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="820" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="820.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="835.5" font-size="12" fill="#59636E">Agent writes geometry and joints; parameters</text>
+<text x="906" y="850.5" font-size="12" fill="#59636E">are fitted from simulation residuals</text>
+<text x="22" y="885.5" font-size="13" font-weight="700" fill="#1F2328">CoDimRecon</text>
+<rect x="110.475" y="872" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="117.475" y="884.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="862" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="862.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360" y="862" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="418" y="862" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="476" y="862" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534" y="862" width="54" height="38" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="862.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650" y="862" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="708.5" y="862.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="862" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="862.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="877.5" font-size="12" fill="#59636E">VGGT-Omega gives geometry; the Agent rebuilds</text>
+<text x="906" y="892.5" font-size="12" fill="#59636E">in Blender with rod/shell/solid physics</text>
+<text x="22" y="927.5" font-size="13" font-weight="700" fill="#1F2328">WorldAgent</text>
+<rect x="109.873" y="914.5" width="75.33" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
+<text x="116.373" y="926.5" font-size="11.5" fill="#59636E">Scene only</text>
+<rect x="244" y="904" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="904.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360" y="904" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="418.5" y="904.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="904" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534" y="904" width="54" height="38" rx="4" fill="#2B57A4"/>
+<rect x="593" y="905" width="52" height="36" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
+<rect x="650" y="904" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="708.5" y="904.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="904" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="904.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="919.5" font-size="12" fill="#59636E">Builds and simulates in Blender; a verification</text>
+<text x="906" y="934.5" font-size="12" fill="#59636E">layer reports, the Agent revises the spec</text>
+<text x="22" y="969.5" font-size="13" font-weight="700" fill="#1F2328">Code as Worlds</text>
+<rect x="133.574" y="956.5" width="75.33" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
+<text x="140.074" y="968.5" font-size="11.5" fill="#59636E">Scene only</text>
+<rect x="244" y="946" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="946.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="946.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="946.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="946" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534" y="946" width="54" height="38" rx="4" fill="#2B57A4"/>
+<rect x="593" y="947" width="52" height="36" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
+<rect x="650" y="946" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="708.5" y="946.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="946" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="946.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="961.5" font-size="12" fill="#59636E">Adapters give depth, masks, tracks and</text>
+<text x="906" y="976.5" font-size="12" fill="#59636E">meshes; the Agent proposes world programs</text>
+<text x="22" y="1011.5" font-size="13" font-weight="700" fill="#1F2328">GS-Agent</text>
+<rect x="95.0416" y="998" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="102.042" y="1010.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="988" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="988.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360.75" y="988.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="988.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="988" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534" y="988" width="54" height="38" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="988.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650" y="988" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="708.5" y="988.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="988" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="988.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1003.5" font-size="12" fill="#59636E">Retrieves assets or generates them with</text>
+<text x="906" y="1018.5" font-size="12" fill="#59636E">Meshy, programs materials and motion</text>
+<text x="22" y="1053.5" font-size="13" font-weight="700" fill="#1F2328">Articraft</text>
+<rect x="101.054" y="1040.5" width="71.88" height="16" rx="8" fill="none" stroke="#2B57A4"/>
+<text x="107.554" y="1052.5" font-size="11.5" fill="#2B57A4">Sim-ready</text>
+<rect x="244" y="1030" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="1030.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360" y="1030" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="418" y="1030" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="476.5" y="1030.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="534.5" y="1030.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="1030.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="1030.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="1030.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="1030" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1030.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1045.5" font-size="12" fill="#59636E">Builds articulated assets only, with</text>
+<text x="906" y="1060.5" font-size="12" fill="#59636E">harness tests and probe feedback</text>
+<text x="22" y="1088" font-size="13" font-weight="700" fill="#1F2328">SimWorld Studio</text>
+<rect x="22" y="1094" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="29" y="1106.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="1072" width="54" height="43" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="1072.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360.75" y="1072.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="1072.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="1072" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="1072.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="1072.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="1072.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708" y="1072" width="54" height="43" rx="4" fill="#A5324D"/>
+<rect x="778" y="1072" width="54" height="43" rx="4" fill="#6748B2"/>
+<rect x="836" y="1072" width="54" height="43" rx="4" fill="#6748B2"/>
+<text x="906" y="1090" font-size="12" fill="#59636E">UE5 environments; learner</text>
+<text x="906" y="1105" font-size="12" fill="#59636E">performance drives the next batch</text>
+<text x="22" y="1142.5" font-size="13" font-weight="700" fill="#1F2328">SAGE</text>
+<rect x="65.2768" y="1129" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="72.2768" y="1141.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="1119" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="1119.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360.75" y="1119.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="1119.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="1119" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534" y="1119" width="54" height="38" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="1119.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.75" y="1119.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708.75" y="1119.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="778" y="1119" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1119.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1134.5" font-size="12" fill="#59636E">TRELLIS generates, a VLM sets scale</text>
+<text x="906" y="1149.5" font-size="12" fill="#59636E">and physics, two critics advise</text>
+<text x="22" y="1178.5" font-size="13" font-weight="700" fill="#1F2328">SceneWeaver</text>
+<rect x="117.59" y="1165.5" width="71.88" height="16" rx="8" fill="none" stroke="#2B57A4"/>
+<text x="124.09" y="1177.5" font-size="11.5" fill="#2B57A4">Sim-ready</text>
+<rect x="244" y="1161" width="54" height="26" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="1161.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360.75" y="1161.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="1161.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="1161" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="1161.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="1161.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="1161.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="1161.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="1161" width="54" height="26" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1161.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1178" font-size="12" fill="#59636E">Planner picks tools; Blender and Infinigen execute</text>
+<text x="22" y="1214.5" font-size="13" font-weight="700" fill="#1F2328">Eurekaverse</text>
+<rect x="115.987" y="1201" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="122.987" y="1213.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="1191" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="1191.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360" y="1191" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="418.5" y="1191.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="1191" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="1191.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="1191.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.75" y="1191.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708" y="1191" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="778" y="1191" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836" y="1191" width="54" height="38" rx="4" fill="#6748B2"/>
+<text x="906" y="1206.5" font-size="12" fill="#59636E">LLM writes terrain code, evolved</text>
+<text x="906" y="1221.5" font-size="12" fill="#59636E">after each round of PPO training</text>
+<text x="22" y="1256.5" font-size="13" font-weight="700" fill="#1F2328">AHa-3D</text>
+<rect x="81.2104" y="1243.5" width="117.42" height="16" rx="8" fill="none" stroke="#D1D9E0"/>
+<text x="87.7104" y="1255.5" font-size="11.5" fill="#59636E">Engine not stated</text>
+<rect x="244" y="1233" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="1233.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="1233.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="1233.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="1233" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="1233.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.5" y="1233.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="650.5" y="1233.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="1233.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="1233" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1233.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1248.5" font-size="12" fill="#59636E">Coding Agent calls geometry, segmentation</text>
+<text x="906" y="1263.5" font-size="12" fill="#59636E">and motion tools to write the scene</text>
+<text x="22" y="1291" font-size="13" font-weight="700" fill="#1F2328">mujoco-workbench</text>
+<rect x="22" y="1297" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="29" y="1309.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="1275" width="54" height="43" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="1275.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360" y="1275" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="418.5" y="1275.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="1275" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="1275.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="1275.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="1275.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="1275.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="1275" width="54" height="43" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1275.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1300.5" font-size="12" fill="#59636E">MuJoCo run, render and inspect tools for an Agent</text>
+<text x="22" y="1345" font-size="14.0" font-weight="700" fill="#1F2328">Closed-loop Workflow · problems go back to the responsible step<tspan font-weight="400" fill="#59636E" dx="10">20 works</tspan></text>
+<line x1="614.124" y1="1340" x2="1266" y2="1340" stroke="#D1D9E0"/>
+<text x="22" y="1379.5" font-size="13" font-weight="700" fill="#1F2328">WorldSketch</text>
+<rect x="117.59" y="1366.5" width="75.33" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
+<text x="124.09" y="1378.5" font-size="11.5" fill="#59636E">Scene only</text>
+<rect x="244" y="1356" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="1356.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360" y="1356" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="418" y="1356" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="476" y="1356" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="1356.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="593" y="1357" width="52" height="36" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
+<rect x="650.75" y="1356.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708.75" y="1356.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="778" y="1356" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1356.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1371.5" font-size="12" fill="#59636E">VLM builds a kinematic sketch, a depth</text>
+<text x="906" y="1386.5" font-size="12" fill="#59636E">backend measures, a planner solves actions</text>
+<text x="22" y="1415.5" font-size="13" font-weight="700" fill="#1F2328">Gym-Anything</text>
+<rect x="124.806" y="1402" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="131.806" y="1414.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="1398" width="54" height="26" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="1398.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360" y="1398" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="418.5" y="1398.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="1398" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="534" y="1398" width="54" height="26" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="1398.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650" y="1398" width="54" height="26" rx="4" fill="#A5324D"/>
+<rect x="708" y="1398" width="54" height="26" rx="4" fill="#A5324D"/>
+<rect x="778" y="1398" width="54" height="26" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1398.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1415" font-size="12" fill="#59636E">Creation, task and audit Agents; audit reports go back</text>
+<text x="22" y="1451.5" font-size="13" font-weight="700" fill="#1F2328">WorldMirror</text>
+<rect x="117.09" y="1438" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="124.09" y="1450.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244.75" y="1428.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="302.75" y="1428.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="1428.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="1428.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="1428" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="1428.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="1428.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.75" y="1428.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708.5" y="1428.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="1428" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1428.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1443.5" font-size="12" fill="#59636E">Routing Agent follows a dependency</text>
+<text x="906" y="1458.5" font-size="12" fill="#59636E">graph and falls back to the failing stage</text>
+<text x="22" y="1487.5" font-size="13" font-weight="700" fill="#1F2328">MARC</text>
+<rect x="65.7768" y="1474.5" width="75.33" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
+<text x="72.2768" y="1486.5" font-size="11.5" fill="#59636E">Scene only</text>
+<rect x="244" y="1470" width="54" height="26" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="1470.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360" y="1470" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="418" y="1470" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="476.5" y="1470.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="534.5" y="1470.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="593" y="1471" width="52" height="24" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
+<rect x="650.75" y="1470.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708.5" y="1470.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="1470" width="54" height="26" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1470.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1487" font-size="12" fill="#59636E">Judge / Executor / Reviewer with a kinematic solver</text>
+<text x="22" y="1523.5" font-size="13" font-weight="700" fill="#1F2328">D-World</text>
+<rect x="86.2224" y="1510" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="93.2224" y="1522.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="1500" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302" y="1500" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="360" y="1500" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="418.5" y="1500.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="1500" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534" y="1500" width="54" height="38" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="1500.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650" y="1500" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="708.75" y="1500.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="778" y="1500" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1500.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1515.5" font-size="12" fill="#59636E">Sense–Plan–Act; real measurements fix</text>
+<text x="906" y="1530.5" font-size="12" fill="#59636E">parameters or send it back to rebuild</text>
+<text x="22" y="1559.5" font-size="13" font-weight="700" fill="#1F2328">Artisan</text>
+<rect x="85.12" y="1546" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="92.12" y="1558.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="1542" width="54" height="26" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="1542.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360" y="1542" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="418" y="1542" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="476.5" y="1542.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="534" y="1542" width="54" height="26" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="1542.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="1542.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="1542.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="1542" width="54" height="26" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1542.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1559" font-size="12" fill="#59636E">Design, coding and review Agents, checked in MuJoCo</text>
+<text x="22" y="1588" font-size="13" font-weight="700" fill="#1F2328">Awomo-SimDataEngine</text>
+<rect x="22" y="1594" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="29" y="1606.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="1572" width="54" height="43" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="1572.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="1572.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418" y="1572" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="476" y="1572" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="1572.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="1572.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.75" y="1572.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708" y="1572" width="54" height="43" rx="4" fill="#A5324D"/>
+<rect x="778" y="1572" width="54" height="43" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1572.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1590" font-size="12" fill="#59636E">ISArt / Unravel / SimForge modules;</text>
+<text x="906" y="1605" font-size="12" fill="#59636E">falls back to the module at fault</text>
+<text x="22" y="1642.5" font-size="13" font-weight="700" fill="#1F2328">Text2Sim</text>
+<rect x="95.0416" y="1629" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="102.042" y="1641.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="1619" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="1619.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360.75" y="1619.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="1619.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="1619" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534" y="1619" width="54" height="38" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="1619.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650" y="1619" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="708.5" y="1619.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="1619" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1619.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1634.5" font-size="12" fill="#59636E">Planner dispatches Scene / Body /</text>
+<text x="906" y="1649.5" font-size="12" fill="#59636E">Action Writers; a Critic reviews</text>
+<text x="22" y="1684.5" font-size="13" font-weight="700" fill="#1F2328">DiagGen</text>
+<rect x="86.2224" y="1671" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="93.2224" y="1683.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244.75" y="1661.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="302.75" y="1661.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="1661.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="1661.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476.5" y="1661.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="534.75" y="1661.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="592.75" y="1661.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650" y="1661" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="708.5" y="1661.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="1661" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1661.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1676.5" font-size="12" fill="#59636E">Fixed asset pipeline; a diagnostic Agent</text>
+<text x="906" y="1691.5" font-size="12" fill="#59636E">probes grasps and routes issues upstream</text>
+<text x="22" y="1720.5" font-size="13" font-weight="700" fill="#1F2328">DeformSmith</text>
+<rect x="117.09" y="1707" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="124.09" y="1719.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="1703" width="54" height="26" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="1703.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="1703.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="1703.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="1703" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="534" y="1703" width="54" height="26" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="1703.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650" y="1703" width="54" height="26" rx="4" fill="#A5324D"/>
+<rect x="708.75" y="1703.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="778" y="1703" width="54" height="26" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1703.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1720" font-size="12" fill="#59636E">Layered L0–L3 stages, MPM material choice, grasp tests</text>
+<text x="22" y="1749" font-size="13" font-weight="700" fill="#1F2328">Agentic Real2Sim</text>
+<rect x="22" y="1755" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="29" y="1767.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="1733" width="54" height="43" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="1733.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="1733.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="1733.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="1733" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="534" y="1733" width="54" height="43" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="1733.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.75" y="1733.75" width="52.5" height="41.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708.5" y="1733.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="1733" width="54" height="43" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1733.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1751" font-size="12" fill="#59636E">Vision, scene and physics Agents;</text>
+<text x="906" y="1766" font-size="12" fill="#59636E">replayed in MuJoCo for comparison</text>
+<text x="22" y="1803.5" font-size="13" font-weight="700" fill="#1F2328">SimWorlds</text>
+<rect x="102.156" y="1790.5" width="75.33" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
+<text x="108.656" y="1802.5" font-size="11.5" fill="#59636E">Scene only</text>
+<rect x="244" y="1780" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="1780.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360" y="1780" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="418.5" y="1780.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="1780" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534" y="1780" width="54" height="38" rx="4" fill="#2B57A4"/>
+<rect x="593" y="1781" width="52" height="36" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
+<rect x="650" y="1780" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="708.5" y="1780.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="1780" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1780.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1795.5" font-size="12" fill="#59636E">Planning, coding, verification and</text>
+<text x="906" y="1810.5" font-size="12" fill="#59636E">review; Blender&#x27;s built-in solver</text>
+<text x="22" y="1839.5" font-size="13" font-weight="700" fill="#1F2328">MUSE</text>
+<rect x="65.7768" y="1826.5" width="75.33" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
+<text x="72.2768" y="1838.5" font-size="11.5" fill="#59636E">Scene only</text>
+<rect x="244" y="1822" width="54" height="26" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="1822.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360.75" y="1822.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="1822.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="1822" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="1822.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="593" y="1823" width="52" height="24" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
+<rect x="650.5" y="1822.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="1822.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="1822" width="54" height="26" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1822.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1839" font-size="12" fill="#59636E">Architect / Sculptor / Inspector on a structured scene</text>
+<text x="22" y="1875.5" font-size="13" font-weight="700" fill="#1F2328">ChronoAgentic</text>
+<rect x="132.523" y="1862" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="139.523" y="1874.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="1852" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="1852.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360.75" y="1852.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="1852.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="1852" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534" y="1852" width="54" height="38" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="1852.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650" y="1852" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="708.5" y="1852.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="1852" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1852.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1867.5" font-size="12" fill="#59636E">Plan / Code Agents write PyChrono</text>
+<text x="906" y="1882.5" font-size="12" fill="#59636E">programs and review patches</text>
+<text x="22" y="1917.5" font-size="13" font-weight="700" fill="#1F2328">ArtiCAD</text>
+<rect x="88.9272" y="1904.5" width="71.88" height="16" rx="8" fill="none" stroke="#2B57A4"/>
+<text x="95.4272" y="1916.5" font-size="11.5" fill="#2B57A4">Sim-ready</text>
+<rect x="244" y="1894" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="1894.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360" y="1894" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="418" y="1894" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="476.75" y="1894.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="534.5" y="1894.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="1894.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="1894.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="1894.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="1894" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1894.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1909.5" font-size="12" fill="#59636E">Design and generation Agents, deterministic</text>
+<text x="906" y="1924.5" font-size="12" fill="#59636E">assembler, error routing rolls back</text>
+<text x="22" y="1959.5" font-size="13" font-weight="700" fill="#1F2328">SceneSmith</text>
+<rect x="109.373" y="1946" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="116.373" y="1958.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="1936" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="1936.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360.75" y="1936.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.75" y="1936.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="476" y="1936" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534" y="1936" width="54" height="38" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="1936.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="1936.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="1936.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="1936" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1936.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1951.5" font-size="12" fill="#59636E">Designer lays out; Critic and</text>
+<text x="906" y="1966.5" font-size="12" fill="#59636E">Orchestrator decide to revise or roll back</text>
+<text x="22" y="1994" font-size="13" font-weight="700" fill="#1F2328">Perceptual Self-Reflection</text>
+<rect x="22" y="2000" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="29" y="2012.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="1978" width="54" height="43" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="1978.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360" y="1978" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="418.5" y="1978.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="1978" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="534" y="1978" width="54" height="43" rx="4" fill="#2B57A4"/>
+<rect x="592" y="1978" width="54" height="43" rx="4" fill="#2B57A4"/>
+<rect x="650" y="1978" width="54" height="43" rx="4" fill="#A5324D"/>
+<rect x="708.5" y="1978.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="1978" width="54" height="43" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1978.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1996" font-size="12" fill="#59636E">Four specialised Agents, self-written numerical</text>
+<text x="906" y="2011" font-size="12" fill="#59636E">simulation, checked on rendered frames</text>
+<text x="22" y="2048.5" font-size="13" font-weight="700" fill="#1F2328">GRS</text>
+<rect x="56.4576" y="2035" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="63.4576" y="2047.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="2025" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="2025.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="2025.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="2025.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="2025" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="2025.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="2025.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.75" y="2025.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708" y="2025" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="778" y="2025" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="2025.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="2040.5" font-size="12" fill="#59636E">SAM2 and depth, asset matching; a VLM</text>
+<text x="906" y="2055.5" font-size="12" fill="#59636E">writes tasks and tests, a router revises</text>
+<text x="22" y="2083" font-size="13" font-weight="700" fill="#1F2328">Articulate-Anything</text>
+<rect x="22" y="2089" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="29" y="2101.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="2067" width="54" height="43" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="2067.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="2067.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418" y="2067" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="476" y="2067" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="2067.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="2067.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="2067.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="2067.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="2067" width="54" height="43" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="2067.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="2085" font-size="12" fill="#59636E">Actor writes joint code; a Critic</text>
+<text x="906" y="2100" font-size="12" fill="#59636E">judges it against the video</text>
+<text x="22" y="2137.5" font-size="13" font-weight="700" fill="#1F2328">OMNI-EPIC</text>
+<rect x="108.27" y="2124" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="115.27" y="2136.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="2114" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="2114.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360" y="2114" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="418.5" y="2114.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="2114" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="2114.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="2114.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.75" y="2114.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708" y="2114" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="778" y="2114" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836" y="2114" width="54" height="38" rx="4" fill="#6748B2"/>
+<text x="906" y="2129.5" font-size="12" fill="#59636E">Task and environment generators,</text>
+<text x="906" y="2144.5" font-size="12" fill="#59636E">DreamerV3 learner, archive-driven</text>
+<text x="22" y="2179" font-size="14.0" font-weight="700" fill="#1F2328">Open-loop Workflow · fixed pipeline, an LLM does some steps<tspan font-weight="400" fill="#59636E" dx="10">13 works</tspan></text>
+<line x1="584.444" y1="2174" x2="1266" y2="2174" stroke="#D1D9E0"/>
+<text x="22" y="2206" font-size="13" font-weight="700" fill="#1F2328">Spatial Harness</text>
+<rect x="22" y="2212" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="29" y="2224.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="2190" width="54" height="43" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="2190.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360" y="2190" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="418.5" y="2190.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="2190" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="2190.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="2190.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="2190.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="2190.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778.5" y="2190.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="836.5" y="2190.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="2215.5" font-size="12" fill="#59636E">Perceivers build a proxy world; MuJoCo only measures</text>
+<text x="22" y="2260.5" font-size="13" font-weight="700" fill="#1F2328">LabWorld</text>
+<rect x="94.4392" y="2247.5" width="75.33" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
+<text x="100.939" y="2259.5" font-size="11.5" fill="#59636E">Scene only</text>
+<rect x="244" y="2237" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="2237.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="2237.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="2237.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476.75" y="2237.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="534.5" y="2237.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="593" y="2238" width="52" height="36" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
+<rect x="650.75" y="2237.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708.5" y="2237.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778.5" y="2237.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="836.5" y="2237.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="2252.5" font-size="12" fill="#59636E">VLM organises objects and events;</text>
+<text x="906" y="2267.5" font-size="12" fill="#59636E">trajectory optimisation exports 4D states</text>
+<text x="22" y="2302.5" font-size="13" font-weight="700" fill="#1F2328">SceneBloom</text>
+<rect x="109.873" y="2289.5" width="71.88" height="16" rx="8" fill="none" stroke="#2B57A4"/>
+<text x="116.373" y="2301.5" font-size="11.5" fill="#2B57A4">Sim-ready</text>
+<rect x="244" y="2279" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="2279.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="2279.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="2279.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476.75" y="2279.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="534.5" y="2279.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="2279.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="2279.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="2279.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778.5" y="2279.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="836.5" y="2279.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="2294.5" font-size="12" fill="#59636E">FLUX layout images, lifted to 3D by</text>
+<text x="906" y="2309.5" font-size="12" fill="#59636E">perception and fitted by a compiler</text>
+<text x="22" y="2344.5" font-size="13" font-weight="700" fill="#1F2328">AgentDreamer</text>
+<rect x="124.806" y="2331" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="131.806" y="2343.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="2321" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="2321.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360.75" y="2321.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="2321.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476.75" y="2321.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="534.75" y="2321.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="592.75" y="2321.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650" y="2321" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="708.5" y="2321.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778.5" y="2321.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="836.5" y="2321.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="2336.5" font-size="12" fill="#59636E">LLM gives motion priors;</text>
+<text x="906" y="2351.5" font-size="12" fill="#59636E">differentiable MPM fits the parameters</text>
+<text x="22" y="2379" font-size="13" font-weight="700" fill="#1F2328">EmbodiedGen V2</text>
+<rect x="22" y="2385" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="29" y="2397.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="2363" width="54" height="43" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="2363.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360.75" y="2363.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="2363.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476.75" y="2363.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="534.75" y="2363.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="592.75" y="2363.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="2363.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="2363.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778.5" y="2363.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="836.75" y="2363.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-e)" stroke="#6748B2" stroke-width="1.5"/>
+<text x="906" y="2381" font-size="12" fill="#59636E">Asset pipeline adds physics, BFS placement,</text>
+<text x="906" y="2396" font-size="12" fill="#59636E">SAPIEN settling, multi-engine export</text>
+<text x="22" y="2426" font-size="13" font-weight="700" fill="#1F2328">PerceptTwin</text>
+<rect x="22.5" y="2432.5" width="117.42" height="16" rx="8" fill="none" stroke="#D1D9E0"/>
+<text x="29" y="2444.5" font-size="11.5" fill="#59636E">Engine not stated</text>
+<rect x="244.75" y="2410.75" width="52.5" height="41.5" rx="4" fill="#FFFFFF" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="302.75" y="2410.75" width="52.5" height="41.5" rx="4" fill="#FFFFFF" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="2410.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="2410.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476.75" y="2410.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="534.5" y="2410.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.5" y="2410.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="650.5" y="2410.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708" y="2410" width="54" height="43" rx="4" fill="#A5324D"/>
+<rect x="778.5" y="2410.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="836.5" y="2410.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="2428" font-size="12" fill="#59636E">Starts from a semantic map; retrieval or TRELLIS,</text>
+<text x="906" y="2443" font-size="12" fill="#59636E">ICP placement, LLM adds interaction semantics</text>
+<text x="22" y="2480.5" font-size="13" font-weight="700" fill="#1F2328">Phys2Real</text>
+<rect x="102.758" y="2467" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="109.758" y="2479.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244.5" y="2457.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="302.75" y="2457.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="2457.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="2457.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476.5" y="2457.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="534" y="2457" width="54" height="38" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="2457.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.75" y="2457.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708.75" y="2457.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="778.5" y="2457.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="836.5" y="2457.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="2472.5" font-size="12" fill="#59636E">3DGS rebuild, VLM priors plus online</text>
+<text x="906" y="2487.5" font-size="12" fill="#59636E">estimation, trained in Isaac Lab</text>
+<text x="22" y="2522.5" font-size="13" font-weight="700" fill="#1F2328">FactorSim</text>
+<rect x="101.656" y="2509" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="108.656" y="2521.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="2499" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="2499.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360" y="2499" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="418.5" y="2499.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="2499" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534" y="2499" width="54" height="38" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="2499.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650" y="2499" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="708" y="2499" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="778.5" y="2499.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="836.5" y="2499.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="2514.5" font-size="12" fill="#59636E">Generates simulation code factor by</text>
+<text x="906" y="2529.5" font-size="12" fill="#59636E">factor, including transitions and rewards</text>
+<text x="22" y="2564.5" font-size="13" font-weight="700" fill="#1F2328">RoboTwin</text>
+<rect x="94.4392" y="2551.5" width="117.42" height="16" rx="8" fill="none" stroke="#D1D9E0"/>
+<text x="100.939" y="2563.5" font-size="11.5" fill="#59636E">Engine not stated</text>
+<rect x="244" y="2541" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="2541.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360.75" y="2541.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="2541.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476.5" y="2541.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="534.5" y="2541.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.5" y="2541.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="650" y="2541" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="708.75" y="2541.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="778.5" y="2541.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="836.5" y="2541.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="2556.5" font-size="12" fill="#59636E">Rodin makes meshes; GPT-4 writes</text>
+<text x="906" y="2571.5" font-size="12" fill="#59636E">trajectory-planning programs</text>
+<text x="22" y="2606.5" font-size="13" font-weight="700" fill="#1F2328">Holodeck</text>
+<rect x="92.8368" y="2593" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="99.8368" y="2605.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="2583" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="2583.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360.75" y="2583.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="2583.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476.75" y="2583.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="534.5" y="2583.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="2583.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="2583.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="2583.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778.5" y="2583.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="836.5" y="2583.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="2598.5" font-size="12" fill="#59636E">GPT-4 designs rooms; a constraint</text>
+<text x="906" y="2613.5" font-size="12" fill="#59636E">solver places Objaverse assets</text>
+<text x="22" y="2648.5" font-size="13" font-weight="700" fill="#1F2328">RoboGen</text>
+<rect x="86.2224" y="2635" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="93.2224" y="2647.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="2625" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="2625.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360.75" y="2625.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418" y="2625" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="476" y="2625" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="2625.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="2625.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.75" y="2625.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708" y="2625" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="778.5" y="2625.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="836.5" y="2625.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="2640.5" font-size="12" fill="#59636E">GPT-4 proposes tasks and scenes;</text>
+<text x="906" y="2655.5" font-size="12" fill="#59636E">RL or planning learns the skills</text>
+<text x="22" y="2684.5" font-size="13" font-weight="700" fill="#1F2328">Gen2Sim</text>
+<rect x="87.3248" y="2671" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="94.3248" y="2683.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="2667" width="54" height="26" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="2667.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360.75" y="2667.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="2667.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476.5" y="2667.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="534" y="2667" width="54" height="26" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="2667.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.75" y="2667.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708" y="2667" width="54" height="26" rx="4" fill="#A5324D"/>
+<rect x="778.5" y="2667.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="836.5" y="2667.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="2684" font-size="12" fill="#59636E">Image to mesh; GPT-4 sets mass and rewards; PPO learns</text>
+<text x="22" y="2720.5" font-size="13" font-weight="700" fill="#1F2328">GenSim</text>
+<rect x="78.5056" y="2707" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="85.5056" y="2719.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="2697" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="2697.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360.75" y="2697.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="2697.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="2697" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="2697.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="2697.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.75" y="2697.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708" y="2697" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="778.75" y="2697.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#6748B2" stroke-width="1.5"/>
+<rect x="836" y="2697" width="54" height="38" rx="4" fill="#6748B2"/>
+<text x="906" y="2712.5" font-size="12" fill="#59636E">GPT-4 writes task code, keeps what</text>
+<text x="906" y="2727.5" font-size="12" fill="#59636E">runs, then expands to new tasks</text>
+<text x="22" y="2762" font-size="14.0" font-weight="700" fill="#1F2328">Open-loop Workflow · fixed pipeline, a local Agent refines at the end<tspan font-weight="400" fill="#59636E" dx="10">8 works</tspan></text>
+<line x1="657.457" y1="2757" x2="1266" y2="2757" stroke="#D1D9E0"/>
+<text x="22" y="2796.5" font-size="13" font-weight="700" fill="#1F2328">GIF</text>
+<rect x="56.4576" y="2783" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="63.4576" y="2795.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="2773" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="2773.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="2773.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="2773.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476.75" y="2773.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="534.5" y="2773.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="2773.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.75" y="2773.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708.5" y="2773.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="2773" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="2773.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="2788.5" font-size="12" fill="#59636E">Generated reference image, two mesh</text>
+<text x="906" y="2803.5" font-size="12" fill="#59636E">paths, GPRM stabilisation, VLM filtering</text>
+<text x="22" y="2838.5" font-size="13" font-weight="700" fill="#1F2328">SceneMosaic</text>
+<rect x="117.09" y="2825" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="124.09" y="2837.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244.75" y="2815.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="302.75" y="2815.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="2815.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="2815.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="2815" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="2815.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="2815.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="2815.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="2815.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="2815" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836" y="2815" width="54" height="38" rx="4" fill="#6748B2"/>
+<text x="906" y="2830.5" font-size="12" fill="#59636E">SAM3 + SAM3D; the Agent fixes local</text>
+<text x="906" y="2845.5" font-size="12" fill="#59636E">layout and combines local variants</text>
+<text x="22" y="2880.5" font-size="13" font-weight="700" fill="#1F2328">Lucida</text>
+<rect x="77.9032" y="2867.5" width="75.33" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
+<text x="84.4032" y="2879.5" font-size="11.5" fill="#59636E">Scene only</text>
+<rect x="244.75" y="2857.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="302.75" y="2857.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="2857.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="2857.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="2857" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="2857.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="593" y="2858" width="52" height="36" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
+<rect x="650.5" y="2857.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="2857.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="2857" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="2857.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="2872.5" font-size="12" fill="#59636E">Object graph and completed assets;</text>
+<text x="906" y="2887.5" font-size="12" fill="#59636E">GizmoAct adjusts poses over several rounds</text>
+<text x="22" y="2915" font-size="13" font-weight="700" fill="#1F2328">Usage-Driven Code Scenes</text>
+<rect x="22" y="2921" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="29" y="2933.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="2899" width="54" height="43" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="2899.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360" y="2899" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="418" y="2899" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="476.75" y="2899.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="534.5" y="2899.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="2899.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="2899.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708" y="2899" width="54" height="43" rx="4" fill="#A5324D"/>
+<rect x="778" y="2899" width="54" height="43" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="2899.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="2917" font-size="12" fill="#59636E">ArtiCraft writes movable assets; interaction</text>
+<text x="906" y="2932" font-size="12" fill="#59636E">rules, geometric solving and a Critic</text>
+<text x="22" y="2962" font-size="13" font-weight="700" fill="#1F2328">LiteReality-Agent</text>
+<rect x="22.5" y="2968.5" width="71.88" height="16" rx="8" fill="none" stroke="#2B57A4"/>
+<text x="29" y="2980.5" font-size="11.5" fill="#2B57A4">Sim-ready</text>
+<rect x="244.75" y="2946.75" width="52.5" height="41.5" rx="4" fill="#FFFFFF" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="302.75" y="2946.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="2946.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.75" y="2946.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="476" y="2946" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="534" y="2946" width="54" height="43" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="2946.75" width="52.5" height="41.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="2946.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="2946.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="2946" width="54" height="43" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="2946.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="2964" font-size="12" fill="#59636E">Fixed front-end pipeline; a Coding</text>
+<text x="906" y="2979" font-size="12" fill="#59636E">Agent edits Room.py and exports MuJoCo</text>
+<text x="22" y="3016.5" font-size="13" font-weight="700" fill="#1F2328">SimFoundry</text>
+<rect x="109.373" y="3003" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="116.373" y="3015.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244" y="2993" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="2993.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="2993.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418" y="2993" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="476.75" y="2993.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="534" y="2993" width="54" height="38" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="2993.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="2993.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708" y="2993" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="778.5" y="2993.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="836" y="2993" width="54" height="38" rx="4" fill="#6748B2"/>
+<text x="906" y="3008.5" font-size="12" fill="#59636E">Perception, generation, articulation and</text>
+<text x="906" y="3023.5" font-size="12" fill="#59636E">pose modules in order; a VLM sets physics</text>
+<text x="22" y="3058.5" font-size="13" font-weight="700" fill="#1F2328">SceneCode</text>
+<rect x="102.156" y="3045.5" width="71.88" height="16" rx="8" fill="none" stroke="#2B57A4"/>
+<text x="108.656" y="3057.5" font-size="11.5" fill="#2B57A4">Sim-ready</text>
+<rect x="244" y="3035" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="3035.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360" y="3035" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="418" y="3035" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="476" y="3035" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534.75" y="3035.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="592.75" y="3035.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="3035.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="3035.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="3035" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="3035.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="3050.5" font-size="12" fill="#59636E">Room Agent lays out, per-part</text>
+<text x="906" y="3065.5" font-size="12" fill="#59636E">Blender Python, physics compiled in</text>
+<text x="22" y="3100.5" font-size="13" font-weight="700" fill="#1F2328">Vid2Sid</text>
+<rect x="87.3248" y="3087" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="94.3248" y="3099.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244.5" y="3077.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="302.75" y="3077.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="3077.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="3077.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476.5" y="3077.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="534" y="3077" width="54" height="38" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="3077.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.75" y="3077.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708.5" y="3077.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="3077" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="3077.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="3092.5" font-size="12" fill="#59636E">Fixed perception; a VLM tunes parameters</text>
+<text x="906" y="3107.5" font-size="12" fill="#59636E">by comparing sim and real video</text>
+<text x="22" y="3142" font-size="14.0" font-weight="700" fill="#1F2328">Model-based (without Agent) · models or optimization produce the result<tspan font-weight="400" fill="#59636E" dx="10">5 works</tspan></text>
+<line x1="680.607" y1="3137" x2="1266" y2="3137" stroke="#D1D9E0"/>
+<text x="22" y="3176.5" font-size="13" font-weight="700" fill="#1F2328">UniPhysGen</text>
+<rect x="110.975" y="3163.5" width="71.88" height="16" rx="8" fill="none" stroke="#2B57A4"/>
+<text x="117.475" y="3175.5" font-size="11.5" fill="#2B57A4">Sim-ready</text>
+<rect x="244.5" y="3153.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="302.75" y="3153.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="3153.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.75" y="3153.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="476.5" y="3153.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="534.75" y="3153.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="592.75" y="3153.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="3153.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="3153.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778.75" y="3153.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-e)" stroke="#6748B2" stroke-width="1.5"/>
+<rect x="836.5" y="3153.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="3168.5" font-size="12" fill="#59636E">Existing assets, perceptual grouping</text>
+<text x="906" y="3183.5" font-size="12" fill="#59636E">and property estimation, a learned model</text>
+<text x="22" y="3211" font-size="13" font-weight="700" fill="#1F2328">Video2Sim2Real</text>
+<rect x="22" y="3217" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="29" y="3229.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244.5" y="3195.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="302.75" y="3195.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="3195.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="3195.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476.75" y="3195.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="534.5" y="3195.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="3195.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.75" y="3195.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708.75" y="3195.75" width="52.5" height="41.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="778.5" y="3195.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="836.5" y="3195.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="3213" font-size="12" fill="#59636E">Foundation models rebuild the twin;</text>
+<text x="906" y="3228" font-size="12" fill="#59636E">optimisation, imitation and RL</text>
+<text x="22" y="3265.5" font-size="13" font-weight="700" fill="#1F2328">PhysX-Omni</text>
+<rect x="110.975" y="3252.5" width="71.88" height="16" rx="8" fill="none" stroke="#2B57A4"/>
+<text x="117.475" y="3264.5" font-size="11.5" fill="#2B57A4">Sim-ready</text>
+<rect x="244.75" y="3242.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="302.5" y="3242.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360.75" y="3242.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.75" y="3242.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="476.5" y="3242.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="534.75" y="3242.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="592.75" y="3242.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="3242.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="3242.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778.5" y="3242.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="836.5" y="3242.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="3257.5" font-size="12" fill="#59636E">Fine-tuned VLM generates assets</text>
+<text x="906" y="3272.5" font-size="12" fill="#59636E">with joints and physical properties</text>
+<text x="22" y="3307.5" font-size="13" font-weight="700" fill="#1F2328">DeformMaster</text>
+<rect x="124.806" y="3294" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="131.806" y="3306.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244.5" y="3284.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="302.75" y="3284.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="3284.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="3284.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476.5" y="3284.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="534.75" y="3284.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="592.75" y="3284.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.75" y="3284.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708.5" y="3284.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778.5" y="3284.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="836.5" y="3284.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="3299.5" font-size="12" fill="#59636E">MPM plus a neural residual,</text>
+<text x="906" y="3314.5" font-size="12" fill="#59636E">optimised from interaction video</text>
+<text x="22" y="3349.5" font-size="13" font-weight="700" fill="#1F2328">Real2Code</text>
+<rect x="102.758" y="3336" width="102.09" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="109.758" y="3348.5" font-size="11.5" fill="#0B7266">Full simulator</text>
+<rect x="244.5" y="3326.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="302.75" y="3326.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="3326.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.75" y="3326.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="476.75" y="3326.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="534.5" y="3326.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="3326.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="3326.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="3326.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778.5" y="3326.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="836.5" y="3326.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="3341.5" font-size="12" fill="#59636E">Segmentation and completion, then</text>
+<text x="906" y="3356.5" font-size="12" fill="#59636E">fine-tuned CodeLlama writes joint code</text>
+</svg>

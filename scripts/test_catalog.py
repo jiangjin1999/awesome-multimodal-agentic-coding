@@ -7,6 +7,7 @@ import unittest
 import engine_map
 import eval_ladder
 import triage
+import stage_chart
 from build_readme import render, validate
 from catalog import anchor, canonical_records, check_local_links, load
 
@@ -133,6 +134,29 @@ class CatalogTests(unittest.TestCase):
         self.assertTrue(any("contents_subs 'unknown-sub'" in e for e in errors))
         self.assertTrue(any('9999.99999 not found' in e for e in errors))
         self.assertTrue(any('2610.23826 is already listed there' in e for e in errors))
+
+    def test_stage_chart_images_are_current_and_rows_are_complete(self):
+        for rel, svg in stage_chart.outputs(self.site):
+            self.assertEqual((ROOT / rel).read_text(encoding='utf-8'), svg, rel)
+        site = deepcopy(self.site)
+        row = site['stage_chart']['sections'][1]['rows'][0]
+        row['cells'] = row['cells'][:-1]
+        row['id'] = 'missing-entry'
+        del site['stage_chart']['columns'][0]['ja']
+        errors = validate(site, self.works, True)[0]
+        self.assertTrue(any('has 8 cells, expected 9' in e for e in errors))
+        self.assertTrue(any('unknown id' in e for e in errors))
+        self.assertTrue(any('columns[0] missing ja' in e for e in errors))
+
+    def test_full_stage_chart_rows_match_their_tier(self):
+        site = deepcopy(self.site)
+        rows = [r for s in site['stage_chart_full']['sections'] for r in s['rows']]
+        dycraft = next(r for r in rows if r['name'] == 'DyCraft')
+        dycraft['tier'] = 'F'
+        rows[-1]['steps'] = rows[-1]['steps'][:-1]
+        errors = validate(site, self.works, True)[0]
+        self.assertTrue(any('DyCraft is tier F' in e for e in errors))
+        self.assertTrue(any('steps must be 11' in e for e in errors))
 
     def test_compatibility_targets_must_exist(self):
         site = deepcopy(self.site)

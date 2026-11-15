@@ -2545,7 +2545,19 @@
 
 シミュレータの構築を 4 グループ 9 ステップに分けます：A 入力理解（① タスク計画、② 知覚・計測）· B シーン構築（③ 物体アセット、④ 関節構造、⑤ 配置・位置合わせ）· C 物理モデリング（⑥ 物理パラメータ、⑦ 物理エンジン）· D タスクと制御（⑧ ロボット制御、⑨ タスク定義）。B と C がシミュレータ本体で、D を加えると学習や評価に使える環境になります。⑦ 物理エンジンを持たない作品は、シーンを作っただけです。検査と修正、バリエーション拡張はシミュレータの構成要素ではないため、9 ステップには入れていません。
 
-1 行を横に読むと、その作品で各ステップを誰が担当するかが分かります。**太字**：Agent または VLM 自身が行う；標準：専用のツール・モデル・エンジンに任せる；*斜体*：事前に与えられる（入力、固定ルール、人手）；—：関与しない、または記載なし。⑦ 列の「シム対応」は、物理エンジンに読み込めるものの、手法の中では実行していないことを示します。
+1 行を横に読むと、その作品で各ステップを誰が担当するかが分かります。各セルの上段が担当、下段が内容です。⑦ 物理エンジンの列で、作ったものがシミュレータなのか、シーンだけなのかが決まります。
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stage-chart/stage-chart-ja-dark.svg">
+  <img src="assets/stage-chart/stage-chart-ja-light.svg" alt="シミュレータ構築の 9 ステップを誰が担うかを、代表的な 15 件とベンチマーク 2 件で示した図。列は A 入力理解（タスク計画、知覚・計測）、B シーン構築（物体アセット、関節構造、配置・位置合わせ）、C 物理モデリング（物理パラメータ、物理エンジン）、D タスクと制御（ロボット制御、タスク定義）の 4 グループ。行は構成方式で分かれる：Agentic End-to-End（Plumb、CUE、Real2Gym、DyCraft）、Closed-loop Workflow（Agentic Real2Sim、WorldMirror、Text2Sim、SceneSmith、Articulate-Anything、Gym-Anything）、Open-loop Workflow（GenSim、Holodeck、SimFoundry）、Model-based（PhysX-Omni、Real2Code）。Agent は主に計画、配置、制御とタスクを担い、知覚は専用モデルに任され、物理エンジンはすべて既存のもの。DyCraft は物理エンジンを持たずシーンのみ、PhysX-Omni はシム対応のアセットまで。" width="100%">
+</picture>
+
+全 68 件をステップごとに対応させた完全版（検査と修正、バリエーション拡張を含む）は [Simulator construction: every work, step by step](stage3/simulator-construction.md)（英語・中国語）にあります。
+
+<details>
+<summary>テキスト版（リンク付き）</summary>
+
+**太字**：Agent または VLM 自身が行う；標準：専用のツール・モデル・エンジン；*斜体*：事前に所与、または人手；—：関与しない、または記載なし。
 
 | 構成方式 | 作品 | ① タスク計画 | ② 知覚・計測 | ③ 物体アセット | ④ 関節構造 | ⑤ 配置・位置合わせ | ⑥ 物理パラメータ | ⑦ 物理エンジン | ⑧ ロボット制御 | ⑨ タスク定義 |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -2566,6 +2578,8 @@
 |  | [SimFoundry](#paper-2606-28276) | **VLM** | SAM3 · PriorDepthAnything | Hunyuan3D · TRELLIS.2 | **Actor–Critic** | FoundationPose | **VLM** | PyBullet | — | **VLM** |
 | Model-based (without Agent) | [PhysX-Omni](#paper-2605-21572)（シム対応） | 微調整済み Qwen2.5-VL | — | Qwen2.5-VL · TRELLIS | 微調整済み Qwen2.5-VL | — | 微調整済み Qwen2.5-VL | シム対応 | — | — |
 |  | [Real2Code](#paper-2406-08474) | — | 微調整済み SAM · DUSt3R | 形状補完モデル | 微調整済み CodeLlama | DUSt3R 点群 | — | MuJoCo | — | — |
+
+</details>
 
 構成方式は次の順に判断します：
 

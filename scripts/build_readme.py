@@ -270,8 +270,8 @@ def render(site, works, lang):
     o(f"- [{t(site, 'related_title', lang)}](#related)")
     o(f"- [{t(site, 'contact_title', lang)}](#contact) · [{t(site, 'citation_title', lang)}](#citation)\n")
 
-    # Right-aligned and smaller, so it reads as navigation rather than as an entry.
-    back_to_contents = f'<p align="right"><a href="#contents"><sub>↑ {t(site, "back_to_contents", lang)}</sub></a></p>\n'
+    # A right-aligned key-cap button, so it reads as navigation rather than as an entry.
+    back_to_contents = f'<p align="right"><a href="#contents"><kbd>↑ {t(site, "back_to_contents", lang)}</kbd></a></p>\n'
 
     # stages
     for st in site['stages']:

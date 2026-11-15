@@ -68,6 +68,14 @@ text:
     en: Common execution environments
     zh: 常用执行环境
     ja: 主な実行環境
+  setup_sim:
+    en: Sim
+    zh: 仿真
+    ja: シミュレーション
+  setup_real:
+    en: Real
+    zh: 真机
+    ja: 実機
   subs:
     method:
       en: Methods

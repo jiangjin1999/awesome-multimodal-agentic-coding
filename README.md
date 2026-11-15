@@ -2023,92 +2023,110 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2611.01560", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-01560"></a>`2026.11` **[Democratizing Robot-Use Agents: A Unified Harness with Open Models](https://arxiv.org/abs/2611.01560)** [[Code]](https://github.com/Open-RUA/uni-robot-agent) [[Project page]](https://openrua.ai/uni-robot-agent)
-  > Connects Qwen3.8-Flash-Next and GPT-6 Astra to shared perception and motion tools so agents can run geometric checks, inspect action outcomes, and adjust their next move.
+  > Connects Qwen3.8-Flash-Next and GPT-6 Astra to shared perception and motion tools so agents can run geometric checks, inspect action outcomes, and adjust their next move.<br>
+  > 🖥️ **Sim** Isaac Sim (ARX X5) · 🦾 **Real** ARX AC One
 
 <!-- mmac-record: {"id": "2611.01112", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-01112"></a>`2026.10` **[Auriga Technical Report: A Task-Agnostic Agent Harness for Zero-Shot Embodied Manipulation](https://arxiv.org/abs/2611.01112)** [[Project page]](https://auriga.stelledge.com/) [[Code]](https://github.com/lose4578/Auriga)
-  > Coordinates perception tools, generated programs and staged robot actions through one preview-and-execution gateway, using fresh images and measured discrepancies to revise operations within a single simulation episode.
+  > Coordinates perception tools, generated programs and staged robot actions through one preview-and-execution gateway, using fresh images and measured discrepancies to revise operations within a single simulation episode.<br>
+  > 🖥️ **Sim** Isaac Sim + MuJoCo (ARX X5, Franka Panda)
 
 <!-- mmac-record: {"id": "2610.13862", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-13862"></a>`2026.10` **[BT-Agent: Deploying Onboard Robot Agents with Behavior Trees and Multi-Fidelity Evaluation](https://arxiv.org/abs/2610.13862)**
-  > Composes perception and physical-action tools through fixed behavior-tree skills, using structured failures to retry or change task decisions while local guards supervise operator-approved onboard motion.
+  > Composes perception and physical-action tools through fixed behavior-tree skills, using structured failures to retry or change task decisions while local guards supervise operator-approved onboard motion.<br>
+  > 🖥️ **Sim** Habitat + MuJoCo (Boston Dynamics Spot) · 🦾 **Real** Boston Dynamics Spot
 
 <!-- mmac-record: {"id": "2610.29702", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-29702"></a>`2026.10` **[CausGround: Causal Interaction Grounding for Adaptive Embodied Planning](https://arxiv.org/abs/2610.29702)** [[Project page]](https://causground.github.io/)
-  > Grounds RGB observations in object-level causal mechanisms and retrieves action preconditions and effects to guide a frozen planner’s skill selection, with simulation, recorded-skill replay, and qualitative robot demonstrations.
+  > Grounds RGB observations in object-level causal mechanisms and retrieves action preconditions and effects to guide a frozen planner’s skill selection, with simulation, recorded-skill replay, and qualitative robot demonstrations.<br>
+  > 🖥️ **Sim** Unity + MuJoCo (Franka Panda)
 
 <!-- mmac-record: {"id": "2610.01939", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-01939"></a>`2026.10` **[Fewer Tokens, Better Action: GPT-6 Astra Robot Agents with 14% Higher Success Rate but 65% Fewer Tokens](https://arxiv.org/abs/2610.01939)**
-  > Batches robot primitives, computation, conditions and local retries inside Python cells, returning selected outputs to the model.
+  > Batches robot primitives, computation, conditions and local retries inside Python cells, returning selected outputs to the model.<br>
+  > 🖥️ **Sim** MuJoCo + SAPIEN (Franka Panda, AgileX ALOHA)
 
 <!-- mmac-record: {"id": "2610.23479", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-23479"></a>`2026.10` **[HexaShell: A Universal Harness for Robot Coding Agents in Simulation and the Real World](https://arxiv.org/abs/2610.23479)** [[Code]](https://github.com/HexaFuture/HexaShell)
-  > Lets a robot coding agent write a Python cell each turn against shared motion, perception and state tools, with optional task skills drafted from earlier runs.
+  > Lets a robot coding agent write a Python cell each turn against shared motion, perception and state tools, with optional task skills drafted from earlier runs.<br>
+  > 🖥️ **Sim** Isaac Sim + SAPIEN + MuJoCo (ARX X5, Franka Panda) · 🦾 **Real** AgileX PiPER-X
 
 <!-- mmac-record: {"id": "2610.02459", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-02459"></a>`2026.10` **[OpenRUA: Robot-Use Agents Are Zero-Shot Visuomotor Policies](https://arxiv.org/abs/2610.02459)** [[Code]](https://github.com/terminalworld/OpenRUA)
-  > Gives an existing coding agent a terminal, ROS 2 documentation and a robot workspace for writing perception and motion programs.
+  > Gives an existing coding agent a terminal, ROS 2 documentation and a robot workspace for writing perception and motion programs.<br>
+  > 🖥️ **Sim** MuJoCo + Isaac Sim (Franka Panda)
 
 <!-- mmac-record: {"id": "2610.06843", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-06843"></a>`2026.10` **[Recursive Video In-Context Learning for Agentic Robot](https://arxiv.org/abs/2610.06843)** [[Code]](https://github.com/BWR-hhh/rvicl) [[Project page]](https://bwr-hhh.github.io/rvicl/)
-  > Lets robot agents query a hierarchical demonstration on demand and compare it with live camera views to adapt frozen VLA and analytic primitive calls, while retaining the underlying execution harness.
+  > Lets robot agents query a hierarchical demonstration on demand and compare it with live camera views to adapt frozen VLA and analytic primitive calls, while retaining the underlying execution harness.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda)
 
 <!-- mmac-record: {"id": "2610.04929", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-04929"></a>`2026.10` **[RobotUse: Allocating Computation, Context, and Decisions](https://arxiv.org/abs/2610.04929)** [[Project page]](https://robotuse-team.github.io/) [[Code]](https://github.com/robotuse-team/RobotUse)
-  > Allocates physical task decisions and detailed interactions to subagents while the parent receives compact results and constraints.
+  > Allocates physical task decisions and detailed interactions to subagents while the parent receives compact results and constraints.<br>
+  > 🖥️ **Sim** Isaac Lab (Franka Panda) · 🦾 **Real** Franka Panda
 
 <!-- mmac-record: {"id": "2610.12457", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-12457"></a>`2026.10` **[SpatialHarness: Test-Time Spatial Scaffolding for Fine Robotic Manipulation](https://arxiv.org/abs/2610.12457)** [[Project page]](https://emilia113.github.io/SpatialHarness/) [[Dataset]](https://huggingface.co/datasets/yzy05/SpatialHarness)
-  > Maintains a simulation scene synchronized with real execution and renders task-specific auxiliary viewpoints.
+  > Maintains a simulation scene synchronized with real execution and renders task-specific auxiliary viewpoints.<br>
+  > 🖥️ **Sim** MuJoCo (Franka FR3) · 🦾 **Real** Franka FR3
 
 <!-- mmac-record: {"id": "2610.30043", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-30043"></a>`2026.10` **[TARSphere: A Robot-Oriented Full-Stack Framework for Long-Horizon Embodied Agents in Evolving Physical and Social Environments](https://arxiv.org/abs/2610.30043)** [[Code]](https://github.com/xuyicheng-zju/TARSphere) [[Project page]](https://xuyicheng-zju.github.io/TARSphere/)
-  > Organizes long-horizon robot action using hierarchical executable skills, task memory and execution feedback around a frozen model.
+  > Organizes long-horizon robot action using hierarchical executable skills, task memory and execution feedback around a frozen model.<br>
+  > 🖥️ **Sim** Isaac Sim (Unitree G1)
 
 <!-- mmac-record: {"id": "2609.12541", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-12541"></a>`2026.09` **[Agent as Policy for Robotic Manipulation](https://arxiv.org/abs/2609.12541)** [[Dataset]](https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy) [[Code]](https://github.com/agent-as-policy-2026/agent-as-policy)
-  > Lets a general agent inspect visual evidence, write programs and issue motion requests throughout a manipulation episode.
+  > Lets a general agent inspect visual evidence, write programs and issue motion requests throughout a manipulation episode.<br>
+  > 🖥️ **Sim** MuJoCo (I2RT YAM) · 🦾 **Real** I2RT YAM
 
 <!-- mmac-record: {"id": "2609.20822", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-20822"></a>`2026.09` **[Coding Agents with an Obstacle-Aware Harness for Safe Robot Manipulation](https://arxiv.org/abs/2609.20822)**
-  > Equips code-as-policy agents with visually grounded route checks and contact constraints, replanning from the observed stopped pose when execution encounters an obstacle or an unmodeled physical constraint.
+  > Equips code-as-policy agents with visually grounded route checks and contact constraints, replanning from the observed stopped pose when execution encounters an obstacle or an unmodeled physical constraint.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda) · 🦾 **Real** AgileX PiPER-X
 
 <!-- mmac-record: {"id": "2609.38078", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-38078"></a>`2026.09` **[MotorMind: Scaffolding General Vision Language Models for Zero-Shot Robot Manipulation](https://arxiv.org/abs/2609.38078)**
-  > Combines mid-level parameterized actions, deterministic control and asynchronous monitoring around a frozen VLM.
+  > Combines mid-level parameterized actions, deterministic control and asynchronous monitoring around a frozen VLM.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda) · 🦾 **Real** xArm6
 
 <!-- mmac-record: {"id": "2609.29389", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-29389"></a>`2026.09` **[Robo-Harness K1: Harnessing Robot-Use Agents via Perception Augmentation](https://arxiv.org/abs/2609.29389)**
-  > Provides depth, spatial measurement and grasp-candidate tools to a robot-use agent without retraining its visual encoder.
+  > Provides depth, spatial measurement and grasp-candidate tools to a robot-use agent without retraining its visual encoder.<br>
+  > 🖥️ **Sim** MuJoCo + SAPIEN (Franka Panda, UR5e, KUKA iiwa, AgileX ALOHA)
 
 <!-- mmac-record: {"id": "2610.14018", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-14018"></a>`2026.09` **[RoboHarness: A Simple Harness Outperforms VLA and World Action Models](https://arxiv.org/abs/2610.14018)** [[Code]](https://github.com/BinceQu/RoboHarness)
-  > Gives an LLM a visual-geometric control panel for zero-shot manipulation using existing robot tools.
+  > Gives an LLM a visual-geometric control panel for zero-shot manipulation using existing robot tools.<br>
+  > 🖥️ **Sim** MuJoCo + Isaac Sim (Franka Panda, Galaxea R1 Pro, ARX X5)
 
 <!-- mmac-record: {"id": "2609.10522", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-10522"></a>`2026.09` **[Show-Harness: Just a VLM Agent Can Play Robots](https://arxiv.org/abs/2609.10522)** [[Project page]](https://showlab.github.io/Show-Harness) [[Code]](https://github.com/showlab/Show-Harness) [[Model]](https://huggingface.co/showlab/Show-Harness-VLMs) [[Dataset]](https://huggingface.co/datasets/showlab/Show-Harness-Data)
-  > Connects a general VLM to a robot interpreter through a compact semantic action interface.
+  > Connects a general VLM to a robot interpreter through a compact semantic action interface.<br>
+  > 🖥️ **Sim** Isaac Lab + SAPIEN (Franka Panda) · 🦾 **Real** Franka FR3, AgileX PiPER
 
 <!-- mmac-record: {"id": "2609.29964", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-29964"></a>`2026.09` **[World Action Agent: Harnessing VLMs for Robot Manipulation via World Action Rehearsal](https://arxiv.org/abs/2609.29964)**
-  > Gives VLMs interaction-centered views, editable action rehearsals, and demonstration-derived skills to revise manipulation decisions through numerical planning tools without generating policy code.
+  > Gives VLMs interaction-centered views, editable action rehearsals, and demonstration-derived skills to revise manipulation decisions through numerical planning tools without generating policy code.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda)
 
 <!-- mmac-record: {"id": "chemautoagent", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
@@ -2118,52 +2136,62 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2608.03924", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2608-03924"></a>`2026.08` **[ETA: A New Agentic Paradigm for Embodied Tasks](https://arxiv.org/abs/2608.03924)**
-  > Connects digital agents to observation, target marking and motion through a lightweight embodied interface.
+  > Connects digital agents to observation, target marking and motion through a lightweight embodied interface.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda) · 🦾 **Real** UR5e
 
 <!-- mmac-record: {"id": "2607.05369", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2607-05369"></a>`2026.07` **[GaP: A Graph-as-Policy Multi-Agent Self-Learning Harness For Variational Automation Tasks](https://arxiv.org/abs/2607.05369)** [[Project page]](https://graph-robots.github.io/gap) [[Code]](https://github.com/graph-robots/graph-as-policy)
-  > Builds typed computation graphs connecting perception, planning and control skills, then rehearses and revises the graph in simulation.
+  > Builds typed computation graphs connecting perception, planning and control skills, then rehearses and revises the graph in simulation.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda) · 🦾 **Real** Franka
 
 <!-- mmac-record: {"id": "2607.16636", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2607-16636"></a>`2026.07` **[PhyAgentOS: A Self-Evolving Operating System for Embodied Agents with Decoupled Cognitive Planning and Physical Execution](https://arxiv.org/abs/2607.16636)** [[Code]](https://github.com/PhyAgentOS/PhyAgentOS)
-  > Separates cognitive planning from physical execution through file-based state contracts, tools and persistent execution records.
+  > Separates cognitive planning from physical execution through file-based state contracts, tools and persistent execution records.<br>
+  > 🖥️ **Sim** MuJoCo + Isaac Sim · 🦾 **Real** Franka FR3, XLeRobot, AgileX PiPER, Dobot Nova 2, Unitree Go2, Unitree G1
 
 <!-- mmac-record: {"id": "2605.26637", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2605-26637"></a>`2026.05` **[Enabling Extensible Embodied Capabilities with Tools](https://arxiv.org/abs/2605.26637)**
-  > Defines an Embodied Tool Protocol for registering, discovering and invoking perception, reasoning and execution capabilities.
+  > Defines an Embodied Tool Protocol for registering, discovering and invoking perception, reasoning and execution capabilities.<br>
+  > 🖥️ **Sim** AI2-THOR + Habitat + CoppeliaSim (Franka Panda)
 
 <!-- mmac-record: {"id": "2511.00917", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2511-00917"></a>`2025.11` **[MAESTRO: Orchestrating Robotics Modules with Coding Agents for Zero-Shot Generalist Robots](https://arxiv.org/abs/2511.00917)** [[Code]](https://github.com/penn-pal-lab/maestro) [[Project page]](https://maestro-robot.github.io)
-  > Orchestrates perception, planning and control modules through generated programs, checking visual and execution feedback for recovery.
+  > Orchestrates perception, planning and control modules through generated programs, checking visual and execution feedback for recovery.<br>
+  > 🦾 **Real** Franka Panda, Unitree Go2-W, AgileX PiPER
 
 <!-- mmac-record: {"id": "2510.21302", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2510-21302"></a>`2025.10` **[Towards Reliable Code-as-Policies: A Neuro-Symbolic Framework for Embodied Task Planning](https://arxiv.org/abs/2510.21302)**
-  > Combines code-policy generation with symbolic verification and exploratory programs that obtain missing observations.
+  > Combines code-policy generation with symbolic verification and exploratory programs that obtain missing observations.<br>
+  > 🖥️ **Sim** CoppeliaSim (Franka Panda) · 🦾 **Real** Franka FR3
 
 <!-- mmac-record: {"id": "2505.07532", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2505-07532"></a>`2025.05` **[RAI: Flexible Agent Framework for Embodied AI](https://arxiv.org/abs/2505.07532)**
-  > Connects language models, agents, ROS and simulators through modular tools and reusable robot runtime components.
+  > Connects language models, agents, ROS and simulators through modular tools and reusable robot runtime components.<br>
+  > 🖥️ **Sim** O3DE (Husarion ROSbot XL) · 🦾 **Real** Husarion ROSbot XL
 
 <!-- mmac-record: {"id": "2503.21969", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2503-21969"></a>`2025.03` **[Robotic Long-Horizon Manipulation with Progressive In-Context Code Generation and Episodic Feedback](https://arxiv.org/abs/2503.21969)**
-  > Uses progressive in-context examples to generate robot programs, then a visual reporter summarizes each episode for replanning.
+  > Uses progressive in-context examples to generate robot programs, then a visual reporter summarizes each episode for replanning.<br>
+  > 🖥️ **Sim** PyBullet + MuJoCo (UR5e, Franka Panda) · 🦾 **Real** Franka
 
 <!-- mmac-record: {"id": "2412.04455", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2412-04455"></a>`2024.12` **[Code-as-Monitor: Constraint-aware Visual Programming for Reactive and Proactive Robotic Failure Detection](https://arxiv.org/abs/2412.04455)** [[Project page]](https://zhoues.github.io/Code-as-Monitor/)
-  > Generates executable spatial and temporal constraint monitors, using visual tracking to detect failures or impending violations.
+  > Generates executable spatial and temporal constraint monitors, using visual tracking to detect failures or impending violations.<br>
+  > 🖥️ **Sim** CoppeliaSim + PyBullet + Isaac Sim (Franka Panda, UR5, Fetch) · 🦾 **Real** UR5, LEAP Hand
 
 <!-- mmac-record: {"id": "2410.06472", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2410-06472"></a>`2024.10` **[Enabling Novel Mission Operations and Interactions with ROSA: The Robot Operating System Agent](https://arxiv.org/abs/2410.06472)**
-  > Exposes ROS queries, diagnosis and operations as callable tools for language agents across robot platforms.
+  > Exposes ROS queries, diagnosis and operations as callable tools for language agents across robot platforms.<br>
+  > 🖥️ **Sim** Isaac Sim (NVIDIA Nova Carter) · 🦾 **Real** JPL EELS, Boston Dynamics Spot
 
 <!-- mmac-record: {"id": "bounded-motion", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
@@ -2173,166 +2201,198 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2312.04474", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2312-04474"></a>`2023.12` **[Chain of Code: Reasoning with a Language Model-Augmented Code Emulator](https://arxiv.org/abs/2312.04474)** [[Project page]](https://chain-of-code.github.io) [[Demo]](https://colab.research.google.com/github/google-research/google-research/blob/master/code_as_policies/coc_demo.ipynb)
-  > Executes explicit program logic in an interpreter and asks a language model to emulate unresolved semantic operations.
+  > Executes explicit program logic in an interpreter and asks a language model to emulate unresolved semantic operations.<br>
+  > 🦾 **Real** UR5
 
 <!-- mmac-record: {"id": "2306.09523", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2306-09523"></a>`2023.06` **[Tell Me Where to Go: A Composable Framework for Context-Aware Embodied Robot Navigation](https://arxiv.org/abs/2306.09523)**
-  > Uses generated Python as an intermediate layer between language reasoning, visual scene descriptions and mobile navigation.
+  > Uses generated Python as an intermediate layer between language reasoning, visual scene descriptions and mobile navigation.<br>
+  > 🦾 **Real** Boston Dynamics Spot
 
 <!-- mmac-record: {"id": "2305.11176", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2305-11176"></a>`2023.05` **[Instruct2Act: Mapping Multi-modality Instructions to Robotic Actions with Large Language Model](https://arxiv.org/abs/2305.11176)** [[Code]](https://github.com/OpenGVLab/Instruct2Act)
-  > Generates Python to connect SAM, CLIP and action APIs, turning multimodal instructions into perception, planning and execution.
+  > Generates Python to connect SAM, CLIP and action APIs, turning multimodal instructions into perception, planning and execution.<br>
+  > 🖥️ **Sim** PyBullet (UR5)
 
 <!-- mmac-record: {"id": "2306.17582", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2306-17582"></a>`2023.02` **[ChatGPT for Robotics: Design Principles and Model Abilities](https://arxiv.org/abs/2306.17582)** [[Project page]](https://www.microsoft.com/en-us/research/publication/chatgpt-for-robotics-design-principles-and-model-abilities/)
-  > Combines robot function libraries, prompting and human dialogue to generate and revise programs for arms, drones and mobile robots.
+  > Combines robot function libraries, prompting and human dialogue to generate and revise programs for arms, drones and mobile robots.<br>
+  > 🖥️ **Sim** AirSim + Habitat · 🦾 **Real** DJI Tello
 
 <!-- mmac-record: {"id": "2209.07753", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2209-07753"></a>`2022.09` **[Code as Policies: Language Model Programs for Embodied Control](https://arxiv.org/abs/2209.07753)** [[Project page]](https://code-as-policies.github.io) [[Code]](https://github.com/google-research/google-research/tree/master/code_as_policies) [[Demo]](https://huggingface.co/spaces/jackyliang42/code-as-policies)
-  > Recursively generates Python policies that combine perception results, geometric calculations and robot APIs.
+  > Recursively generates Python policies that combine perception results, geometric calculations and robot APIs.<br>
+  > 🖥️ **Sim** PyBullet (UR5e) · 🦾 **Real** UR5e, Everyday Robots
 
 <!-- mmac-record: {"id": "2209.11302", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2209-11302"></a>`2022.09` **[ProgPrompt: Generating Situated Robot Task Plans using Large Language Models](https://arxiv.org/abs/2209.11302)** [[Project page]](http://progprompt.github.io) [[Code]](https://github.com/NVlabs/progprompt-vh)
-  > Generates program-like plans using available objects, actions and assertions, with recovery steps when action preconditions fail.
+  > Generates program-like plans using available objects, actions and assertions, with recovery steps when action preconditions fail.<br>
+  > 🖥️ **Sim** Unity · 🦾 **Real** Franka Panda
 
 #### Delegation to existing policies
 
 <!-- mmac-record: {"id": "2611.03585", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-03585"></a>`2026.11` **[Seeing Through the Illusion: Test-Time Scaling for World Action Models](https://arxiv.org/abs/2611.03585)**
-  > Selects frozen world–action model rollouts by combining action validity, inverse-dynamics agreement with imagined motion, and task progress, then executes the chosen action chunk and replans from fresh observations.
+  > Selects frozen world–action model rollouts by combining action validity, inverse-dynamics agreement with imagined motion, and task progress, then executes the chosen action chunk and replans from fresh observations.<br>
+  > 🖥️ **Sim** MuJoCo + Isaac Lab (Franka Panda)
 
 <!-- mmac-record: {"id": "system:the-harness-corl2026", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-system-the-harness-corl2026"></a>`2026.11` **[The Harness: One Agent Harness for Anything that Acts](https://web.eecs.umich.edu/~stellayu/publication/2026harnessCoRLL.html)** [[Paper]](https://web.eecs.umich.edu/~stellayu/publication/doc/2026harnessCoRLL.pdf)
-  > Combines agent-written programs, bounded VLA skills and reactive guards in a shared control hierarchy.
+  > Combines agent-written programs, bounded VLA skills and reactive guards in a shared control hierarchy.<br>
+  > 🖥️ **Sim** Isaac Sim (ARX X5)
 
 <!-- mmac-record: {"id": "2610.21453", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-21453"></a>`2026.10` **[CarryOn: A Dual-Loop Harness for Personalized and Reliable Robot Assistance](https://arxiv.org/abs/2610.21453)** [[Code]](https://github.com/JIA-Lab-research/CarryOn) [[Project page]](https://vincent2311.github.io/Projects/CarryOn/)
-  > Coordinates persistent user/scene memory, a frozen VLA, geometric shielding, and visual failure recovery, while offline reflection revises recovery strategies and parameters for later attempts.
+  > Coordinates persistent user/scene memory, a frozen VLA, geometric shielding, and visual failure recovery, while offline reflection revises recovery strategies and parameters for later attempts.<br>
+  > 🖥️ **Sim** MuJoCo + Isaac Lab (Franka Panda) · 🦾 **Real** Franka FR3
 
 <!-- mmac-record: {"id": "2610.42053", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-42053"></a>`2026.10` **[REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control](https://arxiv.org/abs/2610.42053)** [[Project page]](https://mikeeeeeeeeeeeeee.github.io/REA/)
-  > Separates fast robot execution from asynchronous model judging and route selection, coordinating fixed code policies and action models with visual outcome checks at policy-return boundaries.
+  > Separates fast robot execution from asynchronous model judging and route selection, coordinating fixed code policies and action models with visual outcome checks at policy-return boundaries.<br>
+  > 🖥️ **Sim** MuJoCo + SAPIEN + Isaac Sim (Franka Panda, AgileX ALOHA, Galaxea R1 Pro) · 🦾 **Real** Unitree G1
 
 <!-- mmac-record: {"id": "2609.29166", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-29166"></a>`2026.09` **[HarnessPAI: An Evolving Harness for Physical AI](https://arxiv.org/abs/2609.29166)** [[Project page]](https://darwin-agent.github.io/HarnessPAI) [[Code]](https://github.com/Darwin-Agent/HarnessPAI)
-  > Synthesizes programs over perception and motion primitives, then evolves them across rollouts and extracts reusable skills.
+  > Synthesizes programs over perception and motion primitives, then evolves them across rollouts and extracts reusable skills.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda)
 
 <!-- mmac-record: {"id": "2608.11246", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2608-11246"></a>`2026.08` **[Towards the Harness of Embodied Agents](https://arxiv.org/abs/2608.11246)** [[Project page]](https://eit-hai.github.io/thea) [[Code]](https://github.com/EIT-HAI/Thea)
-  > Uses a persistent scene graph and semantically meaningful tool returns to organize robot abilities and task progress.
+  > Uses a persistent scene graph and semantically meaningful tool returns to organize robot abilities and task progress.<br>
+  > 🦾 **Real** Astribot S1, AgileX Cobot Magic, Unitree G1
 
 <!-- mmac-record: {"id": "2607.08448", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2607-08448"></a>`2026.07` **[Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents](https://arxiv.org/abs/2607.08448)** [[Code]](https://github.com/RLinf/RPent)
-  > Lets a coding agent combine analytic motion primitives with calls to a frozen VLA, assigning language subgoals, budgets and stopping conditions.
+  > Lets a coding agent combine analytic motion primitives with calls to a frozen VLA, assigning language subgoals, budgets and stopping conditions.<br>
+  > 🖥️ **Sim** MuJoCo + SAPIEN (Franka Panda, AgileX ALOHA) · 🦾 **Real** Franka
 
 #### Agent capability evaluation
 
 <!-- mmac-record: {"id": "2611.12177", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-12177"></a>`2026.11` **[Embodied First Exam](https://arxiv.org/abs/2611.12177)**
-  > Tests general-purpose agents across robot embodiments while varying observation access, reset budgets and execution timing.
+  > Tests general-purpose agents across robot embodiments while varying observation access, reset budgets and execution timing.<br>
+  > 🖥️ **Sim** MuJoCo + Isaac Sim + SAPIEN
 
 <!-- mmac-record: {"id": "2611.16009", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-16009"></a>`2026.11` **[JustRUA: A Controlled Study of GPT-6 Robot-Use Agents](https://arxiv.org/abs/2611.16009)** [[Project page]](https://zefanw.github.io/JustRUA/) [[Code]](https://github.com/ZefanW/JustRUA) [[Demo]](https://huggingface.co/spaces/ZefanW/robodojo-replay-explorer)
-  > Studies how episode history, short motions, geometry and coordinate-solving code shape a general-purpose agent’s RoboDojo manipulation performance.
+  > Studies how episode history, short motions, geometry and coordinate-solving code shape a general-purpose agent’s RoboDojo manipulation performance.<br>
+  > 🖥️ **Sim** Isaac Sim (ARX X5)
 
 <!-- mmac-record: {"id": "2611.08209", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-08209"></a>`2026.11` **[RoboARCade: Benchmarking Agentic Robot Control](https://arxiv.org/abs/2611.08209)** [[Project page]](http://roboarcade.org)
-  > Benchmarks visual robot-control agents on randomized long-horizon MuJoCo tasks, separating interface effects, in-context demonstrations and cross-trial text-harness optimization.
+  > Benchmarks visual robot-control agents on randomized long-horizon MuJoCo tasks, separating interface effects, in-context demonstrations and cross-trial text-harness optimization.<br>
+  > 🖥️ **Sim** MuJoCo + Blender (Franka Panda, I2RT YAM)
 
 <!-- mmac-record: {"id": "2611.02497", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-02497"></a>`2026.11` **[RoboColosseum: Evaluating Physical Intelligence at Scale In-The-Wild](https://arxiv.org/abs/2611.02497)** [[Repository]](https://github.com/RoboColosseum) [[Project page]](https://robocolosseum.ai/)
-  > Compares frozen agents and VLA policies through matched, blinded real-robot trials across sites, with a separate adaptation track and explicit embodiment-dependent ranking analysis.
+  > Compares frozen agents and VLA policies through matched, blinded real-robot trials across sites, with a separate adaptation track and explicit embodiment-dependent ranking analysis.<br>
+  > 🦾 **Real** SO-101, I2RT YAM, Franka Panda, Unitree G1
 
 <!-- mmac-record: {"id": "2610.00854", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-00854"></a>`2026.10` **[Are Frontier VLM Agents Ready to Be Robot Generalists? An Empirical Study with the Embodied Agent Arena](https://arxiv.org/abs/2610.00854)** [[Project page]](https://embodied-agent-arena.github.io/embodied-agent-arena/) [[Code]](https://github.com/embodied-agent-arena/embodied-agent-arena) [[Dataset]](https://huggingface.co/datasets/uuu-Quant/Embodied-Agent-Arena)
-  > Compares frontier VLM robot agents under shared budgets and source-task interfaces.
+  > Compares frontier VLM robot agents under shared budgets and source-task interfaces.<br>
+  > 🖥️ **Sim** MuJoCo + SAPIEN + PyBullet + CoppeliaSim + Isaac Sim
 
 <!-- mmac-record: {"id": "2610.07594", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-07594"></a>`2026.10` **[BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation](https://arxiv.org/abs/2610.07594)** [[Code]](https://github.com/swirl-uk/BiGym2)
-  > Compares learned and agent-developed humanoid policies under matched onboard observations and whole-body controllers.
+  > Compares learned and agent-developed humanoid policies under matched onboard observations and whole-body controllers.<br>
+  > 🖥️ **Sim** MuJoCo (Unitree G1)
 
 <!-- mmac-record: {"id": "2610.27039", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-27039"></a>`2026.10` **[Embodied Playground: A Long-Horizon Agentic Robotics Benchmark for Physical, Strategic, and Spatial Reasoning](https://arxiv.org/abs/2610.27039)** [[Project page]](https://winniechen2002.github.io/Agent-bench-website/) [[Code]](https://github.com/Winniechen2002/Embodied-Playground)
-  > Tests coordination of physical, strategic and spatial reasoning in long-horizon robot tasks.
+  > Tests coordination of physical, strategic and spatial reasoning in long-horizon robot tasks.<br>
+  > 🖥️ **Sim** MuJoCo + Isaac Lab + SAPIEN (Franka Panda, Franka FR3, Sharpa Wave, ALOHA)
 
 <!-- mmac-record: {"id": "2610.16238", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-16238"></a>`2026.10` **[Embodied Skill Bench: Benchmarking How Well Agents with Embodied Skills Perform on Physical Tasks](https://arxiv.org/abs/2610.16238)** [[Code]](https://github.com/HanZhi306/EmbodiedSkill-Bench) [[Code]](https://github.com/FBddcz/embodied-jev)
-  > Compares native control, skill-only execution and agent selection or modification of embodied skills.
+  > Compares native control, skill-only execution and agent selection or modification of embodied skills.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda)
 
 <!-- mmac-record: {"id": "2610.30051", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-30051"></a>`2026.10` **[From Reasoning to Action: Benchmarking Frontier AI Models on LIBERO-10 Robot Manipulation Tasks](https://arxiv.org/abs/2610.30051)** [[Code]](https://github.com/IRVLUTD/LLM_LIBERO) [[Project page]](https://irvlutd.github.io/LLM-LIBERO/)
-  > Compares frontier models on LIBERO-10 using a shared interaction loop and control interface.
+  > Compares frontier models on LIBERO-10 using a shared interaction loop and control interface.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda)
 
 <!-- mmac-record: {"id": "2610.22471", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-22471"></a>`2026.10` **[Has GPT-6-Astra Achieved Embodied Intelligence?](https://arxiv.org/abs/2610.22471)** [[Article]](https://sensenova.ai/has-gpt-6-astra-achieved-embodied-intelligence) [[Code]](https://github.com/OpenSenseNova/SenseNova-RoboRSI) [[Dataset]](https://huggingface.co/datasets/sensenova/SenseNova-RoboRSI-Log) [[Dataset]](https://huggingface.co/datasets/sensenova/SenseNova-RoboRSI-Packages)
-  > Studies demonstration-informed direct control and VLA-action review across twelve embodied benchmarks, separating gains from extended interaction budgets from zero-shot trials on eight real robot configurations.
+  > Studies demonstration-informed direct control and VLA-action review across twelve embodied benchmarks, separating gains from extended interaction budgets from zero-shot trials on eight real robot configurations.<br>
+  > 🖥️ **Sim** Isaac Sim + MuJoCo + Habitat (ARX X5, Franka Panda) · 🦾 **Real** Franka FR3, Franka Panda, AgileX PiPER, Tianji M6S, Galaxea R1 Pro, xArm7, Unitree G1
 
 <!-- mmac-record: {"id": "2610.34527", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-34527"></a>`2026.10` **[LLM4Robot-Bench: How Far Can GPT-6 Astra Go in Robotic Manipulation? A Hierarchical, Paired Sim-Real Benchmark](https://arxiv.org/abs/2610.34527)** [[Code]](https://github.com/LLM4Robot/LLM4Robot-Bench) [[Project page]](https://llm4robot.github.io/bench/)
-  > Originally released as PhysLadder, this benchmark tests GPT-6 Astra on geometric alignment, force regulation and contact reconfiguration in matched simulated and real dual-arm tasks.
+  > Originally released as PhysLadder, this benchmark tests GPT-6 Astra on geometric alignment, force regulation and contact reconfiguration in matched simulated and real dual-arm tasks.<br>
+  > 🖥️ **Sim** Isaac Sim (ARX R5) · 🦾 **Real** ARX R5
 
 <!-- mmac-record: {"id": "2610.34649", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-34649"></a>`2026.10` **[RobotAgentBench: Towards Open-world Robot Autonomy](https://arxiv.org/abs/2610.34649)** [[Project page]](https://aetherlabsai.github.io/RobotAgentBench/) [[Code]](https://github.com/AetherLabsAI/RobotAgentBench) [[Dataset]](https://huggingface.co/datasets/AetherLabs-AI/RobotAgentBench-assets) [[Demo]](https://aetherlabsai.github.io/RobotAgentBench/#demo) [[Model]](https://huggingface.co/AetherLabs-AI/InternVLA-A1.5-RAB) [[Dataset]](https://huggingface.co/datasets/AetherLabs-AI/RobotAgentBench-TrainingData)
-  > Benchmarks household robot autonomy with code-based, learned and hybrid executors, including visual-feedback-driven program execution and reusable control-tool refinement in its coding-agent configurations.
+  > Benchmarks household robot autonomy with code-based, learned and hybrid executors, including visual-feedback-driven program execution and reusable control-tool refinement in its coding-agent configurations.<br>
+  > 🖥️ **Sim** Isaac Sim (AgiBot G1) · 🦾 **Real** AgiBot G1
 
 <!-- mmac-record: {"id": "2610.10409", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-10409"></a>`2026.10` **[RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments](https://arxiv.org/abs/2610.10409)** [[Code]](https://github.com/robotworldai/robotworld) [[Project page]](https://robotworldai.github.io/)
-  > Evaluates image- and state-grounded robot tool use across 84 simulated tasks and diverse embodiments, separating auxiliary computation from optional environment-side control code.
+  > Evaluates image- and state-grounded robot tool use across 84 simulated tasks and diverse embodiments, separating auxiliary computation from optional environment-side control code.<br>
+  > 🖥️ **Sim** Isaac Sim + Isaac Lab + Isaac Gym + MuJoCo
 
 <!-- mmac-record: {"id": "2610.31670", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-31670"></a>`2026.10` **[Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success](https://arxiv.org/abs/2610.31670)** [[Code]](https://github.com/yunfeixie233/sensorimotor-alignment) [[Project page]](https://yunfeixie233.github.io/s2/)
-  > Measures alignment between sensory embeddings and recorded motion neighborhoods as an offline proxy for prioritizing embodied models before costly closed-loop evaluation.
+  > Measures alignment between sensory embeddings and recorded motion neighborhoods as an offline proxy for prioritizing embodied models before costly closed-loop evaluation.<br>
+  > 🖥️ **Sim** SAPIEN (WidowX 250, AgileX ALOHA)
 
 <!-- mmac-record: {"id": "2610.25287", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-25287"></a>`2026.10` **[The Bitter Lesson Comes to Robotics](https://arxiv.org/abs/2610.25287)**
-  > Studies general multimodal models operating physical robot arms through control interfaces.
+  > Studies general multimodal models operating physical robot arms through control interfaces.<br>
+  > 🖥️ **Sim** Isaac Sim (ARX X5)
 
 <!-- mmac-record: {"id": "2609.33807", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-33807"></a>`2026.09` **[CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation](https://arxiv.org/abs/2609.33807)** [[Project page]](https://codeactionbench.org/) [[Code]](https://github.com/lyhkk/CodeActionBench)
-  > Agents execute Python manipulation programs in RoboTwin 2.0 simulation and use camera views, robot state, and contact feedback to revise their policies. A hidden verifier checks the final state independently of the agent’s completion claim.
+  > Agents execute Python manipulation programs in RoboTwin 2.0 simulation and use camera views, robot state, and contact feedback to revise their policies. A hidden verifier checks the final state independently of the agent’s completion claim.<br>
+  > 🖥️ **Sim** SAPIEN (AgileX ALOHA)
 
 <!-- mmac-record: {"id": "2609.01404", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-01404"></a>`2026.09` **[Evaluating Multimodal LLMs as Generalist Vision-Language-Action Agents for Drone Control: Commanding, Approaching, Tracking and Searching](https://arxiv.org/abs/2609.01404)** [[Code]](https://github.com/naver-ai/DroneCATS) [[Dataset]](https://huggingface.co/datasets/naver-ai/DroneCATS-Pilot-54K)
-  > Evaluates image-conditioned drone actions and commander–sub-agent coordination across simulators and real Tello flights, exposing latency and arrival-declaration failures.
+  > Evaluates image-conditioned drone actions and commander–sub-agent coordination across simulators and real Tello flights, exposing latency and arrival-declaration failures.<br>
+  > 🖥️ **Sim** AirSim + Isaac Sim · 🦾 **Real** DJI Tello
 
 <!-- mmac-record: {"id": "2609.39507", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-39507"></a>`2026.09` **[LIBERO-Agent: Evaluating General-Purpose Agents for Direct Embodied Manipulation](https://arxiv.org/abs/2609.39507)** [[Code]](https://github.com/dzj441/Libero-Agent)
-  > Turns LIBERO into an interactive setting where general agents inspect observations, use their own tools and issue native actions.
+  > Turns LIBERO into an interactive setting where general agents inspect observations, use their own tools and issue native actions.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda)
 
 <!-- mmac-record: {"id": "2609.40325", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-40325"></a>`2026.09` **[WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents](https://arxiv.org/abs/2609.40325)** [[Project page]](https://ucsb-nlp-chang.github.io/WorldAuditBench/) [[Code]](https://github.com/UCSB-NLP-Chang/WorldAuditBench)
-  > Measures an agent’s ability to explore interactive worlds and substantiate anomalies with evidence.
+  > Measures an agent’s ability to explore interactive worlds and substantiate anomalies with evidence.<br>
+  > 🖥️ **Sim** Unreal Engine + Three.js
 
 <!-- mmac-record: {"id": "2607.04434", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
 
@@ -2347,22 +2407,26 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2603.22435", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2603-22435"></a>`2026.03` **[CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation](https://arxiv.org/abs/2603.22435)**
-  > Benchmarks and improves agents that write manipulation code, execute it, observe outcomes, and repair failed behaviors.
+  > Benchmarks and improves agents that write manipulation code, execute it, observe outcomes, and repair failed behaviors.<br>
+  > 🖥️ **Sim** MuJoCo + Isaac Sim (Franka Panda) · 🦾 **Real** Franka Panda, AgiBot G1
 
 <!-- mmac-record: {"id": "2601.19510", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2601-19510"></a>`2026.01` **[ALRM: Agentic LLM for Robotic Manipulation](https://arxiv.org/abs/2601.19510)**
-  > Compares control-code generation with stepwise tool use within a shared ReAct manipulation framework.
+  > Compares control-code generation with stepwise tool use within a shared ReAct manipulation framework.<br>
+  > 🖥️ **Sim** Gazebo (WidowX 250)
 
 <!-- mmac-record: {"id": "2601.20334", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2601-20334"></a>`2026.01` **[Demonstration-Free Robotic Control via LLM Agents](https://arxiv.org/abs/2601.20334)** [[Code]](https://github.com/robiemusketeer/faea-sim)
-  > Connects a software-engineering agent framework directly to robot control without demonstrations.
+  > Connects a software-engineering agent framework directly to robot control without demonstrations.<br>
+  > 🖥️ **Sim** MuJoCo + SAPIEN (Franka Panda, Sawyer)
 
 <!-- mmac-record: {"id": "2402.14623", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2402-14623"></a>`2024.02` **[RoboScript: Code Generation for Free-Form Manipulation Tasks across Real and Simulation](https://arxiv.org/abs/2402.14623)**
-  > Connects free-form robot code generation to ROS, perception and motion tools across simulation and real hardware.
+  > Connects free-form robot code generation to ROS, perception and motion tools across simulation and real hardware.<br>
+  > 🖥️ **Sim** Gazebo (Franka Panda, UR5) · 🦾 **Real** Franka Panda, UR5
 
 <!-- mmac-record: {"id": "2311.11183", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
@@ -2460,52 +2524,62 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2611.10602", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-10602"></a>`2026.11` **[Agentic discrete-event simulation for manufacturing system design: an open 3D simulator, a benchmark and an industrial case](https://arxiv.org/abs/2611.10602)** [[Code]](https://github.com/simulean/SimuLean)
-  > SimuLean gives agents verified modeling components for manufacturing simulation.
+  > SimuLean gives agents verified modeling components for manufacturing simulation.<br>
+  > 🖥️ **Sim** Unity
 
 <!-- mmac-record: {"id": "2611.02691", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-02691"></a>`2026.11` **[Closing the Dynamics Gap through Self-Directed Robotic Interaction](https://arxiv.org/abs/2611.02691)** [[Project page]](https://cue-dynamics.github.io/)
-  > An agent designs physical probes, measures their outcomes and calibrates an executable model.
+  > An agent designs physical probes, measures their outcomes and calibrates an executable model.<br>
+  > 🖥️ **Sim** MuJoCo
 
 <!-- mmac-record: {"id": "2611.11344", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-11344"></a>`2026.11` **[Spatial Harness: Grounding Spatial Reasoning in Executable World States with Physics Engines](https://arxiv.org/abs/2611.11344)** [[Code]](https://github.com/tmlr-group/Spatial-Harness)
-  > An executable proxy scene grounds spatial reasoning in explicit geometry.
+  > An executable proxy scene grounds spatial reasoning in explicit geometry.<br>
+  > 🖥️ **Sim** MuJoCo
 
 <!-- mmac-record: {"id": "2610.30679", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-30679"></a>`2026.10` **[AgentDreamer: Agentic 3D Motion Reasoning for Text-Controllable Physics Simulation](https://arxiv.org/abs/2610.30679)** [[Project page]](http://cv.snu.ac.kr/research/AgentDreamer/)
-  > Translates annotated scene geometry and language into parametric 3D motion functions, then fits a differentiable MPM simulator to the fixed trajectories.
+  > Translates annotated scene geometry and language into parametric 3D motion functions, then fits a differentiable MPM simulator to the fixed trajectories.<br>
+  > 🖥️ **Sim** MPM
 
 <!-- mmac-record: {"id": "2610.10479", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-10479"></a>`2026.10` **[Agentic RSR: Real-to-Sim-to-Real through Scene Reconstruction and Execution-Grounded Robot Policies](https://arxiv.org/abs/2610.10479)**
-  > Scene reconstruction and executable policy development share a task-specific sim-to-real workflow.
+  > Scene reconstruction and executable policy development share a task-specific sim-to-real workflow.<br>
+  > 🖥️ **Sim** Blender + MuJoCo (AgileX PiPER, Franka FR3) · 🦾 **Real** AgileX PiPER, Franka FR3
 
 <!-- mmac-record: {"id": "2610.02274", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-02274"></a>`2026.10` **[Awomo-SimDataEngine: Agentic Simulation-Ready World Generation](https://arxiv.org/abs/2610.02274)**
-  > Asset generation, image reconstruction and text-based layout meet in a verified simulation data engine.
+  > Asset generation, image reconstruction and text-based layout meet in a verified simulation data engine.<br>
+  > 🖥️ **Sim** Isaac Sim + MuJoCo (Franka Panda, AgileX PiPER, AgiBot G1, AgiBot G2)
 
 <!-- mmac-record: {"id": "2610.17114", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-17114"></a>`2026.10` **[D-World: An Explicit World-Language-Action Model with Recursive Self-Improvement under Dual Control](https://arxiv.org/abs/2610.17114)**
-  > Real action measurements continually correct an agent-authored digital twin.
+  > Real action measurements continually correct an agent-authored digital twin.<br>
+  > 🖥️ **Sim** MuJoCo + Blender
 
 <!-- mmac-record: {"id": "2610.40754", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-40754"></a>`2026.10` **[DyCraft: An Agentic System for Long-Horizon 4D Scene Generation](https://arxiv.org/abs/2610.40754)** [[Project page]](https://dy-craft.github.io/) [[Code]](https://github.com/jefftan969/dycraft) [[Dataset]](https://huggingface.co/datasets/jefftan969/dycraft-films)
-  > Storyboards and frame-level diagnostics guide code repair for long-horizon animated scenes.
+  > Storyboards and frame-level diagnostics guide code repair for long-horizon animated scenes.<br>
+  > 🖥️ **Sim** Blender (Unitree G1)
 
 <!-- mmac-record: {"id": "2610.21498", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-21498"></a>`2026.10` **[GRASE: Geometry-native Real-to-sim Agentic Scene Modeling from Video](https://arxiv.org/abs/2610.21498)**
-  > Video-aligned rendering guides local revision of editable room geometry.
+  > Video-aligned rendering guides local revision of editable room geometry.<br>
+  > 🖥️ **Sim** Blender
 
 <!-- mmac-record: {"id": "2610.40565", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-40565"></a>`2026.10` **[Gym-Anything for Robotics: Scaling physical simulations with digital agents](https://arxiv.org/abs/2610.40565)** [[Project page]](https://gym-anything.github.io/robotics) [[Code]](https://github.com/gym-anything/robotics)
-  > Coding agents construct physical simulators and revise them using independent audits.
+  > Coding agents construct physical simulators and revise them using independent audits.<br>
+  > 🖥️ **Sim** MuJoCo + Newton (Franka FR3, UR10e, Unitree G1)
 
 <!-- mmac-record: {"id": "2610.36592", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -2525,67 +2599,80 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2610.18835", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-18835"></a>`2026.10` **[RoboSimStudio: An Interactive Toolkit for Human and Agent Rapid Real2Sim of Robot Manipulation Tasks](https://arxiv.org/abs/2610.18835)** [[Project page]](https://robosimstudio.github.io) [[Code]](https://github.com/robosimstudio/robosimstudio)
-  > Editable multiphysics models connect video-based construction with robot interaction feedback.
+  > Editable multiphysics models connect video-based construction with robot interaction feedback.<br>
+  > 🖥️ **Sim** MuJoCo + Newton
 
 <!-- mmac-record: {"id": "2610.34745", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-34745"></a>`2026.10` **[SceneAgent: An Agentic Pipeline from 3D and 4D Captures to Simulation Environments](https://arxiv.org/abs/2610.34745)** [[Project page]](https://computationalrobotics.seas.harvard.edu/SceneAgent/)
-  > An agent assembles captured geometry and dynamic observations into interactive simulation scenes.
+  > An agent assembles captured geometry and dynamic observations into interactive simulation scenes.<br>
+  > 🖥️ **Sim** Isaac Lab (Franka Panda, Sharpa Wave, Dexmate Vega) · 🦾 **Real** Franka Panda, Sharpa Wave
 
 <!-- mmac-record: {"id": "2610.32978", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-32978"></a>`2026.10` **[SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning](https://arxiv.org/abs/2610.32978)** [[Code]](https://github.com/Tinaliu0123/scenebloom) [[Project page]](https://tinaliu0123.github.io/scenebloom/)
-  > Visual layout proposals are compiled into geometrically feasible indoor environments.
+  > Visual layout proposals are compiled into geometrically feasible indoor environments.<br>
+  > 🖥️ **Sim** Habitat
 
 <!-- mmac-record: {"id": "2610.13947", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-13947"></a>`2026.10` **[Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark](https://arxiv.org/abs/2610.13947)** [[Project page]](https://physicalvision.github.io/artisan/) [[Code]](https://github.com/physicalvision/artisan) [[Dataset]](https://huggingface.co/datasets/mastercai/Artisan-Benchmark)
-  > Agent teams revise articulated assets using motion, collision and stability evidence.
+  > Agent teams revise articulated assets using motion, collision and stability evidence.<br>
+  > 🖥️ **Sim** MuJoCo + SAPIEN (Franka Panda, AgileX ALOHA)
 
 <!-- mmac-record: {"id": "2610.11322", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-11322"></a>`2026.10` **[USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation](https://arxiv.org/abs/2610.11322)** [[Project page]](https://xingyoujun.github.io/usdcraft/) [[Code]](https://github.com/NVlabs/USDCraft)
-  > Programs reconstruct articulated USD assets while distinguishing missing observed surfaces from unseen space.
+  > Programs reconstruct articulated USD assets while distinguishing missing observed surfaces from unseen space.<br>
+  > 🖥️ **Sim** Isaac Sim · 🦾 **Real** UR7e
 
 <!-- mmac-record: {"id": "2610.31834", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-31834"></a>`2026.10` **[WorldMirror: Agentic Real-to-Sim Generation of Interactive Worlds from In-the-Wild Robot Demonstrations](https://arxiv.org/abs/2610.31834)** [[Project page]](https://worldmirror-page.github.io/)
-  > Recorded robot demonstrations guide construction of editable worlds that support direct trajectory replay.
+  > Recorded robot demonstrations guide construction of editable worlds that support direct trajectory replay.<br>
+  > 🖥️ **Sim** Isaac Sim (Franka Panda)
 
 <!-- mmac-record: {"id": "2611.00513", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-00513"></a>`2026.10` **[WorldSketch: Sketching World Models for Zero-Shot Mobile Manipulation](https://arxiv.org/abs/2611.00513)**
-  > A task-specific kinematic sketch connects RGB-D observations to geometric action planning.
+  > A task-specific kinematic sketch connects RGB-D observations to geometric action planning.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda)
 
 <!-- mmac-record: {"id": "2609.36024", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-36024"></a>`2026.09` **[CoDimRecon: Agentic Reconstruction of Sim-Ready 3D Scenes with Deformable Curves, Surfaces, and Volumes](https://arxiv.org/abs/2609.36024)** [[Project page]](https://shuzhaoxie.github.io/CoDimRecon/)
-  > Editable reconstruction separates line, surface and volume models for deformable simulation.
+  > Editable reconstruction separates line, surface and volume models for deformable simulation.<br>
+  > 🖥️ **Sim** Blender + MuJoCo
 
 <!-- mmac-record: {"id": "2609.18620", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-18620"></a>`2026.09` **[DeformSmith: Physics Harness-Guided Hierarchical Generation of Deformable Assets for Robot Manipulation](https://arxiv.org/abs/2609.18620)** [[Project page]](https://can-lee.github.io/DeformSmith_web/)
-  > Layered physical tests guide construction and repair of deformable assets.
+  > Layered physical tests guide construction and repair of deformable assets.<br>
+  > 🖥️ **Sim** SAPIEN (RealMan RM65)
 
 <!-- mmac-record: {"id": "2609.23103", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-23103"></a>`2026.09` **[DiagGen: Agentic Generation of Deformable Assets with Sim-based Diagnostics for Robotic Simulation](https://arxiv.org/abs/2609.23103)** [[Project page]](https://diaggen.github.io/) [[Code]](https://github.com/diaggen/diaggen)
-  > Active manipulation probes route asset defects back to their generating stages.
+  > Active manipulation probes route asset defects back to their generating stages.<br>
+  > 🖥️ **Sim** Genesis (AIRBOT Play) · 🦾 **Real** AIRBOT Play
 
 <!-- mmac-record: {"id": "2609.37067", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-37067"></a>`2026.09` **[FACT: Fidelity-Aware Construction of Articulated Twins](https://arxiv.org/abs/2609.37067)**
-  > Geometry, contact and response fidelity are developed as distinct stages of articulated-twin construction.
+  > Geometry, contact and response fidelity are developed as distinct stages of articulated-twin construction.<br>
+  > 🖥️ **Sim** MuJoCo
 
 <!-- mmac-record: {"id": "2609.05927", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-05927"></a>`2026.09` **[GIF: Agentic Generation of Interactive and Functional Object Compositions for Robot Learning](https://arxiv.org/abs/2609.05927)** [[Project page]](https://fufumeichi.github.io/gif-project-page/)
-  > Generated object combinations are refined for functional contact relationships.
+  > Generated object combinations are refined for functional contact relationships.<br>
+  > 🖥️ **Sim** MuJoCo + Isaac Sim (Franka) · 🦾 **Real** Franka
 
 <!-- mmac-record: {"id": "2609.37089", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-37089"></a>`2026.09` **[Real2Gym: Building Gyms from Videos, Bringing Skills to Robots](https://arxiv.org/abs/2609.37089)** [[Project page]](https://real2gym.github.io/) [[Code]](https://github.com/real2gym/Real2Gym) [[Code]](https://github.com/real2gym/R2G_Agent)
-  > Human or robot demonstrations become visually aligned, executable task environments.
+  > Human or robot demonstrations become visually aligned, executable task environments.<br>
+  > 🖥️ **Sim** MuJoCo + Blender (Franka) · 🦾 **Real** Franka
 
 <!-- mmac-record: {"id": "2609.05594", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -2595,27 +2682,32 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2609.36593", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-36593"></a>`2026.09` **[Text2Sim: Agentic Physics-Based Simulation Generation with Distilled Expertise](https://arxiv.org/abs/2609.36593)**
-  > A planner delegates simulation modules and directs repairs using execution evidence.
+  > A planner delegates simulation modules and directs repairs using execution evidence.<br>
+  > 🖥️ **Sim** Genesis
 
 <!-- mmac-record: {"id": "2609.33208", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-33208"></a>`2026.09` **[WorldAgent: Verification-Guided Agentic Physical World Construction](https://arxiv.org/abs/2609.33208)**
-  > World specifications make physical scene construction and revision addressable by object and time.
+  > World specifications make physical scene construction and revision addressable by object and time.<br>
+  > 🖥️ **Sim** Blender
 
 <!-- mmac-record: {"id": "2608.18840", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2608-18840"></a>`2026.08` **[Beyond Placement and Articulation: Usage-Driven Code Scenes for Embodied Interaction](https://arxiv.org/abs/2608.18840)**
-  > Usage requirements become articulated rooms with executable interaction rules.
+  > Usage requirements become articulated rooms with executable interaction rules.<br>
+  > 🖥️ **Sim** Blender + Isaac Sim
 
 <!-- mmac-record: {"id": "2608.27549", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2608-27549"></a>`2026.08` **[Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning](https://arxiv.org/abs/2608.27549)** [[Project page]](https://mirros-lab.github.io/code-as-world) [[Code]](https://github.com/MirroS-Lab/Code-as-World)
-  > Executable world hypotheses connect multimodal evidence to inspectable representations.
+  > Executable world hypotheses connect multimodal evidence to inspectable representations.<br>
+  > 🖥️ **Sim** MuJoCo
 
 <!-- mmac-record: {"id": "2610.01863", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-01863"></a>`2026.08` **[LiteReality-Agent: An Agentic System for Interactable 3D Indoor Scene Reconstruction](https://arxiv.org/abs/2610.01863)** [[Project page]](https://litereality.github.io/agent/) [[Code]](https://github.com/LiteReality/LiteReality-Agent)
-  > An editable room program unifies scan geometry, generated assets and reconstruction feedback.
+  > An editable room program unifies scan geometry, generated assets and reconstruction feedback.<br>
+  > 🖥️ **Sim** Blender + MuJoCo (Franka Panda)
 
 <!-- mmac-record: {"id": "2608.30821", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -2625,7 +2717,8 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2607.19190", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2607-19190"></a>`2026.07` **[Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents](https://arxiv.org/abs/2607.19190)** [[Project page]](https://agentic-real2sim.github.io/) [[Code]](https://github.com/agentic-real2sim/agentic_real2sim)
-  > Robot episodes are reconstructed and refined through recorded-trajectory replay.
+  > Robot episodes are reconstructed and refined through recorded-trajectory replay.<br>
+  > 🖥️ **Sim** MuJoCo (AIRBOT Play) · 🦾 **Real** AIRBOT Play
 
 <!-- mmac-record: {"id": "2607.07459", "scope": "Resource", "primary": "3.2", "stage": 3, "type": "resource"} -->
 
@@ -2635,17 +2728,20 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2607.21522", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2607-21522"></a>`2026.07` **[GS-Agent: Creating 4D Physical Worlds With Generative Simulation](https://arxiv.org/abs/2607.21522)** [[Project page]](https://umass-embodied-agi.github.io/gs-agent/)
-  > Generative simulation connects scene language to editable physical programs.
+  > Generative simulation connects scene language to editable physical programs.<br>
+  > 🖥️ **Sim** Genesis + Blender
 
 <!-- mmac-record: {"id": "2607.01766", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2607-01766"></a>`2026.07` **[SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation](https://arxiv.org/abs/2607.01766)** [[Project page]](https://dynsimworlds.github.io/)
-  > A staged coding system builds editable scenes that include animated and simulated processes.
+  > A staged coding system builds editable scenes that include animated and simulated processes.<br>
+  > 🖥️ **Sim** Blender
 
 <!-- mmac-record: {"id": "2607.13586", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2607-13586"></a>`2026.07` **[UniPhysGen: Unified Physical Grounding for Simulation-Ready 3D Assets](https://arxiv.org/abs/2607.13586)** [[Code]](https://github.com/breezexian/UniPhysGen) [[Dataset]](https://huggingface.co/datasets/spatialverse/UniPhys-Bench)
-  > Asset decomposition and learned physical grounding produce articulated simulation assets.
+  > Asset decomposition and learned physical grounding produce articulated simulation assets.<br>
+  > 🖥️ **Sim** MuJoCo + Isaac Sim
 
 <!-- mmac-record: {"id": "2606.14168", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -2655,32 +2751,38 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2606.04226", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-04226"></a>`2026.06` **[PerceptTwin: Semantic Scene Reconstruction for Iterative LLM Planning and Verification](https://arxiv.org/abs/2606.04226)** [[Project page]](https://percept-twin.github.io/) [[Code]](https://github.com/Velythyl/PerceptTwin)
-  > An object-centric reconstruction adds executable affordances for checking robot plans.
+  > An object-centric reconstruction adds executable affordances for checking robot plans.<br>
+  > 🖥️ **Sim** AI2-THOR
 
 <!-- mmac-record: {"id": "2606.28276", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-28276"></a>`2026.06` **[SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation](https://arxiv.org/abs/2606.28276)** [[Code]](https://github.com/NVlabs/SimFoundry) [[Project page]](https://research.nvidia.com/labs/gear/simfoundry/)
-  > Real-video reconstruction expands into task-conditioned digital cousins for policy evaluation and training.
+  > Real-video reconstruction expands into task-conditioned digital cousins for policy evaluation and training.<br>
+  > 🖥️ **Sim** PyBullet + Isaac Lab · 🦾 **Real** Franka Panda
 
 <!-- mmac-record: {"id": "2606.08828", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-08828"></a>`2026.06` **[Video2Sim2Real: Full-Stack Autonomous Dexterous Skill Acquisition from a Single Human Video](https://arxiv.org/abs/2606.08828)** [[Project page]](https://video2sim2real.github.io/) [[Code]](https://github.com/video2sim2real/video2sim2real)
-  > Builds a simulation-ready digital twin from one human video, refines retargeted motion and trains a dexterous policy for real transfer.
+  > Builds a simulation-ready digital twin from one human video, refines retargeted motion and trains a dexterous policy for real transfer.<br>
+  > 🖥️ **Sim** Isaac Gym (Kinova Gen3, LEAP Hand) · 🦾 **Real** Kinova Gen3, LEAP Hand
 
 <!-- mmac-record: {"id": "2605.15187", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2605-15187"></a>`2026.05` **[Articraft: An Agentic System for Scalable Articulated 3D Asset Generation](https://arxiv.org/abs/2605.15187)** [[Project page]](https://articraft3d.github.io/) [[Code]](https://github.com/articraftresearch/Articraft)
-  > A single editable part program is tested with geometric and articulation probes before export.
+  > A single editable part program is tested with geometric and articulation probes before export.<br>
+  > 🖥️ **Sim** Isaac Sim
 
 <!-- mmac-record: {"id": "2605.14398", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2605-14398"></a>`2026.05` **[ChronoAgentic: A Code-based Multi-Agent World Simulator for Physically Grounded Simulation Construction](https://arxiv.org/abs/2605.14398)** [[Project page]](https://uwsbel.github.io/chrono-agentic-website/)
-  > A coding agent uses visual and numerical execution reports to build Chrono simulations.
+  > A coding agent uses visual and numerical execution reports to build Chrono simulations.<br>
+  > 🖥️ **Sim** Chrono
 
 <!-- mmac-record: {"id": "2605.09586", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2605-09586"></a>`2026.05` **[DeformMaster: An Interactive Physics-Neural World Model for Deformable Objects from Videos](https://arxiv.org/abs/2605.09586)** [[Project page]](https://can-lee.github.io/deformmaster-web/) [[Code]](https://github.com/CAN-Lee/DeformMaster) [[Dataset]](https://huggingface.co/datasets/Canlee/DeformMaster-Assets)
-  > A differentiable deformable model recovers material behavior and contact from video.
+  > A differentiable deformable model recovers material behavior and contact from video.<br>
+  > 🖥️ **Sim** Warp
 
 <!-- mmac-record: {"id": "2605.21572", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -2690,17 +2792,20 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2605.19587", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2605-19587"></a>`2026.05` **[SceneCode: Executable World Programs for Editable Indoor Scenes with Articulated Objects](https://arxiv.org/abs/2605.19587)** [[Code]](https://github.com/wangpuyi/SceneCode) [[Project page]](https://scene-code.github.io/)
-  > Room planning and part-level programs produce editable scenes with physical asset metadata.
+  > Room planning and part-level programs produce editable scenes with physical asset metadata.<br>
+  > 🖥️ **Sim** Blender + MuJoCo
 
 <!-- mmac-record: {"id": "2605.09423", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2605-09423"></a>`2026.05` **[SimWorld Studio: Automatic Environment Generation with Evolving Coding Agent for Embodied Agent Learning](https://arxiv.org/abs/2605.09423)** [[Code]](https://github.com/SimWorld-AI/SimWorld-Studio)
-  > Environment construction and policy-learning feedback jointly shape simulated task curricula.
+  > Environment construction and policy-learning feedback jointly shape simulated task curricula.<br>
+  > 🖥️ **Sim** Unreal Engine
 
 <!-- mmac-record: {"id": "2604.10992", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2604-10992"></a>`2026.04` **[ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation](https://arxiv.org/abs/2604.10992)** [[Project page]](https://shui-yuan.github.io/articad/)
-  > Part-local CAD programs and explicit connectors support repairable articulated assembly.
+  > Part-local CAD programs and explicit connectors support repairable articulated assembly.<br>
+  > 🖥️ **Sim** FreeCAD
 
 <!-- mmac-record: {"id": "2602.12311", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -2710,37 +2815,44 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2602.10116", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2602-10116"></a>`2026.02` **[SAGE: Scalable Agentic 3D Scene Generation for Embodied AI](https://arxiv.org/abs/2602.10116)** [[Project page]](https://research.nvidia.com/labs/dir/sage/) [[Code]](https://github.com/NVlabs/sage) [[Dataset]](https://huggingface.co/datasets/nvidia/SAGE-10k)
-  > Visual and physical critics guide the generation of diverse robot-learning scenes.
+  > Visual and physical critics guide the generation of diverse robot-learning scenes.<br>
+  > 🖥️ **Sim** Isaac Sim (Franka Panda)
 
 <!-- mmac-record: {"id": "2602.09153", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2602-09153"></a>`2026.02` **[SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes](https://arxiv.org/abs/2602.09153)** [[Project page]](https://scenesmith.github.io/) [[Code]](https://github.com/nepfaff/scenesmith) [[Dataset]](https://huggingface.co/datasets/nepfaff/scenesmith-example-scenes)
-  > Hierarchical agents generate physical scenes from architecture down to small objects.
+  > Hierarchical agents generate physical scenes from architecture down to small objects.<br>
+  > 🖥️ **Sim** Drake (KUKA iiwa)
 
 <!-- mmac-record: {"id": "2602.19359", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2602-19359"></a>`2026.02` **[Vid2Sid: Videos Can Help Close the Sim2Real Gap](https://arxiv.org/abs/2602.19359)**
-  > A VLM compares paired simulated and real videos and proposes physics-parameter updates with rationales.
+  > A VLM compares paired simulated and real videos and proposes physics-parameter updates with rationales.<br>
+  > 🖥️ **Sim** MuJoCo
 
 <!-- mmac-record: {"id": "2510.11689", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2510-11689"></a>`2025.10` **[Phys2Real: Fusing VLM Priors with Interactive Online Adaptation for Uncertainty-Aware Sim-to-Real Manipulation](https://arxiv.org/abs/2510.11689)** [[Project page]](https://phys2real.github.io/) [[Code]](https://github.com/phys2real/phys2real)
-  > Fuses VLM-inferred physical-parameter priors with online estimation under ensemble uncertainty for real-to-sim-to-real RL.
+  > Fuses VLM-inferred physical-parameter priors with online estimation under ensemble uncertainty for real-to-sim-to-real RL.<br>
+  > 🖥️ **Sim** Isaac Lab · 🦾 **Real** UFactory xArm
 
 <!-- mmac-record: {"id": "2509.20414", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2509-20414"></a>`2025.09` **[SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent](https://arxiv.org/abs/2509.20414)** [[Code]](https://github.com/Scene-Weaver/SceneWeaver) [[Project page]](https://scene-weaver.github.io/)
-  > Persistent scene state supports iterative generation, completion and local editing.
+  > Persistent scene state supports iterative generation, completion and local editing.<br>
+  > 🖥️ **Sim** Blender
 
 <!-- mmac-record: {"id": "2411.01775", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2411-01775"></a>`2024.11` **[Eurekaverse: Environment Curriculum Generation via Large Language Models](https://arxiv.org/abs/2411.01775)** [[Project page]](https://eureka-research.github.io/eurekaverse/) [[Code]](https://github.com/eureka-research/eurekaverse)
-  > Policy-learning outcomes drive an expanding curriculum of procedurally coded terrains.
+  > Policy-learning outcomes drive an expanding curriculum of procedurally coded terrains.<br>
+  > 🖥️ **Sim** Isaac Gym (Unitree Go1) · 🦾 **Real** Unitree Go1
 
 <!-- mmac-record: {"id": "2410.13882", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2410-13882"></a>`2024.10` **[Articulate-Anything: Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model](https://arxiv.org/abs/2410.13882)** [[Project page]](https://articulate-anything.github.io/) [[Code]](https://github.com/vlongle/articulate-anything)
-  > Image and motion feedback guide code that reconstructs articulated objects.
+  > Image and motion feedback guide code that reconstructs articulated objects.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda) · 🦾 **Real** Franka Panda
 
 <!-- mmac-record: {"id": "2410.15536", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -2750,42 +2862,50 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2409.17652", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2409-17652"></a>`2024.09` **[FactorSim: Generative Simulation via Factorized Representation](https://arxiv.org/abs/2409.17652)** [[Project page]](https://cs.stanford.edu/~sunfanyun/factorsim/) [[Code]](https://github.com/sunfanyunn/FactorSim)
-  > Factored state and transition models help generate task environments with limited context.
+  > Factored state and transition models help generate task environments with limited context.<br>
+  > 🖥️ **Sim** PyBullet
 
 <!-- mmac-record: {"id": "2409.02920", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2409-02920"></a>`2024.09` **[RoboTwin: Dual-Arm Robot Benchmark with Generative Digital Twins](https://arxiv.org/abs/2409.02920)** [[Project page]](https://robotwin-benchmark.github.io/early-version/) [[Code]](https://github.com/RoboTwin-Platform/RoboTwin/tree/early_version)
-  > Reconstructed assets and language-generated motion programs produce bimanual demonstrations.
+  > Reconstructed assets and language-generated motion programs produce bimanual demonstrations.<br>
+  > 🖥️ **Sim** SAPIEN (AgileX Cobot Magic) · 🦾 **Real** AgileX Cobot Magic
 
 <!-- mmac-record: {"id": "2406.08474", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2406-08474"></a>`2024.06` **[Real2Code: Reconstruct Articulated Objects via Code Generation](https://arxiv.org/abs/2406.08474)** [[Project page]](https://real2code.github.io/) [[Code]](https://github.com/MandiZhao/real2code)
-  > Multiview reconstruction and a specialized code model recover articulated object descriptions.
+  > Multiview reconstruction and a specialized code model recover articulated object descriptions.<br>
+  > 🖥️ **Sim** Blender + MuJoCo
 
 <!-- mmac-record: {"id": "2405.15568", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2405-15568"></a>`2024.05` **[OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code](https://arxiv.org/abs/2405.15568)** [[Project page]](https://dub.sh/omniepic) [[Code]](https://github.com/maxencefaldor/omni-epic)
-  > An archive of task outcomes supports open-ended generation of executable learning environments.
+  > An archive of task outcomes supports open-ended generation of executable learning environments.<br>
+  > 🖥️ **Sim** PyBullet
 
 <!-- mmac-record: {"id": "2312.09067", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2312-09067"></a>`2023.12` **[Holodeck: Language Guided Generation of 3D Embodied AI Environments](https://arxiv.org/abs/2312.09067)** [[Code]](https://github.com/allenai/Holodeck) [[Project page]](https://yueyang1996.github.io/holodeck/)
-  > Language-guided spatial constraints turn retrieved assets into interactive indoor environments.
+  > Language-guided spatial constraints turn retrieved assets into interactive indoor environments.<br>
+  > 🖥️ **Sim** AI2-THOR
 
 <!-- mmac-record: {"id": "2311.01455", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2311-01455"></a>`2023.11` **[RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation](https://arxiv.org/abs/2311.01455)** [[Project page]](https://robogen-ai.github.io/) [[Code]](https://github.com/Genesis-Embodied-AI/RoboGen)
-  > Task, environment and supervision generation automate diverse simulated robot-skill learning.
+  > Task, environment and supervision generation automate diverse simulated robot-skill learning.<br>
+  > 🖥️ **Sim** PyBullet + Genesis (Franka Panda)
 
 <!-- mmac-record: {"id": "2310.18308", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2310-18308"></a>`2023.10` **[Gen2Sim: Scaling up Robot Learning in Simulation with Generative Models](https://arxiv.org/abs/2310.18308)** [[Project page]](https://gen2sim.github.io/) [[Code]](https://github.com/pushkalkatara/Gen2Sim)
-  > Image-derived physical assets and generated rewards support simulated manipulation learning.
+  > Image-derived physical assets and generated rewards support simulated manipulation learning.<br>
+  > 🖥️ **Sim** Isaac Gym (Franka Panda)
 
 <!-- mmac-record: {"id": "2310.01361", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2310-01361"></a>`2023.10` **[GenSim: Generating Robotic Simulation Tasks via Large Language Models](https://arxiv.org/abs/2310.01361)** [[Code]](https://github.com/liruiw/GenSim) [[Project page]](https://liruiw.github.io/gensim) [[Demo]](https://huggingface.co/spaces/Gen-Sim/Gen-Sim)
-  > Executable task generation scales demonstration collection and downstream robot-policy training.
+  > Executable task generation scales demonstration collection and downstream robot-policy training.<br>
+  > 🖥️ **Sim** PyBullet (UR5e) · 🦾 **Real** xArm7
 
 <!-- mmac-record: {"id": "res:aha-3d", "scope": "Resource", "primary": "3.2", "stage": 3, "type": "resource"} -->
 
@@ -2824,12 +2944,14 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2611.15020", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-15020"></a>`2026.11` **[Genie Sim Benchmark: Real-to-Sim Fidelity and Evaluation](https://arxiv.org/abs/2611.15020)** [[Code]](https://github.com/AgibotTech/genie_sim)
-  > Tests simulator fidelity by comparing real and simulated scores for 22 robot–task pairs, alongside diagnostics for joint motion and contact response.
+  > Tests simulator fidelity by comparing real and simulated scores for 22 robot–task pairs, alongside diagnostics for joint motion and contact response.<br>
+  > 🖥️ **Sim** MuJoCo + Isaac Sim (AgiBot G1, AgiBot G2, ARX X5) · 🦾 **Real** AgiBot G1, AgiBot G2, ARX X5
 
 <!-- mmac-record: {"id": "2611.05802", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-05802"></a>`2026.11` **[GREP: Grounding Generated Room Evaluation in Principles](https://arxiv.org/abs/2611.05802)**
-  > An evaluation agent diagnoses generated rooms using scene-specific principles and active inspection.
+  > An evaluation agent diagnoses generated rooms using scene-specific principles and active inspection.<br>
+  > 🖥️ **Sim** Blender
 
 <!-- mmac-record: {"id": "2611.02928", "scope": "Core", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
@@ -2844,27 +2966,32 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2611.01815", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-01815"></a>`2026.11` **[When Does Latent Prediction Error Support Physical Surprise Claims in Video World Models?](https://arxiv.org/abs/2611.01815)** [[Code]](https://github.com/3-ml/jepa-surprise)
-  > Tests whether a video world model’s native prediction error distinguishes physical violations from appearance changes and whether a fixed threshold transfers to new scenes.
+  > Tests whether a video world model’s native prediction error distinguishes physical violations from appearance changes and whether a fixed threshold transfers to new scenes.<br>
+  > 🖥️ **Sim** Kubric
 
 <!-- mmac-record: {"id": "2610.15166", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-15166"></a>`2026.10` **[ExeWorldBench: Benchmarking Code-Based Executable 3D World Modeling](https://arxiv.org/abs/2610.15166)** [[Project page]](https://helen1p.github.io/ExeWorldBench/) [[Dataset]](https://huggingface.co/datasets/HelenPeng/ExeWorldBench)
-  > Evaluates executable worlds spanning isolated mechanisms, coupled systems and goal-driven design.
+  > Evaluates executable worlds spanning isolated mechanisms, coupled systems and goal-driven design.<br>
+  > 🖥️ **Sim** Blender
 
 <!-- mmac-record: {"id": "2610.17288", "scope": "Core", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-17288"></a>`2026.10` **[PhysCodeGym: Benchmarking Coding Agents for Physically Verifiable 4D Reconstruction](https://arxiv.org/abs/2610.17288)** [[Code]](https://github.com/ShaoShuai0605/PhysCodeGym)
-  > Tests coding agents that reconstruct physical video phenomena as executable Blender scenes.
+  > Tests coding agents that reconstruct physical video phenomena as executable Blender scenes.<br>
+  > 🖥️ **Sim** Blender
 
 <!-- mmac-record: {"id": "2610.37326", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-37326"></a>`2026.10` **[ScIntBench: Physical Interaction Plausibility in 3D Scene Generation](https://arxiv.org/abs/2610.37326)** [[Project page]](https://scintbench.github.io/)
-  > Tests whether generated indoor scenes support prescribed physical interactions.
+  > Tests whether generated indoor scenes support prescribed physical interactions.<br>
+  > 🖥️ **Sim** Isaac Sim + Blender (Franka Panda)
 
 <!-- mmac-record: {"id": "2610.04432", "scope": "Core", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-04432"></a>`2026.10` **[Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos](https://arxiv.org/abs/2610.04432)** [[Project page]](https://aetherlabsai.github.io/Video2World) [[Code]](https://github.com/AetherLabsAI/Video2World) [[Documentation]](https://github.com/AetherLabsAI/Video2World/blob/main/docs/benchmark.md) [[Dataset]](https://huggingface.co/datasets/AetherLabs-AI/Video2World) [[Cross-execution diagnostics]](https://arxiv.org/html/2610.04432#S10.SS1) [[Data sources and video selection]](https://arxiv.org/html/2610.04432#S8.SS1)
-  > Evaluates joint reconstruction of simulated environments and robot behavior from embodied videos.
+  > Evaluates joint reconstruction of simulated environments and robot behavior from embodied videos.<br>
+  > 🖥️ **Sim** SAPIEN + Isaac Sim + MuJoCo (Franka Panda, ARX X5, xArm7, AgiBot G1)
 
 <!-- mmac-record: {"id": "2610.08720", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
@@ -2874,47 +3001,56 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2610.17521", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-17521"></a>`2026.10` **[YUBI-Real2Sim: 3DGS Scene Verification for Reliable Policy Evaluation](https://arxiv.org/abs/2610.17521)** [[Code]](https://github.com/airoa-org/yubi-real2sim) [[Dataset]](https://huggingface.co/datasets/airoa-org/yubi-real2sim-assets) [[Project page]](https://research.airoa.io/publications/yubi-real2sim/)
-  > Studies whether reconstructed 3DGS scenes preserve real robot policy rankings.
+  > Studies whether reconstructed 3DGS scenes preserve real robot policy rankings.<br>
+  > 🖥️ **Sim** MuJoCo (Franka FR3, TX-G2) · 🦾 **Real** Franka FR3, TX-G2
 
 <!-- mmac-record: {"id": "2609.24778", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-24778"></a>`2026.09` **[H2RBench: A Real-to-Sim Benchmark for Evaluating Human-to-Robot Transfer](https://arxiv.org/abs/2609.24778)** [[Project page]](https://davidz2851.github.io/h2rbench.github.io/) [[Code]](https://github.com/xiaochy/H2RBench)
-  > Uses four real-to-sim tasks to test whether simulated rankings of human-to-robot transfer methods predict real-robot rankings.
+  > Uses four real-to-sim tasks to test whether simulated rankings of human-to-robot transfer methods predict real-robot rankings.<br>
+  > 🖥️ **Sim** Isaac Lab (Franka Panda) · 🦾 **Real** Franka Panda
 
 <!-- mmac-record: {"id": "2609.27449", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-27449"></a>`2026.09` **[X2Real: an eXtensive simulation benchmark for real-world generalist policies](https://arxiv.org/abs/2609.27449)** [[Code]](https://github.com/X-Square-Robot/x2real) [[Project page]](https://x2robot.com/en/pages/x2real)
-  > Calibrates simulation visuals and physics to real hardware and checks whether simulated scores track real-robot scores.
+  > Calibrates simulation visuals and physics to real hardware and checks whether simulated scores track real-robot scores.<br>
+  > 🖥️ **Sim** Isaac Lab (Franka, ArtiXon Arm-6A, ARX R5, Quanta X1)
 
 <!-- mmac-record: {"id": "2609.13194", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-13194"></a>`2026.08` **[Diagnosing Faults in Reinforcement Learning Simulators with Canonical Polynomial Invariants](https://arxiv.org/abs/2609.13194)** [[Project page]](https://www.github.com/TesfayZ/algebraicRLtest.git)
-  > Recovers polynomial invariants from trajectories to locate which physical constraint a simulator violates and which parameter causes it.
+  > Recovers polynomial invariants from trajectories to locate which physical constraint a simulator violates and which parameter causes it.<br>
+  > 🖥️ **Sim** MuJoCo
 
 <!-- mmac-record: {"id": "2606.01538", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-01538"></a>`2026.06` **[MPMWorlds: Material-Point-Method Simulations for Inferring and Extrapolating Physical Dynamics](https://arxiv.org/abs/2606.01538)**
-  > Compares program-based physical inference with video prediction in synthetic 2D material-point worlds.
+  > Compares program-based physical inference with video prediction in synthetic 2D material-point worlds.<br>
+  > 🖥️ **Sim** Taichi
 
 <!-- mmac-record: {"id": "2606.01869", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-01869"></a>`2026.06` **[WorldCoder-Bench: Benchmarking Physically Grounded 3D World Synthesis](https://arxiv.org/abs/2606.01869)** [[Dataset]](https://huggingface.co/datasets/shuolucs/WorldCoder-Bench)
-  > Tests whether generated interactive 3D programs satisfy executable world contracts.
+  > Tests whether generated interactive 3D programs satisfy executable world contracts.<br>
+  > 🖥️ **Sim** Three.js
 
 <!-- mmac-record: {"id": "2605.19136", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2605-19136"></a>`2026.05` **[Automatically Improving Simulation Physics for Articulated Objects](https://arxiv.org/abs/2605.19136)**
-  > Defines interaction-readiness for articulated assets, evaluates it, and refines physical properties with VLM priors and simulator feedback.
+  > Defines interaction-readiness for articulated assets, evaluates it, and refines physical properties with VLM priors and simulator feedback.<br>
+  > 🖥️ **Sim** Isaac Lab (Franka Panda)
 
 <!-- mmac-record: {"id": "2605.20576", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2605-20576"></a>`2026.05` **[Δynamics: Language-Based Representation for Inferring Rigid-Body Dynamics From Videos](https://arxiv.org/abs/2605.20576)**
-  > Represents video-inferred rigid-body systems as structured simulator configurations.
+  > Represents video-inferred rigid-body systems as structured simulator configurations.<br>
+  > 🖥️ **Sim** MuJoCo + Blender
 
 <!-- mmac-record: {"id": "2604.23580", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2604-23580"></a>`2026.04` **[PhysCodeBench: Benchmarking Physics-Aware Symbolic Simulation of 3D Scenes via Self-Corrective Multi-Agent Refinement](https://arxiv.org/abs/2604.23580)**
-  > Evaluates simulation code for described physical phenomena and studies targeted multi-agent correction.
+  > Evaluates simulation code for described physical phenomena and studies targeted multi-agent correction.<br>
+  > 🖥️ **Sim** Genesis + MuJoCo
 
 <!-- mmac-record: {"id": "2604.13035", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
@@ -2939,17 +3075,20 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2602.13294", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2602-13294"></a>`2026.02` **[VisPhyWorld: Probing Physical Reasoning via Code-Driven Video Reconstruction](https://arxiv.org/abs/2602.13294)** [[Code]](https://github.com/TIGER-AI-Lab/VisPhyWorld)
-  > Probes physical reasoning by reconstructing controlled videos as simulator programs.
+  > Probes physical reasoning by reconstructing controlled videos as simulator programs.<br>
+  > 🖥️ **Sim** Three.js + P5.js
 
 <!-- mmac-record: {"id": "2512.16881", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2512-16881"></a>`2025.12` **[PolaRiS: Scalable Real-to-Sim Evaluations for Generalist Robot Policies](https://arxiv.org/abs/2512.16881)** [[Project page]](https://polaris-evals.github.io/) [[Code]](https://github.com/arhanjain/PolaRiS) [[Dataset]](https://huggingface.co/datasets/owhan/PolaRiS-Hub)
-  > Reconstructs interactive evaluation scenes from short video scans and pairs them with real evaluations of generalist policies.
+  > Reconstructs interactive evaluation scenes from short video scans and pairs them with real evaluations of generalist policies.<br>
+  > 🖥️ **Sim** Isaac Sim (Franka Panda) · 🦾 **Real** Franka Panda
 
 <!-- mmac-record: {"id": "2511.03001", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2511-03001"></a>`2025.11` **[Apples on the Table? Evaluating Text-Guided 3D Scene Synthesis via Fine-Grained Constraint Verification](https://arxiv.org/abs/2511.03001)**
-  > Evaluates text-guided scenes by verifying fine-grained requirements individually.
+  > Evaluates text-guided scenes by verifying fine-grained requirements individually.<br>
+  > 🖥️ **Sim** AI2-THOR
 
 <!-- mmac-record: {"id": "2503.14756", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
@@ -2959,12 +3098,14 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2405.05941", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2405-05941"></a>`2024.05` **[Evaluating Real-World Robot Manipulation Policies in Simulation](https://arxiv.org/abs/2405.05941)**
-  > Studies whether simulation can predict real-world manipulation policy performance.
+  > Studies whether simulation can predict real-world manipulation policy performance.<br>
+  > 🖥️ **Sim** SAPIEN (Google Robot, WidowX 250) · 🦾 **Real** Google Robot, WidowX 250
 
 <!-- mmac-record: {"id": "real2sim-benchmark", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-real2sim-benchmark"></a>**[Real2Sim Benchmark](https://www.real2sim.bot/)**
-  > Tests reconstruction of robot episodes through frozen-scene rendering, action replay and policy execution.
+  > Tests reconstruction of robot episodes through frozen-scene rendering, action replay and policy execution.<br>
+  > 🖥️ **Sim** Franka Panda
 
 *See also:* [Frontier3DBench](#paper-2611-09017) · [4DCodeBench](#paper-2610-03715) · [BlenderWorld](#paper-system-blenderworld) · [BVB](#paper-2609-15478) · [Code4Scene](#paper-2609-36777) · [Parametric CAD Bench v3](#paper-2611-02659) · [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786)
 
@@ -2985,12 +3126,14 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2611.06817", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-06817"></a>`2026.11` **[Open-HumanWAM: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models](https://arxiv.org/abs/2611.06817)** [[Project page]](https://dagroup-pku.github.io/open-humanwam/) [[Code]](https://github.com/DAGroup-PKU/HumanNet/tree/Open-HumanWAM) [[Dataset]](https://huggingface.co/datasets/DAGroup-PKU/Open-HumanWAM-50K) [[Collection]](https://huggingface.co/collections/DAGroup-PKU/open-humanwam)
-  > Curates human manipulation experience and aligned actions for world–action model pretraining and robot adaptation.
+  > Curates human manipulation experience and aligned actions for world–action model pretraining and robot adaptation.<br>
+  > 🖥️ **Sim** SAPIEN + Isaac Sim (AgileX ALOHA, ARX X5) · 🦾 **Real** AgileX Cobot Magic
 
 <!-- mmac-record: {"id": "2406.18915", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2406-18915"></a>`2024.06` **[Manipulate-Anything: Automating Real-World Robots using Vision-Language Models](https://arxiv.org/abs/2406.18915)** [[Project page]](https://robot-ma.github.io/) [[Code]](https://github.com/Robot-MA/manipulate-anything)
-  > Collects real demonstrations with visual-language feedback.
+  > Collects real demonstrations with visual-language feedback.<br>
+  > 🖥️ **Sim** CoppeliaSim (Franka Panda) · 🦾 **Real** Franka Panda
 
 <!-- mmac-record: {"id": "2403.12945", "scope": "Resource", "primary": "3.4", "stage": 3, "type": "resource"} -->
 
@@ -3002,37 +3145,44 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2611.12411", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-12411"></a>`2026.11` **[PhysOPSD: Code as Privilege for Physically Plausible Video Generation](https://arxiv.org/abs/2611.12411)** [[Project page]](https://haroldchen19.github.io/PhysOPSD-site/)
-  > Constructs executable physical scenes and paired visual supervision for video-generator post-training.
+  > Constructs executable physical scenes and paired visual supervision for video-generator post-training.<br>
+  > 🖥️ **Sim** Blender + Genesis + MuJoCo
 
 <!-- mmac-record: {"id": "2611.05320", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-05320"></a>`2026.11` **[PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data](https://arxiv.org/abs/2611.05320)** [[Project page]](https://dagroup-pku.github.io/PyRUA-Lean/DataFarm) [[Code]](https://github.com/DAGroup-PKU/PyRUA-Lean/tree/DataFarm)
-  > Creates action-labelled data with code and video models.
+  > Creates action-labelled data with code and video models.<br>
+  > 🖥️ **Sim** SAPIEN + Isaac Sim
 
 <!-- mmac-record: {"id": "2611.05163", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-05163"></a>`2026.11` **[RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On](https://arxiv.org/abs/2611.05163)** [[Project page]](https://ryan-seungyong-lee.github.io/RoboTryOn) [[Code]](https://github.com/ryan-seungyong-lee/RoboTryOn) [[Model]](https://huggingface.co/RyanL22/RoboTryOn) [[Demo]](https://huggingface.co/spaces/RyanL22/RoboTryOn)
-  > Translates human demonstrations into target-robot videos, infers pseudo-actions with inverse dynamics and wrist correction, and uses the resulting data to train policies evaluated on two real robot platforms.
+  > Translates human demonstrations into target-robot videos, infers pseudo-actions with inverse dynamics and wrist correction, and uses the resulting data to train policies evaluated on two real robot platforms.<br>
+  > 🦾 **Real** OpenArm, Inspire RH56F1, Rainbow RB-Y1, WujiHand2
 
 <!-- mmac-record: {"id": "2610.22362", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-22362"></a>`2026.10` **[CoDA: Co-Evolution of Data Engines and Action Policies](https://arxiv.org/abs/2610.22362)** [[Project page]](https://plan-lab.github.io/projects/coda/)
-  > Co-evolves data-generation programs and robot policies.
+  > Co-evolves data-generation programs and robot policies.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda)
 
 <!-- mmac-record: {"id": "2610.07969", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-07969"></a>`2026.10` **[EmbodiedSmith: Scaling Embodied Data through Recursive Self-Improvement Flywheel in Simulation](https://arxiv.org/abs/2610.07969)**
-  > Builds a self-improving simulation data engine.
+  > Builds a self-improving simulation data engine.<br>
+  > 🖥️ **Sim** Isaac Sim (Franka FR3, Sharpa Wave)
 
 <!-- mmac-record: {"id": "2609.35318", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-35318"></a>`2026.09` **[DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library](https://arxiv.org/abs/2609.35318)** [[Project page]](https://dexagent1.github.io/) [[Project page]](https://dexagent123.github.io/) [[Code]](https://github.com/dexagent1/DexAgent)
-  > Converts human videos into simulated dexterous supervision.
+  > Converts human videos into simulated dexterous supervision.<br>
+  > 🖥️ **Sim** Blender + MuJoCo + Isaac Sim (Sharpa Wave) · 🦾 **Real** I2RT YAM, Sharpa Wave
 
 <!-- mmac-record: {"id": "2609.27308", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-27308"></a>`2026.09` **[EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics](https://arxiv.org/abs/2609.27308)** [[Code]](https://github.com/EmbodiedSWE/EmbodiedSWE)
-  > Scales verified robot programs into synthetic demonstrations.
+  > Scales verified robot programs into synthetic demonstrations.<br>
+  > 🖥️ **Sim** Isaac Lab + Newton (Franka Panda, xArm7, Kinova Gen3, Unitree G1) · 🦾 **Real** Franka Panda
 
 <!-- mmac-record: {"id": "2607.23704", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
@@ -3042,17 +3192,20 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2506.18088", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2506-18088"></a>`2025.06` **[RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation](https://arxiv.org/abs/2506.18088)** [[Code]](https://github.com/RoboTwin-Platform/RoboTwin) [[Code]](https://github.com/robotwin-Platform/robotwin) [[Code]](https://github.com/robotwin-Platform/robotwin/) [[Project page]](https://robotwin-platform.github.io/) [[Project page]](https://robotwin-platform.github.io/doc/) [[Dataset]](https://huggingface.co/datasets/TianxingChen/RoboTwin2.0)
-  > Generates diverse bimanual training trajectories.
+  > Generates diverse bimanual training trajectories.<br>
+  > 🖥️ **Sim** SAPIEN (AgileX ALOHA, AgileX PiPER, ARX X5, Franka Panda, UR5)
 
 <!-- mmac-record: {"id": "2410.03645", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2410-03645"></a>`2024.10` **[GenSim2: Scaling Robot Data Generation with Multi-modal and Reasoning LLMs](https://arxiv.org/abs/2410.03645)** [[Project page]](https://gensim2.github.io/) [[Code]](https://github.com/GenSim2/gensim2)
-  > Scales robot demonstrations through generated tasks and solvers.
+  > Scales robot demonstrations through generated tasks and solvers.<br>
+  > 🖥️ **Sim** SAPIEN (Franka Panda) · 🦾 **Real** Franka FR3
 
 <!-- mmac-record: {"id": "2307.14535", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2307-14535"></a>`2023.07` **[Scaling Up and Distilling Down: Language-Guided Robot Skill Acquisition](https://arxiv.org/abs/2307.14535)** [[Project page]](https://www.cs.columbia.edu/~huy/scalingup/) [[Code]](https://github.com/columbia-ai-robotics/scalingup)
-  > Distills generated robot experience into a visuomotor policy.
+  > Distills generated robot experience into a visuomotor policy.<br>
+  > 🖥️ **Sim** MuJoCo (UR5e) · 🦾 **Real** UR5e
 
 [↑ Back to contents](#contents)
 
@@ -3076,72 +3229,86 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2610.23288", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-23288"></a>`2026.10` **[CoEvolve: Self-Evolving Code Policies from Skills to Strategies for Humanoid Robots](https://arxiv.org/abs/2610.23288)** [[Code]](https://github.com/Innovationlzc/CoEvolve)
-  > Evolves team strategies over fixed humanoid skills.
+  > Evolves team strategies over fixed humanoid skills.<br>
+  > 🖥️ **Sim** MuJoCo (Unitree G1)
 
 <!-- mmac-record: {"id": "2610.12369", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-12369"></a>`2026.10` **[Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement](https://arxiv.org/abs/2610.12369)**
-  > Develops stateful code for model-free deployment.
+  > Develops stateful code for model-free deployment.<br>
+  > 🖥️ **Sim** Isaac Sim (ARX X5)
 
 <!-- mmac-record: {"id": "2610.36533", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-36533"></a>`2026.10` **[RoboAuto: Autonomous Robot Program Search through Multi-Level Physical Understanding](https://arxiv.org/abs/2610.36533)** [[Project page]](https://roboauto-ai.github.io/)
-  > Searches programs using staged physical diagnostics.
+  > Searches programs using staged physical diagnostics.<br>
+  > 🖥️ **Sim** MuJoCo + SAPIEN (Franka Panda, AgileX ALOHA) · 🦾 **Real** Trossen WidowX AI
 
 <!-- mmac-record: {"id": "2610.18792", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-18792"></a>`2026.10` **[SEAR: Self-Evolving Agentic Robotics](https://arxiv.org/abs/2610.18792)**
-  > Compares several modes of agentic robot improvement.
+  > Compares several modes of agentic robot improvement.<br>
+  > 🖥️ **Sim** MuJoCo + Isaac Lab (Franka Panda) · 🦾 **Real** I2RT YAM, Flexiv, Sharpa Wave
 
 <!-- mmac-record: {"id": "2609.30233", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-30233"></a>`2026.09` **[Coding Agents for Generalized Task and Motion Planning Problems](https://arxiv.org/abs/2609.30233)** [[Code]](https://github.com/tomsilver/robocode)
-  > Programs solvers for task-and-motion planning.
+  > Programs solvers for task-and-motion planning.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda)
 
 <!-- mmac-record: {"id": "2609.30594", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-30594"></a>`2026.09` **[HuGo: LLMs as Whole-Body Policy Code Designers for Humanoid Loco-Manipulation](https://arxiv.org/abs/2609.30594)** [[Project page]](https://iconlab.negarmehr.com/HuGo/)
-  > Designs high-level humanoid policy code.
+  > Designs high-level humanoid policy code.<br>
+  > 🖥️ **Sim** Isaac Sim (Unitree G1) · 🦾 **Real** Unitree G1
 
 <!-- mmac-record: {"id": "2609.24145", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-24145"></a>`2026.09` **[MimicAgent: Quadruped Skills via Prompt-to-Trajectory Generation](https://arxiv.org/abs/2609.24145)** [[Project page]](https://luckykantnayak.github.io/mimic-agent/) [[Code]](https://github.com/Luckykantnayak/mimicagent-humnaoid)
-  > Generates reference motion for quadruped policy training.
+  > Generates reference motion for quadruped policy training.<br>
+  > 🖥️ **Sim** MuJoCo (Unitree Go2-W)
 
 <!-- mmac-record: {"id": "2609.38982", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-38982"></a>`2026.09` **[SimEX: Simulation-Integrated Robotics AutoResearch](https://arxiv.org/abs/2609.38982)** [[Project page]](https://robo-simex.github.io/)
-  > Combines simulation research with limited physical feedback.
+  > Combines simulation research with limited physical feedback.<br>
+  > 🖥️ **Sim** MuJoCo + Isaac Sim · 🦾 **Real** I2RT YAM
 
 <!-- mmac-record: {"id": "2608.07555", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2608-07555"></a>`2026.08` **[You Don't Need To Stay in The Loop: An Agentic Robotics Loop for Robot-Policy Improvement](https://arxiv.org/abs/2608.07555)**
-  > Organizes a repeatable loop for policy development.
+  > Organizes a repeatable loop for policy development.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda)
 
 <!-- mmac-record: {"id": "2606.19980", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-19980"></a>`2026.06` **[ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](https://arxiv.org/abs/2606.19980)** [[Project page]](https://research.nvidia.com/labs/gear/enpire/) [[Code]](https://github.com/NVlabs/ENPIRE)
-  > Develops robot policies from physical trial evidence.
+  > Develops robot policies from physical trial evidence.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda) · 🦾 **Real** I2RT YAM
 
 <!-- mmac-record: {"id": "2606.08610", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-08610"></a>`2026.06` **[HARBOR: A Harness Framework for Agentic Robot Reinforcement Learning](https://arxiv.org/abs/2606.08610)**
-  > Makes robot RL development an agent workspace.
+  > Makes robot RL development an agent workspace.<br>
+  > 🖥️ **Sim** Isaac Lab + SAPIEN + Genesis + MuJoCo (Shadow Hand) · 🦾 **Real** Franka, xArm UF850, Allegro Hand
 
 <!-- mmac-record: {"id": "2606.16458", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-16458"></a>`2026.06` **[RHO: Your Coding Agent is Secretly a Roboticist](https://arxiv.org/abs/2606.16458)** [[Project page]](https://rho-robotics.github.io) [[Code]](https://github.com/KE7/HELIX)
-  > Searches reusable policy repositories before deployment.
+  > Searches reusable policy repositories before deployment.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda)
 
 <!-- mmac-record: {"id": "2603.04466", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2603-04466"></a>`2026.03` **[Act-Observe-Rewrite: Multimodal Coding Agents as In-Context Policy Learners for Robot Manipulation](https://arxiv.org/abs/2603.04466)**
-  > Learns control programs from execution and visual feedback.
+  > Learns control programs from execution and visual feedback.<br>
+  > 🖥️ **Sim** MuJoCo (UR5e)
 
 <!-- mmac-record: {"id": "2508.02629", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2508-02629"></a>`2025.08` **[HyCodePolicy: Hybrid Language Controllers for Multimodal Monitoring and Decision in Embodied Agents](https://arxiv.org/abs/2508.02629)**
-  > Combines executable policies with multimodal monitoring.
+  > Combines executable policies with multimodal monitoring.<br>
+  > 🖥️ **Sim** SAPIEN (AgileX ALOHA)
 
 <!-- mmac-record: {"id": "2503.13660", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
@@ -3156,32 +3323,38 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2409.01652", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2409-01652"></a>`2024.09` **[ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation](https://arxiv.org/abs/2409.01652)** [[Project page]](https://rekep-robot.github.io/) [[Code]](https://github.com/huangwl18/ReKep)
-  > Programs geometric constraints for online manipulation.
+  > Programs geometric constraints for online manipulation.<br>
+  > 🖥️ **Sim** Isaac Sim · 🦾 **Real** Franka
 
 <!-- mmac-record: {"id": "2406.01967", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2406-01967"></a>`2024.06` **[DrEureka: Language Model Guided Sim-To-Real Transfer](https://arxiv.org/abs/2406.01967)** [[Project page]](https://eureka-research.github.io/dr-eureka/) [[Code]](https://github.com/eureka-research/DrEureka)
-  > Uses generated rewards and randomization for sim-to-real.
+  > Uses generated rewards and randomization for sim-to-real.<br>
+  > 🖥️ **Sim** Isaac Gym (Unitree Go1, LEAP Hand) · 🦾 **Real** Unitree Go1, LEAP Hand
 
 <!-- mmac-record: {"id": "2402.04764", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2402-04764"></a>`2024.02` **[Code as Reward: Empowering Reinforcement Learning with VLMs](https://arxiv.org/abs/2402.04764)**
-  > Compiles visual task understanding into reusable reward code.
+  > Compiles visual task understanding into reusable reward code.<br>
+  > 🖥️ **Sim** MuJoCo (Sawyer)
 
 <!-- mmac-record: {"id": "2310.12931", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2310-12931"></a>`2023.10` **[Eureka: Human-Level Reward Design via Coding Large Language Models](https://arxiv.org/abs/2310.12931)** [[Project page]](https://eureka-research.github.io/) [[Code]](https://github.com/eureka-research/Eureka)
-  > Searches reward programs using policy-training feedback.
+  > Searches reward programs using policy-training feedback.<br>
+  > 🖥️ **Sim** Isaac Gym (Shadow Hand, Franka Panda, Allegro Hand, ANYmal)
 
 <!-- mmac-record: {"id": "2309.11489", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2309-11489"></a>`2023.09` **[Text2Reward: Reward Shaping with Language Models for Reinforcement Learning](https://arxiv.org/abs/2309.11489)** [[Project page]](https://text-to-reward.github.io/) [[Code]](https://github.com/xlang-ai/text2reward)
-  > Makes reward shaping a code-generation problem.
+  > Makes reward shaping a code-generation problem.<br>
+  > 🖥️ **Sim** SAPIEN + MuJoCo (Franka Panda, Sawyer) · 🦾 **Real** Franka Panda
 
 <!-- mmac-record: {"id": "2306.08647", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2306-08647"></a>`2023.06` **[Language to Rewards for Robotic Skill Synthesis](https://arxiv.org/abs/2306.08647)** [[Project page]](https://language-to-reward.github.io/) [[Code]](https://github.com/google-deepmind/language_to_reward_2023)
-  > Expresses desired robot skills through generated rewards.
+  > Expresses desired robot skills through generated rewards.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda, Shadow Hand)
 
 <!-- mmac-record: {"id": "autoresearch-robotics", "scope": "Resource", "primary": "3.5", "stage": 3, "type": "resource"} -->
 
@@ -3198,37 +3371,44 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2611.14432", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-14432"></a>`2026.11` **[One Policy for 100 Household Tasks: Our Solution for the 2026 BEHAVIOR Challenge](https://arxiv.org/abs/2611.14432)**
-  > Combines a learned household VLA with task-specific coding-agent practice sessions that are frozen before evaluation.
+  > Combines a learned household VLA with task-specific coding-agent practice sessions that are frozen before evaluation.<br>
+  > 🖥️ **Sim** Isaac Sim (Galaxea R1 Pro)
 
 <!-- mmac-record: {"id": "2611.06768", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-06768"></a>`2026.11` **[PyRUA-REAL: Robot Exploration and Adaptive Learning through RSI in the Real World](https://arxiv.org/abs/2611.06768)** [[Project page]](https://dagroup-pku.github.io/PyRUA-Lean/real/) [[Code]](https://github.com/DAGroup-PKU/PyRUA-Lean/tree/REAL)
-  > Learns reusable robot code from physical exploration.
+  > Learns reusable robot code from physical exploration.<br>
+  > 🖥️ **Sim** Isaac Sim (ARX X5) · 🦾 **Real** Franka
 
 <!-- mmac-record: {"id": "2611.12885", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-12885"></a>`2026.11` **[World In-Context Learning for Agentic Robot Manipulation](https://arxiv.org/abs/2611.12885)** [[Project page]](https://ArcheOne-AI.github.io/RoboScript) [[Project page]](https://archeone-ai.github.io/RoboScript/) [[Code]](https://github.com/ArcheOne-AI/RoboScript)
-  > Uses simulator rehearsal to build transferable task memory while the foundation model stays frozen.
+  > Uses simulator rehearsal to build transferable task memory while the foundation model stays frozen.<br>
+  > 🖥️ **Sim** SAPIEN (AgileX ALOHA) · 🦾 **Real** AgileX PiPER
 
 <!-- mmac-record: {"id": "2610.18874", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-18874"></a>`2026.10` **[ChunkAct: Action Chunking for Agentic Robotics](https://arxiv.org/abs/2610.18874)**
-  > Compiles memory into autonomous action chunks.
+  > Compiles memory into autonomous action chunks.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda)
 
 <!-- mmac-record: {"id": "2610.25114", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-25114"></a>`2026.10` **[Compile Once, Run Cheap: Frozen, Portable Skills for Embodied Agents, and What Recursive Self-Improvement Adds](https://arxiv.org/abs/2610.25114)** [[Code]](https://github.com/Orillusion/embodied-skill-rsi)
-  > Builds skills offline for inexpensive frozen reuse.
+  > Builds skills offline for inexpensive frozen reuse.<br>
+  > 🖥️ **Sim** SAPIEN (AgileX ALOHA)
 
 <!-- mmac-record: {"id": "2610.18867", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-18867"></a>`2026.10` **[EmbodiedEvo: Self-Evolving Coding Agent For Physical Intelligence](https://arxiv.org/abs/2610.18867)**
-  > Separates executable skills from diagnostic lessons.
+  > Separates executable skills from diagnostic lessons.<br>
+  > 🖥️ **Sim** Isaac Sim (ARX X5)
 
 <!-- mmac-record: {"id": "2610.10498", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-10498"></a>`2026.10` **[EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution](https://arxiv.org/abs/2610.10498)**
-  > Chooses robot experiments using explicit hypotheses.
+  > Chooses robot experiments using explicit hypotheses.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda) · 🦾 **Real** SO-101
 
 <!-- mmac-record: {"id": "2610.29560", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
@@ -3243,37 +3423,44 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2610.23098", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-23098"></a>`2026.10` **[InstAgent: A Recursively Self-Improving Agent Operating System for Heterogeneous Robot Collaboration](https://arxiv.org/abs/2610.23098)**
-  > Retains repaired programs for heterogeneous robot teams.
+  > Retains repaired programs for heterogeneous robot teams.<br>
+  > 🖥️ **Sim** Habitat
 
 <!-- mmac-record: {"id": "2610.03476", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-03476"></a>`2026.10` **[MobiAgent: Dual-Loop Recursive Policy Self-Improvement for Long-Horizon Mobile Manipulation](https://arxiv.org/abs/2610.03476)** [[Code]](https://github.com/kaiknower/MobiAgent) [[Project page]](https://kaiknower.github.io/mobiagent/) [[Model]](https://huggingface.co/Liukaikai/MobiAgent)
-  > Combines visual planning and reflection with reusable action experts, recycling verified deployment rollouts into offline skill-policy updates rather than generated control-code revisions.
+  > Combines visual planning and reflection with reusable action experts, recycling verified deployment rollouts into offline skill-policy updates rather than generated control-code revisions.<br>
+  > 🖥️ **Sim** MuJoCo + Isaac Sim (Franka Panda, Galaxea R1 Pro) · 🦾 **Real** Astribot S1
 
 <!-- mmac-record: {"id": "2610.08995", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-08995"></a>`2026.10` **[PhysEvo: Astra Can Act, Let It](https://arxiv.org/abs/2610.08995)**
-  > Improves robot tools while keeping the model frozen.
+  > Improves robot tools while keeping the model frozen.<br>
+  > 🖥️ **Sim** Isaac Sim (ARX X5) · 🦾 **Real** AgileX PiPER
 
 <!-- mmac-record: {"id": "2610.02204", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-02204"></a>`2026.10` **[Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents](https://arxiv.org/abs/2610.02204)** [[Project page]](https://rpg-robot.github.io/)
-  > Uses reconstructed practice environments to improve agents.
+  > Uses reconstructed practice environments to improve agents.<br>
+  > 🖥️ **Sim** MuJoCo
 
 <!-- mmac-record: {"id": "2610.01178", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-01178"></a>`2026.10` **[Recova: Agent-Guided Failure Recovery for Autonomous Robotic Manipulation](https://arxiv.org/abs/2610.01178)** [[Project page]](https://www.liuisabella.com/Recova)
-  > Practices recovery in digital twins before real execution.
+  > Practices recovery in digital twins before real execution.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda)
 
 <!-- mmac-record: {"id": "2610.42141", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-42141"></a>`2026.10` **[RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory](https://arxiv.org/abs/2610.42141)** [[Code]](https://github.com/roboarchitect-ai/RoboArchitect) [[Project page]](https://roboarchitect-ai.github.io/)
-  > Evolves persistent memory and robot-control code.
+  > Evolves persistent memory and robot-control code.<br>
+  > 🖥️ **Sim** MuJoCo + SAPIEN (Franka Panda, WidowX 250, Google Robot)
 
 <!-- mmac-record: {"id": "2610.22496", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-22496"></a>`2026.10` **[Scaling Online Exploration for Robot Agents](https://arxiv.org/abs/2610.22496)** [[Code]](https://github.com/robot-agent-exploration/rax) [[Code]](https://github.com/robot-agent-exploration/skills-lib) [[Dataset]](https://huggingface.co/datasets/robot-agent-exploration/robot-session-logs) [[Project page]](https://robot-agent-exploration.com/)
-  > Studies how exploration becomes reusable robot experience.
+  > Studies how exploration becomes reusable robot experience.<br>
+  > 🖥️ **Sim** MuJoCo + Isaac Sim (Franka Panda, ARX X5, Galaxea R1 Pro) · 🦾 **Real** Franka FR3
 
 <!-- mmac-record: {"id": "2610.22736", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
@@ -3283,52 +3470,62 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2609.39207", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-39207"></a>`2026.09` **[ASENA: Self-evolving Agents for Embodied Navigation](https://arxiv.org/abs/2609.39207)** [[Project page]](https://research.nvidia.com/labs/gear/asena)
-  > Retains navigation repairs for subsequent environments.
+  > Retains navigation repairs for subsequent environments.<br>
+  > 🖥️ **Sim** Habitat · 🦾 **Real** Unitree G1
 
 <!-- mmac-record: {"id": "2609.40306", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-40306"></a>`2026.09` **[DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents](https://arxiv.org/abs/2609.40306)** [[Project page]](https://denghaoyuan123.github.io/Dynaharness_page/)
-  > Grounds harness evolution in physical execution contracts.
+  > Grounds harness evolution in physical execution contracts.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda)
 
 <!-- mmac-record: {"id": "2609.39018", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-39018"></a>`2026.09` **[Make Code as Policy Great Again: Frontier Agents Write, Call, and Evolve Robot Tools](https://arxiv.org/abs/2609.39018)**
-  > Lets agents write and evolve the tools they execute.
+  > Lets agents write and evolve the tools they execute.<br>
+  > 🖥️ **Sim** Isaac Sim (ARX X5) · 🦾 **Real** AgileX PiPER-X
 
 <!-- mmac-record: {"id": "2609.29394", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-29394"></a>`2026.09` **[RACaP: Agentic Reasoning, Acting, and Coding as Policies for Evolvable Robot Learning](https://arxiv.org/abs/2609.29394)**
-  > Separates online decisions from an evolving robot API.
+  > Separates online decisions from an evolving robot API.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda)
 
 <!-- mmac-record: {"id": "2609.33378", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-33378"></a>`2026.09` **[Recursive Harness Distillation across Agents for Robot Manipulation](https://arxiv.org/abs/2609.33378)**
-  > Transfers external harness guidance between agents.
+  > Transfers external harness guidance between agents.<br>
+  > 🖥️ **Sim** SAPIEN (WidowX 250) · 🦾 **Real** Franka Panda
 
 <!-- mmac-record: {"id": "2609.32862", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-32862"></a>`2026.09` **[RoboFoundry: System-as-Policy Evolution for Self-Learning Embodied Agents](https://arxiv.org/abs/2609.32862)** [[Project page]](https://jingsongliang.com/robofoundry)
-  > Treats the robot support system as an evolving policy.
+  > Treats the robot support system as an evolving policy.<br>
+  > 🖥️ **Sim** MuJoCo + Habitat (Franka Panda) · 🦾 **Real** AgileX Cobot Magic, Unitree G1
 
 <!-- mmac-record: {"id": "2609.37583", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-37583"></a>`2026.09` **[RoboHarn-Evo: Evolving Hierarchical Physical Knowledge for Self-Improving Robotic Manipulation](https://arxiv.org/abs/2609.37583)** [[Code]](https://github.com/RUCKBReasoning/RoboHarn-Evo)
-  > Accumulates hierarchical knowledge from physical interaction.
+  > Accumulates hierarchical knowledge from physical interaction.<br>
+  > 🖥️ **Sim** Isaac Sim (ARX X5) · 🦾 **Real** AgileX Cobot Magic
 
 <!-- mmac-record: {"id": "2609.39304", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-39304"></a>`2026.09` **[Scale and Selection: What Makes Automatic Harness Evolution Work for Visual-Interface Robot Agents](https://arxiv.org/abs/2609.39304)**
-  > Studies scale and selection in harness optimization.
+  > Studies scale and selection in harness optimization.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda)
 
 <!-- mmac-record: {"id": "2609.35432", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-35432"></a>`2026.09` **[Self-Evolving Coding Agents: From Digital Programs to Physical-World Intelligence](https://arxiv.org/abs/2609.35432)**
-  > Improves robot tools through explicit world and policy code.
+  > Improves robot tools through explicit world and policy code.<br>
+  > 🖥️ **Sim** MuJoCo + Isaac Sim + SAPIEN (Franka Panda, ARX X5) · 🦾 **Real** AgileX PiPER-X
 
 <!-- mmac-record: {"id": "2609.31760", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-31760"></a>`2026.09` **[What Stops Recursive Self-Improvement in Robotics? Lessons from 123 Rounds of Agentic Skill Discovery](https://arxiv.org/abs/2609.31760)**
-  > Analyzes why repeated code and skill improvements can fail to produce cumulative task success.
+  > Analyzes why repeated code and skill improvements can fail to produce cumulative task success.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda)
 
 <!-- mmac-record: {"id": "2608.11350", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
@@ -3338,57 +3535,68 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2608.09410", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2608-09410"></a>`2026.08` **[Skills in Weights, Memory in Code: Hybrid Learning for Memory-Dependent Robot Manipulation](https://arxiv.org/abs/2608.09410)**
-  > Combines learned skills with programmable memory.
+  > Combines learned skills with programmable memory.<br>
+  > 🦾 **Real** SO-101
 
 <!-- mmac-record: {"id": "2608.16590", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2608-16590"></a>`2026.08` **[Zetta $ζ$: An Efficient Closed-Loop Embodied Harness for Self-Evolving Physical Intelligence](https://arxiv.org/abs/2608.16590)**
-  > Evolves monitors and recovery around a frozen policy.
+  > Evolves monitors and recovery around a frozen policy.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda)
 
 <!-- mmac-record: {"id": "2607.23784", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2607-23784"></a>`2026.07` **[A Few Words Go a Long Way: Language Guided Robot Policy Synthesis](https://arxiv.org/abs/2607.23784)** [[Project page]](https://robo-architect.github.io/) [[Code]](https://github.com/robo-architect/architect-franka)
-  > Uses language corrections to improve robot programs.
+  > Uses language corrections to improve robot programs.<br>
+  > 🦾 **Real** Franka Panda
 
 <!-- mmac-record: {"id": "2607.00272", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2607-00272"></a>`2026.06` **[ASPIRE: Agentic /Skills Discovery for Robotics](https://arxiv.org/abs/2607.00272)** [[Demo]](https://research.nvidia.com/labs/gear/aspire/) [[Code]](https://github.com/NVlabs/ASPIRE)
-  > Turns verified code repairs into reusable skills.
+  > Turns verified code repairs into reusable skills.<br>
+  > 🖥️ **Sim** MuJoCo + Isaac Sim (Franka Panda, Galaxea R1 Pro) · 🦾 **Real** I2RT YAM
 
 <!-- mmac-record: {"id": "2606.19419", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-19419"></a>`2026.06` **[Playful Agentic Robot Learning](https://arxiv.org/abs/2606.19419)** [[Project page]](https://playful-rats.github.io/) [[Code]](https://github.com/Playful-RATs/rats)
-  > Turns task-free exploration into persistent code skills.
+  > Turns task-free exploration into persistent code skills.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda)
 
 <!-- mmac-record: {"id": "2605.10332", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2605-10332"></a>`2026.05` **[EmbodiSkill: Skill-Aware Reflection for Self-Evolving Embodied Agents](https://arxiv.org/abs/2605.10332)** [[Code]](https://github.com/air-embodied-brain/EmbodiSkill)
-  > Links reflection to the skills responsible for failures.
+  > Links reflection to the skills responsible for failures.<br>
+  > 🖥️ **Sim** Habitat
 
 <!-- mmac-record: {"id": "2603.02623", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2603-02623"></a>`2026.03` **[Uni-Skill: Building Self-Evolving Skill Repository for Generalizable Robotic Manipulation](https://arxiv.org/abs/2603.02623)**
-  > Maintains an evolving repository of robot skills.
+  > Maintains an evolving repository of robot skills.<br>
+  > 🖥️ **Sim** CoppeliaSim (Franka Panda) · 🦾 **Real** Franka
 
 <!-- mmac-record: {"id": "2509.18597", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2509-18597"></a>`2025.09` **[Robotic Ultra-Long-Horizon Manipulation Skills via Human-guided Lifelong Code Generation](https://arxiv.org/abs/2509.18597)** [[Project page]](https://ghiara.github.io/LYRA/) [[Code]](https://github.com/Ghiara/LYRA)
-  > Retains human corrections as long-horizon code skills.
+  > Retains human corrections as long-horizon code skills.<br>
+  > 🖥️ **Sim** PyBullet + MuJoCo (UR5e, Franka Panda, Sawyer) · 🦾 **Real** Franka FR3
 
 <!-- mmac-record: {"id": "2406.18746", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2406-18746"></a>`2024.06` **[Lifelong Robot Library Learning: Bootstrapping Composable and Generalizable Skills for Embodied Control with Language Models](https://arxiv.org/abs/2406.18746)** [[Project page]](https://gtziafas.github.io/LRLL_project)
-  > Accumulates a library of composable control programs.
+  > Accumulates a library of composable control programs.<br>
+  > 🖥️ **Sim** PyBullet + Gazebo (UR5e) · 🦾 **Real** Kinova Jaco
 
 <!-- mmac-record: {"id": "2406.03757", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2406-03757"></a>`2024.06` **[RoboCoder: Robotic Learning from Basic Skills to General Tasks with Large Language Models](https://arxiv.org/abs/2406.03757)**
-  > Builds complex tasks from reusable basic skills.
+  > Builds complex tasks from reusable basic skills.<br>
+  > 🖥️ **Sim** Isaac Gym (Franka Panda, Kinova)
 
 <!-- mmac-record: {"id": "2405.19758", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2405-19758"></a>`2024.05` **[InterPreT: Interactive Predicate Learning from Language Feedback for Generalizable Task Planning](https://arxiv.org/abs/2405.19758)** [[Project page]](https://interpret-robot.github.io) [[Code]](https://github.com/hmz-15/interactive-predicate-learning)
-  > Learns planning predicates from language corrections.
+  > Learns planning predicates from language corrections.<br>
+  > 🦾 **Real** Franka Panda
 
 <!-- mmac-record: {"id": "2305.16744", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
@@ -3400,42 +3608,50 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2610.30136", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-30136"></a>`2026.10` **[Agentic World Action Models](https://arxiv.org/abs/2610.30136)** [[Project page]](https://agentic-wam.github.io/) [[Model]](https://huggingface.co/miniFranka/agentic-wam-pretrain-yamego3k-soup-e1) [[Code]](https://github.com/ZhuoyangLiu2005/agentic-wam)
-  > Models programs, predicted video and robot actions together.
+  > Models programs, predicted video and robot actions together.<br>
+  > 🖥️ **Sim** SAPIEN (AgileX ALOHA) · 🦾 **Real** I2RT YAM, Tianji, Sharpa Wave
 
 <!-- mmac-record: {"id": "2610.28589", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-28589"></a>`2026.10` **[AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](https://arxiv.org/abs/2610.28589)** [[Code]](https://github.com/L-CodingSpace/AgenticRoboRL) [[Project page]](https://l-codingspace.github.io/AgenticRoboRL/)
-  > Post-trains robot planners across different harnesses.
+  > Post-trains robot planners across different harnesses.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda)
 
 <!-- mmac-record: {"id": "2610.40799", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-40799"></a>`2026.10` **[CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents](https://arxiv.org/abs/2610.40799)** [[Code]](https://github.com/waltstephen/CaPtain) [[Code]](https://github.com/waltstephen/CaPtain-Harness) [[Dataset]](https://huggingface.co/datasets/YijiaFan/CaPtain-SFT-Data) [[Project page]](https://waltstephen.github.io/captain/)
-  > Trains a small model to act through robot code.
+  > Trains a small model to act through robot code.<br>
+  > 🖥️ **Sim** MuJoCo + Isaac Sim + SAPIEN (Franka Panda, ARX X5, AgileX ALOHA, WidowX 250) · 🦾 **Real** XR1
 
 <!-- mmac-record: {"id": "2610.36013", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-36013"></a>`2026.10` **[OmniBrain-0: A Unified Agentic Model for Embodied Intelligence](https://arxiv.org/abs/2610.36013)** [[Code]](https://github.com/luo-yc17/OmniBrain-0) [[Project page]](https://public-bots.github.io/OmniBrain-0/)
-  > Consolidates manipulation and navigation experts into a compact multimodal agent that coordinates specialist tools, while rubric-guided feedback supplies reminders and verified trajectories for further learning.
+  > Consolidates manipulation and navigation experts into a compact multimodal agent that coordinates specialist tools, while rubric-guided feedback supplies reminders and verified trajectories for further learning.<br>
+  > 🖥️ **Sim** MuJoCo + SAPIEN + Habitat (Franka Panda, AgileX ALOHA)
 
 <!-- mmac-record: {"id": "2610.41216", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-41216"></a>`2026.10` **[TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents](https://arxiv.org/abs/2610.41216)** [[Project page]](https://garfield-kh.github.io/TinyAstral/) [[Code]](https://github.com/Garfield-kh/TinyAstral) [[Model]](https://huggingface.co/kehong/TinyAstral-weights) [[Dataset]](https://huggingface.co/datasets/kehong/TinyAstral-SFT)
-  > Transfers a refined teacher harness to a small agent.
+  > Transfers a refined teacher harness to a small agent.<br>
+  > 🖥️ **Sim** MuJoCo + SAPIEN (Franka Panda, AgileX ALOHA, WidowX 250, Google Robot) · 🦾 **Real** SO-101
 
 <!-- mmac-record: {"id": "2606.18363", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-18363"></a>`2026.06` **[Guava: Distilling Frontier VLMs into a Compact Agent through a Robotic Manipulation Harness](https://arxiv.org/abs/2606.18363)**
-  > Distills a frontier model through a robot harness.
+  > Distills a frontier model through a robot harness.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda) · 🦾 **Real** Franka FR3
 
 <!-- mmac-record: {"id": "2501.04268", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2501-04268"></a>`2025.01` **[Robotic Programmer: Video Instructed Policy Code Generation for Robotic Manipulation](https://arxiv.org/abs/2501.04268)**
-  > Uses real videos to train a robot code generator.
+  > Uses real videos to train a robot code generator.<br>
+  > 🖥️ **Sim** CoppeliaSim + MuJoCo (Franka Panda) · 🦾 **Real** Franka Panda
 
 <!-- mmac-record: {"id": "2402.16117", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2402-16117"></a>`2024.02` **[RoboCodeX: Multimodal Code Generation for Robotic Behavior Synthesis](https://arxiv.org/abs/2402.16117)**
-  > Trains a multimodal model to write robot behaviors.
+  > Trains a multimodal model to write robot behaviors.<br>
+  > 🖥️ **Sim** Gazebo (Franka Panda, UR5) · 🦾 **Real** Franka Panda, UR5
 
 *See also:* [BlenderFORGE](#paper-2611-10768)
 
@@ -3457,37 +3673,44 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2611.07881", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-07881"></a>`2026.11` **[TactileLab: Sim-to-Real Dexterous Robot Manipulation with Efficient Shear-Sensitive Tactile Simulation](https://arxiv.org/abs/2611.07881)** [[Project page]](https://yijionglin.github.io/tactilelab/)
-  > Transfers simulation-trained manipulation policies using paired real/sim tactile representations.
+  > Transfers simulation-trained manipulation policies using paired real/sim tactile representations.<br>
+  > 🖥️ **Sim** Isaac Lab (LEAP Hand) · 🦾 **Real** LEAP Hand
 
 <!-- mmac-record: {"id": "2611.03268", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-03268"></a>`2026.11` **[VerifLM: Physically Verified Image-Edit-Guided Goal Pose Generation for Robotic Manipulation](https://arxiv.org/abs/2611.03268)** [[Project page]](https://veriflm.github.io/VerifLM-webpage/) [[Code]](https://github.com/trustworthyrobotics/VerifLM) [[Demo]](https://youtu.be/HTQgtDVdVBo)
-  > Turns a VLM-edited goal image into a 6-DoF goal pose that is checked for collision, penetration and stability in MuJoCo.
+  > Turns a VLM-edited goal image into a 6-DoF goal pose that is checked for collision, penetration and stability in MuJoCo.<br>
+  > 🖥️ **Sim** MuJoCo
 
 <!-- mmac-record: {"id": "2610.12549", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-12549"></a>`2026.10` **[Fly-by-Code: Embodied Coding Agents for Aerial Manipulation with Active Visual and Physical Feedback](https://arxiv.org/abs/2610.12549)** [[Project page]](https://fly-by-code.github.io/)
-  > Uses active sensing to program aerial manipulation.
+  > Uses active sensing to program aerial manipulation.<br>
+  > 🖥️ **Sim** Isaac Lab
 
 <!-- mmac-record: {"id": "2610.31841", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-31841"></a>`2026.10` **[FORCA: A Force-Aware Coding Agent for Contact-Rich Robot Manipulation](https://arxiv.org/abs/2610.31841)** [[Project page]](https://tanoom.github.io/forca/)
-  > Uses vision and force traces to repair contact code.
+  > Uses vision and force traces to repair contact code.<br>
+  > 🦾 **Real** UR5e
 
 <!-- mmac-record: {"id": "2610.20998", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-20998"></a>`2026.10` **[MoCaP: Mobile Code-as-Policies for Zero-Shot Mobile Manipulation from Passive Human Videos](https://arxiv.org/abs/2610.20998)** [[Project page]](https://mocap-7.github.io/MoCAP-page/) [[Code]](https://github.com/MoCAP-7/MoCAP)
-  > Transfers human-video priors to mobile robot programs.
+  > Transfers human-video priors to mobile robot programs.<br>
+  > 🦾 **Real** YOR
 
 <!-- mmac-record: {"id": "2609.23133", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-23133"></a>`2026.09` **[AquaCap: A Training-Free Underwater Embodied Agent with Code-as-Policy](https://arxiv.org/abs/2609.23133)**
-  > Adapts underwater programs using execution feedback.
+  > Adapts underwater programs using execution feedback.<br>
+  > 🖥️ **Sim** Stonefish (BlueROV2, Reach Alpha 5)
 
 <!-- mmac-record: {"id": "2609.30249", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-30249"></a>`2026.09` **[RAPID: Robot Agentic Programming from Demonstrations](https://arxiv.org/abs/2609.30249)** [[Project page]](https://yuyaoliu.me/projects/rapid) [[Code]](https://github.com/nature21/RAPID)
-  > Infers reusable relational robot programs and a verification environment from one visual demonstration.
+  > Infers reusable relational robot programs and a verification environment from one visual demonstration.<br>
+  > 🖥️ **Sim** MuJoCo (Franka FR3) · 🦾 **Real** Franka FR3
 
 <!-- mmac-record: {"id": "2503.23875", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
@@ -3497,17 +3720,20 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2403.07832", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2403-07832"></a>`2024.03` **[DeliGrasp: Inferring Object Properties with LLMs for Adaptive Grasp Policies](https://arxiv.org/abs/2403.07832)** [[Project page]](https://deligrasp.github.io) [[Code]](https://github.com/deligrasp/deligrasp)
-  > Combines object-property estimates with adaptive grasping.
+  > Combines object-property estimates with adaptive grasping.<br>
+  > 🦾 **Real** UR5
 
 <!-- mmac-record: {"id": "2310.13065", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2310-13065"></a>`2023.10` **[Creative Robot Tool Use with Large Language Models](https://arxiv.org/abs/2310.13065)** [[Project page]](https://creative-robotool.github.io/)
-  > Programs robots to solve tasks with physical tools.
+  > Programs robots to solve tasks with physical tools.<br>
+  > 🦾 **Real** Kinova Gen3, Unitree Go1
 
 <!-- mmac-record: {"id": "2307.05973", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2307-05973"></a>`2023.07` **[VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models](https://arxiv.org/abs/2307.05973)** [[Project page]](https://voxposer.github.io) [[Code]](https://github.com/huangwl18/VoxPoser)
-  > Builds spatial value maps for manipulation.
+  > Builds spatial value maps for manipulation.<br>
+  > 🖥️ **Sim** SAPIEN (Franka Panda) · 🦾 **Real** Franka Panda
 
 <!-- mmac-record: {"id": "demo:nvidia-factory-operations-blueprint", "scope": "Demo", "primary": "3.6", "stage": 3, "type": "demo"} -->
 
@@ -3524,12 +3750,14 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2610.37649", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-37649"></a>`2026.10` **[Can LLMs Uncover Hidden Physical Laws through Free Exploration?](https://arxiv.org/abs/2610.37649)** [[Code]](https://github.com/EnVision-Research/LongChang) [[Project page]](https://zhenyangcs.github.io/LongChang-website/)
-  > Tests open-ended investigation of simulated physical laws.
+  > Tests open-ended investigation of simulated physical laws.<br>
+  > 🖥️ **Sim** MuJoCo
 
 <!-- mmac-record: {"id": "2610.35385", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-35385"></a>`2026.10` **[EmbodiedLab: Benchmarking Embodied Agents That Act to Know](https://arxiv.org/abs/2610.35385)** [[Code]](https://github.com/HexaFuture/EmbodiedLab) [[Project page]](https://hexafuture.ai/benchmarks/embodiedlab/)
-  > Evaluates agents that act to obtain scientific evidence.
+  > Evaluates agents that act to obtain scientific evidence.<br>
+  > 🖥️ **Sim** Isaac Sim (Franka Panda)
 
 <!-- mmac-record: {"id": "2610.41717", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
@@ -3539,17 +3767,20 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2610.23826", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-23826"></a>`2026.10` **[Self-Building Labs](https://arxiv.org/abs/2610.23826)** [[Project page]](https://self-building-labs.github.io/)
-  > Makes experimental apparatus part of the program.
+  > Makes experimental apparatus part of the program.<br>
+  > 🦾 **Real** xArm5, Opentrons OT-2
 
 <!-- mmac-record: {"id": "2609.18435", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-18435"></a>`2026.09` **[WetRobo: A Reproducible Robot Kit for Coding Agents in Biological Laboratories](https://arxiv.org/abs/2609.18435)** [[Code]](https://github.com/tsudalab/WetRobo)
-  > Provides a laboratory kit for coding-agent experimentation.
+  > Provides a laboratory kit for coding-agent experimentation.<br>
+  > 🖥️ **Sim** MuJoCo (AgileX PiPER) · 🦾 **Real** AgileX PiPER
 
 <!-- mmac-record: {"id": "2608.01690", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2608-01690"></a>`2026.08` **[ProtoAct: Turning Wet-Lab Protocols into Embodied Robotic Actions](https://arxiv.org/abs/2608.01690)**
-  > Compiles laboratory protocols into robot actions.
+  > Compiles laboratory protocols into robot actions.<br>
+  > 🖥️ **Sim** Isaac Sim
 
 <!-- mmac-record: {"id": "2607.23045", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
@@ -3579,7 +3810,8 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2304.05332", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2304-05332"></a>`2023.04` **[Autonomous chemical research with large language models](https://arxiv.org/abs/2304.05332)** [[Code]](https://github.com/gomesgroup/coscientist)
-  > Connects language reasoning to automated chemistry.
+  > Connects language reasoning to automated chemistry.<br>
+  > 🦾 **Real** Opentrons OT-2
 
 <!-- mmac-record: {"id": "xray-scientist", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
@@ -3601,12 +3833,14 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2611.13344", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-13344"></a>`2026.11` **[PneuGen: Task-Driven Agentic Co-Design of Soft Pneumatic Robots](https://arxiv.org/abs/2611.13344)**
-  > Iteratively co-designs soft pneumatic robot geometry and actuation through executable design programs and simulation critique.
+  > Iteratively co-designs soft pneumatic robot geometry and actuation through executable design programs and simulation critique.<br>
+  > 🖥️ **Sim** SOFA
 
 <!-- mmac-record: {"id": "2610.17881", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-17881"></a>`2026.10` **[Agentic Robot Creation through Generation, Verification, and Revision](https://arxiv.org/abs/2610.17881)** [[Project page]](https://roboforge-project.github.io/)
-  > Co-develops robot bodies and executable behavior.
+  > Co-develops robot bodies and executable behavior.<br>
+  > 🖥️ **Sim** Isaac Lab (Unitree Go2)
 
 <!-- mmac-record: {"id": "2610.31651", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
@@ -3616,17 +3850,20 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2609.08220", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-08220"></a>`2026.09` **[Bridging Language and Physics: Automated Design of Continuum Robots with Large Language Models](https://arxiv.org/abs/2609.08220)** [[Code]](https://github.com/UNITES-Lab/AID-SR)
-  > Uses physics feedback to improve continuum-robot designs.
+  > Uses physics feedback to improve continuum-robot designs.<br>
+  > 🖥️ **Sim** MuJoCo
 
 <!-- mmac-record: {"id": "2605.17448", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2605-17448"></a>`2026.05` **[Self-Improving CAD Generation Agents with Finite Element Analysis as Feedback](https://arxiv.org/abs/2605.17448)** [[Code]](https://github.com/3dlg-hcvc/s2o)
-  > Uses visual and finite-element feedback to improve CAD.
+  > Uses visual and finite-element feedback to improve CAD.<br>
+  > 🖥️ **Sim** CadQuery + CalculiX
 
 <!-- mmac-record: {"id": "2408.14307", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2408-14307"></a>`2024.08` **[LLM-3D Print: Large Language Models To Monitor and Control 3D Printing](https://arxiv.org/abs/2408.14307)** [[Code]](https://github.com/BaratiLab/LLM-3D-Print-Large-Language-Models-To-Monitor-and-Control-3D-Printing)
-  > Closes the loop between print images and printer control.
+  > Closes the loop between print images and printer control.<br>
+  > 🦾 **Real** Creality Ender-3
 
 <!-- mmac-record: {"id": "agentic-fdm-printing", "scope": "Resource", "primary": "3.6", "stage": 3, "type": "resource"} -->
 

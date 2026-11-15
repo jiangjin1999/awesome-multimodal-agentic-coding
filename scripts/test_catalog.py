@@ -104,6 +104,20 @@ class CatalogTests(unittest.TestCase):
         self.assertTrue(any('unknown pictogram' in e for e in errors))
         self.assertTrue(any('L0a.fake missing zh' in e for e in errors))
 
+    def test_setup_renders_sim_and_real_groups_and_rejects_bad_names(self):
+        rows = deepcopy(self.works)
+        work = next(w for w in rows if w['section'].startswith('3') and w['type'] == 'paper')
+        work['setup'] = {'engines': ['MuJoCo', 'Blender'], 'sim_robots': ['Franka Panda'],
+                         'real_robots': ['UR5e', 'AgileX Piper']}
+        self.assertEqual(validate(self.site, rows, True)[0], [])
+        zh = render(self.site, rows, 'zh')
+        self.assertIn('🖥️ **仿真** MuJoCo + Blender（Franka Panda） · 🦾 **真机** UR5e、AgileX Piper', zh)
+        work['setup'] = {'real_robots': ['UR5e']}
+        self.assertIn('<br>\n  > 🦾 **Real** UR5e\n', render(self.site, rows, 'en'))
+        for bad in ({'engines': []}, {'robots': ['UR5e']}, {'engines': ['Mu*JoCo']}, {'sim_robots': ['UR5e', 'UR5e']}):
+            work['setup'] = bad
+            self.assertTrue(any('setup' in e for e in validate(self.site, rows, True)[0]), bad)
+
     def test_compatibility_targets_must_exist(self):
         site = deepcopy(self.site)
         site['anchor_aliases']['old-link'] = 'missing-entry'

@@ -19,7 +19,7 @@ These are scope identities, not rankings. Inclusion is independent of whether au
 
 The three stages organize **visual feedback**, **models as tools**, and **digital–physical interaction**. Choose one main section for a work; link other relevant sections to its stable entry rather than repeating the bibliography. Stage placement does not determine Core or Adjacent status.
 
-Edit [data/works.yaml](./data/works.yaml) for entries and [data/site.yaml](./data/site.yaml) for shared navigation and text. Preserve canonical IDs, first-publication dates, source URLs, existing scope, and compatibility anchors. Keep a concise summary in each language and retain English/Chinese verification evidence for Core works. An official report can use a stable non-arXiv ID; record a later arXiv ID as an explicit alias.
+Edit [data/works.yaml](./data/works.yaml) for entries and [data/site.yaml](./data/site.yaml) for shared navigation and text. Preserve canonical IDs, first-publication dates, source URLs, existing scope, and compatibility anchors. Keep a concise summary in each language and retain English/Chinese verification evidence for Core works. An official report can use a stable non-arXiv ID; record a later arXiv ID as an explicit alias. For Stage 3 works, add the optional `setup` field: the simulators or engines used, the robots used in simulation, and the robots used on hardware, as named in the paper.
 
 The three root READMEs are generated. From the public repository, run:
 

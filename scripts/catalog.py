@@ -13,6 +13,27 @@ NUMBERED_SECTIONS = {f'{a}.{b}' for a, n in ((1, 7), (2, 6), (3, 6)) for b in ra
 EXPECTED = NUMBERED_SECTIONS | {'SV'}
 LANGS = ('en', 'zh', 'ja')
 SCOPES = {'core', 'adjacent', 'resource', 'survey', 'demo', 'reading'}
+# Optional experimental setup: simulators/engines, robots used in simulation, robots used on hardware.
+SETUP_KEYS = ('engines', 'sim_robots', 'real_robots')
+
+
+def setup_errors(ident, setup):
+    """Proper names only (no translation); every list is non-empty, unique and Markdown-safe."""
+    if setup is None:
+        return []
+    if not isinstance(setup, dict) or not setup or set(setup) - set(SETUP_KEYS):
+        return [f'{ident}: setup must map some of {", ".join(SETUP_KEYS)} to lists']
+    errors = []
+    for key, names in setup.items():
+        if not isinstance(names, list) or not names:
+            errors.append(f'{ident}: setup.{key} must be a non-empty list')
+            continue
+        if len(names) != len(set(names)):
+            errors.append(f'{ident}: duplicate name in setup.{key}')
+        for name in names:
+            if not isinstance(name, str) or not name.strip() or re.search(r'[\[\]*_|<>`]', name):
+                errors.append(f'{ident}: invalid name {name!r} in setup.{key}')
+    return errors
 
 
 def anchor(ident):
@@ -95,6 +116,7 @@ def validate_catalog(site, works, strict_ja=True):
                 errors.append(f'{ident}: Japanese summary must contain Japanese prose')
         if w.get('section') == 'SV' and w.get('scope') != 'survey':
             errors.append(f'{ident}: survey placement requires Survey scope')
+        errors += setup_errors(ident, w.get('setup'))
     # Primary arXiv aliases must be explicit; resources may use independent stable IDs.
     for w in works:
         match = re.fullmatch(r'https://arxiv.org/abs/(\d{4}\.\d{4,5})', w['url'])

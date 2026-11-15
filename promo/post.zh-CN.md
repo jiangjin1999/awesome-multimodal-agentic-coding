@@ -1,6 +1,6 @@
 # 多模态视角下的 Coding｜Awesome Multimodal Agentic Coding
 
-> 宣传稿草稿。图片在 [`images/`](images/)，由 [`gen.js`](gen.js) 生成；改了图里的文字后重新运行即可。
+> 宣传稿草稿。封面图是 [`images/cover.png`](images/cover.png)，由 [`gen.js`](gen.js) 生成；改了图里的文字后重新运行即可。
 
 ## 一、精要介绍（帖子正文）
 
@@ -49,21 +49,13 @@ Toward physical AGI. 664 works, growing 👇
 https://github.com/jiangjin1999/awesome-multimodal-agentic-coding
 ```
 
-## 二、图片
+## 二、封面图
 
-| 顺序 | 文件 | 内容 |
-|---|---|---|
-| 1 | [`00-cover.png`](images/00-cover.png) | 封面：大字「多模态视角下的 Coding」、仓库头图、三阶段、链接与二维码 |
-| 2 | [`01-why-coding.png`](images/01-why-coding.png) | 出发点：不是 Computer Use，而是 Coding |
-| 3 | [`02-stage1-visual-feedback.png`](images/02-stage1-visual-feedback.png) | 01 有了视觉反馈，模型才能 loop 起来 |
-| 4 | [`03-stage2-orchestrate-models.png`](images/03-stage2-orchestrate-models.png) | 02 让 Agent 去调别的模型 |
-| 5 | [`04-stage3-digital-physical.png`](images/04-stage3-digital-physical.png) | 03 把 loop 带进物理世界 |
-
-尺寸都是 2160 × 2880（3:4）。小红书、即刻可以 5 张全发。X 每条最多 4 张：主帖放 1、3、4、5，第 2 张的内容已经写进正文；也可以把第 2 张放进回复。
+[`images/cover.png`](images/cover.png)：2160 × 2880（3:4）。大字「多模态视角下的 Coding」，加上仓库头图、三个阶段、链接和二维码。
 
 ## 三、正文（详细思路）
 
-图里的文字是下面这版的压缩版。下面这版可以直接用于公众号、知乎或长帖。
+可以直接用于公众号、知乎或长帖。
 
 ### 多模态视角下的 Coding｜Awesome Multimodal Agentic Coding
 

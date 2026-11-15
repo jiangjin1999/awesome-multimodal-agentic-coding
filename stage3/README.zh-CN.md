@@ -15,7 +15,7 @@
 | [3. Simulator 质量评估](#section-3) | 29 | 产物质量 → 可用的验证证据 |
 | [4. 数据](#section-4) | 13 | 观测、代码、动作与结果 → 训练材料 |
 | [5. 训练与能力提升](#section-5) | 71 | 程序／技能／模型更新 → 跨任务能力 |
-| [6. 物理应用与实验](#section-6) | 34 | 机制组合 → 任务结果与现实验证 |
+| [6. 物理应用与实验](#section-6) | 47 | 机制组合 → 任务结果与现实验证 |
 
 **构建可验证环境 → 获得交互经验 → 提升 Coding Agent 能力**是贯穿全篇的研究联系。各项工作的证据覆盖其中不同环节，完整的规模化闭环仍需联合检验。环境构建者、环境操作者和下游动作策略可能是不同模型。
 
@@ -5559,6 +5559,36 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 **关联：** [1. 具身 Harness](#section-1)
 
+<a id="work-2606-31763"></a>
+<!-- stage3-record: {"id": "2606.31763", "scope": "Adjacent", "section": 6} -->
+
+#### A Self-Evolving Agentic System for Automated Generation and Execution of Biological Protocols
+
+`2026-06-30` · Shanghai Artificial Intelligence Laboratory; Genoria AI
+
+[完整书目](../README.zh-CN.md#paper-2606-31763) · [论文](https://arxiv.org/abs/2606.31763)
+
+把自然语言需求转成协议、设备代码与机器人运行，再根据湿实验结果修订。
+
+**具体方法：** 编排 Agent 维护流程状态，专门 Agent 分别起草协议、展开 SOP、把步骤映射到设备并编写受 SDK 检查的代码；技能修订循环改进协议到代码的转换。凝胶、菌落 PCR、测序等湿实验结果用于重新设计步骤，例如出现非特异条带后重新设计引物。
+
+**验证：** 离线协议转代码测试中，Opentrons 代码通过率 88.2%（OpenTrons-AI 为 32.4%）；关卡检查语法、参数与 SDK 导出，不是真机执行。湿实验克隆、突变与组装得到确认，如 24 个克隆菌落 PCR 全部阳性、RLuc 突变 8/8。澄清对话与人工检查点仍可使用。
+
+<a id="work-2606-27231"></a>
+<!-- stage3-record: {"id": "2606.27231", "scope": "Adjacent", "section": 6} -->
+
+#### A hardware-safety-gated system for LLM-written native ARTIQ control code on a trapped-ion platform
+
+`2026-06-25` · Duke University; Joint Quantum Institute, University of Maryland; National Quantum Laboratory (QLab), University of Maryland
+
+[完整书目](../README.zh-CN.md#paper-2606-27231) · [论文](https://arxiv.org/abs/2606.27231) · [代码](https://gitlab.oit.duke.edu/dw346/artiq_mcp)
+
+让 LLM Agent 在硬件安全门之后，为离子阱实验编写原生 ARTIQ 控制代码。
+
+**具体方法：** Agent 通过 MCP 服务提交 ARTIQ Python，读取以 JSON 返回的数据集和日志。脚本到达硬件前，不含语言模型的安全门先用 AST 黑名单筛查，再在 dax.sim 中按各设备界限仿真，并要求一次性授权令牌，敏感操作需人工签发令牌。
+
+**验证：** 在 40Ca+/40CaOH+ 晶体上得到边带冷却 n̄ = 0.20 ± 0.06、Ramsey T2* = 904 ± 32 µs；第二套 171Yb+ 系统只测试接口。安全门检查硬件界限而非物理合理性，仿真只沿一条测量分支；冷却与补偿的指标选择由操作员指导。
+
 <a id="work-bespoke-instrument"></a>
 <!-- stage3-record: {"id": "bespoke-instrument", "scope": "Resource", "section": 6} -->
 
@@ -5575,6 +5605,51 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 **验证：** 真实 SHeM 成像与衍射验证仪器，开发、审阅和部署仍由人主导。
 
 **关联：** [2. Simulator 构建](#section-2)
+
+<a id="work-2603-08801"></a>
+<!-- stage3-record: {"id": "2603.08801", "scope": "Adjacent", "section": 6} -->
+
+#### Large Language Model-Assisted Superconducting Qubit Experiments
+
+`2026-03-09` · University of Chicago; Aalto University; Rensselaer Polytechnic Institute; Applied Materials
+
+[完整书目](../README.zh-CN.md#paper-2603-08801) · [论文](https://arxiv.org/abs/2603.08801) · [代码](https://github.com/clelandlab/HAL)
+
+通过 LLM 编写的 Python，依据实验室知识开展超导量子比特实验。
+
+**具体方法：** 规划角色写出自然语言步骤，开发角色编写 Python，在沙箱运行时中操作 QICK RFSoC 板卡、矢量网络分析仪与电压源。检索到的知识文档提供实验流程，每次运行向规划角色返回简短文本信号和数据文件路径。
+
+**验证：** 谐振器表征经 5 轮，先找到 4 个，人工扩大频率范围后找到 8 个；系统复现了读出引起的泄漏基准（L = 0.124 ± 0.017）。知识文档由人编写，步骤由人批准；模型不查看原始数据或图表。
+
+<a id="work-2602-15294"></a>
+<!-- stage3-record: {"id": "2602.15294", "scope": "Core", "section": 6} -->
+
+#### EAA: Automating materials characterization with vision language model agents
+
+`2026-02-17` · Argonne National Laboratory; Northwestern University
+
+[完整书目](../README.zh-CN.md#paper-2602-15294) · [论文](https://arxiv.org/abs/2602.15294) · [代码](https://github.com/AdvancedPhotonSource/EAA)
+
+用视觉语言模型 Agent 自动化 X 射线显微实验，Agent 会读取返回的图像。
+
+**具体方法：** Agent 的动作是分派给 Python 工具类的调用，这些工具也可通过 MCP 提供或调用；编程子 Agent 编写用于实验控制和数据处理的 Python 与 Bash。生成图像的工具把图片返回给模型，参数越界会抛出异常供 Agent 处理。
+
+**验证：** 在先进光子源（APS）光束线上演示：依据线扫描与拟合宽度在 8 个位置间完成波带片聚焦、按自然语言描述搜索特征，并在 2-ID-D 交互采集 XRF 数据。Python 与 Bash 调用默认需人工批准，仪器参数受硬性范围检查保护。
+
+<a id="work-2601-05356"></a>
+<!-- stage3-record: {"id": "2601.05356", "scope": "Adjacent", "section": 6} -->
+
+#### PRISM: Protocol Refinement through Intelligent Simulation Modeling
+
+`2026-01-08` · Argonne National Laboratory; University of Chicago
+
+[完整书目](../README.zh-CN.md#paper-2601-05356) · [论文](https://arxiv.org/abs/2601.05356) · [论文](https://pubs.rsc.org/en/content/articlelanding/2026/dd/d6dd00004e) · [代码](https://github.com/ramanathanlab/PRISM)
+
+机器人执行前，先在数字孪生中验证 LLM 生成的实验协议。
+
+**具体方法：** Agent 从网络收集实验流程，经规划、评审与校验转成结构化步骤，再输出 Argonne MADSci 格式的协议。含仪器 CAD 模型的 NVIDIA Omniverse 数字孪生返回碰撞、够不到、缺少板等文本报错，模型据此修订，直到协议在物理上可行。
+
+**验证：** Luna qPCR 协议在 Opentrons OT-2、PF400 机械臂、封板／撕膜机与读板仪组成的平台上完整运行，扩增信号明显；Cell Painting 仅在仿真中验证。孪生不模拟液体与生物过程，曾漏检缺少撕膜指令，最终协议由研究者审阅。
 
 <a id="work-2509-25651"></a>
 <!-- stage3-record: {"id": "2509.25651", "scope": "Adjacent", "section": 6} -->
@@ -5606,6 +5681,81 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 **验证：** 实验来自数值模拟，不是实机机器人实验或现实新规律发现。
 
+<a id="work-2507-01485"></a>
+<!-- stage3-record: {"id": "2507.01485", "scope": "Core", "section": 6} -->
+
+#### BioMARS: A Multi-Agent Robotic System for Autonomous Biological Experiments
+
+`2025-07-02` · University of Science and Technology of China; Suzhou Institute for Advanced Research, USTC
+
+[完整书目](../README.zh-CN.md#paper-2507-01485) · [论文](https://arxiv.org/abs/2507.01485) · [代码](https://github.com/AlexandreQ27/BioMARS)
+
+协调生物学家、技术员与检查员三个 Agent，在双臂机器人上开展细胞培养实验。
+
+**具体方法：** 生物学家 Agent 借助检索起草协议，技术员 Agent 将其转成 `add_liquid`、`centrifuge` 等机器人原语组成的伪代码，经检查后以 ROS 动作分派执行。检查员 Agent 用 ViT 筛查相机关键帧，再请 VLM 确认异常；确认出错后中止动作，流程回到规划与代码生成。
+
+**验证：** 300 个步骤上指令匹配率 96.4%；关键帧检测 F1 为 88.7%，VLM 核验精确率 95.7%。HeLa、Y79、DC2.4 细胞传代的存活率与人工相当，HeLa 与 Y79 的变异系数低 12–18%。RPE 分化优化基于公开数据集而非新实验，移液体积与离心参数仍需偶尔人工监督。
+
+<a id="work-2505-22634"></a>
+<!-- stage3-record: {"id": "2505.22634", "scope": "Adjacent", "section": 6} -->
+
+#### LabUtopia: High-Fidelity Simulation and Hierarchical Benchmark for Scientific Embodied Agents
+
+`2025-05-28` · Shanghai AI Laboratory; Peking University; University of Oxford; The Chinese University of Hong Kong; Harbin Institute of Technology; University of Science and Technology of China
+
+[完整书目](../README.zh-CN.md#paper-2505-22634) · [论文](https://arxiv.org/abs/2505.22634) · [项目页](https://rui-li023.github.io/labutopia-site) · [代码](https://github.com/Rui-li023/LabUtopia) · [数据集](https://huggingface.co/datasets/Ruinwalker/LabUtopia-Dataset)
+
+为科学具身 Agent 提供实验室仿真器与分层基准。
+
+**具体方法：** LabSim 基于 Isaac Sim，加入化学引擎（以 PubChem 的 200 种物质数据库结合 GPT-4o 推理预测反应结果）与 GPU 位置动力学流体。LabScene 程序化生成 100 多个实验室场景，LabBench 覆盖从原子操作到长时序移动操作的五个层级；专家示范由脚本规划器生成。
+
+**验证：** 评测 ACT、Diffusion Policy 与 π0，如倒液 67.5%／50.0%、加热烧杯 86.7%／25.0%（ACT／DP）。基准完全在仿真中运行，未评测 LLM 规划器，策略对新形状物体几乎没有泛化。
+
+<a id="work-2505-14030"></a>
+<!-- stage3-record: {"id": "2505.14030", "scope": "Adjacent", "section": 6} -->
+
+#### AutoBio: A Simulation and Benchmark for Robotic Automation in Digital Biology Laboratory
+
+`2025-05-20` · The University of Hong Kong; Tsinghua University; Shanghai Jiao Tong University; TeleAI; Shanghai Intelligent Computing Center
+
+[完整书目](../README.zh-CN.md#paper-2505-14030) · [论文](https://arxiv.org/abs/2505.14030) · [代码](https://github.com/autobio-bench/AutoBio) · [数据集](https://huggingface.co/autobio-bench)
+
+在扩展的 MuJoCo 中评测机器人策略完成高精度生物实验室任务。
+
+**具体方法：** AutoBio 增加螺纹、卡位、偏心混匀与准静态液体插件，用 3D 高斯泼溅数字化仪器，并提供 Blender Cycles 渲染与可交互的仪器界面。16 项任务分三个难度，示范由脚本化逆运动学与轨迹优化生成。
+
+**验证：** 每项任务 100 条示范时，π0 与 RDT 关闭 PCR 仪盖成功率为 99.7% 与 100%，但 π0 拧开离心管盖仅 21.3%，装载离心机转子仅 14.7%。没有真机实验，仿真物理与渲染可能漏掉真实实验室的噪声。
+
+<a id="work-2505-17985"></a>
+<!-- stage3-record: {"id": "2505.17985", "scope": "Adjacent", "section": 6} -->
+
+#### AI-Driven Robotics for Optics
+
+`2025-05-07` · Massachusetts Institute of Technology; NSF Institute for Artificial Intelligence and Fundamental Interactions
+
+[完整书目](../README.zh-CN.md#paper-2505-17985) · [论文](https://arxiv.org/abs/2505.17985) · [代码](https://github.com/sachin4594/OptSetGen)
+
+用 LLM 设计自由空间光路，再由 LLM 编程的机械臂搭建。
+
+**具体方法：** 经 QuanTA 微调的 LLaMA 3.1 8B 输出元件位置与朝向，布局校验失败会返回给它继续修改。另一个 LLM 在初始化、视觉抓取、放置与归位等封装函数之上编写 Python 主程序，驱动 xArm7；双目相机、深度传感与 ArUco 标记定位元件，带相机的工具辅助对准。
+
+**验证：** 摆放精度约 ±0.5 mm、±0.2°，230 次测量中光束角度波动约 ±0.05°，扩束调节约 10 轮达到 f2/f1 = 2.08。摆放复检与梯度对准是固定程序；论文未描述 LLM 根据相机图像修改代码。
+
+<a id="work-2501-10385"></a>
+<!-- stage3-record: {"id": "2501.10385", "scope": "Adjacent", "section": 6} -->
+
+#### Evaluating large language model agents for automation of atomic force microscopy
+
+`2024-12-18` · Indian Institute of Technology Delhi; Aalborg University; Leibniz Institute of Photonic Technology; University of Jena
+
+[完整书目](../README.zh-CN.md#paper-2501-10385) · [论文](https://www.nature.com/articles/s41467-025-64105-7) · [论文](https://arxiv.org/abs/2501.10385) · [代码](https://github.com/M3RG-IITD/AILA)
+
+评测编写 Python 操作真实原子力显微镜的 LLM Agent。
+
+**具体方法：** AILA 的规划 Agent 把任务分给 AFM 操作 Agent 与数据处理 Agent：前者检索软件文档并为 Nanosurf API 编写 Python，后者调用 PID 优化与图像分析工具。代码报错返回操作 Agent 重试；AFMBench 的 100 项任务都要求在仪器上实际执行。
+
+**验证：** GPT-4o 在文档类任务上成功率 88.3%，但总错误率 29%，以代码生成错误为主；作者还观察到“梦游”，即 Agent 执行未被要求、可能有风险的操作。实验使用 Nanosurf DriveAFM，并在研究者监督下进行。
+
 <a id="work-chemagents"></a>
 <!-- stage3-record: {"id": "chemagents", "scope": "Adjacent", "section": 6} -->
 
@@ -5623,6 +5773,36 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 
 **关联：** [1. 具身 Harness](#section-1)
 
+<a id="work-2401-06949"></a>
+<!-- stage3-record: {"id": "2401.06949", "scope": "Adjacent", "section": 6} -->
+
+#### ORGANA: A Robotic Assistant for Automated Chemistry Experimentation and Characterization
+
+`2024-01-13` · University of Toronto; Vector Institute; Acceleration Consortium; NVIDIA; Georgia Institute of Technology
+
+[完整书目](../README.zh-CN.md#paper-2401-06949) · [论文](https://arxiv.org/abs/2401.06949) · [项目页](https://ac-rad.github.io/organa/) · [代码](https://github.com/ac-rad/organa)
+
+以 LLM 驱动的机器人协助化学家规划、执行并表征化学实验。
+
+**具体方法：** GPT-4 负责对话与推理以明确目标，CLAIRify 生成 XDL 并转成 PDDL 规划问题，机器人用视觉识别容器、测量浊度。分析模块把测得的 pH 与氧化还原值同预期比较，不一致时告知用户。
+
+**验证：** 配备实验仪器的 Franka Panda 完成溶解度、重结晶、pH 与电化学实验；3 次电化学运行斜率为 −61.0 至 −61.8 mV/pH，并行执行把每个缓冲液测试从 1,346 s 缩短到 1,071 s。8 位化学家的用户研究中节省 80.3% 时间；系统没有在线重规划。
+
+<a id="work-2304-10267"></a>
+<!-- stage3-record: {"id": "2304.10267", "scope": "Adjacent", "section": 6} -->
+
+#### LLMs can generate robotic scripts from goal-oriented instructions in biological laboratory automation
+
+`2023-04-18` · Laboratory Automation Supplier's Association; Nagoya University; RIKEN Center for Biosystems Dynamics Research; Keio University; Osaka University; University of Tsukuba
+
+[完整书目](../README.zh-CN.md#paper-2304-10267) · [论文](https://arxiv.org/abs/2304.10267) · [代码](https://github.com/labauto/Inagaki_2023_GPT4OT2)
+
+用 GPT-4 生成 Opentrons OT-2 脚本，并根据模拟器报错修复。
+
+**具体方法：** 流程从模型输出中提取 Python 脚本，用 Opentrons 模拟器运行，把报错信息发回模型修正，最多 5 轮。提示分两种：给出确切器材名称的分步流程，以及“更换细胞培养基”这类目标式请求。
+
+**验证：** GPT-4 在 5 轮内，分步指令 22 次中 21 次成功，目标式指令 17 次中 12 次成功；论文中的 gpt-3-turbo 基线分别为 5/10 与 2/12。成功指脚本在模拟器中运行完成，论文未在实体 OT-2 上执行。
+
 <a id="work-2304-05332"></a>
 <!-- stage3-record: {"id": "2304.05332", "scope": "Adjacent", "section": 6} -->
 
@@ -5637,6 +5817,21 @@ CLI 与 Agent Skills 支持快速构建和检查 MuJoCo 场景。mwb 接口统�
 **具体方法：** 让语言模型调用文献、Python 和实验设备接口，生成并执行化学实验程序，在人类配置的实验系统中开展自动研究。
 
 **验证：** 真实化学实验依赖人工配置设备；简化发布代码不等于完整实验系统。
+
+<a id="work-2303-14100"></a>
+<!-- stage3-record: {"id": "2303.14100", "scope": "Adjacent", "section": 6} -->
+
+#### Errors are Useful Prompts: Instruction Guided Task Programming with Verifier-Assisted Iterative Prompting
+
+`2023-03-24` · University of Toronto; Vector Institute; University of Toronto Schools; NVIDIA
+
+[完整书目](../README.zh-CN.md#paper-2303-14100) · [论文](https://arxiv.org/abs/2303.14100) · [项目页](https://ac-rad.github.io/clairify/) · [代码](https://github.com/ac-rad/xdl-generation)
+
+用带校验器的迭代提示，生成化学机器人的 XDL 实验计划（CLAIRify）。
+
+**具体方法：** GPT-3 模型在提示中获得 XDL 语言说明，根据自然语言指令编写 XDL；校验器检查 XML 结构、允许的动作、必需属性及可用硬件与试剂，报错附加到下一轮提示，最多 10 轮。合法计划经任务与运动规划转成机器人轨迹。
+
+**验证：** Chem-RnD 108 条中 105 条、Chem-EDU 40 条全部生成计划（SynthReader 为 92/108、0/40），专家在 108 条中偏好 75 条。反馈只有文本；在配有电子秤和搅拌器的 Franka Panda 上演示了部分教学实验。
 
 <a id="work-xray-scientist"></a>
 <!-- stage3-record: {"id": "xray-scientist", "scope": "Adjacent", "section": 6} -->

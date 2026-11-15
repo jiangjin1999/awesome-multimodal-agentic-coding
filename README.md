@@ -13,7 +13,7 @@
 
 A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to the physical world.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-651-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--15-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-663-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--15-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -62,8 +62,8 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [3.3 Simulator quality evaluation](#s3-3) (29)
   - [3.4 Data](#s3-4) (14)
   - [3.5 Training and capability improvement](#s3-5) (73)
-  - [3.6 Physical applications and experiments](#s3-6) (37)
-    - [Scientific experiments (AI4Science)](#s3-6-experiments) (15)
+  - [3.6 Physical applications and experiments](#s3-6) (49)
+    - [Scientific experiments (AI4Science)](#s3-6-experiments) (27)
   - [Simulation engines at a glance](#s3-engines)
 - [Surveys and related collections](#related)
 - [Contact and contributing](#contact) · [Citation](#citation)
@@ -2439,7 +2439,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 - <a id="paper-2306-03310"></a>`2023.06` **[LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning](https://arxiv.org/abs/2306.03310)** [[Project page]](https://libero-project.github.io)
   > Provides resettable manipulation tasks, demonstrations and shared interfaces for studying lifelong transfer.
 
-#### Skills
+#### Skills, bridges and runtime resources
 
 <!-- mmac-record: {"id": "reading:kanishka-rao-google-gemini-4-argon-for-robotics", "scope": "Reading", "primary": "3.1", "stage": 3, "type": "reading"} -->
 
@@ -3363,7 +3363,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 - <a id="paper-autoresearch-robotics"></a>**[autoresearch-robotics](https://github.com/jellyheadandrew/autoresearch-robotics)**
   > Provides a community robot-RL development example.
 
-#### Experience
+#### Experience, memory and skill learning
 
 <!-- mmac-record: {"id": "reading:lance-martin-anthropic-the-components-of-agent-memory", "scope": "Reading", "primary": "3.5", "stage": 3, "type": "reading"} -->
 
@@ -3742,6 +3742,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 - <a id="paper-demo-nvidia-factory-operations-blueprint"></a>**[NVIDIA — Factory Operations Blueprint](https://developer.nvidia.com/blog/how-nvidia-factory-operations-blueprint-coordinates-ai-agents-to-investigate-production-issues/)**
   > A manager coordinates visual inspection, time-series analysis and fleet specialists; transport is demonstrated in Isaac Sim/ROS 2, while physical integration, approval and human rework remain deployment steps.
 
+<a id="paper-demo-google-deepmind-agentic-cheminformatics"></a>
 <a id="s3-6-experiments"></a>
 
 #### Scientific experiments (AI4Science)
@@ -3791,10 +3792,37 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 - <a id="paper-2607-23045"></a>`2026.07` **[Stress-testing large language model agents in a robotic chemistry laboratory](https://arxiv.org/abs/2607.23045)**
   > Tests coding agents on laboratory workflows.
 
+<!-- mmac-record: {"id": "2606.27231", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2606-27231"></a>`2026.06` **[A hardware-safety-gated system for LLM-written native ARTIQ control code on a trapped-ion platform](https://arxiv.org/abs/2606.27231)** [[Code]](https://gitlab.oit.duke.edu/dw346/artiq_mcp)
+  > An LLM agent writes native ARTIQ Python for a trapped-ion experiment through MCP; a safety gate that uses no LLM checks each script in simulation against device bounds before it reaches hardware.<br>
+  > 🖥️ **Sim** dax.sim
+
+<!-- mmac-record: {"id": "2606.31763", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2606-31763"></a>`2026.06` **[A Self-Evolving Agentic System for Automated Generation and Execution of Biological Protocols](https://arxiv.org/abs/2606.31763)**
+  > Turns natural-language requests into SOPs and device code for liquid-handling robots, then refines protocols from wet-lab results such as colony PCR and sequencing.
+
 <!-- mmac-record: {"id": "bespoke-instrument", "scope": "Resource", "primary": "3.6", "stage": 3, "type": "resource"} -->
 
 - <a id="paper-bespoke-instrument"></a>`2026.05` **[AI-designed and AI-implemented control systems for bespoke scientific instrumentation: application to scanning microscopy](https://pubs.rsc.org/en/content/articlelanding/2026/dd/d6dd00177g)** [[Paper]](https://www.repository.cam.ac.uk/items/cb2e6fef-94c4-4fe9-903a-aaa198da8f4f) [[Code]](https://github.com/Okarl96/shem_gui)
   > Develops instrument-control code with human oversight.
+
+<!-- mmac-record: {"id": "2603.08801", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2603-08801"></a>`2026.03` **[Large Language Model-Assisted Superconducting Qubit Experiments](https://arxiv.org/abs/2603.08801)** [[Code]](https://github.com/clelandlab/HAL)
+  > A planner and a developer LLM write and run Python on superconducting-qubit control hardware, guided by laboratory knowledge documents.
+
+<!-- mmac-record: {"id": "2602.15294", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2602-15294"></a>`2026.02` **[EAA: Automating materials characterization with vision language model agents](https://arxiv.org/abs/2602.15294)** [[Code]](https://github.com/AdvancedPhotonSource/EAA)
+  > Vision-language-model agents call instrument tools and write Python to run X-ray microscopy at the Advanced Photon Source, reading returned images to choose the next action.
+
+<!-- mmac-record: {"id": "2601.05356", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2601-05356"></a>`2026.01` **[PRISM: Protocol Refinement through Intelligent Simulation Modeling](https://arxiv.org/abs/2601.05356)** [[Code]](https://github.com/ramanathanlab/PRISM) [[Paper]](https://pubs.rsc.org/en/content/articlelanding/2026/dd/d6dd00004e)
+  > Agents turn web-sourced procedures into robot protocols, test them in an NVIDIA Omniverse digital twin and revise them from simulator errors before real instruments run them.<br>
+  > 🖥️ **Sim** NVIDIA Omniverse · 🦾 **Real** Opentrons OT-2, PF400
 
 <!-- mmac-record: {"id": "2509.24978", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
@@ -3806,10 +3834,44 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 - <a id="paper-2509-25651"></a>`2025.09` **[AutoLabs: cognitive multi-agent systems with self-correction for autonomous chemical experimentation](https://arxiv.org/abs/2509.25651)** [[Code]](https://github.com/pnnl/autolabs)
   > Produces checked, hardware-ready laboratory protocols.
 
+<!-- mmac-record: {"id": "2507.01485", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2507-01485"></a>`2025.07` **[BioMARS: A Multi-Agent Robotic System for Autonomous Biological Experiments](https://arxiv.org/abs/2507.01485)** [[Code]](https://github.com/AlexandreQ27/BioMARS)
+  > A biologist agent drafts protocols, a technician agent compiles them into robot primitive code, and a vision inspector checks execution and triggers replanning on errors.
+
+<!-- mmac-record: {"id": "2505.17985", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2505-17985"></a>`2025.05` **[AI-Driven Robotics for Optics](https://arxiv.org/abs/2505.17985)** [[Code]](https://github.com/sachin4594/OptSetGen)
+  > A fine-tuned LLM designs free-space optical setups, and a second LLM writes Python that drives an xArm7 to place components, with camera checks and beam-based alignment.<br>
+  > 🦾 **Real** xArm7
+
+<!-- mmac-record: {"id": "2505.14030", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2505-14030"></a>`2025.05` **[AutoBio: A Simulation and Benchmark for Robotic Automation in Digital Biology Laboratory](https://arxiv.org/abs/2505.14030)** [[Code]](https://github.com/autobio-bench/AutoBio) [[Dataset]](https://huggingface.co/autobio-bench)
+  > Extends MuJoCo with screw threads, detents and a quasi-static liquid model to benchmark robots on 16 biology-laboratory tasks.<br>
+  > 🖥️ **Sim** MuJoCo (UR5e, Aloha)
+
+<!-- mmac-record: {"id": "2505.22634", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2505-22634"></a>`2025.05` **[LabUtopia: High-Fidelity Simulation and Hierarchical Benchmark for Scientific Embodied Agents](https://arxiv.org/abs/2505.22634)** [[Project page]](https://rui-li023.github.io/labutopia-site) [[Code]](https://github.com/Rui-li023/LabUtopia) [[Dataset]](https://huggingface.co/datasets/Ruinwalker/LabUtopia-Dataset)
+  > Builds an Isaac Sim laboratory simulator with a chemistry engine, procedural lab scenes and a five-level benchmark for scientific embodied agents.<br>
+  > 🖥️ **Sim** Isaac Sim (Franka Panda, Fetch, Clearpath Ridgeback)
+
+<!-- mmac-record: {"id": "2501.10385", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2501-10385"></a>`2024.12` **[Evaluating large language model agents for automation of atomic force microscopy](https://www.nature.com/articles/s41467-025-64105-7)** [[Paper]](https://arxiv.org/abs/2501.10385) [[Code]](https://github.com/M3RG-IITD/AILA)
+  > AILA, a multi-agent LLM framework, writes Python against a Nanosurf AFM API to run real microscopy tasks; AFMBench provides 100 tasks for evaluation.
+
 <!-- mmac-record: {"id": "chemagents", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-chemagents"></a>`2024.07` **[A Multiagent-Driven Robotic AI Chemist Enabling Autonomous Chemical Research On Demand](https://doi.org/10.1021/jacs.4c17738)**
   > Coordinates robot chemistry through generated API programs.
+
+<!-- mmac-record: {"id": "2401.06949", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2401-06949"></a>`2024.01` **[ORGANA: A Robotic Assistant for Automated Chemistry Experimentation and Characterization](https://arxiv.org/abs/2401.06949)** [[Project page]](https://ac-rad.github.io/organa/) [[Code]](https://github.com/ac-rad/organa)
+  > Talks with chemists to fix experiment goals, plans robot procedures through CLAIRify-generated XDL, and checks measured results against expectations.<br>
+  > 🦾 **Real** Franka Panda
 
 <!-- mmac-record: {"id": "2304.05332", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
@@ -3817,19 +3879,26 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
   > Connects language reasoning to automated chemistry.<br>
   > 🦾 **Real** Opentrons OT-2
 
+<!-- mmac-record: {"id": "2304.10267", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2304-10267"></a>`2023.04` **[LLMs can generate robotic scripts from goal-oriented instructions in biological laboratory automation](https://arxiv.org/abs/2304.10267)** [[Code]](https://github.com/labauto/Inagaki_2023_GPT4OT2)
+  > GPT-4 writes Opentrons OT-2 Python scripts from step-by-step or goal-oriented instructions and repairs them from Opentrons simulator errors.<br>
+  > 🖥️ **Sim** Opentrons simulator (Opentrons OT-2)
+
+<!-- mmac-record: {"id": "2303.14100", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2303-14100"></a>`2023.03` **[Errors are Useful Prompts: Instruction Guided Task Programming with Verifier-Assisted Iterative Prompting](https://arxiv.org/abs/2303.14100)** [[Project page]](https://ac-rad.github.io/clairify/) [[Code]](https://github.com/ac-rad/xdl-generation)
+  > CLAIRify generates XDL chemistry plans with an LLM, feeds verifier errors back until the plan is valid, then executes it on a robot arm through task and motion planning.<br>
+  > 🦾 **Real** Franka Panda
+
 <!-- mmac-record: {"id": "xray-scientist", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-xray-scientist"></a>**[An agentic artificially intelligent X-ray scientist](https://www.nature.com/articles/s42256-026-01261-5)** [[Code]](https://github.com/zhantaochen/llm4xray)
   > Connects an experimental agent to X-ray instruments.
 
-<!-- mmac-record: {"id": "demo:google-deepmind-agentic-cheminformatics", "scope": "Demo", "primary": "3.6", "stage": 3, "type": "demo"} -->
-
-- <a id="paper-demo-google-deepmind-agentic-cheminformatics"></a>**[Google DeepMind — Agentic cheminformatics](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/)**
-  > Antigravity uses RDKit and potency models to propose macrocycles; a scientist inspects the plots and predictions, and synthesis and experimental validation remain necessary.
-
 *See also:* [Lab2Sim](#paper-2611-02928) · [LabWorld](#paper-2610-36592) · [ChemAutoAgent](#paper-chemautoagent) · [LabRobFail](#paper-2607-23704) · [Safe Lab Agents](#paper-safe-lab-agents)
 
-#### Physical design
+#### Physical design, fabrication and validation
 
 <!-- mmac-record: {"id": "2611.08175", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 

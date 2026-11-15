@@ -3124,17 +3124,24 @@
 
 ### 3.4 データ
 
-出所で Real、Sim、Real+Sim（両方）の3層に分け、さらに1件のデータに何が含まれるかで分けます。
-
-| 出所 | 種類 | 映像の出所 | 軌跡の出所 | 作品 |
-|---|---|---|---|---|
-| Real | 動画 + ロボット軌跡 | 実機で撮影 | 人の遠隔操作、またはエージェントによる実機操作 | [DROID](#paper-2403-12945) · [Manipulate-Anything](#paper-2406-18915) |
-| Real | 動画 + 手の軌跡 | 人の一人称視点動画 | 動画から手の動きを注釈 | [Open-HumanWAM](#paper-2611-06817) |
-| Sim | 動画 + ロボット軌跡 | シミュレーションでレンダリング | プランナー、ソルバー、またはエージェントが書いたプログラム | [Scaling Up and Distilling Down](#paper-2307-14535) · [GenSim2](#paper-2410-03645) · [RoboTwin 2.0](#paper-2506-18088) · [EmbodiedSWE](#paper-2609-27308) · [EmbodiedSmith](#paper-2610-07969) ↻ · [CoDA](#paper-2610-22362) ↻ |
-| Sim | 動画 + ロボット軌跡 + 失敗ラベル | シミュレーションでレンダリング | 意図的に注入した失敗 | [LabRobFail](#paper-2607-23704) |
-| Real+Sim | 動画 + ロボット軌跡 | 実際の人の動画で、動画生成モデルが人をロボットに描き替える | 描き替えた動画から推定 | [RoboTryOn](#paper-2611-05163) |
-| Real+Sim | 環境 + 動画 + ロボット軌跡 | 実際の動画から複製したシミュレーション環境でレンダリングし、実写の見た目に変える | 複製した環境の中で求解 | [DexAgent](#paper-2609-35318) · [PyRUA-DataFarm](#paper-2611-05320) |
-| Real+Sim | 環境 + 動画 | 実際の動画の物理過程をシミュレーションプログラムに書き直し、レンダリング | なし | [PhysOPSD](#paper-2611-12411) |
+<table>
+<thead>
+<tr><th>出所</th><th>種類</th><th>映像の出所</th><th>軌跡の出所</th><th>作品</th></tr>
+</thead>
+<tbody>
+<tr><td rowspan="2" align="center"><b>Real</b></td><td nowrap>動画 + 軌跡</td><td>実機で撮影</td><td>人の遠隔操作、またはエージェントによる実機操作</td><td><a href="#paper-2403-12945">DROID</a> · <a href="#paper-2406-18915">Manipulate-Anything</a></td></tr>
+<tr><td nowrap>動画 + 手の軌跡</td><td>人の一人称視点動画</td><td>動画から手の動きを注釈</td><td><a href="#paper-2611-06817">Open-HumanWAM</a></td></tr>
+</tbody>
+<tbody>
+<tr><td rowspan="2" align="center"><b>Sim</b></td><td nowrap>動画 + 軌跡</td><td rowspan="2">シミュレーションでレンダリング</td><td>プランナー、ソルバー、またはエージェントが書いたプログラム</td><td><a href="#paper-2307-14535">Scaling Up and Distilling Down</a> · <a href="#paper-2410-03645">GenSim2</a> · <a href="#paper-2506-18088">RoboTwin 2.0</a> · <a href="#paper-2609-27308">EmbodiedSWE</a> · <a href="#paper-2610-07969">EmbodiedSmith</a> ↻ · <a href="#paper-2610-22362">CoDA</a> ↻</td></tr>
+<tr><td nowrap>動画 + 軌跡<br>+ 失敗ラベル</td><td>意図的に注入した失敗</td><td><a href="#paper-2607-23704">LabRobFail</a></td></tr>
+</tbody>
+<tbody>
+<tr><td rowspan="3" align="center"><b>Real+Sim</b></td><td nowrap>動画 + 軌跡</td><td>実際の人の動画で、動画生成モデルが人をロボットに描き替える</td><td>描き替えた動画から推定</td><td><a href="#paper-2611-05163">RoboTryOn</a></td></tr>
+<tr><td nowrap>環境 + 動画<br>+ 軌跡</td><td>実際の動画から複製したシミュレーション環境でレンダリングし、実写の見た目に変える</td><td>複製した環境の中で求解</td><td><a href="#paper-2609-35318">DexAgent</a> · <a href="#paper-2611-05320">PyRUA-DataFarm</a></td></tr>
+<tr><td nowrap>環境 + 動画</td><td>実際の動画の物理過程をシミュレーションプログラムに書き直し、レンダリング</td><td>なし</td><td><a href="#paper-2611-12411">PhysOPSD</a></td></tr>
+</tbody>
+</table>
 
 ↻ は閉ループ（生成器が学習のフィードバックから自らを書き換える）を示します。
 

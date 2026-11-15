@@ -1206,45 +1206,66 @@ sections:
     - mixed-data
     guide:
       en: |-
-        Grouped by source (Real, Sim, or Real+Sim for both), then by what one sample contains.
-
-        | Source | Type | Frames from | Trajectory from | Works |
-        |---|---|---|---|---|
-        | Real | Video + robot trajectory | Filmed on the real robot | A person teleoperating, or an agent operating the real robot | [DROID](#paper-2403-12945) · [Manipulate-Anything](#paper-2406-18915) |
-        | Real | Video + hand trajectory | First-person videos of people | Hand motion annotated from the video | [Open-HumanWAM](#paper-2611-06817) |
-        | Sim | Video + robot trajectory | Rendered in simulation | Planners, solvers, or programs written by an agent | [Scaling Up and Distilling Down](#paper-2307-14535) · [GenSim2](#paper-2410-03645) · [RoboTwin 2.0](#paper-2506-18088) · [EmbodiedSWE](#paper-2609-27308) · [EmbodiedSmith](#paper-2610-07969) ↻ · [CoDA](#paper-2610-22362) ↻ |
-        | Sim | Video + robot trajectory + failure labels | Rendered in simulation | Failures injected on purpose | [LabRobFail](#paper-2607-23704) |
-        | Real+Sim | Video + robot trajectory | Real human videos, with a video model redrawing the person as a robot | Inferred from the redrawn video | [RoboTryOn](#paper-2611-05163) |
-        | Real+Sim | Environment + video + robot trajectory | A simulation environment replicated from real video, rendered and then given a real appearance | Solved in the replicated environment | [DexAgent](#paper-2609-35318) · [PyRUA-DataFarm](#paper-2611-05320) |
-        | Real+Sim | Environment + video | The physics in a real video, rewritten as a simulation program and rendered | None | [PhysOPSD](#paper-2611-12411) |
+        <table>
+        <thead>
+        <tr><th>Source</th><th>Type</th><th>Frames from</th><th>Trajectory from</th><th>Works</th></tr>
+        </thead>
+        <tbody>
+        <tr><td rowspan="2" align="center"><b>Real</b></td><td nowrap>Video + trajectory</td><td>Filmed on the real robot</td><td>A person teleoperating, or an agent operating the real robot</td><td><a href="#paper-2403-12945">DROID</a> · <a href="#paper-2406-18915">Manipulate-Anything</a></td></tr>
+        <tr><td nowrap>Video + hand trajectory</td><td>First-person videos of people</td><td>Hand motion annotated from the video</td><td><a href="#paper-2611-06817">Open-HumanWAM</a></td></tr>
+        </tbody>
+        <tbody>
+        <tr><td rowspan="2" align="center"><b>Sim</b></td><td nowrap>Video + trajectory</td><td rowspan="2">Rendered in simulation</td><td>Planners, solvers, or programs written by an agent</td><td><a href="#paper-2307-14535">Scaling Up and Distilling Down</a> · <a href="#paper-2410-03645">GenSim2</a> · <a href="#paper-2506-18088">RoboTwin 2.0</a> · <a href="#paper-2609-27308">EmbodiedSWE</a> · <a href="#paper-2610-07969">EmbodiedSmith</a> ↻ · <a href="#paper-2610-22362">CoDA</a> ↻</td></tr>
+        <tr><td nowrap>Video + trajectory<br>+ failure labels</td><td>Failures injected on purpose</td><td><a href="#paper-2607-23704">LabRobFail</a></td></tr>
+        </tbody>
+        <tbody>
+        <tr><td rowspan="3" align="center"><b>Real+Sim</b></td><td nowrap>Video + trajectory</td><td>Real human videos, with a video model redrawing the person as a robot</td><td>Inferred from the redrawn video</td><td><a href="#paper-2611-05163">RoboTryOn</a></td></tr>
+        <tr><td nowrap>Environment + video<br>+ trajectory</td><td>A simulation environment replicated from real video, rendered and then given a real appearance</td><td>Solved in the replicated environment</td><td><a href="#paper-2609-35318">DexAgent</a> · <a href="#paper-2611-05320">PyRUA-DataFarm</a></td></tr>
+        <tr><td nowrap>Environment + video</td><td>The physics in a real video, rewritten as a simulation program and rendered</td><td>None</td><td><a href="#paper-2611-12411">PhysOPSD</a></td></tr>
+        </tbody>
+        </table>
 
         ↻ marks a closed loop: the generator rewrites itself from training feedback.
       zh: |-
-        按来源分为 Real、Sim、Real+Sim（两者都有）三层，再按一条数据里有什么细分。
-
-        | 来源 | 类型 | 画面从哪来 | 轨迹从哪来 | 作品 |
-        |---|---|---|---|---|
-        | Real | 视频 + 机器人轨迹 | 真机拍摄 | 人遥操作，或 Agent 操作真机 | [DROID](#paper-2403-12945) · [Manipulate-Anything](#paper-2406-18915) |
-        | Real | 视频 + 人手轨迹 | 人的第一视角视频 | 从视频中标注手部运动 | [Open-HumanWAM](#paper-2611-06817) |
-        | Sim | 视频 + 机器人轨迹 | 仿真渲染 | 规划器、求解器，或 Agent 写的程序 | [Scaling Up and Distilling Down](#paper-2307-14535) · [GenSim2](#paper-2410-03645) · [RoboTwin 2.0](#paper-2506-18088) · [EmbodiedSWE](#paper-2609-27308) · [EmbodiedSmith](#paper-2610-07969) ↻ · [CoDA](#paper-2610-22362) ↻ |
-        | Sim | 视频 + 机器人轨迹 + 失败标签 | 仿真渲染 | 故意注入失败 | [LabRobFail](#paper-2607-23704) |
-        | Real+Sim | 视频 + 机器人轨迹 | 真实的人类视频，用视频模型把人改画成机器人 | 从改画后的视频推断 | [RoboTryOn](#paper-2611-05163) |
-        | Real+Sim | 环境 + 视频 + 机器人轨迹 | 照真实视频复刻仿真环境，渲染后改成真实外观 | 在复刻的环境里求解 | [DexAgent](#paper-2609-35318) · [PyRUA-DataFarm](#paper-2611-05320) |
-        | Real+Sim | 环境 + 视频 | 照真实视频把物理过程写成仿真程序，再渲染 | 无 | [PhysOPSD](#paper-2611-12411) |
+        <table>
+        <thead>
+        <tr><th>来源</th><th>类型</th><th>画面从哪来</th><th>轨迹从哪来</th><th>作品</th></tr>
+        </thead>
+        <tbody>
+        <tr><td rowspan="2" align="center"><b>Real</b></td><td nowrap>视频 + 轨迹</td><td>真机拍摄</td><td>人遥操作，或 Agent 操作真机</td><td><a href="#paper-2403-12945">DROID</a> · <a href="#paper-2406-18915">Manipulate-Anything</a></td></tr>
+        <tr><td nowrap>视频 + 人手轨迹</td><td>人的第一视角视频</td><td>从视频中标注手部运动</td><td><a href="#paper-2611-06817">Open-HumanWAM</a></td></tr>
+        </tbody>
+        <tbody>
+        <tr><td rowspan="2" align="center"><b>Sim</b></td><td nowrap>视频 + 轨迹</td><td rowspan="2">仿真渲染</td><td>规划器、求解器，或 Agent 写的程序</td><td><a href="#paper-2307-14535">Scaling Up and Distilling Down</a> · <a href="#paper-2410-03645">GenSim2</a> · <a href="#paper-2506-18088">RoboTwin 2.0</a> · <a href="#paper-2609-27308">EmbodiedSWE</a> · <a href="#paper-2610-07969">EmbodiedSmith</a> ↻ · <a href="#paper-2610-22362">CoDA</a> ↻</td></tr>
+        <tr><td nowrap>视频 + 轨迹<br>+ 失败标签</td><td>故意注入失败</td><td><a href="#paper-2607-23704">LabRobFail</a></td></tr>
+        </tbody>
+        <tbody>
+        <tr><td rowspan="3" align="center"><b>Real+Sim</b></td><td nowrap>视频 + 轨迹</td><td>真实的人类视频，用视频模型把人改画成机器人</td><td>从改画后的视频推断</td><td><a href="#paper-2611-05163">RoboTryOn</a></td></tr>
+        <tr><td nowrap>环境 + 视频<br>+ 轨迹</td><td>照真实视频复刻仿真环境，渲染后改成真实外观</td><td>在复刻的环境里求解</td><td><a href="#paper-2609-35318">DexAgent</a> · <a href="#paper-2611-05320">PyRUA-DataFarm</a></td></tr>
+        <tr><td nowrap>环境 + 视频</td><td>照真实视频把物理过程写成仿真程序，再渲染</td><td>无</td><td><a href="#paper-2611-12411">PhysOPSD</a></td></tr>
+        </tbody>
+        </table>
 
         ↻ 表示闭环：生成器根据训练反馈改写自己。
       ja: |-
-        出所で Real、Sim、Real+Sim（両方）の3層に分け、さらに1件のデータに何が含まれるかで分けます。
-
-        | 出所 | 種類 | 映像の出所 | 軌跡の出所 | 作品 |
-        |---|---|---|---|---|
-        | Real | 動画 + ロボット軌跡 | 実機で撮影 | 人の遠隔操作、またはエージェントによる実機操作 | [DROID](#paper-2403-12945) · [Manipulate-Anything](#paper-2406-18915) |
-        | Real | 動画 + 手の軌跡 | 人の一人称視点動画 | 動画から手の動きを注釈 | [Open-HumanWAM](#paper-2611-06817) |
-        | Sim | 動画 + ロボット軌跡 | シミュレーションでレンダリング | プランナー、ソルバー、またはエージェントが書いたプログラム | [Scaling Up and Distilling Down](#paper-2307-14535) · [GenSim2](#paper-2410-03645) · [RoboTwin 2.0](#paper-2506-18088) · [EmbodiedSWE](#paper-2609-27308) · [EmbodiedSmith](#paper-2610-07969) ↻ · [CoDA](#paper-2610-22362) ↻ |
-        | Sim | 動画 + ロボット軌跡 + 失敗ラベル | シミュレーションでレンダリング | 意図的に注入した失敗 | [LabRobFail](#paper-2607-23704) |
-        | Real+Sim | 動画 + ロボット軌跡 | 実際の人の動画で、動画生成モデルが人をロボットに描き替える | 描き替えた動画から推定 | [RoboTryOn](#paper-2611-05163) |
-        | Real+Sim | 環境 + 動画 + ロボット軌跡 | 実際の動画から複製したシミュレーション環境でレンダリングし、実写の見た目に変える | 複製した環境の中で求解 | [DexAgent](#paper-2609-35318) · [PyRUA-DataFarm](#paper-2611-05320) |
-        | Real+Sim | 環境 + 動画 | 実際の動画の物理過程をシミュレーションプログラムに書き直し、レンダリング | なし | [PhysOPSD](#paper-2611-12411) |
+        <table>
+        <thead>
+        <tr><th>出所</th><th>種類</th><th>映像の出所</th><th>軌跡の出所</th><th>作品</th></tr>
+        </thead>
+        <tbody>
+        <tr><td rowspan="2" align="center"><b>Real</b></td><td nowrap>動画 + 軌跡</td><td>実機で撮影</td><td>人の遠隔操作、またはエージェントによる実機操作</td><td><a href="#paper-2403-12945">DROID</a> · <a href="#paper-2406-18915">Manipulate-Anything</a></td></tr>
+        <tr><td nowrap>動画 + 手の軌跡</td><td>人の一人称視点動画</td><td>動画から手の動きを注釈</td><td><a href="#paper-2611-06817">Open-HumanWAM</a></td></tr>
+        </tbody>
+        <tbody>
+        <tr><td rowspan="2" align="center"><b>Sim</b></td><td nowrap>動画 + 軌跡</td><td rowspan="2">シミュレーションでレンダリング</td><td>プランナー、ソルバー、またはエージェントが書いたプログラム</td><td><a href="#paper-2307-14535">Scaling Up and Distilling Down</a> · <a href="#paper-2410-03645">GenSim2</a> · <a href="#paper-2506-18088">RoboTwin 2.0</a> · <a href="#paper-2609-27308">EmbodiedSWE</a> · <a href="#paper-2610-07969">EmbodiedSmith</a> ↻ · <a href="#paper-2610-22362">CoDA</a> ↻</td></tr>
+        <tr><td nowrap>動画 + 軌跡<br>+ 失敗ラベル</td><td>意図的に注入した失敗</td><td><a href="#paper-2607-23704">LabRobFail</a></td></tr>
+        </tbody>
+        <tbody>
+        <tr><td rowspan="3" align="center"><b>Real+Sim</b></td><td nowrap>動画 + 軌跡</td><td>実際の人の動画で、動画生成モデルが人をロボットに描き替える</td><td>描き替えた動画から推定</td><td><a href="#paper-2611-05163">RoboTryOn</a></td></tr>
+        <tr><td nowrap>環境 + 動画<br>+ 軌跡</td><td>実際の動画から複製したシミュレーション環境でレンダリングし、実写の見た目に変える</td><td>複製した環境の中で求解</td><td><a href="#paper-2609-35318">DexAgent</a> · <a href="#paper-2611-05320">PyRUA-DataFarm</a></td></tr>
+        <tr><td nowrap>環境 + 動画</td><td>実際の動画の物理過程をシミュレーションプログラムに書き直し、レンダリング</td><td>なし</td><td><a href="#paper-2611-12411">PhysOPSD</a></td></tr>
+        </tbody>
+        </table>
 
         ↻ は閉ループ（生成器が学習のフィードバックから自らを書き換える）を示します。
   '3.5':

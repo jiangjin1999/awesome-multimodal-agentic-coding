@@ -3121,17 +3121,24 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 ### 3.4 数据
 
-按来源分为 Real、Sim、Real+Sim（两者都有）三层，再按一条数据里有什么细分。
-
-| 来源 | 类型 | 画面从哪来 | 轨迹从哪来 | 作品 |
-|---|---|---|---|---|
-| Real | 视频 + 机器人轨迹 | 真机拍摄 | 人遥操作，或 Agent 操作真机 | [DROID](#paper-2403-12945) · [Manipulate-Anything](#paper-2406-18915) |
-| Real | 视频 + 人手轨迹 | 人的第一视角视频 | 从视频中标注手部运动 | [Open-HumanWAM](#paper-2611-06817) |
-| Sim | 视频 + 机器人轨迹 | 仿真渲染 | 规划器、求解器，或 Agent 写的程序 | [Scaling Up and Distilling Down](#paper-2307-14535) · [GenSim2](#paper-2410-03645) · [RoboTwin 2.0](#paper-2506-18088) · [EmbodiedSWE](#paper-2609-27308) · [EmbodiedSmith](#paper-2610-07969) ↻ · [CoDA](#paper-2610-22362) ↻ |
-| Sim | 视频 + 机器人轨迹 + 失败标签 | 仿真渲染 | 故意注入失败 | [LabRobFail](#paper-2607-23704) |
-| Real+Sim | 视频 + 机器人轨迹 | 真实的人类视频，用视频模型把人改画成机器人 | 从改画后的视频推断 | [RoboTryOn](#paper-2611-05163) |
-| Real+Sim | 环境 + 视频 + 机器人轨迹 | 照真实视频复刻仿真环境，渲染后改成真实外观 | 在复刻的环境里求解 | [DexAgent](#paper-2609-35318) · [PyRUA-DataFarm](#paper-2611-05320) |
-| Real+Sim | 环境 + 视频 | 照真实视频把物理过程写成仿真程序，再渲染 | 无 | [PhysOPSD](#paper-2611-12411) |
+<table>
+<thead>
+<tr><th>来源</th><th>类型</th><th>画面从哪来</th><th>轨迹从哪来</th><th>作品</th></tr>
+</thead>
+<tbody>
+<tr><td rowspan="2" align="center"><b>Real</b></td><td nowrap>视频 + 轨迹</td><td>真机拍摄</td><td>人遥操作，或 Agent 操作真机</td><td><a href="#paper-2403-12945">DROID</a> · <a href="#paper-2406-18915">Manipulate-Anything</a></td></tr>
+<tr><td nowrap>视频 + 人手轨迹</td><td>人的第一视角视频</td><td>从视频中标注手部运动</td><td><a href="#paper-2611-06817">Open-HumanWAM</a></td></tr>
+</tbody>
+<tbody>
+<tr><td rowspan="2" align="center"><b>Sim</b></td><td nowrap>视频 + 轨迹</td><td rowspan="2">仿真渲染</td><td>规划器、求解器，或 Agent 写的程序</td><td><a href="#paper-2307-14535">Scaling Up and Distilling Down</a> · <a href="#paper-2410-03645">GenSim2</a> · <a href="#paper-2506-18088">RoboTwin 2.0</a> · <a href="#paper-2609-27308">EmbodiedSWE</a> · <a href="#paper-2610-07969">EmbodiedSmith</a> ↻ · <a href="#paper-2610-22362">CoDA</a> ↻</td></tr>
+<tr><td nowrap>视频 + 轨迹<br>+ 失败标签</td><td>故意注入失败</td><td><a href="#paper-2607-23704">LabRobFail</a></td></tr>
+</tbody>
+<tbody>
+<tr><td rowspan="3" align="center"><b>Real+Sim</b></td><td nowrap>视频 + 轨迹</td><td>真实的人类视频，用视频模型把人改画成机器人</td><td>从改画后的视频推断</td><td><a href="#paper-2611-05163">RoboTryOn</a></td></tr>
+<tr><td nowrap>环境 + 视频<br>+ 轨迹</td><td>照真实视频复刻仿真环境，渲染后改成真实外观</td><td>在复刻的环境里求解</td><td><a href="#paper-2609-35318">DexAgent</a> · <a href="#paper-2611-05320">PyRUA-DataFarm</a></td></tr>
+<tr><td nowrap>环境 + 视频</td><td>照真实视频把物理过程写成仿真程序，再渲染</td><td>无</td><td><a href="#paper-2611-12411">PhysOPSD</a></td></tr>
+</tbody>
+</table>
 
 ↻ 表示闭环：生成器根据训练反馈改写自己。
 

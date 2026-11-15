@@ -3121,17 +3121,24 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 ### 3.4 Data
 
-Grouped by source (Real, Sim, or Real+Sim for both), then by what one sample contains.
-
-| Source | Type | Frames from | Trajectory from | Works |
-|---|---|---|---|---|
-| Real | Video + robot trajectory | Filmed on the real robot | A person teleoperating, or an agent operating the real robot | [DROID](#paper-2403-12945) · [Manipulate-Anything](#paper-2406-18915) |
-| Real | Video + hand trajectory | First-person videos of people | Hand motion annotated from the video | [Open-HumanWAM](#paper-2611-06817) |
-| Sim | Video + robot trajectory | Rendered in simulation | Planners, solvers, or programs written by an agent | [Scaling Up and Distilling Down](#paper-2307-14535) · [GenSim2](#paper-2410-03645) · [RoboTwin 2.0](#paper-2506-18088) · [EmbodiedSWE](#paper-2609-27308) · [EmbodiedSmith](#paper-2610-07969) ↻ · [CoDA](#paper-2610-22362) ↻ |
-| Sim | Video + robot trajectory + failure labels | Rendered in simulation | Failures injected on purpose | [LabRobFail](#paper-2607-23704) |
-| Real+Sim | Video + robot trajectory | Real human videos, with a video model redrawing the person as a robot | Inferred from the redrawn video | [RoboTryOn](#paper-2611-05163) |
-| Real+Sim | Environment + video + robot trajectory | A simulation environment replicated from real video, rendered and then given a real appearance | Solved in the replicated environment | [DexAgent](#paper-2609-35318) · [PyRUA-DataFarm](#paper-2611-05320) |
-| Real+Sim | Environment + video | The physics in a real video, rewritten as a simulation program and rendered | None | [PhysOPSD](#paper-2611-12411) |
+<table>
+<thead>
+<tr><th>Source</th><th>Type</th><th>Frames from</th><th>Trajectory from</th><th>Works</th></tr>
+</thead>
+<tbody>
+<tr><td rowspan="2" align="center"><b>Real</b></td><td nowrap>Video + trajectory</td><td>Filmed on the real robot</td><td>A person teleoperating, or an agent operating the real robot</td><td><a href="#paper-2403-12945">DROID</a> · <a href="#paper-2406-18915">Manipulate-Anything</a></td></tr>
+<tr><td nowrap>Video + hand trajectory</td><td>First-person videos of people</td><td>Hand motion annotated from the video</td><td><a href="#paper-2611-06817">Open-HumanWAM</a></td></tr>
+</tbody>
+<tbody>
+<tr><td rowspan="2" align="center"><b>Sim</b></td><td nowrap>Video + trajectory</td><td rowspan="2">Rendered in simulation</td><td>Planners, solvers, or programs written by an agent</td><td><a href="#paper-2307-14535">Scaling Up and Distilling Down</a> · <a href="#paper-2410-03645">GenSim2</a> · <a href="#paper-2506-18088">RoboTwin 2.0</a> · <a href="#paper-2609-27308">EmbodiedSWE</a> · <a href="#paper-2610-07969">EmbodiedSmith</a> ↻ · <a href="#paper-2610-22362">CoDA</a> ↻</td></tr>
+<tr><td nowrap>Video + trajectory<br>+ failure labels</td><td>Failures injected on purpose</td><td><a href="#paper-2607-23704">LabRobFail</a></td></tr>
+</tbody>
+<tbody>
+<tr><td rowspan="3" align="center"><b>Real+Sim</b></td><td nowrap>Video + trajectory</td><td>Real human videos, with a video model redrawing the person as a robot</td><td>Inferred from the redrawn video</td><td><a href="#paper-2611-05163">RoboTryOn</a></td></tr>
+<tr><td nowrap>Environment + video<br>+ trajectory</td><td>A simulation environment replicated from real video, rendered and then given a real appearance</td><td>Solved in the replicated environment</td><td><a href="#paper-2609-35318">DexAgent</a> · <a href="#paper-2611-05320">PyRUA-DataFarm</a></td></tr>
+<tr><td nowrap>Environment + video</td><td>The physics in a real video, rewritten as a simulation program and rendered</td><td>None</td><td><a href="#paper-2611-12411">PhysOPSD</a></td></tr>
+</tbody>
+</table>
 
 ↻ marks a closed loop: the generator rewrites itself from training feedback.
 

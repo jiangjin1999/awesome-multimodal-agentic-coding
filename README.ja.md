@@ -2822,7 +2822,7 @@
 | L3c | 動態：数値が正確 | <details><summary><b>数値は現実世界と合っているか？</b></summary>モデルが合わせ込めないもので検証する。質量や摩擦を実測値と比べる、または最初の数秒だけから、与えていない続きを予測させる。誤ったパラメータが打ち消し合って軌跡を合わせている場合は、ここで見破られる。</details> | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
 | L4 | Sim-to-Real 予測性 | 評価や学習に使ったとき、結論は現実世界でも成り立つか？ | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) |
 
-† は評価器、つまり主な貢献が評価ツールである作品を示します。各作品は論文が主張する主な貢献で配置しています。L3 の各行は展開すると検証方法を確認できます。詳しい説明は英語版 [Simulator quality evaluation: a fidelity ladder](stage3/simulator-evaluation.md) を参照してください。
+† は評価器、つまり主な貢献が評価ツールである作品を示します。各作品は論文が主張する主な貢献で配置しています。L3 の各行は展開すると検証方法を確認できます。詳しい説明は [シミュレータ品質評価：検証レベル](stage3/simulator-evaluation.ja.md) を参照してください。
 
 <!-- mmac-record: {"id": "2611.05802", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 

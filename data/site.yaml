@@ -447,208 +447,264 @@ stages:
         [MuJoCo](https://mujoco.readthedocs.io/en/stable/overview.html) · [PyBullet](https://pybullet.org/) · [Bullet](https://github.com/bulletphysics/bullet3) · [Drake](https://drake.mit.edu/) · [Genesis](https://genesis-world.readthedocs.io/en/latest/) · [Newton](https://newton-physics.github.io/newton/) · [Warp](https://nvidia.github.io/warp/) · [Isaac Sim](https://docs.isaacsim.omniverse.nvidia.com/latest/index.html) · [Isaac Lab](https://isaac-sim.github.io/IsaacLab/) · [Isaac Gym](https://github.com/isaac-sim/IsaacGymEnvs) · [SAPIEN](https://github.com/haosulab/SAPIEN) · [ManiSkill](https://maniskill.readthedocs.io/en/latest/) · [Gazebo](https://gazebosim.org/docs/latest/getstarted/) · [Webots](https://cyberbotics.com/) · [GS-Agent のサンプルスクリプト](https://github.com/UMass-Embodied-AGI/gs-agent/tree/gh-pages/static/code)
 
         </details>
-# Overview figure at the top of stage3/simulator-evaluation.md and .zh-CN.md (scripts/eval_ladder.py).
+# Overview figure at the top of stage3/simulator-evaluation.md, .zh-CN.md and .ja.md (scripts/eval_ladder.py).
 # Works are counted per level; keep them in step with the tables in that guide.
 eval_ladder:
   text:
     title:
       en: 'Simulator quality evaluation: each level exposes one kind of fake'
       zh: 仿真器质量评估：每一层拆穿一种“假”
+      ja: "シミュレータ品質評価：各レベルが一種類の「偽物」を見破る"
     alt:
       en: 'Simulator evaluation levels illustrated with one kitchen simulation. Eight cards in five stages (look only, left at rest, poke it, let it run, put it to use); each shows how the level checks the kitchen, the question it asks, the fake simulation it exposes, and how many works it holds.'
       zh: 用同一个厨房仿真说明各个检验层级：8 张卡片分为只看、放着不动、碰一下、让它自己动、拿去用五个阶段，每张给出这一层怎么检查、问什么、拆穿哪种假仿真，以及收录的作品数。
+      ja: 1つのキッチンのシミュレーションで検証レベルを説明する図。8 枚のカードを、見るだけ・置いたまま・触れてみる・動かしてみる・実際に使うの 5 段階に分け、各カードにそのレベルの検証方法、問い、見破る偽のシミュレーション、収録作品数を示す。
     lead:
       en: 'Example: an agent builds a kitchen simulation for a robot (a table, a cup, a cabinet with a door). All eight levels ask about it, and each exposes a fake that the earlier levels cannot catch.'
       zh: 例子：Agent 给机器人搭了一个厨房仿真（桌子、杯子、带门的柜子）。8 个层级都拿它来问，每一层都能拆穿前面几层发现不了的“假仿真”。
+      ja: 例：エージェントがロボット用のキッチンのシミュレーション（テーブル、コップ、扉付きの棚）を作る。8 つのレベルはすべてこれについて問い、各レベルはそれ以前のレベルでは見抜けない「偽のシミュレーション」を見破る。
     note:
       en: Each level catches a different kind of error; it is not a cumulative score. Most works sit at L0 and L3a; the later levels are harder to test and have fewer works.
       zh: 各层查的是不同的错，不是累加分数。作品多集中在 L0 和 L3a，越往后越难检验，工作也越少。
+      ja: 各レベルは異なる種類の誤りを捉えるもので、累積スコアではない。作品は L0 と L3a に集中しており、後のレベルほど検証が難しく、作品も少ない。
     fake:
       en: Fake it exposes
       zh: 拆穿的假仿真
+      ja: 見破る偽物
     or:
       en: or
       zh: 或
+      ja: または
     work:
       en: a work
       zh: 收录作品
+      ja: 収録作品
     evaluator:
       en: an evaluator †
       zh: 评估器 †
+      ja: 評価器 †
     count:
       en: '{n} works'
       zh: '{n} 项'
+      ja: '{n} 件'
   pic:
     table:
       en: Table
       zh: 桌子
+      ja: テーブル
     cabinet:
       en: Cabinet
       zh: 柜子
+      ja: 棚
     cup:
       en: Cup
       zh: 杯子
+      ja: コップ
     reference:
       en: Reference
       zh: 参照照片
+      ja: 参照写真
     built:
       en: Built
       zh: 搭出来的
+      ja: 作ったもの
     floating:
       en: Floating?
       zh: 悬空？
+      ja: 浮いている？
     pull:
       en: Pull
       zh: 拉
+      ja: 引く
     footage:
       en: Footage
       zh: 录像
+      ja: 実映像
     before:
       en: Before
       zh: 原来
+      ja: 元の条件
     after:
       en: Tilted, heavier
       zh: 调斜、加重
+      ja: 傾けて重く
     given:
       en: First seconds
       zh: 前几秒（给定）
+      ja: 最初の数秒
     predicted:
       en: Predicted
       zh: 预测后面
+      ja: 続きを予測
     mass:
       en: mass m
       zh: 质量 m
+      ja: 質量 m
     friction:
       en: friction μ
       zh: 摩擦 μ
+      ja: 摩擦 μ
     in_sim:
       en: In sim
       zh: 仿真里
+      ja: シミュレーション
     in_real:
       en: Real
       zh: 真实中
+      ja: 実世界
     rank:
       en: '#{n}'
       zh: 第{n}
+      ja: '{n}位'
     same:
       en: Same order?
       zh: 一致吗？
+      ja: 一致？
   stages:
   - name:
       en: Look only
       zh: 只看，不运行
+      ja: 見るだけ
     levels:
     - code: L0a
       pic: checklist
       name:
         en: Semantic fidelity
         zh: 需求符合
+        ja: 意味的忠実度
       question:
         en: Are the table, cabinet and cup all there, in the right places?
         zh: 要的桌子、柜子、杯子都有吗？位置对吗？
+        ja: テーブル、棚、コップはそろっているか？位置は正しいか？
       fake:
         en: The cup is missing, or not on the table
         zh: 漏了杯子，或杯子没放在桌上
+        ja: "コップがない、または\nテーブルの上にない"
       works: ['2503.14756 †', '2511.03001 †', '2604.13035 †', '2609.36777']
     - code: L0b
       pic: photo
       name:
         en: Visual fidelity
         zh: 参照还原
+        ja: 視覚・再構成の忠実度
       question:
         en: Does it look like the kitchen in the reference photo?
         zh: 和参照照片里的厨房长得一样吗？
+        ja: 写真のキッチンと同じに見えるか？
       fake:
         en: Layout and looks differ from the photo
         zh: 布局、样子和照片对不上
+        ja: 配置や見た目が写真と合わない
       works: ['2506.23329', '2504.01786', 'system:blenderworld', '2611.02659', '2609.15478', '2611.09017']
   - name:
       en: Left at rest
       zh: 放着不动
+      ja: 置いたまま
     levels:
     - code: L1
       pic: floating
       name:
         en: Static plausibility
         zh: 静态合理性
+        ja: 静的な物理的妥当性
       question:
         en: Is the cup floating or sunk into the table? Can the robot get through?
         zh: 杯子悬空、穿进桌面了吗？机器人过得去吗？
+        ja: "コップの浮きやめり込みはないか？\nロボットは通れるか？"
       fake:
         en: Looks right, but the cup floats above the table
         zh: 外观都对，但杯子浮在桌面上
+        ja: "見た目は正しいが、\nコップが天板から浮いている"
       works: ['2611.05802 †', '2603.29798 †']
   - name:
       en: Poke it
       zh: 碰一下
+      ja: 触れてみる
     levels:
     - code: L2
       pic: door
       name:
         en: Interaction
         zh: 交互响应
+        ja: インタラクション
       question:
         en: 'Pull the cabinet door: does it swing open on its hinge?'
         zh: 拉一下柜门，会绕着铰链转开吗？
+        ja: 扉を引くと、蝶番を軸に開くか？
       fake:
         en: The door is fixed and will not open
         zh: 柜门是死的，一拉不动
+        ja: 扉が固定されていて開かない
       works: ['2610.37326', '2606.01869', '2611.02928', '2605.19136 †']
   - name:
       en: Let it run
       zh: 让它自己动
+      ja: 動かしてみる
     levels:
     - code: L3a
       pic: film
       name:
         en: Looks right
         zh: 看起来对
+        ja: 見た目が正しい
       question:
         en: 'Knock the cup off the table: does the fall match real footage?'
         zh: 杯子被碰倒、滚下桌的过程，和录像像吗？
+        ja: "コップが倒れて落ちる様子は、\n実際の映像と同じか？"
       fake:
         en: The fall plainly does not look real
         zh: 倒下的样子一看就不像真的
+        ja: 倒れ方が明らかに本物らしくない
       works: ['2610.15166', '2610.03715', '2602.13294', '2602.10840', '2611.13576 †', '2611.01815', '2610.04432', 'real2sim-benchmark']
     - code: L3b
       pic: ramps
       name:
         en: Truly simulated
         zh: 真在模拟
+        ja: 本当にシミュレーション
       question:
         en: 'Tilt the table or make the cup heavier and rerun: does the outcome change?'
         zh: 桌面调斜、杯子换重，再跑一遍，结果跟着变吗？
+        ja: "天板を傾け、コップを重くして\n再実行すると、結果も変わるか？"
       fake:
         en: 'Hand-made animation: conditions change, motion does not'
         zh: 手写动画：条件变了，动作照旧
+        ja: "手書きのアニメーション：\n条件を変えても動きが同じ"
       works: ['2610.17288', '2604.23580', '2610.08720', '2609.13194 †']
     - code: L3c
       pic: predict
       name:
         en: Numerically accurate
         zh: 数值准确
+        ja: 数値が正確
       question:
         en: Do mass and friction match measurements? From the first seconds, can it predict the rest?
         zh: 质量、摩擦和实测一致吗？只看前几秒，能预测后面吗？
+        ja: "質量や摩擦は実測と一致するか？\n冒頭の数秒で続きを予測できるか？"
       fake:
         en: Wrong parameters that cancel out to fit the trajectory
         zh: 参数错了，靠互相抵消凑对轨迹
+        ja: 誤ったパラメータが打ち消し合い、軌跡だけ合っている
       works: ['2603.16432', '2605.20576', '2606.01538']
   - name:
       en: Put it to use
       zh: 拿去用
+      ja: 実際に使う
     levels:
     - code: L4
       pic: rank
       name:
         en: Sim-to-real
         zh: 下游效用
+        ja: Sim-to-Real 予測性
       question:
         en: Does the policy that ranks first here also rank first in a real kitchen?
         zh: 在这里排第一的策略，到真厨房里也排第一吗？
+        ja: "ここで 1 位の方策は、\n本物のキッチンでも 1 位か？"
       fake:
         en: Everything looks right, yet conclusions fail on real robots
         zh: 处处都像，实机上结论却不成立
+        ja: どれも本物らしいのに、実機では結論が成り立たない
       works: ['2405.05941', '2610.17521', '2609.27449', '2512.16881', '2609.24778']
 engine_map:
   text:
@@ -1162,7 +1218,7 @@ sections:
         | L3c | 動態：数値が正確 | <details><summary><b>数値は現実世界と合っているか？</b></summary>モデルが合わせ込めないもので検証する。質量や摩擦を実測値と比べる、または最初の数秒だけから、与えていない続きを予測させる。誤ったパラメータが打ち消し合って軌跡を合わせている場合は、ここで見破られる。</details> | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
         | L4 | Sim-to-Real 予測性 | 評価や学習に使ったとき、結論は現実世界でも成り立つか？ | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) |
 
-        † は評価器、つまり主な貢献が評価ツールである作品を示します。各作品は論文が主張する主な貢献で配置しています。L3 の各行は展開すると検証方法を確認できます。詳しい説明は英語版 [Simulator quality evaluation: a fidelity ladder](stage3/simulator-evaluation.md) を参照してください。
+        † は評価器、つまり主な貢献が評価ツールである作品を示します。各作品は論文が主張する主な貢献で配置しています。L3 の各行は展開すると検証方法を確認できます。詳しい説明は [シミュレータ品質評価：検証レベル](stage3/simulator-evaluation.ja.md) を参照してください。
   '3.4':
     en: Data
     zh: 数据

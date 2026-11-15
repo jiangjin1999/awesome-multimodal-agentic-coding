@@ -1,6 +1,6 @@
 """Render the simulator-evaluation overview figure from `eval_ladder` in data/site.yaml.
 
-The figure opens stage3/simulator-evaluation.md and its Chinese translation: one kitchen
+The figure opens stage3/simulator-evaluation.md and its translations: one kitchen
 simulation walked through every level, each card showing how the level checks it, the
 question it asks and the fake simulation it exposes. build_readme.py writes a light and a
 dark SVG per guide language under assets/eval-ladder/, and `--check` fails when one is stale.
@@ -13,7 +13,7 @@ from html import escape
 
 from engine_map import FONTS, PALETTE as MAP_PALETTE, localize, text_width
 
-LANGS = ('en', 'zh')            # the languages stage3/simulator-evaluation*.md exists in
+LANGS = ('en', 'zh', 'ja')      # the languages stage3/simulator-evaluation*.md exists in
 THEMES = ('light', 'dark')
 OUT_DIR = 'assets/eval-ladder'
 EVALUATOR = '†'
@@ -31,7 +31,7 @@ M, CW, GX = 28, 248, 24          # margin, card width, gap between cards
 PW, PH = 220, 104                 # pictogram panel
 FS_Q, FS_F, LH = 14, 13, 20
 
-NO_BREAK_BEFORE = set('，。、？！：；）」』”’,.?!:;)%·')
+NO_BREAK_BEFORE = set('，。、？！：；）」』”’,.?!:;)%·ーぁぃぅぇぉっゃゅょゎァィゥェォッャュョヮヵヶ')
 NO_BREAK_AFTER = set('（「『“‘(')
 
 
@@ -348,21 +348,6 @@ def render(site, lang, theme):
         o(f'<rect x="{mx - tw / 2:g}" y="{yb - 11:g}" width="{tw:g}" height="22" rx="11" fill="{p["bg"]}" stroke="{ramp[si]}" stroke-width="2"/>')
         o(f'<text x="{mx:g}" y="{yb + 4.5:g}" text-anchor="middle" font-size="13" font-weight="700" fill="{p["ink"]}">{escape(name)}</text>')
 
-    # Flow: L0a and L0b are parallel starting points; arrows elsewhere; a turn between rows.
-    for i in range(len(deck) - 1):
-        if i == 3:
-            continue
-        x1, x2, ym = cx(i) + CW + 4, cx(i + 1) - 4, cy(i) + 26
-        if deck[i][0] == deck[i + 1][0] == 0:
-            mx = (x1 + x2) / 2
-            o(f'<circle cx="{mx:g}" cy="{ym:g}" r="11" fill="{p["bg"]}" stroke="{p["sub"]}" stroke-width="1.2"/>')
-            o(f'<text x="{mx:g}" y="{ym + 4:g}" text-anchor="middle" font-size="11.5" fill="{p["sub"]}">{escape(text["or"])}</text>')
-        else:
-            o(f'<line x1="{x1}" y1="{ym:g}" x2="{x2 - 2}" y2="{ym:g}" stroke="{p["sub"]}" stroke-width="1.6" marker-end="url(#arr-{p["sub"][1:]})"/>')
-    yt = cy(3) + card_h + 13
-    o(f'<path d="M{cx(3) + CW / 2:g} {cy(3) + card_h + 2:g} V{yt:g} H{cx(4) + 60} V{cy(4) - 22:g}" fill="none" stroke="{p["sub"]}" '
-      f'stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arr-{p["sub"][1:]})"/>')
-
     for i, (si, level) in enumerate(deck):
         x, y0 = cx(i), cy(i)
         col = ramp[si]
@@ -396,6 +381,22 @@ def render(site, lang, theme):
                 o(f'<circle cx="{dx}" cy="{yd:g}" r="4.5" fill="{p["sub"]}"/>')
         count = text['count'].format(n=len(works))
         o(f'<text x="{x + 18 + len(works) * 12 + 2}" y="{yd + 4:g}" font-size="11.5" fill="{p["sub"]}">{escape(count)}</text>')
+
+    # Flow, drawn over the cards: L0a and L0b are parallel starting points; arrows elsewhere; a turn between rows.
+    for i in range(len(deck) - 1):
+        if i == 3:
+            continue
+        x1, x2, ym = cx(i) + CW + 4, cx(i + 1) - 4, cy(i) + 26
+        if deck[i][0] == deck[i + 1][0] == 0:
+            mx = (x1 + x2) / 2
+            pw = max(22, text_width(text['or'], 11.5) + 12)    # a circle for one glyph, a pill for a word
+            o(f'<rect x="{mx - pw / 2:g}" y="{ym - 11:g}" width="{pw:g}" height="22" rx="11" fill="{p["bg"]}" stroke="{p["sub"]}" stroke-width="1.2"/>')
+            o(f'<text x="{mx:g}" y="{ym + 4:g}" text-anchor="middle" font-size="11.5" fill="{p["sub"]}">{escape(text["or"])}</text>')
+        else:
+            o(f'<line x1="{x1}" y1="{ym:g}" x2="{x2 - 2}" y2="{ym:g}" stroke="{p["sub"]}" stroke-width="1.6" marker-end="url(#arr-{p["sub"][1:]})"/>')
+    yt = cy(3) + card_h + 13
+    o(f'<path d="M{cx(3) + CW / 2:g} {cy(3) + card_h + 2:g} V{yt:g} H{cx(4) + 60} V{cy(4) - 22:g}" fill="none" stroke="{p["sub"]}" '
+      f'stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arr-{p["sub"][1:]})"/>')
 
     # Bottom: reading note on the left, dot legend on the right.
     for j, line in enumerate(note):

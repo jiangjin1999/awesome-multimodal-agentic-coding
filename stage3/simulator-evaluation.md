@@ -1,6 +1,6 @@
 # Simulator Quality Evaluation: A Fidelity Ladder
 
-**English** · [简体中文](simulator-evaluation.zh-CN.md)
+**English** · [简体中文](simulator-evaluation.zh-CN.md) · [日本語](simulator-evaluation.ja.md)
 
 Works from [3.3 Simulator quality evaluation](../README.md#s3-3), organized by fidelity level; method details are in the [Stage 3 guide](README.md#section-3).
 

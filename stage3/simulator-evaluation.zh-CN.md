@@ -1,6 +1,6 @@
 # 仿真器质量评估：检验层级
 
-[English](simulator-evaluation.md) · **简体中文**
+[English](simulator-evaluation.md) · **简体中文** · [日本語](simulator-evaluation.ja.md)
 
 按“检验层级”整理 [3.3 仿真器质量评估](../README.zh-CN.md#s3-3) 的工作；各篇的方法细节见 [Stage 3 导读](README.zh-CN.md#section-3)。
 

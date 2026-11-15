@@ -10603,9 +10603,11 @@
   type: paper
   scope: adjacent
   tldr:
-    en: Curates human manipulation experience and aligned actions for world–action model pretraining and robot adaptation.
-    zh: 整理人类操作经验及对齐动作，用于世界—动作模型预训练与机器人适配。
-    ja: 人の操作経験と対応する動作を整理し、世界・動作モデルの事前学習とロボットへの適応に利用する。
+    en: 'Curates 50,000 hours of first-person human video to pretrain a world–action model, then post-trains it on robots. Frames:
+      first-person monocular RGB; trajectory: 3D wrist poses and grip openness of both hands, mapped to one shared action space;
+      labels: language descriptions.'
+    zh: 整理 5 万小时第一视角人类视频，预训练世界—动作模型，再在机器人上后训练。画面：第一视角单目 RGB；轨迹：双手腕部 3D 位姿与开合度，统一到同一动作空间；标注：语言描述。
+    ja: 一人称の人の動画 5 万時間を整理して世界・動作モデルを事前学習し、ロボットで事後学習する。映像：一人称の単眼 RGB。軌跡：両手首の 3D 姿勢と開閉度を共通の動作空間にそろえたもの。注釈：言語による説明。
   setup:
     engines:
     - SAPIEN
@@ -10639,9 +10641,12 @@
   type: paper
   scope: adjacent
   tldr:
-    en: Collects real demonstrations with visual-language feedback.
-    zh: 用视觉语言反馈自动采集真实示范。
-    ja: 視覚言語フィードバックを使い、実環境での実演を自動収集する。
+    en: 'A VLM agent operates the real robot, checks each sub-task itself, and generates demonstrations for behaviour cloning.
+      Frames: one front RGB-D camera on the real robot, with extra views re-rendered from its point cloud (four RGB-D cameras
+      in simulation); trajectory: waypoints of 6-DoF gripper pose and gripper state; labels: language instructions.'
+    zh: VLM Agent 自主操作真机、自查子任务成败，自动生成行为克隆示范。画面：真机为单个正面 RGB-D 相机，由点云重渲染出多视角（仿真中为 4 路 RGB-D）；轨迹：6 自由度夹爪位姿与开合的路点；标注：语言指令。
+    ja: VLM エージェントが実機を操作してサブタスクの成否を自ら確認し、行動模倣用の実演を自動生成する。映像：実機は正面の RGB-D カメラ 1 台で、点群から多視点を再レンダリング（シミュレーションでは RGB-D カメラ 4 台）。軌跡：6
+      自由度のグリッパ姿勢と開閉のウェイポイント。注釈：言語指示。
   setup:
     engines:
     - CoppeliaSim
@@ -10665,9 +10670,12 @@
   type: resource
   scope: resource
   tldr:
-    en: Supplies real observations for robot-learning pipelines.
-    zh: 提供机器人学习所需的真实观测来源。
-    ja: ロボット学習に必要な実際の観測データ源を提供する。
+    en: '76k teleoperated Franka trajectories (350 hours) across 564 scenes and 84 tasks. Frames: RGB from two external and
+      one wrist stereo camera, with camera calibration and depth-ready stereo in the raw release; trajectory: joint and end-effector
+      states and actions; labels: three language instructions per episode.'
+    zh: 在 564 个场景、84 类任务中遥操作 Franka，采集 7.6 万条轨迹（350 小时）。画面：两路外部、一路腕部立体相机 RGB，原始数据附相机标定、可算深度；轨迹：关节与末端状态、动作；标注：每条 3 句语言指令。
+    ja: 564 シーン・84 タスクで Franka を遠隔操作し、7.6 万本の軌跡（350 時間）を収集。映像：外部 2 台と手首 1 台のステレオカメラの RGB（生データはカメラ較正付きで深度を計算可能）。軌跡：関節・手先の状態と動作。注釈：1
+      本ごとに 3 つの言語指示。
   sources:
   - https://arxiv.org/abs/2403.12945
   - https://droid-dataset.github.io/
@@ -10675,6 +10683,9 @@
   - https://github.com/droid-dataset/droid
   - https://github.com/droid-dataset/droid_policy_learning
   - https://droid-dataset.github.io/droid/
+  setup:
+    real_robots:
+    - Franka Panda
   verification:
     en: Released teleoperation data do not inherently contain agent reasoning, tool calls or code-repair traces.
     zh: 开放遥操作数据本身不包含 Agent 推理、工具调用或代码修复轨迹。
@@ -10687,9 +10698,12 @@
   type: paper
   scope: core
   tldr:
-    en: Constructs executable physical scenes and paired visual supervision for video-generator post-training.
-    zh: 构建可执行物理场景及配对视觉监督，用于视频生成器后训练。
-    ja: 実行可能な物理シーンと対応する視覚教師データを構築し、動画生成モデルの事後学習に用いる。
+    en: A coding agent rewrites the physics in a real reference video as a verifiable simulation program, building PhysOPSD-3K
+      as privileged context for post-training video generators. Each sample holds the program, rendered drafts at several levels
+      of abstraction, a prompt grounded on the executed outcome and the physical parameters, with paired variants that change
+      those parameters.
+    zh: Coding Agent 把真实参照视频中的物理过程写成可验证的仿真程序，构建 PhysOPSD-3K，作为视频生成器后训练的特权信息。每个样本：仿真程序、不同抽象层级的渲染草图、依据执行结果写的提示词与物理参数，另有改变物理参数的配对变体。
+    ja: コーディングエージェントが実際の参照動画の物理過程を検証可能なシミュレーションプログラムに書き直し、動画生成モデルの事後学習用の特権情報として PhysOPSD-3K を構築する。各サンプルはプログラム、抽象度の異なるレンダリング下書き、実行結果に基づくプロンプト、物理パラメータからなり、物理パラメータを変えた対の変種を持つ。
   setup:
     engines:
     - Blender
@@ -10716,9 +10730,12 @@
   type: paper
   scope: adjacent
   tldr:
-    en: Creates action-labelled data with code and video models.
-    zh: 组合代码与视频模型生成动作标注数据。
-    ja: コードモデルと動画モデルを組み合わせ、動作の注釈が付いたデータを生成する。
+    en: 'A coding agent takes over the teleoperator: from one real calibration episode it rebuilds the task in simulation, writing
+      the scene, an expert controller and a success judge, and a video model conditioned on real images renders each rollout
+      as photographic video. Frames: synchronized head and two wrist views; trajectory: exact joint actions from simulation.'
+    zh: Coding Agent 接替遥操作员：依据一段真机标定录像在仿真中重建任务，写出场景、专家控制器和成功判定，再用以真实图像为条件的视频模型渲染成照片级画面。画面：头部与双腕三路同步视频；轨迹：仿真给出的精确关节动作。
+    ja: コーディングエージェントが遠隔操作者の代わりを務める。実機の較正エピソード 1 本からシミュレーションでタスクを再構築してシーン・専門家コントローラ・成功判定を書き、実画像を条件とする動画モデルで実写の映像にする。映像：頭部と両手首の同期した
+      3 視点。軌跡：シミュレーションによる正確な関節動作。
   setup:
     engines:
     - SAPIEN
@@ -10746,9 +10763,11 @@
   type: paper
   scope: core
   tldr:
-    en: Co-evolves data-generation programs and robot policies.
-    zh: 共同演化数据生成程序与机器人策略。
-    ja: データ生成プログラムとロボット方策を共に進化させる。
+    en: 'A data engine and a policy co-evolve: VLM diagnoses of policy failures become generation programs for targeted environments
+      and are turned into staged dense rewards. Frames: front and wrist RGB; trajectory: 7-D end-effector deltas and gripper
+      commands at 10 Hz; a planner adds demonstrations.'
+    zh: 数据引擎与策略共同演化：把 VLM 对策略失败的诊断写成生成程序，造出针对性的环境，并转成分阶段的稠密奖励。画面：正面与腕部 RGB；轨迹：10 Hz 的 7 维末端增量与夹爪动作；另有规划器生成的示范。
+    ja: データエンジンと方策が共進化する。VLM による方策の失敗診断を生成プログラムにして狙いを定めた環境を作り、段階的な密な報酬に変える。映像：正面と手首の RGB。軌跡：10 Hz の 7 次元の手先変位とグリッパ指令。プランナーによる実演も加える。
   setup:
     engines:
     - MuJoCo
@@ -10776,9 +10795,12 @@
   type: paper
   scope: core
   tldr:
-    en: Builds a self-improving simulation data engine.
-    zh: 构建可自改进的仿真数据引擎。
-    ja: 自己改善可能なシミュレーションデータエンジンを構築する。
+    en: 'An agent generates assets, scenes and tasks in one pipeline and lets scene and task generation revise each other, forming
+      a self-improving simulation data engine that covers mobile manipulators, humanoids, dexterous hands, deformables and fluids.
+      Frames and trajectory: time-aligned frames, robot and object states, and control actions; labels: execution stages and
+      success logs.'
+    zh: Agent 一体化生成资产、场景与任务，并让场景生成与任务生成互相修订，构成可自我改进的仿真数据引擎，覆盖移动操作、人形、灵巧手及柔性物体与流体。画面与轨迹：时间对齐的画面、本体与物体状态、控制动作；标注：执行阶段与成败记录。
+    ja: エージェントがアセット・シーン・タスクを一体で生成し、シーン生成とタスク生成を互いに修正させる自己改善型のシミュレーションデータエンジン。移動マニピュレータ、ヒューマノイド、多指ハンド、柔軟物や流体に対応する。映像と軌跡：時刻をそろえた映像、ロボットと物体の状態、制御動作。注釈：実行段階と成否の記録。
   setup:
     engines:
     - Isaac Sim
@@ -10799,9 +10821,11 @@
   type: paper
   scope: core
   tldr:
-    en: Converts human videos into simulated dexterous supervision.
-    zh: 把人类视频转为仿真灵巧操作监督。
-    ja: 人の動画を、シミュレーション内の器用な操作を学ぶための教師データに変換する。
+    en: 'Starting from one first-person human video, an agent rebuilds the scene in simulation from object properties, optimizes
+      a dexterous-hand trajectory, and varies object and robot states to generate data, growing its tool library as it goes.
+      Frames: simulation renders from varied viewpoints, retextured to look real; trajectory: dexterous hand and arm actions.'
+    zh: 从单段第一视角人类视频出发，Agent 在仿真中按物体属性重建场景、优化灵巧手轨迹，再改变物体与机器人状态批量生成数据，工具库随使用不断扩充。画面：变换视角后的仿真渲染，重贴纹理以贴近真实；轨迹：灵巧手与手臂动作。
+    ja: 一人称の人の動画 1 本から、エージェントが物体の性質に基づいてシミュレーションでシーンを再構成し、多指ハンドの軌跡を最適化し、物体とロボットの状態を変えてデータを生成する。ツールライブラリは使うほど拡張される。映像：視点を変えたシミュレーションのレンダリングを、実写に近づけるよう再テクスチャ。軌跡：多指ハンドと腕の動作。
   setup:
     engines:
     - Blender
@@ -10829,9 +10853,12 @@
   type: paper
   scope: core
   tldr:
-    en: Scales verified robot programs into synthetic demonstrations.
-    zh: 把验证过的机器人程序扩展为合成示范。
-    ja: 検証済みのロボットプログラムを合成実演へ拡張する。
+    en: 'Coding agents solve long-horizon dexterous tasks in simulation, and solutions that pass the grader are expanded across
+      physical parameters and visual conditions into many demonstrations; a VLA finetuned on them completes one long task on
+      a real robot. Frames: rendered external and wrist RGB; trajectory: joint positions, gripper state and joint-target actions.'
+    zh: Coding Agent 在仿真中解长程灵巧任务，再把通过评分的解法按物理参数与视觉条件扩展成大量示范；用它微调的 VLA 完成了一项真机长任务。画面：外部与腕部渲染 RGB；轨迹：关节位置、夹爪状态与关节目标动作。
+    ja: コーディングエージェントがシミュレーションで長期の器用な操作タスクを解き、採点を通った解を物理パラメータと見た目の条件に沿って大量の実演へ拡張する。これで微調整した VLA が実機で長いタスクを 1 つ達成する。映像：外部と手首のレンダリング
+      RGB。軌跡：関節位置、グリッパ状態、関節目標の動作。
   setup:
     engines:
     - Isaac Lab
@@ -10858,9 +10885,11 @@
   type: paper
   scope: adjacent
   tldr:
-    en: Builds simulated laboratory failure trajectories with structured diagnoses and correction labels.
-    zh: 构建带有结构化诊断及纠正标签的仿真实验室失败轨迹。
-    ja: 構造化された診断と修正ラベルを持つ、模擬実験室での失敗軌跡を構築する。
+    en: 'Injects failures at the control, physics and semantic levels in a simulated chemistry lab, building over 20,000 trajectories
+      (70+ task scenarios, 11 failure types) to train a failure-diagnosis VLM. Frames: synchronized multi-view RGB video; labels:
+      task instruction, whether and when it failed, failure type, severity and correction.'
+    zh: 在仿真化学实验室中按控制、物理、语义三级注入失败，构建 2 万余条轨迹（70 多个任务场景、11 种失败类型），训练失败诊断 VLM。画面：同步多视角 RGB 视频；标注：任务指令、是否失败、失败时刻、类型、严重度与纠正建议。
+    ja: シミュレーションの化学実験室で制御・物理・意味の 3 レベルの失敗を注入し、2 万本超の軌跡（70 以上のタスク場面、11 種の失敗タイプ）を構築して失敗診断 VLM を学習する。映像：同期した多視点 RGB 動画。注釈：タスク指示、失敗の有無と時刻、種類、深刻度、修正案。
   sources:
   - https://arxiv.org/abs/2607.23704
   - https://github.com/Su-ISE-2001/LabRobFail
@@ -10879,9 +10908,11 @@
   type: paper
   scope: adjacent
   tldr:
-    en: Generates diverse bimanual training trajectories.
-    zh: 生成多样化双臂操作训练轨迹。
-    ja: 多様な双腕操作の訓練軌道を生成する。
+    en: 'An MLLM writes task code and refines it by running it in simulation; with five kinds of domain randomization, it produces
+      over 100,000 expert trajectories for 50 tasks on five dual-arm robots. Frames: multi-view RGB from head and wrist cameras,
+      with optional depth and point clouds; trajectory: joint angles and end-effector poses; labels: language instructions.'
+    zh: MLLM 生成任务代码并在仿真中试跑修正，配合五类域随机化，为 5 种双臂机器人的 50 个任务生成 10 万余条专家轨迹。画面：头部与双腕多视角 RGB，可另导出深度与点云；轨迹：关节角与末端位姿；标注：语言指令。
+    ja: MLLM がタスクのコードを書いてシミュレーションで試行・修正し、5 種類のドメインランダム化と組み合わせて、5 種類の双腕ロボット・50 タスクで 10 万本超の専門家軌跡を生成する。映像：頭部と両手首カメラの多視点 RGB（深度と点群も出力可）。軌跡：関節角と手先姿勢。注釈：言語指示。
   setup:
     engines:
     - SAPIEN
@@ -10912,9 +10943,11 @@
   type: paper
   scope: adjacent
   tldr:
-    en: Scales robot demonstrations through generated tasks and solvers.
-    zh: 通过生成任务与求解器扩大机器人示范。
-    ja: タスクとソルバーの生成によってロボットの実演データを拡張する。
+    en: 'LLMs write up to 100 articulated-object tasks, and planning and RL solvers generate demonstrations at scale to train
+      a point-cloud policy that transfers zero-shot to a real robot. Frames: point clouds fused from several RGB-D cameras;
+      trajectory: proprioception and actions; labels: language instructions.'
+    zh: LLM 编写最多 100 个铰接物体任务，规划与强化学习求解器批量生成示范，训练点云策略并零样本迁移到真机。画面：多路 RGB-D 融合成的点云；轨迹：本体状态与动作；标注：语言指令。
+    ja: LLM が最大 100 の関節物体タスクを書き、計画・強化学習のソルバーが実演を大量生成して点群方策を学習し、実機へゼロショット転移する。映像：複数の RGB-D カメラを統合した点群。軌跡：固有受容状態と動作。注釈：言語指示。
   setup:
     engines:
     - SAPIEN
@@ -10938,9 +10971,12 @@
   type: paper
   scope: adjacent
   tldr:
-    en: Distills generated robot experience into a visuomotor policy.
-    zh: 将语言组织的机器人经验蒸馏为动作策略。
-    ja: 言語によって整理したロボットの経験を動作方策へ蒸留する。
+    en: 'An LLM plans tasks and writes success-check code, driving sampling-based planners to explore in simulation; the successful
+      trajectories are distilled into a visuomotor policy. Frames: global and wrist RGB; trajectory: proprioception and end-effector
+      actions; labels: language and success; at least 500 successful trajectories per task.'
+    zh: LLM 规划任务并写出成功判定代码，驱动采样式规划器在仿真中批量探索，再把成功轨迹蒸馏成视觉运动策略。画面：全局与腕部两路 RGB；轨迹：本体状态与末端动作；标注：语言与成败；每个任务至少 500 条成功轨迹。
+    ja: LLM がタスクを計画して成功判定のコードを書き、サンプリング型プランナーにシミュレーション内を探索させ、成功軌跡を視覚運動方策に蒸留する。映像：全体視点と手首の RGB。軌跡：固有受容状態と手先の動作。注釈：言語と成否。各タスク
+      500 本以上の成功軌跡。
   setup:
     engines:
     - MuJoCo
@@ -14037,10 +14073,13 @@
   type: paper
   scope: adjacent
   tldr:
-    en: Translates human demonstrations into target-robot videos, infers pseudo-actions with inverse dynamics and wrist correction,
-      and uses the resulting data to train policies evaluated on two real robot platforms.
-    zh: 将真人示范转换为目标机器人视频，通过逆动力学和腕部校正生成伪动作，训练策略并在两种真实机器人上评估。
-    ja: 人の実演を対象ロボットの動画へ変換し、逆動力学と手首補正で疑似動作を生成する。方策を訓練し、二種類の実機ロボットで評価する。
+    en: 'Turns human demonstrations, filmed from the robot head camera''s position, into videos of the target robot by virtual
+      try-on, then infers pseudo-actions with a depth-aware inverse dynamics model and wrist correction; the trained policies
+      are evaluated on two real robot platforms. Frames: one synthesized head-camera view; trajectory: inferred arm and dexterous-hand
+      actions.'
+    zh: 把从机器人头部视角拍的真人示范“换装”成目标机器人视频，用带深度特征的逆动力学模型和腕部校正推断伪动作，训练策略并在两种真实机器人平台上评估。画面：单路合成的头部视角视频；轨迹：推断出的手臂与灵巧手动作。
+    ja: ロボットの頭部カメラ位置から撮った人の実演を、仮想試着の要領で対象ロボットの動画に変換し、深度特徴を使う逆動力学モデルと手首補正で疑似動作を推定する。学習した方策を 2 種類の実機プラットフォームで評価する。映像：合成した頭部視点
+      1 本。軌跡：推定した腕と多指ハンドの動作。
   setup:
     real_robots:
     - OpenArm

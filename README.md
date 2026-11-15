@@ -3128,17 +3128,17 @@ Split first by whether the data comes from the real world, from simulation, or f
 | | **Real** | | | |
 | R1 | Video + robot trajectory | Filmed on the real robot | A person teleoperating, or an agent operating the real robot | [DROID](#paper-2403-12945) · [Manipulate-Anything](#paper-2406-18915) |
 | R2 | Video + hand trajectory | First-person videos of people | Hand motion annotated from the video | [Open-HumanWAM](#paper-2611-06817) |
+| | **Simulated** | | | |
+| S1 | Video + robot trajectory | Rendered in simulation | Planners, solvers, or programs written by an agent | [Scaling Up and Distilling Down](#paper-2307-14535) · [GenSim2](#paper-2410-03645) · [RoboTwin 2.0](#paper-2506-18088) · [EmbodiedSWE](#paper-2609-27308) · [EmbodiedSmith](#paper-2610-07969) ↻ · [CoDA](#paper-2610-22362) ↻ |
+| S2 | Video + robot trajectory + failure labels | Rendered in simulation | Failures injected on purpose | [LabRobFail](#paper-2607-23704) |
 | | **Mixed (real + simulated)** | | | |
 | M1 | Video + robot trajectory | Real human videos, with the person redrawn as a robot | Inferred from the redrawn video | [RoboTryOn](#paper-2611-05163) |
 | M2 | Environment + video + robot trajectory | A simulation environment replicated from real video, rendered and then given a real appearance | Solved in the replicated environment | [DexAgent](#paper-2609-35318) · [PyRUA-DataFarm](#paper-2611-05320) |
 | M3 | Environment + video | The physics in a real video, rewritten as a simulation program and rendered | None | [PhysOPSD](#paper-2611-12411) |
-| | **Simulated** | | | |
-| S1 | Video + robot trajectory | Rendered in simulation | Planners, solvers, or programs written by an agent | [Scaling Up and Distilling Down](#paper-2307-14535) · [GenSim2](#paper-2410-03645) · [RoboTwin 2.0](#paper-2506-18088) · [EmbodiedSWE](#paper-2609-27308) · [EmbodiedSmith](#paper-2610-07969) ↻ · [CoDA](#paper-2610-22362) ↻ |
-| S2 | Video + robot trajectory + failure labels | Rendered in simulation | Failures injected on purpose | [LabRobFail](#paper-2607-23704) |
 
 Video and trajectory correspond frame by frame: the trajectory gives the action or state at each frame. An environment is a simulator replicated from real video, which can generate data again and again; works whose main contribution is the simulator itself are in [3.2 Simulator construction](#s3-2). In the mixed layer, the synthetic part comes from a simulator or, for RoboTryOn, from a video generation model. ↻ marks a closed loop: the generator rewrites itself from training feedback. Most of this data trains robot policies; Open-HumanWAM pretrains a world–action model, PhysOPSD post-trains a video generator, and LabRobFail trains a failure-diagnosis model.
 
-#### Real observations and interaction records
+#### Real
 
 <!-- mmac-record: {"id": "2611.06817", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
@@ -3157,25 +3157,7 @@ Video and trajectory correspond frame by frame: the trajectory gives the action 
 - <a id="paper-2403-12945"></a>`2024.03` **[DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset](https://arxiv.org/abs/2403.12945)** [[Project page]](https://droid-dataset.github.io/) [[Demo]](https://droid-dataset.github.io/visualizer) [[Hardware code]](https://github.com/droid-dataset/droid) [[Policy training code]](https://github.com/droid-dataset/droid_policy_learning) [[Documentation]](https://droid-dataset.github.io/droid/)
   > Supplies real observations for robot-learning pipelines.
 
-#### Synthetic data and production methods
-
-<!-- mmac-record: {"id": "2611.12411", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
-
-- <a id="paper-2611-12411"></a>`2026.11` **[PhysOPSD: Code as Privilege for Physically Plausible Video Generation](https://arxiv.org/abs/2611.12411)** [[Project page]](https://haroldchen19.github.io/PhysOPSD-site/)
-  > Constructs executable physical scenes and paired visual supervision for video-generator post-training.<br>
-  > 🖥️ **Sim** Blender + Genesis + MuJoCo
-
-<!-- mmac-record: {"id": "2611.05320", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
-
-- <a id="paper-2611-05320"></a>`2026.11` **[PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data](https://arxiv.org/abs/2611.05320)** [[Project page]](https://dagroup-pku.github.io/PyRUA-Lean/DataFarm) [[Code]](https://github.com/DAGroup-PKU/PyRUA-Lean/tree/DataFarm)
-  > Creates action-labelled data with code and video models.<br>
-  > 🖥️ **Sim** SAPIEN + Isaac Sim
-
-<!-- mmac-record: {"id": "2611.05163", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
-
-- <a id="paper-2611-05163"></a>`2026.11` **[RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On](https://arxiv.org/abs/2611.05163)** [[Project page]](https://ryan-seungyong-lee.github.io/RoboTryOn) [[Code]](https://github.com/ryan-seungyong-lee/RoboTryOn) [[Model]](https://huggingface.co/RyanL22/RoboTryOn) [[Demo]](https://huggingface.co/spaces/RyanL22/RoboTryOn)
-  > Translates human demonstrations into target-robot videos, infers pseudo-actions with inverse dynamics and wrist correction, and uses the resulting data to train policies evaluated on two real robot platforms.<br>
-  > 🦾 **Real** OpenArm, Inspire RH56F1, Rainbow RB-Y1, WujiHand2
+#### Simulated
 
 <!-- mmac-record: {"id": "2610.22362", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
@@ -3188,12 +3170,6 @@ Video and trajectory correspond frame by frame: the trajectory gives the action 
 - <a id="paper-2610-07969"></a>`2026.10` **[EmbodiedSmith: Scaling Embodied Data through Recursive Self-Improvement Flywheel in Simulation](https://arxiv.org/abs/2610.07969)**
   > Builds a self-improving simulation data engine.<br>
   > 🖥️ **Sim** Isaac Sim (Franka FR3, Sharpa Wave)
-
-<!-- mmac-record: {"id": "2609.35318", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
-
-- <a id="paper-2609-35318"></a>`2026.09` **[DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library](https://arxiv.org/abs/2609.35318)** [[Project page]](https://dexagent1.github.io/) [[Project page]](https://dexagent123.github.io/) [[Code]](https://github.com/dexagent1/DexAgent)
-  > Converts human videos into simulated dexterous supervision.<br>
-  > 🖥️ **Sim** Blender + MuJoCo + Isaac Sim (Sharpa Wave) · 🦾 **Real** I2RT YAM, Sharpa Wave
 
 <!-- mmac-record: {"id": "2609.27308", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
@@ -3223,6 +3199,32 @@ Video and trajectory correspond frame by frame: the trajectory gives the action 
 - <a id="paper-2307-14535"></a>`2023.07` **[Scaling Up and Distilling Down: Language-Guided Robot Skill Acquisition](https://arxiv.org/abs/2307.14535)** [[Project page]](https://www.cs.columbia.edu/~huy/scalingup/) [[Code]](https://github.com/columbia-ai-robotics/scalingup)
   > Distills generated robot experience into a visuomotor policy.<br>
   > 🖥️ **Sim** MuJoCo (UR5e) · 🦾 **Real** UR5e
+
+#### Mixed (real + simulated)
+
+<!-- mmac-record: {"id": "2611.12411", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-12411"></a>`2026.11` **[PhysOPSD: Code as Privilege for Physically Plausible Video Generation](https://arxiv.org/abs/2611.12411)** [[Project page]](https://haroldchen19.github.io/PhysOPSD-site/)
+  > Constructs executable physical scenes and paired visual supervision for video-generator post-training.<br>
+  > 🖥️ **Sim** Blender + Genesis + MuJoCo
+
+<!-- mmac-record: {"id": "2611.05320", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-05320"></a>`2026.11` **[PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data](https://arxiv.org/abs/2611.05320)** [[Project page]](https://dagroup-pku.github.io/PyRUA-Lean/DataFarm) [[Code]](https://github.com/DAGroup-PKU/PyRUA-Lean/tree/DataFarm)
+  > Creates action-labelled data with code and video models.<br>
+  > 🖥️ **Sim** SAPIEN + Isaac Sim
+
+<!-- mmac-record: {"id": "2611.05163", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-05163"></a>`2026.11` **[RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On](https://arxiv.org/abs/2611.05163)** [[Project page]](https://ryan-seungyong-lee.github.io/RoboTryOn) [[Code]](https://github.com/ryan-seungyong-lee/RoboTryOn) [[Model]](https://huggingface.co/RyanL22/RoboTryOn) [[Demo]](https://huggingface.co/spaces/RyanL22/RoboTryOn)
+  > Translates human demonstrations into target-robot videos, infers pseudo-actions with inverse dynamics and wrist correction, and uses the resulting data to train policies evaluated on two real robot platforms.<br>
+  > 🦾 **Real** OpenArm, Inspire RH56F1, Rainbow RB-Y1, WujiHand2
+
+<!-- mmac-record: {"id": "2609.35318", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2609-35318"></a>`2026.09` **[DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library](https://arxiv.org/abs/2609.35318)** [[Project page]](https://dexagent1.github.io/) [[Project page]](https://dexagent123.github.io/) [[Code]](https://github.com/dexagent1/DexAgent)
+  > Converts human videos into simulated dexterous supervision.<br>
+  > 🖥️ **Sim** Blender + MuJoCo + Isaac Sim (Sharpa Wave) · 🦾 **Real** I2RT YAM, Sharpa Wave
 
 [↑ Back to contents](#contents)
 

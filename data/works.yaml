@@ -10683,7 +10683,7 @@
   url: https://arxiv.org/abs/2611.12411
   date: '2026.11'
   section: '3.4'
-  sub: synthetic-data
+  sub: mixed-data
   type: paper
   scope: core
   tldr:
@@ -10712,7 +10712,7 @@
   url: https://arxiv.org/abs/2611.05320
   date: '2026.11'
   section: '3.4'
-  sub: synthetic-data
+  sub: mixed-data
   type: paper
   scope: adjacent
   tldr:
@@ -10742,7 +10742,7 @@
   url: https://arxiv.org/abs/2610.22362
   date: '2026.10'
   section: '3.4'
-  sub: synthetic-data
+  sub: sim-data
   type: paper
   scope: core
   tldr:
@@ -10772,7 +10772,7 @@
   url: https://arxiv.org/abs/2610.07969
   date: '2026.10'
   section: '3.4'
-  sub: synthetic-data
+  sub: sim-data
   type: paper
   scope: core
   tldr:
@@ -10795,7 +10795,7 @@
   url: https://arxiv.org/abs/2609.35318
   date: '2026.09'
   section: '3.4'
-  sub: synthetic-data
+  sub: mixed-data
   type: paper
   scope: core
   tldr:
@@ -10825,7 +10825,7 @@
   url: https://arxiv.org/abs/2609.27308
   date: '2026.09'
   section: '3.4'
-  sub: synthetic-data
+  sub: sim-data
   type: paper
   scope: core
   tldr:
@@ -10854,7 +10854,7 @@
   url: https://arxiv.org/abs/2607.23704
   date: '2026.07'
   section: '3.4'
-  sub: synthetic-data
+  sub: sim-data
   type: paper
   scope: adjacent
   tldr:
@@ -10875,7 +10875,7 @@
   url: https://arxiv.org/abs/2506.18088
   date: '2025.06'
   section: '3.4'
-  sub: synthetic-data
+  sub: sim-data
   type: paper
   scope: adjacent
   tldr:
@@ -10908,7 +10908,7 @@
   url: https://arxiv.org/abs/2410.03645
   date: '2024.10'
   section: '3.4'
-  sub: synthetic-data
+  sub: sim-data
   type: paper
   scope: adjacent
   tldr:
@@ -10934,7 +10934,7 @@
   url: https://arxiv.org/abs/2307.14535
   date: '2023.07'
   section: '3.4'
-  sub: synthetic-data
+  sub: sim-data
   type: paper
   scope: adjacent
   tldr:
@@ -14033,7 +14033,7 @@
   url: https://arxiv.org/abs/2611.05163
   date: '2026.11'
   section: '3.4'
-  sub: synthetic-data
+  sub: mixed-data
   type: paper
   scope: adjacent
   tldr:

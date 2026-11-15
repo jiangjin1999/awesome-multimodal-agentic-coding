@@ -111,13 +111,17 @@ text:
       zh: Skills、工具桥与运行资源
       ja: スキル・ブリッジ・ランタイム資源
     real-data:
-      en: Real observations and interaction records
-      zh: 真实观测与交互记录
-      ja: 実観測とインタラクション記録
-    synthetic-data:
-      en: Synthetic data and production methods
-      zh: 合成数据与构造方法
-      ja: 合成データと生成手法
+      en: Real
+      zh: 真实
+      ja: 現実
+    sim-data:
+      en: Simulated
+      zh: 仿真
+      ja: シミュレーション
+    mixed-data:
+      en: Mixed (real + simulated)
+      zh: 混合（真实 + 仿真）
+      ja: 混合（現実 + シミュレーション）
     program-policy:
       en: Program and policy development
       zh: 程序与策略研发
@@ -1198,7 +1202,8 @@ sections:
     ja: データ
     subs:
     - real-data
-    - synthetic-data
+    - sim-data
+    - mixed-data
     guide:
       en: |-
         Split first by whether the data comes from the real world, from simulation, or from both, then by what one sample contains.
@@ -1208,13 +1213,13 @@ sections:
         | | **Real** | | | |
         | R1 | Video + robot trajectory | Filmed on the real robot | A person teleoperating, or an agent operating the real robot | [DROID](#paper-2403-12945) · [Manipulate-Anything](#paper-2406-18915) |
         | R2 | Video + hand trajectory | First-person videos of people | Hand motion annotated from the video | [Open-HumanWAM](#paper-2611-06817) |
+        | | **Simulated** | | | |
+        | S1 | Video + robot trajectory | Rendered in simulation | Planners, solvers, or programs written by an agent | [Scaling Up and Distilling Down](#paper-2307-14535) · [GenSim2](#paper-2410-03645) · [RoboTwin 2.0](#paper-2506-18088) · [EmbodiedSWE](#paper-2609-27308) · [EmbodiedSmith](#paper-2610-07969) ↻ · [CoDA](#paper-2610-22362) ↻ |
+        | S2 | Video + robot trajectory + failure labels | Rendered in simulation | Failures injected on purpose | [LabRobFail](#paper-2607-23704) |
         | | **Mixed (real + simulated)** | | | |
         | M1 | Video + robot trajectory | Real human videos, with the person redrawn as a robot | Inferred from the redrawn video | [RoboTryOn](#paper-2611-05163) |
         | M2 | Environment + video + robot trajectory | A simulation environment replicated from real video, rendered and then given a real appearance | Solved in the replicated environment | [DexAgent](#paper-2609-35318) · [PyRUA-DataFarm](#paper-2611-05320) |
         | M3 | Environment + video | The physics in a real video, rewritten as a simulation program and rendered | None | [PhysOPSD](#paper-2611-12411) |
-        | | **Simulated** | | | |
-        | S1 | Video + robot trajectory | Rendered in simulation | Planners, solvers, or programs written by an agent | [Scaling Up and Distilling Down](#paper-2307-14535) · [GenSim2](#paper-2410-03645) · [RoboTwin 2.0](#paper-2506-18088) · [EmbodiedSWE](#paper-2609-27308) · [EmbodiedSmith](#paper-2610-07969) ↻ · [CoDA](#paper-2610-22362) ↻ |
-        | S2 | Video + robot trajectory + failure labels | Rendered in simulation | Failures injected on purpose | [LabRobFail](#paper-2607-23704) |
 
         Video and trajectory correspond frame by frame: the trajectory gives the action or state at each frame. An environment is a simulator replicated from real video, which can generate data again and again; works whose main contribution is the simulator itself are in [3.2 Simulator construction](#s3-2). In the mixed layer, the synthetic part comes from a simulator or, for RoboTryOn, from a video generation model. ↻ marks a closed loop: the generator rewrites itself from training feedback. Most of this data trains robot policies; Open-HumanWAM pretrains a world–action model, PhysOPSD post-trains a video generator, and LabRobFail trains a failure-diagnosis model.
       zh: |-
@@ -1225,13 +1230,13 @@ sections:
         | | **真实** | | | |
         | R1 | 视频 + 机器人轨迹 | 真机拍摄 | 人遥操作，或 Agent 操作真机 | [DROID](#paper-2403-12945) · [Manipulate-Anything](#paper-2406-18915) |
         | R2 | 视频 + 人手轨迹 | 人的第一视角视频 | 从视频中标注手部运动 | [Open-HumanWAM](#paper-2611-06817) |
+        | | **仿真** | | | |
+        | S1 | 视频 + 机器人轨迹 | 仿真渲染 | 规划器、求解器，或 Agent 写的程序 | [Scaling Up and Distilling Down](#paper-2307-14535) · [GenSim2](#paper-2410-03645) · [RoboTwin 2.0](#paper-2506-18088) · [EmbodiedSWE](#paper-2609-27308) · [EmbodiedSmith](#paper-2610-07969) ↻ · [CoDA](#paper-2610-22362) ↻ |
+        | S2 | 视频 + 机器人轨迹 + 失败标签 | 仿真渲染 | 故意注入失败 | [LabRobFail](#paper-2607-23704) |
         | | **混合（真实 + 仿真）** | | | |
         | M1 | 视频 + 机器人轨迹 | 真实的人类视频，把人改画成机器人 | 从改画后的视频推断 | [RoboTryOn](#paper-2611-05163) |
         | M2 | 环境 + 视频 + 机器人轨迹 | 照真实视频复刻仿真环境，渲染后改成真实外观 | 在复刻的环境里求解 | [DexAgent](#paper-2609-35318) · [PyRUA-DataFarm](#paper-2611-05320) |
         | M3 | 环境 + 视频 | 照真实视频把物理过程写成仿真程序，再渲染 | 无 | [PhysOPSD](#paper-2611-12411) |
-        | | **仿真** | | | |
-        | S1 | 视频 + 机器人轨迹 | 仿真渲染 | 规划器、求解器，或 Agent 写的程序 | [Scaling Up and Distilling Down](#paper-2307-14535) · [GenSim2](#paper-2410-03645) · [RoboTwin 2.0](#paper-2506-18088) · [EmbodiedSWE](#paper-2609-27308) · [EmbodiedSmith](#paper-2610-07969) ↻ · [CoDA](#paper-2610-22362) ↻ |
-        | S2 | 视频 + 机器人轨迹 + 失败标签 | 仿真渲染 | 故意注入失败 | [LabRobFail](#paper-2607-23704) |
 
         视频和轨迹逐帧对应，轨迹是每一帧的动作或状态。环境指照真实视频复刻的仿真器，可以反复生成数据；以仿真器本身为主要贡献的工作见 [3.2 仿真器构建](#s3-2)。混合层的合成部分来自仿真器，RoboTryOn 则来自视频生成模型。↻ 表示闭环：生成器根据训练反馈改写自己。多数数据用来训练机器人策略；Open-HumanWAM 用于预训练世界—动作模型，PhysOPSD 用于后训练视频生成器，LabRobFail 用于训练失败诊断模型。
       ja: |-
@@ -1242,13 +1247,13 @@ sections:
         | | **現実** | | | |
         | R1 | 動画 + ロボット軌跡 | 実機で撮影 | 人の遠隔操作、またはエージェントによる実機操作 | [DROID](#paper-2403-12945) · [Manipulate-Anything](#paper-2406-18915) |
         | R2 | 動画 + 手の軌跡 | 人の一人称視点動画 | 動画から手の動きを注釈 | [Open-HumanWAM](#paper-2611-06817) |
+        | | **シミュレーション** | | | |
+        | S1 | 動画 + ロボット軌跡 | シミュレーションでレンダリング | プランナー、ソルバー、またはエージェントが書いたプログラム | [Scaling Up and Distilling Down](#paper-2307-14535) · [GenSim2](#paper-2410-03645) · [RoboTwin 2.0](#paper-2506-18088) · [EmbodiedSWE](#paper-2609-27308) · [EmbodiedSmith](#paper-2610-07969) ↻ · [CoDA](#paper-2610-22362) ↻ |
+        | S2 | 動画 + ロボット軌跡 + 失敗ラベル | シミュレーションでレンダリング | 意図的に注入した失敗 | [LabRobFail](#paper-2607-23704) |
         | | **混合（現実 + シミュレーション）** | | | |
         | M1 | 動画 + ロボット軌跡 | 実際の人の動画で、人をロボットに描き替える | 描き替えた動画から推定 | [RoboTryOn](#paper-2611-05163) |
         | M2 | 環境 + 動画 + ロボット軌跡 | 実際の動画から複製したシミュレーション環境でレンダリングし、実写の見た目に変える | 複製した環境の中で求解 | [DexAgent](#paper-2609-35318) · [PyRUA-DataFarm](#paper-2611-05320) |
         | M3 | 環境 + 動画 | 実際の動画の物理過程をシミュレーションプログラムに書き直し、レンダリング | なし | [PhysOPSD](#paper-2611-12411) |
-        | | **シミュレーション** | | | |
-        | S1 | 動画 + ロボット軌跡 | シミュレーションでレンダリング | プランナー、ソルバー、またはエージェントが書いたプログラム | [Scaling Up and Distilling Down](#paper-2307-14535) · [GenSim2](#paper-2410-03645) · [RoboTwin 2.0](#paper-2506-18088) · [EmbodiedSWE](#paper-2609-27308) · [EmbodiedSmith](#paper-2610-07969) ↻ · [CoDA](#paper-2610-22362) ↻ |
-        | S2 | 動画 + ロボット軌跡 + 失敗ラベル | シミュレーションでレンダリング | 意図的に注入した失敗 | [LabRobFail](#paper-2607-23704) |
 
         動画と軌跡はフレームごとに対応し、軌跡は各フレームの動作や状態を表します。環境とは実際の動画から複製したシミュレータで、データを繰り返し生成できます。シミュレータそのものが主な貢献である作品は [3.2 シミュレータ構築](#s3-2) にあります。混合層の合成部分はシミュレータによるもので、RoboTryOn では動画生成モデルによるものです。↻ は閉ループ、つまり生成器が学習のフィードバックから自らを書き換えることを示します。データの多くはロボット方策の学習に使われます。Open-HumanWAM は世界・動作モデルの事前学習に、PhysOPSD は動画生成モデルの事後学習に、LabRobFail は失敗診断モデルの学習に使います。
   '3.5':

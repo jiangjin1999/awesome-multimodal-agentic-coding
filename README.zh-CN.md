@@ -3128,17 +3128,17 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 | | **真实** | | | |
 | R1 | 视频 + 机器人轨迹 | 真机拍摄 | 人遥操作，或 Agent 操作真机 | [DROID](#paper-2403-12945) · [Manipulate-Anything](#paper-2406-18915) |
 | R2 | 视频 + 人手轨迹 | 人的第一视角视频 | 从视频中标注手部运动 | [Open-HumanWAM](#paper-2611-06817) |
+| | **仿真** | | | |
+| S1 | 视频 + 机器人轨迹 | 仿真渲染 | 规划器、求解器，或 Agent 写的程序 | [Scaling Up and Distilling Down](#paper-2307-14535) · [GenSim2](#paper-2410-03645) · [RoboTwin 2.0](#paper-2506-18088) · [EmbodiedSWE](#paper-2609-27308) · [EmbodiedSmith](#paper-2610-07969) ↻ · [CoDA](#paper-2610-22362) ↻ |
+| S2 | 视频 + 机器人轨迹 + 失败标签 | 仿真渲染 | 故意注入失败 | [LabRobFail](#paper-2607-23704) |
 | | **混合（真实 + 仿真）** | | | |
 | M1 | 视频 + 机器人轨迹 | 真实的人类视频，把人改画成机器人 | 从改画后的视频推断 | [RoboTryOn](#paper-2611-05163) |
 | M2 | 环境 + 视频 + 机器人轨迹 | 照真实视频复刻仿真环境，渲染后改成真实外观 | 在复刻的环境里求解 | [DexAgent](#paper-2609-35318) · [PyRUA-DataFarm](#paper-2611-05320) |
 | M3 | 环境 + 视频 | 照真实视频把物理过程写成仿真程序，再渲染 | 无 | [PhysOPSD](#paper-2611-12411) |
-| | **仿真** | | | |
-| S1 | 视频 + 机器人轨迹 | 仿真渲染 | 规划器、求解器，或 Agent 写的程序 | [Scaling Up and Distilling Down](#paper-2307-14535) · [GenSim2](#paper-2410-03645) · [RoboTwin 2.0](#paper-2506-18088) · [EmbodiedSWE](#paper-2609-27308) · [EmbodiedSmith](#paper-2610-07969) ↻ · [CoDA](#paper-2610-22362) ↻ |
-| S2 | 视频 + 机器人轨迹 + 失败标签 | 仿真渲染 | 故意注入失败 | [LabRobFail](#paper-2607-23704) |
 
 视频和轨迹逐帧对应，轨迹是每一帧的动作或状态。环境指照真实视频复刻的仿真器，可以反复生成数据；以仿真器本身为主要贡献的工作见 [3.2 仿真器构建](#s3-2)。混合层的合成部分来自仿真器，RoboTryOn 则来自视频生成模型。↻ 表示闭环：生成器根据训练反馈改写自己。多数数据用来训练机器人策略；Open-HumanWAM 用于预训练世界—动作模型，PhysOPSD 用于后训练视频生成器，LabRobFail 用于训练失败诊断模型。
 
-#### 真实观测与交互记录
+#### 真实
 
 <!-- mmac-record: {"id": "2611.06817", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
@@ -3157,25 +3157,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-2403-12945"></a>`2024.03` **[DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset](https://arxiv.org/abs/2403.12945)** [[项目页]](https://droid-dataset.github.io/) [[Demo]](https://droid-dataset.github.io/visualizer) [[硬件代码]](https://github.com/droid-dataset/droid) [[策略训练代码]](https://github.com/droid-dataset/droid_policy_learning) [[文档]](https://droid-dataset.github.io/droid/)
   > 提供机器人学习所需的真实观测来源。
 
-#### 合成数据与构造方法
-
-<!-- mmac-record: {"id": "2611.12411", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
-
-- <a id="paper-2611-12411"></a>`2026.11` **[PhysOPSD: Code as Privilege for Physically Plausible Video Generation](https://arxiv.org/abs/2611.12411)** [[项目页]](https://haroldchen19.github.io/PhysOPSD-site/)
-  > 构建可执行物理场景及配对视觉监督，用于视频生成器后训练。<br>
-  > 🖥️ **仿真** Blender + Genesis + MuJoCo
-
-<!-- mmac-record: {"id": "2611.05320", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
-
-- <a id="paper-2611-05320"></a>`2026.11` **[PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data](https://arxiv.org/abs/2611.05320)** [[项目页]](https://dagroup-pku.github.io/PyRUA-Lean/DataFarm) [[代码]](https://github.com/DAGroup-PKU/PyRUA-Lean/tree/DataFarm)
-  > 组合代码与视频模型生成动作标注数据。<br>
-  > 🖥️ **仿真** SAPIEN + Isaac Sim
-
-<!-- mmac-record: {"id": "2611.05163", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
-
-- <a id="paper-2611-05163"></a>`2026.11` **[RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On](https://arxiv.org/abs/2611.05163)** [[项目页]](https://ryan-seungyong-lee.github.io/RoboTryOn) [[代码]](https://github.com/ryan-seungyong-lee/RoboTryOn) [[模型]](https://huggingface.co/RyanL22/RoboTryOn) [[Demo]](https://huggingface.co/spaces/RyanL22/RoboTryOn)
-  > 将真人示范转换为目标机器人视频，通过逆动力学和腕部校正生成伪动作，训练策略并在两种真实机器人上评估。<br>
-  > 🦾 **真机** OpenArm、Inspire RH56F1、Rainbow RB-Y1、WujiHand2
+#### 仿真
 
 <!-- mmac-record: {"id": "2610.22362", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
@@ -3188,12 +3170,6 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-2610-07969"></a>`2026.10` **[EmbodiedSmith: Scaling Embodied Data through Recursive Self-Improvement Flywheel in Simulation](https://arxiv.org/abs/2610.07969)**
   > 构建可自改进的仿真数据引擎。<br>
   > 🖥️ **仿真** Isaac Sim（Franka FR3、Sharpa Wave）
-
-<!-- mmac-record: {"id": "2609.35318", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
-
-- <a id="paper-2609-35318"></a>`2026.09` **[DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library](https://arxiv.org/abs/2609.35318)** [[项目页]](https://dexagent1.github.io/) [[项目页]](https://dexagent123.github.io/) [[代码]](https://github.com/dexagent1/DexAgent)
-  > 把人类视频转为仿真灵巧操作监督。<br>
-  > 🖥️ **仿真** Blender + MuJoCo + Isaac Sim（Sharpa Wave） · 🦾 **真机** I2RT YAM、Sharpa Wave
 
 <!-- mmac-record: {"id": "2609.27308", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
@@ -3223,6 +3199,32 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-2307-14535"></a>`2023.07` **[Scaling Up and Distilling Down: Language-Guided Robot Skill Acquisition](https://arxiv.org/abs/2307.14535)** [[项目页]](https://www.cs.columbia.edu/~huy/scalingup/) [[代码]](https://github.com/columbia-ai-robotics/scalingup)
   > 将语言组织的机器人经验蒸馏为动作策略。<br>
   > 🖥️ **仿真** MuJoCo（UR5e） · 🦾 **真机** UR5e
+
+#### 混合（真实 + 仿真）
+
+<!-- mmac-record: {"id": "2611.12411", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-12411"></a>`2026.11` **[PhysOPSD: Code as Privilege for Physically Plausible Video Generation](https://arxiv.org/abs/2611.12411)** [[项目页]](https://haroldchen19.github.io/PhysOPSD-site/)
+  > 构建可执行物理场景及配对视觉监督，用于视频生成器后训练。<br>
+  > 🖥️ **仿真** Blender + Genesis + MuJoCo
+
+<!-- mmac-record: {"id": "2611.05320", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-05320"></a>`2026.11` **[PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data](https://arxiv.org/abs/2611.05320)** [[项目页]](https://dagroup-pku.github.io/PyRUA-Lean/DataFarm) [[代码]](https://github.com/DAGroup-PKU/PyRUA-Lean/tree/DataFarm)
+  > 组合代码与视频模型生成动作标注数据。<br>
+  > 🖥️ **仿真** SAPIEN + Isaac Sim
+
+<!-- mmac-record: {"id": "2611.05163", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-05163"></a>`2026.11` **[RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On](https://arxiv.org/abs/2611.05163)** [[项目页]](https://ryan-seungyong-lee.github.io/RoboTryOn) [[代码]](https://github.com/ryan-seungyong-lee/RoboTryOn) [[模型]](https://huggingface.co/RyanL22/RoboTryOn) [[Demo]](https://huggingface.co/spaces/RyanL22/RoboTryOn)
+  > 将真人示范转换为目标机器人视频，通过逆动力学和腕部校正生成伪动作，训练策略并在两种真实机器人上评估。<br>
+  > 🦾 **真机** OpenArm、Inspire RH56F1、Rainbow RB-Y1、WujiHand2
+
+<!-- mmac-record: {"id": "2609.35318", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2609-35318"></a>`2026.09` **[DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library](https://arxiv.org/abs/2609.35318)** [[项目页]](https://dexagent1.github.io/) [[项目页]](https://dexagent123.github.io/) [[代码]](https://github.com/dexagent1/DexAgent)
+  > 把人类视频转为仿真灵巧操作监督。<br>
+  > 🖥️ **仿真** Blender + MuJoCo + Isaac Sim（Sharpa Wave） · 🦾 **真机** I2RT YAM、Sharpa Wave
 
 [↑ 返回目录](#contents)
 

@@ -3131,17 +3131,17 @@
 | | **現実** | | | |
 | R1 | 動画 + ロボット軌跡 | 実機で撮影 | 人の遠隔操作、またはエージェントによる実機操作 | [DROID](#paper-2403-12945) · [Manipulate-Anything](#paper-2406-18915) |
 | R2 | 動画 + 手の軌跡 | 人の一人称視点動画 | 動画から手の動きを注釈 | [Open-HumanWAM](#paper-2611-06817) |
+| | **シミュレーション** | | | |
+| S1 | 動画 + ロボット軌跡 | シミュレーションでレンダリング | プランナー、ソルバー、またはエージェントが書いたプログラム | [Scaling Up and Distilling Down](#paper-2307-14535) · [GenSim2](#paper-2410-03645) · [RoboTwin 2.0](#paper-2506-18088) · [EmbodiedSWE](#paper-2609-27308) · [EmbodiedSmith](#paper-2610-07969) ↻ · [CoDA](#paper-2610-22362) ↻ |
+| S2 | 動画 + ロボット軌跡 + 失敗ラベル | シミュレーションでレンダリング | 意図的に注入した失敗 | [LabRobFail](#paper-2607-23704) |
 | | **混合（現実 + シミュレーション）** | | | |
 | M1 | 動画 + ロボット軌跡 | 実際の人の動画で、人をロボットに描き替える | 描き替えた動画から推定 | [RoboTryOn](#paper-2611-05163) |
 | M2 | 環境 + 動画 + ロボット軌跡 | 実際の動画から複製したシミュレーション環境でレンダリングし、実写の見た目に変える | 複製した環境の中で求解 | [DexAgent](#paper-2609-35318) · [PyRUA-DataFarm](#paper-2611-05320) |
 | M3 | 環境 + 動画 | 実際の動画の物理過程をシミュレーションプログラムに書き直し、レンダリング | なし | [PhysOPSD](#paper-2611-12411) |
-| | **シミュレーション** | | | |
-| S1 | 動画 + ロボット軌跡 | シミュレーションでレンダリング | プランナー、ソルバー、またはエージェントが書いたプログラム | [Scaling Up and Distilling Down](#paper-2307-14535) · [GenSim2](#paper-2410-03645) · [RoboTwin 2.0](#paper-2506-18088) · [EmbodiedSWE](#paper-2609-27308) · [EmbodiedSmith](#paper-2610-07969) ↻ · [CoDA](#paper-2610-22362) ↻ |
-| S2 | 動画 + ロボット軌跡 + 失敗ラベル | シミュレーションでレンダリング | 意図的に注入した失敗 | [LabRobFail](#paper-2607-23704) |
 
 動画と軌跡はフレームごとに対応し、軌跡は各フレームの動作や状態を表します。環境とは実際の動画から複製したシミュレータで、データを繰り返し生成できます。シミュレータそのものが主な貢献である作品は [3.2 シミュレータ構築](#s3-2) にあります。混合層の合成部分はシミュレータによるもので、RoboTryOn では動画生成モデルによるものです。↻ は閉ループ、つまり生成器が学習のフィードバックから自らを書き換えることを示します。データの多くはロボット方策の学習に使われます。Open-HumanWAM は世界・動作モデルの事前学習に、PhysOPSD は動画生成モデルの事後学習に、LabRobFail は失敗診断モデルの学習に使います。
 
-#### 実観測とインタラクション記録
+#### 現実
 
 <!-- mmac-record: {"id": "2611.06817", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
@@ -3160,25 +3160,7 @@
 - <a id="paper-2403-12945"></a>`2024.03` **[DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset](https://arxiv.org/abs/2403.12945)** [[プロジェクトページ]](https://droid-dataset.github.io/) [[デモ]](https://droid-dataset.github.io/visualizer) [[ハードウェアコード]](https://github.com/droid-dataset/droid) [[方策学習コード]](https://github.com/droid-dataset/droid_policy_learning) [[ドキュメント]](https://droid-dataset.github.io/droid/)
   > ロボット学習に必要な実際の観測データ源を提供する。
 
-#### 合成データと生成手法
-
-<!-- mmac-record: {"id": "2611.12411", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
-
-- <a id="paper-2611-12411"></a>`2026.11` **[PhysOPSD: Code as Privilege for Physically Plausible Video Generation](https://arxiv.org/abs/2611.12411)** [[プロジェクトページ]](https://haroldchen19.github.io/PhysOPSD-site/)
-  > 実行可能な物理シーンと対応する視覚教師データを構築し、動画生成モデルの事後学習に用いる。<br>
-  > 🖥️ **シミュレーション** Blender + Genesis + MuJoCo
-
-<!-- mmac-record: {"id": "2611.05320", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
-
-- <a id="paper-2611-05320"></a>`2026.11` **[PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data](https://arxiv.org/abs/2611.05320)** [[プロジェクトページ]](https://dagroup-pku.github.io/PyRUA-Lean/DataFarm) [[コード]](https://github.com/DAGroup-PKU/PyRUA-Lean/tree/DataFarm)
-  > コードモデルと動画モデルを組み合わせ、動作の注釈が付いたデータを生成する。<br>
-  > 🖥️ **シミュレーション** SAPIEN + Isaac Sim
-
-<!-- mmac-record: {"id": "2611.05163", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
-
-- <a id="paper-2611-05163"></a>`2026.11` **[RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On](https://arxiv.org/abs/2611.05163)** [[プロジェクトページ]](https://ryan-seungyong-lee.github.io/RoboTryOn) [[コード]](https://github.com/ryan-seungyong-lee/RoboTryOn) [[モデル]](https://huggingface.co/RyanL22/RoboTryOn) [[デモ]](https://huggingface.co/spaces/RyanL22/RoboTryOn)
-  > 人の実演を対象ロボットの動画へ変換し、逆動力学と手首補正で疑似動作を生成する。方策を訓練し、二種類の実機ロボットで評価する。<br>
-  > 🦾 **実機** OpenArm、Inspire RH56F1、Rainbow RB-Y1、WujiHand2
+#### シミュレーション
 
 <!-- mmac-record: {"id": "2610.22362", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
@@ -3191,12 +3173,6 @@
 - <a id="paper-2610-07969"></a>`2026.10` **[EmbodiedSmith: Scaling Embodied Data through Recursive Self-Improvement Flywheel in Simulation](https://arxiv.org/abs/2610.07969)**
   > 自己改善可能なシミュレーションデータエンジンを構築する。<br>
   > 🖥️ **シミュレーション** Isaac Sim（Franka FR3、Sharpa Wave）
-
-<!-- mmac-record: {"id": "2609.35318", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
-
-- <a id="paper-2609-35318"></a>`2026.09` **[DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library](https://arxiv.org/abs/2609.35318)** [[プロジェクトページ]](https://dexagent1.github.io/) [[プロジェクトページ]](https://dexagent123.github.io/) [[コード]](https://github.com/dexagent1/DexAgent)
-  > 人の動画を、シミュレーション内の器用な操作を学ぶための教師データに変換する。<br>
-  > 🖥️ **シミュレーション** Blender + MuJoCo + Isaac Sim（Sharpa Wave） · 🦾 **実機** I2RT YAM、Sharpa Wave
 
 <!-- mmac-record: {"id": "2609.27308", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
@@ -3226,6 +3202,32 @@
 - <a id="paper-2307-14535"></a>`2023.07` **[Scaling Up and Distilling Down: Language-Guided Robot Skill Acquisition](https://arxiv.org/abs/2307.14535)** [[プロジェクトページ]](https://www.cs.columbia.edu/~huy/scalingup/) [[コード]](https://github.com/columbia-ai-robotics/scalingup)
   > 言語によって整理したロボットの経験を動作方策へ蒸留する。<br>
   > 🖥️ **シミュレーション** MuJoCo（UR5e） · 🦾 **実機** UR5e
+
+#### 混合（現実 + シミュレーション）
+
+<!-- mmac-record: {"id": "2611.12411", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-12411"></a>`2026.11` **[PhysOPSD: Code as Privilege for Physically Plausible Video Generation](https://arxiv.org/abs/2611.12411)** [[プロジェクトページ]](https://haroldchen19.github.io/PhysOPSD-site/)
+  > 実行可能な物理シーンと対応する視覚教師データを構築し、動画生成モデルの事後学習に用いる。<br>
+  > 🖥️ **シミュレーション** Blender + Genesis + MuJoCo
+
+<!-- mmac-record: {"id": "2611.05320", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-05320"></a>`2026.11` **[PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data](https://arxiv.org/abs/2611.05320)** [[プロジェクトページ]](https://dagroup-pku.github.io/PyRUA-Lean/DataFarm) [[コード]](https://github.com/DAGroup-PKU/PyRUA-Lean/tree/DataFarm)
+  > コードモデルと動画モデルを組み合わせ、動作の注釈が付いたデータを生成する。<br>
+  > 🖥️ **シミュレーション** SAPIEN + Isaac Sim
+
+<!-- mmac-record: {"id": "2611.05163", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-05163"></a>`2026.11` **[RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On](https://arxiv.org/abs/2611.05163)** [[プロジェクトページ]](https://ryan-seungyong-lee.github.io/RoboTryOn) [[コード]](https://github.com/ryan-seungyong-lee/RoboTryOn) [[モデル]](https://huggingface.co/RyanL22/RoboTryOn) [[デモ]](https://huggingface.co/spaces/RyanL22/RoboTryOn)
+  > 人の実演を対象ロボットの動画へ変換し、逆動力学と手首補正で疑似動作を生成する。方策を訓練し、二種類の実機ロボットで評価する。<br>
+  > 🦾 **実機** OpenArm、Inspire RH56F1、Rainbow RB-Y1、WujiHand2
+
+<!-- mmac-record: {"id": "2609.35318", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2609-35318"></a>`2026.09` **[DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library](https://arxiv.org/abs/2609.35318)** [[プロジェクトページ]](https://dexagent1.github.io/) [[プロジェクトページ]](https://dexagent123.github.io/) [[コード]](https://github.com/dexagent1/DexAgent)
+  > 人の動画を、シミュレーション内の器用な操作を学ぶための教師データに変換する。<br>
+  > 🖥️ **シミュレーション** Blender + MuJoCo + Isaac Sim（Sharpa Wave） · 🦾 **実機** I2RT YAM、Sharpa Wave
 
 [↑ 目次に戻る](#contents)
 

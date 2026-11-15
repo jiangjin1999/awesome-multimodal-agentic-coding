@@ -13,7 +13,7 @@
 
 A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to the physical world.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-651-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--15-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-652-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--15-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -61,7 +61,7 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [3.2 Simulator construction](#s3-2) (68)
   - [3.3 Simulator quality evaluation](#s3-3) (29)
   - [3.4 Data](#s3-4) (14)
-  - [3.5 Training and capability improvement](#s3-5) (73)
+  - [3.5 Training and capability improvement](#s3-5) (74)
   - [3.6 Physical applications and experiments](#s3-6) (37)
   - [Simulation engines at a glance](#s3-engines)
 - [Surveys and related collections](#related)
@@ -3629,6 +3629,12 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 - <a id="paper-2610-36013"></a>`2026.10` **[OmniBrain-0: A Unified Agentic Model for Embodied Intelligence](https://arxiv.org/abs/2610.36013)** [[Code]](https://github.com/luo-yc17/OmniBrain-0) [[Project page]](https://public-bots.github.io/OmniBrain-0/)
   > Consolidates manipulation and navigation experts into a compact multimodal agent that coordinates specialist tools, while rubric-guided feedback supplies reminders and verified trajectories for further learning.<br>
   > 🖥️ **Sim** MuJoCo + SAPIEN + Habitat (Franka Panda, AgileX ALOHA)
+
+<!-- mmac-record: {"id": "2610.35817", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2610-35817"></a>`2026.10` **[Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics](https://arxiv.org/abs/2610.35817)** [[Project page]](https://zero-real.github.io/)
+  > Adds motion control to a small open VLM agent through SFT and GRPO on its own successes in simple simulated tasks, without a frontier teacher or real robot data.<br>
+  > 🖥️ **Sim** Isaac Sim + Isaac Lab (I2RT YAM, Franka) · 🦾 **Real** I2RT YAM
 
 <!-- mmac-record: {"id": "2610.41216", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 

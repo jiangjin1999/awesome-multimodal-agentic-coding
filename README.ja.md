@@ -13,7 +13,7 @@
 
 マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——デジタル世界から物理世界まで。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-651-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--15-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-652-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--15-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語**
 
@@ -64,7 +64,7 @@
   - [3.2 シミュレータ構築](#s3-2) (68)
   - [3.3 シミュレータ品質評価](#s3-3) (29)
   - [3.4 データ](#s3-4) (14)
-  - [3.5 学習と能力向上](#s3-5) (73)
+  - [3.5 学習と能力向上](#s3-5) (74)
   - [3.6 物理応用と実験](#s3-6) (37)
   - [シミュレーションエンジン一覧](#s3-engines)
 - [サーベイと関連コレクション](#related)
@@ -3632,6 +3632,12 @@
 - <a id="paper-2610-36013"></a>`2026.10` **[OmniBrain-0: A Unified Agentic Model for Embodied Intelligence](https://arxiv.org/abs/2610.36013)** [[コード]](https://github.com/luo-yc17/OmniBrain-0) [[プロジェクトページ]](https://public-bots.github.io/OmniBrain-0/)
   > 操作とナビゲーションのエキスパートを小型のマルチモーダル Agent に蒸留して専用ツールを調整する。評価基準に沿った実行フィードバックを注意事項と検証済み軌跡に変換し、継続学習に利用する。<br>
   > 🖥️ **シミュレーション** MuJoCo + SAPIEN + Habitat（Franka Panda、AgileX ALOHA）
+
+<!-- mmac-record: {"id": "2610.35817", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2610-35817"></a>`2026.10` **[Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics](https://arxiv.org/abs/2610.35817)** [[プロジェクトページ]](https://zero-real.github.io/)
+  > シミュレーションでの自らの成功軌跡だけで、小型オープン VLM Agent に運動制御を身につけさせる。<br>
+  > 🖥️ **シミュレーション** Isaac Sim + Isaac Lab（I2RT YAM、Franka） · 🦾 **実機** I2RT YAM
 
 <!-- mmac-record: {"id": "2610.41216", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 

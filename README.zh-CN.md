@@ -13,7 +13,7 @@
 
 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从数字世界延伸到物理世界。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-651-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--15-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-652-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--15-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · **简体中文** · [日本語](./README.ja.md)
 
@@ -61,7 +61,7 @@
   - [3.2 仿真器构建](#s3-2) (68)
   - [3.3 仿真器质量评估](#s3-3) (29)
   - [3.4 数据](#s3-4) (14)
-  - [3.5 训练与能力提升](#s3-5) (73)
+  - [3.5 训练与能力提升](#s3-5) (74)
   - [3.6 物理应用与实验](#s3-6) (37)
   - [仿真引擎一览](#s3-engines)
 - [综述与相关合集](#related)
@@ -3629,6 +3629,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-2610-36013"></a>`2026.10` **[OmniBrain-0: A Unified Agentic Model for Embodied Intelligence](https://arxiv.org/abs/2610.36013)** [[代码]](https://github.com/luo-yc17/OmniBrain-0) [[项目页]](https://public-bots.github.io/OmniBrain-0/)
   > 将操控与导航专家蒸馏为紧凑的多模态 Agent 来协调专用工具，并把 rubric 引导的执行反馈转为提醒与已验证轨迹以持续学习。<br>
   > 🖥️ **仿真** MuJoCo + SAPIEN + Habitat（Franka Panda、AgileX ALOHA）
+
+<!-- mmac-record: {"id": "2610.35817", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2610-35817"></a>`2026.10` **[Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics](https://arxiv.org/abs/2610.35817)** [[项目页]](https://zero-real.github.io/)
+  > 仅凭自身在仿真中的成功轨迹，为小型开源 VLM Agent 补上运动控制能力。<br>
+  > 🖥️ **仿真** Isaac Sim + Isaac Lab（I2RT YAM、Franka） · 🦾 **真机** I2RT YAM
 
 <!-- mmac-record: {"id": "2610.41216", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 

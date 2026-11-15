@@ -2729,7 +2729,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 - <a id="paper-2607-21522"></a>`2026.07` **[GS-Agent: Creating 4D Physical Worlds With Generative Simulation](https://arxiv.org/abs/2607.21522)** [[Project page]](https://umass-embodied-agi.github.io/gs-agent/)
   > Generative simulation connects scene language to editable physical programs.<br>
-  > 🖥️ **Sim** Genesis + Blender
+  > 🖥️ **Sim** Genesis
 
 <!-- mmac-record: {"id": "2607.01766", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -2852,7 +2852,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 - <a id="paper-2410-13882"></a>`2024.10` **[Articulate-Anything: Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model](https://arxiv.org/abs/2410.13882)** [[Project page]](https://articulate-anything.github.io/) [[Code]](https://github.com/vlongle/articulate-anything)
   > Image and motion feedback guide code that reconstructs articulated objects.<br>
-  > 🖥️ **Sim** MuJoCo (Franka Panda) · 🦾 **Real** Franka Panda
+  > 🖥️ **Sim** PyBullet + SAPIEN + MuJoCo (Franka Panda) · 🦾 **Real** Franka Panda
 
 <!-- mmac-record: {"id": "2410.15536", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -2893,7 +2893,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 - <a id="paper-2311-01455"></a>`2023.11` **[RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation](https://arxiv.org/abs/2311.01455)** [[Project page]](https://robogen-ai.github.io/) [[Code]](https://github.com/Genesis-Embodied-AI/RoboGen)
   > Task, environment and supervision generation automate diverse simulated robot-skill learning.<br>
-  > 🖥️ **Sim** PyBullet + Genesis (Franka Panda)
+  > 🖥️ **Sim** Genesis (Franka Panda)
 
 <!-- mmac-record: {"id": "2310.18308", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -3224,7 +3224,8 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2610.09588", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-09588"></a>`2026.10` **[Adaptive Code Generation for Controlling Robots](https://arxiv.org/abs/2610.09588)**
-  > Hot-reloads robot workflows after world-state changes.
+  > Hot-reloads robot workflows after world-state changes.<br>
+  > 🖥️ **Sim** Gazebo
 
 <!-- mmac-record: {"id": "2610.23288", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 

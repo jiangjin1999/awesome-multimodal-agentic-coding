@@ -2732,7 +2732,7 @@
 
 - <a id="paper-2607-21522"></a>`2026.07` **[GS-Agent: Creating 4D Physical Worlds With Generative Simulation](https://arxiv.org/abs/2607.21522)** [[プロジェクトページ]](https://umass-embodied-agi.github.io/gs-agent/)
   > Agent が物体、材料、運動、カメラのプログラムを書き、物理エンジンで実行して動的な世界を修正する。<br>
-  > 🖥️ **シミュレーション** Genesis + Blender
+  > 🖥️ **シミュレーション** Genesis
 
 <!-- mmac-record: {"id": "2607.01766", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -2855,7 +2855,7 @@
 
 - <a id="paper-2410-13882"></a>`2024.10` **[Articulate-Anything: Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model](https://arxiv.org/abs/2410.13882)** [[プロジェクトページ]](https://articulate-anything.github.io/) [[コード]](https://github.com/vlongle/articulate-anything)
   > VLM が URDF にコンパイルできる Python を書き、参照資料とシミュレーション中の運動を比較して関節アセットを繰り返し修正する。<br>
-  > 🖥️ **シミュレーション** MuJoCo（Franka Panda） · 🦾 **実機** Franka Panda
+  > 🖥️ **シミュレーション** PyBullet + SAPIEN + MuJoCo（Franka Panda） · 🦾 **実機** Franka Panda
 
 <!-- mmac-record: {"id": "2410.15536", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -2896,7 +2896,7 @@
 
 - <a id="paper-2311-01455"></a>`2023.11` **[RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation](https://arxiv.org/abs/2311.01455)** [[プロジェクトページ]](https://robogen-ai.github.io/) [[コード]](https://github.com/Genesis-Embodied-AI/RoboGen)
   > LLM がタスクを提案し、シーンを組み合わせ、学習アルゴリズムを選び、多数のロボットスキル訓練課題を作る。<br>
-  > 🖥️ **シミュレーション** PyBullet + Genesis（Franka Panda）
+  > 🖥️ **シミュレーション** Genesis（Franka Panda）
 
 <!-- mmac-record: {"id": "2310.18308", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -3227,7 +3227,8 @@
 <!-- mmac-record: {"id": "2610.09588", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-09588"></a>`2026.10` **[Adaptive Code Generation for Controlling Robots](https://arxiv.org/abs/2610.09588)**
-  > 世界の状態が変わった後に、ロボットのワークフローを実行中に更新する。
+  > 世界の状態が変わった後に、ロボットのワークフローを実行中に更新する。<br>
+  > 🖥️ **シミュレーション** Gazebo
 
 <!-- mmac-record: {"id": "2610.23288", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 

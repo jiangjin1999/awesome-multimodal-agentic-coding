@@ -2729,7 +2729,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 - <a id="paper-2607-21522"></a>`2026.07` **[GS-Agent: Creating 4D Physical Worlds With Generative Simulation](https://arxiv.org/abs/2607.21522)** [[项目页]](https://umass-embodied-agi.github.io/gs-agent/)
   > Agent 编写物体、材料、运动与镜头程序，在物理引擎中运行并修订动态世界。<br>
-  > 🖥️ **仿真** Genesis + Blender
+  > 🖥️ **仿真** Genesis
 
 <!-- mmac-record: {"id": "2607.01766", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -2852,7 +2852,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 - <a id="paper-2410-13882"></a>`2024.10` **[Articulate-Anything: Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model](https://arxiv.org/abs/2410.13882)** [[项目页]](https://articulate-anything.github.io/) [[代码]](https://github.com/vlongle/articulate-anything)
   > 让 VLM 编写可编译为 URDF 的 Python，并对照参考与模拟运动反复修正关节资产。<br>
-  > 🖥️ **仿真** MuJoCo（Franka Panda） · 🦾 **真机** Franka Panda
+  > 🖥️ **仿真** PyBullet + SAPIEN + MuJoCo（Franka Panda） · 🦾 **真机** Franka Panda
 
 <!-- mmac-record: {"id": "2410.15536", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -2893,7 +2893,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 - <a id="paper-2311-01455"></a>`2023.11` **[RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation](https://arxiv.org/abs/2311.01455)** [[项目页]](https://robogen-ai.github.io/) [[代码]](https://github.com/Genesis-Embodied-AI/RoboGen)
   > 让 LLM 提议任务、组合场景并选择学习算法，批量形成机器人技能训练问题。<br>
-  > 🖥️ **仿真** PyBullet + Genesis（Franka Panda）
+  > 🖥️ **仿真** Genesis（Franka Panda）
 
 <!-- mmac-record: {"id": "2310.18308", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -3224,7 +3224,8 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2610.09588", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-09588"></a>`2026.10` **[Adaptive Code Generation for Controlling Robots](https://arxiv.org/abs/2610.09588)**
-  > 在世界状态变化后热更新机器人工作流。
+  > 在世界状态变化后热更新机器人工作流。<br>
+  > 🖥️ **仿真** Gazebo
 
 <!-- mmac-record: {"id": "2610.23288", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 

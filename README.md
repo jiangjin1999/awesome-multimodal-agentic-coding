@@ -3121,22 +3121,19 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 ### 3.4 Data
 
-Split first by whether the data comes from the real world, from simulation, or from both, then by what one sample contains.
+Grouped by source (Real, Sim, or Real+Sim for both), then by what one sample contains.
 
-| No. | Type | Frames from | Trajectory from | Works |
+| Source | Type | Frames from | Trajectory from | Works |
 |---|---|---|---|---|
-| | **Real** | | | |
-| R1 | Video + robot trajectory | Filmed on the real robot | A person teleoperating, or an agent operating the real robot | [DROID](#paper-2403-12945) · [Manipulate-Anything](#paper-2406-18915) |
-| R2 | Video + hand trajectory | First-person videos of people | Hand motion annotated from the video | [Open-HumanWAM](#paper-2611-06817) |
-| | **Simulated** | | | |
-| S1 | Video + robot trajectory | Rendered in simulation | Planners, solvers, or programs written by an agent | [Scaling Up and Distilling Down](#paper-2307-14535) · [GenSim2](#paper-2410-03645) · [RoboTwin 2.0](#paper-2506-18088) · [EmbodiedSWE](#paper-2609-27308) · [EmbodiedSmith](#paper-2610-07969) ↻ · [CoDA](#paper-2610-22362) ↻ |
-| S2 | Video + robot trajectory + failure labels | Rendered in simulation | Failures injected on purpose | [LabRobFail](#paper-2607-23704) |
-| | **Mixed (real + simulated)** | | | |
-| M1 | Video + robot trajectory | Real human videos, with the person redrawn as a robot | Inferred from the redrawn video | [RoboTryOn](#paper-2611-05163) |
-| M2 | Environment + video + robot trajectory | A simulation environment replicated from real video, rendered and then given a real appearance | Solved in the replicated environment | [DexAgent](#paper-2609-35318) · [PyRUA-DataFarm](#paper-2611-05320) |
-| M3 | Environment + video | The physics in a real video, rewritten as a simulation program and rendered | None | [PhysOPSD](#paper-2611-12411) |
+| Real | Video + robot trajectory | Filmed on the real robot | A person teleoperating, or an agent operating the real robot | [DROID](#paper-2403-12945) · [Manipulate-Anything](#paper-2406-18915) |
+| Real | Video + hand trajectory | First-person videos of people | Hand motion annotated from the video | [Open-HumanWAM](#paper-2611-06817) |
+| Sim | Video + robot trajectory | Rendered in simulation | Planners, solvers, or programs written by an agent | [Scaling Up and Distilling Down](#paper-2307-14535) · [GenSim2](#paper-2410-03645) · [RoboTwin 2.0](#paper-2506-18088) · [EmbodiedSWE](#paper-2609-27308) · [EmbodiedSmith](#paper-2610-07969) ↻ · [CoDA](#paper-2610-22362) ↻ |
+| Sim | Video + robot trajectory + failure labels | Rendered in simulation | Failures injected on purpose | [LabRobFail](#paper-2607-23704) |
+| Real+Sim | Video + robot trajectory | Real human videos, with a video model redrawing the person as a robot | Inferred from the redrawn video | [RoboTryOn](#paper-2611-05163) |
+| Real+Sim | Environment + video + robot trajectory | A simulation environment replicated from real video, rendered and then given a real appearance | Solved in the replicated environment | [DexAgent](#paper-2609-35318) · [PyRUA-DataFarm](#paper-2611-05320) |
+| Real+Sim | Environment + video | The physics in a real video, rewritten as a simulation program and rendered | None | [PhysOPSD](#paper-2611-12411) |
 
-Video and trajectory correspond frame by frame: the trajectory gives the action or state at each frame. An environment is a simulator replicated from real video, which can generate data again and again; works whose main contribution is the simulator itself are in [3.2 Simulator construction](#s3-2). In the mixed layer, the synthetic part comes from a simulator or, for RoboTryOn, from a video generation model. ↻ marks a closed loop: the generator rewrites itself from training feedback. Most of this data trains robot policies; Open-HumanWAM pretrains a world–action model, PhysOPSD post-trains a video generator, and LabRobFail trains a failure-diagnosis model.
+↻ marks a closed loop: the generator rewrites itself from training feedback.
 
 #### Real
 
@@ -3157,7 +3154,7 @@ Video and trajectory correspond frame by frame: the trajectory gives the action 
 - <a id="paper-2403-12945"></a>`2024.03` **[DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset](https://arxiv.org/abs/2403.12945)** [[Project page]](https://droid-dataset.github.io/) [[Demo]](https://droid-dataset.github.io/visualizer) [[Hardware code]](https://github.com/droid-dataset/droid) [[Policy training code]](https://github.com/droid-dataset/droid_policy_learning) [[Documentation]](https://droid-dataset.github.io/droid/)
   > Supplies real observations for robot-learning pipelines.
 
-#### Simulated
+#### Sim
 
 <!-- mmac-record: {"id": "2610.22362", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
@@ -3200,7 +3197,7 @@ Video and trajectory correspond frame by frame: the trajectory gives the action 
   > Distills generated robot experience into a visuomotor policy.<br>
   > 🖥️ **Sim** MuJoCo (UR5e) · 🦾 **Real** UR5e
 
-#### Mixed (real + simulated)
+#### Real+Sim
 
 <!-- mmac-record: {"id": "2611.12411", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 

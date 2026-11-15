@@ -12075,6 +12075,36 @@
   verification:
     en: Harness evolution and student weight learning are separate stages.
     zh: Harness 演化与学生模型权重学习分为两个阶段。
+- id: '2610.35817'
+  title: 'Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics'
+  url: https://arxiv.org/abs/2610.35817
+  date: '2026.10'
+  section: '3.5'
+  sub: post-training
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Teaches a small open VLM agent motion control from its own successes in simulation.
+    zh: 仅凭自身在仿真中的成功轨迹，为小型开源 VLM Agent 补上运动控制能力。
+    ja: シミュレーションでの自らの成功軌跡だけで、小型オープン VLM Agent に運動制御を身につけさせる。
+  setup:
+    engines:
+    - Isaac Sim
+    - Isaac Lab
+    sim_robots:
+    - I2RT YAM
+    - Franka
+    real_robots:
+    - I2RT YAM
+  sources:
+  - https://arxiv.org/abs/2610.35817
+  - https://zero-real.github.io/
+  verification:
+    en: Qwen 3.6 27B trained on 40 Isaac Sim tasks · each step returns SAM 3.1-annotated images, 3D readouts and controller
+      feedback · bimanual-YAM RoboLab-120 74.0% vs. GPT-6 Astra 72.2% · real YAM 29/30 trials on 10 tasks, tied with GPT-6
+      Astra in the same harness · unseen simulated Franka 55.9%; handoff, tic-tac-toe and chess are qualitative examples.
+    zh: Qwen 3.6 27B 在 40 项 Isaac Sim 任务上训练 · 每步返回 SAM 3.1 标注图像、三维读数与控制器反馈 · 双臂 YAM 版 RoboLab-120 为 74.0%，GPT-6 Astra
+      为 72.2% · 真实 YAM 上 10 项任务 30 次试验成功 29 次，与同一 Harness 下的 GPT-6 Astra 持平 · 未训练过的仿真 Franka 为 55.9%；交接、井字棋与国际象棋仅为定性示例。
 - id: '2606.18363'
   title: 'Guava: Distilling Frontier VLMs into a Compact Agent through a Robotic Manipulation Harness'
   url: https://arxiv.org/abs/2606.18363

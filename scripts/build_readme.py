@@ -17,6 +17,7 @@ import yaml
 
 import engine_map
 import eval_ladder
+import triage
 from catalog import LAYOUT, validate_catalog, check_local_links
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -339,6 +340,7 @@ def main():
     args = ap.parse_args()
     site, works = load()
     errors, warnings = validate(site, works, strict_ja=not args.allow_missing_ja)
+    errors += triage.validate(works, triage.load(ROOT))
     for w in warnings[:10]:
         print('warning:', w)
     if len(warnings) > 10:

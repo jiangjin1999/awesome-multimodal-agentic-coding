@@ -987,6 +987,873 @@ engine_strengths:
   - name: Gazebo / Webots
     note: {en: ROS and real robots, zh: 对接 ROS，上真机, ja: ROS と実機に強い}
     scores: '1 2 1 1 2 1 1 3*'
+stage_chart:
+  text:
+    title: {en: Who does each step of building a simulator, zh: 仿真器构建：每一步由谁来做, ja: シミュレータ構築：各ステップを誰が担うか}
+    alt: {en: 'Chart of who does each of the nine steps of building a simulator in fifteen representative works and two benchmarks. Columns are grouped as A Perception & Planning (task planning, perception & measurement), B Scene Construction (object assets, articulation, layout & alignment), C Physics Modeling (physical parameters, physics engine) and D Task & Control (robot control, task definition). Rows are grouped by organization: Agentic End-to-End (Plumb, CUE, Real2Gym, DyCraft), Closed-loop Workflow (Agentic Real2Sim, WorldMirror, Text2Sim, SceneSmith, Articulate-Anything, Gym-Anything), Open-loop Workflow (GenSim, Holodeck, SimFoundry) and Model-based (PhysX-Omni, Real2Code). Agents mostly plan, lay out and write control and tasks; perception goes to specialised models; every physics engine is an existing one. DyCraft has no physics engine and only builds a scene; PhysX-Omni stops at sim-ready assets.', zh: 仿真器构建九步分别由谁来做，列出 15 项代表工作和两个基准。列分四组：A 输入理解（任务规划、感知测量）、B 场景构建（物体资产、关节结构、布局对齐）、C
+        物理建模（物理参数、物理引擎）、D 任务与控制（机器人控制、任务定义）。行按组织方式分组：Agentic End-to-End（Plumb、CUE、Real2Gym、DyCraft）、Closed-loop Workflow（Agentic Real2Sim、WorldMirror、Text2Sim、SceneSmith、Articulate-Anything、Gym-Anything）、Open-loop Workflow（GenSim、Holodeck、SimFoundry）、Model-based（PhysX-Omni、Real2Code）。Agent 主要负责规划、布局、控制与任务；感知交给专用模型；物理引擎都用现成的。DyCraft 没有物理引擎，只建了场景；PhysX-Omni 只到仿真就绪。, ja: シミュレータ構築の 9 ステップを誰が担うかを、代表的な 15 件とベンチマーク 2 件で示した図。列は A 入力理解（タスク計画、知覚・計測）、B シーン構築（物体アセット、関節構造、配置・位置合わせ）、C 物理モデリング（物理パラメータ、物理エンジン）、D タスクと制御（ロボット制御、タスク定義）の 4 グループ。行は構成方式で分かれる：Agentic End-to-End（Plumb、CUE、Real2Gym、DyCraft）、Closed-loop Workflow（Agentic Real2Sim、WorldMirror、Text2Sim、SceneSmith、Articulate-Anything、Gym-Anything）、Open-loop Workflow（GenSim、Holodeck、SimFoundry）、Model-based（PhysX-Omni、Real2Code）。Agent は主に計画、配置、制御とタスクを担い、知覚は専用モデルに任され、物理エンジンはすべて既存のもの。DyCraft は物理エンジンを持たずシーンのみ、PhysX-Omni はシム対応のアセットまで。}
+    legend:
+      a: {en: Agent or VLM does it itself, zh: Agent 或 VLM 自己做, ja: Agent・VLM 自身が行う}
+      t: {en: 'Specialised tool, model or engine', zh: 交给专用工具、模型或引擎, ja: 専用ツール・モデル・エンジン}
+      g: {en: Given in advance or by hand, zh: 事先给定或人工, ja: 事前に所与、または人手}
+      n: {en: Not involved or not stated, zh: 不涉及或没写明, ja: 関与しない・記載なし}
+      x: {en: 'No physics engine: scene only', zh: 没有物理引擎：只建了场景, ja: 物理エンジンなし：シーンのみ}
+      r: {en: 'Sim-ready: loadable, not run', zh: 仿真就绪：可导入，方法里没运行, ja: シム対応：読み込めるが未実行}
+    tags:
+      bench: {en: Bench, zh: Bench, ja: Bench}
+      S: {en: Scene only, zh: 只建场景, ja: シーンのみ}
+      R: {en: Sim-ready, zh: 仿真就绪, ja: シム対応}
+  groups:
+  - {block: a, span: 2, en: A Perception & Planning, zh: A 输入理解, ja: A 入力理解}
+  - {block: b, span: 3, en: B Scene Construction, zh: B 场景构建, ja: B シーン構築}
+  - {block: c, span: 2, en: C Physics Modeling, zh: C 物理建模, ja: C 物理モデリング}
+  - {block: d, span: 2, en: D Task & Control, zh: D 任务与控制, ja: D タスクと制御}
+  columns:
+  - {en: Task planning, zh: 任务规划, ja: タスク計画}
+  - {en: Perception & measurement, zh: 感知测量, ja: 知覚・計測}
+  - {en: Object assets, zh: 物体资产, ja: 物体アセット}
+  - {en: Articulation, zh: 关节结构, ja: 関節構造}
+  - {en: Layout & alignment, zh: 布局对齐, ja: "配置・\n位置合わせ"}
+  - {en: Physical parameters, zh: 物理参数, ja: 物理パラメータ}
+  - {en: Physics engine, zh: 物理引擎, ja: 物理エンジン}
+  - {en: Robot control, zh: 机器人控制, ja: ロボット制御}
+  - {en: Task definition, zh: 任务定义, ja: タスク定義}
+  sections:
+  - title: {en: Bench · reference only, zh: Bench · 基准，只作参照, ja: Bench · 参照用}
+    rows:
+    - name: RoboDojo
+      id: '2607.04434'
+      tags: [bench]
+      cells:
+      - - g
+        - {en: Human, zh: 人工, ja: 人手}
+        - {en: Designs the tasks, zh: 设计任务, ja: タスクを設計}
+      - n
+      - - t
+        - {en: Meshy · asset library, zh: Meshy · 资产库, ja: Meshy · アセットライブラリ}
+        - {en: 'Rebuilds or collects objects, checked by hand', zh: 重建或收集物体，人工检查, ja: 物体を再構築・収集し、人手で確認}
+      - - g
+        - {en: Existing assets, zh: 现成资产, ja: 既存アセット}
+        - {en: 'Open-source libraries, 3D scans, ClothesNet', zh: 开源库、3D 扫描、ClothesNet, ja: オープンソースライブラリ、3D スキャン、ClothesNet}
+      - - g
+        - {en: Hand-written YAML, zh: 人工 YAML, ja: 手書き YAML}
+        - {en: Layout and initial distribution, zh: 布局与初始分布, ja: 配置と初期分布}
+      - - g
+        - {en: Human, zh: 人工, ja: 人手}
+        - {en: Physical properties come with the assets, zh: 资产库带物理属性, ja: アセットに物理属性が付属}
+      - - t
+        - Isaac Sim · Isaac Lab
+        - {en: Parallel evaluation, zh: 并行评测, ja: 並列評価}
+      - - g
+        - {en: Policy under test, zh: 被测策略, ja: 評価対象の方策}
+        - {en: Outputs the actions, zh: 输出动作, ja: 行動を出力}
+      - - g
+        - {en: Hand-written YAML, zh: 人工 YAML, ja: 手書き YAML}
+        - {en: Success conditions, zh: 成功条件, ja: 成功条件}
+    - name: Video2World
+      id: '2610.04432'
+      tags: [bench]
+      cells:
+      - - a
+        - Agent
+        - {en: Reads the video and robot assets, zh: 读视频和机器人资产, ja: 動画とロボットアセットを読む}
+      - - a
+        - Agent
+        - {en: Estimates first-frame joints and measures, zh: 估首帧关节、做测量, ja: 初期フレームの関節を推定し計測}
+      - - a
+        - Agent
+        - {en: Wallet and bag geometry and colliders, zh: 钱包、袋子几何与碰撞体, ja: 財布と袋の形状・衝突体}
+      - n
+      - - a
+        - Agent
+        - {en: Solves camera extrinsics by forward kinematics, zh: 正运动学求相机外参, ja: 順運動学でカメラ外部パラメータを求める}
+      - - a
+        - Agent
+        - {en: Sets up contacts, zh: 设置接触, ja: 接触を設定}
+      - - t
+        - Isaac Sim
+        - {en: Platform runs the replay, zh: 平台执行回放, ja: プラットフォームが再生を実行}
+      - - a
+        - Agent
+        - {en: Writes actions.npy, zh: 写 actions.npy, ja: actions.npy を書く}
+      - - g
+        - {en: Given by the task, zh: 题目给定, ja: 課題で指定}
+        - {en: Success conditions, zh: 成功条件, ja: 成功条件}
+  - title: {en: Agentic End-to-End · one Agent does it all, zh: Agentic End-to-End · 一个 Agent 端到端, ja: Agentic End-to-End · 1 つの Agent が通しで担う}
+    rows:
+    - name: Plumb
+      id: system:plumb
+      cells:
+      - - a
+        - Agent
+        - {en: Reads the video and task, zh: 读视频和任务, ja: 動画とタスクを読む}
+      - - t
+        - SAM3 · Pi3X
+        - {en: 'Tracks, depth, camera', zh: 轨迹、深度、相机, ja: 軌跡、深度、カメラ}
+      - - a
+        - Agent
+        - {en: Writes MJCF geometry, zh: 写 MJCF 几何, ja: MJCF の形状を書く}
+      - n
+      - - a
+        - Agent
+        - {en: 'Measures supports, slopes, sizes', zh: 测支撑面、坡度、尺寸, ja: 支持面・傾斜・寸法を計測}
+      - - a
+        - Agent
+        - {en: Writes a parameter-fitting program, zh: 写参数拟合程序, ja: パラメータ推定プログラムを書く}
+      - - t
+        - MuJoCo
+        - {en: Replay, zh: 重放, ja: 再生}
+      - - a
+        - Agent
+        - {en: Writes the initial state, zh: 写初始状态, ja: 初期状態を書く}
+      - n
+    - name: CUE
+      id: '2611.02691'
+      cells:
+      - - a
+        - Agent
+        - {en: Picks key parameters and ranges, zh: 选关键参数与范围, ja: 主要パラメータと範囲を選ぶ}
+      - - a
+        - Agent
+        - {en: Writes ball tracking, zh: 写球轨迹跟踪, ja: ボール軌跡の追跡を書く}
+      - - a
+        - Agent
+        - {en: Writes billiards MJCF, zh: 写台球 MJCF, ja: ビリヤードの MJCF を書く}
+      - n
+      - - a
+        - Agent
+        - {en: Lays out the table from images, zh: 从图片摆台面, ja: 画像から台を配置}
+      - - t
+        - CMA-ES
+        - {en: Fits trajectory differences, zh: 拟合轨迹差异, ja: 軌跡の差から推定}
+      - - t
+        - MuJoCo
+        - {en: Parallel replay, zh: 并行重放, ja: 並列再生}
+      - - a
+        - Agent
+        - {en: Chooses the next shot itself, zh: 自己选下一杆, ja: 次のショットを自分で選ぶ}
+      - n
+    - name: Real2Gym
+      id: '2609.37089'
+      cells:
+      - - a
+        - Agent
+        - {en: 'Reads the demo, picks target objects', zh: 读演示、定目标物, ja: デモを読み、対象物を決める}
+      - - t
+        - MoGe-3 · Pi3X · SAM2
+        - {en: 'Geometry, camera, segmentation', zh: 几何、相机、分割, ja: 形状、カメラ、セグメンテーション}
+      - - a
+        - Agent
+        - {en: Completes meshes from outlines and views, zh: 按轮廓和多视图补全网格, ja: 輪郭と多視点からメッシュを補完}
+      - n
+      - - a
+        - Agent
+        - {en: Unifies scale and coordinates, zh: 统一尺度与坐标, ja: スケールと座標を統一}
+      - - a
+        - Agent
+        - {en: Writes material properties (not fitted), zh: 写入材料属性（未实测拟合）, ja: 材料属性を書き込む（実測推定なし）}
+      - - t
+        - MuJoCo
+        - {en: Runs physics; Blender only renders, zh: 物理执行；Blender 只做渲染, ja: 物理を実行、Blender は描画のみ}
+      - - a
+        - Agent
+        - {en: Executes or retargets demos, zh: 执行或重定向示范, ja: デモを実行・リターゲット}
+      - - a
+        - Agent
+        - {en: Writes Gym task stages, zh: 写 Gym 任务阶段, ja: Gym のタスク段階を書く}
+    - name: DyCraft
+      id: '2610.40754'
+      tags: [S]
+      cells:
+      - - a
+        - Agent
+        - {en: Expands a short prompt into scene and motion specs, zh: 把简短提示扩写成场景与运动说明, ja: 短いプロンプトをシーンと動きの説明に展開}
+      - n
+      - - a
+        - Agent
+        - {en: Objects in CAD; characters from a library, zh: CAD 写物体，角色从角色库取, ja: 物体は CAD、キャラクターはライブラリから}
+      - - a
+        - Agent
+        - {en: Defines joints in CAD, zh: 在 CAD 里定义关节, ja: CAD で関節を定義}
+      - - a
+        - Agent
+        - {en: Poses key frames (3D storyboard), zh: 摆好关键姿态（3D 分镜）, ja: キーポーズを配置（3D 絵コンテ）}
+      - n
+      - - x
+        - {en: No physics engine, zh: 没有物理引擎, ja: 物理エンジンなし}
+        - {en: Blender's built-in physics only animates, zh: Blender 自带物理只做动画, ja: Blender 内蔵の物理はアニメーション用}
+      - - t
+        - {en: CMU mocap · IK · Blender, zh: CMU 动捕 · IK · Blender, ja: CMU モーキャプ · IK · Blender}
+        - {en: Retargets clips; Blender simulates, zh: 选片段重定向，物理交给 Blender 仿真, ja: クリップをリターゲット、物理は Blender}
+      - n
+  - title: {en: 'Closed-loop Workflow · roles fixed in advance, problems go back to the responsible step', zh: Closed-loop Workflow · 分工事先定好，出错回到对应步骤, ja: Closed-loop Workflow · 分担は事前に決まり、問題は担当ステップへ戻す}
+    rows:
+    - name: Agentic Real2Sim
+      id: '2607.19190'
+      cells:
+      - - a
+        - {en: Vision Agent, zh: 视觉 Agent, ja: 視覚 Agent}
+        - {en: Finds relevant objects and supports, zh: 找出相关物体与支撑, ja: 関係する物体と支持物を特定}
+      - - t
+        - SAM 3 · FoundationPose
+        - {en: 'Segmentation, pose tracking', zh: 分割、位姿追踪, ja: セグメンテーション、姿勢追跡}
+      - - t
+        - SAM 3D
+        - {en: Recovers and scales meshes, zh: 恢复 mesh 并缩放, ja: メッシュを復元しスケール調整}
+      - n
+      - - a
+        - {en: Scene Agent, zh: 场景 Agent, ja: シーン Agent}
+        - {en: 'Calibrates camera, ground, base', zh: 校准相机、地面、基座, ja: カメラ・床・ベースを較正}
+      - - a
+        - {en: Physics Agent, zh: 物理 Agent, ja: 物理 Agent}
+        - {en: Estimates parameters from materials, zh: 按材料估参数, ja: 材料からパラメータを推定}
+      - - t
+        - MuJoCo
+        - {en: Replays the trajectory, zh: 重放轨迹, ja: 軌跡を再生}
+      - - g
+        - {en: Given, zh: 给定, ja: 所与}
+        - {en: Recorded robot trajectory, zh: 记录的机器人轨迹, ja: 記録済みのロボット軌跡}
+      - n
+    - name: WorldMirror
+      id: '2610.31834'
+      cells:
+      - - g
+        - {en: Fixed dependency graph, zh: 固定依赖图, ja: 固定の依存グラフ}
+        - {en: Calls each Agent in order, zh: 按序调用各 Agent, ja: 各 Agent を順に呼ぶ}
+      - - t
+        - {en: 3D Gaussians, zh: 3D 高斯, ja: 3D ガウシアン}
+        - {en: Reconstructs the static background, zh: 重建静态背景, ja: 静的な背景を再構築}
+      - - t
+        - Meshy · Articraft
+        - {en: Generates interactive assets, zh: 生成可交互资产, ja: 操作可能なアセットを生成}
+      - n
+      - - a
+        - {en: Calibration and layout Agents, zh: 校准、布局 Agent, ja: 較正・配置 Agent}
+        - {en: Aligns coordinates and places objects, zh: 统一坐标并摆放, ja: 座標を揃えて配置}
+      - n
+      - - t
+        - Isaac Sim
+        - {en: Replays the original trajectory, zh: 重放原轨迹, ja: 元の軌跡を再生}
+      - - g
+        - {en: Given, zh: 给定, ja: 所与}
+        - {en: Recorded robot trajectory, zh: 记录的机器人轨迹, ja: 記録済みのロボット軌跡}
+      - n
+    - name: Text2Sim
+      id: '2609.36593'
+      cells:
+      - - a
+        - Planner
+        - {en: Sets the global plan, zh: 定全局计划, ja: 全体計画を立てる}
+      - n
+      - - t
+        - Meshy
+        - {en: Text-to-mesh generation, zh: 文本生成 mesh, ja: テキストからメッシュを生成}
+      - n
+      - - a
+        - Scene Writer
+        - {en: Writes the scene program, zh: 写场景程序, ja: シーンのプログラムを書く}
+      - - a
+        - Body Writer
+        - {en: Writes materials and physics, zh: 写材料与物理, ja: 材料と物理を書く}
+      - - t
+        - Genesis
+        - {en: Runs and records, zh: 执行并记录, ja: 実行して記録}
+      - - a
+        - Action Writer
+        - {en: Writes motion and control, zh: 写运动与控制, ja: 動きと制御を書く}
+      - n
+    - name: SceneSmith
+      id: '2602.09153'
+      cells:
+      - - a
+        - Planner
+        - {en: Breaks the request down by level, zh: 按层级拆解需求, ja: 要求を階層ごとに分解}
+      - n
+      - - t
+        - SAM3 · SAM3D
+        - {en: Rebuilds meshes from reference images, zh: 参考图重建 mesh, ja: 参照画像からメッシュを再構築}
+      - - t
+        - ArtVIP
+        - {en: Retrieves articulated assets, zh: 检索关节资产, ja: 関節付きアセットを検索}
+      - - a
+        - Designer
+        - {en: Places objects level by level, zh: 逐层摆放, ja: 階層ごとに配置}
+      - - a
+        - VLM
+        - {en: 'Estimates mass, friction, inertia', zh: 估质量、摩擦、惯量, ja: 質量・摩擦・慣性を推定}
+      - - t
+        - Drake
+        - {en: 'Removes penetration, settles under gravity', zh: 去穿透、重力沉降, ja: 貫通を解消し重力で安定化}
+      - n
+      - n
+    - name: Articulate-Anything
+      id: '2410.13882'
+      cells:
+      - - a
+        - VLM
+        - {en: 'Reads the reference, lists parts', zh: 读参考、列部件, ja: 参照を読み、部品を列挙}
+      - - t
+        - CoTracker
+        - {en: Tracks motion in the video, zh: 追踪视频里的运动, ja: 動画内の動きを追跡}
+      - - t
+        - PartNet-Mobility
+        - {en: Retrieves part meshes, zh: 检索部件 mesh, ja: 部品メッシュを検索}
+      - - a
+        - Actor
+        - {en: 'Writes joint types, axes, ranges', zh: 写关节类型、轴、范围, ja: 関節の種類・軸・範囲を書く}
+      - - a
+        - Actor
+        - {en: Writes the part assembly, zh: 写部件装配, ja: 部品の組み立てを書く}
+      - n
+      - - t
+        - PyBullet · SAPIEN
+        - {en: Simulation and rendering, zh: 仿真与渲染, ja: シミュレーションと描画}
+      - n
+      - n
+    - name: Gym-Anything
+      id: '2610.40565'
+      cells:
+      - - a
+        - {en: Creation Agent, zh: 创建 Agent, ja: 作成 Agent}
+        - {en: 'Researches the activity, designs scene and equations', zh: 调研活动，设计场景与方程, ja: 活動を調べ、シーンと方程式を設計}
+      - n
+      - - a
+        - {en: Creation Agent, zh: 创建 Agent, ja: 作成 Agent}
+        - {en: 'Picks real assets, builds contactable objects', zh: 选真实资产，建可接触物体, ja: 実在アセットを選び、接触できる物体を作る}
+      - n
+      - - a
+        - {en: Creation Agent, zh: 创建 Agent, ja: 作成 Agent}
+        - {en: Gaussian background + physical bodies, zh: 高斯背景 + 物理体拼成场景, ja: ガウシアン背景＋物理ボディで構成}
+      - - a
+        - {en: Creation Agent, zh: 创建 Agent, ja: 作成 Agent}
+        - {en: 'Implements the physics, incl. what engines lack', zh: 实现所需物理，含引擎缺的, ja: 必要な物理を実装（エンジンにないものも）}
+      - - t
+        - {en: 'MuJoCo · Warp, etc.', zh: MuJoCo · Warp 等, ja: MuJoCo · Warp など}
+        - {en: Runs on several backends, zh: 多后端运行, ja: 複数のバックエンドで実行}
+      - - a
+        - {en: Creation Agent, zh: 创建 Agent, ja: 作成 Agent}
+        - {en: Plugs in robots from a shared catalog, zh: 接入共享目录里的机器人, ja: 共有カタログのロボットを接続}
+      - - a
+        - {en: Task-creation Agent, zh: 任务创建 Agent, ja: タスク作成 Agent}
+        - {en: Creates tasks at a target difficulty, zh: 按目标难度出任务, ja: 目標の難易度でタスクを作る}
+  - title: {en: 'Open-loop Workflow · roles fixed in advance, run once in order', zh: Open-loop Workflow · 分工事先定好，按顺序跑一遍, ja: Open-loop Workflow · 分担は事前に決まり、順に 1 回だけ流す}
+    rows:
+    - name: GenSim
+      id: '2310.01361'
+      cells:
+      - - a
+        - GPT-4
+        - {en: 'Proposes tasks, writes specs', zh: 提任务、写规格, ja: タスクを提案し仕様を書く}
+      - n
+      - - g
+        - {en: Given, zh: 给定, ja: 所与}
+        - {en: Existing Ravens assets, zh: Ravens 已有资产, ja: Ravens の既存アセット}
+      - n
+      - - a
+        - GPT-4
+        - {en: Writes the reset placement, zh: 写 reset 摆放, ja: reset 時の配置を書く}
+      - n
+      - - t
+        - PyBullet
+        - {en: Runs the tasks, zh: 执行任务, ja: タスクを実行}
+      - - t
+        - {en: Ravens scripts, zh: Ravens 脚本, ja: Ravens スクリプト}
+        - {en: Generates expert demos, zh: 生成专家演示, ja: エキスパートデモを生成}
+      - - a
+        - GPT-4
+        - {en: Writes goals and success checks, zh: 写目标与成功判定, ja: 目標と成功判定を書く}
+    - name: Holodeck
+      id: '2312.09067'
+      cells:
+      - - a
+        - GPT-4
+        - {en: Designs rooms and object relations, zh: 设计房间与物体关系, ja: 部屋と物体の関係を設計}
+      - n
+      - - t
+        - Objaverse · ProcTHOR
+        - {en: Retrieves meshes, zh: 检索 mesh, ja: メッシュを検索}
+      - n
+      - - t
+        - {en: Constraint solver, zh: 约束求解器, ja: 制約ソルバー}
+        - {en: Places objects by relations, zh: 按关系摆放, ja: 関係に従って配置}
+      - n
+      - - t
+        - AI2-THOR
+        - {en: Loads and runs, zh: 导入运行, ja: 読み込んで実行}
+      - n
+      - n
+    - name: SimFoundry
+      id: '2606.28276'
+      cells:
+      - - a
+        - VLM
+        - {en: Lists objects and semantics, zh: 列出物体与语义, ja: 物体と意味を列挙}
+      - - t
+        - SAM3 · PriorDepthAnything
+        - {en: 'Segmentation, depth', zh: 分割、深度, ja: セグメンテーション、深度}
+      - - t
+        - Hunyuan3D · TRELLIS.2
+        - {en: Generates a mesh per object, zh: 逐物体生成 mesh, ja: 物体ごとにメッシュを生成}
+      - - a
+        - Actor–Critic
+        - {en: Writes joints and checks motion, zh: 写关节并检查运动, ja: 関節を書き、動きを確認}
+      - - t
+        - FoundationPose
+        - {en: Registers pose and scale, zh: 配准位姿与尺度, ja: 姿勢とスケールを位置合わせ}
+      - - a
+        - VLM
+        - {en: 'Estimates mass, friction', zh: 估质量、摩擦, ja: 質量・摩擦を推定}
+      - - t
+        - PyBullet
+        - {en: 'Removes penetration, stabilises', zh: 去穿透、稳定化, ja: 貫通を解消し安定化}
+      - n
+      - - a
+        - VLM
+        - {en: Proposes tasks and success conditions, zh: 提出任务与成功条件, ja: タスクと成功条件を提案}
+  - title: {en: Model-based (without Agent) · models or optimization produce the result, zh: Model-based (without Agent) · 没有 Agent，模型或优化直接产出, ja: Model-based (without Agent) · Agent なし、モデルや最適化が直接出力}
+    rows:
+    - name: PhysX-Omni
+      id: '2605.21572'
+      tags: [R]
+      cells:
+      - - t
+        - {en: Fine-tuned Qwen2.5-VL, zh: 微调 Qwen2.5-VL, ja: 微調整済み Qwen2.5-VL}
+        - {en: 'Infers category, scale, part hierarchy', zh: 推断类别、尺度、部件层级, ja: カテゴリ・スケール・部品階層を推定}
+      - n
+      - - t
+        - Qwen2.5-VL · TRELLIS
+        - {en: 'Generates voxels, decodes meshes', zh: 生成体素，解码 mesh, ja: ボクセルを生成しメッシュに復号}
+      - - t
+        - {en: Fine-tuned Qwen2.5-VL, zh: 微调 Qwen2.5-VL, ja: 微調整済み Qwen2.5-VL}
+        - {en: Predicts joints, zh: 预测关节, ja: 関節を予測}
+      - n
+      - - t
+        - {en: Fine-tuned Qwen2.5-VL, zh: 微调 Qwen2.5-VL, ja: 微調整済み Qwen2.5-VL}
+        - {en: 'Predicts mass, material and more', zh: 预测质量、材料等属性, ja: 質量・材料などの属性を予測}
+      - - r
+        - {en: Sim-ready, zh: 仿真就绪, ja: シム対応}
+        - {en: Loadable assets; not run in the method, zh: 资产可导入，方法里没运行, ja: 読み込めるが手法内では未実行}
+      - n
+      - n
+    - name: Real2Code
+      id: '2406.08474'
+      cells:
+      - n
+      - - t
+        - {en: Fine-tuned SAM · DUSt3R, zh: 微调 SAM · DUSt3R, ja: 微調整済み SAM · DUSt3R}
+        - {en: Part segmentation and point clouds, zh: 部件分割与点云, ja: 部品分割と点群}
+      - - t
+        - {en: Shape-completion model, zh: 形状补全模型, ja: 形状補完モデル}
+        - {en: Completes part meshes, zh: 补全部件 mesh, ja: 部品メッシュを補完}
+      - - t
+        - {en: Fine-tuned CodeLlama, zh: 微调 CodeLlama, ja: 微調整済み CodeLlama}
+        - {en: Predicts joints from bounding boxes, zh: 按包围盒预测关节, ja: バウンディングボックスから関節を予測}
+      - - t
+        - {en: DUSt3R point cloud, zh: DUSt3R 点云, ja: DUSt3R 点群}
+        - {en: Part positions and sizes, zh: 部件位置与尺寸, ja: 部品の位置と寸法}
+      - n
+      - - t
+        - MuJoCo
+        - {en: Instantiates and runs, zh: 实例化运行, ja: インスタンス化して実行}
+      - n
+      - n
+stage_chart_full:
+  text:
+    title: {en: 'Every Section 3.2 work, step by step', zh: 3.2 全部工作逐步对照}
+    alt: {en: 'Chart of all 68 works in Section 3.2 and two reference benchmarks: for each of the nine build steps, plus verification & revision and variant expansion, whether the Agent or VLM does it, a specialised tool does it, it is given, or it is not involved. Agents take most of task planning (55 works), layout (43) and verification & revision (49), while perception goes to specialised models (32). 46 works run a physics engine, 10 only build a scene, 9 stop at sim-ready and 3 do not name one.', zh: 3.2 全部 68 项和两个参照基准的逐步对照：九个构建步骤加上检查与修订、变体扩增，每一步是 Agent 或 VLM 自己做、交给专用工具、事先给定，还是不涉及。任务规划（55 项）、布局对齐（43 项）和检查与修订（49 项）大多由 Agent 做，感知测量多交给专用模型（32 项）。46 项运行了物理引擎，10 项只建场景，9 项只到仿真就绪，3 项没写明引擎。}
+    columns:
+    - {en: Task planning, zh: 任务规划}
+    - {en: Percep-tion, zh: 感知测量}
+    - {en: Object assets, zh: 物体资产}
+    - {en: Articu-lation, zh: 关节结构}
+    - {en: Layout, zh: 布局对齐}
+    - {en: Physical params, zh: 物理参数}
+    - {en: Physics engine, zh: 物理引擎}
+    - {en: Robot control, zh: 机器人控制}
+    - {en: Task def., zh: 任务定义}
+    - {en: Verify & revise, zh: 检查与修订}
+    - {en: Variants, zh: 变体扩增}
+    extra_band: {en: Not parts of a simulator, zh: 不算组成部分}
+    how: {en: How it works, zh: 具体做法}
+    totals: {en: 'Totals ({n})', zh: '{n} 项合计'}
+    count: {en: '{n} works', zh: '{n} 项'}
+    sum:
+      a: {en: Agent, zh: Agent}
+      t: {en: Tool, zh: 工具}
+      engine: {en: Engine, zh: 引擎}
+      x: {en: None, zh: 无引擎}
+      r: {en: Ready, zh: 就绪}
+    tiers:
+      F: {en: Full simulator, zh: 完整仿真器}
+      R: {en: Sim-ready, zh: 仿真就绪}
+      S: {en: Scene only, zh: 只建场景}
+      U: {en: Engine not stated, zh: 引擎未写明}
+  sections:
+  - title: {en: 'Bench · reference only, not counted', zh: Bench · 基准，只作参照，不计入合计}
+    reference: true
+    rows:
+    - name: RoboDojo
+      id: '2607.04434'
+      tier: F
+      steps: gntgggtgggg
+      how: {en: Isaac Sim manipulation benchmark built by hand, zh: 人工搭建的 Isaac Sim 操作基准}
+      tags: [bench]
+    - name: Video2World
+      id: '2610.04432'
+      tier: F
+      steps: aaanaatagan
+      how: {en: Asks the Agent under test to build the simulation from video, zh: 要求被测 Agent 从视频自己搭仿真}
+      tags: [bench]
+  - title: {en: Agentic End-to-End · one Agent does it all, zh: Agentic End-to-End · 一个 Agent 端到端}
+    rows:
+    - name: SimuLean
+      id: '2611.10602'
+      tier: F
+      steps: angnaatnnan
+      how: {en: Builds discrete-event models with domain commands; the Agent calibrates job times, zh: 领域命令搭建离散事件模型，Agent 校准作业时长}
+    - name: CUE
+      id: '2611.02691'
+      tier: F
+      steps: aaanattanan
+      how: {en: 'Agent models and writes tracking, CMA-ES fits parameters, then it picks the next experiment', zh: Agent 建模、写跟踪，CMA-ES 拟合参数，再挑下一次实验}
+    - name: DyCraft
+      id: '2610.40754'
+      tier: S
+      steps: anaaanxtnan
+      how: {en: Main Agent builds scene and rig in Blender; motion is retargeted mocap, zh: 主 Agent 在 Blender 建场景和骨架，动作来自动捕重定向}
+    - name: SceneAgent
+      id: '2610.34745'
+      tier: F
+      steps: atttattanaa
+      how: {en: 'Calls segmentation, completion, articulation and physics tools; makes variants and demos', zh: 调用分割、补全、关节、物理属性工具，生成变体与示范}
+    - name: Plumb
+      id: system:plumb
+      tier: F
+      steps: atanaatanan
+      how: {en: 'Coding Agent measures with SAM3 and Pi3X, then writes the MuJoCo scene and parameters', zh: Coding Agent 调 SAM3、Pi3X 测量，自己写 MuJoCo 场景和参数}
+    - name: GRASE
+      id: '2610.21498'
+      tier: S
+      steps: atananxnnan
+      how: {en: 'Mostly Blender primitives, TRELLIS.2 for small objects; static scene', zh: Blender 基元为主，小物体用 TRELLIS.2，静态场景}
+    - name: RoboSimStudio
+      id: '2610.18835'
+      tier: F
+      steps: aaanaatanan
+      how: {en: 'Builds the scene from video, picks the solver, revises from execution events', zh: 看视频建场景、选求解器，按执行事件修订}
+    - name: USDCraft
+      id: '2610.11322'
+      tier: R
+      steps: ataanarnnan
+      how: {en: Metric slices help the Agent write parametric assets and PhysX parameters, zh: 度量切片辅助，Agent 写参数化资产和 PhysX 参数}
+    - name: Agentic RSR
+      id: '2610.10479'
+      tier: F
+      steps: attnantagaa
+      how: {en: 'Blender checks appearance, MuJoCo probes interaction; develops a policy and randomizes', zh: Blender 对照外观，MuJoCo 探测交互，开发策略并随机化}
+    - name: Real2Gym
+      id: '2609.37089'
+      tier: F
+      steps: atanaataaaa
+      how: {en: 'Agent rebuilds with perception tools, checks against the video, then expands variants', zh: Agent 调感知工具重建，对照视频验证后扩增变体}
+    - name: FACT
+      id: '2609.37067'
+      tier: F
+      steps: ataanttnnan
+      how: {en: Agent writes geometry and joints; parameters are fitted from simulation residuals, zh: Agent 写几何和关节，参数由仿真残差拟合}
+    - name: CoDimRecon
+      id: '2609.36024'
+      tier: F
+      steps: ataaaatanan
+      how: {en: VGGT-Omega gives geometry; the Agent rebuilds in Blender with rod/shell/solid physics, zh: VGGT-Omega 给几何，Agent 在 Blender 重建，rod/shell/solid 物理}
+    - name: WorldAgent
+      id: '2609.33208'
+      tier: S
+      steps: ananaaxanan
+      how: {en: 'Builds and simulates in Blender; a verification layer reports, the Agent revises the spec', zh: Blender 构建与仿真，验证层回报，Agent 回写规格}
+    - name: Code as Worlds
+      id: '2608.27549'
+      tier: S
+      steps: attnaaxanan
+      how: {en: 'Adapters give depth, masks, tracks and meshes; the Agent proposes world programs', zh: 适配器给深度、分割、轨迹和 mesh，Agent 提议世界程序}
+    - name: GS-Agent
+      id: '2607.21522'
+      tier: F
+      steps: antnaatanan
+      how: {en: 'Retrieves assets or generates them with Meshy, programs materials and motion', zh: 检索或 Meshy 生成资产，编程设置材料与运动}
+    - name: Articraft
+      id: '2605.15187'
+      tier: R
+      steps: anaannrnnan
+      how: {en: 'Builds articulated assets only, with harness tests and probe feedback', zh: 只造关节资产，harness 测试与探针反馈}
+    - name: SimWorld Studio
+      id: '2605.09423'
+      tier: F
+      steps: antnantnaaa
+      how: {en: UE5 environments; learner performance drives the next batch, zh: UE5 环境，学习者表现驱动下一批环境}
+    - name: SAGE
+      id: '2602.10116'
+      tier: F
+      steps: antnaattgan
+      how: {en: 'TRELLIS generates, a VLM sets scale and physics, two critics advise', zh: TRELLIS 生成，VLM 定尺度与物理，两个 critic}
+    - name: SceneWeaver
+      id: '2509.20414'
+      tier: R
+      steps: antnanrnnan
+      how: {en: Planner picks tools; Blender and Infinigen execute, zh: Planner 选工具，Blender/Infinigen 执行}
+    - name: Eurekaverse
+      id: '2411.01775'
+      tier: F
+      steps: anananttaaa
+      how: {en: 'LLM writes terrain code, evolved after each round of PPO training', zh: LLM 写地形代码，PPO 训练后演化下一轮}
+    - name: AHa-3D
+      id: res:aha-3d
+      tier: U
+      steps: attnannnnan
+      how: {en: 'Coding Agent calls geometry, segmentation and motion tools to write the scene', zh: Coding Agent 调几何、分割、运动工具写场景}
+    - name: mujoco-workbench
+      id: mujoco-workbench
+      tier: F
+      steps: ananantnnan
+      how: {en: 'MuJoCo run, render and inspect tools for an Agent', zh: 给 Agent 用的 MuJoCo 运行、渲染、检查工具}
+  - title: {en: Closed-loop Workflow · problems go back to the responsible step, zh: Closed-loop Workflow · 分工事先定好，出错回到对应步骤}
+    rows:
+    - name: WorldSketch
+      id: '2611.00513'
+      tier: S
+      steps: ataaanxtgan
+      how: {en: 'VLM builds a kinematic sketch, a depth backend measures, a planner solves actions', zh: VLM 建运动学草图，深度后端测量，规划器求动作}
+    - name: Gym-Anything
+      id: '2610.40565'
+      tier: F
+      steps: ananaataaan
+      how: {en: 'Creation, task and audit Agents; audit reports go back', zh: 创建、任务、审计三类 Agent，审计报告交回}
+    - name: WorldMirror
+      id: '2610.31834'
+      tier: F
+      steps: gttnantgnan
+      how: {en: Routing Agent follows a dependency graph and falls back to the failing stage, zh: 路由 Agent 沿依赖图调度，失败回退到对应阶段}
+    - name: MARC
+      id: '2610.33060'
+      tier: S
+      steps: anaannxtnan
+      how: {en: Judge / Executor / Reviewer with a kinematic solver, zh: Judge / Executor / Reviewer，运动学求解}
+    - name: D-World
+      id: '2610.17114'
+      tier: F
+      steps: aaanaatagan
+      how: {en: Sense–Plan–Act; real measurements fix parameters or send it back to rebuild, zh: Sense–Plan–Act，真实测量修参数或返回重建}
+    - name: Artisan
+      id: '2610.13947'
+      tier: F
+      steps: anaanatnnan
+      how: {en: 'Design, coding and review Agents, checked in MuJoCo', zh: 设计、编码、审阅 Agent，MuJoCo 检查}
+    - name: Awomo-SimDataEngine
+      id: '2610.02274'
+      tier: F
+      steps: attaanttaan
+      how: {en: ISArt / Unravel / SimForge modules; falls back to the module at fault, zh: ISArt / Unravel / SimForge 三个模块，按失败归属回退}
+    - name: Text2Sim
+      id: '2609.36593'
+      tier: F
+      steps: antnaatanan
+      how: {en: Planner dispatches Scene / Body / Action Writers; a Critic reviews, zh: Planner 分派 Scene / Body / Action Writer，Critic 审查}
+    - name: DiagGen
+      id: '2609.23103'
+      tier: F
+      steps: gttnnttanan
+      how: {en: Fixed asset pipeline; a diagnostic Agent probes grasps and routes issues upstream, zh: 固定资产流水线，诊断 Agent 抓取探测并路由回上游}
+    - name: DeformSmith
+      id: '2609.18620'
+      tier: F
+      steps: attnaatagan
+      how: {en: 'Layered L0–L3 stages, MPM material choice, grasp tests', zh: L0–L3 分层，MPM 选材料，抓取测试}
+    - name: Agentic Real2Sim
+      id: '2607.19190'
+      tier: F
+      steps: attnaatgnan
+      how: {en: 'Vision, scene and physics Agents; replayed in MuJoCo for comparison', zh: 视觉、场景、物理 Agent 分工，MuJoCo 重放对照}
+    - name: SimWorlds
+      id: '2607.01766'
+      tier: S
+      steps: ananaaxanan
+      how: {en: 'Planning, coding, verification and review; Blender''s built-in solver', zh: 规划、编码、验证、评审，Blender 内置求解器}
+    - name: MUSE
+      id: '2606.14168'
+      tier: S
+      steps: antnanxnnan
+      how: {en: Architect / Sculptor / Inspector on a structured scene, zh: Architect / Sculptor / Inspector，结构化场景}
+    - name: ChronoAgentic
+      id: '2605.14398'
+      tier: F
+      steps: antnaatanan
+      how: {en: Plan / Code Agents write PyChrono programs and review patches, zh: Plan / Code Agent，PyChrono 程序与审查补丁}
+    - name: ArtiCAD
+      id: '2604.10992'
+      tier: R
+      steps: anaatnrnnan
+      how: {en: 'Design and generation Agents, deterministic assembler, error routing rolls back', zh: 设计、生成 Agent，确定性装配器，错误路由回滚}
+    - name: SceneSmith
+      id: '2602.09153'
+      tier: F
+      steps: anttaatnnan
+      how: {en: Designer lays out; Critic and Orchestrator decide to revise or roll back, zh: Designer 布局，Critic 和 Orchestrator 决定改或回退}
+    - name: Perceptual Self-Reflection
+      id: '2602.12311'
+      tier: F
+      steps: ananaaaanan
+      how: {en: 'Four specialised Agents, self-written numerical simulation, checked on rendered frames', zh: 四个专用 Agent，自写数值仿真，渲染帧验证}
+    - name: GRS
+      id: '2410.15536'
+      tier: F
+      steps: attnanttaan
+      how: {en: 'SAM2 and depth, asset matching; a VLM writes tasks and tests, a router revises', zh: SAM2 与深度，资产匹配，VLM 写任务和测试，路由修订}
+    - name: Articulate-Anything
+      id: '2410.13882'
+      tier: F
+      steps: attaantnnan
+      how: {en: Actor writes joint code; a Critic judges it against the video, zh: Actor 写关节代码，Critic 对照视频判断}
+    - name: OMNI-EPIC
+      id: '2405.15568'
+      tier: F
+      steps: anananttaaa
+      how: {en: 'Task and environment generators, DreamerV3 learner, archive-driven', zh: 任务与环境生成器，DreamerV3 学习，档案驱动}
+  - title: {en: 'Open-loop Workflow · fixed pipeline, an LLM does some steps', zh: Open-loop Workflow · 固定流程，LLM 负责其中几步}
+    rows:
+    - name: Spatial Harness
+      id: '2611.11344'
+      tier: F
+      steps: atanantnnnn
+      how: {en: Perceivers build a proxy world; MuJoCo only measures, zh: 感知器建代理世界，MuJoCo 只用于测量}
+    - name: LabWorld
+      id: '2610.36592'
+      tier: S
+      steps: attntnxtnnn
+      how: {en: VLM organises objects and events; trajectory optimisation exports 4D states, zh: VLM 组织对象与事件，轨迹优化导出 4D 状态}
+    - name: SceneBloom
+      id: '2610.32978'
+      tier: R
+      steps: attntnrnnnn
+      how: {en: 'FLUX layout images, lifted to 3D by perception and fitted by a compiler', zh: FLUX 布局图，感知提升 3D，编译器拟合}
+    - name: AgentDreamer
+      id: '2610.30679'
+      tier: F
+      steps: angngttannn
+      how: {en: LLM gives motion priors; differentiable MPM fits the parameters, zh: LLM 给运动先验，可微 MPM 拟合参数}
+    - name: EmbodiedGen V2
+      id: '2607.07459'
+      tier: F
+      steps: antntttnnnt
+      how: {en: 'Asset pipeline adds physics, BFS placement, SAPIEN settling, multi-engine export', zh: 资产流水线补物理，BFS 放置，SAPIEN 沉降，多引擎导出}
+    - name: PerceptTwin
+      id: '2606.04226'
+      tier: U
+      steps: ggtntnnnann
+      how: {en: 'Starts from a semantic map; retrieval or TRELLIS, ICP placement, LLM adds interaction semantics', zh: 输入是语义地图，检索或 TRELLIS 生成，ICP 放置，LLM 赋交互语义}
+    - name: Phys2Real
+      id: '2510.11689'
+      tier: F
+      steps: nttnnattgnn
+      how: {en: '3DGS rebuild, VLM priors plus online estimation, trained in Isaac Lab', zh: 3DGS 重建，VLM 先验加在线估计，Isaac Lab 训练}
+    - name: FactorSim
+      id: '2409.17652'
+      tier: F
+      steps: ananaataann
+      how: {en: 'Generates simulation code factor by factor, including transitions and rewards', zh: 因子化地生成仿真代码，含转移与奖励}
+    - name: RoboTwin
+      id: '2409.02920'
+      tier: U
+      steps: antnnnnagnn
+      how: {en: Rodin makes meshes; GPT-4 writes trajectory-planning programs, zh: Rodin 生成 mesh，GPT-4 写轨迹规划程序}
+    - name: Holodeck
+      id: '2312.09067'
+      tier: F
+      steps: antntntnnnn
+      how: {en: GPT-4 designs rooms; a constraint solver places Objaverse assets, zh: GPT-4 设计房间，约束求解器摆放 Objaverse 资产}
+    - name: RoboGen
+      id: '2311.01455'
+      tier: F
+      steps: antaanttann
+      how: {en: GPT-4 proposes tasks and scenes; RL or planning learns the skills, zh: GPT-4 提任务配场景，RL / 规划生成技能}
+    - name: Gen2Sim
+      id: '2310.18308'
+      tier: F
+      steps: antnnattann
+      how: {en: Image to mesh; GPT-4 sets mass and rewards; PPO learns, zh: 图像到 mesh，GPT-4 定质量和奖励，PPO 学习}
+    - name: GenSim
+      id: '2310.01361'
+      tier: F
+      steps: angnanttaga
+      how: {en: 'GPT-4 writes task code, keeps what runs, then expands to new tasks', zh: GPT-4 写任务代码，执行筛选，再扩出新任务}
+  - title: {en: 'Open-loop Workflow · fixed pipeline, a local Agent refines at the end', zh: Open-loop Workflow · 固定流程，末段有局部 Agent 精修}
+    rows:
+    - name: GIF
+      id: '2609.05927'
+      tier: F
+      steps: attntnttnan
+      how: {en: 'Generated reference image, two mesh paths, GPRM stabilisation, VLM filtering', zh: 生成参考图，两路 mesh，GPRM 稳定化，VLM 筛选}
+    - name: SceneMosaic
+      id: '2609.05594'
+      tier: F
+      steps: gttnantnnaa
+      how: {en: SAM3 + SAM3D; the Agent fixes local layout and combines local variants, zh: SAM3 + SAM3D，Agent 修局部布局，组合局部变体}
+    - name: Lucida
+      id: '2608.30821'
+      tier: S
+      steps: gttnanxnnan
+      how: {en: Object graph and completed assets; GizmoAct adjusts poses over several rounds, zh: 对象图与补全资产，GizmoAct 多轮调位姿}
+    - name: Usage-Driven Code Scenes
+      id: '2608.18840'
+      tier: F
+      steps: anaatntnaan
+      how: {en: 'ArtiCraft writes movable assets; interaction rules, geometric solving and a Critic', zh: ArtiCraft 写可动资产，交互规则，几何求解与 Critic}
+    - name: LiteReality-Agent
+      id: '2610.01863'
+      tier: R
+      steps: gtttaarnnan
+      how: {en: Fixed front-end pipeline; a Coding Agent edits Room.py and exports MuJoCo, zh: 前段固定流水线，Coding Agent 改 Room.py，导出 MuJoCo}
+    - name: SimFoundry
+      id: '2606.28276'
+      tier: F
+      steps: attatatnana
+      how: {en: 'Perception, generation, articulation and pose modules in order; a VLM sets physics', zh: 感知、生成、关节、位姿模块按序，VLM 定物理参数}
+    - name: SceneCode
+      id: '2605.19587'
+      tier: R
+      steps: anaaatrnnan
+      how: {en: 'Room Agent lays out, per-part Blender Python, physics compiled in', zh: 房间 Agent 布局，逐部件 Blender Python，编译物理属性}
+    - name: Vid2Sid
+      id: '2602.19359'
+      tier: F
+      steps: ntgnnatgnan
+      how: {en: Fixed perception; a VLM tunes parameters by comparing sim and real video, zh: 感知固定，VLM 对比仿真与真实视频调参数}
+  - title: {en: Model-based (without Agent) · models or optimization produce the result, zh: Model-based (without Agent) · 没有 Agent，模型或优化直接产出}
+    rows:
+    - name: UniPhysGen
+      id: '2607.13586'
+      tier: R
+      steps: ntgtntrnntn
+      how: {en: 'Existing assets, perceptual grouping and property estimation, a learned model', zh: 已有资产，感知分组与属性估计，学习模型}
+    - name: Video2Sim2Real
+      id: '2606.08828'
+      tier: F
+      steps: nttntnttgnn
+      how: {en: 'Foundation models rebuild the twin; optimisation, imitation and RL', zh: 基础模型重建孪生，优化、模仿学习和强化学习}
+    - name: PhysX-Omni
+      id: '2605.21572'
+      tier: R
+      steps: tnttntrnnnn
+      how: {en: Fine-tuned VLM generates assets with joints and physical properties, zh: 微调的 VLM 直接生成带关节和物理属性的资产}
+    - name: DeformMaster
+      id: '2605.09586'
+      tier: F
+      steps: nttnntttnnn
+      how: {en: 'MPM plus a neural residual, optimised from interaction video', zh: MPM + 神经残差，从交互视频优化}
+    - name: Real2Code
+      id: '2406.08474'
+      tier: F
+      steps: nttttntnnnn
+      how: {en: 'Segmentation and completion, then fine-tuned CodeLlama writes joint code', zh: 分割、补全后，微调 CodeLlama 写关节代码}
 sections:
   '1.1':
     en: Web, UI and applications
@@ -1171,7 +2038,16 @@ sections:
 
         Building a simulator is split into four groups and nine steps: A Perception & Planning (① task planning, ② perception & measurement) · B Scene Construction (③ object assets, ④ articulation, ⑤ layout & alignment) · C Physics Modeling (⑥ physical parameters, ⑦ physics engine) · D Task & Control (⑧ robot control, ⑨ task definition). B plus C is the simulator itself; adding D gives an environment you can train and evaluate in. A work without a ⑦ physics engine has only built a scene. Verification & revision and variant expansion are not parts of a simulator, so they are left out of the nine steps.
 
-        Read across a row to see who does each step of that work. **Bold**: the Agent or VLM does it itself; plain: handed to a specialised tool, model or engine; *italic*: given in advance (input, fixed rule or human); —: not involved or not stated. "Sim-ready" in column ⑦ means the result can be loaded into a physics engine, but the method does not run one.
+        Read across a row to see who does each step of that work: the top line of a cell is who does it, the bottom line what they do. Column ⑦, the physics engine, decides whether the result is a simulator or only a scene.
+
+        {stage_chart}
+
+        All 68 works, step by step, including verification & revision and variant expansion: [Simulator construction: every work, step by step](stage3/simulator-construction.md).
+
+        <details>
+        <summary>Text version with links</summary>
+
+        **Bold**: the Agent or VLM does it itself; plain: a specialised tool, model or engine; *italic*: given in advance or by hand; —: not involved or not stated.
 
         | Organization | Work | ① Task planning | ② Perception & measurement | ③ Object assets | ④ Articulation | ⑤ Layout & alignment | ⑥ Physical parameters | ⑦ Physics engine | ⑧ Robot control | ⑨ Task definition |
         |---|---|---|---|---|---|---|---|---|---|---|
@@ -1192,6 +2068,8 @@ sections:
         |  | [SimFoundry](#paper-2606-28276) | **VLM** | SAM3 · PriorDepthAnything | Hunyuan3D · TRELLIS.2 | **Actor–Critic** | FoundationPose | **VLM** | PyBullet | — | **VLM** |
         | Model-based (without Agent) | [PhysX-Omni](#paper-2605-21572) (sim-ready) | Fine-tuned Qwen2.5-VL | — | Qwen2.5-VL · TRELLIS | Fine-tuned Qwen2.5-VL | — | Fine-tuned Qwen2.5-VL | Sim-ready | — | — |
         |  | [Real2Code](#paper-2406-08474) | — | Fine-tuned SAM · DUSt3R | Shape-completion model | Fine-tuned CodeLlama | DUSt3R point cloud | — | MuJoCo | — | — |
+
+        </details>
 
         Decide the organization in this order:
 
@@ -1221,7 +2099,16 @@ sections:
 
         把造一个仿真器拆成四组九步：A 输入理解（① 任务规划、② 感知测量）· B 场景构建（③ 物体资产、④ 关节结构、⑤ 布局对齐）· C 物理建模（⑥ 物理参数、⑦ 物理引擎）· D 任务与控制（⑧ 机器人控制、⑨ 任务定义）。B 加 C 是仿真器本身，再加上 D 就是能拿来训练和评测的环境；没有 ⑦ 物理引擎的工作只建了场景。检查与修订、变体扩增不算仿真器的组成部分，没有放进九步。
 
-        下表横着看一行，就是这项工作的每一步由谁来做。**粗体**：Agent 或 VLM 自己做；普通：交给专用工具、模型或引擎；*斜体*：事先给定（输入、固定规则或人工）；—：不涉及或没写明。⑦ 列的「仿真就绪」表示可以导入物理引擎，但方法里没有运行。
+        下图横着看一行，就是这项工作的每一步由谁来做：每格上行是谁做，下行是做什么。⑦ 物理引擎这一列决定造出来的是仿真器，还是只是一个场景。
+
+        {stage_chart}
+
+        全部 68 项的逐步对照（含检查与修订、变体扩增）见 [仿真器构建：全部工作逐步对照](stage3/simulator-construction.zh-CN.md)。
+
+        <details>
+        <summary>文字版（含链接）</summary>
+
+        **粗体**：Agent 或 VLM 自己做；普通：专用工具、模型或引擎；*斜体*：事先给定或人工；—：不涉及或没写明。
 
         | 组织方式 | 工作 | ① 任务规划 | ② 感知测量 | ③ 物体资产 | ④ 关节结构 | ⑤ 布局对齐 | ⑥ 物理参数 | ⑦ 物理引擎 | ⑧ 机器人控制 | ⑨ 任务定义 |
         |---|---|---|---|---|---|---|---|---|---|---|
@@ -1242,6 +2129,8 @@ sections:
         |  | [SimFoundry](#paper-2606-28276) | **VLM** | SAM3 · PriorDepthAnything | Hunyuan3D · TRELLIS.2 | **Actor–Critic** | FoundationPose | **VLM** | PyBullet | — | **VLM** |
         | Model-based (without Agent) | [PhysX-Omni](#paper-2605-21572)（仿真就绪） | 微调 Qwen2.5-VL | — | Qwen2.5-VL · TRELLIS | 微调 Qwen2.5-VL | — | 微调 Qwen2.5-VL | 仿真就绪 | — | — |
         |  | [Real2Code](#paper-2406-08474) | — | 微调 SAM · DUSt3R | 形状补全模型 | 微调 CodeLlama | DUSt3R 点云 | — | MuJoCo | — | — |
+
+        </details>
 
         组织方式按下面的顺序判断：
 
@@ -1271,7 +2160,16 @@ sections:
 
         シミュレータの構築を 4 グループ 9 ステップに分けます：A 入力理解（① タスク計画、② 知覚・計測）· B シーン構築（③ 物体アセット、④ 関節構造、⑤ 配置・位置合わせ）· C 物理モデリング（⑥ 物理パラメータ、⑦ 物理エンジン）· D タスクと制御（⑧ ロボット制御、⑨ タスク定義）。B と C がシミュレータ本体で、D を加えると学習や評価に使える環境になります。⑦ 物理エンジンを持たない作品は、シーンを作っただけです。検査と修正、バリエーション拡張はシミュレータの構成要素ではないため、9 ステップには入れていません。
 
-        1 行を横に読むと、その作品で各ステップを誰が担当するかが分かります。**太字**：Agent または VLM 自身が行う；標準：専用のツール・モデル・エンジンに任せる；*斜体*：事前に与えられる（入力、固定ルール、人手）；—：関与しない、または記載なし。⑦ 列の「シム対応」は、物理エンジンに読み込めるものの、手法の中では実行していないことを示します。
+        1 行を横に読むと、その作品で各ステップを誰が担当するかが分かります。各セルの上段が担当、下段が内容です。⑦ 物理エンジンの列で、作ったものがシミュレータなのか、シーンだけなのかが決まります。
+
+        {stage_chart}
+
+        全 68 件をステップごとに対応させた完全版（検査と修正、バリエーション拡張を含む）は [Simulator construction: every work, step by step](stage3/simulator-construction.md)（英語・中国語）にあります。
+
+        <details>
+        <summary>テキスト版（リンク付き）</summary>
+
+        **太字**：Agent または VLM 自身が行う；標準：専用のツール・モデル・エンジン；*斜体*：事前に所与、または人手；—：関与しない、または記載なし。
 
         | 構成方式 | 作品 | ① タスク計画 | ② 知覚・計測 | ③ 物体アセット | ④ 関節構造 | ⑤ 配置・位置合わせ | ⑥ 物理パラメータ | ⑦ 物理エンジン | ⑧ ロボット制御 | ⑨ タスク定義 |
         |---|---|---|---|---|---|---|---|---|---|---|
@@ -1292,6 +2190,8 @@ sections:
         |  | [SimFoundry](#paper-2606-28276) | **VLM** | SAM3 · PriorDepthAnything | Hunyuan3D · TRELLIS.2 | **Actor–Critic** | FoundationPose | **VLM** | PyBullet | — | **VLM** |
         | Model-based (without Agent) | [PhysX-Omni](#paper-2605-21572)（シム対応） | 微調整済み Qwen2.5-VL | — | Qwen2.5-VL · TRELLIS | 微調整済み Qwen2.5-VL | — | 微調整済み Qwen2.5-VL | シム対応 | — | — |
         |  | [Real2Code](#paper-2406-08474) | — | 微調整済み SAM · DUSt3R | 形状補完モデル | 微調整済み CodeLlama | DUSt3R 点群 | — | MuJoCo | — | — |
+
+        </details>
 
         構成方式は次の順に判断します：
 

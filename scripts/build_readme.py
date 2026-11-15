@@ -18,6 +18,7 @@ import yaml
 import engine_map
 import eval_ladder
 import triage
+import stage_chart
 from catalog import LAYOUT, validate_catalog, check_local_links
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -85,6 +86,8 @@ def validate(site, works, strict_ja):
                 errors.append(f'see_also {sec}: id {k} not found')
     errors += engine_map.validate_all(site)
     errors += eval_ladder.validate(site, works)
+    errors += stage_chart.validate(site, byid)
+    errors += stage_chart.validate_full(site, byid)
     return errors, warnings
 
 
@@ -310,7 +313,10 @@ def render(site, works, lang):
                 eng = ' · '.join(f'[{e}]({site["engines"][e]})' for e in meta['engines'])
                 o(f"*{t(site, 'engines', lang)}:* {eng}\n")
             if meta.get('guide'):
-                o(meta['guide'][lang].strip() + '\n')
+                guide = meta['guide'][lang].strip()
+                if '{stage_chart}' in guide:
+                    guide = guide.replace('{stage_chart}', stage_chart.picture(site, lang))
+                o(guide + '\n')
             for sub in meta['subs']:
                 items = groups.get((sec, sub), [])
                 if not items:
@@ -381,6 +387,7 @@ def main():
     generated = [(ROOT / site['languages'][lang]['file'], render(site, works, lang)) for lang in LANGS]
     generated += [(ROOT / rel, svg) for rel, svg in engine_map.outputs(site)]
     generated += [(ROOT / rel, svg) for rel, svg in eval_ladder.outputs(site)]
+    generated += [(ROOT / rel, svg) for rel, svg in stage_chart.outputs(site)]
     for path, text in generated:
         if args.check:
             if not path.exists() or path.read_text(encoding='utf-8') != text:

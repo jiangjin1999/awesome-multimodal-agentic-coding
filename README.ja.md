@@ -2460,6 +2460,20 @@
 
 ### 3.2 シミュレータ構築
 
+| 入力元 | 入力データ | 中心となる問い | よくある場面 | 作品 |
+|---|---|---|---|---|
+| Generative | テキスト記述 | 記述だけから、要件を満たし物理的に成り立つ世界を作れるか？ | 部屋、卓上タスク、物理現象 | [Holodeck](#paper-2312-09067) · [SceneSmith](#paper-2602-09153) · [GenSim](#paper-2310-01361) · [RoboGen](#paper-2311-01455) · [Text2Sim](#paper-2609-36593) · [Gym-Anything](#paper-2610-40565) |
+| Sim2Sim | アセット・シミュレーションファイル | 既存のモデルやシーンに物理を補い、別のエンジンへ移し、バリエーションを増やせるか？ | 物体アセット、卓上、部屋 | [UniPhysGen](#paper-2607-13586) · [EmbodiedGen V2](#paper-2607-07459) · [SimFoundry](#paper-2606-28276)（バリエーション拡張の段階） |
+|  | シミュレーションのレンダリング映像 | 正解が分かっているシミュレーション映像から、元の世界を書き戻せるか？（主に手法のテストと学習に使う） | 物理現象、卓上、合成された動的シーン | [CUE](#paper-2611-02691)（sim-to-sim テスト）· [SceneAgent](#paper-2610-34745)（合成動的シーン）· [4DCodeBench](#paper-2610-03715) · [MPMWorlds](#paper-2606-01538)（後の 2 件は 3.3） |
+| Real2Sim | 単一画像 | 写真 1 枚では裏側・スケール・関節が見えない。シミュレーション可能な物体を復元できるか？ | 単一物体 | [DiagGen](#paper-2609-23103) · [Gen2Sim](#paper-2310-18308) · [PhysX-Omni](#paper-2605-21572) · [RoboTwin](#paper-2409-02920) |
+|  | RGB-D・3D スキャン | 実スケールの完全な形状から、インタラクション可能な物体とシーンに分解できるか？ | 部屋、卓上 | [LiteReality](#paper-2610-01863) · [SceneAgent](#paper-2610-34745) · [Lucida](#paper-2608-30821) · [GRS](#paper-2410-15536) |
+|  | 操作者のいない動画 | 映像だけから、形状、さらには物体がひとりでにどう動くかまで復元できるか？ | 部屋、物理現象、関節物体 | [GRASE](#paper-2610-21498) · [Plumb](#paper-system-plumb) · [FACT](#paper-2609-37067) · [Code as Worlds](#paper-2608-27549) |
+|  | 人の操作動画 | 人が一度やるのを見て、ロボットがまねて練習できる環境を作れるか？ | 卓上操作、実験台 | [Video2Sim2Real](#paper-2606-08828) · [Real2Gym](#paper-2609-37089) · [LabWorld](#paper-2610-36592) · [RoboSimStudio](#paper-2610-18835) |
+|  | ロボット操作動画＋軌跡 | ロボットの動作が分かっているとき、その操作をシミュレーションでそのまま再生できるか？ | 卓上操作 | [WorldMirror](#paper-2610-31834) · [Agentic Real2Sim](#paper-2607-19190) · [Vid2Sid](#paper-2602-19359) |
+|  | ロボットの能動的インタラクション | 自分で試して、摩擦や反発係数などのパラメータを正確に測れるか？ | 卓上操作 | [CUE](#paper-2611-02691) · [D-World](#paper-2610-17114) · [Phys2Real](#paper-2510-11689) |
+
+作品は代表例のみです。同じ作品が複数の行に現れることがあります。
+
 <!-- mmac-record: {"id": "2611.10602", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-10602"></a>`2026.11` **[Agentic discrete-event simulation for manufacturing system design: an open 3D simulator, a benchmark and an industrial case](https://arxiv.org/abs/2611.10602)** [[コード]](https://github.com/simulean/SimuLean)

@@ -2457,6 +2457,20 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 ### 3.2 仿真器构建
 
+| 来源 | 输入数据 | 核心问题 | 常见场景 | 作品 |
+|---|---|---|---|---|
+| Generative | 文字描述 | 只有一段描述，能造出满足要求、物理上站得住的世界吗？ | 房间、桌面任务、物理现象 | [Holodeck](#paper-2312-09067) · [SceneSmith](#paper-2602-09153) · [GenSim](#paper-2310-01361) · [RoboGen](#paper-2311-01455) · [Text2Sim](#paper-2609-36593) · [Gym-Anything](#paper-2610-40565) |
+| Sim2Sim | 资产与仿真文件 | 已有的模型或场景，能补上物理、换个引擎、扩出更多变体吗？ | 物体资产、桌面、房间 | [UniPhysGen](#paper-2607-13586) · [EmbodiedGen V2](#paper-2607-07459) · [SimFoundry](#paper-2606-28276)（扩变体阶段） |
+|  | 仿真渲染画面 | 拿一段答案已知的仿真画面，能把原来的世界写回来吗？（主要用于测试和训练方法） | 物理现象、桌面、合成动态场景 | [CUE](#paper-2611-02691)（sim-to-sim 测试）· [SceneAgent](#paper-2610-34745)（合成动态场景）· [4DCodeBench](#paper-2610-03715) · [MPMWorlds](#paper-2606-01538)（后两项在 3.3） |
+| Real2Sim | 单张图像 | 一张照片看不到背面、尺度和关节，能复原出可仿真的物体吗？ | 单个物体 | [DiagGen](#paper-2609-23103) · [Gen2Sim](#paper-2310-18308) · [PhysX-Omni](#paper-2605-21572) · [RoboTwin](#paper-2409-02920) |
+|  | RGB-D 与 3D 扫描 | 有了带尺度的完整几何，能拆成可交互的物体和场景吗？ | 房间、桌面 | [LiteReality](#paper-2610-01863) · [SceneAgent](#paper-2610-34745) · [Lucida](#paper-2608-30821) · [GRS](#paper-2410-15536) |
+|  | 无操作者视频 | 只看画面，能复原几何，甚至物体自己怎么动吗？ | 房间、物理现象、关节物体 | [GRASE](#paper-2610-21498) · [Plumb](#paper-system-plumb) · [FACT](#paper-2609-37067) · [Code as Worlds](#paper-2608-27549) |
+|  | 人类操作视频 | 看人做一遍，能造出机器人可以照着练的环境吗？ | 桌面操作、实验台 | [Video2Sim2Real](#paper-2606-08828) · [Real2Gym](#paper-2609-37089) · [LabWorld](#paper-2610-36592) · [RoboSimStudio](#paper-2610-18835) |
+|  | 机器人操作视频 + 轨迹 | 已知机器人做了什么动作，能把这段操作在仿真里原样重放吗？ | 桌面操作 | [WorldMirror](#paper-2610-31834) · [Agentic Real2Sim](#paper-2607-19190) · [Vid2Sid](#paper-2602-19359) |
+|  | 机器人主动交互 | 自己动手试，能把摩擦、弹性这些参数测准吗？ | 桌面操作 | [CUE](#paper-2611-02691) · [D-World](#paper-2610-17114) · [Phys2Real](#paper-2510-11689) |
+
+作品只列代表，同一项工作可能出现在多行。
+
 <!-- mmac-record: {"id": "2611.10602", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-10602"></a>`2026.11` **[Agentic discrete-event simulation for manufacturing system design: an open 3D simulator, a benchmark and an industrial case](https://arxiv.org/abs/2611.10602)** [[代码]](https://github.com/simulean/SimuLean)

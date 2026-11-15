@@ -825,6 +825,49 @@ sections:
     ja: シミュレータ構築
     subs:
     - null
+    guide:
+      en: |-
+        | Source | Input data | Core question | Typical scenes | Works |
+        |---|---|---|---|---|
+        | Generative | Text description | From a description alone, can it build a world that meets the requirements and holds up physically? | Rooms, tabletop tasks, physical phenomena | [Holodeck](#paper-2312-09067) · [SceneSmith](#paper-2602-09153) · [GenSim](#paper-2310-01361) · [RoboGen](#paper-2311-01455) · [Text2Sim](#paper-2609-36593) · [Gym-Anything](#paper-2610-40565) |
+        | Sim2Sim | Asset and simulation files | Can existing models or scenes gain physics, move to another engine, or be expanded into variants? | Object assets, tabletops, rooms | [UniPhysGen](#paper-2607-13586) · [EmbodiedGen V2](#paper-2607-07459) · [SimFoundry](#paper-2606-28276) (variant-expansion stage) |
+        |  | Simulation renders | Given simulated footage whose ground truth is known, can it write the original world back? (Mainly used to test and train methods) | Physical phenomena, tabletops, synthetic dynamic scenes | [CUE](#paper-2611-02691) (sim-to-sim tests) · [SceneAgent](#paper-2610-34745) (synthetic dynamic scenes) · [4DCodeBench](#paper-2610-03715) · [MPMWorlds](#paper-2606-01538) (the last two are in 3.3) |
+        | Real2Sim | Single image | One photo hides the back, the scale, and the joints: can it recover a simulatable object? | Single objects | [DiagGen](#paper-2609-23103) · [Gen2Sim](#paper-2310-18308) · [PhysX-Omni](#paper-2605-21572) · [RoboTwin](#paper-2409-02920) |
+        |  | RGB-D and 3D scans | With complete geometry at true scale, can it be split into interactive objects and scenes? | Rooms, tabletops | [LiteReality](#paper-2610-01863) · [SceneAgent](#paper-2610-34745) · [Lucida](#paper-2608-30821) · [GRS](#paper-2410-15536) |
+        |  | Video without an operator | From footage alone, can it recover the geometry, and even how objects move on their own? | Rooms, physical phenomena, articulated objects | [GRASE](#paper-2610-21498) · [Plumb](#paper-system-plumb) · [FACT](#paper-2609-37067) · [Code as Worlds](#paper-2608-27549) |
+        |  | Human manipulation video | After watching a person do it once, can it build an environment where a robot can practise the task? | Tabletop manipulation, lab benches | [Video2Sim2Real](#paper-2606-08828) · [Real2Gym](#paper-2609-37089) · [LabWorld](#paper-2610-36592) · [RoboSimStudio](#paper-2610-18835) |
+        |  | Robot manipulation video + trajectories | With the robot's actions known, can the episode be replayed exactly in simulation? | Tabletop manipulation | [WorldMirror](#paper-2610-31834) · [Agentic Real2Sim](#paper-2607-19190) · [Vid2Sid](#paper-2602-19359) |
+        |  | Active robot interaction | By trying things itself, can it measure parameters such as friction and restitution accurately? | Tabletop manipulation | [CUE](#paper-2611-02691) · [D-World](#paper-2610-17114) · [Phys2Real](#paper-2510-11689) |
+
+        Works are representative; one work may appear in several rows.
+      zh: |-
+        | 来源 | 输入数据 | 核心问题 | 常见场景 | 作品 |
+        |---|---|---|---|---|
+        | Generative | 文字描述 | 只有一段描述，能造出满足要求、物理上站得住的世界吗？ | 房间、桌面任务、物理现象 | [Holodeck](#paper-2312-09067) · [SceneSmith](#paper-2602-09153) · [GenSim](#paper-2310-01361) · [RoboGen](#paper-2311-01455) · [Text2Sim](#paper-2609-36593) · [Gym-Anything](#paper-2610-40565) |
+        | Sim2Sim | 资产与仿真文件 | 已有的模型或场景，能补上物理、换个引擎、扩出更多变体吗？ | 物体资产、桌面、房间 | [UniPhysGen](#paper-2607-13586) · [EmbodiedGen V2](#paper-2607-07459) · [SimFoundry](#paper-2606-28276)（扩变体阶段） |
+        |  | 仿真渲染画面 | 拿一段答案已知的仿真画面，能把原来的世界写回来吗？（主要用于测试和训练方法） | 物理现象、桌面、合成动态场景 | [CUE](#paper-2611-02691)（sim-to-sim 测试）· [SceneAgent](#paper-2610-34745)（合成动态场景）· [4DCodeBench](#paper-2610-03715) · [MPMWorlds](#paper-2606-01538)（后两项在 3.3） |
+        | Real2Sim | 单张图像 | 一张照片看不到背面、尺度和关节，能复原出可仿真的物体吗？ | 单个物体 | [DiagGen](#paper-2609-23103) · [Gen2Sim](#paper-2310-18308) · [PhysX-Omni](#paper-2605-21572) · [RoboTwin](#paper-2409-02920) |
+        |  | RGB-D 与 3D 扫描 | 有了带尺度的完整几何，能拆成可交互的物体和场景吗？ | 房间、桌面 | [LiteReality](#paper-2610-01863) · [SceneAgent](#paper-2610-34745) · [Lucida](#paper-2608-30821) · [GRS](#paper-2410-15536) |
+        |  | 无操作者视频 | 只看画面，能复原几何，甚至物体自己怎么动吗？ | 房间、物理现象、关节物体 | [GRASE](#paper-2610-21498) · [Plumb](#paper-system-plumb) · [FACT](#paper-2609-37067) · [Code as Worlds](#paper-2608-27549) |
+        |  | 人类操作视频 | 看人做一遍，能造出机器人可以照着练的环境吗？ | 桌面操作、实验台 | [Video2Sim2Real](#paper-2606-08828) · [Real2Gym](#paper-2609-37089) · [LabWorld](#paper-2610-36592) · [RoboSimStudio](#paper-2610-18835) |
+        |  | 机器人操作视频 + 轨迹 | 已知机器人做了什么动作，能把这段操作在仿真里原样重放吗？ | 桌面操作 | [WorldMirror](#paper-2610-31834) · [Agentic Real2Sim](#paper-2607-19190) · [Vid2Sid](#paper-2602-19359) |
+        |  | 机器人主动交互 | 自己动手试，能把摩擦、弹性这些参数测准吗？ | 桌面操作 | [CUE](#paper-2611-02691) · [D-World](#paper-2610-17114) · [Phys2Real](#paper-2510-11689) |
+
+        作品只列代表，同一项工作可能出现在多行。
+      ja: |-
+        | 入力元 | 入力データ | 中心となる問い | よくある場面 | 作品 |
+        |---|---|---|---|---|
+        | Generative | テキスト記述 | 記述だけから、要件を満たし物理的に成り立つ世界を作れるか？ | 部屋、卓上タスク、物理現象 | [Holodeck](#paper-2312-09067) · [SceneSmith](#paper-2602-09153) · [GenSim](#paper-2310-01361) · [RoboGen](#paper-2311-01455) · [Text2Sim](#paper-2609-36593) · [Gym-Anything](#paper-2610-40565) |
+        | Sim2Sim | アセット・シミュレーションファイル | 既存のモデルやシーンに物理を補い、別のエンジンへ移し、バリエーションを増やせるか？ | 物体アセット、卓上、部屋 | [UniPhysGen](#paper-2607-13586) · [EmbodiedGen V2](#paper-2607-07459) · [SimFoundry](#paper-2606-28276)（バリエーション拡張の段階） |
+        |  | シミュレーションのレンダリング映像 | 正解が分かっているシミュレーション映像から、元の世界を書き戻せるか？（主に手法のテストと学習に使う） | 物理現象、卓上、合成された動的シーン | [CUE](#paper-2611-02691)（sim-to-sim テスト）· [SceneAgent](#paper-2610-34745)（合成動的シーン）· [4DCodeBench](#paper-2610-03715) · [MPMWorlds](#paper-2606-01538)（後の 2 件は 3.3） |
+        | Real2Sim | 単一画像 | 写真 1 枚では裏側・スケール・関節が見えない。シミュレーション可能な物体を復元できるか？ | 単一物体 | [DiagGen](#paper-2609-23103) · [Gen2Sim](#paper-2310-18308) · [PhysX-Omni](#paper-2605-21572) · [RoboTwin](#paper-2409-02920) |
+        |  | RGB-D・3D スキャン | 実スケールの完全な形状から、インタラクション可能な物体とシーンに分解できるか？ | 部屋、卓上 | [LiteReality](#paper-2610-01863) · [SceneAgent](#paper-2610-34745) · [Lucida](#paper-2608-30821) · [GRS](#paper-2410-15536) |
+        |  | 操作者のいない動画 | 映像だけから、形状、さらには物体がひとりでにどう動くかまで復元できるか？ | 部屋、物理現象、関節物体 | [GRASE](#paper-2610-21498) · [Plumb](#paper-system-plumb) · [FACT](#paper-2609-37067) · [Code as Worlds](#paper-2608-27549) |
+        |  | 人の操作動画 | 人が一度やるのを見て、ロボットがまねて練習できる環境を作れるか？ | 卓上操作、実験台 | [Video2Sim2Real](#paper-2606-08828) · [Real2Gym](#paper-2609-37089) · [LabWorld](#paper-2610-36592) · [RoboSimStudio](#paper-2610-18835) |
+        |  | ロボット操作動画＋軌跡 | ロボットの動作が分かっているとき、その操作をシミュレーションでそのまま再生できるか？ | 卓上操作 | [WorldMirror](#paper-2610-31834) · [Agentic Real2Sim](#paper-2607-19190) · [Vid2Sid](#paper-2602-19359) |
+        |  | ロボットの能動的インタラクション | 自分で試して、摩擦や反発係数などのパラメータを正確に測れるか？ | 卓上操作 | [CUE](#paper-2611-02691) · [D-World](#paper-2610-17114) · [Phys2Real](#paper-2510-11689) |
+
+        作品は代表例のみです。同じ作品が複数の行に現れることがあります。
   '3.3':
     en: Simulator quality evaluation
     zh: 仿真器质量评估

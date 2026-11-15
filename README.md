@@ -2457,6 +2457,20 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 ### 3.2 Simulator construction
 
+| Source | Input data | Core question | Typical scenes | Works |
+|---|---|---|---|---|
+| Generative | Text description | From a description alone, can it build a world that meets the requirements and holds up physically? | Rooms, tabletop tasks, physical phenomena | [Holodeck](#paper-2312-09067) · [SceneSmith](#paper-2602-09153) · [GenSim](#paper-2310-01361) · [RoboGen](#paper-2311-01455) · [Text2Sim](#paper-2609-36593) · [Gym-Anything](#paper-2610-40565) |
+| Sim2Sim | Asset and simulation files | Can existing models or scenes gain physics, move to another engine, or be expanded into variants? | Object assets, tabletops, rooms | [UniPhysGen](#paper-2607-13586) · [EmbodiedGen V2](#paper-2607-07459) · [SimFoundry](#paper-2606-28276) (variant-expansion stage) |
+|  | Simulation renders | Given simulated footage whose ground truth is known, can it write the original world back? (Mainly used to test and train methods) | Physical phenomena, tabletops, synthetic dynamic scenes | [CUE](#paper-2611-02691) (sim-to-sim tests) · [SceneAgent](#paper-2610-34745) (synthetic dynamic scenes) · [4DCodeBench](#paper-2610-03715) · [MPMWorlds](#paper-2606-01538) (the last two are in 3.3) |
+| Real2Sim | Single image | One photo hides the back, the scale, and the joints: can it recover a simulatable object? | Single objects | [DiagGen](#paper-2609-23103) · [Gen2Sim](#paper-2310-18308) · [PhysX-Omni](#paper-2605-21572) · [RoboTwin](#paper-2409-02920) |
+|  | RGB-D and 3D scans | With complete geometry at true scale, can it be split into interactive objects and scenes? | Rooms, tabletops | [LiteReality](#paper-2610-01863) · [SceneAgent](#paper-2610-34745) · [Lucida](#paper-2608-30821) · [GRS](#paper-2410-15536) |
+|  | Video without an operator | From footage alone, can it recover the geometry, and even how objects move on their own? | Rooms, physical phenomena, articulated objects | [GRASE](#paper-2610-21498) · [Plumb](#paper-system-plumb) · [FACT](#paper-2609-37067) · [Code as Worlds](#paper-2608-27549) |
+|  | Human manipulation video | After watching a person do it once, can it build an environment where a robot can practise the task? | Tabletop manipulation, lab benches | [Video2Sim2Real](#paper-2606-08828) · [Real2Gym](#paper-2609-37089) · [LabWorld](#paper-2610-36592) · [RoboSimStudio](#paper-2610-18835) |
+|  | Robot manipulation video + trajectories | With the robot's actions known, can the episode be replayed exactly in simulation? | Tabletop manipulation | [WorldMirror](#paper-2610-31834) · [Agentic Real2Sim](#paper-2607-19190) · [Vid2Sid](#paper-2602-19359) |
+|  | Active robot interaction | By trying things itself, can it measure parameters such as friction and restitution accurately? | Tabletop manipulation | [CUE](#paper-2611-02691) · [D-World](#paper-2610-17114) · [Phys2Real](#paper-2510-11689) |
+
+Works are representative; one work may appear in several rows.
+
 <!-- mmac-record: {"id": "2611.10602", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-10602"></a>`2026.11` **[Agentic discrete-event simulation for manufacturing system design: an open 3D simulator, a benchmark and an industrial case](https://arxiv.org/abs/2611.10602)** [[Code]](https://github.com/simulean/SimuLean)

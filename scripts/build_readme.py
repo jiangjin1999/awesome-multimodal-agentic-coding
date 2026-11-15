@@ -166,9 +166,26 @@ def unique_paper_links(urls, site):
         yield url
 
 
+def setup_line(w, lang, site):
+    """One line: simulators (+ robots simulated in them), then real robots; missing parts are omitted."""
+    s = w.get('setup') or {}
+    sep, op, cl = (', ', ' (', ')') if lang == 'en' else ('、', '（', '）')
+    engines, sim_robots = ' + '.join(s.get('engines', [])), sep.join(s.get('sim_robots', []))
+    parts = []
+    if engines or sim_robots:
+        sim = f'{engines}{op}{sim_robots}{cl}' if engines and sim_robots else engines or sim_robots
+        parts.append(f"🖥️ **{t(site, 'setup_sim', lang)}** {sim}")
+    if s.get('real_robots'):
+        parts.append(f"🦾 **{t(site, 'setup_real', lang)}** {sep.join(s['real_robots'])}")
+    return ' · '.join(parts)
+
+
 def entry(w, lang, site):
     date = f"`{w['date']}` " if w.get('date') else ''
     tl = (w['tldr'].get(lang) or w['tldr']['en']).strip()
+    setup = setup_line(w, lang, site)
+    if setup:
+        tl += f'<br>\n  > {setup}'
     target = anchor(w['id'])
     aliases = ''.join(f'<a id="{a}"></a>\n' for a, dest in site.get('anchor_aliases', {}).items() if dest == target)
     metadata = {'id': w['id'], 'scope': w['scope'].title(), 'primary': w['section'],

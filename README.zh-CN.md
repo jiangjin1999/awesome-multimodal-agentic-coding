@@ -2023,92 +2023,110 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2611.01560", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-01560"></a>`2026.11` **[Democratizing Robot-Use Agents: A Unified Harness with Open Models](https://arxiv.org/abs/2611.01560)** [[代码]](https://github.com/Open-RUA/uni-robot-agent) [[项目页]](https://openrua.ai/uni-robot-agent)
-  > 让 Qwen3.8-Flash-Next 和 GPT-6 Astra 通过统一接口调用感知与运动工具，运行几何检查，观察动作结果并调整下一步操作。
+  > 让 Qwen3.8-Flash-Next 和 GPT-6 Astra 通过统一接口调用感知与运动工具，运行几何检查，观察动作结果并调整下一步操作。<br>
+  > 🖥️ **仿真** Isaac Sim（ARX X5） · 🦾 **真机** ARX AC One
 
 <!-- mmac-record: {"id": "2611.01112", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-01112"></a>`2026.10` **[Auriga Technical Report: A Task-Agnostic Agent Harness for Zero-Shot Embodied Manipulation](https://arxiv.org/abs/2611.01112)** [[项目页]](https://auriga.stelledge.com/) [[代码]](https://github.com/lose4578/Auriga)
-  > 让模型在任务信念、三维测量、轨迹预览与统一执行入口之上选择工具或编写多步 Python 程序。
+  > 让模型在任务信念、三维测量、轨迹预览与统一执行入口之上选择工具或编写多步 Python 程序。<br>
+  > 🖥️ **仿真** Isaac Sim + MuJoCo（ARX X5、Franka Panda）
 
 <!-- mmac-record: {"id": "2610.13862", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-13862"></a>`2026.10` **[BT-Agent: Deploying Onboard Robot Agents with Behavior Trees and Multi-Fidelity Evaluation](https://arxiv.org/abs/2610.13862)**
-  > 通过固定行为树 Skill 组织感知与物理动作工具，以结构化失败反馈重试或改变任务决策，本地 Guard 则监督经操作员批准的机载运动。
+  > 通过固定行为树 Skill 组织感知与物理动作工具，以结构化失败反馈重试或改变任务决策，本地 Guard 则监督经操作员批准的机载运动。<br>
+  > 🖥️ **仿真** Habitat + MuJoCo（Boston Dynamics Spot） · 🦾 **真机** Boston Dynamics Spot
 
 <!-- mmac-record: {"id": "2610.29702", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-29702"></a>`2026.10` **[CausGround: Causal Interaction Grounding for Adaptive Embodied Planning](https://arxiv.org/abs/2610.29702)** [[项目页]](https://causground.github.io/)
-  > 将 RGB 观测落地为对象级因果机制，检索动作前提和效果以引导冻结规划器选择技能，并通过仿真、录制技能回放与定性机器人演示验证。
+  > 将 RGB 观测落地为对象级因果机制，检索动作前提和效果以引导冻结规划器选择技能，并通过仿真、录制技能回放与定性机器人演示验证。<br>
+  > 🖥️ **仿真** Unity + MuJoCo（Franka Panda）
 
 <!-- mmac-record: {"id": "2610.01939", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-01939"></a>`2026.10` **[Fewer Tokens, Better Action: GPT-6 Astra Robot Agents with 14% Higher Success Rate but 65% Fewer Tokens](https://arxiv.org/abs/2610.01939)**
-  > 让 Agent 在 Python 单元中组合机器人原语、局部检查和重试，减少回传上下文，并探索小型编程模型的强化学习。
+  > 让 Agent 在 Python 单元中组合机器人原语、局部检查和重试，减少回传上下文，并探索小型编程模型的强化学习。<br>
+  > 🖥️ **仿真** MuJoCo + SAPIEN（Franka Panda、AgileX ALOHA）
 
 <!-- mmac-record: {"id": "2610.23479", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-23479"></a>`2026.10` **[HexaShell: A Universal Harness for Robot Coding Agents in Simulation and the Real World](https://arxiv.org/abs/2610.23479)** [[代码]](https://github.com/HexaFuture/HexaShell)
-  > 让机器人编程 Agent 在每轮编写一段 Python，调用共享的运动、感知与状态工具，也可复用从历史执行记录提炼的任务 Skills。
+  > 让机器人编程 Agent 在每轮编写一段 Python，调用共享的运动、感知与状态工具，也可复用从历史执行记录提炼的任务 Skills。<br>
+  > 🖥️ **仿真** Isaac Sim + SAPIEN + MuJoCo（ARX X5、Franka Panda） · 🦾 **真机** AgileX PiPER-X
 
 <!-- mmac-record: {"id": "2610.02459", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-02459"></a>`2026.10` **[OpenRUA: Robot-Use Agents Are Zero-Shot Visuomotor Policies](https://arxiv.org/abs/2610.02459)** [[代码]](https://github.com/terminalworld/OpenRUA)
-  > 仅向现成 Coding Agent 提供终端、ROS 2 文档与机器人工作区，检验直接编程使用原生机器人接口的零样本能力。
+  > 仅向现成 Coding Agent 提供终端、ROS 2 文档与机器人工作区，检验直接编程使用原生机器人接口的零样本能力。<br>
+  > 🖥️ **仿真** MuJoCo + Isaac Sim（Franka Panda）
 
 <!-- mmac-record: {"id": "2610.06843", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-06843"></a>`2026.10` **[Recursive Video In-Context Learning for Agentic Robot](https://arxiv.org/abs/2610.06843)** [[代码]](https://github.com/BWR-hhh/rvicl) [[项目页]](https://bwr-hhh.github.io/rvicl/)
-  > 让机器人 Agent 按需查询分层示范视频，与实时相机对比后调整冻结 VLA 和解析动作原语的调用，同时保留底层执行框架。
+  > 让机器人 Agent 按需查询分层示范视频，与实时相机对比后调整冻结 VLA 和解析动作原语的调用，同时保留底层执行框架。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda）
 
 <!-- mmac-record: {"id": "2610.04929", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-04929"></a>`2026.10` **[RobotUse: Allocating Computation, Context, and Decisions](https://arxiv.org/abs/2610.04929)** [[项目页]](https://robotuse-team.github.io/) [[代码]](https://github.com/robotuse-team/RobotUse)
-  > 围绕物理动作组织计算、上下文与决策，并用持久执行手册积累机器人 Agent 的任务经验。
+  > 围绕物理动作组织计算、上下文与决策，并用持久执行手册积累机器人 Agent 的任务经验。<br>
+  > 🖥️ **仿真** Isaac Lab（Franka Panda） · 🦾 **真机** Franka Panda
 
 <!-- mmac-record: {"id": "2610.12457", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-12457"></a>`2026.10` **[SpatialHarness: Test-Time Spatial Scaffolding for Fine Robotic Manipulation](https://arxiv.org/abs/2610.12457)** [[项目页]](https://emilia113.github.io/SpatialHarness/) [[数据集]](https://huggingface.co/datasets/yzy05/SpatialHarness)
-  > 维持与真实执行同步的模拟场景，按任务需要渲染补充视角，为冻结的多模态机器人策略提供空间支架。
+  > 维持与真实执行同步的模拟场景，按任务需要渲染补充视角，为冻结的多模态机器人策略提供空间支架。<br>
+  > 🖥️ **仿真** MuJoCo（Franka FR3） · 🦾 **真机** Franka FR3
 
 <!-- mmac-record: {"id": "2610.30043", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-30043"></a>`2026.10` **[TARSphere: A Robot-Oriented Full-Stack Framework for Long-Horizon Embodied Agents in Evolving Physical and Social Environments](https://arxiv.org/abs/2610.30043)** [[代码]](https://github.com/xuyicheng-zju/TARSphere) [[项目页]](https://xuyicheng-zju.github.io/TARSphere/)
-  > 为冻结多模态模型提供分层可执行技能、任务记忆和执行反馈，组织长时序机器人行动及环境变化处理。
+  > 为冻结多模态模型提供分层可执行技能、任务记忆和执行反馈，组织长时序机器人行动及环境变化处理。<br>
+  > 🖥️ **仿真** Isaac Sim（Unitree G1）
 
 <!-- mmac-record: {"id": "2609.12541", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-12541"></a>`2026.09` **[Agent as Policy for Robotic Manipulation](https://arxiv.org/abs/2609.12541)** [[数据集]](https://huggingface.co/datasets/Agent-as-Policy/agent-as-policy) [[代码]](https://github.com/agent-as-policy-2026/agent-as-policy)
-  > 让通用 Agent 持续读取视觉证据、编写程序并发出运动指令，根据物理执行结果调整下一步行动。
+  > 让通用 Agent 持续读取视觉证据、编写程序并发出运动指令，根据物理执行结果调整下一步行动。<br>
+  > 🖥️ **仿真** MuJoCo（I2RT YAM） · 🦾 **真机** I2RT YAM
 
 <!-- mmac-record: {"id": "2609.20822", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-20822"></a>`2026.09` **[Coding Agents with an Obstacle-Aware Harness for Safe Robot Manipulation](https://arxiv.org/abs/2609.20822)**
-  > 为 Code-as-policy Agent 增加视觉定位的路径检查与接触约束，并在执行遭遇障碍或未建模物理限制时，根据观测到的停止位姿重新规划后续动作。
+  > 为 Code-as-policy Agent 增加视觉定位的路径检查与接触约束，并在执行遭遇障碍或未建模物理限制时，根据观测到的停止位姿重新规划后续动作。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda） · 🦾 **真机** AgileX PiPER-X
 
 <!-- mmac-record: {"id": "2609.38078", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-38078"></a>`2026.09` **[MotorMind: Scaffolding General Vision Language Models for Zero-Shot Robot Manipulation](https://arxiv.org/abs/2609.38078)**
-  > 用中层动作、确定性控制和异步监测连接通用 VLM 与机械臂，考察推理频率与执行可靠性的关系。
+  > 用中层动作、确定性控制和异步监测连接通用 VLM 与机械臂，考察推理频率与执行可靠性的关系。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda） · 🦾 **真机** xArm6
 
 <!-- mmac-record: {"id": "2609.29389", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-29389"></a>`2026.09` **[Robo-Harness K1: Harnessing Robot-Use Agents via Perception Augmentation](https://arxiv.org/abs/2609.29389)**
-  > 把三维感知作为可调用工具提供给 Robot-Use Agent，增强几何定位能力而不重新训练视觉编码器。
+  > 把三维感知作为可调用工具提供给 Robot-Use Agent，增强几何定位能力而不重新训练视觉编码器。<br>
+  > 🖥️ **仿真** MuJoCo + SAPIEN（Franka Panda、UR5e、KUKA iiwa、AgileX ALOHA）
 
 <!-- mmac-record: {"id": "2610.14018", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-14018"></a>`2026.09` **[RoboHarness: A Simple Harness Outperforms VLA and World Action Models](https://arxiv.org/abs/2610.14018)** [[代码]](https://github.com/BinceQu/RoboHarness)
-  > 给 LLM Agent 提供视觉几何控制面板，研究简单工具接口能否支持零样本机器人操作。
+  > 给 LLM Agent 提供视觉几何控制面板，研究简单工具接口能否支持零样本机器人操作。<br>
+  > 🖥️ **仿真** MuJoCo + Isaac Sim（Franka Panda、Galaxea R1 Pro、ARX X5）
 
 <!-- mmac-record: {"id": "2609.10522", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-10522"></a>`2026.09` **[Show-Harness: Just a VLM Agent Can Play Robots](https://arxiv.org/abs/2609.10522)** [[项目页]](https://showlab.github.io/Show-Harness) [[代码]](https://github.com/showlab/Show-Harness) [[模型]](https://huggingface.co/showlab/Show-Harness-VLMs) [[数据集]](https://huggingface.co/datasets/showlab/Show-Harness-Data)
-  > 以紧凑语义动作接口连接通用 VLM 与机器人解释器，研究将数字 Agent 式交互迁移到物理控制的条件。
+  > 以紧凑语义动作接口连接通用 VLM 与机器人解释器，研究将数字 Agent 式交互迁移到物理控制的条件。<br>
+  > 🖥️ **仿真** Isaac Lab + SAPIEN（Franka Panda） · 🦾 **真机** Franka FR3、AgileX PiPER
 
 <!-- mmac-record: {"id": "2609.29964", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-29964"></a>`2026.09` **[World Action Agent: Harnessing VLMs for Robot Manipulation via World Action Rehearsal](https://arxiv.org/abs/2609.29964)**
-  > 为 VLM 提供交互局部视图、可编辑的动作预演和示范提炼的技能，通过数值规划工具持续修正操控决策，而不生成策略代码。
+  > 为 VLM 提供交互局部视图、可编辑的动作预演和示范提炼的技能，通过数值规划工具持续修正操控决策，而不生成策略代码。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda）
 
 <!-- mmac-record: {"id": "chemautoagent", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
@@ -2118,52 +2136,62 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2608.03924", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2608-03924"></a>`2026.08` **[ETA: A New Agentic Paradigm for Embodied Tasks](https://arxiv.org/abs/2608.03924)**
-  > 通过 OpenETA 将观察、标记目标与运动能力接入 Codex 等数字 Agent，研究轻量接口如何支持物理任务。
+  > 通过 OpenETA 将观察、标记目标与运动能力接入 Codex 等数字 Agent，研究轻量接口如何支持物理任务。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda） · 🦾 **真机** UR5e
 
 <!-- mmac-record: {"id": "2607.05369", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2607-05369"></a>`2026.07` **[GaP: A Graph-as-Policy Multi-Agent Self-Learning Harness For Variational Automation Tasks](https://arxiv.org/abs/2607.05369)** [[项目页]](https://graph-robots.github.io/gap) [[代码]](https://github.com/graph-robots/graph-as-policy)
-  > 由多 Agent 编写连接感知、规划与控制节点的计算图，以可组合机器人技能库支持可变自动化任务。
+  > 由多 Agent 编写连接感知、规划与控制节点的计算图，以可组合机器人技能库支持可变自动化任务。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda） · 🦾 **真机** Franka
 
 <!-- mmac-record: {"id": "2607.16636", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2607-16636"></a>`2026.07` **[PhyAgentOS: A Self-Evolving Operating System for Embodied Agents with Decoupled Cognitive Planning and Physical Execution](https://arxiv.org/abs/2607.16636)** [[代码]](https://github.com/PhyAgentOS/PhyAgentOS)
-  > 用文件化状态契约分离 Agent 推理与机器人执行，让工具调用、状态记录和经验更新能够跨运行层衔接。
+  > 用文件化状态契约分离 Agent 推理与机器人执行，让工具调用、状态记录和经验更新能够跨运行层衔接。<br>
+  > 🖥️ **仿真** MuJoCo + Isaac Sim · 🦾 **真机** Franka FR3、XLeRobot、AgileX PiPER、Dobot Nova 2、Unitree Go2、Unitree G1
 
 <!-- mmac-record: {"id": "2605.26637", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2605-26637"></a>`2026.05` **[Enabling Extensible Embodied Capabilities with Tools](https://arxiv.org/abs/2605.26637)**
-  > 提出 Embodied Tool Protocol，将机器人感知、推理与执行能力统一为可注册、发现和调用的工具，支撑 Agent 组合现有能力。
+  > 提出 Embodied Tool Protocol，将机器人感知、推理与执行能力统一为可注册、发现和调用的工具，支撑 Agent 组合现有能力。<br>
+  > 🖥️ **仿真** AI2-THOR + Habitat + CoppeliaSim（Franka Panda）
 
 <!-- mmac-record: {"id": "2511.00917", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2511-00917"></a>`2025.11` **[MAESTRO: Orchestrating Robotics Modules with Coding Agents for Zero-Shot Generalist Robots](https://arxiv.org/abs/2511.00917)** [[代码]](https://github.com/penn-pal-lab/maestro) [[项目页]](https://maestro-robot.github.io)
-  > 让 VLM 编写机器人程序来组织感知、规划和控制模块，通过视觉与执行反馈验证结果及恢复失败。
+  > 让 VLM 编写机器人程序来组织感知、规划和控制模块，通过视觉与执行反馈验证结果及恢复失败。<br>
+  > 🦾 **真机** Franka Panda、Unitree Go2-W、AgileX PiPER
 
 <!-- mmac-record: {"id": "2510.21302", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2510-21302"></a>`2025.10` **[Towards Reliable Code-as-Policies: A Neuro-Symbolic Framework for Embodied Task Planning](https://arxiv.org/abs/2510.21302)**
-  > 将机器人策略代码生成与符号验证结合，通过探索程序补全缺失观测并验证行动条件。
+  > 将机器人策略代码生成与符号验证结合，通过探索程序补全缺失观测并验证行动条件。<br>
+  > 🖥️ **仿真** CoppeliaSim（Franka Panda） · 🦾 **真机** Franka FR3
 
 <!-- mmac-record: {"id": "2505.07532", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2505-07532"></a>`2025.05` **[RAI: Flexible Agent Framework for Embodied AI](https://arxiv.org/abs/2505.07532)**
-  > 以模块化工具接口把语言模型、多 Agent、ROS 与仿真连接起来，为机器人 Agent 提供可复用的运行基础。
+  > 以模块化工具接口把语言模型、多 Agent、ROS 与仿真连接起来，为机器人 Agent 提供可复用的运行基础。<br>
+  > 🖥️ **仿真** O3DE（Husarion ROSbot XL） · 🦾 **真机** Husarion ROSbot XL
 
 <!-- mmac-record: {"id": "2503.21969", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2503-21969"></a>`2025.03` **[Robotic Long-Horizon Manipulation with Progressive In-Context Code Generation and Episodic Feedback](https://arxiv.org/abs/2503.21969)**
-  > 用递进式上下文生成机器人程序，再由视觉报告器在每轮执行后总结结果并指导重规划。
+  > 用递进式上下文生成机器人程序，再由视觉报告器在每轮执行后总结结果并指导重规划。<br>
+  > 🖥️ **仿真** PyBullet + MuJoCo（UR5e、Franka Panda） · 🦾 **真机** Franka
 
 <!-- mmac-record: {"id": "2412.04455", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2412-04455"></a>`2024.12` **[Code-as-Monitor: Constraint-aware Visual Programming for Reactive and Proactive Robotic Failure Detection](https://arxiv.org/abs/2412.04455)** [[项目页]](https://zhoues.github.io/Code-as-Monitor/)
-  > 让 VLM 编写可执行的时空约束监测程序，利用视觉跟踪检查机器人执行中的失败和潜在违规。
+  > 让 VLM 编写可执行的时空约束监测程序，利用视觉跟踪检查机器人执行中的失败和潜在违规。<br>
+  > 🖥️ **仿真** CoppeliaSim + PyBullet + Isaac Sim（Franka Panda、UR5、Fetch） · 🦾 **真机** UR5、LEAP Hand
 
 <!-- mmac-record: {"id": "2410.06472", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2410-06472"></a>`2024.10` **[Enabling Novel Mission Operations and Interactions with ROSA: The Robot Operating System Agent](https://arxiv.org/abs/2410.06472)**
-  > 将 ROS 查询、诊断与操作封装为语言 Agent 可调用的工具，支持不同机器人平台的自然语言任务交互。
+  > 将 ROS 查询、诊断与操作封装为语言 Agent 可调用的工具，支持不同机器人平台的自然语言任务交互。<br>
+  > 🖥️ **仿真** Isaac Sim（NVIDIA Nova Carter） · 🦾 **真机** JPL EELS、Boston Dynamics Spot
 
 <!-- mmac-record: {"id": "bounded-motion", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
@@ -2173,166 +2201,198 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2312.04474", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2312-04474"></a>`2023.12` **[Chain of Code: Reasoning with a Language Model-Augmented Code Emulator](https://arxiv.org/abs/2312.04474)** [[项目页]](https://chain-of-code.github.io) [[Demo]](https://colab.research.google.com/github/google-research/google-research/blob/master/code_as_policies/coc_demo.ipynb)
-  > 用解释器执行明确的程序逻辑，并把未定义的语义计算交给语言模型模拟；机器人实验展示代码与模型调用的组合方式。
+  > 用解释器执行明确的程序逻辑，并把未定义的语义计算交给语言模型模拟；机器人实验展示代码与模型调用的组合方式。<br>
+  > 🦾 **真机** UR5
 
 <!-- mmac-record: {"id": "2306.09523", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2306-09523"></a>`2023.06` **[Tell Me Where to Go: A Composable Framework for Context-Aware Embodied Robot Navigation](https://arxiv.org/abs/2306.09523)**
-  > 用生成的 Python 中间层连接语言推理、视觉环境描述和移动机器人导航接口，支持依赖上下文的导航指令。
+  > 用生成的 Python 中间层连接语言推理、视觉环境描述和移动机器人导航接口，支持依赖上下文的导航指令。<br>
+  > 🦾 **真机** Boston Dynamics Spot
 
 <!-- mmac-record: {"id": "2305.11176", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2305-11176"></a>`2023.05` **[Instruct2Act: Mapping Multi-modality Instructions to Robotic Actions with Large Language Model](https://arxiv.org/abs/2305.11176)** [[代码]](https://github.com/OpenGVLab/Instruct2Act)
-  > 由 LLM 生成 Python 程序，调用 SAM、CLIP 与动作 API，把多模态指令组织成感知、规划和执行流程。
+  > 由 LLM 生成 Python 程序，调用 SAM、CLIP 与动作 API，把多模态指令组织成感知、规划和执行流程。<br>
+  > 🖥️ **仿真** PyBullet（UR5）
 
 <!-- mmac-record: {"id": "2306.17582", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2306-17582"></a>`2023.02` **[ChatGPT for Robotics: Design Principles and Model Abilities](https://arxiv.org/abs/2306.17582)** [[项目页]](https://www.microsoft.com/en-us/research/publication/chatgpt-for-robotics-design-principles-and-model-abilities/)
-  > 通过函数库、提示设计和人机对话，让 ChatGPT 为机械臂、无人机与移动机器人编写和修改任务程序。
+  > 通过函数库、提示设计和人机对话，让 ChatGPT 为机械臂、无人机与移动机器人编写和修改任务程序。<br>
+  > 🖥️ **仿真** AirSim + Habitat · 🦾 **真机** DJI Tello
 
 <!-- mmac-record: {"id": "2209.07753", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2209-07753"></a>`2022.09` **[Code as Policies: Language Model Programs for Embodied Control](https://arxiv.org/abs/2209.07753)** [[项目页]](https://code-as-policies.github.io) [[代码]](https://github.com/google-research/google-research/tree/master/code_as_policies) [[Demo]](https://huggingface.co/spaces/jackyliang42/code-as-policies)
-  > 用语言模型递归生成 Python 策略，组合感知结果、几何计算与控制 API，是机器人 Code-as-Policy 的早期基础；程序内反馈不等于写码模型根据执行结果重写程序。
+  > 用语言模型递归生成 Python 策略，组合感知结果、几何计算与控制 API，是机器人 Code-as-Policy 的早期基础；程序内反馈不等于写码模型根据执行结果重写程序。<br>
+  > 🖥️ **仿真** PyBullet（UR5e） · 🦾 **真机** UR5e、Everyday Robots
 
 <!-- mmac-record: {"id": "2209.11302", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2209-11302"></a>`2022.09` **[ProgPrompt: Generating Situated Robot Task Plans using Large Language Models](https://arxiv.org/abs/2209.11302)** [[项目页]](http://progprompt.github.io) [[代码]](https://github.com/NVlabs/progprompt-vh)
-  > 用可用动作、对象和断言组织程序式提示，使语言模型生成能够检查前置条件并恢复的机器人任务计划。
+  > 用可用动作、对象和断言组织程序式提示，使语言模型生成能够检查前置条件并恢复的机器人任务计划。<br>
+  > 🖥️ **仿真** Unity · 🦾 **真机** Franka Panda
 
 #### 委派已有策略
 
 <!-- mmac-record: {"id": "2611.03585", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-03585"></a>`2026.11` **[Seeing Through the Illusion: Test-Time Scaling for World Action Models](https://arxiv.org/abs/2611.03585)**
-  > 组合动作有效性、想象运动的逆动力学一致性与任务进度，为冻结世界—动作模型选择候选轨迹，执行动作块后依据新观测重规划。
+  > 组合动作有效性、想象运动的逆动力学一致性与任务进度，为冻结世界—动作模型选择候选轨迹，执行动作块后依据新观测重规划。<br>
+  > 🖥️ **仿真** MuJoCo + Isaac Lab（Franka Panda）
 
 <!-- mmac-record: {"id": "system:the-harness-corl2026", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-system-the-harness-corl2026"></a>`2026.11` **[The Harness: One Agent Harness for Anything that Acts](https://web.eecs.umich.edu/~stellayu/publication/2026harnessCoRLL.html)** [[论文]](https://web.eecs.umich.edu/~stellayu/publication/doc/2026harnessCoRLL.pdf)
-  > 把 Agent 编写的程序、有界 VLA 技能和快速反应守卫组合成共享控制层级。
+  > 把 Agent 编写的程序、有界 VLA 技能和快速反应守卫组合成共享控制层级。<br>
+  > 🖥️ **仿真** Isaac Sim（ARX X5）
 
 <!-- mmac-record: {"id": "2610.21453", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-21453"></a>`2026.10` **[CarryOn: A Dual-Loop Harness for Personalized and Reliable Robot Assistance](https://arxiv.org/abs/2610.21453)** [[代码]](https://github.com/JIA-Lab-research/CarryOn) [[项目页]](https://vincent2311.github.io/Projects/CarryOn/)
-  > 协调持久用户／场景记忆、冻结 VLA、几何安全过滤与视觉失败恢复，并通过离线反思修订恢复策略和参数，供后续尝试复用。
+  > 协调持久用户／场景记忆、冻结 VLA、几何安全过滤与视觉失败恢复，并通过离线反思修订恢复策略和参数，供后续尝试复用。<br>
+  > 🖥️ **仿真** MuJoCo + Isaac Lab（Franka Panda） · 🦾 **真机** Franka FR3
 
 <!-- mmac-record: {"id": "2610.42053", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-42053"></a>`2026.10` **[REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control](https://arxiv.org/abs/2610.42053)** [[项目页]](https://mikeeeeeeeeeeeeee.github.io/REA/)
-  > 将快速机器人执行与异步模型判断、路径选择分离，在策略返回边界通过视觉结果检查协调固定代码策略和动作模型。
+  > 将快速机器人执行与异步模型判断、路径选择分离，在策略返回边界通过视觉结果检查协调固定代码策略和动作模型。<br>
+  > 🖥️ **仿真** MuJoCo + SAPIEN + Isaac Sim（Franka Panda、AgileX ALOHA、Galaxea R1 Pro） · 🦾 **真机** Unitree G1
 
 <!-- mmac-record: {"id": "2609.29166", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-29166"></a>`2026.09` **[HarnessPAI: An Evolving Harness for Physical AI](https://arxiv.org/abs/2609.29166)** [[项目页]](https://darwin-agent.github.io/HarnessPAI) [[代码]](https://github.com/Darwin-Agent/HarnessPAI)
-  > 以可执行代码组织底层动作原语，并依据交互反馈演化机器人程序，使稳定程序还能生成下游策略训练数据。
+  > 以可执行代码组织底层动作原语，并依据交互反馈演化机器人程序，使稳定程序还能生成下游策略训练数据。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda）
 
 <!-- mmac-record: {"id": "2608.11246", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2608-11246"></a>`2026.08` **[Towards the Harness of Embodied Agents](https://arxiv.org/abs/2608.11246)** [[项目页]](https://eit-hai.github.io/thea) [[代码]](https://github.com/EIT-HAI/Thea)
-  > 用持久场景图和带成功、失败原因的执行返回值，将机器人能力组织为 Agent 可理解和调用的工具。
+  > 用持久场景图和带成功、失败原因的执行返回值，将机器人能力组织为 Agent 可理解和调用的工具。<br>
+  > 🦾 **真机** Astribot S1、AgileX Cobot Magic、Unitree G1
 
 <!-- mmac-record: {"id": "2607.08448", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2607-08448"></a>`2026.07` **[Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents](https://arxiv.org/abs/2607.08448)** [[代码]](https://github.com/RLinf/RPent)
-  > 让 Coding Agent 编排冻结 VLA 与解析动作原语
+  > 让 Coding Agent 编排冻结 VLA 与解析动作原语<br>
+  > 🖥️ **仿真** MuJoCo + SAPIEN（Franka Panda、AgileX ALOHA） · 🦾 **真机** Franka
 
 #### Agent 能力评测
 
 <!-- mmac-record: {"id": "2611.12177", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-12177"></a>`2026.11` **[Embodied First Exam](https://arxiv.org/abs/2611.12177)**
-  > 跨机器人形态检验通用 Agent 的具身任务能力，明确比较观测权限、重置预算和执行时钟不同的运行方式。
+  > 跨机器人形态检验通用 Agent 的具身任务能力，明确比较观测权限、重置预算和执行时钟不同的运行方式。<br>
+  > 🖥️ **仿真** MuJoCo + Isaac Sim + SAPIEN
 
 <!-- mmac-record: {"id": "2611.16009", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-16009"></a>`2026.11` **[JustRUA: A Controlled Study of GPT-6 Robot-Use Agents](https://arxiv.org/abs/2611.16009)** [[项目页]](https://zefanw.github.io/JustRUA/) [[代码]](https://github.com/ZefanW/JustRUA) [[Demo]](https://huggingface.co/spaces/ZefanW/robodojo-replay-explorer)
-  > 在 RoboDojo 仿真中比较完整回合历史、短动作、深度与坐标求解代码对通用 Agent 操控的影响。
+  > 在 RoboDojo 仿真中比较完整回合历史、短动作、深度与坐标求解代码对通用 Agent 操控的影响。<br>
+  > 🖥️ **仿真** Isaac Sim（ARX X5）
 
 <!-- mmac-record: {"id": "2611.08209", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-08209"></a>`2026.11` **[RoboARCade: Benchmarking Agentic Robot Control](https://arxiv.org/abs/2611.08209)** [[项目页]](http://roboarcade.org)
-  > 在随机化长程 MuJoCo 任务上评测视觉机器人控制 Agent，分别比较接口、上下文示范和跨尝试文本工作流优化。
+  > 在随机化长程 MuJoCo 任务上评测视觉机器人控制 Agent，分别比较接口、上下文示范和跨尝试文本工作流优化。<br>
+  > 🖥️ **仿真** MuJoCo + Blender（Franka Panda、I2RT YAM）
 
 <!-- mmac-record: {"id": "2611.02497", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-02497"></a>`2026.11` **[RoboColosseum: Evaluating Physical Intelligence at Scale In-The-Wild](https://arxiv.org/abs/2611.02497)** [[仓库]](https://github.com/RoboColosseum) [[项目页]](https://robocolosseum.ai/)
-  > 通过跨站点、条件匹配的盲测实机试验比较冻结 Agent 与 VLA，并另设适配赛道分析不同机器人上的排名变化。
+  > 通过跨站点、条件匹配的盲测实机试验比较冻结 Agent 与 VLA，并另设适配赛道分析不同机器人上的排名变化。<br>
+  > 🦾 **真机** SO-101、I2RT YAM、Franka Panda、Unitree G1
 
 <!-- mmac-record: {"id": "2610.00854", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-00854"></a>`2026.10` **[Are Frontier VLM Agents Ready to Be Robot Generalists? An Empirical Study with the Embodied Agent Arena](https://arxiv.org/abs/2610.00854)** [[项目页]](https://embodied-agent-arena.github.io/embodied-agent-arena/) [[代码]](https://github.com/embodied-agent-arena/embodied-agent-arena) [[数据集]](https://huggingface.co/datasets/uuu-Quant/Embodied-Agent-Arena)
-  > 在统一预算与源任务接口下比较前沿 VLM Agent 的机器人通用性，并区分修复程序运行与完成物理任务。
+  > 在统一预算与源任务接口下比较前沿 VLM Agent 的机器人通用性，并区分修复程序运行与完成物理任务。<br>
+  > 🖥️ **仿真** MuJoCo + SAPIEN + PyBullet + CoppeliaSim + Isaac Sim
 
 <!-- mmac-record: {"id": "2610.07594", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-07594"></a>`2026.10` **[BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation](https://arxiv.org/abs/2610.07594)** [[代码]](https://github.com/swirl-uk/BiGym2)
-  > 在一致的机载观测和全身控制器下比较人形机器人学习策略与 Agent 开发的程序，并发布仿真中的人类 VR 示范。
+  > 在一致的机载观测和全身控制器下比较人形机器人学习策略与 Agent 开发的程序，并发布仿真中的人类 VR 示范。<br>
+  > 🖥️ **仿真** MuJoCo（Unitree G1）
 
 <!-- mmac-record: {"id": "2610.27039", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-27039"></a>`2026.10` **[Embodied Playground: A Long-Horizon Agentic Robotics Benchmark for Physical, Strategic, and Spatial Reasoning](https://arxiv.org/abs/2610.27039)** [[项目页]](https://winniechen2002.github.io/Agent-bench-website/) [[代码]](https://github.com/Winniechen2002/Embodied-Playground)
-  > 以长时序机器人任务评测 Agent 如何协调物理、空间和策略推理，并在执行反馈下保持任务进度。
+  > 以长时序机器人任务评测 Agent 如何协调物理、空间和策略推理，并在执行反馈下保持任务进度。<br>
+  > 🖥️ **仿真** MuJoCo + Isaac Lab + SAPIEN（Franka Panda、Franka FR3、Sharpa Wave、ALOHA）
 
 <!-- mmac-record: {"id": "2610.16238", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-16238"></a>`2026.10` **[Embodied Skill Bench: Benchmarking How Well Agents with Embodied Skills Perform on Physical Tasks](https://arxiv.org/abs/2610.16238)** [[代码]](https://github.com/HanZhi306/EmbodiedSkill-Bench) [[代码]](https://github.com/FBddcz/embodied-jev)
-  > 在原生控制、仅用技能和 Agent 自主选择或修改技能三种条件下，评测具身 Skills 对物理任务的实际帮助。
+  > 在原生控制、仅用技能和 Agent 自主选择或修改技能三种条件下，评测具身 Skills 对物理任务的实际帮助。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda）
 
 <!-- mmac-record: {"id": "2610.30051", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-30051"></a>`2026.10` **[From Reasoning to Action: Benchmarking Frontier AI Models on LIBERO-10 Robot Manipulation Tasks](https://arxiv.org/abs/2610.30051)** [[代码]](https://github.com/IRVLUTD/LLM_LIBERO) [[项目页]](https://irvlutd.github.io/LLM-LIBERO/)
-  > 在统一闭环与控制接口下比较前沿模型执行 LIBERO-10 操作任务的表现，避免把模型更换与接口更换混为一谈。
+  > 在统一闭环与控制接口下比较前沿模型执行 LIBERO-10 操作任务的表现，避免把模型更换与接口更换混为一谈。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda）
 
 <!-- mmac-record: {"id": "2610.22471", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-22471"></a>`2026.10` **[Has GPT-6-Astra Achieved Embodied Intelligence?](https://arxiv.org/abs/2610.22471)** [[文章]](https://sensenova.ai/has-gpt-6-astra-achieved-embodied-intelligence) [[代码]](https://github.com/OpenSenseNova/SenseNova-RoboRSI) [[数据集]](https://huggingface.co/datasets/sensenova/SenseNova-RoboRSI-Log) [[数据集]](https://huggingface.co/datasets/sensenova/SenseNova-RoboRSI-Packages)
-  > 在十二项具身基准上研究示范辅助的直接控制与 VLA 动作审查，将扩大交互预算的收益与八种真实机器人配置上的零样本试验分别评估。
+  > 在十二项具身基准上研究示范辅助的直接控制与 VLA 动作审查，将扩大交互预算的收益与八种真实机器人配置上的零样本试验分别评估。<br>
+  > 🖥️ **仿真** Isaac Sim + MuJoCo + Habitat（ARX X5、Franka Panda） · 🦾 **真机** Franka FR3、Franka Panda、AgileX PiPER、Tianji M6S、Galaxea R1 Pro、xArm7、Unitree G1
 
 <!-- mmac-record: {"id": "2610.34527", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-34527"></a>`2026.10` **[LLM4Robot-Bench: How Far Can GPT-6 Astra Go in Robotic Manipulation? A Hierarchical, Paired Sim-Real Benchmark](https://arxiv.org/abs/2610.34527)** [[代码]](https://github.com/LLM4Robot/LLM4Robot-Bench) [[项目页]](https://llm4robot.github.io/bench/)
-  > 在配对的仿真与真实双臂任务中，测量 GPT-6 Astra 在几何对齐、力调节和接触重配置中的表现，基准原名 PhysLadder。
+  > 在配对的仿真与真实双臂任务中，测量 GPT-6 Astra 在几何对齐、力调节和接触重配置中的表现，基准原名 PhysLadder。<br>
+  > 🖥️ **仿真** Isaac Sim（ARX R5） · 🦾 **真机** ARX R5
 
 <!-- mmac-record: {"id": "2610.34649", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-34649"></a>`2026.10` **[RobotAgentBench: Towards Open-world Robot Autonomy](https://arxiv.org/abs/2610.34649)** [[项目页]](https://aetherlabsai.github.io/RobotAgentBench/) [[代码]](https://github.com/AetherLabsAI/RobotAgentBench) [[数据集]](https://huggingface.co/datasets/AetherLabs-AI/RobotAgentBench-assets) [[Demo]](https://aetherlabsai.github.io/RobotAgentBench/#demo) [[模型]](https://huggingface.co/AetherLabs-AI/InternVLA-A1.5-RAB) [[数据集]](https://huggingface.co/datasets/AetherLabs-AI/RobotAgentBench-TrainingData)
-  > 通过任务发现、情境推理、物理执行与恢复环节评估开放世界机器人 Agent，而不仅测试给定目标的动作成功率。
+  > 通过任务发现、情境推理、物理执行与恢复环节评估开放世界机器人 Agent，而不仅测试给定目标的动作成功率。<br>
+  > 🖥️ **仿真** Isaac Sim（AgiBot G1） · 🦾 **真机** AgiBot G1
 
 <!-- mmac-record: {"id": "2610.10409", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-10409"></a>`2026.10` **[RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments](https://arxiv.org/abs/2610.10409)** [[代码]](https://github.com/robotworldai/robotworld) [[项目页]](https://robotworldai.github.io/)
-  > 在 84 项仿真任务和多种本体上评测图像、状态驱动的机器人工具使用，区分辅助计算与可选的环境侧控制代码。
+  > 在 84 项仿真任务和多种本体上评测图像、状态驱动的机器人工具使用，区分辅助计算与可选的环境侧控制代码。<br>
+  > 🖥️ **仿真** Isaac Sim + Isaac Lab + Isaac Gym + MuJoCo
 
 <!-- mmac-record: {"id": "2610.31670", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-31670"></a>`2026.10` **[Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success](https://arxiv.org/abs/2610.31670)** [[代码]](https://github.com/yunfeixie233/sensorimotor-alignment) [[项目页]](https://yunfeixie233.github.io/s2/)
-  > 度量感知嵌入与已记录运动轨迹的近邻结构一致性，为昂贵闭环评测前的具身模型筛选提供离线代理指标。
+  > 度量感知嵌入与已记录运动轨迹的近邻结构一致性，为昂贵闭环评测前的具身模型筛选提供离线代理指标。<br>
+  > 🖥️ **仿真** SAPIEN（WidowX 250、AgileX ALOHA）
 
 <!-- mmac-record: {"id": "2610.25287", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-25287"></a>`2026.10` **[The Bitter Lesson Comes to Robotics](https://arxiv.org/abs/2610.25287)**
-  > 在物理机械臂上比较通用多模态模型通过控制接口执行任务的能力，观察模型、工具与执行设置对结果的影响。
+  > 在物理机械臂上比较通用多模态模型通过控制接口执行任务的能力，观察模型、工具与执行设置对结果的影响。<br>
+  > 🖥️ **仿真** Isaac Sim（ARX X5）
 
 <!-- mmac-record: {"id": "2609.33807", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-33807"></a>`2026.09` **[CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation](https://arxiv.org/abs/2609.33807)** [[项目页]](https://codeactionbench.org/) [[代码]](https://github.com/lyhkk/CodeActionBench)
-  > 在 RoboTwin 2.0 双臂仿真中，Agent 执行 Python 操控程序，根据相机画面、机器人状态和接触反馈修订策略。隐藏验收器独立核对最终状态和 Agent 的完成声明。
+  > 在 RoboTwin 2.0 双臂仿真中，Agent 执行 Python 操控程序，根据相机画面、机器人状态和接触反馈修订策略。隐藏验收器独立核对最终状态和 Agent 的完成声明。<br>
+  > 🖥️ **仿真** SAPIEN（AgileX ALOHA）
 
 <!-- mmac-record: {"id": "2609.01404", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-01404"></a>`2026.09` **[Evaluating Multimodal LLMs as Generalist Vision-Language-Action Agents for Drone Control: Commanding, Approaching, Tracking and Searching](https://arxiv.org/abs/2609.01404)** [[代码]](https://github.com/naver-ai/DroneCATS) [[数据集]](https://huggingface.co/datasets/naver-ai/DroneCATS-Pilot-54K)
-  > 在仿真器与真实 Tello 飞行中评测图像条件动作及指挥员—子 Agent 协作，分析延迟与到达声明失误。
+  > 在仿真器与真实 Tello 飞行中评测图像条件动作及指挥员—子 Agent 协作，分析延迟与到达声明失误。<br>
+  > 🖥️ **仿真** AirSim + Isaac Sim · 🦾 **真机** DJI Tello
 
 <!-- mmac-record: {"id": "2609.39507", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-39507"></a>`2026.09` **[LIBERO-Agent: Evaluating General-Purpose Agents for Direct Embodied Manipulation](https://arxiv.org/abs/2609.39507)** [[代码]](https://github.com/dzj441/Libero-Agent)
-  > 把 LIBERO 改造成通用 Agent 可主动检查观测、使用自己的工具并发出原生动作的交互测试环境。
+  > 把 LIBERO 改造成通用 Agent 可主动检查观测、使用自己的工具并发出原生动作的交互测试环境。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda）
 
 <!-- mmac-record: {"id": "2609.40325", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-40325"></a>`2026.09` **[WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents](https://arxiv.org/abs/2609.40325)** [[项目页]](https://ucsb-nlp-chang.github.io/WorldAuditBench/) [[代码]](https://github.com/UCSB-NLP-Chang/WorldAuditBench)
-  > 衡量 Agent 主动探索交互世界、发现异常并提供证据的能力，覆盖物理、空间、时间与语义问题。
+  > 衡量 Agent 主动探索交互世界、发现异常并提供证据的能力，覆盖物理、空间、时间与语义问题。<br>
+  > 🖥️ **仿真** Unreal Engine + Three.js
 
 <!-- mmac-record: {"id": "2607.04434", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
 
@@ -2347,22 +2407,26 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2603.22435", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2603-22435"></a>`2026.03` **[CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation](https://arxiv.org/abs/2603.22435)**
-  > 评测并改进编写操作代码、执行、观察结果和修复失败行为的 Agent。
+  > 评测并改进编写操作代码、执行、观察结果和修复失败行为的 Agent。<br>
+  > 🖥️ **仿真** MuJoCo + Isaac Sim（Franka Panda） · 🦾 **真机** Franka Panda、AgiBot G1
 
 <!-- mmac-record: {"id": "2601.19510", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2601-19510"></a>`2026.01` **[ALRM: Agentic LLM for Robotic Manipulation](https://arxiv.org/abs/2601.19510)**
-  > 在同一 ReAct 框架下比较生成控制代码与逐步调用工具两种机器人执行模式，并提供语言多样化操作任务。
+  > 在同一 ReAct 框架下比较生成控制代码与逐步调用工具两种机器人执行模式，并提供语言多样化操作任务。<br>
+  > 🖥️ **仿真** Gazebo（WidowX 250）
 
 <!-- mmac-record: {"id": "2601.20334", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2601-20334"></a>`2026.01` **[Demonstration-Free Robotic Control via LLM Agents](https://arxiv.org/abs/2601.20334)** [[代码]](https://github.com/robiemusketeer/faea-sim)
-  > 将原用于软件工程的 Agent 框架直接接入机器人控制，在可读取特权环境状态的设置中评估免示范任务执行。
+  > 将原用于软件工程的 Agent 框架直接接入机器人控制，在可读取特权环境状态的设置中评估免示范任务执行。<br>
+  > 🖥️ **仿真** MuJoCo + SAPIEN（Franka Panda、Sawyer）
 
 <!-- mmac-record: {"id": "2402.14623", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2402-14623"></a>`2024.02` **[RoboScript: Code Generation for Free-Form Manipulation Tasks across Real and Simulation](https://arxiv.org/abs/2402.14623)**
-  > 把机器人代码生成接入 ROS、感知与运动工具，并以仿真和实机任务检验程序的可执行性与部署差距。
+  > 把机器人代码生成接入 ROS、感知与运动工具，并以仿真和实机任务检验程序的可执行性与部署差距。<br>
+  > 🖥️ **仿真** Gazebo（Franka Panda、UR5） · 🦾 **真机** Franka Panda、UR5
 
 <!-- mmac-record: {"id": "2311.11183", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
@@ -2460,52 +2524,62 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2611.10602", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-10602"></a>`2026.11` **[Agentic discrete-event simulation for manufacturing system design: an open 3D simulator, a benchmark and an industrial case](https://arxiv.org/abs/2611.10602)** [[代码]](https://github.com/simulean/SimuLean)
-  > SimuLean 为 Agent 提供经过验证的制造系统建模组件。
+  > SimuLean 为 Agent 提供经过验证的制造系统建模组件。<br>
+  > 🖥️ **仿真** Unity
 
 <!-- mmac-record: {"id": "2611.02691", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-02691"></a>`2026.11` **[Closing the Dynamics Gap through Self-Directed Robotic Interaction](https://arxiv.org/abs/2611.02691)** [[项目页]](https://cue-dynamics.github.io/)
-  > 通过自主击球探索获取动力学证据，让 Agent 同时构建轨迹测量、拟合仿真参数并选择下一次实验。
+  > 通过自主击球探索获取动力学证据，让 Agent 同时构建轨迹测量、拟合仿真参数并选择下一次实验。<br>
+  > 🖥️ **仿真** MuJoCo
 
 <!-- mmac-record: {"id": "2611.11344", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-11344"></a>`2026.11` **[Spatial Harness: Grounding Spatial Reasoning in Executable World States with Physics Engines](https://arxiv.org/abs/2611.11344)** [[代码]](https://github.com/tmlr-group/Spatial-Harness)
-  > 可执行代理场景将空间推理落实到明确几何状态。
+  > 可执行代理场景将空间推理落实到明确几何状态。<br>
+  > 🖥️ **仿真** MuJoCo
 
 <!-- mmac-record: {"id": "2610.30679", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-30679"></a>`2026.10` **[AgentDreamer: Agentic 3D Motion Reasoning for Text-Controllable Physics Simulation](https://arxiv.org/abs/2610.30679)** [[项目页]](http://cv.snu.ac.kr/research/AgentDreamer/)
-  > 将带标注的场景几何与语言转为参数化三维运动函数，再让可微 MPM 模拟器拟合这些固定目标轨迹。
+  > 将带标注的场景几何与语言转为参数化三维运动函数，再让可微 MPM 模拟器拟合这些固定目标轨迹。<br>
+  > 🖥️ **仿真** MPM
 
 <!-- mmac-record: {"id": "2610.10479", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-10479"></a>`2026.10` **[Agentic RSR: Real-to-Sim-to-Real through Scene Reconstruction and Execution-Grounded Robot Policies](https://arxiv.org/abs/2610.10479)**
-  > 把参考视频的场景修订与操作策略开发串在同一任务中，形成可从仿真迁移到真机的程序。
+  > 把参考视频的场景修订与操作策略开发串在同一任务中，形成可从仿真迁移到真机的程序。<br>
+  > 🖥️ **仿真** Blender + MuJoCo（AgileX PiPER、Franka FR3） · 🦾 **真机** AgileX PiPER、Franka FR3
 
 <!-- mmac-record: {"id": "2610.02274", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-02274"></a>`2026.10` **[Awomo-SimDataEngine: Agentic Simulation-Ready World Generation](https://arxiv.org/abs/2610.02274)**
-  > 把资产生成、单图重建、文本场景规划和可重放示范连接起来，以模块级验证和有限修订获得可仿真的世界。
+  > 把资产生成、单图重建、文本场景规划和可重放示范连接起来，以模块级验证和有限修订获得可仿真的世界。<br>
+  > 🖥️ **仿真** Isaac Sim + MuJoCo（Franka Panda、AgileX PiPER、AgiBot G1、AgiBot G2）
 
 <!-- mmac-record: {"id": "2610.17114", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-17114"></a>`2026.10` **[D-World: An Explicit World-Language-Action Model with Recursive Self-Improvement under Dual Control](https://arxiv.org/abs/2610.17114)**
-  > 让机器人一边行动一边用真实测量校正自己编写的显式数字孪生。
+  > 让机器人一边行动一边用真实测量校正自己编写的显式数字孪生。<br>
+  > 🖥️ **仿真** MuJoCo + Blender
 
 <!-- mmac-record: {"id": "2610.40754", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-40754"></a>`2026.10` **[DyCraft: An Agentic System for Long-Horizon 4D Scene Generation](https://arxiv.org/abs/2610.40754)** [[项目页]](https://dy-craft.github.io/) [[代码]](https://github.com/jefftan969/dycraft) [[数据集]](https://huggingface.co/datasets/jefftan969/dycraft-films)
-  > 分镜与逐帧诊断引导程序修复，构建长时序动画场景。
+  > 分镜与逐帧诊断引导程序修复，构建长时序动画场景。<br>
+  > 🖥️ **仿真** Blender（Unitree G1）
 
 <!-- mmac-record: {"id": "2610.21498", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-21498"></a>`2026.10` **[GRASE: Geometry-native Real-to-sim Agentic Scene Modeling from Video](https://arxiv.org/abs/2610.21498)**
-  > 持续对照输入视频，逐层修订房间外壳、物体位姿和局部部件，重建可编辑静态几何。
+  > 持续对照输入视频，逐层修订房间外壳、物体位姿和局部部件，重建可编辑静态几何。<br>
+  > 🖥️ **仿真** Blender
 
 <!-- mmac-record: {"id": "2610.40565", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-40565"></a>`2026.10` **[Gym-Anything for Robotics: Scaling physical simulations with digital agents](https://arxiv.org/abs/2610.40565)** [[项目页]](https://gym-anything.github.io/robotics) [[代码]](https://github.com/gym-anything/robotics)
-  > 把仿真器本身作为 Coding Agent 任务，用独立物理审计反复修订场景、动力学和验证证据。
+  > 把仿真器本身作为 Coding Agent 任务，用独立物理审计反复修订场景、动力学和验证证据。<br>
+  > 🖥️ **仿真** MuJoCo + Newton（Franka FR3、UR10e、Unitree G1）
 
 <!-- mmac-record: {"id": "2610.36592", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -2525,67 +2599,80 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2610.18835", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-18835"></a>`2026.10` **[RoboSimStudio: An Interactive Toolkit for Human and Agent Rapid Real2Sim of Robot Manipulation Tasks](https://arxiv.org/abs/2610.18835)** [[项目页]](https://robosimstudio.github.io) [[代码]](https://github.com/robosimstudio/robosimstudio)
-  > 以可编辑求解器、接触模型和参数支撑视频驱动的多物理构建，并展示真实失败反推场景约束修订。
+  > 以可编辑求解器、接触模型和参数支撑视频驱动的多物理构建，并展示真实失败反推场景约束修订。<br>
+  > 🖥️ **仿真** MuJoCo + Newton
 
 <!-- mmac-record: {"id": "2610.34745", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-34745"></a>`2026.10` **[SceneAgent: An Agentic Pipeline from 3D and 4D Captures to Simulation Environments](https://arxiv.org/abs/2610.34745)** [[项目页]](https://computationalrobotics.seas.harvard.edu/SceneAgent/)
-  > 把 3D/4D 采集组织成可交互仿真，利用分步视觉检查与修订统一物体重建、关节及材料行为。
+  > 把 3D/4D 采集组织成可交互仿真，利用分步视觉检查与修订统一物体重建、关节及材料行为。<br>
+  > 🖥️ **仿真** Isaac Lab（Franka Panda、Sharpa Wave、Dexmate Vega） · 🦾 **真机** Franka Panda、Sharpa Wave
 
 <!-- mmac-record: {"id": "2610.32978", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-32978"></a>`2026.10` **[SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning](https://arxiv.org/abs/2610.32978)** [[代码]](https://github.com/Tinaliu0123/scenebloom) [[项目页]](https://tinaliu0123.github.io/scenebloom/)
-  > 先生成带资产身份的视觉布局提案，再用关系约束把它编译为几何可行的 3D 房间。
+  > 先生成带资产身份的视觉布局提案，再用关系约束把它编译为几何可行的 3D 房间。<br>
+  > 🖥️ **仿真** Habitat
 
 <!-- mmac-record: {"id": "2610.13947", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-13947"></a>`2026.10` **[Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark](https://arxiv.org/abs/2610.13947)** [[项目页]](https://physicalvision.github.io/artisan/) [[代码]](https://github.com/physicalvision/artisan) [[数据集]](https://huggingface.co/datasets/mastercai/Artisan-Benchmark)
-  > 以设计、编码和审阅 Agent 联合 MuJoCo 检查，修订能运动、站稳且保留目标功能的关节资产。
+  > 以设计、编码和审阅 Agent 联合 MuJoCo 检查，修订能运动、站稳且保留目标功能的关节资产。<br>
+  > 🖥️ **仿真** MuJoCo + SAPIEN（Franka Panda、AgileX ALOHA）
 
 <!-- mmac-record: {"id": "2610.11322", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-11322"></a>`2026.10` **[USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation](https://arxiv.org/abs/2610.11322)** [[项目页]](https://xingyoujun.github.io/usdcraft/) [[代码]](https://github.com/NVlabs/USDCraft)
-  > 用可执行程序重建有关节的 USD 资产，把缺失的已观测表面与尚未观测的空间分开处理。
+  > 用可执行程序重建有关节的 USD 资产，把缺失的已观测表面与尚未观测的空间分开处理。<br>
+  > 🖥️ **仿真** Isaac Sim · 🦾 **真机** UR7e
 
 <!-- mmac-record: {"id": "2610.31834", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-31834"></a>`2026.10` **[WorldMirror: Agentic Real-to-Sim Generation of Interactive Worlds from In-the-Wild Robot Demonstrations](https://arxiv.org/abs/2610.31834)** [[项目页]](https://worldmirror-page.github.io/)
-  > 把真实机器人视频与记录轨迹重建为相机对齐的可编辑世界，用逐阶段验证修订到原轨迹可直接重放。
+  > 把真实机器人视频与记录轨迹重建为相机对齐的可编辑世界，用逐阶段验证修订到原轨迹可直接重放。<br>
+  > 🖥️ **仿真** Isaac Sim（Franka Panda）
 
 <!-- mmac-record: {"id": "2611.00513", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-00513"></a>`2026.10` **[WorldSketch: Sketching World Models for Zero-Shot Mobile Manipulation](https://arxiv.org/abs/2611.00513)**
-  > 从 RGB-D 和任务构造可修订的最小运动学草图，让几何规划器据此选择接触与全身运动。
+  > 从 RGB-D 和任务构造可修订的最小运动学草图，让几何规划器据此选择接触与全身运动。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda）
 
 <!-- mmac-record: {"id": "2609.36024", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-36024"></a>`2026.09` **[CoDimRecon: Agentic Reconstruction of Sim-Ready 3D Scenes with Deformable Curves, Surfaces, and Volumes](https://arxiv.org/abs/2609.36024)** [[项目页]](https://shuzhaoxie.github.io/CoDimRecon/)
-  > 用几何与生成参考指导可编辑场景重建，并分别构造可仿真的线、面、体软物体。
+  > 用几何与生成参考指导可编辑场景重建，并分别构造可仿真的线、面、体软物体。<br>
+  > 🖥️ **仿真** Blender + MuJoCo
 
 <!-- mmac-record: {"id": "2609.18620", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-18620"></a>`2026.09` **[DeformSmith: Physics Harness-Guided Hierarchical Generation of Deformable Assets for Robot Manipulation](https://arxiv.org/abs/2609.18620)** [[项目页]](https://can-lee.github.io/DeformSmith_web/)
-  > 分层建立几何、物理模型和材料，再用受约束物理探测与机器人交互修订可变形资产。
+  > 分层建立几何、物理模型和材料，再用受约束物理探测与机器人交互修订可变形资产。<br>
+  > 🖥️ **仿真** SAPIEN（RealMan RM65）
 
 <!-- mmac-record: {"id": "2609.23103", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-23103"></a>`2026.09` **[DiagGen: Agentic Generation of Deformable Assets with Sim-based Diagnostics for Robotic Simulation](https://arxiv.org/abs/2609.23103)** [[项目页]](https://diaggen.github.io/) [[代码]](https://github.com/diaggen/diaggen)
-  > 让诊断 Agent 主动抓取和扰动生成资产，把行为异常回送给负责的生成阶段。
+  > 让诊断 Agent 主动抓取和扰动生成资产，把行为异常回送给负责的生成阶段。<br>
+  > 🖥️ **仿真** Genesis（AIRBOT Play） · 🦾 **真机** AIRBOT Play
 
 <!-- mmac-record: {"id": "2609.37067", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-37067"></a>`2026.09` **[FACT: Fidelity-Aware Construction of Articulated Twins](https://arxiv.org/abs/2609.37067)**
-  > 把关节孪生分为几何、接触和动态保真三阶段，用局部测量与仿真残差驱动 Agent 修改模型。
+  > 把关节孪生分为几何、接触和动态保真三阶段，用局部测量与仿真残差驱动 Agent 修改模型。<br>
+  > 🖥️ **仿真** MuJoCo
 
 <!-- mmac-record: {"id": "2609.05927", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-05927"></a>`2026.09` **[GIF: Agentic Generation of Interactive and Functional Object Compositions for Robot Learning](https://arxiv.org/abs/2609.05927)** [[项目页]](https://fufumeichi.github.io/gif-project-page/)
-  > 用图像与 3D 模型生成独立物体，再修正精细接触关系，构成可以用于机器人训练的操作场景。
+  > 用图像与 3D 模型生成独立物体，再修正精细接触关系，构成可以用于机器人训练的操作场景。<br>
+  > 🖥️ **仿真** MuJoCo + Isaac Sim（Franka） · 🦾 **真机** Franka
 
 <!-- mmac-record: {"id": "2609.37089", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-37089"></a>`2026.09` **[Real2Gym: Building Gyms from Videos, Bringing Skills to Robots](https://arxiv.org/abs/2609.37089)** [[项目页]](https://real2gym.github.io/) [[代码]](https://github.com/real2gym/Real2Gym) [[代码]](https://github.com/real2gym/R2G_Agent)
-  > 把人类或机器人演示变成视觉对齐、物理可执行的 Gym，并以执行结果修订场景与动作。
+  > 把人类或机器人演示变成视觉对齐、物理可执行的 Gym，并以执行结果修订场景与动作。<br>
+  > 🖥️ **仿真** MuJoCo + Blender（Franka） · 🦾 **真机** Franka
 
 <!-- mmac-record: {"id": "2609.05594", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -2595,27 +2682,32 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2609.36593", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-36593"></a>`2026.09` **[Text2Sim: Agentic Physics-Based Simulation Generation with Distilled Expertise](https://arxiv.org/abs/2609.36593)**
-  > 把物理过程需求拆成场景、物体、动作和渲染程序，并按执行证据定向修复。
+  > 把物理过程需求拆成场景、物体、动作和渲染程序，并按执行证据定向修复。<br>
+  > 🖥️ **仿真** Genesis
 
 <!-- mmac-record: {"id": "2609.33208", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-33208"></a>`2026.09` **[WorldAgent: Verification-Guided Agentic Physical World Construction](https://arxiv.org/abs/2609.33208)**
-  > 将故事、实体、空间关系和镜头写成世界规格，以几何和仿真检查持续修订物理世界。
+  > 将故事、实体、空间关系和镜头写成世界规格，以几何和仿真检查持续修订物理世界。<br>
+  > 🖥️ **仿真** Blender
 
 <!-- mmac-record: {"id": "2608.18840", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2608-18840"></a>`2026.08` **[Beyond Placement and Articulation: Usage-Driven Code Scenes for Embodied Interaction](https://arxiv.org/abs/2608.18840)**
-  > 用程序同时构建房间、可动资产和使用规则，让“按按钮开灯”等跨部件交互真正发生。
+  > 用程序同时构建房间、可动资产和使用规则，让“按按钮开灯”等跨部件交互真正发生。<br>
+  > 🖥️ **仿真** Blender + Isaac Sim
 
 <!-- mmac-record: {"id": "2608.27549", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2608-27549"></a>`2026.08` **[Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning](https://arxiv.org/abs/2608.27549)** [[项目页]](https://mirros-lab.github.io/code-as-world) [[代码]](https://github.com/MirroS-Lab/Code-as-World)
-  > 将文字或视频解释成可执行世界程序，通过投影与观测差异迭代修订物体、状态和外观。
+  > 将文字或视频解释成可执行世界程序，通过投影与观测差异迭代修订物体、状态和外观。<br>
+  > 🖥️ **仿真** MuJoCo
 
 <!-- mmac-record: {"id": "2610.01863", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-01863"></a>`2026.08` **[LiteReality-Agent: An Agentic System for Interactable 3D Indoor Scene Reconstruction](https://arxiv.org/abs/2610.01863)** [[项目页]](https://litereality.github.io/agent/) [[代码]](https://github.com/LiteReality/LiteReality-Agent)
-  > 把 RGB-D 房间重建写成可执行的 Room.py，并通过观察、编辑和检查持续完善。
+  > 把 RGB-D 房间重建写成可执行的 Room.py，并通过观察、编辑和检查持续完善。<br>
+  > 🖥️ **仿真** Blender + MuJoCo（Franka Panda）
 
 <!-- mmac-record: {"id": "2608.30821", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -2625,7 +2717,8 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2607.19190", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2607-19190"></a>`2026.07` **[Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents](https://arxiv.org/abs/2607.19190)** [[项目页]](https://agentic-real2sim.github.io/) [[代码]](https://github.com/agentic-real2sim/agentic_real2sim)
-  > 由视觉语言 Agent 编排感知、物理先验与重放优化，把真实机器人交互变成可运行孪生。
+  > 由视觉语言 Agent 编排感知、物理先验与重放优化，把真实机器人交互变成可运行孪生。<br>
+  > 🖥️ **仿真** MuJoCo（AIRBOT Play） · 🦾 **真机** AIRBOT Play
 
 <!-- mmac-record: {"id": "2607.07459", "scope": "Resource", "primary": "3.2", "stage": 3, "type": "resource"} -->
 
@@ -2635,17 +2728,20 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2607.21522", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2607-21522"></a>`2026.07` **[GS-Agent: Creating 4D Physical Worlds With Generative Simulation](https://arxiv.org/abs/2607.21522)** [[项目页]](https://umass-embodied-agi.github.io/gs-agent/)
-  > Agent 编写物体、材料、运动与镜头程序，在物理引擎中运行并修订动态世界。
+  > Agent 编写物体、材料、运动与镜头程序，在物理引擎中运行并修订动态世界。<br>
+  > 🖥️ **仿真** Genesis
 
 <!-- mmac-record: {"id": "2607.01766", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2607-01766"></a>`2026.07` **[SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation](https://arxiv.org/abs/2607.01766)** [[项目页]](https://dynsimworlds.github.io/)
-  > 以固定构建阶段和场景协议约束 Blender 编程，联合渲染评审与引擎状态检查修复动态世界。
+  > 以固定构建阶段和场景协议约束 Blender 编程，联合渲染评审与引擎状态检查修复动态世界。<br>
+  > 🖥️ **仿真** Blender
 
 <!-- mmac-record: {"id": "2607.13586", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2607-13586"></a>`2026.07` **[UniPhysGen: Unified Physical Grounding for Simulation-Ready 3D Assets](https://arxiv.org/abs/2607.13586)** [[代码]](https://github.com/breezexian/UniPhysGen) [[数据集]](https://huggingface.co/datasets/spatialverse/UniPhys-Bench)
-  > 资产分解与物理语义学习生成可仿真的关节资产。
+  > 资产分解与物理语义学习生成可仿真的关节资产。<br>
+  > 🖥️ **仿真** MuJoCo + Isaac Sim
 
 <!-- mmac-record: {"id": "2606.14168", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -2655,32 +2751,38 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2606.04226", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-04226"></a>`2026.06` **[PerceptTwin: Semantic Scene Reconstruction for Iterative LLM Planning and Verification](https://arxiv.org/abs/2606.04226)** [[项目页]](https://percept-twin.github.io/) [[代码]](https://github.com/Velythyl/PerceptTwin)
-  > 把机器人感知得到的开放词汇地图转成可操作的场景，用于审查和修订任务计划。
+  > 把机器人感知得到的开放词汇地图转成可操作的场景，用于审查和修订任务计划。<br>
+  > 🖥️ **仿真** AI2-THOR
 
 <!-- mmac-record: {"id": "2606.28276", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-28276"></a>`2026.06` **[SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation](https://arxiv.org/abs/2606.28276)** [[代码]](https://github.com/NVlabs/SimFoundry) [[项目页]](https://research.nvidia.com/labs/gear/simfoundry/)
-  > 把一段现实视频转成可交互数字孪生，再沿物体、布局和任务三个维度生成可训练的变体。
+  > 把一段现实视频转成可交互数字孪生，再沿物体、布局和任务三个维度生成可训练的变体。<br>
+  > 🖥️ **仿真** PyBullet + Isaac Lab · 🦾 **真机** Franka Panda
 
 <!-- mmac-record: {"id": "2606.08828", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-08828"></a>`2026.06` **[Video2Sim2Real: Full-Stack Autonomous Dexterous Skill Acquisition from a Single Human Video](https://arxiv.org/abs/2606.08828)** [[项目页]](https://video2sim2real.github.io/) [[代码]](https://github.com/video2sim2real/video2sim2real)
-  > 从一段人类视频构建可仿真的数字孪生，修正重定向动作，并训练灵巧操作策略迁移到实机。
+  > 从一段人类视频构建可仿真的数字孪生，修正重定向动作，并训练灵巧操作策略迁移到实机。<br>
+  > 🖥️ **仿真** Isaac Gym（Kinova Gen3、LEAP Hand） · 🦾 **真机** Kinova Gen3、LEAP Hand
 
 <!-- mmac-record: {"id": "2605.15187", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2605-15187"></a>`2026.05` **[Articraft: An Agentic System for Scalable Articulated 3D Asset Generation](https://arxiv.org/abs/2605.15187)** [[项目页]](https://articraft3d.github.io/) [[代码]](https://github.com/articraftresearch/Articraft)
-  > 用受限 SDK 编写可执行关节资产程序，并通过结构检查与几何探针迭代修复。
+  > 用受限 SDK 编写可执行关节资产程序，并通过结构检查与几何探针迭代修复。<br>
+  > 🖥️ **仿真** Isaac Sim
 
 <!-- mmac-record: {"id": "2605.14398", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2605-14398"></a>`2026.05` **[ChronoAgentic: A Code-based Multi-Agent World Simulator for Physically Grounded Simulation Construction](https://arxiv.org/abs/2605.14398)** [[项目页]](https://uwsbel.github.io/chrono-agentic-website/)
-  > 从人可审阅的物理仿真计划出发，生成、执行并逐步修复独立 PyChrono 程序。
+  > 从人可审阅的物理仿真计划出发，生成、执行并逐步修复独立 PyChrono 程序。<br>
+  > 🖥️ **仿真** Chrono
 
 <!-- mmac-record: {"id": "2605.09586", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2605-09586"></a>`2026.05` **[DeformMaster: An Interactive Physics-Neural World Model for Deformable Objects from Videos](https://arxiv.org/abs/2605.09586)** [[项目页]](https://can-lee.github.io/deformmaster-web/) [[代码]](https://github.com/CAN-Lee/DeformMaster) [[数据集]](https://huggingface.co/datasets/Canlee/DeformMaster-Assets)
-  > 从真实交互视频优化可执行软体动力学，将物理滚动、神经残差和高斯外观耦合。
+  > 从真实交互视频优化可执行软体动力学，将物理滚动、神经残差和高斯外观耦合。<br>
+  > 🖥️ **仿真** Warp
 
 <!-- mmac-record: {"id": "2605.21572", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -2690,17 +2792,20 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2605.19587", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2605-19587"></a>`2026.05` **[SceneCode: Executable World Programs for Editable Indoor Scenes with Articulated Objects](https://arxiv.org/abs/2605.19587)** [[代码]](https://github.com/wangpuyi/SceneCode) [[项目页]](https://scene-code.github.io/)
-  > 把房间里的每个物体继续拆成可执行的部件程序，再编译为带关节和物理属性的场景。
+  > 把房间里的每个物体继续拆成可执行的部件程序，再编译为带关节和物理属性的场景。<br>
+  > 🖥️ **仿真** Blender + MuJoCo
 
 <!-- mmac-record: {"id": "2605.09423", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2605-09423"></a>`2026.05` **[SimWorld Studio: Automatic Environment Generation with Evolving Coding Agent for Embodied Agent Learning](https://arxiv.org/abs/2605.09423)** [[代码]](https://github.com/SimWorld-AI/SimWorld-Studio)
-  > 让 Coding Agent 在 UE5 中持续开发任务环境，并根据学习者表现调整后续训练场景。
+  > 让 Coding Agent 在 UE5 中持续开发任务环境，并根据学习者表现调整后续训练场景。<br>
+  > 🖥️ **仿真** Unreal Engine
 
 <!-- mmac-record: {"id": "2604.10992", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2604-10992"></a>`2026.04` **[ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation](https://arxiv.org/abs/2604.10992)** [[项目页]](https://shui-yuan.github.io/articad/)
-  > 预先约定部件连接器，再通过多 Agent 代码生成、装配和回滚构造可动 CAD。
+  > 预先约定部件连接器，再通过多 Agent 代码生成、装配和回滚构造可动 CAD。<br>
+  > 🖥️ **仿真** FreeCAD
 
 <!-- mmac-record: {"id": "2602.12311", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -2710,37 +2815,44 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2602.10116", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2602-10116"></a>`2026.02` **[SAGE: Scalable Agentic 3D Scene Generation for Embodied AI](https://arxiv.org/abs/2602.10116)** [[项目页]](https://research.nvidia.com/labs/dir/sage/) [[代码]](https://github.com/NVlabs/sage) [[数据集]](https://huggingface.co/datasets/nvidia/SAGE-10k)
-  > 用可组合的场景工具和双重 critic，把机器人任务变为稳定的可交互 3D 场景。
+  > 用可组合的场景工具和双重 critic，把机器人任务变为稳定的可交互 3D 场景。<br>
+  > 🖥️ **仿真** Isaac Sim（Franka Panda）
 
 <!-- mmac-record: {"id": "2602.09153", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2602-09153"></a>`2026.02` **[SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes](https://arxiv.org/abs/2602.09153)** [[项目页]](https://scenesmith.github.io/) [[代码]](https://github.com/nepfaff/scenesmith) [[数据集]](https://huggingface.co/datasets/nepfaff/scenesmith-example-scenes)
-  > 从建筑到家具再到小物体，逐层生成可直接进入物理模拟的密集室内场景。
+  > 从建筑到家具再到小物体，逐层生成可直接进入物理模拟的密集室内场景。<br>
+  > 🖥️ **仿真** Drake（KUKA iiwa）
 
 <!-- mmac-record: {"id": "2602.19359", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2602-19359"></a>`2026.02` **[Vid2Sid: Videos Can Help Close the Sim2Real Gap](https://arxiv.org/abs/2602.19359)**
-  > 由 VLM 对比配对的仿真与真实视频，提出摩擦、阻尼、刚度等物理参数的更新及理由。
+  > 由 VLM 对比配对的仿真与真实视频，提出摩擦、阻尼、刚度等物理参数的更新及理由。<br>
+  > 🖥️ **仿真** MuJoCo
 
 <!-- mmac-record: {"id": "2510.11689", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2510-11689"></a>`2025.10` **[Phys2Real: Fusing VLM Priors with Interactive Online Adaptation for Uncertainty-Aware Sim-to-Real Manipulation](https://arxiv.org/abs/2510.11689)** [[项目页]](https://phys2real.github.io/) [[代码]](https://github.com/phys2real/phys2real)
-  > 把 VLM 推断的物理参数先验与在线估计按集成不确定性融合，用于 real-to-sim-to-real 强化学习。
+  > 把 VLM 推断的物理参数先验与在线估计按集成不确定性融合，用于 real-to-sim-to-real 强化学习。<br>
+  > 🖥️ **仿真** Isaac Lab · 🦾 **真机** UFactory xArm
 
 <!-- mmac-record: {"id": "2509.20414", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2509-20414"></a>`2025.09` **[SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent](https://arxiv.org/abs/2509.20414)** [[代码]](https://github.com/Scene-Weaver/SceneWeaver) [[项目页]](https://scene-weaver.github.io/)
-  > 按当前场景最需要解决的问题选择构建工具，在渲染与几何反馈中逐步完善室内环境。
+  > 按当前场景最需要解决的问题选择构建工具，在渲染与几何反馈中逐步完善室内环境。<br>
+  > 🖥️ **仿真** Blender
 
 <!-- mmac-record: {"id": "2411.01775", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2411-01775"></a>`2024.11` **[Eurekaverse: Environment Curriculum Generation via Large Language Models](https://arxiv.org/abs/2411.01775)** [[项目页]](https://eureka-research.github.io/eurekaverse/) [[代码]](https://github.com/eureka-research/eurekaverse)
-  > 根据四足策略的学习表现迭代生成可执行地形代码，形成适应能力的跑酷课程。
+  > 根据四足策略的学习表现迭代生成可执行地形代码，形成适应能力的跑酷课程。<br>
+  > 🖥️ **仿真** Isaac Gym（Unitree Go1） · 🦾 **真机** Unitree Go1
 
 <!-- mmac-record: {"id": "2410.13882", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2410-13882"></a>`2024.10` **[Articulate-Anything: Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model](https://arxiv.org/abs/2410.13882)** [[项目页]](https://articulate-anything.github.io/) [[代码]](https://github.com/vlongle/articulate-anything)
-  > 让 VLM 编写可编译为 URDF 的 Python，并对照参考与模拟运动反复修正关节资产。
+  > 让 VLM 编写可编译为 URDF 的 Python，并对照参考与模拟运动反复修正关节资产。<br>
+  > 🖥️ **仿真** PyBullet + SAPIEN + MuJoCo（Franka Panda） · 🦾 **真机** Franka Panda
 
 <!-- mmac-record: {"id": "2410.15536", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -2750,42 +2862,50 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2409.17652", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2409-17652"></a>`2024.09` **[FactorSim: Generative Simulation via Factorized Representation](https://arxiv.org/abs/2409.17652)** [[项目页]](https://cs.stanford.edu/~sunfanyun/factorsim/) [[代码]](https://github.com/sunfanyunn/FactorSim)
-  > 用因子化 POMDP 限制每步需要的代码上下文，从语言规格生成完整仿真。
+  > 用因子化 POMDP 限制每步需要的代码上下文，从语言规格生成完整仿真。<br>
+  > 🖥️ **仿真** PyBullet
 
 <!-- mmac-record: {"id": "2409.02920", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2409-02920"></a>`2024.09` **[RoboTwin: Dual-Arm Robot Benchmark with Generative Digital Twins](https://arxiv.org/abs/2409.02920)** [[项目页]](https://robotwin-benchmark.github.io/early-version/) [[代码]](https://github.com/RoboTwin-Platform/RoboTwin/tree/early_version)
-  > 以单张真实图像生成物体数字孪生，并围绕功能坐标系生成双臂专家轨迹程序。
+  > 以单张真实图像生成物体数字孪生，并围绕功能坐标系生成双臂专家轨迹程序。<br>
+  > 🖥️ **仿真** SAPIEN（AgileX Cobot Magic） · 🦾 **真机** AgileX Cobot Magic
 
 <!-- mmac-record: {"id": "2406.08474", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2406-08474"></a>`2024.06` **[Real2Code: Reconstruct Articulated Objects via Code Generation](https://arxiv.org/abs/2406.08474)** [[项目页]](https://real2code.github.io/) [[代码]](https://github.com/MandiZhao/real2code)
-  > 用部件包围盒连接视觉重建与代码生成，预测可以直接模拟的对象关节结构。
+  > 用部件包围盒连接视觉重建与代码生成，预测可以直接模拟的对象关节结构。<br>
+  > 🖥️ **仿真** Blender + MuJoCo
 
 <!-- mmac-record: {"id": "2405.15568", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2405-15568"></a>`2024.05` **[OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code](https://arxiv.org/abs/2405.15568)** [[项目页]](https://dub.sh/omniepic) [[代码]](https://github.com/maxencefaldor/omni-epic)
-  > 借助任务档案和学习反馈持续编写新的环境、奖励与成功判定代码。
+  > 借助任务档案和学习反馈持续编写新的环境、奖励与成功判定代码。<br>
+  > 🖥️ **仿真** PyBullet
 
 <!-- mmac-record: {"id": "2312.09067", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2312-09067"></a>`2023.12` **[Holodeck: Language Guided Generation of 3D Embodied AI Environments](https://arxiv.org/abs/2312.09067)** [[代码]](https://github.com/allenai/Holodeck) [[项目页]](https://yueyang1996.github.io/holodeck/)
-  > 把文字里的房间需求拆成建筑结构、物体清单和空间约束，组装为可导航的室内环境。
+  > 把文字里的房间需求拆成建筑结构、物体清单和空间约束，组装为可导航的室内环境。<br>
+  > 🖥️ **仿真** AI2-THOR
 
 <!-- mmac-record: {"id": "2311.01455", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2311-01455"></a>`2023.11` **[RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation](https://arxiv.org/abs/2311.01455)** [[项目页]](https://robogen-ai.github.io/) [[代码]](https://github.com/Genesis-Embodied-AI/RoboGen)
-  > 让 LLM 提议任务、组合场景并选择学习算法，批量形成机器人技能训练问题。
+  > 让 LLM 提议任务、组合场景并选择学习算法，批量形成机器人技能训练问题。<br>
+  > 🖥️ **仿真** Genesis（Franka Panda）
 
 <!-- mmac-record: {"id": "2310.18308", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2310-18308"></a>`2023.10` **[Gen2Sim: Scaling up Robot Learning in Simulation with Generative Models](https://arxiv.org/abs/2310.18308)** [[项目页]](https://gen2sim.github.io/) [[代码]](https://github.com/pushkalkatara/Gen2Sim)
-  > 把物体图像转成带物理属性的资产，再由 LLM 生成任务分解与奖励程序。
+  > 把物体图像转成带物理属性的资产，再由 LLM 生成任务分解与奖励程序。<br>
+  > 🖥️ **仿真** Isaac Gym（Franka Panda）
 
 <!-- mmac-record: {"id": "2310.01361", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2310-01361"></a>`2023.10` **[GenSim: Generating Robotic Simulation Tasks via Large Language Models](https://arxiv.org/abs/2310.01361)** [[代码]](https://github.com/liruiw/GenSim) [[项目页]](https://liruiw.github.io/gensim) [[Demo]](https://huggingface.co/spaces/Gen-Sim/Gen-Sim)
-  > 把任务描述变成可执行的机器人任务类，扩展模拟任务库与示范数据。
+  > 把任务描述变成可执行的机器人任务类，扩展模拟任务库与示范数据。<br>
+  > 🖥️ **仿真** PyBullet（UR5e） · 🦾 **真机** xArm7
 
 <!-- mmac-record: {"id": "res:aha-3d", "scope": "Resource", "primary": "3.2", "stage": 3, "type": "resource"} -->
 
@@ -2824,12 +2944,14 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2611.15020", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-15020"></a>`2026.11` **[Genie Sim Benchmark: Real-to-Sim Fidelity and Evaluation](https://arxiv.org/abs/2611.15020)** [[代码]](https://github.com/AgibotTech/genie_sim)
-  > 通过 22 组机器人与任务的实机／仿真配对得分，以及关节运动和接触响应诊断，评估仿真器保真度。
+  > 通过 22 组机器人与任务的实机／仿真配对得分，以及关节运动和接触响应诊断，评估仿真器保真度。<br>
+  > 🖥️ **仿真** MuJoCo + Isaac Sim（AgiBot G1、AgiBot G2、ARX X5） · 🦾 **真机** AgiBot G1、AgiBot G2、ARX X5
 
 <!-- mmac-record: {"id": "2611.05802", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-05802"></a>`2026.11` **[GREP: Grounding Generated Room Evaluation in Principles](https://arxiv.org/abs/2611.05802)**
-  > 提出一个检查生成房间的评估 Agent：根据具体场景主动寻找问题，调用几何工具并选择观察视角，从物理有效性、视觉协调和日常使用逻辑三个方面给出分数与诊断报告。报告还能作为反馈，帮助生成系统修订场景。
+  > 提出一个检查生成房间的评估 Agent：根据具体场景主动寻找问题，调用几何工具并选择观察视角，从物理有效性、视觉协调和日常使用逻辑三个方面给出分数与诊断报告。报告还能作为反馈，帮助生成系统修订场景。<br>
+  > 🖥️ **仿真** Blender
 
 <!-- mmac-record: {"id": "2611.02928", "scope": "Core", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
@@ -2844,27 +2966,32 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2611.01815", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-01815"></a>`2026.11` **[When Does Latent Prediction Error Support Physical Surprise Claims in Video World Models?](https://arxiv.org/abs/2611.01815)** [[代码]](https://github.com/3-ml/jepa-surprise)
-  > 检验视频世界模型的原生预测误差能否区分物理违规与外观变化，以及固定阈值能否迁移到新场景。
+  > 检验视频世界模型的原生预测误差能否区分物理违规与外观变化，以及固定阈值能否迁移到新场景。<br>
+  > 🖥️ **仿真** Kubric
 
 <!-- mmac-record: {"id": "2610.15166", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-15166"></a>`2026.10` **[ExeWorldBench: Benchmarking Code-Based Executable 3D World Modeling](https://arxiv.org/abs/2610.15166)** [[项目页]](https://helen1p.github.io/ExeWorldBench/) [[数据集]](https://huggingface.co/datasets/HelenPeng/ExeWorldBench)
-  > 让 Coding Agent 从视觉参考或高层目标出发，编写一个能够运行的 3D 世界；任务从单个机械机制逐步扩展到多阶段联动系统和目标驱动的世界设计。它研究模型能否把对结构、运动和因果关系的理解落实为可执行产物。
+  > 让 Coding Agent 从视觉参考或高层目标出发，编写一个能够运行的 3D 世界；任务从单个机械机制逐步扩展到多阶段联动系统和目标驱动的世界设计。它研究模型能否把对结构、运动和因果关系的理解落实为可执行产物。<br>
+  > 🖥️ **仿真** Blender
 
 <!-- mmac-record: {"id": "2610.17288", "scope": "Core", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-17288"></a>`2026.10` **[PhysCodeGym: Benchmarking Coding Agents for Physically Verifiable 4D Reconstruction](https://arxiv.org/abs/2610.17288)** [[代码]](https://github.com/ShaoShuai0605/PhysCodeGym)
-  > 让 Coding Agent 观察物理过程的视频，自主编写、运行和修订 Blender 场景程序，重建刚体、液体、可变形物体及风驱动现象。除了比较重建画面，还检查程序和场景中的物理机制，并在部分任务中改变条件后重新仿真。
+  > 让 Coding Agent 观察物理过程的视频，自主编写、运行和修订 Blender 场景程序，重建刚体、液体、可变形物体及风驱动现象。除了比较重建画面，还检查程序和场景中的物理机制，并在部分任务中改变条件后重新仿真。<br>
+  > 🖥️ **仿真** Blender
 
 <!-- mmac-record: {"id": "2610.37326", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-37326"></a>`2026.10` **[ScIntBench: Physical Interaction Plausibility in 3D Scene Generation](https://arxiv.org/abs/2610.37326)** [[项目页]](https://scintbench.github.io/)
-  > 把文字生成的室内场景放进物理仿真，按统一协议执行推、开合和表面探测等动作，检查场景是否真的支持交互。它要揭示的是：物体摆得合理、静止时没有明显错误，并不保证动起来以后仍然可用。
+  > 把文字生成的室内场景放进物理仿真，按统一协议执行推、开合和表面探测等动作，检查场景是否真的支持交互。它要揭示的是：物体摆得合理、静止时没有明显错误，并不保证动起来以后仍然可用。<br>
+  > 🖥️ **仿真** Isaac Sim + Blender（Franka Panda）
 
 <!-- mmac-record: {"id": "2610.04432", "scope": "Core", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-04432"></a>`2026.10` **[Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos](https://arxiv.org/abs/2610.04432)** [[项目页]](https://aetherlabsai.github.io/Video2World) [[代码]](https://github.com/AetherLabsAI/Video2World) [[文档]](https://github.com/AetherLabsAI/Video2World/blob/main/docs/benchmark.md) [[数据集]](https://huggingface.co/datasets/AetherLabs-AI/Video2World) [[交叉执行诊断]](https://arxiv.org/html/2610.04432#S10.SS1) [[数据来源与视频筛选]](https://arxiv.org/html/2610.04432#S8.SS1)
-  > 把机器人或人类示范视频转化为一项端到端软件工程任务：Agent 既要重建模拟环境，也要编写对应的机器人行为，并根据执行反馈反复修改。最终检查空间结构、动态过程和交互任务能否在生成世界中重现。
+  > 把机器人或人类示范视频转化为一项端到端软件工程任务：Agent 既要重建模拟环境，也要编写对应的机器人行为，并根据执行反馈反复修改。最终检查空间结构、动态过程和交互任务能否在生成世界中重现。<br>
+  > 🖥️ **仿真** SAPIEN + Isaac Sim + MuJoCo（Franka Panda、ARX X5、xArm7、AgiBot G1）
 
 <!-- mmac-record: {"id": "2610.08720", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
@@ -2874,47 +3001,56 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2610.17521", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-17521"></a>`2026.10` **[YUBI-Real2Sim: 3DGS Scene Verification for Reliable Policy Evaluation](https://arxiv.org/abs/2610.17521)** [[代码]](https://github.com/airoa-org/yubi-real2sim) [[数据集]](https://huggingface.co/datasets/airoa-org/yubi-real2sim-assets) [[项目页]](https://research.airoa.io/publications/yubi-real2sim/)
-  > 把真实机器人场景重建为 3D 高斯视觉场景，并接入 MuJoCo 进行策略测试；通过真实与仿真的配对实验，研究重建中的孔洞、漂浮伪影等缺陷会怎样改变策略表现和排名。重点是判断这样的数字场景能否可靠地替代部分实机评测。
+  > 把真实机器人场景重建为 3D 高斯视觉场景，并接入 MuJoCo 进行策略测试；通过真实与仿真的配对实验，研究重建中的孔洞、漂浮伪影等缺陷会怎样改变策略表现和排名。重点是判断这样的数字场景能否可靠地替代部分实机评测。<br>
+  > 🖥️ **仿真** MuJoCo（Franka FR3、TX-G2） · 🦾 **真机** Franka FR3、TX-G2
 
 <!-- mmac-record: {"id": "2609.24778", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-24778"></a>`2026.09` **[H2RBench: A Real-to-Sim Benchmark for Evaluating Human-to-Robot Transfer](https://arxiv.org/abs/2609.24778)** [[项目页]](https://davidz2851.github.io/h2rbench.github.io/) [[代码]](https://github.com/xiaochy/H2RBench)
-  > 用四个 real-to-sim 任务比较人类示范到机器人迁移的方法，检验仿真中的排名能否预测实机排名。
+  > 用四个 real-to-sim 任务比较人类示范到机器人迁移的方法，检验仿真中的排名能否预测实机排名。<br>
+  > 🖥️ **仿真** Isaac Lab（Franka Panda） · 🦾 **真机** Franka Panda
 
 <!-- mmac-record: {"id": "2609.27449", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-27449"></a>`2026.09` **[X2Real: an eXtensive simulation benchmark for real-world generalist policies](https://arxiv.org/abs/2609.27449)** [[代码]](https://github.com/X-Square-Robot/x2real) [[项目页]](https://x2robot.com/en/pages/x2real)
-  > 按真实硬件校准仿真画面与物理，构建 44 个长时程任务，检验仿真评分能否跟随实机评分。
+  > 按真实硬件校准仿真画面与物理，构建 44 个长时程任务，检验仿真评分能否跟随实机评分。<br>
+  > 🖥️ **仿真** Isaac Lab（Franka、ArtiXon Arm-6A、ARX R5、Quanta X1）
 
 <!-- mmac-record: {"id": "2609.13194", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-13194"></a>`2026.08` **[Diagnosing Faults in Reinforcement Learning Simulators with Canonical Polynomial Invariants](https://arxiv.org/abs/2609.13194)** [[项目页]](https://www.github.com/TesfayZ/algebraicRLtest.git)
-  > 从轨迹中恢复多项式不变量，定位仿真器违反了哪条物理约束，以及由哪个参数引起。
+  > 从轨迹中恢复多项式不变量，定位仿真器违反了哪条物理约束，以及由哪个参数引起。<br>
+  > 🖥️ **仿真** MuJoCo
 
 <!-- mmac-record: {"id": "2606.01538", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-01538"></a>`2026.06` **[MPMWorlds: Material-Point-Method Simulations for Inferring and Extrapolating Physical Dynamics](https://arxiv.org/abs/2606.01538)**
-  > 构建包含可变形体、流体和多种材料的二维 MPM 模拟数据，让模型根据一段已观测视频及不同程度的场景信息预测后续过程。它对比两条路线：生成并运行模拟程序，或者直接生成未来视频，研究两者在物理推断和长时外推上的差别。
+  > 构建包含可变形体、流体和多种材料的二维 MPM 模拟数据，让模型根据一段已观测视频及不同程度的场景信息预测后续过程。它对比两条路线：生成并运行模拟程序，或者直接生成未来视频，研究两者在物理推断和长时外推上的差别。<br>
+  > 🖥️ **仿真** Taichi
 
 <!-- mmac-record: {"id": "2606.01869", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-01869"></a>`2026.06` **[WorldCoder-Bench: Benchmarking Physically Grounded 3D World Synthesis](https://arxiv.org/abs/2606.01869)** [[数据集]](https://huggingface.co/datasets/shuolucs/WorldCoder-Bench)
-  > 要求模型根据自然语言生成浏览器中的交互式 3D 程序，任务包括模拟、渲染和应用。其 StateProbe 评估器会实际运行程序、执行动作并检查隐藏的状态要求，用来发现画面正常但交互逻辑或状态变化错误的产物。
+  > 要求模型根据自然语言生成浏览器中的交互式 3D 程序，任务包括模拟、渲染和应用。其 StateProbe 评估器会实际运行程序、执行动作并检查隐藏的状态要求，用来发现画面正常但交互逻辑或状态变化错误的产物。<br>
+  > 🖥️ **仿真** Three.js
 
 <!-- mmac-record: {"id": "2605.19136", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2605-19136"></a>`2026.05` **[Automatically Improving Simulation Physics for Articulated Objects](https://arxiv.org/abs/2605.19136)**
-  > 为关节资产定义“可交互就绪度”并给出评估框架，再用 VLM 先验和仿真反馈迭代修正物理属性。
+  > 为关节资产定义“可交互就绪度”并给出评估框架，再用 VLM 先验和仿真反馈迭代修正物理属性。<br>
+  > 🖥️ **仿真** Isaac Lab（Franka Panda）
 
 <!-- mmac-record: {"id": "2605.20576", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2605-20576"></a>`2026.05` **[Δynamics: Language-Based Representation for Inferring Rigid-Body Dynamics From Videos](https://arxiv.org/abs/2605.20576)**
-  > 训练视觉语言模型从视频运动线索中推断物体形状、初始状态、物理属性和相机参数，并以结构化文本输出完整场景配置。配置交给物理引擎重新模拟，再通过采样和搜索改进匹配，研究语言表示能否连接视频理解与刚体动力学重建。
+  > 训练视觉语言模型从视频运动线索中推断物体形状、初始状态、物理属性和相机参数，并以结构化文本输出完整场景配置。配置交给物理引擎重新模拟，再通过采样和搜索改进匹配，研究语言表示能否连接视频理解与刚体动力学重建。<br>
+  > 🖥️ **仿真** MuJoCo + Blender
 
 <!-- mmac-record: {"id": "2604.23580", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2604-23580"></a>`2026.04` **[PhysCodeBench: Benchmarking Physics-Aware Symbolic Simulation of 3D Scenes via Self-Corrective Multi-Agent Refinement](https://arxiv.org/abs/2604.23580)**
-  > 将自然语言描述的物理现象转化为模拟代码生成任务，检查程序是否运行、画面是否符合要求以及物理断言是否成立。论文还提出专门负责生成与物理纠错的多 Agent 流程，研究有针对性的错误修正能否提升模拟的物理准确性。
+  > 将自然语言描述的物理现象转化为模拟代码生成任务，检查程序是否运行、画面是否符合要求以及物理断言是否成立。论文还提出专门负责生成与物理纠错的多 Agent 流程，研究有针对性的错误修正能否提升模拟的物理准确性。<br>
+  > 🖥️ **仿真** Genesis + MuJoCo
 
 <!-- mmac-record: {"id": "2604.13035", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
@@ -2939,17 +3075,20 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2602.13294", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2602-13294"></a>`2026.02` **[VisPhyWorld: Probing Physical Reasoning via Code-Driven Video Reconstruction](https://arxiv.org/abs/2602.13294)** [[代码]](https://github.com/TIGER-AI-Lab/VisPhyWorld)
-  > 要求多模态模型把看到的物理视频写成能够运行的模拟器代码，使其对世界的理解变成可检查、可修改的程序。配套 VisPhyBench 用受控场景比较重建的外观与运动，研究模型能否从视觉线索恢复合理的物理过程。
+  > 要求多模态模型把看到的物理视频写成能够运行的模拟器代码，使其对世界的理解变成可检查、可修改的程序。配套 VisPhyBench 用受控场景比较重建的外观与运动，研究模型能否从视觉线索恢复合理的物理过程。<br>
+  > 🖥️ **仿真** Three.js + P5.js
 
 <!-- mmac-record: {"id": "2512.16881", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2512-16881"></a>`2025.12` **[PolaRiS: Scalable Real-to-Sim Evaluations for Generalist Robot Policies](https://arxiv.org/abs/2512.16881)** [[项目页]](https://polaris-evals.github.io/) [[代码]](https://github.com/arhanjain/PolaRiS) [[数据集]](https://huggingface.co/datasets/owhan/PolaRiS-Hub)
-  > 用神经重建把短视频扫描转成可交互的评测场景，并与通用策略的实机评测配对比较。
+  > 用神经重建把短视频扫描转成可交互的评测场景，并与通用策略的实机评测配对比较。<br>
+  > 🖥️ **仿真** Isaac Sim（Franka Panda） · 🦾 **真机** Franka Panda
 
 <!-- mmac-record: {"id": "2511.03001", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2511-03001"></a>`2025.11` **[Apples on the Table? Evaluating Text-Guided 3D Scene Synthesis via Fine-Grained Constraint Verification](https://arxiv.org/abs/2511.03001)**
-  > 针对文字生成 3D 场景，提供带人工约束标注和参考场景的 LEGO 数据，并提出 LEGO-Eval。评估器把一句描述拆成物体、属性和相对位置等具体要求，再调用工具逐项核对，从而说明生成场景到底满足或遗漏了什么。
+  > 针对文字生成 3D 场景，提供带人工约束标注和参考场景的 LEGO 数据，并提出 LEGO-Eval。评估器把一句描述拆成物体、属性和相对位置等具体要求，再调用工具逐项核对，从而说明生成场景到底满足或遗漏了什么。<br>
+  > 🖥️ **仿真** AI2-THOR
 
 <!-- mmac-record: {"id": "2503.14756", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
@@ -2959,12 +3098,14 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2405.05941", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2405-05941"></a>`2024.05` **[Evaluating Real-World Robot Manipulation Policies in Simulation](https://arxiv.org/abs/2405.05941)**
-  > 针对实机策略评测昂贵且难复现的问题，构建与常见真实机器人设置对应的仿真环境，并减少视觉与控制差异。通过同一策略在仿真和实机中的配对测试，检查仿真能否反映真实表现及其对环境变化的敏感性。
+  > 针对实机策略评测昂贵且难复现的问题，构建与常见真实机器人设置对应的仿真环境，并减少视觉与控制差异。通过同一策略在仿真和实机中的配对测试，检查仿真能否反映真实表现及其对环境变化的敏感性。<br>
+  > 🖥️ **仿真** SAPIEN（Google Robot、WidowX 250） · 🦾 **真机** Google Robot、WidowX 250
 
 <!-- mmac-record: {"id": "real2sim-benchmark", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-real2sim-benchmark"></a>**[Real2Sim Benchmark](https://www.real2sim.bot/)**
-  > 给 Coding Agent 真实机器人片段、相机标定和动作记录，让它重建对应的仿真场景。提交后冻结场景，再分别比较渲染结果、重放真实动作的结果和固定机器人策略的闭环表现，以检查重建世界的外观及使用价值。
+  > 给 Coding Agent 真实机器人片段、相机标定和动作记录，让它重建对应的仿真场景。提交后冻结场景，再分别比较渲染结果、重放真实动作的结果和固定机器人策略的闭环表现，以检查重建世界的外观及使用价值。<br>
+  > 🖥️ **仿真** Franka Panda
 
 *另见:* [Frontier3DBench](#paper-2611-09017) · [4DCodeBench](#paper-2610-03715) · [BlenderWorld](#paper-system-blenderworld) · [BVB](#paper-2609-15478) · [Code4Scene](#paper-2609-36777) · [Parametric CAD Bench v3](#paper-2611-02659) · [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786)
 
@@ -2985,12 +3126,14 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2611.06817", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-06817"></a>`2026.11` **[Open-HumanWAM: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models](https://arxiv.org/abs/2611.06817)** [[项目页]](https://dagroup-pku.github.io/open-humanwam/) [[代码]](https://github.com/DAGroup-PKU/HumanNet/tree/Open-HumanWAM) [[数据集]](https://huggingface.co/datasets/DAGroup-PKU/Open-HumanWAM-50K) [[合集]](https://huggingface.co/collections/DAGroup-PKU/open-humanwam)
-  > 整理人类操作经验及对齐动作，用于世界—动作模型预训练与机器人适配。
+  > 整理人类操作经验及对齐动作，用于世界—动作模型预训练与机器人适配。<br>
+  > 🖥️ **仿真** SAPIEN + Isaac Sim（AgileX ALOHA、ARX X5） · 🦾 **真机** AgileX Cobot Magic
 
 <!-- mmac-record: {"id": "2406.18915", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2406-18915"></a>`2024.06` **[Manipulate-Anything: Automating Real-World Robots using Vision-Language Models](https://arxiv.org/abs/2406.18915)** [[项目页]](https://robot-ma.github.io/) [[代码]](https://github.com/Robot-MA/manipulate-anything)
-  > 用视觉语言反馈自动采集真实示范。
+  > 用视觉语言反馈自动采集真实示范。<br>
+  > 🖥️ **仿真** CoppeliaSim（Franka Panda） · 🦾 **真机** Franka Panda
 
 <!-- mmac-record: {"id": "2403.12945", "scope": "Resource", "primary": "3.4", "stage": 3, "type": "resource"} -->
 
@@ -3002,37 +3145,44 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2611.12411", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-12411"></a>`2026.11` **[PhysOPSD: Code as Privilege for Physically Plausible Video Generation](https://arxiv.org/abs/2611.12411)** [[项目页]](https://haroldchen19.github.io/PhysOPSD-site/)
-  > 构建可执行物理场景及配对视觉监督，用于视频生成器后训练。
+  > 构建可执行物理场景及配对视觉监督，用于视频生成器后训练。<br>
+  > 🖥️ **仿真** Blender + Genesis + MuJoCo
 
 <!-- mmac-record: {"id": "2611.05320", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-05320"></a>`2026.11` **[PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data](https://arxiv.org/abs/2611.05320)** [[项目页]](https://dagroup-pku.github.io/PyRUA-Lean/DataFarm) [[代码]](https://github.com/DAGroup-PKU/PyRUA-Lean/tree/DataFarm)
-  > 组合代码与视频模型生成动作标注数据。
+  > 组合代码与视频模型生成动作标注数据。<br>
+  > 🖥️ **仿真** SAPIEN + Isaac Sim
 
 <!-- mmac-record: {"id": "2611.05163", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-05163"></a>`2026.11` **[RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On](https://arxiv.org/abs/2611.05163)** [[项目页]](https://ryan-seungyong-lee.github.io/RoboTryOn) [[代码]](https://github.com/ryan-seungyong-lee/RoboTryOn) [[模型]](https://huggingface.co/RyanL22/RoboTryOn) [[Demo]](https://huggingface.co/spaces/RyanL22/RoboTryOn)
-  > 将真人示范转换为目标机器人视频，通过逆动力学和腕部校正生成伪动作，训练策略并在两种真实机器人上评估。
+  > 将真人示范转换为目标机器人视频，通过逆动力学和腕部校正生成伪动作，训练策略并在两种真实机器人上评估。<br>
+  > 🦾 **真机** OpenArm、Inspire RH56F1、Rainbow RB-Y1、WujiHand2
 
 <!-- mmac-record: {"id": "2610.22362", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-22362"></a>`2026.10` **[CoDA: Co-Evolution of Data Engines and Action Policies](https://arxiv.org/abs/2610.22362)** [[项目页]](https://plan-lab.github.io/projects/coda/)
-  > 共同演化数据生成程序与机器人策略。
+  > 共同演化数据生成程序与机器人策略。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda）
 
 <!-- mmac-record: {"id": "2610.07969", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-07969"></a>`2026.10` **[EmbodiedSmith: Scaling Embodied Data through Recursive Self-Improvement Flywheel in Simulation](https://arxiv.org/abs/2610.07969)**
-  > 构建可自改进的仿真数据引擎。
+  > 构建可自改进的仿真数据引擎。<br>
+  > 🖥️ **仿真** Isaac Sim（Franka FR3、Sharpa Wave）
 
 <!-- mmac-record: {"id": "2609.35318", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-35318"></a>`2026.09` **[DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library](https://arxiv.org/abs/2609.35318)** [[项目页]](https://dexagent1.github.io/) [[项目页]](https://dexagent123.github.io/) [[代码]](https://github.com/dexagent1/DexAgent)
-  > 把人类视频转为仿真灵巧操作监督。
+  > 把人类视频转为仿真灵巧操作监督。<br>
+  > 🖥️ **仿真** Blender + MuJoCo + Isaac Sim（Sharpa Wave） · 🦾 **真机** I2RT YAM、Sharpa Wave
 
 <!-- mmac-record: {"id": "2609.27308", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-27308"></a>`2026.09` **[EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics](https://arxiv.org/abs/2609.27308)** [[代码]](https://github.com/EmbodiedSWE/EmbodiedSWE)
-  > 把验证过的机器人程序扩展为合成示范。
+  > 把验证过的机器人程序扩展为合成示范。<br>
+  > 🖥️ **仿真** Isaac Lab + Newton（Franka Panda、xArm7、Kinova Gen3、Unitree G1） · 🦾 **真机** Franka Panda
 
 <!-- mmac-record: {"id": "2607.23704", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
@@ -3042,17 +3192,20 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2506.18088", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2506-18088"></a>`2025.06` **[RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation](https://arxiv.org/abs/2506.18088)** [[代码]](https://github.com/RoboTwin-Platform/RoboTwin) [[代码]](https://github.com/robotwin-Platform/robotwin) [[代码]](https://github.com/robotwin-Platform/robotwin/) [[项目页]](https://robotwin-platform.github.io/) [[项目页]](https://robotwin-platform.github.io/doc/) [[数据集]](https://huggingface.co/datasets/TianxingChen/RoboTwin2.0)
-  > 生成多样化双臂操作训练轨迹。
+  > 生成多样化双臂操作训练轨迹。<br>
+  > 🖥️ **仿真** SAPIEN（AgileX ALOHA、AgileX PiPER、ARX X5、Franka Panda、UR5）
 
 <!-- mmac-record: {"id": "2410.03645", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2410-03645"></a>`2024.10` **[GenSim2: Scaling Robot Data Generation with Multi-modal and Reasoning LLMs](https://arxiv.org/abs/2410.03645)** [[项目页]](https://gensim2.github.io/) [[代码]](https://github.com/GenSim2/gensim2)
-  > 通过生成任务与求解器扩大机器人示范。
+  > 通过生成任务与求解器扩大机器人示范。<br>
+  > 🖥️ **仿真** SAPIEN（Franka Panda） · 🦾 **真机** Franka FR3
 
 <!-- mmac-record: {"id": "2307.14535", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2307-14535"></a>`2023.07` **[Scaling Up and Distilling Down: Language-Guided Robot Skill Acquisition](https://arxiv.org/abs/2307.14535)** [[项目页]](https://www.cs.columbia.edu/~huy/scalingup/) [[代码]](https://github.com/columbia-ai-robotics/scalingup)
-  > 将语言组织的机器人经验蒸馏为动作策略。
+  > 将语言组织的机器人经验蒸馏为动作策略。<br>
+  > 🖥️ **仿真** MuJoCo（UR5e） · 🦾 **真机** UR5e
 
 [↑ 返回目录](#contents)
 
@@ -3071,77 +3224,92 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2610.09588", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-09588"></a>`2026.10` **[Adaptive Code Generation for Controlling Robots](https://arxiv.org/abs/2610.09588)**
-  > 在世界状态变化后热更新机器人工作流。
+  > 在世界状态变化后热更新机器人工作流。<br>
+  > 🖥️ **仿真** Gazebo
 
 <!-- mmac-record: {"id": "2610.23288", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-23288"></a>`2026.10` **[CoEvolve: Self-Evolving Code Policies from Skills to Strategies for Humanoid Robots](https://arxiv.org/abs/2610.23288)** [[代码]](https://github.com/Innovationlzc/CoEvolve)
-  > 在固定人形技能上演化团队策略。
+  > 在固定人形技能上演化团队策略。<br>
+  > 🖥️ **仿真** MuJoCo（Unitree G1）
 
 <!-- mmac-record: {"id": "2610.12369", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-12369"></a>`2026.10` **[Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement](https://arxiv.org/abs/2610.12369)**
-  > 开发带显式状态的程序并部署执行。
+  > 开发带显式状态的程序并部署执行。<br>
+  > 🖥️ **仿真** Isaac Sim（ARX X5）
 
 <!-- mmac-record: {"id": "2610.36533", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-36533"></a>`2026.10` **[RoboAuto: Autonomous Robot Program Search through Multi-Level Physical Understanding](https://arxiv.org/abs/2610.36533)** [[项目页]](https://roboauto-ai.github.io/)
-  > 通过分阶段物理诊断搜索程序。
+  > 通过分阶段物理诊断搜索程序。<br>
+  > 🖥️ **仿真** MuJoCo + SAPIEN（Franka Panda、AgileX ALOHA） · 🦾 **真机** Trossen WidowX AI
 
 <!-- mmac-record: {"id": "2610.18792", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-18792"></a>`2026.10` **[SEAR: Self-Evolving Agentic Robotics](https://arxiv.org/abs/2610.18792)**
-  > 比较多种机器人自改进模式。
+  > 比较多种机器人自改进模式。<br>
+  > 🖥️ **仿真** MuJoCo + Isaac Lab（Franka Panda） · 🦾 **真机** I2RT YAM、Flexiv、Sharpa Wave
 
 <!-- mmac-record: {"id": "2609.30233", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-30233"></a>`2026.09` **[Coding Agents for Generalized Task and Motion Planning Problems](https://arxiv.org/abs/2609.30233)** [[代码]](https://github.com/tomsilver/robocode)
-  > 编写任务与运动规划求解程序。
+  > 编写任务与运动规划求解程序。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda）
 
 <!-- mmac-record: {"id": "2609.30594", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-30594"></a>`2026.09` **[HuGo: LLMs as Whole-Body Policy Code Designers for Humanoid Loco-Manipulation](https://arxiv.org/abs/2609.30594)** [[项目页]](https://iconlab.negarmehr.com/HuGo/)
-  > 设计人形机器人的高层策略程序。
+  > 设计人形机器人的高层策略程序。<br>
+  > 🖥️ **仿真** Isaac Sim（Unitree G1） · 🦾 **真机** Unitree G1
 
 <!-- mmac-record: {"id": "2609.24145", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-24145"></a>`2026.09` **[MimicAgent: Quadruped Skills via Prompt-to-Trajectory Generation](https://arxiv.org/abs/2609.24145)** [[项目页]](https://luckykantnayak.github.io/mimic-agent/) [[代码]](https://github.com/Luckykantnayak/mimicagent-humnaoid)
-  > 为四足策略训练生成参考运动。
+  > 为四足策略训练生成参考运动。<br>
+  > 🖥️ **仿真** MuJoCo（Unitree Go2-W）
 
 <!-- mmac-record: {"id": "2609.38982", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-38982"></a>`2026.09` **[SimEX: Simulation-Integrated Robotics AutoResearch](https://arxiv.org/abs/2609.38982)** [[项目页]](https://robo-simex.github.io/)
-  > 结合仿真研发与少量实机反馈。
+  > 结合仿真研发与少量实机反馈。<br>
+  > 🖥️ **仿真** MuJoCo + Isaac Sim · 🦾 **真机** I2RT YAM
 
 <!-- mmac-record: {"id": "2608.07555", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2608-07555"></a>`2026.08` **[You Don't Need To Stay in The Loop: An Agentic Robotics Loop for Robot-Policy Improvement](https://arxiv.org/abs/2608.07555)**
-  > 组织可重复的机器人策略研发循环。
+  > 组织可重复的机器人策略研发循环。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda）
 
 <!-- mmac-record: {"id": "2606.19980", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-19980"></a>`2026.06` **[ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](https://arxiv.org/abs/2606.19980)** [[项目页]](https://research.nvidia.com/labs/gear/enpire/) [[代码]](https://github.com/NVlabs/ENPIRE)
-  > 利用真实试验证据研发机器人策略。
+  > 利用真实试验证据研发机器人策略。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda） · 🦾 **真机** I2RT YAM
 
 <!-- mmac-record: {"id": "2606.08610", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-08610"></a>`2026.06` **[HARBOR: A Harness Framework for Agentic Robot Reinforcement Learning](https://arxiv.org/abs/2606.08610)**
-  > 把机器人 RL 研发组织为 Agent 工作环境。
+  > 把机器人 RL 研发组织为 Agent 工作环境。<br>
+  > 🖥️ **仿真** Isaac Lab + SAPIEN + Genesis + MuJoCo（Shadow Hand） · 🦾 **真机** Franka、xArm UF850、Allegro Hand
 
 <!-- mmac-record: {"id": "2606.16458", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-16458"></a>`2026.06` **[RHO: Your Coding Agent is Secretly a Roboticist](https://arxiv.org/abs/2606.16458)** [[项目页]](https://rho-robotics.github.io) [[代码]](https://github.com/KE7/HELIX)
-  > 在部署前搜索可复用机器人策略代码库。
+  > 在部署前搜索可复用机器人策略代码库。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda）
 
 <!-- mmac-record: {"id": "2603.04466", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2603-04466"></a>`2026.03` **[Act-Observe-Rewrite: Multimodal Coding Agents as In-Context Policy Learners for Robot Manipulation](https://arxiv.org/abs/2603.04466)**
-  > 依据执行与视觉反馈改写控制程序。
+  > 依据执行与视觉反馈改写控制程序。<br>
+  > 🖥️ **仿真** MuJoCo（UR5e）
 
 <!-- mmac-record: {"id": "2508.02629", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2508-02629"></a>`2025.08` **[HyCodePolicy: Hybrid Language Controllers for Multimodal Monitoring and Decision in Embodied Agents](https://arxiv.org/abs/2508.02629)**
-  > 结合可执行策略与多模态监控。
+  > 结合可执行策略与多模态监控。<br>
+  > 🖥️ **仿真** SAPIEN（AgileX ALOHA）
 
 <!-- mmac-record: {"id": "2503.13660", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
@@ -3156,32 +3324,38 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2409.01652", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2409-01652"></a>`2024.09` **[ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation](https://arxiv.org/abs/2409.01652)** [[项目页]](https://rekep-robot.github.io/) [[代码]](https://github.com/huangwl18/ReKep)
-  > 用程序化几何约束指导在线操作。
+  > 用程序化几何约束指导在线操作。<br>
+  > 🖥️ **仿真** Isaac Sim · 🦾 **真机** Franka
 
 <!-- mmac-record: {"id": "2406.01967", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2406-01967"></a>`2024.06` **[DrEureka: Language Model Guided Sim-To-Real Transfer](https://arxiv.org/abs/2406.01967)** [[项目页]](https://eureka-research.github.io/dr-eureka/) [[代码]](https://github.com/eureka-research/DrEureka)
-  > 用生成奖励和域随机化支持真实迁移。
+  > 用生成奖励和域随机化支持真实迁移。<br>
+  > 🖥️ **仿真** Isaac Gym（Unitree Go1、LEAP Hand） · 🦾 **真机** Unitree Go1、LEAP Hand
 
 <!-- mmac-record: {"id": "2402.04764", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2402-04764"></a>`2024.02` **[Code as Reward: Empowering Reinforcement Learning with VLMs](https://arxiv.org/abs/2402.04764)**
-  > 把视觉任务理解编译为奖励代码。
+  > 把视觉任务理解编译为奖励代码。<br>
+  > 🖥️ **仿真** MuJoCo（Sawyer）
 
 <!-- mmac-record: {"id": "2310.12931", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2310-12931"></a>`2023.10` **[Eureka: Human-Level Reward Design via Coding Large Language Models](https://arxiv.org/abs/2310.12931)** [[项目页]](https://eureka-research.github.io/) [[代码]](https://github.com/eureka-research/Eureka)
-  > 用策略训练反馈搜索奖励程序。
+  > 用策略训练反馈搜索奖励程序。<br>
+  > 🖥️ **仿真** Isaac Gym（Shadow Hand、Franka Panda、Allegro Hand、ANYmal）
 
 <!-- mmac-record: {"id": "2309.11489", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2309-11489"></a>`2023.09` **[Text2Reward: Reward Shaping with Language Models for Reinforcement Learning](https://arxiv.org/abs/2309.11489)** [[项目页]](https://text-to-reward.github.io/) [[代码]](https://github.com/xlang-ai/text2reward)
-  > 把奖励塑形变成代码生成任务。
+  > 把奖励塑形变成代码生成任务。<br>
+  > 🖥️ **仿真** SAPIEN + MuJoCo（Franka Panda、Sawyer） · 🦾 **真机** Franka Panda
 
 <!-- mmac-record: {"id": "2306.08647", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2306-08647"></a>`2023.06` **[Language to Rewards for Robotic Skill Synthesis](https://arxiv.org/abs/2306.08647)** [[项目页]](https://language-to-reward.github.io/) [[代码]](https://github.com/google-deepmind/language_to_reward_2023)
-  > 用生成奖励表达机器人技能目标。
+  > 用生成奖励表达机器人技能目标。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda、Shadow Hand）
 
 <!-- mmac-record: {"id": "autoresearch-robotics", "scope": "Resource", "primary": "3.5", "stage": 3, "type": "resource"} -->
 
@@ -3198,37 +3372,44 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2611.14432", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-14432"></a>`2026.11` **[One Policy for 100 Household Tasks: Our Solution for the 2026 BEHAVIOR Challenge](https://arxiv.org/abs/2611.14432)**
-  > 将家庭任务 VLA 与任务专属的 Coding Agent 练习会话结合，并在评测前冻结会话。
+  > 将家庭任务 VLA 与任务专属的 Coding Agent 练习会话结合，并在评测前冻结会话。<br>
+  > 🖥️ **仿真** Isaac Sim（Galaxea R1 Pro）
 
 <!-- mmac-record: {"id": "2611.06768", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-06768"></a>`2026.11` **[PyRUA-REAL: Robot Exploration and Adaptive Learning through RSI in the Real World](https://arxiv.org/abs/2611.06768)** [[项目页]](https://dagroup-pku.github.io/PyRUA-Lean/real/) [[代码]](https://github.com/DAGroup-PKU/PyRUA-Lean/tree/REAL)
-  > 从真实机器人探索学习可复用代码。
+  > 从真实机器人探索学习可复用代码。<br>
+  > 🖥️ **仿真** Isaac Sim（ARX X5） · 🦾 **真机** Franka
 
 <!-- mmac-record: {"id": "2611.12885", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-12885"></a>`2026.11` **[World In-Context Learning for Agentic Robot Manipulation](https://arxiv.org/abs/2611.12885)** [[项目页]](https://ArcheOne-AI.github.io/RoboScript) [[项目页]](https://archeone-ai.github.io/RoboScript/) [[代码]](https://github.com/ArcheOne-AI/RoboScript)
-  > 利用仿真排练形成可迁移的任务记忆，基础模型参数保持冻结。
+  > 利用仿真排练形成可迁移的任务记忆，基础模型参数保持冻结。<br>
+  > 🖥️ **仿真** SAPIEN（AgileX ALOHA） · 🦾 **真机** AgileX PiPER
 
 <!-- mmac-record: {"id": "2610.18874", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-18874"></a>`2026.10` **[ChunkAct: Action Chunking for Agentic Robotics](https://arxiv.org/abs/2610.18874)**
-  > 把外部记忆编译成自主执行的动作块。
+  > 把外部记忆编译成自主执行的动作块。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda）
 
 <!-- mmac-record: {"id": "2610.25114", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-25114"></a>`2026.10` **[Compile Once, Run Cheap: Frozen, Portable Skills for Embodied Agents, and What Recursive Self-Improvement Adds](https://arxiv.org/abs/2610.25114)** [[代码]](https://github.com/Orillusion/embodied-skill-rsi)
-  > 离线构造技能并冻结复用。
+  > 离线构造技能并冻结复用。<br>
+  > 🖥️ **仿真** SAPIEN（AgileX ALOHA）
 
 <!-- mmac-record: {"id": "2610.18867", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-18867"></a>`2026.10` **[EmbodiedEvo: Self-Evolving Coding Agent For Physical Intelligence](https://arxiv.org/abs/2610.18867)**
-  > 将可执行技能与诊断经验分别积累。
+  > 将可执行技能与诊断经验分别积累。<br>
+  > 🖥️ **仿真** Isaac Sim（ARX X5）
 
 <!-- mmac-record: {"id": "2610.10498", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-10498"></a>`2026.10` **[EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution](https://arxiv.org/abs/2610.10498)**
-  > 通过显式假设选择机器人探索。
+  > 通过显式假设选择机器人探索。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda） · 🦾 **真机** SO-101
 
 <!-- mmac-record: {"id": "2610.29560", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
@@ -3243,37 +3424,44 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2610.23098", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-23098"></a>`2026.10` **[InstAgent: A Recursively Self-Improving Agent Operating System for Heterogeneous Robot Collaboration](https://arxiv.org/abs/2610.23098)**
-  > 为异构机器人团队保留修复后的协作程序。
+  > 为异构机器人团队保留修复后的协作程序。<br>
+  > 🖥️ **仿真** Habitat
 
 <!-- mmac-record: {"id": "2610.03476", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-03476"></a>`2026.10` **[MobiAgent: Dual-Loop Recursive Policy Self-Improvement for Long-Horizon Mobile Manipulation](https://arxiv.org/abs/2610.03476)** [[代码]](https://github.com/kaiknower/MobiAgent) [[项目页]](https://kaiknower.github.io/mobiagent/) [[模型]](https://huggingface.co/Liukaikai/MobiAgent)
-  > 将视觉规划与反思连接到可复用动作专家，把核验后的部署轨迹转为离线技能策略更新，而不是生成控制代码的修订。
+  > 将视觉规划与反思连接到可复用动作专家，把核验后的部署轨迹转为离线技能策略更新，而不是生成控制代码的修订。<br>
+  > 🖥️ **仿真** MuJoCo + Isaac Sim（Franka Panda、Galaxea R1 Pro） · 🦾 **真机** Astribot S1
 
 <!-- mmac-record: {"id": "2610.08995", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-08995"></a>`2026.10` **[PhysEvo: Astra Can Act, Let It](https://arxiv.org/abs/2610.08995)**
-  > 保持模型冻结并改进机器人工具。
+  > 保持模型冻结并改进机器人工具。<br>
+  > 🖥️ **仿真** Isaac Sim（ARX X5） · 🦾 **真机** AgileX PiPER
 
 <!-- mmac-record: {"id": "2610.02204", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-02204"></a>`2026.10` **[Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents](https://arxiv.org/abs/2610.02204)** [[项目页]](https://rpg-robot.github.io/)
-  > 利用重建练习环境改进具身 Agent。
+  > 利用重建练习环境改进具身 Agent。<br>
+  > 🖥️ **仿真** MuJoCo
 
 <!-- mmac-record: {"id": "2610.01178", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-01178"></a>`2026.10` **[Recova: Agent-Guided Failure Recovery for Autonomous Robotic Manipulation](https://arxiv.org/abs/2610.01178)** [[项目页]](https://www.liuisabella.com/Recova)
-  > 先在数字孪生中练习恢复再执行实机任务。
+  > 先在数字孪生中练习恢复再执行实机任务。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda）
 
 <!-- mmac-record: {"id": "2610.42141", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-42141"></a>`2026.10` **[RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory](https://arxiv.org/abs/2610.42141)** [[代码]](https://github.com/roboarchitect-ai/RoboArchitect) [[项目页]](https://roboarchitect-ai.github.io/)
-  > 演化持久记忆与机器人控制代码。
+  > 演化持久记忆与机器人控制代码。<br>
+  > 🖥️ **仿真** MuJoCo + SAPIEN（Franka Panda、WidowX 250、Google Robot）
 
 <!-- mmac-record: {"id": "2610.22496", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-22496"></a>`2026.10` **[Scaling Online Exploration for Robot Agents](https://arxiv.org/abs/2610.22496)** [[代码]](https://github.com/robot-agent-exploration/rax) [[代码]](https://github.com/robot-agent-exploration/skills-lib) [[数据集]](https://huggingface.co/datasets/robot-agent-exploration/robot-session-logs) [[项目页]](https://robot-agent-exploration.com/)
-  > 研究探索预算如何转化为机器人经验。
+  > 研究探索预算如何转化为机器人经验。<br>
+  > 🖥️ **仿真** MuJoCo + Isaac Sim（Franka Panda、ARX X5、Galaxea R1 Pro） · 🦾 **真机** Franka FR3
 
 <!-- mmac-record: {"id": "2610.22736", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
@@ -3283,52 +3471,62 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2609.39207", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-39207"></a>`2026.09` **[ASENA: Self-evolving Agents for Embodied Navigation](https://arxiv.org/abs/2609.39207)** [[项目页]](https://research.nvidia.com/labs/gear/asena)
-  > 把导航修复用于后续环境。
+  > 把导航修复用于后续环境。<br>
+  > 🖥️ **仿真** Habitat · 🦾 **真机** Unitree G1
 
 <!-- mmac-record: {"id": "2609.40306", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-40306"></a>`2026.09` **[DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents](https://arxiv.org/abs/2609.40306)** [[项目页]](https://denghaoyuan123.github.io/Dynaharness_page/)
-  > 用物理执行契约约束 Harness 演化。
+  > 用物理执行契约约束 Harness 演化。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda）
 
 <!-- mmac-record: {"id": "2609.39018", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-39018"></a>`2026.09` **[Make Code as Policy Great Again: Frontier Agents Write, Call, and Evolve Robot Tools](https://arxiv.org/abs/2609.39018)**
-  > 让 Agent 编写并演化自己的执行工具。
+  > 让 Agent 编写并演化自己的执行工具。<br>
+  > 🖥️ **仿真** Isaac Sim（ARX X5） · 🦾 **真机** AgileX PiPER-X
 
 <!-- mmac-record: {"id": "2609.29394", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-29394"></a>`2026.09` **[RACaP: Agentic Reasoning, Acting, and Coding as Policies for Evolvable Robot Learning](https://arxiv.org/abs/2609.29394)**
-  > 将在线决策与可演化机器人 API 分开。
+  > 将在线决策与可演化机器人 API 分开。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda）
 
 <!-- mmac-record: {"id": "2609.33378", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-33378"></a>`2026.09` **[Recursive Harness Distillation across Agents for Robot Manipulation](https://arxiv.org/abs/2609.33378)**
-  > 在 Agent 间迁移外部 Harness 指导。
+  > 在 Agent 间迁移外部 Harness 指导。<br>
+  > 🖥️ **仿真** SAPIEN（WidowX 250） · 🦾 **真机** Franka Panda
 
 <!-- mmac-record: {"id": "2609.32862", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-32862"></a>`2026.09` **[RoboFoundry: System-as-Policy Evolution for Self-Learning Embodied Agents](https://arxiv.org/abs/2609.32862)** [[项目页]](https://jingsongliang.com/robofoundry)
-  > 把机器人支持系统作为可演化策略。
+  > 把机器人支持系统作为可演化策略。<br>
+  > 🖥️ **仿真** MuJoCo + Habitat（Franka Panda） · 🦾 **真机** AgileX Cobot Magic、Unitree G1
 
 <!-- mmac-record: {"id": "2609.37583", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-37583"></a>`2026.09` **[RoboHarn-Evo: Evolving Hierarchical Physical Knowledge for Self-Improving Robotic Manipulation](https://arxiv.org/abs/2609.37583)** [[代码]](https://github.com/RUCKBReasoning/RoboHarn-Evo)
-  > 从物理交互积累分层知识。
+  > 从物理交互积累分层知识。<br>
+  > 🖥️ **仿真** Isaac Sim（ARX X5） · 🦾 **真机** AgileX Cobot Magic
 
 <!-- mmac-record: {"id": "2609.39304", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-39304"></a>`2026.09` **[Scale and Selection: What Makes Automatic Harness Evolution Work for Visual-Interface Robot Agents](https://arxiv.org/abs/2609.39304)**
-  > 研究 Harness 优化中的规模与筛选。
+  > 研究 Harness 优化中的规模与筛选。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda）
 
 <!-- mmac-record: {"id": "2609.35432", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-35432"></a>`2026.09` **[Self-Evolving Coding Agents: From Digital Programs to Physical-World Intelligence](https://arxiv.org/abs/2609.35432)**
-  > 用显式世界与策略代码改进机器人工具。
+  > 用显式世界与策略代码改进机器人工具。<br>
+  > 🖥️ **仿真** MuJoCo + Isaac Sim + SAPIEN（Franka Panda、ARX X5） · 🦾 **真机** AgileX PiPER-X
 
 <!-- mmac-record: {"id": "2609.31760", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-31760"></a>`2026.09` **[What Stops Recursive Self-Improvement in Robotics? Lessons from 123 Rounds of Agentic Skill Discovery](https://arxiv.org/abs/2609.31760)**
-  > 分析反复修改代码与技能为何仍可能无法形成累积的任务成功。
+  > 分析反复修改代码与技能为何仍可能无法形成累积的任务成功。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda）
 
 <!-- mmac-record: {"id": "2608.11350", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
@@ -3338,57 +3536,68 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2608.09410", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2608-09410"></a>`2026.08` **[Skills in Weights, Memory in Code: Hybrid Learning for Memory-Dependent Robot Manipulation](https://arxiv.org/abs/2608.09410)**
-  > 结合学习式技能与程序化记忆。
+  > 结合学习式技能与程序化记忆。<br>
+  > 🦾 **真机** SO-101
 
 <!-- mmac-record: {"id": "2608.16590", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2608-16590"></a>`2026.08` **[Zetta $ζ$: An Efficient Closed-Loop Embodied Harness for Self-Evolving Physical Intelligence](https://arxiv.org/abs/2608.16590)**
-  > 围绕冻结动作策略演化监控器与恢复技能。
+  > 围绕冻结动作策略演化监控器与恢复技能。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda）
 
 <!-- mmac-record: {"id": "2607.23784", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2607-23784"></a>`2026.07` **[A Few Words Go a Long Way: Language Guided Robot Policy Synthesis](https://arxiv.org/abs/2607.23784)** [[项目页]](https://robo-architect.github.io/) [[代码]](https://github.com/robo-architect/architect-franka)
-  > 用语言纠正改进机器人程序。
+  > 用语言纠正改进机器人程序。<br>
+  > 🦾 **真机** Franka Panda
 
 <!-- mmac-record: {"id": "2607.00272", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2607-00272"></a>`2026.06` **[ASPIRE: Agentic /Skills Discovery for Robotics](https://arxiv.org/abs/2607.00272)** [[Demo]](https://research.nvidia.com/labs/gear/aspire/) [[代码]](https://github.com/NVlabs/ASPIRE)
-  > 把经过验证的代码修复提炼为技能。
+  > 把经过验证的代码修复提炼为技能。<br>
+  > 🖥️ **仿真** MuJoCo + Isaac Sim（Franka Panda、Galaxea R1 Pro） · 🦾 **真机** I2RT YAM
 
 <!-- mmac-record: {"id": "2606.19419", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-19419"></a>`2026.06` **[Playful Agentic Robot Learning](https://arxiv.org/abs/2606.19419)** [[项目页]](https://playful-rats.github.io/) [[代码]](https://github.com/Playful-RATs/rats)
-  > 把无任务探索转化为持久代码技能。
+  > 把无任务探索转化为持久代码技能。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda）
 
 <!-- mmac-record: {"id": "2605.10332", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2605-10332"></a>`2026.05` **[EmbodiSkill: Skill-Aware Reflection for Self-Evolving Embodied Agents](https://arxiv.org/abs/2605.10332)** [[代码]](https://github.com/air-embodied-brain/EmbodiSkill)
-  > 将反思对应到导致失败的具体技能。
+  > 将反思对应到导致失败的具体技能。<br>
+  > 🖥️ **仿真** Habitat
 
 <!-- mmac-record: {"id": "2603.02623", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2603-02623"></a>`2026.03` **[Uni-Skill: Building Self-Evolving Skill Repository for Generalizable Robotic Manipulation](https://arxiv.org/abs/2603.02623)**
-  > 维护可持续演化的机器人技能仓库。
+  > 维护可持续演化的机器人技能仓库。<br>
+  > 🖥️ **仿真** CoppeliaSim（Franka Panda） · 🦾 **真机** Franka
 
 <!-- mmac-record: {"id": "2509.18597", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2509-18597"></a>`2025.09` **[Robotic Ultra-Long-Horizon Manipulation Skills via Human-guided Lifelong Code Generation](https://arxiv.org/abs/2509.18597)** [[项目页]](https://ghiara.github.io/LYRA/) [[代码]](https://github.com/Ghiara/LYRA)
-  > 把人工纠错积累为长时序代码技能。
+  > 把人工纠错积累为长时序代码技能。<br>
+  > 🖥️ **仿真** PyBullet + MuJoCo（UR5e、Franka Panda、Sawyer） · 🦾 **真机** Franka FR3
 
 <!-- mmac-record: {"id": "2406.18746", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2406-18746"></a>`2024.06` **[Lifelong Robot Library Learning: Bootstrapping Composable and Generalizable Skills for Embodied Control with Language Models](https://arxiv.org/abs/2406.18746)** [[项目页]](https://gtziafas.github.io/LRLL_project)
-  > 持续积累可组合的机器人控制程序库。
+  > 持续积累可组合的机器人控制程序库。<br>
+  > 🖥️ **仿真** PyBullet + Gazebo（UR5e） · 🦾 **真机** Kinova Jaco
 
 <!-- mmac-record: {"id": "2406.03757", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2406-03757"></a>`2024.06` **[RoboCoder: Robotic Learning from Basic Skills to General Tasks with Large Language Models](https://arxiv.org/abs/2406.03757)**
-  > 通过复用基础技能组合复杂机器人任务。
+  > 通过复用基础技能组合复杂机器人任务。<br>
+  > 🖥️ **仿真** Isaac Gym（Franka Panda、Kinova）
 
 <!-- mmac-record: {"id": "2405.19758", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2405-19758"></a>`2024.05` **[InterPreT: Interactive Predicate Learning from Language Feedback for Generalizable Task Planning](https://arxiv.org/abs/2405.19758)** [[项目页]](https://interpret-robot.github.io) [[代码]](https://github.com/hmz-15/interactive-predicate-learning)
-  > 从语言纠正中学习可执行规划谓词。
+  > 从语言纠正中学习可执行规划谓词。<br>
+  > 🦾 **真机** Franka Panda
 
 <!-- mmac-record: {"id": "2305.16744", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
@@ -3400,42 +3609,50 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2610.30136", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-30136"></a>`2026.10` **[Agentic World Action Models](https://arxiv.org/abs/2610.30136)** [[项目页]](https://agentic-wam.github.io/) [[模型]](https://huggingface.co/miniFranka/agentic-wam-pretrain-yamego3k-soup-e1) [[代码]](https://github.com/ZhuoyangLiu2005/agentic-wam)
-  > 联合建模程序、预测视频与机器人动作。
+  > 联合建模程序、预测视频与机器人动作。<br>
+  > 🖥️ **仿真** SAPIEN（AgileX ALOHA） · 🦾 **真机** I2RT YAM、Tianji、Sharpa Wave
 
 <!-- mmac-record: {"id": "2610.28589", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-28589"></a>`2026.10` **[AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](https://arxiv.org/abs/2610.28589)** [[代码]](https://github.com/L-CodingSpace/AgenticRoboRL) [[项目页]](https://l-codingspace.github.io/AgenticRoboRL/)
-  > 跨不同 Harness 后训练机器人规划模型。
+  > 跨不同 Harness 后训练机器人规划模型。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda）
 
 <!-- mmac-record: {"id": "2610.40799", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-40799"></a>`2026.10` **[CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents](https://arxiv.org/abs/2610.40799)** [[代码]](https://github.com/waltstephen/CaPtain) [[代码]](https://github.com/waltstephen/CaPtain-Harness) [[数据集]](https://huggingface.co/datasets/YijiaFan/CaPtain-SFT-Data) [[项目页]](https://waltstephen.github.io/captain/)
-  > 训练小模型通过机器人代码行动。
+  > 训练小模型通过机器人代码行动。<br>
+  > 🖥️ **仿真** MuJoCo + Isaac Sim + SAPIEN（Franka Panda、ARX X5、AgileX ALOHA、WidowX 250） · 🦾 **真机** XR1
 
 <!-- mmac-record: {"id": "2610.36013", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-36013"></a>`2026.10` **[OmniBrain-0: A Unified Agentic Model for Embodied Intelligence](https://arxiv.org/abs/2610.36013)** [[代码]](https://github.com/luo-yc17/OmniBrain-0) [[项目页]](https://public-bots.github.io/OmniBrain-0/)
-  > 将操控与导航专家蒸馏为紧凑的多模态 Agent 来协调专用工具，并把 rubric 引导的执行反馈转为提醒与已验证轨迹以持续学习。
+  > 将操控与导航专家蒸馏为紧凑的多模态 Agent 来协调专用工具，并把 rubric 引导的执行反馈转为提醒与已验证轨迹以持续学习。<br>
+  > 🖥️ **仿真** MuJoCo + SAPIEN + Habitat（Franka Panda、AgileX ALOHA）
 
 <!-- mmac-record: {"id": "2610.41216", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-41216"></a>`2026.10` **[TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents](https://arxiv.org/abs/2610.41216)** [[项目页]](https://garfield-kh.github.io/TinyAstral/) [[代码]](https://github.com/Garfield-kh/TinyAstral) [[模型]](https://huggingface.co/kehong/TinyAstral-weights) [[数据集]](https://huggingface.co/datasets/kehong/TinyAstral-SFT)
-  > 将改进后的教师 Harness 用于小模型训练。
+  > 将改进后的教师 Harness 用于小模型训练。<br>
+  > 🖥️ **仿真** MuJoCo + SAPIEN（Franka Panda、AgileX ALOHA、WidowX 250、Google Robot） · 🦾 **真机** SO-101
 
 <!-- mmac-record: {"id": "2606.18363", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-18363"></a>`2026.06` **[Guava: Distilling Frontier VLMs into a Compact Agent through a Robotic Manipulation Harness](https://arxiv.org/abs/2606.18363)**
-  > 通过机器人 Harness 蒸馏前沿模型能力。
+  > 通过机器人 Harness 蒸馏前沿模型能力。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda） · 🦾 **真机** Franka FR3
 
 <!-- mmac-record: {"id": "2501.04268", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2501-04268"></a>`2025.01` **[Robotic Programmer: Video Instructed Policy Code Generation for Robotic Manipulation](https://arxiv.org/abs/2501.04268)**
-  > 用真实视频合成代码监督并训练机器人编程模型。
+  > 用真实视频合成代码监督并训练机器人编程模型。<br>
+  > 🖥️ **仿真** CoppeliaSim + MuJoCo（Franka Panda） · 🦾 **真机** Franka Panda
 
 <!-- mmac-record: {"id": "2402.16117", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2402-16117"></a>`2024.02` **[RoboCodeX: Multimodal Code Generation for Robotic Behavior Synthesis](https://arxiv.org/abs/2402.16117)**
-  > 训练多模态模型生成机器人行为程序。
+  > 训练多模态模型生成机器人行为程序。<br>
+  > 🖥️ **仿真** Gazebo（Franka Panda、UR5） · 🦾 **真机** Franka Panda、UR5
 
 *另见:* [BlenderFORGE](#paper-2611-10768)
 
@@ -3457,37 +3674,44 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2611.07881", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-07881"></a>`2026.11` **[TactileLab: Sim-to-Real Dexterous Robot Manipulation with Efficient Shear-Sensitive Tactile Simulation](https://arxiv.org/abs/2611.07881)** [[项目页]](https://yijionglin.github.io/tactilelab/)
-  > 利用真实／仿真配对的触觉表示迁移仿真训练的操作策略。
+  > 利用真实／仿真配对的触觉表示迁移仿真训练的操作策略。<br>
+  > 🖥️ **仿真** Isaac Lab（LEAP Hand） · 🦾 **真机** LEAP Hand
 
 <!-- mmac-record: {"id": "2611.03268", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-03268"></a>`2026.11` **[VerifLM: Physically Verified Image-Edit-Guided Goal Pose Generation for Robotic Manipulation](https://arxiv.org/abs/2611.03268)** [[项目页]](https://veriflm.github.io/VerifLM-webpage/) [[代码]](https://github.com/trustworthyrobotics/VerifLM) [[Demo]](https://youtu.be/HTQgtDVdVBo)
-  > 把 VLM 编辑的目标图像转成 6 自由度目标位姿，并在 MuJoCo 中检查碰撞、穿透与稳定性。
+  > 把 VLM 编辑的目标图像转成 6 自由度目标位姿，并在 MuJoCo 中检查碰撞、穿透与稳定性。<br>
+  > 🖥️ **仿真** MuJoCo
 
 <!-- mmac-record: {"id": "2610.12549", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-12549"></a>`2026.10` **[Fly-by-Code: Embodied Coding Agents for Aerial Manipulation with Active Visual and Physical Feedback](https://arxiv.org/abs/2610.12549)** [[项目页]](https://fly-by-code.github.io/)
-  > 用主动观测和物理探测编写空中操作程序。
+  > 用主动观测和物理探测编写空中操作程序。<br>
+  > 🖥️ **仿真** Isaac Lab
 
 <!-- mmac-record: {"id": "2610.31841", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-31841"></a>`2026.10` **[FORCA: A Force-Aware Coding Agent for Contact-Rich Robot Manipulation](https://arxiv.org/abs/2610.31841)** [[项目页]](https://tanoom.github.io/forca/)
-  > 联合视觉和力轨迹修复接触操作代码。
+  > 联合视觉和力轨迹修复接触操作代码。<br>
+  > 🦾 **真机** UR5e
 
 <!-- mmac-record: {"id": "2610.20998", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-20998"></a>`2026.10` **[MoCaP: Mobile Code-as-Policies for Zero-Shot Mobile Manipulation from Passive Human Videos](https://arxiv.org/abs/2610.20998)** [[项目页]](https://mocap-7.github.io/MoCAP-page/) [[代码]](https://github.com/MoCAP-7/MoCAP)
-  > 把人类视频先验用于移动机器人程序。
+  > 把人类视频先验用于移动机器人程序。<br>
+  > 🦾 **真机** YOR
 
 <!-- mmac-record: {"id": "2609.23133", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-23133"></a>`2026.09` **[AquaCap: A Training-Free Underwater Embodied Agent with Code-as-Policy](https://arxiv.org/abs/2609.23133)**
-  > 依据执行反馈调整水下机器人程序。
+  > 依据执行反馈调整水下机器人程序。<br>
+  > 🖥️ **仿真** Stonefish（BlueROV2、Reach Alpha 5）
 
 <!-- mmac-record: {"id": "2609.30249", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-30249"></a>`2026.09` **[RAPID: Robot Agentic Programming from Demonstrations](https://arxiv.org/abs/2609.30249)** [[项目页]](https://yuyaoliu.me/projects/rapid) [[代码]](https://github.com/nature21/RAPID)
-  > 从单次视觉演示推导可复用的关系式机器人程序与验证环境。
+  > 从单次视觉演示推导可复用的关系式机器人程序与验证环境。<br>
+  > 🖥️ **仿真** MuJoCo（Franka FR3） · 🦾 **真机** Franka FR3
 
 <!-- mmac-record: {"id": "2503.23875", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
@@ -3497,17 +3721,20 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2403.07832", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2403-07832"></a>`2024.03` **[DeliGrasp: Inferring Object Properties with LLMs for Adaptive Grasp Policies](https://arxiv.org/abs/2403.07832)** [[项目页]](https://deligrasp.github.io) [[代码]](https://github.com/deligrasp/deligrasp)
-  > 把物体属性估计用于自适应抓取。
+  > 把物体属性估计用于自适应抓取。<br>
+  > 🦾 **真机** UR5
 
 <!-- mmac-record: {"id": "2310.13065", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2310-13065"></a>`2023.10` **[Creative Robot Tool Use with Large Language Models](https://arxiv.org/abs/2310.13065)** [[项目页]](https://creative-robotool.github.io/)
-  > 通过程序组织机器人的物理工具使用。
+  > 通过程序组织机器人的物理工具使用。<br>
+  > 🦾 **真机** Kinova Gen3、Unitree Go1
 
 <!-- mmac-record: {"id": "2307.05973", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2307-05973"></a>`2023.07` **[VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models](https://arxiv.org/abs/2307.05973)** [[项目页]](https://voxposer.github.io) [[代码]](https://github.com/huangwl18/VoxPoser)
-  > 用代码组合三维价值图来规划操作。
+  > 用代码组合三维价值图来规划操作。<br>
+  > 🖥️ **仿真** SAPIEN（Franka Panda） · 🦾 **真机** Franka Panda
 
 <!-- mmac-record: {"id": "demo:nvidia-factory-operations-blueprint", "scope": "Demo", "primary": "3.6", "stage": 3, "type": "demo"} -->
 
@@ -3524,12 +3751,14 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2610.37649", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-37649"></a>`2026.10` **[Can LLMs Uncover Hidden Physical Laws through Free Exploration?](https://arxiv.org/abs/2610.37649)** [[代码]](https://github.com/EnVision-Research/LongChang) [[项目页]](https://zhenyangcs.github.io/LongChang-website/)
-  > 检验对模拟物理规律的开放探索。
+  > 检验对模拟物理规律的开放探索。<br>
+  > 🖥️ **仿真** MuJoCo
 
 <!-- mmac-record: {"id": "2610.35385", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-35385"></a>`2026.10` **[EmbodiedLab: Benchmarking Embodied Agents That Act to Know](https://arxiv.org/abs/2610.35385)** [[代码]](https://github.com/HexaFuture/EmbodiedLab) [[项目页]](https://hexafuture.ai/benchmarks/embodiedlab/)
-  > 评测通过行动获取科学证据的 Agent。
+  > 评测通过行动获取科学证据的 Agent。<br>
+  > 🖥️ **仿真** Isaac Sim（Franka Panda）
 
 <!-- mmac-record: {"id": "2610.41717", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
@@ -3539,17 +3768,20 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2610.23826", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-23826"></a>`2026.10` **[Self-Building Labs](https://arxiv.org/abs/2610.23826)** [[项目页]](https://self-building-labs.github.io/)
-  > 将实验装置纳入可编程研究对象。
+  > 将实验装置纳入可编程研究对象。<br>
+  > 🦾 **真机** xArm5、Opentrons OT-2
 
 <!-- mmac-record: {"id": "2609.18435", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-18435"></a>`2026.09` **[WetRobo: A Reproducible Robot Kit for Coding Agents in Biological Laboratories](https://arxiv.org/abs/2609.18435)** [[代码]](https://github.com/tsudalab/WetRobo)
-  > 提供编程 Agent 可用的实验室机器人套件。
+  > 提供编程 Agent 可用的实验室机器人套件。<br>
+  > 🖥️ **仿真** MuJoCo（AgileX PiPER） · 🦾 **真机** AgileX PiPER
 
 <!-- mmac-record: {"id": "2608.01690", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2608-01690"></a>`2026.08` **[ProtoAct: Turning Wet-Lab Protocols into Embodied Robotic Actions](https://arxiv.org/abs/2608.01690)**
-  > 把实验协议编译为机器人动作。
+  > 把实验协议编译为机器人动作。<br>
+  > 🖥️ **仿真** Isaac Sim
 
 <!-- mmac-record: {"id": "2607.23045", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
@@ -3579,7 +3811,8 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2304.05332", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2304-05332"></a>`2023.04` **[Autonomous chemical research with large language models](https://arxiv.org/abs/2304.05332)** [[代码]](https://github.com/gomesgroup/coscientist)
-  > 用语言模型组织自动化化学实验。
+  > 用语言模型组织自动化化学实验。<br>
+  > 🦾 **真机** Opentrons OT-2
 
 <!-- mmac-record: {"id": "xray-scientist", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
@@ -3601,12 +3834,14 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2611.13344", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-13344"></a>`2026.11` **[PneuGen: Task-Driven Agentic Co-Design of Soft Pneumatic Robots](https://arxiv.org/abs/2611.13344)**
-  > 通过可执行设计程序与仿真批评，迭代联合设计软体气动机器人的形态及驱动。
+  > 通过可执行设计程序与仿真批评，迭代联合设计软体气动机器人的形态及驱动。<br>
+  > 🖥️ **仿真** SOFA
 
 <!-- mmac-record: {"id": "2610.17881", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-17881"></a>`2026.10` **[Agentic Robot Creation through Generation, Verification, and Revision](https://arxiv.org/abs/2610.17881)** [[项目页]](https://roboforge-project.github.io/)
-  > 联合开发机器人形态和可执行行为。
+  > 联合开发机器人形态和可执行行为。<br>
+  > 🖥️ **仿真** Isaac Lab（Unitree Go2）
 
 <!-- mmac-record: {"id": "2610.31651", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
@@ -3616,17 +3851,20 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2609.08220", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-08220"></a>`2026.09` **[Bridging Language and Physics: Automated Design of Continuum Robots with Large Language Models](https://arxiv.org/abs/2609.08220)** [[代码]](https://github.com/UNITES-Lab/AID-SR)
-  > 用物理反馈改进连续体机器人设计。
+  > 用物理反馈改进连续体机器人设计。<br>
+  > 🖥️ **仿真** MuJoCo
 
 <!-- mmac-record: {"id": "2605.17448", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2605-17448"></a>`2026.05` **[Self-Improving CAD Generation Agents with Finite Element Analysis as Feedback](https://arxiv.org/abs/2605.17448)** [[代码]](https://github.com/3dlg-hcvc/s2o)
-  > 用视觉和有限元反馈改进 CAD 设计。
+  > 用视觉和有限元反馈改进 CAD 设计。<br>
+  > 🖥️ **仿真** CadQuery + CalculiX
 
 <!-- mmac-record: {"id": "2408.14307", "scope": "Adjacent", "primary": "3.6", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2408-14307"></a>`2024.08` **[LLM-3D Print: Large Language Models To Monitor and Control 3D Printing](https://arxiv.org/abs/2408.14307)** [[代码]](https://github.com/BaratiLab/LLM-3D-Print-Large-Language-Models-To-Monitor-and-Control-3D-Printing)
-  > 将打印图像反馈接入真实制造控制。
+  > 将打印图像反馈接入真实制造控制。<br>
+  > 🦾 **真机** Creality Ender-3
 
 <!-- mmac-record: {"id": "agentic-fdm-printing", "scope": "Resource", "primary": "3.6", "stage": 3, "type": "resource"} -->
 

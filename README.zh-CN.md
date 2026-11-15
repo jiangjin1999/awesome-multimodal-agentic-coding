@@ -13,7 +13,7 @@
 
 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从数字世界延伸到物理世界。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-650-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--14-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-651-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--15-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · **简体中文** · [日本語](./README.ja.md)
 
@@ -59,7 +59,7 @@
 - [Stage 3 · 打通数字世界与物理世界](#stage-3)
   - [3.1 具身框架（Harness）](#s3-1) (84)
   - [3.2 仿真器构建](#s3-2) (68)
-  - [3.3 仿真器质量评估](#s3-3) (28)
+  - [3.3 仿真器质量评估](#s3-3) (29)
   - [3.4 数据](#s3-4) (14)
   - [3.5 训练与能力提升](#s3-5) (73)
   - [3.6 物理应用与实验](#s3-6) (37)
@@ -2820,6 +2820,11 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 | L4 | 下游效用 | 拿去评测或训练，结论在真实世界成立吗？ | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) |
 
 † 表示评估器，即主要贡献是评估工具的工作。每篇按论文主打的创新点归层。完整说明见 [仿真器质量评估：检验层级](stage3/simulator-evaluation.zh-CN.md)。
+
+<!-- mmac-record: {"id": "2611.15020", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-15020"></a>`2026.11` **[Genie Sim Benchmark: Real-to-Sim Fidelity and Evaluation](https://arxiv.org/abs/2611.15020)** [[代码]](https://github.com/AgibotTech/genie_sim)
+  > 通过 22 组机器人与任务的实机／仿真配对得分，以及关节运动和接触响应诊断，评估仿真器保真度。
 
 <!-- mmac-record: {"id": "2611.05802", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 

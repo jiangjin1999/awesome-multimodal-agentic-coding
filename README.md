@@ -13,7 +13,7 @@
 
 A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to the physical world.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-650-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--14-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-651-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--15-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -59,7 +59,7 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
 - [Stage 3 · Bridging Digital & Physical Worlds](#stage-3)
   - [3.1 Embodied harnesses](#s3-1) (84)
   - [3.2 Simulator construction](#s3-2) (68)
-  - [3.3 Simulator quality evaluation](#s3-3) (28)
+  - [3.3 Simulator quality evaluation](#s3-3) (29)
   - [3.4 Data](#s3-4) (14)
   - [3.5 Training and capability improvement](#s3-5) (73)
   - [3.6 Physical applications and experiments](#s3-6) (37)
@@ -2820,6 +2820,11 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 | L4 | Sim-to-real predictivity | Used for evaluation or training, do the conclusions hold in the real world? | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) |
 
 † marks evaluators, works whose main contribution is an evaluation tool. Each work is placed by its main claimed contribution. Full explanation: [Simulator quality evaluation: a fidelity ladder](stage3/simulator-evaluation.md).
+
+<!-- mmac-record: {"id": "2611.15020", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-15020"></a>`2026.11` **[Genie Sim Benchmark: Real-to-Sim Fidelity and Evaluation](https://arxiv.org/abs/2611.15020)** [[Code]](https://github.com/AgibotTech/genie_sim)
+  > Tests simulator fidelity by comparing real and simulated scores for 22 robot–task pairs, alongside diagnostics for joint motion and contact response.
 
 <!-- mmac-record: {"id": "2611.05802", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 

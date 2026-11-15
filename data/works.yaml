@@ -13925,3 +13925,26 @@
     en: Nine KUKA iiwa tasks with 24 trials each reach 71.8% execution success against 47.2% for the best baseline; validation
       targets goal poses, not the simulator.
     zh: 9 个 KUKA iiwa 任务各 24 次试验，执行成功率 71.8%，最佳基线为 47.2%；验证对象是目标位姿，不是仿真器。
+- id: '2611.15020'
+  title: 'Genie Sim Benchmark: Real-to-Sim Fidelity and Evaluation'
+  url: https://arxiv.org/abs/2611.15020
+  date: '2026.11'
+  section: '3.3'
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Tests simulator fidelity by comparing real and simulated scores for 22 robot–task pairs, alongside diagnostics
+      for joint motion and contact response.
+    zh: 通过 22 组机器人与任务的实机／仿真配对得分，以及关节运动和接触响应诊断，评估仿真器保真度。
+    ja: ロボットとタスクの22組について実機とシミュレーションのスコアを比較し、関節運動と接触応答の診断を組み合わせてシミュレータの忠実度を評価する。
+  sources:
+  - https://arxiv.org/abs/2611.15020
+  - https://arxiv.org/html/2611.15020v1
+  - https://github.com/AgibotTech/genie_sim
+  verification:
+    en: 22 robot–task pairs across 16 tasks. Reported stage-score Pearson r = 0.9686. The results concern the tested policies
+      and layouts.
+    zh: 16 项任务、22 个机器人—任务配对。报告的分阶段任务得分 Pearson r 为 0.9686，结论限于所测策略与布局。
+  tags:
+  - Benchmark
+  - Verification

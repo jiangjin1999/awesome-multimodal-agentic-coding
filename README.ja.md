@@ -13,7 +13,7 @@
 
 マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——デジタル世界から物理世界まで。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-650-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--14-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-651-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--15-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語**
 
@@ -62,7 +62,7 @@
 - [Stage 3 · デジタルと物理世界の架け橋](#stage-3)
   - [3.1 身体性ハーネス](#s3-1) (84)
   - [3.2 シミュレータ構築](#s3-2) (68)
-  - [3.3 シミュレータ品質評価](#s3-3) (28)
+  - [3.3 シミュレータ品質評価](#s3-3) (29)
   - [3.4 データ](#s3-4) (14)
   - [3.5 学習と能力向上](#s3-5) (73)
   - [3.6 物理応用と実験](#s3-6) (37)
@@ -2823,6 +2823,11 @@
 | L4 | Sim-to-Real 予測性 | 評価や学習に使ったとき、結論は現実世界でも成り立つか？ | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) |
 
 † は評価器、つまり主な貢献が評価ツールである作品を示します。各作品は論文が主張する主な貢献で配置しています。詳しい説明は英語版 [Simulator quality evaluation: a fidelity ladder](stage3/simulator-evaluation.md) を参照してください。
+
+<!-- mmac-record: {"id": "2611.15020", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-15020"></a>`2026.11` **[Genie Sim Benchmark: Real-to-Sim Fidelity and Evaluation](https://arxiv.org/abs/2611.15020)** [[コード]](https://github.com/AgibotTech/genie_sim)
+  > ロボットとタスクの22組について実機とシミュレーションのスコアを比較し、関節運動と接触応答の診断を組み合わせてシミュレータの忠実度を評価する。
 
 <!-- mmac-record: {"id": "2611.05802", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 

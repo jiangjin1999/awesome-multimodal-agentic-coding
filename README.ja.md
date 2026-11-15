@@ -3126,24 +3126,26 @@
 
 <table>
 <thead>
-<tr><th>出所</th><th>種類</th><th>映像の出所</th><th>軌跡の出所</th><th>作品</th></tr>
+<tr><th>出所</th><th>種類</th><th>映像</th><th>軌跡</th><th>作品</th></tr>
 </thead>
 <tbody>
-<tr><td rowspan="2" align="center"><b>Real</b></td><td nowrap>動画 + 軌跡</td><td>実機で撮影</td><td>人の遠隔操作、またはエージェントによる実機操作</td><td><a href="#paper-2403-12945">DROID</a> · <a href="#paper-2406-18915">Manipulate-Anything</a></td></tr>
-<tr><td nowrap>動画 + 手の軌跡</td><td>人の一人称視点動画</td><td>動画から手の動きを注釈</td><td><a href="#paper-2611-06817">Open-HumanWAM</a></td></tr>
+<tr><td rowspan="3" align="center"><b>Real</b></td><td rowspan="2" nowrap>実演</td><td>実機の多視点ステレオ RGB</td><td>人の遠隔操作</td><td><a href="#paper-2403-12945">DROID</a></td></tr>
+<tr><td>実機の RGB-D カメラ 1 台</td><td>エージェントによる実機操作</td><td><a href="#paper-2406-18915">Manipulate-Anything</a></td></tr>
+<tr><td nowrap>人の動画</td><td>一人称の単眼 RGB</td><td>人の手首の姿勢と開閉（ロボットの動作ではない）</td><td><a href="#paper-2611-06817">Open-HumanWAM</a></td></tr>
 </tbody>
 <tbody>
-<tr><td rowspan="2" align="center"><b>Sim</b></td><td nowrap>動画 + 軌跡</td><td rowspan="2">シミュレーションでレンダリング</td><td>プランナー、ソルバー、またはエージェントが書いたプログラム</td><td><a href="#paper-2307-14535">Scaling Up and Distilling Down</a> · <a href="#paper-2410-03645">GenSim2</a> · <a href="#paper-2506-18088">RoboTwin 2.0</a> · <a href="#paper-2609-27308">EmbodiedSWE</a> · <a href="#paper-2610-07969">EmbodiedSmith</a> ↻ · <a href="#paper-2610-22362">CoDA</a> ↻</td></tr>
-<tr><td nowrap>動画 + 軌跡<br>+ 失敗ラベル</td><td>意図的に注入した失敗</td><td><a href="#paper-2607-23704">LabRobFail</a></td></tr>
+<tr><td rowspan="3" align="center"><b>Sim</b></td><td rowspan="2" nowrap>実演</td><td>レンダリングした RGB</td><td>プランナー、ソルバー、またはエージェントが書いたプログラム</td><td><a href="#paper-2307-14535">Scaling Up and Distilling Down</a> · <a href="#paper-2506-18088">RoboTwin 2.0</a> · <a href="#paper-2609-27308">EmbodiedSWE</a> · <a href="#paper-2610-07969">EmbodiedSmith</a> ↻ · <a href="#paper-2610-22362">CoDA</a> ↻</td></tr>
+<tr><td>複数の RGB-D カメラを統合した点群</td><td>計画・強化学習のソルバー</td><td><a href="#paper-2410-03645">GenSim2</a></td></tr>
+<tr><td nowrap>実演 + 失敗ラベル</td><td>レンダリングした多視点 RGB</td><td>意図的に注入した失敗</td><td><a href="#paper-2607-23704">LabRobFail</a></td></tr>
 </tbody>
 <tbody>
-<tr><td rowspan="3" align="center"><b>Real+Sim</b></td><td nowrap>動画 + 軌跡</td><td>実際の人の動画で、動画生成モデルが人をロボットに描き替える</td><td>描き替えた動画から推定</td><td><a href="#paper-2611-05163">RoboTryOn</a></td></tr>
-<tr><td nowrap>環境 + 動画<br>+ 軌跡</td><td>実際の動画から複製したシミュレーション環境でレンダリングし、実写の見た目に変える</td><td>複製した環境の中で求解</td><td><a href="#paper-2609-35318">DexAgent</a> · <a href="#paper-2611-05320">PyRUA-DataFarm</a></td></tr>
-<tr><td nowrap>環境 + 動画</td><td>実際の動画の物理過程をシミュレーションプログラムに書き直し、レンダリング</td><td>なし</td><td><a href="#paper-2611-12411">PhysOPSD</a></td></tr>
+<tr><td rowspan="3" align="center"><b>Real+Sim</b></td><td nowrap>実演</td><td>合成した頭部視点 1 本</td><td>動画から推定した疑似動作</td><td><a href="#paper-2611-05163">RoboTryOn</a></td></tr>
+<tr><td nowrap>環境 + 実演</td><td>実際の動画から複製した環境でレンダリングし、実写の見た目に変える</td><td>複製した環境の中で求解</td><td><a href="#paper-2609-35318">DexAgent</a> · <a href="#paper-2611-05320">PyRUA-DataFarm</a></td></tr>
+<tr><td nowrap>環境 + 動画</td><td>実際の動画をもとに書いたシミュレーションプログラムからレンダリング</td><td>なし</td><td><a href="#paper-2611-12411">PhysOPSD</a></td></tr>
 </tbody>
 </table>
 
-↻ は閉ループ（生成器が学習のフィードバックから自らを書き換える）を示します。
+実演＝映像＋ロボットの動作。↻ は閉ループ（生成器が学習のフィードバックから自らを書き換える）を示します。
 
 #### Real
 

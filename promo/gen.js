@@ -103,6 +103,7 @@ b,strong{font-weight:700}
 .close{margin-top:30px;font-size:34px;font-weight:800;line-height:1.4}
 .s1 .body,.s2 .body{font-size:31px}.s1 .box,.s2 .box{margin-top:28px}.s1 .box .v,.s2 .box .v{font-size:29px}.s1 .tags,.s2 .tags{margin-top:30px}
 .s2 .body{font-size:32px}.s2 .box{margin-top:34px;padding:26px 30px 28px}.s2 .pair{margin-top:34px}.s2 .pair .box{margin-top:0}.s2 .box .v{font-size:30px}.s2 .tags{margin-top:38px}.s2 .tag{font-size:23px;padding:8px 18px}
+.why .head{margin-top:36px}.why .body{font-size:28px;margin-top:28px}.why .body p+p{margin-top:14px}.why .vs{margin-top:22px}.why .road{gap:12px;margin-top:22px}.why .step{padding:12px 24px}
 .s3 .lines .ln .dd{font-size:28px}.s3 .lines .ln{margin-top:24px}.s3 .box .v{font-size:28px}
 `;
 
@@ -119,15 +120,15 @@ const panelDiagram = (i) => crop('diag', 100 + 1020 * i + 40, 500, 880, 830, 350
 
 function cover(qrSvg) {
   const cols = [
-    ['01', '视觉作为反馈', '看见自己造出的东西，<br>coding loop 闭合'],
-    ['02', '把模型当作工具', '编排生成、感知<br>与动作模型'],
-    ['03', '打通数字与物理世界', '用代码构建仿真、<br>驱动机器人'],
+    ['01', '视觉作为反馈', '看见自己造的东西，<br>模型才能 loop 起来'],
+    ['02', '把模型当作工具', '让 Agent 去调生成、<br>感知和动作模型'],
+    ['03', '打通数字与物理世界', '用代码搭仿真、控机器人，<br>从屏幕走到真实世界'],
   ];
   return `<div class="page">
   ${topbar('<span class="agi">TOWARD PHYSICAL AGI</span>')}
   <h1 class="big"><span class="l1">多模态视角下的</span><span class="l2 grad">Coding</span></h1>
   <div class="sub">扩展 Agent 能力边界，最终通向物理 AGI</div>
-  <div class="idea">从 <b>Coding</b> 而非 CUA 的视角看多模态 Agent：<b>写代码 → 看结果 → 再改进</b></div>
+  <div class="idea">我们从 <b>Coding</b> 而不是 CUA 的角度看：<b>写代码 → 看结果 → 再改</b></div>
   ${crop('heroWrap', 96, 256, 3008, 1176, 952)}
   <div class="cols">${cols.map(([n, t, d], i) => `<div class="col"><div class="t"><span style="color:${C.acc[i]}">${n}</span>&nbsp; ${t}</div><div class="d">${d}</div></div>`).join('')}</div>
   <div class="foot">
@@ -140,25 +141,26 @@ function cover(qrSvg) {
 
 function why() {
   const steps = [
-    ['01', 'VISUAL AS FEEDBACK', '视觉作为反馈', '看见自己造出的东西'],
-    ['02', 'AGENT ORCHESTRATES MODELS', '把模型当作工具', '+ 编排生成、感知与动作模型'],
-    ['03', 'BRIDGING DIGITAL &amp; PHYSICAL', '打通数字与物理世界', '+ 在仿真与现实中行动和学习'],
+    ['01', 'VISUAL AS FEEDBACK', '视觉作为反馈', '看见自己造的东西'],
+    ['02', 'AGENT ORCHESTRATES MODELS', '把模型当作工具', '+ 让 Agent 去调别的模型'],
+    ['03', 'BRIDGING DIGITAL &amp; PHYSICAL', '打通数字与物理世界', '+ 从屏幕走到真实世界'],
   ];
-  return `<div class="page">
+  return `<div class="page why">
   ${topbar('<span class="pageno">多模态视角下的 Coding</span>')}
   <div class="head"><div>
     <span class="chip" style="background:${C.card};color:${C.sub};border:1.5px solid ${C.stroke}">我们的出发点</span>
     <div class="h1">不是 Computer Use<br>而是 <span class="grad">Coding</span></div>
   </div></div>
   <div class="body">
-    <p>我们从 6 月开始做多模态 coding。GPT-6 发布后，Computer Use Agent（CUA）迅速火了起来，我们之前贴着模型能力边界做的不少研究，也一下子失去了意义。</p>
-    <p>但我们一直是从 <em>Coding</em>、而不是 CUA 的角度来看多模态 Agent：</p>
+    <p>最近和一些大佬交流，感觉我们的角度还挺有意思，分享下我们的思考。</p>
+    <p>我们从六月份开始做多模态 coding。GPT-6 发布后，Computer Use Agent 一下子火了，也让我们之前摸着能力边界做的一些研究失去了意义。</p>
+    <p>但我们一直是从 <em>coding</em> 而不是 CUA 的角度来看：</p>
   </div>
   <div class="vs">
-    <div class="side" style="background:${C.card}"><div class="lab" style="color:${C.faint}">CUA 视角</div><div class="q" style="color:${C.sub}">「用」现成的软件</div><div class="d">像人一样看屏幕、点按钮，完成软件里已有的操作。</div></div>
-    <div class="side" style="background:${C.tint[0]};border-color:#B6E3FF"><div class="lab" style="color:${C.acc[0]}">CODING 视角</div><div class="q">用代码「造」东西</div><div class="d" style="color:#2B3137">写代码、看结果、再改好；造的可以是网页、3D，也可以是仿真世界。</div></div>
+    <div class="side" style="background:${C.card}"><div class="lab" style="color:${C.faint}">CUA 视角</div><div class="q" style="color:${C.sub}">「用」现成的软件</div><div class="d">让 Agent 像人一样看屏幕、点按钮，去操作已有的软件。</div></div>
+    <div class="side" style="background:${C.tint[0]};border-color:#B6E3FF"><div class="lab" style="color:${C.acc[0]}">CODING 视角</div><div class="q">用代码「造」东西</div><div class="d" style="color:#2B3137">让 Agent 用代码把东西造出来，自己看结果，再自己改好。</div></div>
   </div>
-  <div class="body" style="margin-top:28px"><p>沿着这条线，我们把它理解为三个<em>逐层叠加</em>的阶段：</p></div>
+  <div class="body" style="margin-top:28px"><p>我们主要从下面<em>三个阶段</em>来理解：</p></div>
   <div class="road">${steps.map(([n, e, z, d], i) => `<div class="step"><div class="n" style="color:${C.acc[i]}">${n}</div><div><div class="e" style="color:${C.acc[i]}">${e}</div><div class="z">${z}<span>${d}</span></div></div></div>`).join('')}</div>
   ${mini(2)}
 </div>`;
@@ -178,36 +180,36 @@ function stage(i, { en, title, plus, body, n }) {
 }
 
 const s1 = stage(0, {
-  n: 3, en: 'VISUAL AS FEEDBACK', title: '视觉反馈，<br>让 coding loop<br>跑起来', plus: '+ sees what it builds',
-  body: `<div class="body"><p>相比一般的 coding agent，多模态 coding agent 的关键是有<em>视觉反馈</em>：写代码 → 渲染或运行 → 观察结果 → 决定下一步怎么改。这一点极大地扩展了 Agent 的能力边界。</p></div>
+  n: 3, en: 'VISUAL AS FEEDBACK', title: '有了视觉反馈，<br>模型才能<br>loop 起来', plus: '+ sees what it builds',
+  body: `<div class="body"><p>相比于一般的 coding agent，多模态 coding agent 的关键就是有<em>视觉反馈</em>，这一点极大地扩展了 agent 的能力边界——只要能跑出来、看得见，就能放进这个 loop 里。</p></div>
   <div class="box"><div class="k" style="color:${C.acc[0]}">基础 · 原子多模态能力</div>
-    <div class="atoms"><div class="atom"><div class="a">Perception</div><div class="b">看得准</div></div><div class="atom"><div class="a">Grounding</div><div class="b">定位得准</div></div><div class="atom"><div class="a">Diff</div><div class="b">比得出差异</div></div></div>
-    <div class="v">精准的反馈，让 coding loop 能稳定地跑起来。</div></div>
-  <div class="box"><div class="k" style="color:${C.acc[0]}">从 workflow 到 agent</div>
-    <div class="v">以前通过各种 workflow 也能引入视觉反馈；但在 Agent 场景下，模型不再只是做 VQA，而是<b>自主地对比、定位问题</b>，并对整个「多模态 repo」（代码 + 素材 + 渲染结果）持续优化。</div></div>
+    <div class="atoms"><div class="atom"><div class="a">Perception</div><div class="b">看得准</div></div><div class="atom"><div class="a">Grounding</div><div class="b">找得到</div></div><div class="atom"><div class="a">Diff</div><div class="b">比得出差别</div></div></div>
+    <div class="v">反馈够精准，coding loop 才能更好地跑起来。</div></div>
+  <div class="box"><div class="k" style="color:${C.acc[0]}">不只是 VQA 了</div>
+    <div class="v">在这之前，通过各种 workflow 也能带来 visual feedback；但在 agent 场景下，模型不只是做 VQA 了，它可以<b>自主地去对比</b>，并对整个「多模态 repo」进行优化。</div></div>
   <div class="tags">${['网页与 UI', '图表与科学可视化', '文档 · 幻灯片 · 海报', '3D 与 CAD', '游戏'].map((t) => `<span class="tag">${t}</span>`).join('')}</div>`,
 });
 
 const s2 = stage(1, {
-  n: 4, en: 'AGENT ORCHESTRATES MODELS', title: '编排模型，<br>进一步扩展<br>能力边界', plus: '+ calls models as tools',
-  body: `<div class="body"><p>视觉反馈让 Agent 拥有了巨大的多模态任务空间。但如果 Agent 只能自己看、自己做，不仅会有长上下文带来的幻觉，还可能需要极大量的计算。<em>把其他模型当作工具调用</em>，可以有效改善这两点。</p></div>
+  n: 4, en: 'AGENT ORCHESTRATES MODELS', title: '让 Agent<br>去调<br>别的模型', plus: '+ calls models as tools',
+  body: `<div class="body"><p>视觉反馈让 agent 拥有了极大的多模态任务空间。但如果 agent 只能自己看、自己做，不仅会有长上下文带来的幻觉，也可能需要极大量的计算——<em>把其他模型当工具来调</em>，就能有效改善。</p></div>
   <div class="pair">
-    <div class="box"><div class="k" style="color:${C.acc[1]}">输入端 · 替 Agent 看</div><div class="v">调用更擅长的感知模型（检测、分割、深度、重建……），从不同维度提供观察。</div></div>
-    <div class="box"><div class="k" style="color:${C.acc[1]}">输出端 · 替 Agent 做</div><div class="v">调用生成模型做 mask 重绘、基于白模给出构图；调用 action model 操控机械臂。</div></div>
+    <div class="box"><div class="k" style="color:${C.acc[1]}">输入 · 帮 Agent 看</div><div class="v">用更擅长的模型，从不同维度给 agent 提供观察，比如检测、分割、深度、重建。</div></div>
+    <div class="box"><div class="k" style="color:${C.acc[1]}">输出 · 帮 Agent 做</div><div class="v">调生成模型来做 mask 重绘、基于白模给出构图；调 action model 来操控机械臂。</div></div>
   </div>
-  <div class="box" style="background:${C.tint[1]};border-color:#D8CCF8"><div class="v"><b>代码是胶水：</b>Agent 用代码选择、组合这些模型，并根据反馈修改整个工作流——既扩展了能力边界，也提高了效率。</div></div>
+  <div class="box" style="background:${C.tint[1]};border-color:#D8CCF8"><div class="v"><b>一句话：</b>Agent 负责想和写代码，专业的「看」和「做」交给更擅长的模型——能力边界更大，效率也更高。</div></div>
   <div class="tags">${['图像生成', '视频生成', '3D 生成', '世界模型', '感知模型', '动作模型'].map((t) => `<span class="tag">${t}</span>`).join('')}</div>`,
 });
 
 const s3 = stage(2, {
-  n: 5, en: 'BRIDGING DIGITAL &amp; PHYSICAL', title: '用代码打通<br>数字世界<br>与物理世界', plus: '+ acts in simulation and reality',
-  body: `<div class="body" style="margin-top:28px"><p>前两个阶段不断扩展 coding agent 在数字世界里的能力边界；第三阶段，这个闭环走进物理世界。这也是仓库里最大、增长最快的部分。</p></div>
+  n: 5, en: 'BRIDGING DIGITAL &amp; PHYSICAL', title: '把 loop<br>带进<br>物理世界', plus: '+ acts in simulation and reality',
+  body: `<div class="body" style="margin-top:28px"><p>前两个阶段扩展的，都还是数字世界里的能力边界。第三个阶段，我们想把 loop 带进物理世界——这也是仓库里最大、涨得最快的一块。</p></div>
   <div class="lines">
-    <div class="ln"><div class="no" style="color:${C.acc[2]}">①</div><div><div class="tt">代码驱动行动<span style="color:${C.acc[2]}">DIGITAL → PHYSICAL</span></div><div class="dd">通过代码调用感知与运动接口操控机器人，观察相机与力反馈，再改下一步动作：「看结果改代码」变成「看动作结果改策略」。</div></div></div>
-    <div class="ln"><div class="no" style="color:${C.acc[2]}">②</div><div><div class="tt">代码构建仿真<span style="color:${C.acc[2]}">REAL → SIM</span></div><div class="dd">从真实视频与观测出发，把场景、物体、关节和物理参数写成可执行的仿真器；它可以和真实录像对照，也可以改条件重跑。</div></div></div>
-    <div class="ln"><div class="no" style="color:${C.acc[2]}">③</div><div><div class="tt">在仿真里练，回现实用<span style="color:${C.acc[2]}">SIM → REAL</span></div><div class="dd">在可验证的环境里造数据、积累经验与 skills、预演失败恢复，甚至只用仿真轨迹做后训练，再把能力带回真机。</div></div></div>
+    <div class="ln"><div class="no" style="color:${C.acc[2]}">①</div><div><div class="tt">用代码去动手<span style="color:${C.acc[2]}">DIGITAL → PHYSICAL</span></div><div class="dd">让 agent 自己写 Python、调 ROS 控制机器人，看相机画面和力反馈再改下一步。「看结果改代码」变成了「看动作结果改策略」。</div></div></div>
+    <div class="ln"><div class="no" style="color:${C.acc[2]}">②</div><div><div class="tt">把真实世界「搬」进仿真<span style="color:${C.acc[2]}">REAL → SIM</span></div><div class="dd">拿一段真实视频，让 agent 把场景、物体、关节、物理参数写成能跑的仿真器，还能和录像对比、改条件再跑一遍。</div></div></div>
+    <div class="ln"><div class="no" style="color:${C.acc[2]}">③</div><div><div class="tt">在仿真里练，再回到现实<span style="color:${C.acc[2]}">SIM → REAL</span></div><div class="dd">自己造数据、攒经验和 skills，先在数字孪生里把失败恢复练一遍，甚至只靠仿真轨迹做后训练，再带回真机。</div></div></div>
   </div>
-  <div class="box" style="background:${C.tint[2]};border-color:#FFD8B5;margin-top:24px"><div class="v"><b>构建可验证的环境 → 收集交互经验 → 提升 Agent。</b>代码可执行、可检查、可编辑、可组合，是连接感知、生成、行动与仿真的共同语言——这条路最终通向物理 AGI。</div></div>`,
+  <div class="box" style="background:${C.tint[2]};border-color:#FFD8B5;margin-top:24px"><div class="v"><b>说到底是同一个 loop：</b>搭能验证的环境 → 收集交互经验 → 让 agent 变强。代码能跑、能查、能改、能组合，刚好把感知、生成、行动和仿真串起来——这条路最终通向物理 AGI。</div></div>`,
 });
 
 (async () => {

@@ -3633,7 +3633,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <!-- mmac-record: {"id": "2610.35817", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-35817"></a>`2026.10` **[Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics](https://arxiv.org/abs/2610.35817)** [[Project page]](https://zero-real.github.io/)
-  > Adds motion control to a small open VLM agent through SFT and GRPO on its own successes in simple simulated tasks, without a frontier teacher or real robot data.<br>
+  > Teaches a small open VLM agent motion control from its own successes in simulation.<br>
   > 🖥️ **Sim** Isaac Sim + Isaac Lab (I2RT YAM, Franka) · 🦾 **Real** I2RT YAM
 
 <!-- mmac-record: {"id": "2610.41216", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->

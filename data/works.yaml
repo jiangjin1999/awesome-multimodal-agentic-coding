@@ -12084,10 +12084,9 @@
   type: paper
   scope: adjacent
   tldr:
-    en: Adds motion control to a small open VLM agent through SFT and GRPO on its own successes in simple simulated tasks,
-      without a frontier teacher or real robot data.
-    zh: 只在简单仿真任务上，用小型开源 VLM 自身的成功轨迹做 SFT 与 GRPO，补上其运动控制能力，不依赖前沿教师模型或真实机器人数据。
-    ja: 単純なシミュレーションタスクだけで、小型オープン VLM 自身の成功軌跡を用いた SFT と GRPO により運動制御を補う。先端教師モデルや実機データは使わない。
+    en: Teaches a small open VLM agent motion control from its own successes in simulation.
+    zh: 仅凭自身在仿真中的成功轨迹，为小型开源 VLM Agent 补上运动控制能力。
+    ja: シミュレーションでの自らの成功軌跡だけで、小型オープン VLM Agent に運動制御を身につけさせる。
   setup:
     engines:
     - Isaac Sim

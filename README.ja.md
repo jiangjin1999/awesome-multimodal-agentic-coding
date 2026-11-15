@@ -3636,7 +3636,7 @@
 <!-- mmac-record: {"id": "2610.35817", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-35817"></a>`2026.10` **[Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics](https://arxiv.org/abs/2610.35817)** [[プロジェクトページ]](https://zero-real.github.io/)
-  > 単純なシミュレーションタスクだけで、小型オープン VLM 自身の成功軌跡を用いた SFT と GRPO により運動制御を補う。先端教師モデルや実機データは使わない。<br>
+  > シミュレーションでの自らの成功軌跡だけで、小型オープン VLM Agent に運動制御を身につけさせる。<br>
   > 🖥️ **シミュレーション** Isaac Sim + Isaac Lab（I2RT YAM、Franka） · 🦾 **実機** I2RT YAM
 
 <!-- mmac-record: {"id": "2610.41216", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->

@@ -3633,7 +3633,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 <!-- mmac-record: {"id": "2610.35817", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-35817"></a>`2026.10` **[Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics](https://arxiv.org/abs/2610.35817)** [[项目页]](https://zero-real.github.io/)
-  > 只在简单仿真任务上，用小型开源 VLM 自身的成功轨迹做 SFT 与 GRPO，补上其运动控制能力，不依赖前沿教师模型或真实机器人数据。<br>
+  > 仅凭自身在仿真中的成功轨迹，为小型开源 VLM Agent 补上运动控制能力。<br>
   > 🖥️ **仿真** Isaac Sim + Isaac Lab（I2RT YAM、Franka） · 🦾 **真机** I2RT YAM
 
 <!-- mmac-record: {"id": "2610.41216", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->

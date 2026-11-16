@@ -95,7 +95,7 @@ const intro = () => article(1, 1, `
   <div class="h1sub">扩展 Agent 能力边界，最终通向物理 AGI</div>
   <p style="margin-top:44px">最近和一些同学交流，感觉我们的角度还挺有意思的，所以分享下我们的思考。</p>
   <p>我们从六月份开始做多模态 agentic coding 相关的任务。GPT-6 发布后，Computer Use Agent 一下子火了，也让我们之前摸着能力边界做的一些研究显得不那么前沿了（一个人做也确实比较慢）。</p>
-  <p>但我们一直是从 ${hl('coding 的角度、而不是 CUA 的角度')}来看这件事。最近 <b>Robot Use Agent</b> 也越来越多：让 Agent 直接写代码控制机器人，再加上 <b>Real2Sim2Real</b>，这些都是${hl('多模态 coding 这条线往物理世界的延伸')}。其实从 coding 的角度来看，这个发展是很自然的。</p>
+  <p>但我们一直是从 ${hl('coding 的角度、而不是 CUA 的角度')}来看这件事。最近 <b>Robot Use Agent</b> 也越来越多：让 Agent 直接写代码控制机器人，再加上 <b>Real2Sim2Real</b>，这些都是${hl('多模态 coding 这条线往物理世界的延伸')}。其实${hl('从 coding 的角度来看，这个发展是很自然的。')}</p>
   <p>我们主要从下面三个阶段来理解：</p>
   <p class="li">1️⃣ <b>Visual as Feedback</b>：有了视觉反馈，模型才能真正 loop 起来</p>
   <p class="li">2️⃣ <b>Agent Orchestrates Models</b>：让 Agent 去调生成、感知、动作模型，能力边界进一步扩展</p>
@@ -106,7 +106,7 @@ const stage1 = () => article(2, 0, `
   <p style="margin-top:36px">视觉反馈和 perception 能力的提升，让模型可以${hl('真正 loop 起来')}。</p>
   <p>相比于一般的 coding agent，多模态 coding agent 的关键就是有<b>视觉反馈</b>，这一点极大地扩展了 agent 的能力边界。网页、图表、PPT、3D/CAD、游戏……${hl('只要能跑出来、看得见，就能放进这个 loop 里')}。</p>
   <p>其中，<b>perception、grounding 以及 diff</b> 这些原子多模态能力是基础：看得准、找得到、比得出差别。反馈够精准，coding loop 才能更好地跑起来。</p>
-  <p>当然，在这之前通过各种 workflow 也能带来 visual feedback；但在 agent 场景下，${hl('模型不只是做 VQA 了')}，它可以自主地去对比，并且对整个「多模态 repo」进行优化。</p>`);
+  <p>当然，在这之前通过各种 workflow 也能带来 visual feedback；但在 agent 场景下，模型不只是做 VQA 了，它可以自主地去对比，并且对整个${hl('「多模态 repo」')}进行优化。</p>`);
 
 const stage2 = () => article(3, 1, `
   <div class="h2"><span class="n">2 - Agent Orchestrates Models：</span>让 Agent 去调别的模型</div>

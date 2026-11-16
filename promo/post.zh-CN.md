@@ -13,7 +13,7 @@
 
 最近和一些同学交流，感觉我们的角度还挺有意思，分享一下～
 
-GPT6 Astra 之后 Computer Use Agent 火了，但我们更多是从 coding 而不是 CUA 的角度来看多模态的发展，最近 Robot Use Agent 也开始多起来了：让 Agent 直接写代码控制机器人，这也是多模态 coding 这条线往物理世界的延伸；
+GPT6 Astra 之后 Computer Use Agent 火了，但我们更多是从 coding 而不是 CUA 的角度来看多模态的发展，最近 Robot Use Agent 也开始多起来了：让 Agent 直接写代码控制机器人，这也是多模态 coding 这条线往 physical world 的延伸；
 
 我们把这条路分成三步：
 1️⃣ Visual as Feedback：有了视觉反馈，模型才能真正 loop 起来

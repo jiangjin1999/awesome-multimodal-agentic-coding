@@ -142,7 +142,7 @@ const stage3 = () => article(4, 2, `
   <p style="margin-top:36px">前两个阶段不断扩展着 coding agent 的能力边界，但都还在 digital world 里。很自然地，我们想把这个 loop 带进 physical world。这也是我们仓库里现在最大、涨得最快的一块。</p>
   <p>${hl('Agentic Loop 是一切想法的开始。')}coding控制的就是一台机器人，「看结果改代码」变成了「看动作结果改策略」。最近的 <b>Robot Use Agent</b> 做的正是这件事：不用专门训练一个策略，只给现成的 coding agent 一个终端和机器人的感知、运动接口，它就能自己写 Python 让机器人干活，看相机画面和执行结果，失败了就改代码再试。但真机上的 loop 又慢又贵，于是很自然地想先把真实世界「搬」进代码里，而前两个阶段的发展为 Real2Sim 提供了可能；再在仿真里把 loop 转得又快又多，造数据、攒经验，最后把能力带回真机。${hl('这一切又是基模的故事了')}</p>
   <div class="h3">最后</div>
-  <p style="margin-top:18px">三个阶段是层层叠上去的。我们相信，沿着「写代码 → 看结果 → 再改」这条路，agent 会一步步从屏幕走进真实世界，${hl('最终通向物理 AGI')}。</p>`);
+  <p style="margin-top:18px">三个阶段是层层叠上去的。我们相信，沿着「写代码 → 看结果 → 再改」这条路，agent 会一步步${hl('从屏幕走向物理世界')}。</p>`);
 
 const topbarEn = (n) => `<div class="topbar"><span class="brand"><span class="dots">${C.acc.map((c) => `<i style="background:${c}"></i>`).join('')}</span>Awesome Multimodal Agentic Coding</span><span class="prog">A Multimodal View of Coding · ${n} / 4</span></div>`;
 const articleEn = (n, i, body) => `<div class="page ar en" style="${vars(i)}">${topbarEn(n)}${wrap(n, body)}</div>`;
@@ -195,7 +195,7 @@ const stage3En = () => articleEn(4, 2, `
   <p style="margin-top:34px">The first two stages keep expanding what coding agents can do, but they still live in the digital world. Naturally, we want to bring this loop into the physical world. This is also the largest and fastest-growing part of our repo.</p>
   <p>${hl('The agentic loop is where every idea starts.')} Now the code controls a robot, and “look at the result, fix the code” becomes “look at what the robot did, fix the policy”. That is exactly what recent <b>robot-use agents</b> do: without training a dedicated policy, you give an off-the-shelf coding agent a terminal and the robot’s perception and motion interfaces, and it writes Python to get the robot working, watches the camera and the execution results, and rewrites the code when something fails. But a loop on a real robot is slow and expensive, so the natural next step is to “move” the real world into code first, and the progress of the first two stages makes <b>Real2Sim</b> possible; the loop can then spin fast and often in simulation, generating data and building up experience, before the skills are carried back to the real robot. ${hl('And all of this, once again, comes down to the foundation model.')}</p>
   <div class="h3">Finally</div>
-  <p style="margin-top:16px">The three stages build on each other. We believe that by following the path of “write code → see the result → fix it”, agents will move step by step from the screen into the real world, and ${hl('ultimately reach physical AGI')}.</p>`);
+  <p style="margin-top:16px">The three stages build on each other. We believe that by following the path of “write code → see the result → fix it”, agents will move step by step ${hl('from the screen into the physical world')}.</p>`);
 
 (async () => {
   fs.mkdirSync(path.join(OUT, 'en'), { recursive: true });

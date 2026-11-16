@@ -13,7 +13,7 @@
 
 マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——デジタル世界から物理世界まで。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-665-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--16-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-666-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--16-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語**
 
@@ -60,7 +60,7 @@
   - [2.5 知覚モデル × シーン理解・再構成](#s2-5) (6)
   - [2.6 行動モデル × ロボット操作](#s2-6) (12)
 - [Stage 3 · デジタルと物理世界の架け橋](#stage-3)
-  - [3.1 身体性ハーネス](#s3-1) (84)
+  - [3.1 身体性ハーネス](#s3-1) (85)
   - [3.2 シミュレータ構築](#s3-2) (68)
   - [3.3 シミュレータ品質評価](#s3-3) (29)
   - [3.4 データ](#s3-4) (15)
@@ -2374,6 +2374,12 @@
   > 実際のロボットアームで汎用マルチモーダルモデルの制御インターフェースを介したタスク実行を比較し、モデル、ツール、実行設定の影響を調べる。<br>
   > 🖥️ **シミュレーション** Isaac Sim（ARX X5）
 
+<!-- mmac-record: {"id": "2609.24170", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2609-24170"></a>`2026.09` **[An Unexpected Robot Policy: Early Evaluations of GPT-6 Astra on RoboDojo and Beyond](https://arxiv.org/abs/2609.24170)**
+  > RoboDojoで、重みを固定した言語モデルがカメラ映像と動作目標ツールを使ってロボットを直接操作する能力を評価する。<br>
+  > 🖥️ **シミュレーション** Isaac Sim
+
 <!-- mmac-record: {"id": "2609.33807", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-33807"></a>`2026.09` **[CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation](https://arxiv.org/abs/2609.33807)** [[プロジェクトページ]](https://codeactionbench.org/) [[コード]](https://github.com/lyhkk/CodeActionBench)
@@ -4111,4 +4117,4 @@
 
 ## 謝辞
 
-Liangcai Gao、Wenshan Wu、Haoling Yang、Yu Chen の皆様に感謝します。
+Liangcai Gao、Wenshan Wu、Haolin Yang、Yu Chen の皆様に感謝します。

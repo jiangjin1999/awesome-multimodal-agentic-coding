@@ -13,7 +13,7 @@
 
 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从数字世界延伸到物理世界。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-665-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--16-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-666-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--16-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · **简体中文** · [日本語](./README.ja.md)
 
@@ -57,7 +57,7 @@
   - [2.5 感知模型 × 场景理解与重建](#s2-5) (6)
   - [2.6 动作模型 × 机器人操作](#s2-6) (12)
 - [Stage 3 · 打通数字世界与物理世界](#stage-3)
-  - [3.1 具身框架（Harness）](#s3-1) (84)
+  - [3.1 具身框架（Harness）](#s3-1) (85)
   - [3.2 仿真器构建](#s3-2) (68)
   - [3.3 仿真器质量评估](#s3-3) (29)
   - [3.4 数据](#s3-4) (15)
@@ -2371,6 +2371,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
   > 在物理机械臂上比较通用多模态模型通过控制接口执行任务的能力，观察模型、工具与执行设置对结果的影响。<br>
   > 🖥️ **仿真** Isaac Sim（ARX X5）
 
+<!-- mmac-record: {"id": "2609.24170", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2609-24170"></a>`2026.09` **[An Unexpected Robot Policy: Early Evaluations of GPT-6 Astra on RoboDojo and Beyond](https://arxiv.org/abs/2609.24170)**
+  > 在 RoboDojo 中评测固定权重的语言模型如何利用相机画面与运动目标工具直接操控机器人。<br>
+  > 🖥️ **仿真** Isaac Sim
+
 <!-- mmac-record: {"id": "2609.33807", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2609-33807"></a>`2026.09` **[CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation](https://arxiv.org/abs/2609.33807)** [[项目页]](https://codeactionbench.org/) [[代码]](https://github.com/lyhkk/CodeActionBench)
@@ -4108,4 +4114,4 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 ## 致谢
 
-感谢 Liangcai Gao、Wenshan Wu、Haoling Yang 和 Yu Chen。
+感谢 Liangcai Gao、Wenshan Wu、Haolin Yang 和 Yu Chen。

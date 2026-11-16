@@ -20,6 +20,15 @@ runs:
     against the catalog. Missing works that may fit a scope identity were queued. Cited VLA models, VLA evaluations and
     LLM reinforcement-learning methods were not queued (no agent, code or tool use). Reference [14] has no URL and was
     not queued.
+- date: '2026-11-16'
+  trigger: sweep
+  covered: Manual continuation of the 2026-11-16 Monday arXiv last-updated scan, 2026-10-17 through 2026-11-16 UTC. Recovered
+    all pages for cs.GR, cs.HC, cs.RO, cs.CV and cs.AI; reused the completed cs.SE pages. Inventoried 1,633 cs.RO titles
+    and screened titles and abstracts for code/render/screenshot feedback, visual artifact construction, agentic robot
+    harnesses, real-to-sim and model orchestration. Reviewed selected matches, the first queued work and its references.
+    Remaining full-text reviews and exhaustive manual title review are pending.
+  note: Twenty selected arXiv leads and three citation leads were queued for full-text review. The acknowledgments spelling
+    was corrected across the three READMEs.
 candidates:
 - id: '2610.35817'
   title: 'Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics'
@@ -38,8 +47,13 @@ candidates:
   url: https://arxiv.org/abs/2609.24170
   found: '2026-11-15'
   via: cited by 2610.35817 [3]
-  decision: pending
-  note: LLM-as-policy evaluation on all 42 RoboDojo tasks. Compare 3.1 capability-eval (2610.25287).
+  decision: added
+  note: The main RoboDojo experiments use motion-target tool calls. The separate piano study refines controller code
+    in simulation.
+  decided: '2026-11-16'
+  precedent:
+  - '2611.16009'
+  - '2609.39507'
 - id: '2607.11119'
   title: 'VIA: Visual Interface Agent for Robot Control'
   url: https://arxiv.org/abs/2607.11119
@@ -189,3 +203,169 @@ candidates:
   via: cited by 2610.35817 [4]
   decision: pending
   note: Commentary on Substack. Possibly a Reading.
+- id: '2611.15789'
+  title: 'VibePrevisBench: Evaluating Agentic Coding for 4D Scene Generation in Blender'
+  url: https://arxiv.org/abs/2611.15789
+  found: '2026-11-16'
+  via: Monday arXiv backfill (cs.AI, cs.CV)
+  decision: pending
+  note: Possible 1.5 evaluation. Check the observation available to the generating agent separately from the benchmark
+    evaluator.
+- id: '2611.16221'
+  title: 'BWM-Forge: Agentic World Programming for Embodied Intelligence'
+  url: https://arxiv.org/abs/2611.16221
+  found: '2026-11-16'
+  via: Monday arXiv backfill (cs.RO)
+  decision: pending
+  note: Possible editable scene construction or agent-generated robot video. Verify the post-render feedback and source
+    program revisions.
+- id: '2611.10063'
+  title: 'Done Is Not Correct: Measuring Silent Failures and Self-Verification Calibration When LLM Agents Take CAD Actions'
+  url: https://arxiv.org/abs/2611.10063
+  found: '2026-11-16'
+  via: Monday arXiv backfill (cs.SE)
+  decision: pending
+  note: Possible 1.5 evaluation. Check the CAD oracle, what is returned to the agent, and which cases include refinement.
+- id: '2611.11136'
+  title: 'From Game Generation to Game Playing: Fully Automated Ability Training for Vision-Language-Action Models'
+  url: https://arxiv.org/abs/2611.11136
+  found: '2026-11-16'
+  via: Monday arXiv backfill (cs.CV)
+  decision: pending
+  note: Possible 1.6 generation or training. Distinguish the environment builder from the trained player.
+- id: '2610.28585'
+  title: 'SceneRig: An Agentic System for Simulation-Ready 3D Scene Reconstruction from Single Images'
+  url: https://arxiv.org/abs/2610.28585
+  found: '2026-11-16'
+  via: Monday arXiv backfill (cs.AI, cs.CV, cs.RO)
+  decision: pending
+  note: Possible simulation-ready scene construction. Compare what is editable and what physics was actually run.
+- id: '2611.08286'
+  title: 'Interactive Visual Gym: Evaluating Visual Interaction Models with Simulated Users in Interactive Worlds'
+  url: https://arxiv.org/abs/2611.08286
+  found: '2026-11-16'
+  via: Monday arXiv backfill (cs.CV)
+  decision: pending
+  note: Possible interactive environment evaluation. Identify who receives visual feedback and which policy is trained.
+- id: '2610.34370'
+  title: 'ThinkLocoManip: A Whole-Body Control Agentic Harness for Legged Loco-Manipulation'
+  url: https://arxiv.org/abs/2610.34370
+  found: '2026-11-16'
+  via: Monday arXiv backfill (cs.RO)
+  decision: pending
+  note: Possible 3.1 embodied harness. Check interleaving of observations, planning and whole-body control.
+- id: '2611.09892'
+  title: On Agentic Manipulation Policies
+  url: https://arxiv.org/abs/2611.09892
+  found: '2026-11-16'
+  via: Monday arXiv backfill (cs.AI, cs.CV, cs.RO)
+  decision: pending
+  note: Possible 3.1 capability evaluation. Compare tool interface with code-generating variants and check experimental
+    setups.
+- id: '2611.06881'
+  title: 'VABAR: A Variational Automation Benchmark for Agentic Robotics'
+  url: https://arxiv.org/abs/2611.06881
+  found: '2026-11-16'
+  via: Monday arXiv backfill (cs.RO)
+  decision: pending
+  note: Possible 3.1 capability evaluation. Review the tasks, baseline and which agents run generated programs.
+- id: '2611.09847'
+  title: Computer-Use Agents Are Embodied Generalists
+  url: https://arxiv.org/abs/2611.09847
+  found: '2026-11-16'
+  via: Monday arXiv backfill (cs.RO)
+  decision: pending
+  note: Possible 3.1 embodied tool interface. Check the rendering and action control path.
+- id: '2610.39446'
+  title: 'Ask to Evolve: A Unified Harness for Lifelong Embodied Navigation with Hybrid Action Space and Persistent Memory'
+  url: https://arxiv.org/abs/2610.39446
+  found: '2026-11-16'
+  via: Monday arXiv backfill (cs.RO)
+  decision: pending
+  note: Possible embodied harness or experience work. Verify active queries, memory changes and the execution setting.
+- id: '2610.28259'
+  title: 'Large Multimodal Models for Direct Robot Control: GPT-6 as a Beginning'
+  url: https://arxiv.org/abs/2610.28259
+  found: '2026-11-16'
+  via: Monday arXiv backfill (cs.RO)
+  decision: pending
+  note: Possible direct manipulation capability evaluation. Check identity and links against existing Astra evaluations.
+- id: '2610.27613'
+  title: Embodied Task Agents Can Perform Fine Manipulation through Tactile In-Context Learning
+  url: https://arxiv.org/abs/2610.27613
+  found: '2026-11-16'
+  via: Monday arXiv backfill (cs.RO)
+  decision: pending
+  note: Possible 3.5 experience work. Check sensor context, action interface and adaptation protocol.
+- id: '2611.09030'
+  title: A Controlled Study of Models, Skills, Feedback, and Curriculum in Agentic Robotics
+  url: https://arxiv.org/abs/2611.09030
+  found: '2026-11-16'
+  via: Monday arXiv backfill (cs.AI, cs.RO)
+  decision: pending
+  note: Possible 3.5 study of self-improving coding agents. Separate feedback ablations from final outcome metrics.
+- id: '2611.06442'
+  title: 'TwinBridge: Digital Twin-Driven Policy and Reward Transfer for Real-World Reinforcement Learning in Laboratory
+    Robotics'
+  url: https://arxiv.org/abs/2611.06442
+  found: '2026-11-16'
+  via: Monday arXiv backfill (cs.RO)
+  decision: pending
+  note: Possible digital-physical transfer. Verify which policy and rewards transfer and how live evidence is used.
+- id: '2610.35051'
+  title: 'VISTA: Active Exploration for Self-Improvement in Embodied Agents'
+  url: https://arxiv.org/abs/2610.35051
+  found: '2026-11-16'
+  via: Monday arXiv backfill (cs.RO)
+  decision: pending
+  note: Possible 3.5 harness improvement. Check what changes between rollouts and what evidence triggers a change.
+- id: '2610.30587'
+  title: 'Know When to Escalate: Critic-Guided Adaptive Execution for Cloud-Local Embodied Agents'
+  url: https://arxiv.org/abs/2610.30587
+  found: '2026-11-16'
+  via: Monday arXiv backfill (cs.RO)
+  decision: pending
+  note: Possible model orchestration or embodied harness. Verify escalation observations and closed-loop adaptation.
+- id: '2611.17619'
+  title: 'TouchTwin: Scaling Human Touch Data via Real-to-Sim-to-Real'
+  url: https://arxiv.org/abs/2611.17619
+  found: '2026-11-16'
+  via: Monday arXiv backfill (cs.RO)
+  decision: pending
+  note: Possible real-to-sim-to-real data work. Verify measured tactile labels, simulation assumptions and hardware validation.
+- id: '2611.11941'
+  title: Flip Anything with Agentic Robotics Self-Learning
+  url: https://arxiv.org/abs/2611.11941
+  found: '2026-11-16'
+  via: Monday arXiv backfill (cs.RO)
+  decision: pending
+  note: Possible program-based robot skill learning. Verify actual execution, feedback and code changes.
+- id: '2611.11509'
+  title: 'Review the Episodes, Refine the Lessons: Simple Memory Evolution for Embodied Agents'
+  url: https://arxiv.org/abs/2611.11509
+  found: '2026-11-16'
+  via: Monday arXiv backfill (cs.AI, cs.RO)
+  decision: pending
+  note: Possible 3.5 experience and memory. Check what is updated and whether evaluation adapts within or across tasks.
+- id: '2606.26025'
+  title: In-Context World Modeling for Robotic Control
+  url: https://arxiv.org/abs/2606.26025
+  found: '2026-11-16'
+  via: cited by 2609.24170
+  decision: pending
+  note: Check the model input/output and how it is used during robot control.
+- id: '2608.09892'
+  title: 'XPolicyLab: A Unified Standard and Open Ecosystem for Robot Policy Evaluation and Deployment'
+  url: https://arxiv.org/abs/2608.09892
+  found: '2026-11-16'
+  via: cited by 2609.24170
+  decision: pending
+  note: Check reusable evaluation and deployment interfaces and distinguish project code from the study that cites it.
+- id: '2607.15275'
+  title: 'RoboTTT: Context Scaling for Robot Policies'
+  url: https://arxiv.org/abs/2607.15275
+  found: '2026-11-16'
+  via: cited by 2609.24170
+  decision: pending
+  note: Check how demonstration and interaction context enter the policy, and whether the contribution fits the reusable
+    model scope.

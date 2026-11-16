@@ -15753,3 +15753,30 @@
   - Data Curation
   - Benchmark
   - Verification
+- id: '2609.24170'
+  title: 'An Unexpected Robot Policy: Early Evaluations of GPT-6 Astra on RoboDojo and Beyond'
+  url: https://arxiv.org/abs/2609.24170
+  date: '2026.09'
+  section: '3.1'
+  sub: capability-eval
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Evaluates fixed language models as direct robot policies using camera views and motion-target tools in RoboDojo.
+    zh: 在 RoboDojo 中评测固定权重的语言模型如何利用相机画面与运动目标工具直接操控机器人。
+    ja: RoboDojoで、重みを固定した言語モデルがカメラ映像と動作目標ツールを使ってロボットを直接操作する能力を評価する。
+  sources:
+  - https://arxiv.org/abs/2609.24170
+  - https://arxiv.org/html/2609.24170v1
+  verification:
+    en: RoboDojo-Sim · RGB views and state guide the next motion target (§3) · Astra averaged 22.48% success over 2,100
+      trials (Table 1) · physical tests stopped before completing the benchmark (§5) · separate piano task refines controller
+      code in simulation (§6, Appendix G).
+    zh: RoboDojo 仿真 · 根据 RGB 画面和状态选择下一运动目标（§3） · Astra 在 2,100 次试验中的平均成功率为 22.48%（表 1） · 实机测试在完成基准前停止（§5） · 独立钢琴任务在仿真中修订控制程序（§6、附录
+      G）。
+  setup:
+    engines:
+    - Isaac Sim
+  tags:
+  - Benchmark
+  - Verification

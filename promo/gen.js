@@ -1,16 +1,14 @@
 // Promo cover for "多模态视角下的 Coding" (3:4, 1080x1440 at 2x).
 // Usage (from the repository root):  node promo/gen.js
-// Needs Playwright and the npm packages `qrcode` and `@fontsource/noto-sans-sc` (install them anywhere and
-// point NODE_PATH at that node_modules). Without the font package it falls back to system CJK fonts.
+// Needs Playwright and the npm package `@fontsource/noto-sans-sc` (install it anywhere and point NODE_PATH at
+// that node_modules). Without the font package it falls back to system CJK fonts.
 const fs = require('fs');
 const os = require('os');
 const path = require('path');
 const { chromium } = require('playwright');
-const QRCode = require('qrcode');
 
 const ROOT = path.resolve(__dirname, '..');
 const OUT = path.join(__dirname, 'images');
-const REPO_URL = 'https://github.com/jiangjin1999/awesome-multimodal-agentic-coding';
 const HERO = path.join(ROOT, 'assets/hero/hero-light.png'); // 3200 x 1496
 
 let notoDir = null;
@@ -34,24 +32,19 @@ body{font-family:'Inter','Noto Sans SC','PingFang SC','Noto Sans CJK SC','Micros
 .agi{color:${C.acc[2]};letter-spacing:3px;font-size:19px;font-weight:700}
 b{font-weight:700}
 .grad{background:linear-gradient(90deg,${C.acc[0]} 0%,${C.acc[1]} 52%,${C.acc[2]} 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
-.big{margin-top:58px;line-height:1}
+.big{margin-top:96px;line-height:1}
 .big .l1{display:block;font-size:104px;font-weight:900;letter-spacing:2px}
 .big .l2{display:inline-block;font-size:178px;font-weight:800;letter-spacing:-5px;margin-top:6px;padding-bottom:14px}
-.sub{margin-top:16px;font-size:40px;font-weight:700;letter-spacing:1px}
-.idea{margin-top:20px;font-size:27px;color:${C.sub};font-weight:500}
-.idea b{color:${C.ink}}
-.heroWrap{margin-top:40px;width:952px;overflow:hidden;position:relative}
+.sub{margin-top:26px;font-size:40px;font-weight:700;letter-spacing:1px}
+.heroWrap{margin-top:92px;width:952px;overflow:hidden;position:relative}
 .heroWrap img{position:absolute;display:block}
-.cols{margin-top:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cols{margin-top:30px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .col{padding:2px 6px 0}
 .col .t{font-size:27px;font-weight:700;margin-top:2px}
-.col .d{font-size:21px;color:${C.sub};margin-top:8px;line-height:1.5}
-.foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:28px;
-  background:${C.card};border:1.5px solid ${C.stroke};border-radius:24px;padding:26px 28px 26px 34px}
-.foot .gh{display:flex;align-items:center;gap:14px;font-size:27px;font-weight:600;line-height:1.3}
-.foot .stats{margin-top:14px;font-size:21px;color:${C.sub};font-weight:500;letter-spacing:.3px}
-.qr{width:150px;height:150px;flex:none;background:#fff;border-radius:14px;padding:8px;border:1.5px solid ${C.stroke}}
-.qr svg{width:100%;height:100%;display:block}
+.col .d{font-size:22px;color:${C.sub};margin-top:8px;line-height:1.5}
+.link{margin-top:auto;display:flex;align-items:center;justify-content:center;gap:12px;padding-top:26px;
+  border-top:1.5px solid ${C.stroke};font-size:25px;font-weight:600}
+.link svg{width:28px;height:28px}
 `;
 
 // Show the source rect (x, y, w, h) of the hero PNG inside a box of width boxW.
@@ -60,7 +53,7 @@ function crop(cls, x, y, w, h, boxW) {
   return `<div class="${cls}" style="width:${boxW}px;height:${Math.round(h * s)}px"><img src="file://${HERO}" style="width:${3200 * s}px;left:${-x * s}px;top:${-y * s}px"></div>`;
 }
 
-function cover(qrSvg) {
+function cover() {
   const cols = [
     ['01', '视觉作为反馈', '看见自己造的东西，<br>模型才能 loop 起来'],
     ['02', '把模型当作工具', '让 Agent 去调生成、<br>感知和动作模型'],
@@ -70,22 +63,16 @@ function cover(qrSvg) {
   <div class="topbar"><span class="brand"><span class="dots">${C.acc.map((c) => `<i style="background:${c}"></i>`).join('')}</span>Awesome Multimodal Agentic Coding</span><span class="agi">TOWARD PHYSICAL AGI</span></div>
   <h1 class="big"><span class="l1">多模态视角下的</span><span class="l2 grad">Coding</span></h1>
   <div class="sub">扩展 Agent 能力边界，最终通向物理 AGI</div>
-  <div class="idea">我们从 <b>Coding</b> 而不是 CUA 的角度看：<b>写代码 → 看结果 → 再改</b></div>
   ${crop('heroWrap', 96, 256, 3008, 1176, 952)}
   <div class="cols">${cols.map(([n, t, d], i) => `<div class="col"><div class="t"><span style="color:${C.acc[i]}">${n}</span>&nbsp; ${t}</div><div class="d">${d}</div></div>`).join('')}</div>
-  <div class="foot">
-    <div><div class="gh">${GH}<span>github.com/jiangjin1999/<br>awesome-multimodal-agentic-coding</span></div>
-    <div class="stats">664 项工作 · 3 个阶段 · 19 个方向 · 中 / EN / 日 · 持续更新</div></div>
-    <div class="qr">${qrSvg}</div>
-  </div>
+  <div class="link">${GH}github.com/jiangjin1999/awesome-multimodal-agentic-coding</div>
 </div>`;
 }
 
 (async () => {
   fs.mkdirSync(OUT, { recursive: true });
-  const qrSvg = await QRCode.toString(REPO_URL, { type: 'svg', margin: 0, errorCorrectionLevel: 'M', color: { dark: C.ink, light: '#FFFFFF' } });
   const file = path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'mmac-promo-')), 'cover.html');
-  fs.writeFileSync(file, `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">${fontLinks}<style>${css}</style></head><body>${cover(qrSvg)}</body></html>`);
+  fs.writeFileSync(file, `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">${fontLinks}<style>${css}</style></head><body>${cover()}</body></html>`);
   const browser = await chromium.launch();
   const page = await browser.newPage({ viewport: { width: 1080, height: 1440 }, deviceScaleFactor: 2 });
   await page.goto(`file://${file}`);

@@ -51,7 +51,7 @@ https://github.com/jiangjin1999/awesome-multimodal-agentic-coding
 
 ## 二、封面图
 
-[`images/cover.png`](images/cover.png)：2160 × 2880（3:4）。大字「多模态视角下的 Coding」，加上仓库头图、三个阶段、链接和二维码。
+[`images/cover.png`](images/cover.png)：2160 × 2880（3:4）。大字「多模态视角下的 Coding」，加上仓库头图、三个阶段和仓库链接。
 
 ## 三、正文（详细思路）
 

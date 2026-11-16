@@ -61,13 +61,20 @@ b{font-weight:700}
 .ar p{margin-top:26px;font-size:31px;line-height:1.8;color:${C.text};text-wrap:pretty}
 .ar p.li{margin-top:12px;padding-left:1.3em;text-indent:-1.3em}
 .ar b{color:${C.ink}}
-.en.ar p{font-size:27px;line-height:1.62;margin-top:22px}
+.en.ar p{font-size:27px;line-height:1.62;margin-top:20px}
+.en .flow{margin-top:36px}
 .en.ar p.li{margin-top:10px}
 .en.ar .h1{font-size:58px;letter-spacing:-.5px}
 .en.ar .h1sub{font-size:30px}
 .en.ar .h2{font-size:42px;line-height:1.3}
 .en.ar .h2 .n{font-size:32px}
-.en.ar .h3{font-size:32px}
+.en.ar .h3{font-size:32px;margin-top:36px}
+.flow{margin-top:56px}
+.flow::after{content:'';display:block;clear:both}
+.ar .flow .h2{margin-top:0;text-wrap:balance}
+.ar .flow .h2 .n{text-wrap:balance}
+.fig{float:right;margin:4px 0 18px 32px;border-radius:20px;overflow:hidden;position:relative;border:1.5px solid ${C.stroke};background:${C.card}}
+.fig img{position:absolute;display:block}
 .hl{font-weight:700;color:${C.ink};background:linear-gradient(transparent 60%,var(--mark) 60%);padding:0 1px}
 `;
 
@@ -96,7 +103,12 @@ function cover() {
 const vars = (i) => `--acc:${C.acc[i]};--mark:${C.mark[i]}`;
 const topbar = (n) => `<div class="topbar"><span class="brand"><span class="dots">${C.acc.map((c) => `<i style="background:${c}"></i>`).join('')}</span>Awesome Multimodal Agentic Coding</span><span class="prog">多模态视角下的 Coding · ${n} / 4</span></div>`;
 const hl = (t) => `<span class="hl">${t}</span>`;
-const article = (n, i, body) => `<div class="page ar" style="${vars(i)}">${topbar(n)}${body}</div>`;
+// Pages 2-4 cover one stage each; the matching panel of the hero image floats beside the heading.
+// Panel i of the hero spans x = 100 + 1020 i .. +960 (PNG pixels); this crop keeps its loop diagram.
+const FIG_W = 280;
+const figure = (i) => crop('fig', 100 + 1020 * i + 40, 500, 880, 830, FIG_W);
+const wrap = (n, body) => (n > 1 ? `<div class="flow">${figure(n - 2)}${body}</div>` : body);
+const article = (n, i, body) => `<div class="page ar" style="${vars(i)}">${topbar(n)}${wrap(n, body)}</div>`;
 
 const intro = () => article(1, 1, `
   <div class="h1">多模态视角下的 Coding</div>
@@ -110,7 +122,7 @@ const intro = () => article(1, 1, `
   <p class="li">3️⃣ <b>Bridging Digital &amp; Physical</b>：用代码搭仿真、控机器人，从屏幕走到真实世界</p>`);
 
 const stage1 = () => article(2, 0, `
-  <div class="h2"><span class="n">1 - Visual as Feedback：</span>有了视觉反馈，模型才能 loop 起来</div>
+  <div class="h2"><span class="n">1 - Visual as Feedback：</span>有了视觉反馈，<br>模型才能 loop 起来</div>
   <p style="margin-top:36px">视觉反馈和 perception 能力的提升，让模型可以${hl('真正 loop 起来')}。</p>
   <p>相比于一般的 coding agent，多模态 coding agent 的关键就是有<b>视觉反馈</b>，这一点极大地扩展了 agent 的能力边界。网页、图表、PPT、3D/CAD、游戏……${hl('只要能跑出来、看得见，就能放进这个 loop 里')}。</p>
   <p>其中，<b>perception、grounding 以及 diff</b> 这些原子多模态能力是基础：看得准、找得到、比得出差别。反馈够精准，coding loop 才能更好地跑起来。</p>
@@ -133,7 +145,7 @@ const stage3 = () => article(4, 2, `
   <p style="margin-top:18px">三个阶段是层层叠上去的。我们相信，沿着「写代码 → 看结果 → 再改」这条路，agent 会一步步从屏幕走进真实世界，${hl('最终通向物理 AGI')}。</p>`);
 
 const topbarEn = (n) => `<div class="topbar"><span class="brand"><span class="dots">${C.acc.map((c) => `<i style="background:${c}"></i>`).join('')}</span>Awesome Multimodal Agentic Coding</span><span class="prog">A Multimodal View of Coding · ${n} / 4</span></div>`;
-const articleEn = (n, i, body) => `<div class="page ar en" style="${vars(i)}">${topbarEn(n)}${body}</div>`;
+const articleEn = (n, i, body) => `<div class="page ar en" style="${vars(i)}">${topbarEn(n)}${wrap(n, body)}</div>`;
 
 function coverEn() {
   const cols = [

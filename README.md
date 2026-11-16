@@ -13,7 +13,7 @@
 
 A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to the physical world.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-664-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--15-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-665-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--16-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -60,7 +60,7 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [3.1 Embodied harnesses](#s3-1) (84)
   - [3.2 Simulator construction](#s3-2) (68)
   - [3.3 Simulator quality evaluation](#s3-3) (29)
-  - [3.4 Data](#s3-4) (14)
+  - [3.4 Data](#s3-4) (15)
   - [3.5 Training and capability improvement](#s3-5) (74)
   - [3.6 Physical applications and experiments](#s3-6) (49)
     - [Scientific experiments (AI4Science)](#s3-6-experiments) (27)
@@ -3216,6 +3216,11 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
 - <a id="paper-2611-06817"></a>`2026.11` **[Open-HumanWAM: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models](https://arxiv.org/abs/2611.06817)** [[Project page]](https://dagroup-pku.github.io/open-humanwam/) [[Code]](https://github.com/DAGroup-PKU/HumanNet/tree/Open-HumanWAM) [[Dataset]](https://huggingface.co/datasets/DAGroup-PKU/Open-HumanWAM-50K) [[Collection]](https://huggingface.co/collections/DAGroup-PKU/open-humanwam)
   > Curates 50,000 hours of first-person human video to pretrain a world–action model, then post-trains it on robots. Frames: first-person monocular RGB; trajectory: 3D wrist poses and grip openness of both hands, mapped to one shared action space; labels: language descriptions.<br>
   > 🖥️ **Sim** SAPIEN + Isaac Sim (AgileX ALOHA, ARX X5) · 🦾 **Real** AgileX Cobot Magic
+
+<!-- mmac-record: {"id": "2611.17060", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-17060"></a>`2026.11` **[Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors](https://arxiv.org/abs/2611.17060)** [[Project page]](https://ropedia.com/xperience/2-research/) [[Dataset]](https://huggingface.co/datasets/ropedia-ai/Ropedia-Xperience-2)
+  > Pairs metric 3D scans with egocentric task recordings and demonstrates how to reuse them for interactive simulation and whole-body robot trajectories.
 
 <!-- mmac-record: {"id": "2406.18915", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 

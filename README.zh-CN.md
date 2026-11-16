@@ -13,7 +13,7 @@
 
 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从数字世界延伸到物理世界。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-664-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--15-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-665-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--16-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · **简体中文** · [日本語](./README.ja.md)
 
@@ -60,7 +60,7 @@
   - [3.1 具身框架（Harness）](#s3-1) (84)
   - [3.2 仿真器构建](#s3-2) (68)
   - [3.3 仿真器质量评估](#s3-3) (29)
-  - [3.4 数据](#s3-4) (14)
+  - [3.4 数据](#s3-4) (15)
   - [3.5 训练与能力提升](#s3-5) (74)
   - [3.6 物理应用与实验](#s3-6) (49)
     - [科学实验（AI4Science）](#s3-6-experiments) (27)
@@ -3216,6 +3216,11 @@ Bench 两行只作参照：RoboDojo 由人工搭建，Video2World 要求被测 A
 - <a id="paper-2611-06817"></a>`2026.11` **[Open-HumanWAM: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models](https://arxiv.org/abs/2611.06817)** [[项目页]](https://dagroup-pku.github.io/open-humanwam/) [[代码]](https://github.com/DAGroup-PKU/HumanNet/tree/Open-HumanWAM) [[数据集]](https://huggingface.co/datasets/DAGroup-PKU/Open-HumanWAM-50K) [[合集]](https://huggingface.co/collections/DAGroup-PKU/open-humanwam)
   > 整理 5 万小时第一视角人类视频，预训练世界—动作模型，再在机器人上后训练。画面：第一视角单目 RGB；轨迹：双手腕部 3D 位姿与开合度，统一到同一动作空间；标注：语言描述。<br>
   > 🖥️ **仿真** SAPIEN + Isaac Sim（AgileX ALOHA、ARX X5） · 🦾 **真机** AgileX Cobot Magic
+
+<!-- mmac-record: {"id": "2611.17060", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-17060"></a>`2026.11` **[Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors](https://arxiv.org/abs/2611.17060)** [[项目页]](https://ropedia.com/xperience/2-research/) [[数据集]](https://huggingface.co/datasets/ropedia-ai/Ropedia-Xperience-2)
+  > 联合采集米制三维扫描与第一视角任务记录，并示范如何将其复用于交互仿真与机器人全身轨迹生成。
 
 <!-- mmac-record: {"id": "2406.18915", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 

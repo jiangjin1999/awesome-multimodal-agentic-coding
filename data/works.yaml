@@ -15727,3 +15727,29 @@
       to n̄ = 0.20 ± 0.06 and a Ramsey T2* of 904 ± 32 µs. The gate checks hardware bounds, not physical sense; operators
       approve irreversible actions and guided parts of the optimization.
     zh: 在 40Ca+/40CaOH+ 晶体上，Agent 根据返回的数据集与日志迭代，得到边带冷却 n̄ = 0.20 ± 0.06、Ramsey T2* = 904 ± 32 µs 等结果。安全门只检查硬件界限，不判断物理合理性；不可逆操作由操作员批准，部分优化依赖人工指导。
+- id: '2611.17060'
+  title: 'Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors'
+  url: https://arxiv.org/abs/2611.17060
+  date: '2026.11'
+  section: '3.4'
+  sub: real-data
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Pairs metric 3D scans with egocentric task recordings and demonstrates how to reuse them for interactive simulation
+      and whole-body robot trajectories.
+    zh: 联合采集米制三维扫描与第一视角任务记录，并示范如何将其复用于交互仿真与机器人全身轨迹生成。
+    ja: メートル尺度の3Dスキャンと一人称視点のタスク記録を組み合わせ、インタラクティブなシミュレーションとロボットの全身軌道生成に再利用する方法を示す。
+  sources:
+  - https://arxiv.org/abs/2611.17060
+  - https://arxiv.org/html/2611.17060v1
+  - https://ropedia.com/xperience/2-research/
+  - https://huggingface.co/datasets/ropedia-ai/Ropedia-Xperience-2
+  verification:
+    en: Three benchmarks use the same 20 scanned scenes. Robot demonstrations use simulation, and the public manifest
+      verifies a subset of the reported collection.
+    zh: 三项评测共用 20 个扫描场景。机器人示范在仿真中进行，公开目录核实了报告所述采集内容的一部分。
+  tags:
+  - Data Curation
+  - Benchmark
+  - Verification

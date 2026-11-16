@@ -13,7 +13,7 @@
 
 マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——デジタル世界から物理世界まで。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-664-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--15-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-665-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--16-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語**
 
@@ -63,7 +63,7 @@
   - [3.1 身体性ハーネス](#s3-1) (84)
   - [3.2 シミュレータ構築](#s3-2) (68)
   - [3.3 シミュレータ品質評価](#s3-3) (29)
-  - [3.4 データ](#s3-4) (14)
+  - [3.4 データ](#s3-4) (15)
   - [3.5 学習と能力向上](#s3-5) (74)
   - [3.6 物理応用と実験](#s3-6) (49)
     - [科学実験（AI4Science）](#s3-6-experiments) (27)
@@ -3219,6 +3219,11 @@ Bench の 2 行は参照用です：RoboDojo は人手で構築され、Video2Wo
 - <a id="paper-2611-06817"></a>`2026.11` **[Open-HumanWAM: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models](https://arxiv.org/abs/2611.06817)** [[プロジェクトページ]](https://dagroup-pku.github.io/open-humanwam/) [[コード]](https://github.com/DAGroup-PKU/HumanNet/tree/Open-HumanWAM) [[データセット]](https://huggingface.co/datasets/DAGroup-PKU/Open-HumanWAM-50K) [[コレクション]](https://huggingface.co/collections/DAGroup-PKU/open-humanwam)
   > 一人称の人の動画 5 万時間を整理して世界・動作モデルを事前学習し、ロボットで事後学習する。映像：一人称の単眼 RGB。軌跡：両手首の 3D 姿勢と開閉度を共通の動作空間にそろえたもの。注釈：言語による説明。<br>
   > 🖥️ **シミュレーション** SAPIEN + Isaac Sim（AgileX ALOHA、ARX X5） · 🦾 **実機** AgileX Cobot Magic
+
+<!-- mmac-record: {"id": "2611.17060", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-17060"></a>`2026.11` **[Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors](https://arxiv.org/abs/2611.17060)** [[プロジェクトページ]](https://ropedia.com/xperience/2-research/) [[データセット]](https://huggingface.co/datasets/ropedia-ai/Ropedia-Xperience-2)
+  > メートル尺度の3Dスキャンと一人称視点のタスク記録を組み合わせ、インタラクティブなシミュレーションとロボットの全身軌道生成に再利用する方法を示す。
 
 <!-- mmac-record: {"id": "2406.18915", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
 

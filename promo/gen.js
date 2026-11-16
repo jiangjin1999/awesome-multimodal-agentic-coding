@@ -1,5 +1,6 @@
 // Promo images for "多模态视角下的 Coding": the cover and four pages of the post text (3:4, 1080x1440 at 2x).
 // The page text follows section 三 of promo/post.zh-CN.md word for word; only the emphasis is added here.
+// The English set (images/en/) follows promo/post.en.md the same way.
 // Usage (from the repository root):  node promo/gen.js
 // Needs Playwright and the npm package `@fontsource/noto-sans-sc` (install it anywhere and point NODE_PATH at
 // that node_modules). Without the font package it falls back to system CJK fonts.
@@ -60,6 +61,13 @@ b{font-weight:700}
 .ar p{margin-top:26px;font-size:31px;line-height:1.8;color:${C.text};text-wrap:pretty}
 .ar p.li{margin-top:12px;padding-left:1.3em;text-indent:-1.3em}
 .ar b{color:${C.ink}}
+.en.ar p{font-size:27px;line-height:1.62;margin-top:22px}
+.en.ar p.li{margin-top:10px}
+.en.ar .h1{font-size:58px;letter-spacing:-.5px}
+.en.ar .h1sub{font-size:30px}
+.en.ar .h2{font-size:42px;line-height:1.3}
+.en.ar .h2 .n{font-size:32px}
+.en.ar .h3{font-size:32px}
 .hl{font-weight:700;color:${C.ink};background:linear-gradient(transparent 60%,var(--mark) 60%);padding:0 1px}
 `;
 
@@ -124,21 +132,80 @@ const stage3 = () => article(4, 2, `
   <div class="h3">最后</div>
   <p style="margin-top:18px">三个阶段是层层叠上去的。我们相信，沿着「写代码 → 看结果 → 再改」这条路，agent 会一步步从屏幕走进真实世界，${hl('最终通向物理 AGI')}。</p>`);
 
+const topbarEn = (n) => `<div class="topbar"><span class="brand"><span class="dots">${C.acc.map((c) => `<i style="background:${c}"></i>`).join('')}</span>Awesome Multimodal Agentic Coding</span><span class="prog">A Multimodal View of Coding · ${n} / 4</span></div>`;
+const articleEn = (n, i, body) => `<div class="page ar en" style="${vars(i)}">${topbarEn(n)}${body}</div>`;
+
+function coverEn() {
+  const cols = [
+    ['01', 'Visual Feedback', 'Sees what it builds, so the model can loop'],
+    ['02', 'Models as Tools', 'Calls generation, perception and action models'],
+    ['03', 'Digital → Physical', 'Builds simulators and drives robots, from screen to real world'],
+  ];
+  return `<div class="page">
+  <div class="topbar"><span class="brand"><span class="dots">${C.acc.map((c) => `<i style="background:${c}"></i>`).join('')}</span>Awesome Multimodal Agentic Coding</span><span class="agi">TOWARD PHYSICAL AGI</span></div>
+  <h1 class="big"><span class="l1" style="font-size:84px;letter-spacing:-1px">A Multimodal View of</span><span class="l2 grad">Coding</span></h1>
+  <div class="sub" style="font-size:36px;letter-spacing:0">Pushing the limits of agents, toward physical AGI</div>
+  ${crop('heroWrap', 96, 256, 3008, 1176, 952)}
+  <div class="cols">${cols.map(([n, t, d], i) => `<div class="col"><div class="t"><span style="color:${C.acc[i]}">${n}</span>&nbsp; ${t}</div><div class="d">${d}</div></div>`).join('')}</div>
+  <div class="link">${GH}github.com/jiangjin1999/awesome-multimodal-agentic-coding</div>
+</div>`;
+}
+
+const introEn = () => articleEn(1, 1, `
+  <div class="h1">A Multimodal View of Coding</div>
+  <div class="h1sub">Pushing the limits of agents, toward physical AGI</div>
+  <p style="margin-top:40px">We’ve been talking with some friends lately, and they found our angle rather interesting, so here are our thoughts.</p>
+  <p>We started working on multimodal agentic coding in June. After GPT-6 came out, computer-use agents suddenly took off, and some of the research we had been doing right at the edge of model capabilities started to feel less cutting-edge (working on it alone was also pretty slow).</p>
+  <p>But we have always looked at this from ${hl('a coding angle rather than a CUA angle')}. <b>Robot-use agents</b> are becoming more common too: agents write code to control robots directly, and together with <b>Real2Sim2Real</b>, these are all ${hl('extensions of multimodal coding into the physical world')}. In fact, ${hl('from a coding angle, this progression is quite natural.')}</p>
+  <p>We understand it in three stages:</p>
+  <p class="li">1️⃣ <b>Visual as Feedback</b>: with visual feedback, the model can truly run in a loop</p>
+  <p class="li">2️⃣ <b>Agent Orchestrates Models</b>: let the agent call generation, perception and action models, pushing its limits further</p>
+  <p class="li">3️⃣ <b>Bridging Digital &amp; Physical</b>: build simulators and control robots with code, from the screen to the real world</p>`);
+
+const stage1En = () => articleEn(2, 0, `
+  <div class="h2"><span class="n">1 - Visual as Feedback:</span>With visual feedback, the model can loop</div>
+  <p style="margin-top:34px">Better visual feedback and perception let the model ${hl('truly run in a loop')}.</p>
+  <p>Compared with an ordinary coding agent, the key to a multimodal coding agent is <b>visual feedback</b>, and that greatly expands what the agent can do. Web pages, charts, slides, 3D/CAD, games… ${hl('anything that runs and can be seen can go into this loop')}.</p>
+  <p>Atomic multimodal abilities such as <b>perception, grounding and diff</b> are the foundation: seeing accurately, finding the right spot, telling what changed. Only with precise feedback can the coding loop run well.</p>
+  <p>Of course, various workflows could already bring in visual feedback; but in the agent setting, the model is no longer just doing VQA: it can compare on its own and optimize the whole ${hl('“multimodal repo”')}.</p>`);
+
+const stage2En = () => articleEn(3, 1, `
+  <div class="h2"><span class="n">2 - Agent Orchestrates Models:</span>Let the agent call other models</div>
+  <p style="margin-top:34px">The agent orchestrates all kinds of models (other VLMs, generative models, action models and so on), which further expands what it can do and makes it more efficient.</p>
+  <p>Visual feedback gives the agent a huge multimodal task space. But if the agent can only look and act by itself, it not only suffers from hallucinations caused by long context, it may also need a huge amount of compute; ${hl('calling other models as tools effectively improves both efficiency and quality')}.</p>
+  <p>Orchestration shows up on both the input and the output side:</p>
+  <p class="li">• <b>Input</b>: use models that are better at the job to give the agent observations from different dimensions, such as detection, segmentation, depth and reconstruction;</p>
+  <p class="li">• <b>Output</b>: call generative models for mask inpainting or for a composition based on a grey-box model; or call an action model to control a robot arm.</p>
+  <p>The first two stages lay a solid foundation for the third: visual feedback lets the agent see the result of every step, and calling models as tools lets it borrow the abilities of perception, generation and action models. ${hl('Stepping into the physical world relies on exactly these two.')}</p>`);
+
+const stage3En = () => articleEn(4, 2, `
+  <div class="h2"><span class="n">3 - Bridging Digital World &amp; Physical World:</span>Bring the loop into the physical world</div>
+  <p style="margin-top:34px">The first two stages keep expanding what coding agents can do, but they still live in the digital world. Naturally, we want to bring this loop into the physical world. This is also the largest and fastest-growing part of our repo.</p>
+  <p>${hl('The agentic loop is where every idea starts.')} Now the code controls a robot, and “look at the result, fix the code” becomes “look at what the robot did, fix the policy”. That is exactly what recent <b>robot-use agents</b> do: without training a dedicated policy, you give an off-the-shelf coding agent a terminal and the robot’s perception and motion interfaces, and it writes Python to get the robot working, watches the camera and the execution results, and rewrites the code when something fails. But a loop on a real robot is slow and expensive, so the natural next step is to “move” the real world into code first, and the progress of the first two stages makes <b>Real2Sim</b> possible; the loop can then spin fast and often in simulation, generating data and building up experience, before the skills are carried back to the real robot. ${hl('And all of this, once again, comes down to the foundation model.')}</p>
+  <div class="h3">Finally</div>
+  <p style="margin-top:16px">The three stages build on each other. We believe that by following the path of “write code → see the result → fix it”, agents will move step by step from the screen into the real world, and ${hl('ultimately reach physical AGI')}.</p>`);
+
 (async () => {
-  fs.mkdirSync(OUT, { recursive: true });
+  fs.mkdirSync(path.join(OUT, 'en'), { recursive: true });
   const pages = [
     ['cover', cover()],
     ['post-1-intro', intro()],
     ['post-2-visual-feedback', stage1()],
     ['post-3-orchestrate-models', stage2()],
     ['post-4-digital-physical', stage3()],
+    ['en/cover', coverEn()],
+    ['en/post-1-intro', introEn()],
+    ['en/post-2-visual-feedback', stage1En()],
+    ['en/post-3-orchestrate-models', stage2En()],
+    ['en/post-4-digital-physical', stage3En()],
   ];
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'mmac-promo-'));
   const browser = await chromium.launch();
   const page = await browser.newPage({ viewport: { width: 1080, height: 1440 }, deviceScaleFactor: 2 });
   for (const [name, html] of pages) {
-    const file = path.join(dir, `${name}.html`);
-    fs.writeFileSync(file, `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">${fontLinks}<style>${css}</style></head><body>${html}</body></html>`);
+    const file = path.join(dir, `${name.replace('/', '-')}.html`);
+    const lang = name.startsWith('en/') ? 'en' : 'zh-CN';
+    fs.writeFileSync(file, `<!doctype html><html lang="${lang}"><head><meta charset="utf-8">${fontLinks}<style>${css}</style></head><body>${html}</body></html>`);
     await page.goto(`file://${file}`);
     await page.evaluate(() => document.fonts.ready);
     await page.waitForTimeout(300);

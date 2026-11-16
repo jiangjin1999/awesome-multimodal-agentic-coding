@@ -64,13 +64,19 @@ https://github.com/jiangjin1999/awesome-multimodal-agentic-coding
 
 **扩展 Agent 能力边界，最终通向物理 AGI**
 
-最近和一些大佬交流，感觉我们的角度还挺有意思的，所以分享下我们的思考。
+最近和一些同学交流，感觉我们的角度还挺有意思的，所以分享下我们的思考。
 
-我们从六月份开始做多模态 coding 相关的任务。GPT-6 发布后，Computer Use Agent 一下子火了，也让我们之前摸着能力边界做的一些研究失去了意义。
+我们从六月份开始做多模态 agentic coding 相关的任务。GPT-6 发布后，Computer Use Agent 一下子火了，也让我们之前摸着能力边界做的一些研究显得不那么前沿了（一个人做也确实比较慢）。
 
-但我们一直是从 coding 的角度、而不是 CUA 的角度来看这件事。说白了，CUA 关心的是 Agent 怎么去「用」现成的软件；我们更关心的是 Agent 怎么用代码把东西「造」出来，自己看结果，再自己改好。
+但我们一直是从 coding 的角度、而不是 CUA 的角度来看这件事。最近 Robot Use Agent 也越来越多：让 Agent 直接写代码控制机器人，再加上 Real2Sim2Real，这些都是多模态 coding 这条线往物理世界的延伸。其实从 coding 的角度来看，这个发展是很自然的。
 
-我们主要从下面三个阶段来理解。
+我们主要从下面三个阶段来理解：
+
+1️⃣ Visual as Feedback：有了视觉反馈，模型才能真正 loop 起来
+
+2️⃣ Agent Orchestrates Models：让 Agent 去调生成、感知、动作模型，能力边界进一步扩展
+
+3️⃣ Bridging Digital & Physical：用代码搭仿真、控机器人，从屏幕走到真实世界
 
 #### 1 - Visual as Feedback：有了视觉反馈，模型才能 loop 起来
 
@@ -84,24 +90,24 @@ https://github.com/jiangjin1999/awesome-multimodal-agentic-coding
 
 #### 2 - Agent Orchestrates Models：让 Agent 去调别的模型
 
-Agent 去 orchestrate 各种模型（生成模型、action model 等），进一步扩展了能力边界，也提高了效率。
+Agent 去 orchestrate 各种模型（其他 VLM、生成模型、action model 等），进一步扩展了能力边界，也提高了效率。
 
-视觉反馈让 agent 拥有了极大的多模态任务空间。但如果 agent 只能自己看、自己做，不仅会有长上下文带来的幻觉，也可能需要极大量的计算；把其他模型当作工具来调，就能有效改善。
+视觉反馈让 agent 拥有了极大的多模态任务空间。但如果 agent 只能自己看、自己做，不仅会有长上下文带来的幻觉，也可能需要极大量的计算；把其他模型当作工具来调，就能有效改善效率和效果。
 
 orchestration 既体现在输入，也体现在输出：
 
 - **输入**：用更擅长的模型，从不同维度给 agent 提供观察，比如检测、分割、深度、重建；
 - **输出**：调生成模型来做 mask 重绘、基于白模给出构图；也可以调 action model 来操控机械臂。
 
-一句话：agent 负责想和写代码，专业的「看」和「做」交给更擅长的模型。
+上面两个阶段为第三个阶段打下了扎实的基础：视觉反馈让 agent 能看清每一步的结果，把模型当工具来调，又让它能借用感知、生成和动作模型的能力。走进物理世界，靠的正是这两样。
 
 #### 3 - Bridging Digital World & Physical World：把 loop 带进物理世界
 
-前两个阶段不断扩展着 coding agent 的能力边界，但都还在数字世界里。第三个阶段，我们想把这个 loop 带进物理世界。这也是我们仓库里现在最大、涨得最快的一块：664 项工作里有 318 项在这个阶段，光 2026 年下半年就新增了 200 项。
+前两个阶段不断扩展着 coding agent 的能力边界，但都还在 digital world 里。很自然地，我们想把这个 loop 带进 physical world。这也是我们仓库里现在最大、涨得最快的一块。
 
 我们觉得大概有三件事在同时发生：
 
-**一是用代码去动手（Digital → Physical）。** 从 Code as Policies 开始，大家就在用代码调感知和运动接口来控制机器人。最近一批 robot-use agent 更直接，让通用 coding agent 自己写 Python、调 ROS，看相机画面和力反馈，再改下一步动作。第一阶段的「看结果改代码」，到这里就变成了「看动作结果改策略」。PCB 布线、软体机器人设计、科学实验，也都开始用上了这套 loop。
+**一是用代码去动手（Digital → Physical）。** 从 Code as Policies 开始，大家就在用代码调感知和运动接口来控制机器人。最近一批 Robot Use Agent 更直接，让通用 coding agent 自己写 Python、调 ROS，看相机画面和力反馈，再改下一步动作。第一阶段的「看结果改代码」，到这里就变成了「看动作结果改策略」。PCB 布线、软体机器人设计、科学实验，也都开始用上了这套 loop。
 
 **二是用代码把真实世界「搬」进仿真（Real → Sim）。** 拿一段真实视频，让 agent 把场景、物体、关节、物理参数写成能跑的仿真器。仿真器本身就是一个「多模态 repo」：能拿来和真实录像对比，也能改改条件再跑一遍。不过仿真到底像不像，是个大问题。所以我们在仓库里整理了一套检验层级：从「看起来像」，到「放着不动合理」「碰一下有反应」「动起来对」，最后到「在仿真里最好的策略，到真机上是不是也最好」。每一层拆穿一种「假仿真」。
 
@@ -111,8 +117,8 @@ orchestration 既体现在输入，也体现在输出：
 
 #### 最后
 
-三个阶段是一层层叠上去的：先看见自己造的东西，再学会调别的模型，最后在仿真和现实里动手、学习。我们相信，沿着「写代码 → 看结果 → 再改」这条路，agent 会一步步从屏幕走进真实世界，最终通向物理 AGI。
+三个阶段是层层叠上去的。我们相信，沿着「写代码 → 看结果 → 再改」这条路，agent 会一步步从屏幕走进真实世界，最终通向物理 AGI。
 
-我们把相关的工作都整理在了 **Awesome Multimodal Agentic Coding** 里，目前 664 项（论文、工具、数据集、Demo），按三个阶段、19 个方向组织，中英日三语，会持续更新。欢迎 star、提 issue 推荐工作，也欢迎来找我们聊～
+相关工作都整理在了 **Awesome Multimodal Agentic Coding** 里，其中 Stage 3（Robot Use Agent）的内容和结构是我们最近主要的思考，未来也还有很多可做的空间。仓库会持续更新，欢迎 star、提 issue 推荐工作，也欢迎来找我们聊～
 
 🔗 https://github.com/jiangjin1999/awesome-multimodal-agentic-coding

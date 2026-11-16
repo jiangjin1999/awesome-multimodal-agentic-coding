@@ -58,7 +58,14 @@ https://github.com/jiangjin1999/awesome-multimodal-agentic-coding
 
 ## 三、正文（详细思路）
 
-可以直接用于公众号、知乎或长帖。
+可以直接用于公众号、知乎或长帖。下面的文字也做成了 4 张图（3:4，2160 × 2880），文字与这里一致，只加了重点标注：
+
+| 顺序 | 文件 | 内容 |
+|---|---|---|
+| 1 | [`post-1-intro.png`](images/post-1-intro.png) | 开头与三个阶段 |
+| 2 | [`post-2-visual-feedback.png`](images/post-2-visual-feedback.png) | 1 - Visual as Feedback |
+| 3 | [`post-3-orchestrate-models.png`](images/post-3-orchestrate-models.png) | 2 - Agent Orchestrates Models，以及通向第三阶段的过渡 |
+| 4 | [`post-4-digital-physical.png`](images/post-4-digital-physical.png) | 3 - Bridging Digital World & Physical World，以及最后 |
 
 ### 多模态视角下的 Coding｜Awesome Multimodal Agentic Coding
 
@@ -111,6 +118,10 @@ Agentic Loop 是一切想法的开始。coding控制的就是一台机器人，�
 
 三个阶段是层层叠上去的。我们相信，沿着「写代码 → 看结果 → 再改」这条路，agent 会一步步从屏幕走进真实世界，最终通向物理 AGI。
 
-相关工作都整理在了 **Awesome Multimodal Agentic Coding** 里，其中 Stage 3（Robot Use Agent）的内容和结构是我们最近主要的思考，未来也还有很多可做的空间。仓库会持续更新，欢迎 star、提 issue 推荐工作，也欢迎来找我们聊～
+## 四、评论（第一条评论）
+
+```text
+相关工作都整理在了 Awesome Multimodal Agentic Coding 里，其中 Stage 3（Robot Use Agent）的内容和结构是我们最近主要的思考，未来也还有很多可做的空间。仓库会持续更新，欢迎 star、提 issue 推荐工作，也欢迎来找我们聊～
 
 🔗 https://github.com/jiangjin1999/awesome-multimodal-agentic-coding
+```

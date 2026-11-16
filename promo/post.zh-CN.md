@@ -1,27 +1,30 @@
 # 多模态视角下的 Coding｜Awesome Multimodal Agentic Coding
 
-> 宣传稿草稿。封面图是 [`images/cover.png`](images/cover.png)，由 [`gen.js`](gen.js) 生成；改了图里的文字后重新运行即可。
+> 宣传稿。封面图（定版）是 [`images/cover.png`](images/cover.png)，由 [`gen.js`](gen.js) 生成；改了图里的文字后重新运行即可。
 
 ## 一、精要介绍（帖子正文）
 
-### 中文完整版（X Premium、即刻、小红书、朋友圈）
+### 中文版（定版）
+
+适合 X Premium、即刻、小红书、朋友圈；X 免费账号有 280 字符限制，发不下。
 
 ```text
 多模态视角下的 Coding
 
-最近和一些大佬交流，感觉我们的角度还挺有意思，分享一下～
+最近和一些同学交流，感觉我们的角度还挺有意思，分享一下～
 
-GPT-6 之后 Computer Use Agent 火了，但我们一直是从 coding 而不是 CUA 的角度来看：不只是让 Agent 去「用」软件，而是让它用代码把东西「造」出来，自己看结果，再自己改。
+GPT6 Astra 之后 Computer Use Agent 火了，但我们更多是从 coding 而不是 CUA 的角度来看多模态的发展，最近 Robot Use Agent 也开始多起来了：让 Agent 直接写代码控制机器人，这也是多模态 coding 这条线往物理世界的延伸；
 
 我们把这条路分成三步：
 1️⃣ Visual as Feedback：有了视觉反馈，模型才能真正 loop 起来
-2️⃣ Agent Orchestrates Models：让 Agent 去调生成、感知、动作模型，能力边界再往外扩
+2️⃣ Agent Orchestrates Models：让 Agent 去调生成、感知、动作模型，能力边界进一步扩展
 3️⃣ Bridging Digital & Physical：用代码搭仿真、控机器人，从屏幕走到真实世界
 
-扩展 Agent 能力边界，最终通向物理 AGI。
-相关工作都整理在这儿了（664 项，中英日三语，持续更新）👇
+扩展 Agent 能力边界，最终通向物理 AGI👇
 https://github.com/jiangjin1999/awesome-multimodal-agentic-coding
 ```
+
+以下两个版本是早先的草稿，没有按定版更新。
 
 ### 中文短版（X 免费账号，280 字符限制内）
 
@@ -49,7 +52,7 @@ Toward physical AGI. 664 works, growing 👇
 https://github.com/jiangjin1999/awesome-multimodal-agentic-coding
 ```
 
-## 二、封面图
+## 二、封面图（定版）
 
 [`images/cover.png`](images/cover.png)：2160 × 2880（3:4）。大字「多模态视角下的 Coding」，加上仓库头图、三个阶段和仓库链接。
 

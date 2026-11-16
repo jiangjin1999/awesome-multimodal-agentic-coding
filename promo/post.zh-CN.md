@@ -75,7 +75,7 @@ https://github.com/jiangjin1999/awesome-multimodal-agentic-coding
 
 我们从六月份开始做多模态 agentic coding 相关的任务。GPT-6 发布后，Computer Use Agent 一下子火了，也让我们之前摸着能力边界做的一些研究显得不那么前沿了（一个人做也确实比较慢）。
 
-但我们一直是从 coding 的角度、而不是 CUA 的角度来看这件事。最近 Robot Use Agent 也越来越多：让 Agent 直接写代码控制机器人，再加上 Real2Sim2Real，这些都是多模态 coding 这条线往物理世界的延伸。其实从 coding 的角度来看，这个发展是很自然的。
+但我们一直是从 coding 的角度、而不是 CUA 的角度来看这件事。最近 Robot Use Agent 也越来越多：让 Agent 直接写代码控制机器人，再加上 Real2Sim2Real，这些都是多模态 coding 这条线往 physical world 的延伸。其实从 coding 的角度来看，这个发展是很自然的。
 
 我们主要从下面三个阶段来理解：
 
@@ -106,9 +106,9 @@ orchestration 既体现在输入，也体现在输出：
 - **输入**：用更擅长的模型，从不同维度给 agent 提供观察，比如检测、分割、深度、重建；
 - **输出**：调生成模型来做 mask 重绘、基于白模给出构图；也可以调 action model 来操控机械臂。
 
-上面两个阶段为第三个阶段打下了扎实的基础：视觉反馈让 agent 能看清每一步的结果，把模型当工具来调，又让它能借用感知、生成和动作模型的能力。走进物理世界，靠的正是这两样。
+上面两个阶段为第三个阶段打下了扎实的基础：视觉反馈让 agent 能看清每一步的结果，把模型当工具来调，又让它能借用感知、生成和动作模型的能力。走进 physical world，靠的正是这两样。
 
-#### 3 - Bridging Digital World & Physical World：把 loop 带进物理世界
+#### 3 - Bridging Digital World & Physical World：把 loop 带进 physical world
 
 前两个阶段不断扩展着 coding agent 的能力边界，但都还在 digital world 里。很自然地，我们想把这个 loop 带进 physical world。这也是我们仓库里现在最大、涨得最快的一块。
 
@@ -116,7 +116,7 @@ Agentic Loop 是一切想法的开始。coding控制的就是一台机器人，�
 
 #### 最后
 
-三个阶段是层层叠上去的。我们相信，沿着「写代码 → 看结果 → 再改」这条路，agent 会一步步从屏幕走向物理世界。
+三个阶段是层层叠上去的。我们相信，沿着「写代码 → 看结果 → 再改」这条路，agent 会一步步从屏幕走向 physical world。
 
 ## 四、评论（第一条评论）
 

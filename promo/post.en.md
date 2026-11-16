@@ -85,7 +85,7 @@ The agentic loop is where every idea starts. Now the code controls a robot, and 
 
 #### Finally
 
-The three stages build on each other. We believe that by following the path of “write code → see the result → fix it”, agents will move step by step from the screen into the physical world.
+The three stages build on each other. We believe that by following the path of “write code → see the result → fix it”, agents will move step by step from the screen into the real world, and ultimately reach physical AGI.
 
 ## First comment
 

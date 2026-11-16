@@ -2536,55 +2536,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 |  | 机器人操作视频 + 轨迹 | 已知机器人做了什么动作，能把这段操作在仿真里原样重放吗？ | 桌面操作 | [WorldMirror](#paper-2610-31834) · [Agentic Real2Sim](#paper-2607-19190) · [Vid2Sid](#paper-2602-19359) |
 |  | 机器人主动交互 | 自己动手试，能把摩擦、弹性这些参数测准吗？ | 桌面操作 | [CUE](#paper-2611-02691) · [D-World](#paper-2610-17114) · [Phys2Real](#paper-2510-11689) |
 
-作品只列代表，同一项工作可能出现在多行。
-
-**构建流程：四组九步**
-
-把造一个仿真器拆成四组九步：A 输入理解（① 任务规划、② 感知测量）· B 场景构建（③ 物体资产、④ 关节结构、⑤ 布局对齐）· C 物理建模（⑥ 物理参数、⑦ 物理引擎）· D 任务与控制（⑧ 机器人控制、⑨ 任务定义）。B 加 C 是仿真器本身，再加上 D 就是能拿来训练和评测的环境；没有 ⑦ 物理引擎的工作只建了场景。检查与修订、变体扩增不算仿真器的组成部分，没有放进九步。
-
-下图横着看一行，就是这项工作的每一步由谁来做：每格上行是谁做，下行是做什么。⑦ 物理引擎这一列决定造出来的是仿真器，还是只是一个场景。
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stage-chart/stage-chart-zh-dark.svg">
   <img src="assets/stage-chart/stage-chart-zh-light.svg" alt="仿真器构建九步分别由谁来做，列出 15 项代表工作和两个基准。列分四组：A 输入理解（任务规划、感知测量）、B 场景构建（物体资产、关节结构、布局对齐）、C 物理建模（物理参数、物理引擎）、D 任务与控制（机器人控制、任务定义）。行按组织方式分组：Agentic End-to-End（Plumb、CUE、Real2Gym、DyCraft）、Closed-loop Workflow（Agentic Real2Sim、WorldMirror、Text2Sim、SceneSmith、Articulate-Anything、Gym-Anything）、Open-loop Workflow（GenSim、Holodeck、SimFoundry）、Model-based（PhysX-Omni、Real2Code）。Agent 主要负责规划、布局、控制与任务；感知交给专用模型；物理引擎都用现成的。DyCraft 没有物理引擎，只建了场景；PhysX-Omni 只到仿真就绪。" width="100%">
 </picture>
 
 全部 68 项的逐步对照（含检查与修订、变体扩增）见 [仿真器构建：全部工作逐步对照](stage3/simulator-construction.zh-CN.md)。
-
-<details>
-<summary>文字版（含链接）</summary>
-
-**粗体**：Agent 或 VLM 自己做；普通：专用工具、模型或引擎；*斜体*：事先给定或人工；—：不涉及或没写明。
-
-| 组织方式 | 工作 | ① 任务规划 | ② 感知测量 | ③ 物体资产 | ④ 关节结构 | ⑤ 布局对齐 | ⑥ 物理参数 | ⑦ 物理引擎 | ⑧ 机器人控制 | ⑨ 任务定义 |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Bench | [RoboDojo](#paper-2607-04434) | *人工* | — | Meshy · 资产库 | *现成资产* | *人工 YAML* | *人工* | Isaac Sim · Isaac Lab | *被测策略* | *人工 YAML* |
-|  | [Video2World](#paper-2610-04432) | **Agent** | **Agent** | **Agent** | — | **Agent** | **Agent** | Isaac Sim | **Agent** | *题目给定* |
-| Agentic End-to-End | [Plumb](#paper-system-plumb) | **Agent** | SAM3 · Pi3X | **Agent** | — | **Agent** | **Agent** | MuJoCo | **Agent** | — |
-|  | [CUE](#paper-2611-02691) | **Agent** | **Agent** | **Agent** | — | **Agent** | CMA-ES | MuJoCo | **Agent** | — |
-|  | [Real2Gym](#paper-2609-37089) | **Agent** | MoGe-3 · Pi3X · SAM2 | **Agent** | — | **Agent** | **Agent** | MuJoCo | **Agent** | **Agent** |
-|  | [DyCraft](#paper-2610-40754)（只建场景） | **Agent** | — | **Agent** | **Agent** | **Agent** | — | ✗ 没有物理引擎 | CMU 动捕 · IK · Blender | — |
-| Closed-loop Workflow | [Agentic Real2Sim](#paper-2607-19190) | **视觉 Agent** | SAM 3 · FoundationPose | SAM 3D | — | **场景 Agent** | **物理 Agent** | MuJoCo | *给定* | — |
-|  | [WorldMirror](#paper-2610-31834) | *固定依赖图* | 3D 高斯 | Meshy · Articraft | — | **校准、布局 Agent** | — | Isaac Sim | *给定* | — |
-|  | [Text2Sim](#paper-2609-36593) | **Planner** | — | Meshy | — | **Scene Writer** | **Body Writer** | Genesis | **Action Writer** | — |
-|  | [SceneSmith](#paper-2602-09153) | **Planner** | — | SAM3 · SAM3D | ArtVIP | **Designer** | **VLM** | Drake | — | — |
-|  | [Articulate-Anything](#paper-2410-13882) | **VLM** | CoTracker | PartNet-Mobility | **Actor** | **Actor** | — | PyBullet · SAPIEN | — | — |
-|  | [Gym-Anything](#paper-2610-40565) | **创建 Agent** | — | **创建 Agent** | — | **创建 Agent** | **创建 Agent** | MuJoCo · Warp 等 | **创建 Agent** | **任务创建 Agent** |
-| Open-loop Workflow | [GenSim](#paper-2310-01361) | **GPT-4** | — | *给定* | — | **GPT-4** | — | PyBullet | Ravens 脚本 | **GPT-4** |
-|  | [Holodeck](#paper-2312-09067) | **GPT-4** | — | Objaverse · ProcTHOR | — | 约束求解器 | — | AI2-THOR | — | — |
-|  | [SimFoundry](#paper-2606-28276) | **VLM** | SAM3 · PriorDepthAnything | Hunyuan3D · TRELLIS.2 | **Actor–Critic** | FoundationPose | **VLM** | PyBullet | — | **VLM** |
-| Model-based (without Agent) | [PhysX-Omni](#paper-2605-21572)（仿真就绪） | 微调 Qwen2.5-VL | — | Qwen2.5-VL · TRELLIS | 微调 Qwen2.5-VL | — | 微调 Qwen2.5-VL | 仿真就绪 | — | — |
-|  | [Real2Code](#paper-2406-08474) | — | 微调 SAM · DUSt3R | 形状补全模型 | 微调 CodeLlama | DUSt3R 点云 | — | MuJoCo | — | — |
-
-</details>
-
-组织方式按下面的顺序判断：
-
-1. 没有通用 LLM 或 VLM 参与构建，只靠训练好的模型、可微仿真或优化器直接出结果：**Model-based (without Agent)**。
-2. 同一个主 Agent 负责所有构建步骤，用什么工具、要不要派子 Agent 都由它运行时决定：**Agentic End-to-End**。
-3. 分工事先设计好：发现问题会送回负责的那一步重做，是 **Closed-loop Workflow**；按固定顺序只跑一遍，出错就丢弃或只在单个模块内重试，是 **Open-loop Workflow**。
-
-Bench 两行只作参照：RoboDojo 由人工搭建，Video2World 要求被测 Agent 自己搭。表中工作只列代表。
 
 <!-- mmac-record: {"id": "2611.10602", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 

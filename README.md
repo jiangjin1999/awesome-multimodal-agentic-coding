@@ -2536,55 +2536,12 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 |  | Robot manipulation video + trajectories | With the robot's actions known, can the episode be replayed exactly in simulation? | Tabletop manipulation | [WorldMirror](#paper-2610-31834) · [Agentic Real2Sim](#paper-2607-19190) · [Vid2Sid](#paper-2602-19359) |
 |  | Active robot interaction | By trying things itself, can it measure parameters such as friction and restitution accurately? | Tabletop manipulation | [CUE](#paper-2611-02691) · [D-World](#paper-2610-17114) · [Phys2Real](#paper-2510-11689) |
 
-Works are representative; one work may appear in several rows.
-
-**Build process: four groups, nine steps**
-
-Building a simulator is split into four groups and nine steps: A Perception & Planning (① task planning, ② perception & measurement) · B Scene Construction (③ object assets, ④ articulation, ⑤ layout & alignment) · C Physics Modeling (⑥ physical parameters, ⑦ physics engine) · D Task & Control (⑧ robot control, ⑨ task definition). B plus C is the simulator itself; adding D gives an environment you can train and evaluate in. A work without a ⑦ physics engine has only built a scene. Verification & revision and variant expansion are not parts of a simulator, so they are left out of the nine steps.
-
-Read across a row to see who does each step of that work: the top line of a cell is who does it, the bottom line what they do. Column ⑦, the physics engine, decides whether the result is a simulator or only a scene.
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stage-chart/stage-chart-en-dark.svg">
   <img src="assets/stage-chart/stage-chart-en-light.svg" alt="Chart of who does each of the nine steps of building a simulator in fifteen representative works and two benchmarks. Columns are grouped as A Perception &amp; Planning (task planning, perception &amp; measurement), B Scene Construction (object assets, articulation, layout &amp; alignment), C Physics Modeling (physical parameters, physics engine) and D Task &amp; Control (robot control, task definition). Rows are grouped by organization: Agentic End-to-End (Plumb, CUE, Real2Gym, DyCraft), Closed-loop Workflow (Agentic Real2Sim, WorldMirror, Text2Sim, SceneSmith, Articulate-Anything, Gym-Anything), Open-loop Workflow (GenSim, Holodeck, SimFoundry) and Model-based (PhysX-Omni, Real2Code). Agents mostly plan, lay out and write control and tasks; perception goes to specialised models; every physics engine is an existing one. DyCraft has no physics engine and only builds a scene; PhysX-Omni stops at sim-ready assets." width="100%">
 </picture>
 
 All 68 works, step by step, including verification & revision and variant expansion: [Simulator construction: every work, step by step](stage3/simulator-construction.md).
-
-<details>
-<summary>Text version with links</summary>
-
-**Bold**: the Agent or VLM does it itself; plain: a specialised tool, model or engine; *italic*: given in advance or by hand; —: not involved or not stated.
-
-| Organization | Work | ① Task planning | ② Perception & measurement | ③ Object assets | ④ Articulation | ⑤ Layout & alignment | ⑥ Physical parameters | ⑦ Physics engine | ⑧ Robot control | ⑨ Task definition |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Bench | [RoboDojo](#paper-2607-04434) | *Human* | — | Meshy · asset library | *Existing assets* | *Hand-written YAML* | *Human* | Isaac Sim · Isaac Lab | *Policy under test* | *Hand-written YAML* |
-|  | [Video2World](#paper-2610-04432) | **Agent** | **Agent** | **Agent** | — | **Agent** | **Agent** | Isaac Sim | **Agent** | *Given by the task* |
-| Agentic End-to-End | [Plumb](#paper-system-plumb) | **Agent** | SAM3 · Pi3X | **Agent** | — | **Agent** | **Agent** | MuJoCo | **Agent** | — |
-|  | [CUE](#paper-2611-02691) | **Agent** | **Agent** | **Agent** | — | **Agent** | CMA-ES | MuJoCo | **Agent** | — |
-|  | [Real2Gym](#paper-2609-37089) | **Agent** | MoGe-3 · Pi3X · SAM2 | **Agent** | — | **Agent** | **Agent** | MuJoCo | **Agent** | **Agent** |
-|  | [DyCraft](#paper-2610-40754) (scene only) | **Agent** | — | **Agent** | **Agent** | **Agent** | — | ✗ No physics engine | CMU mocap · IK · Blender | — |
-| Closed-loop Workflow | [Agentic Real2Sim](#paper-2607-19190) | **Vision Agent** | SAM 3 · FoundationPose | SAM 3D | — | **Scene Agent** | **Physics Agent** | MuJoCo | *Given* | — |
-|  | [WorldMirror](#paper-2610-31834) | *Fixed dependency graph* | 3D Gaussians | Meshy · Articraft | — | **Calibration and layout Agents** | — | Isaac Sim | *Given* | — |
-|  | [Text2Sim](#paper-2609-36593) | **Planner** | — | Meshy | — | **Scene Writer** | **Body Writer** | Genesis | **Action Writer** | — |
-|  | [SceneSmith](#paper-2602-09153) | **Planner** | — | SAM3 · SAM3D | ArtVIP | **Designer** | **VLM** | Drake | — | — |
-|  | [Articulate-Anything](#paper-2410-13882) | **VLM** | CoTracker | PartNet-Mobility | **Actor** | **Actor** | — | PyBullet · SAPIEN | — | — |
-|  | [Gym-Anything](#paper-2610-40565) | **Creation Agent** | — | **Creation Agent** | — | **Creation Agent** | **Creation Agent** | MuJoCo · Warp, etc. | **Creation Agent** | **Task-creation Agent** |
-| Open-loop Workflow | [GenSim](#paper-2310-01361) | **GPT-4** | — | *Given* | — | **GPT-4** | — | PyBullet | Ravens scripts | **GPT-4** |
-|  | [Holodeck](#paper-2312-09067) | **GPT-4** | — | Objaverse · ProcTHOR | — | Constraint solver | — | AI2-THOR | — | — |
-|  | [SimFoundry](#paper-2606-28276) | **VLM** | SAM3 · PriorDepthAnything | Hunyuan3D · TRELLIS.2 | **Actor–Critic** | FoundationPose | **VLM** | PyBullet | — | **VLM** |
-| Model-based (without Agent) | [PhysX-Omni](#paper-2605-21572) (sim-ready) | Fine-tuned Qwen2.5-VL | — | Qwen2.5-VL · TRELLIS | Fine-tuned Qwen2.5-VL | — | Fine-tuned Qwen2.5-VL | Sim-ready | — | — |
-|  | [Real2Code](#paper-2406-08474) | — | Fine-tuned SAM · DUSt3R | Shape-completion model | Fine-tuned CodeLlama | DUSt3R point cloud | — | MuJoCo | — | — |
-
-</details>
-
-Decide the organization in this order:
-
-1. No general-purpose LLM or VLM takes part in building; trained models, differentiable simulation or optimizers produce the result directly: **Model-based (without Agent)**.
-2. One main Agent is responsible for every building step and decides at run time which tools or sub-agents to use: **Agentic End-to-End**.
-3. The division of labour is designed in advance: if a problem is sent back to the step responsible, it is a **Closed-loop Workflow**; if the steps run once in a fixed order and failures are discarded or retried only inside one module, it is an **Open-loop Workflow**.
-
-The two Bench rows are for reference only: RoboDojo is built by hand, while Video2World asks the Agent under test to build the simulation itself. Works are representative.
 
 <!-- mmac-record: {"id": "2611.10602", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 

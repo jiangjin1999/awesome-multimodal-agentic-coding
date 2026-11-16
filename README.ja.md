@@ -2539,55 +2539,12 @@
 |  | ロボット操作動画＋軌跡 | ロボットの動作が分かっているとき、その操作をシミュレーションでそのまま再生できるか？ | 卓上操作 | [WorldMirror](#paper-2610-31834) · [Agentic Real2Sim](#paper-2607-19190) · [Vid2Sid](#paper-2602-19359) |
 |  | ロボットの能動的インタラクション | 自分で試して、摩擦や反発係数などのパラメータを正確に測れるか？ | 卓上操作 | [CUE](#paper-2611-02691) · [D-World](#paper-2610-17114) · [Phys2Real](#paper-2510-11689) |
 
-作品は代表例のみです。同じ作品が複数の行に現れることがあります。
-
-**構築プロセス：4 グループ 9 ステップ**
-
-シミュレータの構築を 4 グループ 9 ステップに分けます：A 入力理解（① タスク計画、② 知覚・計測）· B シーン構築（③ 物体アセット、④ 関節構造、⑤ 配置・位置合わせ）· C 物理モデリング（⑥ 物理パラメータ、⑦ 物理エンジン）· D タスクと制御（⑧ ロボット制御、⑨ タスク定義）。B と C がシミュレータ本体で、D を加えると学習や評価に使える環境になります。⑦ 物理エンジンを持たない作品は、シーンを作っただけです。検査と修正、バリエーション拡張はシミュレータの構成要素ではないため、9 ステップには入れていません。
-
-1 行を横に読むと、その作品で各ステップを誰が担当するかが分かります。各セルの上段が担当、下段が内容です。⑦ 物理エンジンの列で、作ったものがシミュレータなのか、シーンだけなのかが決まります。
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stage-chart/stage-chart-ja-dark.svg">
   <img src="assets/stage-chart/stage-chart-ja-light.svg" alt="シミュレータ構築の 9 ステップを誰が担うかを、代表的な 15 件とベンチマーク 2 件で示した図。列は A 入力理解（タスク計画、知覚・計測）、B シーン構築（物体アセット、関節構造、配置・位置合わせ）、C 物理モデリング（物理パラメータ、物理エンジン）、D タスクと制御（ロボット制御、タスク定義）の 4 グループ。行は構成方式で分かれる：Agentic End-to-End（Plumb、CUE、Real2Gym、DyCraft）、Closed-loop Workflow（Agentic Real2Sim、WorldMirror、Text2Sim、SceneSmith、Articulate-Anything、Gym-Anything）、Open-loop Workflow（GenSim、Holodeck、SimFoundry）、Model-based（PhysX-Omni、Real2Code）。Agent は主に計画、配置、制御とタスクを担い、知覚は専用モデルに任され、物理エンジンはすべて既存のもの。DyCraft は物理エンジンを持たずシーンのみ、PhysX-Omni はシム対応のアセットまで。" width="100%">
 </picture>
 
 全 68 件をステップごとに対応させた完全版（検査と修正、バリエーション拡張を含む）は [Simulator construction: every work, step by step](stage3/simulator-construction.md)（英語・中国語）にあります。
-
-<details>
-<summary>テキスト版（リンク付き）</summary>
-
-**太字**：Agent または VLM 自身が行う；標準：専用のツール・モデル・エンジン；*斜体*：事前に所与、または人手；—：関与しない、または記載なし。
-
-| 構成方式 | 作品 | ① タスク計画 | ② 知覚・計測 | ③ 物体アセット | ④ 関節構造 | ⑤ 配置・位置合わせ | ⑥ 物理パラメータ | ⑦ 物理エンジン | ⑧ ロボット制御 | ⑨ タスク定義 |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Bench | [RoboDojo](#paper-2607-04434) | *人手* | — | Meshy · アセットライブラリ | *既存アセット* | *手書き YAML* | *人手* | Isaac Sim · Isaac Lab | *評価対象の方策* | *手書き YAML* |
-|  | [Video2World](#paper-2610-04432) | **Agent** | **Agent** | **Agent** | — | **Agent** | **Agent** | Isaac Sim | **Agent** | *課題で指定* |
-| Agentic End-to-End | [Plumb](#paper-system-plumb) | **Agent** | SAM3 · Pi3X | **Agent** | — | **Agent** | **Agent** | MuJoCo | **Agent** | — |
-|  | [CUE](#paper-2611-02691) | **Agent** | **Agent** | **Agent** | — | **Agent** | CMA-ES | MuJoCo | **Agent** | — |
-|  | [Real2Gym](#paper-2609-37089) | **Agent** | MoGe-3 · Pi3X · SAM2 | **Agent** | — | **Agent** | **Agent** | MuJoCo | **Agent** | **Agent** |
-|  | [DyCraft](#paper-2610-40754)（シーンのみ） | **Agent** | — | **Agent** | **Agent** | **Agent** | — | ✗ 物理エンジンなし | CMU モーキャプ · IK · Blender | — |
-| Closed-loop Workflow | [Agentic Real2Sim](#paper-2607-19190) | **視覚 Agent** | SAM 3 · FoundationPose | SAM 3D | — | **シーン Agent** | **物理 Agent** | MuJoCo | *所与* | — |
-|  | [WorldMirror](#paper-2610-31834) | *固定の依存グラフ* | 3D ガウシアン | Meshy · Articraft | — | **較正・配置 Agent** | — | Isaac Sim | *所与* | — |
-|  | [Text2Sim](#paper-2609-36593) | **Planner** | — | Meshy | — | **Scene Writer** | **Body Writer** | Genesis | **Action Writer** | — |
-|  | [SceneSmith](#paper-2602-09153) | **Planner** | — | SAM3 · SAM3D | ArtVIP | **Designer** | **VLM** | Drake | — | — |
-|  | [Articulate-Anything](#paper-2410-13882) | **VLM** | CoTracker | PartNet-Mobility | **Actor** | **Actor** | — | PyBullet · SAPIEN | — | — |
-|  | [Gym-Anything](#paper-2610-40565) | **作成 Agent** | — | **作成 Agent** | — | **作成 Agent** | **作成 Agent** | MuJoCo · Warp など | **作成 Agent** | **タスク作成 Agent** |
-| Open-loop Workflow | [GenSim](#paper-2310-01361) | **GPT-4** | — | *所与* | — | **GPT-4** | — | PyBullet | Ravens スクリプト | **GPT-4** |
-|  | [Holodeck](#paper-2312-09067) | **GPT-4** | — | Objaverse · ProcTHOR | — | 制約ソルバー | — | AI2-THOR | — | — |
-|  | [SimFoundry](#paper-2606-28276) | **VLM** | SAM3 · PriorDepthAnything | Hunyuan3D · TRELLIS.2 | **Actor–Critic** | FoundationPose | **VLM** | PyBullet | — | **VLM** |
-| Model-based (without Agent) | [PhysX-Omni](#paper-2605-21572)（シム対応） | 微調整済み Qwen2.5-VL | — | Qwen2.5-VL · TRELLIS | 微調整済み Qwen2.5-VL | — | 微調整済み Qwen2.5-VL | シム対応 | — | — |
-|  | [Real2Code](#paper-2406-08474) | — | 微調整済み SAM · DUSt3R | 形状補完モデル | 微調整済み CodeLlama | DUSt3R 点群 | — | MuJoCo | — | — |
-
-</details>
-
-構成方式は次の順に判断します：
-
-1. 汎用の LLM や VLM が構築に関与せず、学習済みモデル、微分可能シミュレーション、最適化器が直接結果を出す：**Model-based (without Agent)**。
-2. 1 つのメイン Agent がすべての構築ステップを担い、使うツールやサブ Agent を実行時に決める：**Agentic End-to-End**。
-3. 分担が事前に設計されている：問題を担当ステップへ差し戻すなら **Closed-loop Workflow**、固定の順序で 1 回だけ流し、失敗は破棄するか 1 つのモジュール内でだけ再試行するなら **Open-loop Workflow**。
-
-Bench の 2 行は参照用です：RoboDojo は人手で構築され、Video2World は評価対象の Agent 自身に構築させます。作品は代表例のみです。
 
 <!-- mmac-record: {"id": "2611.10602", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 

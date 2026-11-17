@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<title>Reading one DROID episode</title>
+<meta content="Explore two real DROID robot episodes: their files, camera frames, trajectories, and what each recorded number means." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&amp;family=Noto+Sans+SC:wght@400;500;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<link href="index.html" hreflang="zh-CN" rel="alternate"/><link href="index.en.html" hreflang="en" rel="alternate"/><link href="index.ja.html" hreflang="ja" rel="alternate"/></head>
+<body>
+<div class="wrap">
+<header class="stack">
+<nav class="back"><a href="https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/blob/main/README.md#s3-4">← Back to Awesome Multimodal Agentic Coding · 3.4 Data</a></nav><nav aria-label="Choose language" class="languages"><a aria-current="page" href="index.en.html" hreflang="en" lang="en">English</a><a href="index.html" hreflang="zh-CN" lang="zh-CN">简体中文</a><a href="index.ja.html" hreflang="ja" lang="ja">日本語</a></nav>
+<div class="eyebrow">DROID data explained · Two real recordings</div>
+<h1>Reading one DROID episode</h1>
+<p class="lead">DROID is a public robot dataset. People at several labs use VR controllers to teleoperate the same type of robot arm, a Franka, through everyday tabletop tasks. Each attempt becomes one recording, or episode. Here we unpack two real episodes to see what they contain and what the trajectory numbers mean.</p>
+<div aria-label="Choose a case" class="switch" role="group">
+<button aria-pressed="true" data-case="A" id="btn-A"><b>Case A</b><span>Green block into black bowl · 6.8 s</span></button>
+<button aria-pressed="false" data-case="B" id="btn-B"><b>Case B</b><span>Yellow block into blue cup · 6.9 s</span></button>
+</div>
+</header>
+<section class="stack">
+<h2>One episode, one folder</h2>
+<p class="prose">The folder name identifies the episode: <code>lab_robot-ID_date_time</code>. It holds three kinds of information: the <b>trajectory</b> (numbers), <b>video</b> (images), and <b>metadata</b> (information about the recording).</p>
+<div class="tree"><table id="tree"></table></div>
+<div class="cols">
+<div class="stack">
+<h3>What the metadata tells us</h3>
+<dl class="kv" id="meta"></dl>
+</div>
+<div class="stack">
+<h3>How the three fit together</h3>
+<p class="muted" style="font-size:14px">Video shows what happened visually; the trajectory records exactly how the arm moved. Timestamps align each step with a video frame. Metadata tells us which lab recorded it, what the task was, and whether it succeeded. The trajectory and video are the main ingredients used to teach a robot.</p>
+<p class="muted" style="font-size:14px">The full dataset also includes a <b>wrist-camera</b> recording, from a camera mounted above the gripper. This page does not use it.</p>
+</div>
+</div>
+</section>
+<section class="stack">
+<h2>The trajectory: one row per step</h2>
+<div class="prose stack">
+<p>The robot records roughly 14 times a second; each record is a <b>step</b>. <span id="intro-len"></span> Each step captures the state of the arm’s “hand,” or gripper. The seven main values are:</p>
+</div>
+<div>
+<div class="row7" id="row7"></div>
+<div class="groups7"><div>Position (m)</div><div>Orientation (rad)</div><div>Gripper</div></div>
+</div>
+<div class="cols">
+<div class="stack prose">
+<p><b>Position: x, y, z.</b> Measured in meters from the robot base. x is forward, y is left (negative means right), and z is height above the base. In the top view, the base is at the bottom, x points up, and y points left.</p>
+<p><b>Orientation: roll, pitch, yaw.</b> These describe rotation in radians (3.14 is about 180°). Think of your own hand: roll is like turning a doorknob, pitch tilts the hand up or down, and yaw turns it left or right. The DROID gripper mostly points downward, so roll stays near ±3.14.</p>
+<p><b>Gripper:</b> 0 means fully open; 1 means fully closed.</p>
+<p class="muted">The row above contains real values from <span id="row7-when"></span>. A trajectory is a sequence of these rows.</p>
+</div>
+<div class="chart" id="topview-static"></div>
+</div>
+</section>
+<section class="stack" id="viewer">
+<div class="stack prose">
+<h2>Explore each step</h2>
+<p>The camera view shows the scene, with a dot marking the hand’s position at this step. Camera parameters project x, y, z onto the image. Beside it, the same row of numbers is explained in plain language. Drag the slider, select a phase, or click a chart to jump to a step.</p>
+</div>
+<div class="panel">
+<div class="panel-top">
+<div>
+<div class="frame"><canvas aria-label="External camera view with the hand trajectory" height="576" id="cv" width="1024"></canvas><span class="cap" id="cap"></span></div>
+<div class="legend">
+<span><i style="background:var(--ov-open)"></i>Past path (gripper open)</span>
+<span><i style="background:var(--ov-closed)"></i>Past path (gripper closed)</span>
+<span><i style="background:repeating-linear-gradient(90deg,var(--muted) 0 4px,transparent 4px 7px)"></i>Remaining path</span>
+</div>
+<div class="ctl">
+<button id="play" type="button">Play</button>
+<input aria-label="Choose a step" id="slider" max="96" min="0" type="range" value="0"/>
+<span class="num" id="slabel"></span>
+</div>
+<div class="phases" id="phases"></div>
+</div>
+<div class="now">
+<div class="now-head"><div class="big" id="now-step"></div><div class="num muted" id="now-time"></div></div>
+<div class="phase-box" id="now-phase"></div>
+<div class="decode" id="decode"></div>
+<div class="bars" id="bars"></div>
+</div>
+</div>
+<div class="charts">
+<div class="chart"><h3>Top view: the hand’s path</h3><p>Looking straight down. The base is at the bottom; forward (x) is up, and left (y) is left.</p><div id="c-top"></div></div>
+<div class="chart"><h3>Height z over time</h3><p>Solid: measured. Dashed: commanded. The hand lowers to grasp, then lifts and carries the block.</p><div id="c-z"></div></div>
+<div class="chart"><h3>Forward x and left y over time</h3><p>Centimeters. Solid: measured. Dashed: commanded.</p><div id="c-xy"></div></div>
+<div class="chart"><h3>Gripper over time</h3><p>0 = open, 1 = closed. Dashed: commanded. Solid: measured.</p><div id="c-g"></div></div>
+</div>
+</div>
+</section>
+<section class="stack">
+<h2>A few rows up close</h2>
+<p class="prose">The whole trajectory is a table: <span id="tbl-len"></span>. Here are rows from key moments, paired with their camera frames. Click a row to move the viewer and charts to that step.</p>
+<div class="tbl"><table>
+<thead>
+<tr><th class="l" rowspan="2">Frame</th><th rowspan="2">Step</th><th rowspan="2">Seconds</th>
+<th class="grp" colspan="3">Position (m)</th><th class="grp" colspan="3">Orientation (rad)</th><th class="grp" colspan="2">Gripper</th><th class="l" rowspan="2">What is happening</th></tr>
+<tr><th>x forward</th><th>y left</th><th>z height</th><th>roll</th><th>pitch</th><th>yaw</th><th>Command</th><th>Measured</th></tr>
+</thead>
+<tbody id="keys"></tbody>
+</table></div>
+</section>
+<section class="stack">
+<h2>Two records per step: commanded and measured</h2>
+<div class="cols">
+<div class="stack prose">
+<p><b>Commanded</b> (<code>action/…</code> in the file): where the operator asks the hand to go through the controller at this step.</p>
+<p><b>Measured</b> (<code>observation/robot_state/…</code>): where the robot actually is at this step.</p>
+<p>They look similar but are not identical. Compare the dashed command curves with the measured curves above.</p>
+</div>
+<div class="stack prose">
+<p><b>Position: the command leads a little.</b> Think of a person walking a dog: the person at the other end of the leash gets there first. <span id="lead-text"></span></p>
+<p><b>The gripper shows a larger difference.</b> <span id="grip-text"></span></p>
+</div>
+</div>
+</section>
+<section class="stack">
+<h2>All 67 fields in trajectory.h5</h2>
+<p class="prose">HDF5 packs many arrays into one file, arranged in a folder-like hierarchy. Each field has one row per step, so its first dimension is the step count (97 in case A). The groups below organize them by use; the group in blue is the most commonly used.</p>
+<div class="fg">
+<div class="star"><span class="p">observation/robot_state/…</span><span class="n">10 fields</span><span>The robot’s <b>measured</b> state. The three main fields are end-effector pose, <code>cartesian_position</code> (6 values per step: x, y, z, roll, pitch, yaw); gripper opening, <code>gripper_position</code> (1 value per step); and the seven joint angles, <code>joint_positions</code>. The rest record joint velocities and torques.</span></div>
+<div><span class="p">action/…</span><span class="n">8 fields</span><span>The <b>command</b> issued at this step, stored in several forms: end-effector pose and velocity, joint angles and velocities, gripper opening, and target values prefixed with <code>target_</code>.</span></div>
+<div><span class="p">action/robot_state/…</span><span class="n">10 fields</span><span>Robot state read after executing this step’s command. It is almost the same as the next step’s measured state (less than 2 mm apart in these recordings) and is usually not needed here.</span></div>
+<div><span class="p">observation/camera_extrinsics/…</span><span class="n">10 fields</span><span>Each camera’s position and orientation in the base coordinate frame (again, 6 values). External cameras stay fixed, so their values do not change between steps; the wrist camera moves with the hand. <code>left</code>/<code>right</code> identify the two views of each stereo camera.</span></div>
+<div><span class="p">observation/timestamp/…</span><span class="n">22 fields</span><span>Times of the events within each step, in milliseconds or nanoseconds, used to align video frames with trajectory rows. <code>skip_action</code> marks steps whose actions should be excluded.</span></div>
+<div><span class="p">observation/controller_info/…</span><span class="n">4 fields</span><span>Controller state: whether it is on, whether motion is enabled, and whether the operator pressed success or failure.</span></div>
+<div><span class="p">observation/camera_type/…</span><span class="n">3 fields</span><span>Camera type: 0 is the wrist camera; 1 is an external camera.</span></div>
+</div>
+<details><summary>Expand all 67 fields (names, per-step shapes, and types)</summary><div class="flist"><table id="flist"></table></div></details>
+</section>
+<section class="stack">
+<h2>Compare the two episodes</h2>
+<p class="prose">Both recordings come from the same lab, robot, and camera setup, with exactly the same structure. The differences are in how the operator performs the task:</p>
+<div class="compare"><table>
+<thead><tr><th></th><th>Case A · Green block into black bowl</th><th>Case B · Yellow block into blue cup</th></tr></thead>
+<tbody>
+<tr><th>Task description</th><td>Category only: “Move object into or out of container”</td><td>Specific instruction: “drop yellow block into blue cup”</td></tr>
+<tr><th>Length</th><td class="num">97 steps · 6.8 s</td><td class="num">99 steps · 6.9 s</td></tr>
+<tr><th>Total hand travel</th><td class="num">69 cm</td><td class="num">97 cm</td></tr>
+<tr><th>Skipped steps</th><td>First 15 steps</td><td>First 13 and last 4 steps</td></tr>
+<tr><th>Measured gripper value after grasping</th><td class="num">0.53</td><td class="num">0.61 (the different object width changes where the fingers stop)</td></tr>
+<tr><th>How the block is released</th><td>Opens while still moving forward, tossing the block into the bowl</td><td>Stops the hand, then opens the gripper</td></tr>
+</tbody>
+</table></div>
+<p class="prose muted">The last row shows that even “put it in” can be done differently by different people or on different attempts. You need the trajectory to see these details.</p>
+</section>
+<section class="stack">
+<h2>Things to watch when using this data</h2>
+<ol class="notes prose">
+<li><span><b>Coordinates are relative to the robot base.</b> x is forward, y left, z up; positions are in meters and angles in radians. Transform them before using a robot placed differently.</span></li>
+<li><span><b>Roll jumps between ±3.14.</b> With the gripper pointing down, roll is near 180°. Although 179° and −179° are only 2° apart, their radian values differ by about 6.28. Case A crosses this boundary four times: for example, +3.14 at step 19 becomes −3.12 at step 20. Directly averaging or interpolating these numbers gives the wrong result; first convert to another representation, such as quaternions.</span></li>
+<li><span><b>Exclude steps marked skip_action.</b> The operator has not enabled motion, or has already released it. The hand stays still and the recorded commands should not be used.</span></li>
+<li><span><b>Your tools may use the opposite gripper convention.</b> DROID uses 0 = open and 1 = closed; <a href="https://github.com/Open-RUA/uni-robot-agent">uni-robot-agent</a> uses 0 = closed and 1 = open. Invert the values before feeding DROID data to that harness.</span></li>
+<li><span><b>The timing is not perfectly uniform.</b> The nominal rate is 15 steps per second, but these recordings have 66–76 ms between steps, averaging about 14 steps per second. Video also has one frame per step: align by timestamps instead of assuming perfectly regular intervals.</span></li>
+<li><span><b>Keep commanded and measured values distinct.</b> Use measured values to find where the hand actually went; use commands to imitate where the operator wanted it to go. Positions differ by roughly 3 cm on average, and the gripper values differ more.</span></li>
+</ol>
+</section>
+<footer class="foot">
+<p>Data: <a href="https://droid-dataset.github.io/">DROID</a> in its original format (trajectory.h5 + video + metadata). See the <a href="https://droid-dataset.github.io/droid/the-droid-dataset">DROID dataset documentation</a> for field definitions. Case A: <code>AUTOLab_0d4edc83_2023_10_27_20h_20m_26s</code>; case B: <code>AUTOLab_84bd5053_2023_08_18_12h_06m_13s</code>.</p>
+<p>Images come from the left view of external camera 2 (serial 24400334). The overlay projects each step’s x, y, z into the image using the recorded camera pose and intrinsics. Phases were labeled manually by inspecting the images and curves.</p>
+<p>This page accompanies <a href="https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/blob/main/README.md#s3-4">3.4 Data</a> in <a href="https://github.com/jiangjin1999/awesome-multimodal-agentic-coding">Awesome Multimodal Agentic Coding</a>.</p>
+<p id="status"></p>
+</footer>
+</div>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

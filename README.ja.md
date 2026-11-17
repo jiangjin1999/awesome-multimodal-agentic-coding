@@ -64,7 +64,7 @@
   - [3.2 シミュレータ構築](#s3-2) (68)
   - [3.3 シミュレータ品質評価](#s3-3) (29)
   - [3.4 データ](#s3-4) (15)
-    - 📖 [解説：DROID のデータを 1 本読む](https://jiangjin1999.github.io/awesome-multimodal-agentic-coding/stage3/droid-data/)
+    - 📖 [解説：DROID のデータを 1 本読む](https://jiangjin1999.github.io/awesome-multimodal-agentic-coding/stage3/droid-data/index.ja.html)
   - [3.5 学習と能力向上](#s3-5) (75)
   - [3.6 物理応用と実験](#s3-6) (49)
     - [科学実験（AI4Science）](#s3-6-experiments) (27)
@@ -3159,7 +3159,7 @@
 
 ### 3.4 データ
 
-📖 **解説：**[DROID のデータを 1 本読む](https://jiangjin1999.github.io/awesome-multimodal-agentic-coding/stage3/droid-data/)（中国語のインタラクティブなページ）実際の録画 2 本を分解し、1 本のデータに何が入っているか、軌跡の数値がそれぞれ何を意味するかを示します。
+📖 **解説：**[DROID のデータを 1 本読む](https://jiangjin1999.github.io/awesome-multimodal-agentic-coding/stage3/droid-data/index.ja.html)：実際の記録 2 本を使って、データの構成と軌跡の数値の意味を読み解きます。[English](https://jiangjin1999.github.io/awesome-multimodal-agentic-coding/stage3/droid-data/index.en.html) · [简体中文](https://jiangjin1999.github.io/awesome-multimodal-agentic-coding/stage3/droid-data/)
 
 <table>
 <thead>

@@ -3156,7 +3156,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 ### 3.4 数据
 
-📖 **导读：**[读懂一条 DROID 数据](https://jiangjin1999.github.io/awesome-multimodal-agentic-coding/stage3/droid-data/)——一个可交互的网页，拿两条真实录制拆开看：一条数据里有什么，轨迹里的数字各是什么意思。
+📖 **导读：**[读懂一条 DROID 数据](https://jiangjin1999.github.io/awesome-multimodal-agentic-coding/stage3/droid-data/)——一个可交互的网页，拿两条真实录制拆开看：一条数据里有什么，轨迹里的数字各是什么意思。[English](https://jiangjin1999.github.io/awesome-multimodal-agentic-coding/stage3/droid-data/index.en.html) · [日本語](https://jiangjin1999.github.io/awesome-multimodal-agentic-coding/stage3/droid-data/index.ja.html)
 
 <table>
 <thead>

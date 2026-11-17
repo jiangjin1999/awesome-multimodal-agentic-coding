@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<title>DROID のデータを 1 本読む</title>
+<meta content="実際の DROID データ 2 本を使い、ファイル構成、カメラ映像、軌跡と数値の意味を読み解きます。" name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&amp;family=Noto+Sans+JP:wght@400;500;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<link href="index.html" hreflang="zh-CN" rel="alternate"/><link href="index.en.html" hreflang="en" rel="alternate"/><link href="index.ja.html" hreflang="ja" rel="alternate"/></head>
+<body>
+<div class="wrap">
+<header class="stack">
+<nav class="back"><a href="https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/blob/main/README.ja.md#s3-4">← Awesome Multimodal Agentic Coding · 3.4 データに戻る</a></nav><nav aria-label="言語を選択" class="languages"><a href="index.en.html" hreflang="en" lang="en">English</a><a href="index.html" hreflang="zh-CN" lang="zh-CN">简体中文</a><a aria-current="page" href="index.ja.html" hreflang="ja" lang="ja">日本語</a></nav>
+<div class="eyebrow">DROID のデータ解説 · 実際の記録 2 本</div>
+<h1><span class="no-wrap">DROID のデータを</span> <span class="no-wrap">1 本読む</span></h1>
+<p class="lead">DROID は公開されているロボットのデータセットです。複数の研究室で、同じ種類のロボットアーム（Franka）を VR コントローラーで遠隔操作し、卓上のさまざまな作業を記録しています。作業を 1 回行うたびに、1 本のデータ（エピソード）ができます。このページでは実際の記録 2 本を使って、データの中身と「軌跡」の数値の意味を読み解きます。</p>
+<div aria-label="例を選択" class="switch" role="group">
+<button aria-pressed="true" data-case="A" id="btn-A"><b>例 A</b><span>緑のブロックを黒いボウルへ · 6.8 秒</span></button>
+<button aria-pressed="false" data-case="B" id="btn-B"><b>例 B</b><span>黄色いブロックを青いカップへ · 6.9 秒</span></button>
+</div>
+</header>
+<section class="stack">
+<h2>1 本のデータは 1 つのフォルダー</h2>
+<p class="prose">フォルダー名がデータの ID になっています：<code>研究室_機体ID_日付_時刻</code>。中に入っているのは、<b>軌跡</b>（数値）、<b>動画</b>（映像）、<b>メタデータ</b>（記録についての情報）の 3 種類です。</p>
+<div class="tree"><table id="tree"></table></div>
+<div class="cols">
+<div class="stack">
+<h3>メタデータに書かれていること</h3>
+<dl class="kv" id="meta"></dl>
+</div>
+<div class="stack">
+<h3>3 種類の情報のつながり</h3>
+<p class="muted" style="font-size:14px">動画は「何が起きたか」を映像で示し、軌跡は「アームが具体的にどう動いたか」を数値で示します。各ステップと動画フレームはタイムスタンプで対応づけられています。メタデータには、記録した研究室、作業内容、成否が入っています。ロボットの学習で主に使うのは、軌跡と動画の組み合わせです。</p>
+<p class="muted" style="font-size:14px">完全なデータには、グリッパーの上に取り付けた<b>手首カメラ</b>の映像もあります。このページでは使っていません。</p>
+</div>
+</div>
+</section>
+<section class="stack">
+<h2>軌跡は 1 ステップにつき 1 行</h2>
+<div class="prose stack">
+<p>ロボットは約 14 回／秒の頻度で状態を記録します。1 回分を<b>ステップ</b>と呼びます。<span id="intro-len"></span> 各ステップでは、アームの「手」にあたるグリッパーの状態を記録します。中心になるのは次の 7 つの数値です。</p>
+</div>
+<div>
+<div class="row7" id="row7"></div>
+<div class="groups7"><div>位置（m）</div><div>姿勢（rad）</div><div>開閉</div></div>
+</div>
+<div class="cols">
+<div class="stack prose">
+<p><b>位置 x・y・z</b>：ロボットの台座を原点として測った位置で、単位はメートルです。x は前方、y は左方（負なら右方）、z は台座からの高さです。俯瞰図では台座が下にあり、x は上、y は左を向きます。</p>
+<p><b>姿勢 roll・pitch・yaw</b>：手の向きを表す角度で、単位はラジアンです（3.14 は約 180°）。自分の手で考えると、roll はドアノブを回すようなひねり、pitch は上下への傾き、yaw は左右への向きの変化です。DROID のグリッパーはほぼ下向きなので、roll は ±3.14 付近になります。</p>
+<p><b>グリッパーの開閉</b>：0 が全開、1 が全閉です。</p>
+<p class="muted">上の行は、<span id="row7-when"></span>の実際の数値です。このような行を時系列に並べたものが軌跡です。</p>
+</div>
+<div class="chart" id="topview-static"></div>
+</div>
+</section>
+<section class="stack" id="viewer">
+<div class="stack prose">
+<h2>スライダーで各ステップを見る</h2>
+<p>カメラ映像の点は、そのステップでの手の位置です。カメラのパラメーターを使い、x・y・z を画像上の位置に変換しています。隣には同じステップの数値を、言葉で説明してあります。スライダーを動かすか、動作段階のボタンやグラフをクリックすると、対応するステップへ移動できます。</p>
+</div>
+<div class="panel">
+<div class="panel-top">
+<div>
+<div class="frame"><canvas aria-label="外部カメラの映像と手の軌跡" height="576" id="cv" width="1024"></canvas><span class="cap" id="cap"></span></div>
+<div class="legend">
+<span><i style="background:var(--ov-open)"></i>通過済みの軌跡（開）</span>
+<span><i style="background:var(--ov-closed)"></i>通過済みの軌跡（閉）</span>
+<span><i style="background:repeating-linear-gradient(90deg,var(--muted) 0 4px,transparent 4px 7px)"></i>これから通る軌跡</span>
+</div>
+<div class="ctl">
+<button id="play" type="button">再生</button>
+<input aria-label="ステップを選択" id="slider" max="96" min="0" type="range" value="0"/>
+<span class="num" id="slabel"></span>
+</div>
+<div class="phases" id="phases"></div>
+</div>
+<div class="now">
+<div class="now-head"><div class="big" id="now-step"></div><div class="num muted" id="now-time"></div></div>
+<div class="phase-box" id="now-phase"></div>
+<div class="decode" id="decode"></div>
+<div class="bars" id="bars"></div>
+</div>
+</div>
+<div class="charts">
+<div class="chart"><h3>俯瞰図：手が通った軌跡</h3><p>真上から見た図です。台座が下にあり、前方（x）は上、左方（y）は左を向きます。</p><div id="c-top"></div></div>
+<div class="chart"><h3>高さ z の時間変化</h3><p>実線は実測値、破線は指令値です。手を下ろしてつかみ、持ち上げて運ぶ様子がわかります。</p><div id="c-z"></div></div>
+<div class="chart"><h3>前後 x・左右 y の時間変化</h3><p>単位は cm。実線は実測値、破線は指令値です。</p><div id="c-xy"></div></div>
+<div class="chart"><h3>グリッパー開閉の時間変化</h3><p>0 が開、1 が閉。破線は指令値、実線は実測値です。</p><div id="c-g"></div></div>
+</div>
+</div>
+</section>
+<section class="stack">
+<h2>代表的な行を詳しく見る</h2>
+<p class="prose">軌跡全体は 1 つの表です。<span id="tbl-len"></span>。主な瞬間の行と、同じ時刻の映像を並べました。行をクリックすると、上の映像とグラフもそのステップへ移動します。</p>
+<div class="tbl"><table>
+<thead>
+<tr><th class="l" rowspan="2">映像</th><th rowspan="2">ステップ</th><th rowspan="2">秒</th>
+<th class="grp" colspan="3">位置（m）</th><th class="grp" colspan="3">姿勢（rad）</th><th class="grp" colspan="2">グリッパー</th><th class="l" rowspan="2">この瞬間の動作</th></tr>
+<tr><th>x 前方</th><th>y 左方</th><th>z 高さ</th><th>roll</th><th>pitch</th><th>yaw</th><th>指令</th><th>実測</th></tr>
+</thead>
+<tbody id="keys"></tbody>
+</table></div>
+</section>
+<section class="stack">
+<h2>各ステップにある 2 つの記録：指令値と実測値</h2>
+<div class="cols">
+<div class="stack prose">
+<p><b>指令値</b>（ファイルの <code>action/…</code>）：そのステップで、操作者がコントローラーを通じて指定した手の移動先です。</p>
+<p><b>実測値</b>（ファイルの <code>observation/robot_state/…</code>）：そのステップで、ロボットが実際にいる位置です。</p>
+<p>2 つはよく似ていますが、同じではありません。上のグラフでは、破線の指令値と実測値を見比べられます。</p>
+</div>
+<div class="stack prose">
+<p><b>位置は、指令値が少し先行します。</b>犬の散歩で、リードを持つ人が犬より先に進むような関係です。<span id="lead-text"></span></p>
+<p><b>開閉の値には、もっと大きな差があります。</b><span id="grip-text"></span></p>
+</div>
+</div>
+</section>
+<section class="stack">
+<h2>trajectory.h5 に入っている 67 項目</h2>
+<p class="prose">HDF5 は、多くの配列を 1 つのファイルに格納する形式です。内部はフォルダーのような階層構造になっています。各項目は 1 ステップにつき 1 行なので、第 1 次元はステップ数（例 A では 97）です。用途別に分けると以下のようになり、青いグループが最もよく使われます。</p>
+<div class="fg">
+<div class="star"><span class="p">observation/robot_state/…</span><span class="n">10 項目</span><span>ロボットの<b>実測</b>状態です。特によく使うのは、手先の位置・姿勢 <code>cartesian_position</code>（各ステップ 6 値：x・y・z・roll・pitch・yaw）、開閉 <code>gripper_position</code>（各ステップ 1 値）、7 関節の角度 <code>joint_positions</code> の 3 項目です。残りは関節の速度やトルクです。</span></div>
+<div><span class="p">action/…</span><span class="n">8 項目</span><span>そのステップで出した<b>指令</b>です。同じ指令を、手先の位置・姿勢、手先速度、関節角、関節速度、開閉、<code>target_</code> で始まる目標値など、複数の形で保存しています。</span></div>
+<div><span class="p">action/robot_state/…</span><span class="n">10 項目</span><span>そのステップの指令を実行した後に読み取った状態です。次のステップの実測値とほぼ同じで、この記録では位置の差は 2 mm 未満です。通常、ここでは使いません。</span></div>
+<div><span class="p">observation/camera_extrinsics/…</span><span class="n">10 項目</span><span>台座の座標系で表した各カメラの位置と姿勢です（これも 6 値）。外部カメラは固定されているため各ステップで同じですが、手首カメラは手と一緒に動きます。<code>left</code>/<code>right</code> はステレオカメラの左右の視点を表します。</span></div>
+<div><span class="p">observation/timestamp/…</span><span class="n">22 項目</span><span>各ステップ内の処理が起きた時刻です。ミリ秒やナノ秒で記録され、動画フレームと軌跡の行を対応づけるために使います。<code>skip_action</code> は動作を除外するステップを示します。</span></div>
+<div><span class="p">observation/controller_info/…</span><span class="n">4 項目</span><span>コントローラーの状態です。有効か、移動を許可しているか、操作者が成功・失敗のどちらを押したかを記録します。</span></div>
+<div><span class="p">observation/camera_type/…</span><span class="n">3 項目</span><span>カメラの種類です。0 は手首カメラ、1 は外部カメラを表します。</span></div>
+</div>
+<details><summary>全 67 項目を表示（名前・各ステップの形状・型）</summary><div class="flist"><table id="flist"></table></div></details>
+</section>
+<section class="stack">
+<h2>2 本のデータを見比べる</h2>
+<p class="prose">2 本とも、同じ研究室・アーム・カメラ配置で記録され、データ構造も同じです。違うのは「人がどう作業したか」です。</p>
+<div class="compare"><table>
+<thead><tr><th></th><th>例 A · 緑のブロックを黒いボウルへ</th><th>例 B · 黄色いブロックを青いカップへ</th></tr></thead>
+<tbody>
+<tr><th>タスクの説明</th><td>カテゴリのみ：「物体を容器に入れる／取り出す」</td><td>具体的な指示：「drop yellow block into blue cup」（黄色いブロックを青いカップに落とす）</td></tr>
+<tr><th>長さ</th><td class="num">97 ステップ · 6.8 秒</td><td class="num">99 ステップ · 6.9 秒</td></tr>
+<tr><th>手の総移動距離</th><td class="num">69 cm</td><td class="num">97 cm</td></tr>
+<tr><th>除外するステップ</th><td>最初の 15 ステップ</td><td>最初の 13 ステップと最後の 4 ステップ</td></tr>
+<tr><th>つかんだ後の開閉の実測値</th><td class="num">0.53</td><td class="num">0.61（物体の幅が違うため、指が止まる位置も違う）</td></tr>
+<tr><th>ブロックの放し方</th><td>前進しながら手を開き、ブロックをボウルに投げ入れる</td><td>手を止めてからグリッパーを開く</td></tr>
+</tbody>
+</table></div>
+<p class="prose muted">最後の行が示すように、同じ「中に入れる」という作業でも、人や試行によってやり方が異なります。こうした違いは軌跡を見るとわかります。</p>
+</section>
+<section class="stack">
+<h2>このデータを使うときの注意点</h2>
+<ol class="notes prose">
+<li><span><b>座標は台座基準です。</b>x は前、y は左、z は上で、位置はメートル、角度はラジアンです。設置位置が異なるロボットで使うときは、座標変換が必要です。</span></li>
+<li><span><b>roll は ±3.14 の間で飛ぶことがあります。</b>下向きのグリッパーでは roll が 180° 付近になります。179° と −179° は実際には 2° しか違いませんが、ラジアンの数値では約 6.28 の差になります。例 A ではこの境界を 4 回またぎ、たとえばステップ 19 の +3.14 がステップ 20 では −3.12 になります。そのまま平均や補間をせず、まず四元数などの表現に変換します。</span></li>
+<li><span><b>skip_action のステップは除外します。</b>操作者がまだ移動を許可していないか、すでに許可を解除した区間です。手は止まっており、その指令は学習に使いません。</span></li>
+<li><span><b>ツールによって開閉の向きが逆になることがあります。</b>DROID は 0 が開、1 が閉ですが、<a href="https://github.com/Open-RUA/uni-robot-agent">uni-robot-agent</a> は 0 が閉、1 が開です。このハーネスに DROID のデータを渡す前に値を反転します。</span></li>
+<li><span><b>記録間隔は完全には一定ではありません。</b>公称は毎秒 15 ステップですが、この記録では 1 ステップが 66〜76 ms、平均で約 14 ステップ／秒です。動画も 1 ステップにつき 1 フレームなので、等間隔と仮定せずタイムスタンプで対応づけます。</span></li>
+<li><span><b>指令値と実測値を混同しないようにします。</b>「手が実際にどこへ行ったか」を知るには実測値、「人がどこへ動かそうとしたか」を模倣するには指令値を使います。位置には平均で約 3 cm の差があり、開閉の値ではさらに差が大きくなります。</span></li>
+</ol>
+</section>
+<footer class="foot">
+<p>データ：<a href="https://droid-dataset.github.io/">DROID</a> の元形式（trajectory.h5・動画・メタデータ）を使っています。各フィールドの説明は <a href="https://droid-dataset.github.io/droid/the-droid-dataset">DROID データセットのドキュメント</a>を参照してください。例 A：<code>AUTOLab_0d4edc83_2023_10_27_20h_20m_26s</code>、例 B：<code>AUTOLab_84bd5053_2023_08_18_12h_06m_13s</code>。</p>
+<p>映像は外部カメラ 2（シリアル番号 24400334）の左側の視点です。画像上の点は、記録されたカメラの位置・姿勢と内部パラメーターを使い、各ステップの x・y・z を投影したものです。動作段階は映像と曲線を見て手作業で区分しています。</p>
+<p>このページは <a href="https://github.com/jiangjin1999/awesome-multimodal-agentic-coding">Awesome Multimodal Agentic Coding</a> の <a href="https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/blob/main/README.ja.md#s3-4">3.4 データ</a>の解説です。</p>
+<p id="status"></p>
+</footer>
+</div>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

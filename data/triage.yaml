@@ -50,6 +50,12 @@ runs:
     generated navigation from claude/brave-lovelace-51e46e with the latest main. No research discovery or candidate review.
   note: Section 3.4 and the contents link to the GitHub Pages walkthrough in all three READMEs. The HTML, episode data
     and camera frames are stored under stage3/droid-data/. Catalog entries and candidate decisions are unchanged.
+- date: '2026-11-17'
+  trigger: report
+  covered: Maintainer-requested English and Japanese translations of the interactive DROID walkthrough, including static
+    explanations, dynamic labels, case annotations, language navigation and localized README destinations. No research review.
+  note: The three pages share the same episode data, camera images, styles and interaction code. Existing catalog entries
+    and candidate decisions are unchanged.
 candidates:
 - id: '2610.35817'
   title: 'Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics'

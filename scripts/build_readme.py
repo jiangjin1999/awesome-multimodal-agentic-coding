@@ -61,13 +61,14 @@ def validate(site, works, strict_ja):
     for sec, meta in secs.items():
         # A walkthrough is an interactive page kept in this repository (`page`) and served by GitHub Pages (`url`).
         for g in meta.get('guides') or []:
-            page, url = g.get('page') or '', g.get('url') or ''
-            if not page or re.match(r'^[a-z]+:', page) or not (ROOT / page).is_file():
-                errors.append(f'{sec}: guide page {page!r} must be a file in this repository')
-            served = page[:-len('index.html')] if page.endswith('index.html') else page
-            if not url.startswith('https://') or not url.endswith(served):
-                errors.append(f'{sec}: guide url {url!r} must be the https address that serves {page!r}')
             for lang in LANGS:
+                page = guide_value(g, 'page', lang)
+                url = guide_value(g, 'url', lang)
+                if not page or re.match(r'^[a-z]+:', page) or not (ROOT / page).is_file():
+                    errors.append(f'{sec}: guide page {page!r} for {lang} must be a file in this repository')
+                served = page[:-len('index.html')] if page.endswith('index.html') else page
+                if not url.startswith('https://') or not url.endswith(served):
+                    errors.append(f'{sec}: guide url {url!r} for {lang} must be the https address that serves {page!r}')
                 if not (g.get('title') or {}).get(lang) or not (g.get('note') or {}).get(lang):
                     errors.append(f'{sec}: guide {page!r} missing title/note for {lang}')
         for sub in meta.get('contents_subs') or []:
@@ -114,6 +115,14 @@ def sec_anchor(sec):
 def guide_label(site, lang):
     """('Walkthrough:', ' ') or ('导读：', ''): the label before a walkthrough page title, and the gap after it."""
     return (t(site, 'walkthrough', lang) + ':', ' ') if lang == 'en' else (t(site, 'walkthrough', lang) + '：', '')
+
+
+def guide_value(guide, field, lang):
+    """A shared destination or an explicit destination for each language."""
+    value = guide.get(field)
+    if isinstance(value, dict):
+        value = value.get(lang)
+    return value if isinstance(value, str) else ''
 
 
 def sub_anchor(sec, sub):
@@ -305,7 +314,7 @@ def render(site, works, lang):
             # Walkthrough pages open directly from the contents.
             for g in meta.get('guides') or []:
                 label, gap = guide_label(site, lang)
-                o(f"    - 📖 [{label}{gap}{g['title'][lang]}]({g['url']})")
+                o(f"    - 📖 [{label}{gap}{g['title'][lang]}]({guide_value(g, 'url', lang)})")
             # Selected subgroups are also listed in the contents, indented under their section.
             for sub in meta.get('contents_subs') or []:
                 o(f"    - [{site['text']['subs'][sub][lang]}](#{sub_anchor(sec, sub)}) ({len(groups.get((sec, sub), []))})")
@@ -334,7 +343,7 @@ def render(site, works, lang):
                 o(f"*{t(site, 'engines', lang)}:* {eng}\n")
             for g in meta.get('guides') or []:
                 label, gap = guide_label(site, lang)
-                o(f"📖 **{label}**{gap}[{g['title'][lang]}]({g['url']}){gap}{g['note'][lang]}\n")
+                o(f"📖 **{label}**{gap}[{g['title'][lang]}]({guide_value(g, 'url', lang)}){gap}{g['note'][lang]}\n")
             if meta.get('guide'):
                 guide = meta['guide'][lang].strip()
                 if '{stage_chart}' in guide:

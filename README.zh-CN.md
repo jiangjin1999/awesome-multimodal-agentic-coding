@@ -13,7 +13,7 @@
 
 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从数字世界延伸到物理世界。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-666-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--16-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-667-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--17-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · **简体中文** · [日本語](./README.ja.md)
 
@@ -57,7 +57,7 @@
   - [2.5 感知模型 × 场景理解与重建](#s2-5) (6)
   - [2.6 动作模型 × 机器人操作](#s2-6) (12)
 - [Stage 3 · 打通数字世界与物理世界](#stage-3)
-  - [3.1 具身框架（Harness）](#s3-1) (85)
+  - [3.1 具身框架（Harness）](#s3-1) (86)
   - [3.2 仿真器构建](#s3-2) (68)
   - [3.3 仿真器质量评估](#s3-3) (29)
   - [3.4 数据](#s3-4) (15)
@@ -2151,6 +2151,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-2607-16636"></a>`2026.07` **[PhyAgentOS: A Self-Evolving Operating System for Embodied Agents with Decoupled Cognitive Planning and Physical Execution](https://arxiv.org/abs/2607.16636)** [[代码]](https://github.com/PhyAgentOS/PhyAgentOS)
   > 用文件化状态契约分离 Agent 推理与机器人执行，让工具调用、状态记录和经验更新能够跨运行层衔接。<br>
   > 🖥️ **仿真** MuJoCo + Isaac Sim · 🦾 **真机** Franka FR3、XLeRobot、AgileX PiPER、Dobot Nova 2、Unitree Go2、Unitree G1
+
+<!-- mmac-record: {"id": "2607.11119", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2607-11119"></a>`2026.07` **[VIA: Visual Interface Agent for Robot Control](https://arxiv.org/abs/2607.11119)**
+  > 让视觉 Agent 在界面中调整虚拟夹爪位姿，再将航点发送给机器人控制器。<br>
+  > 🖥️ **仿真** Franka Panda · 🦾 **真机** Stretch 4
 
 <!-- mmac-record: {"id": "2605.26637", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 

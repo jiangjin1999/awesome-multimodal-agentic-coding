@@ -15780,3 +15780,27 @@
   tags:
   - Benchmark
   - Verification
+- id: '2607.11119'
+  title: 'VIA: Visual Interface Agent for Robot Control'
+  url: https://arxiv.org/abs/2607.11119
+  date: '2026.07'
+  section: '3.1'
+  sub: tools-interfaces
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Lets visual agents refine virtual gripper poses and send waypoints to robot controllers.
+    zh: 让视觉 Agent 在界面中调整虚拟夹爪位姿，再将航点发送给机器人控制器。
+    ja: 視覚エージェントが画面上で仮想グリッパーの姿勢を調整し、ウェイポイントをロボットの制御器へ送る。
+  setup:
+    sim_robots:
+    - Franka Panda
+    real_robots:
+    - Stretch 4
+  sources:
+  - https://arxiv.org/abs/2607.11119
+  - https://arxiv.org/html/2607.11119v2
+  verification:
+    en: In v2, agents inspect rendered or camera views before and after waypoint execution (§3, Appendix A). Tests cover
+      six simulated tabletop tasks (§4.1) and five physical mobile manipulation tasks (§4.3).
+    zh: v2 中，Agent 在执行航点前后查看渲染图或相机画面（§3、附录 A）。评测覆盖六项仿真桌面操作任务（§4.1）和五项移动机器人实机任务（§4.3）。

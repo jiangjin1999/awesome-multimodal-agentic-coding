@@ -29,6 +29,16 @@ runs:
     Remaining full-text reviews and exhaustive manual title review are pending.
   note: Twenty selected arXiv leads and three citation leads were queued for full-text review. The acknowledgments spelling
     was corrected across the three READMEs.
+- date: '2026-11-17'
+  trigger: sweep
+  covered: Daily review for 2026-11-03 to 2026-11-17. Reviewed the oldest queued candidate (VIA v2) and its references.
+    Read the 61 titles in the November 16 cs.RO new/cross-listed/replacement batch. Inventoried recent/new pages for cs.RO,
+    cs.CV, cs.GR, cs.AI, cs.LG, cs.CL, cs.SE, cs.HC and cs.MM and screened titles and abstracts for visual feedback, model/tool
+    orchestration, asset creation, robot harnesses, physical reasoning and sim-to-real. Checked HF Daily Papers, related
+    awesome lists, official project and benchmark sources, and open suggestions.
+  note: Partial coverage. The November 17 arXiv batch was not available at recheck. The 14-day last-updated API completed
+    cs.GR; other categories stopped at an error or an unfinished page. The 438-title cs.RO recent inventory and recovered
+    weekly pages have outstanding title/full-text review. Queued four robotics titles and one VIA citation.
 candidates:
 - id: '2610.35817'
   title: 'Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics'
@@ -59,8 +69,14 @@ candidates:
   url: https://arxiv.org/abs/2607.11119
   found: '2026-11-15'
   via: cited by 2610.35817 [87]
-  decision: pending
-  note: An off-the-shelf agent drives a manipulator through a visual interface. Compare 3.1 tools-interfaces (2610.14018).
+  decision: added
+  note: v1 2026-07-13; verification uses v2 (2026-10-07). The agent adjusts and commits waypoints using image feedback
+    and controller tools (§3), while a separate controller executes motion. Tests include simulation and physical hardware
+    (§4.1, §4.3).
+  decided: '2026-11-17'
+  precedent:
+  - '2610.14018'
+  - '2610.12457'
 - id: '2609.19138'
   title: In-Context Robot Learning with VLM Agents
   url: https://arxiv.org/abs/2609.19138
@@ -369,3 +385,39 @@ candidates:
   decision: pending
   note: Check how demonstration and interaction context enter the policy, and whether the contribution fits the reusable
     model scope.
+- id: '2606.07723'
+  title: 'VoLo: A Physical Orchestrator for Open-Vocabulary Long-Horizon Manipulation'
+  url: https://arxiv.org/abs/2606.07723
+  found: '2026-11-17'
+  via: cited by 2607.11119v2, §2.1
+  decision: pending
+  note: Check the interruptible VLA/world-action model interface and the reported real-world validation. Compare 3.1 delegation.
+- id: '2611.17394'
+  title: 'Agentic-Teacher: An Agentic Data Engine for Failure-Driven VLA Post-Training'
+  url: https://arxiv.org/abs/2611.17394
+  found: '2026-11-17'
+  via: arXiv cs.RO listing, 2026-11-16 batch
+  decision: pending
+  note: Check how the agent diagnoses failures and changes VLA training data; compare Stage 3.5.
+- id: '2611.18176'
+  title: 'ESI: An Embodied Self-Improvement Flywheel for LLM-VLA Agents'
+  url: https://arxiv.org/abs/2611.18176
+  found: '2026-11-17'
+  via: arXiv cs.RO listing, 2026-11-16 batch
+  decision: pending
+  note: Check what the LLM updates after VLA execution and whether improvements transfer to hardware; compare Stage 3.5.
+- id: '2611.18298'
+  title: 'Objectives as Policies: Vision-Language Model Cost Programs for Contact-Rich Manipulation'
+  url: https://arxiv.org/abs/2611.18298
+  found: '2026-11-17'
+  via: arXiv cs.RO listing, 2026-11-16 batch
+  decision: pending
+  note: Check how the cost programs are constructed and whether execution feedback changes them; compare Stage 3.1.
+- id: '2611.18562'
+  title: Training Reasoning Models in Simulation to Natively Use Real Robots
+  url: https://arxiv.org/abs/2611.18562
+  found: '2026-11-17'
+  via: arXiv cs.RO listing, 2026-11-16 batch
+  decision: pending
+  note: The authors describe reinforcement learning in simulation and transfer to real robots. Verify the pose interface
+    and sim-to-real evidence; compare Stage 3.5.

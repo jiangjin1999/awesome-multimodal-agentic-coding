@@ -41,8 +41,9 @@ class CatalogTests(unittest.TestCase):
         self.assertTrue(guides)
         for lang in self.site['languages']:
             text = render(self.site, self.works, lang)
-            self.assertIn(f"]({guides[0]['href']})", text.split('## ', 3)[2])  # listed in the contents
-        for broken in ({'href': 'stage3/missing.md'}, {'href': 'https://example.com/page'}, {'note': {'en': 'x'}}):
+            self.assertIn(f"]({guides[0]['url']})", text.split('## ', 3)[2])  # listed in the contents
+        for broken in ({'page': 'stage3/missing/index.html'}, {'page': 'https://example.com/page'},
+                       {'url': 'https://example.com/elsewhere/'}, {'note': {'en': 'x'}}):
             with self.subTest(broken=broken):
                 site = deepcopy(self.site)
                 site['sections']['3.4']['guides'][0].update(broken)

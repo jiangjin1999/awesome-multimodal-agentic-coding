@@ -61,7 +61,7 @@
   - [3.2 仿真器构建](#s3-2) (68)
   - [3.3 仿真器质量评估](#s3-3) (29)
   - [3.4 数据](#s3-4) (14)
-    - 📖 [导读：读懂一条 DROID 数据](stage3/droid-data.zh-CN.md)
+    - 📖 [导读：读懂一条 DROID 数据](https://jiangjin1999.github.io/awesome-multimodal-agentic-coding/stage3/droid-data/)
   - [3.5 训练与能力提升](#s3-5) (74)
   - [3.6 物理应用与实验](#s3-6) (49)
     - [科学实验（AI4Science）](#s3-6-experiments) (27)
@@ -3123,7 +3123,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 ### 3.4 数据
 
-📖 **导读：**[读懂一条 DROID 数据](stage3/droid-data.zh-CN.md)——拿两条真实录制拆开看：一条数据里有什么，轨迹里的数字各是什么意思。
+📖 **导读：**[读懂一条 DROID 数据](https://jiangjin1999.github.io/awesome-multimodal-agentic-coding/stage3/droid-data/)——一个可交互的网页，拿两条真实录制拆开看：一条数据里有什么，轨迹里的数字各是什么意思。
 
 <table>
 <thead>

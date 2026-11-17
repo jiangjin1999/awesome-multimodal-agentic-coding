@@ -1207,17 +1207,19 @@ sections:
     - real-data
     - sim-data
     - mixed-data
-    # Walkthrough pages: linked at the top of the section and indented under it in the contents.
+    # Walkthrough pages: interactive pages kept in this repository (`page`) and served by GitHub Pages (`url`).
+    # Each is linked at the top of the section and indented under it in the contents.
     guides:
-    - href: stage3/droid-data.zh-CN.md
+    - page: stage3/droid-data/index.html
+      url: https://jiangjin1999.github.io/awesome-multimodal-agentic-coding/stage3/droid-data/
       title:
         en: Reading one DROID episode
         zh: 读懂一条 DROID 数据
         ja: DROID のデータを 1 本読む
       note:
-        en: '(in Chinese): two real recordings taken apart, showing what one episode contains and what each trajectory number means.'
-        zh: ——拿两条真实录制拆开看：一条数据里有什么，轨迹里的数字各是什么意思。
-        ja: （中国語）実際の録画 2 本を分解し、1 本のデータに何が入っているか、軌跡の数値がそれぞれ何を意味するかを示します。
+        en: '(an interactive page in Chinese): two real recordings taken apart, showing what one episode contains and what each trajectory number means.'
+        zh: ——一个可交互的网页，拿两条真实录制拆开看：一条数据里有什么，轨迹里的数字各是什么意思。
+        ja: （中国語のインタラクティブなページ）実際の録画 2 本を分解し、1 本のデータに何が入っているか、軌跡の数値がそれぞれ何を意味するかを示します。
     guide:
       en: |-
         <table>

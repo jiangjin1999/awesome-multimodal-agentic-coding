@@ -58,13 +58,17 @@ def validate(site, works, strict_ja):
             if s not in secs:
                 errors.append(f'{where}: see_also section {s} unknown')
     for sec, meta in secs.items():
+        # A walkthrough is an interactive page kept in this repository (`page`) and served by GitHub Pages (`url`).
         for g in meta.get('guides') or []:
-            href = g.get('href') or ''
-            if not href or re.match(r'^[a-z]+:', href) or not (ROOT / href.split('#')[0]).is_file():
-                errors.append(f'{sec}: guide href {href!r} must be a page in this repository')
+            page, url = g.get('page') or '', g.get('url') or ''
+            if not page or re.match(r'^[a-z]+:', page) or not (ROOT / page).is_file():
+                errors.append(f'{sec}: guide page {page!r} must be a file in this repository')
+            served = page[:-len('index.html')] if page.endswith('index.html') else page
+            if not url.startswith('https://') or not url.endswith(served):
+                errors.append(f'{sec}: guide url {url!r} must be the https address that serves {page!r}')
             for lang in LANGS:
                 if not (g.get('title') or {}).get(lang) or not (g.get('note') or {}).get(lang):
-                    errors.append(f'{sec}: guide {href!r} missing title/note for {lang}')
+                    errors.append(f'{sec}: guide {page!r} missing title/note for {lang}')
         for sub in meta.get('contents_subs') or []:
             if not sub or sub not in meta['subs']:
                 errors.append(f'{sec}: contents_subs {sub!r} is not a subgroup of the section')
@@ -298,7 +302,7 @@ def render(site, works, lang):
             # Walkthrough pages open directly from the contents.
             for g in meta.get('guides') or []:
                 label, gap = guide_label(site, lang)
-                o(f"    - 📖 [{label}{gap}{g['title'][lang]}]({g['href']})")
+                o(f"    - 📖 [{label}{gap}{g['title'][lang]}]({g['url']})")
             # Selected subgroups are also listed in the contents, indented under their section.
             for sub in meta.get('contents_subs') or []:
                 o(f"    - [{site['text']['subs'][sub][lang]}](#{sub_anchor(sec, sub)}) ({len(groups.get((sec, sub), []))})")
@@ -327,7 +331,7 @@ def render(site, works, lang):
                 o(f"*{t(site, 'engines', lang)}:* {eng}\n")
             for g in meta.get('guides') or []:
                 label, gap = guide_label(site, lang)
-                o(f"📖 **{label}**{gap}[{g['title'][lang]}]({g['href']}){gap}{g['note'][lang]}\n")
+                o(f"📖 **{label}**{gap}[{g['title'][lang]}]({g['url']}){gap}{g['note'][lang]}\n")
             if meta.get('guide'):
                 o(meta['guide'][lang].strip() + '\n')
             for sub in meta['subs']:

@@ -58,6 +58,13 @@ def validate(site, works, strict_ja):
             if s not in secs:
                 errors.append(f'{where}: see_also section {s} unknown')
     for sec, meta in secs.items():
+        for g in meta.get('guides') or []:
+            href = g.get('href') or ''
+            if not href or re.match(r'^[a-z]+:', href) or not (ROOT / href.split('#')[0]).is_file():
+                errors.append(f'{sec}: guide href {href!r} must be a page in this repository')
+            for lang in LANGS:
+                if not (g.get('title') or {}).get(lang) or not (g.get('note') or {}).get(lang):
+                    errors.append(f'{sec}: guide {href!r} missing title/note for {lang}')
         for sub in meta.get('contents_subs') or []:
             if not sub or sub not in meta['subs']:
                 errors.append(f'{sec}: contents_subs {sub!r} is not a subgroup of the section')
@@ -95,6 +102,11 @@ def anchor(wid):
 
 def sec_anchor(sec):
     return 's' + sec.replace('.', '-')
+
+
+def guide_label(site, lang):
+    """('Walkthrough:', ' ') or ('导读：', ''): the label before a walkthrough page title, and the gap after it."""
+    return (t(site, 'walkthrough', lang) + ':', ' ') if lang == 'en' else (t(site, 'walkthrough', lang) + '：', '')
 
 
 def sub_anchor(sec, sub):
@@ -283,6 +295,10 @@ def render(site, works, lang):
         for sec in st['sections']:
             meta = site['sections'][sec]
             o(f"  - [{sec} {meta[lang]}](#{sec_anchor(sec)}) ({sec_count.get(sec, 0)})")
+            # Walkthrough pages open directly from the contents.
+            for g in meta.get('guides') or []:
+                label, gap = guide_label(site, lang)
+                o(f"    - 📖 [{label}{gap}{g['title'][lang]}]({g['href']})")
             # Selected subgroups are also listed in the contents, indented under their section.
             for sub in meta.get('contents_subs') or []:
                 o(f"    - [{site['text']['subs'][sub][lang]}](#{sub_anchor(sec, sub)}) ({len(groups.get((sec, sub), []))})")
@@ -309,6 +325,9 @@ def render(site, works, lang):
             if meta.get('engines'):
                 eng = ' · '.join(f'[{e}]({site["engines"][e]})' for e in meta['engines'])
                 o(f"*{t(site, 'engines', lang)}:* {eng}\n")
+            for g in meta.get('guides') or []:
+                label, gap = guide_label(site, lang)
+                o(f"📖 **{label}**{gap}[{g['title'][lang]}]({g['href']}){gap}{g['note'][lang]}\n")
             if meta.get('guide'):
                 o(meta['guide'][lang].strip() + '\n')
             for sub in meta['subs']:

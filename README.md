@@ -61,6 +61,7 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [3.2 Simulator construction](#s3-2) (68)
   - [3.3 Simulator quality evaluation](#s3-3) (29)
   - [3.4 Data](#s3-4) (14)
+    - 📖 [Walkthrough: Reading one DROID episode](stage3/droid-data.zh-CN.md)
   - [3.5 Training and capability improvement](#s3-5) (74)
   - [3.6 Physical applications and experiments](#s3-6) (49)
     - [Scientific experiments (AI4Science)](#s3-6-experiments) (27)
@@ -3121,6 +3122,8 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <a id="s3-4"></a>
 
 ### 3.4 Data
+
+📖 **Walkthrough:** [Reading one DROID episode](stage3/droid-data.zh-CN.md) (in Chinese): two real recordings taken apart, showing what one episode contains and what each trajectory number means.
 
 <table>
 <thead>

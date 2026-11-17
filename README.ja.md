@@ -13,7 +13,7 @@
 
 マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——デジタル世界から物理世界まで。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-667-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--17-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-668-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--17-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語**
 
@@ -64,7 +64,7 @@
   - [3.2 シミュレータ構築](#s3-2) (68)
   - [3.3 シミュレータ品質評価](#s3-3) (29)
   - [3.4 データ](#s3-4) (15)
-  - [3.5 学習と能力向上](#s3-5) (74)
+  - [3.5 学習と能力向上](#s3-5) (75)
   - [3.6 物理応用と実験](#s3-6) (49)
     - [科学実験（AI4Science）](#s3-6-experiments) (27)
   - [シミュレーションエンジン一覧](#s3-engines)
@@ -3673,6 +3673,12 @@
   > 実演からタスクを要約し、ロボットプログラムを合成する。
 
 #### コーディングエージェントの事後学習
+
+<!-- mmac-record: {"id": "2611.18562", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-18562"></a>`2026.11` **[Training Reasoning Models in Simulation to Natively Use Real Robots](https://arxiv.org/abs/2611.18562)** [[プロジェクトページ]](https://mit-han-lab.github.io/pear-blog/) [[コード]](https://github.com/mit-han-lab/pear) [[モデル]](https://huggingface.co/mit-han-lab/Qwen3.8-27B-PEAR)
+  > 推論モデルをシミュレーション内で強化学習し、実機のロボット操作に転用する。<br>
+  > 🖥️ **シミュレーション** MuJoCo + Isaac Sim + Isaac Lab（Franka、ARX） · 🦾 **実機** YAM
 
 <!-- mmac-record: {"id": "2610.30136", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 

@@ -13,7 +13,7 @@
 
 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从数字世界延伸到物理世界。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-667-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--17-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-668-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--17-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · **简体中文** · [日本語](./README.ja.md)
 
@@ -61,7 +61,7 @@
   - [3.2 仿真器构建](#s3-2) (68)
   - [3.3 仿真器质量评估](#s3-3) (29)
   - [3.4 数据](#s3-4) (15)
-  - [3.5 训练与能力提升](#s3-5) (74)
+  - [3.5 训练与能力提升](#s3-5) (75)
   - [3.6 物理应用与实验](#s3-6) (49)
     - [科学实验（AI4Science）](#s3-6-experiments) (27)
   - [仿真引擎一览](#s3-engines)
@@ -3670,6 +3670,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
   > 从示范总结任务，再合成机器人程序。
 
 #### Coding Agent 后训练
+
+<!-- mmac-record: {"id": "2611.18562", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-18562"></a>`2026.11` **[Training Reasoning Models in Simulation to Natively Use Real Robots](https://arxiv.org/abs/2611.18562)** [[项目页]](https://mit-han-lab.github.io/pear-blog/) [[代码]](https://github.com/mit-han-lab/pear) [[模型]](https://huggingface.co/mit-han-lab/Qwen3.8-27B-PEAR)
+  > 在仿真中用强化学习后训练推理模型，使其能直接操控真实机器人。<br>
+  > 🖥️ **仿真** MuJoCo + Isaac Sim + Isaac Lab（Franka、ARX） · 🦾 **真机** YAM
 
 <!-- mmac-record: {"id": "2610.30136", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 

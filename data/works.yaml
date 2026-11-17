@@ -15804,3 +15804,38 @@
     en: In v2, agents inspect rendered or camera views before and after waypoint execution (§3, Appendix A). Tests cover
       six simulated tabletop tasks (§4.1) and five physical mobile manipulation tasks (§4.3).
     zh: v2 中，Agent 在执行航点前后查看渲染图或相机画面（§3、附录 A）。评测覆盖六项仿真桌面操作任务（§4.1）和五项移动机器人实机任务（§4.3）。
+- id: '2611.18562'
+  title: Training Reasoning Models in Simulation to Natively Use Real Robots
+  url: https://arxiv.org/abs/2611.18562
+  date: '2026.11'
+  section: '3.5'
+  sub: post-training
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Post-trains a reasoning model in simulation to operate real robots.
+    zh: 在仿真中用强化学习后训练推理模型，使其能直接操控真实机器人。
+    ja: 推論モデルをシミュレーション内で強化学習し、実機のロボット操作に転用する。
+  setup:
+    engines:
+    - MuJoCo
+    - Isaac Sim
+    - Isaac Lab
+    sim_robots:
+    - Franka
+    - ARX
+    real_robots:
+    - YAM
+  sources:
+  - https://arxiv.org/abs/2611.18562
+  - https://arxiv.org/html/2611.18562v1
+  - https://mit-han-lab.github.io/pear-blog/
+  - https://github.com/mit-han-lab/pear
+  - https://huggingface.co/mit-han-lab/Qwen3.8-27B-PEAR
+  verification:
+    en: 'Qwen3.8-27B uses camera frames and arm state to choose pose changes for the controller to execute (§3.1) · simulation
+      RL on LIBERO and two RoboDojo tasks (§3.2–3.3) · LIBERO-only checkpoint: 74.4% vs. base 1.6% over 2,000 LIBERO episodes
+      (§4.1, Fig. 3) · real dual-arm YAM: 18/30 vs. base 0/30 and LIBERO-only 7/30 on the two tasks practiced in simulation
+      (§4.4, Table 7) · qualitative demos on novel tasks.'
+    zh: Qwen3.8-27B 根据相机画面与机械臂状态选择位姿增量，由控制器执行（§3.1） · 在 LIBERO 和两项 RoboDojo 任务中进行仿真强化学习（§3.2–3.3） · LIBERO 阶段检查点在 2,000
+      次仿真评测中达到 74.4%，基础模型为 1.6%（§4.1、图 3） · 双臂 YAM 实机在两类仿真练过的任务上成功 18/30 次，基础模型为 0/30，LIBERO 阶段检查点为 7/30（§4.4、表 7） · 新任务仅作定性演示。

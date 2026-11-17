@@ -39,6 +39,11 @@ runs:
   note: Partial coverage. The November 17 arXiv batch was not available at recheck. The 14-day last-updated API completed
     cs.GR; other categories stopped at an error or an unfinished page. The 438-title cs.RO recent inventory and recovered
     weekly pages have outstanding title/full-text review. Queued four robotics titles and one VIA citation.
+- date: '2026-11-17'
+  trigger: report
+  covered: Maintainer-prioritized review of PEAR (2611.18562), previously pending. Read v1 and checked the official project,
+    code and model weights. Cross-checked work identities and reviewed recent references against the catalog and queue.
+  note: Added PEAR under 3.5 post-training and queued four citation leads. This review supplements the same-day sweep.
 candidates:
 - id: '2610.35817'
   title: 'Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics'
@@ -418,6 +423,41 @@ candidates:
   url: https://arxiv.org/abs/2611.18562
   found: '2026-11-17'
   via: arXiv cs.RO listing, 2026-11-16 batch
+  decision: added
+  note: 'Placement: 3.5 post-training. Simulation success rewards update model weights (§3.2–3.3). The robot-use agent
+    outputs pose deltas to a separate controller (§3.1). Quantitative hardware trials cover the two tasks practiced in
+    simulation (§4.4, Table 7).'
+  decided: '2026-11-17'
+  precedent:
+  - '2610.35817'
+  - '2606.18363'
+- id: '2609.34261'
+  title: 'RoboICL: Embodied In-Context Learning with GPT-6 Astra'
+  url: https://arxiv.org/abs/2609.34261
+  found: '2026-11-17'
+  via: cited by 2611.18562v1 (§2, Liu et al. 2026a)
   decision: pending
-  note: The authors describe reinforcement learning in simulation and transfer to real robots. Verify the pose interface
-    and sim-to-real evidence; compare Stage 3.5.
+  note: Check demonstration context and interaction memory in the execution loop; compare Stage 3.5 experience/skill learning.
+- id: '2606.02800'
+  title: 'Cosmos 3: Omnimodal World Models for Physical AI'
+  url: https://arxiv.org/abs/2606.02800
+  found: '2026-11-17'
+  via: cited by 2611.18562v1 (§4, NVIDIA 2026a)
+  decision: pending
+  note: Check the report and released generation, prediction and action checkpoints for Stage 2 resource coverage and
+    overlap with the existing Cosmos3-Nano-Sim-Auto entry.
+- id: '2608.10860'
+  title: 'Flex-π: A Multi-Stream World-Action Model with Compute Flexibility'
+  url: https://arxiv.org/abs/2608.10860
+  found: '2026-11-17'
+  via: cited by 2611.18562v1 (§4, Yan et al. 2026)
+  decision: pending
+  note: Check the independently usable visual and action streams and whether weights or code support a Stage 2 resource
+    entry.
+- id: web:ora-robot-use-agents
+  title: 'ORA: Open Robot-Use Agents'
+  url: https://haoailab.com/blogs/ora/
+  found: '2026-11-17'
+  via: cited by 2611.18562v1 (§3.1, Yang et al. 2026c)
+  decision: pending
+  note: Check the official implementation, visual feedback and the action interface for a Stage 3.1 harness entry.

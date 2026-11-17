@@ -13,7 +13,7 @@
 
 A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to the physical world.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-667-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--17-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-668-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--17-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -61,7 +61,7 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [3.2 Simulator construction](#s3-2) (68)
   - [3.3 Simulator quality evaluation](#s3-3) (29)
   - [3.4 Data](#s3-4) (15)
-  - [3.5 Training and capability improvement](#s3-5) (74)
+  - [3.5 Training and capability improvement](#s3-5) (75)
   - [3.6 Physical applications and experiments](#s3-6) (49)
     - [Scientific experiments (AI4Science)](#s3-6-experiments) (27)
   - [Simulation engines at a glance](#s3-engines)
@@ -3670,6 +3670,12 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
   > Turns demonstrations into reusable robot programs.
 
 #### Post-training the coding agent
+
+<!-- mmac-record: {"id": "2611.18562", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-18562"></a>`2026.11` **[Training Reasoning Models in Simulation to Natively Use Real Robots](https://arxiv.org/abs/2611.18562)** [[Project page]](https://mit-han-lab.github.io/pear-blog/) [[Code]](https://github.com/mit-han-lab/pear) [[Model]](https://huggingface.co/mit-han-lab/Qwen3.8-27B-PEAR)
+  > Post-trains a reasoning model in simulation to operate real robots.<br>
+  > 🖥️ **Sim** MuJoCo + Isaac Sim + Isaac Lab (Franka, ARX) · 🦾 **Real** YAM
 
 <!-- mmac-record: {"id": "2610.30136", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 

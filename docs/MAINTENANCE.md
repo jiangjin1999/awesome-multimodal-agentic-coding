@@ -38,6 +38,12 @@ Stage 1 covers visual feedback in artifact construction; Stage 2 covers models u
 
 Scope identities stay in canonical data and metadata comments for maintenance. Public entries display the title, source links, and summary without scope badges. Every generated entry has a `mmac-record` comment with `id`, `scope`, `primary`, `stage`, and `type`, and a stable `paper-…` anchor. `site.yaml` also retains older anchors through `anchor_aliases`. Update local references to current anchors while keeping published aliases working. Preserve source URLs when reorganizing entries; a primary link alone is insufficient if earlier entries included supporting code or data.
 
+## Interactive walkthroughs
+
+A section may list walkthrough pages under `guides`. Each walkthrough is an interactive web page kept in this repository and served by GitHub Pages: `page` is its file in the repository, `url` is the address that serves it, and `title` and `note` are localized. The generator puts a 📖 link to `url` at the top of the section and indents the same link under the section in the contents.
+
+Section 3.4 links to `stage3/droid-data/`, which takes two real DROID episodes apart. Its data (`cases.json`) and camera frames (`media/`) sit next to `index.html`. GitHub Pages serves the repository from the `main` branch root (Settings → Pages → Deploy from a branch → `main` / root); the empty `.nojekyll` file makes Pages serve the files as they are. `--check` fails when the page file is missing, when `url` does not end with the page's path, or when a language lacks its title or note.
+
 ## Validation and publication
 
 Run the commands in the [contribution guide](../CONTRIBUTING.md#submit-a-pull-request). `--check` requires all translations, exact generated output, valid identities and scopes, and existing local files and fragments across the documentation. The GitHub Actions workflow runs the public checks on pull requests and pushes to main. The regression suite covers missing translations, lost evidence, source/ID mismatches, duplicate identities, and old cross-file links. It does not replace reading the primary sources or checking the claims in a summary.

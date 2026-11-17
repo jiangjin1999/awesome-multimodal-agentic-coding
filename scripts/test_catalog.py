@@ -37,6 +37,19 @@ class CatalogTests(unittest.TestCase):
                 rows[0]['tldr']['ja'] = summary
                 self.assertTrue(any('ja' in e or 'Japanese' in e for e in validate(self.site, rows, True)[0]))
 
+    def test_walkthrough_links_need_a_page_and_three_languages(self):
+        guides = self.site['sections']['3.4']['guides']
+        self.assertTrue(guides)
+        for lang in self.site['languages']:
+            text = render(self.site, self.works, lang)
+            self.assertIn(f"]({guides[0]['url']})", text.split('## ', 3)[2])  # listed in the contents
+        for broken in ({'page': 'stage3/missing/index.html'}, {'page': 'https://example.com/page'},
+                       {'url': 'https://example.com/elsewhere/'}, {'note': {'en': 'x'}}):
+            with self.subTest(broken=broken):
+                site = deepcopy(self.site)
+                site['sections']['3.4']['guides'][0].update(broken)
+                self.assertTrue(any('guide' in e for e in validate(site, self.works, True)[0]))
+
     def test_core_verification_and_primary_source_cannot_disappear(self):
         rows = deepcopy(self.works)
         core = next(w for w in rows if w['scope'] == 'core')

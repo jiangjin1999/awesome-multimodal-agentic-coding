@@ -61,6 +61,7 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [3.2 Simulator construction](#s3-2) (68)
   - [3.3 Simulator quality evaluation](#s3-3) (29)
   - [3.4 Data](#s3-4) (15)
+    - 📖 [Walkthrough: Reading one DROID episode](https://jiangjin1999.github.io/awesome-multimodal-agentic-coding/stage3/droid-data/)
   - [3.5 Training and capability improvement](#s3-5) (75)
   - [3.6 Physical applications and experiments](#s3-6) (49)
     - [Scientific experiments (AI4Science)](#s3-6-experiments) (27)
@@ -3154,6 +3155,8 @@ All 68 works, step by step, including verification & revision and variant expans
 <a id="s3-4"></a>
 
 ### 3.4 Data
+
+📖 **Walkthrough:** [Reading one DROID episode](https://jiangjin1999.github.io/awesome-multimodal-agentic-coding/stage3/droid-data/) (an interactive page in Chinese): two real recordings taken apart, showing what one episode contains and what each trajectory number means.
 
 <table>
 <thead>

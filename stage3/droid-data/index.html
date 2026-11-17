@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>读懂一条 DROID 数据</title>
+<meta name="description" content="拿两条真实的 DROID 机器人数据拆开看：一条数据里有什么，轨迹里的数字各是什么意思。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Sans+SC:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+/* Layout: a reading column of short sections, broken once by a wide instrument panel (video frame + the live row + four charts). */
+:root {
+  --bg: #f2f4f7; --surface: #ffffff; --sunk: #e8ecf1; --ink: #17202b; --muted: #5b6676; --line: #d6dce4;
+  --accent: #2856c9; --y: #b8366e; --cmd: #8a7fa8; --open: #0b8796; --closed: #c96512;
+  --band-a: rgba(40, 86, 201, .06); --band-b: rgba(40, 86, 201, .0); --hi: rgba(40, 86, 201, .12);
+  --ov-open: #34dbe8; --ov-closed: #ff9d3d; --ov-future: rgba(255, 255, 255, .75);
+  --f-body: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+  --f-head: "Space Grotesk", "Noto Sans SC", "PingFang SC", system-ui, sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0f1318; --surface: #161b22; --sunk: #1d232c; --ink: #e4e8ee; --muted: #97a2b2; --line: #2a313b;
+  --accent: #7ea1ff; --y: #f07aab; --cmd: #a99ccc; --open: #3cc6d4; --closed: #f39a4e;
+  --band-a: rgba(126, 161, 255, .07); --band-b: rgba(126, 161, 255, 0); --hi: rgba(126, 161, 255, .16);
+  color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0f1318; --surface: #161b22; --sunk: #1d232c; --ink: #e4e8ee; --muted: #97a2b2; --line: #2a313b;
+  --accent: #7ea1ff; --y: #f07aab; --cmd: #a99ccc; --open: #3cc6d4; --closed: #f39a4e;
+  --band-a: rgba(126, 161, 255, .07); --band-b: rgba(126, 161, 255, 0); --hi: rgba(126, 161, 255, .16);
+  color-scheme: dark }
+
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15.5px; line-height: 1.75 }
+.wrap { max-width: 1120px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 40px 72px; display: grid; gap: 56px }
+.prose { max-width: 70ch }
+h1, h2, h3 { font-family: var(--f-head); text-wrap: balance; margin: 0; line-height: 1.3 }
+h1 { font-size: clamp(30px, 5vw, 44px); font-weight: 700; letter-spacing: -.01em }
+h2 { font-size: 23px; font-weight: 700 }
+h3 { font-size: 16px; font-weight: 700 }
+p { margin: 0 }
+.stack { display: grid; gap: 14px }
+.eyebrow { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-weight: 500 }
+.lead { font-size: 17.5px; color: var(--ink); max-width: 64ch }
+.muted { color: var(--muted) }
+code, .mono { font-family: var(--f-mono); font-size: .88em }
+code { background: var(--sunk); padding: 1px 5px; border-radius: 4px; overflow-wrap: anywhere }
+.num { font-family: var(--f-mono); font-variant-numeric: tabular-nums }
+a { color: var(--accent) }
+
+/* case switch */
+.switch { display: flex; flex-wrap: wrap; gap: 8px }
+.switch button { font: inherit; font-size: 14px; border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+  padding: 7px 14px; border-radius: 999px; cursor: pointer; display: flex; gap: 8px; align-items: baseline }
+.switch button b { font-family: var(--f-head) }
+.switch button[aria-pressed="true"] { border-color: var(--accent); background: var(--hi) }
+button:focus-visible, input:focus-visible, summary:focus-visible, tr:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+
+/* folder tree */
+.tree { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; overflow-x: auto }
+.tree table { border-collapse: collapse; font-size: 14px; min-width: 620px }
+.tree td { padding: 5px 14px 5px 0; vertical-align: top }
+.tree td:first-child { font-family: var(--f-mono); font-size: 13px; white-space: pre; color: var(--ink) }
+.tree tr.star td:first-child { color: var(--accent); font-weight: 600 }
+.tree td.size { font-family: var(--f-mono); font-size: 12.5px; color: var(--muted); white-space: nowrap; text-align: right }
+
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px }
+.kv { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 4px 14px; font-size: 14px }
+.kv dt { font-family: var(--f-mono); font-size: 12.5px; color: var(--muted); padding-top: 2px }
+.kv dd { margin: 0; min-width: 0 }
+
+/* row anatomy */
+.row7 { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--surface) }
+.row7 > div { padding: 10px 8px 9px; text-align: center; border-left: 1px solid var(--line); min-width: 0 }
+.row7 > div:first-child { border-left: 0 }
+.row7 .v { font-family: var(--f-mono); font-size: 17px; font-weight: 600; font-variant-numeric: tabular-nums }
+.row7 .k { font-family: var(--f-mono); font-size: 12px; color: var(--muted) }
+.groups7 { display: grid; grid-template-columns: 3fr 3fr 1fr; gap: 0; font-size: 13px; text-align: center; margin-top: 6px }
+.groups7 div { border-top: 2px solid var(--muted); margin: 0 6px; padding-top: 4px; color: var(--muted) }
+.groups7 div:nth-child(1) { border-color: var(--accent); color: var(--ink) }
+.groups7 div:nth-child(2) { border-color: var(--y); color: var(--ink) }
+.groups7 div:nth-child(3) { border-color: var(--closed); color: var(--ink) }
+@media (max-width: 560px) { .row7 .v { font-size: 13px } .row7 > div { padding: 8px 2px } .groups7 { font-size: 12px } }
+
+/* instrument panel */
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px; display: grid; gap: 18px }
+.panel-top { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: 20px; align-items: start }
+@media (max-width: 880px) { .panel-top { grid-template-columns: minmax(0, 1fr) } }
+.frame { position: relative; border-radius: 8px; overflow: hidden; background: #000; aspect-ratio: 16 / 9; max-width: 100% }
+.frame canvas { width: 100%; height: 100%; display: block }
+.frame .cap { position: absolute; left: 8px; bottom: 6px; font-size: 11.5px; color: #fff; background: rgba(0, 0, 0, .5); padding: 1px 8px; border-radius: 4px }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12.5px; color: var(--muted); margin-top: 8px }
+.legend i { display: inline-block; width: 18px; height: 3px; border-radius: 2px; vertical-align: middle; margin-right: 5px }
+.ctl { display: flex; align-items: center; gap: 10px; margin-top: 10px }
+.ctl button { font: inherit; font-size: 13px; border: 1px solid var(--line); background: var(--sunk); color: var(--ink); border-radius: 6px; padding: 4px 12px; cursor: pointer; white-space: nowrap }
+.ctl input[type=range] { flex: 1; min-width: 0; accent-color: var(--accent) }
+.ctl .num { font-size: 13px; color: var(--muted); white-space: nowrap }
+.phases { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px }
+.phases button { font: inherit; font-size: 12.5px; border: 1px solid var(--line); background: transparent; color: var(--muted); border-radius: 6px; padding: 2px 9px; cursor: pointer }
+.phases button[aria-current="true"] { color: var(--ink); border-color: var(--accent); background: var(--hi) }
+
+.now { display: grid; gap: 12px }
+.now-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap }
+.now-head .big { font-family: var(--f-head); font-size: 26px; font-weight: 700 }
+.now-head .big small { font-size: 14px; color: var(--muted); font-weight: 500; margin-left: 4px }
+.phase-box { background: var(--sunk); border-radius: 8px; padding: 8px 12px; font-size: 14px }
+.phase-box b { font-family: var(--f-head) }
+.decode { display: grid; grid-template-columns: max-content max-content minmax(0, 1fr); gap: 5px 12px; font-size: 14px; align-items: baseline }
+.decode .k { font-family: var(--f-mono); font-size: 12.5px; color: var(--muted) }
+.decode .v { font-family: var(--f-mono); font-variant-numeric: tabular-nums; text-align: right }
+.decode .h { min-width: 0 }
+.decode .sep { grid-column: 1 / -1; border-top: 1px dashed var(--line); margin: 3px 0 }
+.bars { display: grid; gap: 6px; font-size: 13px }
+.bar { display: grid; grid-template-columns: 4.6em minmax(0, 1fr) 3.2em; gap: 8px; align-items: center }
+.bar .track { height: 10px; background: var(--sunk); border-radius: 5px; position: relative; overflow: hidden }
+.bar .fill { position: absolute; inset: 0 auto 0 0; border-radius: 5px }
+.bar .num { text-align: right }
+.bar-scale { display: flex; justify-content: space-between; font-size: 11.5px; color: var(--muted); padding-left: calc(4.6em + 8px); padding-right: calc(3.2em + 8px) }
+
+.charts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 22px }
+@media (max-width: 760px) { .charts { grid-template-columns: minmax(0, 1fr) } }
+.chart h3 { font-size: 14px; margin-bottom: 2px }
+.chart p { font-size: 12.5px; color: var(--muted); margin-bottom: 4px }
+.chart svg { width: 100%; height: auto; display: block; cursor: crosshair }
+svg text { fill: var(--muted); font-family: var(--f-mono); font-size: 10px }
+svg .grid { stroke: var(--line); stroke-width: 1 }
+svg .axis { stroke: var(--muted); stroke-width: 1 }
+svg .band-a { fill: var(--band-a) } svg .band-b { fill: var(--band-b) }
+svg .cursor { stroke: var(--ink); stroke-width: 1; opacity: .55 }
+
+/* key table */
+.tbl { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface) }
+.tbl table { border-collapse: collapse; width: 100%; min-width: 860px; font-size: 13.5px }
+.tbl th { text-align: right; font-weight: 500; color: var(--muted); font-size: 12px; padding: 8px 10px; border-bottom: 1px solid var(--line); white-space: nowrap }
+.tbl th.l, .tbl td.l { text-align: left }
+.tbl td { padding: 6px 10px; border-bottom: 1px solid var(--line); text-align: right; font-family: var(--f-mono); font-variant-numeric: tabular-nums; white-space: nowrap }
+.tbl td.l { font-family: var(--f-body); white-space: normal }
+.tbl tr:last-child td { border-bottom: 0 }
+.tbl tbody tr { cursor: pointer }
+.tbl tbody tr:hover { background: var(--sunk) }
+.tbl tbody tr.on { background: var(--hi) }
+.thumb { width: 112px; aspect-ratio: 16 / 9; border-radius: 4px; background-color: #000; background-repeat: no-repeat }
+.tbl th.grp { text-align: center; border-bottom: 2px solid var(--muted); padding-bottom: 3px }
+
+/* two-column compare */
+.compare { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface) }
+.compare table { border-collapse: collapse; width: 100%; min-width: 620px; font-size: 14px }
+.compare th, .compare td { padding: 9px 14px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top }
+.compare th { font-weight: 500; color: var(--muted); font-size: 13px; white-space: nowrap }
+.compare tr:last-child td, .compare tr:last-child th { border-bottom: 0 }
+
+/* field groups */
+.fg { display: grid; gap: 0; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); overflow: hidden }
+.fg > div { display: grid; grid-template-columns: minmax(0, 15em) 3.5em minmax(0, 1fr); gap: 14px; padding: 11px 16px; border-top: 1px solid var(--line); font-size: 14px }
+.fg > div:first-child { border-top: 0 }
+.fg .p { font-family: var(--f-mono); font-size: 12.5px; overflow-wrap: anywhere }
+.fg .n { font-family: var(--f-mono); color: var(--muted); font-size: 12.5px; text-align: right }
+.fg .star .p { color: var(--accent); font-weight: 600 }
+@media (max-width: 640px) { .fg > div { grid-template-columns: minmax(0, 1fr) 3em } .fg > div > :last-child { grid-column: 1 / -1 } }
+details { font-size: 14px }
+summary { cursor: pointer; color: var(--accent) }
+.flist { overflow-x: auto; margin-top: 10px }
+.flist table { border-collapse: collapse; font-size: 12.5px; min-width: 560px; width: 100% }
+.flist td { font-family: var(--f-mono); padding: 3px 12px 3px 0; border-bottom: 1px solid var(--line); white-space: nowrap }
+
+/* notes */
+.notes { display: grid; gap: 0; counter-reset: n; border-top: 1px solid var(--line) }
+.notes li { list-style: none; display: grid; grid-template-columns: 2em minmax(0, 1fr); gap: 6px; padding: 14px 0; border-bottom: 1px solid var(--line) }
+.notes li::before { counter-increment: n; content: counter(n); font-family: var(--f-head); font-weight: 700; color: var(--accent); font-size: 18px; line-height: 1.5 }
+.notes b { font-weight: 700 }
+.notes ul { margin: 0; padding: 0 }
+.back { font-size: 14px }
+.back a { text-decoration: none }
+.back a:hover { text-decoration: underline }
+.foot { font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 18px; display: grid; gap: 6px }
+.err { color: var(--closed) }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="stack">
+  <nav class="back"><a href="https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/blob/main/README.zh-CN.md#s3-4">← 返回 Awesome Multimodal Agentic Coding · 3.4 数据</a></nav>
+  <div class="eyebrow">DROID 数据说明 · 两条真实录制</div>
+  <h1>读懂一条 DROID 数据</h1>
+  <p class="lead">DROID 是一个公开的机器人数据集。多家实验室的人用 VR 手柄遥控同一种机械臂（Franka），去做各种桌面小任务。每做一次任务，就录成一条数据。这一页拿两条真实数据拆开看：一条数据里有什么，那串“轨迹”数字各是什么意思。</p>
+  <div class="switch" role="group" aria-label="选择案例">
+    <button id="btn-A" aria-pressed="true" data-case="A"><b>案例 A</b><span>绿方块放进黑碗 · 6.8 秒</span></button>
+    <button id="btn-B" aria-pressed="false" data-case="B"><b>案例 B</b><span>黄方块丢进蓝杯 · 6.9 秒</span></button>
+  </div>
+</header>
+
+<section class="stack">
+  <h2>一条数据是一个文件夹</h2>
+  <p class="prose">文件夹的名字就是这条数据的编号：<code>实验室_机器编号_日期_时间</code>。里面有三样东西：<b>轨迹</b>（数字）、<b>视频</b>（画面）、<b>说明</b>（这条数据的身份信息）。</p>
+  <div class="tree"><table id="tree"></table></div>
+  <div class="cols">
+    <div class="stack">
+      <h3>说明文件里写了什么</h3>
+      <dl class="kv" id="meta"></dl>
+    </div>
+    <div class="stack">
+      <h3>三样东西的关系</h3>
+      <p class="muted" style="font-size:14px">视频告诉你“看起来发生了什么”，轨迹告诉你“机械臂具体怎么动的”，两者靠时间戳一拍对一帧。说明文件告诉你这是哪个实验室、做的什么任务、有没有成功。研究里真正用来教机器人的，主要是轨迹加视频。</p>
+      <p class="muted" style="font-size:14px">完整数据集里每条还有一路<b>手腕相机</b>（装在夹爪上方）的录像，这一页没有用到。</p>
+    </div>
+  </div>
+</section>
+
+<section class="stack">
+  <h2>轨迹：每一拍记一行</h2>
+  <div class="prose stack">
+    <p>机器人每秒记录大约 14 次，每次叫一<b>拍</b>（step）。<span id="intro-len"></span>每一拍记下机械臂那只“手”（夹爪）的状态，最核心的是 7 个数：</p>
+  </div>
+  <div>
+    <div class="row7" id="row7"></div>
+    <div class="groups7"><div>手在哪（米）</div><div>手朝哪（弧度）</div><div>夹爪</div></div>
+  </div>
+  <div class="cols">
+    <div class="stack prose">
+      <p><b>位置 x、y、z</b>：以机器人底座为原点量出来的，单位是米。x 是往前多远，y 是往左多远（负数就是往右），z 是比底座高多少。右边的俯视图里，底座在下方，x 朝上，y 朝左。</p>
+      <p><b>朝向 roll、pitch、yaw</b>：手转了多少，单位是弧度（3.14 约等于 180°）。可以拿自己的手比划：roll 像拧门把手那样转手腕，pitch 是手往上翘或往下压，yaw 是手往左右摆。DROID 里夹爪基本一直朝下，所以 roll 总在 ±3.14 附近。</p>
+      <p><b>夹爪</b>：0 是全开，1 是全合。</p>
+      <p class="muted">上面这一行是<span id="row7-when"></span>的真实数值。整条轨迹就是很多这样的行，一行接一行。</p>
+    </div>
+    <div class="chart" id="topview-static"></div>
+  </div>
+</section>
+
+<section class="stack" id="viewer">
+  <div class="stack prose">
+    <h2>拖动看每一拍</h2>
+    <p>左边是外部相机拍到的画面，画面上的点是这一拍手所在的位置（用相机参数把 x、y、z 换算到画面上）。右边是这一拍那一行数字，翻译成了大白话。拖动滑条、点下面的阶段按钮，或者点任意一张图，都能跳到对应的那一拍。</p>
+  </div>
+  <div class="panel">
+    <div class="panel-top">
+      <div>
+        <div class="frame"><canvas id="cv" width="1024" height="576" aria-label="外部相机画面与手的轨迹"></canvas><span class="cap" id="cap"></span></div>
+        <div class="legend">
+          <span><i style="background:var(--ov-open)"></i>走过的路（夹爪开）</span>
+          <span><i style="background:var(--ov-closed)"></i>走过的路（夹爪合）</span>
+          <span><i style="background:repeating-linear-gradient(90deg,var(--muted) 0 4px,transparent 4px 7px)"></i>还没走的路</span>
+        </div>
+        <div class="ctl">
+          <button id="play" type="button">播放</button>
+          <input id="slider" type="range" min="0" max="96" value="0" aria-label="选择第几拍">
+          <span class="num" id="slabel"></span>
+        </div>
+        <div class="phases" id="phases"></div>
+      </div>
+      <div class="now">
+        <div class="now-head"><div class="big" id="now-step"></div><div class="num muted" id="now-time"></div></div>
+        <div class="phase-box" id="now-phase"></div>
+        <div class="decode" id="decode"></div>
+        <div class="bars" id="bars"></div>
+      </div>
+    </div>
+    <div class="charts">
+      <div class="chart"><h3>俯视图：手走过的路</h3><p>从正上方往下看。底座在下方，往上是前（x），往左是左（y）。</p><div id="c-top"></div></div>
+      <div class="chart"><h3>高度 z 随时间</h3><p>实线是实测，虚线是指令。手先降下去夹，再抬起来搬。</p><div id="c-z"></div></div>
+      <div class="chart"><h3>前后 x、左右 y 随时间</h3><p>单位厘米。实线是实测，虚线是指令。</p><div id="c-xy"></div></div>
+      <div class="chart"><h3>夹爪随时间</h3><p>0 开、1 合。虚线是指令，实线是实测。</p><div id="c-g"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="stack">
+  <h2>挑几行出来看</h2>
+  <p class="prose">整条轨迹就是一张表，<span id="tbl-len"></span>。下面挑出几个关键时刻的行，配上同一时刻的画面。点一行，上面的画面和图会跳过去。</p>
+  <div class="tbl"><table>
+    <thead>
+      <tr><th class="l" rowspan="2">画面</th><th rowspan="2">拍</th><th rowspan="2">秒</th>
+        <th class="grp" colspan="3">位置（米）</th><th class="grp" colspan="3">朝向（弧度）</th><th class="grp" colspan="2">夹爪</th><th class="l" rowspan="2">这一刻</th></tr>
+      <tr><th>x 前</th><th>y 左</th><th>z 高</th><th>roll</th><th>pitch</th><th>yaw</th><th>指令</th><th>实测</th></tr>
+    </thead>
+    <tbody id="keys"></tbody>
+  </table></div>
+</section>
+
+<section class="stack">
+  <h2>同一拍记了两份：指令和实测</h2>
+  <div class="cols">
+    <div class="stack prose">
+      <p><b>指令</b>（文件里 <code>action/…</code>）：操作员这一拍通过手柄让手去的地方。</p>
+      <p><b>实测</b>（文件里 <code>observation/robot_state/…</code>）：机器人这一拍实际所在的地方。</p>
+      <p>两份很像，但不完全一样。上面几张图里的虚线就是指令，可以对照着看。</p>
+    </div>
+    <div class="stack prose">
+      <p><b>位置：指令总在前面一点。</b>像牵着狗散步，绳子那头的人总比狗先到。<span id="lead-text"></span></p>
+      <p><b>夹爪：两份差得多。</b><span id="grip-text"></span></p>
+    </div>
+  </div>
+</section>
+
+<section class="stack">
+  <h2>trajectory.h5 里一共 67 项</h2>
+  <p class="prose">h5 是一种把很多数组装进一个文件的格式，里面像文件夹一样分层。每一项都是“每拍一行”，所以第一维都是拍数（案例 A 是 97）。按用途分成下面几类，蓝色那一类最常用。</p>
+  <div class="fg">
+    <div class="star"><span class="p">observation/robot_state/…</span><span class="n">10 项</span><span>机器人的<b>实测</b>状态。最常用的三项：末端位姿 <code>cartesian_position</code>（每拍 6 个数，就是上面的 x y z roll pitch yaw）、夹爪 <code>gripper_position</code>（每拍 1 个数）、7 个关节的角度 <code>joint_positions</code>。其余是关节速度和力矩。</span></div>
+    <div><span class="p">action/…</span><span class="n">8 项</span><span>这一拍发出的<b>指令</b>。同一个指令存了几种写法：末端位姿、末端速度、关节角、关节速度、夹爪开合，以及 <code>target_</code> 开头的目标值。</span></div>
+    <div><span class="p">action/robot_state/…</span><span class="n">10 项</span><span>执行完这一拍指令后读到的机器人状态，和下一拍的实测几乎一样（差不到 2 毫米）。一般用不到。</span></div>
+    <div><span class="p">observation/camera_extrinsics/…</span><span class="n">10 项</span><span>每台相机在底座坐标系里的位置和朝向（也是 6 个数）。外部相机是固定的，所以每拍都一样；手腕相机跟着手动，每拍不同。<code>left</code>/<code>right</code> 是双目相机的左右两只“眼睛”。</span></div>
+    <div><span class="p">observation/timestamp/…</span><span class="n">22 项</span><span>每一拍各个环节发生的时间（毫秒或纳秒），用来把视频帧和轨迹行对上。其中 <code>skip_action</code> 标出“这一拍不算数”的拍。</span></div>
+    <div><span class="p">observation/controller_info/…</span><span class="n">4 项</span><span>遥控手柄的状态：开没开、是否允许移动、操作员有没有按“成功”或“失败”。</span></div>
+    <div><span class="p">observation/camera_type/…</span><span class="n">3 项</span><span>相机种类：0 是手腕相机，1 是外部相机。</span></div>
+  </div>
+  <details><summary>展开全部 67 项（名字、每拍形状、类型）</summary><div class="flist"><table id="flist"></table></div></details>
+</section>
+
+<section class="stack">
+  <h2>两条数据放在一起比</h2>
+  <p class="prose">两条来自同一个实验室、同一台机械臂、同样的相机摆位，结构完全一样。差别都在“人怎么做的”上：</p>
+  <div class="compare"><table>
+    <thead><tr><th></th><th>案例 A · 绿方块放进黑碗</th><th>案例 B · 黄方块丢进蓝杯</th></tr></thead>
+    <tbody>
+      <tr><th>任务描述</th><td>只有任务类别：“把物体放进或拿出容器”</td><td>有具体指令：“drop yellow block into blue cup”</td></tr>
+      <tr><th>长度</th><td class="num">97 拍 · 6.8 秒</td><td class="num">99 拍 · 6.9 秒</td></tr>
+      <tr><th>手一共走了</th><td class="num">69 厘米</td><td class="num">97 厘米</td></tr>
+      <tr><th>不算数的拍</th><td>开头 15 拍</td><td>开头 13 拍，结尾 4 拍</td></tr>
+      <tr><th>夹住后实测开合</th><td class="num">0.53</td><td class="num">0.61（物体宽度不同，停的位置也不同）</td></tr>
+      <tr><th>怎么松手</th><td>手还在往前走就松开，方块是“甩”进碗里的</td><td>手先停住，再张开夹爪</td></tr>
+    </tbody>
+  </table></div>
+  <p class="prose muted">最后一行说明，同样是“放进去”，不同的人、不同的时候做法不一样。这些细节只有看轨迹才看得出来。</p>
+</section>
+
+<section class="stack">
+  <h2>用这份数据时要注意</h2>
+  <ol class="notes prose">
+    <li><span><b>坐标都是相对底座的。</b>x 前、y 左、z 上，单位米；角度单位是弧度。换一台摆放位置不同的机器人，要先换算。</span></li>
+    <li><span><b>roll 会在 ±3.14 之间跳。</b>夹爪朝下时 roll 接近 180°。179° 和 −179° 其实只差 2°，写成数字却差了 6.28。案例 A 里这样跳了 4 次，比如第 19 拍 +3.14，第 20 拍变成 −3.12。直接对数字求平均或插值会出错，要先换成别的写法（比如四元数）。</span></li>
+    <li><span><b>skip_action 的拍要去掉。</b>那几拍操作员还没按“允许移动”（或已经松开），手不动，记下来的指令也不算数。</span></li>
+    <li><span><b>夹爪方向可能和你的工具相反。</b>DROID 里 0 开、1 合；<a href="https://github.com/Open-RUA/uni-robot-agent">uni-robot-agent</a> 里 0 合、1 开。拿 DROID 的数据去喂 Harness 时要先翻过来。</span></li>
+    <li><span><b>节拍不完全均匀。</b>名义上每秒 15 拍，实际是 66 到 76 毫秒一拍，平均约 14 拍每秒。视频也是每拍一帧，要按时间戳对齐，不能假设刚好整齐。</span></li>
+    <li><span><b>指令和实测别混用。</b>想知道“手实际去了哪”用实测；想模仿“人当时想让手去哪”用指令。两者平均差 3 厘米左右，夹爪差得更多。</span></li>
+  </ol>
+</section>
+
+<footer class="foot">
+  <p>数据：<a href="https://droid-dataset.github.io/">DROID</a> 原始格式（trajectory.h5 + 视频 + 说明文件），字段说明见 <a href="https://droid-dataset.github.io/droid/the-droid-dataset">DROID 数据集文档</a>。案例 A：<code>AUTOLab_0d4edc83_2023_10_27_20h_20m_26s</code>；案例 B：<code>AUTOLab_84bd5053_2023_08_18_12h_06m_13s</code>。</p>
+  <p>画面来自外部相机 2（编号 24400334）的左眼。画面上的点，是用数据里的相机位置和相机内参，把每拍的 x、y、z 投到画面上算出来的。阶段划分是看画面和曲线人工标的。</p>
+  <p>本页收录于 <a href="https://github.com/jiangjin1999/awesome-multimodal-agentic-coding">Awesome Multimodal Agentic Coding</a> 的 <a href="https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/blob/main/README.zh-CN.md#s3-4">3.4 数据</a>。</p>
+  <p id="status"></p>
+</footer>
+</div>
+
+<script>
+(() => {
+  const $ = s => document.querySelector(s);
+  const NS = "http://www.w3.org/2000/svg";
+  let DATA = null, C = null, step = 0, timer = null;
+  const sprites = {};
+  const updaters = [];
+
+  const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+  const f = (v, n) => (v < 0 ? "−" : "") + Math.abs(v).toFixed(n);
+  const el = (tag, attrs = {}, parent) => {
+    const e = document.createElementNS(NS, tag);
+    for (const k in attrs) e.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(e);
+    return e;
+  };
+
+  // ---------- static per-case text ----------
+  const META = {
+    A: { size: "678 KB", file: "metadata_AUTOLab+0d4edc83+2023-10-27-20h-20m-26s.json", meta: [
+      ["lab", "AUTOLab", "哪个实验室录的"],
+      ["date", "2023-10-27", "哪天录的"],
+      ["current_task", "Move object into or out of container …", "任务。这条只写了任务类别：把物体放进或拿出容器"],
+      ["success", "true", "操作员录完按了“成功”"],
+      ["trajectory_length", "97", "一共多少拍"],
+      ["ext1 / ext2 / wrist_cam_serial", "22008760 / 24400334 / 18026681", "三台相机的编号，对应视频文件名"],
+      ["*_cam_extrinsics", "6 个数", "相机放在哪、朝哪"],
+    ]},
+    B: { size: "759 KB", file: "metadata_AUTOLab+84bd5053+2023-08-18-12h-06m-13s.json", meta: [
+      ["lab", "AUTOLab", "哪个实验室录的"],
+      ["date", "2023-08-18", "哪天录的"],
+      ["current_task", "drop yellow block into blue cup", "任务。这条写了具体指令：把黄方块丢进蓝杯"],
+      ["success", "true", "操作员录完按了“成功”"],
+      ["trajectory_length", "99", "一共多少拍"],
+      ["ext1 / ext2 / wrist_cam_serial", "22008760 / 24400334 / 18026681", "三台相机的编号，对应视频文件名"],
+      ["*_cam_extrinsics", "6 个数", "相机放在哪、朝哪"],
+    ]},
+  };
+  const TEXT = {
+    A: {
+      lead: "以第 30 拍为例：指令里手的高度是 23.8 厘米，实测还在 28.2 厘米，指令先到了 4 厘米。整条平均领先约 3.3 厘米。",
+      grip: "指令最高只到 0.78，因为手柄扳机没有按到底。实测更低，停在 0.53，因为方块卡在两根手指中间，夹不到底。所以实测停在半中间，恰好说明“手里夹着东西”。松手时指令一下掉到 0.28，实测要过 0.6 秒左右才完全张开。",
+    },
+    B: {
+      lead: "以第 25 拍为例：指令里手的高度是 27.8 厘米，实测还在 34.8 厘米，指令先到了 7 厘米（这条手移动得快，领先也更多）。整条平均领先约 3.8 厘米。",
+      grip: "指令最高到 0.86，实测停在 0.61，因为黄方块卡在两根手指中间。松手时指令在第 86 拍从 0.85 掉到 0.36，实测要到第 96 拍左右才完全张开，也就是要等 0.7 秒左右。",
+    },
+  };
+
+  function renderTree() {
+    const u = C.uuid, m = META[C.key];
+    const rows = [
+      ["", u + "/", "", "这条数据的编号"],
+      ["star", "├─ trajectory.h5", m.size, "轨迹：每一拍的数字（这一页的重点）"],
+      ["", "├─ " + m.file, "1.7 KB", "说明：实验室、任务、是否成功、相机编号"],
+      ["", "└─ recordings/", "", ""],
+      ["", "   ├─ MP4/22008760.mp4", "", "外部相机 1 的画面"],
+      ["", "   ├─ MP4/24400334.mp4", "", "外部相机 2 的画面（下面用的就是这一路）"],
+      ["", "   └─ SVO/22008760.svo, 24400334.svo", "", "同两台相机的双目原始录像，可以算出深度"],
+    ];
+    $("#tree").innerHTML = rows.map(([c, a, s, b]) =>
+      `<tr class="${c}"><td>${a}</td><td class="size">${s}</td><td>${b}</td></tr>`).join("");
+    $("#meta").innerHTML = m.meta.map(([k, v, d]) =>
+      `<dt>${k}</dt><dd><span class="mono">${v}</span><br><span class="muted">${d}</span></dd>`).join("");
+  }
+
+  function renderRow7() {
+    const s = C.keys[2].step;
+    const vals = [["x", C.x[s], 3], ["y", C.y[s], 3], ["z", C.z[s], 3], ["roll", C.roll[s], 2], ["pitch", C.pitch[s], 2], ["yaw", C.yaw[s], 2], ["夹爪", C.go[s], 2]];
+    $("#row7").innerHTML = vals.map(([k, v, n]) => `<div><div class="v">${f(v, n)}</div><div class="k">${k}</div></div>`).join("");
+    $("#row7-when").textContent = `案例 ${C.key} 第 ${s} 拍（${C.t[s].toFixed(2)} 秒，${C.keys[2].label}）`;
+    $("#intro-len").textContent = `案例 ${C.key} 一共 ${C.duration.toFixed(1)} 秒，记了 ${C.T} 拍。`;
+    $("#tbl-len").textContent = `案例 ${C.key} 一共 ${C.T} 行`;
+  }
+
+  function renderKeys() {
+    const cam = C.cam, rows = Math.ceil(100 / cam.cols);
+    $("#keys").innerHTML = C.keys.map(({ step: s, label }) => {
+      const fr = cam.s2f[s], col = fr % cam.cols, row = Math.floor(fr / cam.cols);
+      const bg = `background-image:url(${cam.sprite});background-size:${cam.cols * 100}% ${rows * 100}%;background-position:${col / (cam.cols - 1) * 100}% ${row / (rows - 1) * 100}%`;
+      return `<tr data-step="${s}" tabindex="0"><td class="l"><div class="thumb" style="${bg}"></div></td><td>${s}</td><td>${C.t[s].toFixed(2)}</td>` +
+        `<td>${f(C.x[s], 3)}</td><td>${f(C.y[s], 3)}</td><td>${f(C.z[s], 3)}</td><td>${f(C.roll[s], 2)}</td><td>${f(C.pitch[s], 2)}</td><td>${f(C.yaw[s], 2)}</td>` +
+        `<td>${C.ga[s].toFixed(2)}</td><td>${C.go[s].toFixed(2)}</td><td class="l">${label}</td></tr>`;
+    }).join("");
+    for (const tr of $("#keys").children) {
+      const go = () => { seek(+tr.dataset.step); $("#viewer").scrollIntoView({ behavior: "smooth", block: "start" }); };
+      tr.addEventListener("click", go);
+      tr.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } });
+    }
+  }
+
+  function renderPhases() {
+    $("#phases").innerHTML = C.phases.map((p, i) => `<button type="button" data-i="${i}">${p.name}</button>`).join("");
+    for (const b of $("#phases").children) b.addEventListener("click", () => { stop(); seek(C.phases[+b.dataset.i].a + (+b.dataset.i === 0 ? 0 : 2)); });
+  }
+
+  // ---------- charts ----------
+  const W = 440, H = 190, L = 40, R = 10, T = 10, B = 26;
+
+  function timeChart(host, { series, ymin, ymax, yticks, yfmt }) {
+    host.innerHTML = "";
+    const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img" }, host);
+    const tmax = C.t[C.T - 1];
+    const X = t => L + t / tmax * (W - L - R);
+    const Y = v => T + (1 - (v - ymin) / (ymax - ymin)) * (H - T - B);
+    C.phases.forEach((p, i) => {
+      const x0 = X(C.t[p.a]), x1 = X(C.t[Math.min(p.b + 1, C.T - 1)]);
+      el("rect", { x: x0, y: T, width: Math.max(0, x1 - x0), height: H - T - B, class: i % 2 ? "band-b" : "band-a" }, svg);
+    });
+    for (const v of yticks) {
+      el("line", { x1: L, x2: W - R, y1: Y(v), y2: Y(v), class: "grid" }, svg);
+      el("text", { x: L - 6, y: Y(v) + 3.5, "text-anchor": "end" }, svg).textContent = yfmt(v);
+    }
+    for (let s = 0; s <= Math.floor(tmax); s++) {
+      el("line", { x1: X(s), x2: X(s), y1: H - B, y2: H - B + 4, class: "axis" }, svg);
+      el("text", { x: X(s), y: H - B + 15, "text-anchor": "middle" }, svg).textContent = s + (s === Math.floor(tmax) ? " 秒" : "");
+    }
+    el("line", { x1: L, x2: W - R, y1: H - B, y2: H - B, class: "axis" }, svg);
+    for (const sr of series) {
+      const d = sr.vals.map((v, i) => `${i ? "L" : "M"}${X(C.t[i]).toFixed(1)},${Y(v).toFixed(1)}`).join("");
+      el("path", { d, fill: "none", stroke: sr.color, "stroke-width": sr.dash ? 1.6 : 2.2, "stroke-dasharray": sr.dash ? "4 3" : "none", "stroke-linejoin": "round" }, svg);
+    }
+    const cur = el("line", { y1: T, y2: H - B, class: "cursor" }, svg);
+    const dots = series.filter(s => !s.dash).map(sr => ({ sr, c: el("circle", { r: 4, fill: sr.color, stroke: "var(--surface)", "stroke-width": 1.5 }, svg) }));
+    svg.addEventListener("click", e => {
+      const p = svg.createSVGPoint(); p.x = e.clientX; p.y = e.clientY;
+      const q = p.matrixTransform(svg.getScreenCTM().inverse());
+      const t = (q.x - L) / (W - L - R) * tmax;
+      let best = 0; C.t.forEach((v, i) => { if (Math.abs(v - t) < Math.abs(C.t[best] - t)) best = i; });
+      stop(); seek(best);
+    });
+    updaters.push(s => {
+      const x = X(C.t[s]); cur.setAttribute("x1", x); cur.setAttribute("x2", x);
+      for (const { sr, c } of dots) { c.setAttribute("cx", x); c.setAttribute("cy", Y(sr.vals[s])); }
+    });
+  }
+
+  function topChart(host, interactive) {
+    host.innerHTML = "";
+    const w = W, h = 270, pad = 30;
+    const svg = el("svg", { viewBox: `0 0 ${w} ${h}`, role: "img", "aria-label": "俯视图" }, host);
+    const hs = C.y.map(v => -v), vs = C.x;
+    let hmin = Math.min(0, ...hs) - .06, hmax = Math.max(0, ...hs) + .06, vmin = -.04, vmax = Math.max(...vs) + .05;
+    const k = Math.min((w - 2 * pad) / (hmax - hmin), (h - 2 * pad) / (vmax - vmin));
+    const ox = (w - k * (hmax - hmin)) / 2, oy = (h - k * (vmax - vmin)) / 2;
+    const PX = v => ox + (v - hmin) * k, PY = v => h - oy - (v - vmin) * k;
+    // 10 cm grid
+    for (let g = Math.ceil(hmin * 10) / 10; g <= hmax; g += .1) el("line", { x1: PX(g), x2: PX(g), y1: PY(vmin), y2: PY(vmax), class: "grid" }, svg);
+    for (let g = 0; g <= vmax; g += .1) el("line", { x1: PX(hmin), x2: PX(hmax), y1: PY(g), y2: PY(g), class: "grid" }, svg);
+    // base and axes
+    const bx = PX(0), by = PY(0);
+    el("rect", { x: bx - 9, y: by - 9, width: 18, height: 18, rx: 3, fill: "var(--sunk)", stroke: "var(--muted)" }, svg);
+    el("text", { x: bx, y: by + 22, "text-anchor": "middle" }, svg).textContent = "底座（原点）";
+    const arrow = (x2, y2, label, lx, ly, anchor) => {
+      el("line", { x1: bx, y1: by, x2, y2, stroke: "var(--muted)", "stroke-width": 1.4, "marker-end": "url(#ah)" }, svg);
+      el("text", { x: lx, y: ly, "text-anchor": anchor }, svg).textContent = label;
+    };
+    const defs = el("defs", {}, svg), mk = el("marker", { id: "ah", viewBox: "0 0 8 8", refX: 7, refY: 4, markerWidth: 7, markerHeight: 7, orient: "auto" }, defs);
+    el("path", { d: "M0,0 L8,4 L0,8 z", fill: "var(--muted)" }, mk);
+    arrow(bx, PY(.12), "x 前", bx + 5, PY(.12) + 4, "start");
+    arrow(PX(-.12), by, "y 左", PX(-.12), by - 6, "middle");
+    el("text", { x: w - 6, y: h - 6, "text-anchor": "end" }, svg).textContent = "格子 10 厘米";
+    // path colored by gripper command
+    for (let i = 1; i < C.T; i++) {
+      el("line", { x1: PX(hs[i - 1]), y1: PY(vs[i - 1]), x2: PX(hs[i]), y2: PY(vs[i]), stroke: C.ga[i] >= .5 ? "var(--closed)" : "var(--open)", "stroke-width": 3, "stroke-linecap": "round" }, svg);
+    }
+    const s0 = C.phases[1].a;
+    el("circle", { cx: PX(hs[s0]), cy: PY(vs[s0]), r: 3, fill: "var(--muted)" }, svg);
+    el("text", { x: PX(hs[s0]) + 7, y: PY(vs[s0]) + 4 }, svg).textContent = "起点";
+    if (!interactive) {
+      const s = C.keys[2].step;
+      el("circle", { cx: PX(hs[s]), cy: PY(vs[s]), r: 5.5, fill: "var(--closed)", stroke: "var(--surface)", "stroke-width": 2 }, svg);
+      el("text", { x: PX(hs[s]) - 8, y: PY(vs[s]) - 8, "text-anchor": "end" }, svg).textContent = `第 ${s} 拍`;
+      return;
+    }
+    const dot = el("circle", { r: 6, stroke: "var(--surface)", "stroke-width": 2 }, svg);
+    svg.addEventListener("click", e => {
+      const p = svg.createSVGPoint(); p.x = e.clientX; p.y = e.clientY;
+      const q = p.matrixTransform(svg.getScreenCTM().inverse());
+      let best = 0, bd = 1e9;
+      for (let i = 0; i < C.T; i++) { const d = (PX(hs[i]) - q.x) ** 2 + (PY(vs[i]) - q.y) ** 2; if (d < bd) { bd = d; best = i; } }
+      stop(); seek(best);
+    });
+    updaters.push(s => { dot.setAttribute("cx", PX(hs[s])); dot.setAttribute("cy", PY(vs[s])); dot.setAttribute("fill", C.ga[s] >= .5 ? "var(--closed)" : "var(--open)"); });
+  }
+
+  function renderCharts() {
+    updaters.length = 0;
+    const cm = a => a.map(v => v * 100);
+    const zs = cm(C.z).concat(cm(C.az));
+    const zmin = Math.floor(Math.min(...zs) / 10) * 10, zmax = Math.ceil(Math.max(...zs) / 10) * 10;
+    const rng = (a, b, st) => { const o = []; for (let v = a; v <= b + 1e-9; v += st) o.push(Math.round(v)); return o; };
+    timeChart($("#c-z"), { series: [{ vals: cm(C.az), color: "var(--cmd)", dash: true }, { vals: cm(C.z), color: "var(--accent)" }],
+      ymin: zmin, ymax: zmax, yticks: rng(zmin, zmax, 10), yfmt: v => v + " cm" });
+    const xy = cm(C.x).concat(cm(C.y), cm(C.ax), cm(C.ay));
+    const amin = Math.floor(Math.min(...xy) / 10) * 10, amax = Math.ceil(Math.max(...xy) / 10) * 10;
+    timeChart($("#c-xy"), { series: [{ vals: cm(C.ax), color: "var(--cmd)", dash: true }, { vals: cm(C.ay), color: "var(--cmd)", dash: true },
+      { vals: cm(C.x), color: "var(--accent)" }, { vals: cm(C.y), color: "var(--y)" }],
+      ymin: amin, ymax: amax, yticks: rng(amin, amax, 10), yfmt: v => v + " cm" });
+    const host = $("#c-xy");
+    const lg = document.createElement("div"); lg.className = "legend";
+    lg.innerHTML = '<span><i style="background:var(--accent)"></i>x 前后</span><span><i style="background:var(--y)"></i>y 左右</span><span><i style="background:repeating-linear-gradient(90deg,var(--cmd) 0 4px,transparent 4px 7px)"></i>指令</span>';
+    host.appendChild(lg);
+    timeChart($("#c-g"), { series: [{ vals: C.ga, color: "var(--cmd)", dash: true }, { vals: C.go, color: "var(--closed)" }],
+      ymin: 0, ymax: 1, yticks: [0, .5, 1], yfmt: v => v === 0 ? "0 开" : v === 1 ? "1 合" : "0.5" });
+    topChart($("#c-top"), true);
+    topChart($("#topview-static"), false);
+  }
+
+  // ---------- frame canvas ----------
+  function loadSprite(c) {
+    if (sprites[c.key]) return sprites[c.key];
+    const img = new Image();
+    img.onload = () => { if (C && C.key === c.key) { draw(); } };
+    img.onerror = () => { $("#status").innerHTML = '<span class="err">视频画面没能加载，轨迹和图表不受影响。</span>'; };
+    img.src = c.cam.sprite;
+    sprites[c.key] = img;
+    return img;
+  }
+
+  function draw() {
+    const cv = $("#cv"), ctx = cv.getContext("2d"), Wc = cv.width, Hc = cv.height;
+    const cam = C.cam, img = sprites[C.key], fr = cam.s2f[step];
+    ctx.fillStyle = "#000"; ctx.fillRect(0, 0, Wc, Hc);
+    if (img && img.complete && img.naturalWidth) {
+      ctx.drawImage(img, (fr % cam.cols) * cam.cw, Math.floor(fr / cam.cols) * cam.ch, cam.cw, cam.ch, 0, 0, Wc, Hc);
+    } else {
+      ctx.fillStyle = "#888"; ctx.font = "28px sans-serif"; ctx.fillText("画面加载中…", 30, 50);
+    }
+    const P = cam.proj.map(p => p ? [p[0] * Wc, p[1] * Hc] : null);
+    const open = css("--ov-open"), closed = css("--ov-closed"), fut = css("--ov-future");
+    ctx.lineCap = "round"; ctx.lineJoin = "round";
+    ctx.setLineDash([10, 9]); ctx.lineWidth = 3; ctx.strokeStyle = fut; ctx.beginPath();
+    let started = false;
+    for (let i = step; i < C.T; i++) { if (!P[i]) { started = false; continue; } if (!started) { ctx.moveTo(...P[i]); started = true; } else ctx.lineTo(...P[i]); }
+    ctx.stroke(); ctx.setLineDash([]);
+    ctx.lineWidth = 5;
+    for (let i = 1; i <= step; i++) {
+      if (!P[i] || !P[i - 1]) continue;
+      ctx.strokeStyle = C.ga[i] >= .5 ? closed : open;
+      ctx.beginPath(); ctx.moveTo(...P[i - 1]); ctx.lineTo(...P[i]); ctx.stroke();
+    }
+    if (P[step]) {
+      ctx.beginPath(); ctx.arc(P[step][0], P[step][1], 11, 0, Math.PI * 2);
+      ctx.fillStyle = C.ga[step] >= .5 ? closed : open; ctx.fill();
+      ctx.lineWidth = 3; ctx.strokeStyle = "#fff"; ctx.stroke();
+    }
+    $("#cap").textContent = P[step] && (P[step][1] < 0) ? "手在画面上方，出画了" : `外部相机 2 · 第 ${step} 拍`;
+  }
+
+  // ---------- rotation helpers ----------
+  function rot(r, p, y) {
+    const cr = Math.cos(r), sr = Math.sin(r), cp = Math.cos(p), sp = Math.sin(p), cy = Math.cos(y), sy = Math.sin(y);
+    return [[cy * cp, cy * sp * sr - sy * cr, cy * sp * cr + sy * sr], [sy * cp, sy * sp * sr + cy * cr, sy * sp * cr - cy * sr], [-sp, cp * sr, cp * cr]];
+  }
+  function angleBetween(A, Bm) {
+    let tr = 0; for (let i = 0; i < 3; i++) for (let j = 0; j < 3; j++) tr += A[j][i] * Bm[j][i];
+    return Math.acos(Math.max(-1, Math.min(1, (tr - 1) / 2))) * 180 / Math.PI;
+  }
+
+  function gripWords(s) {
+    const a = C.ga[s], o = C.go[s];
+    if (a < .05 && o < .05) return "全开";
+    if (a > o + .12) return "正在合";
+    if (a < o - .12) return "正在张开";
+    if (o > .3) return "合着，手指间夹着东西";
+    return "基本张开";
+  }
+
+  function seek(s) {
+    step = Math.max(0, Math.min(C.T - 1, s));
+    $("#slider").value = step;
+    $("#slabel").textContent = `${step} / ${C.T - 1}`;
+    $("#now-step").innerHTML = `第 ${step} 拍<small>共 ${C.T} 拍</small>`;
+    $("#now-time").textContent = `${C.t[step].toFixed(2)} 秒`;
+    const pi = C.phases.findIndex(p => step >= p.a && step <= p.b);
+    const ph = C.phases[pi];
+    $("#now-phase").innerHTML = `<b>${ph.name}</b> · ${ph.desc}${C.skip[step] ? '<br><span class="muted">这一拍标了 skip_action：不算数</span>' : ""}`;
+    [...$("#phases").children].forEach((b, i) => b.setAttribute("aria-current", i === pi ? "true" : "false"));
+    const x = C.x[step], y = C.y[step], z = C.z[step];
+    const deg = angleBetween(rot(C.roll[0], C.pitch[0], C.yaw[0]), rot(C.roll[step], C.pitch[step], C.yaw[step]));
+    $("#decode").innerHTML = [
+      ["x", f(x, 3) + " m", `在底座前方 ${(x * 100).toFixed(1)} 厘米`],
+      ["y", f(y, 3) + " m", `${y >= 0 ? "偏左" : "偏右"} ${Math.abs(y * 100).toFixed(1)} 厘米`],
+      ["z", f(z, 3) + " m", `比底座高 ${(z * 100).toFixed(1)} 厘米`],
+      null,
+      ["roll", f(C.roll[step], 2), "夹爪朝下（roll 约 ±3.14）"],
+      ["pitch", f(C.pitch[step], 2), ""],
+      ["yaw", f(C.yaw[step], 2), `三个角合起来：比开头转了 ${deg.toFixed(0)}°`],
+    ].map(r => r ? `<span class="k">${r[0]}</span><span class="v">${r[1]}</span><span class="h">${r[2]}</span>` : '<span class="sep"></span>').join("");
+    const bar = (label, v, color) => `<div class="bar"><span>${label}</span><span class="track"><span class="fill" style="width:${(v * 100).toFixed(1)}%;background:${color}"></span></span><span class="num">${v.toFixed(2)}</span></div>`;
+    $("#bars").innerHTML = `<div class="muted" style="font-size:13px">夹爪：<b style="color:var(--ink)">${gripWords(step)}</b></div>` +
+      bar("指令", C.ga[step], "var(--cmd)") + bar("实测", C.go[step], "var(--closed)") + '<div class="bar-scale"><span>0 开</span><span>1 合</span></div>';
+    for (const tr of $("#keys").children) tr.classList.toggle("on", +tr.dataset.step === step);
+    for (const u of updaters) u(step);
+    draw();
+  }
+
+  function stop() { if (timer) { clearInterval(timer); timer = null; $("#play").textContent = "播放"; } }
+  function play() {
+    if (timer) return stop();
+    if (step >= C.T - 1) seek(0);
+    $("#play").textContent = "暂停";
+    timer = setInterval(() => { if (step >= C.T - 1) return stop(); seek(step + 1); }, 1000 / C.hz);
+  }
+
+  function pick(key) {
+    stop();
+    C = DATA.cases.find(c => c.key === key);
+    for (const b of document.querySelectorAll(".switch button")) b.setAttribute("aria-pressed", b.dataset.case === key ? "true" : "false");
+    $("#slider").max = C.T - 1;
+    loadSprite(C);
+    renderTree(); renderRow7(); renderKeys(); renderPhases(); renderCharts();
+    $("#lead-text").textContent = TEXT[key].lead;
+    $("#grip-text").textContent = TEXT[key].grip;
+    seek(C.keys[2].step);
+    try { history.replaceState(null, "", key === "B" ? "#case-b" : "#case-a"); } catch (e) {}
+  }
+
+  function renderFields(fields) {
+    $("#flist").innerHTML = fields.map(([p, sh]) => `<tr><td>${p}</td><td>${Array.isArray(sh) ? sh.join(" × ") : sh}</td></tr>`).join("");
+  }
+
+  $("#slider").addEventListener("input", e => { stop(); seek(+e.target.value); });
+  $("#play").addEventListener("click", play);
+  for (const b of document.querySelectorAll(".switch button")) b.addEventListener("click", () => pick(b.dataset.case));
+  window.addEventListener("hashchange", () => { const k = location.hash === "#case-b" ? "B" : "A"; if (DATA && C && C.key !== k) pick(k); });
+  if (window.matchMedia) matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", () => C && draw());
+
+  fetch("cases.json").then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(d => {
+    DATA = d;
+    renderFields(d.fields);
+    pick(location.hash === "#case-b" ? "B" : "A");
+  }).catch(err => {
+    $("#status").innerHTML = `<span class="err">数据没能加载（${err.message}），交互部分暂时不可用，文字说明不受影响。</span>`;
+  });
+})();
+</script>
+</body>
+</html>

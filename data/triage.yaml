@@ -44,6 +44,12 @@ runs:
   covered: Maintainer-prioritized review of PEAR (2611.18562), previously pending. Read v1 and checked the official project,
     code and model weights. Cross-checked work identities and reviewed recent references against the catalog and queue.
   note: Added PEAR under 3.5 post-training and queued four citation leads. This review supplements the same-day sweep.
+- date: '2026-11-17'
+  trigger: report
+  covered: Maintainer-requested publication of the existing interactive DROID walkthrough. Reconciled the page and
+    generated navigation from claude/brave-lovelace-51e46e with the latest main. No research discovery or candidate review.
+  note: Section 3.4 and the contents link to the GitHub Pages walkthrough in all three READMEs. The HTML, episode data
+    and camera frames are stored under stage3/droid-data/. Catalog entries and candidate decisions are unchanged.
 candidates:
 - id: '2610.35817'
   title: 'Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics'

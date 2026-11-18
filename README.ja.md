@@ -64,7 +64,6 @@
   - [3.2 シミュレータ構築](#s3-2) (68)
   - [3.3 シミュレータ品質評価](#s3-3) (29)
   - [3.4 データ](#s3-4) (15)
-    - 📖 [解説：DROID のデータを 1 本読む](https://jiangjin1999.github.io/awesome-multimodal-agentic-coding/stage3/droid-data/index.ja.html)
   - [3.5 学習と能力向上](#s3-5) (80)
   - [3.6 物理応用と実験](#s3-6) (49)
     - [科学実験（AI4Science）](#s3-6-experiments) (27)

@@ -40,11 +40,16 @@ class CatalogTests(unittest.TestCase):
     def test_walkthrough_links_need_a_page_and_three_languages(self):
         guides = self.site['sections']['3.4']['guides']
         self.assertTrue(guides)
+        default_site = deepcopy(self.site)
+        default_site['sections']['3.4']['guides'][0].pop('in_contents')
         for lang in self.site['languages']:
+            link = f"]({guides[0]['url'][lang]})"
             text = render(self.site, self.works, lang)
-            url = guides[0]['url'][lang]
-            self.assertIn(f"]({url})", text.split('## ', 3)[2])  # listed in the contents
-            self.assertEqual(text.count(f"]({url})"), 2)  # contents and section entrance
+            self.assertNotIn(link, text.split('## ', 3)[2])
+            self.assertIn(link, text.split('<a id="s3-4"></a>', 1)[1].split('### 3.5', 1)[0])
+            default_text = render(default_site, self.works, lang)
+            self.assertIn(link, default_text.split('## ', 3)[2])
+            self.assertEqual(default_text.count(link), 2)
         for broken in ({'page': 'stage3/missing/index.html'}, {'page': 'https://example.com/page'},
                        {'url': 'https://example.com/elsewhere/'}, {'note': {'en': 'x'}},
                        {'page': {'en': guides[0]['page']['en']}}, {'url': {'en': guides[0]['url']['en']}}):

@@ -311,8 +311,10 @@ def render(site, works, lang):
         for sec in st['sections']:
             meta = site['sections'][sec]
             o(f"  - [{sec} {meta[lang]}](#{sec_anchor(sec)}) ({sec_count.get(sec, 0)})")
-            # Walkthrough pages open directly from the contents.
+            # Walkthroughs can opt out of the contents and stay in the section.
             for g in meta.get('guides') or []:
+                if not g.get('in_contents', True):
+                    continue
                 label, gap = guide_label(site, lang)
                 o(f"    - 📖 [{label}{gap}{g['title'][lang]}]({guide_value(g, 'url', lang)})")
             # Selected subgroups are also listed in the contents, indented under their section.

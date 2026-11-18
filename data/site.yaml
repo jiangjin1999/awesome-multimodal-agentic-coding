@@ -2130,9 +2130,10 @@ sections:
     - sim-data
     - mixed-data
     # Walkthrough pages: interactive pages kept in this repository (`page`) and served by GitHub Pages (`url`).
-    # Each is linked at the top of the section and indented under it in the contents.
+    # Each is linked at the top of the section.
     guides:
-    - page:
+    - in_contents: false
+      page:
         en: stage3/droid-data/index.en.html
         zh: stage3/droid-data/index.html
         ja: stage3/droid-data/index.ja.html

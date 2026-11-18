@@ -13,7 +13,7 @@
 
 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从数字世界延伸到物理世界。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-668-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--17-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-669-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--18-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · **简体中文** · [日本語](./README.ja.md)
 
@@ -62,7 +62,7 @@
   - [3.3 仿真器质量评估](#s3-3) (29)
   - [3.4 数据](#s3-4) (15)
     - 📖 [导读：读懂一条 DROID 数据](https://jiangjin1999.github.io/awesome-multimodal-agentic-coding/stage3/droid-data/)
-  - [3.5 训练与能力提升](#s3-5) (75)
+  - [3.5 训练与能力提升](#s3-5) (76)
   - [3.6 物理应用与实验](#s3-6) (49)
     - [科学实验（AI4Science）](#s3-6-experiments) (27)
   - [仿真引擎一览](#s3-engines)
@@ -3547,6 +3547,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-2609-40306"></a>`2026.09` **[DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents](https://arxiv.org/abs/2609.40306)** [[项目页]](https://denghaoyuan123.github.io/Dynaharness_page/)
   > 用物理执行契约约束 Harness 演化。<br>
   > 🖥️ **仿真** MuJoCo（Franka Panda）
+
+<!-- mmac-record: {"id": "2609.19138", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2609-19138"></a>`2026.09` **[In-Context Robot Learning with VLM Agents](https://arxiv.org/abs/2609.19138)** [[项目页]](https://cheng-haha.github.io/GPT-Policy/) [[代码]](https://github.com/cheng-haha/GPT-Policy) [[数据集]](https://huggingface.co/datasets/SII-CDZ/gpt-policy-robodojo-contexts)
+  > 让固定权重的视觉语言模型借助示范和执行反馈适应机器人任务。<br>
+  > 🖥️ **仿真** Isaac Sim
 
 <!-- mmac-record: {"id": "2609.39018", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 

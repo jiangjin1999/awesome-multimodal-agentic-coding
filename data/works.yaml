@@ -15839,3 +15839,30 @@
       (§4.4, Table 7) · qualitative demos on novel tasks.'
     zh: Qwen3.8-27B 根据相机画面与机械臂状态选择位姿增量，由控制器执行（§3.1） · 在 LIBERO 和两项 RoboDojo 任务中进行仿真强化学习（§3.2–3.3） · LIBERO 阶段检查点在 2,000
       次仿真评测中达到 74.4%，基础模型为 1.6%（§4.1、图 3） · 双臂 YAM 实机在两类仿真练过的任务上成功 18/30 次，基础模型为 0/30，LIBERO 阶段检查点为 7/30（§4.4、表 7） · 新任务仅作定性演示。
+- id: '2609.19138'
+  title: In-Context Robot Learning with VLM Agents
+  url: https://arxiv.org/abs/2609.19138
+  date: '2026.09'
+  section: '3.5'
+  sub: experience-skill
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Adapts fixed VLMs to robot tasks using demonstrations and execution feedback.
+    zh: 让固定权重的视觉语言模型借助示范和执行反馈适应机器人任务。
+    ja: 重みを固定した視覚言語モデルを、実演と実行時のフィードバックでロボットのタスクに適応させる。
+  setup:
+    engines:
+    - Isaac Sim
+  sources:
+  - https://arxiv.org/abs/2609.19138
+  - https://arxiv.org/html/2609.19138v1
+  - https://cheng-haha.github.io/GPT-Policy/
+  - https://github.com/cheng-haha/GPT-Policy
+  - https://huggingface.co/datasets/SII-CDZ/gpt-policy-robodojo-contexts
+  verification:
+    en: 'A fixed VLM receives live views, state and tool outcomes, then chooses a structured robot command (§3.1–3.3)
+      · real robot: human video raises towel and notebook pickup from 0/3 to 2/3 each (v1 Table 1) · separate project-page
+      RoboDojo simulation: 36/50 across ten tasks with one demonstration per task.'
+    zh: 固定权重的视觉语言模型接收实时画面、状态和工具执行结果，再选择结构化机器人指令（§3.1–3.3） · 实机上，人类视频使毛巾和笔记本拾取从各 0/3 提升至各 2/3（v1 表 1） · 项目页另报 RoboDojo
+      仿真，十项任务各给一条示范，成功 36/50。

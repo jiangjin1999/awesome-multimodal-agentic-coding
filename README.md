@@ -13,7 +13,7 @@
 
 A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to the physical world.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-668-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--17-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-669-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--18-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -62,7 +62,7 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [3.3 Simulator quality evaluation](#s3-3) (29)
   - [3.4 Data](#s3-4) (15)
     - 📖 [Walkthrough: Reading one DROID episode](https://jiangjin1999.github.io/awesome-multimodal-agentic-coding/stage3/droid-data/index.en.html)
-  - [3.5 Training and capability improvement](#s3-5) (75)
+  - [3.5 Training and capability improvement](#s3-5) (76)
   - [3.6 Physical applications and experiments](#s3-6) (49)
     - [Scientific experiments (AI4Science)](#s3-6-experiments) (27)
   - [Simulation engines at a glance](#s3-engines)
@@ -3547,6 +3547,12 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
 - <a id="paper-2609-40306"></a>`2026.09` **[DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents](https://arxiv.org/abs/2609.40306)** [[Project page]](https://denghaoyuan123.github.io/Dynaharness_page/)
   > Grounds harness evolution in physical execution contracts.<br>
   > 🖥️ **Sim** MuJoCo (Franka Panda)
+
+<!-- mmac-record: {"id": "2609.19138", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2609-19138"></a>`2026.09` **[In-Context Robot Learning with VLM Agents](https://arxiv.org/abs/2609.19138)** [[Project page]](https://cheng-haha.github.io/GPT-Policy/) [[Code]](https://github.com/cheng-haha/GPT-Policy) [[Dataset]](https://huggingface.co/datasets/SII-CDZ/gpt-policy-robodojo-contexts)
+  > Adapts fixed VLMs to robot tasks using demonstrations and execution feedback.<br>
+  > 🖥️ **Sim** Isaac Sim
 
 <!-- mmac-record: {"id": "2609.39018", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 

@@ -56,6 +56,15 @@ runs:
     explanations, dynamic labels, case annotations, language navigation and localized README destinations. No research review.
   note: The three pages share the same episode data, camera images, styles and interaction code. Existing catalog entries
     and candidate decisions are unchanged.
+- date: '2026-11-18'
+  trigger: sweep
+  covered: 'November 4–18, 2026: screened nine arXiv categories and read all 217 titles in the November 17 cs.RO listing,
+    including cross-lists and replacements. Queried visual code feedback, model orchestration, assets, robot policies,
+    and games and interactive worlds. Checked HF Daily Papers, GitHub lists and suggestions, official projects, enabled
+    benchmark sources and selected author sources. Reviewed the oldest queued item, GPT-Policy v1, and its references.'
+  note: Partial coverage. November 18 arXiv listings were still absent at recheck and HF showed the same papers as November
+    17. Last-updated paging completed cs.LG, cs.CL, cs.SE, cs.HC and cs.MM; cs.RO, cs.CV, cs.GR and cs.AI have incomplete
+    current-window coverage. Added GPT-Policy and queued 11 leads.
 candidates:
 - id: '2610.35817'
   title: 'Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics'
@@ -99,8 +108,14 @@ candidates:
   url: https://arxiv.org/abs/2609.19138
   found: '2026-11-15'
   via: cited by 2610.35817 [88]
-  decision: pending
-  note: VLM agents learn from demonstrations and interaction feedback. Check whether they write executable code.
+  decision: added
+  note: 3.5 experience-skill. Fixed model weights and deployment-time demonstration/interaction context (§3). A separate
+    runtime executes structured tool requests. v1 Table 1 reports hardware trials, while the project page separately reports
+    the RoboDojo simulation suite and releases its demonstration contexts.
+  decided: '2026-11-18'
+  precedent:
+  - '2611.12885'
+  - '2610.18874'
 - id: '2609.22966'
   title: Transferring the Intelligence of VLMs to Robotic Control
   url: https://arxiv.org/abs/2609.22966
@@ -473,3 +488,81 @@ candidates:
   via: cited by 2611.18562v1 (§3.1, Yang et al. 2026c)
   decision: pending
   note: Check the official implementation, visual feedback and the action interface for a Stage 3.1 harness entry.
+- id: '2606.30457'
+  title: What Enables In-Context Behavior Prompting for Manipulation?
+  url: https://arxiv.org/abs/2606.30457
+  found: '2026-11-18'
+  via: cited by 2609.19138v1 (§2)
+  decision: pending
+  note: Review in-context behavior prompting and the DrawAnything/LIBERO-Gen benchmarks.
+- id: '2608.26103'
+  title: 'Zero-WAM: In-Context World-Action Modeling from Human Videos for Open-Ended Task Generalization'
+  url: https://arxiv.org/abs/2608.26103
+  found: '2026-11-18'
+  via: cited by 2609.19138v1 (§1–2)
+  decision: pending
+  note: Check the video-conditioned action model and the release status of HumanGen.
+- id: '2611.19081'
+  title: 'RoboCoEvo: Expanding Robot Capabilities through Agent-Policy Co-Evolution'
+  url: https://arxiv.org/abs/2611.19081
+  found: '2026-11-18'
+  via: arXiv cs.RO new listing, 2026-11-17 batch
+  decision: pending
+  note: Check the division of feedback between the agent and learned policy.
+- id: '2611.19196'
+  title: 'Ego2Sim2Humanoid: Agentic Real-to-Sim for Learning Loco-Manipulation VLAs without Robot Demonstrations'
+  url: https://arxiv.org/abs/2611.19196
+  found: '2026-11-18'
+  via: arXiv cs.RO new listing, 2026-11-17 batch
+  decision: pending
+  note: Check the agent-generated simulation artifact and its downstream humanoid policy evidence.
+- id: '2611.19952'
+  title: 'CRAFT: A Robot-Agent Harness with Scope-Aware Adaptation'
+  url: https://arxiv.org/abs/2611.19952
+  found: '2026-11-18'
+  via: arXiv cs.RO new listing, 2026-11-17 batch
+  decision: pending
+  note: Check the harness interface and what changes after execution feedback.
+- id: '2611.21099'
+  title: 'ForceHarness: Turning Force into Action and Physics for Frozen Frontier Models'
+  url: https://arxiv.org/abs/2611.21099
+  found: '2026-11-18'
+  via: arXiv cs.RO new listing, 2026-11-17 batch
+  decision: pending
+  note: Check force observations and which subsequent action uses them.
+- id: '2611.19822'
+  title: 'The Flip Test: Video World Models Fail to Learn the World State'
+  url: https://arxiv.org/abs/2611.19822
+  found: '2026-11-18'
+  via: arXiv cs.RO new listing, 2026-11-17 batch
+  decision: pending
+  note: Check which state properties the video-world-model evaluation verifies.
+- id: '2611.20792'
+  title: 'TRR: A Thermal Interaction Engine for Robot Simulation and RGBT Data Generation'
+  url: https://arxiv.org/abs/2611.20792
+  found: '2026-11-18'
+  via: arXiv cs.RO new listing, 2026-11-17 batch
+  decision: pending
+  note: Check the simulator interaction model and data release.
+- id: '2611.20533'
+  title: 'RemeshingAgent: An Iterative Agent for Repair-Based Decimation of Generated Building Meshes'
+  url: https://arxiv.org/abs/2611.20533
+  found: '2026-11-18'
+  via: arXiv cs.GR new listing, 2026-11-17 batch
+  decision: pending
+  note: Check the iterative repair loop for generated meshes and how geometry is verified.
+- id: '2611.20948'
+  title: 'One Code per Material: Neural Representation and Generation of Measured BTFs'
+  url: https://arxiv.org/abs/2611.20948
+  found: '2026-11-18'
+  via: arXiv cs.GR new listing, 2026-11-17 batch
+  decision: pending
+  note: Check whether the material generator has a reusable release.
+- id: web:cli-cad
+  title: cli-cad
+  url: https://github.com/andrewimm/cli-cad
+  found: '2026-11-18'
+  via: TripoGrowthLab/awesome-astra-prompts commit 15f4598
+  decision: pending
+  note: Official repository found. Review the agent-facing CAD CLI and whether execution and preview evidence supports
+    a resource entry.

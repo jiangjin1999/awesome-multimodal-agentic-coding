@@ -13,7 +13,7 @@
 
 A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to the physical world.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-670-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--18-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-673-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--18-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -62,7 +62,7 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [3.3 Simulator quality evaluation](#s3-3) (29)
   - [3.4 Data](#s3-4) (15)
     - 📖 [Walkthrough: Reading one DROID episode](https://jiangjin1999.github.io/awesome-multimodal-agentic-coding/stage3/droid-data/index.en.html)
-  - [3.5 Training and capability improvement](#s3-5) (77)
+  - [3.5 Training and capability improvement](#s3-5) (80)
   - [3.6 Physical applications and experiments](#s3-6) (49)
     - [Scientific experiments (AI4Science)](#s3-6-experiments) (27)
   - [Simulation engines at a glance](#s3-engines)
@@ -2952,6 +2952,8 @@ All 68 works, step by step, including verification & revision and variant expans
 - <a id="paper-mujoco-workbench"></a>**[mujoco-workbench](https://github.com/Hebbian-Robotics/mujoco-workbench)**
   > A CLI and agent skills support rapid construction and inspection of MuJoCo scenes.
 
+*See also:* [CoEnv](#paper-2604-05484)
+
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20Back%20to%20contents-30363d?style=flat-square" alt="↑ Back to contents" height="24"></a></p>
 
 <a id="evaluation-physical-assets"></a>
@@ -3367,6 +3369,12 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
   > Searches reusable policy repositories before deployment.<br>
   > 🖥️ **Sim** MuJoCo (Franka Panda)
 
+<!-- mmac-record: {"id": "2604.05484", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2604-05484"></a>`2026.04` **[CoEnv: Code-Driven Exploration in Real-to-Sim Digital Twins for Multi-Arm Manipulation](https://arxiv.org/abs/2604.05484)** [[Project page]](https://faceong.github.io/CoEnv/) [[Code]](https://github.com/MARS-EAI/CoEnv)
+  > CoEx refines multi-arm robot programs in reconstructed digital twins before deployment.<br>
+  > 🖥️ **Sim** SAPIEN · 🦾 **Real** Franka FR3, AgileX PiPER
+
 <!-- mmac-record: {"id": "2603.04466", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2603-04466"></a>`2026.03` **[Act-Observe-Rewrite: Multimodal Coding Agents as In-Context Policy Learners for Robot Manipulation](https://arxiv.org/abs/2603.04466)**
@@ -3467,6 +3475,12 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
   > Compiles memory into autonomous action chunks.<br>
   > 🖥️ **Sim** MuJoCo (Franka Panda)
 
+<!-- mmac-record: {"id": "2610.09228", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2610-09228"></a>`2026.10` **[Co-Evolving Robot Orchestrators and Policies through Deployment](https://arxiv.org/abs/2610.09228)** [[Project page]](https://robo-cop.pages.dev/)
+  > Robo-COP revises robot programs and learns VLA policies from deployment.<br>
+  > 🖥️ **Sim** Isaac Lab
+
 <!-- mmac-record: {"id": "2610.25114", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-25114"></a>`2026.10` **[Compile Once, Run Cheap: Frozen, Portable Skills for Embodied Agents, and What Recursive Self-Improvement Adds](https://arxiv.org/abs/2610.25114)** [[Code]](https://github.com/Orillusion/embodied-skill-rsi)
@@ -3553,6 +3567,12 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
 - <a id="paper-2609-40306"></a>`2026.09` **[DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents](https://arxiv.org/abs/2609.40306)** [[Project page]](https://denghaoyuan123.github.io/Dynaharness_page/)
   > Grounds harness evolution in physical execution contracts.<br>
   > 🖥️ **Sim** MuJoCo (Franka Panda)
+
+<!-- mmac-record: {"id": "2609.37359", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2609-37359"></a>`2026.09` **[Encore: Few-Shot Agentic Discovery of Manipulation Strategies](https://arxiv.org/abs/2609.37359)** [[Project page]](https://yifank.github.io/encore/) [[Code]](https://github.com/YIFANK/encore)
+  > Turns a few demonstrations into robot programs refined through trial runs.<br>
+  > 🖥️ **Sim** MuJoCo + Isaac Sim · 🦾 **Real** Trossen WidowX AI
 
 <!-- mmac-record: {"id": "2609.19138", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 

@@ -71,6 +71,13 @@ runs:
     within the six-month window, and the saved cs.RO listing and screening records.
   note: Added ACE-CaP-0 in 3.5 experience-skill and queued three related works. The experience-acquisition recipe and
     frozen-policy protocol are relevant to the Stage 3 reading guide.
+- date: '2026-11-18'
+  trigger: citations
+  covered: Targeted review of Encore (2609.37359v1), Robo-COP (2610.09228v1), and CoEnv / CoEx (2604.05484v2). Checked the
+    full papers, official projects, and catalog and triage matches for their citations in the 2026-05-18 to 2026-11-18 window.
+  note: Added three program-and-feedback works to 3.5, with a 3.2 reference for CoEnv, and queued nine citation leads for
+    full-text review. The demonstration-to-program and deployment adaptation protocols are relevant to the Stage 3 reading
+    guide. This run covers the three reference lists.
 candidates:
 - id: '2610.35817'
   title: 'Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics'
@@ -591,15 +598,25 @@ candidates:
   url: https://arxiv.org/abs/2609.37359
   found: '2026-11-18'
   via: cited by 2611.16872v1 [13]
-  decision: pending
-  note: Check the demonstration-to-program development loop and the separate sealed evaluation.
+  decision: added
+  note: 3.5 experience-skill. Task-specific robot programs are revised during development using execution feedback and frozen
+    before sealed evaluation.
+  decided: '2026-11-18'
+  precedent:
+  - '2611.16872'
+  - '2610.25114'
 - id: '2610.09228'
   title: Co-Evolving Robot Orchestrators and Policies through Deployment
   url: https://arxiv.org/abs/2610.09228
   found: '2026-11-18'
   via: cited by 2611.16872v1 [28]
-  decision: pending
-  note: Check Robo-COP policy-adoption evidence and how the orchestrator changes after deployment.
+  decision: added
+  note: 3.5 experience-skill. Vision-based outcome checks can request revised code within the same episode. A separate deployment
+    loop fine-tunes and verifies policy updates.
+  decided: '2026-11-18'
+  precedent:
+  - '2610.22496'
+  - '2610.18867'
 - id: '2609.28314'
   title: 'TANDEM: Task and Motion Planning with As-Needed Demonstrations for Efficient Vision-Language-Action Model Fine-tuning'
   url: https://arxiv.org/abs/2609.28314
@@ -607,3 +624,78 @@ candidates:
   via: cited by 2611.16872v1 [38]
   decision: pending
   note: Check planning-domain construction, verification after human assistance, and data release.
+- id: '2604.05484'
+  title: 'CoEnv: Code-Driven Exploration in Real-to-Sim Digital Twins for Multi-Arm Manipulation'
+  url: https://arxiv.org/abs/2604.05484
+  found: '2026-11-18'
+  via: cited by 2611.16872v1 [46]; prioritized by the maintainer
+  decision: added
+  decided: '2026-11-18'
+  precedent:
+  - '2609.38982'
+  - '2610.12369'
+  note: '3.5 program-policy with a 3.2 reference for the calibrated executable twin. April v1 used the title CoEnv: Driving
+    Embodied Multi-Agent Collaboration via Compositional Environment; November v2 reports the CoEx code-agent experiments.'
+- id: '2606.10267'
+  title: 'What Matters in Orchestrating Robot Policies: A Systematic Study of Hierarchical VLA Agents'
+  url: https://arxiv.org/abs/2606.10267
+  found: '2026-11-18'
+  via: cited by 2610.09228v1
+  decision: pending
+  note: Check hierarchical VLA orchestration and the evaluation role in 3.1.
+- id: '2606.16491'
+  title: 'HATS: A Human-Agent Teleoperation System for Multi-Arm Data Collection'
+  url: https://arxiv.org/abs/2606.16491
+  found: '2026-11-18'
+  via: cited by 2604.05484v2
+  decision: pending
+  note: Check the human-agent teleoperation contribution and whether 3.4 has a supported data role.
+- id: '2606.18247'
+  title: Visual Verification Enables Inference-time Steering and Autonomous Policy Improvement
+  url: https://arxiv.org/abs/2606.18247
+  found: '2026-11-18'
+  via: cited by 2610.09228v1
+  decision: pending
+  note: Check how the visual verifier steers the policy during deployment and how feedback is used for adaptation.
+- id: '2606.18328'
+  title: 'Recover, Discover, Plan: Learning Skills and Concepts from Robot Failures'
+  url: https://arxiv.org/abs/2606.18328
+  found: '2026-11-18'
+  via: cited by 2610.09228v1
+  decision: pending
+  note: Check how robot failures produce reusable planning abstractions and where the execution loop runs.
+- id: '2606.24884'
+  title: 'InSight: Self-Guided Skill Acquisition via Steerable VLAs'
+  url: https://arxiv.org/abs/2606.24884
+  found: '2026-11-18'
+  via: cited by 2610.09228v1
+  decision: pending
+  note: Check CaP-X data collection, VLA fine-tuning, and the experience-learning contribution.
+- id: '2607.17213'
+  title: 'Retriever: Composing the Perception-Reasoning-Action Loop for Long-Horizon Manipulation'
+  url: https://arxiv.org/abs/2607.17213
+  found: '2026-11-18'
+  via: cited by 2610.09228v1
+  decision: pending
+  note: Check the role of the asynchronous execution and replay runtime in 3.1.
+- id: '2607.18060'
+  title: 'RoboHarness: Memory-Driven Orchestration of Heterogeneous Robot Policies for Long-Horizon Planning'
+  url: https://arxiv.org/abs/2607.18060
+  found: '2026-11-18'
+  via: cited by 2610.09228v1
+  decision: pending
+  note: Check memory-guided selection and coordination of heterogeneous policies.
+- id: '2607.21725'
+  title: Addressing the Orchestration Gap in Generalist Robots via Physical Agency
+  url: https://arxiv.org/abs/2607.21725
+  found: '2026-11-18'
+  via: cited by 2610.09228v1
+  decision: pending
+  note: Check the division of responsibilities between the high-level manager and robot policy.
+- id: '2608.19891'
+  title: 'EXIMO: VLM Guided Exploration of VLA Policies'
+  url: https://arxiv.org/abs/2608.19891
+  found: '2026-11-18'
+  via: cited by 2610.09228v1
+  decision: pending
+  note: Check the VLM-guided experience collection and policy adaptation loop.

@@ -13,7 +13,7 @@
 
 マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——デジタル世界から物理世界まで。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-670-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--18-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-673-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--18-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語**
 
@@ -65,7 +65,7 @@
   - [3.3 シミュレータ品質評価](#s3-3) (29)
   - [3.4 データ](#s3-4) (15)
     - 📖 [解説：DROID のデータを 1 本読む](https://jiangjin1999.github.io/awesome-multimodal-agentic-coding/stage3/droid-data/index.ja.html)
-  - [3.5 学習と能力向上](#s3-5) (77)
+  - [3.5 学習と能力向上](#s3-5) (80)
   - [3.6 物理応用と実験](#s3-6) (49)
     - [科学実験（AI4Science）](#s3-6-experiments) (27)
   - [シミュレーションエンジン一覧](#s3-engines)
@@ -2955,6 +2955,8 @@
 - <a id="paper-mujoco-workbench"></a>**[mujoco-workbench](https://github.com/Hebbian-Robotics/mujoco-workbench)**
   > CLI と Agent Skills により、MuJoCo シーンの迅速な構築と確認を支援する。
 
+*関連:* [CoEnv](#paper-2604-05484)
+
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
 <a id="evaluation-physical-assets"></a>
@@ -3370,6 +3372,12 @@
   > 配備前に、再利用可能なロボット方策のコードライブラリを探索する。<br>
   > 🖥️ **シミュレーション** MuJoCo（Franka Panda）
 
+<!-- mmac-record: {"id": "2604.05484", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2604-05484"></a>`2026.04` **[CoEnv: Code-Driven Exploration in Real-to-Sim Digital Twins for Multi-Arm Manipulation](https://arxiv.org/abs/2604.05484)** [[プロジェクトページ]](https://faceong.github.io/CoEnv/) [[コード]](https://github.com/MARS-EAI/CoEnv)
+  > CoEx は実環境から再構成したデジタルツインで多腕ロボットのプログラムを改良し、実機に展開する。<br>
+  > 🖥️ **シミュレーション** SAPIEN · 🦾 **実機** Franka FR3、AgileX PiPER
+
 <!-- mmac-record: {"id": "2603.04466", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2603-04466"></a>`2026.03` **[Act-Observe-Rewrite: Multimodal Coding Agents as In-Context Policy Learners for Robot Manipulation](https://arxiv.org/abs/2603.04466)**
@@ -3470,6 +3478,12 @@
   > 外部記憶を自律実行可能な動作ブロックへコンパイルする。<br>
   > 🖥️ **シミュレーション** MuJoCo（Franka Panda）
 
+<!-- mmac-record: {"id": "2610.09228", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2610-09228"></a>`2026.10` **[Co-Evolving Robot Orchestrators and Policies through Deployment](https://arxiv.org/abs/2610.09228)** [[プロジェクトページ]](https://robo-cop.pages.dev/)
+  > Robo-COP はロボットプログラムを修正し、運用中に得た経験から VLA 方策を更新する。<br>
+  > 🖥️ **シミュレーション** Isaac Lab
+
 <!-- mmac-record: {"id": "2610.25114", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-25114"></a>`2026.10` **[Compile Once, Run Cheap: Frozen, Portable Skills for Embodied Agents, and What Recursive Self-Improvement Adds](https://arxiv.org/abs/2610.25114)** [[コード]](https://github.com/Orillusion/embodied-skill-rsi)
@@ -3556,6 +3570,12 @@
 - <a id="paper-2609-40306"></a>`2026.09` **[DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents](https://arxiv.org/abs/2609.40306)** [[プロジェクトページ]](https://denghaoyuan123.github.io/Dynaharness_page/)
   > 物理的な実行契約によって Harness の進化を制約する。<br>
   > 🖥️ **シミュレーション** MuJoCo（Franka Panda）
+
+<!-- mmac-record: {"id": "2609.37359", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2609-37359"></a>`2026.09` **[Encore: Few-Shot Agentic Discovery of Manipulation Strategies](https://arxiv.org/abs/2609.37359)** [[プロジェクトページ]](https://yifank.github.io/encore/) [[コード]](https://github.com/YIFANK/encore)
+  > 少数の実演から操作の手順を抽出し、試行を重ねてロボットプログラムを改良する。<br>
+  > 🖥️ **シミュレーション** MuJoCo + Isaac Sim · 🦾 **実機** Trossen WidowX AI
 
 <!-- mmac-record: {"id": "2609.19138", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 

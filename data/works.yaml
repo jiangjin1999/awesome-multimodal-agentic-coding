@@ -15893,3 +15893,91 @@
       §6).'
     zh: Claude Opus 5.5 编写可执行策略，检查实机和仿真反馈后改写程序逻辑或运动参数（§2–3、图 5） · 每项任务开发最多十次人工辅助重置场景，采集示范的重置另计（§4.1） · 冻结程序在八项实机任务中成功
       221/240 次（92.1%），评测时无 Coding Agent 参与（§4、表 1） · 示范和仿真对比仅在充电器插入任务上开展，每种条件一次开发运行（§2、§6）。
+- id: '2609.37359'
+  title: 'Encore: Few-Shot Agentic Discovery of Manipulation Strategies'
+  url: https://arxiv.org/abs/2609.37359
+  date: '2026.09'
+  section: '3.5'
+  sub: experience-skill
+  type: paper
+  scope: core
+  tldr:
+    en: Turns a few demonstrations into robot programs refined through trial runs.
+    zh: 从少量示范提炼操作策略，通过试跑迭代改进机器人程序。
+    ja: 少数の実演から操作の手順を抽出し、試行を重ねてロボットプログラムを改良する。
+  setup:
+    engines:
+    - MuJoCo
+    - Isaac Sim
+    real_robots:
+    - Trossen WidowX AI
+  sources:
+  - https://arxiv.org/abs/2609.37359
+  - https://yifank.github.io/encore/
+  - https://github.com/YIFANK/encore
+  verification:
+    en: An Opus 5 coding agent writes, runs and revises policies using demonstration keyframes, trajectories and development
+      feedback. Grasp and placement checks use RGB-D and proprioception; after failed pinches, the drawer program uses an
+      angled pull inferred from demonstration motion (§§3.1–3.3, App. D and F) · frozen three-demo policies succeeded in 2,889/3,000 sealed LIBERO-PRO trials (96.3%) across 60 perturbed conditions, versus 89.3% for
+      a same-model ASPIRE rerun (§4.4) · on hardware, with five demonstrations per task, cube handover and cup inversion each
+      succeeded in 9/10 separate human-judged trials (§4.6).
+    zh: Opus 5 编程智能体结合示范关键帧、轨迹和试跑反馈编写、执行并修订策略。程序用 RGB-D 和本体感知检查抓取与放置，抽屉抓夹失败后改用从示范动作推断出的斜向拉动（§§3.1–3.3、附录 D 和 F） ·
+      三次示范所得的冻结策略在 LIBERO-PRO 的 60
+      种扰动条件下通过 2,889/3,000 次封闭评测（96.3%），同模型复跑 ASPIRE 为 89.3%（§4.4） · 实机每项任务给出五次示范，方块交接和杯子倒置各在独立人工评测中成功 9/10 次（§4.6）。
+- id: '2610.09228'
+  title: Co-Evolving Robot Orchestrators and Policies through Deployment
+  url: https://arxiv.org/abs/2610.09228
+  date: '2026.10'
+  section: '3.5'
+  sub: experience-skill
+  type: paper
+  scope: core
+  tldr:
+    en: Robo-COP revises robot programs and learns VLA policies from deployment.
+    zh: Robo-COP 修订机器人程序，并利用部署经验更新 VLA 策略。
+    ja: Robo-COP はロボットプログラムを修正し、運用中に得た経験から VLA 方策を更新する。
+  setup:
+    engines:
+    - Isaac Lab
+  sources:
+  - https://arxiv.org/abs/2610.09228
+  - https://robo-cop.pages.dev/
+  verification:
+    en: Gemini 3.8 Flash writes programs combining scripted motion, perception and π0.5; a visual judge can request new code
+      within the episode (§3.1, §4.1) · the system curates rollouts for fine-tuning and verifies each candidate policy before
+      adoption (§§3.2–3.3) · mean held-out success versus the same harness with frozen VLA was 73.8% vs 64.8% over ten RoboLab
+      tasks (50 tests per task) and 50.0% vs 38.3% over three real tasks (20 tests per task) (§§4.1–4.3, Fig. 5, Table 2).
+    zh: Gemini 3.8 Flash 编写结合脚本动作、感知与 π0.5 的程序，视觉判定器可在同一回合内要求重写代码（§3.1、§4.1） · 系统筛选执行轨迹用于微调，在采用新策略前进行验证（§§3.2–3.3） · 与同一编排框架使用冻结
+      VLA 的基线相比，十项 RoboLab 任务平均留出成功率为 73.8% 对 64.8%（每项 50 次测试），三项实机任务为 50.0% 对 38.3%（每项 20 次测试）（§§4.1–4.3、图 5、表 2）。
+- id: '2604.05484'
+  title: 'CoEnv: Code-Driven Exploration in Real-to-Sim Digital Twins for Multi-Arm Manipulation'
+  url: https://arxiv.org/abs/2604.05484
+  date: '2026.04'
+  section: '3.5'
+  sub: program-policy
+  type: paper
+  scope: core
+  tldr:
+    en: CoEx refines multi-arm robot programs in reconstructed digital twins before deployment.
+    zh: CoEx 在从实景重建的数字孪生中改进多臂机器人程序，再部署到实机。
+    ja: CoEx は実環境から再構成したデジタルツインで多腕ロボットのプログラムを改良し、実機に展開する。
+  see_also:
+  - '3.2'
+  setup:
+    engines:
+    - SAPIEN
+    real_robots:
+    - Franka FR3
+    - AgileX PiPER
+  sources:
+  - https://arxiv.org/abs/2604.05484
+  - https://arxiv.org/html/2604.05484v2
+  - https://faceong.github.io/CoEnv/
+  - https://github.com/MARS-EAI/CoEnv
+  verification:
+    en: Claude Code executes complete multi-arm Python programs in a calibrated RGB-D digital twin and revises them from adaptive
+      camera views and checkpoint state before collision-checked hardware replay (§§3.1–3.3, App. C.3) · over five real tasks
+      with ten trials per method per task, CoEx averaged 70% success versus 50% for a stepwise GPT-5.6 Sol baseline sharing
+      the twin and tools (§§4.1–4.2, Table 1).
+    zh: Claude Code 在经 RGB-D 重建和校准的数字孪生中执行完整的多臂 Python 程序，根据自适应视角图像和检查点状态修订程序，再经碰撞检查回放至实机（§§3.1–3.3、附录 C.3） · 五项实机任务中，每种方法每项测试十次，CoEx
+      平均成功率 70%，共享同一孪生和工具、逐步决策的 GPT-5.6 Sol 基线为 50%（§§4.1–4.2、表 1）。

@@ -15866,3 +15866,30 @@
       RoboDojo simulation: 36/50 across ten tasks with one demonstration per task.'
     zh: 固定权重的视觉语言模型接收实时画面、状态和工具执行结果，再选择结构化机器人指令（§3.1–3.3） · 实机上，人类视频使毛巾和笔记本拾取从各 0/3 提升至各 2/3（v1 表 1） · 项目页另报 RoboDojo
       仿真，十项任务各给一条示范，成功 36/50。
+- id: '2611.16872'
+  title: 'ACE-CaP-0: Real-World Code-as-Policies in the Era of Experience'
+  url: https://arxiv.org/abs/2611.16872
+  date: '2026.11'
+  section: '3.5'
+  sub: experience-skill
+  type: paper
+  scope: core
+  tldr:
+    en: Refines robot programs with requested demonstrations and on-demand simulation.
+    zh: 按需请求示范和调用仿真，迭代改进可独立运行的机器人程序。
+    ja: 必要に応じて実演を求め、シミュレーションを使って自律実行できるロボットプログラムを磨く。
+  setup:
+    real_robots:
+    - AgileX PIPER X
+  sources:
+  - https://arxiv.org/abs/2611.16872
+  - https://arxiv.org/html/2611.16872v1
+  - https://acerobotics2025.github.io/ACE-CaP/
+  verification:
+    en: 'Claude Opus 5.5 writes executable policies, inspects real and simulated execution feedback, and revises program
+      logic or motion parameters (§§2–3, Fig. 5) · at most ten human-assisted scene resets per task, excluding demonstration
+      collection (§4.1) · frozen programs: 221/240 successes (92.1%) across eight real tasks without the coding agent
+      (§4, Table 1) · guidance and simulation comparisons use one development run per condition on charger insertion (§2,
+      §6).'
+    zh: Claude Opus 5.5 编写可执行策略，检查实机和仿真反馈后改写程序逻辑或运动参数（§2–3、图 5） · 每项任务开发最多十次人工辅助重置场景，采集示范的重置另计（§4.1） · 冻结程序在八项实机任务中成功
+      221/240 次（92.1%），评测时无 Coding Agent 参与（§4、表 1） · 示范和仿真对比仅在充电器插入任务上开展，每种条件一次开发运行（§2、§6）。

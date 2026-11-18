@@ -13,7 +13,7 @@
 
 A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to the physical world.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-669-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--18-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-670-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--18-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -62,7 +62,7 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [3.3 Simulator quality evaluation](#s3-3) (29)
   - [3.4 Data](#s3-4) (15)
     - 📖 [Walkthrough: Reading one DROID episode](https://jiangjin1999.github.io/awesome-multimodal-agentic-coding/stage3/droid-data/index.en.html)
-  - [3.5 Training and capability improvement](#s3-5) (76)
+  - [3.5 Training and capability improvement](#s3-5) (77)
   - [3.6 Physical applications and experiments](#s3-6) (49)
     - [Scientific experiments (AI4Science)](#s3-6-experiments) (27)
   - [Simulation engines at a glance](#s3-engines)
@@ -3431,6 +3431,12 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
   > Provides a community robot-RL development example.
 
 #### Experience, memory and skill learning
+
+<!-- mmac-record: {"id": "2611.16872", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-16872"></a>`2026.11` **[ACE-CaP-0: Real-World Code-as-Policies in the Era of Experience](https://arxiv.org/abs/2611.16872)** [[Project page]](https://acerobotics2025.github.io/ACE-CaP/)
+  > Refines robot programs with requested demonstrations and on-demand simulation.<br>
+  > 🦾 **Real** AgileX PIPER X
 
 <!-- mmac-record: {"id": "reading:lance-martin-anthropic-the-components-of-agent-memory", "scope": "Reading", "primary": "3.5", "stage": 3, "type": "reading"} -->
 

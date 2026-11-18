@@ -65,6 +65,12 @@ runs:
   note: Partial coverage. November 18 arXiv listings were still absent at recheck and HF showed the same papers as November
     17. Last-updated paging completed cs.LG, cs.CL, cs.SE, cs.HC and cs.MM; cs.RO, cs.CV, cs.GR and cs.AI have incomplete
     current-window coverage. Added GPT-Policy and queued 11 leads.
+- date: '2026-11-18'
+  trigger: report
+  covered: Maintainer report for ACE-CaP-0 (2611.16872). Reviewed v1, official project and repository contents, references
+    within the six-month window, and the saved cs.RO listing and screening records.
+  note: Added ACE-CaP-0 in 3.5 experience-skill and queued three related works. The experience-acquisition recipe and
+    frozen-policy protocol are relevant to the Stage 3 reading guide.
 candidates:
 - id: '2610.35817'
   title: 'Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics'
@@ -566,3 +572,38 @@ candidates:
   decision: pending
   note: Official repository found. Review the agent-facing CAD CLI and whether execution and preview evidence supports
     a resource entry.
+- id: '2611.16872'
+  title: 'ACE-CaP-0: Real-World Code-as-Policies in the Era of Experience'
+  url: https://arxiv.org/abs/2611.16872
+  found: '2026-11-16'
+  via: November 16 arXiv backfill screen, then maintainer report on November 18
+  decision: added
+  decided: '2026-11-18'
+  precedent:
+  - '2610.25114'
+  - '2611.06768'
+  - '2610.22496'
+  note: The November 13 cs.RO announcement was indexed and the November 16 screen surfaced the paper, but no public triage
+    row was created. Development revises executable policies from observed physical and simulated execution (§§2–3); quantitative
+    evaluation uses frozen programs (§4).
+- id: '2609.37359'
+  title: 'Encore: Few-Shot Agentic Discovery of Manipulation Strategies'
+  url: https://arxiv.org/abs/2609.37359
+  found: '2026-11-18'
+  via: cited by 2611.16872v1 [13]
+  decision: pending
+  note: Check the demonstration-to-program development loop and the separate sealed evaluation.
+- id: '2610.09228'
+  title: Co-Evolving Robot Orchestrators and Policies through Deployment
+  url: https://arxiv.org/abs/2610.09228
+  found: '2026-11-18'
+  via: cited by 2611.16872v1 [28]
+  decision: pending
+  note: Check Robo-COP policy-adoption evidence and how the orchestrator changes after deployment.
+- id: '2609.28314'
+  title: 'TANDEM: Task and Motion Planning with As-Needed Demonstrations for Efficient Vision-Language-Action Model Fine-tuning'
+  url: https://arxiv.org/abs/2609.28314
+  found: '2026-11-18'
+  via: cited by 2611.16872v1 [38]
+  decision: pending
+  note: Check planning-domain construction, verification after human assistance, and data release.

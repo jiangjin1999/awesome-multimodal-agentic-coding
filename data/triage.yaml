@@ -90,6 +90,17 @@ runs:
     updated Genie 4 resource access/orchestration, and queued 22 leads. Remaining oldest pending is SIMPACT. Historical Monday
     metadata title/full-text review and official candidate details remain pending. RoboDawn interfaces and demonstrations
     may inform the Stage 3 reading guide.
+- date: '2026-11-19'
+  trigger: citations
+  covered: Maintainer-requested review of all 62 references in Embodied Turing Machines (2610.12369v1), including historical
+    foundations, model resources and non-arXiv projects. Matched IDs, titles, aliases and source URLs against the catalog
+    and triage; a shared model-announcement source was not treated as a demo identity. Read VLCP, RoboRSI and LIBERO-PRO full
+    text plus PhysicalRSI official documentation and implementation. Checked VLCP and RoboRSI reference lists for additional
+    recent candidates.
+  note: Added VLCP and Noematrix RoboRSI as Core papers, PhysicalRSI and LIBERO-PRO as Resources. Fourteen COAP references
+    were already cataloged and five were queued. Queued 31 more candidates (28 from COAP and three from RoboRSI) and deferred
+    one unreadable technical report. Ten generic background citations were preserved in the private citation audit. The development/runtime
+    split and physical validation limitations may inform the Stage 3 guide.
 candidates:
 - id: '2610.35817'
   title: 'Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics'
@@ -892,3 +903,306 @@ candidates:
   - res:worldfoundry
   note: Updated existing resource access and model-orchestration description from the official November 18 release documentation.
     Retained the original source and simulation limitations.
+- id: '2608.16978'
+  title: 'VLCP: Vision Language Control Policy Closed-Loop Code Replanning for Robot Manipulation'
+  url: https://arxiv.org/abs/2608.16978
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [30]
+  decision: added
+  decided: '2026-11-19'
+  precedent:
+  - '2610.12369'
+  - '2606.16458'
+  note: 3.5 program-policy. GPT-5.5 sees executed controller blocks and current camera images, then rewrites Python in the
+    same episode. The reported experiments use simulation and privileged object poses.
+- id: '2610.12424'
+  title: 'RoboRSI: Stable, Efficient, and Reusable Robot Self-Evolution in Complex Real-World Environments'
+  url: https://arxiv.org/abs/2610.12424
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [32]
+  decision: added
+  decided: '2026-11-19'
+  precedent:
+  - '2611.16872'
+  - '2610.18867'
+  note: 3.5 experience-skill. Failure-derived spatial observations cause source patches and development retests. Physical
+    development uses human resets and some human-supplied knowledge, separately from simulation benchmarks. This is the Noematrix
+    system, distinct from SenseNova-RoboRSI.
+- id: res:physicalrsi
+  title: 'PhysicalRSI 1.0: Recursive Self-Harness for Scaling Embodied Skills'
+  url: https://mmlab.hk/research/PhysicalRSI
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [15]
+  decision: added
+  decided: '2026-11-19'
+  precedent:
+  - '2610.18867'
+  - '2610.25114'
+  note: 3.5 experience-skill. Placement follows self-harness and skill-learning contributions, while scope is Resource for
+    the reusable framework. The verified core language-proposer route permits validated numeric parameter edits. Website demonstrations
+    and software implementation are recorded separately.
+- id: '2510.03827'
+  title: 'LIBERO-PRO: Towards Robust and Fair Evaluation of Vision-Language-Action Models Beyond Memorization'
+  url: https://arxiv.org/abs/2510.03827
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [58]
+  decision: added
+  decided: '2026-11-19'
+  precedent:
+  - '2306.03310'
+  - '2607.04434'
+  note: 3.1 capability-eval. Follows the Resource treatment of LIBERO and RoboDojo as independently reusable evaluation environments.
+    It probes fixed robot-policy generalization, without a program-repair agent.
+- id: '2204.01691'
+  title: 'Do As I Can, Not As I Say: Grounding Language in Robotic Affordances'
+  url: https://arxiv.org/abs/2204.01691
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [1]
+  decision: pending
+  note: Review language planning, skill selection and environmental feedback as embodied orchestration foundations in 3.1.
+- id: web:awomo-0-5
+  title: 'Awomo-0.5: World action model pre-trained at scale'
+  url: https://github.com/Awomo-WestlakeDI/Awomo-0.5
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [3]
+  decision: pending
+  note: Follow the cited model release or policy adapter to its own documentation, weights and input/output. The shared benchmark
+    URL is not a model identity.
+- id: '2410.24164'
+  title: '$\pi_0$: A Vision-Language-Action Flow Model for General Robot Control'
+  url: https://arxiv.org/abs/2410.24164
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [4]
+  decision: pending
+  note: Check reusable model input/output, public release and a 2.6 action-model Resource role. Being a cited baseline does
+    not establish a code/feedback agent.
+- id: '2307.15818'
+  title: 'RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control'
+  url: https://arxiv.org/abs/2307.15818
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [5]
+  decision: pending
+  note: Check reusable model input/output, public release and a 2.6 action-model Resource role. Being a cited baseline does
+    not establish a code/feedback agent.
+- id: web:dm0-5
+  title: 'DM0.5: Designed for the open world, where generalization emerges'
+  url: https://www.dexmal.com/blog/dm0.5/index_en.html
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [10]
+  decision: pending
+  note: Check reusable model input/output, public release and a 2.6 action-model Resource role. Being a cited baseline does
+    not establish a code/feedback agent.
+- id: web:rex-m1-preview
+  title: Rex-M1 Preview
+  url: https://github.com/XPolicyLab/XPolicyLab/pull/131
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [13]
+  decision: pending
+  note: Follow the cited model release or policy adapter to its own documentation, weights and input/output. The shared benchmark
+    URL is not a model identity.
+- id: '2609.24271'
+  title: 'ME-Brain-1.0: Memory, Cognition and Action for Evolving Embodied Intelligence'
+  url: https://arxiv.org/abs/2609.24271
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [14]
+  decision: pending
+  note: Check reusable model input/output, public release and a 2.6 action-model Resource role. Being a cited baseline does
+    not establish a code/feedback agent.
+- id: '2207.05608'
+  title: 'Inner Monologue: Embodied Reasoning through Planning with Language Models'
+  url: https://arxiv.org/abs/2207.05608
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [16]
+  decision: pending
+  note: Review language planning, skill selection and environmental feedback as embodied orchestration foundations in 3.1.
+- id: '2605.03269'
+  title: RLDX-1 Technical Report
+  url: https://arxiv.org/abs/2605.03269
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [18]
+  decision: pending
+  note: Check reusable model input/output, public release and a 2.6 action-model Resource role. Being a cited baseline does
+    not establish a code/feedback agent.
+- id: '2406.09246'
+  title: 'OpenVLA: An Open-Source Vision-Language-Action Model'
+  url: https://arxiv.org/abs/2406.09246
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [19]
+  decision: pending
+  note: Check reusable model input/output, public release and a 2.6 action-model Resource role. Being a cited baseline does
+    not establish a code/feedback agent.
+- id: '2510.12276'
+  title: 'Spatial Forcing: Implicit Spatial Representation Alignment for Vision-language-action Model'
+  url: https://arxiv.org/abs/2510.12276
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [20]
+  decision: pending
+  note: Review spatial representation alignment and whether a reusable perception/action capability is released.
+- id: web:liber-0-lite
+  title: Liber-0 Lite
+  url: https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/liber_0_lite
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [22]
+  decision: pending
+  note: Follow the cited model release or policy adapter to its own documentation, weights and input/output. The shared benchmark
+    URL is not a model identity.
+- id: web:liber-0-preview
+  title: Liber-0 Preview
+  url: https://robodojo-benchmark.com/LeaderBoard
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [23]
+  decision: pending
+  note: Follow the cited model release or policy adapter to its own documentation, weights and input/output. The shared benchmark
+    URL is not a model identity.
+- id: '2607.04988'
+  title: 'InternVLA-A1.5: Unifying Understanding, Latent Foresight, and Action for Compositional Generalization'
+  url: https://arxiv.org/abs/2607.04988
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [27]
+  decision: pending
+  note: Check reusable model input/output, public release and a 2.6 action-model Resource role. Being a cited baseline does
+    not establish a code/feedback agent.
+- id: web:meituan-robotics-0
+  title: Meituan-Robotics-0
+  url: https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/Meituan_Robotics_0
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [28]
+  decision: pending
+  note: Follow the cited model release or policy adapter to its own documentation, weights and input/output. The shared benchmark
+    URL is not a model identity.
+- id: '2609.31394'
+  title: 'InternW0-$\Delta$: A World Action Model Bridging Predictive Dynamics and Actions with 20K+ Hours of Open Data'
+  url: https://arxiv.org/abs/2609.31394
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [29]
+  decision: pending
+  note: Check reusable model input/output, public release and a 2.6 action-model Resource role. Being a cited baseline does
+    not establish a code/feedback agent.
+- id: '2603.04356'
+  title: 'RoboCasa365: A Large-Scale Simulation Framework for Training and Benchmarking Generalist Robots'
+  url: https://arxiv.org/abs/2603.04356
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [31]
+  decision: pending
+  note: Check the released kitchen simulator and evaluation/data interfaces, against 3.1 capability-eval and 3.2 construction
+    resources.
+- id: '2504.16054'
+  title: '$\pi_{0.5}$: a Vision-Language-Action Model with Open-World Generalization'
+  url: https://arxiv.org/abs/2504.16054
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [36]
+  decision: pending
+  note: Check reusable model input/output, public release and a 2.6 action-model Resource role. Being a cited baseline does
+    not establish a code/feedback agent.
+- id: web:vpp2-preview
+  title: VPP2-Preview
+  url: https://robodojo-benchmark.com/LeaderBoard
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [37]
+  decision: pending
+  note: Follow the cited model release or policy adapter to its own documentation, weights and input/output. The shared benchmark
+    URL is not a model identity.
+- id: web:simate-beta
+  title: Simate-beta
+  url: https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/Simate_beta
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [40]
+  decision: pending
+  note: Follow the cited model release or policy adapter to its own documentation, weights and input/output. The shared benchmark
+    URL is not a model identity.
+- id: '2604.05014'
+  title: 'StarVLA: A Lego-like Codebase for Vision-Language-Action Model Developing'
+  url: https://arxiv.org/abs/2604.05014
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [42]
+  decision: pending
+  note: Check reusable model input/output, public release and a 2.6 action-model Resource role. Being a cited baseline does
+    not establish a code/feedback agent.
+- id: web:gpt6-astra-embodied-policy
+  title: GPT 6 Astra as an embodied policy
+  url: https://anonymous-report-421.github.io/public-website/
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [43]
+  decision: deferred
+  note: Check reusable model input/output, public release and a 2.6 action-model Resource role. Being a cited baseline does
+    not establish a code/feedback agent.
+  decided: '2026-11-19'
+  reason: The cited project URL returned only a Data app page without report text or links. A readable technical report or
+    implementation is needed to establish scope.
+- id: '2305.16291'
+  title: 'Voyager: An Open-Ended Embodied Agent with Large Language Models'
+  url: https://arxiv.org/abs/2305.16291
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [45]
+  decision: pending
+  note: Review executable Minecraft skill accumulation and the modality of feedback. A game-playing agent and an agent constructing
+    game code have distinct contributions.
+- id: '2609.07398'
+  title: 'OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining'
+  url: https://arxiv.org/abs/2609.07398
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [47]
+  decision: pending
+  note: Check reusable model input/output, public release and a 2.6 action-model Resource role. Being a cited baseline does
+    not establish a code/feedback agent.
+- id: '2601.18692'
+  title: A Pragmatic VLA Foundation Model
+  url: https://arxiv.org/abs/2601.18692
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [48]
+  decision: pending
+  note: Check reusable model input/output, public release and a 2.6 action-model Resource role. Being a cited baseline does
+    not establish a code/feedback agent.
+- id: '2608.27550'
+  title: 'Beyond Data Scaling: Representation-Centric Continued Pre-training for Vision-Language-Action Models'
+  url: https://arxiv.org/abs/2608.27550
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [51]
+  decision: pending
+  note: Check reusable model input/output, public release and a 2.6 action-model Resource role. Being a cited baseline does
+    not establish a code/feedback agent.
+- id: '2607.26807'
+  title: 'Route by Kinematics, Act by Observation: Kinematics-Supervised Expert Routing in MoE-Augmented VLA'
+  url: https://arxiv.org/abs/2607.26807
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [52]
+  decision: pending
+  note: Check reusable model input/output, public release and a 2.6 action-model Resource role. Being a cited baseline does
+    not establish a code/feedback agent.
+- id: '2609.05533'
+  title: 'SimpleMemVLA: A Simple but Effective Native-Video Memory for Vision-Language-Action Models'
+  url: https://arxiv.org/abs/2609.05533
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [54]
+  decision: pending
+  note: Check reusable model input/output, public release and a 2.6 action-model Resource role. Being a cited baseline does
+    not establish a code/feedback agent.
+- id: '2605.26820'
+  title: Can Vision-Language-Action Models Learn from Real-World Data Continually without Forgetting?
+  url: https://arxiv.org/abs/2605.26820
+  found: '2026-11-19'
+  via: cited by 2610.12369v1 [61]
+  decision: pending
+  note: Check reusable model input/output, public release and a 2.6 action-model Resource role. Being a cited baseline does
+    not establish a code/feedback agent.
+- id: '2609.17653'
+  title: 'Reflect, Revise, Reuse: Training-Free Skill Evolution for GUI Agents'
+  url: https://arxiv.org/abs/2609.17653
+  found: '2026-11-19'
+  via: cited by newly reviewed 2610.12424v1
+  decision: pending
+  note: Review multimodal feedback, executable skill or harness revisions, and the primary contribution before placement.
+- id: '2606.29538'
+  title: 'RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources'
+  url: https://arxiv.org/abs/2606.29538
+  found: '2026-11-19'
+  via: cited by newly reviewed 2610.12424v1
+  decision: pending
+  note: Review multimodal feedback, executable skill or harness revisions, and the primary contribution before placement.
+- id: '2609.16057'
+  title: 'OmniHarness: Harnessing Generalizable Visual Generation via Symbolic Policy Learning'
+  url: https://arxiv.org/abs/2609.16057
+  found: '2026-11-19'
+  via: cited by newly reviewed 2610.12424v1
+  decision: pending
+  note: Review multimodal feedback, executable skill or harness revisions, and the primary contribution before placement.

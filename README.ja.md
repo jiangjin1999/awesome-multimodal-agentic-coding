@@ -13,7 +13,7 @@
 
 マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——デジタル世界から物理世界まで。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-674-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--19-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-678-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--19-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語**
 
@@ -60,11 +60,11 @@
   - [2.5 知覚モデル × シーン理解・再構成](#s2-5) (6)
   - [2.6 行動モデル × ロボット操作](#s2-6) (12)
 - [Stage 3 · デジタルと物理世界の架け橋](#stage-3)
-  - [3.1 身体性ハーネス](#s3-1) (87)
+  - [3.1 身体性ハーネス](#s3-1) (88)
   - [3.2 シミュレータ構築](#s3-2) (68)
   - [3.3 シミュレータ品質評価](#s3-3) (29)
   - [3.4 データ](#s3-4) (15)
-  - [3.5 学習と能力向上](#s3-5) (80)
+  - [3.5 学習と能力向上](#s3-5) (83)
   - [3.6 物理応用と実験](#s3-6) (49)
     - [科学実験（AI4Science）](#s3-6-experiments) (27)
   - [シミュレーションエンジン一覧](#s3-engines)
@@ -2444,6 +2444,12 @@
   > ソフトウェア工学向けのエージェント枠組みをロボット制御へ直接つなぎ、特権的な環境状態を読める設定で実演なしの実行を評価する。<br>
   > 🖥️ **シミュレーション** MuJoCo + SAPIEN（Franka Panda、Sawyer）
 
+<!-- mmac-record: {"id": "2510.03827", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
+
+- <a id="paper-2510-03827"></a>`2025.10` **[LIBERO-PRO: Towards Robust and Fair Evaluation of Vision-Language-Action Models Beyond Memorization](https://arxiv.org/abs/2510.03827)** [[コード]](https://github.com/Zxy-MLlab/LIBERO-PRO)
+  > 物体、配置、指示、タスク目標、環境に変化を加え、ロボット方策の汎化を検証する。<br>
+  > 🖥️ **シミュレーション** MuJoCo
+
 <!-- mmac-record: {"id": "2402.14623", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2402-14623"></a>`2024.02` **[RoboScript: Code Generation for Free-Form Manipulation Tasks across Real and Simulation](https://arxiv.org/abs/2402.14623)**
@@ -3353,6 +3359,12 @@
   > シミュレーションでの開発と少量の実機フィードバックを組み合わせる。<br>
   > 🖥️ **シミュレーション** MuJoCo + Isaac Sim · 🦾 **実機** I2RT YAM
 
+<!-- mmac-record: {"id": "2608.16978", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2608-16978"></a>`2026.08` **[VLCP: Vision Language Control Policy Closed-Loop Code Replanning for Robot Manipulation](https://arxiv.org/abs/2608.16978)**
+  > 各エピソードの実行後の画像を見て、ロボット制御プログラムを書き直す。<br>
+  > 🖥️ **シミュレーション** MuJoCo（Franka Panda）
+
 <!-- mmac-record: {"id": "2608.07555", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2608-07555"></a>`2026.08` **[You Don't Need To Stay in The Loop: An Agentic Robotics Loop for Robot-Policy Improvement](https://arxiv.org/abs/2608.07555)**
@@ -3553,6 +3565,12 @@
   > 永続記憶とロボット制御コードを進化させる。<br>
   > 🖥️ **シミュレーション** MuJoCo + SAPIEN（Franka Panda、WidowX 250、Google Robot）
 
+<!-- mmac-record: {"id": "2610.12424", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2610-12424"></a>`2026.10` **[RoboRSI: Stable, Efficient, and Reusable Robot Self-Evolution in Complex Real-World Environments](https://arxiv.org/abs/2610.12424)** [[記事]](https://lab.noematrix.ai/blog/2-roborsi/) [[コード]](https://github.com/nssmd/RoboRSI)
+  > スキル階層をたどって失敗の原因を診断し、再利用できるロボットスキルを修正・蓄積する。<br>
+  > 🖥️ **シミュレーション** MuJoCo + SAPIEN · 🦾 **実機** WheelSingleArm M1、AgileX PiPER
+
 <!-- mmac-record: {"id": "2610.22496", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-22496"></a>`2026.10` **[Scaling Online Exploration for Robot Agents](https://arxiv.org/abs/2610.22496)** [[コード]](https://github.com/robot-agent-exploration/rax) [[コード]](https://github.com/robot-agent-exploration/skills-lib) [[データセット]](https://huggingface.co/datasets/robot-agent-exploration/robot-session-logs) [[プロジェクトページ]](https://robot-agent-exploration.com/)
@@ -3711,6 +3729,11 @@
 
 - <a id="paper-2305-16744"></a>`2023.05` **[Demo2Code: From Summarizing Demonstrations to Synthesizing Code via Extended Chain-of-Thought](https://arxiv.org/abs/2305.16744)** [[プロジェクトページ]](https://portal-cornell.github.io/demo2code/) [[コード]](https://github.com/portal-cornell/demo2code)
   > 実演からタスクを要約し、ロボットプログラムを合成する。
+
+<!-- mmac-record: {"id": "res:physicalrsi", "scope": "Resource", "primary": "3.5", "stage": 3, "type": "resource"} -->
+
+- <a id="paper-res-physicalrsi"></a>**[PhysicalRSI 1.0: Recursive Self-Harness for Scaling Embodied Skills](https://mmlab.hk/research/PhysicalRSI)** [[コード]](https://github.com/PhysicalRSI/PhysicalRSI)
+  > 組み合わせ可能なスキルと環境アダプターを提供し、評価によって新しいハーネス構成を選択・継承する。
 
 #### コーディングエージェントの事後学習
 

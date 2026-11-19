@@ -16014,3 +16014,106 @@
     zh: 冻结 VLM 根据带标注的相机图像、实测机器人状态和上次执行反馈选择语义运动指令，由执行器生成规划运动（§§3.1–3.3） · GPT-6 Astra 在 RoboTwin C2R 的 50 项任务、每项十次测试中，零示范成功率
       53.2%、单示范 73.6%，全量训练的 π0.5 为 46.0%（§4.1.1、表 1） · Gemini 3.8 Flash 零示范实机结果为 Franka 入篮 9/10、堆叠 5/10，PiPER 叠布 0/10（§4.2、表
       5）。
+- id: '2608.16978'
+  title: 'VLCP: Vision Language Control Policy Closed-Loop Code Replanning for Robot Manipulation'
+  url: https://arxiv.org/abs/2608.16978
+  date: '2026.08'
+  section: '3.5'
+  sub: program-policy
+  type: paper
+  scope: core
+  tldr:
+    en: Rewrites robot controllers from visual feedback within each episode.
+    zh: 在同一回合内，根据执行后的视觉反馈重写机器人控制程序。
+    ja: 各エピソードの実行後の画像を見て、ロボット制御プログラムを書き直す。
+  setup:
+    engines:
+    - MuJoCo
+    sim_robots:
+    - Franka Panda
+  sources:
+  - https://arxiv.org/abs/2608.16978
+  - https://arxiv.org/html/2608.16978v1
+  verification:
+    en: GPT-5.5 rewrites a Python controller every 50 steps using previous code/actions and synchronized two-camera images.
+      Privileged object poses bootstrap reaching (§§3.1–3.3) · across 57 tasks with one episode per task per condition, closed-loop
+      success was 35.1% versus 3.5% for the same system without code replanning (§§4.1–4.3, Fig. 2) · simulation results,
+      with no reported hardware validation.
+    zh: GPT-5.5 每 50 步结合此前代码、动作和同步双视角图像重写 Python 控制器，初始接近利用仿真器提供的物体位姿（§§3.1–3.3） · 57 项任务中，每种条件每项仅一次回合，闭环成功率为 35.1%，同一系统关闭代码重规划后为
+      3.5%（§§4.1–4.3、图 2） · 结果限于仿真。
+- id: '2610.12424'
+  title: 'RoboRSI: Stable, Efficient, and Reusable Robot Self-Evolution in Complex Real-World Environments'
+  url: https://arxiv.org/abs/2610.12424
+  date: '2026.10'
+  section: '3.5'
+  sub: experience-skill
+  type: paper
+  scope: core
+  tldr:
+    en: Revises reusable robot skills through hierarchical failure diagnosis.
+    zh: 沿技能层级诊断执行失败，修订并积累可复用机器人技能。
+    ja: スキル階層をたどって失敗の原因を診断し、再利用できるロボットスキルを修正・蓄積する。
+  setup:
+    engines:
+    - MuJoCo
+    - SAPIEN
+    real_robots:
+    - WheelSingleArm M1
+    - AgileX PiPER
+  sources:
+  - https://arxiv.org/abs/2610.12424
+  - https://lab.noematrix.ai/blog/2-roborsi/
+  - https://github.com/nssmd/RoboRSI
+  verification:
+    en: Agents diagnose image-grounded execution traces, patch the responsible skill, and validate before release (§3, App.
+      D). A camera-boundary rejection led to revised Python guards and 1/3 to 3/3 successes on three matched development states
+      (App. D.1) · online LIBERO-PRO skill improvement achieved 297/600 successes (49.5%) versus 231/600 (38.5%) for fixed
+      OpenETA (§4.3, Table 1) · the 104-run physical study used varying task manifests and human scene resets. Retained-record
+      checks did not repeat earlier physical tasks, and four revision triggers required human knowledge (App. B, D.5).
+    zh: 智能体根据图像定位形成的执行轨迹诊断失败，修改责任技能并在验证后发布（§3、附录 D）。相机边界误拒触发 Python 判断条件修订，在相同三个开发初始状态中由成功 1/3 提升至 3/3（附录 D.1） · LIBERO-PRO
+      中在线改进技能成功 297/600 次（49.5%），固定 OpenETA 为 231/600（38.5%）（§4.3、表 1） · 104 次实机开发运行的任务清单有变化且需人工重置场景；历史记录核验没有重新执行此前实机任务，四次修订触发需要人工知识（附录
+      B、D.5）。
+- id: res:physicalrsi
+  title: 'PhysicalRSI 1.0: Recursive Self-Harness for Scaling Embodied Skills'
+  url: https://mmlab.hk/research/PhysicalRSI
+  date: ''
+  section: '3.5'
+  sub: experience-skill
+  type: resource
+  scope: resource
+  tldr:
+    en: Provides composable skills and evaluation-gated harness evolution across environment adapters.
+    zh: 提供可组合技能和环境适配器，通过评测筛选与继承新的 Harness 配置。
+    ja: 組み合わせ可能なスキルと環境アダプターを提供し、評価によって新しいハーネス構成を選択・継承する。
+  sources:
+  - https://mmlab.hk/research/PhysicalRSI
+  - https://github.com/PhysicalRSI/PhysicalRSI
+  verification:
+    en: The public core exposes typed skill composition, environment adapters and candidate evaluation/selection records.
+      Its language proposer emits validated numeric JSON edits within a declared parameter space (README, PhysicalRSI_core/self_harness/language_proposer.py).
+      Website RoboDojo demonstrations and the generic software core are distinct evidence sources.
+    zh: 公开核心实现提供类型化技能组合、环境适配和候选评测／筛选记录；语言模型提议器在声明的参数空间内输出经校验的数值 JSON 修改（README、PhysicalRSI_core/self_harness/language_proposer.py）。项目页的
+      RoboDojo 演示与通用软件核心分别核查。
+- id: '2510.03827'
+  title: 'LIBERO-PRO: Towards Robust and Fair Evaluation of Vision-Language-Action Models Beyond Memorization'
+  url: https://arxiv.org/abs/2510.03827
+  date: '2025.10'
+  section: '3.1'
+  sub: capability-eval
+  type: resource
+  scope: resource
+  tldr:
+    en: Tests robot-policy generalization under object, placement, language, task-goal, and environment shifts.
+    zh: 通过物体、位置、指令、任务目标和环境扰动，检查机器人策略的泛化能力。
+    ja: 物体、配置、指示、タスク目標、環境に変化を加え、ロボット方策の汎化を検証する。
+  setup:
+    engines:
+    - MuJoCo
+  sources:
+  - https://arxiv.org/abs/2510.03827
+  - https://github.com/Zxy-MLlab/LIBERO-PRO
+  verification:
+    en: The evaluation separates meaning-preserving perturbations from task-goal changes and constrains combinations to preserve
+      executability (§4). OpenVLA, π0 and π0.5 use released checkpoints, with 50 evaluation episodes per task (§5.1). It provides
+      a reusable robustness benchmark and does not evaluate a program-repair agent.
+    zh: 评测区分保持任务含义的扰动和任务目标变化，限制组合以保持可执行性（§4）；OpenVLA、π0、π0.5 使用已发布检查点，每项任务测试 50 次（§5.1）。提供可复用的策略鲁棒性基准。

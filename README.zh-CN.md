@@ -13,7 +13,7 @@
 
 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从数字世界延伸到物理世界。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-674-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--19-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-678-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--19-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · **简体中文** · [日本語](./README.ja.md)
 
@@ -57,11 +57,11 @@
   - [2.5 感知模型 × 场景理解与重建](#s2-5) (6)
   - [2.6 动作模型 × 机器人操作](#s2-6) (12)
 - [Stage 3 · 打通数字世界与物理世界](#stage-3)
-  - [3.1 具身框架（Harness）](#s3-1) (87)
+  - [3.1 具身框架（Harness）](#s3-1) (88)
   - [3.2 仿真器构建](#s3-2) (68)
   - [3.3 仿真器质量评估](#s3-3) (29)
   - [3.4 数据](#s3-4) (15)
-  - [3.5 训练与能力提升](#s3-5) (80)
+  - [3.5 训练与能力提升](#s3-5) (83)
   - [3.6 物理应用与实验](#s3-6) (49)
     - [科学实验（AI4Science）](#s3-6-experiments) (27)
   - [仿真引擎一览](#s3-engines)
@@ -2441,6 +2441,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
   > 将原用于软件工程的 Agent 框架直接接入机器人控制，在可读取特权环境状态的设置中评估免示范任务执行。<br>
   > 🖥️ **仿真** MuJoCo + SAPIEN（Franka Panda、Sawyer）
 
+<!-- mmac-record: {"id": "2510.03827", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
+
+- <a id="paper-2510-03827"></a>`2025.10` **[LIBERO-PRO: Towards Robust and Fair Evaluation of Vision-Language-Action Models Beyond Memorization](https://arxiv.org/abs/2510.03827)** [[代码]](https://github.com/Zxy-MLlab/LIBERO-PRO)
+  > 通过物体、位置、指令、任务目标和环境扰动，检查机器人策略的泛化能力。<br>
+  > 🖥️ **仿真** MuJoCo
+
 <!-- mmac-record: {"id": "2402.14623", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2402-14623"></a>`2024.02` **[RoboScript: Code Generation for Free-Form Manipulation Tasks across Real and Simulation](https://arxiv.org/abs/2402.14623)**
@@ -3350,6 +3356,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
   > 结合仿真研发与少量实机反馈。<br>
   > 🖥️ **仿真** MuJoCo + Isaac Sim · 🦾 **真机** I2RT YAM
 
+<!-- mmac-record: {"id": "2608.16978", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2608-16978"></a>`2026.08` **[VLCP: Vision Language Control Policy Closed-Loop Code Replanning for Robot Manipulation](https://arxiv.org/abs/2608.16978)**
+  > 在同一回合内，根据执行后的视觉反馈重写机器人控制程序。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda）
+
 <!-- mmac-record: {"id": "2608.07555", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2608-07555"></a>`2026.08` **[You Don't Need To Stay in The Loop: An Agentic Robotics Loop for Robot-Policy Improvement](https://arxiv.org/abs/2608.07555)**
@@ -3550,6 +3562,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
   > 演化持久记忆与机器人控制代码。<br>
   > 🖥️ **仿真** MuJoCo + SAPIEN（Franka Panda、WidowX 250、Google Robot）
 
+<!-- mmac-record: {"id": "2610.12424", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2610-12424"></a>`2026.10` **[RoboRSI: Stable, Efficient, and Reusable Robot Self-Evolution in Complex Real-World Environments](https://arxiv.org/abs/2610.12424)** [[文章]](https://lab.noematrix.ai/blog/2-roborsi/) [[代码]](https://github.com/nssmd/RoboRSI)
+  > 沿技能层级诊断执行失败，修订并积累可复用机器人技能。<br>
+  > 🖥️ **仿真** MuJoCo + SAPIEN · 🦾 **真机** WheelSingleArm M1、AgileX PiPER
+
 <!-- mmac-record: {"id": "2610.22496", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-22496"></a>`2026.10` **[Scaling Online Exploration for Robot Agents](https://arxiv.org/abs/2610.22496)** [[代码]](https://github.com/robot-agent-exploration/rax) [[代码]](https://github.com/robot-agent-exploration/skills-lib) [[数据集]](https://huggingface.co/datasets/robot-agent-exploration/robot-session-logs) [[项目页]](https://robot-agent-exploration.com/)
@@ -3708,6 +3726,11 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 - <a id="paper-2305-16744"></a>`2023.05` **[Demo2Code: From Summarizing Demonstrations to Synthesizing Code via Extended Chain-of-Thought](https://arxiv.org/abs/2305.16744)** [[项目页]](https://portal-cornell.github.io/demo2code/) [[代码]](https://github.com/portal-cornell/demo2code)
   > 从示范总结任务，再合成机器人程序。
+
+<!-- mmac-record: {"id": "res:physicalrsi", "scope": "Resource", "primary": "3.5", "stage": 3, "type": "resource"} -->
+
+- <a id="paper-res-physicalrsi"></a>**[PhysicalRSI 1.0: Recursive Self-Harness for Scaling Embodied Skills](https://mmlab.hk/research/PhysicalRSI)** [[代码]](https://github.com/PhysicalRSI/PhysicalRSI)
+  > 提供可组合技能和环境适配器，通过评测筛选与继承新的 Harness 配置。
 
 #### Coding Agent 后训练
 

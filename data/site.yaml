@@ -275,6 +275,7 @@ source_labels:
     zh: 策略训练代码
     ja: 方策学習コード
 source_kind_overrides:
+  https://lab.noematrix.ai/blog/2-roborsi/: article
   https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/: article
   https://labs.google/projectgenie: demo
   https://robodawn.top/results: demo

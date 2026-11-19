@@ -13,7 +13,7 @@
 
 A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to the physical world.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-674-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--19-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-678-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--19-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -57,11 +57,11 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [2.5 Perception models × scene understanding and reconstruction](#s2-5) (6)
   - [2.6 Action models × robot manipulation](#s2-6) (12)
 - [Stage 3 · Bridging Digital & Physical Worlds](#stage-3)
-  - [3.1 Embodied harnesses](#s3-1) (87)
+  - [3.1 Embodied harnesses](#s3-1) (88)
   - [3.2 Simulator construction](#s3-2) (68)
   - [3.3 Simulator quality evaluation](#s3-3) (29)
   - [3.4 Data](#s3-4) (15)
-  - [3.5 Training and capability improvement](#s3-5) (80)
+  - [3.5 Training and capability improvement](#s3-5) (83)
   - [3.6 Physical applications and experiments](#s3-6) (49)
     - [Scientific experiments (AI4Science)](#s3-6-experiments) (27)
   - [Simulation engines at a glance](#s3-engines)
@@ -2441,6 +2441,12 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
   > Connects a software-engineering agent framework directly to robot control without demonstrations.<br>
   > 🖥️ **Sim** MuJoCo + SAPIEN (Franka Panda, Sawyer)
 
+<!-- mmac-record: {"id": "2510.03827", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
+
+- <a id="paper-2510-03827"></a>`2025.10` **[LIBERO-PRO: Towards Robust and Fair Evaluation of Vision-Language-Action Models Beyond Memorization](https://arxiv.org/abs/2510.03827)** [[Code]](https://github.com/Zxy-MLlab/LIBERO-PRO)
+  > Tests robot-policy generalization under object, placement, language, task-goal, and environment shifts.<br>
+  > 🖥️ **Sim** MuJoCo
+
 <!-- mmac-record: {"id": "2402.14623", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2402-14623"></a>`2024.02` **[RoboScript: Code Generation for Free-Form Manipulation Tasks across Real and Simulation](https://arxiv.org/abs/2402.14623)**
@@ -3350,6 +3356,12 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
   > Combines simulation research with limited physical feedback.<br>
   > 🖥️ **Sim** MuJoCo + Isaac Sim · 🦾 **Real** I2RT YAM
 
+<!-- mmac-record: {"id": "2608.16978", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2608-16978"></a>`2026.08` **[VLCP: Vision Language Control Policy Closed-Loop Code Replanning for Robot Manipulation](https://arxiv.org/abs/2608.16978)**
+  > Rewrites robot controllers from visual feedback within each episode.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda)
+
 <!-- mmac-record: {"id": "2608.07555", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2608-07555"></a>`2026.08` **[You Don't Need To Stay in The Loop: An Agentic Robotics Loop for Robot-Policy Improvement](https://arxiv.org/abs/2608.07555)**
@@ -3550,6 +3562,12 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
   > Evolves persistent memory and robot-control code.<br>
   > 🖥️ **Sim** MuJoCo + SAPIEN (Franka Panda, WidowX 250, Google Robot)
 
+<!-- mmac-record: {"id": "2610.12424", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2610-12424"></a>`2026.10` **[RoboRSI: Stable, Efficient, and Reusable Robot Self-Evolution in Complex Real-World Environments](https://arxiv.org/abs/2610.12424)** [[Article]](https://lab.noematrix.ai/blog/2-roborsi/) [[Code]](https://github.com/nssmd/RoboRSI)
+  > Revises reusable robot skills through hierarchical failure diagnosis.<br>
+  > 🖥️ **Sim** MuJoCo + SAPIEN · 🦾 **Real** WheelSingleArm M1, AgileX PiPER
+
 <!-- mmac-record: {"id": "2610.22496", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-22496"></a>`2026.10` **[Scaling Online Exploration for Robot Agents](https://arxiv.org/abs/2610.22496)** [[Code]](https://github.com/robot-agent-exploration/rax) [[Code]](https://github.com/robot-agent-exploration/skills-lib) [[Dataset]](https://huggingface.co/datasets/robot-agent-exploration/robot-session-logs) [[Project page]](https://robot-agent-exploration.com/)
@@ -3708,6 +3726,11 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
 
 - <a id="paper-2305-16744"></a>`2023.05` **[Demo2Code: From Summarizing Demonstrations to Synthesizing Code via Extended Chain-of-Thought](https://arxiv.org/abs/2305.16744)** [[Project page]](https://portal-cornell.github.io/demo2code/) [[Code]](https://github.com/portal-cornell/demo2code)
   > Turns demonstrations into reusable robot programs.
+
+<!-- mmac-record: {"id": "res:physicalrsi", "scope": "Resource", "primary": "3.5", "stage": 3, "type": "resource"} -->
+
+- <a id="paper-res-physicalrsi"></a>**[PhysicalRSI 1.0: Recursive Self-Harness for Scaling Embodied Skills](https://mmlab.hk/research/PhysicalRSI)** [[Code]](https://github.com/PhysicalRSI/PhysicalRSI)
+  > Provides composable skills and evaluation-gated harness evolution across environment adapters.
 
 #### Post-training the coding agent
 

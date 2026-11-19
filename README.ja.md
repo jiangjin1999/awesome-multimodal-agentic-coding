@@ -13,7 +13,7 @@
 
 マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——デジタル世界から物理世界まで。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-678-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--19-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-681-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--19-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語**
 
@@ -60,11 +60,11 @@
   - [2.5 知覚モデル × シーン理解・再構成](#s2-5) (6)
   - [2.6 行動モデル × ロボット操作](#s2-6) (12)
 - [Stage 3 · デジタルと物理世界の架け橋](#stage-3)
-  - [3.1 身体性ハーネス](#s3-1) (88)
+  - [3.1 身体性ハーネス](#s3-1) (90)
   - [3.2 シミュレータ構築](#s3-2) (68)
   - [3.3 シミュレータ品質評価](#s3-3) (29)
   - [3.4 データ](#s3-4) (15)
-  - [3.5 学習と能力向上](#s3-5) (83)
+  - [3.5 学習と能力向上](#s3-5) (84)
   - [3.6 物理応用と実験](#s3-6) (49)
     - [科学実験（AI4Science）](#s3-6-experiments) (27)
   - [シミュレーションエンジン一覧](#s3-engines)
@@ -2294,6 +2294,18 @@
   > コーディングエージェントに、固定 VLA と解析的な行動プリミティブを組み合わせさせる。<br>
   > 🖥️ **シミュレーション** MuJoCo + SAPIEN（Franka Panda、AgileX ALOHA） · 🦾 **実機** Franka
 
+<!-- mmac-record: {"id": "2207.05608", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2207-05608"></a>`2022.07` **[Inner Monologue: Embodied Reasoning through Planning with Language Models](https://arxiv.org/abs/2207.05608)** [[プロジェクトページ]](https://innermonologue.github.io/)
+  > 知覚・成否判定・人からのフィードバックを言語化し、ロボットのスキル実行を再計画する。<br>
+  > 🖥️ **シミュレーション** PyBullet · 🦾 **実機** UR5e、Everyday Robots
+
+<!-- mmac-record: {"id": "2204.01691", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2204-01691"></a>`2022.04` **[Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](https://arxiv.org/abs/2204.01691)** [[プロジェクトページ]](https://say-can.github.io/) [[コード]](https://github.com/google-research/google-research/tree/master/saycan)
+  > SayCan は言語モデルによるタスクとの関連度と、現在の状態に基づく実行可能性のスコアを組み合わせ、学習済みのロボットスキルを選ぶ。<br>
+  > 🦾 **実機** Everyday Robots
+
 #### エージェント能力の評価
 
 <!-- mmac-record: {"id": "2611.12177", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -3729,6 +3741,12 @@
 
 - <a id="paper-2305-16744"></a>`2023.05` **[Demo2Code: From Summarizing Demonstrations to Synthesizing Code via Extended Chain-of-Thought](https://arxiv.org/abs/2305.16744)** [[プロジェクトページ]](https://portal-cornell.github.io/demo2code/) [[コード]](https://github.com/portal-cornell/demo2code)
   > 実演からタスクを要約し、ロボットプログラムを合成する。
+
+<!-- mmac-record: {"id": "2305.16291", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2305-16291"></a>`2023.05` **[Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291)** [[プロジェクトページ]](https://voyager.minedojo.org/) [[コード]](https://github.com/MineDojo/Voyager)
+  > 構造化された状態フィードバックと自己検証を使い、再利用できる Minecraft のコードスキルを蓄積する。<br>
+  > 🖥️ **シミュレーション** Minecraft
 
 <!-- mmac-record: {"id": "res:physicalrsi", "scope": "Resource", "primary": "3.5", "stage": 3, "type": "resource"} -->
 

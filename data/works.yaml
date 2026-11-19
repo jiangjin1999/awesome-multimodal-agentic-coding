@@ -16117,3 +16117,89 @@
       executability (§4). OpenVLA, π0 and π0.5 use released checkpoints, with 50 evaluation episodes per task (§5.1). It provides
       a reusable robustness benchmark and does not evaluate a program-repair agent.
     zh: 评测区分保持任务含义的扰动和任务目标变化，限制组合以保持可执行性（§4）；OpenVLA、π0、π0.5 使用已发布检查点，每项任务测试 50 次（§5.1）。提供可复用的策略鲁棒性基准。
+- id: '2204.01691'
+  title: 'Do As I Can, Not As I Say: Grounding Language in Robotic Affordances'
+  url: https://arxiv.org/abs/2204.01691
+  date: '2022.04'
+  section: '3.1'
+  sub: delegation
+  type: paper
+  scope: adjacent
+  tldr:
+    en: SayCan combines language-model relevance and state-conditioned affordance scores to select pretrained robot skills.
+    zh: SayCan 结合语言模型的任务相关性与当前状态下的可供性评分，选择预训练机器人技能。
+    ja: SayCan は言語モデルによるタスクとの関連度と、現在の状態に基づく実行可能性のスコアを組み合わせ、学習済みのロボットスキルを選ぶ。
+  setup:
+    real_robots:
+    - Everyday Robots
+  sources:
+  - https://arxiv.org/abs/2204.01691
+  - https://say-can.github.io/
+  - https://github.com/google-research/google-research/tree/master/saycan
+  verification:
+    en: PaLM scores fixed skill descriptions; current visual observations and robot state inform separate affordance models,
+      and the combined score selects a learned or scripted skill (§§3–4, App. D.2). Over 101 instructions, PaLM-SayCan reports
+      84% planning / 74% execution in the mock kitchen and 81% / 60% in the real kitchen (§5.1, Table 2) · state grounding
+      is recomputed, but explicit post-failure scene/success feedback is not returned to the LLM; the paper identifies this
+      limitation (§5.2, §8). The released tabletop notebook uses GPT-3, ViLD and CLIPort in a UR5 simulation, a separate implementation
+      from the kitchen system (§6).
+    zh: PaLM 对固定技能描述评分；视觉观测与机器人状态输入独立的可供性模块，联合评分选择已学习或脚本化技能（§§3–4、附录 D.2）。101 条指令中，实验室仿厨房的实机规划／执行成功率为 84%／74%，实际办公厨房为 81%／60%（§5.1、表
+      2） · 状态可供性持续重算，但未将明确的失败、场景与成功检测反馈回传给 LLM，论文将此列为局限（§5.2、§8）。公开桌面 notebook 使用 GPT-3、ViLD 和 CLIPort 的 UR5 仿真实现，与厨房系统分别核查（§6）。
+- id: '2207.05608'
+  title: 'Inner Monologue: Embodied Reasoning through Planning with Language Models'
+  url: https://arxiv.org/abs/2207.05608
+  date: '2022.07'
+  section: '3.1'
+  sub: delegation
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Uses language feedback from perception, success detection or people to replan robot skills.
+    zh: 将感知、成功检测或人的反馈转成语言，支持机器人技能的闭环重规划。
+    ja: 知覚・成否判定・人からのフィードバックを言語化し、ロボットのスキル実行を再計画する。
+  setup:
+    engines:
+    - PyBullet
+    real_robots:
+    - UR5e
+    - Everyday Robots
+  sources:
+  - https://arxiv.org/abs/2207.05608
+  - https://innermonologue.github.io/
+  verification:
+    en: Frozen InstructGPT or PaLM receives execution-grounded language feedback and selects pretrained or scripted skills
+      (§3, App. A). Simulated scene feedback uses ground-truth state; real tabletop feedback uses MDETR and bounding-box/depth
+      heuristics, while kitchen object lists and active questions use human feedback alongside learned visual success detection
+      (§4, App. A.1–A.3) · on two real tabletop tasks with 10 runs per task, Object + Success averages 90% versus 20% for
+      the open-loop baseline (§4.2, Table 2). Recovery changes skill selection and plans; it does not establish policy-source
+      revision or autonomous perception in every setting.
+    zh: 冻结的 InstructGPT 或 PaLM 读取有执行依据的语言反馈，选择预训练或脚本化技能（§3、附录 A）。仿真场景反馈来自真值；实机桌面使用 MDETR、检测框与深度启发式，厨房物体清单及主动问答使用人工反馈，并配合学习到的视觉成功检测（§4、附录
+      A.1–A.3） · 两项实机桌面任务每项测试 10 次，Object + Success 平均成功率为 90%，开环基线为 20%（§4.2、表 2）。恢复发生在技能选择与计划层，不代表修改策略源码或所有设置均具备自动感知。
+- id: '2305.16291'
+  title: 'Voyager: An Open-Ended Embodied Agent with Large Language Models'
+  url: https://arxiv.org/abs/2305.16291
+  date: '2023.05'
+  section: '3.5'
+  sub: experience-skill
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Builds reusable Minecraft code skills from structured-state feedback and self-verification.
+    zh: 根据结构化状态反馈和自验证，迭代积累可复用的 Minecraft 代码技能。
+    ja: 構造化された状態フィードバックと自己検証を使い、再利用できる Minecraft のコードスキルを蓄積する。
+  setup:
+    engines:
+    - Minecraft
+  sources:
+  - https://arxiv.org/abs/2305.16291
+  - https://voyager.minedojo.org/
+  - https://github.com/MineDojo/Voyager
+  verification:
+    en: GPT-4 generates JavaScript over Mineflayer APIs, executes it, then revises from structured state, chat feedback, interpreter
+      errors and an LLM critic; successful programs enter a retrievable skill library (§2, App. A.1/A.4–A.5). Three trials
+      per method evaluate exploration, and four unseen-task tests reuse the library in a new world (§3.3, Tables 1–2, App.
+      B.4) · the main loop receives inventory, nearby-object names and agent coordinates rather than images. Its curriculum
+      excludes tasks needing visual confirmation (App. A.3.4). Human visual critique and curriculum guidance enable separate
+      qualitative building demonstrations (§3.5); no robot or real-world transfer is evaluated.
+    zh: GPT-4 生成基于 Mineflayer API 的 JavaScript，执行后结合结构化状态、聊天反馈、解释器错误和 LLM 评判迭代修改，成功程序加入可检索技能库（§2、附录 A.1／A.4–A.5）。探索实验每种方法测试三轮，另在新世界的四项未见任务中复用技能库（§3.3、表
+      1–2、附录 B.4） · 主循环读取库存、附近对象名称及角色坐标，不读取图像；课程提示明确排除需视觉确认的任务（附录 A.3.4）。人提供视觉批评和分步指导的建筑演示单独报告（§3.5），没有机器人或真实世界迁移实验。

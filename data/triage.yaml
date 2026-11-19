@@ -101,6 +101,16 @@ runs:
     were already cataloged and five were queued. Queued 31 more candidates (28 from COAP and three from RoboRSI) and deferred
     one unreadable technical report. Ten generic background citations were preserved in the private citation audit. The development/runtime
     split and physical validation limitations may inform the Stage 3 guide.
+- date: '2026-11-19'
+  trigger: citations
+  covered: Maintainer-prioritized full-text review of the three COAP citation candidates SayCan (2204.01691v2), Inner Monologue
+    (2207.05608v1) and Voyager (2305.16291v2). Verified v1 publication months, official project links, SayCan notebook implementation
+    and Voyager action/critic/observation code. Checked all 88, 93 and 92 bibliography records respectively for the 2026-05-19..2026-11-19
+    citation window; none fall within it. This is targeted queue processing, not a new daily listing sweep.
+  note: 'Added all three as Adjacent papers: SayCan and Inner Monologue in 3.1 delegation, Voyager in 3.5 experience-skill.
+    Kept the distinctions between affordance grounding, feedback-driven skill replanning and code-skill accumulation, including
+    oracle/human observations and game-only validation. Other pending/deferred queues and daily coverage gaps remain. These
+    foundations may inform the Stage 3 guide; no guide changes made.'
 candidates:
 - id: '2610.35817'
   title: 'Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics'
@@ -958,8 +968,16 @@ candidates:
   url: https://arxiv.org/abs/2204.01691
   found: '2026-11-19'
   via: cited by 2610.12369v1 [1]
-  decision: pending
-  note: Review language planning, skill selection and environmental feedback as embodied orchestration foundations in 3.1.
+  decision: added
+  note: 'Review language planning, skill selection and environmental feedback as embodied orchestration foundations in 3.1.
+    Full text and official tabletop implementation reviewed. Added as Adjacent in 3.1 delegation: fixed skill selection combines
+    language relevance with state-conditioned affordances, without policy-source generation. Current state grounds the selector,
+    but the LLM does not receive explicit failure/scene feedback. The 2022.04 date is v1; PaLM results are from v2. The open
+    notebook is a separate tabletop variant.'
+  decided: '2026-11-19'
+  precedent:
+  - '2607.08448'
+  - '2608.11246'
 - id: web:awomo-0-5
   title: 'Awomo-0.5: World action model pre-trained at scale'
   url: https://github.com/Awomo-WestlakeDI/Awomo-0.5
@@ -1013,8 +1031,17 @@ candidates:
   url: https://arxiv.org/abs/2207.05608
   found: '2026-11-19'
   via: cited by 2610.12369v1 [16]
-  decision: pending
-  note: Review language planning, skill selection and environmental feedback as embodied orchestration foundations in 3.1.
+  decision: added
+  note: 'Review language planning, skill selection and environmental feedback as embodied orchestration foundations in 3.1.
+    Full text and appendix reviewed. Added as Adjacent in 3.1 delegation: language feedback changes plans and fixed skill
+    calls, not policy source. Actual visual feedback is automated on the real tabletop; simulation uses oracle state, and
+    kitchen scene descriptions / active queries use people. Preserve the distinction between a text LLM and its visually grounded
+    feedback path.'
+  decided: '2026-11-19'
+  precedent:
+  - '2607.08448'
+  - '2608.11246'
+  - '2204.01691'
 - id: '2605.03269'
   title: RLDX-1 Technical Report
   url: https://arxiv.org/abs/2605.03269
@@ -1134,9 +1161,18 @@ candidates:
   url: https://arxiv.org/abs/2305.16291
   found: '2026-11-19'
   via: cited by 2610.12369v1 [45]
-  decision: pending
+  decision: added
   note: Review executable Minecraft skill accumulation and the modality of feedback. A game-playing agent and an agent constructing
-    game code have distinct contributions.
+    game code have distinct contributions. Full text and official action/critic/observation implementation reviewed. Added
+    as Adjacent in 3.5 experience-skill for curriculum-driven executable skill accumulation. The main experiment uses structured
+    simulator metadata, inventory and chat/error feedback; coordinates alone do not establish an execution-image/spatial-diagnosis-to-code
+    repair example. Visual building correction is explicitly human-provided and qualitative (§3.5). Retains code-learning
+    relevance without claiming autonomous visual perception or physical transfer.
+  decided: '2026-11-19'
+  precedent:
+  - '2406.18746'
+  - '2406.03757'
+  - '2305.16744'
 - id: '2609.07398'
   title: 'OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining'
   url: https://arxiv.org/abs/2609.07398

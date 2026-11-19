@@ -13,7 +13,7 @@
 
 A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to the physical world.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-678-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--19-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-681-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--19-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -57,11 +57,11 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [2.5 Perception models × scene understanding and reconstruction](#s2-5) (6)
   - [2.6 Action models × robot manipulation](#s2-6) (12)
 - [Stage 3 · Bridging Digital & Physical Worlds](#stage-3)
-  - [3.1 Embodied harnesses](#s3-1) (88)
+  - [3.1 Embodied harnesses](#s3-1) (90)
   - [3.2 Simulator construction](#s3-2) (68)
   - [3.3 Simulator quality evaluation](#s3-3) (29)
   - [3.4 Data](#s3-4) (15)
-  - [3.5 Training and capability improvement](#s3-5) (83)
+  - [3.5 Training and capability improvement](#s3-5) (84)
   - [3.6 Physical applications and experiments](#s3-6) (49)
     - [Scientific experiments (AI4Science)](#s3-6-experiments) (27)
   - [Simulation engines at a glance](#s3-engines)
@@ -2291,6 +2291,18 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
   > Lets a coding agent combine analytic motion primitives with calls to a frozen VLA, assigning language subgoals, budgets and stopping conditions.<br>
   > 🖥️ **Sim** MuJoCo + SAPIEN (Franka Panda, AgileX ALOHA) · 🦾 **Real** Franka
 
+<!-- mmac-record: {"id": "2207.05608", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2207-05608"></a>`2022.07` **[Inner Monologue: Embodied Reasoning through Planning with Language Models](https://arxiv.org/abs/2207.05608)** [[Project page]](https://innermonologue.github.io/)
+  > Uses language feedback from perception, success detection or people to replan robot skills.<br>
+  > 🖥️ **Sim** PyBullet · 🦾 **Real** UR5e, Everyday Robots
+
+<!-- mmac-record: {"id": "2204.01691", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2204-01691"></a>`2022.04` **[Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](https://arxiv.org/abs/2204.01691)** [[Project page]](https://say-can.github.io/) [[Code]](https://github.com/google-research/google-research/tree/master/saycan)
+  > SayCan combines language-model relevance and state-conditioned affordance scores to select pretrained robot skills.<br>
+  > 🦾 **Real** Everyday Robots
+
 #### Agent capability evaluation
 
 <!-- mmac-record: {"id": "2611.12177", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -3726,6 +3738,12 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
 
 - <a id="paper-2305-16744"></a>`2023.05` **[Demo2Code: From Summarizing Demonstrations to Synthesizing Code via Extended Chain-of-Thought](https://arxiv.org/abs/2305.16744)** [[Project page]](https://portal-cornell.github.io/demo2code/) [[Code]](https://github.com/portal-cornell/demo2code)
   > Turns demonstrations into reusable robot programs.
+
+<!-- mmac-record: {"id": "2305.16291", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2305-16291"></a>`2023.05` **[Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291)** [[Project page]](https://voyager.minedojo.org/) [[Code]](https://github.com/MineDojo/Voyager)
+  > Builds reusable Minecraft code skills from structured-state feedback and self-verification.<br>
+  > 🖥️ **Sim** Minecraft
 
 <!-- mmac-record: {"id": "res:physicalrsi", "scope": "Resource", "primary": "3.5", "stage": 3, "type": "resource"} -->
 

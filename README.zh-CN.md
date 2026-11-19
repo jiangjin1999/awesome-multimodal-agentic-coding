@@ -13,7 +13,7 @@
 
 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从数字世界延伸到物理世界。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-678-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--19-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-681-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--19-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · **简体中文** · [日本語](./README.ja.md)
 
@@ -57,11 +57,11 @@
   - [2.5 感知模型 × 场景理解与重建](#s2-5) (6)
   - [2.6 动作模型 × 机器人操作](#s2-6) (12)
 - [Stage 3 · 打通数字世界与物理世界](#stage-3)
-  - [3.1 具身框架（Harness）](#s3-1) (88)
+  - [3.1 具身框架（Harness）](#s3-1) (90)
   - [3.2 仿真器构建](#s3-2) (68)
   - [3.3 仿真器质量评估](#s3-3) (29)
   - [3.4 数据](#s3-4) (15)
-  - [3.5 训练与能力提升](#s3-5) (83)
+  - [3.5 训练与能力提升](#s3-5) (84)
   - [3.6 物理应用与实验](#s3-6) (49)
     - [科学实验（AI4Science）](#s3-6-experiments) (27)
   - [仿真引擎一览](#s3-engines)
@@ -2291,6 +2291,18 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
   > 让 Coding Agent 编排冻结 VLA 与解析动作原语<br>
   > 🖥️ **仿真** MuJoCo + SAPIEN（Franka Panda、AgileX ALOHA） · 🦾 **真机** Franka
 
+<!-- mmac-record: {"id": "2207.05608", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2207-05608"></a>`2022.07` **[Inner Monologue: Embodied Reasoning through Planning with Language Models](https://arxiv.org/abs/2207.05608)** [[项目页]](https://innermonologue.github.io/)
+  > 将感知、成功检测或人的反馈转成语言，支持机器人技能的闭环重规划。<br>
+  > 🖥️ **仿真** PyBullet · 🦾 **真机** UR5e、Everyday Robots
+
+<!-- mmac-record: {"id": "2204.01691", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2204-01691"></a>`2022.04` **[Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](https://arxiv.org/abs/2204.01691)** [[项目页]](https://say-can.github.io/) [[代码]](https://github.com/google-research/google-research/tree/master/saycan)
+  > SayCan 结合语言模型的任务相关性与当前状态下的可供性评分，选择预训练机器人技能。<br>
+  > 🦾 **真机** Everyday Robots
+
 #### Agent 能力评测
 
 <!-- mmac-record: {"id": "2611.12177", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -3726,6 +3738,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 - <a id="paper-2305-16744"></a>`2023.05` **[Demo2Code: From Summarizing Demonstrations to Synthesizing Code via Extended Chain-of-Thought](https://arxiv.org/abs/2305.16744)** [[项目页]](https://portal-cornell.github.io/demo2code/) [[代码]](https://github.com/portal-cornell/demo2code)
   > 从示范总结任务，再合成机器人程序。
+
+<!-- mmac-record: {"id": "2305.16291", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2305-16291"></a>`2023.05` **[Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291)** [[项目页]](https://voyager.minedojo.org/) [[代码]](https://github.com/MineDojo/Voyager)
+  > 根据结构化状态反馈和自验证，迭代积累可复用的 Minecraft 代码技能。<br>
+  > 🖥️ **仿真** Minecraft
 
 <!-- mmac-record: {"id": "res:physicalrsi", "scope": "Resource", "primary": "3.5", "stage": 3, "type": "resource"} -->
 

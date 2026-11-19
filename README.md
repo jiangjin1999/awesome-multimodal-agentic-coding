@@ -13,7 +13,7 @@
 
 A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to the physical world.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-673-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--18-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-674-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--19-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -57,7 +57,7 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [2.5 Perception models × scene understanding and reconstruction](#s2-5) (6)
   - [2.6 Action models × robot manipulation](#s2-6) (12)
 - [Stage 3 · Bridging Digital & Physical Worlds](#stage-3)
-  - [3.1 Embodied harnesses](#s3-1) (86)
+  - [3.1 Embodied harnesses](#s3-1) (87)
   - [3.2 Simulator construction](#s3-2) (68)
   - [3.3 Simulator quality evaluation](#s3-3) (29)
   - [3.4 Data](#s3-4) (15)
@@ -1877,8 +1877,8 @@ The agent **calls other models through code** — image, video and world generat
 
 <!-- mmac-record: {"id": "res:genie-4", "scope": "Resource", "primary": "2.4", "stage": 2, "type": "resource"} -->
 
-- <a id="paper-res-genie-4"></a>**[Genie 4](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/)**
-  > Prompts, reference images, navigation, and live edits → interactive audiovisual worlds. Research preview that combines generative simulation with Gemini planning and frame-based checks; access is limited to trusted testers. Spatial accuracy, physical interactions, and long-term consistency remain limitations; robotics examples are generated simulations.
+- <a id="paper-res-genie-4"></a>**[Genie 4](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/)** [[Article]](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/) [[Demo]](https://labs.google/projectgenie)
+  > Prompts and images produce interactive audiovisual worlds. Project Genie now offers an agent combining models for eligible subscribers, with spatial, physical and persistence limits. Robotics examples use generated simulation.
 
 <!-- mmac-record: {"id": "res:l3g-world-real-time-infinite-world-generation-with-latent-3d-gaussian-memory", "scope": "Resource", "primary": "2.4", "stage": 2, "type": "resource"} -->
 
@@ -2122,6 +2122,12 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 - <a id="paper-2609-10522"></a>`2026.09` **[Show-Harness: Just a VLM Agent Can Play Robots](https://arxiv.org/abs/2609.10522)** [[Project page]](https://showlab.github.io/Show-Harness) [[Code]](https://github.com/showlab/Show-Harness) [[Model]](https://huggingface.co/showlab/Show-Harness-VLMs) [[Dataset]](https://huggingface.co/datasets/showlab/Show-Harness-Data)
   > Connects a general VLM to a robot interpreter through a compact semantic action interface.<br>
   > 🖥️ **Sim** Isaac Lab + SAPIEN (Franka Panda) · 🦾 **Real** Franka FR3, AgileX PiPER
+
+<!-- mmac-record: {"id": "2609.22966", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2609-22966"></a>`2026.09` **[Transferring the Intelligence of VLMs to Robotic Control](https://arxiv.org/abs/2609.22966)** [[Project page]](https://robodawn.top/) [[Code]](https://github.com/Hugo-AGI/RoboDawn) [[Demo]](https://robodawn.top/results)
+  > RoboDawn grounds frozen VLM control through discrete motion commands and in-context demonstrations.<br>
+  > 🖥️ **Sim** SAPIEN + Isaac Sim · 🦾 **Real** Franka, AgileX PiPER
 
 <!-- mmac-record: {"id": "2609.29964", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 

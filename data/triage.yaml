@@ -78,6 +78,18 @@ runs:
   note: Added three program-and-feedback works to 3.5, with a 3.2 reference for CoEnv, and queued nine citation leads for
     full-text review. The demonstration-to-program and deployment adaptation protocols are relevant to the Stage 3 reading
     guide. This run covers the three reference lists.
+- date: '2026-11-19'
+  trigger: sweep
+  covered: Reviewed oldest pending RoboDawn (2609.22966v1), its official implementation and 55 references. Fetched new/recent
+    arXiv listings for cs.RO, cs.CV, cs.GR, cs.AI, cs.LG, cs.CL, cs.SE, cs.HC and cs.MM; read all 133 titles in the November
+    18 cs.RO announcement including cross-lists and replacements. Screened saved titles and available abstracts, HF November
+    5–19 pages, 24 short queries across six tasks, four themes, two capability routes and focus directions 3/9 method/evaluation/data;
+    checked open suggestions, three awesome lists, Tripo, benchmark and official project sources.
+  note: Coverage is partial. The November 5–19 lastUpdated API completed HC/MM, CL stopped at 500, and RO/CV/GR/AI/LG/SE remain
+    at 0 after rate limits or timeouts. November 19 announcements and HF batch were still absent at recheck. Added RoboDawn,
+    updated Genie 4 resource access/orchestration, and queued 22 leads. Remaining oldest pending is SIMPACT. Historical Monday
+    metadata title/full-text review and official candidate details remain pending. RoboDawn interfaces and demonstrations
+    may inform the Stage 3 reading guide.
 candidates:
 - id: '2610.35817'
   title: 'Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics'
@@ -134,8 +146,13 @@ candidates:
   url: https://arxiv.org/abs/2609.22966
   found: '2026-11-15'
   via: cited by 2610.35817 [89]
-  decision: pending
-  note: RoboDawn exposes discrete motion commands to an agentic VLM. Compare 3.1 tools-interfaces (2609.10522).
+  decision: added
+  note: 3.1 tools-interfaces, Adjacent. The VLM emits semantic move/rotate/gripper commands; planned motion is provided by
+    the executor. Separate simulation and hardware results are recorded from v1 Tables 1 and 5.
+  decided: '2026-11-19'
+  precedent:
+  - '2609.10522'
+  - '2609.29389'
 - id: '2512.05955'
   title: 'SIMPACT: Simulation-Enabled Action Planning using Vision-Language Models'
   url: https://arxiv.org/abs/2512.05955
@@ -699,3 +716,179 @@ candidates:
   via: cited by 2610.09228v1
   decision: pending
   note: Check the VLM-guided experience collection and policy adaptation loop.
+- id: '2611.22132'
+  title: 'DailyBrick: Language-Guided Synthesis of Brick Assembly Instructions'
+  url: https://arxiv.org/abs/2611.22132
+  found: '2026-11-19'
+  via: cs.CV-recent, cs.RO-new, cs.CV-new, cs.RO-recent; saved listing abstract screened
+  decision: pending
+  note: Check programmatic brick construction, intermediate physical checks, and whether the external reviewer changes the
+    next construction program.
+- id: '2611.22138'
+  title: 'RoboTeam: Benchmarking Vision-Based Multi-Agent Control of Many Robot Arms in Real Time'
+  url: https://arxiv.org/abs/2611.22138
+  found: '2026-11-19'
+  via: cs.AI-recent, cs.AI-new, cs.RO-new, cs.RO-recent; saved listing abstract screened
+  decision: pending
+  note: Check the real-time camera-only multi-arm benchmark, code and tool configurations, and task/reset/evaluation contract.
+- id: '2611.22291'
+  title: 'When the World Is the Test Suite: Agentic Intelligence for the Physical World'
+  url: https://arxiv.org/abs/2611.22291
+  found: '2026-11-19'
+  via: cs.AI-recent, cs.SE-recent, cs.AI-new, cs.RO-new, cs.SE-new, cs.RO-recent; saved listing abstract screened
+  decision: pending
+  note: Survey lead from cs.RO. Review the full survey and distinguish synthesis of prior systems from newly evaluated methods.
+- id: '2611.22321'
+  title: 'Beyond Episodic Recall: Experience-to-Knowledge Evolution for Lifelong Embodied Navigation'
+  url: https://arxiv.org/abs/2611.22321
+  found: '2026-11-19'
+  via: cs.RO-new, cs.RO-recent; saved listing abstract screened
+  decision: pending
+  note: Check how evolving navigation experience changes subsequent decisions and whether the contribution fits an embodied
+    harness or skill-learning role.
+- id: '2611.22367'
+  title: 'FailureGen: Scalable Robot Failure Data Generation with World Models'
+  url: https://arxiv.org/abs/2611.22367
+  found: '2026-11-19'
+  via: cs.AI-recent, cs.AI-new, cs.RO-new, cs.RO-recent; saved listing abstract screened
+  decision: pending
+  note: Check world-model failure-video generation, event annotations, and actual data release separately from physical execution.
+- id: '2611.22584'
+  title: 'InteractVLA: Turning VLAs into Interactive Tools for Agentic Robotic Manipulation'
+  url: https://arxiv.org/abs/2611.22584
+  found: '2026-11-19'
+  via: cs.RO-new, cs.RO-recent; saved listing abstract screened
+  decision: pending
+  note: Check bidirectional VLA geometric steering, camera reprojections, subsequent target revisions, and the role of agent-generated
+    code.
+- id: '2611.21958'
+  title: 'Weight-space programming for tractor guidance controller: large language models natively write neural network weights
+    that steer a real tractor'
+  url: https://arxiv.org/abs/2611.21958
+  found: '2026-11-19'
+  via: cs.AI-recent, cs.LG-recent, cs.AI-new, cs.RO-new, cs.LG-new, cs.RO-recent; saved listing abstract screened
+  decision: pending
+  note: Check direct edits of neural controller weights, simulation feedback, and tractor hardware evidence.
+- id: '2611.22294'
+  title: 'Perception into Imagination: Executable Memory for World Models'
+  url: https://arxiv.org/abs/2611.22294
+  found: '2026-11-19'
+  via: cs.AI-recent, cs.LG-recent, cs.CV-recent, cs.AI-new, cs.RO-new, cs.LG-new, cs.CV-new, cs.RO-recent; saved listing abstract
+    screened
+  decision: pending
+  note: Check executable perceptual memory as a composable prediction capability and its interface to policy learning.
+- id: '2611.23056'
+  title: 'RFW-S: Everyday Deformable Objects with Independent Simulation Verification'
+  url: https://arxiv.org/abs/2611.23056
+  found: '2026-11-19'
+  via: cs.CV-recent, cs.RO-new, cs.CV-new, cs.RO-recent; saved listing abstract screened
+  decision: pending
+  note: Check physical asset construction, independent simulation verification, and released dataset files.
+- id: '2611.23118'
+  title: 'Auditing a Learned Simulator for Legged Robots: The Robotic World Model on ANYmal D'
+  url: https://arxiv.org/abs/2611.23118
+  found: '2026-11-19'
+  via: cs.LG-recent, cs.RO-new, cs.LG-new, cs.RO-recent; saved listing abstract screened
+  decision: pending
+  note: Check the learned-simulator audit and the simulator-to-MuJoCo comparison, separately from hardware transfer.
+- id: '2611.22565'
+  title: 'MillBill: A Machining Agent with Geometric Feedback'
+  url: https://arxiv.org/abs/2611.22565
+  found: '2026-11-19'
+  via: cs.AI-recent, cs.CV-recent, cs.AI-new, cs.CV-new; saved listing abstract screened
+  decision: pending
+  note: Check the machining agent, geometric toolpath execution and feedback, and any manufactured-part validation.
+- id: '2611.22307'
+  title: 'Learning to Edit IFC Building Models: Verifiable Checkers as the Training Signal for Dependency-Aware Editing Agents'
+  url: https://arxiv.org/abs/2611.22307
+  found: '2026-11-19'
+  via: cs.AI-recent, cs.AI-new; saved listing abstract screened
+  decision: pending
+  note: Check the IFC CodeAct editing environment, checker feedback and any visual feedback and released tasks.
+- id: '2611.22967'
+  title: 'CodeReel: Accelerating Code-to-Video Agents with Exact Frame Reuse and Blocking-Aware Scheduling'
+  url: https://arxiv.org/abs/2611.22967
+  found: '2026-11-19'
+  via: cs.AI-recent, cs.CV-recent, cs.AI-new, cs.CV-new, cs.MM-recent, cs.MM-new; saved listing abstract screened
+  decision: pending
+  note: Check frame reuse and scheduling as a code-to-video execution resource, separately from the agent feedback mechanism.
+- id: '2611.23010'
+  title: 'PhysScope: Agentic Multimodal Physics Reasoning with Grounded Visual Memory'
+  url: https://arxiv.org/abs/2611.23010
+  found: '2026-11-19'
+  via: cs.AI-recent, cs.AI-new; saved listing abstract screened
+  decision: pending
+  note: Check grounded physics-diagram reasoning, constructed views, and evidence for subsequent code or tool actions.
+- id: '2611.22563'
+  title: 'CADMAGEDDON: High-Fidelity CAD Reconstruction with Local Inference'
+  url: https://arxiv.org/abs/2611.22563
+  found: '2026-11-19'
+  via: cs.AI-recent, cs.CV-recent, cs.AI-new, cs.CV-new; saved listing abstract screened
+  decision: pending
+  note: Check editable CAD reconstruction, local inference, rendering feedback and FreeCAD implementation.
+- id: '2611.23144'
+  title: '$π^4$: A Foundation Model for 4D Scene Geometry and Motion'
+  url: https://arxiv.org/abs/2611.23144
+  found: '2026-11-19'
+  via: cs.CV-recent, cs.CV-new; saved listing abstract screened
+  decision: pending
+  note: Check image/video inputs, dense geometry and motion outputs, implementation and weights as a model capability resource.
+- id: '2611.21152'
+  title: 'From Repositories to Training Environments: Scaling Long-Horizon Coding Agents with Environment Evolution Loop'
+  url: https://arxiv.org/abs/2611.21152
+  found: '2026-11-19'
+  via: cs.CL-new, cs.CL-recent; saved listing abstract screened
+  decision: pending
+  note: Check repository-to-environment synthesis, feedback contracts, and the role of visual artifact tasks.
+- id: '2611.22136'
+  title: 'Big Brains, Tiny Board: Pupavision, an Agentic Physical AI Instrument for Monitoring Drosophila Pupariation and
+    Lifecycle Transitions'
+  url: https://arxiv.org/abs/2611.22136
+  found: '2026-11-19'
+  via: cs.AI-recent, cs.AI-new, cs.HC-recent, cs.HC-new; saved listing abstract screened
+  decision: pending
+  note: Check the on-device instrument harness, code repair after capture failures and real experiment evidence.
+- id: '2608.11739'
+  title: 'G0.5: One Autoregressive Stream for Robot Reasoning and Action'
+  url: https://arxiv.org/abs/2608.11739
+  found: '2026-11-19'
+  via: cited by 2609.22966v1; official abstract reviewed
+  decision: pending
+  note: Check image/language-to-action input/output, public checkpoints and an independently reusable model capability role
+    in 2.6. Citation as a baseline does not establish an agent loop.
+- id: '2607.15330'
+  title: 'Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K Hours of Real-World Trajectories'
+  url: https://arxiv.org/abs/2607.15330
+  found: '2026-11-19'
+  via: cited by 2609.22966v1; official abstract reviewed
+  decision: pending
+  note: Check image/language-to-action input/output, public checkpoints and an independently reusable model capability role
+    in 2.6. Citation as a baseline does not establish an agent loop.
+- id: '2606.14409'
+  title: 'Hy-Embodied-0.5-VLA: From Vision-Language-Action Models to a Real-World Robot Learning Stack'
+  url: https://arxiv.org/abs/2606.14409
+  found: '2026-11-19'
+  via: cited by 2609.22966v1; official abstract reviewed
+  decision: pending
+  note: Check image/language-to-action input/output, public checkpoints and an independently reusable model capability role
+    in 2.6. Citation as a baseline does not establish an agent loop.
+- id: web:1human-reels
+  title: 1human — shared human-agent motion references and preference library
+  url: https://github.com/mdagnolops/1human-reels
+  found: '2026-11-19'
+  via: 'open suggestion issue #2'
+  decision: pending
+  note: Check the original motion-reference workflow, skill implementation, demonstration provenance and Resource role in
+    visual creation.
+- id: res:genie-4
+  title: Genie 4
+  url: https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/
+  found: '2026-11-19'
+  via: official DeepMind blog index and November 18 Project Genie update
+  decision: updated
+  decided: '2026-11-19'
+  precedent:
+  - res:cosmos3-nano-sim-auto
+  - res:worldfoundry
+  note: Updated existing resource access and model-orchestration description from the official November 18 release documentation.
+    Retained the original source and simulation limitations.

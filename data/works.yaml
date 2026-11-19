@@ -14387,13 +14387,14 @@
   type: resource
   scope: resource
   tldr:
-    en: Prompts, reference images, navigation, and live edits → interactive audiovisual worlds. Research preview that combines
-      generative simulation with Gemini planning and frame-based checks; access is limited to trusted testers. Spatial accuracy,
-      physical interactions, and long-term consistency remain limitations; robotics examples are generated simulations.
-    zh: 提示、参考图像、导航和实时编辑 → 可交互视听世界。将生成式模拟与 Gemini 规划和逐帧检查结合的研究预览，仅面向可信测试者；空间准确性、物理交互与长程一致性仍有限，机器人案例为生成式仿真。
-    ja: 指示、参照画像、移動、実時間の編集から、対話可能な視聴覚世界を生成する。生成的シミュレーションを Gemini の計画とフレーム単位の確認に組み合わせた研究プレビューで、信頼されたテスター向けに限定される。空間精度、物理的な相互作用、長期的一貫性には制限があり、ロボット例は生成的シミュレーションである。
+    en: Prompts and images produce interactive audiovisual worlds. Project Genie now offers an agent combining models for eligible
+      subscribers, with spatial, physical and persistence limits. Robotics examples use generated simulation.
+    zh: 提示和图像 → 可交互视听世界，现通过 Project Genie 向符合条件的用户开放，并由 Agent 编排模型能力；空间、物理交互和场景持久性仍有限，机器人案例为生成式仿真。
+    ja: 指示や画像から対話可能な視聴覚世界を生成し、モデルを組み合わせる Agent とともに Project Genie で対象ユーザーへの提供を開始。空間精度、物理的相互作用、シーンの持続性には制約があり、ロボット例は生成シミュレーションによる。
   sources:
   - https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/
+  - https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/
+  - https://labs.google/projectgenie
 - id: res:rendley-video-editing-skill
   title: Rendley video-editing-skill
   url: https://github.com/rendleyhq/video-editing-skill
@@ -15981,3 +15982,35 @@
       the twin and tools (§§4.1–4.2, Table 1).
     zh: Claude Code 在经 RGB-D 重建和校准的数字孪生中执行完整的多臂 Python 程序，根据自适应视角图像和检查点状态修订程序，再经碰撞检查回放至实机（§§3.1–3.3、附录 C.3） · 五项实机任务中，每种方法每项测试十次，CoEx
       平均成功率 70%，共享同一孪生和工具、逐步决策的 GPT-5.6 Sol 基线为 50%（§§4.1–4.2、表 1）。
+- id: '2609.22966'
+  title: Transferring the Intelligence of VLMs to Robotic Control
+  url: https://arxiv.org/abs/2609.22966
+  date: '2026.09'
+  section: '3.1'
+  sub: tools-interfaces
+  type: paper
+  scope: adjacent
+  tldr:
+    en: RoboDawn grounds frozen VLM control through discrete motion commands and in-context demonstrations.
+    zh: RoboDawn 通过离散运动指令和上下文示范，让冻结 VLM 根据执行反馈控制机器人。
+    ja: RoboDawn は離散的な動作コマンドと文脈内の実演を使い、固定した VLM が実行結果を見ながらロボットを操作できるようにする。
+  setup:
+    engines:
+    - SAPIEN
+    - Isaac Sim
+    real_robots:
+    - Franka
+    - AgileX PiPER
+  sources:
+  - https://arxiv.org/abs/2609.22966
+  - https://robodawn.top/
+  - https://github.com/Hugo-AGI/RoboDawn
+  - https://robodawn.top/results
+  verification:
+    en: 'The frozen VLM selects semantic motion commands from annotated camera images, measured robot state and previous execution
+      feedback; the executor supplies planned motion (§§3.1–3.3) · GPT-6 Astra on RoboTwin C2R: 53.2% zero-shot and 73.6%
+      one-shot over 50 tasks, ten tests per task; full-set-trained π0.5 reaches 46.0% (§4.1.1, Table 1) · Gemini 3.8 Flash
+      hardware zero-shot: Franka basket 9/10, stacking 5/10; PiPER cloth folding 0/10 (§4.2, Table 5).'
+    zh: 冻结 VLM 根据带标注的相机图像、实测机器人状态和上次执行反馈选择语义运动指令，由执行器生成规划运动（§§3.1–3.3） · GPT-6 Astra 在 RoboTwin C2R 的 50 项任务、每项十次测试中，零示范成功率
+      53.2%、单示范 73.6%，全量训练的 π0.5 为 46.0%（§4.1.1、表 1） · Gemini 3.8 Flash 零示范实机结果为 Franka 入篮 9/10、堆叠 5/10，PiPER 叠布 0/10（§4.2、表
+      5）。

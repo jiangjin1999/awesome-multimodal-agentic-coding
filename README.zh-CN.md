@@ -13,7 +13,7 @@
 
 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从数字世界延伸到物理世界。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-673-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--18-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-674-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--19-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · **简体中文** · [日本語](./README.ja.md)
 
@@ -57,7 +57,7 @@
   - [2.5 感知模型 × 场景理解与重建](#s2-5) (6)
   - [2.6 动作模型 × 机器人操作](#s2-6) (12)
 - [Stage 3 · 打通数字世界与物理世界](#stage-3)
-  - [3.1 具身框架（Harness）](#s3-1) (86)
+  - [3.1 具身框架（Harness）](#s3-1) (87)
   - [3.2 仿真器构建](#s3-2) (68)
   - [3.3 仿真器质量评估](#s3-3) (29)
   - [3.4 数据](#s3-4) (15)
@@ -1877,8 +1877,8 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 <!-- mmac-record: {"id": "res:genie-4", "scope": "Resource", "primary": "2.4", "stage": 2, "type": "resource"} -->
 
-- <a id="paper-res-genie-4"></a>**[Genie 4](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/)**
-  > 提示、参考图像、导航和实时编辑 → 可交互视听世界。将生成式模拟与 Gemini 规划和逐帧检查结合的研究预览，仅面向可信测试者；空间准确性、物理交互与长程一致性仍有限，机器人案例为生成式仿真。
+- <a id="paper-res-genie-4"></a>**[Genie 4](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/)** [[文章]](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/) [[Demo]](https://labs.google/projectgenie)
+  > 提示和图像 → 可交互视听世界，现通过 Project Genie 向符合条件的用户开放，并由 Agent 编排模型能力；空间、物理交互和场景持久性仍有限，机器人案例为生成式仿真。
 
 <!-- mmac-record: {"id": "res:l3g-world-real-time-infinite-world-generation-with-latent-3d-gaussian-memory", "scope": "Resource", "primary": "2.4", "stage": 2, "type": "resource"} -->
 
@@ -2122,6 +2122,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-2609-10522"></a>`2026.09` **[Show-Harness: Just a VLM Agent Can Play Robots](https://arxiv.org/abs/2609.10522)** [[项目页]](https://showlab.github.io/Show-Harness) [[代码]](https://github.com/showlab/Show-Harness) [[模型]](https://huggingface.co/showlab/Show-Harness-VLMs) [[数据集]](https://huggingface.co/datasets/showlab/Show-Harness-Data)
   > 以紧凑语义动作接口连接通用 VLM 与机器人解释器，研究将数字 Agent 式交互迁移到物理控制的条件。<br>
   > 🖥️ **仿真** Isaac Lab + SAPIEN（Franka Panda） · 🦾 **真机** Franka FR3、AgileX PiPER
+
+<!-- mmac-record: {"id": "2609.22966", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2609-22966"></a>`2026.09` **[Transferring the Intelligence of VLMs to Robotic Control](https://arxiv.org/abs/2609.22966)** [[项目页]](https://robodawn.top/) [[代码]](https://github.com/Hugo-AGI/RoboDawn) [[Demo]](https://robodawn.top/results)
+  > RoboDawn 通过离散运动指令和上下文示范，让冻结 VLM 根据执行反馈控制机器人。<br>
+  > 🖥️ **仿真** SAPIEN + Isaac Sim · 🦾 **真机** Franka、AgileX PiPER
 
 <!-- mmac-record: {"id": "2609.29964", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 

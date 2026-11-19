@@ -13,7 +13,7 @@
 
 マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——デジタル世界から物理世界まで。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-673-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--18-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-674-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--19-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語**
 
@@ -60,7 +60,7 @@
   - [2.5 知覚モデル × シーン理解・再構成](#s2-5) (6)
   - [2.6 行動モデル × ロボット操作](#s2-6) (12)
 - [Stage 3 · デジタルと物理世界の架け橋](#stage-3)
-  - [3.1 身体性ハーネス](#s3-1) (86)
+  - [3.1 身体性ハーネス](#s3-1) (87)
   - [3.2 シミュレータ構築](#s3-2) (68)
   - [3.3 シミュレータ品質評価](#s3-3) (29)
   - [3.4 データ](#s3-4) (15)
@@ -1880,8 +1880,8 @@
 
 <!-- mmac-record: {"id": "res:genie-4", "scope": "Resource", "primary": "2.4", "stage": 2, "type": "resource"} -->
 
-- <a id="paper-res-genie-4"></a>**[Genie 4](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/)**
-  > 指示、参照画像、移動、実時間の編集から、対話可能な視聴覚世界を生成する。生成的シミュレーションを Gemini の計画とフレーム単位の確認に組み合わせた研究プレビューで、信頼されたテスター向けに限定される。空間精度、物理的な相互作用、長期的一貫性には制限があり、ロボット例は生成的シミュレーションである。
+- <a id="paper-res-genie-4"></a>**[Genie 4](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/)** [[記事]](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/) [[デモ]](https://labs.google/projectgenie)
+  > 指示や画像から対話可能な視聴覚世界を生成し、モデルを組み合わせる Agent とともに Project Genie で対象ユーザーへの提供を開始。空間精度、物理的相互作用、シーンの持続性には制約があり、ロボット例は生成シミュレーションによる。
 
 <!-- mmac-record: {"id": "res:l3g-world-real-time-infinite-world-generation-with-latent-3d-gaussian-memory", "scope": "Resource", "primary": "2.4", "stage": 2, "type": "resource"} -->
 
@@ -2125,6 +2125,12 @@
 - <a id="paper-2609-10522"></a>`2026.09` **[Show-Harness: Just a VLM Agent Can Play Robots](https://arxiv.org/abs/2609.10522)** [[プロジェクトページ]](https://showlab.github.io/Show-Harness) [[コード]](https://github.com/showlab/Show-Harness) [[モデル]](https://huggingface.co/showlab/Show-Harness-VLMs) [[データセット]](https://huggingface.co/datasets/showlab/Show-Harness-Data)
   > 簡潔な意味的動作インターフェースで汎用 VLM とロボットインタープリターを接続し、デジタル Agent 型の対話を物理制御に移す条件を検討する。<br>
   > 🖥️ **シミュレーション** Isaac Lab + SAPIEN（Franka Panda） · 🦾 **実機** Franka FR3、AgileX PiPER
+
+<!-- mmac-record: {"id": "2609.22966", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2609-22966"></a>`2026.09` **[Transferring the Intelligence of VLMs to Robotic Control](https://arxiv.org/abs/2609.22966)** [[プロジェクトページ]](https://robodawn.top/) [[コード]](https://github.com/Hugo-AGI/RoboDawn) [[デモ]](https://robodawn.top/results)
+  > RoboDawn は離散的な動作コマンドと文脈内の実演を使い、固定した VLM が実行結果を見ながらロボットを操作できるようにする。<br>
+  > 🖥️ **シミュレーション** SAPIEN + Isaac Sim · 🦾 **実機** Franka、AgileX PiPER
 
 <!-- mmac-record: {"id": "2609.29964", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 

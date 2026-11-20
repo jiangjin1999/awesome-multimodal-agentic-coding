@@ -13,7 +13,7 @@
 
 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从数字世界延伸到物理世界。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-681-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--19-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-683-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--20-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · **简体中文** · [日本語](./README.ja.md)
 
@@ -57,12 +57,12 @@
   - [2.5 感知模型 × 场景理解与重建](#s2-5) (6)
   - [2.6 动作模型 × 机器人操作](#s2-6) (12)
 - [Stage 3 · 打通数字世界与物理世界](#stage-3)
-  - [3.1 具身框架（Harness）](#s3-1) (90)
+  - [3.1 具身框架（Harness）](#s3-1) (91)
   - [3.2 仿真器构建](#s3-2) (68)
   - [3.3 仿真器质量评估](#s3-3) (29)
   - [3.4 数据](#s3-4) (15)
   - [3.5 训练与能力提升](#s3-5) (84)
-  - [3.6 物理应用与实验](#s3-6) (49)
+  - [3.6 物理应用与实验](#s3-6) (50)
     - [科学实验（AI4Science）](#s3-6-experiments) (27)
   - [仿真引擎一览](#s3-engines)
 - [综述与相关合集](#related)
@@ -2170,6 +2170,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
   > 提出 Embodied Tool Protocol，将机器人感知、推理与执行能力统一为可注册、发现和调用的工具，支撑 Agent 组合现有能力。<br>
   > 🖥️ **仿真** AI2-THOR + Habitat + CoppeliaSim（Franka Panda）
 
+<!-- mmac-record: {"id": "2512.05955", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2512-05955"></a>`2025.12` **[SIMPACT: Simulation-Enabled Action Planning using Vision-Language Models](https://arxiv.org/abs/2512.05955)** [[项目页]](https://simpact-bot.github.io/) [[代码]](https://github.com/ShaoxiongYao/simpact)
+  > 利用物理仿真的渲染轨迹修正操控动作，再将计划交给真实机器人执行。<br>
+  > 🖥️ **仿真** MuJoCo + Warp + PyBullet · 🦾 **真机** Franka FR3
+
 <!-- mmac-record: {"id": "2511.00917", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2511-00917"></a>`2025.11` **[MAESTRO: Orchestrating Robotics Modules with Coding Agents for Zero-Shot Generalist Robots](https://arxiv.org/abs/2511.00917)** [[代码]](https://github.com/penn-pal-lab/maestro) [[项目页]](https://maestro-robot.github.io)
@@ -3167,7 +3173,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
   > 给 Coding Agent 真实机器人片段、相机标定和动作记录，让它重建对应的仿真场景。提交后冻结场景，再分别比较渲染结果、重放真实动作的结果和固定机器人策略的闭环表现，以检查重建世界的外观及使用价值。<br>
   > 🖥️ **仿真** Franka Panda
 
-*另见:* [Frontier3DBench](#paper-2611-09017) · [4DCodeBench](#paper-2610-03715) · [BlenderWorld](#paper-system-blenderworld) · [BVB](#paper-2609-15478) · [Code4Scene](#paper-2609-36777) · [Parametric CAD Bench v3](#paper-2611-02659) · [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786)
+*另见:* [Frontier3DBench](#paper-2611-09017) · [RoboBuilder](#paper-2611-23855) · [4DCodeBench](#paper-2610-03715) · [BlenderWorld](#paper-system-blenderworld) · [BVB](#paper-2609-15478) · [Code4Scene](#paper-2609-36777) · [Parametric CAD Bench v3](#paper-2611-02659) · [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
@@ -4069,6 +4075,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-2611-13344"></a>`2026.11` **[PneuGen: Task-Driven Agentic Co-Design of Soft Pneumatic Robots](https://arxiv.org/abs/2611.13344)**
   > 通过可执行设计程序与仿真批评，迭代联合设计软体气动机器人的形态及驱动。<br>
   > 🖥️ **仿真** SOFA
+
+<!-- mmac-record: {"id": "2611.23855", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-23855"></a>`2026.11` **[RoboBuilder: Agentic Robot Co-Design with Real-world Video Feedback in the Loop](https://arxiv.org/abs/2611.23855)** [[项目页]](https://ghadinehme.com/robobuilder.github.io/) [[代码]](https://github.com/ghadinehme/RoboBuilder) [[数据集]](https://huggingface.co/datasets/DeCoDELab/RoboBuilder)
+  > 联合设计机器人硬件和电机程序，在人工装配与测试后，根据真实失败视频修订设计及仿真器。<br>
+  > 🖥️ **仿真** MuJoCo
 
 <!-- mmac-record: {"id": "2610.17881", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 

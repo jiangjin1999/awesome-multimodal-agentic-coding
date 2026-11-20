@@ -16203,3 +16203,68 @@
       qualitative building demonstrations (§3.5); no robot or real-world transfer is evaluated.
     zh: GPT-4 生成基于 Mineflayer API 的 JavaScript，执行后结合结构化状态、聊天反馈、解释器错误和 LLM 评判迭代修改，成功程序加入可检索技能库（§2、附录 A.1／A.4–A.5）。探索实验每种方法测试三轮，另在新世界的四项未见任务中复用技能库（§3.3、表
       1–2、附录 B.4） · 主循环读取库存、附近对象名称及角色坐标，不读取图像；课程提示明确排除需视觉确认的任务（附录 A.3.4）。人提供视觉批评和分步指导的建筑演示单独报告（§3.5），没有机器人或真实世界迁移实验。
+- id: '2512.05955'
+  title: 'SIMPACT: Simulation-Enabled Action Planning using Vision-Language Models'
+  url: https://arxiv.org/abs/2512.05955
+  date: '2025.12'
+  section: '3.1'
+  sub: tools-interfaces
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Uses rendered physics rollouts to refine manipulation actions before real-robot execution.
+    zh: 利用物理仿真的渲染轨迹修正操控动作，再将计划交给真实机器人执行。
+    ja: 物理シミュレーションの描画された軌跡を使って操作動作を修正し、実際のロボットで実行する。
+  setup:
+    engines:
+    - MuJoCo
+    - Warp
+    - PyBullet
+    real_robots:
+    - Franka FR3
+  sources:
+  - https://arxiv.org/abs/2512.05955
+  - https://simpact-bot.github.io/
+  - https://github.com/ShaoxiongYao/simpact
+  verification:
+    en: Gemini 2.5 Pro proposes fixed symbolic motion/gripper actions and refines them from rendered rollouts plus numerical
+      robot/object states; it does not generate policy source (§3.2, App. A.2) · v2 evaluates seven physical tasks with ten
+      trials each, reporting 40–90% success depending on task (§4, Table 2). The main real execution is open-loop; optional
+      feedback-based recovery is tested separately on two tasks (App. B.9) · physical parameters are inferred rather than
+      identified from interaction; reconstruction and sim-to-real errors remain (§4.5). Warp implements MPM, a custom PyTorch
+      solver handles stiff deformables, and CALVIN evaluation uses PyBullet (§4.1, App. B.7).
+    zh: Gemini 2.5 Pro 输出预定义运动／夹爪动作，根据渲染轨迹和机器人／物体数值状态调整计划，不生成策略源码（§3.2、附录 A.2） · v2 在七项实机任务中各测试十次，按任务成功率为 40–90%（§4、表 2）。主实验的真实执行是开环；基于实机反馈的恢复仅在两项任务中单独测试（附录
+      B.9） · 物理参数由模型推断，仍受重建与仿真现实差距限制（§4.5）。MPM 使用 Warp，较硬变形体使用自定义 PyTorch 求解器，CALVIN 评测使用 PyBullet（§4.1、附录 B.7）。
+- id: '2611.23855'
+  title: 'RoboBuilder: Agentic Robot Co-Design with Real-world Video Feedback in the Loop'
+  url: https://arxiv.org/abs/2611.23855
+  date: '2026.11'
+  section: '3.6'
+  sub: physical-design
+  type: paper
+  scope: core
+  tldr:
+    en: Co-designs robot hardware and motor programs, then revises designs and simulators from real failure videos with human
+      assembly and testing.
+    zh: 联合设计机器人硬件和电机程序，在人工装配与测试后，根据真实失败视频修订设计及仿真器。
+    ja: ロボットの機構とモータープログラムを共同設計し、人が組み立てて試験した失敗動画から設計とシミュレータを修正する。
+  setup:
+    engines:
+    - MuJoCo
+  sources:
+  - https://arxiv.org/abs/2611.23855
+  - https://ghadinehme.com/robobuilder.github.io/
+  - https://github.com/ghadinehme/RoboBuilder
+  - https://huggingface.co/datasets/DeCoDELab/RoboBuilder
+  verification:
+    en: Four coding agents generate assembly descriptions, CadQuery parts and timed motor programs, test them in MuJoCo, then
+      receive matched real/simulated video frames after human builds. A continued design trajectory can patch simulator code/parameters
+      and redesign before another physical test (§3, App. D.3–D.4) · one loop round reduces counted level-1/2 real failures
+      from 18 to 5; the corresponding real-pass share rises from 73% to 93% (Table 12). These are same-course recovery results,
+      not unseen-design transfer · each task has one agent run and each robot one build, with up to three physical tries;
+      local simulator corrections are not validated on other filmed runs (App. I).
+    zh: 四种 Coding Agent 生成装配描述、CadQuery 零件与定时电机程序，先在 MuJoCo 测试；人工制造后，Agent 接收对齐的真实／仿真视频帧，在延续的设计轨迹中修改仿真代码／参数及结构，再进行实物复测（§3、附录
+      D.3–D.4） · 一轮后，计入一级／二级统计的实机失败从 18 降至 5，相应实机通过比例由 73% 升至 93%（表 12），检验的是同赛道恢复而非未见设计迁移 · 每项任务每种 Agent 仅运行一次，每个设计只制造一次、最多实试三次；局部仿真补丁未用其他录像复核（附录
+      I）。
+  see_also:
+  - '3.3'

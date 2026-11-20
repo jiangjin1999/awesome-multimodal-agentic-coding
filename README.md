@@ -13,7 +13,7 @@
 
 A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to the physical world.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-681-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--19-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-683-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--20-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -57,12 +57,12 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [2.5 Perception models × scene understanding and reconstruction](#s2-5) (6)
   - [2.6 Action models × robot manipulation](#s2-6) (12)
 - [Stage 3 · Bridging Digital & Physical Worlds](#stage-3)
-  - [3.1 Embodied harnesses](#s3-1) (90)
+  - [3.1 Embodied harnesses](#s3-1) (91)
   - [3.2 Simulator construction](#s3-2) (68)
   - [3.3 Simulator quality evaluation](#s3-3) (29)
   - [3.4 Data](#s3-4) (15)
   - [3.5 Training and capability improvement](#s3-5) (84)
-  - [3.6 Physical applications and experiments](#s3-6) (49)
+  - [3.6 Physical applications and experiments](#s3-6) (50)
     - [Scientific experiments (AI4Science)](#s3-6-experiments) (27)
   - [Simulation engines at a glance](#s3-engines)
 - [Surveys and related collections](#related)
@@ -2170,6 +2170,12 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
   > Defines an Embodied Tool Protocol for registering, discovering and invoking perception, reasoning and execution capabilities.<br>
   > 🖥️ **Sim** AI2-THOR + Habitat + CoppeliaSim (Franka Panda)
 
+<!-- mmac-record: {"id": "2512.05955", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2512-05955"></a>`2025.12` **[SIMPACT: Simulation-Enabled Action Planning using Vision-Language Models](https://arxiv.org/abs/2512.05955)** [[Project page]](https://simpact-bot.github.io/) [[Code]](https://github.com/ShaoxiongYao/simpact)
+  > Uses rendered physics rollouts to refine manipulation actions before real-robot execution.<br>
+  > 🖥️ **Sim** MuJoCo + Warp + PyBullet · 🦾 **Real** Franka FR3
+
 <!-- mmac-record: {"id": "2511.00917", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2511-00917"></a>`2025.11` **[MAESTRO: Orchestrating Robotics Modules with Coding Agents for Zero-Shot Generalist Robots](https://arxiv.org/abs/2511.00917)** [[Code]](https://github.com/penn-pal-lab/maestro) [[Project page]](https://maestro-robot.github.io)
@@ -3167,7 +3173,7 @@ All 68 works, step by step, including verification & revision and variant expans
   > Tests reconstruction of robot episodes through frozen-scene rendering, action replay and policy execution.<br>
   > 🖥️ **Sim** Franka Panda
 
-*See also:* [Frontier3DBench](#paper-2611-09017) · [4DCodeBench](#paper-2610-03715) · [BlenderWorld](#paper-system-blenderworld) · [BVB](#paper-2609-15478) · [Code4Scene](#paper-2609-36777) · [Parametric CAD Bench v3](#paper-2611-02659) · [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786)
+*See also:* [Frontier3DBench](#paper-2611-09017) · [RoboBuilder](#paper-2611-23855) · [4DCodeBench](#paper-2610-03715) · [BlenderWorld](#paper-system-blenderworld) · [BVB](#paper-2609-15478) · [Code4Scene](#paper-2609-36777) · [Parametric CAD Bench v3](#paper-2611-02659) · [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20Back%20to%20contents-30363d?style=flat-square" alt="↑ Back to contents" height="24"></a></p>
 
@@ -4069,6 +4075,12 @@ Related digital demo · [Google DeepMind — Agentic cheminformatics](https://de
 - <a id="paper-2611-13344"></a>`2026.11` **[PneuGen: Task-Driven Agentic Co-Design of Soft Pneumatic Robots](https://arxiv.org/abs/2611.13344)**
   > Iteratively co-designs soft pneumatic robot geometry and actuation through executable design programs and simulation critique.<br>
   > 🖥️ **Sim** SOFA
+
+<!-- mmac-record: {"id": "2611.23855", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-23855"></a>`2026.11` **[RoboBuilder: Agentic Robot Co-Design with Real-world Video Feedback in the Loop](https://arxiv.org/abs/2611.23855)** [[Project page]](https://ghadinehme.com/robobuilder.github.io/) [[Code]](https://github.com/ghadinehme/RoboBuilder) [[Dataset]](https://huggingface.co/datasets/DeCoDELab/RoboBuilder)
+  > Co-designs robot hardware and motor programs, then revises designs and simulators from real failure videos with human assembly and testing.<br>
+  > 🖥️ **Sim** MuJoCo
 
 <!-- mmac-record: {"id": "2610.17881", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 

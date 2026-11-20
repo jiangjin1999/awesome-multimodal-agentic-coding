@@ -13,7 +13,7 @@
 
 マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——デジタル世界から物理世界まで。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-681-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--19-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-683-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--20-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語**
 
@@ -60,12 +60,12 @@
   - [2.5 知覚モデル × シーン理解・再構成](#s2-5) (6)
   - [2.6 行動モデル × ロボット操作](#s2-6) (12)
 - [Stage 3 · デジタルと物理世界の架け橋](#stage-3)
-  - [3.1 身体性ハーネス](#s3-1) (90)
+  - [3.1 身体性ハーネス](#s3-1) (91)
   - [3.2 シミュレータ構築](#s3-2) (68)
   - [3.3 シミュレータ品質評価](#s3-3) (29)
   - [3.4 データ](#s3-4) (15)
   - [3.5 学習と能力向上](#s3-5) (84)
-  - [3.6 物理応用と実験](#s3-6) (49)
+  - [3.6 物理応用と実験](#s3-6) (50)
     - [科学実験（AI4Science）](#s3-6-experiments) (27)
   - [シミュレーションエンジン一覧](#s3-engines)
 - [サーベイと関連コレクション](#related)
@@ -2173,6 +2173,12 @@
   > Embodied Tool Protocol を提案し、ロボットの知覚・推論・実行機能を登録、発見、呼び出し可能なツールに統一することで、Agent が既存の能力を組み合わせられるようにする。<br>
   > 🖥️ **シミュレーション** AI2-THOR + Habitat + CoppeliaSim（Franka Panda）
 
+<!-- mmac-record: {"id": "2512.05955", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2512-05955"></a>`2025.12` **[SIMPACT: Simulation-Enabled Action Planning using Vision-Language Models](https://arxiv.org/abs/2512.05955)** [[プロジェクトページ]](https://simpact-bot.github.io/) [[コード]](https://github.com/ShaoxiongYao/simpact)
+  > 物理シミュレーションの描画された軌跡を使って操作動作を修正し、実際のロボットで実行する。<br>
+  > 🖥️ **シミュレーション** MuJoCo + Warp + PyBullet · 🦾 **実機** Franka FR3
+
 <!-- mmac-record: {"id": "2511.00917", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2511-00917"></a>`2025.11` **[MAESTRO: Orchestrating Robotics Modules with Coding Agents for Zero-Shot Generalist Robots](https://arxiv.org/abs/2511.00917)** [[コード]](https://github.com/penn-pal-lab/maestro) [[プロジェクトページ]](https://maestro-robot.github.io)
@@ -3170,7 +3176,7 @@
   > Coding Agent に実機ロボットの動画、カメラ校正、動作記録を与え、対応する模擬シーンを再構成させる。提出後はシーンを固定し、レンダリング、実動作の再生、固定されたロボット方策の閉ループ性能をそれぞれ比較して、外観と利用価値を確認する。<br>
   > 🖥️ **シミュレーション** Franka Panda
 
-*関連:* [Frontier3DBench](#paper-2611-09017) · [4DCodeBench](#paper-2610-03715) · [BlenderWorld](#paper-system-blenderworld) · [BVB](#paper-2609-15478) · [Code4Scene](#paper-2609-36777) · [Parametric CAD Bench v3](#paper-2611-02659) · [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786)
+*関連:* [Frontier3DBench](#paper-2611-09017) · [RoboBuilder](#paper-2611-23855) · [4DCodeBench](#paper-2610-03715) · [BlenderWorld](#paper-system-blenderworld) · [BVB](#paper-2609-15478) · [Code4Scene](#paper-2609-36777) · [Parametric CAD Bench v3](#paper-2611-02659) · [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
@@ -4072,6 +4078,12 @@
 - <a id="paper-2611-13344"></a>`2026.11` **[PneuGen: Task-Driven Agentic Co-Design of Soft Pneumatic Robots](https://arxiv.org/abs/2611.13344)**
   > 実行可能な設計プログラムとシミュレーションによる批評を使い、空気圧で動くソフトロボットの形態と駆動を反復的に共同設計する。<br>
   > 🖥️ **シミュレーション** SOFA
+
+<!-- mmac-record: {"id": "2611.23855", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-23855"></a>`2026.11` **[RoboBuilder: Agentic Robot Co-Design with Real-world Video Feedback in the Loop](https://arxiv.org/abs/2611.23855)** [[プロジェクトページ]](https://ghadinehme.com/robobuilder.github.io/) [[コード]](https://github.com/ghadinehme/RoboBuilder) [[データセット]](https://huggingface.co/datasets/DeCoDELab/RoboBuilder)
+  > ロボットの機構とモータープログラムを共同設計し、人が組み立てて試験した失敗動画から設計とシミュレータを修正する。<br>
+  > 🖥️ **シミュレーション** MuJoCo
 
 <!-- mmac-record: {"id": "2610.17881", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 

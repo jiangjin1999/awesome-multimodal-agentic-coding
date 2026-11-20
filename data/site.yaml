@@ -9,7 +9,7 @@ languages:
     file: README.ja.md
     label: 日本語
 repo: jiangjin1999/awesome-multimodal-agentic-coding
-updated: '2026-11-19'
+updated: '2026-11-20'
 hero:
   light: assets/hero/hero-light.png
   dark: assets/hero/hero-dark.png

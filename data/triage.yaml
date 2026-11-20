@@ -111,6 +111,18 @@ runs:
     Kept the distinctions between affordance grounding, feedback-driven skill replanning and code-skill accumulation, including
     oracle/human observations and game-only validation. Other pending/deferred queues and daily coverage gaps remain. These
     foundations may inform the Stage 3 guide; no guide changes made.'
+- date: '2026-11-20'
+  trigger: sweep
+  covered: 'Reviewed oldest pending SIMPACT full v2 and rechecked the deferred embodied-policy report. Scanned nine arXiv
+    categories via new/recent pages, including all 140 cs.RO new/cross-list/replacement titles and 362 additional recent titles;
+    searched titles and available new-page abstracts. Last-updated API window 2026-11-06..2026-11-20: AI/LG/CL/SE/HC/MM paginated
+    completely, RO/CV/GR failed. HF requested Nov19/20, latest actual Nov19. Ran 22 task/theme/capability/direction/project/X
+    queries, four GitHub watch lists, open suggestions, official-source scan, benchmark and blog checks. Read RoboBuilder
+    full text and implementation, and checked both added works references; MUSE queued from the recent bibliography window.'
+  note: 'Added SIMPACT (Adjacent, historical backfill) and RoboBuilder (Core, Nov18 first release); 24 new pending leads.
+    Deferred report remains unreadable. RoboBuilder real/sim evidence may inform Stage 3 guides, which were not edited. Search
+    remains incomplete: Nov20 batch absent at recheck, three API categories, official full-text details, benchmark replay
+    and historical title/revision gaps remain. Prior manual SayCan/Inner Monologue/Voyager and COAP review additions retained.'
 candidates:
 - id: '2610.35817'
   title: 'Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics'
@@ -179,8 +191,14 @@ candidates:
   url: https://arxiv.org/abs/2512.05955
   found: '2026-11-15'
   via: cited by 2610.35817 [91]
-  decision: pending
-  note: Test-time simulation for VLM action planning. Compare 3.1 tools-interfaces (2610.12457).
+  decision: added
+  note: 'Test-time simulation for VLM action planning. Compare 3.1 tools-interfaces (2610.12457). Full v2 and implementation
+    reviewed. Adjacent in 3.1 tools-interfaces: visual rollout feedback refines symbolic actions, not policy source. Optional
+    hardware replanning is separate from the main open-loop execution.'
+  decided: '2026-11-20'
+  precedent:
+  - '2610.12457'
+  - '2609.29964'
 - id: '2610.19600'
   title: 'Cracking Mobile Manipulation: From Failure Diagnosis to Agentic Robot System'
   url: https://arxiv.org/abs/2610.19600
@@ -1151,9 +1169,8 @@ candidates:
   found: '2026-11-19'
   via: cited by 2610.12369v1 [43]
   decision: deferred
-  note: Check reusable model input/output, public release and a 2.6 action-model Resource role. Being a cited baseline does
-    not establish a code/feedback agent.
-  decided: '2026-11-19'
+  note: 'Rechecked 2026-11-20: project still exposes only a Data app shell, without a readable report or implementation.'
+  decided: '2026-11-20'
   reason: The cited project URL returned only a Data app page without report text or links. A readable technical report or
     implementation is needed to establish scope.
 - id: '2305.16291'
@@ -1242,3 +1259,187 @@ candidates:
   via: cited by newly reviewed 2610.12424v1
   decision: pending
   note: Review multimodal feedback, executable skill or harness revisions, and the primary contribution before placement.
+- id: '2611.23855'
+  title: 'RoboBuilder: Agentic Robot Co-Design with Real-world Video Feedback in the Loop'
+  url: https://arxiv.org/abs/2611.23855
+  found: '2026-11-20'
+  via: 2026-11-19 cs.RO cross-list / official project
+  decision: added
+  decided: '2026-11-20'
+  precedent:
+  - '2611.13344'
+  - '2610.17881'
+  - '2610.31651'
+  note: '3.6 physical-design, Core: executable assemblies/CadQuery/motor programs, simulation and physical execution, real-video
+    diagnosis, source/parameter/design revision and retest. Human assembly and same-course recovery retained. Dataset file
+    inventory is released; current card totals differ from paper v1 and are not interchangeable.'
+- id: '2611.24941'
+  title: 'UltraTex: Aligning Physical Knowledge for High-Fidelity PBR Texture Generation'
+  url: https://arxiv.org/abs/2611.24941
+  found: '2026-11-20'
+  via: 2026-11-19 arXiv listing / HF Daily Papers, read during 2026-11-20 sweep
+  decision: pending
+  note: Relevant title/abstract lead; full-text scope, actual observation/action path and subgroup remain to be reviewed.
+    Resolve identity against the existing UltraTex resource before adding; a shared short name is not an alias.
+- id: '2611.24925'
+  title: 'Render the Robot, Generate the World: One Video World Model Across Embodiments'
+  url: https://arxiv.org/abs/2611.24925
+  found: '2026-11-20'
+  via: 2026-11-19 arXiv listing / HF Daily Papers, read during 2026-11-20 sweep
+  decision: pending
+  note: 'Relevant title/abstract lead; full-text scope, actual observation/action path and subgroup remain to be reviewed. '
+- id: '2611.24869'
+  title: 'WorldRuler: Interactive World Modeling under Configurable Rules'
+  url: https://arxiv.org/abs/2611.24869
+  found: '2026-11-20'
+  via: 2026-11-19 arXiv listing / HF Daily Papers, read during 2026-11-20 sweep
+  decision: pending
+  note: 'Relevant title/abstract lead; full-text scope, actual observation/action path and subgroup remain to be reviewed. '
+- id: '2611.24681'
+  title: 'DrawScore: Evaluating Generated CAD Models against Engineering Drawings'
+  url: https://arxiv.org/abs/2611.24681
+  found: '2026-11-20'
+  via: 2026-11-19 arXiv listing / HF Daily Papers, read during 2026-11-20 sweep
+  decision: pending
+  note: 'Relevant title/abstract lead; full-text scope, actual observation/action path and subgroup remain to be reviewed. '
+- id: '2611.24590'
+  title: 'Think Offline, Act in Real Time: Self-Improving Visual Game Agents through Code'
+  url: https://arxiv.org/abs/2611.24590
+  found: '2026-11-20'
+  via: 2026-11-19 arXiv listing / HF Daily Papers, read during 2026-11-20 sweep
+  decision: pending
+  note: 'Relevant title/abstract lead; full-text scope, actual observation/action path and subgroup remain to be reviewed. '
+- id: '2611.24565'
+  title: 'Beyond Appearance: Evidence-Guided Programmatic 3D Scene Reconstruction with Agentic Lighting Reasoning'
+  url: https://arxiv.org/abs/2611.24565
+  found: '2026-11-20'
+  via: 2026-11-19 arXiv listing / HF Daily Papers, read during 2026-11-20 sweep
+  decision: pending
+  note: 'Relevant title/abstract lead; full-text scope, actual observation/action path and subgroup remain to be reviewed. '
+- id: '2611.24408'
+  title: 'StrideWorld: Benchmarking Scene Rigidity and Action Consistency in Interactive Video World Model'
+  url: https://arxiv.org/abs/2611.24408
+  found: '2026-11-20'
+  via: 2026-11-19 arXiv listing / HF Daily Papers, read during 2026-11-20 sweep
+  decision: pending
+  note: 'Relevant title/abstract lead; full-text scope, actual observation/action path and subgroup remain to be reviewed. '
+- id: '2611.24154'
+  title: 'Game2Player: Scaling Gameplay Experience for Visual Agents through Environment-Player Co-Development'
+  url: https://arxiv.org/abs/2611.24154
+  found: '2026-11-20'
+  via: 2026-11-19 arXiv listing / HF Daily Papers, read during 2026-11-20 sweep
+  decision: pending
+  note: 'Relevant title/abstract lead; full-text scope, actual observation/action path and subgroup remain to be reviewed. '
+- id: '2611.24073'
+  title: '3D GameDev Arena: Benchmarking Coding Agents That Plan, Build, and Playtest extreme Long-Horizon Browser Games'
+  url: https://arxiv.org/abs/2611.24073
+  found: '2026-11-20'
+  via: 2026-11-19 arXiv listing / HF Daily Papers, read during 2026-11-20 sweep
+  decision: pending
+  note: 'Relevant title/abstract lead; full-text scope, actual observation/action path and subgroup remain to be reviewed. '
+- id: '2611.23950'
+  title: 'VOL-Agent: Programming Your Film via Video Orchestration Language Agentic System'
+  url: https://arxiv.org/abs/2611.23950
+  found: '2026-11-20'
+  via: 2026-11-19 arXiv listing / HF Daily Papers, read during 2026-11-20 sweep
+  decision: pending
+  note: 'Relevant title/abstract lead; full-text scope, actual observation/action path and subgroup remain to be reviewed. '
+- id: '2611.23946'
+  title: How Complete Must an Environment Be to Train a Capable GUI Agent?
+  url: https://arxiv.org/abs/2611.23946
+  found: '2026-11-20'
+  via: 2026-11-19 arXiv listing / HF Daily Papers, read during 2026-11-20 sweep
+  decision: pending
+  note: 'Relevant title/abstract lead; full-text scope, actual observation/action path and subgroup remain to be reviewed. '
+- id: '2611.23860'
+  title: 'MobileWeave: Program-First Synthesis of Dependency-Linked Tasks for Training Mobile GUI Agents'
+  url: https://arxiv.org/abs/2611.23860
+  found: '2026-11-20'
+  via: 2026-11-19 arXiv listing / HF Daily Papers, read during 2026-11-20 sweep
+  decision: pending
+  note: 'Relevant title/abstract lead; full-text scope, actual observation/action path and subgroup remain to be reviewed. '
+- id: '2611.23816'
+  title: 'RoboDx: Repair and Diagnosis of Faults in Robot Software'
+  url: https://arxiv.org/abs/2611.23816
+  found: '2026-11-20'
+  via: 2026-11-19 arXiv listing / HF Daily Papers, read during 2026-11-20 sweep
+  decision: pending
+  note: 'Relevant title/abstract lead; full-text scope, actual observation/action path and subgroup remain to be reviewed. '
+- id: '2611.24077'
+  title: 'AeroRSI: Recursive Self-Improvement for Aerial Vision-Language Navigation'
+  url: https://arxiv.org/abs/2611.24077
+  found: '2026-11-20'
+  via: 2026-11-19 arXiv listing / HF Daily Papers, read during 2026-11-20 sweep
+  decision: pending
+  note: 'Relevant title/abstract lead; full-text scope, actual observation/action path and subgroup remain to be reviewed. '
+- id: '2611.23620'
+  title: How Uncertain Is My Action? Self-Correcting Visual Planning with Frozen World Models
+  url: https://arxiv.org/abs/2611.23620
+  found: '2026-11-20'
+  via: 2026-11-19 arXiv listing / HF Daily Papers, read during 2026-11-20 sweep
+  decision: pending
+  note: 'Relevant title/abstract lead; full-text scope, actual observation/action path and subgroup remain to be reviewed. '
+- id: '2611.23843'
+  title: 'RePlan-VLA: Progress-Aware Replanning for Long-Horizon Vision-Language-Action Models'
+  url: https://arxiv.org/abs/2611.23843
+  found: '2026-11-20'
+  via: 2026-11-19 arXiv listing / HF Daily Papers, read during 2026-11-20 sweep
+  decision: pending
+  note: 'Relevant title/abstract lead; full-text scope, actual observation/action path and subgroup remain to be reviewed. '
+- id: '2611.24100'
+  title: 'Lost Between Mind, Model Collaboration, and Motion: Understanding and Measuring Cross-Model Action Misalignment
+    in Commercial Robots'
+  url: https://arxiv.org/abs/2611.24100
+  found: '2026-11-20'
+  via: 2026-11-19 arXiv listing / HF Daily Papers, read during 2026-11-20 sweep
+  decision: pending
+  note: 'Relevant title/abstract lead; full-text scope, actual observation/action path and subgroup remain to be reviewed. '
+- id: '2611.24731'
+  title: 'HandWorldBench: A Unified Benchmark for Hand-Centric World Models'
+  url: https://arxiv.org/abs/2611.24731
+  found: '2026-11-20'
+  via: 2026-11-19 arXiv listing / HF Daily Papers, read during 2026-11-20 sweep
+  decision: pending
+  note: 'Relevant title/abstract lead; full-text scope, actual observation/action path and subgroup remain to be reviewed. '
+- id: '2611.24711'
+  title: 'Openhagen Worlds: Calibrated Environments for Measuring and Training Scientific Discovery Agents'
+  url: https://arxiv.org/abs/2611.24711
+  found: '2026-11-20'
+  via: 2026-11-19 arXiv listing / HF Daily Papers, read during 2026-11-20 sweep
+  decision: pending
+  note: 'Relevant title/abstract lead; full-text scope, actual observation/action path and subgroup remain to be reviewed. '
+- id: '2611.24880'
+  title: 'Local AI Agents in Power Electronics Simulation: Deployment, Measurements and Costs'
+  url: https://arxiv.org/abs/2611.24880
+  found: '2026-11-20'
+  via: 2026-11-19 arXiv listing / HF Daily Papers, read during 2026-11-20 sweep
+  decision: pending
+  note: 'Relevant title/abstract lead; full-text scope, actual observation/action path and subgroup remain to be reviewed. '
+- id: '2611.24915'
+  title: 'PrismRestore: A Compact Restoration Toolbox for Agentic Image Restoration'
+  url: https://arxiv.org/abs/2611.24915
+  found: '2026-11-20'
+  via: 2026-11-19 arXiv listing / HF Daily Papers, read during 2026-11-20 sweep
+  decision: pending
+  note: 'Relevant title/abstract lead; full-text scope, actual observation/action path and subgroup remain to be reviewed. '
+- id: '2611.23257'
+  title: 'StatePortal: Agentic Checkpoint Synthesis for Testing Deep States in Interactive Software'
+  url: https://arxiv.org/abs/2611.23257
+  found: '2026-11-20'
+  via: 2026-11-19 arXiv listing / HF Daily Papers, read during 2026-11-20 sweep
+  decision: pending
+  note: 'Relevant title/abstract lead; full-text scope, actual observation/action path and subgroup remain to be reviewed. '
+- id: '2611.24098'
+  title: 'RoughCut-Bench: A Benchmark for Automatic Video Rough-Cut with Large Vision-Language Models'
+  url: https://arxiv.org/abs/2611.24098
+  found: '2026-11-20'
+  via: 2026-11-19 arXiv listing / HF Daily Papers, read during 2026-11-20 sweep
+  decision: pending
+  note: 'Relevant title/abstract lead; full-text scope, actual observation/action path and subgroup remain to be reviewed. '
+- id: '2605.28579'
+  title: 'MUSE: Benchmarking Assembly Structure and Interface Geometry in Multi-Component Text-to-CAD Generation'
+  url: https://arxiv.org/abs/2605.28579
+  found: '2026-11-20'
+  via: RoboBuilder reference [14]
+  decision: pending
+  note: 'Relevant title/abstract lead; full-text scope, actual observation/action path and subgroup remain to be reviewed. '

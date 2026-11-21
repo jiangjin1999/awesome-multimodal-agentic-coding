@@ -9,7 +9,7 @@ languages:
     file: README.ja.md
     label: 日本語
 repo: jiangjin1999/awesome-multimodal-agentic-coding
-updated: '2026-11-20'
+updated: '2026-11-21'
 hero:
   light: assets/hero/hero-light.png
   dark: assets/hero/hero-dark.png
@@ -275,6 +275,7 @@ source_labels:
     zh: 策略训练代码
     ja: 方策学習コード
 source_kind_overrides:
+  https://github.com/PKU-VaLuE-Lab/Cracking-Mobile-Manipulation: project
   https://lab.noematrix.ai/blog/2-roborsi/: article
   https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/: article
   https://labs.google/projectgenie: demo

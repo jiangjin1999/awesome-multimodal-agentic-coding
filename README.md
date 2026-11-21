@@ -13,7 +13,7 @@
 
 A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to the physical world.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-683-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--20-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-685-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--21-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -57,12 +57,12 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [2.5 Perception models × scene understanding and reconstruction](#s2-5) (6)
   - [2.6 Action models × robot manipulation](#s2-6) (12)
 - [Stage 3 · Bridging Digital & Physical Worlds](#stage-3)
-  - [3.1 Embodied harnesses](#s3-1) (91)
+  - [3.1 Embodied harnesses](#s3-1) (92)
   - [3.2 Simulator construction](#s3-2) (68)
   - [3.3 Simulator quality evaluation](#s3-3) (29)
   - [3.4 Data](#s3-4) (15)
   - [3.5 Training and capability improvement](#s3-5) (84)
-  - [3.6 Physical applications and experiments](#s3-6) (50)
+  - [3.6 Physical applications and experiments](#s3-6) (51)
     - [Scientific experiments (AI4Science)](#s3-6-experiments) (27)
   - [Simulation engines at a glance](#s3-engines)
 - [Surveys and related collections](#related)
@@ -2273,6 +2273,12 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
   > Coordinates persistent user/scene memory, a frozen VLA, geometric shielding, and visual failure recovery, while offline reflection revises recovery strategies and parameters for later attempts.<br>
   > 🖥️ **Sim** MuJoCo + Isaac Lab (Franka Panda) · 🦾 **Real** Franka FR3
 
+<!-- mmac-record: {"id": "2610.19600", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2610-19600"></a>`2026.10` **[Cracking Mobile Manipulation: From Failure Diagnosis to Agentic Robot System](https://arxiv.org/abs/2610.19600)** [[Project page]](https://github.com/PKU-VaLuE-Lab/Cracking-Mobile-Manipulation)
+  > Failure-guided visual memory and geometric tools improve a fixed mobile-manipulation VLA.<br>
+  > 🖥️ **Sim** MuJoCo + Isaac Sim · 🦾 **Real** Astribot S1
+
 <!-- mmac-record: {"id": "2610.42053", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-42053"></a>`2026.10` **[REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control](https://arxiv.org/abs/2610.42053)** [[Project page]](https://mikeeeeeeeeeeeeee.github.io/REA/)
@@ -4064,6 +4070,12 @@ Related digital demo · [Google DeepMind — Agentic cheminformatics](https://de
 *See also:* [Lab2Sim](#paper-2611-02928) · [LabWorld](#paper-2610-36592) · [ChemAutoAgent](#paper-chemautoagent) · [LabRobFail](#paper-2607-23704) · [Safe Lab Agents](#paper-safe-lab-agents)
 
 #### Physical design, fabrication and validation
+
+<!-- mmac-record: {"id": "2611.26503", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-26503"></a>`2026.11` **[JARVIS: An Agent That Designs, Builds, and Tests Circuit Boards on Its Own](https://arxiv.org/abs/2611.26503)**
+  > Builds and tests a circuit board, then revises its KiCad design and digital twin from measurements in a single-board demonstration.<br>
+  > 🖥️ **Sim** OPAL-RT
 
 <!-- mmac-record: {"id": "2611.08175", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 

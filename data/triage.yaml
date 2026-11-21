@@ -123,6 +123,20 @@ runs:
     Deferred report remains unreadable. RoboBuilder real/sim evidence may inform Stage 3 guides, which were not edited. Search
     remains incomplete: Nov20 batch absent at recheck, three API categories, official full-text details, benchmark replay
     and historical title/revision gaps remain. Prior manual SayCan/Inner Monologue/Voyager and COAP review additions retained.'
+- date: '2026-11-21'
+  trigger: sweep
+  covered: Read oldest pending Cracking Mobile Manipulation v1 and JARVIS v1 in full, including appendices or results, and
+    checked both bibliographies (92 and 43 items); recent plausible references retained. Rechecked deferred report. Scanned
+    nine arXiv new/recent listings (actual latest Nov20), including every one of 140 cs.RO new/cross-list/replacement titles;
+    additional recent titles matched the previous read-title inventory. Trailing-14-day lastUpdated API, exact prior failed
+    window retries, HF Nov19/20/21, three awesome lists and Tripo, open suggestions, official projects, benchmark and blog
+    checks, and recorded theme/task/direction/capability queries are in the private run. Metadata retrieval, title/abstract
+    screening and full-text decisions are distinct coverage levels.
+  note: Added Cracking Mobile Manipulation (Adjacent, 3.1 delegation, historical backfill) and JARVIS (Core, 3.6 physical-design,
+    Nov19 first release); 48 new pending leads. Search remains incomplete; unresolved listing-date, API, official detail,
+    benchmark replay and historical revision/full-text gaps remain in sources/cursors. Nov20 public changes were verified
+    but no saved delivery or matching received mail was found; report verified unmailed changes once in the Nov21 merged digest,
+    without historical resend. JARVIS twin/measurement findings may inform Stage 3 guides; guides and maps left unchanged.
 candidates:
 - id: '2610.35817'
   title: 'Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics'
@@ -204,8 +218,16 @@ candidates:
   url: https://arxiv.org/abs/2610.19600
   found: '2026-11-15'
   via: cited by 2610.35817 [101]
-  decision: pending
-  note: Planning, navigation and recovery around a fixed VLA. Compare 3.1 delegation (2610.21453).
+  decision: added
+  note: 'Planning, navigation and recovery around a fixed VLA. Compare 3.1 delegation (2610.21453). Read v1 and appendix.
+    Added in 3.1 delegation as Adjacent: observation-grounded VLA/geometry tool orchestration, not generated policy source.
+    Distinguish held-out seeds from new tasks and separately trained real/BEHAVIOR policies. Official repo has only the report
+    and figures; code/checkpoints remain unreleased.'
+  decided: '2026-11-21'
+  precedent:
+  - '2607.08448'
+  - '2608.11246'
+  - '2610.21453'
 - id: '2610.20474'
   title: 'AdaRSI: On-Demand Recursive Self-Improvement for Embodied Agents'
   url: https://arxiv.org/abs/2610.20474
@@ -1169,8 +1191,9 @@ candidates:
   found: '2026-11-19'
   via: cited by 2610.12369v1 [43]
   decision: deferred
-  note: 'Rechecked 2026-11-20: project still exposes only a Data app shell, without a readable report or implementation.'
-  decided: '2026-11-20'
+  note: 'Rechecked 2026-11-21: the official cited URL still renders only Data app, without a readable report or implementation;
+    original reason retained.'
+  decided: '2026-11-21'
   reason: The cited project URL returned only a Data app page without report text or links. A readable technical report or
     implementation is needed to establish scope.
 - id: '2305.16291'
@@ -1443,3 +1466,406 @@ candidates:
   via: RoboBuilder reference [14]
   decision: pending
   note: 'Relevant title/abstract lead; full-text scope, actual observation/action path and subgroup remain to be reviewed. '
+- id: '2611.26503'
+  title: 'JARVIS: An Agent That Designs, Builds, and Tests Circuit Boards on Its Own'
+  url: https://arxiv.org/abs/2611.26503
+  found: '2026-11-21'
+  via: cs.RO 2026-11-20 new listing; arXiv v1 2026-11-19
+  decision: added
+  decided: '2026-11-21'
+  precedent:
+  - '2611.08175'
+  - '2611.23855'
+  - '2611.13344'
+  note: 'Full text read. Core in 3.6 physical-design: executable design/control programs, twin execution and geometry-grounded
+    repair, real measurement-driven twin recalibration and KiCad revision. One physical board; the next design is rehearsed
+    only. The board fails one passband requirement; do not describe all checks as passed or multi-round physical optimization
+    as demonstrated.'
+- id: '2611.25005'
+  title: 'Inhabitant: An Agent Framework for Long-Horizon Human-Scene Interaction with Spatial Control and Quantitative Feedback'
+  url: https://arxiv.org/abs/2611.25005
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.25105'
+  title: 'MAWAM: A Multi-Agent World-Action Model for Coordinated Manipulation'
+  url: https://arxiv.org/abs/2611.25105
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.25134'
+  title: 'GEMS: Generation and Experience Memory for Subgoal-Guided Long-Horizon World Model Planning'
+  url: https://arxiv.org/abs/2611.25134
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.25243'
+  title: 'Verify2Act: Critic-Guided Latent World Models for Verifying Language-Conditioned Manipulation Plans'
+  url: https://arxiv.org/abs/2611.25243
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.25336'
+  title: 'MoRE: Mixture-of-Experts for Multi-Physics Robotic World Models'
+  url: https://arxiv.org/abs/2611.25336
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.25462'
+  title: Demonstration-Free Skill Composition for Navigation and Manipulation
+  url: https://arxiv.org/abs/2611.25462
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.25529'
+  title: 'CoachSI: Self-Improvement of Robot Policies with a Language Coach'
+  url: https://arxiv.org/abs/2611.25529
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.25656'
+  title: 'A$^2$-VLA: Adapting Vision-Language-Action Policies to New Tools through Agentic Affordance Discovery'
+  url: https://arxiv.org/abs/2611.25656
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.25679'
+  title: 'LeCompass: Task-Level Execution through State-Indexed Interfaces'
+  url: https://arxiv.org/abs/2611.25679
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.26046'
+  title: Agentic Scaling of Embodied Tasks in Simulation for Synthetic Data Collection and Policy Evaluation
+  url: https://arxiv.org/abs/2611.26046
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.26196'
+  title: 'EmbodyAgent: Post-Training Embodied VLM Agents via Distillation, SFT, and RL'
+  url: https://arxiv.org/abs/2611.26196
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.26341'
+  title: 'Reasoning on Call: Efficient Agentic Robot Control for Long-Horizon Robot Manipulation'
+  url: https://arxiv.org/abs/2611.26341
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.26376'
+  title: 'Alignment Drives Reuse: Learning Generalizable Robot-Use Agents from Heterogeneous Experience'
+  url: https://arxiv.org/abs/2611.26376
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.26444'
+  title: 'Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic
+    Manipulation'
+  url: https://arxiv.org/abs/2611.26444
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.26519'
+  title: 'ACE-Brain-0.7: Learning Execution-Grounded Reasoning for Embodied Agents'
+  url: https://arxiv.org/abs/2611.26519
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.26613'
+  title: 'AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control'
+  url: https://arxiv.org/abs/2611.26613
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.25179'
+  title: 'Phantom Success, Silent Failure: Auditing the Success Checkers of Simulated Manipulation Benchmarks'
+  url: https://arxiv.org/abs/2611.25179
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.26003'
+  title: AI agents can redesign engineering parts with more than a thousand CAD parameters and nonlinear simulations
+  url: https://arxiv.org/abs/2611.26003
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.26624'
+  title: 'PlayCraft: Designing Engaging Games from Agent Play Experience'
+  url: https://arxiv.org/abs/2611.26624
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.26595'
+  title: 'Coda-DaVinci: Reimagining Video Generation with Code2Video'
+  url: https://arxiv.org/abs/2611.26595
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.26248'
+  title: 'TwinLab-Bench: Evaluating AI Scientists in Agentic Twins of Real Labs'
+  url: https://arxiv.org/abs/2611.26248
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.25543'
+  title: Efficient Multimodal Agents for Auditing 3D Worlds
+  url: https://arxiv.org/abs/2611.25543
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.26296'
+  title: 'SKILL.PNG: Learning Agent Skills in Pixel Space'
+  url: https://arxiv.org/abs/2611.26296
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.26333'
+  title: 'OceanCoder: A Verification-Guided Large Language Model for Automated Simulation Modelling in Ocean Engineering'
+  url: https://arxiv.org/abs/2611.26333
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.25868'
+  title: 'Generalist Meets Specialists: An Evolving Multimodal Agent with Persistent Tool Orchestration for Traffic Scenario
+    Understanding'
+  url: https://arxiv.org/abs/2611.25868
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.26211'
+  title: 'SpecWM: Turning Verification into Refinement for Streaming World Models'
+  url: https://arxiv.org/abs/2611.26211
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.26516'
+  title: 'Plan4D: Generative Plannable 4D Worlds'
+  url: https://arxiv.org/abs/2611.26516
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.26615'
+  title: 'ScaleWorld: High-Resolution World Generation through Shared Prediction and Refinement'
+  url: https://arxiv.org/abs/2611.26615
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.26603'
+  title: 'Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth'
+  url: https://arxiv.org/abs/2611.26603
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.26511'
+  title: 'Direct3D-V3: Latent-Free Diffusion Transformers in the Native Voxel Domain'
+  url: https://arxiv.org/abs/2611.26511
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.25328'
+  title: 'ReLay: Bidirectional Layout-Code Translation and Library Evolution for Reusable and Process-Portable Analog Design'
+  url: https://arxiv.org/abs/2611.25328
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2611.25695'
+  title: 'DMT-Attack: Diffusion-Prior Texture Search for Closed-Loop Vision-Language-Action Policies'
+  url: https://arxiv.org/abs/2611.25695
+  found: '2026-11-21'
+  via: 2026-11-20 arXiv new title/abstract and HF discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text scope, feedback, release and primary-contribution review; not a formal
+    entry.
+- id: '2605.30877'
+  title: Wall-OSS-0.5 Technical Report
+  url: https://arxiv.org/abs/2605.30877
+  found: '2026-11-21'
+  via: recent reference of 2610.19600; official abstract and v1 checked
+  decision: pending
+  note: Review actual reusable action/verification/data or embodied-system contribution; cited VLA or benchmark use alone
+    does not establish scope. Full text remains unread.
+- id: '2606.08881'
+  title: 'Benchmarking Vision-Language-Action Models on SO-101: Failure and Recovery Analysis'
+  url: https://arxiv.org/abs/2606.08881
+  found: '2026-11-21'
+  via: recent reference of 2610.19600; official abstract and v1 checked
+  decision: pending
+  note: Review actual reusable action/verification/data or embodied-system contribution; cited VLA or benchmark use alone
+    does not establish scope. Full text remains unread.
+- id: '2606.17846'
+  title: 'Qwen-RobotManip Technical Report: Alignment Unlocks Scale for Robotic Manipulation Foundation Models'
+  url: https://arxiv.org/abs/2606.17846
+  found: '2026-11-21'
+  via: recent reference of 2610.19600; official abstract and v1 checked
+  decision: pending
+  note: Review actual reusable action/verification/data or embodied-system contribution; cited VLA or benchmark use alone
+    does not establish scope. Full text remains unread.
+- id: '2606.18239'
+  title: 'EBench: Elemental Diagnosis of Generalist Mobile Manipulation Policies'
+  url: https://arxiv.org/abs/2606.18239
+  found: '2026-11-21'
+  via: recent reference of 2610.19600; official abstract and v1 checked
+  decision: pending
+  note: Review actual reusable action/verification/data or embodied-system contribution; cited VLA or benchmark use alone
+    does not establish scope. Full text remains unread.
+- id: '2606.21386'
+  title: 'VLA-FAIL: Efficient Task Failure Detection for Finetuned Vision-Language-Action Models'
+  url: https://arxiv.org/abs/2606.21386
+  found: '2026-11-21'
+  via: recent reference of 2610.19600; official abstract and v1 checked
+  decision: pending
+  note: Review actual reusable action/verification/data or embodied-system contribution; cited VLA or benchmark use alone
+    does not establish scope. Full text remains unread.
+- id: '2607.00678'
+  title: 'ABot-M0.5: Unified Mobility-and-Manipulation World Action Model'
+  url: https://arxiv.org/abs/2607.00678
+  found: '2026-11-21'
+  via: recent reference of 2610.19600; official abstract and v1 checked
+  decision: pending
+  note: Review actual reusable action/verification/data or embodied-system contribution; cited VLA or benchmark use alone
+    does not establish scope. Full text remains unread.
+- id: '2607.24744'
+  title: 'Data Pyramid for Embodied Manipulation: A Survey'
+  url: https://arxiv.org/abs/2607.24744
+  found: '2026-11-21'
+  via: recent reference of 2610.19600; official abstract and v1 checked
+  decision: pending
+  note: Review actual reusable action/verification/data or embodied-system contribution; cited VLA or benchmark use alone
+    does not establish scope. Full text remains unread.
+- id: '2607.26789'
+  title: 'CheckVLA: Execution-Time Verification with Action-Conditioned World Model for Long-Horizon Mobile Manipulation'
+  url: https://arxiv.org/abs/2607.26789
+  found: '2026-11-21'
+  via: recent reference of 2610.19600; official abstract and v1 checked
+  decision: pending
+  note: Review actual reusable action/verification/data or embodied-system contribution; cited VLA or benchmark use alone
+    does not establish scope. Full text remains unread.
+- id: '2608.02257'
+  title: Learning Panorama-Aware VLA for Mobile Manipulation with Whole-Body Teleoperation
+  url: https://arxiv.org/abs/2608.02257
+  found: '2026-11-21'
+  via: recent reference of 2610.19600; official abstract and v1 checked
+  decision: pending
+  note: Review actual reusable action/verification/data or embodied-system contribution; cited VLA or benchmark use alone
+    does not establish scope. Full text remains unread.
+- id: '2608.20114'
+  title: 'DECOWAM: Decoupled Whole-Body World-Action Model for Legged Mobile Manipulation'
+  url: https://arxiv.org/abs/2608.20114
+  found: '2026-11-21'
+  via: recent reference of 2610.19600; official abstract and v1 checked
+  decision: pending
+  note: Review actual reusable action/verification/data or embodied-system contribution; cited VLA or benchmark use alone
+    does not establish scope. Full text remains unread.
+- id: '2610.13643'
+  title: 'DexBioLab: Benchmarking Dexterous Manipulation with Dynamic Experimental Phenomena in Realistic Laboratories'
+  url: https://arxiv.org/abs/2610.13643
+  found: '2026-11-21'
+  via: cited by 2611.26503 [42]
+  decision: pending
+  note: Review actual reusable action/verification/data or embodied-system contribution; cited VLA or benchmark use alone
+    does not establish scope. Full text remains unread. Compare AutoBio / AutoBio+ title and shared project links before assigning
+    a new identity.
+- id: web:video-to-blender-gokayfem
+  title: Video to Blender — procedural node-system skill
+  url: https://github.com/Q-on/video-to-blender-gokayfem
+  found: '2026-11-21'
+  via: primary-source follow-up from daily query or JARVIS bibliography
+  decision: pending
+  note: Reference video/image to editable Blender node graphs; README read at bfeca3ff. Verify SKILL, implementation, validation
+    and license before Resource decision.
+- id: web:philinhphan-cad-agent
+  title: cad-gen — Agentic Drawing to CAD
+  url: https://github.com/philinhphan/cad-agent
+  found: '2026-11-21'
+  via: primary-source follow-up from daily query or JARVIS bibliography
+  decision: pending
+  note: Drawing to CadQuery, deterministic reproject overlay and visual critique; README read at 2e5c41a5. Verify implementation
+    and trajectory; possible 1.5 resource.
+- id: web:materialililil
+  title: materialililil — PBR texture map generator
+  url: https://github.com/dev-doshi/materialililil
+  found: '2026-11-21'
+  via: primary-source follow-up from daily query or JARVIS bibliography
+  decision: pending
+  note: Image to local PBR map utility; README read at d3e6041b. Verify map-generation implementation and practical workflow;
+    do not call it a learned generative model or an Agent.
+- id: web:power-converter-design-2026
+  title: An accessible large-language-model-based framework for power converter design
+  url: https://doi.org/10.1049/pel2.70259
+  found: '2026-11-21'
+  via: primary-source follow-up from daily query or JARVIS bibliography
+  decision: pending
+  note: Cited by JARVIS [4]. University repository abstract gives publication 2026-06-03; source retrieval returned 403. Full
+    text and earliest publication version remain to read.
+- id: system:robowild
+  title: 'RoboWild: Can Frontier Models Generalize to Robot Use in the Wild?'
+  url: https://github.com/xlang-ai/RoboWild
+  found: '2026-11-21'
+  via: official xlang-ai organization and xlangai HF dataset scans; README c947884b
+  decision: pending
+  note: Official non-arXiv report and companion Harness/data discovered together. Read report, verify observation-to-action
+    evidence and actual task/data release before deciding scope. Companion RoboWild-Harness and HF xlangai/RoboWild belong
+    to this identity unless sources establish distinct research contributions.

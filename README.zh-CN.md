@@ -13,7 +13,7 @@
 
 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从数字世界延伸到物理世界。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-683-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--20-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-685-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--21-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · **简体中文** · [日本語](./README.ja.md)
 
@@ -57,12 +57,12 @@
   - [2.5 感知模型 × 场景理解与重建](#s2-5) (6)
   - [2.6 动作模型 × 机器人操作](#s2-6) (12)
 - [Stage 3 · 打通数字世界与物理世界](#stage-3)
-  - [3.1 具身框架（Harness）](#s3-1) (91)
+  - [3.1 具身框架（Harness）](#s3-1) (92)
   - [3.2 仿真器构建](#s3-2) (68)
   - [3.3 仿真器质量评估](#s3-3) (29)
   - [3.4 数据](#s3-4) (15)
   - [3.5 训练与能力提升](#s3-5) (84)
-  - [3.6 物理应用与实验](#s3-6) (50)
+  - [3.6 物理应用与实验](#s3-6) (51)
     - [科学实验（AI4Science）](#s3-6-experiments) (27)
   - [仿真引擎一览](#s3-engines)
 - [综述与相关合集](#related)
@@ -2273,6 +2273,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
   > 协调持久用户／场景记忆、冻结 VLA、几何安全过滤与视觉失败恢复，并通过离线反思修订恢复策略和参数，供后续尝试复用。<br>
   > 🖥️ **仿真** MuJoCo + Isaac Lab（Franka Panda） · 🦾 **真机** Franka FR3
 
+<!-- mmac-record: {"id": "2610.19600", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2610-19600"></a>`2026.10` **[Cracking Mobile Manipulation: From Failure Diagnosis to Agentic Robot System](https://arxiv.org/abs/2610.19600)** [[项目页]](https://github.com/PKU-VaLuE-Lab/Cracking-Mobile-Manipulation)
+  > 围绕冻结的移动操作 VLA，以失败诊断指导视觉记忆和几何工具的编排。<br>
+  > 🖥️ **仿真** MuJoCo + Isaac Sim · 🦾 **真机** Astribot S1
+
 <!-- mmac-record: {"id": "2610.42053", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-42053"></a>`2026.10` **[REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control](https://arxiv.org/abs/2610.42053)** [[项目页]](https://mikeeeeeeeeeeeeee.github.io/REA/)
@@ -4064,6 +4070,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 *另见:* [Lab2Sim](#paper-2611-02928) · [LabWorld](#paper-2610-36592) · [ChemAutoAgent](#paper-chemautoagent) · [LabRobFail](#paper-2607-23704) · [Safe Lab Agents](#paper-safe-lab-agents)
 
 #### 物理设计、制造与验证
+
+<!-- mmac-record: {"id": "2611.26503", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-26503"></a>`2026.11` **[JARVIS: An Agent That Designs, Builds, and Tests Circuit Boards on Its Own](https://arxiv.org/abs/2611.26503)**
+  > 在单块电路板实验中自动设计、制造和测试，并根据实测结果校准数字孪生、修订 KiCad 设计。<br>
+  > 🖥️ **仿真** OPAL-RT
 
 <!-- mmac-record: {"id": "2611.08175", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 

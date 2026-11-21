@@ -16268,3 +16268,65 @@
       I）。
   see_also:
   - '3.3'
+- id: '2610.19600'
+  title: 'Cracking Mobile Manipulation: From Failure Diagnosis to Agentic Robot System'
+  url: https://arxiv.org/abs/2610.19600
+  date: '2026.10'
+  section: '3.1'
+  sub: delegation
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Failure-guided visual memory and geometric tools improve a fixed mobile-manipulation VLA.
+    zh: 围绕冻结的移动操作 VLA，以失败诊断指导视觉记忆和几何工具的编排。
+    ja: 移動マニピュレーションの失敗診断に基づき、固定 VLA に視覚記憶と幾何ツールを組み合わせる。
+  setup:
+    engines:
+    - MuJoCo
+    - Isaac Sim
+    real_robots:
+    - Astribot S1
+  sources:
+  - https://arxiv.org/abs/2610.19600
+  - https://github.com/PKU-VaLuE-Lab/Cracking-Mobile-Manipulation
+  verification:
+    en: Kimi K3 replans fixed VLA subtask calls from current observations, retrieved past frames and RGB-D geometric
+      checks; it does not generate policy source (§5, App. B/D). On 20 RoboCasa365 tasks with five trials each,
+      success rises from 19/100 to 47/100 on development episodes and from 18/100 to 49/100 on separate held-out
+      seeds (Table 1). BEHAVIOR-1K uses separately trained policies; Astribot S1 uses real-demonstration-finetuned
+      π0.5, reaching 13/20 versus 5/20 for the agentic baseline (App. I/J), not zero-shot transfer of the simulation
+      policy. Accessibility checks use distance, not full-body collision or IK feasibility. The official repository
+      currently contains the report and figures; implementation and checkpoints are marked coming soon.
+    zh: Kimi K3 根据当前观测、检索的历史帧和 RGB-D 几何检查，重规划冻结 VLA 的子任务调用，不生成策略源码（§5、附录 B/D）。RoboCasa365 的 20 项任务每项测试五次，开发集成功数由
+      19/100 升至 47/100，独立留出种子由 18/100 升至 49/100（表 1）。BEHAVIOR-1K 使用另行训练的策略；Astribot S1 使用真实示范微调的 π0.5，成功数为 13/20，Agent
+      基线为 5/20（附录 I/J），并非将仿真策略零样本迁移到实机。可达性检查只依据距离，不验证全身碰撞或逆运动学可行性。官方仓库目前只有报告和图示，实现及权重仍标为待发布。
+- id: '2611.26503'
+  title: 'JARVIS: An Agent That Designs, Builds, and Tests Circuit Boards on Its Own'
+  url: https://arxiv.org/abs/2611.26503
+  date: '2026.11'
+  section: '3.6'
+  sub: physical-design
+  type: paper
+  scope: core
+  tldr:
+    en: Builds and tests a circuit board, then revises its KiCad design and digital twin from measurements in a
+      single-board demonstration.
+    zh: 在单块电路板实验中自动设计、制造和测试，并根据实测结果校准数字孪生、修订 KiCad 设计。
+    ja: 単一基板の実験で設計・製造・試験を自動実行し、実測結果からデジタルツインを校正して KiCad の設計を改める。
+  setup:
+    engines:
+    - OPAL-RT
+  sources:
+  - https://arxiv.org/abs/2611.26503
+  verification:
+    en: Claude Opus 5.5 writes bench-control programs, acceptance code and KiCad designs; scan-grounded rehearsal
+      exposes geometric or test-plan defects and triggers changes followed by another rehearsal (§§III–V, Table
+      IV, Fig. 15). One physical notch-filter run completes 42 steps in 2 h 39 min after plan approval, with an
+      emergency-stop observer and no intervention during the run (§VII-A). The board achieves 50.6 dB attenuation
+      at 60 Hz but fails its 1 Hz passband limit (Table III). Measured frequency responses recalibrate the twin
+      and lead to a revised KiCad board; that next board is predicted and rehearsed, not fabricated and retested
+      (§VII-C). This is a single-board demonstration, not a controlled multi-task success-rate study; the paper
+      links no public implementation or dataset.
+    zh: Claude Opus 5.5 编写工作台控制程序、验收代码及 KiCad 设计；依据扫描构建的孪生预演发现几何或测试计划缺陷，触发修改后再次预演（§§III–V、表 IV、图 15）。单次实体陷波电路板实验经人批准计划后完成
+      42 步，耗时 2 小时 39 分；期间有人在急停旁观察，但未介入操作（§VII-A）。电路板在 60 Hz 衰减 50.6 dB，却未通过 1 Hz 通带指标（表 III）。Agent 根据实测频响校准孪生并生成修订的
+      KiCad 设计；下一块板只完成预测及预演，尚未制板复测（§VII-C）。这是单板演示而非多任务受控成功率研究，论文未链接公开实现或数据集。

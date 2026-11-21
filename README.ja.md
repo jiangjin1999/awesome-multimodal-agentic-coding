@@ -13,7 +13,7 @@
 
 マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——デジタル世界から物理世界まで。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-683-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--20-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-685-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--21-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語**
 
@@ -60,12 +60,12 @@
   - [2.5 知覚モデル × シーン理解・再構成](#s2-5) (6)
   - [2.6 行動モデル × ロボット操作](#s2-6) (12)
 - [Stage 3 · デジタルと物理世界の架け橋](#stage-3)
-  - [3.1 身体性ハーネス](#s3-1) (91)
+  - [3.1 身体性ハーネス](#s3-1) (92)
   - [3.2 シミュレータ構築](#s3-2) (68)
   - [3.3 シミュレータ品質評価](#s3-3) (29)
   - [3.4 データ](#s3-4) (15)
   - [3.5 学習と能力向上](#s3-5) (84)
-  - [3.6 物理応用と実験](#s3-6) (50)
+  - [3.6 物理応用と実験](#s3-6) (51)
     - [科学実験（AI4Science）](#s3-6-experiments) (27)
   - [シミュレーションエンジン一覧](#s3-engines)
 - [サーベイと関連コレクション](#related)
@@ -2276,6 +2276,12 @@
   > 持続する利用者・場面記憶、固定 VLA、幾何的な安全フィルタ、視覚的な失敗回復を連携させる。オフラインの振り返りで回復方策とパラメータを修正し、次の試行へ再利用する。<br>
   > 🖥️ **シミュレーション** MuJoCo + Isaac Lab（Franka Panda） · 🦾 **実機** Franka FR3
 
+<!-- mmac-record: {"id": "2610.19600", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2610-19600"></a>`2026.10` **[Cracking Mobile Manipulation: From Failure Diagnosis to Agentic Robot System](https://arxiv.org/abs/2610.19600)** [[プロジェクトページ]](https://github.com/PKU-VaLuE-Lab/Cracking-Mobile-Manipulation)
+  > 移動マニピュレーションの失敗診断に基づき、固定 VLA に視覚記憶と幾何ツールを組み合わせる。<br>
+  > 🖥️ **シミュレーション** MuJoCo + Isaac Sim · 🦾 **実機** Astribot S1
+
 <!-- mmac-record: {"id": "2610.42053", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-42053"></a>`2026.10` **[REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control](https://arxiv.org/abs/2610.42053)** [[プロジェクトページ]](https://mikeeeeeeeeeeeeee.github.io/REA/)
@@ -4067,6 +4073,12 @@
 *関連:* [Lab2Sim](#paper-2611-02928) · [LabWorld](#paper-2610-36592) · [ChemAutoAgent](#paper-chemautoagent) · [LabRobFail](#paper-2607-23704) · [Safe Lab Agents](#paper-safe-lab-agents)
 
 #### 物理設計・製造・検証
+
+<!-- mmac-record: {"id": "2611.26503", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-26503"></a>`2026.11` **[JARVIS: An Agent That Designs, Builds, and Tests Circuit Boards on Its Own](https://arxiv.org/abs/2611.26503)**
+  > 単一基板の実験で設計・製造・試験を自動実行し、実測結果からデジタルツインを校正して KiCad の設計を改める。<br>
+  > 🖥️ **シミュレーション** OPAL-RT
 
 <!-- mmac-record: {"id": "2611.08175", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
 

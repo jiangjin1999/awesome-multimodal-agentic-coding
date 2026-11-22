@@ -122,10 +122,12 @@ class CatalogTests(unittest.TestCase):
         level['works'].append('9999.99999')
         level['pic'] = 'unknown'
         del level['fake']['zh']
+        site['eval_ladder']['stages'][0]['levels'][1]['code'] = 'L0a'
         errors = validate(site, self.works, True)[0]
         self.assertTrue(any('work 9999.99999 not found' in e for e in errors))
         self.assertTrue(any('unknown pictogram' in e for e in errors))
         self.assertTrue(any('L0a.fake missing zh' in e for e in errors))
+        self.assertTrue(any("level code 'L0a' is missing or repeated" in e for e in errors))
 
     def test_setup_renders_sim_and_real_groups_and_rejects_bad_names(self):
         rows = deepcopy(self.works)

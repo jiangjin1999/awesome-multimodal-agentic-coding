@@ -1,11 +1,13 @@
 """Render the simulator-evaluation overview figure from `eval_ladder` in data/site.yaml.
 
 The figure opens stage3/simulator-evaluation.md and its Chinese translation: one kitchen
-simulation walked through every level, each card showing how the level checks it, the
-question it asks and the fake simulation it exposes. build_readme.py writes a light and a
-dark SVG per guide language under assets/eval-ladder/, and `--check` fails when one is stale.
+simulation walked through the guide's checks, each card showing how the check works, the
+question it asks and the fake simulation it exposes. A card is a level or one of its
+dimensions (L3b-1, L3b-2); the P0 gate has no works and is not drawn. build_readme.py writes a
+light and a dark SVG per guide language under assets/eval-ladder/, and `--check` fails when
+one is stale.
 
-Each level lists its works as `<work id>` or `<work id> †` (an evaluator); the figure only
+Each card lists its works as `<work id>` or `<work id> †` (an evaluator); the figure only
 counts them, so keep the lists in step with the guide's tables.
 """
 import math
@@ -111,6 +113,9 @@ def validate(site, works):
     all_cards = [lv for st in ladder.get('stages') or [] for lv in st.get('levels') or []]
     if len(all_cards) != 8:
         errors.append(f'eval_ladder: expected 8 levels (two rows of four cards), found {len(all_cards)}')
+    codes = [lv.get('code') for lv in all_cards]
+    for code in sorted({c for c in codes if codes.count(c) > 1 or not c}, key=str):
+        errors.append(f'eval_ladder: level code {code!r} is missing or repeated')
     for level in all_cards:
         code = level.get('code')
         for field in ('name', 'question', 'fake'):
@@ -236,7 +241,7 @@ def pictogram(kind, p, accent, words):
             a(f'<rect x="{cx - 3}" y="{cy - 6:g}" width="6" height="7" fill="{sub}" transform="rotate({i * 45} {cx} {cy:g})"/>')
         label(181, 103, words['footage'])
         label(132, 52, '≈?', accent, size=15, bold=True)
-    elif kind == 'ramps':                         # L3b: change the conditions and rerun
+    elif kind == 'ramps':                         # L3b-1: change the conditions and rerun
         floor()
         for x0, h, run, land, col, key in ((10, 26, 78, 102, sub, 'before'), (116, 52, 64, 204, accent, 'after')):
             a(f'<path d="M{x0} 96 L{x0} {96 - h} L{x0 + run} 96 Z" fill="{fill}" {stroke}/>')
@@ -246,7 +251,7 @@ def pictogram(kind, p, accent, words):
             a(f'<path d="M{x0 + run - 4} 92 Q {x0 + run + 6} 92 {land} 95" fill="none" stroke="{col}" stroke-width="1.8" '
               f'stroke-dasharray="3 3" {arrow(col)}/>')
             label(x0, 96 - h - 12, words[key], col, 'start', 11.5, col == accent)
-    elif kind == 'predict':                       # L3c: from the first seconds, predict the rest
+    elif kind == 'predict':                       # L3b-2: from the first seconds, predict the rest
         a(f'<line x1="16" y1="84" x2="208" y2="84" stroke="{sub}" stroke-width="1.2" {arrow(sub)}/>')
         a(f'<line x1="16" y1="84" x2="16" y2="10" stroke="{sub}" stroke-width="1.2"/>')
         a(f'<path d="M16 78 C 40 74, 60 40, 84 34" fill="none" stroke="{ink}" stroke-width="2.2"/>')
@@ -292,10 +297,13 @@ def render(site, lang, theme):
     out = []
     o = out.append
 
-    # Card text, measured first so every card shares one height.
-    name_avail = CW - 74
+    # Card text, measured first so every card shares one height. A name starts after its code badge.
+    def badge(code):
+        return text_width(code, 13) + 14
+
     names = [localize(lv['name'], lang) for _, lv in deck]
-    fs_name = next((s for s in (16, 15, 14) if all(text_width(n, s) <= name_avail for n in names)), 13)
+    room = [CW - 36 - badge(lv['code']) for _, lv in deck]
+    fs_name = next((s for s in (16, 15, 14) if all(text_width(n, s) <= r for n, r in zip(names, room))), 13)
     qs = [wrap(localize(lv['question'], lang), CW - 28, FS_Q) for _, lv in deck]
     fakes = [wrap(localize(lv['fake'], lang), CW - 46, FS_F) for _, lv in deck]
     y_q = 46 + PH + 26
@@ -370,7 +378,7 @@ def render(site, lang, theme):
         accent = ramp[1] if theme == 'light' and si == 0 else col
         o(f'<rect x="{x + .5}" y="{y0 + .5:g}" width="{CW - 1}" height="{card_h - 1:g}" rx="10" fill="{p["bg"]}" stroke="{p["frame"]}"/>')
         o(f'<rect x="{x}" y="{y0:g}" width="{CW}" height="5" fill="{col}" clip-path="url(#card-{i})"/>')
-        cw = text_width(level['code'], 13) + 14
+        cw = badge(level['code'])
         o(f'<rect x="{x + 14}" y="{y0 + 16:g}" width="{cw:g}" height="21" rx="4" fill="none" stroke="{accent}" stroke-width="1.8"/>')
         o(f'<text x="{x + 21}" y="{y0 + 31:g}" font-size="13" font-weight="700" fill="{p["ink"]}">{escape(level["code"])}</text>')
         o(f'<text x="{x + 22 + cw:g}" y="{y0 + 32:g}" font-size="{fs_name}" font-weight="700" fill="{p["ink"]}">{escape(names[i])}</text>')

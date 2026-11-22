@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 1038" width="1120" height="1038" role="img" aria-label="Simulator quality evaluation: each level exposes one kind of fake" font-family="-apple-system, &#x27;Segoe UI&#x27;, Helvetica, Arial, &#x27;Noto Sans&#x27;, sans-serif">
-<title>Simulator quality evaluation: each level exposes one kind of fake</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 1038" width="1120" height="1038" role="img" aria-label="Simulator quality evaluation: each check exposes one kind of fake" font-family="-apple-system, &#x27;Segoe UI&#x27;, Helvetica, Arial, &#x27;Noto Sans&#x27;, sans-serif">
+<title>Simulator quality evaluation: each check exposes one kind of fake</title>
 <defs>
 <marker id="arr-104281" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#104281"/></marker>
 <marker id="arr-1C5CAB" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#1C5CAB"/></marker>
@@ -17,9 +17,9 @@
 <clipPath id="card-7"><rect x="844" y="586" width="248" height="372" rx="10"/></clipPath>
 </defs>
 <rect x="0.5" y="0.5" width="1119" height="1037" rx="12" fill="#FFFFFF" stroke="#D1D9E0"/>
-<text x="28" y="52" font-size="22" font-weight="700" fill="#1F2328">Simulator quality evaluation: each level exposes one kind of fake</text>
-<text x="28" y="84" font-size="14.5" fill="#59636E">Example: an agent builds a kitchen simulation for a robot (a table, a cup, a cabinet with a door). All eight levels ask about it, and each</text>
-<text x="28" y="106" font-size="14.5" fill="#59636E">exposes a fake that the earlier levels cannot catch.</text>
+<text x="28" y="52" font-size="22" font-weight="700" fill="#1F2328">Simulator quality evaluation: each check exposes one kind of fake</text>
+<text x="28" y="84" font-size="14.5" fill="#59636E">Example: an agent builds a kitchen simulation for a robot (a table, a cup, a cabinet with a door). All eight checks ask about it, and each</text>
+<text x="28" y="106" font-size="14.5" fill="#59636E">exposes a fake that the earlier ones cannot catch.</text>
 <path d="M29 150 V144 H547 V150" fill="none" stroke="#86B6EF" stroke-width="2"/>
 <rect x="246.41" y="133" width="83.18" height="22" rx="11" fill="#FFFFFF" stroke="#86B6EF" stroke-width="2"/>
 <text x="288" y="148.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2328">Look only</text>
@@ -47,7 +47,7 @@
 <rect x="28" y="158" width="248" height="5" fill="#86B6EF" clip-path="url(#card-0)"/>
 <rect x="42" y="174" width="37.92" height="21" rx="4" fill="none" stroke="#5598E7" stroke-width="1.8"/>
 <text x="49" y="189" font-size="13" font-weight="700" fill="#1F2328">L0a</text>
-<text x="87.92" y="190" font-size="15" font-weight="700" fill="#1F2328">Semantic fidelity</text>
+<text x="87.92" y="190" font-size="16" font-weight="700" fill="#1F2328">Semantic fidelity</text>
 <rect x="42" y="204" width="220" height="104" rx="6" fill="#F0F3F6"/>
 <g transform="translate(42 204)">
 <rect x="12" y="10" width="76" height="86" rx="4" fill="#F0F3F6" stroke="#1F2328" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
@@ -84,7 +84,7 @@
 <rect x="300" y="158" width="248" height="5" fill="#86B6EF" clip-path="url(#card-1)"/>
 <rect x="314" y="174" width="37.92" height="21" rx="4" fill="none" stroke="#5598E7" stroke-width="1.8"/>
 <text x="321" y="189" font-size="13" font-weight="700" fill="#1F2328">L0b</text>
-<text x="359.92" y="190" font-size="15" font-weight="700" fill="#1F2328">Visual fidelity</text>
+<text x="359.92" y="190" font-size="16" font-weight="700" fill="#1F2328">Reconstruction</text>
 <rect x="314" y="204" width="220" height="104" rx="6" fill="#F0F3F6"/>
 <g transform="translate(314 204)">
 <rect x="10" y="12" width="84" height="70" rx="3" fill="#F0F3F6" stroke="#1F2328" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
@@ -104,13 +104,15 @@
 <g><path d="M145 32 L161 32 L159 50 L147 50 Z" fill="#F0F3F6" stroke="#1F2328" stroke-width="1.6" stroke-linejoin="round"/><path d="M160.5 36 q7 1 5 7 q-1 3 -6 3" fill="none" stroke="#1F2328" stroke-width="1.6"/></g>
 <text x="172" y="97" text-anchor="middle" font-size="11" fill="#59636E">Built</text>
 </g>
-<text x="314" y="334" font-size="14" font-weight="600" fill="#1F2328">Does it look like the kitchen</text>
-<text x="314" y="354" font-size="14" font-weight="600" fill="#1F2328">in the reference photo?</text>
+<text x="314" y="334" font-size="14" font-weight="600" fill="#1F2328">Does it match the reference</text>
+<text x="314" y="354" font-size="14" font-weight="600" fill="#1F2328">photo from every view, with</text>
+<text x="314" y="374" font-size="14" font-weight="600" fill="#1F2328">the right sizes and</text>
+<text x="314" y="394" font-size="14" font-weight="600" fill="#1F2328">positions?</text>
 <line x1="314" y1="404" x2="534" y2="404" stroke="#D1D9E0" stroke-dasharray="3 3"/>
 <text x="314" y="422" font-size="11.5" fill="#59636E">Fake it exposes</text>
 <path d="M316 433 l8 8 M324 433 l-8 8" stroke="#CF222E" stroke-width="2" stroke-linecap="round"/>
-<text x="332" y="442" font-size="13" fill="#1F2328">Layout and looks differ from</text>
-<text x="332" y="462" font-size="13" fill="#1F2328">the photo</text>
+<text x="332" y="442" font-size="13" fill="#1F2328">Layout or looks differ, or</text>
+<text x="332" y="462" font-size="13" fill="#1F2328">sizes and positions are wrong</text>
 <circle cx="318" cy="512" r="4.5" fill="#59636E"/>
 <circle cx="330" cy="512" r="4.5" fill="#59636E"/>
 <circle cx="342" cy="512" r="4.5" fill="#59636E"/>
@@ -122,7 +124,7 @@
 <rect x="572" y="158" width="248" height="5" fill="#5598E7" clip-path="url(#card-2)"/>
 <rect x="586" y="174" width="30.64" height="21" rx="4" fill="none" stroke="#5598E7" stroke-width="1.8"/>
 <text x="593" y="189" font-size="13" font-weight="700" fill="#1F2328">L1</text>
-<text x="624.64" y="190" font-size="15" font-weight="700" fill="#1F2328">Static plausibility</text>
+<text x="624.64" y="190" font-size="16" font-weight="700" fill="#1F2328">Static plausibility</text>
 <rect x="586" y="204" width="220" height="104" rx="6" fill="#F0F3F6"/>
 <g transform="translate(586 204)">
 <line x1="8" y1="96" x2="212" y2="96" stroke="#59636E" stroke-width="1.2"/>
@@ -152,7 +154,7 @@
 <rect x="844" y="158" width="248" height="5" fill="#2A78D6" clip-path="url(#card-3)"/>
 <rect x="858" y="174" width="30.64" height="21" rx="4" fill="none" stroke="#2A78D6" stroke-width="1.8"/>
 <text x="865" y="189" font-size="13" font-weight="700" fill="#1F2328">L2</text>
-<text x="896.64" y="190" font-size="15" font-weight="700" fill="#1F2328">Interaction</text>
+<text x="896.64" y="190" font-size="16" font-weight="700" fill="#1F2328">Interaction</text>
 <rect x="858" y="204" width="220" height="104" rx="6" fill="#F0F3F6"/>
 <g transform="translate(858 204)">
 <line x1="8" y1="96" x2="212" y2="96" stroke="#59636E" stroke-width="1.2"/>
@@ -168,12 +170,15 @@
 <line x1="42" y1="57" x2="12" y2="57" stroke="#2A78D6" stroke-width="2.2" marker-end="url(#arr-2A78D6)"/>
 </g>
 <text x="858" y="334" font-size="14" font-weight="600" fill="#1F2328">Pull the cabinet door: does it</text>
-<text x="858" y="354" font-size="14" font-weight="600" fill="#1F2328">swing open on its hinge?</text>
+<text x="858" y="354" font-size="14" font-weight="600" fill="#1F2328">swing open, and still work</text>
+<text x="858" y="374" font-size="14" font-weight="600" fill="#1F2328">after several open–close</text>
+<text x="858" y="394" font-size="14" font-weight="600" fill="#1F2328">cycles?</text>
 <line x1="858" y1="404" x2="1078" y2="404" stroke="#D1D9E0" stroke-dasharray="3 3"/>
 <text x="858" y="422" font-size="11.5" fill="#59636E">Fake it exposes</text>
 <path d="M860 433 l8 8 M868 433 l-8 8" stroke="#CF222E" stroke-width="2" stroke-linecap="round"/>
-<text x="876" y="442" font-size="13" fill="#1F2328">The door is fixed and will not</text>
-<text x="876" y="462" font-size="13" fill="#1F2328">open</text>
+<text x="876" y="442" font-size="13" fill="#1F2328">The door is fixed, or its</text>
+<text x="876" y="462" font-size="13" fill="#1F2328">state breaks after a few</text>
+<text x="876" y="482" font-size="13" fill="#1F2328">cycles</text>
 <circle cx="862" cy="512" r="4.5" fill="#59636E"/>
 <circle cx="874" cy="512" r="4.5" fill="#59636E"/>
 <circle cx="886" cy="512" r="4.5" fill="#59636E"/>
@@ -183,7 +188,7 @@
 <rect x="28" y="586" width="248" height="5" fill="#1C5CAB" clip-path="url(#card-4)"/>
 <rect x="42" y="602" width="37.92" height="21" rx="4" fill="none" stroke="#1C5CAB" stroke-width="1.8"/>
 <text x="49" y="617" font-size="13" font-weight="700" fill="#1F2328">L3a</text>
-<text x="87.92" y="618" font-size="15" font-weight="700" fill="#1F2328">Looks right</text>
+<text x="87.92" y="618" font-size="16" font-weight="700" fill="#1F2328">Reproduction</text>
 <rect x="42" y="632" width="220" height="104" rx="6" fill="#F0F3F6"/>
 <g transform="translate(42 632)">
 <line x1="6" y1="96" x2="130" y2="96" stroke="#59636E" stroke-width="1.2"/>
@@ -228,9 +233,9 @@
 <text x="144" y="944" font-size="11.5" fill="#59636E">8 works</text>
 <rect x="300.5" y="586.5" width="247" height="371" rx="10" fill="#FFFFFF" stroke="#D1D9E0"/>
 <rect x="300" y="586" width="248" height="5" fill="#1C5CAB" clip-path="url(#card-5)"/>
-<rect x="314" y="602" width="37.92" height="21" rx="4" fill="none" stroke="#1C5CAB" stroke-width="1.8"/>
-<text x="321" y="617" font-size="13" font-weight="700" fill="#1F2328">L3b</text>
-<text x="359.92" y="618" font-size="15" font-weight="700" fill="#1F2328">Truly simulated</text>
+<rect x="314" y="602" width="53.52" height="21" rx="4" fill="none" stroke="#1C5CAB" stroke-width="1.8"/>
+<text x="321" y="617" font-size="13" font-weight="700" fill="#1F2328">L3b-1</text>
+<text x="375.52" y="618" font-size="16" font-weight="700" fill="#1F2328">Counterfactual</text>
 <rect x="314" y="632" width="220" height="104" rx="6" fill="#F0F3F6"/>
 <g transform="translate(314 632)">
 <line x1="8" y1="96" x2="212" y2="96" stroke="#59636E" stroke-width="1.2"/>
@@ -259,9 +264,9 @@
 <text x="368" y="944" font-size="11.5" fill="#59636E">4 works</text>
 <rect x="572.5" y="586.5" width="247" height="371" rx="10" fill="#FFFFFF" stroke="#D1D9E0"/>
 <rect x="572" y="586" width="248" height="5" fill="#1C5CAB" clip-path="url(#card-6)"/>
-<rect x="586" y="602" width="37.92" height="21" rx="4" fill="none" stroke="#1C5CAB" stroke-width="1.8"/>
-<text x="593" y="617" font-size="13" font-weight="700" fill="#1F2328">L3c</text>
-<text x="631.92" y="618" font-size="15" font-weight="700" fill="#1F2328">Numerically accurate</text>
+<rect x="586" y="602" width="53.52" height="21" rx="4" fill="none" stroke="#1C5CAB" stroke-width="1.8"/>
+<text x="593" y="617" font-size="13" font-weight="700" fill="#1F2328">L3b-2</text>
+<text x="647.52" y="618" font-size="16" font-weight="700" fill="#1F2328">Quantitative</text>
 <rect x="586" y="632" width="220" height="104" rx="6" fill="#F0F3F6"/>
 <g transform="translate(586 632)">
 <line x1="16" y1="84" x2="208" y2="84" stroke="#59636E" stroke-width="1.2" marker-end="url(#arr-59636E)"/>
@@ -293,7 +298,7 @@
 <rect x="844" y="586" width="248" height="5" fill="#104281" clip-path="url(#card-7)"/>
 <rect x="858" y="602" width="30.64" height="21" rx="4" fill="none" stroke="#104281" stroke-width="1.8"/>
 <text x="865" y="617" font-size="13" font-weight="700" fill="#1F2328">L4</text>
-<text x="896.64" y="618" font-size="15" font-weight="700" fill="#1F2328">Sim-to-real</text>
+<text x="896.64" y="618" font-size="16" font-weight="700" fill="#1F2328">Sim-to-real</text>
 <rect x="858" y="632" width="220" height="104" rx="6" fill="#F0F3F6"/>
 <g transform="translate(858 632)">
 <text x="48" y="13" text-anchor="middle" font-size="11.5" font-weight="700" fill="#1F2328">In sim</text>
@@ -332,9 +337,10 @@
 <circle cx="886" cy="940" r="4.5" fill="#59636E"/>
 <circle cx="898" cy="940" r="4.5" fill="#59636E"/>
 <circle cx="910" cy="940" r="4.5" fill="#59636E"/>
-<text x="924" y="944" font-size="11.5" fill="#59636E">5 works</text>
-<text x="28" y="1000" font-size="12.5" fill="#59636E">Each level catches a different kind of error; it is not a cumulative score. Most works sit at L0 and L3a; the later levels are</text>
-<text x="28" y="1018" font-size="12.5" fill="#59636E">harder to test and have fewer works.</text>
+<circle cx="922" cy="940" r="4.5" fill="#59636E"/>
+<text x="936" y="944" font-size="11.5" fill="#59636E">6 works</text>
+<text x="28" y="1000" font-size="12.5" fill="#59636E">The P0 executability gate is pass or fail and is not drawn. L0–L4 each catch a different kind of error and do not add up to a score.</text>
+<text x="28" y="1018" font-size="12.5" fill="#59636E">Most works sit at L0 and L3a; later checks are harder to run and have fewer works.</text>
 <circle cx="902.25" cy="996" r="4.5" fill="#59636E"/>
 <text x="912.75" y="1000" font-size="12.5" fill="#59636E">a work</text>
 <circle cx="973" cy="996" r="3.8" fill="none" stroke="#59636E" stroke-width="1.4"/>

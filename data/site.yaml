@@ -468,21 +468,22 @@ stages:
 
         </details>
 # Overview figure at the top of stage3/simulator-evaluation.md and .zh-CN.md (scripts/eval_ladder.py).
-# Works are counted per level; keep them in step with the tables in that guide.
+# One card per check: L2 and L4 are one card each, L3b is split into L3b-1 and L3b-2, and the P0 gate is
+# not drawn. Works are counted per card; keep them in step with the tables in that guide.
 eval_ladder:
   text:
     title:
-      en: 'Simulator quality evaluation: each level exposes one kind of fake'
-      zh: 仿真器质量评估：每一层拆穿一种“假”
+      en: 'Simulator quality evaluation: each check exposes one kind of fake'
+      zh: 仿真器质量评估：每一项检验拆穿一种“假”
     alt:
-      en: 'Simulator evaluation levels illustrated with one kitchen simulation. Eight cards in five stages (look only, left at rest, poke it, let it run, put it to use); each shows how the level checks the kitchen, the question it asks, the fake simulation it exposes, and how many works it holds.'
-      zh: 用同一个厨房仿真说明各个检验层级：8 张卡片分为只看、放着不动、碰一下、让它自己动、拿去用五个阶段，每张给出这一层怎么检查、问什么、拆穿哪种假仿真，以及收录的作品数。
+      en: 'Simulator evaluation checks illustrated with one kitchen simulation. Eight cards in five stages (look only, left at rest, poke it, let it run, put it to use); each shows how the check works, the question it asks, the fake simulation it exposes, and how many works it holds. The P0 executability gate is not drawn.'
+      zh: 用同一个厨房仿真说明各检验维度：8 张卡片分为只看、放着不动、碰一下、让它自己动、拿去用五个阶段，每张给出怎么检查、问什么、拆穿哪种假仿真，以及收录的作品数；前提关卡 P0 可运行不在图中。
     lead:
-      en: 'Example: an agent builds a kitchen simulation for a robot (a table, a cup, a cabinet with a door). All eight levels ask about it, and each exposes a fake that the earlier levels cannot catch.'
-      zh: 例子：Agent 给机器人搭了一个厨房仿真（桌子、杯子、带门的柜子）。8 个层级都拿它来问，每一层都能拆穿前面几层发现不了的“假仿真”。
+      en: 'Example: an agent builds a kitchen simulation for a robot (a table, a cup, a cabinet with a door). All eight checks ask about it, and each exposes a fake that the earlier ones cannot catch.'
+      zh: 例子：Agent 给机器人搭了一个厨房仿真（桌子、杯子、带门的柜子）。8 项检验都拿它来问，每一项都能拆穿前面几项发现不了的“假仿真”。
     note:
-      en: Each level catches a different kind of error; it is not a cumulative score. Most works sit at L0 and L3a; the later levels are harder to test and have fewer works.
-      zh: 各层查的是不同的错，不是累加分数。作品多集中在 L0 和 L3a，越往后越难检验，工作也越少。
+      en: The P0 executability gate is pass or fail and is not drawn. L0–L4 each catch a different kind of error and do not add up to a score. Most works sit at L0 and L3a; later checks are harder to run and have fewer works.
+      zh: 前提关卡 P0 可运行只判过不过，不在图中。L0–L4 各查一种错，不加成总分。作品多集中在 L0 和 L3a，越往后越难检验，工作也越少。
     fake:
       en: Fake it exposes
       zh: 拆穿的假仿真
@@ -562,7 +563,7 @@ eval_ladder:
       pic: checklist
       name:
         en: Semantic fidelity
-        zh: 需求符合
+        zh: 需求
       question:
         en: Are the table, cabinet and cup all there, in the right places?
         zh: 要的桌子、柜子、杯子都有吗？位置对吗？
@@ -573,14 +574,14 @@ eval_ladder:
     - code: L0b
       pic: photo
       name:
-        en: Visual fidelity
-        zh: 参照还原
+        en: Reconstruction
+        zh: 参照
       question:
-        en: Does it look like the kitchen in the reference photo?
-        zh: 和参照照片里的厨房长得一样吗？
+        en: Does it match the reference photo from every view, with the right sizes and positions?
+        zh: 各个视角都和参照照片像吗？尺寸、位置也对吗？
       fake:
-        en: Layout and looks differ from the photo
-        zh: 布局、样子和照片对不上
+        en: Layout or looks differ, or sizes and positions are wrong
+        zh: 布局、样子对不上，或尺寸、位置是错的
       works: ['2506.23329', '2504.01786', 'system:blenderworld', '2611.02659', '2609.15478', '2611.09017']
   - name:
       en: Left at rest
@@ -590,7 +591,7 @@ eval_ladder:
       pic: floating
       name:
         en: Static plausibility
-        zh: 静态合理性
+        zh: 静态合理
       question:
         en: Is the cup floating or sunk into the table? Can the robot get through?
         zh: 杯子悬空、穿进桌面了吗？机器人过得去吗？
@@ -608,11 +609,11 @@ eval_ladder:
         en: Interaction
         zh: 交互响应
       question:
-        en: 'Pull the cabinet door: does it swing open on its hinge?'
-        zh: 拉一下柜门，会绕着铰链转开吗？
+        en: 'Pull the cabinet door: does it swing open, and still work after several open–close cycles?'
+        zh: 拉一下柜门，会绕着铰链转开吗？连着开关几次还正常吗？
       fake:
-        en: The door is fixed and will not open
-        zh: 柜门是死的，一拉不动
+        en: The door is fixed, or its state breaks after a few cycles
+        zh: 柜门是死的，或开关几次后状态就乱了
       works: ['2610.37326', '2606.01869', '2611.02928', '2605.19136 †']
   - name:
       en: Let it run
@@ -621,8 +622,8 @@ eval_ladder:
     - code: L3a
       pic: film
       name:
-        en: Looks right
-        zh: 看起来对
+        en: Reproduction
+        zh: 复现
       question:
         en: 'Knock the cup off the table: does the fall match real footage?'
         zh: 杯子被碰倒、滚下桌的过程，和录像像吗？
@@ -630,11 +631,11 @@ eval_ladder:
         en: The fall plainly does not look real
         zh: 倒下的样子一看就不像真的
       works: ['2610.15166', '2610.03715', '2602.13294', '2602.10840', '2611.13576 †', '2611.01815', '2610.04432', 'real2sim-benchmark']
-    - code: L3b
+    - code: L3b-1
       pic: ramps
       name:
-        en: Truly simulated
-        zh: 真在模拟
+        en: Counterfactual
+        zh: 反事实
       question:
         en: 'Tilt the table or make the cup heavier and rerun: does the outcome change?'
         zh: 桌面调斜、杯子换重，再跑一遍，结果跟着变吗？
@@ -642,11 +643,11 @@ eval_ladder:
         en: 'Hand-made animation: conditions change, motion does not'
         zh: 手写动画：条件变了，动作照旧
       works: ['2610.17288', '2604.23580', '2610.08720', '2609.13194 †']
-    - code: L3c
+    - code: L3b-2
       pic: predict
       name:
-        en: Numerically accurate
-        zh: 数值准确
+        en: Quantitative
+        zh: 定量
       question:
         en: Do mass and friction match measurements? From the first seconds, can it predict the rest?
         zh: 质量、摩擦和实测一致吗？只看前几秒，能预测后面吗？
@@ -669,7 +670,7 @@ eval_ladder:
       fake:
         en: Everything looks right, yet conclusions fail on real robots
         zh: 处处都像，实机上结论却不成立
-      works: ['2405.05941', '2610.17521', '2609.27449', '2512.16881', '2609.24778']
+      works: ['2405.05941', '2610.17521', '2609.27449', '2512.16881', '2609.24778', '2611.15020']
 engine_map:
   text:
     title:
@@ -2090,42 +2091,51 @@ sections:
       en: |-
         | No. | Level | Core question | Works |
         |---|---|---|---|
-        | L0a | Semantic fidelity | Does it do what the requirements say? | [SceneEval](#paper-2503-14756) † · [LEGO-Eval](#paper-2511-03001) † · [SceneCritic](#paper-2604-13035) † · [Code4Scene](#paper-2609-36777) |
-        | L0b | Visual / reconstruction fidelity | Does it look the same as the reference? | [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786) · [BlenderWorld](#paper-system-blenderworld) · [Parametric CAD Bench v3](#paper-2611-02659) · [BVB](#paper-2609-15478) · [Frontier3DBench](#paper-2611-09017) |
-        | L1 | Static physical plausibility | Left at rest, does it stand stably and can people get through? | [GREP](#paper-2611-05802) † · [SceneTeract](#paper-2603-29798) † |
-        | L2 | Interaction plausibility | Push it or open it: does it respond correctly? | [ScIntBench](#paper-2610-37326) · [WorldCoder-Bench](#paper-2606-01869) · [Lab2Sim](#paper-2611-02928) · [Articulated Simulation Physics](#paper-2605-19136) † |
-        | L3a | Dynamics: looks right | Does the motion match the reference video? (Only frames and trajectories are compared, so hand-written animation can also score well.) | [ExeWorldBench](#paper-2610-15166) · [4DCodeBench](#paper-2610-03715) · [VisPhyWorld](#paper-2602-13294) · [Physics-Inspired Animations](#paper-2602-10840) · [PhyRubric](#paper-2611-13576) † · [Latent Prediction Error](#paper-2611-01815) · [Video2World](#paper-2610-04432) · [Real2Sim Benchmark](#paper-real2sim-benchmark) |
-        | L3b | Dynamics: truly simulated | Rerun under changed conditions (a steeper ramp, a heavier ball): does the result change correctly? | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) · [Polynomial Invariants](#paper-2609-13194) † |
-        | L3c | Dynamics: numerically accurate | Do parameters such as mass and friction match reality? Given the first few seconds, can it predict what follows? | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
-        | L4 | Sim-to-real predictivity | Used for evaluation or training, do the conclusions hold in the real world? | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) |
+        | P0 | Executability | Does it run? Is the motion computed by the engine? | No dedicated work yet |
+        | L0a | Scene: semantic | Are the objects, attributes, relations and construction methods in the requirements all satisfied? | [SceneEval](#paper-2503-14756) † · [LEGO-Eval](#paper-2511-03001) † · [SceneCritic](#paper-2604-13035) † · [Code4Scene](#paper-2609-36777) |
+        | L0b | Scene: reconstruction | Do appearance and geometry (scale, shape, position) match the reference? | [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786) · [BlenderWorld](#paper-system-blenderworld) · [Parametric CAD Bench v3](#paper-2611-02659) · [BVB](#paper-2609-15478) · [Frontier3DBench](#paper-2611-09017) |
+        | L1 | Static plausibility | Left at rest, does it stand stably and can things get through? | [GREP](#paper-2611-05802) † · [SceneTeract](#paper-2603-29798) † |
+        | L2a | Interaction: single-step | After one action, can what should move actually move, and is the response right? | [ScIntBench](#paper-2610-37326) · [Articulated Simulation Physics](#paper-2605-19136) † · [WorldCoder-Bench](#paper-2606-01869) |
+        | L2b | Interaction: sequential | Through task sequences and random or adversarial actions, do state and numbers hold up? | [WorldCoder-Bench](#paper-2606-01869) · [Lab2Sim](#paper-2611-02928) |
+        | L3a | Dynamics: reproduction | Under conditions seen in the reference, do the process and outcome match it? (When only frames and trajectories are compared, hand-written animation can also score well.) | [ExeWorldBench](#paper-2610-15166) · [4DCodeBench](#paper-2610-03715) · [VisPhyWorld](#paper-2602-13294) · [Physics-Inspired Animations](#paper-2602-10840) · [PhyRubric](#paper-2611-13576) † · [Latent Prediction Error](#paper-2611-01815) · [Video2World](#paper-2610-04432) · [Real2Sim Benchmark](#paper-real2sim-benchmark) |
+        | L3b-1 | Dynamics: counterfactual | Rerun under changed conditions (a steeper ramp, a heavier ball): does the result change correctly? | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) · [Polynomial Invariants](#paper-2609-13194) † |
+        | L3b-2 | Dynamics: quantitative | Do parameters such as mass and friction match measurements? Given the first few seconds, can it predict what follows? (Wrong parameters can cancel out to fit a trajectory, but not to pass these two tests.) | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
+        | L4a | Downstream: evaluation | Do the same policies perform and rank the same in simulation and in the real world? | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) · [Genie Sim Benchmark](#paper-2611-15020) |
+        | L4b | Downstream: training | Do policies trained in simulation still work in the real world? | No evaluation work yet |
 
-        † marks evaluators, works whose main contribution is an evaluation tool. Each work is placed by its main claimed contribution. Full explanation: [Simulator quality evaluation: a fidelity ladder](stage3/simulator-evaluation.md).
+        P0 is a pass-or-fail gate; the other levels each check a different failure mode and do not add up to a score. † marks evaluators, works whose main contribution is an evaluation tool. Each work is placed by its main claimed contribution; WorldCoder-Bench covers both L2a and L2b. Full explanation: [Simulator quality evaluation: a fidelity ladder](stage3/simulator-evaluation.md).
       zh: |-
         | 编号 | 层级 | 核心问题 | 作品 |
         |---|---|---|---|
-        | L0a | 需求符合 | 做到了要求里说的吗？ | [SceneEval](#paper-2503-14756) † · [LEGO-Eval](#paper-2511-03001) † · [SceneCritic](#paper-2604-13035) † · [Code4Scene](#paper-2609-36777) |
-        | L0b | 参照还原 | 和参照看起来一样吗？ | [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786) · [BlenderWorld](#paper-system-blenderworld) · [Parametric CAD Bench v3](#paper-2611-02659) · [BVB](#paper-2609-15478) · [Frontier3DBench](#paper-2611-09017) |
-        | L1 | 静态合理性 | 放着不动时，站得住、走得通吗？ | [GREP](#paper-2611-05802) † · [SceneTeract](#paper-2603-29798) † |
-        | L2 | 交互响应 | 推一下、开一下，反应对吗？ | [ScIntBench](#paper-2610-37326) · [WorldCoder-Bench](#paper-2606-01869) · [Lab2Sim](#paper-2611-02928) · [Articulated Simulation Physics](#paper-2605-19136) † |
-        | L3a | 动态：看起来对 | 动起来的过程和参照视频一样吗？（只比画面和轨迹，手写动画也能得高分） | [ExeWorldBench](#paper-2610-15166) · [4DCodeBench](#paper-2610-03715) · [VisPhyWorld](#paper-2602-13294) · [Physics-Inspired Animations](#paper-2602-10840) · [PhyRubric](#paper-2611-13576) † · [Latent Prediction Error](#paper-2611-01815) · [Video2World](#paper-2610-04432) · [Real2Sim Benchmark](#paper-real2sim-benchmark) |
-        | L3b | 动态：真在模拟 | 换个条件（斜坡更陡、球更重）重跑，结果会跟着正确变化吗？ | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) · [Polynomial Invariants](#paper-2609-13194) † |
-        | L3c | 动态：数值准确 | 质量、摩擦等参数和真实一致吗？只看前几秒，能预测后面的过程吗？ | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
-        | L4 | 下游效用 | 拿去评测或训练，结论在真实世界成立吗？ | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) |
+        | P0 | 可运行 | 跑得起来吗？运动是引擎算出来的吗？ | 暂无专门工作 |
+        | L0a | 场景：需求 | 要求里的物体、属性、关系、建法都满足了吗？ | [SceneEval](#paper-2503-14756) † · [LEGO-Eval](#paper-2511-03001) † · [SceneCritic](#paper-2604-13035) † · [Code4Scene](#paper-2609-36777) |
+        | L0b | 场景：参照 | 外观和几何（尺度、形状、位置）与参照一致吗？ | [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786) · [BlenderWorld](#paper-system-blenderworld) · [Parametric CAD Bench v3](#paper-2611-02659) · [BVB](#paper-2609-15478) · [Frontier3DBench](#paper-2611-09017) |
+        | L1 | 静态合理 | 放着不动，站得住、走得通吗？ | [GREP](#paper-2611-05802) † · [SceneTeract](#paper-2603-29798) † |
+        | L2a | 交互：单步 | 一个动作下去，该动的能动吗？反应对吗？ | [ScIntBench](#paper-2610-37326) · [Articulated Simulation Physics](#paper-2605-19136) † · [WorldCoder-Bench](#paper-2606-01869) |
+        | L2b | 交互：连续 | 按任务连着做、随机或刻意找漏洞地做，状态和数值还保得住吗？ | [WorldCoder-Bench](#paper-2606-01869) · [Lab2Sim](#paper-2611-02928) |
+        | L3a | 动态：复现 | 在参照出现过的条件下，过程和结果与参照一致吗？（只比画面和轨迹时，手写动画也能得高分） | [ExeWorldBench](#paper-2610-15166) · [4DCodeBench](#paper-2610-03715) · [VisPhyWorld](#paper-2602-13294) · [Physics-Inspired Animations](#paper-2602-10840) · [PhyRubric](#paper-2611-13576) † · [Latent Prediction Error](#paper-2611-01815) · [Video2World](#paper-2610-04432) · [Real2Sim Benchmark](#paper-real2sim-benchmark) |
+        | L3b-1 | 动态：反事实 | 换个条件（斜坡更陡、球更重）重跑，结果会跟着正确变化吗？ | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) · [Polynomial Invariants](#paper-2609-13194) † |
+        | L3b-2 | 动态：定量 | 质量、摩擦等参数和实测一致吗？只给前几秒，能预测后面吗？（错参数互相抵消能凑对轨迹，但骗不过这两项） | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
+        | L4a | 下游：评测 | 同一批策略在仿真和真实世界中的表现与排名一致吗？ | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) · [Genie Sim Benchmark](#paper-2611-15020) |
+        | L4b | 下游：训练 | 在仿真中训练的策略，到真实世界还有效吗？ | 暂无评估工作 |
 
-        † 表示评估器，即主要贡献是评估工具的工作。每篇按论文主打的创新点归层。完整说明见 [仿真器质量评估：检验层级](stage3/simulator-evaluation.zh-CN.md)。
+        P0 是前提关卡，只判过不过；其余各层检查不同的失败模式，不加成总分。† 表示评估器，即主要贡献是评估工具的工作。每篇按论文主打的创新点归层，WorldCoder-Bench 同时覆盖 L2a 和 L2b。完整说明见 [仿真器质量评估：检验层级](stage3/simulator-evaluation.zh-CN.md)。
       ja: |-
         | 番号 | レベル | 中心となる問い | 作品 |
         |---|---|---|---|
-        | L0a | 意味的忠実度 | 要件に書かれたことを満たしているか？ | [SceneEval](#paper-2503-14756) † · [LEGO-Eval](#paper-2511-03001) † · [SceneCritic](#paper-2604-13035) † · [Code4Scene](#paper-2609-36777) |
-        | L0b | 視覚・再構成の忠実度 | 参照と同じに見えるか？ | [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786) · [BlenderWorld](#paper-system-blenderworld) · [Parametric CAD Bench v3](#paper-2611-02659) · [BVB](#paper-2609-15478) · [Frontier3DBench](#paper-2611-09017) |
-        | L1 | 静的な物理的妥当性 | 静止した状態で、倒れず、通り抜けられるか？ | [GREP](#paper-2611-05802) † · [SceneTeract](#paper-2603-29798) † |
-        | L2 | インタラクションの妥当性 | 押したり開けたりしたとき、正しく反応するか？ | [ScIntBench](#paper-2610-37326) · [WorldCoder-Bench](#paper-2606-01869) · [Lab2Sim](#paper-2611-02928) · [Articulated Simulation Physics](#paper-2605-19136) † |
-        | L3a | 動態：見た目が正しい | 動きの過程は参照動画と同じか？（画面と軌跡だけを比べるため、手書きのアニメーションでも高得点になりうる） | [ExeWorldBench](#paper-2610-15166) · [4DCodeBench](#paper-2610-03715) · [VisPhyWorld](#paper-2602-13294) · [Physics-Inspired Animations](#paper-2602-10840) · [PhyRubric](#paper-2611-13576) † · [Latent Prediction Error](#paper-2611-01815) · [Video2World](#paper-2610-04432) · [Real2Sim Benchmark](#paper-real2sim-benchmark) |
-        | L3b | 動態：本当にシミュレーション | 条件を変えて（坂をより急に、球をより重く）再実行すると、結果は正しく変わるか？ | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) · [Polynomial Invariants](#paper-2609-13194) † |
-        | L3c | 動態：数値が正確 | 質量や摩擦などのパラメータは現実と一致するか？最初の数秒だけから、その後を予測できるか？ | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
-        | L4 | Sim-to-Real 予測性 | 評価や学習に使ったとき、結論は現実世界でも成り立つか？ | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) |
+        | P0 | 実行可能性 | 動くか？運動はエンジンが計算しているか？ | 専用の作品はまだない |
+        | L0a | シーン：要件 | 要件にある物体、属性、関係、作り方をすべて満たしているか？ | [SceneEval](#paper-2503-14756) † · [LEGO-Eval](#paper-2511-03001) † · [SceneCritic](#paper-2604-13035) † · [Code4Scene](#paper-2609-36777) |
+        | L0b | シーン：参照 | 外観と幾何（スケール、形状、位置）は参照と一致するか？ | [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786) · [BlenderWorld](#paper-system-blenderworld) · [Parametric CAD Bench v3](#paper-2611-02659) · [BVB](#paper-2609-15478) · [Frontier3DBench](#paper-2611-09017) |
+        | L1 | 静的な妥当性 | 静止した状態で、倒れず、通り抜けられるか？ | [GREP](#paper-2611-05802) † · [SceneTeract](#paper-2603-29798) † |
+        | L2a | インタラクション：単発 | 1回操作したとき、動くべき部分は動くか？反応は正しいか？ | [ScIntBench](#paper-2610-37326) · [Articulated Simulation Physics](#paper-2605-19136) † · [WorldCoder-Bench](#paper-2606-01869) |
+        | L2b | インタラクション：連続 | タスクに沿って続けて操作したり、ランダムに、あるいは抜け穴を狙って操作したりしても、状態と数値は保たれるか？ | [WorldCoder-Bench](#paper-2606-01869) · [Lab2Sim](#paper-2611-02928) |
+        | L3a | 動態：再現 | 参照に現れた条件のもとで、過程と結果は参照と一致するか？（画面と軌跡だけを比べる場合、手書きのアニメーションでも高得点になりうる） | [ExeWorldBench](#paper-2610-15166) · [4DCodeBench](#paper-2610-03715) · [VisPhyWorld](#paper-2602-13294) · [Physics-Inspired Animations](#paper-2602-10840) · [PhyRubric](#paper-2611-13576) † · [Latent Prediction Error](#paper-2611-01815) · [Video2World](#paper-2610-04432) · [Real2Sim Benchmark](#paper-real2sim-benchmark) |
+        | L3b-1 | 動態：反実仮想 | 条件を変えて（坂をより急に、球をより重く）再実行すると、結果は正しく変わるか？ | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) · [Polynomial Invariants](#paper-2609-13194) † |
+        | L3b-2 | 動態：定量 | 質量や摩擦などのパラメータは実測と一致するか？最初の数秒だけから、その後を予測できるか？（誤ったパラメータが打ち消し合えば軌跡は合わせられるが、この2つはごまかせない） | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
+        | L4a | 下流：評価 | 同じ方策群の性能と順位は、シミュレーションと現実世界で一致するか？ | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) · [Genie Sim Benchmark](#paper-2611-15020) |
+        | L4b | 下流：学習 | シミュレーションで学習した方策は、現実世界でも有効か？ | 評価研究はまだない |
 
-        † は評価器、つまり主な貢献が評価ツールである作品を示します。各作品は論文が主張する主な貢献で配置しています。詳しい説明は英語版 [Simulator quality evaluation: a fidelity ladder](stage3/simulator-evaluation.md) を参照してください。
+        P0 は前提となる関門で、合否だけを判定します。ほかの各レベルは異なる失敗モードを調べるもので、合計点にはなりません。† は評価器、つまり主な貢献が評価ツールである作品を示します。各作品は論文が主張する主な貢献で配置しており、WorldCoder-Bench は L2a と L2b の両方に当たります。詳しい説明は英語版 [Simulator quality evaluation: a fidelity ladder](stage3/simulator-evaluation.md) を参照してください。
   '3.4':
     en: Data
     zh: 数据

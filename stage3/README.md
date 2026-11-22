@@ -3048,7 +3048,7 @@ A CLI and agent skills support rapid construction and inspection of MuJoCo scene
 
 ## 3. Simulator Quality Evaluation
 
-> A reading framework that reorganizes this section by fidelity level (L0–L4) is in [Simulator quality evaluation: a fidelity ladder](simulator-evaluation.md).
+> A reading framework that reorganizes this section by fidelity level (the P0 gate and L0–L4) is in [Simulator quality evaluation: a fidelity ladder](simulator-evaluation.md).
 
 Start with **what is evaluated**, then distinguish agreement with observations, responses to interaction, behavior under unseen conditions and downstream usefulness. These are complementary questions: a visually faithful reconstruction may fail to support contact, while successful control may compensate for an inaccurate world.
 

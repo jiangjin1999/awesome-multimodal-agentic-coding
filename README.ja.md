@@ -3005,16 +3005,19 @@
 
 | 番号 | レベル | 中心となる問い | 作品 |
 |---|---|---|---|
-| L0a | 意味的忠実度 | 要件に書かれたことを満たしているか？ | [SceneEval](#paper-2503-14756) † · [LEGO-Eval](#paper-2511-03001) † · [SceneCritic](#paper-2604-13035) † · [Code4Scene](#paper-2609-36777) |
-| L0b | 視覚・再構成の忠実度 | 参照と同じに見えるか？ | [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786) · [BlenderWorld](#paper-system-blenderworld) · [Parametric CAD Bench v3](#paper-2611-02659) · [BVB](#paper-2609-15478) · [Frontier3DBench](#paper-2611-09017) |
-| L1 | 静的な物理的妥当性 | 静止した状態で、倒れず、通り抜けられるか？ | [GREP](#paper-2611-05802) † · [SceneTeract](#paper-2603-29798) † |
-| L2 | インタラクションの妥当性 | 押したり開けたりしたとき、正しく反応するか？ | [ScIntBench](#paper-2610-37326) · [WorldCoder-Bench](#paper-2606-01869) · [Lab2Sim](#paper-2611-02928) · [Articulated Simulation Physics](#paper-2605-19136) † |
-| L3a | 動態：見た目が正しい | 動きの過程は参照動画と同じか？（画面と軌跡だけを比べるため、手書きのアニメーションでも高得点になりうる） | [ExeWorldBench](#paper-2610-15166) · [4DCodeBench](#paper-2610-03715) · [VisPhyWorld](#paper-2602-13294) · [Physics-Inspired Animations](#paper-2602-10840) · [PhyRubric](#paper-2611-13576) † · [Latent Prediction Error](#paper-2611-01815) · [Video2World](#paper-2610-04432) · [Real2Sim Benchmark](#paper-real2sim-benchmark) |
-| L3b | 動態：本当にシミュレーション | 条件を変えて（坂をより急に、球をより重く）再実行すると、結果は正しく変わるか？ | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) · [Polynomial Invariants](#paper-2609-13194) † |
-| L3c | 動態：数値が正確 | 質量や摩擦などのパラメータは現実と一致するか？最初の数秒だけから、その後を予測できるか？ | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
-| L4 | Sim-to-Real 予測性 | 評価や学習に使ったとき、結論は現実世界でも成り立つか？ | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) |
+| P0 | 実行可能性 | 動くか？運動はエンジンが計算しているか？ | 専用の作品はまだない |
+| L0a | シーン：要件 | 要件にある物体、属性、関係、作り方をすべて満たしているか？ | [SceneEval](#paper-2503-14756) † · [LEGO-Eval](#paper-2511-03001) † · [SceneCritic](#paper-2604-13035) † · [Code4Scene](#paper-2609-36777) |
+| L0b | シーン：参照 | 外観と幾何（スケール、形状、位置）は参照と一致するか？ | [IR3D-Bench](#paper-2506-23329) · [BlenderGym](#paper-2504-01786) · [BlenderWorld](#paper-system-blenderworld) · [Parametric CAD Bench v3](#paper-2611-02659) · [BVB](#paper-2609-15478) · [Frontier3DBench](#paper-2611-09017) |
+| L1 | 静的な妥当性 | 静止した状態で、倒れず、通り抜けられるか？ | [GREP](#paper-2611-05802) † · [SceneTeract](#paper-2603-29798) † |
+| L2a | インタラクション：単発 | 1回操作したとき、動くべき部分は動くか？反応は正しいか？ | [ScIntBench](#paper-2610-37326) · [Articulated Simulation Physics](#paper-2605-19136) † · [WorldCoder-Bench](#paper-2606-01869) |
+| L2b | インタラクション：連続 | タスクに沿って続けて操作したり、ランダムに、あるいは抜け穴を狙って操作したりしても、状態と数値は保たれるか？ | [WorldCoder-Bench](#paper-2606-01869) · [Lab2Sim](#paper-2611-02928) |
+| L3a | 動態：再現 | 参照に現れた条件のもとで、過程と結果は参照と一致するか？（画面と軌跡だけを比べる場合、手書きのアニメーションでも高得点になりうる） | [ExeWorldBench](#paper-2610-15166) · [4DCodeBench](#paper-2610-03715) · [VisPhyWorld](#paper-2602-13294) · [Physics-Inspired Animations](#paper-2602-10840) · [PhyRubric](#paper-2611-13576) † · [Latent Prediction Error](#paper-2611-01815) · [Video2World](#paper-2610-04432) · [Real2Sim Benchmark](#paper-real2sim-benchmark) |
+| L3b-1 | 動態：反実仮想 | 条件を変えて（坂をより急に、球をより重く）再実行すると、結果は正しく変わるか？ | [PhysCodeGym](#paper-2610-17288) · [PhysCodeBench](#paper-2604-23580) · [WorldSolver](#paper-2610-08720) · [Polynomial Invariants](#paper-2609-13194) † |
+| L3b-2 | 動態：定量 | 質量や摩擦などのパラメータは実測と一致するか？最初の数秒だけから、その後を予測できるか？（誤ったパラメータが打ち消し合えば軌跡は合わせられるが、この2つはごまかせない） | [IRIS](#paper-2603-16432) · [Δynamics](#paper-2605-20576) · [MPMWorlds](#paper-2606-01538) |
+| L4a | 下流：評価 | 同じ方策群の性能と順位は、シミュレーションと現実世界で一致するか？ | [SIMPLER](#paper-2405-05941) · [YUBI-Real2Sim](#paper-2610-17521) · [X2Real](#paper-2609-27449) · [PolaRiS](#paper-2512-16881) · [H2RBench](#paper-2609-24778) · [Genie Sim Benchmark](#paper-2611-15020) |
+| L4b | 下流：学習 | シミュレーションで学習した方策は、現実世界でも有効か？ | 評価研究はまだない |
 
-† は評価器、つまり主な貢献が評価ツールである作品を示します。各作品は論文が主張する主な貢献で配置しています。詳しい説明は英語版 [Simulator quality evaluation: a fidelity ladder](stage3/simulator-evaluation.md) を参照してください。
+P0 は前提となる関門で、合否だけを判定します。ほかの各レベルは異なる失敗モードを調べるもので、合計点にはなりません。† は評価器、つまり主な貢献が評価ツールである作品を示します。各作品は論文が主張する主な貢献で配置しており、WorldCoder-Bench は L2a と L2b の両方に当たります。詳しい説明は英語版 [Simulator quality evaluation: a fidelity ladder](stage3/simulator-evaluation.md) を参照してください。
 
 <!-- mmac-record: {"id": "2611.15020", "scope": "Adjacent", "primary": "3.3", "stage": 3, "type": "paper"} -->
 

@@ -137,6 +137,21 @@ runs:
     benchmark replay and historical revision/full-text gaps remain in sources/cursors. Nov20 public changes were verified
     but no saved delivery or matching received mail was found; report verified unmailed changes once in the Nov21 merged digest,
     without historical resend. JARVIS twin/measurement findings may inform Stage 3 guides; guides and maps left unchanged.
+- date: '2026-11-23'
+  trigger: sweep
+  covered: Resumed the unfinished Nov22 evidence batch without claiming it had published or delivered. Reviewed
+    oldest pending AdaRSI v2 in full with appendices and all 37 references, and original Video to Blender skill/validator
+    implementation. Rechecked deferred report. Scanned nine arXiv new/recent listings, every Nov20 cs.RO announcement/cross-list/replacement
+    title, HF dates, four GitHub discovery lists, open suggestions, official projects, blogs and benchmark pages;
+    recorded 24 focused task/theme/capability/direction searches. Trailing-14-day and Monday Oct24–Nov23 updated-date
+    requests, alternative monthly listings, failures and inherited exact cursors are retained separately in the
+    private run. Metadata retrieval, title review and full-text review are distinct coverage levels.
+  note: 'Added AdaRSI (Core, 3.5 experience-skill, Oct14 historical backfill) and Video to Blender (Resource, 1.5
+    tools, original author repository rather than discovery fork); 17 pending citation/search/official-release leads. Search remains
+    incomplete: arXiv rate limits/timeouts, current unannounced batch, official full-text details and historical
+    revision/title debts remain. Retain all old queues. AdaRSI may inform the Stage 3 guide; guides, sections, News,
+    version and CITATION untouched. Send one current-day merged digest; Nov22 had no saved delivery attempt or received
+    daily, so no historical-date resend.'
 candidates:
 - id: '2610.35817'
   title: 'Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics'
@@ -233,9 +248,17 @@ candidates:
   url: https://arxiv.org/abs/2610.20474
   found: '2026-11-15'
   via: cited by 2610.35817 [103]
-  decision: pending
-  note: A coding agent improves skills and the harness, then fine-tunes the executor on persistent failures. Compare
-    3.5 (2609.33378, 2610.41216).
+  decision: added
+  note: 'A coding agent improves skills and the harness, then fine-tunes the executor on persistent failures. Compare
+    3.5 (2609.33378, 2610.41216). Read full v2 and appendices; v1 2026-10-14. Core in 3.5 experience-skill: execution-grounded
+    control-code repair and selective executor adaptation, with Fig. 5b providing the wrist-wrapper trajectory.
+    Separate privileged simulation development, image/proprioception deployment and human-demonstration-trained
+    hardware baselines. This is historical backfill, not a new release.'
+  decided: '2026-11-23'
+  precedent:
+  - '2611.16872'
+  - '2610.12424'
+  - '2609.33378'
 - id: '2610.02788'
   title: 'Skill2Real: Agentic Skill Learning for Zero-Shot Sim-to-Real Robot Manipulation'
   url: https://arxiv.org/abs/2610.02788
@@ -1191,11 +1214,11 @@ candidates:
   found: '2026-11-19'
   via: cited by 2610.12369v1 [43]
   decision: deferred
-  note: 'Rechecked 2026-11-21: the official cited URL still renders only Data app, without a readable report or implementation;
-    original reason retained.'
-  decided: '2026-11-21'
-  reason: The cited project URL returned only a Data app page without report text or links. A readable technical report or
-    implementation is needed to establish scope.
+  note: 'Rechecked 2026-11-23: cited URL still renders Data app without a readable report or implementation; original
+    reason retained.'
+  decided: '2026-11-23'
+  reason: The cited project URL returned only a Data app page without report text or links. A readable technical
+    report or implementation is needed to establish scope.
 - id: '2305.16291'
   title: 'Voyager: An Open-Ended Embodied Agent with Large Language Models'
   url: https://arxiv.org/abs/2305.16291
@@ -1833,9 +1856,16 @@ candidates:
   url: https://github.com/Q-on/video-to-blender-gokayfem
   found: '2026-11-21'
   via: primary-source follow-up from daily query or JARVIS bibliography
-  decision: pending
-  note: Reference video/image to editable Blender node graphs; README read at bfeca3ff. Verify SKILL, implementation, validation
-    and license before Resource decision.
+  decision: added
+  note: Reference video/image to editable Blender node graphs; README read at bfeca3ff. Verify SKILL, implementation,
+    validation and license before Resource decision. Verified Q-on fork metadata and followed its original gokayfem/video-to-blender
+    repository. Read original SKILL.md and actual validator implementation. Added as a 1.5 tools Resource; no paper
+    count or autonomous-repair claim. Omit unverified first-release month rather than use pushed_at.
+  decided: '2026-11-23'
+  precedent:
+  - res:claude-blender
+  - res:cc-blender-skill
+  - res:blender-ai-plugin
 - id: web:philinhphan-cad-agent
   title: cad-gen — Agentic Drawing to CAD
   url: https://github.com/philinhphan/cad-agent
@@ -1869,3 +1899,155 @@ candidates:
   note: Official non-arXiv report and companion Harness/data discovered together. Read report, verify observation-to-action
     evidence and actual task/data release before deciding scope. Companion RoboWild-Harness and HF xlangai/RoboWild belong
     to this identity unless sources establish distinct research contributions.
+- id: '2607.07663'
+  title: 'Recursive Self-Improvement in AI: From Bounded Self-Refinement to Autonomous Research Loops'
+  url: https://arxiv.org/abs/2607.07663
+  found: '2026-11-23'
+  via: AdaRSI v2 reference; original abstract and publication history checked
+  decision: pending
+  note: Full-text review pending; establish primary contribution, observation-to-action path and nearest precedents
+    before any formal admission. General RSI and text-only harness papers may only serve background; no scope upgrade
+    inferred from abstract.
+- id: '2609.34712'
+  title: 'RSI-Router: Evolving Subtask-Level LLM Routing and Skills for Cost-Efficient Agents'
+  url: https://arxiv.org/abs/2609.34712
+  found: '2026-11-23'
+  via: AdaRSI v2 reference; original abstract and publication history checked
+  decision: pending
+  note: Full-text review pending; establish primary contribution, observation-to-action path and nearest precedents
+    before any formal admission. General RSI and text-only harness papers may only serve background; no scope upgrade
+    inferred from abstract.
+- id: '2607.28251'
+  title: Policy-Level Recursive Self-Improvement for Embodied AI with a Criticality World Model
+  url: https://arxiv.org/abs/2607.28251
+  found: '2026-11-23'
+  via: AdaRSI v2 reference; original abstract and publication history checked
+  decision: pending
+  note: Full-text review pending; establish primary contribution, observation-to-action path and nearest precedents
+    before any formal admission. General RSI and text-only harness papers may only serve background; no scope upgrade
+    inferred from abstract.
+- id: '2609.35690'
+  title: Agent Priors-guided Policy Learning
+  url: https://arxiv.org/abs/2609.35690
+  found: '2026-11-23'
+  via: AdaRSI v2 reference; original abstract and publication history checked
+  decision: pending
+  note: Full-text review pending; establish primary contribution, observation-to-action path and nearest precedents
+    before any formal admission. General RSI and text-only harness papers may only serve background; no scope upgrade
+    inferred from abstract.
+- id: '2606.09498'
+  title: 'Self-Harness: Harnesses That Improve Themselves'
+  url: https://arxiv.org/abs/2606.09498
+  found: '2026-11-23'
+  via: AdaRSI v2 reference; original abstract and publication history checked
+  decision: pending
+  note: Full-text review pending; establish primary contribution, observation-to-action path and nearest precedents
+    before any formal admission. General RSI and text-only harness papers may only serve background; no scope upgrade
+    inferred from abstract.
+- id: '2611.13026'
+  title: Repository-Context-Guided Image Understanding for Agentic Software Development
+  url: https://arxiv.org/abs/2611.13026
+  found: '2026-11-23'
+  via: focused visual-feedback/software search; original abstract checked
+  decision: pending
+  note: Full-text review pending; establish primary contribution, observation-to-action path and nearest precedents
+    before any formal admission. General RSI and text-only harness papers may only serve background; no scope upgrade
+    inferred from abstract.
+- id: '2609.11873'
+  title: 'The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement'
+  url: https://arxiv.org/abs/2609.11873
+  found: '2026-11-23'
+  via: AdaRSI v2 reference; original abstract and publication history checked
+  decision: pending
+  note: Full-text review pending; establish primary contribution, observation-to-action path and nearest precedents
+    before any formal admission. General RSI and text-only harness papers may only serve background; no scope upgrade
+    inferred from abstract.
+- id: '2609.32069'
+  title: 'Find Something You Can''t Do: Agentic Real-World Reinforcement Learning for Self-Improving VLA Models'
+  url: https://arxiv.org/abs/2609.32069
+  found: '2026-11-23'
+  via: AdaRSI v2 reference; original abstract and publication history checked
+  decision: pending
+  note: Full-text review pending; establish primary contribution, observation-to-action path and nearest precedents
+    before any formal admission. General RSI and text-only harness papers may only serve background; no scope upgrade
+    inferred from abstract.
+- id: '2607.26809'
+  title: 'Practice Makes Policies: Bootstrapping and Consolidating Robotic Capabilities from Zero Human Demonstrations'
+  url: https://arxiv.org/abs/2607.26809
+  found: '2026-11-23'
+  via: AdaRSI v2 reference; original abstract and publication history checked
+  decision: pending
+  note: Full-text review pending; establish primary contribution, observation-to-action path and nearest precedents
+    before any formal admission. General RSI and text-only harness papers may only serve background; no scope upgrade
+    inferred from abstract.
+- id: '2609.29204'
+  title: 'AdaHVLA: Adaptive Harnesses for Long-Horizon Vision-Language-Action Execution'
+  url: https://arxiv.org/abs/2609.29204
+  found: '2026-11-23'
+  via: AdaRSI v2 reference; original abstract and publication history checked
+  decision: pending
+  note: Full-text review pending; establish primary contribution, observation-to-action path and nearest precedents
+    before any formal admission. General RSI and text-only harness papers may only serve background; no scope upgrade
+    inferred from abstract.
+- id: '2609.27612'
+  title: 'RegenHarness: A Robot Agent Harness with Evidence-Gated Recursive Self-Improvement'
+  url: https://arxiv.org/abs/2609.27612
+  found: '2026-11-23'
+  via: AdaRSI v2 reference; original abstract and publication history checked
+  decision: pending
+  note: Full-text review pending; establish primary contribution, observation-to-action path and nearest precedents
+    before any formal admission. General RSI and text-only harness papers may only serve background; no scope upgrade
+    inferred from abstract.
+- id: '2609.38905'
+  title: 'EmbodiRSI: Recursive Self-Improvement for Data-Efficient Robot Adaptation'
+  url: https://arxiv.org/abs/2609.38905
+  found: '2026-11-23'
+  via: AdaRSI v2 reference; original abstract and publication history checked
+  decision: pending
+  note: Full-text review pending; establish primary contribution, observation-to-action path and nearest precedents
+    before any formal admission. General RSI and text-only harness papers may only serve background; no scope upgrade
+    inferred from abstract.
+- id: '2611.06863'
+  title: 'Rethinking Self-Repair in Code-as-Policy Agents: What Drives Retry Success?'
+  url: https://arxiv.org/abs/2611.06863
+  found: '2026-11-23'
+  via: focused visual-feedback/software search; original abstract checked
+  decision: pending
+  note: Full-text review pending; establish primary contribution, observation-to-action path and nearest precedents
+    before any formal admission. General RSI and text-only harness papers may only serve background; no scope upgrade
+    inferred from abstract.
+- id: '2607.15524'
+  title: Recursive Harness Self-Improvement
+  url: https://arxiv.org/abs/2607.15524
+  found: '2026-11-23'
+  via: AdaRSI v2 reference; original abstract and publication history checked
+  decision: pending
+  note: Full-text review pending; establish primary contribution, observation-to-action path and nearest precedents
+    before any formal admission. General RSI and text-only harness papers may only serve background; no scope upgrade
+    inferred from abstract.
+- id: '2610.02368'
+  title: Rethinking World-Action Model for Compositional and In-Context Robotic Manipulation
+  url: https://arxiv.org/abs/2610.02368
+  found: '2026-11-23'
+  via: official DAGroup-PKU/ViGAR README, paper/project/model release links followed as discovery
+  decision: pending
+  note: 'ViGAR: subgoal planner plus world-action policy, with training/evaluation code and RoboTwin weights claimed.
+    Read full paper, verify release tree and distinguish public simulation data from the unreleased 900-hour real
+    dataset. Model capability resources do not require an agent loop.'
+- id: system:reembody
+  title: 'ReEmbody: Cross-Embodiment Data Reuse for Real-World Robot Learning'
+  url: https://github.com/DAGroup-PKU/ReEmbody.github.io
+  found: '2026-11-23'
+  via: official DAGroup-PKU/ReEmbody.github.io project README and local-paper pointer
+  decision: pending
+  note: Primary report is assets/ReEmbody-paper.pdf; do not mistake the static project-site repository for released
+    training code. Review cross-embodiment real-data reuse, simulation/real transfer and exact data-release role
+    before scope/placement.
+- id: '2611.26239'
+  title: Teaching Vision-Language-Action Models to Stop Safely
+  url: https://arxiv.org/abs/2611.26239
+  found: '2026-11-23'
+  via: HF Nov20 list grew from48 to50; new card abstract and cs.RO title
+  decision: pending
+  note: SAFI provides state-aware fallback/holding behavior after policy takeover. Review whether reusable action/safety
+    capability fits Resource; abstract alone does not establish an agent/code-revision loop or a formal paper admission.

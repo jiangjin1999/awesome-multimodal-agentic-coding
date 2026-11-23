@@ -13,7 +13,7 @@
 
 A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to the physical world.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-685-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--21-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-687-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--23-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -46,7 +46,7 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [1.2 GUI and software training environments](#s1-2) (10)
   - [1.3 Charts, scientific visualization and editable graphics](#s1-3) (45)
   - [1.4 Documents, slides, posters and code-driven media](#s1-4) (34)
-  - [1.5 3D and CAD](#s1-5) (90)
+  - [1.5 3D and CAD](#s1-5) (91)
   - [1.6 Games and executable game worlds](#s1-6) (43)
   - [1.7 Cross-task: visual evaluators, experience and training](#s1-7) (12)
 - [Stage 2 · Orchestrating Models as Tools](#stage-2)
@@ -61,7 +61,7 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [3.2 Simulator construction](#s3-2) (68)
   - [3.3 Simulator quality evaluation](#s3-3) (29)
   - [3.4 Data](#s3-4) (15)
-  - [3.5 Training and capability improvement](#s3-5) (84)
+  - [3.5 Training and capability improvement](#s3-5) (85)
   - [3.6 Physical applications and experiments](#s3-6) (51)
     - [Scientific experiments (AI4Science)](#s3-6-experiments) (27)
   - [Simulation engines at a glance](#s3-engines)
@@ -1321,6 +1321,11 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 
 - <a id="paper-res-usd-content-agents"></a>**[USD Content Agents](https://github.com/NVIDIA-Omniverse/usd-content-agents)**
   > Supports programmatic USD edits, rendered material review, physics tuning, and evidence-based validation through an interactive coding agent; individual capabilities have different maturity levels.
+
+<!-- mmac-record: {"id": "web:video-to-blender-gokayfem", "scope": "Resource", "primary": "1.5", "stage": 1, "type": "resource"} -->
+
+- <a id="paper-web-video-to-blender-gokayfem"></a>**[Video to Blender](https://github.com/gokayfem/video-to-blender)**
+  > Builds editable Blender node systems from references, pairing Python graph construction with render review, input sweeps and saved-file validation.
 
 <!-- mmac-record: {"id": "res:zoo-developer-tools", "scope": "Resource", "primary": "1.5", "stage": 1, "type": "resource"} -->
 
@@ -3512,6 +3517,12 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
 - <a id="paper-2611-12885"></a>`2026.11` **[World In-Context Learning for Agentic Robot Manipulation](https://arxiv.org/abs/2611.12885)** [[Project page]](https://ArcheOne-AI.github.io/RoboScript) [[Project page]](https://archeone-ai.github.io/RoboScript/) [[Code]](https://github.com/ArcheOne-AI/RoboScript)
   > Uses simulator rehearsal to build transferable task memory while the foundation model stays frozen.<br>
   > 🖥️ **Sim** SAPIEN (AgileX ALOHA) · 🦾 **Real** AgileX PiPER
+
+<!-- mmac-record: {"id": "2610.20474", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2610-20474"></a>`2026.10` **[AdaRSI: On-Demand Recursive Self-Improvement for Embodied Agents](https://arxiv.org/abs/2610.20474)**
+  > Refines robot harnesses before selectively adapting persistent execution bottlenecks.<br>
+  > 🖥️ **Sim** MuJoCo · 🦾 **Real** AGIBOT A3U, SO-ARM101
 
 <!-- mmac-record: {"id": "2610.18874", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 

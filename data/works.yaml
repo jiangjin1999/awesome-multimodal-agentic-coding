@@ -16330,3 +16330,55 @@
     zh: Claude Opus 5.5 编写工作台控制程序、验收代码及 KiCad 设计；依据扫描构建的孪生预演发现几何或测试计划缺陷，触发修改后再次预演（§§III–V、表 IV、图 15）。单次实体陷波电路板实验经人批准计划后完成
       42 步，耗时 2 小时 39 分；期间有人在急停旁观察，但未介入操作（§VII-A）。电路板在 60 Hz 衰减 50.6 dB，却未通过 1 Hz 通带指标（表 III）。Agent 根据实测频响校准孪生并生成修订的
       KiCad 设计；下一块板只完成预测及预演，尚未制板复测（§VII-C）。这是单板演示而非多任务受控成功率研究，论文未链接公开实现或数据集。
+- id: '2610.20474'
+  title: 'AdaRSI: On-Demand Recursive Self-Improvement for Embodied Agents'
+  url: https://arxiv.org/abs/2610.20474
+  date: '2026.10'
+  section: '3.5'
+  sub: experience-skill
+  type: paper
+  scope: core
+  tldr:
+    en: Refines robot harnesses before selectively adapting persistent execution bottlenecks.
+    zh: 先改进机器人 Harness，再针对持续失败的执行环节按需训练专用策略。
+    ja: まずロボットの Harness を改善し、失敗が続く実行工程に絞って専用方策を適応させる。
+  setup:
+    engines:
+    - MuJoCo
+    real_robots:
+    - AGIBOT A3U
+    - SO-ARM101
+  sources:
+  - https://arxiv.org/abs/2610.20474
+  verification:
+    en: 'The coding agent writes and revises tools/procedures from execution observations; the SO-ARM101 grasp-alignment
+      case adds a wrist-control wrapper around frozen VLA action chunks (§4.1, §5.5, Fig. 5b). Datasets improving temporary fine-tuning probes train a specialist alongside the original executor (§4.2–4.4). RoboCasa365 Composite-Unseen success
+      is 4.6% / 9.9% / 13.3% for VLA / harness / AdaRSI, with 50 test scenes per task; the selected 47 LIBERO-Pro
+      2.0 instances reach 32.9% / 39.1% / 49.1%, with 20 episodes each (§5.1, Table 1). Hardware: A3U 82% / 92%
+      / 94.7% over 150 trials per method; SO-ARM101 67.5% / 93.8% / 97.5% over 80 (Tables 9–10). Simulation development
+      uses privileged state; deployment uses images/proprioception. Real base VLAs are first trained on human demonstrations;
+      each hardware configuration has ten trials (App. A/D).'
+    zh: Coding Agent 根据执行观测编写并修订工具及流程；SO-ARM101 抓取对齐案例为冻结 VLA 的动作块增加腕部控制封装（§4.1、§5.5、图 5b）。临时微调验证通过的数据用于训练与原执行器并用的专用策略（§4.2–4.4）。RoboCasa365
+      未见组合任务中，VLA／仅 Harness／AdaRSI 成功率为 4.6%／9.9%／13.3%，每任务测试 50 个场景；筛选的 47 个 LIBERO-Pro 2.0 实例为 32.9%／39.1%／49.1%，每实例
+      20 次（§5.1、表 1）。实机 A3U 每方法 150 次为 82%／92%／94.7%，SO-ARM101 每方法 80 次为 67.5%／93.8%／97.5%（表 9–10）。仿真开发可用特权状态，部署读取图像与本体感知；实机基础
+      VLA 先经过人工示范训练，每个硬件配置仅测试十次（附录 A/D）。
+- id: web:video-to-blender-gokayfem
+  title: Video to Blender
+  url: https://github.com/gokayfem/video-to-blender
+  section: '1.5'
+  sub: tools
+  type: resource
+  scope: resource
+  tldr:
+    en: Builds editable Blender node systems from references, pairing Python graph construction with render review,
+      input sweeps and saved-file validation.
+    zh: 从参考素材构建可编辑的 Blender 节点系统，将 Python 建图与渲染审阅、输入参数扫描及保存文件复查结合。
+    ja: 参照素材から編集可能な Blender ノードシステムを構築し、Python によるグラフ生成をレンダー確認・入力の変更検査・保存ファイルの再検証と組み合わせる。
+  sources:
+  - https://github.com/gokayfem/video-to-blender
+  verification:
+    en: The original MIT repository supplies the procedural-blender-nodes skill, nodekit and native Geometry/Shader/compositor
+      graph builders for Blender 5.2+. Its workflow asks the agent to inspect rendered outputs, refine the graph,
+      sweep controls and check temporal behavior. The saved-file validator checks node warnings, lint and camera
+      clearance against first-frame geometry; it is not an all-input or all-frame collision proof. The skill documents a render-and-refine workflow rather than a measured autonomous-repair benchmark.
+    zh: 作者原始 MIT 仓库提供 procedural-blender-nodes Skill、nodekit 与面向 Blender 5.2+ 的原生几何／着色器／合成节点建图库。流程要求 Agent 查看渲染结果、修订节点、扫描控制参数并检查时序表现。保存文件验证器检查节点警告、静态规则及相对首帧几何的相机间距，不保证全部输入或全部帧无碰撞。该 Skill 提供渲染与修订流程，不是已测量自主修复效果的基准。

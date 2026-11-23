@@ -13,7 +13,7 @@
 
 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从数字世界延伸到物理世界。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-685-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--21-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-687-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--23-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · **简体中文** · [日本語](./README.ja.md)
 
@@ -46,7 +46,7 @@
   - [1.2 GUI 与软件训练环境](#s1-2) (10)
   - [1.3 图表、科学可视化与可编辑图形](#s1-3) (45)
   - [1.4 文档、幻灯片、海报与代码驱动的媒体](#s1-4) (34)
-  - [1.5 3D 与 CAD](#s1-5) (90)
+  - [1.5 3D 与 CAD](#s1-5) (91)
   - [1.6 游戏与可执行游戏世界](#s1-6) (43)
   - [1.7 跨任务：视觉评估器、经验与训练](#s1-7) (12)
 - [Stage 2 · 把模型当作工具来编排](#stage-2)
@@ -61,7 +61,7 @@
   - [3.2 仿真器构建](#s3-2) (68)
   - [3.3 仿真器质量评估](#s3-3) (29)
   - [3.4 数据](#s3-4) (15)
-  - [3.5 训练与能力提升](#s3-5) (84)
+  - [3.5 训练与能力提升](#s3-5) (85)
   - [3.6 物理应用与实验](#s3-6) (51)
     - [科学实验（AI4Science）](#s3-6-experiments) (27)
   - [仿真引擎一览](#s3-engines)
@@ -1321,6 +1321,11 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 
 - <a id="paper-res-usd-content-agents"></a>**[USD Content Agents](https://github.com/NVIDIA-Omniverse/usd-content-agents)**
   > 通过交互式 Coding Agent 支持程序化 USD 编辑、渲染材质审阅、物理调参与有证据的验证，各项能力的成熟度有所不同。
+
+<!-- mmac-record: {"id": "web:video-to-blender-gokayfem", "scope": "Resource", "primary": "1.5", "stage": 1, "type": "resource"} -->
+
+- <a id="paper-web-video-to-blender-gokayfem"></a>**[Video to Blender](https://github.com/gokayfem/video-to-blender)**
+  > 从参考素材构建可编辑的 Blender 节点系统，将 Python 建图与渲染审阅、输入参数扫描及保存文件复查结合。
 
 <!-- mmac-record: {"id": "res:zoo-developer-tools", "scope": "Resource", "primary": "1.5", "stage": 1, "type": "resource"} -->
 
@@ -3512,6 +3517,12 @@ P0 是前提关卡，只判过不过；其余各层检查不同的失败模式�
 - <a id="paper-2611-12885"></a>`2026.11` **[World In-Context Learning for Agentic Robot Manipulation](https://arxiv.org/abs/2611.12885)** [[项目页]](https://ArcheOne-AI.github.io/RoboScript) [[项目页]](https://archeone-ai.github.io/RoboScript/) [[代码]](https://github.com/ArcheOne-AI/RoboScript)
   > 利用仿真排练形成可迁移的任务记忆，基础模型参数保持冻结。<br>
   > 🖥️ **仿真** SAPIEN（AgileX ALOHA） · 🦾 **真机** AgileX PiPER
+
+<!-- mmac-record: {"id": "2610.20474", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2610-20474"></a>`2026.10` **[AdaRSI: On-Demand Recursive Self-Improvement for Embodied Agents](https://arxiv.org/abs/2610.20474)**
+  > 先改进机器人 Harness，再针对持续失败的执行环节按需训练专用策略。<br>
+  > 🖥️ **仿真** MuJoCo · 🦾 **真机** AGIBOT A3U、SO-ARM101
 
 <!-- mmac-record: {"id": "2610.18874", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 

@@ -13,7 +13,7 @@
 
 マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——デジタル世界から物理世界まで。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-685-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--21-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-687-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--23-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語**
 
@@ -49,7 +49,7 @@
   - [1.2 GUI・ソフトウェア学習環境](#s1-2) (10)
   - [1.3 チャート・科学可視化・編集可能なグラフィックス](#s1-3) (45)
   - [1.4 文書・スライド・ポスター・コード駆動メディア](#s1-4) (34)
-  - [1.5 3D と CAD](#s1-5) (90)
+  - [1.5 3D と CAD](#s1-5) (91)
   - [1.6 ゲームと実行可能なゲーム世界](#s1-6) (43)
   - [1.7 タスク横断：視覚評価器・経験・学習](#s1-7) (12)
 - [Stage 2 · モデルをツールとして編成する](#stage-2)
@@ -64,7 +64,7 @@
   - [3.2 シミュレータ構築](#s3-2) (68)
   - [3.3 シミュレータ品質評価](#s3-3) (29)
   - [3.4 データ](#s3-4) (15)
-  - [3.5 学習と能力向上](#s3-5) (84)
+  - [3.5 学習と能力向上](#s3-5) (85)
   - [3.6 物理応用と実験](#s3-6) (51)
     - [科学実験（AI4Science）](#s3-6-experiments) (27)
   - [シミュレーションエンジン一覧](#s3-engines)
@@ -1324,6 +1324,11 @@
 
 - <a id="paper-res-usd-content-agents"></a>**[USD Content Agents](https://github.com/NVIDIA-Omniverse/usd-content-agents)**
   > 対話的なコーディングエージェントで USD のプログラム編集、描画材質のレビュー、物理調整、証拠に基づく検証を支援する。各機能の成熟度は異なる。
+
+<!-- mmac-record: {"id": "web:video-to-blender-gokayfem", "scope": "Resource", "primary": "1.5", "stage": 1, "type": "resource"} -->
+
+- <a id="paper-web-video-to-blender-gokayfem"></a>**[Video to Blender](https://github.com/gokayfem/video-to-blender)**
+  > 参照素材から編集可能な Blender ノードシステムを構築し、Python によるグラフ生成をレンダー確認・入力の変更検査・保存ファイルの再検証と組み合わせる。
 
 <!-- mmac-record: {"id": "res:zoo-developer-tools", "scope": "Resource", "primary": "1.5", "stage": 1, "type": "resource"} -->
 
@@ -3515,6 +3520,12 @@ P0 は前提となる関門で、合否だけを判定します。ほかの各�
 - <a id="paper-2611-12885"></a>`2026.11` **[World In-Context Learning for Agentic Robot Manipulation](https://arxiv.org/abs/2611.12885)** [[プロジェクトページ]](https://ArcheOne-AI.github.io/RoboScript) [[プロジェクトページ]](https://archeone-ai.github.io/RoboScript/) [[コード]](https://github.com/ArcheOne-AI/RoboScript)
   > 基盤モデルのパラメーターを固定したまま、シミュレーションでの予行によって転移可能なタスク記憶を形成する。<br>
   > 🖥️ **シミュレーション** SAPIEN（AgileX ALOHA） · 🦾 **実機** AgileX PiPER
+
+<!-- mmac-record: {"id": "2610.20474", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2610-20474"></a>`2026.10` **[AdaRSI: On-Demand Recursive Self-Improvement for Embodied Agents](https://arxiv.org/abs/2610.20474)**
+  > まずロボットの Harness を改善し、失敗が続く実行工程に絞って専用方策を適応させる。<br>
+  > 🖥️ **シミュレーション** MuJoCo · 🦾 **実機** AGIBOT A3U、SO-ARM101
 
 <!-- mmac-record: {"id": "2610.18874", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 

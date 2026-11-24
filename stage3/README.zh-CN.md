@@ -8,6 +8,8 @@
 
 **文献截止：2026-11-13。** [返回完整研究地图](../README.zh-CN.md#contents)。
 
+没有具身背景？先读[具身速览](../README.zh-CN.md#s3-primer)：一个回合里谁负责什么、LIBERO 与 RoboDojo 对照，以及读结果前要核对的设置。
+
 | 研究问题 | 主条目 | 连接 |
 |---|---:|---|
 | [1. 具身 Harness](#section-1) | 77 | 观测、执行、Skills 与回执 |

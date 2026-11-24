@@ -23,6 +23,8 @@ from catalog import LAYOUT, validate_catalog, check_local_links
 
 ROOT = Path(__file__).resolve().parent.parent
 LANGS = ['en', 'zh', 'ja']
+# Where a stage's unnumbered extra block goes: before its first numbered section, or after its last.
+EXTRA_POSITIONS = ('before', 'after')
 
 
 def load():
@@ -89,6 +91,8 @@ def validate(site, works, strict_ja):
         for extra in st.get('extras') or []:
             if not re.fullmatch(r'[a-z0-9-]+', extra.get('anchor') or '') or extra['anchor'] in {sec_anchor(s) for s in secs}:
                 errors.append(f"stage {st['id']}: invalid extra anchor {extra.get('anchor')!r}")
+            if extra.get('position', 'after') not in EXTRA_POSITIONS:
+                errors.append(f"stage {st['id']}: extra {extra.get('anchor')} has invalid position {extra.get('position')!r}")
             for lang in LANGS:
                 if not (extra.get('title') or {}).get(lang) or not (extra.get('body') or {}).get(lang, '').strip():
                     errors.append(f"stage {st['id']}: extra {extra.get('anchor')} missing title/body for {lang}")
@@ -127,6 +131,11 @@ def guide_value(guide, field, lang):
 
 def sub_anchor(sec, sub):
     return f'{sec_anchor(sec)}-{sub}'
+
+
+def stage_extras(stage, position):
+    """A stage's extra blocks placed at `position` ('before' or 'after' its numbered sections)."""
+    return [x for x in stage.get('extras') or [] if x.get('position', 'after') == position]
 
 
 def short_title(title):
@@ -308,6 +317,8 @@ def render(site, works, lang):
     o(f'## {t(site, "contents", lang)}\n')
     for st in site['stages']:
         o(f"- [Stage {st['id']} · {st['name'][lang]}](#stage-{st['id']})")
+        for extra in stage_extras(st, 'before'):
+            o(f"  - [{extra['title'][lang]}](#{extra['anchor']})")
         for sec in st['sections']:
             meta = site['sections'][sec]
             o(f"  - [{sec} {meta[lang]}](#{sec_anchor(sec)}) ({sec_count.get(sec, 0)})")
@@ -320,7 +331,7 @@ def render(site, works, lang):
             # Selected subgroups are also listed in the contents, indented under their section.
             for sub in meta.get('contents_subs') or []:
                 o(f"    - [{site['text']['subs'][sub][lang]}](#{sub_anchor(sec, sub)}) ({len(groups.get((sec, sub), []))})")
-        for extra in st.get('extras') or []:
+        for extra in stage_extras(st, 'after'):
             o(f"  - [{extra['title'][lang]}](#{extra['anchor']})")
     o(f"- [{t(site, 'related_title', lang)}](#related)")
     o(f"- [{t(site, 'contact_title', lang)}](#contact) · [{t(site, 'citation_title', lang)}](#citation)\n")
@@ -330,12 +341,21 @@ def render(site, works, lang):
     back_badge = 'https://img.shields.io/badge/' + quote(back_label.replace('-', '--').replace('_', '__')) + '-30363d?style=flat-square'
     back_to_contents = f'<p align="right"><a href="#contents"><img src="{back_badge}" alt="{back_label}" height="24"></a></p>\n'
 
+    # Unnumbered reference blocks: listed in the contents, but hold no entries.
+    def render_extra(extra):
+        named_anchor(extra['anchor'])
+        o(f"### {extra['title'][lang]}\n")
+        o(engine_map.fill_placeholders(site, lang, extra['body'][lang].strip()) + '\n')
+        o(back_to_contents)
+
     # stages
     for st in site['stages']:
         named_anchor(f'stage-{st["id"]}')
         o(f'## Stage {st["id"]} · {st["name"][lang]}\n')
         o(st['intro'][lang].strip() + '\n')
         o(f"**{t(site, 'start_with', lang)}:** {link_list(st['start_with'], byid)}\n")
+        for extra in stage_extras(st, 'before'):
+            render_extra(extra)
         for sec in st['sections']:
             meta = site['sections'][sec]
             named_anchor(sec_anchor(sec))
@@ -368,12 +388,8 @@ def render(site, works, lang):
             if see:
                 o(f"*{t(site, 'see_also', lang)}:* {link_list(see, byid)}\n")
             o(back_to_contents)
-        # Unnumbered reference blocks: listed in the contents, but hold no entries.
-        for extra in st.get('extras') or []:
-            named_anchor(extra['anchor'])
-            o(f"### {extra['title'][lang]}\n")
-            o(engine_map.fill_placeholders(site, lang, extra['body'][lang].strip()) + '\n')
-            o(back_to_contents)
+        for extra in stage_extras(st, 'after'):
+            render_extra(extra)
 
     # surveys & related
     named_anchor('related')

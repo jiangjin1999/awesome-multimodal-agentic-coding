@@ -58,6 +58,20 @@ class CatalogTests(unittest.TestCase):
                 site['sections']['3.4']['guides'][0].update(broken)
                 self.assertTrue(any('guide' in e for e in validate(site, self.works, True)[0]))
 
+    def test_stage_extras_open_or_close_a_stage_and_positions_are_checked(self):
+        for lang in self.site['languages']:
+            text = render(self.site, self.works, lang)
+            contents = text.split('<a id="contents"></a>', 1)[1].split('<a id="stage-1"></a>', 1)[0]
+            stage3 = text.split('<a id="stage-3"></a>', 1)[1]
+            for part, mark in ((contents, '](#{})'), (stage3, '<a id="{}"></a>')):
+                at = {a: part.index(mark.format(a)) for a in ('s3-primer', 's3-1', 's3-6', 's3-engines')}
+                self.assertLess(at['s3-primer'], at['s3-1'])
+                self.assertGreater(at['s3-engines'], at['s3-6'])
+        site = deepcopy(self.site)
+        primer = next(x for x in site['stages'][2]['extras'] if x['anchor'] == 's3-primer')
+        primer['position'] = 'middle'
+        self.assertTrue(any('invalid position' in e for e in validate(site, self.works, True)[0]))
+
     def test_core_verification_and_primary_source_cannot_disappear(self):
         rows = deepcopy(self.works)
         core = next(w for w in rows if w['scope'] == 'core')

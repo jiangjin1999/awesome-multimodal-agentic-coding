@@ -8,6 +8,8 @@ How can multimodal coding agents interact with the physical world, build verifia
 
 **Literature cutoff: 2026-11-13.** [Full research map](../README.md#contents).
 
+New to robotics? Start with [Robot agents in brief](../README.md#s3-primer): who does what in one episode, LIBERO and RoboDojo side by side, and what to check before reading a result.
+
 | Research question | Primary entries | Connections |
 |---|---:|---|
 | [1. Embodied Harnesses](#section-1) | 77 | Observation, execution, skills and receipts |

@@ -13,7 +13,7 @@
 
 A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to the physical world.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-687-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--23-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-687-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--24-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -57,6 +57,7 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [2.5 Perception models × scene understanding and reconstruction](#s2-5) (6)
   - [2.6 Action models × robot manipulation](#s2-6) (12)
 - [Stage 3 · Bridging Digital & Physical Worlds](#stage-3)
+  - [Robot agents in brief: for readers new to embodiment](#s3-primer)
   - [3.1 Embodied harnesses](#s3-1) (92)
   - [3.2 Simulator construction](#s3-2) (68)
   - [3.3 Simulator quality evaluation](#s3-3) (29)
@@ -2017,6 +2018,110 @@ The agent **calls other models through code** — image, video and world generat
 The loop reaches simulation and reality: the agent **acts and observes in the real world**, builds simulators from real observations, and practises in simulation to become stronger — Real2Sim2Real. Works are organized by research question: build verifiable environments → collect interaction experience → improve the agent.
 
 **Start with:** [Code as Policies](#paper-2209-07753) · [Democratizing Robot-Use Agents](#paper-2611-01560) · [Real2Gym](#paper-2609-37089) · [Agentic RSR](#paper-2610-10479) · [Eureka](#paper-2310-12931)
+
+<a id="s3-primer"></a>
+
+### Robot agents in brief: for readers new to embodiment
+
+For readers who know LLMs and coding agents but have not worked with robots: what each layer does in one episode, the two benchmarks this stage uses most, and the settings to check before reading a result.
+
+**Who does what in one episode**
+
+Take RoboDojo's "put bottles into the dustbin". Four bottles stand or lie on the table, and a two-armed robot must drop all of them into a dustbin beside it, passing the bottles on the right from one hand to the other first. The diagram shows GPT-6 Astra's first decision in the [replay](https://zefanw-robodojo-replay-explorer.static.hf.space/index.html?case=put_bottles_into_dustbin__standard__s0__scene0&method=full-history&compare=official-l3) of one episode.
+
+```mermaid
+sequenceDiagram
+    participant A as Model<br/>GPT-6 Astra
+    participant H as Harness<br/>L3 + full history
+    participant P as Motion planner<br/>cuRobo
+    participant E as Simulation engine<br/>Isaac Sim + PhysX
+    participant B as Benchmark<br/>RoboDojo
+    B->>E: Lay out 4 bottles and the dustbin from this episode's seed
+    loop Each decision (the first is shown)
+        E->>H: Three camera images, joint and gripper readings
+        H->>A: Images, readings, instruction and earlier steps
+        A->>H: move_eef: left gripper to (-0.21, -0.09, 0.88)<br/>“Approach the pink bottle with the left hand”
+        H->>P: Target position of the left gripper
+        P->>E: Joint path of 36 control steps
+        Note over E: Steps joint drives, contact and friction<br/>and renders the three cameras
+    end
+    E->>B: At the end: true position of every object
+    Note over B: 1/2/3/4 bottles in the bin<br/>score 10/25/40/100
+```
+
+| Layer | Handles | Does not handle | In this episode |
+|---|---|---|---|
+| Model | Reads images and readings; decides what to do next and where each hand goes | How the joints turn; whether the task is done | GPT-6 Astra, with no robot-specific training |
+| Harness | Turns observations into model input and model output into calls; keeps the history; caps the number of decisions | Physics | Gives the model three RGB views and readings each time and exposes only `move_eef` and `give_up`; the official L3 keeps images from the last two observations only, the version shown keeps the whole episode |
+| Control and planning | Turns a gripper target into a joint path: inverse kinematics, motion planning, controllers | The task goal | cuRobo plans a joint path of 36 control steps |
+| Simulation engine | Advances physics one control step at a time: gravity, contact, friction, joint drives; renders the cameras; holds the true pose of every object | What the task is; whether it succeeded | Isaac Sim (PhysX) runs the 36 steps and renders the three views |
+| Benchmark | Scenes and objects, instructions, initial layouts and seeds, success conditions and scoring, episode limits, evaluation protocol, demonstrations | How to solve the task | 50 layouts per task; partial credit by the number of bottles in the bin |
+
+The engine answers only one question: what the world looks like after this step, and what the cameras see. The benchmark decides success by reading true object poses from the engine, which the model never sees; the official L3 harness also withholds depth, object poses and the score. For which parts of a simulator each engine covers, see [Simulation engines at a glance](#s3-engines).
+
+**How a model drives a robot**
+
+The action interface sets how much of the problem the model must solve, and which scores can be compared.
+
+| Interface | What the model outputs each time | How long one output runs | Examples |
+|---|---|---|---|
+| Low-level actions | Increments of joint angles or gripper pose, plus gripper opening; often a short chunk at a time | One to a few control steps, at 10–50 steps per second | [VLA policies](#s2-6); LIBERO's native 7-D action |
+| Target poses | Where the gripper should go, its orientation and opening; a planner fills in the path | Tens to hundreds of control steps | RoboDojo's official L3 `move_eef`; [frontier models on LIBERO-10](#paper-2610-30051) |
+| Programs | Code that calls perception and motion APIs, revised after seeing it run | A sub-task or the whole task | [Code as Policies](#paper-2209-07753); [Encore](#paper-2609-37359) |
+
+Most agents in Stage 3 use the last two: the model decides what to do and where to go, and the planner and controller decide how the joints move. The higher the interface, the more the planner does for the model.
+
+**The two most-used benchmarks**
+
+LIBERO and RoboDojo appear most often in this stage's experiments. LIBERO is an older single-arm benchmark close to saturation; RoboDojo is a newer, harder two-arm benchmark where agent studies now concentrate.
+
+| | [LIBERO](#paper-2306-03310) | [RoboDojo](#paper-2607-04434) |
+|---|---|---|
+| Released | 2023.06 | 2026.07 |
+| Engine | robosuite (MuJoCo) | Isaac Sim and Isaac Lab (PhysX) |
+| Robot | One Franka Panda arm | Two-armed ARX X5; the real-robot tasks also use Piper and Piper X |
+| Tasks | 130 in four suites: Spatial (same objects, new layouts), Object (new objects) and Goal (same scene, new goals) with 10 each; LIBERO-100 splits into LIBERO-90 for pre-training and the long-horizon LIBERO-10 | 42 in simulation, in five capability groups: Generalization 12, Memory 6, Precision 8, Long-Horizon 8, Open 8; plus 18 real-robot tasks |
+| Example | "Put both the alphabet soup and the tomato sauce in the basket" (LIBERO-10) | "Pick up the bottles and throw them into the dustbin, using handover when needed" (Long-Horizon) |
+| Model sees | Third-person and wrist RGB; joint and gripper states | Head and two wrist RGB views (the data also has depth); joint, gripper-pose and gripper states |
+| Native action | 7-D: a 6-D gripper-pose increment plus the gripper, 20 steps per second, turned into joint torques by robosuite's controller | Joint positions or gripper poses, declared by each policy; demonstrations recorded at 25 frames per second |
+| Success | BDDL goal predicates such as `(In alphabet_soup_1 basket_1_contain_region)`; 1 if met, otherwise 0 | Success conditions in the task config; 0–100 per task, with partial credit by stage in most tasks |
+| Demonstrations | 50 human teleoperated demonstrations per task | 100 for each of 34 training tasks, from automatic synthesis or VR teleoperation; none for the Open group |
+| Usual protocol | Per suite, 10 tasks × 50 fixed initial states = 500 episodes; report the success rate | 50 episodes per task (Generalization: 25 standard and 25 random layouts), 2,100 in all; average within each group, then the five groups with equal weight |
+| Where it stands | Mainstream VLAs exceed 90%, close to saturation; when [LIBERO-PRO](#paper-2510-03827) changes the objects, initial states, instructions or environment, the same models fall to 0% | At the paper's freeze (2026-07-03) the best VLA had 8.8% success and a 13.1 score, human teleoperation 76.0% and 80.4; [GPT-6 Astra through the official L3 harness](#paper-2609-24170) reached 22.5% and 29.0 |
+| Agent studies | [LIBERO-Agent](#paper-2609-39507) lets general agents choose observations, use their own tools and issue native actions; in [frontier models on LIBERO-10](#paper-2610-30051) GPT-6 Astra succeeds in 44% of episodes | [JustRUA](#paper-2611-16009) compares harness, action, experience and scene-geometry designs on a fixed set of 111 episodes, raising the score from 29.7 to 50.3 |
+| See it | [Demonstration viewer](https://lerobot-visualize-dataset.hf.space/lerobot/libero/episode_0): both camera views, the instruction, and state and action curves, frame by frame · [Project page](https://libero-project.github.io/) | [Replay comparison](https://zefanw-robodojo-replay-explorer.static.hf.space/index.html?case=put_bottles_into_dustbin__standard__s0__scene0&method=full-history&compare=official-l3): on the same layout, keeping the full history scores 40 and the official L3 harness 10 · [Task pages and scoring](https://robodojo-benchmark.com/doc/sim-tasks/) · [Leaderboard](https://robodojo-benchmark.com/leaderboard) |
+
+**Check these before reading a result**
+
+| Check | Why |
+|---|---|
+| Simulation or real robot? Which benchmark, which tasks, how many episodes per task? | Scores on different subsets or episode counts are not comparable; a result on a single layout swings widely |
+| What does the model see: RGB only, or also depth, point clouds or true object poses? | True object poses and similar privileged information exist only in simulation and are not available on a real robot |
+| What does the model output: low-level actions, target poses or programs? | The higher the interface, the more the planner and prewritten skills take on |
+| Did it use demonstrations, experience or tuning from the tasks being scored? | Then the result cannot be compared directly with a standard evaluation |
+| Are decisions, control steps, time or tokens capped? | Under different caps the same model scores differently |
+| Is it a success rate or a score? | RoboDojo scores include partial credit and usually run higher than success rates |
+
+<details>
+<summary>Glossary, with coding-agent analogies</summary>
+
+| Term | Meaning | Analogy |
+|---|---|---|
+| Episode | One full attempt, from resetting the scene to success, giving up or timeout | One agent session |
+| Layout / seed | Random settings such as where objects start; a task is rerun on several layouts | Different test cases for the same problem |
+| Control step | The smallest time unit: the engine advances once and the robot executes one action | A clock cycle |
+| End-effector (EE) | The gripper or tool at the end of the arm; its pose is its position and orientation | The mouse pointer in computer use |
+| Proprioception | The robot's readings of itself, such as joint angles and gripper opening | — |
+| Inverse kinematics / motion planning | Finding joint angles for a gripper target / finding a collision-free joint path | A compiler: turns "what I want" into "how to move" |
+| Teleoperated demonstration | A trajectory recorded while a person drives the robot with a controller, VR or a leader arm | A reference solution written by a person |
+| VLA | A vision-language-action model that outputs low-level actions directly | Writing assembly instead of high-level code for a compiler |
+| Privileged information | Ground truth only a simulator can give, such as exact object poses or segmentation | Seeing the answer key during a test |
+| Domain randomization | Randomly changing lighting, textures, backgrounds and distractors to test robustness | Fuzzing |
+| Sim2Real | Carrying a skill learned or measured in simulation over to a real robot | Moving from a test environment to production |
+
+</details>
+
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20Back%20to%20contents-30363d?style=flat-square" alt="↑ Back to contents" height="24"></a></p>
 
 <a id="skills-and-tool-bridges"></a>
 <a id="section-5-5"></a>

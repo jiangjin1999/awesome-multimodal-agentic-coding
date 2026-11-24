@@ -13,7 +13,7 @@
 
 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从数字世界延伸到物理世界。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-687-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--23-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-687-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--24-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · **简体中文** · [日本語](./README.ja.md)
 
@@ -57,6 +57,7 @@
   - [2.5 感知模型 × 场景理解与重建](#s2-5) (6)
   - [2.6 动作模型 × 机器人操作](#s2-6) (12)
 - [Stage 3 · 打通数字世界与物理世界](#stage-3)
+  - [具身速览：写给非具身背景的读者](#s3-primer)
   - [3.1 具身框架（Harness）](#s3-1) (92)
   - [3.2 仿真器构建](#s3-2) (68)
   - [3.3 仿真器质量评估](#s3-3) (29)
@@ -2017,6 +2018,110 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 闭环延伸到仿真与现实：Agent **在真实世界中行动和观察**，依据真实观测构建仿真器，并在仿真中练习来增强自身——即 Real2Sim2Real。本阶段按研究问题组织，主线是：构建可验证的环境 → 收集交互经验 → 提升 Agent。
 
 **入门必读:** [Code as Policies](#paper-2209-07753) · [Democratizing Robot-Use Agents](#paper-2611-01560) · [Real2Gym](#paper-2609-37089) · [Agentic RSR](#paper-2610-10479) · [Eureka](#paper-2310-12931)
+
+<a id="s3-primer"></a>
+
+### 具身速览：写给非具身背景的读者
+
+写给熟悉 LLM 和 Coding Agent、但没做过机器人的读者：先看一个回合里各层分别做什么，再看本阶段最常用的两个 benchmark，最后是读结果前要核对的设置。
+
+**一个回合里，谁负责什么**
+
+以 RoboDojo 的「把瓶子扔进垃圾桶」为例：桌上有 4 个瓶子，或立或倒，双臂机器人要把它们全部扔进旁边的垃圾桶，右边的瓶子要先在两只手之间交接。下图是这个回合的[回放](https://zefanw-robodojo-replay-explorer.static.hf.space/index.html?case=put_bottles_into_dustbin__standard__s0__scene0&method=full-history&compare=official-l3)中 GPT-6 Astra 的第一次决策。
+
+```mermaid
+sequenceDiagram
+    participant A as 模型<br/>GPT-6 Astra
+    participant H as Harness<br/>L3 + 完整历史
+    participant P as 运动规划<br/>cuRobo
+    participant E as 仿真引擎<br/>Isaac Sim + PhysX
+    participant B as Benchmark<br/>RoboDojo
+    B->>E: 按本回合的种子摆好 4 个瓶子和垃圾桶
+    loop 每次决策（图中是第一次）
+        E->>H: 三路相机画面，关节和夹爪读数
+        H->>A: 画面、读数、指令和之前的步骤
+        A->>H: move_eef：左手末端移到 (-0.21, -0.09, 0.88)<br/>「左手靠近粉色瓶子」
+        H->>P: 左手末端的目标位置
+        P->>E: 36 个控制步的关节轨迹
+        Note over E: 逐步计算关节驱动、接触和摩擦<br/>并渲染三路相机
+    end
+    E->>B: 回合结束时：每个物体的真实位置
+    Note over B: 桶里 1/2/3/4 个瓶子<br/>记 10/25/40/100 分
+```
+
+| 层 | 负责 | 不负责 | 本例 |
+|---|---|---|---|
+| 模型 | 看画面和读数，决定下一步做什么、手移到哪里 | 关节怎么转；判断任务是否完成 | GPT-6 Astra，未经机器人专门训练 |
+| Harness | 把观测整理成模型输入，把模型输出解析成调用；保留历史；限制决策次数 | 物理计算 | 每次给模型三路 RGB 画面和读数，只开放 `move_eef` 和 `give_up`；官方 L3 只保留最近两次观测的画面，图中版本保留整个回合 |
+| 控制与规划 | 把末端目标换算成关节轨迹：逆运动学、运动规划、控制器 | 任务目标 | cuRobo 规划出 36 个控制步的关节轨迹 |
+| 仿真引擎 | 按控制步推进物理：重力、接触、摩擦、关节驱动；渲染相机画面；记录每个物体的真实位姿 | 任务是什么，算不算成功 | Isaac Sim（PhysX）执行这 36 步并渲染三路画面 |
+| Benchmark | 场景和物体、指令、初始布局和随机种子、成功条件和计分、回合上限、评测协议、示范数据 | 怎样完成任务 | 每个任务 50 个布局；按桶里的瓶子数给部分分 |
+
+引擎只回答一个问题：这一步之后世界变成什么样、相机看到什么。是否成功由 benchmark 读取引擎里的真实位姿来判定，模型看不到这些真值；官方 L3 harness 也不给模型深度、物体位姿和分数。各引擎分别覆盖仿真器的哪些环节，见[仿真引擎一览](#s3-engines)。
+
+**模型怎样驱动机器人**
+
+动作接口决定了模型要解决多少问题，也决定了哪些分数可以放在一起比。
+
+| 接口 | 模型每次输出 | 一次输出执行多久 | 例子 |
+|---|---|---|---|
+| 低层动作 | 关节角或末端位姿的增量，加夹爪开合；常一次输出一小段（action chunk） | 一个到几个控制步，每秒 10–50 步 | [VLA 策略](#s2-6)；LIBERO 原生的 7 维动作 |
+| 目标位姿 | 末端要到达的位置、朝向和夹爪开合，路径由规划器补全 | 几十到上百个控制步 | RoboDojo 官方 L3 harness 的 `move_eef`；[前沿模型的 LIBERO-10 评测](#paper-2610-30051) |
+| 程序 | 一段调用感知和运动 API 的代码，看到执行结果后再修改 | 一段子任务，乃至整个任务 | [Code as Policies](#paper-2209-07753)；[Encore](#paper-2609-37359) |
+
+Stage 3 的 Agent 大多用后两种接口：模型决定做什么、去哪里，规划器和控制器决定关节怎么动。接口越高，规划器替模型做的事越多。
+
+**两个最常用的 benchmark**
+
+本阶段的实验里，LIBERO 和 RoboDojo 出现得最多。LIBERO 是已接近饱和的单臂老基准；RoboDojo 是更难的双臂新基准，Agent 研究正集中在上面。
+
+| | [LIBERO](#paper-2306-03310) | [RoboDojo](#paper-2607-04434) |
+|---|---|---|
+| 发布 | 2023.06 | 2026.07 |
+| 引擎 | robosuite（MuJoCo） | Isaac Sim 与 Isaac Lab（PhysX） |
+| 机器人 | 单臂 Franka Panda | 双臂 ARX X5；实机任务另用 Piper 和 Piper X |
+| 任务 | 130 个，分四个套件：Spatial（物体相同、布局不同）、Object（物体不同）、Goal（场景相同、目标不同）各 10 个；LIBERO-100 分为预训练用的 LIBERO-90 和长程的 LIBERO-10 | 仿真 42 个，按能力分五组：泛化 12、记忆 6、精度 8、长程 8、开放 8；另有 18 个实机任务 |
+| 任务示例 | 「把字母汤罐头和番茄酱都放进篮子」（LIBERO-10） | 「把瓶子扔进垃圾桶，必要时双手交接」（长程组） |
+| 模型看到 | 第三人称和腕部两路 RGB；关节和夹爪状态 | 头部和双腕三路 RGB（数据另含深度）；关节、末端位姿和夹爪状态 |
+| 原生动作 | 7 维：末端位姿增量 6 维加夹爪 1 维，每秒 20 步，由 robosuite 的控制器换算成关节力矩 | 关节位置或末端位姿，由各策略声明；示范按每秒 25 帧录制 |
+| 判定 | 用 BDDL 写的目标谓词，例如 `(In alphabet_soup_1 basket_1_contain_region)`；满足记 1，否则 0 | 任务配置里的成功条件；每个任务 0–100 分，多数任务按完成阶段给部分分 |
+| 示范 | 每个任务 50 条人类遥操作示范 | 34 个训练任务各 100 条，来自自动合成或 VR 遥操作；开放组不提供 |
+| 常用协议 | 每个套件 10 个任务 × 50 个固定初始状态，共 500 回合，报告成功率 | 每个任务 50 回合（泛化组标准、随机布局各 25），共 2,100 回合；先组内平均，再对五组等权平均 |
+| 当前水平 | 主流 VLA 已超过 90%，接近饱和；[LIBERO-PRO](#paper-2510-03827) 换掉物体、初始状态、指令或环境后，同一批模型跌到 0% | 论文冻结时（2026-07-03），最好的 VLA 成功率 8.8%、得分 13.1，人类遥操作为 76.0%、80.4；[GPT-6 Astra 经官方 L3 harness](#paper-2609-24170) 达到 22.5%、29.0 |
+| Agent 研究 | [LIBERO-Agent](#paper-2609-39507) 让通用 Agent 自选观测、用自己的工具、发出原生动作；[前沿模型的 LIBERO-10 评测](#paper-2610-30051)中 GPT-6 Astra 成功率 44% | [JustRUA](#paper-2611-16009) 在固定的 111 个回合上逐项比较 harness、动作、经验和场景几何的设计，得分从 29.7 提高到 50.3 |
+| 直接看 | [示范浏览器](https://lerobot-visualize-dataset.hf.space/lerobot/libero/episode_0)：逐帧看两路画面、指令、状态和动作曲线 · [项目页](https://libero-project.github.io/) | [回放对比](https://zefanw-robodojo-replay-explorer.static.hf.space/index.html?case=put_bottles_into_dustbin__standard__s0__scene0&method=full-history&compare=official-l3)：同一布局下，保留完整历史得 40 分，官方 L3 得 10 分 · [任务说明与计分](https://robodojo-benchmark.com/doc/sim-tasks/) · [排行榜](https://robodojo-benchmark.com/leaderboard) |
+
+**读结果前先核对**
+
+| 核对 | 原因 |
+|---|---|
+| 仿真还是实机？哪个 benchmark、哪些任务、每个任务几个回合？ | 子集和回合数不同，分数不能直接比；单个布局上的结果波动很大 |
+| 模型看到什么：只有 RGB，还是有深度、点云、物体真实位姿？ | 物体真实位姿这类「特权信息」只在仿真里有，真机上拿不到 |
+| 模型输出什么：低层动作、目标位姿，还是程序？ | 接口越高，规划器和预写技能承担得越多 |
+| 有没有用被测任务的示范、经验或针对性调参？ | 用了这些，结果就不能和标准评测直接比较 |
+| 决策次数、控制步、时间或 token 有没有上限？ | 上限不同，同一模型的分数也会不同 |
+| 报的是成功率还是得分？ | RoboDojo 的得分含部分分，通常高于成功率 |
+
+<details>
+<summary>术语对照（附 Coding Agent 类比）</summary>
+
+| 术语 | 含义 | 类比 |
+|---|---|---|
+| 回合（episode） | 从重置场景到完成、放弃或超时的一次完整尝试 | 一次 Agent 会话 |
+| 布局 / 种子 | 决定物体初始位置等的随机设置；同一任务换几个布局再测 | 同一道题的不同测试用例 |
+| 控制步 | 引擎推进一次、机器人执行一个动作的最小时间单位 | 时钟周期 |
+| 末端执行器（EE） | 机械臂末端的夹爪或工具；末端位姿指它的位置和朝向 | computer-use 里的鼠标指针 |
+| 本体感知 | 机器人对自身的读数，如关节角、夹爪开合 | — |
+| 逆运动学 / 运动规划 | 由末端目标算出关节角 / 算出一条不碰撞的关节路径 | 编译器：把「要什么」翻译成「怎么动」 |
+| 遥操作示范 | 人用手柄、VR 或主从臂操作机器人时录下的轨迹 | 人写的参考解 |
+| VLA | 视觉-语言-动作模型，直接输出低层动作 | 直接写汇编，而不是写高级语言交给编译器 |
+| 特权信息 | 只有仿真能给的真值，如物体精确位姿、分割 | 考试时看到了标准答案 |
+| 域随机化 | 随机改变光照、纹理、背景和干扰物，检验鲁棒性 | 模糊测试 |
+| Sim2Real | 把仿真里学到或测到的能力迁移到真机 | 从测试环境上线到生产环境 |
+
+</details>
+
+<p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
 <a id="skills-and-tool-bridges"></a>
 <a id="section-5-5"></a>

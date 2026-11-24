@@ -152,6 +152,21 @@ runs:
     revision/title debts remain. Retain all old queues. AdaRSI may inform the Stage 3 guide; guides, sections, News,
     version and CITATION untouched. Send one current-day merged digest; Nov22 had no saved delivery attempt or received
     daily, so no historical-date resend.'
+- date: '2026-11-24'
+  trigger: sweep
+  covered: Read oldest pending Skill2Real full40-page v2 PDF including appendices and bibliography, official project
+    and downloadable task-program example; reviewed Tripwire full v1 including all62 references and executable monitor
+    examples. Scanned all nine arXiv new/recent listings and every Nov23 cs.RO new/cross-list/replacement title;
+    screened available abstracts and recorded24 task/theme/capability/direction queries. HF dates, awesome commits/content
+    comparison, Tripo, open suggestions, official organizations, benchmark pages and blogs were checked. Continued
+    exact Monday HC and prior CV failed-page windows independently of the new Nov10–24 updated-date scan; coverage
+    and unfinished cursors are in the private batch.
+  note: 'Added Skill2Real (Core /3.5 experience-skill, Oct2 v1 historical backfill) and Tripwire (Core /3.1 tools-interfaces,
+    Nov20 v1/Nov23 listing). 32 new pending leads and one excluded generic Airflow mirror; no resource or dataset-release
+    count inferred from unread candidates. Search remains incomplete: current API failures, historical title/full-text review, official
+    details, older full-text/title/revision debt and latest-listing timing remain separate. New GLM blog and unchanged
+    benchmark metadata do not constitute paper admissions. These works may inform Stage3 guides; guides, News, version,
+    CITATION and maps untouched.'
 candidates:
 - id: '2610.35817'
   title: 'Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics'
@@ -264,8 +279,18 @@ candidates:
   url: https://arxiv.org/abs/2610.02788
   found: '2026-11-15'
   via: cited by 2610.35817 [105]
-  decision: pending
-  note: Learns executable skills through a shared API with a simulation verifier loop. Compare 3.5 experience-skill.
+  decision: added
+  note: 'Learns executable skills through a shared API with a simulation verifier loop. Compare 3.5 experience-skill.
+    Read full40-page v2 PDF, appendices and project. Core /3.5 experience-skill: recorded App.D bowl-retention failure
+    changes executable contact construction, followed by candidate validation. Do not treat edited App.E/F templates
+    as extra measured rollouts. Frozen-memory real deployment differs from source learning and from the B4 target-evaluation
+    series. Shared API still requires hardware-specific calibration/control. Official downloadable task-program
+    example inspected; not a full PVG/backend release.'
+  decided: '2026-11-24'
+  precedent:
+  - '2611.16872'
+  - '2610.12424'
+  - '2610.20474'
 - id: '2610.02717'
   title: 'RoboBridge: A Self-Evolving Embodied Agent Framework for Sim-to-Real Transfer'
   url: https://arxiv.org/abs/2610.02717
@@ -1214,9 +1239,9 @@ candidates:
   found: '2026-11-19'
   via: cited by 2610.12369v1 [43]
   decision: deferred
-  note: 'Rechecked 2026-11-23: cited URL still renders Data app without a readable report or implementation; original
+  note: 'Rechecked2026-11-24: original cited URL still provides Data app rather than readable report/implementation;
     reason retained.'
-  decided: '2026-11-23'
+  decided: '2026-11-24'
   reason: The cited project URL returned only a Data app page without report text or links. A readable technical
     report or implementation is needed to establish scope.
 - id: '2305.16291'
@@ -2051,3 +2076,291 @@ candidates:
   decision: pending
   note: SAFI provides state-aware fallback/holding behavior after policy takeover. Review whether reusable action/safety
     capability fits Resource; abstract alone does not establish an agent/code-revision loop or a formal paper admission.
+- id: '2611.27182'
+  title: 'Tripwire: Robot Agents that Program Their Own Interrupts under Human Disturbance'
+  url: https://arxiv.org/abs/2611.27182
+  found: '2026-11-24'
+  via: Nov23 cs.RO new/cross-list title/abstract; full v1 submitted Nov20
+  decision: added
+  decided: '2026-11-24'
+  precedent:
+  - '2609.12541'
+  - '2609.20822'
+  - '2610.23479'
+  note: 'Core /3.1 tools-interfaces: not only fixed policy calls; the agent writes and revises executable Python
+    tripwires using actual perception and interruption feedback in the same episode (Fig.1, Fig.6/§7.6). Main contribution
+    is event-driven harness control, with RoboHD as evaluation evidence, not a claimed released dataset. Retain
+    150-scene safety denominator versus168 task-success denominator, paused simulation and non-colliding avatar
+    versus continuous hardware. Policy weights remain frozen, and real base policies are task-trained.'
+- id: '2611.26782'
+  title: 'ChatAtom: A Multi-Agent LLM System for Molecular Dynamics Simulation and Visualization'
+  url: https://arxiv.org/abs/2611.26782
+  found: '2026-11-24'
+  via: Nov23 arXiv title and abstract; fixed task/capability discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text review of actual contribution, input/output, observation recipient
+    and release status. No scope, dataset release or autonomous loop is inferred from the title.
+- id: '2611.27042'
+  title: 'RoboColiseum: Co-evolution of Simulation, Evaluation, and Models'
+  url: https://arxiv.org/abs/2611.27042
+  found: '2026-11-24'
+  via: Nov23 arXiv title and abstract; fixed task/capability discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text review of actual contribution, input/output, observation recipient
+    and release status. No scope, dataset release or autonomous loop is inferred from the title.
+- id: '2611.27222'
+  title: 'Bel: Step-Level Policy Improvement of Visual Agents Without Training'
+  url: https://arxiv.org/abs/2611.27222
+  found: '2026-11-24'
+  via: Nov23 arXiv title and abstract; fixed task/capability discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text review of actual contribution, input/output, observation recipient
+    and release status. No scope, dataset release or autonomous loop is inferred from the title.
+- id: '2611.27352'
+  title: 'PAVE: A Harness for Geometrically Consistent Road Network Modeling with Vision-Language Models'
+  url: https://arxiv.org/abs/2611.27352
+  found: '2026-11-24'
+  via: Nov23 arXiv title and abstract; fixed task/capability discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text review of actual contribution, input/output, observation recipient
+    and release status. No scope, dataset release or autonomous loop is inferred from the title.
+- id: '2611.26937'
+  title: 'Looking Right Is Not Being Right: Evaluating the Geometry of Agent-Built 3D Scenes'
+  url: https://arxiv.org/abs/2611.26937
+  found: '2026-11-24'
+  via: Nov23 arXiv title and abstract; fixed task/capability discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text review of actual contribution, input/output, observation recipient
+    and release status. No scope, dataset release or autonomous loop is inferred from the title.
+- id: '2611.27336'
+  title: 'Zing-1.0: A Playable World System Built on Controllable Rendering'
+  url: https://arxiv.org/abs/2611.27336
+  found: '2026-11-24'
+  via: Nov23 arXiv title and abstract; fixed task/capability discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text review of actual contribution, input/output, observation recipient
+    and release status. No scope, dataset release or autonomous loop is inferred from the title.
+- id: '2611.27285'
+  title: 'SIR-Agent: Skill-Augmented Image Restoration Agent with Recursive Self-Improvement'
+  url: https://arxiv.org/abs/2611.27285
+  found: '2026-11-24'
+  via: Nov23 arXiv title and abstract; fixed task/capability discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text review of actual contribution, input/output, observation recipient
+    and release status. No scope, dataset release or autonomous loop is inferred from the title.
+- id: '2611.27529'
+  title: 'Fix Where It Fails: Root-Cause-Guided Agentic Harness Optimization for Scene Graph Generation'
+  url: https://arxiv.org/abs/2611.27529
+  found: '2026-11-24'
+  via: Nov23 arXiv title and abstract; fixed task/capability discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text review of actual contribution, input/output, observation recipient
+    and release status. No scope, dataset release or autonomous loop is inferred from the title.
+- id: '2611.27689'
+  title: 'Embodied-Harness: Towards Recursive Self-Improvement for Robotic Manipulation'
+  url: https://arxiv.org/abs/2611.27689
+  found: '2026-11-24'
+  via: Nov23 arXiv title and abstract; fixed task/capability discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text review of actual contribution, input/output, observation recipient
+    and release status. No scope, dataset release or autonomous loop is inferred from the title.
+- id: '2611.27499'
+  title: 'NavRSI: Recursive Harness Self-Improvement for Vision-and-Language Navigation'
+  url: https://arxiv.org/abs/2611.27499
+  found: '2026-11-24'
+  via: Nov23 arXiv title and abstract; fixed task/capability discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text review of actual contribution, input/output, observation recipient
+    and release status. No scope, dataset release or autonomous loop is inferred from the title.
+- id: '2611.27797'
+  title: 'EvoTER: Evolving Embodied Agents via Tool-Use Experience and Reflection'
+  url: https://arxiv.org/abs/2611.27797
+  found: '2026-11-24'
+  via: Nov23 arXiv title and abstract; fixed task/capability discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text review of actual contribution, input/output, observation recipient
+    and release status. No scope, dataset release or autonomous loop is inferred from the title.
+- id: '2611.27967'
+  title: 'Task2Hand: A Contact-Grounded Skill for Parametric Dexterous-Hand Morphology Design'
+  url: https://arxiv.org/abs/2611.27967
+  found: '2026-11-24'
+  via: Nov23 arXiv title and abstract; fixed task/capability discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text review of actual contribution, input/output, observation recipient
+    and release status. No scope, dataset release or autonomous loop is inferred from the title.
+- id: '2611.26825'
+  title: 'Skill-JEPA: Learning Planner-Aligned Action Spaces for World Models'
+  url: https://arxiv.org/abs/2611.26825
+  found: '2026-11-24'
+  via: Nov23 arXiv title and abstract; fixed task/capability discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text review of actual contribution, input/output, observation recipient
+    and release status. No scope, dataset release or autonomous loop is inferred from the title.
+- id: '2611.26969'
+  title: 'RoboDyna: A Benchmark for Evaluating Robotic Manipulation under Physically Grounded Dynamics'
+  url: https://arxiv.org/abs/2611.26969
+  found: '2026-11-24'
+  via: Nov23 arXiv title and abstract; fixed task/capability discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text review of actual contribution, input/output, observation recipient
+    and release status. No scope, dataset release or autonomous loop is inferred from the title.
+- id: '2611.27467'
+  title: 'ROSWORLD: When Digital Task Competence Meets Physical Execution'
+  url: https://arxiv.org/abs/2611.27467
+  found: '2026-11-24'
+  via: Nov23 arXiv title and abstract; fixed task/capability discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text review of actual contribution, input/output, observation recipient
+    and release status. No scope, dataset release or autonomous loop is inferred from the title.
+- id: '2611.27446'
+  title: 'GenPA: Image Generators as Efficient Robot Policies'
+  url: https://arxiv.org/abs/2611.27446
+  found: '2026-11-24'
+  via: Nov23 arXiv title and abstract; fixed task/capability discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text review of actual contribution, input/output, observation recipient
+    and release status. No scope, dataset release or autonomous loop is inferred from the title.
+- id: '2611.27513'
+  title: 'Ego4Gen: Generating Geometry-Grounded Motion Tokens as a World-Action Interface'
+  url: https://arxiv.org/abs/2611.27513
+  found: '2026-11-24'
+  via: Nov23 arXiv title and abstract; fixed task/capability discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text review of actual contribution, input/output, observation recipient
+    and release status. No scope, dataset release or autonomous loop is inferred from the title.
+- id: '2611.27915'
+  title: 'StereoVLM: Binocular Vision-Language Models for Metric 3D Spatial Reasoning'
+  url: https://arxiv.org/abs/2611.27915
+  found: '2026-11-24'
+  via: Nov23 arXiv title and abstract; fixed task/capability discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text review of actual contribution, input/output, observation recipient
+    and release status. No scope, dataset release or autonomous loop is inferred from the title.
+- id: '2611.27407'
+  title: 'BladeR: Scalable, Shape-Guided 3D Reconstruction of Wind Turbine Blades from UAV Imagery'
+  url: https://arxiv.org/abs/2611.27407
+  found: '2026-11-24'
+  via: Nov23 arXiv title and abstract; fixed task/capability discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text review of actual contribution, input/output, observation recipient
+    and release status. No scope, dataset release or autonomous loop is inferred from the title.
+- id: '2611.27030'
+  title: 'TSIR: Ray-Traced Triangle Splats for Inverse Rendering'
+  url: https://arxiv.org/abs/2611.27030
+  found: '2026-11-24'
+  via: Nov23 arXiv title and abstract; fixed task/capability discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text review of actual contribution, input/output, observation recipient
+    and release status. No scope, dataset release or autonomous loop is inferred from the title.
+- id: '2609.40322'
+  title: 'MatLoom: Layered Text-to-Material Generation in a Compact Program Space'
+  url: https://arxiv.org/abs/2609.40322
+  found: '2026-11-24'
+  via: Nov23 arXiv title and abstract; fixed task/capability discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text review of actual contribution, input/output, observation recipient
+    and release status. No scope, dataset release or autonomous loop is inferred from the title.
+- id: '2611.26916'
+  title: 'RoboCap-10k: A Metrically Accurate Egocentric Dataset for Robot Learning'
+  url: https://arxiv.org/abs/2611.26916
+  found: '2026-11-24'
+  via: Nov23 arXiv title and abstract; fixed task/capability discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text review of actual contribution, input/output, observation recipient
+    and release status. No scope, dataset release or autonomous loop is inferred from the title.
+- id: '2611.26902'
+  title: 'Perceive Once, Escalate on Demand: Handing Off Visual KV Memory from Small to Large VLMs'
+  url: https://arxiv.org/abs/2611.26902
+  found: '2026-11-24'
+  via: Nov23 arXiv title and abstract; fixed task/capability discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text review of actual contribution, input/output, observation recipient
+    and release status. No scope, dataset release or autonomous loop is inferred from the title.
+- id: '2611.27282'
+  title: 'HermiteTwin: Bicubic Hermite Shell Digital Twins for Contact-Rich Deformable Manipulation'
+  url: https://arxiv.org/abs/2611.27282
+  found: '2026-11-24'
+  via: Nov23 arXiv title and abstract; fixed task/capability discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text review of actual contribution, input/output, observation recipient
+    and release status. No scope, dataset release or autonomous loop is inferred from the title.
+- id: '2611.27144'
+  title: Simulation-Based Testing of RCM-Constrained Robotic Software via Task Manifolds
+  url: https://arxiv.org/abs/2611.27144
+  found: '2026-11-24'
+  via: Nov23 arXiv title and abstract; fixed task/capability discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text review of actual contribution, input/output, observation recipient
+    and release status. No scope, dataset release or autonomous loop is inferred from the title.
+- id: '2611.27397'
+  title: 'AnyBodyCodec: A Shared Native Interface for Body-Model Conversion, Extension, and Humanoid Control'
+  url: https://arxiv.org/abs/2611.27397
+  found: '2026-11-24'
+  via: Nov23 arXiv title and abstract; fixed task/capability discovery
+  decision: pending
+  note: Title/abstract lead retained for full-text review of actual contribution, input/output, observation recipient
+    and release status. No scope, dataset release or autonomous loop is inferred from the title.
+- id: '2606.20679'
+  title: 'MemoryVAM: Integrating Memory into Video Action Model for Robot Manipulation'
+  url: https://arxiv.org/abs/2606.20679
+  found: '2026-11-24'
+  via: recent citation of Skill2Real or Tripwire; original abstract and v1 history checked
+  decision: pending
+  note: Review full text and primary release. A referenced action model can be a reusable capability Resource, but
+    is not automatically a Core/Adjacent paper; distinguish benchmark protocols, implementation examples and released
+    data.
+- id: '2606.25212'
+  title: 'RigPI: Dynamic Parameter Identification of Rigid Body via VLM-Seeded Differentiable Simulation'
+  url: https://arxiv.org/abs/2606.25212
+  found: '2026-11-24'
+  via: recent citation of Skill2Real or Tripwire; original abstract and v1 history checked
+  decision: pending
+  note: Review full text and primary release. A referenced action model can be a reusable capability Resource, but
+    is not automatically a Core/Adjacent paper; distinguish benchmark protocols, implementation examples and released
+    data.
+- id: '2609.25961'
+  title: 'An Action Is Worth One Patch: Unified World-Action Modeling with PatchWAM'
+  url: https://arxiv.org/abs/2609.25961
+  found: '2026-11-24'
+  via: recent citation of Skill2Real or Tripwire; original abstract and v1 history checked
+  decision: pending
+  note: Review full text and primary release. A referenced action model can be a reusable capability Resource, but
+    is not automatically a Core/Adjacent paper; distinguish benchmark protocols, implementation examples and released
+    data.
+- id: '2609.38537'
+  title: Systematically Exploring the Capabilities of GPT-6 Astra as Embodied Policies
+  url: https://arxiv.org/abs/2609.38537
+  found: '2026-11-24'
+  via: recent citation of Skill2Real or Tripwire; original abstract and v1 history checked
+  decision: pending
+  note: Review full text and primary release. A referenced action model can be a reusable capability Resource, but
+    is not automatically a Core/Adjacent paper; distinguish benchmark protocols, implementation examples and released
+    data.
+- id: '2610.22178'
+  title: 'REKI: Registering Knowledge in VLAs'
+  url: https://arxiv.org/abs/2610.22178
+  found: '2026-11-24'
+  via: recent citation of Skill2Real or Tripwire; original abstract and v1 history checked
+  decision: pending
+  note: Review full text and primary release. A referenced action model can be a reusable capability Resource, but
+    is not automatically a Core/Adjacent paper; distinguish benchmark protocols, implementation examples and released
+    data.
+- id: '2611.11123'
+  title: 'HARP-Bench: Benchmarking Robot Manipulation Around Active Humans'
+  url: https://arxiv.org/abs/2611.11123
+  found: '2026-11-24'
+  via: recent citation of Skill2Real or Tripwire; original abstract and v1 history checked
+  decision: pending
+  note: Review full text and primary release. A referenced action model can be a reusable capability Resource, but
+    is not automatically a Core/Adjacent paper; distinguish benchmark protocols, implementation examples and released
+    data.
+- id: github:ropedia/airflow
+  title: Ropedia/airflow (Apache Airflow mirror)
+  url: https://github.com/Ropedia/airflow
+  found: '2026-11-24'
+  via: Ropedia official-source listing; README retrieved and read
+  decision: excluded
+  decided: '2026-11-24'
+  reason: The reviewed repository README describes the generic Apache Airflow workflow scheduler and points to upstream
+    Apache documentation. It identifies no distinct MMAC research contribution or artifact-specific model/tool capability
+    for this collection.

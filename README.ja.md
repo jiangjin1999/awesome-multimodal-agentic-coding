@@ -13,7 +13,7 @@
 
 マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——デジタル世界から物理世界まで。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-687-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--23-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-689-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--24-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語**
 
@@ -60,11 +60,11 @@
   - [2.5 知覚モデル × シーン理解・再構成](#s2-5) (6)
   - [2.6 行動モデル × ロボット操作](#s2-6) (12)
 - [Stage 3 · デジタルと物理世界の架け橋](#stage-3)
-  - [3.1 身体性ハーネス](#s3-1) (92)
+  - [3.1 身体性ハーネス](#s3-1) (93)
   - [3.2 シミュレータ構築](#s3-2) (68)
   - [3.3 シミュレータ品質評価](#s3-3) (29)
   - [3.4 データ](#s3-4) (15)
-  - [3.5 学習と能力向上](#s3-5) (85)
+  - [3.5 学習と能力向上](#s3-5) (86)
   - [3.6 物理応用と実験](#s3-6) (51)
     - [科学実験（AI4Science）](#s3-6-experiments) (27)
   - [シミュレーションエンジン一覧](#s3-engines)
@@ -2035,6 +2035,12 @@
   > Qwen3.8-Flash-Next と GPT-6 Astra が統一インターフェースで知覚・運動ツールを呼び、幾何チェックと動作結果の観察から次の操作を調整する。<br>
   > 🖥️ **シミュレーション** Isaac Sim（ARX X5） · 🦾 **実機** ARX AC One
 
+<!-- mmac-record: {"id": "2611.27182", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-27182"></a>`2026.11` **[Tripwire: Robot Agents that Program Their Own Interrupts under Human Disturbance](https://arxiv.org/abs/2611.27182)**
+  > 固定したロボット方策に視覚監視の割り込みプログラムを付け、状況に応じて書き換える。<br>
+  > 🖥️ **シミュレーション** MuJoCo（PandaOmron） · 🦾 **実機** UFACTORY xArm 7
+
 <!-- mmac-record: {"id": "2611.01112", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-01112"></a>`2026.10` **[Auriga Technical Report: A Task-Agnostic Agent Harness for Zero-Shot Embodied Manipulation](https://arxiv.org/abs/2611.01112)** [[プロジェクトページ]](https://auriga.stelledge.com/) [[コード]](https://github.com/lose4578/Auriga)
@@ -3614,6 +3620,12 @@ P0 は前提となる関門で、合否だけを判定します。ほかの各�
 - <a id="paper-2610-22496"></a>`2026.10` **[Scaling Online Exploration for Robot Agents](https://arxiv.org/abs/2610.22496)** [[コード]](https://github.com/robot-agent-exploration/rax) [[コード]](https://github.com/robot-agent-exploration/skills-lib) [[データセット]](https://huggingface.co/datasets/robot-agent-exploration/robot-session-logs) [[プロジェクトページ]](https://robot-agent-exploration.com/)
   > 探索に使える予算がロボットの経験に変わる仕組みを研究する。<br>
   > 🖥️ **シミュレーション** MuJoCo + Isaac Sim（Franka Panda、ARX X5、Galaxea R1 Pro） · 🦾 **実機** Franka FR3
+
+<!-- mmac-record: {"id": "2610.02788", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2610-02788"></a>`2026.10` **[Skill2Real: Agentic Skill Learning for Zero-Shot Sim-to-Real Robot Manipulation](https://arxiv.org/abs/2610.02788)** [[プロジェクトページ]](https://skill2real.github.io/) [[コード]](https://skill2real.github.io/assets/tasks/programs/two_cans_recovery.py)
+  > 共通のロボット API を通じて、検証済みの階層的コードスキルをシミュレーションから実機へ移す。<br>
+  > 🖥️ **シミュレーション** MuJoCo（Franka Panda） · 🦾 **実機** UR5e
 
 <!-- mmac-record: {"id": "2610.22736", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 

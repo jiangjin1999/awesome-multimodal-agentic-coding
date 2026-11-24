@@ -16382,3 +16382,74 @@
       sweep controls and check temporal behavior. The saved-file validator checks node warnings, lint and camera
       clearance against first-frame geometry; it is not an all-input or all-frame collision proof. The skill documents a render-and-refine workflow rather than a measured autonomous-repair benchmark.
     zh: 作者原始 MIT 仓库提供 procedural-blender-nodes Skill、nodekit 与面向 Blender 5.2+ 的原生几何／着色器／合成节点建图库。流程要求 Agent 查看渲染结果、修订节点、扫描控制参数并检查时序表现。保存文件验证器检查节点警告、静态规则及相对首帧几何的相机间距，不保证全部输入或全部帧无碰撞。该 Skill 提供渲染与修订流程，不是已测量自主修复效果的基准。
+- id: '2610.02788'
+  title: 'Skill2Real: Agentic Skill Learning for Zero-Shot Sim-to-Real Robot Manipulation'
+  url: https://arxiv.org/abs/2610.02788
+  date: '2026.10'
+  section: '3.5'
+  sub: experience-skill
+  type: paper
+  scope: core
+  tldr:
+    en: Transfers validated hierarchical code skills through a shared robot API.
+    zh: 通过共享机器人 API，将经验证的分层代码技能从仿真迁移到实机。
+    ja: 共通のロボット API を通じて、検証済みの階層的コードスキルをシミュレーションから実機へ移す。
+  setup:
+    engines:
+    - MuJoCo
+    sim_robots:
+    - Franka Panda
+    real_robots:
+    - UR5e
+  sources:
+  - https://arxiv.org/abs/2610.02788
+  - https://skill2real.github.io/
+  - https://skill2real.github.io/assets/tasks/programs/two_cans_recovery.py
+  verification:
+    en: The Proposer writes executable API-level programs from visual observations; privileged simulation diagnosis
+      drives contact-code revision and validation-gated memory updates (§3, App. D/G). Frozen Sol-trained C3/B3
+      libraries raise Astra real-robot completion from 27.50% without skills to 78.75%, across four tasks with 20
+      trials per method/task (Table 1, App. B.5) · the separate B4 checkpoint series reaches 56.3% on unseen Pro
+      Long, using 20 tasks × 10 seeds (Fig. 6, App. B.4). Deployment updates episode bindings, not skill memories,
+      and uses no real-world task-policy training; calibrated robot-specific perception/control backends remain
+      necessary. Extra training budget is not isolated from hierarchy gains, and repeated episodes do not measure
+      independent training-run variability (App. B.1). The project supplies task-program examples, without a linked
+      complete PVG/backend release.
+    zh: Proposer 根据视觉观测编写可执行 API 程序；仿真特权诊断触发接触代码修订，并由后续验证决定是否更新技能记忆（§3、附录 D/G）。冻结的 Sol 训练 C3/B3 技能库使 Astra 实机完成率由无技能的
+      27.50% 升至 78.75%，四项任务每方法／每任务测试 20 次（表 1、附录 B.5） · 另行报告的 B4 检查点曲线在未见 Pro Long 上达到 56.3%，评测为 20 项任务×10 个种子（图
+      6、附录 B.4）。部署只更新回合内绑定，不更新技能记忆，也不做实机任务策略训练，但仍需机器人专用感知、控制与标定。额外训练预算未与层级收益分离，重复回合也不代表独立训练运行的方差（附录 B.1）。项目提供任务程序示例，未链接完整
+      PVG／后端实现。
+- id: '2611.27182'
+  title: 'Tripwire: Robot Agents that Program Their Own Interrupts under Human Disturbance'
+  url: https://arxiv.org/abs/2611.27182
+  date: '2026.11'
+  section: '3.1'
+  sub: tools-interfaces
+  type: paper
+  scope: core
+  tldr:
+    en: Programs and rewrites visual interruption monitors around frozen robot policies.
+    zh: 围绕冻结机器人策略编写并重写视觉中断程序，使 Agent 能在动作执行中重新决策。
+    ja: 固定したロボット方策に視覚監視の割り込みプログラムを付け、状況に応じて書き換える。
+  setup:
+    engines:
+    - MuJoCo
+    sim_robots:
+    - PandaOmron
+    real_robots:
+    - UFACTORY xArm 7
+  sources:
+  - https://arxiv.org/abs/2611.27182
+  verification:
+    en: GPT-6.1-sol writes stateful Python monitors that query Qwen3.5-9B on RGB-D observations, interrupt ongoing
+      policy calls and return images/reasons for rewritten monitors and actions (§3, Fig. 1/6, §7.6). RoboHD has
+      168 matched scenes; with XR, no-contact safety is 81.3% versus 61.3% for the turn-based harness on the 150
+      scenes solvable without a person, while task-plus-no-contact success is 38.7% versus 31.0% over all 168 (§4.3,
+      Table 1/Fig. 4) · hardware disturbance trials succeed 25/40 versus 5/40; two task-specific π0.5 policies each
+      use 100 teleoperated demonstrations (§4.5, Table 4). Simulation pauses during inference; its scripted avatar
+      has no collision body and contact is checked geometrically. Hardware runs without pausing, with ten setups
+      per task/condition. These results are not a physical safety guarantee; no implementation or dataset release
+      is linked in the paper.
+    zh: GPT-6.1-sol 编写有状态 Python 监测程序，调用 Qwen3.5-9B 读取 RGB-D 观测，中断正在执行的策略，并根据返回图像和原因重写监测程序及后续动作（§3、图 1/6、§7.6）。RoboHD
+      包含 168 个匹配场景；XR 在无人时可解的 150 个场景中，无接触率为 81.3%，轮次式 Harness 为 61.3%；全部 168 个场景的任务完成且无接触率为 38.7% 与 31.0%（§4.3、表
+      1／图 4） · 实机扰动测试成功 25/40 次，基线为 5/40；两项任务的 π0.5 策略各用 100 条遥操作示范训练（§4.5、表 4）。仿真在推理时暂停，脚本化人体无碰撞体，以几何方式判断接触；实机不暂停，每任务／条件十种布置。这些结果不构成物理安全保证，论文未链接实现或数据集发布。

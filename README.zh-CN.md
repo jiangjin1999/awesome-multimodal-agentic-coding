@@ -13,7 +13,7 @@
 
 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从数字世界延伸到物理世界。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-687-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--23-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-689-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--24-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · **简体中文** · [日本語](./README.ja.md)
 
@@ -57,11 +57,11 @@
   - [2.5 感知模型 × 场景理解与重建](#s2-5) (6)
   - [2.6 动作模型 × 机器人操作](#s2-6) (12)
 - [Stage 3 · 打通数字世界与物理世界](#stage-3)
-  - [3.1 具身框架（Harness）](#s3-1) (92)
+  - [3.1 具身框架（Harness）](#s3-1) (93)
   - [3.2 仿真器构建](#s3-2) (68)
   - [3.3 仿真器质量评估](#s3-3) (29)
   - [3.4 数据](#s3-4) (15)
-  - [3.5 训练与能力提升](#s3-5) (85)
+  - [3.5 训练与能力提升](#s3-5) (86)
   - [3.6 物理应用与实验](#s3-6) (51)
     - [科学实验（AI4Science）](#s3-6-experiments) (27)
   - [仿真引擎一览](#s3-engines)
@@ -2032,6 +2032,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
   > 让 Qwen3.8-Flash-Next 和 GPT-6 Astra 通过统一接口调用感知与运动工具，运行几何检查，观察动作结果并调整下一步操作。<br>
   > 🖥️ **仿真** Isaac Sim（ARX X5） · 🦾 **真机** ARX AC One
 
+<!-- mmac-record: {"id": "2611.27182", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-27182"></a>`2026.11` **[Tripwire: Robot Agents that Program Their Own Interrupts under Human Disturbance](https://arxiv.org/abs/2611.27182)**
+  > 围绕冻结机器人策略编写并重写视觉中断程序，使 Agent 能在动作执行中重新决策。<br>
+  > 🖥️ **仿真** MuJoCo（PandaOmron） · 🦾 **真机** UFACTORY xArm 7
+
 <!-- mmac-record: {"id": "2611.01112", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-01112"></a>`2026.10` **[Auriga Technical Report: A Task-Agnostic Agent Harness for Zero-Shot Embodied Manipulation](https://arxiv.org/abs/2611.01112)** [[项目页]](https://auriga.stelledge.com/) [[代码]](https://github.com/lose4578/Auriga)
@@ -3611,6 +3617,12 @@ P0 是前提关卡，只判过不过；其余各层检查不同的失败模式�
 - <a id="paper-2610-22496"></a>`2026.10` **[Scaling Online Exploration for Robot Agents](https://arxiv.org/abs/2610.22496)** [[代码]](https://github.com/robot-agent-exploration/rax) [[代码]](https://github.com/robot-agent-exploration/skills-lib) [[数据集]](https://huggingface.co/datasets/robot-agent-exploration/robot-session-logs) [[项目页]](https://robot-agent-exploration.com/)
   > 研究探索预算如何转化为机器人经验。<br>
   > 🖥️ **仿真** MuJoCo + Isaac Sim（Franka Panda、ARX X5、Galaxea R1 Pro） · 🦾 **真机** Franka FR3
+
+<!-- mmac-record: {"id": "2610.02788", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2610-02788"></a>`2026.10` **[Skill2Real: Agentic Skill Learning for Zero-Shot Sim-to-Real Robot Manipulation](https://arxiv.org/abs/2610.02788)** [[项目页]](https://skill2real.github.io/) [[代码]](https://skill2real.github.io/assets/tasks/programs/two_cans_recovery.py)
+  > 通过共享机器人 API，将经验证的分层代码技能从仿真迁移到实机。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda） · 🦾 **真机** UR5e
 
 <!-- mmac-record: {"id": "2610.22736", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 

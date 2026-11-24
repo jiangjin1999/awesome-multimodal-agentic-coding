@@ -13,7 +13,7 @@
 
 マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——デジタル世界から物理世界まで。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-689-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--24-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-691-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--25-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語**
 
@@ -58,10 +58,10 @@
   - [2.3 3D 生成モデル × 3D アセット・シーン](#s2-3) (11)
   - [2.4 生成的世界モデル × インタラクティブ環境](#s2-4) (13)
   - [2.5 知覚モデル × シーン理解・再構成](#s2-5) (6)
-  - [2.6 行動モデル × ロボット操作](#s2-6) (12)
+  - [2.6 行動モデル × ロボット操作](#s2-6) (13)
 - [Stage 3 · デジタルと物理世界の架け橋](#stage-3)
   - [3.1 身体性ハーネス](#s3-1) (93)
-  - [3.2 シミュレータ構築](#s3-2) (68)
+  - [3.2 シミュレータ構築](#s3-2) (69)
   - [3.3 シミュレータ品質評価](#s3-3) (29)
   - [3.4 データ](#s3-4) (15)
   - [3.5 学習と能力向上](#s3-5) (86)
@@ -1946,6 +1946,11 @@
 
 ### 2.6 行動モデル × ロボット操作
 
+<!-- mmac-record: {"id": "2611.08577", "scope": "Adjacent", "primary": "2.6", "stage": 2, "type": "paper"} -->
+
+- <a id="paper-2611-08577"></a>`2026.11` **[Meituan-Robotics-0: A Vision-Language-Action Foundation Model for Desktop Manipulation](https://arxiv.org/abs/2611.08577)** [[プロジェクトページ]](https://meituan-robotics.github.io/Meituan-Robotics-0/) [[コード]](https://github.com/Meituan-Robotics/Meituan-Robotics-0) [[モデル]](https://huggingface.co/MeituanRobotics/Meituan-Robotics-0) [[データセット]](https://huggingface.co/datasets/MeituanRobotics/RoboDesk)
+  > 複数のロボット構成で卓上操作向け VLA を学習し、視覚イベントの記憶を使ってサブタスクを一時停止・再開・再計画する。
+
 <!-- mmac-record: {"id": "2611.05275", "scope": "Adjacent", "primary": "2.6", "stage": 2, "type": "paper"} -->
 
 - <a id="paper-2611-05275"></a>`2026.11` **[Route Anything: A Study of Model and Policy Routing for General-Purpose AI Systems](https://arxiv.org/abs/2611.05275)** [[コード]](https://github.com/InfRec-Cardinal/route-anything) [[データセット]](https://huggingface.co/datasets/Lance1573/route-anything-data)
@@ -2573,6 +2578,8 @@
 - <a id="paper-res-webots-mcp"></a>**[Webots MCP](https://github.com/MHasaan/webotMCP)**
   > 場面編集、制御コード、ロボット動作、多視点画像、運動軌跡、接触イベントを公開する。シミュレータの真値と反応制御は、学習型の知覚・計画と区別する。
 
+*関連:* [Meituan-Robotics-0](#paper-2611-08577)
+
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
 <a id="methods-physical-assets"></a>
@@ -2616,6 +2623,12 @@
 - <a id="paper-2611-02691"></a>`2026.11` **[Closing the Dynamics Gap through Self-Directed Robotic Interaction](https://arxiv.org/abs/2611.02691)** [[プロジェクトページ]](https://cue-dynamics.github.io/)
   > 自律的な打撃探索から力学的な証拠を得て、Agent が軌道計測の構築、シミュレーションパラメーターの推定、次の実験の選択を行う。<br>
   > 🖥️ **シミュレーション** MuJoCo
+
+<!-- mmac-record: {"id": "2611.31002", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-31002"></a>`2026.11` **[RoboUniverse-10K: Toward the Scaling Era of Agentic Robotics via Real-to-Sim Environments](https://arxiv.org/abs/2611.31002)** [[プロジェクトページ]](https://lab.einsia.ai/robo-universe/) [[コード]](https://github.com/Einsia/RoboUniverse-10K) [[データセット]](https://huggingface.co/datasets/Einsia/RoboUniverse-10K) [[モデル]](https://huggingface.co/Einsia/RoboUniverse-35B-A3B)
+  > 実機ロボットの動画から初期化と採点が可能な Isaac Sim タスクを構築し、描画結果の比較と物理シミュレーションに基づいてシーンのコードを修正する。<br>
+  > 🖥️ **シミュレーション** Isaac Sim（Franka Panda、AgileX PiPER） · 🦾 **実機** Franka
 
 <!-- mmac-record: {"id": "2611.11344", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -3328,6 +3341,8 @@ P0 は前提となる関門で、合否だけを判定します。ほかの各�
 - <a id="paper-2609-35318"></a>`2026.09` **[DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library](https://arxiv.org/abs/2609.35318)** [[プロジェクトページ]](https://dexagent1.github.io/) [[プロジェクトページ]](https://dexagent123.github.io/) [[コード]](https://github.com/dexagent1/DexAgent)
   > 一人称の人の動画 1 本から、エージェントが物体の性質に基づいてシミュレーションでシーンを再構成し、多指ハンドの軌跡を最適化し、物体とロボットの状態を変えてデータを生成する。ツールライブラリは使うほど拡張される。映像：視点を変えたシミュレーションのレンダリングを、実写に近づけるよう再テクスチャ。軌跡：多指ハンドと腕の動作。<br>
   > 🖥️ **シミュレーション** Blender + MuJoCo + Isaac Sim（Sharpa Wave） · 🦾 **実機** I2RT YAM、Sharpa Wave
+
+*関連:* [RoboUniverse-10K](#paper-2611-31002)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 

@@ -167,6 +167,15 @@ runs:
     details, older full-text/title/revision debt and latest-listing timing remain separate. New GLM blog and unchanged
     benchmark metadata do not constitute paper admissions. These works may inform Stage3 guides; guides, News, version,
     CITATION and maps untouched.'
+- date: '2026-11-25'
+  trigger: report
+  covered: Maintainer-requested review of MR0 v3 and RoboUniverse-10K v1, including methods, evaluation and appendices,
+    official implementation and model files, public dataset cards, license notices and the published evaluation split.
+    Checked the two bibliographies for recent in-scope leads and matched them against the catalog and triage.
+  note: Added MR0 as Adjacent in 2.6 with an event-driven delegation reference in 3.1, and RoboUniverse-10K as Core
+    in 3.2 with a 3.4 reference for the released environments. Seven citation leads remain pending. The released
+    500-task split documents prior-success-based replacements; consult that data card before using it as held-out
+    evidence. The construction and separate QA loops may inform the Stage 3 guide.
 candidates:
 - id: '2610.35817'
   title: 'Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics'
@@ -1182,9 +1191,16 @@ candidates:
   url: https://github.com/XPolicyLab/XPolicyLab/tree/main/policy/Meituan_Robotics_0
   found: '2026-11-19'
   via: cited by 2610.12369v1 [28]
-  decision: pending
-  note: Follow the cited model release or policy adapter to its own documentation, weights and input/output. The shared benchmark
-    URL is not a model identity.
+  decision: added
+  decided: '2026-11-25'
+  entry: '2611.08577'
+  precedent:
+  - '2610.23334'
+  - '2610.34186'
+  - '2610.19677'
+  note: Resolved the original benchmark adapter lead to the official MR0 paper, implementation, checkpoint and RoboDesk release.
+    Adjacent in 2.6. Visual events and keyframes change subtask instructions; the VLA generates the actions.
+    The orchestration demonstrations are qualitative, separate from the matched policy trials.
 - id: '2609.31394'
   title: 'InternW0-$\Delta$: A World Action Model Bridging Predictive Dynamics and Actions with 20K+ Hours of Open Data'
   url: https://arxiv.org/abs/2609.31394
@@ -2364,3 +2380,68 @@ candidates:
   reason: The reviewed repository README describes the generic Apache Airflow workflow scheduler and points to upstream
     Apache documentation. It identifies no distinct MMAC research contribution or artifact-specific model/tool capability
     for this collection.
+- id: '2611.31002'
+  title: 'RoboUniverse-10K: Toward the Scaling Era of Agentic Robotics via Real-to-Sim Environments'
+  url: https://arxiv.org/abs/2611.31002
+  found: '2026-11-25'
+  via: maintainer supplied arXiv v1
+  decision: added
+  decided: '2026-11-25'
+  precedent:
+  - '2610.31834'
+  - '2609.37089'
+  - '2607.19190'
+  note: 'Core in 3.2: rendered/source comparisons and physical execution change the builder’s environment code;
+    independent QA requests or performs repairs and replays. Public evaluation code, environments and weights verified
+    separately. Public split selection and third-party terms are recorded in the release.'
+- id: '2607.02646'
+  title: 'EVA-Client: A Unified Data Collection, Inference, and Deployment Framework for Embodied Policies on Real
+    Robots'
+  url: https://arxiv.org/abs/2607.02646
+  found: '2026-11-25'
+  via: cited by 2611.08577v3 [43]; original arXiv abstract and v1 checked
+  decision: pending
+  note: Review the real-robot execution and rollout logging implementation as a reusable runtime resource.
+- id: '2607.18709'
+  title: 'RoboInter1.5: A Holistic Intermediate Representation Suite for Embodied World Modeling and Robotic Manipulation'
+  url: https://arxiv.org/abs/2607.18709
+  found: '2026-11-25'
+  via: cited by 2611.08577v3 [14]; original arXiv abstract and v1 checked
+  decision: pending
+  note: Review intermediate representations as reusable data and model interfaces; compare with RoboInter1.0 before
+    assigning identity.
+- id: '2610.10270'
+  title: 'Video Prediction Policy 2: Predict Better, Act Better'
+  url: https://arxiv.org/abs/2610.10270
+  found: '2026-11-25'
+  via: cited by 2611.08577v3 [56]; original arXiv abstract and v1 checked
+  decision: pending
+  note: Review the video planner and action module as model capabilities, and verify what is publicly available.
+- id: '2609.35652'
+  title: 'MM-ABC: Towards Generalist Mobile Manipulation via Seeing, Coordinating and Imagining'
+  url: https://arxiv.org/abs/2609.35652
+  found: '2026-11-25'
+  via: cited by 2611.31002v1 [59]; original arXiv abstract and v1 checked
+  decision: pending
+  note: Review reusable arm/base action capabilities; distinguish training-only prediction from runtime observations.
+- id: '2611.08318'
+  title: Learning the Task or Learning the Verifier? Rethinking Criteria Exposure in Embodied Self-Improvement
+  url: https://arxiv.org/abs/2611.08318
+  found: '2026-11-25'
+  via: cited by 2611.31002v1 [37]; original arXiv abstract and v1 checked
+  decision: pending
+  note: Read the criteria-exposure experiment and verifier changes; check the agent’s feedback and program revisions.
+- id: '2610.40333'
+  title: 'RFW-A: Agentic Procedural Generation of 400K Articulated Assets over 500 Categories'
+  url: https://arxiv.org/abs/2610.40333
+  found: '2026-11-25'
+  via: cited by 2611.31002v1 [66]; original arXiv abstract and v1 checked
+  decision: pending
+  note: Read the generator refinement and physics checks, and verify the articulated asset release.
+- id: '2610.04301'
+  title: 'EnvDreamer: Large-Scale Multimodal-to-Environment Generation for Embodied AI'
+  url: https://arxiv.org/abs/2610.04301
+  found: '2026-11-25'
+  via: cited by 2611.31002v1 [72]; original arXiv abstract and v1 checked
+  decision: pending
+  note: Check generated Unreal environments, validator feedback and the availability of the environment collection.

@@ -13,7 +13,7 @@
 
 A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to the physical world.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-689-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--24-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-691-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--25-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -55,10 +55,10 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [2.3 3D generation models × 3D assets and scenes](#s2-3) (11)
   - [2.4 Generative world models × interactive environments](#s2-4) (13)
   - [2.5 Perception models × scene understanding and reconstruction](#s2-5) (6)
-  - [2.6 Action models × robot manipulation](#s2-6) (12)
+  - [2.6 Action models × robot manipulation](#s2-6) (13)
 - [Stage 3 · Bridging Digital & Physical Worlds](#stage-3)
   - [3.1 Embodied harnesses](#s3-1) (93)
-  - [3.2 Simulator construction](#s3-2) (68)
+  - [3.2 Simulator construction](#s3-2) (69)
   - [3.3 Simulator quality evaluation](#s3-3) (29)
   - [3.4 Data](#s3-4) (15)
   - [3.5 Training and capability improvement](#s3-5) (86)
@@ -1943,6 +1943,11 @@ The agent **calls other models through code** — image, video and world generat
 
 ### 2.6 Action models × robot manipulation
 
+<!-- mmac-record: {"id": "2611.08577", "scope": "Adjacent", "primary": "2.6", "stage": 2, "type": "paper"} -->
+
+- <a id="paper-2611-08577"></a>`2026.11` **[Meituan-Robotics-0: A Vision-Language-Action Foundation Model for Desktop Manipulation](https://arxiv.org/abs/2611.08577)** [[Project page]](https://meituan-robotics.github.io/Meituan-Robotics-0/) [[Code]](https://github.com/Meituan-Robotics/Meituan-Robotics-0) [[Model]](https://huggingface.co/MeituanRobotics/Meituan-Robotics-0) [[Dataset]](https://huggingface.co/datasets/MeituanRobotics/RoboDesk)
+  > Trains a desktop manipulation VLA across robot embodiments and uses visual event memory to pause, resume, or replan its subtasks.
+
 <!-- mmac-record: {"id": "2611.05275", "scope": "Adjacent", "primary": "2.6", "stage": 2, "type": "paper"} -->
 
 - <a id="paper-2611-05275"></a>`2026.11` **[Route Anything: A Study of Model and Policy Routing for General-Purpose AI Systems](https://arxiv.org/abs/2611.05275)** [[Code]](https://github.com/InfRec-Cardinal/route-anything) [[Dataset]](https://huggingface.co/datasets/Lance1573/route-anything-data)
@@ -2570,6 +2575,8 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 - <a id="paper-res-webots-mcp"></a>**[Webots MCP](https://github.com/MHasaan/webotMCP)**
   > Exposes scene editing, controller code, robot commands, multiview screenshots, motion traces and contact events to agents; ground-truth simulator readouts and reactive controls are distinguished from learned perception and planning.
 
+*See also:* [Meituan-Robotics-0](#paper-2611-08577)
+
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20Back%20to%20contents-30363d?style=flat-square" alt="↑ Back to contents" height="24"></a></p>
 
 <a id="methods-physical-assets"></a>
@@ -2613,6 +2620,12 @@ All 68 works, step by step, including verification & revision and variant expans
 - <a id="paper-2611-02691"></a>`2026.11` **[Closing the Dynamics Gap through Self-Directed Robotic Interaction](https://arxiv.org/abs/2611.02691)** [[Project page]](https://cue-dynamics.github.io/)
   > An agent designs physical probes, measures their outcomes and calibrates an executable model.<br>
   > 🖥️ **Sim** MuJoCo
+
+<!-- mmac-record: {"id": "2611.31002", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-31002"></a>`2026.11` **[RoboUniverse-10K: Toward the Scaling Era of Agentic Robotics via Real-to-Sim Environments](https://arxiv.org/abs/2611.31002)** [[Project page]](https://lab.einsia.ai/robo-universe/) [[Code]](https://github.com/Einsia/RoboUniverse-10K) [[Dataset]](https://huggingface.co/datasets/Einsia/RoboUniverse-10K) [[Model]](https://huggingface.co/Einsia/RoboUniverse-35B-A3B)
+  > Builds resettable, scored Isaac Sim tasks from robot videos and revises scene code using render comparisons and physics rollouts.<br>
+  > 🖥️ **Sim** Isaac Sim (Franka Panda, AgileX PiPER) · 🦾 **Real** Franka
 
 <!-- mmac-record: {"id": "2611.11344", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -3325,6 +3338,8 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
 - <a id="paper-2609-35318"></a>`2026.09` **[DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library](https://arxiv.org/abs/2609.35318)** [[Project page]](https://dexagent1.github.io/) [[Project page]](https://dexagent123.github.io/) [[Code]](https://github.com/dexagent1/DexAgent)
   > Starting from one first-person human video, an agent rebuilds the scene in simulation from object properties, optimizes a dexterous-hand trajectory, and varies object and robot states to generate data, growing its tool library as it goes. Frames: simulation renders from varied viewpoints, retextured to look real; trajectory: dexterous hand and arm actions.<br>
   > 🖥️ **Sim** Blender + MuJoCo + Isaac Sim (Sharpa Wave) · 🦾 **Real** I2RT YAM, Sharpa Wave
+
+*See also:* [RoboUniverse-10K](#paper-2611-31002)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20Back%20to%20contents-30363d?style=flat-square" alt="↑ Back to contents" height="24"></a></p>
 

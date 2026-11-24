@@ -16453,3 +16453,74 @@
     zh: GPT-6.1-sol 编写有状态 Python 监测程序，调用 Qwen3.5-9B 读取 RGB-D 观测，中断正在执行的策略，并根据返回图像和原因重写监测程序及后续动作（§3、图 1/6、§7.6）。RoboHD
       包含 168 个匹配场景；XR 在无人时可解的 150 个场景中，无接触率为 81.3%，轮次式 Harness 为 61.3%；全部 168 个场景的任务完成且无接触率为 38.7% 与 31.0%（§4.3、表
       1／图 4） · 实机扰动测试成功 25/40 次，基线为 5/40；两项任务的 π0.5 策略各用 100 条遥操作示范训练（§4.5、表 4）。仿真在推理时暂停，脚本化人体无碰撞体，以几何方式判断接触；实机不暂停，每任务／条件十种布置。这些结果不构成物理安全保证，论文未链接实现或数据集发布。
+- id: '2611.08577'
+  title: 'Meituan-Robotics-0: A Vision-Language-Action Foundation Model for Desktop Manipulation'
+  url: https://arxiv.org/abs/2611.08577
+  date: '2026.11'
+  section: '2.6'
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Trains a desktop manipulation VLA across robot embodiments and uses visual event memory to pause, resume, or replan its subtasks.
+    zh: 跨机器人构型训练桌面操作 VLA，并用视觉事件记忆暂停、恢复或重规划子任务。
+    ja: 複数のロボット構成で卓上操作向け VLA を学習し、視覚イベントの記憶を使ってサブタスクを一時停止・再開・再計画する。
+  see_also:
+  - '3.1'
+  sources:
+  - https://arxiv.org/abs/2611.08577
+  - https://meituan-robotics.github.io/Meituan-Robotics-0/
+  - https://github.com/Meituan-Robotics/Meituan-Robotics-0
+  - https://huggingface.co/MeituanRobotics/Meituan-Robotics-0
+  - https://huggingface.co/datasets/MeituanRobotics/RoboDesk
+  verification:
+    en: 'Staged VLA training uses 15,060 hours of robot trajectories across 12 embodiments (§2, Table 2, §3).
+      Rollback pairs replaced policy segments with human corrections for CFG-DAgger (§3.2.3, Fig. 6).
+      The Monitor turns video windows into captions, and the Planner uses event memory and keyframes to revise
+      subtask instructions for the VLA (§4.2). Real-robot policy comparisons use 30 trials per task under matched
+      conditions; cross-task memory and resumption are qualitative deployment cases (§5.2, Figs. 13–14).
+      The published RoboDesk collection is one component of the training mixture.'
+    zh: '分阶段 VLA 训练使用覆盖 12 种机器人构型的 15,060 小时轨迹（§2、表 2、§3）。
+      Rollback 将被替换的策略片段与人工纠正配对，用于 CFG-DAgger（§3.2.3、图 6）。
+      监视模块把视频片段转成描述，规划器用事件记忆和关键帧调整发给 VLA 的子任务指令（§4.2）。
+      实机策略对比在匹配条件下每任务测试 30 次，跨任务记忆与任务恢复为定性部署案例（§5.2、图 13–14）。
+      已公开的 RoboDesk 是训练数据的一部分。'
+- id: '2611.31002'
+  title: 'RoboUniverse-10K: Toward the Scaling Era of Agentic Robotics via Real-to-Sim Environments'
+  url: https://arxiv.org/abs/2611.31002
+  date: '2026.11'
+  section: '3.2'
+  type: paper
+  scope: core
+  tldr:
+    en: Builds resettable, scored Isaac Sim tasks from robot videos and revises scene code using render comparisons and physics rollouts.
+    zh: 从真实机器人视频构建可重置、可判分的 Isaac Sim 任务，并根据渲染对照和物理试跑修订场景代码。
+    ja: 実機ロボットの動画から初期化と採点が可能な Isaac Sim タスクを構築し、描画結果の比較と物理シミュレーションに基づいてシーンのコードを修正する。
+  see_also:
+  - '3.4'
+  setup:
+    engines:
+    - Isaac Sim
+    sim_robots:
+    - Franka Panda
+    - AgileX PiPER
+    real_robots:
+    - Franka
+  sources:
+  - https://arxiv.org/abs/2611.31002
+  - https://lab.einsia.ai/robo-universe/
+  - https://github.com/Einsia/RoboUniverse-10K
+  - https://huggingface.co/datasets/Einsia/RoboUniverse-10K
+  - https://huggingface.co/Einsia/RoboUniverse-35B-A3B
+  verification:
+    en: 'The builder writes scene, controller and verifier code, runs it in Isaac Sim, and uses reference/video
+      comparisons and physics outcomes to revise the environment; independent QA replays it after reset and
+      checks alternative valid and invalid outcomes (§2.3, Fig. 4, App. 7.3). The release provides 10,807 tasks,
+      including a 500-task evaluation split; the data card documents 68 replacements informed by prior successes
+      and gives no train/test disjointness guarantee. The benchmark agent writes Python from sensors while
+      privileged state and grading are hidden (§§2.1, 3.1). The real Franka drawing experiment is a qualitative
+      transfer demonstration (§4.3, Fig. 13).'
+    zh: '构建 Agent 编写场景、参考控制和评分代码，在 Isaac Sim 中运行，再根据源视频与渲染对照、物理执行结果修订环境。
+      独立质检在重置后回放，并检查评分器对有效替代方案和失败结果的判定（§2.3、图 4、附录 7.3）。
+      公开版包含 10,807 个任务及 500 题评测划分。数据卡注明其中 68 题参考既有成功案例替换，
+      且未保证训练与测试完全隔离。受测 Agent 基于传感器反馈编写 Python，运行中无法访问特权状态或评分逻辑
+      （§§2.1、3.1）。实机 Franka 绘图是定性迁移示例（§4.3、图 13）。'

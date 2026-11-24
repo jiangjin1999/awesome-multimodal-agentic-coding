@@ -13,7 +13,7 @@
 
 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从数字世界延伸到物理世界。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-689-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--24-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-691-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--25-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · **简体中文** · [日本語](./README.ja.md)
 
@@ -55,10 +55,10 @@
   - [2.3 3D 生成模型 × 3D 资产与场景](#s2-3) (11)
   - [2.4 生成式世界模型 × 可交互环境](#s2-4) (13)
   - [2.5 感知模型 × 场景理解与重建](#s2-5) (6)
-  - [2.6 动作模型 × 机器人操作](#s2-6) (12)
+  - [2.6 动作模型 × 机器人操作](#s2-6) (13)
 - [Stage 3 · 打通数字世界与物理世界](#stage-3)
   - [3.1 具身框架（Harness）](#s3-1) (93)
-  - [3.2 仿真器构建](#s3-2) (68)
+  - [3.2 仿真器构建](#s3-2) (69)
   - [3.3 仿真器质量评估](#s3-3) (29)
   - [3.4 数据](#s3-4) (15)
   - [3.5 训练与能力提升](#s3-5) (86)
@@ -1943,6 +1943,11 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 ### 2.6 动作模型 × 机器人操作
 
+<!-- mmac-record: {"id": "2611.08577", "scope": "Adjacent", "primary": "2.6", "stage": 2, "type": "paper"} -->
+
+- <a id="paper-2611-08577"></a>`2026.11` **[Meituan-Robotics-0: A Vision-Language-Action Foundation Model for Desktop Manipulation](https://arxiv.org/abs/2611.08577)** [[项目页]](https://meituan-robotics.github.io/Meituan-Robotics-0/) [[代码]](https://github.com/Meituan-Robotics/Meituan-Robotics-0) [[模型]](https://huggingface.co/MeituanRobotics/Meituan-Robotics-0) [[数据集]](https://huggingface.co/datasets/MeituanRobotics/RoboDesk)
+  > 跨机器人构型训练桌面操作 VLA，并用视觉事件记忆暂停、恢复或重规划子任务。
+
 <!-- mmac-record: {"id": "2611.05275", "scope": "Adjacent", "primary": "2.6", "stage": 2, "type": "paper"} -->
 
 - <a id="paper-2611-05275"></a>`2026.11` **[Route Anything: A Study of Model and Policy Routing for General-Purpose AI Systems](https://arxiv.org/abs/2611.05275)** [[代码]](https://github.com/InfRec-Cardinal/route-anything) [[数据集]](https://huggingface.co/datasets/Lance1573/route-anything-data)
@@ -2570,6 +2575,8 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-res-webots-mcp"></a>**[Webots MCP](https://github.com/MHasaan/webotMCP)**
   > 向Agent开放场景编辑、控制器代码、机器人动作、多视图截图、运动轨迹与接触事件；模拟器真值和反应式控制分别区别于学习式感知与规划。
 
+*另见:* [Meituan-Robotics-0](#paper-2611-08577)
+
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
 <a id="methods-physical-assets"></a>
@@ -2613,6 +2620,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-2611-02691"></a>`2026.11` **[Closing the Dynamics Gap through Self-Directed Robotic Interaction](https://arxiv.org/abs/2611.02691)** [[项目页]](https://cue-dynamics.github.io/)
   > 通过自主击球探索获取动力学证据，让 Agent 同时构建轨迹测量、拟合仿真参数并选择下一次实验。<br>
   > 🖥️ **仿真** MuJoCo
+
+<!-- mmac-record: {"id": "2611.31002", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-31002"></a>`2026.11` **[RoboUniverse-10K: Toward the Scaling Era of Agentic Robotics via Real-to-Sim Environments](https://arxiv.org/abs/2611.31002)** [[项目页]](https://lab.einsia.ai/robo-universe/) [[代码]](https://github.com/Einsia/RoboUniverse-10K) [[数据集]](https://huggingface.co/datasets/Einsia/RoboUniverse-10K) [[模型]](https://huggingface.co/Einsia/RoboUniverse-35B-A3B)
+  > 从真实机器人视频构建可重置、可判分的 Isaac Sim 任务，并根据渲染对照和物理试跑修订场景代码。<br>
+  > 🖥️ **仿真** Isaac Sim（Franka Panda、AgileX PiPER） · 🦾 **真机** Franka
 
 <!-- mmac-record: {"id": "2611.11344", "scope": "Adjacent", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -3325,6 +3338,8 @@ P0 是前提关卡，只判过不过；其余各层检查不同的失败模式�
 - <a id="paper-2609-35318"></a>`2026.09` **[DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library](https://arxiv.org/abs/2609.35318)** [[项目页]](https://dexagent1.github.io/) [[项目页]](https://dexagent123.github.io/) [[代码]](https://github.com/dexagent1/DexAgent)
   > 从单段第一视角人类视频出发，Agent 在仿真中按物体属性重建场景、优化灵巧手轨迹，再改变物体与机器人状态批量生成数据，工具库随使用不断扩充。画面：变换视角后的仿真渲染，重贴纹理以贴近真实；轨迹：灵巧手与手臂动作。<br>
   > 🖥️ **仿真** Blender + MuJoCo + Isaac Sim（Sharpa Wave） · 🦾 **真机** I2RT YAM、Sharpa Wave
+
+*另见:* [RoboUniverse-10K](#paper-2611-31002)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 

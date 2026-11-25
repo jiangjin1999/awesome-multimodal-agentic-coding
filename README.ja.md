@@ -13,7 +13,7 @@
 
 マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——デジタル世界から物理世界まで。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-691-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--25-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-693-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--25-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語**
 
@@ -60,11 +60,11 @@
   - [2.5 知覚モデル × シーン理解・再構成](#s2-5) (6)
   - [2.6 行動モデル × ロボット操作](#s2-6) (13)
 - [Stage 3 · デジタルと物理世界の架け橋](#stage-3)
-  - [3.1 身体性ハーネス](#s3-1) (93)
+  - [3.1 身体性ハーネス](#s3-1) (94)
   - [3.2 シミュレータ構築](#s3-2) (69)
   - [3.3 シミュレータ品質評価](#s3-3) (29)
   - [3.4 データ](#s3-4) (15)
-  - [3.5 学習と能力向上](#s3-5) (86)
+  - [3.5 学習と能力向上](#s3-5) (87)
   - [3.6 物理応用と実験](#s3-6) (51)
     - [科学実験（AI4Science）](#s3-6-experiments) (27)
   - [シミュレーションエンジン一覧](#s3-engines)
@@ -2034,6 +2034,12 @@
 
 #### ツールと制御インターフェース
 
+<!-- mmac-record: {"id": "2611.29377", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-29377"></a>`2026.11` **[Contact Harness: Enabling VLM Agents to Perform Contact-Rich Manipulation](https://arxiv.org/abs/2611.29377)** [[プロジェクトページ]](https://ntumars.github.io/ContactHarness/) [[コード]](https://github.com/NTUMARS/Contact-Harness) [[データセット]](https://huggingface.co/datasets/ntumars/Contact-4)
+  > 視覚・力覚と利用可能な触覚から接触状態を判断し、動作中の力フィードバックで運動を調整する。<br>
+  > 🖥️ **シミュレーション** MuJoCo（Franka Panda） · 🦾 **実機** Rokae、Franka
+
 <!-- mmac-record: {"id": "2611.01560", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-01560"></a>`2026.11` **[Democratizing Robot-Use Agents: A Unified Harness with Open Models](https://arxiv.org/abs/2611.01560)** [[コード]](https://github.com/Open-RUA/uni-robot-agent) [[プロジェクトページ]](https://openrua.ai/uni-robot-agent)
@@ -3342,7 +3348,7 @@ P0 は前提となる関門で、合否だけを判定します。ほかの各�
   > 一人称の人の動画 1 本から、エージェントが物体の性質に基づいてシミュレーションでシーンを再構成し、多指ハンドの軌跡を最適化し、物体とロボットの状態を変えてデータを生成する。ツールライブラリは使うほど拡張される。映像：視点を変えたシミュレーションのレンダリングを、実写に近づけるよう再テクスチャ。軌跡：多指ハンドと腕の動作。<br>
   > 🖥️ **シミュレーション** Blender + MuJoCo + Isaac Sim（Sharpa Wave） · 🦾 **実機** I2RT YAM、Sharpa Wave
 
-*関連:* [RoboUniverse-10K](#paper-2611-31002)
+*関連:* [Contact Harness](#paper-2611-29377) · [RoboUniverse-10K](#paper-2611-31002)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
@@ -3623,6 +3629,12 @@ P0 は前提となる関門で、合否だけを判定します。ほかの各�
 - <a id="paper-2610-42141"></a>`2026.10` **[RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory](https://arxiv.org/abs/2610.42141)** [[コード]](https://github.com/roboarchitect-ai/RoboArchitect) [[プロジェクトページ]](https://roboarchitect-ai.github.io/)
   > 永続記憶とロボット制御コードを進化させる。<br>
   > 🖥️ **シミュレーション** MuJoCo + SAPIEN（Franka Panda、WidowX 250、Google Robot）
+
+<!-- mmac-record: {"id": "2610.02717", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2610-02717"></a>`2026.10` **[RoboBridge: A Self-Evolving Embodied Agent Framework for Sim-to-Real Transfer](https://arxiv.org/abs/2610.02717)**
+  > ロボットの言語化されたスキルを実機へ移し、試行結果の検証を通じて更新する。<br>
+  > 🖥️ **シミュレーション** MuJoCo
 
 <!-- mmac-record: {"id": "2610.12424", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 

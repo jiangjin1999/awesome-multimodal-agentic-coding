@@ -13,7 +13,7 @@
 
 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从数字世界延伸到物理世界。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-691-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--25-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-693-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--25-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · **简体中文** · [日本語](./README.ja.md)
 
@@ -57,11 +57,11 @@
   - [2.5 感知模型 × 场景理解与重建](#s2-5) (6)
   - [2.6 动作模型 × 机器人操作](#s2-6) (13)
 - [Stage 3 · 打通数字世界与物理世界](#stage-3)
-  - [3.1 具身框架（Harness）](#s3-1) (93)
+  - [3.1 具身框架（Harness）](#s3-1) (94)
   - [3.2 仿真器构建](#s3-2) (69)
   - [3.3 仿真器质量评估](#s3-3) (29)
   - [3.4 数据](#s3-4) (15)
-  - [3.5 训练与能力提升](#s3-5) (86)
+  - [3.5 训练与能力提升](#s3-5) (87)
   - [3.6 物理应用与实验](#s3-6) (51)
     - [科学实验（AI4Science）](#s3-6-experiments) (27)
   - [仿真引擎一览](#s3-engines)
@@ -2031,6 +2031,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 #### 工具与控制接口
 
+<!-- mmac-record: {"id": "2611.29377", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-29377"></a>`2026.11` **[Contact Harness: Enabling VLM Agents to Perform Contact-Rich Manipulation](https://arxiv.org/abs/2611.29377)** [[项目页]](https://ntumars.github.io/ContactHarness/) [[代码]](https://github.com/NTUMARS/Contact-Harness) [[数据集]](https://huggingface.co/datasets/ntumars/Contact-4)
+  > 结合视觉、力觉及可用触觉判断接触状态，并在动作执行中用实时力反馈调节运动。<br>
+  > 🖥️ **仿真** MuJoCo（Franka Panda） · 🦾 **真机** Rokae、Franka
+
 <!-- mmac-record: {"id": "2611.01560", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-01560"></a>`2026.11` **[Democratizing Robot-Use Agents: A Unified Harness with Open Models](https://arxiv.org/abs/2611.01560)** [[代码]](https://github.com/Open-RUA/uni-robot-agent) [[项目页]](https://openrua.ai/uni-robot-agent)
@@ -3339,7 +3345,7 @@ P0 是前提关卡，只判过不过；其余各层检查不同的失败模式�
   > 从单段第一视角人类视频出发，Agent 在仿真中按物体属性重建场景、优化灵巧手轨迹，再改变物体与机器人状态批量生成数据，工具库随使用不断扩充。画面：变换视角后的仿真渲染，重贴纹理以贴近真实；轨迹：灵巧手与手臂动作。<br>
   > 🖥️ **仿真** Blender + MuJoCo + Isaac Sim（Sharpa Wave） · 🦾 **真机** I2RT YAM、Sharpa Wave
 
-*另见:* [RoboUniverse-10K](#paper-2611-31002)
+*另见:* [Contact Harness](#paper-2611-29377) · [RoboUniverse-10K](#paper-2611-31002)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
@@ -3620,6 +3626,12 @@ P0 是前提关卡，只判过不过；其余各层检查不同的失败模式�
 - <a id="paper-2610-42141"></a>`2026.10` **[RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory](https://arxiv.org/abs/2610.42141)** [[代码]](https://github.com/roboarchitect-ai/RoboArchitect) [[项目页]](https://roboarchitect-ai.github.io/)
   > 演化持久记忆与机器人控制代码。<br>
   > 🖥️ **仿真** MuJoCo + SAPIEN（Franka Panda、WidowX 250、Google Robot）
+
+<!-- mmac-record: {"id": "2610.02717", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2610-02717"></a>`2026.10` **[RoboBridge: A Self-Evolving Embodied Agent Framework for Sim-to-Real Transfer](https://arxiv.org/abs/2610.02717)**
+  > 把文字机器人技能从仿真迁移到实机，并用执行验证筛选技能修订。<br>
+  > 🖥️ **仿真** MuJoCo
 
 <!-- mmac-record: {"id": "2610.12424", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 

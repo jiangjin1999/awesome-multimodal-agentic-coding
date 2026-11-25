@@ -16524,3 +16524,66 @@
       公开版包含 10,807 个任务及 500 题评测划分。数据卡注明其中 68 题参考既有成功案例替换，
       且未保证训练与测试完全隔离。受测 Agent 基于传感器反馈编写 Python，运行中无法访问特权状态或评分逻辑
       （§§2.1、3.1）。实机 Franka 绘图是定性迁移示例（§4.3、图 13）。'
+- id: '2610.02717'
+  title: 'RoboBridge: A Self-Evolving Embodied Agent Framework for Sim-to-Real Transfer'
+  url: https://arxiv.org/abs/2610.02717
+  date: '2026.10'
+  section: '3.5'
+  sub: experience-skill
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Transfers and refines textual robot skills using verified rollouts.
+    zh: 把文字机器人技能从仿真迁移到实机，并用执行验证筛选技能修订。
+    ja: ロボットの言語化されたスキルを実機へ移し、試行結果の検証を通じて更新する。
+  setup:
+    engines:
+    - MuJoCo
+  sources:
+  - https://arxiv.org/abs/2610.02717
+  verification:
+    en: The planner reads scene images, robot state, and tool outcomes to choose operations; the persistent skill
+      is a procedural document. Candidate edits are separately tested, while configurable inference-time rewards
+      guide a frozen action model (§3, App. B/E). Across three physical tasks, direct-transfer results are 9/15,
+      7/15, and 7/15, rising to 15/15, 14/15, and 15/15 after ten adaptation episodes per task (Fig. 5a). The physical
+      final outcome is labeled by an operator (App. B).
+    zh: 规划器读取场景图像、机器人状态和工具结果来选择操作，持久技能为流程文档。候选修订单独验证，推理时配置的奖励引导冻结动作模型（§3、附录 B/E）。三项实机任务直接迁移成功数分别为 9/15、7/15 和 7/15，每任务十次适应回合后为
+      15/15、14/15 和 15/15（图 5a）。实机最终标签由操作者给出（附录 B）。
+- id: '2611.29377'
+  title: 'Contact Harness: Enabling VLM Agents to Perform Contact-Rich Manipulation'
+  url: https://arxiv.org/abs/2611.29377
+  date: '2026.11'
+  section: '3.1'
+  sub: tools-interfaces
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Combines vision, force and available touch for contact-state decisions, with force feedback regulating each
+      motion during execution.
+    zh: 结合视觉、力觉及可用触觉判断接触状态，并在动作执行中用实时力反馈调节运动。
+    ja: 視覚・力覚と利用可能な触覚から接触状態を判断し、動作中の力フィードバックで運動を調整する。
+  setup:
+    engines:
+    - MuJoCo
+    sim_robots:
+    - Franka Panda
+    real_robots:
+    - Rokae
+    - Franka
+  sources:
+  - https://arxiv.org/abs/2611.29377
+  - https://ntumars.github.io/ContactHarness/
+  - https://github.com/NTUMARS/Contact-Harness
+  - https://huggingface.co/datasets/ntumars/Contact-4
+  verification:
+    en: GPT-6 Astra uses reusable textual skills to assess contact and choose displacement, duration and force settings;
+      the compliant controller reacts to measured force during the command (§3, App. B/F). Rokae completes 136/150
+      insertions across 15 connectors, averaging 378 seconds on successful trials (Table 1). Contact-4 covers four
+      contact-rich tasks and two reference tasks in MuJoCo; 58/60 succeed in the reported Astra configuration (Table
+      4). Tactile sensing is available on Rokae; the Franka setup uses torque-estimated force (§4.1). Public code
+      includes the Franka harness and simulation.
+    zh: GPT-6 Astra 依据文字技能判断接触，并选择位移、持续时间与力阈值。柔顺控制器在动作期间响应实测力（§3、附录 B/F）。Rokae 在 15 类插头上完成 136/150 次插接，成功试验平均 378
+      秒（表 1）。MuJoCo 中的 Contact-4 含四项接触任务和两项参考任务，论文报告的 Astra 配置成功 58/60 次（表 4）。Rokae 有触觉传感，Franka 使用关节力矩估计力（§4.1）。公开代码包含
+      Franka 框架与仿真。
+  see_also:
+  - '3.4'

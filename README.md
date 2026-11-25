@@ -13,7 +13,7 @@
 
 A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to the physical world.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-691-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--25-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-693-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--25-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -57,11 +57,11 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [2.5 Perception models × scene understanding and reconstruction](#s2-5) (6)
   - [2.6 Action models × robot manipulation](#s2-6) (13)
 - [Stage 3 · Bridging Digital & Physical Worlds](#stage-3)
-  - [3.1 Embodied harnesses](#s3-1) (93)
+  - [3.1 Embodied harnesses](#s3-1) (94)
   - [3.2 Simulator construction](#s3-2) (69)
   - [3.3 Simulator quality evaluation](#s3-3) (29)
   - [3.4 Data](#s3-4) (15)
-  - [3.5 Training and capability improvement](#s3-5) (86)
+  - [3.5 Training and capability improvement](#s3-5) (87)
   - [3.6 Physical applications and experiments](#s3-6) (51)
     - [Scientific experiments (AI4Science)](#s3-6-experiments) (27)
   - [Simulation engines at a glance](#s3-engines)
@@ -2031,6 +2031,12 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 #### Tools and control interfaces
 
+<!-- mmac-record: {"id": "2611.29377", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-29377"></a>`2026.11` **[Contact Harness: Enabling VLM Agents to Perform Contact-Rich Manipulation](https://arxiv.org/abs/2611.29377)** [[Project page]](https://ntumars.github.io/ContactHarness/) [[Code]](https://github.com/NTUMARS/Contact-Harness) [[Dataset]](https://huggingface.co/datasets/ntumars/Contact-4)
+  > Combines vision, force and available touch for contact-state decisions, with force feedback regulating each motion during execution.<br>
+  > 🖥️ **Sim** MuJoCo (Franka Panda) · 🦾 **Real** Rokae, Franka
+
 <!-- mmac-record: {"id": "2611.01560", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-01560"></a>`2026.11` **[Democratizing Robot-Use Agents: A Unified Harness with Open Models](https://arxiv.org/abs/2611.01560)** [[Code]](https://github.com/Open-RUA/uni-robot-agent) [[Project page]](https://openrua.ai/uni-robot-agent)
@@ -3339,7 +3345,7 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
   > Starting from one first-person human video, an agent rebuilds the scene in simulation from object properties, optimizes a dexterous-hand trajectory, and varies object and robot states to generate data, growing its tool library as it goes. Frames: simulation renders from varied viewpoints, retextured to look real; trajectory: dexterous hand and arm actions.<br>
   > 🖥️ **Sim** Blender + MuJoCo + Isaac Sim (Sharpa Wave) · 🦾 **Real** I2RT YAM, Sharpa Wave
 
-*See also:* [RoboUniverse-10K](#paper-2611-31002)
+*See also:* [Contact Harness](#paper-2611-29377) · [RoboUniverse-10K](#paper-2611-31002)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20Back%20to%20contents-30363d?style=flat-square" alt="↑ Back to contents" height="24"></a></p>
 
@@ -3620,6 +3626,12 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
 - <a id="paper-2610-42141"></a>`2026.10` **[RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory](https://arxiv.org/abs/2610.42141)** [[Code]](https://github.com/roboarchitect-ai/RoboArchitect) [[Project page]](https://roboarchitect-ai.github.io/)
   > Evolves persistent memory and robot-control code.<br>
   > 🖥️ **Sim** MuJoCo + SAPIEN (Franka Panda, WidowX 250, Google Robot)
+
+<!-- mmac-record: {"id": "2610.02717", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2610-02717"></a>`2026.10` **[RoboBridge: A Self-Evolving Embodied Agent Framework for Sim-to-Real Transfer](https://arxiv.org/abs/2610.02717)**
+  > Transfers and refines textual robot skills using verified rollouts.<br>
+  > 🖥️ **Sim** MuJoCo
 
 <!-- mmac-record: {"id": "2610.12424", "scope": "Core", "primary": "3.5", "stage": 3, "type": "paper"} -->
 

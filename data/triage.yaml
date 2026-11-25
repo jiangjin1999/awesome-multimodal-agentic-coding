@@ -176,6 +176,17 @@ runs:
     in 3.2 with a 3.4 reference for the released environments. Seven citation leads remain pending. The released
     500-task split documents prior-success-based replacements; consult that data card before using it as held-out
     evidence. The construction and separate QA loops may inform the Stage 3 guide.
+- date: '2026-11-25'
+  trigger: sweep
+  covered: Read the oldest pending RoboBridge v1 and the maintainer-named Contact Harness v1, including experiment
+    and supplement evidence. Scanned nine arXiv new/recent categories and all 276 November 24 cs.RO announcement
+    titles including cross-lists and replacements. Checked HF, 20 task/theme/capability and focused queries, official
+    projects and blogs, GitHub watchlists, open suggestions, and benchmark pages. The November 11–25 API and historical
+    coverage gaps are recorded separately.
+  note: 'Added two Adjacent works: RoboBridge (3.5) and Contact Harness (3.1). Queued 51 additional listing, citation or
+    official release leads. Search remains partial, including API failures, unreleased November 25 source batches at recheck and
+    unread candidates. Earlier manual MR0 and RoboUniverse records are retained. Contact Harness and RoboBridge
+    can inform the Stage 3 guide.'
 candidates:
 - id: '2610.35817'
   title: 'Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics'
@@ -305,8 +316,15 @@ candidates:
   url: https://arxiv.org/abs/2610.02717
   found: '2026-11-15'
   via: cited by 2610.35817 [106]
-  decision: pending
-  note: A tool-using agent that adapts after sim-to-real deployment. Compare 3.5 experience-skill (2610.02204).
+  decision: added
+  decided: '2026-11-25'
+  precedent:
+  - '2610.02204'
+  - '2608.11350'
+  - '2609.37583'
+  note: 'Full v1 read. Adjacent in 3.5: across-episode edits to a procedural document are validated before adoption;
+    the evaluated planner uses action tools and can configure a policy reward. No same-trajectory program rewrite
+    is established in the reported setup.'
 - id: '2610.12832'
   title: 'VLMs are Native Action Models: Unleashing the Manipulation Capabilities of VLMs with Explicit Action-Space Grounding'
   url: https://arxiv.org/abs/2610.12832
@@ -2445,3 +2463,427 @@ candidates:
   via: cited by 2611.31002v1 [72]; original arXiv abstract and v1 checked
   decision: pending
   note: Check generated Unreal environments, validator feedback and the availability of the environment collection.
+- id: '2611.29377'
+  title: 'Contact Harness: Enabling VLM Agents to Perform Contact-Rich Manipulation'
+  url: https://arxiv.org/abs/2611.29377
+  found: '2026-11-25'
+  via: maintainer inquiry and November 24 cs.RO announcement; full v1 PDF and implementation checked
+  decision: added
+  decided: '2026-11-25'
+  precedent:
+  - '2512.05955'
+  - '2609.20822'
+  - '2611.27182'
+  note: Adjacent in 3.1. RGB, force and available fingertip readings change subsequent commands. The terminal agent
+    uses existing motion and observation interfaces and textual skills, while force feedback is handled during execution
+    by the motion service. Contact-4 demonstration release is linked.
+- id: '2611.28260'
+  title: 'Neural Fidelity Calibration: Turning Field Anomalies into Simulation Fine-Tuning'
+  url: https://arxiv.org/abs/2611.28260
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.28411'
+  title: 'ScaleEvals: Scaling Generalist Policy Evaluation through Reset-Free Autonomous Play'
+  url: https://arxiv.org/abs/2611.28411
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.28585'
+  title: 'AsyncMixVLA: Runtime Asynchronous Robot Policy Switching for Adaptation to Dynamic Environments'
+  url: https://arxiv.org/abs/2611.28585
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.28732'
+  title: 'Entangle: Scaling Human-Video In-Context World-Action Models across Unseen Tasks and Contexts'
+  url: https://arxiv.org/abs/2611.28732
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.28943'
+  title: 'SANA-Robot: Efficient World Action Model with Hybrid Memory'
+  url: https://arxiv.org/abs/2611.28943
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.29208'
+  title: 'Force2Act: A Force-Aware Visuomotor Policy for Generalizable Compliant Robot Manipulation'
+  url: https://arxiv.org/abs/2611.29208
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.29240'
+  title: 'Tacinf: A Unified Tactile Infrastructure for Robot Manipulation'
+  url: https://arxiv.org/abs/2611.29240
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.29338'
+  title: A Glimpse of Training VLMs as Foundation Models for Robotic Manipulation
+  url: https://arxiv.org/abs/2611.29338
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.29383'
+  title: Self-Refining VLA Sampling
+  url: https://arxiv.org/abs/2611.29383
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.29501'
+  title: 'MAWAM: Joint Imagination for Collaborative Robot Manipulation with a Multi-Agent World Action Model'
+  url: https://arxiv.org/abs/2611.29501
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.29558'
+  title: 'Action Windows Are Inherently Temporal: A Benchmark for Time-Sensitive Robotic Manipulation'
+  url: https://arxiv.org/abs/2611.29558
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.29662'
+  title: 'Grounded in Contact: Reducing Floating and Interpenetration Artifacts with Multimodal Skill-Effect Models'
+  url: https://arxiv.org/abs/2611.29662
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.29918'
+  title: 'TidyFlow: Geometry-Aware Tabletop Arrangement Generation with Human-Aligned Tidiness Evaluation'
+  url: https://arxiv.org/abs/2611.29918
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.30047'
+  title: 'RoboLiveMem: Is Robot Memory Solved When the World Does Not Wait?'
+  url: https://arxiv.org/abs/2611.30047
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.30101'
+  title: 'Agent on Guard: Self-Improving Runtime Intervention for Robust Robotic Manipulation'
+  url: https://arxiv.org/abs/2611.30101
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.30111'
+  title: 'RoboThink: Let the Agent Think, Let the Policy Act'
+  url: https://arxiv.org/abs/2611.30111
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.30188'
+  title: 'Calibrating World Action Models: From Adaptive System 2 Takeover to Self-Evolution'
+  url: https://arxiv.org/abs/2611.30188
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.30209'
+  title: 'RoboAda: Adapting Frozen Robot Policies at Test Time to Physics They Cannot See'
+  url: https://arxiv.org/abs/2611.30209
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.30254'
+  title: 'Innata-0: A Native Embodied World System with Model-Agent Co-Design'
+  url: https://arxiv.org/abs/2611.30254
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.30550'
+  title: 'Body and Soul: Decoupling Robotic Brain and Policy with RoboHarness-Zero'
+  url: https://arxiv.org/abs/2611.30550
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.30555'
+  title: 'RoboInF: A Benchmark for Instruction Fidelity in Robotic Manipulation'
+  url: https://arxiv.org/abs/2611.30555
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.30572'
+  title: 'VeriTouch: Verified Visuo-Tactile World Models that Improve Robot Policy Learning'
+  url: https://arxiv.org/abs/2611.30572
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.30907'
+  title: 'DexLatentWorld: 3D Cross-Embodiment Latent Action World Models for Zero-Shot Robotic Manipulation'
+  url: https://arxiv.org/abs/2611.30907
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.30989'
+  title: 'WorldLeague: Benchmarking Physical Agency'
+  url: https://arxiv.org/abs/2611.30989
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.31053'
+  title: 'ReWeave: Emergent Physical Task Topologies for Embodied Harness Optimization and Cross-Task Meta-Distillation'
+  url: https://arxiv.org/abs/2611.31053
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.31098'
+  title: 'Real2Worlds2Real: Scaling Self-Improving Agentic Real2Sim2Real for Robot Manipulation'
+  url: https://arxiv.org/abs/2611.31098
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.31115'
+  title: 'RUIBench: What Makes a Good Robot-Use Interface?'
+  url: https://arxiv.org/abs/2611.31115
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.31173'
+  title: 'EmboEagle: An Efficient Agentic Embodied Framework for Long-horizon Robotic Manipulation'
+  url: https://arxiv.org/abs/2611.31173
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.31201'
+  title: 'Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness'
+  url: https://arxiv.org/abs/2611.31201
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.31205'
+  title: 'ACAP: Asynchronous Coding Agents for Efficient Robot Control'
+  url: https://arxiv.org/abs/2611.31205
+  found: '2026-11-25'
+  via: cs.RO November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.28197'
+  title: 'From Point Clouds to Engineering Models: Benchmarking Agentic 3D Reconstruction in the Built Environment'
+  url: https://arxiv.org/abs/2611.28197
+  found: '2026-11-25'
+  via: cs.AI November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.28202'
+  title: 'AutoPILOT: A Visual Agent Harness for Real-Time Gameplay'
+  url: https://arxiv.org/abs/2611.28202
+  found: '2026-11-25'
+  via: cs.AI November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.28368'
+  title: 'Schedule, Rank, Profile: Continuous Evaluation of LLM Agents in Games'
+  url: https://arxiv.org/abs/2611.28368
+  found: '2026-11-25'
+  via: cs.AI November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.28919'
+  title: When Do Better Visual World Models Make Better Plans? Decision-Aligned Selection for Latent Planning
+  url: https://arxiv.org/abs/2611.28919
+  found: '2026-11-25'
+  via: cs.AI November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.30771'
+  title: 'GameDojo: Benchmarking Real-Time Interactive Agents in Video Games'
+  url: https://arxiv.org/abs/2611.30771
+  found: '2026-11-25'
+  via: cs.AI November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.28646'
+  title: 'OrthoLatentCAD: Orthographic Spatial Latents for Hand-Drawn CAD Program Generation'
+  url: https://arxiv.org/abs/2611.28646
+  found: '2026-11-25'
+  via: cs.CV November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.28783'
+  title: '3DCodeFactory: Scaling Training Data for 3D Code Agents'
+  url: https://arxiv.org/abs/2611.28783
+  found: '2026-11-25'
+  via: cs.CV November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.28853'
+  title: 'CivilCADBench: Benchmarking Multimodal LLMs for Understanding, Reconstructing, and Designing Civil Engineering
+    Drawing Sets'
+  url: https://arxiv.org/abs/2611.28853
+  found: '2026-11-25'
+  via: cs.CV November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.30013'
+  title: '3AGameFactory-Motion: Agentic Rigging and Reliable Complex Motion Generation for Diverse 3D Assets'
+  url: https://arxiv.org/abs/2611.30013
+  found: '2026-11-25'
+  via: cs.CV November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.30120'
+  title: 'AxE: Benchmarking Agent-Environment Generalization of Video World Models via Grounded Events'
+  url: https://arxiv.org/abs/2611.30120
+  found: '2026-11-25'
+  via: cs.CV November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.30673'
+  title: Optimising VLM Harnesses to Localise Errors in Generated Videos
+  url: https://arxiv.org/abs/2611.30673
+  found: '2026-11-25'
+  via: cs.CV November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.30777'
+  title: 'AvatarAnyone: Agentic Reconstruction of Mesh-Based Layered Avatars from YouTube Video'
+  url: https://arxiv.org/abs/2611.30777
+  found: '2026-11-25'
+  via: cs.CV November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2611.29367'
+  title: 'BenchMint: From Real-World Tasks to Executable Benchmarks'
+  url: https://arxiv.org/abs/2611.29367
+  found: '2026-11-25'
+  via: cs.LG November 24 announcement
+  decision: pending
+  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
+    and public release before placing it.
+- id: '2607.04162'
+  title: 'ACE: Agentic Control for Embodied Manipulation via Zero-shot Workflow Reasoning'
+  url: https://arxiv.org/abs/2607.04162
+  found: '2026-11-25'
+  via: RoboBridge references; original arXiv record checked
+  decision: pending
+  note: Review the reusable agent, action policy or deployment mechanism and its demonstrated role before deciding
+    scope.
+- id: '2608.17209'
+  title: 'Teach and Grow: An Agent-Centered Architecture for General Robot Learning'
+  url: https://arxiv.org/abs/2608.17209
+  found: '2026-11-25'
+  via: RoboBridge references; original arXiv record checked
+  decision: pending
+  note: Review the reusable agent, action policy or deployment mechanism and its demonstrated role before deciding
+    scope.
+- id: '2606.10808'
+  title: 'Bridging Semantics and Physical Execution: A Neuro-Symbolic Framework for Multi-Pair Robotic Assembly'
+  url: https://arxiv.org/abs/2606.10808
+  found: '2026-11-25'
+  via: Contact Harness references; original arXiv record checked
+  decision: pending
+  note: Review the reusable agent, action policy or deployment mechanism and its demonstrated role before deciding
+    scope.
+- id: '2608.16889'
+  title: 'Don''t Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware
+    Memory'
+  url: https://arxiv.org/abs/2608.16889
+  found: '2026-11-25'
+  via: Contact Harness references; original arXiv record checked
+  decision: pending
+  note: Review the reusable agent, action policy or deployment mechanism and its demonstrated role before deciding
+    scope.
+- id: '2609.01596'
+  title: 'Facet-0: A Robotic Foundation Model for Contact-Rich Precise Manipulation'
+  url: https://arxiv.org/abs/2609.01596
+  found: '2026-11-25'
+  via: Contact Harness references; original arXiv record checked
+  decision: pending
+  note: Review the reusable agent, action policy or deployment mechanism and its demonstrated role before deciding
+    scope.
+- id: '2609.23800'
+  title: 'ContactDP: Contact-Guided Diffusion Policy for Tight Insertion Tasks'
+  url: https://arxiv.org/abs/2609.23800
+  found: '2026-11-25'
+  via: Contact Harness references; original arXiv record checked
+  decision: pending
+  note: Review the reusable agent, action policy or deployment mechanism and its demonstrated role before deciding
+    scope.
+- id: '2610.05734'
+  title: 'FreeSpeed: Training-Free Speed Control for Generative Robot Policies'
+  url: https://arxiv.org/abs/2610.05734
+  found: '2026-11-25'
+  via: Contact Harness references; original arXiv record checked
+  decision: pending
+  note: Review the reusable agent, action policy or deployment mechanism and its demonstrated role before deciding
+    scope.
+- id: '2611.29238'
+  title: 'GameAnything: From Any Inspirations to Playable Game Worlds'
+  url: https://arxiv.org/abs/2611.29238
+  found: '2026-11-25'
+  via: AetherLabsAI official project and benchmark READMEs; direction 7 follow-up
+  decision: pending
+  note: Both official repositories identify the same paper. Check the refinement configuration, actual playtest
+    feedback, benchmark grading and media terms.

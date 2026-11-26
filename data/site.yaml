@@ -2691,9 +2691,8 @@ robotics:
   hero:
     light: assets/robotics/hero/hero-light.png
     dark: assets/robotics/hero/hero-dark.png
-    alt: 'Multimodal Agentic Coding, robotics branch: a Real2Sim2Real loop around a real robot arm and its simulated wireframe
-      twin. A coding agent between the two worlds sends code and observes results, while the loop runs Act (real world), Build
-      (simulation), Learn (simulation) and Apply (real world).'
+    alt: Multimodal Agentic Coding, robotics branch. A Real2Sim2Real loop around a real robot arm and its simulated wireframe
+      twin, with a coding agent between the two worlds that sends code and observes results.
     labels:
       '3.1': Embodied harness
       '2.6': Action models

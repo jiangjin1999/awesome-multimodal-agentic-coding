@@ -6,6 +6,7 @@ Usage:
   python scripts/build_readme.py --check   # validate data and fail if a README is out of date
 """
 import argparse
+from html import escape
 import json
 import re
 import sys
@@ -468,6 +469,19 @@ def robotics_text(site, key, lang=None):
                  .replace('{branch}', f"https://github.com/{rb['repo']}"))
 
 
+def hero_alt(site):
+    """The branch hero's alt text: the fixed description, then the loop spelled out from the same labels the image uses."""
+    rb = site['robotics']
+    labels = rb['hero'].get('labels') or {}
+    where = {'real': 'in the real world', 'sim': 'in simulation'}
+    steps = []
+    for step in rb['taxonomy']['steps']:
+        names = ', '.join(f"{sec} {labels.get(sec) or site['sections'][sec]['en']}" for sec in step['sections'])
+        steps.append(f"{step['label']['en']} ({names}) {where[step['world']]}")
+    loop = ', '.join(steps[:-1]) + ', and ' + steps[-1] if len(steps) > 1 else steps[0]
+    return f"{rb['hero']['alt'].strip()} The loop runs {loop}."
+
+
 def robotics_scope(site):
     """(the checked-out stage, the cherry-picked section IDs)."""
     rb = site['robotics']
@@ -566,7 +580,7 @@ def render_robotics(site, works, lang):
     o(f"# {rb['title']}\n")
     if hero:
         o(f'<picture>\n  <source media="(prefers-color-scheme: dark)" srcset="{hero["dark"]}">\n'
-          f'  <img src="{hero["light"]}" alt="{hero["alt"]}" width="100%">\n</picture>\n')
+          f'  <img src="{hero["light"]}" alt="{escape(hero_alt(site), quote=True)}" width="100%">\n</picture>\n')
     else:
         o(robotics_map.picture(site, lang) + '\n')
     o(f"{robotics_text(site, 'tagline', lang)}\n")

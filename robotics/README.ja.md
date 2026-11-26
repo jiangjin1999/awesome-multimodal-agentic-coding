@@ -6,7 +6,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/hero/hero-dark.png">
-  <img src="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/hero/hero-light.png" alt="Multimodal Agentic Coding, robotics branch: a Real2Sim2Real loop around a real robot arm and its simulated wireframe twin. A coding agent between the two worlds sends code and observes results, while the loop runs Act (real world), Build (simulation), Learn (simulation) and Apply (real world)." width="100%">
+  <img src="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/hero/hero-light.png" alt="Multimodal Agentic Coding, robotics branch. A Real2Sim2Real loop around a real robot arm and its simulated wireframe twin, with a coding agent between the two worlds that sends code and observes results. The loop runs Act (3.1 Embodied harness, 2.6 Action models) in the real world, Build (3.2 Sim construction, 3.3 Sim evaluation) in simulation, Learn (3.4 Data, 3.5 Training) in simulation, and Apply (3.6 Physical applications) in the real world." width="100%">
 </picture>
 
 ロボットのためのマルチモーダル・コーディングエージェント：コードを書いて行動し、練習用のシミュレータを構築し、観察した結果からシミュレーションと現実の中で改善していきます。

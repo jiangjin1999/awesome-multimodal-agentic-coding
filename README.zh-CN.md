@@ -13,7 +13,7 @@
 
 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从数字世界延伸到物理世界。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-693-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--25-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-697-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--26-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · **简体中文** · [日本語](./README.ja.md)
 
@@ -50,14 +50,14 @@
   - [1.6 游戏与可执行游戏世界](#s1-6) (43)
   - [1.7 跨任务：视觉评估器、经验与训练](#s1-7) (12)
 - [Stage 2 · 把模型当作工具来编排](#stage-2)
-  - [2.1 图像生成模型 × 图像与视觉设计](#s2-1) (3)
+  - [2.1 图像生成模型 × 图像与视觉设计](#s2-1) (4)
   - [2.2 视频生成模型 × 视频创作与编辑](#s2-2) (12)
   - [2.3 3D 生成模型 × 3D 资产与场景](#s2-3) (11)
   - [2.4 生成式世界模型 × 可交互环境](#s2-4) (13)
   - [2.5 感知模型 × 场景理解与重建](#s2-5) (6)
-  - [2.6 动作模型 × 机器人操作](#s2-6) (13)
+  - [2.6 动作模型 × 机器人操作](#s2-6) (15)
 - [Stage 3 · 打通数字世界与物理世界](#stage-3)
-  - [3.1 具身框架（Harness）](#s3-1) (94)
+  - [3.1 具身框架（Harness）](#s3-1) (95)
   - [3.2 仿真器构建](#s3-2) (69)
   - [3.3 仿真器质量评估](#s3-3) (29)
   - [3.4 数据](#s3-4) (15)
@@ -1332,6 +1332,8 @@ Agent 编写代码，渲染或运行构建出的产物，**观察结果**，再�
 - <a id="paper-res-zoo-developer-tools"></a>**[Zoo developer tools](https://docs.zoo.dev/docs)** [[文档]](https://zoo.dev/docs/developer-tools/mcp)
   > 将语言驱动的 KCL 工作流连接到几何执行、快照、检查和调试。
 
+*另见:* [MAGPIE](#paper-2611-32462)
+
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
 <a id="games"></a>
@@ -1670,6 +1672,11 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 ### 2.1 图像生成模型 × 图像与视觉设计
 
+<!-- mmac-record: {"id": "2611.32462", "scope": "Core", "primary": "2.1", "stage": 2, "type": "paper"} -->
+
+- <a id="paper-2611-32462"></a>`2026.11` **[MAGPIE: Agentic Multi-Reference Image Generation via Executable Scene Construction](https://arxiv.org/abs/2611.32462)**
+  > 用几何与视觉反馈迭代修改可执行的 Blender 代理场景，再据此生成融合多个参考主体的图像。
+
 <!-- mmac-record: {"id": "2610.32120", "scope": "Adjacent", "primary": "2.1", "stage": 2, "type": "paper"} -->
 
 - <a id="paper-2610-32120"></a>`2026.10` **[ImageRSI: Verification-Driven Recursive Self-Improvement for Agentic Image Generation](https://arxiv.org/abs/2610.32120)**
@@ -1967,6 +1974,18 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 - <a id="paper-2610-23334"></a>`2026.10` **[LAW: Unifying Language, Action, and World Modeling for Agentic Physical Intelligence](https://arxiv.org/abs/2610.23334)** [[代码]](https://github.com/hey-cjj/LAW) [[项目页]](https://hey-cjj.github.io/LAW-project/) [[数据集]](https://huggingface.co/datasets/KAITANG2003/LAW-RoboTwin-VLM-Training) [[代码]](https://github.com/hey-cjj/CogWAM) [[合集]](https://huggingface.co/collections/KAITANG2003/law)
   > 用共享骨干的 VLM 专家协调世界动作模型，分别负责子任务规划、动作估值与异步进度检查，根据新的视觉观测调整机器人决策。
+
+<!-- mmac-record: {"id": "2610.12832", "scope": "Adjacent", "primary": "2.6", "stage": 2, "type": "paper"} -->
+
+- <a id="paper-2610-12832"></a>`2026.10` **[VLMs are Native Action Models: Unleashing the Manipulation Capabilities of VLMs with Explicit Action-Space Grounding](https://arxiv.org/abs/2610.12832)** [[项目页]](https://general-robo.github.io/EASG/) [[代码]](https://github.com/General-Robo/EASG)
+  > 在腕部图像上叠加以夹爪为中心的动作坐标系，让视觉语言模型直接用文本预测机械臂运动。<br>
+  > 🖥️ **仿真** MuJoCo · 🦾 **真机** Universal Robots UR3、Flexiv
+
+<!-- mmac-record: {"id": "2609.23578", "scope": "Adjacent", "primary": "2.6", "stage": 2, "type": "paper"} -->
+
+- <a id="paper-2609-23578"></a>`2026.09` **[AR-WAM: A Visual-Conditioned Agent-Ready World Action Model for Robotic Manipulation](https://arxiv.org/abs/2609.23578)** [[项目页]](https://ar-wam.github.io/) [[代码]](https://github.com/AR-WAM/AR-WAM) [[项目页]](https://www.modelscope.cn/datasets/Jasonggg15/AR-WAM-RoboTwin-Dataset)
+  > 让可替换的智能体通过目标框和技能标记调用世界动作模型，并根据执行反馈处理失败。<br>
+  > 🖥️ **仿真** SAPIEN · 🦾 **真机** Astribot S1
 
 <!-- mmac-record: {"id": "2509.19571", "scope": "Adjacent", "primary": "2.6", "stage": 2, "type": "paper"} -->
 
@@ -2459,6 +2478,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
   > 衡量 Agent 主动探索交互世界、发现异常并提供证据的能力，覆盖物理、空间、时间与语义问题。<br>
   > 🖥️ **仿真** Unreal Engine + Three.js
 
+<!-- mmac-record: {"id": "2608.17129", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2608-17129"></a>`2026.08` **[MG-VQA: Manipulation Grounded Visual Question Answering with VLMs](https://arxiv.org/abs/2608.17129)** [[代码]](https://github.com/vineet2104/MG-VQA) [[数据集]](https://huggingface.co/datasets/bhatvineet/mg-vqa-bench)
+  > 评估视觉语言智能体能否移动杂物、从抓取失败中恢复，并找出回答问题所需的遮挡证据。<br>
+  > 🖥️ **仿真** PyBullet（Universal Robots UR5）
+
 <!-- mmac-record: {"id": "2607.04434", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
 
 - <a id="paper-2607-04434"></a>`2026.07` **[RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies](https://arxiv.org/abs/2607.04434)** [[项目页]](http://robodojo-benchmark.com/) [[代码]](https://github.com/RoboDojo-Benchmark/RoboDojo) [[项目页]](https://robodojo-benchmark.com/) [[榜单]](https://robodojo-benchmark.com/leaderboard)
@@ -2581,7 +2606,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-res-webots-mcp"></a>**[Webots MCP](https://github.com/MHasaan/webotMCP)**
   > 向Agent开放场景编辑、控制器代码、机器人动作、多视图截图、运动轨迹与接触事件；模拟器真值和反应式控制分别区别于学习式感知与规划。
 
-*另见:* [Meituan-Robotics-0](#paper-2611-08577)
+*另见:* [Meituan-Robotics-0](#paper-2611-08577) · [AR-WAM](#paper-2609-23578)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
@@ -3345,7 +3370,7 @@ P0 是前提关卡，只判过不过；其余各层检查不同的失败模式�
   > 从单段第一视角人类视频出发，Agent 在仿真中按物体属性重建场景、优化灵巧手轨迹，再改变物体与机器人状态批量生成数据，工具库随使用不断扩充。画面：变换视角后的仿真渲染，重贴纹理以贴近真实；轨迹：灵巧手与手臂动作。<br>
   > 🖥️ **仿真** Blender + MuJoCo + Isaac Sim（Sharpa Wave） · 🦾 **真机** I2RT YAM、Sharpa Wave
 
-*另见:* [Contact Harness](#paper-2611-29377) · [RoboUniverse-10K](#paper-2611-31002)
+*另见:* [Contact Harness](#paper-2611-29377) · [RoboUniverse-10K](#paper-2611-31002) · [MG-VQA](#paper-2608-17129)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 

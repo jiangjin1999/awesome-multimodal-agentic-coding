@@ -13,7 +13,7 @@
 
 マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——デジタル世界から物理世界まで。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-693-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--25-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-697-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--26-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語**
 
@@ -53,14 +53,14 @@
   - [1.6 ゲームと実行可能なゲーム世界](#s1-6) (43)
   - [1.7 タスク横断：視覚評価器・経験・学習](#s1-7) (12)
 - [Stage 2 · モデルをツールとして編成する](#stage-2)
-  - [2.1 画像生成モデル × 画像・ビジュアルデザイン](#s2-1) (3)
+  - [2.1 画像生成モデル × 画像・ビジュアルデザイン](#s2-1) (4)
   - [2.2 動画生成モデル × 動画制作・編集](#s2-2) (12)
   - [2.3 3D 生成モデル × 3D アセット・シーン](#s2-3) (11)
   - [2.4 生成的世界モデル × インタラクティブ環境](#s2-4) (13)
   - [2.5 知覚モデル × シーン理解・再構成](#s2-5) (6)
-  - [2.6 行動モデル × ロボット操作](#s2-6) (13)
+  - [2.6 行動モデル × ロボット操作](#s2-6) (15)
 - [Stage 3 · デジタルと物理世界の架け橋](#stage-3)
-  - [3.1 身体性ハーネス](#s3-1) (94)
+  - [3.1 身体性ハーネス](#s3-1) (95)
   - [3.2 シミュレータ構築](#s3-2) (69)
   - [3.3 シミュレータ品質評価](#s3-3) (29)
   - [3.4 データ](#s3-4) (15)
@@ -1335,6 +1335,8 @@
 - <a id="paper-res-zoo-developer-tools"></a>**[Zoo developer tools](https://docs.zoo.dev/docs)** [[ドキュメント]](https://zoo.dev/docs/developer-tools/mcp)
   > 言語で指示する KCL ワークフローを、幾何実行、スナップショット、検査、デバッグにつなぐ。
 
+*関連:* [MAGPIE](#paper-2611-32462)
+
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
 <a id="games"></a>
@@ -1673,6 +1675,11 @@
 
 ### 2.1 画像生成モデル × 画像・ビジュアルデザイン
 
+<!-- mmac-record: {"id": "2611.32462", "scope": "Core", "primary": "2.1", "stage": 2, "type": "paper"} -->
+
+- <a id="paper-2611-32462"></a>`2026.11` **[MAGPIE: Agentic Multi-Reference Image Generation via Executable Scene Construction](https://arxiv.org/abs/2611.32462)**
+  > 幾何とレンダリングのフィードバックで実行可能な Blender の簡易シーンを修正し、複数の参照画像から構図を保った画像を生成する。
+
 <!-- mmac-record: {"id": "2610.32120", "scope": "Adjacent", "primary": "2.1", "stage": 2, "type": "paper"} -->
 
 - <a id="paper-2610-32120"></a>`2026.10` **[ImageRSI: Verification-Driven Recursive Self-Improvement for Agentic Image Generation](https://arxiv.org/abs/2610.32120)**
@@ -1970,6 +1977,18 @@
 
 - <a id="paper-2610-23334"></a>`2026.10` **[LAW: Unifying Language, Action, and World Modeling for Agentic Physical Intelligence](https://arxiv.org/abs/2610.23334)** [[コード]](https://github.com/hey-cjj/LAW) [[プロジェクトページ]](https://hey-cjj.github.io/LAW-project/) [[データセット]](https://huggingface.co/datasets/KAITANG2003/LAW-RoboTwin-VLM-Training) [[コード]](https://github.com/hey-cjj/CogWAM) [[コレクション]](https://huggingface.co/collections/KAITANG2003/law)
   > 共通の基盤を持つ VLM エキスパートが世界・動作モデルを調整し、サブタスク計画、動作価値の推定、非同期の進捗確認を分担する。新しい視覚観測に応じてロボットの判断を更新する。
+
+<!-- mmac-record: {"id": "2610.12832", "scope": "Adjacent", "primary": "2.6", "stage": 2, "type": "paper"} -->
+
+- <a id="paper-2610-12832"></a>`2026.10` **[VLMs are Native Action Models: Unleashing the Manipulation Capabilities of VLMs with Explicit Action-Space Grounding](https://arxiv.org/abs/2610.12832)** [[プロジェクトページ]](https://general-robo.github.io/EASG/) [[コード]](https://github.com/General-Robo/EASG)
+  > 手首カメラ画像にグリッパー中心の座標軸を重ね、視覚言語モデルがロボットの動きをテキストで直接予測できるようにする。<br>
+  > 🖥️ **シミュレーション** MuJoCo · 🦾 **実機** Universal Robots UR3、Flexiv
+
+<!-- mmac-record: {"id": "2609.23578", "scope": "Adjacent", "primary": "2.6", "stage": 2, "type": "paper"} -->
+
+- <a id="paper-2609-23578"></a>`2026.09` **[AR-WAM: A Visual-Conditioned Agent-Ready World Action Model for Robotic Manipulation](https://arxiv.org/abs/2609.23578)** [[プロジェクトページ]](https://ar-wam.github.io/) [[コード]](https://github.com/AR-WAM/AR-WAM) [[プロジェクトページ]](https://www.modelscope.cn/datasets/Jasonggg15/AR-WAM-RoboTwin-Dataset)
+  > 対象のバウンディングボックスとスキルトークンで世界行動モデルを呼び出し、エージェントが実行結果に応じて失敗から立て直す。<br>
+  > 🖥️ **シミュレーション** SAPIEN · 🦾 **実機** Astribot S1
 
 <!-- mmac-record: {"id": "2509.19571", "scope": "Adjacent", "primary": "2.6", "stage": 2, "type": "paper"} -->
 
@@ -2462,6 +2481,12 @@
   > 対話世界を能動的に探索して異常を見つけ、証拠を示す能力を測る。物理、空間、時間、意味の問題を扱う。<br>
   > 🖥️ **シミュレーション** Unreal Engine + Three.js
 
+<!-- mmac-record: {"id": "2608.17129", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2608-17129"></a>`2026.08` **[MG-VQA: Manipulation Grounded Visual Question Answering with VLMs](https://arxiv.org/abs/2608.17129)** [[コード]](https://github.com/vineet2104/MG-VQA) [[データセット]](https://huggingface.co/datasets/bhatvineet/mg-vqa-bench)
+  > 視覚言語エージェントが物を動かし、把持の失敗から立て直しながら、質問に必要な隠れた手がかりを見つけられるかを測る。<br>
+  > 🖥️ **シミュレーション** PyBullet（Universal Robots UR5）
+
 <!-- mmac-record: {"id": "2607.04434", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
 
 - <a id="paper-2607-04434"></a>`2026.07` **[RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies](https://arxiv.org/abs/2607.04434)** [[プロジェクトページ]](http://robodojo-benchmark.com/) [[コード]](https://github.com/RoboDojo-Benchmark/RoboDojo) [[プロジェクトページ]](https://robodojo-benchmark.com/) [[リーダーボード]](https://robodojo-benchmark.com/leaderboard)
@@ -2584,7 +2609,7 @@
 - <a id="paper-res-webots-mcp"></a>**[Webots MCP](https://github.com/MHasaan/webotMCP)**
   > 場面編集、制御コード、ロボット動作、多視点画像、運動軌跡、接触イベントを公開する。シミュレータの真値と反応制御は、学習型の知覚・計画と区別する。
 
-*関連:* [Meituan-Robotics-0](#paper-2611-08577)
+*関連:* [Meituan-Robotics-0](#paper-2611-08577) · [AR-WAM](#paper-2609-23578)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
@@ -3348,7 +3373,7 @@ P0 は前提となる関門で、合否だけを判定します。ほかの各�
   > 一人称の人の動画 1 本から、エージェントが物体の性質に基づいてシミュレーションでシーンを再構成し、多指ハンドの軌跡を最適化し、物体とロボットの状態を変えてデータを生成する。ツールライブラリは使うほど拡張される。映像：視点を変えたシミュレーションのレンダリングを、実写に近づけるよう再テクスチャ。軌跡：多指ハンドと腕の動作。<br>
   > 🖥️ **シミュレーション** Blender + MuJoCo + Isaac Sim（Sharpa Wave） · 🦾 **実機** I2RT YAM、Sharpa Wave
 
-*関連:* [Contact Harness](#paper-2611-29377) · [RoboUniverse-10K](#paper-2611-31002)
+*関連:* [Contact Harness](#paper-2611-29377) · [RoboUniverse-10K](#paper-2611-31002) · [MG-VQA](#paper-2608-17129)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 

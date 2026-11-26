@@ -16587,3 +16587,119 @@
       Franka 框架与仿真。
   see_also:
   - '3.4'
+- id: '2610.12832'
+  title: 'VLMs are Native Action Models: Unleashing the Manipulation Capabilities of VLMs with Explicit Action-Space Grounding'
+  url: https://arxiv.org/abs/2610.12832
+  date: '2026.10'
+  type: paper
+  scope: adjacent
+  section: '2.6'
+  sub: null
+  tldr:
+    en: Overlays a gripper-centered action frame on wrist images so a VLM can directly predict robot motion as text.
+    zh: 在腕部图像上叠加以夹爪为中心的动作坐标系，让视觉语言模型直接用文本预测机械臂运动。
+    ja: 手首カメラ画像にグリッパー中心の座標軸を重ね、視覚言語モデルがロボットの動きをテキストで直接予測できるようにする。
+  verification:
+    en: The model reads wrist observations with a projected tool-center frame and depth grounding, then emits a structured
+      pose increment and gripper command. A controller executes the command and returns the next observation (§3.1, App.
+      B.1). On UR3, Qwen3.8-27B averages 79.4% zero-shot over six Task Group 1 tasks at 30 trials per task (Tables 1–2);
+      LIBERO fine-tuning and UR3-to-Flexiv transfer of a fine-tuned checkpoint are separate experiments (§4.2–4.3).
+    zh: 模型读取叠加工具中心坐标系及深度信息的腕部观测，输出结构化位姿增量和夹爪命令，控制器执行后返回新观测（§3.1、附录 B.1）。Qwen3.8-27B 在 UR3 实机第一组六项任务中零样本平均成功率为 79.4%，每项
+      30 次（表 1–2）。LIBERO 微调与 UR3 微调权重迁移到 Flexiv 是独立实验（§4.2–4.3）。
+  sources:
+  - https://arxiv.org/abs/2610.12832
+  - https://general-robo.github.io/EASG/
+  - https://github.com/General-Robo/EASG
+  setup:
+    engines:
+    - MuJoCo
+    real_robots:
+    - Universal Robots UR3
+    - Flexiv
+- id: '2608.17129'
+  title: 'MG-VQA: Manipulation Grounded Visual Question Answering with VLMs'
+  url: https://arxiv.org/abs/2608.17129
+  date: '2026.08'
+  type: paper
+  scope: adjacent
+  section: '3.1'
+  sub: capability-eval
+  tldr:
+    en: Tests whether VLM agents can move clutter, recover from failed grasps, and uncover the evidence needed to answer
+      a question.
+    zh: 评估视觉语言智能体能否移动杂物、从抓取失败中恢复，并找出回答问题所需的遮挡证据。
+    ja: 視覚言語エージェントが物を動かし、把持の失敗から立て直しながら、質問に必要な隠れた手がかりを見つけられるかを測る。
+  verification:
+    en: In PyBullet, a UR5 with Robotiq gripper executes grasp and push primitives. The VLM receives updated images and
+      tool feedback and may re-ground and retry before answering (§3.3). On 600 human-verified questions, average performance
+      across eight VLMs is 36.2% image-only, 37.6% with perception tools and 56.8% with manipulation in the reported setup
+      (Table 1); no physical-robot result is reported.
+    zh: PyBullet 中配备 Robotiq 夹爪的 UR5 执行抓取和推拨原语。模型读取更新图像与工具结果，可以重新定位并重试后再作答（§3.3）。600 道人工核验题中，论文所测八个模型的平均准确率为纯图像 36.2%、加入感知工具
+      37.6%、允许操作 56.8%（表 1）；论文未报告实机结果。
+  sources:
+  - https://arxiv.org/abs/2608.17129
+  - https://github.com/vineet2104/MG-VQA
+  - https://huggingface.co/datasets/bhatvineet/mg-vqa-bench
+  setup:
+    engines:
+    - PyBullet
+    sim_robots:
+    - Universal Robots UR5
+  see_also:
+  - '3.4'
+- id: '2609.23578'
+  title: 'AR-WAM: A Visual-Conditioned Agent-Ready World Action Model for Robotic Manipulation'
+  url: https://arxiv.org/abs/2609.23578
+  date: '2026.09'
+  type: paper
+  scope: adjacent
+  section: '2.6'
+  sub: null
+  tldr:
+    en: Uses target boxes and skill tokens to let an interchangeable agent direct a world action model and recover from
+      failures.
+    zh: 让可替换的智能体通过目标框和技能标记调用世界动作模型，并根据执行反馈处理失败。
+    ja: 対象のバウンディングボックスとスキルトークンで世界行動モデルを呼び出し、エージェントが実行結果に応じて失敗から立て直す。
+  verification:
+    en: The policy takes an image, target box and operation token and outputs robot actions; the agent receives the trigger
+      frame and gripper state and can re-localize and reissue a skill (§III-E, Alg. 1). The Qwen3.8-27B configuration
+      averages 67.8% on RMBench (Table IV). On Astribot S1 the simulation-trained policy is fine-tuned with 100 real demonstrations
+      per task and averages 71.7% across three tasks, with 20 trials each (Table V).
+    zh: 策略根据图像、目标框和操作标记输出机械臂动作；智能体收到触发时的图像及夹爪状态后，可重新定位目标并再次调用技能（§III-E、算法 1）。Qwen3.8-27B 配置在 RMBench 平均成功率为 67.8%（表 IV）。Astribot
+      S1 实机在每任务 100 条示范微调后，三项任务平均成功率为 71.7%，每项 20 次（表 V）。
+  sources:
+  - https://arxiv.org/abs/2609.23578
+  - https://ar-wam.github.io/
+  - https://github.com/AR-WAM/AR-WAM
+  - https://www.modelscope.cn/datasets/Jasonggg15/AR-WAM-RoboTwin-Dataset
+  setup:
+    engines:
+    - SAPIEN
+    real_robots:
+    - Astribot S1
+  see_also:
+  - '3.1'
+- id: '2611.32462'
+  title: 'MAGPIE: Agentic Multi-Reference Image Generation via Executable Scene Construction'
+  url: https://arxiv.org/abs/2611.32462
+  date: '2026.11'
+  type: paper
+  scope: core
+  section: '2.1'
+  sub: null
+  tldr:
+    en: Refines executable Blender proxy scenes with geometric and visual feedback, then uses them to compose images from
+      multiple references.
+    zh: 用几何与视觉反馈迭代修改可执行的 Blender 代理场景，再据此生成融合多个参考主体的图像。
+    ja: 幾何とレンダリングのフィードバックで実行可能な Blender の簡易シーンを修正し、複数の参照画像から構図を保った画像を生成する。
+  verification:
+    en: The coding agent writes and renders a Blender program. Mesh checks and a multimodal reviewer inspect the rendered
+      image and crops; their feedback changes geometry, placement, contact anchors and camera in the next code version
+      (§3.1, Fig. 2). The resulting proxy guides Qwen or FLUX; FLUX improves from 38.87% to 67.08% on DreamOmni2 (Table
+      1). The paper describes 3,187 paired samples (§3.3); the data release could not be verified.
+    zh: 编码智能体编写并渲染 Blender 程序，几何检查和多模态评审读取渲染及局部裁剪，反馈用于在下一版代码中修改几何、位置、接触锚点和相机（§3.1、图 2）。代理图随后引导 Qwen 或 FLUX 合成，FLUX 在 DreamOmni2
+      从 38.87% 提升至 67.08%（表 1）。论文报告构建 3,187 条配对样本（§3.3），尚未核实公开发布。
+  sources:
+  - https://arxiv.org/abs/2611.32462
+  see_also:
+  - '1.5'

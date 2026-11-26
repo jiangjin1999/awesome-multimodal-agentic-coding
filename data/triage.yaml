@@ -187,6 +187,15 @@ runs:
     official release leads. Search remains partial, including API failures, unreleased November 25 source batches at recheck and
     unread candidates. Earlier manual MR0 and RoboUniverse records are retained. Contact Harness and RoboBridge
     can inform the Stage 3 guide.'
+- date: '2026-11-26'
+  trigger: sweep
+  covered: Reviewed the oldest three pending full texts and MAGPIE. Scanned nine arXiv new/recent categories, including
+    all 158 November 25 cs.RO titles, HF Daily Papers, four themes, two independent capability queries, six task queries
+    and focused chart/real-to-sim method, benchmark and data queries. Checked official projects and blogs, watchlists,
+    open suggestions, RoboLab-120 and RoboDojo. Reviewed the November 12–26 overlap with recorded API gaps.
+  note: Added MAGPIE (2.1), EASG (2.6), AR-WAM (2.6) and MG-VQA (3.1). Queued 78 new or revised listing/citation leads.
+    Some arXiv API pages, November 26 listings, historical full-text evidence, official details and X remain incomplete.
+    MG-VQA and AR-WAM may inform Stage 3 guides.
 candidates:
 - id: '2610.35817'
   title: 'Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics'
@@ -330,23 +339,42 @@ candidates:
   url: https://arxiv.org/abs/2610.12832
   found: '2026-11-15'
   via: cited by 2610.35817 [108]
-  decision: pending
-  note: A VLM predicts actions as text in a grounded action space. Possibly 2.6, or out of scope if there is no agent
-    loop.
+  decision: added
+  note: Explicit camera-frame grounding and executable pose increments tested on hardware and in simulation. The evaluated
+    model directly predicts motion commands instead of authoring a reusable control program.
+  decided: '2026-11-26'
+  precedent:
+  - '2610.23334'
+  - '2611.08577'
+  - '2611.05275'
 - id: '2608.17129'
   title: 'MG-VQA: Manipulation Grounded Visual Question Answering with VLMs'
   url: https://arxiv.org/abs/2608.17129
   found: '2026-11-15'
   via: cited by 2610.35817 [109] as "PROBE"
-  decision: pending
-  note: An agent manipulates clutter to reveal hidden evidence before answering. Compare 3.1 capability-eval.
+  decision: added
+  note: Full v3 and released benchmark checked. In the manipulation mode the model re-observes the scene after bounded
+    grasp/push calls and can recover; the benchmark evaluates tool use rather than program construction. PROBE is the
+    earlier name at the same ID.
+  decided: '2026-11-26'
+  precedent:
+  - '2610.27039'
+  - '2609.39507'
+  - '2610.16238'
 - id: '2609.23578'
   title: 'AR-WAM: A Visual-Conditioned Agent-Ready World Action Model for Robotic Manipulation'
   url: https://arxiv.org/abs/2609.23578
   found: '2026-11-15'
   via: cited by 2610.35817 [110]
-  decision: pending
-  note: A world action model conditioned on boxes from an agent instead of language. Possibly a 2.6 Resource.
+  decision: added
+  note: Full v2 and author code checked. The callable policy uses target boxes and operation tokens; updated visual outcomes
+    cause later skill commands. The reported agent does not author executable programs. Real evaluation uses task-specific
+    demonstrations for fine-tuning.
+  decided: '2026-11-26'
+  precedent:
+  - '2610.23334'
+  - '2611.05275'
+  - '2611.08577'
 - id: '2607.13818'
   title: Learning Robust Execution in Robotic Manipulation with Agentic Reinforcement Learning
   url: https://arxiv.org/abs/2607.13818
@@ -2887,3 +2915,573 @@ candidates:
   decision: pending
   note: Both official repositories identify the same paper. Check the refinement configuration, actual playtest
     feedback, benchmark grading and media terms.
+- id: '2611.32462'
+  title: 'MAGPIE: Agentic Multi-Reference Image Generation via Executable Scene Construction'
+  url: https://arxiv.org/abs/2611.32462
+  found: '2026-11-26'
+  via: November 25 arXiv cross-list and HF Daily Papers
+  decision: added
+  decided: '2026-11-26'
+  precedent:
+  - '2610.32120'
+  - '2403.01248'
+  - system:blenderworld
+  note: Full v1 §3.1 explicitly connects Blender generation, execution and rendering, visual/geometric observation, and
+    code revision in the same scene trajectory. Primary contribution is proxy-guided image generation; 3D construction
+    is a stable cross-reference.
+- id: '2611.31341'
+  title: 'EvoMisty: Building, Optimizing, and Evolving Capabilities on a Social Robot'
+  url: https://arxiv.org/abs/2611.31341
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.31577'
+  title: 'FabricBench: A Standardized Policy Benchmark for Bimanual Fabric Manipulation with a Contact-Driven Deformable
+    Simulator'
+  url: https://arxiv.org/abs/2611.31577
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.31694'
+  title: 'CATWAY: Cost-sensitive agentic three-way robot decisions with calibrated language-model confidence'
+  url: https://arxiv.org/abs/2611.31694
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.31705'
+  title: 'FoveaWAM: Role-Aware 4D World-Action Modeling for Dynamic Manipulation'
+  url: https://arxiv.org/abs/2611.31705
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.31715'
+  title: Sparks of Weight-Space Programming for Robot Foundation Models
+  url: https://arxiv.org/abs/2611.31715
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.31782'
+  title: 'Many Senses, One World: Learning Hierarchical Multimodal World Representations for Bimanual Dexterous Manipulation'
+  url: https://arxiv.org/abs/2611.31782
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.31863'
+  title: 'Ada-BFM: Adapting Behavior Foundation Models for Humanoid Scene Interaction'
+  url: https://arxiv.org/abs/2611.31863
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.31868'
+  title: 'CALVIN-MAX: When Does a Mid-Execution Change Hurt a Robot Policy?'
+  url: https://arxiv.org/abs/2611.31868
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.31894'
+  title: 'RESET: One Demonstration, One Verified World, Self-Improved Skills Across Embodiments'
+  url: https://arxiv.org/abs/2611.31894
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.31901'
+  title: 'PreWAM: Exploring the Design of Latent Future Prediction for World-Action Modeling'
+  url: https://arxiv.org/abs/2611.31901
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32016'
+  title: 'RoboHarness-RL: Agentic Reinforcement Learning for VLM-Based Robot Manipulation'
+  url: https://arxiv.org/abs/2611.32016
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32093'
+  title: 'MARGIN: A Risk-Aware Agent for Robot Program Refinement'
+  url: https://arxiv.org/abs/2611.32093
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32098'
+  title: 'ActiveBridge: Scaling Active Prior for Robots through Egocentric Perception-Interaction Modeling'
+  url: https://arxiv.org/abs/2611.32098
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32185'
+  title: 'OVOK: A Recursive Self-Improving Agentic Framework for Video-Based Articulated Robot State Estimation'
+  url: https://arxiv.org/abs/2611.32185
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32186'
+  title: 'SkillHarness: Execution-Aware Coordination with Plug-and-Play Skills for Long-Horizon Traversal'
+  url: https://arxiv.org/abs/2611.32186
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32228'
+  title: Disentangling Visual Dynamics for World Model Planning
+  url: https://arxiv.org/abs/2611.32228
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32233'
+  title: 'Roboclock: A Unified Benchmark for Time-Aware Robotic Intelligence'
+  url: https://arxiv.org/abs/2611.32233
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32238'
+  title: Boundary-Aware Policy Learning for Agent-Orchestrated Robot Manipulation
+  url: https://arxiv.org/abs/2611.32238
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32245'
+  title: 'VLAs Execute, Code Recovers: 3D Skill Envelopes Bridge the Compositional Gap in Agentic Manipulation'
+  url: https://arxiv.org/abs/2611.32245
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: The paper explicitly describes the reported stage as a fixed/simulated control study; autonomous LLM orchestration
+    and real hardware are proposed later. Read the complete protocol before assigning scope.
+- id: '2611.32353'
+  title: 'Any2Act: Scaling In-Context Robot Learning from Heterogeneous Demonstrations'
+  url: https://arxiv.org/abs/2611.32353
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32381'
+  title: Does Research-Paper Context Improve LLM-Generated Quadruped Navigation? An Exploratory Simulation Study
+  url: https://arxiv.org/abs/2611.32381
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32476'
+  title: 'ViTacLab: Physically Consistent Visuo-Tactile Simulation, Benchmarking, and Representation Learning for Robotic
+    Manipulation'
+  url: https://arxiv.org/abs/2611.32476
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32483'
+  title: 'CodeWAM: A Code World Action Model for End-to-End Autonomous Driving'
+  url: https://arxiv.org/abs/2611.32483
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32533'
+  title: 'Next-Manip: On-Demand Agent-Policy Collaboration for Robotic Manipulation'
+  url: https://arxiv.org/abs/2611.32533
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32534'
+  title: 'EmbodiedStudio: A Task-Driven Simulation Generation Platform for Embodied Learning and Evaluation'
+  url: https://arxiv.org/abs/2611.32534
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32564'
+  title: 'MXI-MemICL: Towards In-Context Robot Manipulation through Self-Retrieved Interaction Memory'
+  url: https://arxiv.org/abs/2611.32564
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32622'
+  title: 'RoboRecast: Intent-Preserving Demonstration Augmentation via Diagnosis-Driven Optimization'
+  url: https://arxiv.org/abs/2611.32622
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32639'
+  title: 'ReFocus: Progress-Guided Adaptive Practice for Long-Horizon Robotic Manipulation Reinforcement Learning'
+  url: https://arxiv.org/abs/2611.32639
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32722'
+  title: 'AG-WAM: Attention-Guided World Action Model for Accurate and Efficient Robot Manipulation'
+  url: https://arxiv.org/abs/2611.32722
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32727'
+  title: 'Support2Sim: Visually Faithful Real2Sim with Stable Object Supports'
+  url: https://arxiv.org/abs/2611.32727
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32786'
+  title: Simulator-as-Proxy World Model for Robot Manipulation
+  url: https://arxiv.org/abs/2611.32786
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32803'
+  title: 'MRBench: Benchmarking Physical Necessity Reasoning in Heterogeneous Multi-Robot Manipulation'
+  url: https://arxiv.org/abs/2611.32803
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32813'
+  title: 'Atomic Policy: Composing Atomic Manipulation Skills with Agentic Reasoning'
+  url: https://arxiv.org/abs/2611.32813
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32858'
+  title: What Does a Skill Vocabulary Cost? A Closed-Loop Decomposition over Demonstrated Motions
+  url: https://arxiv.org/abs/2611.32858
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32986'
+  title: 'CAPER: PartGround and PlanRefine for Reliable Manual-Guided Robotic Assembly Planning'
+  url: https://arxiv.org/abs/2611.32986
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.33054'
+  title: 'EmbodiSafety: Benchmarking Risk Understanding and Response in Embodied AI'
+  url: https://arxiv.org/abs/2611.33054
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.33141'
+  title: 'iWAM: Efficient Action Prediction from World Models without Explicit Future Prediction'
+  url: https://arxiv.org/abs/2611.33141
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.33143'
+  title: 'ROAM-Bench: Evaluating Embodied Active Spatial Intelligence through Evidence Verification'
+  url: https://arxiv.org/abs/2611.33143
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.33144'
+  title: 'PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents'
+  url: https://arxiv.org/abs/2611.33144
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.31588'
+  title: 'One Phase Is Enough: Sim-to-Real Transfer with Direct Visual Reinforcement Learning'
+  url: https://arxiv.org/abs/2611.31588
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.31740'
+  title: 'LeanWAM: Learning Latent World Action Models from Frozen Video Models'
+  url: https://arxiv.org/abs/2611.31740
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.31822'
+  title: 'G0.7: Scaling Up a Fast World Action Model with Long Context'
+  url: https://arxiv.org/abs/2611.31822
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32152'
+  title: 'RoboProbe: Benchmarking Physical Plausibility of Robot World Models'
+  url: https://arxiv.org/abs/2611.32152
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32206'
+  title: 'Seeing Is Not Reaching: Instruction Shortcuts Override Visual Grounding in Vision-Language-Action Models'
+  url: https://arxiv.org/abs/2611.32206
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32649'
+  title: 'ICLWorld: Benchmarking In-Context Learning of Agents from Digital to Physical Worlds'
+  url: https://arxiv.org/abs/2611.32649
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32967'
+  title: 'VidForce: Predicting Force-Aware Articulation by Observing Humans'
+  url: https://arxiv.org/abs/2611.32967
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.33010'
+  title: 'Embodied AI Fails the Mirror Test: How a Simple Mirror Breaks Robot Policies'
+  url: https://arxiv.org/abs/2611.33010
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.21258'
+  title: 'ThinkWAM: Rethinking Latent Futures for Action Refinement'
+  url: https://arxiv.org/abs/2611.21258
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.30184'
+  title: 'OmniSLAM: Evidence-Authorized Revision of Persistent Object Maps'
+  url: https://arxiv.org/abs/2611.30184
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.30308'
+  title: 'ConsisX: Cross-View Consistency Thinking in 3D for Vision-Language-Action Models'
+  url: https://arxiv.org/abs/2611.30308
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.31126'
+  title: 'WeaveVLA: 3D Relational Grounding for Vision-Language-Action Models'
+  url: https://arxiv.org/abs/2611.31126
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.31345'
+  title: 'Beyond Static Charts: Benchmarking Interactive Chart-to-Code Generation for MLLMs'
+  url: https://arxiv.org/abs/2611.31345
+  found: '2026-11-26'
+  via: cs.AI November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.31475'
+  title: 'SpatialCraft: Evolving Procedural Intelligence from Experience and Skills for Spatial Reasoning Agents'
+  url: https://arxiv.org/abs/2611.31475
+  found: '2026-11-26'
+  via: cs.AI November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.31522'
+  title: 'One Step, Four Clocks: How GUI Agents Fall Out of Step'
+  url: https://arxiv.org/abs/2611.31522
+  found: '2026-11-26'
+  via: cs.AI November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.31358'
+  title: 'Nemotron-Labs-VisualCreation: Pixel as Code for Agentic Visual Creation'
+  url: https://arxiv.org/abs/2611.31358
+  found: '2026-11-26'
+  via: cs.AI November 25 new/cross-list/replacement entries
+  decision: pending
+  note: The report describes raster selection and targeted repair for structured/hybrid output. Verify the separate loop
+    configurations, first-hand release and exact routing.
+- id: '2611.31466'
+  title: 'AdProducer: Towards Agentic Advertising Video Generation'
+  url: https://arxiv.org/abs/2611.31466
+  found: '2026-11-26'
+  via: cs.AI November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32299'
+  title: Towards a Multimodal Aesthetic Agent for Photographic Reference Grading
+  url: https://arxiv.org/abs/2611.32299
+  found: '2026-11-26'
+  via: cs.CV November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32332'
+  title: 'GUI-WEdit and GUI-SkillEvo: Gradient-Free Adaptation of Small GUI Agents'
+  url: https://arxiv.org/abs/2611.32332
+  found: '2026-11-26'
+  via: cs.CV November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32554'
+  title: 'PartAgent: Agentic 3D Part Segmentation via Expert Integration and Closed-Loop Refinement'
+  url: https://arxiv.org/abs/2611.32554
+  found: '2026-11-26'
+  via: cs.CV November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.28756'
+  title: 'PSC-Gen: Physical Sequence Conditioning for Video Generation via Agentic Visual Planning'
+  url: https://arxiv.org/abs/2611.28756
+  found: '2026-11-26'
+  via: cs.CV November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.30597'
+  title: 'ViDiHand2: Unifying Video Diffusion Priors and Hand Geometry for 3D Hand Motion Reconstruction in the Wild'
+  url: https://arxiv.org/abs/2611.30597
+  found: '2026-11-26'
+  via: cs.CV November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32097'
+  title: 'GUI-PRISM: Efficient Action Decoding for GUI Agents'
+  url: https://arxiv.org/abs/2611.32097
+  found: '2026-11-26'
+  via: cs.CV November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.32102'
+  title: 'RISE: Reasoning with Implicit State Embeddings for GUI Agents'
+  url: https://arxiv.org/abs/2611.32102
+  found: '2026-11-26'
+  via: cs.CV November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.31812'
+  title: Generalizable Feed-Forward 3D Hand-Object Reconstruction with Coarse-to-Fine Contact Estimation
+  url: https://arxiv.org/abs/2611.31812
+  found: '2026-11-26'
+  via: cs.CV November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.28520'
+  title: 'VG3R: Video Generation Model for Feed-Forward 3D Reconstruction'
+  url: https://arxiv.org/abs/2611.28520
+  found: '2026-11-26'
+  via: cs.CV November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2611.25595'
+  title: 'LoopedWAM: Looped World Action Models for Elastic Inference'
+  url: https://arxiv.org/abs/2611.25595
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2609.34651'
+  title: 'DirectUV: Image-Conditioned UV Texture Generation with Surface-Aware Positional Encoding'
+  url: https://arxiv.org/abs/2609.34651
+  found: '2026-11-26'
+  via: cs.CV November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2604.00528'
+  title: 'Think, Act, Build: An Agentic Framework with Vision Language Models for Zero-Shot 3D Visual Grounding'
+  url: https://arxiv.org/abs/2604.00528
+  found: '2026-11-26'
+  via: cs.AI November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2610.18356'
+  title: 'Urbex: Agentic Spatial Grounding for City-Scale 3D Scenes'
+  url: https://arxiv.org/abs/2610.18356
+  found: '2026-11-26'
+  via: cs.AI November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2608.28386'
+  title: 'GraspHOI: Full-Body 3D Human-Object Reconstruction with Articulated Hands from a Single In-the-Wild Image'
+  url: https://arxiv.org/abs/2608.28386
+  found: '2026-11-26'
+  via: cs.CV November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2604.14048'
+  title: 'Free Geometry: Refining 3D Reconstruction from Stronger Versions of Itself'
+  url: https://arxiv.org/abs/2604.14048
+  found: '2026-11-26'
+  via: cs.CV November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2609.05461'
+  title: Do Latent World Models Really Select the Right Actions?
+  url: https://arxiv.org/abs/2609.05461
+  found: '2026-11-26'
+  via: cs.RO November 25 new/cross-list/replacement entries
+  decision: pending
+  note: Plausible title or abstract lead. Verify contribution, conditions and feedback in the original work before routing.
+- id: '2606.13515'
+  title: 'MaskWAM: Unifying Mask Prompting and Prediction for World-Action Models'
+  url: https://arxiv.org/abs/2606.13515
+  found: '2026-11-26'
+  via: AR-WAM reference; original arXiv record checked
+  decision: pending
+  note: Recent reference for callable model conditioning, agent planning or code-driven image generation. Full scope decision
+    pending.
+- id: '2606.15768'
+  title: 'LaWAM: Latent World Action Models for Efficient Dynamics-Aware Robot Policies'
+  url: https://arxiv.org/abs/2606.15768
+  found: '2026-11-26'
+  via: AR-WAM reference; original arXiv record checked
+  decision: pending
+  note: Recent reference for callable model conditioning, agent planning or code-driven image generation. Full scope decision
+    pending.
+- id: '2608.03701'
+  title: 'LiLa-WAM: Lightweight Latent Reasoning World-Action Model for Robotic Manipulation'
+  url: https://arxiv.org/abs/2608.03701
+  found: '2026-11-26'
+  via: AR-WAM reference; original arXiv record checked
+  decision: pending
+  note: Recent reference for callable model conditioning, agent planning or code-driven image generation. Full scope decision
+    pending.
+- id: '2607.05377'
+  title: 'Cortex: A Bidirectionally Aligned Embodied Agent Framework for Long-horizon Manipulation'
+  url: https://arxiv.org/abs/2607.05377
+  found: '2026-11-26'
+  via: AR-WAM reference; original arXiv record checked
+  decision: pending
+  note: Recent reference for callable model conditioning, agent planning or code-driven image generation. Full scope decision
+    pending.
+- id: '2609.35530'
+  title: 'AutoRef: Harness Optimization for Agentic Multi-Reference Image Generation'
+  url: https://arxiv.org/abs/2609.35530
+  found: '2026-11-26'
+  via: MAGPIE reference; original arXiv record checked
+  decision: pending
+  note: Recent reference for callable model conditioning, agent planning or code-driven image generation. Full scope decision
+    pending.
+- id: '2605.30248'
+  title: 'GenClaw: Code-Driven Agentic Image Generation'
+  url: https://arxiv.org/abs/2605.30248
+  found: '2026-11-26'
+  via: MAGPIE reference; original arXiv record checked
+  decision: pending
+  note: Recent reference for callable model conditioning, agent planning or code-driven image generation. Full scope decision
+    pending.

@@ -13,7 +13,7 @@
 
 A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to the physical world.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-693-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--25-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-697-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--26-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -50,14 +50,14 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [1.6 Games and executable game worlds](#s1-6) (43)
   - [1.7 Cross-task: visual evaluators, experience and training](#s1-7) (12)
 - [Stage 2 · Orchestrating Models as Tools](#stage-2)
-  - [2.1 Image generation models × image and visual design](#s2-1) (3)
+  - [2.1 Image generation models × image and visual design](#s2-1) (4)
   - [2.2 Video generation models × video creation and editing](#s2-2) (12)
   - [2.3 3D generation models × 3D assets and scenes](#s2-3) (11)
   - [2.4 Generative world models × interactive environments](#s2-4) (13)
   - [2.5 Perception models × scene understanding and reconstruction](#s2-5) (6)
-  - [2.6 Action models × robot manipulation](#s2-6) (13)
+  - [2.6 Action models × robot manipulation](#s2-6) (15)
 - [Stage 3 · Bridging Digital & Physical Worlds](#stage-3)
-  - [3.1 Embodied harnesses](#s3-1) (94)
+  - [3.1 Embodied harnesses](#s3-1) (95)
   - [3.2 Simulator construction](#s3-2) (69)
   - [3.3 Simulator quality evaluation](#s3-3) (29)
   - [3.4 Data](#s3-4) (15)
@@ -1332,6 +1332,8 @@ The agent writes code, renders or runs what it built, **looks at the result**, a
 - <a id="paper-res-zoo-developer-tools"></a>**[Zoo developer tools](https://docs.zoo.dev/docs)** [[Documentation]](https://zoo.dev/docs/developer-tools/mcp)
   > Connects language-driven KCL workflows to geometric execution, snapshots, inspection, and debugging.
 
+*See also:* [MAGPIE](#paper-2611-32462)
+
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20Back%20to%20contents-30363d?style=flat-square" alt="↑ Back to contents" height="24"></a></p>
 
 <a id="games"></a>
@@ -1670,6 +1672,11 @@ The agent **calls other models through code** — image, video and world generat
 
 ### 2.1 Image generation models × image and visual design
 
+<!-- mmac-record: {"id": "2611.32462", "scope": "Core", "primary": "2.1", "stage": 2, "type": "paper"} -->
+
+- <a id="paper-2611-32462"></a>`2026.11` **[MAGPIE: Agentic Multi-Reference Image Generation via Executable Scene Construction](https://arxiv.org/abs/2611.32462)**
+  > Refines executable Blender proxy scenes with geometric and visual feedback, then uses them to compose images from multiple references.
+
 <!-- mmac-record: {"id": "2610.32120", "scope": "Adjacent", "primary": "2.1", "stage": 2, "type": "paper"} -->
 
 - <a id="paper-2610-32120"></a>`2026.10` **[ImageRSI: Verification-Driven Recursive Self-Improvement for Agentic Image Generation](https://arxiv.org/abs/2610.32120)**
@@ -1967,6 +1974,18 @@ The agent **calls other models through code** — image, video and world generat
 
 - <a id="paper-2610-23334"></a>`2026.10` **[LAW: Unifying Language, Action, and World Modeling for Agentic Physical Intelligence](https://arxiv.org/abs/2610.23334)** [[Code]](https://github.com/hey-cjj/LAW) [[Project page]](https://hey-cjj.github.io/LAW-project/) [[Dataset]](https://huggingface.co/datasets/KAITANG2003/LAW-RoboTwin-VLM-Training) [[Code]](https://github.com/hey-cjj/CogWAM) [[Collection]](https://huggingface.co/collections/KAITANG2003/law)
   > Coordinates a world-action model with shared-backbone VLM experts for subtask planning, action valuation, and asynchronous progress checks, adapting robot decisions to fresh visual observations without rewriting policy code.
+
+<!-- mmac-record: {"id": "2610.12832", "scope": "Adjacent", "primary": "2.6", "stage": 2, "type": "paper"} -->
+
+- <a id="paper-2610-12832"></a>`2026.10` **[VLMs are Native Action Models: Unleashing the Manipulation Capabilities of VLMs with Explicit Action-Space Grounding](https://arxiv.org/abs/2610.12832)** [[Project page]](https://general-robo.github.io/EASG/) [[Code]](https://github.com/General-Robo/EASG)
+  > Overlays a gripper-centered action frame on wrist images so a VLM can directly predict robot motion as text.<br>
+  > 🖥️ **Sim** MuJoCo · 🦾 **Real** Universal Robots UR3, Flexiv
+
+<!-- mmac-record: {"id": "2609.23578", "scope": "Adjacent", "primary": "2.6", "stage": 2, "type": "paper"} -->
+
+- <a id="paper-2609-23578"></a>`2026.09` **[AR-WAM: A Visual-Conditioned Agent-Ready World Action Model for Robotic Manipulation](https://arxiv.org/abs/2609.23578)** [[Project page]](https://ar-wam.github.io/) [[Code]](https://github.com/AR-WAM/AR-WAM) [[Project page]](https://www.modelscope.cn/datasets/Jasonggg15/AR-WAM-RoboTwin-Dataset)
+  > Uses target boxes and skill tokens to let an interchangeable agent direct a world action model and recover from failures.<br>
+  > 🖥️ **Sim** SAPIEN · 🦾 **Real** Astribot S1
 
 <!-- mmac-record: {"id": "2509.19571", "scope": "Adjacent", "primary": "2.6", "stage": 2, "type": "paper"} -->
 
@@ -2459,6 +2478,12 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
   > Measures an agent’s ability to explore interactive worlds and substantiate anomalies with evidence.<br>
   > 🖥️ **Sim** Unreal Engine + Three.js
 
+<!-- mmac-record: {"id": "2608.17129", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2608-17129"></a>`2026.08` **[MG-VQA: Manipulation Grounded Visual Question Answering with VLMs](https://arxiv.org/abs/2608.17129)** [[Code]](https://github.com/vineet2104/MG-VQA) [[Dataset]](https://huggingface.co/datasets/bhatvineet/mg-vqa-bench)
+  > Tests whether VLM agents can move clutter, recover from failed grasps, and uncover the evidence needed to answer a question.<br>
+  > 🖥️ **Sim** PyBullet (Universal Robots UR5)
+
 <!-- mmac-record: {"id": "2607.04434", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
 
 - <a id="paper-2607-04434"></a>`2026.07` **[RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies](https://arxiv.org/abs/2607.04434)** [[Project page]](http://robodojo-benchmark.com/) [[Code]](https://github.com/RoboDojo-Benchmark/RoboDojo) [[Project page]](https://robodojo-benchmark.com/) [[Leaderboard]](https://robodojo-benchmark.com/leaderboard)
@@ -2581,7 +2606,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 - <a id="paper-res-webots-mcp"></a>**[Webots MCP](https://github.com/MHasaan/webotMCP)**
   > Exposes scene editing, controller code, robot commands, multiview screenshots, motion traces and contact events to agents; ground-truth simulator readouts and reactive controls are distinguished from learned perception and planning.
 
-*See also:* [Meituan-Robotics-0](#paper-2611-08577)
+*See also:* [Meituan-Robotics-0](#paper-2611-08577) · [AR-WAM](#paper-2609-23578)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20Back%20to%20contents-30363d?style=flat-square" alt="↑ Back to contents" height="24"></a></p>
 
@@ -3345,7 +3370,7 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
   > Starting from one first-person human video, an agent rebuilds the scene in simulation from object properties, optimizes a dexterous-hand trajectory, and varies object and robot states to generate data, growing its tool library as it goes. Frames: simulation renders from varied viewpoints, retextured to look real; trajectory: dexterous hand and arm actions.<br>
   > 🖥️ **Sim** Blender + MuJoCo + Isaac Sim (Sharpa Wave) · 🦾 **Real** I2RT YAM, Sharpa Wave
 
-*See also:* [Contact Harness](#paper-2611-29377) · [RoboUniverse-10K](#paper-2611-31002)
+*See also:* [Contact Harness](#paper-2611-29377) · [RoboUniverse-10K](#paper-2611-31002) · [MG-VQA](#paper-2608-17129)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20Back%20to%20contents-30363d?style=flat-square" alt="↑ Back to contents" height="24"></a></p>
 

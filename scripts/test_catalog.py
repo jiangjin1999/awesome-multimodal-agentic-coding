@@ -1,6 +1,7 @@
 """Regression cases from the three-stage migration; no network or publication."""
 from copy import deepcopy
 from pathlib import Path
+import re
 from tempfile import TemporaryDirectory
 import unittest
 
@@ -222,6 +223,10 @@ class CatalogTests(unittest.TestCase):
             for sec in sections:
                 self.assertIn(f'](#{sec_anchor(sec)})', actual)
                 self.assertNotIn(f'.md#{sec_anchor(sec)}', actual)
+            # Images point at upstream files by absolute URL, so the local link check cannot see a missing one.
+            raw = f"https://raw.githubusercontent.com/{self.site['repo']}/main/"
+            for path in re.findall(re.escape(raw) + r'([^"\s)]+)', actual):
+                self.assertTrue((ROOT / path).is_file(), path)
 
     def test_robotics_taxonomy_places_each_branch_section_once(self):
         self.assertEqual(robotics_map.validate(self.site), [])

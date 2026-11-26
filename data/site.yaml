@@ -1865,6 +1865,31 @@ stage_chart_full:
       tier: F
       steps: nttttntnnnn
       how: {en: 'Segmentation and completion, then fine-tuned CodeLlama writes joint code', zh: 分割、补全后，微调 CodeLlama 写关节代码}
+paper_trend:
+  text:
+    heading: {en: Statistics, zh: 统计, ja: 統計}
+    intro:
+      en: How many papers this list holds in each stage, and when they first appeared. Each paper counts once, under the
+        stage of its primary section; surveys, resources and demos are not counted. The chart and the table are regenerated
+        from `data/works.yaml` on every update.
+      zh: 本列表各阶段收录的论文数量及其首次发表时间。每篇论文只按主条目所在的阶段计一次；综述、资源和 Demo 不计入。图和表在每次更新时由 `data/works.yaml` 重新生成。
+      ja: 本リストが各ステージに収録している論文の数と、その初出時期。各論文は主エントリのあるステージで 1 回だけ数え、サーベイ・リソース・デモは含めません。図と表は更新のたびに `data/works.yaml`
+        から再生成されます。
+    title: {en: Papers per stage over time, zh: 各阶段论文数量随时间的变化, ja: ステージ別論文数の推移}
+    subtitle: {en: 'Cumulative papers in this list by first-publication month, through {last}', zh: '本列表收录论文的累计数量，按首次发表月份统计，截至 {last}',
+      ja: '本リスト収録論文の累計数（初出月ごと、{last} まで）'}
+    undated: {en: '{n} papers without a known publication month are not plotted.', zh: '另有 {n} 篇论文发表月份不详，未画入图中。',
+      ja: '発表月が不明な論文 {n} 本は図に含めていません。'}
+    alt:
+      en: Line chart of the cumulative number of papers in Stage 1 (Visual as Feedback), Stage 2 (Orchestrating Models as
+        Tools) and Stage 3 (Bridging Digital & Physical Worlds) by first-publication month. The table below gives the counts
+        per year.
+      zh: 折线图：Stage 1（视觉作为反馈）、Stage 2（把模型当作工具来编排）和 Stage 3（打通数字世界与物理世界）的论文累计数量，按首次发表月份统计。下方表格给出每年的数量。
+      ja: 折れ線グラフ：Stage 1（フィードバックとしての視覚）、Stage 2（モデルをツールとして編成する）、Stage 3（デジタルと物理世界の架け橋）の論文累計数を初出月ごとに示す。年ごとの数は下の表を参照。
+    table: {en: Papers per year and stage, zh: 各阶段每年的论文数量, ja: ステージ別・年別の論文数}
+    year: {en: Year, zh: 年份, ja: 年}
+    total: {en: Total, zh: 合计, ja: 合計}
+    no_date: {en: Month unknown, zh: 月份不详, ja: 月不明}
 sections:
   '1.1':
     en: Web, UI and applications

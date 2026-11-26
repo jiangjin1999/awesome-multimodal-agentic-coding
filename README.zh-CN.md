@@ -67,6 +67,7 @@
   - [仿真引擎一览](#s3-engines)
 - [综述与相关合集](#related)
 - [联系与贡献](#contact) · [引用](#citation)
+- [统计](#statistics)
 
 <a id="trilogy-visual-feedback"></a>
 <a id="section-1-2"></a>
@@ -4310,3 +4311,29 @@ P0 是前提关卡，只判过不过；其余各层检查不同的失败模式�
 ## 致谢
 
 感谢 Liangcai Gao、Wenshan Wu、Haolin Yang 和 Yu Chen。
+
+<a id="statistics"></a>
+
+## 统计
+
+本列表各阶段收录的论文数量及其首次发表时间。每篇论文只按主条目所在的阶段计一次；综述、资源和 Demo 不计入。图和表在每次更新时由 `data/works.yaml` 重新生成。
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/paper-trend/paper-trend-zh-dark.svg">
+  <img src="assets/paper-trend/paper-trend-zh-light.svg" alt="折线图：Stage 1（视觉作为反馈）、Stage 2（把模型当作工具来编排）和 Stage 3（打通数字世界与物理世界）的论文累计数量，按首次发表月份统计。下方表格给出每年的数量。" width="100%">
+</picture>
+
+<details>
+<summary>各阶段每年的论文数量</summary>
+
+| 年份 | Stage 1 | Stage 2 | Stage 3 | 合计 |
+| :-- | --: | --: | --: | --: |
+| 2022 | 0 | 0 | 4 | 4 |
+| 2023 | 0 | 0 | 20 | 20 |
+| 2024 | 7 | 0 | 27 | 34 |
+| 2025 | 30 | 1 | 22 | 53 |
+| 2026 | 181 | 30 | 241 | 452 |
+| 月份不详 | 1 | 0 | 2 | 3 |
+| **合计** | **219** | **31** | **316** | **566** |
+
+</details>

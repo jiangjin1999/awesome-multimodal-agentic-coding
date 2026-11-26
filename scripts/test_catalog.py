@@ -6,6 +6,7 @@ import unittest
 
 import engine_map
 import eval_ladder
+import paper_trend
 import triage
 import stage_chart
 from build_readme import render, validate
@@ -128,6 +129,37 @@ class CatalogTests(unittest.TestCase):
         self.assertTrue(any('unknown pictogram' in e for e in errors))
         self.assertTrue(any('L0a.fake missing zh' in e for e in errors))
         self.assertTrue(any("level code 'L0a' is missing or repeated" in e for e in errors))
+
+    def test_paper_trend_counts_every_stage_paper_and_follows_the_catalog(self):
+        for rel, svg in paper_trend.outputs(self.site, self.works):
+            self.assertEqual((ROOT / rel).read_text(encoding='utf-8'), svg, rel)
+        dated, undated = paper_trend.tally(self.site, self.works)
+        papers = [w for w in self.works if w['type'] == 'paper' and w['section'] != 'SV']
+        self.assertEqual(sum(sum(c.values()) for c in dated.values()) + sum(undated.values()), len(papers))
+        _, lines, _ = paper_trend.series(self.site, self.works)
+        self.assertEqual(set(lines), {str(st['id']) for st in self.site['stages']})
+        for stage, points in lines.items():
+            values = [v for _, v in points]
+            self.assertEqual(values[0], 0, stage)
+            self.assertEqual(values, sorted(values), stage)
+            self.assertEqual(values[-1], sum(dated[stage].values()), stage)
+        for lang in self.site['languages']:
+            text = render(self.site, self.works, lang)
+            heading = f"## {paper_trend.text(self.site, 'heading', lang)}"
+            self.assertEqual(text.split('\n## ')[-1].split('\n', 1)[0], heading[3:])
+            self.assertIn(f"- [{heading[3:]}](#statistics)", text)
+        # A new Stage 2 paper moves both the table and the image.
+        rows = deepcopy(self.works)
+        extra = deepcopy(next(w for w in rows if w['section'].startswith('2.') and w['type'] == 'paper'))
+        extra.update(id='test-extra', date='2026.11')
+        rows.append(extra)
+        total = sum(dated['2'].values()) + undated['2']
+        self.assertIn(f'**{total + 1}**', paper_trend.table(self.site, rows, 'en').splitlines()[-1])
+        self.assertNotEqual(paper_trend.render(self.site, rows, 'en', 'light'),
+                            paper_trend.render(self.site, self.works, 'en', 'light'))
+        site = deepcopy(self.site)
+        del site['paper_trend']['text']['title']['ja']
+        self.assertIn('paper_trend: text.title missing ja', validate(site, self.works, True)[0])
 
     def test_setup_renders_sim_and_real_groups_and_rejects_bad_names(self):
         rows = deepcopy(self.works)

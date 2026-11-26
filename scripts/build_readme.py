@@ -17,6 +17,7 @@ import yaml
 
 import engine_map
 import eval_ladder
+import paper_trend
 import triage
 import stage_chart
 from catalog import LAYOUT, validate_catalog, check_local_links
@@ -100,6 +101,7 @@ def validate(site, works, strict_ja):
     errors += eval_ladder.validate(site, works)
     errors += stage_chart.validate(site, byid)
     errors += stage_chart.validate_full(site, byid)
+    errors += paper_trend.validate(site, works)
     return errors, warnings
 
 
@@ -323,7 +325,10 @@ def render(site, works, lang):
         for extra in st.get('extras') or []:
             o(f"  - [{extra['title'][lang]}](#{extra['anchor']})")
     o(f"- [{t(site, 'related_title', lang)}](#related)")
-    o(f"- [{t(site, 'contact_title', lang)}](#contact) · [{t(site, 'citation_title', lang)}](#citation)\n")
+    o(f"- [{t(site, 'contact_title', lang)}](#contact) · [{t(site, 'citation_title', lang)}](#citation)")
+    if site.get('paper_trend'):
+        o(f"- [{paper_trend.text(site, 'heading', lang)}](#statistics)")
+    o('')
 
     # A right-aligned button badge (GitHub pins <kbd> at 11px, so a badge is the way to make it larger).
     back_label = '↑ ' + t(site, 'back_to_contents', lang)
@@ -396,6 +401,12 @@ def render(site, works, lang):
     o(t(site, 'license', lang) + ' ' + t(site, 'hero_credit', lang) + '\n')
     o(f"## {t(site, 'acknowledgments_title', lang)}\n")
     o(t(site, 'acknowledgments', lang) + '\n')
+
+    # Statistics: papers per stage over time, drawn from the catalog on every build.
+    if site.get('paper_trend'):
+        named_anchor('statistics')
+        o(f"## {paper_trend.text(site, 'heading', lang)}\n")
+        o(paper_trend.section(site, works, lang))
     text = '\n'.join(out)
     text = re.sub(r'\n{3,}', '\n\n', text).rstrip() + '\n'
     return text
@@ -422,6 +433,7 @@ def main():
     generated += [(ROOT / rel, svg) for rel, svg in engine_map.outputs(site)]
     generated += [(ROOT / rel, svg) for rel, svg in eval_ladder.outputs(site)]
     generated += [(ROOT / rel, svg) for rel, svg in stage_chart.outputs(site)]
+    generated += [(ROOT / rel, svg) for rel, svg in paper_trend.outputs(site, works)]
     for path, text in generated:
         if args.check:
             if not path.exists() or path.read_text(encoding='utf-8') != text:

@@ -70,6 +70,7 @@
   - [シミュレーションエンジン一覧](#s3-engines)
 - [サーベイと関連コレクション](#related)
 - [連絡とコントリビュート](#contact) · [引用](#citation)
+- [統計](#statistics)
 
 <a id="trilogy-visual-feedback"></a>
 <a id="section-1-2"></a>
@@ -4313,3 +4314,29 @@ P0 は前提となる関門で、合否だけを判定します。ほかの各�
 ## 謝辞
 
 Liangcai Gao、Wenshan Wu、Haolin Yang、Yu Chen の皆様に感謝します。
+
+<a id="statistics"></a>
+
+## 統計
+
+本リストが各ステージに収録している論文の数と、その初出時期。各論文は主エントリのあるステージで 1 回だけ数え、サーベイ・リソース・デモは含めません。図と表は更新のたびに `data/works.yaml` から再生成されます。
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/paper-trend/paper-trend-ja-dark.svg">
+  <img src="assets/paper-trend/paper-trend-ja-light.svg" alt="折れ線グラフ：Stage 1（フィードバックとしての視覚）、Stage 2（モデルをツールとして編成する）、Stage 3（デジタルと物理世界の架け橋）の論文累計数を初出月ごとに示す。年ごとの数は下の表を参照。" width="100%">
+</picture>
+
+<details>
+<summary>ステージ別・年別の論文数</summary>
+
+| 年 | Stage 1 | Stage 2 | Stage 3 | 合計 |
+| :-- | --: | --: | --: | --: |
+| 2022 | 0 | 0 | 4 | 4 |
+| 2023 | 0 | 0 | 20 | 20 |
+| 2024 | 7 | 0 | 27 | 34 |
+| 2025 | 30 | 1 | 22 | 53 |
+| 2026 | 181 | 30 | 241 | 452 |
+| 月不明 | 1 | 0 | 2 | 3 |
+| **合計** | **219** | **31** | **316** | **566** |
+
+</details>

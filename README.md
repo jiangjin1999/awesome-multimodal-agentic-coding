@@ -67,6 +67,7 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [Simulation engines at a glance](#s3-engines)
 - [Surveys and related collections](#related)
 - [Contact and contributing](#contact) · [Citation](#citation)
+- [Statistics](#statistics)
 
 <a id="trilogy-visual-feedback"></a>
 <a id="section-1-2"></a>
@@ -4310,3 +4311,29 @@ This repository is released under the [MIT License](./LICENSE). Linked papers, c
 ## Acknowledgments
 
 We thank Liangcai Gao, Wenshan Wu, Haolin Yang, and Yu Chen.
+
+<a id="statistics"></a>
+
+## Statistics
+
+How many papers this list holds in each stage, and when they first appeared. Each paper counts once, under the stage of its primary section; surveys, resources and demos are not counted. The chart and the table are regenerated from `data/works.yaml` on every update.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/paper-trend/paper-trend-en-dark.svg">
+  <img src="assets/paper-trend/paper-trend-en-light.svg" alt="Line chart of the cumulative number of papers in Stage 1 (Visual as Feedback), Stage 2 (Orchestrating Models as Tools) and Stage 3 (Bridging Digital &amp; Physical Worlds) by first-publication month. The table below gives the counts per year." width="100%">
+</picture>
+
+<details>
+<summary>Papers per year and stage</summary>
+
+| Year | Stage 1 | Stage 2 | Stage 3 | Total |
+| :-- | --: | --: | --: | --: |
+| 2022 | 0 | 0 | 4 | 4 |
+| 2023 | 0 | 0 | 20 | 20 |
+| 2024 | 7 | 0 | 27 | 34 |
+| 2025 | 30 | 1 | 22 | 53 |
+| 2026 | 181 | 30 | 241 | 452 |
+| Month unknown | 1 | 0 | 2 | 3 |
+| **Total** | **219** | **31** | **316** | **566** |
+
+</details>

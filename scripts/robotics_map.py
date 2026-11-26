@@ -65,6 +65,10 @@ def validate(site):
     for world in WORLDS:
         if not all(((text.get('worlds') or {}).get(world) or {}).get(lang) for lang in LANGS):
             errors.append(f'robotics.taxonomy.text.worlds.{world} needs {", ".join(LANGS)}')
+    labels = (rb.get('hero') or {}).get('labels')
+    if labels is not None:
+        if sorted(labels) != sorted(scope(site)) or not all(isinstance(v, str) and v.strip() for v in labels.values()):
+            errors.append('robotics.hero.labels: give every branch section exactly one short English label')
     return errors
 
 

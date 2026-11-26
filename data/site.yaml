@@ -2694,3 +2694,11 @@ robotics:
     alt: 'Multimodal Agentic Coding, robotics branch: a Real2Sim2Real loop around a real robot arm and its simulated wireframe
       twin. A coding agent between the two worlds sends code and observes results, while the loop runs Act (real world), Build
       (simulation), Learn (simulation) and Apply (real world).'
+    labels:
+      '3.1': Embodied harness
+      '2.6': Action models
+      '3.2': Sim construction
+      '3.3': Sim evaluation
+      '3.4': Data
+      '3.5': Training
+      '3.6': Physical applications

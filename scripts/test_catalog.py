@@ -236,6 +236,9 @@ class CatalogTests(unittest.TestCase):
         site = deepcopy(self.site)
         site['robotics']['taxonomy']['steps'][1]['world'] = 'moon'
         self.assertTrue(any('world must be' in e for e in robotics_map.validate(site)))
+        site = deepcopy(self.site)
+        del site['robotics']['hero']['labels']['3.4']
+        self.assertTrue(any('hero.labels' in e for e in robotics_map.validate(site)))
 
     def test_branch_links_without_a_local_target_go_upstream(self):
         up = 'https://github.com/' + self.site['repo']

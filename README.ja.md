@@ -8,7 +8,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/hero/hero-dark.png">
-  <img src="assets/hero/hero-light.png" alt="Multimodal Agentic Coding, toward physical AGI. One agent loop grows through three nested stages along an axis from digital to physical. Stage 1, Visual as Feedback: the agent writes code, builds an artifact and observes it. Stage 2, Orchestrating Models as Tools: the same loop reaches further and calls models. Stage 3, Bridging Digital & Physical Worlds: the widest loop acts and observes in simulation and reality." width="100%">
+  <img src="assets/hero/hero-light.png" alt="Awesome Multimodal Agentic Coding — three cumulative stages. 01 Visual as Feedback: an agent writes code, builds an artifact, and observes it. 02 Orchestrating Models as Tools: the same loop calls image, video and world models. 03 Bridging Digital & Physical Worlds: the agent acts and observes in simulation and reality, with simulation built from the real world and practice in simulation strengthening the agent." width="100%">
 </picture>
 
 マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——デジタル世界から物理世界まで。

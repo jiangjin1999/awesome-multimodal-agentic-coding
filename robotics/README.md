@@ -4,7 +4,12 @@
 
 # Awesome Multimodal Agentic Coding ⎇ Robotics
 
-The robotics branch of the Multimodal Agentic Coding map: agents that write code to build simulators, drive robots, and improve in simulation and reality.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/robotics-map-en-dark.svg">
+  <img src="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/robotics-map-en-light.svg" alt="The robotics branch as one Real2Sim2Real loop. Multimodal coding agent: writes code → runs it on a robot or in a simulator → looks at the result → revises. 1 Act (Real world): 3.1 Embodied harnesses, 2.6 Action models × robot manipulation. 2 Build (Simulation): 3.2 Simulator construction, 3.3 Simulator quality evaluation. 3 Learn (Simulation): 3.4 Data, 3.5 Training and capability improvement. 4 Apply (Real world): 3.6 Physical applications and experiments." width="100%">
+</picture>
+
+Multimodal coding agents for robots: they write code to act, build the simulators they practise in, and improve from what they observe, in simulation and reality.
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Branched from](https://img.shields.io/badge/branched_from-awesome--multimodal--agentic--coding-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding) [![Works](https://img.shields.io/badge/works-363-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--26-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
@@ -16,6 +21,29 @@ The robotics branch of the Multimodal Agentic Coding map: agents that write code
 $ git checkout -b robotics awesome-multimodal-agentic-coding/stage-3
 Switched to a new branch 'robotics'
 ```
+
+## Overview
+
+A multimodal coding agent can drive a robot by writing code. It calls perception, planning and control, runs the program on hardware or in a simulator, looks at the result, and revises the code. The same agent can build the simulators it practises in and improve from the experience it collects there.
+
+This list follows that **Real2Sim2Real loop** in four steps. Each step groups sections of Stage 3 of the upstream map, plus 2.6 cherry-picked from Stage 2: **act** on robots, **build** worlds to practise in, **learn** from experience, and **apply** what was learned in the physical world.
+
+<a id="contents"></a>
+
+## Taxonomy
+
+Each row is a step of the loop above. Section numbers are the upstream ones; the counts are entries.
+
+| Step | Sections |
+|---|---|
+| **1 · ACT**<br>Drive robots with code | **[3.1 Embodied harnesses](#s3-1)** (97)<br>[Tools and control interfaces](#s3-1-tools-interfaces) (41) · [Delegation to existing policies](#s3-1-delegation) (10) · [Agent capability evaluation](#s3-1-capability-eval) (32) · [Skills, bridges and runtime resources](#s3-1-skills-runtime) (14)<br>**[2.6 Action models × robot manipulation](#s2-6)** (15) <sub>⤴ cherry-picked from Stage 2</sub> |
+| **2 · BUILD**<br>Build worlds to practise in | **[3.2 Simulator construction](#s3-2)** (69)<br>**[3.3 Simulator quality evaluation](#s3-3)** (29) |
+| **3 · LEARN**<br>Improve from experience | **[3.4 Data](#s3-4)** (15)<br>[Real](#s3-4-real-data) (4) · [Sim](#s3-4-sim-data) (7) · [Real+Sim](#s3-4-mixed-data) (4)<br>**[3.5 Training and capability improvement](#s3-5)** (87)<br>[Program and policy development](#s3-5-program-policy) (26) · [Experience, memory and skill learning](#s3-5-experience-skill) (51) · [Post-training the coding agent](#s3-5-post-training) (10) |
+| **4 · APPLY**<br>Reach the physical world | **[3.6 Physical applications and experiments](#s3-6)** (51)<br>[Robot interaction and manipulation](#s3-6-robot-interaction) (13) · [Scientific experiments (AI4Science)](#s3-6-experiments) (27) · [Physical design, fabrication and validation](#s3-6-physical-design) (11) |
+
+🧭 [Simulation engines at a glance](#s3-engines)
+
+⎇ [Where this branch comes from](#branch) · [Contact and contributing](#contact) · [Citation](#citation) · [Upstream: the full three-stage map](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding)
 
 <a id="branch"></a>
 
@@ -42,24 +70,6 @@ gitGraph
   commit id: "…" tag: "699 works upstream"
 ```
 
-<a id="contents"></a>
-
-## Contents
-
-- [Stage 3 · Bridging Digital & Physical Worlds](#stage-3)
-  - [3.1 Embodied harnesses](#s3-1) (97)
-  - [3.2 Simulator construction](#s3-2) (69)
-  - [3.3 Simulator quality evaluation](#s3-3) (29)
-  - [3.4 Data](#s3-4) (15)
-  - [3.5 Training and capability improvement](#s3-5) (87)
-  - [3.6 Physical applications and experiments](#s3-6) (51)
-    - [Scientific experiments (AI4Science)](#s3-6-experiments) (27)
-  - [Simulation engines at a glance](#s3-engines)
-- [Cherry-picked from Stage 2](#cherry-picked)
-  - [2.6 Action models × robot manipulation](#s2-6) (15)
-- [Contact and contributing](#contact) · [Citation](#citation)
-- ⎇ [Upstream: the full three-stage map](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding)
-
 <a id="stage-3"></a>
 
 ## Stage 3 · Bridging Digital & Physical Worlds
@@ -71,6 +81,8 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 <a id="s3-1"></a>
 
 ### 3.1 Embodied harnesses
+
+<a id="s3-1-tools-interfaces"></a>
 
 #### Tools and control interfaces
 
@@ -318,6 +330,8 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
   > Generates program-like plans using available objects, actions and assertions, with recovery steps when action preconditions fail.<br>
   > 🖥️ **Sim** Unity · 🦾 **Real** Franka Panda
 
+<a id="s3-1-delegation"></a>
+
 #### Delegation to existing policies
 
 <!-- mmac-record: {"id": "2611.03585", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -379,6 +393,8 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 - <a id="paper-2204-01691"></a>`2022.04` **[Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](https://arxiv.org/abs/2204.01691)** [[Project page]](https://say-can.github.io/) [[Code]](https://github.com/google-research/google-research/tree/master/saycan)
   > SayCan combines language-model relevance and state-conditioned affordance scores to select pretrained robot skills.<br>
   > 🦾 **Real** Everyday Robots
+
+<a id="s3-1-capability-eval"></a>
 
 #### Agent capability evaluation
 
@@ -569,6 +585,8 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 - <a id="paper-2306-03310"></a>`2023.06` **[LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning](https://arxiv.org/abs/2306.03310)** [[Project page]](https://libero-project.github.io)
   > Provides resettable manipulation tasks, demonstrations and shared interfaces for studying lifelong transfer.
+
+<a id="s3-1-skills-runtime"></a>
 
 #### Skills, bridges and runtime resources
 
@@ -1296,6 +1314,8 @@ P0 is a pass-or-fail gate; the other levels each check a different failure mode 
 
 Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator rewrites itself from training feedback.
 
+<a id="s3-4-real-data"></a>
+
 #### Real
 
 <!-- mmac-record: {"id": "2611.06817", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
@@ -1320,6 +1340,8 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
 - <a id="paper-2403-12945"></a>`2024.03` **[DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset](https://arxiv.org/abs/2403.12945)** [[Project page]](https://droid-dataset.github.io/) [[Demo]](https://droid-dataset.github.io/visualizer) [[Hardware code]](https://github.com/droid-dataset/droid) [[Policy training code]](https://github.com/droid-dataset/droid_policy_learning) [[Documentation]](https://droid-dataset.github.io/droid/)
   > 76k teleoperated Franka trajectories (350 hours) across 564 scenes and 84 tasks. Frames: RGB from two external and one wrist stereo camera, with camera calibration and depth-ready stereo in the raw release; trajectory: joint and end-effector states and actions; labels: three language instructions per episode.<br>
   > 🦾 **Real** Franka Panda
+
+<a id="s3-4-sim-data"></a>
 
 #### Sim
 
@@ -1364,6 +1386,8 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
   > An LLM plans tasks and writes success-check code, driving sampling-based planners to explore in simulation; the successful trajectories are distilled into a visuomotor policy. Frames: global and wrist RGB; trajectory: proprioception and end-effector actions; labels: language and success; at least 500 successful trajectories per task.<br>
   > 🖥️ **Sim** MuJoCo (UR5e) · 🦾 **Real** UR5e
 
+<a id="s3-4-mixed-data"></a>
+
 #### Real+Sim
 
 <!-- mmac-record: {"id": "2611.12411", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
@@ -1397,6 +1421,8 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
 <a id="s3-5"></a>
 
 ### 3.5 Training and capability improvement
+
+<a id="s3-5-program-policy"></a>
 
 #### Program and policy development
 
@@ -1552,6 +1578,8 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
 
 - <a id="paper-autoresearch-robotics"></a>**[autoresearch-robotics](https://github.com/jellyheadandrew/autoresearch-robotics)**
   > Provides a community robot-RL development example.
+
+<a id="s3-5-experience-skill"></a>
 
 #### Experience, memory and skill learning
 
@@ -1854,6 +1882,8 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
 - <a id="paper-res-physicalrsi"></a>**[PhysicalRSI 1.0: Recursive Self-Harness for Scaling Embodied Skills](https://mmlab.hk/research/PhysicalRSI)** [[Code]](https://github.com/PhysicalRSI/PhysicalRSI)
   > Provides composable skills and evaluation-gated harness evolution across environment adapters.
 
+<a id="s3-5-post-training"></a>
+
 #### Post-training the coding agent
 
 <!-- mmac-record: {"id": "2611.18562", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -1925,6 +1955,8 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
 ### 3.6 Physical applications and experiments
 
 Related digital demo · [Google DeepMind — Agentic cheminformatics](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/)
+
+<a id="s3-6-robot-interaction"></a>
 
 #### Robot interaction and manipulation
 
@@ -2158,6 +2190,8 @@ Related digital demo · [Google DeepMind — Agentic cheminformatics](https://de
 
 *See also:* [Lab2Sim](#paper-2611-02928) · [LabWorld](#paper-2610-36592) · [ChemAutoAgent](#paper-chemautoagent) · [LabRobFail](#paper-2607-23704) · [Safe Lab Agents](#paper-safe-lab-agents)
 
+<a id="s3-6-physical-design"></a>
+
 #### Physical design, fabrication and validation
 
 <!-- mmac-record: {"id": "2611.26503", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
@@ -2302,6 +2336,8 @@ Picked with `git cherry-pick` from upstream [Stage 2 · Orchestrating Models as 
 
 - <a id="paper-2509-19571"></a>`2025.09` **[Agentic Scene Policies: Unifying Space, Semantics, and Affordances for Robot Action](https://arxiv.org/abs/2509.19571)** [[Code]](https://github.com/montrealrobotics/agentic-scene-policies) [[Project page]](https://montrealrobotics.ca/agentic-scene-policies.github.io/)
   > Composes scene grounding, spatial queries, and vision-based affordance tools with existing motion-planning skills, refreshing object maps and retrying tool actions after failures.
+
+<a id="s2-6-models"></a>
 
 #### Callable models
 

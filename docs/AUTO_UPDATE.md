@@ -109,7 +109,7 @@ python3 -m unittest discover -s scripts -p 'test_*.py'
 
 A run may change:
 
-- `data/works.yaml`, `data/triage.yaml`, and the generated READMEs and figures;
+- `data/works.yaml`, `data/triage.yaml`, and the generated READMEs and figures, including `robotics/` and `assets/robotics/`;
 - `updated` in `data/site.yaml`, set to the run date, but only when an entry was added or changed;
 - `source_kind_overrides` and `paper_url_aliases` in `data/site.yaml`, when a new source needs them.
 
@@ -120,6 +120,8 @@ A run must not change:
 - the hand-maintained guides: `stage3/README*.md` (which have their own literature cutoff), `stage3/simulator-evaluation*.md`, `eval_ladder` and `engine_map`.
 
 New works that belong in those guides are flagged in the run's `note` for the maintainer.
+
+A Stage 3 or 2.6 entry is published twice: in this repository and in the robotics repository, which is generated from the same data. The build regenerates both, so commit `robotics/` and `assets/robotics/` with the data; there is nothing to edit by hand. After the commit reaches `main`, the robotics repository syncs within an hour.
 
 Make one commit per run. Name the topics it adds, in the existing style, for example `Add embodied harness and simulator fidelity research`. Commit on the branch your environment gives you. If that branch is not `main`, open a pull request.
 

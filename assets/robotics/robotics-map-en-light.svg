@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 446" width="1280" height="446" role="img" aria-label="The robotics branch as one Real2Sim2Real loop. Multimodal coding agent: writes code → runs it on a robot or in a simulator → looks at the result → revises. 1 Act (Real world): 3.1 Embodied harnesses, 2.6 Action models × robot manipulation. 2 Build (Simulation): 3.2 Simulator construction, 3.3 Simulator quality evaluation. 3 Learn (Simulation): 3.4 Data, 3.5 Training and capability improvement. 4 Apply (Real world): 3.6 Physical applications and experiments." font-family="-apple-system, &#x27;Segoe UI&#x27;, Helvetica, Arial, &#x27;Noto Sans&#x27;, sans-serif">
+<title>The robotics branch as one Real2Sim2Real loop. Multimodal coding agent: writes code → runs it on a robot or in a simulator → looks at the result → revises. 1 Act (Real world): 3.1 Embodied harnesses, 2.6 Action models × robot manipulation. 2 Build (Simulation): 3.2 Simulator construction, 3.3 Simulator quality evaluation. 3 Learn (Simulation): 3.4 Data, 3.5 Training and capability improvement. 4 Apply (Real world): 3.6 Physical applications and experiments.</title>
+<defs>
+<marker id="arr" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9 Z" fill="#59636E"/></marker>
+</defs>
+<rect x="0.5" y="0.5" width="1279" height="445" rx="12" fill="#FFFFFF" stroke="#D1D9E0"/>
+<rect x="24" y="24" width="1232" height="66" rx="12" fill="#F0F3F6" stroke="#D1D9E0"/>
+<text x="640" y="52" text-anchor="middle" font-size="19" font-weight="700" fill="#1F2328"><tspan font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#59636E">&lt;/&gt;</tspan> Multimodal coding agent</text>
+<text x="640" y="75" text-anchor="middle" font-size="14" fill="#59636E">writes code → runs it on a robot or in a simulator → looks at the result → revises</text>
+<line x1="152.5" y1="94" x2="152.5" y2="122" stroke="#59636E" stroke-width="1.6" marker-end="url(#arr)"/>
+<line x1="170.5" y1="122" x2="170.5" y2="94" stroke="#59636E" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="24" y="126" width="275" height="204" rx="12" fill="#FFFFFF" stroke="#A35C0A" stroke-width="1.6"/>
+<path d="M24.8 216 V138 a11.2 11.2 0 0 1 11.2 -11.2 H287 a11.2 11.2 0 0 1 11.2 11.2 V216 Z" fill="#FBEAD2"/>
+<line x1="24" y1="216" x2="299" y2="216" stroke="#A35C0A" stroke-opacity="0.35"/>
+<text x="40" y="151" font-size="12.5" font-weight="700" letter-spacing="0.6" fill="#A35C0A">1 · ACT</text>
+<text x="40" y="176" font-size="17" font-weight="700" fill="#1F2328">Drive robots with code</text>
+<rect x="243" y="232" width="40" height="22" rx="11" fill="#FBEAD2"/>
+<text x="263" y="247.5" text-anchor="middle" font-size="13" font-weight="700" fill="#A35C0A">97</text>
+<text x="40" y="247" font-size="14" fill="#1F2328">3.1 Embodied harnesses</text>
+<rect x="243" y="264.5" width="40" height="22" rx="11" fill="#FBEAD2"/>
+<text x="263" y="280" text-anchor="middle" font-size="13" font-weight="700" fill="#A35C0A">15</text>
+<text x="40" y="279.5" font-size="14" fill="#1F2328">2.6 Action models ×</text>
+<text x="40" y="298" font-size="14" fill="#1F2328">robot manipulation</text>
+<text x="40" y="314.5" font-size="12" font-style="italic" fill="#59636E">⤴ cherry-picked from Stage 2</text>
+<line x1="305" y1="171" x2="335" y2="171" stroke="#59636E" stroke-width="1.8" marker-end="url(#arr)"/>
+<line x1="471.5" y1="94" x2="471.5" y2="122" stroke="#59636E" stroke-width="1.6" marker-end="url(#arr)"/>
+<line x1="489.5" y1="122" x2="489.5" y2="94" stroke="#59636E" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="343" y="126" width="275" height="204" rx="12" fill="#FFFFFF" stroke="#0B7266" stroke-width="1.6"/>
+<path d="M343.8 216 V138 a11.2 11.2 0 0 1 11.2 -11.2 H606 a11.2 11.2 0 0 1 11.2 11.2 V216 Z" fill="#D2EEEA"/>
+<line x1="343" y1="216" x2="618" y2="216" stroke="#0B7266" stroke-opacity="0.35"/>
+<text x="359" y="151" font-size="12.5" font-weight="700" letter-spacing="0.6" fill="#0B7266">2 · BUILD</text>
+<text x="359" y="176" font-size="17" font-weight="700" fill="#1F2328">Build worlds</text>
+<text x="359" y="198" font-size="17" font-weight="700" fill="#1F2328">to practise in</text>
+<rect x="562" y="232" width="40" height="22" rx="11" fill="#D2EEEA"/>
+<text x="582" y="247.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0B7266">69</text>
+<text x="359" y="247" font-size="14" fill="#1F2328">3.2 Simulator</text>
+<text x="359" y="265.5" font-size="14" fill="#1F2328">construction</text>
+<rect x="562" y="283" width="40" height="22" rx="11" fill="#D2EEEA"/>
+<text x="582" y="298.5" text-anchor="middle" font-size="13" font-weight="700" fill="#0B7266">29</text>
+<text x="359" y="298" font-size="14" fill="#1F2328">3.3 Simulator</text>
+<text x="359" y="316.5" font-size="14" fill="#1F2328">quality evaluation</text>
+<line x1="624" y1="171" x2="654" y2="171" stroke="#59636E" stroke-width="1.8" marker-end="url(#arr)"/>
+<line x1="790.5" y1="94" x2="790.5" y2="122" stroke="#59636E" stroke-width="1.6" marker-end="url(#arr)"/>
+<line x1="808.5" y1="122" x2="808.5" y2="94" stroke="#59636E" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="662" y="126" width="275" height="204" rx="12" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.6"/>
+<path d="M662.8 216 V138 a11.2 11.2 0 0 1 11.2 -11.2 H925 a11.2 11.2 0 0 1 11.2 11.2 V216 Z" fill="#DCE5F6"/>
+<line x1="662" y1="216" x2="937" y2="216" stroke="#2B57A4" stroke-opacity="0.35"/>
+<text x="678" y="151" font-size="12.5" font-weight="700" letter-spacing="0.6" fill="#2B57A4">3 · LEARN</text>
+<text x="678" y="176" font-size="17" font-weight="700" fill="#1F2328">Improve from experience</text>
+<rect x="881" y="232" width="40" height="22" rx="11" fill="#DCE5F6"/>
+<text x="901" y="247.5" text-anchor="middle" font-size="13" font-weight="700" fill="#2B57A4">15</text>
+<text x="678" y="247" font-size="14" fill="#1F2328">3.4 Data</text>
+<rect x="881" y="264.5" width="40" height="22" rx="11" fill="#DCE5F6"/>
+<text x="901" y="280" text-anchor="middle" font-size="13" font-weight="700" fill="#2B57A4">87</text>
+<text x="678" y="279.5" font-size="14" fill="#1F2328">3.5 Training and</text>
+<text x="678" y="298" font-size="14" fill="#1F2328">capability improvement</text>
+<line x1="943" y1="171" x2="973" y2="171" stroke="#59636E" stroke-width="1.8" marker-end="url(#arr)"/>
+<line x1="1109.5" y1="94" x2="1109.5" y2="122" stroke="#59636E" stroke-width="1.6" marker-end="url(#arr)"/>
+<line x1="1127.5" y1="122" x2="1127.5" y2="94" stroke="#59636E" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="981" y="126" width="275" height="204" rx="12" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.6"/>
+<path d="M981.8 216 V138 a11.2 11.2 0 0 1 11.2 -11.2 H1244 a11.2 11.2 0 0 1 11.2 11.2 V216 Z" fill="#F6DCE2"/>
+<line x1="981" y1="216" x2="1256" y2="216" stroke="#A5324D" stroke-opacity="0.35"/>
+<text x="997" y="151" font-size="12.5" font-weight="700" letter-spacing="0.6" fill="#A5324D">4 · APPLY</text>
+<text x="997" y="176" font-size="17" font-weight="700" fill="#1F2328">Reach the physical world</text>
+<rect x="1200" y="232" width="40" height="22" rx="11" fill="#F6DCE2"/>
+<text x="1220" y="247.5" text-anchor="middle" font-size="13" font-weight="700" fill="#A5324D">51</text>
+<text x="997" y="247" font-size="14" fill="#1F2328">3.6 Physical applications</text>
+<text x="997" y="265.5" font-size="14" fill="#1F2328">and experiments</text>
+<rect x="24" y="348" width="275" height="32" rx="16" fill="#F0F3F6" stroke="#8C959F" stroke-width="1.3"/>
+<text x="161.5" y="369" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1F2328">Real world</text>
+<rect x="343" y="348" width="594" height="32" rx="16" fill="#FFFFFF" stroke="#8C959F" stroke-width="1.3" stroke-dasharray="6 4"/>
+<text x="640" y="369" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1F2328">Simulation</text>
+<rect x="981" y="348" width="275" height="32" rx="16" fill="#F0F3F6" stroke="#8C959F" stroke-width="1.3"/>
+<text x="1118.5" y="369" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1F2328">Real world</text>
+<rect x="280.414" y="353" width="81.1712" height="22" rx="11" fill="#1F2328"/>
+<text x="321" y="368.5" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">Real2Sim</text>
+<rect x="918.414" y="353" width="81.1712" height="22" rx="11" fill="#1F2328"/>
+<text x="959" y="368.5" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">Sim2Real</text>
+<path d="M1118.5 384 V398 a10 10 0 0 1 -10 10 H171.5 a10 10 0 0 1 -10 -10 V386" fill="none" stroke="#59636E" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="543.76" y="397" width="192.48" height="22" fill="#FFFFFF"/>
+<text x="640" y="412.5" text-anchor="middle" font-size="13" fill="#59636E">deploy · observe · repeat</text>
+</svg>

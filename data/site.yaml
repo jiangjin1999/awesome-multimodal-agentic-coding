@@ -2495,10 +2495,10 @@ robotics:
     Switched to a new branch 'robotics'
   text:
     tagline:
-      en: 'The robotics branch of the Multimodal Agentic Coding map: agents that write code to build simulators, drive robots,
-        and improve in simulation and reality.'
-      zh: 多模态智能体编程研究地图的机器人分支：Agent 用代码构建仿真、驱动机器人，并在仿真与现实中不断改进。
-      ja: マルチモーダル・エージェンティック・コーディング研究マップのロボティクス・ブランチ：エージェントがコードでシミュレーションを構築してロボットを動かし、シミュレーションと現実の中で改善していきます。
+      en: 'Multimodal coding agents for robots: they write code to act, build the simulators they practise in, and improve
+        from what they observe, in simulation and reality.'
+      zh: 面向机器人的多模态 Coding Agent：写代码去行动，搭建自己练习用的仿真，并根据观察到的结果在仿真与现实中不断改进。
+      ja: ロボットのためのマルチモーダル・コーディングエージェント：コードを書いて行動し、練習用のシミュレータを構築し、観察した結果からシミュレーションと現実の中で改善していきます。
     origin_title:
       en: Where this branch comes from
       zh: 这个分支从哪里来
@@ -2575,4 +2575,116 @@ robotics:
       This repository is the robotics branch of {upstream}. Its READMEs, `CONTRIBUTING.md`, `AGENTS.md`, `CLAUDE.md` and `LICENSE` are generated upstream by `scripts/build_readme.py` into the `robotics/` folder and copied here by `.github/workflows/sync.yml`.
 
       - **Do not edit those files here:** the next sync overwrites them. Change `data/works.yaml`, or the `robotics` block in `data/site.yaml`, upstream, run `python3 scripts/build_readme.py` there, and commit upstream.
-      - **Only `.github/workflows/sync.yml` is maintained in this repository.** It runs every six hours and on demand, copies `robotics/` from upstream `main`, and pins the footer's `upstream@main` link to the upstream commit it copied.
+      - **Only `.github/workflows/sync.yml` is maintained in this repository.** It runs every hour and on demand, copies `robotics/` from upstream `main`, and pins the footer's `upstream@main` link to the upstream commit it copied.
+    overview_title:
+      en: Overview
+      zh: 概览
+      ja: 概要
+    overview:
+      en: |-
+        A multimodal coding agent can drive a robot by writing code. It calls perception, planning and control, runs the program on hardware or in a simulator, looks at the result, and revises the code. The same agent can build the simulators it practises in and improve from the experience it collects there.
+
+        This list follows that **Real2Sim2Real loop** in four steps. Each step groups sections of Stage 3 of the upstream map, plus 2.6 cherry-picked from Stage 2: **act** on robots, **build** worlds to practise in, **learn** from experience, and **apply** what was learned in the physical world.
+      zh: |-
+        多模态 Coding Agent 可以通过写代码来驱动机器人：调用感知、规划与控制模块，在真机或仿真中运行程序，观察结果，再修改代码。同一个 Agent 还能搭建自己练习用的仿真环境，并从中收集经验、不断提升。
+
+        本列表沿着这个 **Real2Sim2Real 闭环**分成四步，每一步对应上游地图 Stage 3 的若干章节（另加从 Stage 2 cherry-pick 的 2.6）：在机器人上**行动**，**构建**练习用的世界，从经验中**学习**，再把学到的东西**应用**到物理世界。
+      ja: |-
+        マルチモーダルなコーディングエージェントは、コードを書くことでロボットを動かせます。知覚・計画・制御を呼び出し、実機やシミュレータでプログラムを実行し、結果を見てコードを修正します。同じエージェントが練習用のシミュレータを構築し、そこで集めた経験から上達することもできます。
+
+        このリストはその **Real2Sim2Real ループ**を四つのステップに分けます。各ステップは上流マップ Stage 3 の節（と Stage 2 から cherry-pick した 2.6）をまとめたものです。ロボットで**行動**し、練習用の世界を**構築**し、経験から**学習**し、学んだことを物理世界で**応用**します。
+    taxonomy_title:
+      en: Taxonomy
+      zh: 分类
+      ja: 分類
+    taxonomy_intro:
+      en: Each row is a step of the loop above. Section numbers are the upstream ones; the counts are entries.
+      zh: 每一行是上图闭环中的一步。章节编号沿用上游，括号里是条目数。
+      ja: 各行は上図のループの一ステップです。節番号は上流と同じで、括弧内は項目数です。
+  taxonomy:
+    steps:
+    - world: real
+      sections:
+      - '3.1'
+      - '2.6'
+      label:
+        en: Act
+        zh: 行动
+        ja: 行動
+      title:
+        en: Drive robots with code
+        zh: 用代码驱动机器人
+        ja: コードでロボットを動かす
+    - world: sim
+      sections:
+      - '3.2'
+      - '3.3'
+      label:
+        en: Build
+        zh: 构建
+        ja: 構築
+      title:
+        en: Build worlds to practise in
+        zh: 搭建练习用的仿真世界
+        ja: 練習用の世界を構築する
+    - world: sim
+      sections:
+      - '3.4'
+      - '3.5'
+      label:
+        en: Learn
+        zh: 学习
+        ja: 学習
+      title:
+        en: Improve from experience
+        zh: 从经验中变强
+        ja: 経験から上達する
+    - world: real
+      sections:
+      - '3.6'
+      label:
+        en: Apply
+        zh: 应用
+        ja: 応用
+      title:
+        en: Reach the physical world
+        zh: 走进物理世界
+        ja: 物理世界で使う
+    text:
+      agent:
+        en: Multimodal coding agent
+        zh: 多模态 Coding Agent
+        ja: マルチモーダル・コーディングエージェント
+      loop:
+        en: writes code → runs it on a robot or in a simulator → looks at the result → revises
+        zh: 写代码 → 在真机或仿真中运行 → 观察结果 → 修改
+        ja: コードを書く → 実機やシミュレータで実行 → 結果を見る → 修正する
+      back:
+        en: deploy · observe · repeat
+        zh: 部署 · 观察 · 再循环
+        ja: 展開 · 観察 · 繰り返し
+      picked:
+        en: cherry-picked from Stage 2
+        zh: 从 Stage 2 cherry-pick
+        ja: Stage 2 から cherry-pick
+      worlds:
+        real:
+          en: Real world
+          zh: 真实世界
+          ja: 実世界
+        sim:
+          en: Simulation
+          zh: 仿真
+          ja: シミュレーション
+      alt:
+        en: The robotics branch as one Real2Sim2Real loop
+        zh: 机器人分支的分类：一个 Real2Sim2Real 闭环
+        ja: ロボティクス・ブランチの分類：一つの Real2Sim2Real ループ
+      step_head:
+        en: Step
+        zh: 步骤
+        ja: ステップ
+      sections_head:
+        en: Sections
+        zh: 章节
+        ja: 節

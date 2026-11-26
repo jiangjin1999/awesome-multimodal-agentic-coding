@@ -4,7 +4,12 @@
 
 # Awesome Multimodal Agentic Coding ⎇ Robotics
 
-多模态智能体编程研究地图的机器人分支：Agent 用代码构建仿真、驱动机器人，并在仿真与现实中不断改进。
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/robotics-map-zh-dark.svg">
+  <img src="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/robotics-map-zh-light.svg" alt="机器人分支的分类：一个 Real2Sim2Real 闭环。多模态 Coding Agent：写代码 → 在真机或仿真中运行 → 观察结果 → 修改。1 行动（真实世界）：3.1 具身框架（Harness）、2.6 动作模型 × 机器人操作。2 构建（仿真）：3.2 仿真器构建、3.3 仿真器质量评估。3 学习（仿真）：3.4 数据、3.5 训练与能力提升。4 应用（真实世界）：3.6 物理应用与实验。" width="100%">
+</picture>
+
+面向机器人的多模态 Coding Agent：写代码去行动，搭建自己练习用的仿真，并根据观察到的结果在仿真与现实中不断改进。
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Branched from](https://img.shields.io/badge/branched_from-awesome--multimodal--agentic--coding-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding) [![Works](https://img.shields.io/badge/works-363-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--26-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
@@ -16,6 +21,29 @@
 $ git checkout -b robotics awesome-multimodal-agentic-coding/stage-3
 Switched to a new branch 'robotics'
 ```
+
+## 概览
+
+多模态 Coding Agent 可以通过写代码来驱动机器人：调用感知、规划与控制模块，在真机或仿真中运行程序，观察结果，再修改代码。同一个 Agent 还能搭建自己练习用的仿真环境，并从中收集经验、不断提升。
+
+本列表沿着这个 **Real2Sim2Real 闭环**分成四步，每一步对应上游地图 Stage 3 的若干章节（另加从 Stage 2 cherry-pick 的 2.6）：在机器人上**行动**，**构建**练习用的世界，从经验中**学习**，再把学到的东西**应用**到物理世界。
+
+<a id="contents"></a>
+
+## 分类
+
+每一行是上图闭环中的一步。章节编号沿用上游，括号里是条目数。
+
+| 步骤 | 章节 |
+|---|---|
+| **1 · 行动**<br>用代码驱动机器人 | **[3.1 具身框架（Harness）](#s3-1)** (97)<br>[工具与控制接口](#s3-1-tools-interfaces) (41) · [委派已有策略](#s3-1-delegation) (10) · [Agent 能力评测](#s3-1-capability-eval) (32) · [Skills、工具桥与运行资源](#s3-1-skills-runtime) (14)<br>**[2.6 动作模型 × 机器人操作](#s2-6)** (15) <sub>⤴ 从 Stage 2 cherry-pick</sub> |
+| **2 · 构建**<br>搭建练习用的仿真世界 | **[3.2 仿真器构建](#s3-2)** (69)<br>**[3.3 仿真器质量评估](#s3-3)** (29) |
+| **3 · 学习**<br>从经验中变强 | **[3.4 数据](#s3-4)** (15)<br>[Real](#s3-4-real-data) (4) · [Sim](#s3-4-sim-data) (7) · [Real+Sim](#s3-4-mixed-data) (4)<br>**[3.5 训练与能力提升](#s3-5)** (87)<br>[程序与策略研发](#s3-5-program-policy) (26) · [经验、记忆与技能学习](#s3-5-experience-skill) (51) · [Coding Agent 后训练](#s3-5-post-training) (10) |
+| **4 · 应用**<br>走进物理世界 | **[3.6 物理应用与实验](#s3-6)** (51)<br>[机器人交互与操作](#s3-6-robot-interaction) (13) · [科学实验（AI4Science）](#s3-6-experiments) (27) · [物理设计、制造与验证](#s3-6-physical-design) (11) |
+
+🧭 [仿真引擎一览](#s3-engines)
+
+⎇ [这个分支从哪里来](#branch) · [联系与贡献](#contact) · [引用](#citation) · [上游：完整的三阶段地图](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding)
 
 <a id="branch"></a>
 
@@ -42,24 +70,6 @@ gitGraph
   commit id: "…" tag: "上游 699 项"
 ```
 
-<a id="contents"></a>
-
-## 目录
-
-- [Stage 3 · 打通数字世界与物理世界](#stage-3)
-  - [3.1 具身框架（Harness）](#s3-1) (97)
-  - [3.2 仿真器构建](#s3-2) (69)
-  - [3.3 仿真器质量评估](#s3-3) (29)
-  - [3.4 数据](#s3-4) (15)
-  - [3.5 训练与能力提升](#s3-5) (87)
-  - [3.6 物理应用与实验](#s3-6) (51)
-    - [科学实验（AI4Science）](#s3-6-experiments) (27)
-  - [仿真引擎一览](#s3-engines)
-- [从 Stage 2 cherry-pick](#cherry-picked)
-  - [2.6 动作模型 × 机器人操作](#s2-6) (15)
-- [联系与贡献](#contact) · [引用](#citation)
-- ⎇ [上游：完整的三阶段地图](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding)
-
 <a id="stage-3"></a>
 
 ## Stage 3 · 打通数字世界与物理世界
@@ -71,6 +81,8 @@ gitGraph
 <a id="s3-1"></a>
 
 ### 3.1 具身框架（Harness）
+
+<a id="s3-1-tools-interfaces"></a>
 
 #### 工具与控制接口
 
@@ -318,6 +330,8 @@ gitGraph
   > 用可用动作、对象和断言组织程序式提示，使语言模型生成能够检查前置条件并恢复的机器人任务计划。<br>
   > 🖥️ **仿真** Unity · 🦾 **真机** Franka Panda
 
+<a id="s3-1-delegation"></a>
+
 #### 委派已有策略
 
 <!-- mmac-record: {"id": "2611.03585", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -379,6 +393,8 @@ gitGraph
 - <a id="paper-2204-01691"></a>`2022.04` **[Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](https://arxiv.org/abs/2204.01691)** [[项目页]](https://say-can.github.io/) [[代码]](https://github.com/google-research/google-research/tree/master/saycan)
   > SayCan 结合语言模型的任务相关性与当前状态下的可供性评分，选择预训练机器人技能。<br>
   > 🦾 **真机** Everyday Robots
+
+<a id="s3-1-capability-eval"></a>
 
 #### Agent 能力评测
 
@@ -569,6 +585,8 @@ gitGraph
 
 - <a id="paper-2306-03310"></a>`2023.06` **[LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning](https://arxiv.org/abs/2306.03310)** [[项目页]](https://libero-project.github.io)
   > 提供可重置的长期机器人学习任务、统一接口与示范，是 Code-as-Policy Agent 与后训练研究常用的执行和评测底座。
+
+<a id="s3-1-skills-runtime"></a>
 
 #### Skills、工具桥与运行资源
 
@@ -1296,6 +1314,8 @@ P0 是前提关卡，只判过不过；其余各层检查不同的失败模式�
 
 示范 = 画面 + 机器人动作。↻ 表示闭环：生成器根据训练反馈改写自己。
 
+<a id="s3-4-real-data"></a>
+
 #### Real
 
 <!-- mmac-record: {"id": "2611.06817", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
@@ -1320,6 +1340,8 @@ P0 是前提关卡，只判过不过；其余各层检查不同的失败模式�
 - <a id="paper-2403-12945"></a>`2024.03` **[DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset](https://arxiv.org/abs/2403.12945)** [[项目页]](https://droid-dataset.github.io/) [[Demo]](https://droid-dataset.github.io/visualizer) [[硬件代码]](https://github.com/droid-dataset/droid) [[策略训练代码]](https://github.com/droid-dataset/droid_policy_learning) [[文档]](https://droid-dataset.github.io/droid/)
   > 在 564 个场景、84 类任务中遥操作 Franka，采集 7.6 万条轨迹（350 小时）。画面：两路外部、一路腕部立体相机 RGB，原始数据附相机标定、可算深度；轨迹：关节与末端状态、动作；标注：每条 3 句语言指令。<br>
   > 🦾 **真机** Franka Panda
+
+<a id="s3-4-sim-data"></a>
 
 #### Sim
 
@@ -1364,6 +1386,8 @@ P0 是前提关卡，只判过不过；其余各层检查不同的失败模式�
   > LLM 规划任务并写出成功判定代码，驱动采样式规划器在仿真中批量探索，再把成功轨迹蒸馏成视觉运动策略。画面：全局与腕部两路 RGB；轨迹：本体状态与末端动作；标注：语言与成败；每个任务至少 500 条成功轨迹。<br>
   > 🖥️ **仿真** MuJoCo（UR5e） · 🦾 **真机** UR5e
 
+<a id="s3-4-mixed-data"></a>
+
 #### Real+Sim
 
 <!-- mmac-record: {"id": "2611.12411", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
@@ -1397,6 +1421,8 @@ P0 是前提关卡，只判过不过；其余各层检查不同的失败模式�
 <a id="s3-5"></a>
 
 ### 3.5 训练与能力提升
+
+<a id="s3-5-program-policy"></a>
 
 #### 程序与策略研发
 
@@ -1552,6 +1578,8 @@ P0 是前提关卡，只判过不过；其余各层检查不同的失败模式�
 
 - <a id="paper-autoresearch-robotics"></a>**[autoresearch-robotics](https://github.com/jellyheadandrew/autoresearch-robotics)**
   > 提供社区机器人 RL 研发实例。
+
+<a id="s3-5-experience-skill"></a>
 
 #### 经验、记忆与技能学习
 
@@ -1854,6 +1882,8 @@ P0 是前提关卡，只判过不过；其余各层检查不同的失败模式�
 - <a id="paper-res-physicalrsi"></a>**[PhysicalRSI 1.0: Recursive Self-Harness for Scaling Embodied Skills](https://mmlab.hk/research/PhysicalRSI)** [[代码]](https://github.com/PhysicalRSI/PhysicalRSI)
   > 提供可组合技能和环境适配器，通过评测筛选与继承新的 Harness 配置。
 
+<a id="s3-5-post-training"></a>
+
 #### Coding Agent 后训练
 
 <!-- mmac-record: {"id": "2611.18562", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -1925,6 +1955,8 @@ P0 是前提关卡，只判过不过；其余各层检查不同的失败模式�
 ### 3.6 物理应用与实验
 
 相关数字 Demo · [Google DeepMind — Agentic cheminformatics](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/)
+
+<a id="s3-6-robot-interaction"></a>
 
 #### 机器人交互与操作
 
@@ -2158,6 +2190,8 @@ P0 是前提关卡，只判过不过；其余各层检查不同的失败模式�
 
 *另见:* [Lab2Sim](#paper-2611-02928) · [LabWorld](#paper-2610-36592) · [ChemAutoAgent](#paper-chemautoagent) · [LabRobFail](#paper-2607-23704) · [Safe Lab Agents](#paper-safe-lab-agents)
 
+<a id="s3-6-physical-design"></a>
+
 #### 物理设计、制造与验证
 
 <!-- mmac-record: {"id": "2611.26503", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
@@ -2302,6 +2336,8 @@ P0 是前提关卡，只判过不过；其余各层检查不同的失败模式�
 
 - <a id="paper-2509-19571"></a>`2025.09` **[Agentic Scene Policies: Unifying Space, Semantics, and Affordances for Robot Action](https://arxiv.org/abs/2509.19571)** [[代码]](https://github.com/montrealrobotics/agentic-scene-policies) [[项目页]](https://montrealrobotics.ca/agentic-scene-policies.github.io/)
   > 将场景接地、空间查询和视觉可供性工具与既有运动规划技能组合，失败后刷新对象地图并重试工具动作。
+
+<a id="s2-6-models"></a>
 
 #### 可调用模型
 

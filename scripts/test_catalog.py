@@ -5,10 +5,11 @@ from tempfile import TemporaryDirectory
 import unittest
 
 import engine_map
+import robotics_map
 import eval_ladder
 import triage
 import stage_chart
-from build_readme import render, render_robotics, robotics_outputs, sync_stamp, upstream_links, validate
+from build_readme import render, render_robotics, robotics_outputs, sec_anchor, sync_stamp, upstream_links, validate
 from catalog import anchor, canonical_records, check_local_links, load
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -217,6 +218,19 @@ class CatalogTests(unittest.TestCase):
             self.assertEqual(sorted(r['id'] for r in canonical_records(actual)), expected)
             # The branch's sync workflow pins exactly this link to the upstream commit it copied.
             self.assertEqual(actual.count(sync_stamp(self.site)), 1)
+            # The taxonomy links every branch section and subgroup inside the branch README, never upstream.
+            for sec in sections:
+                self.assertIn(f'](#{sec_anchor(sec)})', actual)
+                self.assertNotIn(f'.md#{sec_anchor(sec)}', actual)
+
+    def test_robotics_taxonomy_places_each_branch_section_once(self):
+        self.assertEqual(robotics_map.validate(self.site), [])
+        site = deepcopy(self.site)
+        site['robotics']['taxonomy']['steps'][0]['sections'].remove('2.6')
+        self.assertTrue(any('exactly once' in e for e in validate(site, self.works, True)[0]))
+        site = deepcopy(self.site)
+        site['robotics']['taxonomy']['steps'][1]['world'] = 'moon'
+        self.assertTrue(any('world must be' in e for e in robotics_map.validate(site)))
 
     def test_branch_links_without_a_local_target_go_upstream(self):
         up = 'https://github.com/' + self.site['repo']

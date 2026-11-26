@@ -4,7 +4,12 @@
 
 # Awesome Multimodal Agentic Coding ⎇ Robotics
 
-マルチモーダル・エージェンティック・コーディング研究マップのロボティクス・ブランチ：エージェントがコードでシミュレーションを構築してロボットを動かし、シミュレーションと現実の中で改善していきます。
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/robotics-map-ja-dark.svg">
+  <img src="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/robotics-map-ja-light.svg" alt="ロボティクス・ブランチの分類：一つの Real2Sim2Real ループ。マルチモーダル・コーディングエージェント：コードを書く → 実機やシミュレータで実行 → 結果を見る → 修正する。1 行動（実世界）：3.1 身体性ハーネス、2.6 行動モデル × ロボット操作。2 構築（シミュレーション）：3.2 シミュレータ構築、3.3 シミュレータ品質評価。3 学習（シミュレーション）：3.4 データ、3.5 学習と能力向上。4 応用（実世界）：3.6 物理応用と実験。" width="100%">
+</picture>
+
+ロボットのためのマルチモーダル・コーディングエージェント：コードを書いて行動し、練習用のシミュレータを構築し、観察した結果からシミュレーションと現実の中で改善していきます。
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Branched from](https://img.shields.io/badge/branched_from-awesome--multimodal--agentic--coding-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding) [![Works](https://img.shields.io/badge/works-363-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--26-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
@@ -19,6 +24,29 @@ Switched to a new branch 'robotics'
 
 > [!NOTE]
 > この日本語版は機械支援翻訳です。論文タイトルは原文のままです。誤りを見つけた場合は Issue でお知らせください。
+
+## 概要
+
+マルチモーダルなコーディングエージェントは、コードを書くことでロボットを動かせます。知覚・計画・制御を呼び出し、実機やシミュレータでプログラムを実行し、結果を見てコードを修正します。同じエージェントが練習用のシミュレータを構築し、そこで集めた経験から上達することもできます。
+
+このリストはその **Real2Sim2Real ループ**を四つのステップに分けます。各ステップは上流マップ Stage 3 の節（と Stage 2 から cherry-pick した 2.6）をまとめたものです。ロボットで**行動**し、練習用の世界を**構築**し、経験から**学習**し、学んだことを物理世界で**応用**します。
+
+<a id="contents"></a>
+
+## 分類
+
+各行は上図のループの一ステップです。節番号は上流と同じで、括弧内は項目数です。
+
+| ステップ | 節 |
+|---|---|
+| **1 · 行動**<br>コードでロボットを動かす | **[3.1 身体性ハーネス](#s3-1)** (97)<br>[ツールと制御インターフェース](#s3-1-tools-interfaces) (41) · [既存ポリシーへの委任](#s3-1-delegation) (10) · [エージェント能力の評価](#s3-1-capability-eval) (32) · [スキル・ブリッジ・ランタイム資源](#s3-1-skills-runtime) (14)<br>**[2.6 行動モデル × ロボット操作](#s2-6)** (15) <sub>⤴ Stage 2 から cherry-pick</sub> |
+| **2 · 構築**<br>練習用の世界を構築する | **[3.2 シミュレータ構築](#s3-2)** (69)<br>**[3.3 シミュレータ品質評価](#s3-3)** (29) |
+| **3 · 学習**<br>経験から上達する | **[3.4 データ](#s3-4)** (15)<br>[Real](#s3-4-real-data) (4) · [Sim](#s3-4-sim-data) (7) · [Real+Sim](#s3-4-mixed-data) (4)<br>**[3.5 学習と能力向上](#s3-5)** (87)<br>[プログラムとポリシーの開発](#s3-5-program-policy) (26) · [経験・記憶・スキル学習](#s3-5-experience-skill) (51) · [コーディングエージェントの事後学習](#s3-5-post-training) (10) |
+| **4 · 応用**<br>物理世界で使う | **[3.6 物理応用と実験](#s3-6)** (51)<br>[ロボットのインタラクションと操作](#s3-6-robot-interaction) (13) · [科学実験（AI4Science）](#s3-6-experiments) (27) · [物理設計・製造・検証](#s3-6-physical-design) (11) |
+
+🧭 [シミュレーションエンジン一覧](#s3-engines)
+
+⎇ [このブランチの由来](#branch) · [連絡とコントリビュート](#contact) · [引用](#citation) · [上流：三段階の全体マップ](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding)
 
 <a id="branch"></a>
 
@@ -45,24 +73,6 @@ gitGraph
   commit id: "…" tag: "上流 699 件"
 ```
 
-<a id="contents"></a>
-
-## 目次
-
-- [Stage 3 · デジタルと物理世界の架け橋](#stage-3)
-  - [3.1 身体性ハーネス](#s3-1) (97)
-  - [3.2 シミュレータ構築](#s3-2) (69)
-  - [3.3 シミュレータ品質評価](#s3-3) (29)
-  - [3.4 データ](#s3-4) (15)
-  - [3.5 学習と能力向上](#s3-5) (87)
-  - [3.6 物理応用と実験](#s3-6) (51)
-    - [科学実験（AI4Science）](#s3-6-experiments) (27)
-  - [シミュレーションエンジン一覧](#s3-engines)
-- [Stage 2 から cherry-pick](#cherry-picked)
-  - [2.6 行動モデル × ロボット操作](#s2-6) (15)
-- [連絡とコントリビュート](#contact) · [引用](#citation)
-- ⎇ [上流：三段階の全体マップ](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding)
-
 <a id="stage-3"></a>
 
 ## Stage 3 · デジタルと物理世界の架け橋
@@ -74,6 +84,8 @@ gitGraph
 <a id="s3-1"></a>
 
 ### 3.1 身体性ハーネス
+
+<a id="s3-1-tools-interfaces"></a>
 
 #### ツールと制御インターフェース
 
@@ -321,6 +333,8 @@ gitGraph
   > 利用可能な動作、物体、アサーションを使って手続き的なプロンプトを構成し、前提条件の確認と復帰処理を行えるロボットタスク計画を言語モデルに生成させる。<br>
   > 🖥️ **シミュレーション** Unity · 🦾 **実機** Franka Panda
 
+<a id="s3-1-delegation"></a>
+
 #### 既存ポリシーへの委任
 
 <!-- mmac-record: {"id": "2611.03585", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
@@ -382,6 +396,8 @@ gitGraph
 - <a id="paper-2204-01691"></a>`2022.04` **[Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](https://arxiv.org/abs/2204.01691)** [[プロジェクトページ]](https://say-can.github.io/) [[コード]](https://github.com/google-research/google-research/tree/master/saycan)
   > SayCan は言語モデルによるタスクとの関連度と、現在の状態に基づく実行可能性のスコアを組み合わせ、学習済みのロボットスキルを選ぶ。<br>
   > 🦾 **実機** Everyday Robots
+
+<a id="s3-1-capability-eval"></a>
 
 #### エージェント能力の評価
 
@@ -572,6 +588,8 @@ gitGraph
 
 - <a id="paper-2306-03310"></a>`2023.06` **[LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning](https://arxiv.org/abs/2306.03310)** [[プロジェクトページ]](https://libero-project.github.io)
   > リセット可能な長期ロボット学習タスク、統一インターフェース、実演を提供し、Code-as-Policy エージェントや事後学習研究の実行・評価基盤として使われる。
+
+<a id="s3-1-skills-runtime"></a>
 
 #### スキル・ブリッジ・ランタイム資源
 
@@ -1299,6 +1317,8 @@ P0 は前提となる関門で、合否だけを判定します。ほかの各�
 
 実演＝映像＋ロボットの動作。↻ は閉ループ（生成器が学習のフィードバックから自らを書き換える）を示します。
 
+<a id="s3-4-real-data"></a>
+
 #### Real
 
 <!-- mmac-record: {"id": "2611.06817", "scope": "Adjacent", "primary": "3.4", "stage": 3, "type": "paper"} -->
@@ -1323,6 +1343,8 @@ P0 は前提となる関門で、合否だけを判定します。ほかの各�
 - <a id="paper-2403-12945"></a>`2024.03` **[DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset](https://arxiv.org/abs/2403.12945)** [[プロジェクトページ]](https://droid-dataset.github.io/) [[デモ]](https://droid-dataset.github.io/visualizer) [[ハードウェアコード]](https://github.com/droid-dataset/droid) [[方策学習コード]](https://github.com/droid-dataset/droid_policy_learning) [[ドキュメント]](https://droid-dataset.github.io/droid/)
   > 564 シーン・84 タスクで Franka を遠隔操作し、7.6 万本の軌跡（350 時間）を収集。映像：外部 2 台と手首 1 台のステレオカメラの RGB（生データはカメラ較正付きで深度を計算可能）。軌跡：関節・手先の状態と動作。注釈：1 本ごとに 3 つの言語指示。<br>
   > 🦾 **実機** Franka Panda
+
+<a id="s3-4-sim-data"></a>
 
 #### Sim
 
@@ -1367,6 +1389,8 @@ P0 は前提となる関門で、合否だけを判定します。ほかの各�
   > LLM がタスクを計画して成功判定のコードを書き、サンプリング型プランナーにシミュレーション内を探索させ、成功軌跡を視覚運動方策に蒸留する。映像：全体視点と手首の RGB。軌跡：固有受容状態と手先の動作。注釈：言語と成否。各タスク 500 本以上の成功軌跡。<br>
   > 🖥️ **シミュレーション** MuJoCo（UR5e） · 🦾 **実機** UR5e
 
+<a id="s3-4-mixed-data"></a>
+
 #### Real+Sim
 
 <!-- mmac-record: {"id": "2611.12411", "scope": "Core", "primary": "3.4", "stage": 3, "type": "paper"} -->
@@ -1400,6 +1424,8 @@ P0 は前提となる関門で、合否だけを判定します。ほかの各�
 <a id="s3-5"></a>
 
 ### 3.5 学習と能力向上
+
+<a id="s3-5-program-policy"></a>
 
 #### プログラムとポリシーの開発
 
@@ -1555,6 +1581,8 @@ P0 は前提となる関門で、合否だけを判定します。ほかの各�
 
 - <a id="paper-autoresearch-robotics"></a>**[autoresearch-robotics](https://github.com/jellyheadandrew/autoresearch-robotics)**
   > コミュニティによるロボット強化学習の研究開発例を提供する。
+
+<a id="s3-5-experience-skill"></a>
 
 #### 経験・記憶・スキル学習
 
@@ -1857,6 +1885,8 @@ P0 は前提となる関門で、合否だけを判定します。ほかの各�
 - <a id="paper-res-physicalrsi"></a>**[PhysicalRSI 1.0: Recursive Self-Harness for Scaling Embodied Skills](https://mmlab.hk/research/PhysicalRSI)** [[コード]](https://github.com/PhysicalRSI/PhysicalRSI)
   > 組み合わせ可能なスキルと環境アダプターを提供し、評価によって新しいハーネス構成を選択・継承する。
 
+<a id="s3-5-post-training"></a>
+
 #### コーディングエージェントの事後学習
 
 <!-- mmac-record: {"id": "2611.18562", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
@@ -1928,6 +1958,8 @@ P0 は前提となる関門で、合否だけを判定します。ほかの各�
 ### 3.6 物理応用と実験
 
 関連するデジタルデモ · [Google DeepMind — Agentic cheminformatics](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/)
+
+<a id="s3-6-robot-interaction"></a>
 
 #### ロボットのインタラクションと操作
 
@@ -2161,6 +2193,8 @@ P0 は前提となる関門で、合否だけを判定します。ほかの各�
 
 *関連:* [Lab2Sim](#paper-2611-02928) · [LabWorld](#paper-2610-36592) · [ChemAutoAgent](#paper-chemautoagent) · [LabRobFail](#paper-2607-23704) · [Safe Lab Agents](#paper-safe-lab-agents)
 
+<a id="s3-6-physical-design"></a>
+
 #### 物理設計・製造・検証
 
 <!-- mmac-record: {"id": "2611.26503", "scope": "Core", "primary": "3.6", "stage": 3, "type": "paper"} -->
@@ -2305,6 +2339,8 @@ P0 は前提となる関門で、合否だけを判定します。ほかの各�
 
 - <a id="paper-2509-19571"></a>`2025.09` **[Agentic Scene Policies: Unifying Space, Semantics, and Affordances for Robot Action](https://arxiv.org/abs/2509.19571)** [[コード]](https://github.com/montrealrobotics/agentic-scene-policies) [[プロジェクトページ]](https://montrealrobotics.ca/agentic-scene-policies.github.io/)
   > 場面の接地、空間質問、視覚的アフォーダンスのツールを既存の運動計画スキルと組み合わせ、失敗後に物体地図を更新してツール操作を再試行する。
+
+<a id="s2-6-models"></a>
 
 #### 呼び出し可能なモデル
 

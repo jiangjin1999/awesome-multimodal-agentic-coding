@@ -2483,3 +2483,96 @@ anchor_aliases:
   contributing: contact
   tool-orkas-uidesigner: paper-res-orkas-uidesigner
   tool-agent-visual-diff: paper-res-agent-visual-diff
+robotics:
+  repo: jiangjin1999/awesome-multimodal-agentic-coding-robotics
+  dir: robotics
+  stage: 3
+  cherry_pick:
+  - '2.6'
+  title: Awesome Multimodal Agentic Coding ⎇ Robotics
+  console: |-
+    $ git checkout -b robotics awesome-multimodal-agentic-coding/stage-3
+    Switched to a new branch 'robotics'
+  text:
+    tagline:
+      en: 'The robotics branch of the Multimodal Agentic Coding map: agents that write code to build simulators, drive robots,
+        and improve in simulation and reality.'
+      zh: 多模态智能体编程研究地图的机器人分支：Agent 用代码构建仿真、驱动机器人，并在仿真与现实中不断改进。
+      ja: マルチモーダル・エージェンティック・コーディング研究マップのロボティクス・ブランチ：エージェントがコードでシミュレーションを構築してロボットを動かし、シミュレーションと現実の中で改善していきます。
+    origin_title:
+      en: Where this branch comes from
+      zh: 这个分支从哪里来
+      ja: このブランチの由来
+    origin:
+      en: |-
+        This repository is the robotics branch of [Awesome Multimodal Agentic Coding]({upstream}), a research map in three stages. It checks out **Stage 3 · Bridging Digital & Physical Worlds** as a repository of its own and cherry-picks **2.6 Action models × robot manipulation** from Stage 2.
+
+        Section numbers and paper anchors are inherited from upstream, so 3.1 here is 3.1 there, and links to works in Stages 1 and 2 lead back upstream. Every entry is edited upstream and synced here.
+      zh: |-
+        本仓库是 [Awesome Multimodal Agentic Coding]({upstream}) 的机器人分支。上游是一份分三个阶段的研究地图，这里把 **Stage 3 · 打通数字世界与物理世界** 单独 checkout 成一个仓库，并从 Stage 2 cherry-pick 了 **2.6 动作模型 × 机器人操作**。
+
+        章节编号和论文锚点都继承自上游，这里的 3.1 就是上游的 3.1，指向 Stage 1、2 的链接会回到上游。所有条目都在上游编辑，再同步到这里。
+      ja: |-
+        このリポジトリは、三段階からなる研究マップ [Awesome Multimodal Agentic Coding]({upstream}) のロボティクス・ブランチです。**Stage 3 · デジタルと物理世界の架け橋** を独立したリポジトリとして checkout し、Stage 2 から **2.6 行動モデル × ロボット操作** を cherry-pick しています。
+
+        節番号と論文アンカーは上流から引き継いでいるため、ここでの 3.1 は上流の 3.1 と同じです。Stage 1・2 の研究へのリンクは上流に戻ります。すべての項目は上流で編集され、ここに同期されます。
+    graph_here:
+      en: '{n} works here'
+      zh: '本分支 {n} 项'
+      ja: 'このブランチ {n} 件'
+    graph_upstream:
+      en: '{n} works upstream'
+      zh: '上游 {n} 项'
+      ja: '上流 {n} 件'
+    picked_title:
+      en: Cherry-picked from Stage 2
+      zh: 从 Stage 2 cherry-pick
+      ja: Stage 2 から cherry-pick
+    picked:
+      en: 'Picked with `git cherry-pick` from upstream [Stage 2 · Orchestrating Models as Tools](#stage-2): agents that call
+        robot action models, such as VLAs and learned policies, as tools. The rest of Stage 2 stays upstream.'
+      zh: 从上游 [Stage 2 · 把模型当作工具来编排](#stage-2) 用 `git cherry-pick` 摘过来：Agent 把 VLA、已学习的策略等机器人动作模型当作工具来调用。Stage 2 的其余部分留在上游。
+      ja: 上流の [Stage 2 · モデルをツールとして編成する](#stage-2) から `git cherry-pick` した節です。エージェントが VLA や学習済み方策などのロボット行動モデルをツールとして呼び出します。Stage
+        2 の残りは上流にあります。
+    upstream_link:
+      en: 'Upstream: the full three-stage map'
+      zh: 上游：完整的三阶段地图
+      ja: 上流：三段階の全体マップ
+    contact_note:
+      en: This branch is generated from upstream data, so suggestions, corrections and pull requests go [upstream]({upstream}).
+      zh: 本分支由上游数据生成，推荐论文、纠错和 PR 请提交到[上游]({upstream})。
+      ja: このブランチは上流のデータから生成されています。推薦・修正・プルリクエストは[上流]({upstream})へお願いします。
+    synced:
+      en: Synced from
+      zh: 同步自
+      ja: 同期元
+    main_note:
+      en: '⎇ **This stage also lives as its own branch:** [awesome-multimodal-agentic-coding-robotics]({branch}), the same
+        works plus 2.6 Action models in a list focused on robotics.'
+      zh: ⎇ **本阶段也作为独立分支发布：**[awesome-multimodal-agentic-coding-robotics]({branch})，内容相同，另加 2.6 动作模型，专门面向机器人方向。
+      ja: ⎇ **この段階は独立したブランチとしても公開しています：**[awesome-multimodal-agentic-coding-robotics]({branch})。同じ内容に 2.6 行動モデルを加えた、ロボティクス向けのリストです。
+    contributing_file: |-
+      # Contributing
+
+      This repository is the robotics branch of [Awesome Multimodal Agentic Coding]({upstream}). Every file here is generated from upstream data and synced automatically, so changes made here would be overwritten.
+
+      To suggest a work, correct an entry or discuss scope, open an [issue]({upstream}/issues/new/choose) or a pull request upstream. The [contribution guide]({upstream}/blob/main/CONTRIBUTING.md) describes the entry format.
+
+      ## 贡献
+
+      本仓库是 [Awesome Multimodal Agentic Coding]({upstream}) 的机器人分支。这里的所有文件都由上游数据生成并自动同步，直接在这里修改会被覆盖。
+
+      推荐论文、纠正条目或讨论收录范围，请在上游提交 [Issue]({upstream}/issues/new/choose) 或 PR，条目格式见[贡献指南]({upstream}/blob/main/CONTRIBUTING.zh-CN.md)。
+
+      ## コントリビュート
+
+      このリポジトリは [Awesome Multimodal Agentic Coding]({upstream}) のロボティクス・ブランチです。ここにあるファイルはすべて上流のデータから生成されて自動で同期されるため、ここでの変更は上書きされます。
+
+      研究の推薦、項目の修正、収録範囲の議論は、上流で [Issue]({upstream}/issues/new/choose) またはプルリクエストを作成してください。項目の形式は[コントリビュートガイド]({upstream}/blob/main/CONTRIBUTING.ja.md)にあります。
+    agents_file: |-
+      # Agent guide
+
+      This repository is the robotics branch of {upstream}. Its READMEs, `CONTRIBUTING.md`, `AGENTS.md`, `CLAUDE.md` and `LICENSE` are generated upstream by `scripts/build_readme.py` into the `robotics/` folder and copied here by `.github/workflows/sync.yml`.
+
+      - **Do not edit those files here:** the next sync overwrites them. Change `data/works.yaml`, or the `robotics` block in `data/site.yaml`, upstream, run `python3 scripts/build_readme.py` there, and commit upstream.
+      - **Only `.github/workflows/sync.yml` is maintained in this repository.** It runs every six hours and on demand, copies `robotics/` from upstream `main`, and pins the footer's `upstream@main` link to the upstream commit it copied.

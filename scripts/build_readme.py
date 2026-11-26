@@ -11,7 +11,7 @@ import re
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
-from urllib.parse import quote, urlsplit
+from urllib.parse import quote, unquote, urlsplit
 
 import yaml
 
@@ -19,7 +19,7 @@ import engine_map
 import eval_ladder
 import triage
 import stage_chart
-from catalog import LAYOUT, validate_catalog, check_local_links
+from catalog import LAYOUT, anchors_in, validate_catalog, check_local_links
 
 ROOT = Path(__file__).resolve().parent.parent
 LANGS = ['en', 'zh', 'ja']
@@ -252,30 +252,142 @@ def link_list(ids, byid):
     return ' · '.join(f'[{short_title(byid[k]["title"])}](#{anchor(k)})' for k in ids if k in byid)
 
 
-# ------------------------------------------------------------------ render
-def render(site, works, lang):
+def anchor_lines(site, target):
+    """The anchor for a target, preceded by the retired anchors that now lead to it."""
+    lines = [f'<a id="{old}"></a>' for old, dest in site.get('anchor_aliases', {}).items() if dest == target]
+    return lines + [f'<a id="{target}"></a>\n']
+
+
+def index(works):
+    """Works by ID, each (section, subgroup) newest first, and the sections that link back to a work."""
     byid = {w['id']: w for w in works}
     groups = defaultdict(list)
     for w in works:
         groups[(w['section'], w.get('sub'))].append(w)
     for g in groups.values():
         g.sort(key=sort_key)
-    sec_count = Counter(w['section'] for w in works)
     stage_see = defaultdict(list)          # stage-3 sections pointing back to Plan-B works
     for w in works:
         for s in w.get('see_also') or []:
             stage_see[s].append(w['id'])
     for s in stage_see:
         stage_see[s].sort(key=lambda k: sort_key(byid[k]))
+    return byid, groups, stage_see
 
+
+def back_link(site, lang):
+    """A right-aligned button badge (GitHub pins <kbd> at 11px, so a badge is the way to make it larger)."""
+    back_label = '↑ ' + t(site, 'back_to_contents', lang)
+    back_badge = 'https://img.shields.io/badge/' + quote(back_label.replace('-', '--').replace('_', '__')) + '-30363d?style=flat-square'
+    return f'<p align="right"><a href="#contents"><img src="{back_badge}" alt="{back_label}" height="24"></a></p>\n'
+
+
+def contents_lines(site, sec, lang, groups, count):
+    meta = site['sections'][sec]
+    lines = [f"  - [{sec} {meta[lang]}](#{sec_anchor(sec)}) ({count})"]
+    # Walkthroughs can opt out of the contents and stay in the section.
+    for g in meta.get('guides') or []:
+        if not g.get('in_contents', True):
+            continue
+        label, gap = guide_label(site, lang)
+        lines.append(f"    - 📖 [{label}{gap}{g['title'][lang]}]({guide_value(g, 'url', lang)})")
+    # Selected subgroups are also listed in the contents, indented under their section.
+    for sub in meta.get('contents_subs') or []:
+        lines.append(f"    - [{site['text']['subs'][sub][lang]}](#{sub_anchor(sec, sub)}) ({len(groups.get((sec, sub), []))})")
+    return lines
+
+
+def section_lines(site, sec, lang, byid, groups, stage_see):
+    meta = site['sections'][sec]
+    out = anchor_lines(site, sec_anchor(sec))
+    o = out.append
+    o(f'### {sec} {meta[lang]}\n')
+    if meta.get('engines'):
+        eng = ' · '.join(f'[{e}]({site["engines"][e]})' for e in meta['engines'])
+        o(f"*{t(site, 'engines', lang)}:* {eng}\n")
+    for g in meta.get('guides') or []:
+        label, gap = guide_label(site, lang)
+        o(f"📖 **{label}**{gap}[{g['title'][lang]}]({guide_value(g, 'url', lang)}){gap}{g['note'][lang]}\n")
+    if meta.get('guide'):
+        guide = meta['guide'][lang].strip()
+        if '{stage_chart}' in guide:
+            guide = guide.replace('{stage_chart}', stage_chart.picture(site, lang))
+        o(guide + '\n')
+    for sub in meta['subs']:
+        items = groups.get((sec, sub), [])
+        if not items:
+            continue
+        if sub in (meta.get('contents_subs') or []):
+            out += anchor_lines(site, sub_anchor(sec, sub))
+        if sub:
+            o(f"#### {site['text']['subs'][sub][lang]}\n")
+        o('\n'.join(entry(w, lang, site) for w in items))
+        # Works whose primary entry lives in another section but belong to this subgroup's topic.
+        sub_see = sorted((meta.get('sub_see_also') or {}).get(sub, []), key=lambda k: sort_key(byid[k]))
+        if sub_see:
+            o(f"*{t(site, 'see_also', lang)}:* {link_list(sub_see, byid)}\n")
+    see = list((site.get('see_also') or {}).get(sec, [])) + stage_see.get(sec, [])
+    if see:
+        o(f"*{t(site, 'see_also', lang)}:* {link_list(see, byid)}\n")
+    o(back_link(site, lang))
+    return out
+
+
+def stage_lines(site, st, lang, byid, groups, stage_see, note=None):
+    out = anchor_lines(site, f'stage-{st["id"]}')
+    o = out.append
+    o(f'## Stage {st["id"]} · {st["name"][lang]}\n')
+    o(st['intro'][lang].strip() + '\n')
+    if note:
+        o(note + '\n')
+    o(f"**{t(site, 'start_with', lang)}:** {link_list(st['start_with'], byid)}\n")
+    for sec in st['sections']:
+        out += section_lines(site, sec, lang, byid, groups, stage_see)
+    # Unnumbered reference blocks: listed in the contents, but hold no entries.
+    for extra in st.get('extras') or []:
+        out += anchor_lines(site, extra['anchor'])
+        o(f"### {extra['title'][lang]}\n")
+        o(engine_map.fill_placeholders(site, lang, extra['body'][lang].strip()) + '\n')
+        o(back_link(site, lang))
+    return out
+
+
+def closing_lines(site, lang, note=None, credit=True):
+    """Contact, citation, license and acknowledgments."""
+    out = anchor_lines(site, 'contact')
+    o = out.append
+    o(f'## {t(site, "contact_title", lang)}\n')
+    if note:
+        o(note + '\n')
+    o(t(site, 'contact', lang).strip() + '\n')
+    o(f'<img src="{site["contact"]["wechat_image"]}" alt="WeChat QR code" width="200">\n')
+    out += anchor_lines(site, 'citation')
+    o(f'## {t(site, "citation_title", lang)}\n')
+    o(f"{t(site, 'citation', lang)}:\n\n```bibtex\n{site['citation'].rstrip()}\n```\n")
+    o(f"## {t(site, 'license_title', lang)}\n")
+    o(t(site, 'license', lang) + (' ' + t(site, 'hero_credit', lang) if credit else '') + '\n')
+    o(f"## {t(site, 'acknowledgments_title', lang)}\n")
+    o(t(site, 'acknowledgments', lang) + '\n')
+    return out
+
+
+def language_links(site, lang):
     L = site['languages']
+    return ' · '.join((f'**{L[x]["label"]}**' if x == lang else f'[{L[x]["label"]}](./{L[x]["file"]})') for x in LANGS)
+
+
+def finish(out):
+    text = '\n'.join(out)
+    return re.sub(r'\n{3,}', '\n\n', text).rstrip() + '\n'
+
+
+# ------------------------------------------------------------------ render
+def render(site, works, lang):
+    byid, groups, stage_see = index(works)
+    sec_count = Counter(w['section'] for w in works)
+    rb = site.get('robotics')
     out = []
     o = out.append
-    def named_anchor(target):
-        for old, dest in site.get('anchor_aliases', {}).items():
-            if dest == target:
-                o(f'<a id="{old}"></a>')
-        o(f'<a id="{target}"></a>\n')
     repo = site['repo']
     n_total = len(works)
 
@@ -289,12 +401,14 @@ def render(site, works, lang):
       f'  <img src="{h["light"]}" alt="{h["alt"]}" width="100%">\n</picture>\n')
     o(f"{t(site, 'tagline', lang)}\n")
     upd = site['updated']
+    branch_badge = (f'[![Robotics branch](https://img.shields.io/badge/branch-robotics-{GIT_COLOR}?logo=git&logoColor=white)]'
+                    f'(https://github.com/{rb["repo"]}) ' if rb else '')
     o(f'[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) '
       f'[![Works](https://img.shields.io/badge/works-{n_total}-blue.svg)](#contents) '
       f'[![Last updated](https://img.shields.io/badge/updated-{upd.replace("-", "--")}-brightgreen.svg)](https://github.com/{repo}/commits/main) '
+      f'{branch_badge}'
       f'[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)\n')
-    langs = ' · '.join((f'**{L[x]["label"]}**' if x == lang else f'[{L[x]["label"]}](./{L[x]["file"]})') for x in LANGS)
-    o(f'{langs}\n')
+    o(f'{language_links(site, lang)}\n')
     o('</div>\n')
     if lang == 'ja':
         o(f"> [!NOTE]\n> {t(site, 'machine_note', lang)}\n")
@@ -304,79 +418,24 @@ def render(site, works, lang):
     o(t(site, 'vision', lang).strip() + '\n')
 
     # contents
-    named_anchor('contents')
+    out += anchor_lines(site, 'contents')
     o(f'## {t(site, "contents", lang)}\n')
     for st in site['stages']:
         o(f"- [Stage {st['id']} · {st['name'][lang]}](#stage-{st['id']})")
         for sec in st['sections']:
-            meta = site['sections'][sec]
-            o(f"  - [{sec} {meta[lang]}](#{sec_anchor(sec)}) ({sec_count.get(sec, 0)})")
-            # Walkthroughs can opt out of the contents and stay in the section.
-            for g in meta.get('guides') or []:
-                if not g.get('in_contents', True):
-                    continue
-                label, gap = guide_label(site, lang)
-                o(f"    - 📖 [{label}{gap}{g['title'][lang]}]({guide_value(g, 'url', lang)})")
-            # Selected subgroups are also listed in the contents, indented under their section.
-            for sub in meta.get('contents_subs') or []:
-                o(f"    - [{site['text']['subs'][sub][lang]}](#{sub_anchor(sec, sub)}) ({len(groups.get((sec, sub), []))})")
+            out += contents_lines(site, sec, lang, groups, sec_count.get(sec, 0))
         for extra in st.get('extras') or []:
             o(f"  - [{extra['title'][lang]}](#{extra['anchor']})")
     o(f"- [{t(site, 'related_title', lang)}](#related)")
     o(f"- [{t(site, 'contact_title', lang)}](#contact) · [{t(site, 'citation_title', lang)}](#citation)\n")
 
-    # A right-aligned button badge (GitHub pins <kbd> at 11px, so a badge is the way to make it larger).
-    back_label = '↑ ' + t(site, 'back_to_contents', lang)
-    back_badge = 'https://img.shields.io/badge/' + quote(back_label.replace('-', '--').replace('_', '__')) + '-30363d?style=flat-square'
-    back_to_contents = f'<p align="right"><a href="#contents"><img src="{back_badge}" alt="{back_label}" height="24"></a></p>\n'
-
-    # stages
+    # stages; the stage that also lives as the robotics branch says so under its intro
     for st in site['stages']:
-        named_anchor(f'stage-{st["id"]}')
-        o(f'## Stage {st["id"]} · {st["name"][lang]}\n')
-        o(st['intro'][lang].strip() + '\n')
-        o(f"**{t(site, 'start_with', lang)}:** {link_list(st['start_with'], byid)}\n")
-        for sec in st['sections']:
-            meta = site['sections'][sec]
-            named_anchor(sec_anchor(sec))
-            o(f'### {sec} {meta[lang]}\n')
-            if meta.get('engines'):
-                eng = ' · '.join(f'[{e}]({site["engines"][e]})' for e in meta['engines'])
-                o(f"*{t(site, 'engines', lang)}:* {eng}\n")
-            for g in meta.get('guides') or []:
-                label, gap = guide_label(site, lang)
-                o(f"📖 **{label}**{gap}[{g['title'][lang]}]({guide_value(g, 'url', lang)}){gap}{g['note'][lang]}\n")
-            if meta.get('guide'):
-                guide = meta['guide'][lang].strip()
-                if '{stage_chart}' in guide:
-                    guide = guide.replace('{stage_chart}', stage_chart.picture(site, lang))
-                o(guide + '\n')
-            for sub in meta['subs']:
-                items = groups.get((sec, sub), [])
-                if not items:
-                    continue
-                if sub in (meta.get('contents_subs') or []):
-                    named_anchor(sub_anchor(sec, sub))
-                if sub:
-                    o(f"#### {site['text']['subs'][sub][lang]}\n")
-                o('\n'.join(entry(w, lang, site) for w in items))
-                # Works whose primary entry lives in another section but belong to this subgroup's topic.
-                sub_see = sorted((meta.get('sub_see_also') or {}).get(sub, []), key=lambda k: sort_key(byid[k]))
-                if sub_see:
-                    o(f"*{t(site, 'see_also', lang)}:* {link_list(sub_see, byid)}\n")
-            see = list((site.get('see_also') or {}).get(sec, [])) + stage_see.get(sec, [])
-            if see:
-                o(f"*{t(site, 'see_also', lang)}:* {link_list(see, byid)}\n")
-            o(back_to_contents)
-        # Unnumbered reference blocks: listed in the contents, but hold no entries.
-        for extra in st.get('extras') or []:
-            named_anchor(extra['anchor'])
-            o(f"### {extra['title'][lang]}\n")
-            o(engine_map.fill_placeholders(site, lang, extra['body'][lang].strip()) + '\n')
-            o(back_to_contents)
+        note = robotics_text(site, 'main_note', lang) if rb and st['id'] == rb['stage'] else None
+        out += stage_lines(site, st, lang, byid, groups, stage_see, note)
 
     # surveys & related
-    named_anchor('related')
+    out += anchor_lines(site, 'related')
     o(f'## {t(site, "related_title", lang)}\n')
     o('\n'.join(entry(w, lang, site) for w in sorted(groups.get(('SV', None), []), key=sort_key)))
     o(f"\n**{t(site, 'related_lists', lang)}**\n")
@@ -384,21 +443,156 @@ def render(site, works, lang):
         o(f"- [{r['name']}]({r['url']}) — {r.get(lang) or r['en']}")
     o('')
 
-    # contact, citation, license
-    named_anchor('contact')
-    o(f'## {t(site, "contact_title", lang)}\n')
-    o(t(site, 'contact', lang).strip() + '\n')
-    o(f'<img src="{site["contact"]["wechat_image"]}" alt="WeChat QR code" width="200">\n')
-    named_anchor('citation')
-    o(f'## {t(site, "citation_title", lang)}\n')
-    o(f"{t(site, 'citation', lang)}:\n\n```bibtex\n{site['citation'].rstrip()}\n```\n")
-    o(f"## {t(site, 'license_title', lang)}\n")
-    o(t(site, 'license', lang) + ' ' + t(site, 'hero_credit', lang) + '\n')
-    o(f"## {t(site, 'acknowledgments_title', lang)}\n")
-    o(t(site, 'acknowledgments', lang) + '\n')
-    text = '\n'.join(out)
-    text = re.sub(r'\n{3,}', '\n\n', text).rstrip() + '\n'
-    return text
+    out += closing_lines(site, lang)
+    return finish(out)
+
+
+# ------------------------------------------------------------------ robotics branch
+# A second repository publishes one stage of this map, plus cherry-picked sections, as its own list.
+# It is generated here from the same data into `robotics.dir` and copied over by that repository's sync workflow.
+GIT_COLOR = 'f05032'
+IMAGE_SUFFIXES = ('.svg', '.png', '.jpg', '.jpeg', '.gif', '.webp')
+# Published next to the branch READMEs, so links to them stay local; every other local link goes upstream.
+BRANCH_LOCAL_FILES = {'LICENSE'}
+
+
+def robotics_text(site, key, lang=None):
+    """A robotics text in one language, with {upstream} and {branch} expanded to repository URLs."""
+    rb = site['robotics']
+    value = rb['text'][key]
+    if lang is not None and isinstance(value, dict):
+        value = value.get(lang) or value['en']
+    return (value.replace('{upstream}', f"https://github.com/{site['repo']}")
+                 .replace('{branch}', f"https://github.com/{rb['repo']}"))
+
+
+def robotics_scope(site):
+    """(the checked-out stage, the cherry-picked section IDs)."""
+    rb = site['robotics']
+    stage = next(st for st in site['stages'] if st['id'] == rb['stage'])
+    return stage, list(rb.get('cherry_pick') or [])
+
+
+def sync_stamp(site):
+    """The footer link that the branch's sync workflow pins to the upstream commit it copied."""
+    return f'<a href="https://github.com/{site["repo"]}/tree/main"><code>upstream@main</code></a>'
+
+
+def branch_graph(site, lang, stage, picks, n_here, n_upstream):
+    """A Mermaid git graph: the upstream stages on main, and this branch leaving the checked-out stage."""
+    def commit(label, extra=''):
+        return f'  commit id: "{label.replace(chr(34), chr(39))}"{extra}'
+    names = site['sections']
+    lines = ['```mermaid', 'gitGraph']
+    # Short labels: rotated long ones on main run into the branch's name tag.
+    lines += [commit(f"Stage {st['id']}") for st in site['stages'] if st['id'] <= stage['id']]
+    lines.append('  branch robotics')
+    lines += [commit(f'{sec} {names[sec][lang]}') for sec in stage['sections']]
+    lines += [commit(f'cherry-pick {sec} {names[sec][lang]}', ' type: HIGHLIGHT') for sec in picks]
+    lines[-1] += f' tag: "{robotics_text(site, "graph_here", lang).format(n=n_here)}"'
+    lines += ['  checkout main', commit('…', f' tag: "{robotics_text(site, "graph_upstream", lang).format(n=n_upstream)}"')]
+    lines.append('```')
+    return '\n'.join(lines)
+
+
+def upstream_links(text, site, lang):
+    """Point every link that has no target in the branch README at the upstream repository."""
+    up = site['repo']
+    here = anchors_in(text)
+
+    def fix(url):
+        parts = urlsplit(url)
+        if parts.scheme or parts.netloc:
+            return url
+        if not parts.path:
+            if unquote(parts.fragment) in here:
+                return url
+            return f"https://github.com/{up}/blob/main/{site['languages'][lang]['file']}#{parts.fragment}"
+        path = parts.path[2:] if parts.path.startswith('./') else parts.path
+        if path in BRANCH_LOCAL_FILES or path in {site['languages'][x]['file'] for x in LANGS}:
+            return url
+        if path.lower().endswith(IMAGE_SUFFIXES):
+            return f'https://raw.githubusercontent.com/{up}/main/{path}'
+        return f'https://github.com/{up}/blob/main/{path}' + (f'#{parts.fragment}' if parts.fragment else '')
+
+    text = re.sub(r'\]\(([^)\s]+)', lambda m: '](' + fix(m[1]), text)
+    return re.sub(r'\b(src|srcset|href)="([^"]+)"', lambda m: f'{m[1]}="{fix(m[2])}"', text)
+
+
+def render_robotics(site, works, lang):
+    rb = site['robotics']
+    up, repo = site['repo'], rb['repo']
+    stage, picks = robotics_scope(site)
+    # A new repository has no retired anchors to keep, so render without them.
+    site = {**site, 'anchor_aliases': {}}
+    byid, groups, stage_see = index(works)
+    here = [w for w in works if w['section'] in set(stage['sections']) | set(picks)]
+    sec_count = Counter(w['section'] for w in here)
+    out = []
+    o = out.append
+
+    # header
+    o(f'<!-- Generated by scripts/build_readme.py in {up} from data/*.yaml — edit the data upstream, not this file. -->\n')
+    o('<div align="center">\n')
+    o(f"# {rb['title']}\n")
+    o(f"{robotics_text(site, 'tagline', lang)}\n")
+    upd = site['updated']
+    o(f'[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) '
+      f'[![Branched from](https://img.shields.io/badge/branched_from-{up.split("/")[1].replace("-", "--")}-{GIT_COLOR}?logo=git&logoColor=white)](https://github.com/{up}) '
+      f'[![Works](https://img.shields.io/badge/works-{len(here)}-blue.svg)](#contents) '
+      f'[![Last updated](https://img.shields.io/badge/updated-{upd.replace("-", "--")}-brightgreen.svg)](https://github.com/{repo}/commits/main) '
+      f'[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)\n')
+    o(f'{language_links(site, lang)}\n')
+    o('</div>\n')
+    o(f"```console\n{rb['console'].strip()}\n```\n")
+    if lang == 'ja':
+        o(f"> [!NOTE]\n> {t(site, 'machine_note', lang)}\n")
+
+    # where the branch comes from
+    out += anchor_lines(site, 'branch')
+    o(f"## ⎇ {robotics_text(site, 'origin_title', lang)}\n")
+    o(robotics_text(site, 'origin', lang).strip() + '\n')
+    o(branch_graph(site, lang, stage, picks, len(here), len(works)) + '\n')
+
+    # contents
+    out += anchor_lines(site, 'contents')
+    o(f'## {t(site, "contents", lang)}\n')
+    o(f"- [Stage {stage['id']} · {stage['name'][lang]}](#stage-{stage['id']})")
+    for sec in stage['sections']:
+        out += contents_lines(site, sec, lang, groups, sec_count.get(sec, 0))
+    for extra in stage.get('extras') or []:
+        o(f"  - [{extra['title'][lang]}](#{extra['anchor']})")
+    if picks:
+        o(f"- [{robotics_text(site, 'picked_title', lang)}](#cherry-picked)")
+        for sec in picks:
+            out += contents_lines(site, sec, lang, groups, sec_count.get(sec, 0))
+    o(f"- [{t(site, 'contact_title', lang)}](#contact) · [{t(site, 'citation_title', lang)}](#citation)")
+    o(f"- ⎇ [{robotics_text(site, 'upstream_link', lang)}](https://github.com/{up})\n")
+
+    out += stage_lines(site, stage, lang, byid, groups, stage_see)
+    if picks:
+        out += anchor_lines(site, 'cherry-picked')
+        o(f"## {robotics_text(site, 'picked_title', lang)}\n")
+        o(robotics_text(site, 'picked', lang).strip() + '\n')
+        for sec in picks:
+            out += section_lines(site, sec, lang, byid, groups, stage_see)
+
+    out += closing_lines(site, lang, note=robotics_text(site, 'contact_note', lang), credit=False)
+    o(f"<p align=\"center\"><sub>⎇ {robotics_text(site, 'synced', lang)} {sync_stamp(site)} · {upd}</sub></p>\n")
+    return upstream_links(finish(out), site, lang)
+
+
+def robotics_outputs(site, works):
+    """Yield (relative path, text) for every file the robotics branch repository publishes."""
+    rb = site.get('robotics')
+    if not rb:
+        return
+    for lang in LANGS:
+        yield f"{rb['dir']}/{site['languages'][lang]['file']}", render_robotics(site, works, lang)
+    yield f"{rb['dir']}/CONTRIBUTING.md", robotics_text(site, 'contributing_file').strip() + '\n'
+    yield f"{rb['dir']}/AGENTS.md", robotics_text(site, 'agents_file').strip() + '\n'
+    yield f"{rb['dir']}/CLAUDE.md", '@AGENTS.md\n'
+    yield f"{rb['dir']}/LICENSE", (ROOT / 'LICENSE').read_text(encoding='utf-8')
 
 
 def main():
@@ -422,6 +616,7 @@ def main():
     generated += [(ROOT / rel, svg) for rel, svg in engine_map.outputs(site)]
     generated += [(ROOT / rel, svg) for rel, svg in eval_ladder.outputs(site)]
     generated += [(ROOT / rel, svg) for rel, svg in stage_chart.outputs(site)]
+    generated += [(ROOT / rel, text) for rel, text in robotics_outputs(site, works)]
     for path, text in generated:
         if args.check:
             if not path.exists() or path.read_text(encoding='utf-8') != text:

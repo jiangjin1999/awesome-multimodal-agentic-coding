@@ -13,7 +13,7 @@
 
 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从数字世界延伸到物理世界。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-699-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--26-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-699-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--26-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![Robotics branch](https://img.shields.io/badge/branch-robotics-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · **简体中文** · [日本語](./README.ja.md)
 
@@ -2039,6 +2039,8 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 ## Stage 3 · 打通数字世界与物理世界
 
 闭环延伸到仿真与现实：Agent **在真实世界中行动和观察**，依据真实观测构建仿真器，并在仿真中练习来增强自身——即 Real2Sim2Real。本阶段按研究问题组织，主线是：构建可验证的环境 → 收集交互经验 → 提升 Agent。
+
+⎇ **本阶段也作为独立分支发布：**[awesome-multimodal-agentic-coding-robotics](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics)，内容相同，另加 2.6 动作模型，专门面向机器人方向。
 
 **入门必读:** [Code as Policies](#paper-2209-07753) · [Democratizing Robot-Use Agents](#paper-2611-01560) · [Real2Gym](#paper-2609-37089) · [Agentic RSR](#paper-2610-10479) · [Eureka](#paper-2310-12931)
 

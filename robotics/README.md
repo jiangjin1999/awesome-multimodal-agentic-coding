@@ -5,8 +5,8 @@
 # Awesome Multimodal Agentic Coding ⎇ Robotics
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/robotics-map-en-dark.svg">
-  <img src="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/robotics-map-en-light.svg" alt="The robotics branch as one Real2Sim2Real loop. Multimodal coding agent: writes code → runs it on a robot or in a simulator → looks at the result → revises. 1 Act (Real world): 3.1 Embodied harnesses, 2.6 Action models × robot manipulation. 2 Build (Simulation): 3.2 Simulator construction, 3.3 Simulator quality evaluation. 3 Learn (Simulation): 3.4 Data, 3.5 Training and capability improvement. 4 Apply (Real world): 3.6 Physical applications and experiments." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/hero/hero-dark.png">
+  <img src="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/hero/hero-light.png" alt="Multimodal Agentic Coding, robotics branch: a Real2Sim2Real loop around a real robot arm and its simulated wireframe twin. A coding agent between the two worlds sends code and observes results, while the loop runs Act (real world), Build (simulation), Learn (simulation) and Apply (real world)." width="100%">
 </picture>
 
 Multimodal coding agents for robots: they write code to act, build the simulators they practise in, and improve from what they observe, in simulation and reality.
@@ -31,6 +31,11 @@ This list follows that **Real2Sim2Real loop** in four steps. Each step groups se
 <a id="contents"></a>
 
 ## Taxonomy
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/robotics-map-en-dark.svg">
+  <img src="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/robotics-map-en-light.svg" alt="The robotics branch as one Real2Sim2Real loop. Multimodal coding agent: writes code → runs it on a robot or in a simulator → looks at the result → revises. 1 Act (Real world): 3.1 Embodied harnesses, 2.6 Action models × robot manipulation. 2 Build (Simulation): 3.2 Simulator construction, 3.3 Simulator quality evaluation. 3 Learn (Simulation): 3.4 Data, 3.5 Training and capability improvement. 4 Apply (Real world): 3.6 Physical applications and experiments." width="100%">
+</picture>
 
 Each row is a step of the loop above. Section numbers are the upstream ones; the counts are entries.
 

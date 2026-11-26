@@ -5,8 +5,8 @@
 # Awesome Multimodal Agentic Coding ⎇ Robotics
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/robotics-map-ja-dark.svg">
-  <img src="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/robotics-map-ja-light.svg" alt="ロボティクス・ブランチの分類：一つの Real2Sim2Real ループ。マルチモーダル・コーディングエージェント：コードを書く → 実機やシミュレータで実行 → 結果を見る → 修正する。1 行動（実世界）：3.1 身体性ハーネス、2.6 行動モデル × ロボット操作。2 構築（シミュレーション）：3.2 シミュレータ構築、3.3 シミュレータ品質評価。3 学習（シミュレーション）：3.4 データ、3.5 学習と能力向上。4 応用（実世界）：3.6 物理応用と実験。" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/hero/hero-dark.png">
+  <img src="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/hero/hero-light.png" alt="Multimodal Agentic Coding, robotics branch: a Real2Sim2Real loop around a real robot arm and its simulated wireframe twin. A coding agent between the two worlds sends code and observes results, while the loop runs Act (real world), Build (simulation), Learn (simulation) and Apply (real world)." width="100%">
 </picture>
 
 ロボットのためのマルチモーダル・コーディングエージェント：コードを書いて行動し、練習用のシミュレータを構築し、観察した結果からシミュレーションと現実の中で改善していきます。
@@ -34,6 +34,11 @@ Switched to a new branch 'robotics'
 <a id="contents"></a>
 
 ## 分類
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/robotics-map-ja-dark.svg">
+  <img src="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/robotics-map-ja-light.svg" alt="ロボティクス・ブランチの分類：一つの Real2Sim2Real ループ。マルチモーダル・コーディングエージェント：コードを書く → 実機やシミュレータで実行 → 結果を見る → 修正する。1 行動（実世界）：3.1 身体性ハーネス、2.6 行動モデル × ロボット操作。2 構築（シミュレーション）：3.2 シミュレータ構築、3.3 シミュレータ品質評価。3 学習（シミュレーション）：3.4 データ、3.5 学習と能力向上。4 応用（実世界）：3.6 物理応用と実験。" width="100%">
+</picture>
 
 各行は上図のループの一ステップです。節番号は上流と同じで、括弧内は項目数です。
 

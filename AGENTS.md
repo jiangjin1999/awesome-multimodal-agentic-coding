@@ -9,7 +9,7 @@ This repository is a curated research map. The three root READMEs are generated 
   1. **Stage 3 and 2.6 are identical in both repositories.** Entries, order, numbering and summaries all come from `data/works.yaml`. Never edit `robotics/`, the generated figures or the robotics repository's files by hand.
   2. **Every paper update updates both.** Commit the regenerated `robotics/` and `assets/robotics/` together with the data change; `--check` fails if they are stale. Once the commit is on `main`, the robotics repository copies it within an hour. To publish at once, run its "Sync from upstream" workflow.
 
-  The robotics README's opening (taxonomy figure, overview, taxonomy table) comes from the `robotics` block in `data/site.yaml`. See [docs/MAINTENANCE.md](docs/MAINTENANCE.md#robotics-branch-repository).
+  The robotics README's opening (hero image, overview, taxonomy figure and table) comes from the `robotics` block in `data/site.yaml`. See [docs/MAINTENANCE.md](docs/MAINTENANCE.md#robotics-branch-repository).
 - **Before committing, run:**
 
   ```sh

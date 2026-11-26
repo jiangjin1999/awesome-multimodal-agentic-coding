@@ -5,8 +5,8 @@
 # Awesome Multimodal Agentic Coding ⎇ Robotics
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/robotics-map-zh-dark.svg">
-  <img src="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/robotics-map-zh-light.svg" alt="机器人分支的分类：一个 Real2Sim2Real 闭环。多模态 Coding Agent：写代码 → 在真机或仿真中运行 → 观察结果 → 修改。1 行动（真实世界）：3.1 具身框架（Harness）、2.6 动作模型 × 机器人操作。2 构建（仿真）：3.2 仿真器构建、3.3 仿真器质量评估。3 学习（仿真）：3.4 数据、3.5 训练与能力提升。4 应用（真实世界）：3.6 物理应用与实验。" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/hero/hero-dark.png">
+  <img src="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/hero/hero-light.png" alt="Multimodal Agentic Coding, robotics branch: a Real2Sim2Real loop around a real robot arm and its simulated wireframe twin. A coding agent between the two worlds sends code and observes results, while the loop runs Act (real world), Build (simulation), Learn (simulation) and Apply (real world)." width="100%">
 </picture>
 
 面向机器人的多模态 Coding Agent：写代码去行动，搭建自己练习用的仿真，并根据观察到的结果在仿真与现实中不断改进。
@@ -31,6 +31,11 @@ Switched to a new branch 'robotics'
 <a id="contents"></a>
 
 ## 分类
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/robotics-map-zh-dark.svg">
+  <img src="https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/assets/robotics/robotics-map-zh-light.svg" alt="机器人分支的分类：一个 Real2Sim2Real 闭环。多模态 Coding Agent：写代码 → 在真机或仿真中运行 → 观察结果 → 修改。1 行动（真实世界）：3.1 具身框架（Harness）、2.6 动作模型 × 机器人操作。2 构建（仿真）：3.2 仿真器构建、3.3 仿真器质量评估。3 学习（仿真）：3.4 数据、3.5 训练与能力提升。4 应用（真实世界）：3.6 物理应用与实验。" width="100%">
+</picture>
 
 每一行是上图闭环中的一步。章节编号沿用上游，括号里是条目数。
 

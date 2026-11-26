@@ -2688,3 +2688,9 @@ robotics:
         en: Sections
         zh: 章节
         ja: 節
+  hero:
+    light: assets/robotics/hero/hero-light.png
+    dark: assets/robotics/hero/hero-dark.png
+    alt: 'Multimodal Agentic Coding, robotics branch: a Real2Sim2Real loop around a real robot arm and its simulated wireframe
+      twin. A coding agent between the two worlds sends code and observes results, while the loop runs Act (real world), Build
+      (simulation), Learn (simulation) and Apply (real world).'

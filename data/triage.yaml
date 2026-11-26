@@ -196,6 +196,17 @@ runs:
   note: Added MAGPIE (2.1), EASG (2.6), AR-WAM (2.6) and MG-VQA (3.1). Queued 78 new or revised listing/citation leads.
     Some arXiv API pages, November 26 listings, historical full-text evidence, official details and X remain incomplete.
     MG-VQA and AR-WAM may inform Stage 3 guides.
+- date: '2026-11-26'
+  trigger: report
+  covered: Maintainer-shared X post from Artificial Analysis (2026-11-25) announcing AA-Robotics-Sim v0.1. The post itself
+    could not be fetched, so its ID was matched to the same-day article. Read that article in full, including the methodology,
+    scoring, practice protocol, results, time and cost analysis and citations. Followed its link to the October AA-Robotics
+    v0.1 article and read it in full. Checked both against the catalog and triage by title, URL and name. Neither page links
+    a paper, code, dataset or leaderboard page.
+  note: Added both as Core in 3.1 capability-eval with non-arXiv IDs. They are official benchmark reports with methodology
+    and results, not release announcements. Their other citations are third-party tools (Isaac Sim, Isaac Lab and the
+    Stirrup harness) or the SONIC controller from before the six-month window, so none were queued. The practice-then-freeze
+    protocol in AA-Robotics-Sim may inform the Stage 3 guide.
 candidates:
 - id: '2610.35817'
   title: 'Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics'
@@ -3485,3 +3496,25 @@ candidates:
   decision: pending
   note: Recent reference for callable model conditioning, agent planning or code-driven image generation. Full scope decision
     pending.
+- id: system:aa-robotics-sim
+  title: Can language models drive a humanoid robot? Introducing AA-Robotics-Sim v0.1
+  url: https://artificialanalysis.ai/articles/aa-robotics-sim
+  found: '2026-11-26'
+  via: maintainer-shared Artificial Analysis X post (status 2125683694103064979)
+  decision: added
+  decided: '2026-11-26'
+  precedent:
+  - '2609.33807'
+  - '2603.22435'
+  - '2610.34649'
+- id: system:aa-robotics
+  title: 'Welcome to the era of embodied AI: Introducing AA-Robotics v0.1'
+  url: https://artificialanalysis.ai/articles/aa-robotics
+  found: '2026-11-26'
+  via: linked by system:aa-robotics-sim as its predecessor
+  decision: added
+  decided: '2026-11-26'
+  precedent:
+  - '2603.22435'
+  - '2609.33807'
+  - '2610.25287'

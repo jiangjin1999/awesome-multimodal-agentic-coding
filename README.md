@@ -13,7 +13,7 @@
 
 A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to the physical world.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-697-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--26-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-699-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--26-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -57,7 +57,7 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [2.5 Perception models × scene understanding and reconstruction](#s2-5) (6)
   - [2.6 Action models × robot manipulation](#s2-6) (15)
 - [Stage 3 · Bridging Digital & Physical Worlds](#stage-3)
-  - [3.1 Embodied harnesses](#s3-1) (95)
+  - [3.1 Embodied harnesses](#s3-1) (97)
   - [3.2 Simulator construction](#s3-2) (69)
   - [3.3 Simulator quality evaluation](#s3-3) (29)
   - [3.4 Data](#s3-4) (15)
@@ -2358,6 +2358,12 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 #### Agent capability evaluation
 
+<!-- mmac-record: {"id": "system:aa-robotics-sim", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-system-aa-robotics-sim"></a>`2026.11` **[Can language models drive a humanoid robot? Introducing AA-Robotics-Sim v0.1](https://artificialanalysis.ai/articles/aa-robotics-sim)**
+  > Frontier models write Python for a simulated humanoid, check head-camera frames between commands, and reuse practice-written notes and code in fresh scenes.<br>
+  > 🖥️ **Sim** Isaac Sim + Isaac Lab (Unitree G1)
+
 <!-- mmac-record: {"id": "2611.12177", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-12177"></a>`2026.11` **[Embodied First Exam](https://arxiv.org/abs/2611.12177)**
@@ -2447,6 +2453,12 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 - <a id="paper-2610-25287"></a>`2026.10` **[The Bitter Lesson Comes to Robotics](https://arxiv.org/abs/2610.25287)**
   > Studies general multimodal models operating physical robot arms through control interfaces.<br>
   > 🖥️ **Sim** Isaac Sim (ARX X5)
+
+<!-- mmac-record: {"id": "system:aa-robotics", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-system-aa-robotics"></a>`2026.10` **[Welcome to the era of embodied AI: Introducing AA-Robotics v0.1](https://artificialanalysis.ai/articles/aa-robotics)**
+  > Coding agents write and run code that drives a real six-axis arm over HTTP, review four camera views, and submit zero-shot tabletop attempts.<br>
+  > 🦾 **Real** Hiwonder NexArm
 
 <!-- mmac-record: {"id": "2609.24170", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 

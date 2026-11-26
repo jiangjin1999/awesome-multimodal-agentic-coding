@@ -13,10 +13,10 @@ updated: '2026-11-26'
 hero:
   light: assets/hero/hero-light.png
   dark: assets/hero/hero-dark.png
-  alt: 'Awesome Multimodal Agentic Coding — three cumulative stages. 01 Visual as Feedback: an agent writes code, builds an
-    artifact, and observes it. 02 Orchestrating Models as Tools: the same loop calls image, video and world models. 03 Bridging
-    Digital & Physical Worlds: the agent acts and observes in simulation and reality, with simulation built from the real
-    world and practice in simulation strengthening the agent.'
+  alt: 'Multimodal Agentic Coding, toward physical AGI. One agent loop grows through three nested stages along an axis from
+    digital to physical. Stage 1, Visual as Feedback: the agent writes code, builds an artifact and observes it. Stage 2,
+    Orchestrating Models as Tools: the same loop reaches further and calls models. Stage 3, Bridging Digital & Physical Worlds:
+    the widest loop acts and observes in simulation and reality.'
 text:
   tagline:
     en: A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to

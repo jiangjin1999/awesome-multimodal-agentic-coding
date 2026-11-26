@@ -6373,6 +6373,70 @@
       signal is a separate ablation. Results mix agent strategies and information regimes, so visual feedback does not establish
       code repair for every run.
     zh: Standard 不向 Agent 开放隐藏判定逻辑和场景源码，但大多数套件仍返回完成信号；去掉成功信号是单独消融。不同策略和信息权限须分开读，视觉反馈并不说明每条轨迹都发生代码修订。
+- id: system:aa-robotics-sim
+  title: Can language models drive a humanoid robot? Introducing AA-Robotics-Sim v0.1
+  url: https://artificialanalysis.ai/articles/aa-robotics-sim
+  date: '2026.11'
+  section: '3.1'
+  sub: capability-eval
+  type: paper
+  scope: core
+  tldr:
+    en: Frontier models write Python for a simulated humanoid, check head-camera frames between commands, and reuse
+      practice-written notes and code in fresh scenes.
+    zh: 前沿模型为仿真人形机器人编写 Python 控制代码，在指令之间查看头部相机画面，并把练习阶段写下的笔记和代码带到新场景中使用。
+    ja: 最先端モデルが模擬人型ロボットの Python 制御コードを書き、指令の合間に頭部カメラ画像を確かめ、練習中に書いたメモとコードを新しいシーンで使い回す。
+  setup:
+    engines:
+    - Isaac Sim
+    - Isaac Lab
+    sim_robots:
+    - Unitree G1
+  sources:
+  - https://artificialanalysis.ai/articles/aa-robotics-sim
+  verification:
+    en: 'Simulation only · nine models in one Stirrup harness with shell and image viewing · 10 household and light-industrial
+      tasks, each with 5 practice and 10 fresh evaluation episodes; head-camera RGB-D only, Python against a SONIC
+      whole-body-control client · physics-state scripts with partial credit · GPT-6.2 Astra 71.0 (61/100 successful
+      episodes), Claude Fable 5.2 57.5 (43/100), GPT-6.2 Sol 53.7 (41/100); best pick-and-place 40.0 · no ablation without
+      the practice files; tasks and code not released.'
+    zh: 仅仿真 · 九个模型共用带 shell 与看图工具的 Stirrup Harness · 10 项家务与轻工业任务，各含 5 次练习与 10 次新场景评测；只有头部 RGB-D 相机，用 Python 调用基于 SONIC 全身控制的客户端
+      · 按物理状态脚本评分并给部分分 · GPT-6.2 Astra 71.0（100 次中成功 61 次），Claude Fable 5.2 57.5（43 次），GPT-6.2 Sol 53.7（41 次）；抓放类最高仅 40.0
+      · 未做去掉练习文件的消融；任务与代码未公开。
+  tags:
+  - Benchmark
+  - Environment
+  - Verification
+  - Trajectory Analysis
+- id: system:aa-robotics
+  title: 'Welcome to the era of embodied AI: Introducing AA-Robotics v0.1'
+  url: https://artificialanalysis.ai/articles/aa-robotics
+  date: '2026.10'
+  section: '3.1'
+  sub: capability-eval
+  type: paper
+  scope: core
+  tldr:
+    en: Coding agents write and run code that drives a real six-axis arm over HTTP, review four camera views, and submit
+      zero-shot tabletop attempts.
+    zh: 编码 Agent 编写并运行代码，通过 HTTP 接口驱动真实六轴机械臂，查看四路相机画面后提交零样本桌面任务结果。
+    ja: コーディングエージェントがコードを書いて実行し、HTTP 経由で実機の6軸アームを動かし、4台のカメラ映像を確かめてから卓上タスクをゼロショットで提出する。
+  setup:
+    real_robots:
+    - Hiwonder NexArm
+  sources:
+  - https://artificialanalysis.ai/articles/aa-robotics
+  verification:
+    en: Real hardware only · eight tabletop tasks, zero-shot · GPT models in Codex, Claude in Claude Code, Gemini in Antigravity,
+      so the harness differs by vendor · three fixed and one wrist camera · a human grades the end state with partial credit
+      · GPT-6 Astra 69.4, GPT-6.1 Sol 64.6, Gemini 4 Argon 55.3, Claude Opus 5.5 48.8, Claude Fable 5.1 46.3 · attempts
+      per task, repeat runs and time limits not stated; tasks and code not released.
+    zh: 仅实机 · 八项桌面任务，零样本 · GPT 用 Codex、Claude 用 Claude Code、Gemini 用 Antigravity，各家 Harness 不同 · 三个固定相机加一个腕部相机 · 人工评定终态并给部分分
+      · GPT-6 Astra 69.4，GPT-6.1 Sol 64.6，Gemini 4 Argon 55.3，Claude Opus 5.5 48.8，Claude Fable 5.1 46.3 · 未说明每任务尝试次数、重复运行与时间上限；任务与代码未公开。
+  tags:
+  - Benchmark
+  - Verification
+  - Trajectory Analysis
 - id: '2611.08209'
   title: 'RoboARCade: Benchmarking Agentic Robot Control'
   url: https://arxiv.org/abs/2611.08209

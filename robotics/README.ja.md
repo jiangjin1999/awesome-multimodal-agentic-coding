@@ -6,7 +6,7 @@
 
 マルチモーダル・エージェンティック・コーディング研究マップのロボティクス・ブランチ：エージェントがコードでシミュレーションを構築してロボットを動かし、シミュレーションと現実の中で改善していきます。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Branched from](https://img.shields.io/badge/branched_from-awesome--multimodal--agentic--coding-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding) [![Works](https://img.shields.io/badge/works-361-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--26-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Branched from](https://img.shields.io/badge/branched_from-awesome--multimodal--agentic--coding-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding) [![Works](https://img.shields.io/badge/works-363-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--26-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語**
 
@@ -40,9 +40,9 @@ gitGraph
   commit id: "3.4 データ"
   commit id: "3.5 学習と能力向上"
   commit id: "3.6 物理応用と実験"
-  commit id: "cherry-pick 2.6 行動モデル × ロボット操作" type: HIGHLIGHT tag: "このブランチ 361 件"
+  commit id: "cherry-pick 2.6 行動モデル × ロボット操作" type: HIGHLIGHT tag: "このブランチ 363 件"
   checkout main
-  commit id: "…" tag: "上流 697 件"
+  commit id: "…" tag: "上流 699 件"
 ```
 
 <a id="contents"></a>
@@ -50,7 +50,7 @@ gitGraph
 ## 目次
 
 - [Stage 3 · デジタルと物理世界の架け橋](#stage-3)
-  - [3.1 身体性ハーネス](#s3-1) (95)
+  - [3.1 身体性ハーネス](#s3-1) (97)
   - [3.2 シミュレータ構築](#s3-2) (69)
   - [3.3 シミュレータ品質評価](#s3-3) (29)
   - [3.4 データ](#s3-4) (15)
@@ -385,6 +385,12 @@ gitGraph
 
 #### エージェント能力の評価
 
+<!-- mmac-record: {"id": "system:aa-robotics-sim", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-system-aa-robotics-sim"></a>`2026.11` **[Can language models drive a humanoid robot? Introducing AA-Robotics-Sim v0.1](https://artificialanalysis.ai/articles/aa-robotics-sim)**
+  > 最先端モデルが模擬人型ロボットの Python 制御コードを書き、指令の合間に頭部カメラ画像を確かめ、練習中に書いたメモとコードを新しいシーンで使い回す。<br>
+  > 🖥️ **シミュレーション** Isaac Sim + Isaac Lab（Unitree G1）
+
 <!-- mmac-record: {"id": "2611.12177", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2611-12177"></a>`2026.11` **[Embodied First Exam](https://arxiv.org/abs/2611.12177)**
@@ -474,6 +480,12 @@ gitGraph
 - <a id="paper-2610-25287"></a>`2026.10` **[The Bitter Lesson Comes to Robotics](https://arxiv.org/abs/2610.25287)**
   > 実際のロボットアームで汎用マルチモーダルモデルの制御インターフェースを介したタスク実行を比較し、モデル、ツール、実行設定の影響を調べる。<br>
   > 🖥️ **シミュレーション** Isaac Sim（ARX X5）
+
+<!-- mmac-record: {"id": "system:aa-robotics", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-system-aa-robotics"></a>`2026.10` **[Welcome to the era of embodied AI: Introducing AA-Robotics v0.1](https://artificialanalysis.ai/articles/aa-robotics)**
+  > コーディングエージェントがコードを書いて実行し、HTTP 経由で実機の6軸アームを動かし、4台のカメラ映像を確かめてから卓上タスクをゼロショットで提出する。<br>
+  > 🦾 **実機** Hiwonder NexArm
 
 <!-- mmac-record: {"id": "2609.24170", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 

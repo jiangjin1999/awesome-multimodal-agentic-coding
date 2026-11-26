@@ -8,7 +8,7 @@ import engine_map
 import eval_ladder
 import triage
 import stage_chart
-from build_readme import render, validate
+from build_readme import render, render_robotics, robotics_outputs, sync_stamp, upstream_links, validate
 from catalog import anchor, canonical_records, check_local_links, load
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -204,6 +204,29 @@ class CatalogTests(unittest.TestCase):
         pending.update(decision='excluded', decided=pending['found'])
         self.assertTrue(any('requires a reason' in e for e in triage.validate(self.works, log)))
 
+
+    def test_robotics_branch_holds_its_sections_and_is_current(self):
+        rb = self.site['robotics']
+        stage = next(st for st in self.site['stages'] if st['id'] == rb['stage'])
+        sections = set(stage['sections']) | set(rb['cherry_pick'])
+        expected = sorted(w['id'] for w in self.works if w['section'] in sections)
+        for rel, text in robotics_outputs(self.site, self.works):
+            self.assertEqual((ROOT / rel).read_text(), text, rel)
+        for lang, config in self.site['languages'].items():
+            actual = render_robotics(self.site, self.works, lang)
+            self.assertEqual(sorted(r['id'] for r in canonical_records(actual)), expected)
+            # The branch's sync workflow pins exactly this link to the upstream commit it copied.
+            self.assertEqual(actual.count(sync_stamp(self.site)), 1)
+
+    def test_branch_links_without_a_local_target_go_upstream(self):
+        up = 'https://github.com/' + self.site['repo']
+        text = ('<a id="here"></a>\n[a](#here) [b](#paper-gone) [c](./LICENSE) [d](./README.ja.md) '
+                '[e](stage3/x.md#y) <img src="assets/x.svg"> [f](mailto:a@b.c)\n')
+        self.assertEqual(upstream_links(text, self.site, 'zh'), (
+            '<a id="here"></a>\n[a](#here) '
+            f'[b]({up}/blob/main/README.zh-CN.md#paper-gone) [c](./LICENSE) [d](./README.ja.md) '
+            f'[e]({up}/blob/main/stage3/x.md#y) '
+            f'<img src="https://raw.githubusercontent.com/{self.site["repo"]}/main/assets/x.svg"> [f](mailto:a@b.c)\n'))
 
 if __name__ == '__main__':
     unittest.main()

@@ -13,7 +13,7 @@
 
 A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to the physical world.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-697-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--26-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-697-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--26-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![Robotics branch](https://img.shields.io/badge/branch-robotics-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -2039,6 +2039,8 @@ The agent **calls other models through code** — image, video and world generat
 ## Stage 3 · Bridging Digital & Physical Worlds
 
 The loop reaches simulation and reality: the agent **acts and observes in the real world**, builds simulators from real observations, and practises in simulation to become stronger — Real2Sim2Real. Works are organized by research question: build verifiable environments → collect interaction experience → improve the agent.
+
+⎇ **This stage also lives as its own branch:** [awesome-multimodal-agentic-coding-robotics](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics), the same works plus 2.6 Action models in a list focused on robotics.
 
 **Start with:** [Code as Policies](#paper-2209-07753) · [Democratizing Robot-Use Agents](#paper-2611-01560) · [Real2Gym](#paper-2609-37089) · [Agentic RSR](#paper-2610-10479) · [Eureka](#paper-2310-12931)
 

@@ -13,7 +13,7 @@
 
 マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——デジタル世界から物理世界まで。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-697-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--26-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-697-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--26-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![Robotics branch](https://img.shields.io/badge/branch-robotics-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語**
 
@@ -2042,6 +2042,8 @@
 ## Stage 3 · デジタルと物理世界の架け橋
 
 ループはシミュレーションと現実へ広がります。エージェントは**現実世界で行動し観察し**、実観測からシミュレータを構築し、シミュレーションで練習して強くなります——Real2Sim2Real です。本段階は研究課題ごとに整理しており、検証可能な環境を構築 → インタラクション経験を収集 → エージェントを改善、という流れです。
+
+⎇ **この段階は独立したブランチとしても公開しています：**[awesome-multimodal-agentic-coding-robotics](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics)。同じ内容に 2.6 行動モデルを加えた、ロボティクス向けのリストです。
 
 **まず読む:** [Code as Policies](#paper-2209-07753) · [Democratizing Robot-Use Agents](#paper-2611-01560) · [Real2Gym](#paper-2609-37089) · [Agentic RSR](#paper-2610-10479) · [Eureka](#paper-2310-12931)
 

@@ -13,7 +13,7 @@
 
 マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——デジタル世界から物理世界まで。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-699-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--26-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![Robotics branch](https://img.shields.io/badge/branch-robotics-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-702-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--27-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![Robotics branch](https://img.shields.io/badge/branch-robotics-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語**
 
@@ -60,11 +60,11 @@
   - [2.5 知覚モデル × シーン理解・再構成](#s2-5) (6)
   - [2.6 行動モデル × ロボット操作](#s2-6) (15)
 - [Stage 3 · デジタルと物理世界の架け橋](#stage-3)
-  - [3.1 身体性ハーネス](#s3-1) (97)
-  - [3.2 シミュレータ構築](#s3-2) (69)
+  - [3.1 身体性ハーネス](#s3-1) (98)
+  - [3.2 シミュレータ構築](#s3-2) (70)
   - [3.3 シミュレータ品質評価](#s3-3) (29)
   - [3.4 データ](#s3-4) (15)
-  - [3.5 学習と能力向上](#s3-5) (87)
+  - [3.5 学習と能力向上](#s3-5) (88)
   - [3.6 物理応用と実験](#s3-6) (51)
     - [科学実験（AI4Science）](#s3-6-experiments) (27)
   - [シミュレーションエンジン一覧](#s3-engines)
@@ -2313,6 +2313,12 @@
   > エージェントが書くプログラム、範囲を限定した VLA スキル、高速な反応ガードを共通の階層制御へ組み合わせる。<br>
   > 🖥️ **シミュレーション** Isaac Sim（ARX X5）
 
+<!-- mmac-record: {"id": "2611.34778", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-34778"></a>`2026.11` **[Toward Agentic Robotics: A Large-Scale Study of Harness Design for Robot-Use Agents](https://arxiv.org/abs/2611.34778)**
+  > ロボット方策のハーネスを比較し、試行で改良した Python、固定した行動方策、失敗時の視覚に基づく復旧を組み合わせる。<br>
+  > 🖥️ **シミュレーション** MuJoCo + SAPIEN + Isaac Sim · 🦾 **実機** YAM
+
 <!-- mmac-record: {"id": "2610.21453", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-21453"></a>`2026.10` **[CarryOn: A Dual-Loop Harness for Personalized and Reliable Robot Assistance](https://arxiv.org/abs/2610.21453)** [[コード]](https://github.com/JIA-Lab-research/CarryOn) [[プロジェクトページ]](https://vincent2311.github.io/Projects/CarryOn/)
@@ -2623,7 +2629,7 @@
 - <a id="paper-res-webots-mcp"></a>**[Webots MCP](https://github.com/MHasaan/webotMCP)**
   > 場面編集、制御コード、ロボット動作、多視点画像、運動軌跡、接触イベントを公開する。シミュレータの真値と反応制御は、学習型の知覚・計画と区別する。
 
-*関連:* [Meituan-Robotics-0](#paper-2611-08577) · [AR-WAM](#paper-2609-23578)
+*関連:* [Meituan-Robotics-0](#paper-2611-08577) · [AR-WAM](#paper-2609-23578) · [RoboLab](#paper-2604-09860)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
@@ -2948,6 +2954,12 @@
 - <a id="paper-2604-10992"></a>`2026.04` **[ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation](https://arxiv.org/abs/2604.10992)** [[プロジェクトページ]](https://shui-yuan.github.io/articad/)
   > 部品間の接続仕様をあらかじめ定め、複数 Agent によるコード生成、組み立て、ロールバックを通じて可動 CAD を構築する。<br>
   > 🖥️ **シミュレーション** FreeCAD
+
+<!-- mmac-record: {"id": "2604.09860", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2604-09860"></a>`2026.04` **[RoboLab: A High-Fidelity Simulation Benchmark for Analysis of Task Generalist Policies](https://arxiv.org/abs/2604.09860)** [[プロジェクトページ]](https://research.nvidia.com/labs/srl/projects/robolab/) [[コード]](https://github.com/NVlabs/RoboLab)
+  > 実行可能な空間制約で操作シーンを作り、物理検査に基づいて不安定な配置を修正し、汎用ロボット方策を評価する。<br>
+  > 🖥️ **シミュレーション** Isaac Lab（Franka Panda）
 
 <!-- mmac-record: {"id": "2602.12311", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -3901,6 +3913,12 @@ P0 は前提となる関門で、合否だけを判定します。ほかの各�
   > 改善した教師 Harness を小型モデルの訓練に利用する。<br>
   > 🖥️ **シミュレーション** MuJoCo + SAPIEN（Franka Panda、AgileX ALOHA、WidowX 250、Google Robot） · 🦾 **実機** SO-101
 
+<!-- mmac-record: {"id": "2607.13818", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2607-13818"></a>`2026.07` **[Learning Robust Execution in Robotic Manipulation with Agentic Reinforcement Learning](https://arxiv.org/abs/2607.13818)**
+  > 固定したロボット方策の上で、再試行と復旧をいつ行うかを学習する。<br>
+  > 🖥️ **シミュレーション** MuJoCo
+
 <!-- mmac-record: {"id": "2606.18363", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-18363"></a>`2026.06` **[Guava: Distilling Frontier VLMs into a Compact Agent through a Robotic Manipulation Harness](https://arxiv.org/abs/2606.18363)**
@@ -3919,7 +3937,7 @@ P0 は前提となる関門で、合否だけを判定します。ほかの各�
   > ロボットの行動プログラムを生成するマルチモーダルモデルを訓練する。<br>
   > 🖥️ **シミュレーション** Gazebo（Franka Panda、UR5） · 🦾 **実機** Franka Panda、UR5
 
-*関連:* [BlenderFORGE](#paper-2611-10768)
+*関連:* [BlenderFORGE](#paper-2611-10768) · [Toward Agentic Robotics](#paper-2611-34778)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 

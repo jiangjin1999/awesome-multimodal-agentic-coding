@@ -11,7 +11,7 @@
 
 Multimodal coding agents for robots: they write code to act, build the simulators they practise in, and improve from what they observe, in simulation and reality.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Branched from](https://img.shields.io/badge/branched_from-awesome--multimodal--agentic--coding-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding) [![Works](https://img.shields.io/badge/works-363-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--26-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Branched from](https://img.shields.io/badge/branched_from-awesome--multimodal--agentic--coding-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding) [![Works](https://img.shields.io/badge/works-366-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--27-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -41,9 +41,9 @@ Each row is a step of the loop above. Section numbers are the upstream ones; the
 
 | Step | Sections |
 |---|---|
-| **1 · ACT**<br>Drive robots with code | **[3.1 Embodied harnesses](#s3-1)** (97)<br>[Tools and control interfaces](#s3-1-tools-interfaces) (41) · [Delegation to existing policies](#s3-1-delegation) (10) · [Agent capability evaluation](#s3-1-capability-eval) (32) · [Skills, bridges and runtime resources](#s3-1-skills-runtime) (14)<br>**[2.6 Action models × robot manipulation](#s2-6)** (15) <sub>⤴ cherry-picked from Stage 2</sub> |
-| **2 · BUILD**<br>Build worlds to practise in | **[3.2 Simulator construction](#s3-2)** (69)<br>**[3.3 Simulator quality evaluation](#s3-3)** (29) |
-| **3 · LEARN**<br>Improve from experience | **[3.4 Data](#s3-4)** (15)<br>[Real](#s3-4-real-data) (4) · [Sim](#s3-4-sim-data) (7) · [Real+Sim](#s3-4-mixed-data) (4)<br>**[3.5 Training and capability improvement](#s3-5)** (87)<br>[Program and policy development](#s3-5-program-policy) (26) · [Experience, memory and skill learning](#s3-5-experience-skill) (51) · [Post-training the coding agent](#s3-5-post-training) (10) |
+| **1 · ACT**<br>Drive robots with code | **[3.1 Embodied harnesses](#s3-1)** (98)<br>[Tools and control interfaces](#s3-1-tools-interfaces) (41) · [Delegation to existing policies](#s3-1-delegation) (11) · [Agent capability evaluation](#s3-1-capability-eval) (32) · [Skills, bridges and runtime resources](#s3-1-skills-runtime) (14)<br>**[2.6 Action models × robot manipulation](#s2-6)** (15) <sub>⤴ cherry-picked from Stage 2</sub> |
+| **2 · BUILD**<br>Build worlds to practise in | **[3.2 Simulator construction](#s3-2)** (70)<br>**[3.3 Simulator quality evaluation](#s3-3)** (29) |
+| **3 · LEARN**<br>Improve from experience | **[3.4 Data](#s3-4)** (15)<br>[Real](#s3-4-real-data) (4) · [Sim](#s3-4-sim-data) (7) · [Real+Sim](#s3-4-mixed-data) (4)<br>**[3.5 Training and capability improvement](#s3-5)** (88)<br>[Program and policy development](#s3-5-program-policy) (26) · [Experience, memory and skill learning](#s3-5-experience-skill) (51) · [Post-training the coding agent](#s3-5-post-training) (11) |
 | **4 · APPLY**<br>Reach the physical world | **[3.6 Physical applications and experiments](#s3-6)** (51)<br>[Robot interaction and manipulation](#s3-6-robot-interaction) (13) · [Scientific experiments (AI4Science)](#s3-6-experiments) (27) · [Physical design, fabrication and validation](#s3-6-physical-design) (11) |
 
 🧭 [Simulation engines at a glance](#s3-engines)
@@ -70,9 +70,9 @@ gitGraph
   commit id: "3.4 Data"
   commit id: "3.5 Training and capability improvement"
   commit id: "3.6 Physical applications and experiments"
-  commit id: "cherry-pick 2.6 Action models × robot manipulation" type: HIGHLIGHT tag: "363 works here"
+  commit id: "cherry-pick 2.6 Action models × robot manipulation" type: HIGHLIGHT tag: "366 works here"
   checkout main
-  commit id: "…" tag: "699 works upstream"
+  commit id: "…" tag: "702 works upstream"
 ```
 
 <a id="stage-3"></a>
@@ -350,6 +350,12 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 - <a id="paper-system-the-harness-corl2026"></a>`2026.11` **[The Harness: One Agent Harness for Anything that Acts](https://web.eecs.umich.edu/~stellayu/publication/2026harnessCoRLL.html)** [[Paper]](https://web.eecs.umich.edu/~stellayu/publication/doc/2026harnessCoRLL.pdf)
   > Combines agent-written programs, bounded VLA skills and reactive guards in a shared control hierarchy.<br>
   > 🖥️ **Sim** Isaac Sim (ARX X5)
+
+<!-- mmac-record: {"id": "2611.34778", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-34778"></a>`2026.11` **[Toward Agentic Robotics: A Large-Scale Study of Harness Design for Robot-Use Agents](https://arxiv.org/abs/2611.34778)**
+  > Compares robot-policy harnesses and combines evolved Python, frozen action policies and failure-triggered visual rescue.<br>
+  > 🖥️ **Sim** MuJoCo + SAPIEN + Isaac Sim · 🦾 **Real** YAM
 
 <!-- mmac-record: {"id": "2610.21453", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
@@ -665,7 +671,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 - <a id="paper-res-webots-mcp"></a>**[Webots MCP](https://github.com/MHasaan/webotMCP)**
   > Exposes scene editing, controller code, robot commands, multiview screenshots, motion traces and contact events to agents; ground-truth simulator readouts and reactive controls are distinguished from learned perception and planning.
 
-*See also:* [Meituan-Robotics-0](#paper-2611-08577) · [AR-WAM](#paper-2609-23578)
+*See also:* [Meituan-Robotics-0](#paper-2611-08577) · [AR-WAM](#paper-2609-23578) · [RoboLab](#paper-2604-09860)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20Back%20to%20contents-30363d?style=flat-square" alt="↑ Back to contents" height="24"></a></p>
 
@@ -985,6 +991,12 @@ All 68 works, step by step, including verification & revision and variant expans
 - <a id="paper-2604-10992"></a>`2026.04` **[ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation](https://arxiv.org/abs/2604.10992)** [[Project page]](https://shui-yuan.github.io/articad/)
   > Part-local CAD programs and explicit connectors support repairable articulated assembly.<br>
   > 🖥️ **Sim** FreeCAD
+
+<!-- mmac-record: {"id": "2604.09860", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2604-09860"></a>`2026.04` **[RoboLab: A High-Fidelity Simulation Benchmark for Analysis of Task Generalist Policies](https://arxiv.org/abs/2604.09860)** [[Project page]](https://research.nvidia.com/labs/srl/projects/robolab/) [[Code]](https://github.com/NVlabs/RoboLab)
+  > Builds manipulation scenes from executable spatial constraints, revises unstable layouts after physics checks, and benchmarks generalist robot policies.<br>
+  > 🖥️ **Sim** Isaac Lab (Franka Panda)
 
 <!-- mmac-record: {"id": "2602.12311", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -1933,6 +1945,12 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
   > Transfers a refined teacher harness to a small agent.<br>
   > 🖥️ **Sim** MuJoCo + SAPIEN (Franka Panda, AgileX ALOHA, WidowX 250, Google Robot) · 🦾 **Real** SO-101
 
+<!-- mmac-record: {"id": "2607.13818", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2607-13818"></a>`2026.07` **[Learning Robust Execution in Robotic Manipulation with Agentic Reinforcement Learning](https://arxiv.org/abs/2607.13818)**
+  > Learns when to retry or repair execution above frozen robot policies.<br>
+  > 🖥️ **Sim** MuJoCo
+
 <!-- mmac-record: {"id": "2606.18363", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-18363"></a>`2026.06` **[Guava: Distilling Frontier VLMs into a Compact Agent through a Robotic Manipulation Harness](https://arxiv.org/abs/2606.18363)**
@@ -1951,7 +1969,7 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
   > Trains a multimodal model to write robot behaviors.<br>
   > 🖥️ **Sim** Gazebo (Franka Panda, UR5) · 🦾 **Real** Franka Panda, UR5
 
-*See also:* [BlenderFORGE](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/blob/main/README.md#paper-2611-10768)
+*See also:* [BlenderFORGE](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/blob/main/README.md#paper-2611-10768) · [Toward Agentic Robotics](#paper-2611-34778)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20Back%20to%20contents-30363d?style=flat-square" alt="↑ Back to contents" height="24"></a></p>
 
@@ -2419,4 +2437,4 @@ This repository is released under the [MIT License](./LICENSE). Linked papers, c
 
 We thank Liangcai Gao, Wenshan Wu, Haolin Yang, and Yu Chen.
 
-<p align="center"><sub>⎇ Synced from <a href="https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/tree/main"><code>upstream@main</code></a> · 2026-11-26</sub></p>
+<p align="center"><sub>⎇ Synced from <a href="https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/tree/main"><code>upstream@main</code></a> · 2026-11-27</sub></p>

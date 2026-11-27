@@ -13,7 +13,7 @@
 
 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从数字世界延伸到物理世界。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-699-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--26-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![Robotics branch](https://img.shields.io/badge/branch-robotics-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-702-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--27-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![Robotics branch](https://img.shields.io/badge/branch-robotics-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · **简体中文** · [日本語](./README.ja.md)
 
@@ -57,11 +57,11 @@
   - [2.5 感知模型 × 场景理解与重建](#s2-5) (6)
   - [2.6 动作模型 × 机器人操作](#s2-6) (15)
 - [Stage 3 · 打通数字世界与物理世界](#stage-3)
-  - [3.1 具身框架（Harness）](#s3-1) (97)
-  - [3.2 仿真器构建](#s3-2) (69)
+  - [3.1 具身框架（Harness）](#s3-1) (98)
+  - [3.2 仿真器构建](#s3-2) (70)
   - [3.3 仿真器质量评估](#s3-3) (29)
   - [3.4 数据](#s3-4) (15)
-  - [3.5 训练与能力提升](#s3-5) (87)
+  - [3.5 训练与能力提升](#s3-5) (88)
   - [3.6 物理应用与实验](#s3-6) (51)
     - [科学实验（AI4Science）](#s3-6-experiments) (27)
   - [仿真引擎一览](#s3-engines)
@@ -2310,6 +2310,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
   > 把 Agent 编写的程序、有界 VLA 技能和快速反应守卫组合成共享控制层级。<br>
   > 🖥️ **仿真** Isaac Sim（ARX X5）
 
+<!-- mmac-record: {"id": "2611.34778", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-34778"></a>`2026.11` **[Toward Agentic Robotics: A Large-Scale Study of Harness Design for Robot-Use Agents](https://arxiv.org/abs/2611.34778)**
+  > 比较机器人策略框架设计，组合迭代生成的 Python、冻结动作策略和失败触发的视觉恢复。<br>
+  > 🖥️ **仿真** MuJoCo + SAPIEN + Isaac Sim · 🦾 **真机** YAM
+
 <!-- mmac-record: {"id": "2610.21453", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-21453"></a>`2026.10` **[CarryOn: A Dual-Loop Harness for Personalized and Reliable Robot Assistance](https://arxiv.org/abs/2610.21453)** [[代码]](https://github.com/JIA-Lab-research/CarryOn) [[项目页]](https://vincent2311.github.io/Projects/CarryOn/)
@@ -2620,7 +2626,7 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-res-webots-mcp"></a>**[Webots MCP](https://github.com/MHasaan/webotMCP)**
   > 向Agent开放场景编辑、控制器代码、机器人动作、多视图截图、运动轨迹与接触事件；模拟器真值和反应式控制分别区别于学习式感知与规划。
 
-*另见:* [Meituan-Robotics-0](#paper-2611-08577) · [AR-WAM](#paper-2609-23578)
+*另见:* [Meituan-Robotics-0](#paper-2611-08577) · [AR-WAM](#paper-2609-23578) · [RoboLab](#paper-2604-09860)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
@@ -2945,6 +2951,12 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 - <a id="paper-2604-10992"></a>`2026.04` **[ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation](https://arxiv.org/abs/2604.10992)** [[项目页]](https://shui-yuan.github.io/articad/)
   > 预先约定部件连接器，再通过多 Agent 代码生成、装配和回滚构造可动 CAD。<br>
   > 🖥️ **仿真** FreeCAD
+
+<!-- mmac-record: {"id": "2604.09860", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2604-09860"></a>`2026.04` **[RoboLab: A High-Fidelity Simulation Benchmark for Analysis of Task Generalist Policies](https://arxiv.org/abs/2604.09860)** [[项目页]](https://research.nvidia.com/labs/srl/projects/robolab/) [[代码]](https://github.com/NVlabs/RoboLab)
+  > 用可执行空间约束构建机器人操作场景，根据物理检查修订不稳定布局，并评测通用机器人策略。<br>
+  > 🖥️ **仿真** Isaac Lab（Franka Panda）
 
 <!-- mmac-record: {"id": "2602.12311", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -3898,6 +3910,12 @@ P0 是前提关卡，只判过不过；其余各层检查不同的失败模式�
   > 将改进后的教师 Harness 用于小模型训练。<br>
   > 🖥️ **仿真** MuJoCo + SAPIEN（Franka Panda、AgileX ALOHA、WidowX 250、Google Robot） · 🦾 **真机** SO-101
 
+<!-- mmac-record: {"id": "2607.13818", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2607-13818"></a>`2026.07` **[Learning Robust Execution in Robotic Manipulation with Agentic Reinforcement Learning](https://arxiv.org/abs/2607.13818)**
+  > 在冻结的机器人策略之上学习何时重试或回退修复。<br>
+  > 🖥️ **仿真** MuJoCo
+
 <!-- mmac-record: {"id": "2606.18363", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-18363"></a>`2026.06` **[Guava: Distilling Frontier VLMs into a Compact Agent through a Robotic Manipulation Harness](https://arxiv.org/abs/2606.18363)**
@@ -3916,7 +3934,7 @@ P0 是前提关卡，只判过不过；其余各层检查不同的失败模式�
   > 训练多模态模型生成机器人行为程序。<br>
   > 🖥️ **仿真** Gazebo（Franka Panda、UR5） · 🦾 **真机** Franka Panda、UR5
 
-*另见:* [BlenderFORGE](#paper-2611-10768)
+*另见:* [BlenderFORGE](#paper-2611-10768) · [Toward Agentic Robotics](#paper-2611-34778)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 

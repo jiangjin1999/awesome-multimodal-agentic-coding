@@ -13,7 +13,7 @@
 
 A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to the physical world.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-699-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--26-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![Robotics branch](https://img.shields.io/badge/branch-robotics-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-702-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--27-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![Robotics branch](https://img.shields.io/badge/branch-robotics-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -57,11 +57,11 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [2.5 Perception models × scene understanding and reconstruction](#s2-5) (6)
   - [2.6 Action models × robot manipulation](#s2-6) (15)
 - [Stage 3 · Bridging Digital & Physical Worlds](#stage-3)
-  - [3.1 Embodied harnesses](#s3-1) (97)
-  - [3.2 Simulator construction](#s3-2) (69)
+  - [3.1 Embodied harnesses](#s3-1) (98)
+  - [3.2 Simulator construction](#s3-2) (70)
   - [3.3 Simulator quality evaluation](#s3-3) (29)
   - [3.4 Data](#s3-4) (15)
-  - [3.5 Training and capability improvement](#s3-5) (87)
+  - [3.5 Training and capability improvement](#s3-5) (88)
   - [3.6 Physical applications and experiments](#s3-6) (51)
     - [Scientific experiments (AI4Science)](#s3-6-experiments) (27)
   - [Simulation engines at a glance](#s3-engines)
@@ -2310,6 +2310,12 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
   > Combines agent-written programs, bounded VLA skills and reactive guards in a shared control hierarchy.<br>
   > 🖥️ **Sim** Isaac Sim (ARX X5)
 
+<!-- mmac-record: {"id": "2611.34778", "scope": "Core", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-34778"></a>`2026.11` **[Toward Agentic Robotics: A Large-Scale Study of Harness Design for Robot-Use Agents](https://arxiv.org/abs/2611.34778)**
+  > Compares robot-policy harnesses and combines evolved Python, frozen action policies and failure-triggered visual rescue.<br>
+  > 🖥️ **Sim** MuJoCo + SAPIEN + Isaac Sim · 🦾 **Real** YAM
+
 <!-- mmac-record: {"id": "2610.21453", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-21453"></a>`2026.10` **[CarryOn: A Dual-Loop Harness for Personalized and Reliable Robot Assistance](https://arxiv.org/abs/2610.21453)** [[Code]](https://github.com/JIA-Lab-research/CarryOn) [[Project page]](https://vincent2311.github.io/Projects/CarryOn/)
@@ -2620,7 +2626,7 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 - <a id="paper-res-webots-mcp"></a>**[Webots MCP](https://github.com/MHasaan/webotMCP)**
   > Exposes scene editing, controller code, robot commands, multiview screenshots, motion traces and contact events to agents; ground-truth simulator readouts and reactive controls are distinguished from learned perception and planning.
 
-*See also:* [Meituan-Robotics-0](#paper-2611-08577) · [AR-WAM](#paper-2609-23578)
+*See also:* [Meituan-Robotics-0](#paper-2611-08577) · [AR-WAM](#paper-2609-23578) · [RoboLab](#paper-2604-09860)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20Back%20to%20contents-30363d?style=flat-square" alt="↑ Back to contents" height="24"></a></p>
 
@@ -2945,6 +2951,12 @@ All 68 works, step by step, including verification & revision and variant expans
 - <a id="paper-2604-10992"></a>`2026.04` **[ArtiCAD: Articulated CAD Assembly Design via Multi-Agent Code Generation](https://arxiv.org/abs/2604.10992)** [[Project page]](https://shui-yuan.github.io/articad/)
   > Part-local CAD programs and explicit connectors support repairable articulated assembly.<br>
   > 🖥️ **Sim** FreeCAD
+
+<!-- mmac-record: {"id": "2604.09860", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2604-09860"></a>`2026.04` **[RoboLab: A High-Fidelity Simulation Benchmark for Analysis of Task Generalist Policies](https://arxiv.org/abs/2604.09860)** [[Project page]](https://research.nvidia.com/labs/srl/projects/robolab/) [[Code]](https://github.com/NVlabs/RoboLab)
+  > Builds manipulation scenes from executable spatial constraints, revises unstable layouts after physics checks, and benchmarks generalist robot policies.<br>
+  > 🖥️ **Sim** Isaac Lab (Franka Panda)
 
 <!-- mmac-record: {"id": "2602.12311", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -3898,6 +3910,12 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
   > Transfers a refined teacher harness to a small agent.<br>
   > 🖥️ **Sim** MuJoCo + SAPIEN (Franka Panda, AgileX ALOHA, WidowX 250, Google Robot) · 🦾 **Real** SO-101
 
+<!-- mmac-record: {"id": "2607.13818", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2607-13818"></a>`2026.07` **[Learning Robust Execution in Robotic Manipulation with Agentic Reinforcement Learning](https://arxiv.org/abs/2607.13818)**
+  > Learns when to retry or repair execution above frozen robot policies.<br>
+  > 🖥️ **Sim** MuJoCo
+
 <!-- mmac-record: {"id": "2606.18363", "scope": "Adjacent", "primary": "3.5", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2606-18363"></a>`2026.06` **[Guava: Distilling Frontier VLMs into a Compact Agent through a Robotic Manipulation Harness](https://arxiv.org/abs/2606.18363)**
@@ -3916,7 +3934,7 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
   > Trains a multimodal model to write robot behaviors.<br>
   > 🖥️ **Sim** Gazebo (Franka Panda, UR5) · 🦾 **Real** Franka Panda, UR5
 
-*See also:* [BlenderFORGE](#paper-2611-10768)
+*See also:* [BlenderFORGE](#paper-2611-10768) · [Toward Agentic Robotics](#paper-2611-34778)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20Back%20to%20contents-30363d?style=flat-square" alt="↑ Back to contents" height="24"></a></p>
 

@@ -16767,3 +16767,90 @@
   - https://arxiv.org/abs/2611.32462
   see_also:
   - '1.5'
+- id: '2607.13818'
+  title: Learning Robust Execution in Robotic Manipulation with Agentic Reinforcement Learning
+  date: '2026.07'
+  url: https://arxiv.org/abs/2607.13818
+  section: '3.5'
+  sub: post-training
+  type: paper
+  scope: adjacent
+  tldr:
+    en: Learns when to retry or repair execution above frozen robot policies.
+    zh: 在冻结的机器人策略之上学习何时重试或回退修复。
+    ja: 固定したロボット方策の上で、再試行と復旧をいつ行うかを学習する。
+  verification:
+    en: A PPO-trained supervisor uses recent proprioception, actions and execution-quality scores to select continue,
+      retry, repair or reset; the actor does not see raw images or privileged simulator state (§IV-C). On LIBERO-Long,
+      the four base policies improve on average by 13.7 points nominally and 39.2 points with injected action disturbances
+      (Table II). Reset counts as a failed trial; no physical-robot result is reported (§V-A).
+    zh: PPO 上层策略读取近期本体状态、底层动作和执行质量分数，在继续、重试、修复与重置中选择。推理时不读取原始图像或特权仿真状态（§IV-C）。在 LIBERO-Long，四个底层策略平均提升 13.7 个百分点，注入动作扰动时平均提升
+      39.2 个百分点（表 II）；重置计作失败，未报告实机结果（§V-A）。
+  sources:
+  - https://arxiv.org/abs/2607.13818
+  setup:
+    engines:
+    - MuJoCo
+- id: '2604.09860'
+  title: 'RoboLab: A High-Fidelity Simulation Benchmark for Analysis of Task Generalist Policies'
+  date: '2026.04'
+  url: https://arxiv.org/abs/2604.09860
+  section: '3.2'
+  sub: null
+  type: paper
+  scope: core
+  tldr:
+    en: Builds manipulation scenes from executable spatial constraints, revises unstable layouts after physics checks,
+      and benchmarks generalist robot policies.
+    zh: 用可执行空间约束构建机器人操作场景，根据物理检查修订不稳定布局，并评测通用机器人策略。
+    ja: 実行可能な空間制約で操作シーンを作り、物理検査に基づいて不安定な配置を修正し、汎用ロボット方策を評価する。
+  verification:
+    en: The scene builder emits spatial predicates, solves poses and advances the scene under gravity. Measured displacement
+      and failed object relations are returned as diagnostics, causing the LLM to regenerate the plan (§III-A.1, Fig.
+      17). RoboLab-120 reports simulation results by visual, procedural and relational competence (§III-B, Table I). RGB
+      scene quality is assessed separately (Appendix C, Table VI); comparison with an external real-robot leaderboard
+      is not a matched physical trial (§IV).
+    zh: 场景构建器生成空间谓词，解算姿态后在重力下执行仿真。实测物体位移和失效关系作为诊断回传，促使模型重写布局（§III-A.1、图 17）。RoboLab-120 分视觉、流程和关系能力报告仿真评测（§III-B、表 I）；RGB
+      质量评估单独进行（附录 C、表 VI），与外部实机榜单的比较不是配对实机试验（§IV）。
+  sources:
+  - https://arxiv.org/abs/2604.09860
+  - https://research.nvidia.com/labs/srl/projects/robolab/
+  - https://github.com/NVlabs/RoboLab
+  see_also:
+  - '3.1'
+  setup:
+    engines:
+    - Isaac Lab
+    sim_robots:
+    - Franka Panda
+- id: '2611.34778'
+  title: 'Toward Agentic Robotics: A Large-Scale Study of Harness Design for Robot-Use Agents'
+  date: '2026.11'
+  url: https://arxiv.org/abs/2611.34778
+  section: '3.1'
+  sub: delegation
+  type: paper
+  scope: core
+  tldr:
+    en: Compares robot-policy harnesses and combines evolved Python, frozen action policies and failure-triggered visual
+      rescue.
+    zh: 比较机器人策略框架设计，组合迭代生成的 Python、冻结动作策略和失败触发的视觉恢复。
+    ja: ロボット方策のハーネスを比較し、試行で改良した Python、固定した行動方策、失敗時の視覚に基づく復旧を組み合わせる。
+  verification:
+    en: X-Harness runs VLM-written Python with live observations and calls frozen VLA/WAM policies or primitives; triggered
+      multi-turn rescue reads images and action outcomes to choose next steps (§§3, 5.3; App. I). The study logs 489,380
+      rollouts across 267 tasks and eight simulation benchmarks (§3.2, Table 5). Supplementary bimanual YAM checks separate
+      held-out recording replay and a live scooping rollout using a task-adapted policy (App. J, Fig. 17).
+    zh: X-Harness 运行 VLM 编写的 Python，读取流式观测并调用冻结的 VLA/WAM 或运动原语；触发式多轮恢复结合新图像和动作结果选择下一步（§§3、5.3，附录 I）。八个仿真基准覆盖 267 项任务，论文记录
+      489,380 次执行（§3.2、表 5）。双臂 YAM 附录区分留出录制回放与用任务适配策略完成的实时舀取演示（附录 J、图 17）。
+  sources:
+  - https://arxiv.org/abs/2611.34778
+  see_also:
+  - '3.5'
+  setup:
+    engines:
+    - MuJoCo
+    - SAPIEN
+    - Isaac Sim
+    real_robots:
+    - YAM

@@ -16823,6 +16823,27 @@
     - Isaac Lab
     sim_robots:
     - Franka Panda
+- id: resource:roboagentlab
+  title: RoboAgentLab
+  date: null
+  url: https://roboagentlab.github.io/
+  section: '3.1'
+  sub: skills-runtime
+  type: resource
+  scope: resource
+  tldr:
+    en: Connects coding agents to robot services, visual observations and policy tools through shared Python interfaces, skills and persistent experiment sessions.
+    zh: 通过统一 Python 接口、Skills 和持久会话，将 Coding Agent 接入机器人服务、视觉观测与策略工具。
+    ja: 共通の Python インターフェース、スキル、永続セッションを通じ、コーディングエージェントをロボットサービス、視覚観測、方策ツールへ接続する。
+  verification:
+    en: The embodied package implements robot adapters, action and Python execution modes, and workflow skills. Service results return images, state and outcomes to the agent. The framework paper is forthcoming. The released datasets contain agent-interaction logs with variable media and outcome completeness.
+    zh: embodied 包含机器人适配器、动作与 Python 执行模式和工作流 Skills，服务向 Agent 返回图像、状态与执行结果。框架论文仍标为待发布；已发布数据为 Agent 交互日志，媒体和结果字段的完整性因记录而异。
+  sources:
+  - https://roboagentlab.github.io/
+  - https://github.com/RoboAgentLab/RoboAgentLab
+  - https://roboagentlab.github.io/docs/quickstart.html
+  - https://huggingface.co/datasets/RoboAgentLab/pi-embodied-policy-interactions
+  - https://huggingface.co/datasets/RoboAgentLab/pi-embodied-rd-interactions
 - id: '2611.34778'
   title: 'Toward Agentic Robotics: A Large-Scale Study of Harness Design for Robot-Use Agents'
   date: '2026.11'

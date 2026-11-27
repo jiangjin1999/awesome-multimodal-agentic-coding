@@ -13,7 +13,7 @@
 
 マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——デジタル世界から物理世界まで。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-702-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--27-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![Robotics branch](https://img.shields.io/badge/branch-robotics-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-703-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--27-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![Robotics branch](https://img.shields.io/badge/branch-robotics-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語**
 
@@ -60,7 +60,7 @@
   - [2.5 知覚モデル × シーン理解・再構成](#s2-5) (6)
   - [2.6 行動モデル × ロボット操作](#s2-6) (15)
 - [Stage 3 · デジタルと物理世界の架け橋](#stage-3)
-  - [3.1 身体性ハーネス](#s3-1) (98)
+  - [3.1 身体性ハーネス](#s3-1) (99)
   - [3.2 シミュレータ構築](#s3-2) (70)
   - [3.3 シミュレータ品質評価](#s3-3) (29)
   - [3.4 データ](#s3-4) (15)
@@ -2603,6 +2603,11 @@
 
 - <a id="paper-robouse"></a>**[Robo Use](https://github.com/benchflow-ai/robouse)**
   > 統一 CLI とエピソードサービスにより、コーディングエージェントがロボットの仮想タスクへ接続し、行動を提出して結果を読めるようにする。
+
+<!-- mmac-record: {"id": "resource:roboagentlab", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
+
+- <a id="paper-resource-roboagentlab"></a>**[RoboAgentLab](https://roboagentlab.github.io/)** [[コード]](https://github.com/RoboAgentLab/RoboAgentLab) [[ドキュメント]](https://roboagentlab.github.io/docs/quickstart.html) [[データセット]](https://huggingface.co/datasets/RoboAgentLab/pi-embodied-policy-interactions) [[データセット]](https://huggingface.co/datasets/RoboAgentLab/pi-embodied-rd-interactions)
+  > 共通の Python インターフェース、スキル、永続セッションを通じ、コーディングエージェントをロボットサービス、視覚観測、方策ツールへ接続する。
 
 <!-- mmac-record: {"id": "robotics-agent-skills", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
 

@@ -11,7 +11,7 @@
 
 面向机器人的多模态 Coding Agent：写代码去行动，搭建自己练习用的仿真，并根据观察到的结果在仿真与现实中不断改进。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Branched from](https://img.shields.io/badge/branched_from-awesome--multimodal--agentic--coding-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding) [![Works](https://img.shields.io/badge/works-366-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--27-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Branched from](https://img.shields.io/badge/branched_from-awesome--multimodal--agentic--coding-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding) [![Works](https://img.shields.io/badge/works-367-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--27-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · **简体中文** · [日本語](./README.ja.md)
 
@@ -41,7 +41,7 @@ Switched to a new branch 'robotics'
 
 | 步骤 | 章节 |
 |---|---|
-| **1 · 行动**<br>用代码驱动机器人 | **[3.1 具身框架（Harness）](#s3-1)** (98)<br>[工具与控制接口](#s3-1-tools-interfaces) (41) · [委派已有策略](#s3-1-delegation) (11) · [Agent 能力评测](#s3-1-capability-eval) (32) · [Skills、工具桥与运行资源](#s3-1-skills-runtime) (14)<br>**[2.6 动作模型 × 机器人操作](#s2-6)** (15) <sub>⤴ 从 Stage 2 cherry-pick</sub> |
+| **1 · 行动**<br>用代码驱动机器人 | **[3.1 具身框架（Harness）](#s3-1)** (99)<br>[工具与控制接口](#s3-1-tools-interfaces) (41) · [委派已有策略](#s3-1-delegation) (11) · [Agent 能力评测](#s3-1-capability-eval) (32) · [Skills、工具桥与运行资源](#s3-1-skills-runtime) (15)<br>**[2.6 动作模型 × 机器人操作](#s2-6)** (15) <sub>⤴ 从 Stage 2 cherry-pick</sub> |
 | **2 · 构建**<br>搭建练习用的仿真世界 | **[3.2 仿真器构建](#s3-2)** (70)<br>**[3.3 仿真器质量评估](#s3-3)** (29) |
 | **3 · 学习**<br>从经验中变强 | **[3.4 数据](#s3-4)** (15)<br>[Real](#s3-4-real-data) (4) · [Sim](#s3-4-sim-data) (7) · [Real+Sim](#s3-4-mixed-data) (4)<br>**[3.5 训练与能力提升](#s3-5)** (88)<br>[程序与策略研发](#s3-5-program-policy) (26) · [经验、记忆与技能学习](#s3-5-experience-skill) (51) · [Coding Agent 后训练](#s3-5-post-training) (11) |
 | **4 · 应用**<br>走进物理世界 | **[3.6 物理应用与实验](#s3-6)** (51)<br>[机器人交互与操作](#s3-6-robot-interaction) (13) · [科学实验（AI4Science）](#s3-6-experiments) (27) · [物理设计、制造与验证](#s3-6-physical-design) (11) |
@@ -70,9 +70,9 @@ gitGraph
   commit id: "3.4 数据"
   commit id: "3.5 训练与能力提升"
   commit id: "3.6 物理应用与实验"
-  commit id: "cherry-pick 2.6 动作模型 × 机器人操作" type: HIGHLIGHT tag: "本分支 366 项"
+  commit id: "cherry-pick 2.6 动作模型 × 机器人操作" type: HIGHLIGHT tag: "本分支 367 项"
   checkout main
-  commit id: "…" tag: "上游 702 项"
+  commit id: "…" tag: "上游 703 项"
 ```
 
 <a id="stage-3"></a>
@@ -645,6 +645,11 @@ gitGraph
 
 - <a id="paper-robouse"></a>**[Robo Use](https://github.com/benchflow-ai/robouse)**
   > 通过统一的命令行和 episode 服务，让 Coding Agent 访问机器人仿真任务、提交动作并读取结果。
+
+<!-- mmac-record: {"id": "resource:roboagentlab", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
+
+- <a id="paper-resource-roboagentlab"></a>**[RoboAgentLab](https://roboagentlab.github.io/)** [[代码]](https://github.com/RoboAgentLab/RoboAgentLab) [[文档]](https://roboagentlab.github.io/docs/quickstart.html) [[数据集]](https://huggingface.co/datasets/RoboAgentLab/pi-embodied-policy-interactions) [[数据集]](https://huggingface.co/datasets/RoboAgentLab/pi-embodied-rd-interactions)
+  > 通过统一 Python 接口、Skills 和持久会话，将 Coding Agent 接入机器人服务、视觉观测与策略工具。
 
 <!-- mmac-record: {"id": "robotics-agent-skills", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
 

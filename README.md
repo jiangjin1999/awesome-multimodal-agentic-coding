@@ -13,7 +13,7 @@
 
 A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to the physical world.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-702-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--27-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![Robotics branch](https://img.shields.io/badge/branch-robotics-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-703-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--27-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![Robotics branch](https://img.shields.io/badge/branch-robotics-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -57,7 +57,7 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [2.5 Perception models × scene understanding and reconstruction](#s2-5) (6)
   - [2.6 Action models × robot manipulation](#s2-6) (15)
 - [Stage 3 · Bridging Digital & Physical Worlds](#stage-3)
-  - [3.1 Embodied harnesses](#s3-1) (98)
+  - [3.1 Embodied harnesses](#s3-1) (99)
   - [3.2 Simulator construction](#s3-2) (70)
   - [3.3 Simulator quality evaluation](#s3-3) (29)
   - [3.4 Data](#s3-4) (15)
@@ -2600,6 +2600,11 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 - <a id="paper-robouse"></a>**[Robo Use](https://github.com/benchflow-ai/robouse)**
   > Exposes robot simulation tasks, actions and episode results through a shared CLI and service interface.
+
+<!-- mmac-record: {"id": "resource:roboagentlab", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
+
+- <a id="paper-resource-roboagentlab"></a>**[RoboAgentLab](https://roboagentlab.github.io/)** [[Code]](https://github.com/RoboAgentLab/RoboAgentLab) [[Documentation]](https://roboagentlab.github.io/docs/quickstart.html) [[Dataset]](https://huggingface.co/datasets/RoboAgentLab/pi-embodied-policy-interactions) [[Dataset]](https://huggingface.co/datasets/RoboAgentLab/pi-embodied-rd-interactions)
+  > Connects coding agents to robot services, visual observations and policy tools through shared Python interfaces, skills and persistent experiment sessions.
 
 <!-- mmac-record: {"id": "robotics-agent-skills", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
 

@@ -13,7 +13,7 @@
 
 一份多模态智能体编程的研究地图：Agent 编写代码，观察代码运行的结果，并据此不断改进——从数字世界延伸到物理世界。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-702-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--27-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![Robotics branch](https://img.shields.io/badge/branch-robotics-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-703-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--27-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![Robotics branch](https://img.shields.io/badge/branch-robotics-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · **简体中文** · [日本語](./README.ja.md)
 
@@ -57,7 +57,7 @@
   - [2.5 感知模型 × 场景理解与重建](#s2-5) (6)
   - [2.6 动作模型 × 机器人操作](#s2-6) (15)
 - [Stage 3 · 打通数字世界与物理世界](#stage-3)
-  - [3.1 具身框架（Harness）](#s3-1) (98)
+  - [3.1 具身框架（Harness）](#s3-1) (99)
   - [3.2 仿真器构建](#s3-2) (70)
   - [3.3 仿真器质量评估](#s3-3) (29)
   - [3.4 数据](#s3-4) (15)
@@ -2600,6 +2600,11 @@ Agent **通过代码调用其他模型**——图像、视频和世界生成模�
 
 - <a id="paper-robouse"></a>**[Robo Use](https://github.com/benchflow-ai/robouse)**
   > 通过统一的命令行和 episode 服务，让 Coding Agent 访问机器人仿真任务、提交动作并读取结果。
+
+<!-- mmac-record: {"id": "resource:roboagentlab", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
+
+- <a id="paper-resource-roboagentlab"></a>**[RoboAgentLab](https://roboagentlab.github.io/)** [[代码]](https://github.com/RoboAgentLab/RoboAgentLab) [[文档]](https://roboagentlab.github.io/docs/quickstart.html) [[数据集]](https://huggingface.co/datasets/RoboAgentLab/pi-embodied-policy-interactions) [[数据集]](https://huggingface.co/datasets/RoboAgentLab/pi-embodied-rd-interactions)
+  > 通过统一 Python 接口、Skills 和持久会话，将 Coding Agent 接入机器人服务、视觉观测与策略工具。
 
 <!-- mmac-record: {"id": "robotics-agent-skills", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
 

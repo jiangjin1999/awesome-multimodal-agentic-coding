@@ -11,7 +11,7 @@
 
 Multimodal coding agents for robots: they write code to act, build the simulators they practise in, and improve from what they observe, in simulation and reality.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Branched from](https://img.shields.io/badge/branched_from-awesome--multimodal--agentic--coding-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding) [![Works](https://img.shields.io/badge/works-366-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--27-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Branched from](https://img.shields.io/badge/branched_from-awesome--multimodal--agentic--coding-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding) [![Works](https://img.shields.io/badge/works-367-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--27-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -41,7 +41,7 @@ Each row is a step of the loop above. Section numbers are the upstream ones; the
 
 | Step | Sections |
 |---|---|
-| **1 · ACT**<br>Drive robots with code | **[3.1 Embodied harnesses](#s3-1)** (98)<br>[Tools and control interfaces](#s3-1-tools-interfaces) (41) · [Delegation to existing policies](#s3-1-delegation) (11) · [Agent capability evaluation](#s3-1-capability-eval) (32) · [Skills, bridges and runtime resources](#s3-1-skills-runtime) (14)<br>**[2.6 Action models × robot manipulation](#s2-6)** (15) <sub>⤴ cherry-picked from Stage 2</sub> |
+| **1 · ACT**<br>Drive robots with code | **[3.1 Embodied harnesses](#s3-1)** (99)<br>[Tools and control interfaces](#s3-1-tools-interfaces) (41) · [Delegation to existing policies](#s3-1-delegation) (11) · [Agent capability evaluation](#s3-1-capability-eval) (32) · [Skills, bridges and runtime resources](#s3-1-skills-runtime) (15)<br>**[2.6 Action models × robot manipulation](#s2-6)** (15) <sub>⤴ cherry-picked from Stage 2</sub> |
 | **2 · BUILD**<br>Build worlds to practise in | **[3.2 Simulator construction](#s3-2)** (70)<br>**[3.3 Simulator quality evaluation](#s3-3)** (29) |
 | **3 · LEARN**<br>Improve from experience | **[3.4 Data](#s3-4)** (15)<br>[Real](#s3-4-real-data) (4) · [Sim](#s3-4-sim-data) (7) · [Real+Sim](#s3-4-mixed-data) (4)<br>**[3.5 Training and capability improvement](#s3-5)** (88)<br>[Program and policy development](#s3-5-program-policy) (26) · [Experience, memory and skill learning](#s3-5-experience-skill) (51) · [Post-training the coding agent](#s3-5-post-training) (11) |
 | **4 · APPLY**<br>Reach the physical world | **[3.6 Physical applications and experiments](#s3-6)** (51)<br>[Robot interaction and manipulation](#s3-6-robot-interaction) (13) · [Scientific experiments (AI4Science)](#s3-6-experiments) (27) · [Physical design, fabrication and validation](#s3-6-physical-design) (11) |
@@ -70,9 +70,9 @@ gitGraph
   commit id: "3.4 Data"
   commit id: "3.5 Training and capability improvement"
   commit id: "3.6 Physical applications and experiments"
-  commit id: "cherry-pick 2.6 Action models × robot manipulation" type: HIGHLIGHT tag: "366 works here"
+  commit id: "cherry-pick 2.6 Action models × robot manipulation" type: HIGHLIGHT tag: "367 works here"
   checkout main
-  commit id: "…" tag: "702 works upstream"
+  commit id: "…" tag: "703 works upstream"
 ```
 
 <a id="stage-3"></a>
@@ -645,6 +645,11 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 
 - <a id="paper-robouse"></a>**[Robo Use](https://github.com/benchflow-ai/robouse)**
   > Exposes robot simulation tasks, actions and episode results through a shared CLI and service interface.
+
+<!-- mmac-record: {"id": "resource:roboagentlab", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
+
+- <a id="paper-resource-roboagentlab"></a>**[RoboAgentLab](https://roboagentlab.github.io/)** [[Code]](https://github.com/RoboAgentLab/RoboAgentLab) [[Documentation]](https://roboagentlab.github.io/docs/quickstart.html) [[Dataset]](https://huggingface.co/datasets/RoboAgentLab/pi-embodied-policy-interactions) [[Dataset]](https://huggingface.co/datasets/RoboAgentLab/pi-embodied-rd-interactions)
+  > Connects coding agents to robot services, visual observations and policy tools through shared Python interfaces, skills and persistent experiment sessions.
 
 <!-- mmac-record: {"id": "robotics-agent-skills", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
 

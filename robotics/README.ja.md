@@ -11,7 +11,7 @@
 
 ロボットのためのマルチモーダル・コーディングエージェント：コードを書いて行動し、練習用のシミュレータを構築し、観察した結果からシミュレーションと現実の中で改善していきます。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Branched from](https://img.shields.io/badge/branched_from-awesome--multimodal--agentic--coding-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding) [![Works](https://img.shields.io/badge/works-366-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--27-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Branched from](https://img.shields.io/badge/branched_from-awesome--multimodal--agentic--coding-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding) [![Works](https://img.shields.io/badge/works-367-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--27-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語**
 
@@ -44,7 +44,7 @@ Switched to a new branch 'robotics'
 
 | ステップ | 節 |
 |---|---|
-| **1 · 行動**<br>コードでロボットを動かす | **[3.1 身体性ハーネス](#s3-1)** (98)<br>[ツールと制御インターフェース](#s3-1-tools-interfaces) (41) · [既存ポリシーへの委任](#s3-1-delegation) (11) · [エージェント能力の評価](#s3-1-capability-eval) (32) · [スキル・ブリッジ・ランタイム資源](#s3-1-skills-runtime) (14)<br>**[2.6 行動モデル × ロボット操作](#s2-6)** (15) <sub>⤴ Stage 2 から cherry-pick</sub> |
+| **1 · 行動**<br>コードでロボットを動かす | **[3.1 身体性ハーネス](#s3-1)** (99)<br>[ツールと制御インターフェース](#s3-1-tools-interfaces) (41) · [既存ポリシーへの委任](#s3-1-delegation) (11) · [エージェント能力の評価](#s3-1-capability-eval) (32) · [スキル・ブリッジ・ランタイム資源](#s3-1-skills-runtime) (15)<br>**[2.6 行動モデル × ロボット操作](#s2-6)** (15) <sub>⤴ Stage 2 から cherry-pick</sub> |
 | **2 · 構築**<br>練習用の世界を構築する | **[3.2 シミュレータ構築](#s3-2)** (70)<br>**[3.3 シミュレータ品質評価](#s3-3)** (29) |
 | **3 · 学習**<br>経験から上達する | **[3.4 データ](#s3-4)** (15)<br>[Real](#s3-4-real-data) (4) · [Sim](#s3-4-sim-data) (7) · [Real+Sim](#s3-4-mixed-data) (4)<br>**[3.5 学習と能力向上](#s3-5)** (88)<br>[プログラムとポリシーの開発](#s3-5-program-policy) (26) · [経験・記憶・スキル学習](#s3-5-experience-skill) (51) · [コーディングエージェントの事後学習](#s3-5-post-training) (11) |
 | **4 · 応用**<br>物理世界で使う | **[3.6 物理応用と実験](#s3-6)** (51)<br>[ロボットのインタラクションと操作](#s3-6-robot-interaction) (13) · [科学実験（AI4Science）](#s3-6-experiments) (27) · [物理設計・製造・検証](#s3-6-physical-design) (11) |
@@ -73,9 +73,9 @@ gitGraph
   commit id: "3.4 データ"
   commit id: "3.5 学習と能力向上"
   commit id: "3.6 物理応用と実験"
-  commit id: "cherry-pick 2.6 行動モデル × ロボット操作" type: HIGHLIGHT tag: "このブランチ 366 件"
+  commit id: "cherry-pick 2.6 行動モデル × ロボット操作" type: HIGHLIGHT tag: "このブランチ 367 件"
   checkout main
-  commit id: "…" tag: "上流 702 件"
+  commit id: "…" tag: "上流 703 件"
 ```
 
 <a id="stage-3"></a>
@@ -648,6 +648,11 @@ gitGraph
 
 - <a id="paper-robouse"></a>**[Robo Use](https://github.com/benchflow-ai/robouse)**
   > 統一 CLI とエピソードサービスにより、コーディングエージェントがロボットの仮想タスクへ接続し、行動を提出して結果を読めるようにする。
+
+<!-- mmac-record: {"id": "resource:roboagentlab", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
+
+- <a id="paper-resource-roboagentlab"></a>**[RoboAgentLab](https://roboagentlab.github.io/)** [[コード]](https://github.com/RoboAgentLab/RoboAgentLab) [[ドキュメント]](https://roboagentlab.github.io/docs/quickstart.html) [[データセット]](https://huggingface.co/datasets/RoboAgentLab/pi-embodied-policy-interactions) [[データセット]](https://huggingface.co/datasets/RoboAgentLab/pi-embodied-rd-interactions)
+  > 共通の Python インターフェース、スキル、永続セッションを通じ、コーディングエージェントをロボットサービス、視覚観測、方策ツールへ接続する。
 
 <!-- mmac-record: {"id": "robotics-agent-skills", "scope": "Resource", "primary": "3.1", "stage": 3, "type": "resource"} -->
 

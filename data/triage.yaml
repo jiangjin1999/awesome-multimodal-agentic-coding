@@ -215,7 +215,22 @@ runs:
   note: Added X-Harness (3.1), RoboLab (3.2), and agentic recovery RL (3.5); excluded one text-agent position paper with
     scope rationale. Queued 81 leads. Partial retrieval, with November 27 announcement gaps, historical revision follow-up,
     and unread official details retained privately. X-Harness and RoboLab may inform Stage 3 guides.
+- date: '2026-11-27'
+  trigger: report
+  covered: Maintainer screenshot naming Shanhai Tuzhi, RoboAgentLab and Toward Agentic Robotics. Matched titles, aliases and official URLs against the catalog and triage on current main. Read RoboAgentLab's official website, quickstart, embodied-package README, implementation tree and both interaction dataset cards.
+  note: Added RoboAgentLab as a resource in 3.1 skills-runtime, with its two interaction datasets linked as sources. Its framework paper is forthcoming. Toward Agentic Robotics (2611.34778) was already cataloged in 3.1 delegation, with a 3.5 reference. Shanhai Tuzhi requires its original post or official URL for identification and remains in the private report. Prior RoboAgentLab discovery history is unknown. Its verified GitHub and Hugging Face owners join official-source discovery.
 candidates:
+- id: resource:roboagentlab
+  title: RoboAgentLab
+  url: https://roboagentlab.github.io/
+  found: '2026-11-27'
+  via: maintainer screenshot report and official platform documentation
+  decision: added
+  decided: '2026-11-27'
+  precedent:
+  - kinex
+  - rosclaw
+  note: Reusable pi-based robotics extensions, callable services, shared Python interfaces, skills and experiment sessions. The accompanying framework paper is forthcoming. Linked datasets are interaction logs, whose media and outcome completeness vary by record.
 - id: '2610.35817'
   title: 'Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics'
   url: https://arxiv.org/abs/2610.35817

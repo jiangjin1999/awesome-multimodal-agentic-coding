@@ -219,6 +219,15 @@ runs:
   trigger: report
   covered: Maintainer screenshot naming Shanhai Tuzhi, RoboAgentLab and Toward Agentic Robotics. Matched titles, aliases and official URLs against the catalog and triage on current main. Read RoboAgentLab's official website, quickstart, embodied-package README, implementation tree and both interaction dataset cards.
   note: Added RoboAgentLab as a resource in 3.1 skills-runtime, with its two interaction datasets linked as sources. Its framework paper is forthcoming. Toward Agentic Robotics (2611.34778) was already cataloged in 3.1 delegation, with a 3.5 reference. Shanhai Tuzhi requires its original post or official URL for identification and remains in the private report. Prior RoboAgentLab discovery history is unknown. Its verified GitHub and Hugging Face owners join official-source discovery.
+- date: '2026-11-28'
+  trigger: sweep
+  covered: Read three oldest pending candidates and Real2Worlds2Real. Checked November 14–28 across nine arXiv categories,
+    18 announcement and recent listing pages, all 160 titles in the latest visible cs.RO batch, 24 searches, HF Daily
+    Papers, the public suggestions queue, and official project and repository watchlists. Focused on robot programming
+    and sim-to-real transfer across methods, evaluations, and datasets.
+  note: 'Added Real2Worlds2Real (3.2) and EmbodiedBench (3.1), SAM 3 as a capability resource (2.5), and Astranomy as
+    background reading (3.1). Queued 12 cited works. Retrieval partial: announcement-batch visibility, deeper primary-source
+    review and historical backfill remain open. Real2Worlds2Real may inform a Stage 3 world construction guide.'
 candidates:
 - id: resource:roboagentlab
   title: RoboAgentLab
@@ -450,22 +459,39 @@ candidates:
   url: https://arxiv.org/abs/2511.16719
   found: '2026-11-15'
   via: cited by 2610.35817 [33]
-  decision: pending
-  note: A perception model that robot harnesses call as a tool. Possibly a 2.5 Resource.
+  decision: added
+  note: A standalone perception capability with a documented concept input, masks and video tracking IDs, and a verified
+    implementation.
+  decided: '2026-11-28'
+  precedent:
+  - res:gen4p
+  - res:mjev-spatial
 - id: '2502.09560'
   title: 'EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents'
   url: https://arxiv.org/abs/2502.09560
   found: '2026-11-15'
   via: cited by 2610.35817 [82]
-  decision: pending
-  note: MLLM embodied-agent benchmark. Compare 3.1 capability-eval, and check whether agents act through code or tools.
+  decision: added
+  note: A simulation benchmark with a runtime observation–action loop that uses predefined action spaces. Actual benchmark
+    task instances are provided separately.
+  decided: '2026-11-28'
+  precedent:
+  - '2608.17129'
+  - '2609.39507'
+  - '2610.27039'
 - id: web:astranomy
   title: 'Astranomy: An Empirical Study of GPT-6 Astra as a Native Robot Policy'
   url: https://research.nvidia.com/labs/srl/projects/astranomy/
   found: '2026-11-15'
   via: cited by 2610.35817 [2]
-  decision: pending
-  note: NVIDIA project page. Check for a paper, then for evaluation scale.
+  decision: added
+  note: Official empirical project article with implemented policy adapters and detailed simulation results. The policy
+    configurations emit actions or edit trajectories.
+  decided: '2026-11-28'
+  precedent:
+  - '2609.24170'
+  - '2608.17129'
+  - reading:kanishka-rao-google-gemini-4-argon-for-robotics
 - id: web:robocurve-stationerybench
   title: GPT-6 Astra vs MolmoAct2 on bimanual robotic manipulation (StationeryBench)
   url: https://openai.robocurve.org/stationerybench/
@@ -2759,9 +2785,14 @@ candidates:
   url: https://arxiv.org/abs/2611.31098
   found: '2026-11-25'
   via: cs.RO November 24 announcement
-  decision: pending
-  note: Discovery title or abstract retained. Read the original work and verify the contribution, execution feedback
-    and public release before placing it.
+  decision: added
+  note: Both the generated scene and executable control programs are revised from their own simulation results. The primary
+    contribution is Real2Sim2Real world construction; policy development supplies a supported cross-reference.
+  decided: '2026-11-28'
+  precedent:
+  - '2610.10479'
+  - '2609.37089'
+  - '2611.31002'
 - id: '2611.31115'
   title: 'RUIBench: What Makes a Good Robot-Use Interface?'
   url: https://arxiv.org/abs/2611.31115
@@ -4142,3 +4173,92 @@ candidates:
   decision: pending
   note: The cited work studies joint choices of model, environment and harness. Match official links and scope before
     decision.
+- id: '2609.24563'
+  title: 'ARSTAG: An Agentic Real2Sim2Real System for Task-Specific Robot Data Generation'
+  url: https://arxiv.org/abs/2609.24563
+  found: '2026-11-28'
+  via: Real2Worlds2Real cited work; official arXiv abstract checked
+  decision: pending
+  note: Check the original mechanism and available artifacts for digital–physical transfer, fidelity, or policy and data
+    generation.
+- id: '2608.29078'
+  title: 'DREAM: Deployment-Time Demonstration Generation via Real-to-Sim for Scalable Policy Adaptation'
+  url: https://arxiv.org/abs/2608.29078
+  found: '2026-11-28'
+  via: Real2Worlds2Real cited work; official arXiv abstract checked
+  decision: pending
+  note: Check the original mechanism and available artifacts for digital–physical transfer, fidelity, or policy and data
+    generation.
+- id: '2608.05948'
+  title: 'GAUGE: A Measurement-Grounded Benchmark for Physical Fidelity in Simulation Engines and Video World Models'
+  url: https://arxiv.org/abs/2608.05948
+  found: '2026-11-28'
+  via: Real2Worlds2Real cited work; official arXiv abstract checked
+  decision: pending
+  note: Check the original mechanism and available artifacts for digital–physical transfer, fidelity, or policy and data
+    generation.
+- id: '2609.36171'
+  title: 'SkillWeaver: Agentic Exploration over Neural Interaction Skills for Scalable Robot Data Generation'
+  url: https://arxiv.org/abs/2609.36171
+  found: '2026-11-28'
+  via: Real2Worlds2Real cited work; official arXiv abstract checked
+  decision: pending
+  note: Check the original mechanism and available artifacts for digital–physical transfer, fidelity, or policy and data
+    generation.
+- id: '2607.09648'
+  title: 'B-spline Policy: Accelerating Manipulation Policies via B-spline Action Representations'
+  url: https://arxiv.org/abs/2607.09648
+  found: '2026-11-28'
+  via: Real2Worlds2Real cited work; official arXiv abstract checked
+  decision: pending
+  note: Check the original mechanism and available artifacts for digital–physical transfer, fidelity, or policy and data
+    generation.
+- id: '2611.34232'
+  title: 'OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms'
+  url: https://arxiv.org/abs/2611.34232
+  found: '2026-11-28'
+  via: HF Daily Papers November 27
+  decision: pending
+  note: Discovery lead. Verify its official title, full contribution, and released artifacts before routing.
+- id: '2611.34813'
+  title: 'Solve Vision with Code: Coding Agents Are Stronger Visual Reasoners Than Video Models'
+  url: https://arxiv.org/abs/2611.34813
+  found: '2026-11-28'
+  via: HF Daily Papers November 27
+  decision: pending
+  note: Discovery lead. Verify its official title, full contribution, and released artifacts before routing.
+- id: '2611.34457'
+  title: 'ProxyGenBench: Benchmarking Proxy-Guided Video Generation'
+  url: https://arxiv.org/abs/2611.34457
+  found: '2026-11-28'
+  via: HF Daily Papers November 27
+  decision: pending
+  note: Discovery lead. Verify its official title, full contribution, and released artifacts before routing.
+- id: '2611.34290'
+  title: 'StateWeaver: Multi-Agent Coordination of Story-State Transitions for Long-Horizon Video Generation'
+  url: https://arxiv.org/abs/2611.34290
+  found: '2026-11-28'
+  via: HF Daily Papers November 27
+  decision: pending
+  note: Discovery lead. Verify its official title, full contribution, and released artifacts before routing.
+- id: '2611.34693'
+  title: 'ShowNow: Fine-Grained Speculative Streaming for Responsive World Models'
+  url: https://arxiv.org/abs/2611.34693
+  found: '2026-11-28'
+  via: HF Daily Papers November 27
+  decision: pending
+  note: Discovery lead. Verify its official title, full contribution, and released artifacts before routing.
+- id: '2611.33885'
+  title: 'LayoutRecall: Preserving Appearance in Multi-Round 3D Layout-Controlled Image Editing'
+  url: https://arxiv.org/abs/2611.33885
+  found: '2026-11-28'
+  via: HF Daily Papers November 27
+  decision: pending
+  note: Discovery lead. Verify its official title, full contribution, and released artifacts before routing.
+- id: '2611.31516'
+  title: 'InitFree-SfM: When Initialization-Free Bundle Adjustment meets Learned Structure-from-Motion'
+  url: https://arxiv.org/abs/2611.31516
+  found: '2026-11-28'
+  via: HF Daily Papers November 27
+  decision: pending
+  note: Discovery lead. Verify its official title, full contribution, and released artifacts before routing.

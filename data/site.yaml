@@ -9,7 +9,7 @@ languages:
     file: README.ja.md
     label: 日本語
 repo: jiangjin1999/awesome-multimodal-agentic-coding
-updated: '2026-11-27'
+updated: '2026-11-28'
 hero:
   light: assets/hero/hero-light.png
   dark: assets/hero/hero-dark.png
@@ -1473,7 +1473,7 @@ stage_chart:
 stage_chart_full:
   text:
     title: {en: 'Every Section 3.2 work, step by step', zh: 3.2 全部工作逐步对照}
-    alt: {en: 'Chart of all 68 works in Section 3.2 and two reference benchmarks: for each of the nine build steps, plus verification & revision and variant expansion, whether the Agent or VLM does it, a specialised tool does it, it is given, or it is not involved. Agents take most of task planning (55 works), layout (43) and verification & revision (49), while perception goes to specialised models (32). 46 works run a physics engine, 10 only build a scene, 9 stop at sim-ready and 3 do not name one.', zh: 3.2 全部 68 项和两个参照基准的逐步对照：九个构建步骤加上检查与修订、变体扩增，每一步是 Agent 或 VLM 自己做、交给专用工具、事先给定，还是不涉及。任务规划（55 项）、布局对齐（43 项）和检查与修订（49 项）大多由 Agent 做，感知测量多交给专用模型（32 项）。46 项运行了物理引擎，10 项只建场景，9 项只到仿真就绪，3 项没写明引擎。}
+    alt: {en: 'Chart of all 69 works in Section 3.2 and two reference benchmarks: for each of the nine build steps, plus verification & revision and variant expansion, whether the Agent or VLM does it, a specialised tool does it, it is given, or it is not involved. Agents take most of task planning (56 works), layout (44) and verification & revision (50), while perception goes to specialised models (33). 47 works run a physics engine, 10 only build a scene, 9 stop at sim-ready and 3 do not name one.', zh: 3.2 全部 69 项和两个参照基准的逐步对照：九个构建步骤加上检查与修订、变体扩增，每一步是 Agent 或 VLM 自己做、交给专用工具、事先给定，还是不涉及。任务规划（56 项）、布局对齐（44 项）和检查与修订（50 项）大多由 Agent 做，感知测量多交给专用模型（33 项）。47 项运行了物理引擎，10 项只建场景，9 项只到仿真就绪，3 项没写明引擎。}
     columns:
     - {en: Task planning, zh: 任务规划}
     - {en: Percep-tion, zh: 感知测量}
@@ -1519,6 +1519,11 @@ stage_chart_full:
       tags: [bench]
   - title: {en: Agentic End-to-End · one Agent does it all, zh: Agentic End-to-End · 一个 Agent 端到端}
     rows:
+    - name: Real2Worlds2Real
+      id: '2611.31098'
+      tier: F
+      steps: atttattaaaa
+      how: {en: 'Checks renders and physics rollouts, revises scene assets and policies, and builds variants', zh: 对照渲染和物理试跑，修订场景资产及策略并扩增变体}
     - name: SimuLean
       id: '2611.10602'
       tier: F

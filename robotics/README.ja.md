@@ -11,7 +11,7 @@
 
 ロボットのためのマルチモーダル・コーディングエージェント：コードを書いて行動し、練習用のシミュレータを構築し、観察した結果からシミュレーションと現実の中で改善していきます。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Branched from](https://img.shields.io/badge/branched_from-awesome--multimodal--agentic--coding-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding) [![Works](https://img.shields.io/badge/works-367-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--27-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Branched from](https://img.shields.io/badge/branched_from-awesome--multimodal--agentic--coding-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding) [![Works](https://img.shields.io/badge/works-370-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--28-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語**
 
@@ -44,8 +44,8 @@ Switched to a new branch 'robotics'
 
 | ステップ | 節 |
 |---|---|
-| **1 · 行動**<br>コードでロボットを動かす | **[3.1 身体性ハーネス](#s3-1)** (99)<br>[ツールと制御インターフェース](#s3-1-tools-interfaces) (41) · [既存ポリシーへの委任](#s3-1-delegation) (11) · [エージェント能力の評価](#s3-1-capability-eval) (32) · [スキル・ブリッジ・ランタイム資源](#s3-1-skills-runtime) (15)<br>**[2.6 行動モデル × ロボット操作](#s2-6)** (15) <sub>⤴ Stage 2 から cherry-pick</sub> |
-| **2 · 構築**<br>練習用の世界を構築する | **[3.2 シミュレータ構築](#s3-2)** (70)<br>**[3.3 シミュレータ品質評価](#s3-3)** (29) |
+| **1 · 行動**<br>コードでロボットを動かす | **[3.1 身体性ハーネス](#s3-1)** (101)<br>[ツールと制御インターフェース](#s3-1-tools-interfaces) (41) · [既存ポリシーへの委任](#s3-1-delegation) (11) · [エージェント能力の評価](#s3-1-capability-eval) (34) · [スキル・ブリッジ・ランタイム資源](#s3-1-skills-runtime) (15)<br>**[2.6 行動モデル × ロボット操作](#s2-6)** (15) <sub>⤴ Stage 2 から cherry-pick</sub> |
+| **2 · 構築**<br>練習用の世界を構築する | **[3.2 シミュレータ構築](#s3-2)** (71)<br>**[3.3 シミュレータ品質評価](#s3-3)** (29) |
 | **3 · 学習**<br>経験から上達する | **[3.4 データ](#s3-4)** (15)<br>[Real](#s3-4-real-data) (4) · [Sim](#s3-4-sim-data) (7) · [Real+Sim](#s3-4-mixed-data) (4)<br>**[3.5 学習と能力向上](#s3-5)** (88)<br>[プログラムとポリシーの開発](#s3-5-program-policy) (26) · [経験・記憶・スキル学習](#s3-5-experience-skill) (51) · [コーディングエージェントの事後学習](#s3-5-post-training) (11) |
 | **4 · 応用**<br>物理世界で使う | **[3.6 物理応用と実験](#s3-6)** (51)<br>[ロボットのインタラクションと操作](#s3-6-robot-interaction) (13) · [科学実験（AI4Science）](#s3-6-experiments) (27) · [物理設計・製造・検証](#s3-6-physical-design) (11) |
 
@@ -73,9 +73,9 @@ gitGraph
   commit id: "3.4 データ"
   commit id: "3.5 学習と能力向上"
   commit id: "3.6 物理応用と実験"
-  commit id: "cherry-pick 2.6 行動モデル × ロボット操作" type: HIGHLIGHT tag: "このブランチ 367 件"
+  commit id: "cherry-pick 2.6 行動モデル × ロボット操作" type: HIGHLIGHT tag: "このブランチ 370 件"
   checkout main
-  commit id: "…" tag: "上流 703 件"
+  commit id: "…" tag: "上流 707 件"
 ```
 
 <a id="stage-3"></a>
@@ -448,6 +448,11 @@ gitGraph
   > 統一予算と元タスクのインターフェースで先端 VLM エージェントのロボット汎用性を比較し、プログラムを動かす修復と物理タスクの達成を区別する。<br>
   > 🖥️ **シミュレーション** MuJoCo + SAPIEN + PyBullet + CoppeliaSim + Isaac Sim
 
+<!-- mmac-record: {"id": "web:astranomy", "scope": "Reading", "primary": "3.1", "stage": 3, "type": "reading"} -->
+
+- <a id="paper-web-astranomy"></a>`2026.10` **[Astranomy: An Empirical Study of GPT-6 Astra as a Native Robot Policy](https://research.nvidia.com/labs/srl/projects/astranomy/)** [[コード]](https://github.com/NVlabs/RoboLab/tree/main/policies/ai_native)
+  > RoboLab シミュレーションで、直接の行動予測、履歴を保持するエージェント制御、行動モデルのオーケストレーションを比較する。
+
 <!-- mmac-record: {"id": "2610.07594", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-07594"></a>`2026.10` **[BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation](https://arxiv.org/abs/2610.07594)** [[コード]](https://github.com/swirl-uk/BiGym2)
@@ -584,6 +589,12 @@ gitGraph
   > 物体、配置、指示、タスク目標、環境に変化を加え、ロボット方策の汎化を検証する。<br>
   > 🖥️ **シミュレーション** MuJoCo
 
+<!-- mmac-record: {"id": "2502.09560", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2502-09560"></a>`2025.02` **[EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents](https://arxiv.org/abs/2502.09560)** [[プロジェクトページ]](https://embodiedbench.github.io/) [[コード]](https://github.com/EmbodiedBench/EmbodiedBench) [[データセット]](https://huggingface.co/datasets/EmbodiedBench/EB-Manipulation)
+  > 画像、行動履歴、環境からのフィードバックを使って移動・操作の行動を選ぶ身体性エージェントを評価する。<br>
+  > 🖥️ **シミュレーション** AI2-THOR + Habitat + CoppeliaSim（Franka Panda）
+
 <!-- mmac-record: {"id": "2402.14623", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2402-14623"></a>`2024.02` **[RoboScript: Code Generation for Free-Form Manipulation Tasks across Real and Simulation](https://arxiv.org/abs/2402.14623)**
@@ -719,6 +730,12 @@ gitGraph
 - <a id="paper-2611-02691"></a>`2026.11` **[Closing the Dynamics Gap through Self-Directed Robotic Interaction](https://arxiv.org/abs/2611.02691)** [[プロジェクトページ]](https://cue-dynamics.github.io/)
   > 自律的な打撃探索から力学的な証拠を得て、Agent が軌道計測の構築、シミュレーションパラメーターの推定、次の実験の選択を行う。<br>
   > 🖥️ **シミュレーション** MuJoCo
+
+<!-- mmac-record: {"id": "2611.31098", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-31098"></a>`2026.11` **[Real2Worlds2Real: Scaling Self-Improving Agentic Real2Sim2Real for Robot Manipulation](https://arxiv.org/abs/2611.31098)** [[プロジェクトページ]](https://real2worlds2real.github.io/) [[コード]](https://github.com/real2worlds2real/real2worlds2real)
+  > レンダリングとシミュレーションからのフィードバックでデジタルツインとロボット制御プログラムを修正し、実機で転移を評価する。<br>
+  > 🖥️ **シミュレーション** PhysX · 🦾 **実機** Dexmate
 
 <!-- mmac-record: {"id": "2611.31002", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -1439,7 +1456,7 @@ P0 は前提となる関門で、合否だけを判定します。ほかの各�
   > 一人称の人の動画 1 本から、エージェントが物体の性質に基づいてシミュレーションでシーンを再構成し、多指ハンドの軌跡を最適化し、物体とロボットの状態を変えてデータを生成する。ツールライブラリは使うほど拡張される。映像：視点を変えたシミュレーションのレンダリングを、実写に近づけるよう再テクスチャ。軌跡：多指ハンドと腕の動作。<br>
   > 🖥️ **シミュレーション** Blender + MuJoCo + Isaac Sim（Sharpa Wave） · 🦾 **実機** I2RT YAM、Sharpa Wave
 
-*関連:* [Contact Harness](#paper-2611-29377) · [RoboUniverse-10K](#paper-2611-31002) · [MG-VQA](#paper-2608-17129)
+*関連:* [Contact Harness](#paper-2611-29377) · [RoboUniverse-10K](#paper-2611-31002) · [MG-VQA](#paper-2608-17129) · [EmbodiedBench](#paper-2502-09560)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
@@ -1977,7 +1994,7 @@ P0 は前提となる関門で、合否だけを判定します。ほかの各�
   > ロボットの行動プログラムを生成するマルチモーダルモデルを訓練する。<br>
   > 🖥️ **シミュレーション** Gazebo（Franka Panda、UR5） · 🦾 **実機** Franka Panda、UR5
 
-*関連:* [BlenderFORGE](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/blob/main/README.ja.md#paper-2611-10768) · [Toward Agentic Robotics](#paper-2611-34778)
+*関連:* [BlenderFORGE](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/blob/main/README.ja.md#paper-2611-10768) · [Real2Worlds2Real](#paper-2611-31098) · [Toward Agentic Robotics](#paper-2611-34778)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
@@ -2445,4 +2462,4 @@ P0 は前提となる関門で、合否だけを判定します。ほかの各�
 
 Liangcai Gao、Wenshan Wu、Haolin Yang、Yu Chen の皆様に感謝します。
 
-<p align="center"><sub>⎇ 同期元 <a href="https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/tree/main"><code>upstream@main</code></a> · 2026-11-27</sub></p>
+<p align="center"><sub>⎇ 同期元 <a href="https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/tree/main"><code>upstream@main</code></a> · 2026-11-28</sub></p>

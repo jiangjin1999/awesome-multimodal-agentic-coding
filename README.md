@@ -13,7 +13,7 @@
 
 A research map of multimodal agents that write code, observe what it does, and improve — from the digital world to the physical world.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-703-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--27-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![Robotics branch](https://img.shields.io/badge/branch-robotics-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-707-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--28-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![Robotics branch](https://img.shields.io/badge/branch-robotics-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **English** · [简体中文](./README.zh-CN.md) · [日本語](./README.ja.md)
 
@@ -54,11 +54,11 @@ From a coding perspective, we see three stages in multimodal agents' evolution f
   - [2.2 Video generation models × video creation and editing](#s2-2) (12)
   - [2.3 3D generation models × 3D assets and scenes](#s2-3) (11)
   - [2.4 Generative world models × interactive environments](#s2-4) (13)
-  - [2.5 Perception models × scene understanding and reconstruction](#s2-5) (6)
+  - [2.5 Perception models × scene understanding and reconstruction](#s2-5) (7)
   - [2.6 Action models × robot manipulation](#s2-6) (15)
 - [Stage 3 · Bridging Digital & Physical Worlds](#stage-3)
-  - [3.1 Embodied harnesses](#s3-1) (99)
-  - [3.2 Simulator construction](#s3-2) (70)
+  - [3.1 Embodied harnesses](#s3-1) (101)
+  - [3.2 Simulator construction](#s3-2) (71)
   - [3.3 Simulator quality evaluation](#s3-3) (29)
   - [3.4 Data](#s3-4) (15)
   - [3.5 Training and capability improvement](#s3-5) (88)
@@ -1926,6 +1926,11 @@ The agent **calls other models through code** — image, video and world generat
 
 #### Callable models
 
+<!-- mmac-record: {"id": "2511.16719", "scope": "Resource", "primary": "2.5", "stage": 2, "type": "resource"} -->
+
+- <a id="paper-2511-16719"></a>`2025.11` **[SAM 3: Segment Anything with Concepts](https://arxiv.org/abs/2511.16719)** [[Code]](https://github.com/facebookresearch/sam3) [[Model]](https://huggingface.co/facebook/sam3)
+  > Segments all instances of a concept from text or image examples and tracks them across video frames.
+
 <!-- mmac-record: {"id": "res:gen4p", "scope": "Resource", "primary": "2.5", "stage": 2, "type": "resource"} -->
 
 - <a id="paper-res-gen4p"></a>**[Gen4P](https://arxiv.org/abs/2610.22371)** [[Project page]](https://gen4p.github.io/) [[Code]](https://github.com/yitongx/Gen4P)
@@ -2402,6 +2407,11 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
   > Compares frontier VLM robot agents under shared budgets and source-task interfaces.<br>
   > 🖥️ **Sim** MuJoCo + SAPIEN + PyBullet + CoppeliaSim + Isaac Sim
 
+<!-- mmac-record: {"id": "web:astranomy", "scope": "Reading", "primary": "3.1", "stage": 3, "type": "reading"} -->
+
+- <a id="paper-web-astranomy"></a>`2026.10` **[Astranomy: An Empirical Study of GPT-6 Astra as a Native Robot Policy](https://research.nvidia.com/labs/srl/projects/astranomy/)** [[Code]](https://github.com/NVlabs/RoboLab/tree/main/policies/ai_native)
+  > Compares direct action prediction, persistent agent control, and action-model orchestration in RoboLab simulation.
+
 <!-- mmac-record: {"id": "2610.07594", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-07594"></a>`2026.10` **[BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation](https://arxiv.org/abs/2610.07594)** [[Code]](https://github.com/swirl-uk/BiGym2)
@@ -2537,6 +2547,12 @@ The loop reaches simulation and reality: the agent **acts and observes in the re
 - <a id="paper-2510-03827"></a>`2025.10` **[LIBERO-PRO: Towards Robust and Fair Evaluation of Vision-Language-Action Models Beyond Memorization](https://arxiv.org/abs/2510.03827)** [[Code]](https://github.com/Zxy-MLlab/LIBERO-PRO)
   > Tests robot-policy generalization under object, placement, language, task-goal, and environment shifts.<br>
   > 🖥️ **Sim** MuJoCo
+
+<!-- mmac-record: {"id": "2502.09560", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2502-09560"></a>`2025.02` **[EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents](https://arxiv.org/abs/2502.09560)** [[Project page]](https://embodiedbench.github.io/) [[Code]](https://github.com/EmbodiedBench/EmbodiedBench) [[Dataset]](https://huggingface.co/datasets/EmbodiedBench/EB-Manipulation)
+  > Benchmarks embodied agents that choose navigation and manipulation actions from images, action history, and environment feedback.<br>
+  > 🖥️ **Sim** AI2-THOR + Habitat + CoppeliaSim (Franka Panda)
 
 <!-- mmac-record: {"id": "2402.14623", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
@@ -2676,6 +2692,12 @@ All 68 works, step by step, including verification & revision and variant expans
 - <a id="paper-2611-02691"></a>`2026.11` **[Closing the Dynamics Gap through Self-Directed Robotic Interaction](https://arxiv.org/abs/2611.02691)** [[Project page]](https://cue-dynamics.github.io/)
   > An agent designs physical probes, measures their outcomes and calibrates an executable model.<br>
   > 🖥️ **Sim** MuJoCo
+
+<!-- mmac-record: {"id": "2611.31098", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-31098"></a>`2026.11` **[Real2Worlds2Real: Scaling Self-Improving Agentic Real2Sim2Real for Robot Manipulation](https://arxiv.org/abs/2611.31098)** [[Project page]](https://real2worlds2real.github.io/) [[Code]](https://github.com/real2worlds2real/real2worlds2real)
+  > Refines digital twins and robot control programs using rendering and simulation feedback, then evaluates transfer on a physical robot.<br>
+  > 🖥️ **Sim** PhysX · 🦾 **Real** Dexmate
 
 <!-- mmac-record: {"id": "2611.31002", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -3401,7 +3423,7 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
   > Starting from one first-person human video, an agent rebuilds the scene in simulation from object properties, optimizes a dexterous-hand trajectory, and varies object and robot states to generate data, growing its tool library as it goes. Frames: simulation renders from varied viewpoints, retextured to look real; trajectory: dexterous hand and arm actions.<br>
   > 🖥️ **Sim** Blender + MuJoCo + Isaac Sim (Sharpa Wave) · 🦾 **Real** I2RT YAM, Sharpa Wave
 
-*See also:* [Contact Harness](#paper-2611-29377) · [RoboUniverse-10K](#paper-2611-31002) · [MG-VQA](#paper-2608-17129)
+*See also:* [Contact Harness](#paper-2611-29377) · [RoboUniverse-10K](#paper-2611-31002) · [MG-VQA](#paper-2608-17129) · [EmbodiedBench](#paper-2502-09560)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20Back%20to%20contents-30363d?style=flat-square" alt="↑ Back to contents" height="24"></a></p>
 
@@ -3939,7 +3961,7 @@ Demonstrations = frames + robot actions. ↻ marks a closed loop: the generator 
   > Trains a multimodal model to write robot behaviors.<br>
   > 🖥️ **Sim** Gazebo (Franka Panda, UR5) · 🦾 **Real** Franka Panda, UR5
 
-*See also:* [BlenderFORGE](#paper-2611-10768) · [Toward Agentic Robotics](#paper-2611-34778)
+*See also:* [BlenderFORGE](#paper-2611-10768) · [Real2Worlds2Real](#paper-2611-31098) · [Toward Agentic Robotics](#paper-2611-34778)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20Back%20to%20contents-30363d?style=flat-square" alt="↑ Back to contents" height="24"></a></p>
 

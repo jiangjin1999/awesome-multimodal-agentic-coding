@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1288 2640" width="1288" height="2640" role="img" aria-label="3.2 全部工作逐步对照" font-family="&#x27;PingFang SC&#x27;, &#x27;Hiragino Sans GB&#x27;, &#x27;Microsoft YaHei&#x27;, &#x27;Noto Sans CJK SC&#x27;, &#x27;Noto Sans SC&#x27;, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1288 2670" width="1288" height="2670" role="img" aria-label="3.2 全部工作逐步对照" font-family="&#x27;PingFang SC&#x27;, &#x27;Hiragino Sans GB&#x27;, &#x27;Microsoft YaHei&#x27;, &#x27;Noto Sans CJK SC&#x27;, &#x27;Noto Sans SC&#x27;, sans-serif">
 <title>3.2 全部工作逐步对照</title>
 <defs>
 <pattern id="hatch-a" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FBEAD2"/><rect width="2.2" height="7" fill="#A35C0A"/></pattern>
@@ -8,7 +8,7 @@
 <pattern id="hatch-e" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#E7E0F6"/><rect width="2.2" height="7" fill="#6748B2"/></pattern>
 <pattern id="hatch-legend" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.2" height="7" fill="#59636E"/></pattern>
 </defs>
-<rect x="0.5" y="0.5" width="1287" height="2639" rx="10" fill="#FFFFFF" stroke="#D1D9E0"/>
+<rect x="0.5" y="0.5" width="1287" height="2669" rx="10" fill="#FFFFFF" stroke="#D1D9E0"/>
 <rect x="22" y="26" width="26" height="16" rx="3" fill="#59636E"/>
 <text x="56" y="39" font-size="13" fill="#59636E">Agent 或 VLM 自己做</text>
 <rect x="202.1" y="26" width="26" height="16" rx="3" fill="url(#hatch-legend)" stroke="#59636E"/>
@@ -54,70 +54,70 @@
 <text x="805" y="138" text-anchor="middle" font-size="11" font-weight="600" fill="#1F2328">修订</text>
 <text x="863" y="124" text-anchor="middle" font-size="11" font-weight="600" fill="#1F2328">变体扩增</text>
 <text x="906" y="124" font-size="11" font-weight="600" fill="#1F2328">具体做法</text>
-<text x="22" y="162" font-size="12" fill="#59636E">68 项合计</text>
+<text x="22" y="162" font-size="12" fill="#59636E">69 项合计</text>
 <rect x="244" y="148" width="54" height="8" rx="3" fill="#F0F3F6"/>
-<rect x="244" y="148" width="43.6765" height="8" fill="#A35C0A"/>
-<rect x="287.676" y="148" width="0.794118" height="8" fill="url(#hatch-a)"/>
-<rect x="288.471" y="148" width="4.76471" height="8" fill="#FBEAD2"/>
-<text x="271" y="169" text-anchor="middle" font-size="10.5" fill="#59636E">Agent <tspan font-weight="700" fill="#1F2328">55</tspan></text>
+<rect x="244" y="148" width="43.8261" height="8" fill="#A35C0A"/>
+<rect x="287.826" y="148" width="0.782609" height="8" fill="url(#hatch-a)"/>
+<rect x="288.609" y="148" width="4.69565" height="8" fill="#FBEAD2"/>
+<text x="271" y="169" text-anchor="middle" font-size="10.5" fill="#59636E">Agent <tspan font-weight="700" fill="#1F2328">56</tspan></text>
 <text x="271" y="182" text-anchor="middle" font-size="10.5" fill="#59636E">工具 <tspan font-weight="700" fill="#1F2328">1</tspan></text>
 <rect x="302" y="148" width="54" height="8" rx="3" fill="#F0F3F6"/>
-<rect x="302" y="148" width="2.38235" height="8" fill="#A35C0A"/>
-<rect x="304.382" y="148" width="25.4118" height="8" fill="url(#hatch-a)"/>
-<rect x="329.794" y="148" width="0.794118" height="8" fill="#FBEAD2"/>
+<rect x="302" y="148" width="2.34783" height="8" fill="#A35C0A"/>
+<rect x="304.348" y="148" width="25.8261" height="8" fill="url(#hatch-a)"/>
+<rect x="330.174" y="148" width="0.782609" height="8" fill="#FBEAD2"/>
 <text x="329" y="169" text-anchor="middle" font-size="10.5" fill="#59636E">Agent <tspan font-weight="700" fill="#1F2328">3</tspan></text>
-<text x="329" y="182" text-anchor="middle" font-size="10.5" fill="#59636E">工具 <tspan font-weight="700" fill="#1F2328">32</tspan></text>
+<text x="329" y="182" text-anchor="middle" font-size="10.5" fill="#59636E">工具 <tspan font-weight="700" fill="#1F2328">33</tspan></text>
 <rect x="360" y="148" width="54" height="8" rx="3" fill="#F0F3F6"/>
-<rect x="360" y="148" width="20.6471" height="8" fill="#0B7266"/>
-<rect x="380.647" y="148" width="29.3824" height="8" fill="url(#hatch-b)"/>
-<rect x="410.029" y="148" width="3.97059" height="8" fill="#D2EEEA"/>
+<rect x="360" y="148" width="20.3478" height="8" fill="#0B7266"/>
+<rect x="380.348" y="148" width="29.7391" height="8" fill="url(#hatch-b)"/>
+<rect x="410.087" y="148" width="3.91304" height="8" fill="#D2EEEA"/>
 <text x="387" y="169" text-anchor="middle" font-size="10.5" fill="#59636E">Agent <tspan font-weight="700" fill="#1F2328">26</tspan></text>
-<text x="387" y="182" text-anchor="middle" font-size="10.5" fill="#59636E">工具 <tspan font-weight="700" fill="#1F2328">37</tspan></text>
+<text x="387" y="182" text-anchor="middle" font-size="10.5" fill="#59636E">工具 <tspan font-weight="700" fill="#1F2328">38</tspan></text>
 <rect x="418" y="148" width="54" height="8" rx="3" fill="#F0F3F6"/>
-<rect x="418" y="148" width="11.9118" height="8" fill="#0B7266"/>
-<rect x="429.912" y="148" width="4.76471" height="8" fill="url(#hatch-b)"/>
+<rect x="418" y="148" width="11.7391" height="8" fill="#0B7266"/>
+<rect x="429.739" y="148" width="5.47826" height="8" fill="url(#hatch-b)"/>
 <text x="445" y="169" text-anchor="middle" font-size="10.5" fill="#59636E">Agent <tspan font-weight="700" fill="#1F2328">15</tspan></text>
-<text x="445" y="182" text-anchor="middle" font-size="10.5" fill="#59636E">工具 <tspan font-weight="700" fill="#1F2328">6</tspan></text>
+<text x="445" y="182" text-anchor="middle" font-size="10.5" fill="#59636E">工具 <tspan font-weight="700" fill="#1F2328">7</tspan></text>
 <rect x="476" y="148" width="54" height="8" rx="3" fill="#F0F3F6"/>
-<rect x="476" y="148" width="34.1471" height="8" fill="#0B7266"/>
-<rect x="510.147" y="148" width="8.73529" height="8" fill="url(#hatch-b)"/>
-<rect x="518.882" y="148" width="0.794118" height="8" fill="#D2EEEA"/>
-<text x="503" y="169" text-anchor="middle" font-size="10.5" fill="#59636E">Agent <tspan font-weight="700" fill="#1F2328">43</tspan></text>
+<rect x="476" y="148" width="34.4348" height="8" fill="#0B7266"/>
+<rect x="510.435" y="148" width="8.6087" height="8" fill="url(#hatch-b)"/>
+<rect x="519.043" y="148" width="0.782609" height="8" fill="#D2EEEA"/>
+<text x="503" y="169" text-anchor="middle" font-size="10.5" fill="#59636E">Agent <tspan font-weight="700" fill="#1F2328">44</tspan></text>
 <text x="503" y="182" text-anchor="middle" font-size="10.5" fill="#59636E">工具 <tspan font-weight="700" fill="#1F2328">11</tspan></text>
 <rect x="534" y="148" width="54" height="8" rx="3" fill="#F0F3F6"/>
-<rect x="534" y="148" width="20.6471" height="8" fill="#2B57A4"/>
-<rect x="554.647" y="148" width="7.94118" height="8" fill="url(#hatch-c)"/>
+<rect x="534" y="148" width="20.3478" height="8" fill="#2B57A4"/>
+<rect x="554.348" y="148" width="8.6087" height="8" fill="url(#hatch-c)"/>
 <text x="561" y="169" text-anchor="middle" font-size="10.5" fill="#59636E">Agent <tspan font-weight="700" fill="#1F2328">26</tspan></text>
-<text x="561" y="182" text-anchor="middle" font-size="10.5" fill="#59636E">工具 <tspan font-weight="700" fill="#1F2328">10</tspan></text>
+<text x="561" y="182" text-anchor="middle" font-size="10.5" fill="#59636E">工具 <tspan font-weight="700" fill="#1F2328">11</tspan></text>
 <rect x="592" y="148" width="54" height="8" rx="3" fill="#F0F3F6"/>
-<rect x="592" y="148" width="0.794118" height="8" fill="#2B57A4"/>
-<rect x="592.794" y="148" width="35.7353" height="8" fill="url(#hatch-c)"/>
-<rect x="628.529" y="148" width="7.14706" height="8" fill="#DCE5F6"/>
-<rect x="635.676" y="148" width="7.94118" height="8" fill="#A5324D"/>
-<text x="619" y="169" text-anchor="middle" font-size="10.5" fill="#59636E">引擎 <tspan font-weight="700" fill="#1F2328">46</tspan></text>
+<rect x="592" y="148" width="0.782609" height="8" fill="#2B57A4"/>
+<rect x="592.783" y="148" width="36" height="8" fill="url(#hatch-c)"/>
+<rect x="628.783" y="148" width="7.04348" height="8" fill="#DCE5F6"/>
+<rect x="635.826" y="148" width="7.82609" height="8" fill="#A5324D"/>
+<text x="619" y="169" text-anchor="middle" font-size="10.5" fill="#59636E">引擎 <tspan font-weight="700" fill="#1F2328">47</tspan></text>
 <text x="619" y="182" text-anchor="middle" font-size="10.5" fill="#59636E">无引擎 <tspan font-weight="700" fill="#1F2328">10</tspan></text>
 <text x="619" y="195" text-anchor="middle" font-size="10.5" fill="#59636E">就绪 <tspan font-weight="700" fill="#1F2328">9</tspan></text>
 <rect x="650" y="148" width="54" height="8" rx="3" fill="#F0F3F6"/>
-<rect x="650" y="148" width="16.6765" height="8" fill="#A5324D"/>
-<rect x="666.676" y="148" width="12.7059" height="8" fill="url(#hatch-d)"/>
-<rect x="679.382" y="148" width="2.38235" height="8" fill="#F6DCE2"/>
-<text x="677" y="169" text-anchor="middle" font-size="10.5" fill="#59636E">Agent <tspan font-weight="700" fill="#1F2328">21</tspan></text>
+<rect x="650" y="148" width="17.2174" height="8" fill="#A5324D"/>
+<rect x="667.217" y="148" width="12.5217" height="8" fill="url(#hatch-d)"/>
+<rect x="679.739" y="148" width="2.34783" height="8" fill="#F6DCE2"/>
+<text x="677" y="169" text-anchor="middle" font-size="10.5" fill="#59636E">Agent <tspan font-weight="700" fill="#1F2328">22</tspan></text>
 <text x="677" y="182" text-anchor="middle" font-size="10.5" fill="#59636E">工具 <tspan font-weight="700" fill="#1F2328">16</tspan></text>
 <rect x="708" y="148" width="54" height="8" rx="3" fill="#F0F3F6"/>
-<rect x="708" y="148" width="11.1176" height="8" fill="#A5324D"/>
-<rect x="719.118" y="148" width="6.35294" height="8" fill="#F6DCE2"/>
-<text x="735" y="169" text-anchor="middle" font-size="10.5" fill="#59636E">Agent <tspan font-weight="700" fill="#1F2328">14</tspan></text>
+<rect x="708" y="148" width="11.7391" height="8" fill="#A5324D"/>
+<rect x="719.739" y="148" width="6.26087" height="8" fill="#F6DCE2"/>
+<text x="735" y="169" text-anchor="middle" font-size="10.5" fill="#59636E">Agent <tspan font-weight="700" fill="#1F2328">15</tspan></text>
 <text x="735" y="182" text-anchor="middle" font-size="10.5" fill="#59636E">工具 <tspan font-weight="700" fill="#1F2328">0</tspan></text>
 <rect x="778" y="148" width="54" height="8" rx="3" fill="#F0F3F6"/>
-<rect x="778" y="148" width="38.9118" height="8" fill="#6748B2"/>
-<rect x="816.912" y="148" width="0.794118" height="8" fill="url(#hatch-e)"/>
-<rect x="817.706" y="148" width="0.794118" height="8" fill="#E7E0F6"/>
-<text x="805" y="169" text-anchor="middle" font-size="10.5" fill="#59636E">Agent <tspan font-weight="700" fill="#1F2328">49</tspan></text>
+<rect x="778" y="148" width="39.1304" height="8" fill="#6748B2"/>
+<rect x="817.13" y="148" width="0.782609" height="8" fill="url(#hatch-e)"/>
+<rect x="817.913" y="148" width="0.782609" height="8" fill="#E7E0F6"/>
+<text x="805" y="169" text-anchor="middle" font-size="10.5" fill="#59636E">Agent <tspan font-weight="700" fill="#1F2328">50</tspan></text>
 <text x="805" y="182" text-anchor="middle" font-size="10.5" fill="#59636E">工具 <tspan font-weight="700" fill="#1F2328">1</tspan></text>
 <rect x="836" y="148" width="54" height="8" rx="3" fill="#F0F3F6"/>
-<rect x="836" y="148" width="7.14706" height="8" fill="#6748B2"/>
-<rect x="843.147" y="148" width="0.794118" height="8" fill="url(#hatch-e)"/>
-<text x="863" y="169" text-anchor="middle" font-size="10.5" fill="#59636E">Agent <tspan font-weight="700" fill="#1F2328">9</tspan></text>
+<rect x="836" y="148" width="7.82609" height="8" fill="#6748B2"/>
+<rect x="843.826" y="148" width="0.782609" height="8" fill="url(#hatch-e)"/>
+<text x="863" y="169" text-anchor="middle" font-size="10.5" fill="#59636E">Agent <tspan font-weight="700" fill="#1F2328">10</tspan></text>
 <text x="863" y="182" text-anchor="middle" font-size="10.5" fill="#59636E">工具 <tspan font-weight="700" fill="#1F2328">1</tspan></text>
 <line x1="22" y1="203" x2="1266" y2="203" stroke="#D1D9E0"/>
 <text x="22" y="232" font-size="14.0" font-weight="700" fill="#1F2328">Bench · 基准，只作参照，不计入合计<tspan font-weight="400" fill="#59636E" dx="10">2 项</tspan></text>
@@ -156,210 +156,210 @@
 <rect x="778" y="273" width="54" height="43" rx="4" fill="#6748B2"/>
 <rect x="836.5" y="273.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <text x="906" y="298.5" font-size="12" fill="#59636E">要求被测 Agent 从视频自己搭仿真</text>
-<text x="22" y="343" font-size="14.0" font-weight="700" fill="#1F2328">Agentic End-to-End · 一个 Agent 端到端<tspan font-weight="400" fill="#59636E" dx="10">22 项</tspan></text>
+<text x="22" y="343" font-size="14.0" font-weight="700" fill="#1F2328">Agentic End-to-End · 一个 Agent 端到端<tspan font-weight="400" fill="#59636E" dx="10">23 项</tspan></text>
 <line x1="390.068" y1="338" x2="1266" y2="338" stroke="#D1D9E0"/>
-<text x="22" y="371.5" font-size="13" font-weight="700" fill="#1F2328">SimuLean</text>
-<rect x="93.9392" y="358" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="100.939" y="370.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<text x="22" y="371.5" font-size="13" font-weight="700" fill="#1F2328">Real2Worlds2Real</text>
+<rect x="158.981" y="358" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="165.981" y="370.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
 <rect x="244" y="354" width="54" height="26" rx="4" fill="#A35C0A"/>
-<rect x="302.5" y="354.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="360.75" y="354.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="418.5" y="354.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="302.75" y="354.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="354.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.75" y="354.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="476" y="354" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534" y="354" width="54" height="26" rx="4" fill="#2B57A4"/>
+<rect x="534.75" y="354.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
 <rect x="592.75" y="354.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.5" y="354.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="708.5" y="354.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="650" y="354" width="54" height="26" rx="4" fill="#A5324D"/>
+<rect x="708" y="354" width="54" height="26" rx="4" fill="#A5324D"/>
 <rect x="778" y="354" width="54" height="26" rx="4" fill="#6748B2"/>
-<rect x="836.5" y="354.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="371" font-size="12" fill="#59636E">领域命令搭建离散事件模型，Agent 校准作业时长</text>
-<text x="22" y="401.5" font-size="13" font-weight="700" fill="#1F2328">CUE</text>
-<rect x="56.4576" y="388" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="63.4576" y="400.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="836" y="354" width="54" height="26" rx="4" fill="#6748B2"/>
+<text x="906" y="371" font-size="12" fill="#59636E">对照渲染和物理试跑，修订场景资产及策略并扩增变体</text>
+<text x="22" y="401.5" font-size="13" font-weight="700" fill="#1F2328">SimuLean</text>
+<rect x="93.9392" y="388" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="100.939" y="400.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
 <rect x="244" y="384" width="54" height="26" rx="4" fill="#A35C0A"/>
-<rect x="302" y="384" width="54" height="26" rx="4" fill="#A35C0A"/>
-<rect x="360" y="384" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="302.5" y="384.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360.75" y="384.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="418.5" y="384.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="476" y="384" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534.75" y="384.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="534" y="384" width="54" height="26" rx="4" fill="#2B57A4"/>
 <rect x="592.75" y="384.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650" y="384" width="54" height="26" rx="4" fill="#A5324D"/>
+<rect x="650.5" y="384.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="708.5" y="384.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778" y="384" width="54" height="26" rx="4" fill="#6748B2"/>
 <rect x="836.5" y="384.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="401" font-size="12" fill="#59636E">Agent 建模、写跟踪，CMA-ES 拟合参数，再挑下一次实验</text>
-<text x="22" y="431.5" font-size="13" font-weight="700" fill="#1F2328">DyCraft</text>
-<rect x="86.7224" y="418.5" width="59" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
-<text x="93.2224" y="430.5" font-size="11.5" fill="#59636E">只建场景</text>
+<text x="906" y="401" font-size="12" fill="#59636E">领域命令搭建离散事件模型，Agent 校准作业时长</text>
+<text x="22" y="431.5" font-size="13" font-weight="700" fill="#1F2328">CUE</text>
+<rect x="56.4576" y="418" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="63.4576" y="430.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
 <rect x="244" y="414" width="54" height="26" rx="4" fill="#A35C0A"/>
-<rect x="302.5" y="414.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="302" y="414" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="360" y="414" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="418" y="414" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="418.5" y="414.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="476" y="414" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534.5" y="414.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="593" y="415" width="52" height="24" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
-<rect x="650.75" y="414.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="534.75" y="414.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="592.75" y="414.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650" y="414" width="54" height="26" rx="4" fill="#A5324D"/>
 <rect x="708.5" y="414.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778" y="414" width="54" height="26" rx="4" fill="#6748B2"/>
 <rect x="836.5" y="414.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="431" font-size="12" fill="#59636E">主 Agent 在 Blender 建场景和骨架，动作来自动捕重定向</text>
-<text x="22" y="461.5" font-size="13" font-weight="700" fill="#1F2328">SceneAgent</text>
-<rect x="109.373" y="448" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="116.373" y="460.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<text x="906" y="431" font-size="12" fill="#59636E">Agent 建模、写跟踪，CMA-ES 拟合参数，再挑下一次实验</text>
+<text x="22" y="461.5" font-size="13" font-weight="700" fill="#1F2328">DyCraft</text>
+<rect x="86.7224" y="448.5" width="59" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
+<text x="93.2224" y="460.5" font-size="11.5" fill="#59636E">只建场景</text>
 <rect x="244" y="444" width="54" height="26" rx="4" fill="#A35C0A"/>
-<rect x="302.75" y="444.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
-<rect x="360.75" y="444.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="418.75" y="444.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="302.5" y="444.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360" y="444" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="418" y="444" width="54" height="26" rx="4" fill="#0B7266"/>
 <rect x="476" y="444" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534.75" y="444.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="592.75" y="444.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650" y="444" width="54" height="26" rx="4" fill="#A5324D"/>
+<rect x="534.5" y="444.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="593" y="445" width="52" height="24" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
+<rect x="650.75" y="444.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
 <rect x="708.5" y="444.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778" y="444" width="54" height="26" rx="4" fill="#6748B2"/>
-<rect x="836" y="444" width="54" height="26" rx="4" fill="#6748B2"/>
-<text x="906" y="461" font-size="12" fill="#59636E">调用分割、补全、关节、物理属性工具，生成变体与示范</text>
-<text x="22" y="491.5" font-size="13" font-weight="700" fill="#1F2328">Plumb</text>
-<rect x="69.6864" y="478" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="76.6864" y="490.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="836.5" y="444.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="461" font-size="12" fill="#59636E">主 Agent 在 Blender 建场景和骨架，动作来自动捕重定向</text>
+<text x="22" y="491.5" font-size="13" font-weight="700" fill="#1F2328">SceneAgent</text>
+<rect x="109.373" y="478" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="116.373" y="490.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
 <rect x="244" y="474" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="302.75" y="474.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
-<rect x="360" y="474" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="418.5" y="474.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360.75" y="474.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.75" y="474.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="476" y="474" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534" y="474" width="54" height="26" rx="4" fill="#2B57A4"/>
+<rect x="534.75" y="474.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
 <rect x="592.75" y="474.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
 <rect x="650" y="474" width="54" height="26" rx="4" fill="#A5324D"/>
 <rect x="708.5" y="474.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778" y="474" width="54" height="26" rx="4" fill="#6748B2"/>
-<rect x="836.5" y="474.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="491" font-size="12" fill="#59636E">Coding Agent 调 SAM3、Pi3X 测量，自己写 MuJoCo 场景和参数</text>
-<text x="22" y="521.5" font-size="13" font-weight="700" fill="#1F2328">GRASE</text>
-<rect x="74.596" y="508.5" width="59" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
-<text x="81.096" y="520.5" font-size="11.5" fill="#59636E">只建场景</text>
+<rect x="836" y="474" width="54" height="26" rx="4" fill="#6748B2"/>
+<text x="906" y="491" font-size="12" fill="#59636E">调用分割、补全、关节、物理属性工具，生成变体与示范</text>
+<text x="22" y="521.5" font-size="13" font-weight="700" fill="#1F2328">Plumb</text>
+<rect x="69.6864" y="508" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="76.6864" y="520.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
 <rect x="244" y="504" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="302.75" y="504.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
 <rect x="360" y="504" width="54" height="26" rx="4" fill="#0B7266"/>
 <rect x="418.5" y="504.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="476" y="504" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534.5" y="504.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="593" y="505" width="52" height="24" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
-<rect x="650.5" y="504.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="534" y="504" width="54" height="26" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="504.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650" y="504" width="54" height="26" rx="4" fill="#A5324D"/>
 <rect x="708.5" y="504.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778" y="504" width="54" height="26" rx="4" fill="#6748B2"/>
 <rect x="836.5" y="504.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="521" font-size="12" fill="#59636E">Blender 基元为主，小物体用 TRELLIS.2，静态场景</text>
-<text x="22" y="551.5" font-size="13" font-weight="700" fill="#1F2328">RoboSimStudio</text>
-<rect x="133.626" y="538" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="140.626" y="550.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<text x="906" y="521" font-size="12" fill="#59636E">Coding Agent 调 SAM3、Pi3X 测量，自己写 MuJoCo 场景和参数</text>
+<text x="22" y="551.5" font-size="13" font-weight="700" fill="#1F2328">GRASE</text>
+<rect x="74.596" y="538.5" width="59" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
+<text x="81.096" y="550.5" font-size="11.5" fill="#59636E">只建场景</text>
 <rect x="244" y="534" width="54" height="26" rx="4" fill="#A35C0A"/>
-<rect x="302" y="534" width="54" height="26" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="534.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
 <rect x="360" y="534" width="54" height="26" rx="4" fill="#0B7266"/>
 <rect x="418.5" y="534.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="476" y="534" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534" y="534" width="54" height="26" rx="4" fill="#2B57A4"/>
-<rect x="592.75" y="534.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650" y="534" width="54" height="26" rx="4" fill="#A5324D"/>
+<rect x="534.5" y="534.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="593" y="535" width="52" height="24" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
+<rect x="650.5" y="534.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="708.5" y="534.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778" y="534" width="54" height="26" rx="4" fill="#6748B2"/>
 <rect x="836.5" y="534.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="551" font-size="12" fill="#59636E">看视频建场景、选求解器，按执行事件修订</text>
-<text x="22" y="581.5" font-size="13" font-weight="700" fill="#1F2328">USDCraft</text>
-<rect x="96.644" y="568.5" width="59" height="16" rx="8" fill="none" stroke="#2B57A4"/>
-<text x="103.144" y="580.5" font-size="11.5" fill="#2B57A4">仿真就绪</text>
+<text x="906" y="551" font-size="12" fill="#59636E">Blender 基元为主，小物体用 TRELLIS.2，静态场景</text>
+<text x="22" y="581.5" font-size="13" font-weight="700" fill="#1F2328">RoboSimStudio</text>
+<rect x="133.626" y="568" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="140.626" y="580.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
 <rect x="244" y="564" width="54" height="26" rx="4" fill="#A35C0A"/>
-<rect x="302.75" y="564.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="302" y="564" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="360" y="564" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="418" y="564" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="476.5" y="564.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="418.5" y="564.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="564" width="54" height="26" rx="4" fill="#0B7266"/>
 <rect x="534" y="564" width="54" height="26" rx="4" fill="#2B57A4"/>
-<rect x="592.75" y="564.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.5" y="564.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="564.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650" y="564" width="54" height="26" rx="4" fill="#A5324D"/>
 <rect x="708.5" y="564.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778" y="564" width="54" height="26" rx="4" fill="#6748B2"/>
 <rect x="836.5" y="564.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="581" font-size="12" fill="#59636E">度量切片辅助，Agent 写参数化资产和 PhysX 参数</text>
-<text x="22" y="611.5" font-size="13" font-weight="700" fill="#1F2328">Agentic RSR</text>
-<rect x="115.712" y="598" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="122.712" y="610.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<text x="906" y="581" font-size="12" fill="#59636E">看视频建场景、选求解器，按执行事件修订</text>
+<text x="22" y="611.5" font-size="13" font-weight="700" fill="#1F2328">USDCraft</text>
+<rect x="96.644" y="598.5" width="59" height="16" rx="8" fill="none" stroke="#2B57A4"/>
+<text x="103.144" y="610.5" font-size="11.5" fill="#2B57A4">仿真就绪</text>
 <rect x="244" y="594" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="302.75" y="594.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
-<rect x="360.75" y="594.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="418.5" y="594.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="476" y="594" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534.5" y="594.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="592.75" y="594.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650" y="594" width="54" height="26" rx="4" fill="#A5324D"/>
-<rect x="708.75" y="594.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="360" y="594" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="418" y="594" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="476.5" y="594.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="534" y="594" width="54" height="26" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="594.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="594.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="594.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778" y="594" width="54" height="26" rx="4" fill="#6748B2"/>
-<rect x="836" y="594" width="54" height="26" rx="4" fill="#6748B2"/>
-<text x="906" y="611" font-size="12" fill="#59636E">Blender 对照外观，MuJoCo 探测交互，开发策略并随机化</text>
-<text x="22" y="641.5" font-size="13" font-weight="700" fill="#1F2328">Real2Gym</text>
-<rect x="95.0416" y="628" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="102.042" y="640.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="836.5" y="594.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="611" font-size="12" fill="#59636E">度量切片辅助，Agent 写参数化资产和 PhysX 参数</text>
+<text x="22" y="641.5" font-size="13" font-weight="700" fill="#1F2328">Agentic RSR</text>
+<rect x="115.712" y="628" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="122.712" y="640.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
 <rect x="244" y="624" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="302.75" y="624.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
-<rect x="360" y="624" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="360.75" y="624.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="418.5" y="624.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="476" y="624" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534" y="624" width="54" height="26" rx="4" fill="#2B57A4"/>
+<rect x="534.5" y="624.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="592.75" y="624.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
 <rect x="650" y="624" width="54" height="26" rx="4" fill="#A5324D"/>
-<rect x="708" y="624" width="54" height="26" rx="4" fill="#A5324D"/>
+<rect x="708.75" y="624.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
 <rect x="778" y="624" width="54" height="26" rx="4" fill="#6748B2"/>
 <rect x="836" y="624" width="54" height="26" rx="4" fill="#6748B2"/>
-<text x="906" y="641" font-size="12" fill="#59636E">Agent 调感知工具重建，对照视频验证后扩增变体</text>
-<text x="22" y="671.5" font-size="13" font-weight="700" fill="#1F2328">FACT</text>
-<rect x="65.2768" y="658" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="72.2768" y="670.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<text x="906" y="641" font-size="12" fill="#59636E">Blender 对照外观，MuJoCo 探测交互，开发策略并随机化</text>
+<text x="22" y="671.5" font-size="13" font-weight="700" fill="#1F2328">Real2Gym</text>
+<rect x="95.0416" y="658" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="102.042" y="670.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
 <rect x="244" y="654" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="302.75" y="654.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
 <rect x="360" y="654" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="418" y="654" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="476.5" y="654.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="534.75" y="654.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="418.5" y="654.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="654" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="534" y="654" width="54" height="26" rx="4" fill="#2B57A4"/>
 <rect x="592.75" y="654.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.5" y="654.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="708.5" y="654.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="650" y="654" width="54" height="26" rx="4" fill="#A5324D"/>
+<rect x="708" y="654" width="54" height="26" rx="4" fill="#A5324D"/>
 <rect x="778" y="654" width="54" height="26" rx="4" fill="#6748B2"/>
-<rect x="836.5" y="654.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="671" font-size="12" fill="#59636E">Agent 写几何和关节，参数由仿真残差拟合</text>
-<text x="22" y="707.5" font-size="13" font-weight="700" fill="#1F2328">CoDimRecon</text>
-<rect x="110.475" y="694" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="117.475" y="706.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
-<rect x="244" y="684" width="54" height="38" rx="4" fill="#A35C0A"/>
-<rect x="302.75" y="684.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
-<rect x="360" y="684" width="54" height="38" rx="4" fill="#0B7266"/>
-<rect x="418" y="684" width="54" height="38" rx="4" fill="#0B7266"/>
-<rect x="476" y="684" width="54" height="38" rx="4" fill="#0B7266"/>
-<rect x="534" y="684" width="54" height="38" rx="4" fill="#2B57A4"/>
-<rect x="592.75" y="684.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650" y="684" width="54" height="38" rx="4" fill="#A5324D"/>
-<rect x="708.5" y="684.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="778" y="684" width="54" height="38" rx="4" fill="#6748B2"/>
-<rect x="836.5" y="684.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="699.5" font-size="12" fill="#59636E">VGGT-Omega 给几何，Agent 在</text>
-<text x="906" y="714.5" font-size="12" fill="#59636E">Blender 重建，rod/shell/solid 物理</text>
-<text x="22" y="743.5" font-size="13" font-weight="700" fill="#1F2328">WorldAgent</text>
-<rect x="109.873" y="730.5" width="59" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
-<text x="116.373" y="742.5" font-size="11.5" fill="#59636E">只建场景</text>
-<rect x="244" y="726" width="54" height="26" rx="4" fill="#A35C0A"/>
-<rect x="302.5" y="726.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="360" y="726" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="418.5" y="726.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="476" y="726" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534" y="726" width="54" height="26" rx="4" fill="#2B57A4"/>
-<rect x="593" y="727" width="52" height="24" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
-<rect x="650" y="726" width="54" height="26" rx="4" fill="#A5324D"/>
-<rect x="708.5" y="726.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="778" y="726" width="54" height="26" rx="4" fill="#6748B2"/>
-<rect x="836.5" y="726.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="743" font-size="12" fill="#59636E">Blender 构建与仿真，验证层回报，Agent 回写规格</text>
-<text x="22" y="773.5" font-size="13" font-weight="700" fill="#1F2328">Code as Worlds</text>
-<rect x="133.574" y="760.5" width="59" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
-<text x="140.074" y="772.5" font-size="11.5" fill="#59636E">只建场景</text>
+<rect x="836" y="654" width="54" height="26" rx="4" fill="#6748B2"/>
+<text x="906" y="671" font-size="12" fill="#59636E">Agent 调感知工具重建，对照视频验证后扩增变体</text>
+<text x="22" y="701.5" font-size="13" font-weight="700" fill="#1F2328">FACT</text>
+<rect x="65.2768" y="688" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="72.2768" y="700.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="244" y="684" width="54" height="26" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="684.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360" y="684" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="418" y="684" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="476.5" y="684.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="534.75" y="684.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="592.75" y="684.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="684.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="684.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="684" width="54" height="26" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="684.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="701" font-size="12" fill="#59636E">Agent 写几何和关节，参数由仿真残差拟合</text>
+<text x="22" y="737.5" font-size="13" font-weight="700" fill="#1F2328">CoDimRecon</text>
+<rect x="110.475" y="724" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="117.475" y="736.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="244" y="714" width="54" height="38" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="714.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360" y="714" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="418" y="714" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="476" y="714" width="54" height="38" rx="4" fill="#0B7266"/>
+<rect x="534" y="714" width="54" height="38" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="714.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650" y="714" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="708.5" y="714.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="714" width="54" height="38" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="714.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="729.5" font-size="12" fill="#59636E">VGGT-Omega 给几何，Agent 在</text>
+<text x="906" y="744.5" font-size="12" fill="#59636E">Blender 重建，rod/shell/solid 物理</text>
+<text x="22" y="773.5" font-size="13" font-weight="700" fill="#1F2328">WorldAgent</text>
+<rect x="109.873" y="760.5" width="59" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
+<text x="116.373" y="772.5" font-size="11.5" fill="#59636E">只建场景</text>
 <rect x="244" y="756" width="54" height="26" rx="4" fill="#A35C0A"/>
-<rect x="302.75" y="756.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
-<rect x="360.75" y="756.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="302.5" y="756.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360" y="756" width="54" height="26" rx="4" fill="#0B7266"/>
 <rect x="418.5" y="756.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="476" y="756" width="54" height="26" rx="4" fill="#0B7266"/>
 <rect x="534" y="756" width="54" height="26" rx="4" fill="#2B57A4"/>
@@ -368,282 +368,282 @@
 <rect x="708.5" y="756.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778" y="756" width="54" height="26" rx="4" fill="#6748B2"/>
 <rect x="836.5" y="756.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="773" font-size="12" fill="#59636E">适配器给深度、分割、轨迹和 mesh，Agent 提议世界程序</text>
-<text x="22" y="803.5" font-size="13" font-weight="700" fill="#1F2328">GS-Agent</text>
-<rect x="95.0416" y="790" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="102.042" y="802.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<text x="906" y="773" font-size="12" fill="#59636E">Blender 构建与仿真，验证层回报，Agent 回写规格</text>
+<text x="22" y="803.5" font-size="13" font-weight="700" fill="#1F2328">Code as Worlds</text>
+<rect x="133.574" y="790.5" width="59" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
+<text x="140.074" y="802.5" font-size="11.5" fill="#59636E">只建场景</text>
 <rect x="244" y="786" width="54" height="26" rx="4" fill="#A35C0A"/>
-<rect x="302.5" y="786.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="302.75" y="786.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
 <rect x="360.75" y="786.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="418.5" y="786.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="476" y="786" width="54" height="26" rx="4" fill="#0B7266"/>
 <rect x="534" y="786" width="54" height="26" rx="4" fill="#2B57A4"/>
-<rect x="592.75" y="786.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="593" y="787" width="52" height="24" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
 <rect x="650" y="786" width="54" height="26" rx="4" fill="#A5324D"/>
 <rect x="708.5" y="786.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778" y="786" width="54" height="26" rx="4" fill="#6748B2"/>
 <rect x="836.5" y="786.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="803" font-size="12" fill="#59636E">检索或 Meshy 生成资产，编程设置材料与运动</text>
-<text x="22" y="833.5" font-size="13" font-weight="700" fill="#1F2328">Articraft</text>
-<rect x="101.054" y="820.5" width="59" height="16" rx="8" fill="none" stroke="#2B57A4"/>
-<text x="107.554" y="832.5" font-size="11.5" fill="#2B57A4">仿真就绪</text>
+<text x="906" y="803" font-size="12" fill="#59636E">适配器给深度、分割、轨迹和 mesh，Agent 提议世界程序</text>
+<text x="22" y="833.5" font-size="13" font-weight="700" fill="#1F2328">GS-Agent</text>
+<rect x="95.0416" y="820" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="102.042" y="832.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
 <rect x="244" y="816" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="302.5" y="816.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="360" y="816" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="418" y="816" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="476.5" y="816.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="534.5" y="816.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="592.75" y="816.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.5" y="816.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360.75" y="816.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="816.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="816" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="534" y="816" width="54" height="26" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="816.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650" y="816" width="54" height="26" rx="4" fill="#A5324D"/>
 <rect x="708.5" y="816.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778" y="816" width="54" height="26" rx="4" fill="#6748B2"/>
 <rect x="836.5" y="816.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="833" font-size="12" fill="#59636E">只造关节资产，harness 测试与探针反馈</text>
-<text x="22" y="863.5" font-size="13" font-weight="700" fill="#1F2328">SimWorld Studio</text>
-<rect x="145.476" y="850" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="152.476" y="862.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<text x="906" y="833" font-size="12" fill="#59636E">检索或 Meshy 生成资产，编程设置材料与运动</text>
+<text x="22" y="863.5" font-size="13" font-weight="700" fill="#1F2328">Articraft</text>
+<rect x="101.054" y="850.5" width="59" height="16" rx="8" fill="none" stroke="#2B57A4"/>
+<text x="107.554" y="862.5" font-size="11.5" fill="#2B57A4">仿真就绪</text>
 <rect x="244" y="846" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="302.5" y="846.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="360.75" y="846.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="418.5" y="846.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="476" y="846" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="360" y="846" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="418" y="846" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="476.5" y="846.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="534.5" y="846.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="592.75" y="846.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="592.75" y="846.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
 <rect x="650.5" y="846.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="708" y="846" width="54" height="26" rx="4" fill="#A5324D"/>
+<rect x="708.5" y="846.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778" y="846" width="54" height="26" rx="4" fill="#6748B2"/>
-<rect x="836" y="846" width="54" height="26" rx="4" fill="#6748B2"/>
-<text x="906" y="863" font-size="12" fill="#59636E">UE5 环境，学习者表现驱动下一批环境</text>
-<text x="22" y="893.5" font-size="13" font-weight="700" fill="#1F2328">SAGE</text>
-<rect x="65.2768" y="880" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="72.2768" y="892.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="836.5" y="846.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="863" font-size="12" fill="#59636E">只造关节资产，harness 测试与探针反馈</text>
+<text x="22" y="893.5" font-size="13" font-weight="700" fill="#1F2328">SimWorld Studio</text>
+<rect x="145.476" y="880" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="152.476" y="892.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
 <rect x="244" y="876" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="302.5" y="876.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="360.75" y="876.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="418.5" y="876.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="476" y="876" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534" y="876" width="54" height="26" rx="4" fill="#2B57A4"/>
+<rect x="534.5" y="876.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="592.75" y="876.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.75" y="876.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
-<rect x="708.75" y="876.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="650.5" y="876.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708" y="876" width="54" height="26" rx="4" fill="#A5324D"/>
 <rect x="778" y="876" width="54" height="26" rx="4" fill="#6748B2"/>
-<rect x="836.5" y="876.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="893" font-size="12" fill="#59636E">TRELLIS 生成，VLM 定尺度与物理，两个 critic</text>
-<text x="22" y="923.5" font-size="13" font-weight="700" fill="#1F2328">SceneWeaver</text>
-<rect x="117.59" y="910.5" width="59" height="16" rx="8" fill="none" stroke="#2B57A4"/>
-<text x="124.09" y="922.5" font-size="11.5" fill="#2B57A4">仿真就绪</text>
+<rect x="836" y="876" width="54" height="26" rx="4" fill="#6748B2"/>
+<text x="906" y="893" font-size="12" fill="#59636E">UE5 环境，学习者表现驱动下一批环境</text>
+<text x="22" y="923.5" font-size="13" font-weight="700" fill="#1F2328">SAGE</text>
+<rect x="65.2768" y="910" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="72.2768" y="922.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
 <rect x="244" y="906" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="302.5" y="906.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="360.75" y="906.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="418.5" y="906.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="476" y="906" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534.5" y="906.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="592.75" y="906.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.5" y="906.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="708.5" y="906.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="534" y="906" width="54" height="26" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="906.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.75" y="906.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708.75" y="906.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
 <rect x="778" y="906" width="54" height="26" rx="4" fill="#6748B2"/>
 <rect x="836.5" y="906.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="923" font-size="12" fill="#59636E">Planner 选工具，Blender/Infinigen 执行</text>
-<text x="22" y="953.5" font-size="13" font-weight="700" fill="#1F2328">Eurekaverse</text>
-<rect x="115.987" y="940" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="122.987" y="952.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<text x="906" y="923" font-size="12" fill="#59636E">TRELLIS 生成，VLM 定尺度与物理，两个 critic</text>
+<text x="22" y="953.5" font-size="13" font-weight="700" fill="#1F2328">SceneWeaver</text>
+<rect x="117.59" y="940.5" width="59" height="16" rx="8" fill="none" stroke="#2B57A4"/>
+<text x="124.09" y="952.5" font-size="11.5" fill="#2B57A4">仿真就绪</text>
 <rect x="244" y="936" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="302.5" y="936.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="360" y="936" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="360.75" y="936.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="418.5" y="936.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="476" y="936" width="54" height="26" rx="4" fill="#0B7266"/>
 <rect x="534.5" y="936.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="592.75" y="936.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.75" y="936.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
-<rect x="708" y="936" width="54" height="26" rx="4" fill="#A5324D"/>
+<rect x="592.75" y="936.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="936.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="936.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778" y="936" width="54" height="26" rx="4" fill="#6748B2"/>
-<rect x="836" y="936" width="54" height="26" rx="4" fill="#6748B2"/>
-<text x="906" y="953" font-size="12" fill="#59636E">LLM 写地形代码，PPO 训练后演化下一轮</text>
-<text x="22" y="983.5" font-size="13" font-weight="700" fill="#1F2328">AHa-3D</text>
-<rect x="81.2104" y="970.5" width="70.5" height="16" rx="8" fill="none" stroke="#D1D9E0"/>
-<text x="87.7104" y="982.5" font-size="11.5" fill="#59636E">引擎未写明</text>
+<rect x="836.5" y="936.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="953" font-size="12" fill="#59636E">Planner 选工具，Blender/Infinigen 执行</text>
+<text x="22" y="983.5" font-size="13" font-weight="700" fill="#1F2328">Eurekaverse</text>
+<rect x="115.987" y="970" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="122.987" y="982.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
 <rect x="244" y="966" width="54" height="26" rx="4" fill="#A35C0A"/>
-<rect x="302.75" y="966.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
-<rect x="360.75" y="966.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="302.5" y="966.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360" y="966" width="54" height="26" rx="4" fill="#0B7266"/>
 <rect x="418.5" y="966.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="476" y="966" width="54" height="26" rx="4" fill="#0B7266"/>
 <rect x="534.5" y="966.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="592.5" y="966.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="650.5" y="966.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="708.5" y="966.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="966.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.75" y="966.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708" y="966" width="54" height="26" rx="4" fill="#A5324D"/>
 <rect x="778" y="966" width="54" height="26" rx="4" fill="#6748B2"/>
-<rect x="836.5" y="966.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="983" font-size="12" fill="#59636E">Coding Agent 调几何、分割、运动工具写场景</text>
-<text x="22" y="1013.5" font-size="13" font-weight="700" fill="#1F2328">mujoco-workbench</text>
-<rect x="153.469" y="1000" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="160.469" y="1012.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="836" y="966" width="54" height="26" rx="4" fill="#6748B2"/>
+<text x="906" y="983" font-size="12" fill="#59636E">LLM 写地形代码，PPO 训练后演化下一轮</text>
+<text x="22" y="1013.5" font-size="13" font-weight="700" fill="#1F2328">AHa-3D</text>
+<rect x="81.2104" y="1000.5" width="70.5" height="16" rx="8" fill="none" stroke="#D1D9E0"/>
+<text x="87.7104" y="1012.5" font-size="11.5" fill="#59636E">引擎未写明</text>
 <rect x="244" y="996" width="54" height="26" rx="4" fill="#A35C0A"/>
-<rect x="302.5" y="996.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="360" y="996" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="302.75" y="996.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="996.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="418.5" y="996.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="476" y="996" width="54" height="26" rx="4" fill="#0B7266"/>
 <rect x="534.5" y="996.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="592.75" y="996.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="592.5" y="996.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="650.5" y="996.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="708.5" y="996.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778" y="996" width="54" height="26" rx="4" fill="#6748B2"/>
 <rect x="836.5" y="996.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1013" font-size="12" fill="#59636E">给 Agent 用的 MuJoCo 运行、渲染、检查工具</text>
-<text x="22" y="1049" font-size="14.0" font-weight="700" fill="#1F2328">Closed-loop Workflow · 分工事先定好，出错回到对应步骤<tspan font-weight="400" fill="#59636E" dx="10">20 项</tspan></text>
-<line x1="502.258" y1="1044" x2="1266" y2="1044" stroke="#D1D9E0"/>
-<text x="22" y="1077.5" font-size="13" font-weight="700" fill="#1F2328">WorldSketch</text>
-<rect x="117.59" y="1064.5" width="59" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
-<text x="124.09" y="1076.5" font-size="11.5" fill="#59636E">只建场景</text>
-<rect x="244" y="1060" width="54" height="26" rx="4" fill="#A35C0A"/>
-<rect x="302.75" y="1060.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
-<rect x="360" y="1060" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="418" y="1060" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="476" y="1060" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534.5" y="1060.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="593" y="1061" width="52" height="24" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
-<rect x="650.75" y="1060.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
-<rect x="708.75" y="1060.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
-<rect x="778" y="1060" width="54" height="26" rx="4" fill="#6748B2"/>
-<rect x="836.5" y="1060.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1077" font-size="12" fill="#59636E">VLM 建运动学草图，深度后端测量，规划器求动作</text>
-<text x="22" y="1107.5" font-size="13" font-weight="700" fill="#1F2328">Gym-Anything</text>
-<rect x="124.806" y="1094" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="131.806" y="1106.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<text x="906" y="1013" font-size="12" fill="#59636E">Coding Agent 调几何、分割、运动工具写场景</text>
+<text x="22" y="1043.5" font-size="13" font-weight="700" fill="#1F2328">mujoco-workbench</text>
+<rect x="153.469" y="1030" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="160.469" y="1042.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="244" y="1026" width="54" height="26" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="1026.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360" y="1026" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="418.5" y="1026.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="1026" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="1026.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="1026.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="1026.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="1026.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="1026" width="54" height="26" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1026.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1043" font-size="12" fill="#59636E">给 Agent 用的 MuJoCo 运行、渲染、检查工具</text>
+<text x="22" y="1079" font-size="14.0" font-weight="700" fill="#1F2328">Closed-loop Workflow · 分工事先定好，出错回到对应步骤<tspan font-weight="400" fill="#59636E" dx="10">20 项</tspan></text>
+<line x1="502.258" y1="1074" x2="1266" y2="1074" stroke="#D1D9E0"/>
+<text x="22" y="1107.5" font-size="13" font-weight="700" fill="#1F2328">WorldSketch</text>
+<rect x="117.59" y="1094.5" width="59" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
+<text x="124.09" y="1106.5" font-size="11.5" fill="#59636E">只建场景</text>
 <rect x="244" y="1090" width="54" height="26" rx="4" fill="#A35C0A"/>
-<rect x="302.5" y="1090.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="302.75" y="1090.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
 <rect x="360" y="1090" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="418.5" y="1090.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="418" y="1090" width="54" height="26" rx="4" fill="#0B7266"/>
 <rect x="476" y="1090" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534" y="1090" width="54" height="26" rx="4" fill="#2B57A4"/>
-<rect x="592.75" y="1090.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650" y="1090" width="54" height="26" rx="4" fill="#A5324D"/>
-<rect x="708" y="1090" width="54" height="26" rx="4" fill="#A5324D"/>
+<rect x="534.5" y="1090.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="593" y="1091" width="52" height="24" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
+<rect x="650.75" y="1090.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708.75" y="1090.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
 <rect x="778" y="1090" width="54" height="26" rx="4" fill="#6748B2"/>
 <rect x="836.5" y="1090.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1107" font-size="12" fill="#59636E">创建、任务、审计三类 Agent，审计报告交回</text>
-<text x="22" y="1137.5" font-size="13" font-weight="700" fill="#1F2328">WorldMirror</text>
-<rect x="117.09" y="1124" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="124.09" y="1136.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
-<rect x="244.75" y="1120.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A35C0A" stroke-width="1.5"/>
-<rect x="302.75" y="1120.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
-<rect x="360.75" y="1120.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<text x="906" y="1107" font-size="12" fill="#59636E">VLM 建运动学草图，深度后端测量，规划器求动作</text>
+<text x="22" y="1137.5" font-size="13" font-weight="700" fill="#1F2328">Gym-Anything</text>
+<rect x="124.806" y="1124" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="131.806" y="1136.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="244" y="1120" width="54" height="26" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="1120.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360" y="1120" width="54" height="26" rx="4" fill="#0B7266"/>
 <rect x="418.5" y="1120.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="476" y="1120" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534.5" y="1120.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="534" y="1120" width="54" height="26" rx="4" fill="#2B57A4"/>
 <rect x="592.75" y="1120.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.75" y="1120.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
-<rect x="708.5" y="1120.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="650" y="1120" width="54" height="26" rx="4" fill="#A5324D"/>
+<rect x="708" y="1120" width="54" height="26" rx="4" fill="#A5324D"/>
 <rect x="778" y="1120" width="54" height="26" rx="4" fill="#6748B2"/>
 <rect x="836.5" y="1120.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1137" font-size="12" fill="#59636E">路由 Agent 沿依赖图调度，失败回退到对应阶段</text>
-<text x="22" y="1167.5" font-size="13" font-weight="700" fill="#1F2328">MARC</text>
-<rect x="65.7768" y="1154.5" width="59" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
-<text x="72.2768" y="1166.5" font-size="11.5" fill="#59636E">只建场景</text>
-<rect x="244" y="1150" width="54" height="26" rx="4" fill="#A35C0A"/>
-<rect x="302.5" y="1150.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="360" y="1150" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="418" y="1150" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="476.5" y="1150.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1137" font-size="12" fill="#59636E">创建、任务、审计三类 Agent，审计报告交回</text>
+<text x="22" y="1167.5" font-size="13" font-weight="700" fill="#1F2328">WorldMirror</text>
+<rect x="117.09" y="1154" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="124.09" y="1166.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="244.75" y="1150.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="302.75" y="1150.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="1150.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="1150.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="1150" width="54" height="26" rx="4" fill="#0B7266"/>
 <rect x="534.5" y="1150.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="593" y="1151" width="52" height="24" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
-<rect x="650.75" y="1150.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="592.75" y="1150.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.75" y="1150.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
 <rect x="708.5" y="1150.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778" y="1150" width="54" height="26" rx="4" fill="#6748B2"/>
 <rect x="836.5" y="1150.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1167" font-size="12" fill="#59636E">Judge / Executor / Reviewer，运动学求解</text>
-<text x="22" y="1197.5" font-size="13" font-weight="700" fill="#1F2328">D-World</text>
-<rect x="86.2224" y="1184" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="93.2224" y="1196.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<text x="906" y="1167" font-size="12" fill="#59636E">路由 Agent 沿依赖图调度，失败回退到对应阶段</text>
+<text x="22" y="1197.5" font-size="13" font-weight="700" fill="#1F2328">MARC</text>
+<rect x="65.7768" y="1184.5" width="59" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
+<text x="72.2768" y="1196.5" font-size="11.5" fill="#59636E">只建场景</text>
 <rect x="244" y="1180" width="54" height="26" rx="4" fill="#A35C0A"/>
-<rect x="302" y="1180" width="54" height="26" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="1180.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="360" y="1180" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="418.5" y="1180.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="476" y="1180" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534" y="1180" width="54" height="26" rx="4" fill="#2B57A4"/>
-<rect x="592.75" y="1180.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650" y="1180" width="54" height="26" rx="4" fill="#A5324D"/>
-<rect x="708.75" y="1180.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="418" y="1180" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="476.5" y="1180.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="534.5" y="1180.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="593" y="1181" width="52" height="24" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
+<rect x="650.75" y="1180.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708.5" y="1180.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778" y="1180" width="54" height="26" rx="4" fill="#6748B2"/>
 <rect x="836.5" y="1180.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1197" font-size="12" fill="#59636E">Sense–Plan–Act，真实测量修参数或返回重建</text>
-<text x="22" y="1227.5" font-size="13" font-weight="700" fill="#1F2328">Artisan</text>
-<rect x="85.12" y="1214" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="92.12" y="1226.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<text x="906" y="1197" font-size="12" fill="#59636E">Judge / Executor / Reviewer，运动学求解</text>
+<text x="22" y="1227.5" font-size="13" font-weight="700" fill="#1F2328">D-World</text>
+<rect x="86.2224" y="1214" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="93.2224" y="1226.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
 <rect x="244" y="1210" width="54" height="26" rx="4" fill="#A35C0A"/>
-<rect x="302.5" y="1210.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="302" y="1210" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="360" y="1210" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="418" y="1210" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="476.5" y="1210.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="418.5" y="1210.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="1210" width="54" height="26" rx="4" fill="#0B7266"/>
 <rect x="534" y="1210" width="54" height="26" rx="4" fill="#2B57A4"/>
 <rect x="592.75" y="1210.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.5" y="1210.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="708.5" y="1210.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="650" y="1210" width="54" height="26" rx="4" fill="#A5324D"/>
+<rect x="708.75" y="1210.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
 <rect x="778" y="1210" width="54" height="26" rx="4" fill="#6748B2"/>
 <rect x="836.5" y="1210.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1227" font-size="12" fill="#59636E">设计、编码、审阅 Agent，MuJoCo 检查</text>
-<text x="22" y="1256" font-size="13" font-weight="700" fill="#1F2328">Awomo-SimDataEngine</text>
-<rect x="22" y="1262" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="29" y="1274.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
-<rect x="244" y="1240" width="54" height="43" rx="4" fill="#A35C0A"/>
-<rect x="302.75" y="1240.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
-<rect x="360.75" y="1240.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="418" y="1240" width="54" height="43" rx="4" fill="#0B7266"/>
-<rect x="476" y="1240" width="54" height="43" rx="4" fill="#0B7266"/>
-<rect x="534.5" y="1240.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="592.75" y="1240.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.75" y="1240.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
-<rect x="708" y="1240" width="54" height="43" rx="4" fill="#A5324D"/>
-<rect x="778" y="1240" width="54" height="43" rx="4" fill="#6748B2"/>
-<rect x="836.5" y="1240.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1265.5" font-size="12" fill="#59636E">ISArt / Unravel / SimForge 三个模块，按失败归属回退</text>
-<text x="22" y="1304.5" font-size="13" font-weight="700" fill="#1F2328">Text2Sim</text>
-<rect x="95.0416" y="1291" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="102.042" y="1303.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
-<rect x="244" y="1287" width="54" height="26" rx="4" fill="#A35C0A"/>
-<rect x="302.5" y="1287.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="360.75" y="1287.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="418.5" y="1287.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="476" y="1287" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534" y="1287" width="54" height="26" rx="4" fill="#2B57A4"/>
-<rect x="592.75" y="1287.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650" y="1287" width="54" height="26" rx="4" fill="#A5324D"/>
-<rect x="708.5" y="1287.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="778" y="1287" width="54" height="26" rx="4" fill="#6748B2"/>
-<rect x="836.5" y="1287.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1304" font-size="12" fill="#59636E">Planner 分派 Scene / Body / Action Writer，Critic 审查</text>
-<text x="22" y="1334.5" font-size="13" font-weight="700" fill="#1F2328">DiagGen</text>
-<rect x="86.2224" y="1321" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="93.2224" y="1333.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
-<rect x="244.75" y="1317.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A35C0A" stroke-width="1.5"/>
-<rect x="302.75" y="1317.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<text x="906" y="1227" font-size="12" fill="#59636E">Sense–Plan–Act，真实测量修参数或返回重建</text>
+<text x="22" y="1257.5" font-size="13" font-weight="700" fill="#1F2328">Artisan</text>
+<rect x="85.12" y="1244" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="92.12" y="1256.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="244" y="1240" width="54" height="26" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="1240.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360" y="1240" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="418" y="1240" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="476.5" y="1240.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="534" y="1240" width="54" height="26" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="1240.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="1240.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="1240.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="1240" width="54" height="26" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1240.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1257" font-size="12" fill="#59636E">设计、编码、审阅 Agent，MuJoCo 检查</text>
+<text x="22" y="1286" font-size="13" font-weight="700" fill="#1F2328">Awomo-SimDataEngine</text>
+<rect x="22" y="1292" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="29" y="1304.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="244" y="1270" width="54" height="43" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="1270.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="1270.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418" y="1270" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="476" y="1270" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="1270.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="1270.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.75" y="1270.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708" y="1270" width="54" height="43" rx="4" fill="#A5324D"/>
+<rect x="778" y="1270" width="54" height="43" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1270.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1295.5" font-size="12" fill="#59636E">ISArt / Unravel / SimForge 三个模块，按失败归属回退</text>
+<text x="22" y="1334.5" font-size="13" font-weight="700" fill="#1F2328">Text2Sim</text>
+<rect x="95.0416" y="1321" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="102.042" y="1333.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="244" y="1317" width="54" height="26" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="1317.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="360.75" y="1317.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="418.5" y="1317.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="476.5" y="1317.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="534.75" y="1317.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="476" y="1317" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="534" y="1317" width="54" height="26" rx="4" fill="#2B57A4"/>
 <rect x="592.75" y="1317.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
 <rect x="650" y="1317" width="54" height="26" rx="4" fill="#A5324D"/>
 <rect x="708.5" y="1317.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778" y="1317" width="54" height="26" rx="4" fill="#6748B2"/>
 <rect x="836.5" y="1317.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1334" font-size="12" fill="#59636E">固定资产流水线，诊断 Agent 抓取探测并路由回上游</text>
-<text x="22" y="1364.5" font-size="13" font-weight="700" fill="#1F2328">DeformSmith</text>
-<rect x="117.09" y="1351" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="124.09" y="1363.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
-<rect x="244" y="1347" width="54" height="26" rx="4" fill="#A35C0A"/>
+<text x="906" y="1334" font-size="12" fill="#59636E">Planner 分派 Scene / Body / Action Writer，Critic 审查</text>
+<text x="22" y="1364.5" font-size="13" font-weight="700" fill="#1F2328">DiagGen</text>
+<rect x="86.2224" y="1351" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="93.2224" y="1363.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="244.75" y="1347.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A35C0A" stroke-width="1.5"/>
 <rect x="302.75" y="1347.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
 <rect x="360.75" y="1347.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="418.5" y="1347.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="476" y="1347" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534" y="1347" width="54" height="26" rx="4" fill="#2B57A4"/>
+<rect x="476.5" y="1347.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="534.75" y="1347.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
 <rect x="592.75" y="1347.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
 <rect x="650" y="1347" width="54" height="26" rx="4" fill="#A5324D"/>
-<rect x="708.75" y="1347.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708.5" y="1347.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778" y="1347" width="54" height="26" rx="4" fill="#6748B2"/>
 <rect x="836.5" y="1347.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1364" font-size="12" fill="#59636E">L0–L3 分层，MPM 选材料，抓取测试</text>
-<text x="22" y="1394.5" font-size="13" font-weight="700" fill="#1F2328">Agentic Real2Sim</text>
-<rect x="154.296" y="1381" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="161.296" y="1393.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<text x="906" y="1364" font-size="12" fill="#59636E">固定资产流水线，诊断 Agent 抓取探测并路由回上游</text>
+<text x="22" y="1394.5" font-size="13" font-weight="700" fill="#1F2328">DeformSmith</text>
+<rect x="117.09" y="1381" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="124.09" y="1393.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
 <rect x="244" y="1377" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="302.75" y="1377.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
 <rect x="360.75" y="1377.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
@@ -651,541 +651,556 @@
 <rect x="476" y="1377" width="54" height="26" rx="4" fill="#0B7266"/>
 <rect x="534" y="1377" width="54" height="26" rx="4" fill="#2B57A4"/>
 <rect x="592.75" y="1377.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.75" y="1377.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
-<rect x="708.5" y="1377.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="650" y="1377" width="54" height="26" rx="4" fill="#A5324D"/>
+<rect x="708.75" y="1377.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
 <rect x="778" y="1377" width="54" height="26" rx="4" fill="#6748B2"/>
 <rect x="836.5" y="1377.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1394" font-size="12" fill="#59636E">视觉、场景、物理 Agent 分工，MuJoCo 重放对照</text>
-<text x="22" y="1424.5" font-size="13" font-weight="700" fill="#1F2328">SimWorlds</text>
-<rect x="102.156" y="1411.5" width="59" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
-<text x="108.656" y="1423.5" font-size="11.5" fill="#59636E">只建场景</text>
+<text x="906" y="1394" font-size="12" fill="#59636E">L0–L3 分层，MPM 选材料，抓取测试</text>
+<text x="22" y="1424.5" font-size="13" font-weight="700" fill="#1F2328">Agentic Real2Sim</text>
+<rect x="154.296" y="1411" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="161.296" y="1423.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
 <rect x="244" y="1407" width="54" height="26" rx="4" fill="#A35C0A"/>
-<rect x="302.5" y="1407.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="360" y="1407" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="302.75" y="1407.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="1407.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="418.5" y="1407.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="476" y="1407" width="54" height="26" rx="4" fill="#0B7266"/>
 <rect x="534" y="1407" width="54" height="26" rx="4" fill="#2B57A4"/>
-<rect x="593" y="1408" width="52" height="24" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
-<rect x="650" y="1407" width="54" height="26" rx="4" fill="#A5324D"/>
+<rect x="592.75" y="1407.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.75" y="1407.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
 <rect x="708.5" y="1407.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778" y="1407" width="54" height="26" rx="4" fill="#6748B2"/>
 <rect x="836.5" y="1407.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1424" font-size="12" fill="#59636E">规划、编码、验证、评审，Blender 内置求解器</text>
-<text x="22" y="1454.5" font-size="13" font-weight="700" fill="#1F2328">MUSE</text>
-<rect x="65.7768" y="1441.5" width="59" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
-<text x="72.2768" y="1453.5" font-size="11.5" fill="#59636E">只建场景</text>
+<text x="906" y="1424" font-size="12" fill="#59636E">视觉、场景、物理 Agent 分工，MuJoCo 重放对照</text>
+<text x="22" y="1454.5" font-size="13" font-weight="700" fill="#1F2328">SimWorlds</text>
+<rect x="102.156" y="1441.5" width="59" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
+<text x="108.656" y="1453.5" font-size="11.5" fill="#59636E">只建场景</text>
 <rect x="244" y="1437" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="302.5" y="1437.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="360.75" y="1437.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="360" y="1437" width="54" height="26" rx="4" fill="#0B7266"/>
 <rect x="418.5" y="1437.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="476" y="1437" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534.5" y="1437.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="534" y="1437" width="54" height="26" rx="4" fill="#2B57A4"/>
 <rect x="593" y="1438" width="52" height="24" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
-<rect x="650.5" y="1437.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="650" y="1437" width="54" height="26" rx="4" fill="#A5324D"/>
 <rect x="708.5" y="1437.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778" y="1437" width="54" height="26" rx="4" fill="#6748B2"/>
 <rect x="836.5" y="1437.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1454" font-size="12" fill="#59636E">Architect / Sculptor / Inspector，结构化场景</text>
-<text x="22" y="1484.5" font-size="13" font-weight="700" fill="#1F2328">ChronoAgentic</text>
-<rect x="132.523" y="1471" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="139.523" y="1483.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<text x="906" y="1454" font-size="12" fill="#59636E">规划、编码、验证、评审，Blender 内置求解器</text>
+<text x="22" y="1484.5" font-size="13" font-weight="700" fill="#1F2328">MUSE</text>
+<rect x="65.7768" y="1471.5" width="59" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
+<text x="72.2768" y="1483.5" font-size="11.5" fill="#59636E">只建场景</text>
 <rect x="244" y="1467" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="302.5" y="1467.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="360.75" y="1467.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="418.5" y="1467.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="476" y="1467" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534" y="1467" width="54" height="26" rx="4" fill="#2B57A4"/>
-<rect x="592.75" y="1467.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650" y="1467" width="54" height="26" rx="4" fill="#A5324D"/>
+<rect x="534.5" y="1467.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="593" y="1468" width="52" height="24" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
+<rect x="650.5" y="1467.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="708.5" y="1467.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778" y="1467" width="54" height="26" rx="4" fill="#6748B2"/>
 <rect x="836.5" y="1467.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1484" font-size="12" fill="#59636E">Plan / Code Agent，PyChrono 程序与审查补丁</text>
-<text x="22" y="1514.5" font-size="13" font-weight="700" fill="#1F2328">ArtiCAD</text>
-<rect x="88.9272" y="1501.5" width="59" height="16" rx="8" fill="none" stroke="#2B57A4"/>
-<text x="95.4272" y="1513.5" font-size="11.5" fill="#2B57A4">仿真就绪</text>
+<text x="906" y="1484" font-size="12" fill="#59636E">Architect / Sculptor / Inspector，结构化场景</text>
+<text x="22" y="1514.5" font-size="13" font-weight="700" fill="#1F2328">ChronoAgentic</text>
+<rect x="132.523" y="1501" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="139.523" y="1513.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
 <rect x="244" y="1497" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="302.5" y="1497.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="360" y="1497" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="418" y="1497" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="476.75" y="1497.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="534.5" y="1497.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="592.75" y="1497.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.5" y="1497.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360.75" y="1497.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="1497.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="1497" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="534" y="1497" width="54" height="26" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="1497.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650" y="1497" width="54" height="26" rx="4" fill="#A5324D"/>
 <rect x="708.5" y="1497.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778" y="1497" width="54" height="26" rx="4" fill="#6748B2"/>
 <rect x="836.5" y="1497.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1514" font-size="12" fill="#59636E">设计、生成 Agent，确定性装配器，错误路由回滚</text>
-<text x="22" y="1544.5" font-size="13" font-weight="700" fill="#1F2328">SceneSmith</text>
-<rect x="109.373" y="1531" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="116.373" y="1543.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<text x="906" y="1514" font-size="12" fill="#59636E">Plan / Code Agent，PyChrono 程序与审查补丁</text>
+<text x="22" y="1544.5" font-size="13" font-weight="700" fill="#1F2328">ArtiCAD</text>
+<rect x="88.9272" y="1531.5" width="59" height="16" rx="8" fill="none" stroke="#2B57A4"/>
+<text x="95.4272" y="1543.5" font-size="11.5" fill="#2B57A4">仿真就绪</text>
 <rect x="244" y="1527" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="302.5" y="1527.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="360.75" y="1527.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="418.75" y="1527.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="476" y="1527" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534" y="1527" width="54" height="26" rx="4" fill="#2B57A4"/>
-<rect x="592.75" y="1527.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="360" y="1527" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="418" y="1527" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="476.75" y="1527.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="534.5" y="1527.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="1527.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
 <rect x="650.5" y="1527.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="708.5" y="1527.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778" y="1527" width="54" height="26" rx="4" fill="#6748B2"/>
 <rect x="836.5" y="1527.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1544" font-size="12" fill="#59636E">Designer 布局，Critic 和 Orchestrator 决定改或回退</text>
-<text x="22" y="1573" font-size="13" font-weight="700" fill="#1F2328">Perceptual Self-Reflection</text>
-<rect x="22" y="1579" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="29" y="1591.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
-<rect x="244" y="1557" width="54" height="43" rx="4" fill="#A35C0A"/>
-<rect x="302.5" y="1557.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="360" y="1557" width="54" height="43" rx="4" fill="#0B7266"/>
-<rect x="418.5" y="1557.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="476" y="1557" width="54" height="43" rx="4" fill="#0B7266"/>
-<rect x="534" y="1557" width="54" height="43" rx="4" fill="#2B57A4"/>
-<rect x="592" y="1557" width="54" height="43" rx="4" fill="#2B57A4"/>
-<rect x="650" y="1557" width="54" height="43" rx="4" fill="#A5324D"/>
-<rect x="708.5" y="1557.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="778" y="1557" width="54" height="43" rx="4" fill="#6748B2"/>
-<rect x="836.5" y="1557.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1582.5" font-size="12" fill="#59636E">四个专用 Agent，自写数值仿真，渲染帧验证</text>
-<text x="22" y="1621.5" font-size="13" font-weight="700" fill="#1F2328">GRS</text>
-<rect x="56.4576" y="1608" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="63.4576" y="1620.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
-<rect x="244" y="1604" width="54" height="26" rx="4" fill="#A35C0A"/>
-<rect x="302.75" y="1604.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
-<rect x="360.75" y="1604.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="418.5" y="1604.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="476" y="1604" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534.5" y="1604.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="592.75" y="1604.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.75" y="1604.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
-<rect x="708" y="1604" width="54" height="26" rx="4" fill="#A5324D"/>
-<rect x="778" y="1604" width="54" height="26" rx="4" fill="#6748B2"/>
-<rect x="836.5" y="1604.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1621" font-size="12" fill="#59636E">SAM2 与深度，资产匹配，VLM 写任务和测试，路由修订</text>
-<text x="22" y="1650" font-size="13" font-weight="700" fill="#1F2328">Articulate-Anything</text>
-<rect x="22" y="1656" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="29" y="1668.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
-<rect x="244" y="1634" width="54" height="43" rx="4" fill="#A35C0A"/>
-<rect x="302.75" y="1634.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
-<rect x="360.75" y="1634.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="418" y="1634" width="54" height="43" rx="4" fill="#0B7266"/>
-<rect x="476" y="1634" width="54" height="43" rx="4" fill="#0B7266"/>
-<rect x="534.5" y="1634.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="592.75" y="1634.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.5" y="1634.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="708.5" y="1634.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="778" y="1634" width="54" height="43" rx="4" fill="#6748B2"/>
-<rect x="836.5" y="1634.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1659.5" font-size="12" fill="#59636E">Actor 写关节代码，Critic 对照视频判断</text>
-<text x="22" y="1698.5" font-size="13" font-weight="700" fill="#1F2328">OMNI-EPIC</text>
-<rect x="108.27" y="1685" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="115.27" y="1697.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
-<rect x="244" y="1681" width="54" height="26" rx="4" fill="#A35C0A"/>
-<rect x="302.5" y="1681.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="360" y="1681" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="418.5" y="1681.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="476" y="1681" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534.5" y="1681.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="592.75" y="1681.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.75" y="1681.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
-<rect x="708" y="1681" width="54" height="26" rx="4" fill="#A5324D"/>
-<rect x="778" y="1681" width="54" height="26" rx="4" fill="#6748B2"/>
-<rect x="836" y="1681" width="54" height="26" rx="4" fill="#6748B2"/>
-<text x="906" y="1698" font-size="12" fill="#59636E">任务与环境生成器，DreamerV3 学习，档案驱动</text>
-<text x="22" y="1734" font-size="14.0" font-weight="700" fill="#1F2328">Open-loop Workflow · 固定流程，LLM 负责其中几步<tspan font-weight="400" fill="#59636E" dx="10">13 项</tspan></text>
-<line x1="459.222" y1="1729" x2="1266" y2="1729" stroke="#D1D9E0"/>
-<text x="22" y="1762.5" font-size="13" font-weight="700" fill="#1F2328">Spatial Harness</text>
-<rect x="144.374" y="1749" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="151.374" y="1761.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
-<rect x="244" y="1745" width="54" height="26" rx="4" fill="#A35C0A"/>
-<rect x="302.75" y="1745.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
-<rect x="360" y="1745" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="418.5" y="1745.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="476" y="1745" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534.5" y="1745.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="592.75" y="1745.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.5" y="1745.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="708.5" y="1745.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="778.5" y="1745.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="836.5" y="1745.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1762" font-size="12" fill="#59636E">感知器建代理世界，MuJoCo 只用于测量</text>
-<text x="22" y="1792.5" font-size="13" font-weight="700" fill="#1F2328">LabWorld</text>
-<rect x="94.4392" y="1779.5" width="59" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
-<text x="100.939" y="1791.5" font-size="11.5" fill="#59636E">只建场景</text>
+<text x="906" y="1544" font-size="12" fill="#59636E">设计、生成 Agent，确定性装配器，错误路由回滚</text>
+<text x="22" y="1574.5" font-size="13" font-weight="700" fill="#1F2328">SceneSmith</text>
+<rect x="109.373" y="1561" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="116.373" y="1573.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="244" y="1557" width="54" height="26" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="1557.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360.75" y="1557.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.75" y="1557.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="476" y="1557" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="534" y="1557" width="54" height="26" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="1557.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="1557.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="1557.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="1557" width="54" height="26" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1557.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1574" font-size="12" fill="#59636E">Designer 布局，Critic 和 Orchestrator 决定改或回退</text>
+<text x="22" y="1603" font-size="13" font-weight="700" fill="#1F2328">Perceptual Self-Reflection</text>
+<rect x="22" y="1609" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="29" y="1621.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="244" y="1587" width="54" height="43" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="1587.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360" y="1587" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="418.5" y="1587.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="1587" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="534" y="1587" width="54" height="43" rx="4" fill="#2B57A4"/>
+<rect x="592" y="1587" width="54" height="43" rx="4" fill="#2B57A4"/>
+<rect x="650" y="1587" width="54" height="43" rx="4" fill="#A5324D"/>
+<rect x="708.5" y="1587.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="1587" width="54" height="43" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1587.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1612.5" font-size="12" fill="#59636E">四个专用 Agent，自写数值仿真，渲染帧验证</text>
+<text x="22" y="1651.5" font-size="13" font-weight="700" fill="#1F2328">GRS</text>
+<rect x="56.4576" y="1638" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="63.4576" y="1650.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="244" y="1634" width="54" height="26" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="1634.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="1634.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="1634.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="1634" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="1634.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="1634.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.75" y="1634.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708" y="1634" width="54" height="26" rx="4" fill="#A5324D"/>
+<rect x="778" y="1634" width="54" height="26" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1634.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1651" font-size="12" fill="#59636E">SAM2 与深度，资产匹配，VLM 写任务和测试，路由修订</text>
+<text x="22" y="1680" font-size="13" font-weight="700" fill="#1F2328">Articulate-Anything</text>
+<rect x="22" y="1686" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="29" y="1698.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="244" y="1664" width="54" height="43" rx="4" fill="#A35C0A"/>
+<rect x="302.75" y="1664.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="1664.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418" y="1664" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="476" y="1664" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="1664.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="1664.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="1664.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="1664.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="1664" width="54" height="43" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="1664.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1689.5" font-size="12" fill="#59636E">Actor 写关节代码，Critic 对照视频判断</text>
+<text x="22" y="1728.5" font-size="13" font-weight="700" fill="#1F2328">OMNI-EPIC</text>
+<rect x="108.27" y="1715" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="115.27" y="1727.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="244" y="1711" width="54" height="26" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="1711.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360" y="1711" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="418.5" y="1711.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="1711" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="1711.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="1711.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.75" y="1711.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708" y="1711" width="54" height="26" rx="4" fill="#A5324D"/>
+<rect x="778" y="1711" width="54" height="26" rx="4" fill="#6748B2"/>
+<rect x="836" y="1711" width="54" height="26" rx="4" fill="#6748B2"/>
+<text x="906" y="1728" font-size="12" fill="#59636E">任务与环境生成器，DreamerV3 学习，档案驱动</text>
+<text x="22" y="1764" font-size="14.0" font-weight="700" fill="#1F2328">Open-loop Workflow · 固定流程，LLM 负责其中几步<tspan font-weight="400" fill="#59636E" dx="10">13 项</tspan></text>
+<line x1="459.222" y1="1759" x2="1266" y2="1759" stroke="#D1D9E0"/>
+<text x="22" y="1792.5" font-size="13" font-weight="700" fill="#1F2328">Spatial Harness</text>
+<rect x="144.374" y="1779" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="151.374" y="1791.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
 <rect x="244" y="1775" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="302.75" y="1775.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
-<rect x="360.75" y="1775.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="360" y="1775" width="54" height="26" rx="4" fill="#0B7266"/>
 <rect x="418.5" y="1775.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="476.75" y="1775.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="476" y="1775" width="54" height="26" rx="4" fill="#0B7266"/>
 <rect x="534.5" y="1775.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="593" y="1776" width="52" height="24" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
-<rect x="650.75" y="1775.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="592.75" y="1775.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="1775.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="708.5" y="1775.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778.5" y="1775.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="836.5" y="1775.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1792" font-size="12" fill="#59636E">VLM 组织对象与事件，轨迹优化导出 4D 状态</text>
-<text x="22" y="1822.5" font-size="13" font-weight="700" fill="#1F2328">SceneBloom</text>
-<rect x="109.873" y="1809.5" width="59" height="16" rx="8" fill="none" stroke="#2B57A4"/>
-<text x="116.373" y="1821.5" font-size="11.5" fill="#2B57A4">仿真就绪</text>
+<text x="906" y="1792" font-size="12" fill="#59636E">感知器建代理世界，MuJoCo 只用于测量</text>
+<text x="22" y="1822.5" font-size="13" font-weight="700" fill="#1F2328">LabWorld</text>
+<rect x="94.4392" y="1809.5" width="59" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
+<text x="100.939" y="1821.5" font-size="11.5" fill="#59636E">只建场景</text>
 <rect x="244" y="1805" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="302.75" y="1805.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
 <rect x="360.75" y="1805.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="418.5" y="1805.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="476.75" y="1805.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="534.5" y="1805.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="592.75" y="1805.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.5" y="1805.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="593" y="1806" width="52" height="24" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
+<rect x="650.75" y="1805.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
 <rect x="708.5" y="1805.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778.5" y="1805.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="836.5" y="1805.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1822" font-size="12" fill="#59636E">FLUX 布局图，感知提升 3D，编译器拟合</text>
-<text x="22" y="1852.5" font-size="13" font-weight="700" fill="#1F2328">AgentDreamer</text>
-<rect x="124.806" y="1839" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="131.806" y="1851.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<text x="906" y="1822" font-size="12" fill="#59636E">VLM 组织对象与事件，轨迹优化导出 4D 状态</text>
+<text x="22" y="1852.5" font-size="13" font-weight="700" fill="#1F2328">SceneBloom</text>
+<rect x="109.873" y="1839.5" width="59" height="16" rx="8" fill="none" stroke="#2B57A4"/>
+<text x="116.373" y="1851.5" font-size="11.5" fill="#2B57A4">仿真就绪</text>
 <rect x="244" y="1835" width="54" height="26" rx="4" fill="#A35C0A"/>
-<rect x="302.5" y="1835.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="360.75" y="1835.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="302.75" y="1835.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="1835.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="418.5" y="1835.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="476.75" y="1835.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="534.75" y="1835.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="592.75" y="1835.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650" y="1835" width="54" height="26" rx="4" fill="#A5324D"/>
+<rect x="476.75" y="1835.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="534.5" y="1835.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="1835.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="1835.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="708.5" y="1835.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778.5" y="1835.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="836.5" y="1835.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1852" font-size="12" fill="#59636E">LLM 给运动先验，可微 MPM 拟合参数</text>
-<text x="22" y="1882.5" font-size="13" font-weight="700" fill="#1F2328">EmbodiedGen V2</text>
-<rect x="138.862" y="1869" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="145.862" y="1881.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<text x="906" y="1852" font-size="12" fill="#59636E">FLUX 布局图，感知提升 3D，编译器拟合</text>
+<text x="22" y="1882.5" font-size="13" font-weight="700" fill="#1F2328">AgentDreamer</text>
+<rect x="124.806" y="1869" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="131.806" y="1881.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
 <rect x="244" y="1865" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="302.5" y="1865.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="360.75" y="1865.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="360.75" y="1865.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="418.5" y="1865.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="476.75" y="1865.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="476.75" y="1865.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="534.75" y="1865.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
 <rect x="592.75" y="1865.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.5" y="1865.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="650" y="1865" width="54" height="26" rx="4" fill="#A5324D"/>
 <rect x="708.5" y="1865.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778.5" y="1865.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="836.75" y="1865.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-e)" stroke="#6748B2" stroke-width="1.5"/>
-<text x="906" y="1882" font-size="12" fill="#59636E">资产流水线补物理，BFS 放置，SAPIEN 沉降，多引擎导出</text>
-<text x="22" y="1918.5" font-size="13" font-weight="700" fill="#1F2328">PerceptTwin</text>
-<rect x="117.59" y="1905.5" width="70.5" height="16" rx="8" fill="none" stroke="#D1D9E0"/>
-<text x="124.09" y="1917.5" font-size="11.5" fill="#59636E">引擎未写明</text>
-<rect x="244.75" y="1895.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#A35C0A" stroke-width="1.5"/>
-<rect x="302.75" y="1895.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#A35C0A" stroke-width="1.5"/>
-<rect x="360.75" y="1895.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="418.5" y="1895.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="476.75" y="1895.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="534.5" y="1895.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="592.5" y="1895.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="650.5" y="1895.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="708" y="1895" width="54" height="38" rx="4" fill="#A5324D"/>
-<rect x="778.5" y="1895.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="836.5" y="1895.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1910.5" font-size="12" fill="#59636E">输入是语义地图，检索或 TRELLIS</text>
-<text x="906" y="1925.5" font-size="12" fill="#59636E">生成，ICP 放置，LLM 赋交互语义</text>
-<text x="22" y="1954.5" font-size="13" font-weight="700" fill="#1F2328">Phys2Real</text>
-<rect x="102.758" y="1941" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="109.758" y="1953.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
-<rect x="244.5" y="1937.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="302.75" y="1937.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
-<rect x="360.75" y="1937.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="418.5" y="1937.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="476.5" y="1937.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="534" y="1937" width="54" height="26" rx="4" fill="#2B57A4"/>
-<rect x="592.75" y="1937.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.75" y="1937.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
-<rect x="708.75" y="1937.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
-<rect x="778.5" y="1937.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="836.5" y="1937.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1954" font-size="12" fill="#59636E">3DGS 重建，VLM 先验加在线估计，Isaac Lab 训练</text>
-<text x="22" y="1984.5" font-size="13" font-weight="700" fill="#1F2328">FactorSim</text>
-<rect x="101.656" y="1971" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="108.656" y="1983.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
-<rect x="244" y="1967" width="54" height="26" rx="4" fill="#A35C0A"/>
-<rect x="302.5" y="1967.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="360" y="1967" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="836.5" y="1865.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1882" font-size="12" fill="#59636E">LLM 给运动先验，可微 MPM 拟合参数</text>
+<text x="22" y="1912.5" font-size="13" font-weight="700" fill="#1F2328">EmbodiedGen V2</text>
+<rect x="138.862" y="1899" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="145.862" y="1911.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="244" y="1895" width="54" height="26" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="1895.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360.75" y="1895.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="1895.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476.75" y="1895.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="534.75" y="1895.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="592.75" y="1895.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="1895.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="1895.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778.5" y="1895.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="836.75" y="1895.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-e)" stroke="#6748B2" stroke-width="1.5"/>
+<text x="906" y="1912" font-size="12" fill="#59636E">资产流水线补物理，BFS 放置，SAPIEN 沉降，多引擎导出</text>
+<text x="22" y="1948.5" font-size="13" font-weight="700" fill="#1F2328">PerceptTwin</text>
+<rect x="117.59" y="1935.5" width="70.5" height="16" rx="8" fill="none" stroke="#D1D9E0"/>
+<text x="124.09" y="1947.5" font-size="11.5" fill="#59636E">引擎未写明</text>
+<rect x="244.75" y="1925.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="302.75" y="1925.75" width="52.5" height="36.5" rx="4" fill="#FFFFFF" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="1925.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="1925.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476.75" y="1925.75" width="52.5" height="36.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="534.5" y="1925.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.5" y="1925.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="650.5" y="1925.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708" y="1925" width="54" height="38" rx="4" fill="#A5324D"/>
+<rect x="778.5" y="1925.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="836.5" y="1925.5" width="53" height="37" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="1940.5" font-size="12" fill="#59636E">输入是语义地图，检索或 TRELLIS</text>
+<text x="906" y="1955.5" font-size="12" fill="#59636E">生成，ICP 放置，LLM 赋交互语义</text>
+<text x="22" y="1984.5" font-size="13" font-weight="700" fill="#1F2328">Phys2Real</text>
+<rect x="102.758" y="1971" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="109.758" y="1983.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="244.5" y="1967.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="302.75" y="1967.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="1967.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="418.5" y="1967.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="476" y="1967" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="476.5" y="1967.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="534" y="1967" width="54" height="26" rx="4" fill="#2B57A4"/>
 <rect x="592.75" y="1967.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650" y="1967" width="54" height="26" rx="4" fill="#A5324D"/>
-<rect x="708" y="1967" width="54" height="26" rx="4" fill="#A5324D"/>
+<rect x="650.75" y="1967.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708.75" y="1967.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
 <rect x="778.5" y="1967.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="836.5" y="1967.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="1984" font-size="12" fill="#59636E">因子化地生成仿真代码，含转移与奖励</text>
-<text x="22" y="2014.5" font-size="13" font-weight="700" fill="#1F2328">RoboTwin</text>
-<rect x="94.4392" y="2001.5" width="70.5" height="16" rx="8" fill="none" stroke="#D1D9E0"/>
-<text x="100.939" y="2013.5" font-size="11.5" fill="#59636E">引擎未写明</text>
+<text x="906" y="1984" font-size="12" fill="#59636E">3DGS 重建，VLM 先验加在线估计，Isaac Lab 训练</text>
+<text x="22" y="2014.5" font-size="13" font-weight="700" fill="#1F2328">FactorSim</text>
+<rect x="101.656" y="2001" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="108.656" y="2013.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
 <rect x="244" y="1997" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="302.5" y="1997.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="360.75" y="1997.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="360" y="1997" width="54" height="26" rx="4" fill="#0B7266"/>
 <rect x="418.5" y="1997.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="476.5" y="1997.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="534.5" y="1997.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="592.5" y="1997.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="1997" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="534" y="1997" width="54" height="26" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="1997.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
 <rect x="650" y="1997" width="54" height="26" rx="4" fill="#A5324D"/>
-<rect x="708.75" y="1997.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708" y="1997" width="54" height="26" rx="4" fill="#A5324D"/>
 <rect x="778.5" y="1997.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="836.5" y="1997.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="2014" font-size="12" fill="#59636E">Rodin 生成 mesh，GPT-4 写轨迹规划程序</text>
-<text x="22" y="2044.5" font-size="13" font-weight="700" fill="#1F2328">Holodeck</text>
-<rect x="92.8368" y="2031" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="99.8368" y="2043.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<text x="906" y="2014" font-size="12" fill="#59636E">因子化地生成仿真代码，含转移与奖励</text>
+<text x="22" y="2044.5" font-size="13" font-weight="700" fill="#1F2328">RoboTwin</text>
+<rect x="94.4392" y="2031.5" width="70.5" height="16" rx="8" fill="none" stroke="#D1D9E0"/>
+<text x="100.939" y="2043.5" font-size="11.5" fill="#59636E">引擎未写明</text>
 <rect x="244" y="2027" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="302.5" y="2027.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="360.75" y="2027.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="418.5" y="2027.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="476.75" y="2027.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="476.5" y="2027.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="534.5" y="2027.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="592.75" y="2027.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.5" y="2027.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="708.5" y="2027.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.5" y="2027.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="650" y="2027" width="54" height="26" rx="4" fill="#A5324D"/>
+<rect x="708.75" y="2027.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
 <rect x="778.5" y="2027.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="836.5" y="2027.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="2044" font-size="12" fill="#59636E">GPT-4 设计房间，约束求解器摆放 Objaverse 资产</text>
-<text x="22" y="2074.5" font-size="13" font-weight="700" fill="#1F2328">RoboGen</text>
-<rect x="86.2224" y="2061" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="93.2224" y="2073.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<text x="906" y="2044" font-size="12" fill="#59636E">Rodin 生成 mesh，GPT-4 写轨迹规划程序</text>
+<text x="22" y="2074.5" font-size="13" font-weight="700" fill="#1F2328">Holodeck</text>
+<rect x="92.8368" y="2061" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="99.8368" y="2073.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
 <rect x="244" y="2057" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="302.5" y="2057.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="360.75" y="2057.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="418" y="2057" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="476" y="2057" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="418.5" y="2057.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476.75" y="2057.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="534.5" y="2057.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="592.75" y="2057.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.75" y="2057.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
-<rect x="708" y="2057" width="54" height="26" rx="4" fill="#A5324D"/>
+<rect x="650.5" y="2057.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="2057.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778.5" y="2057.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="836.5" y="2057.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="2074" font-size="12" fill="#59636E">GPT-4 提任务配场景，RL / 规划生成技能</text>
-<text x="22" y="2104.5" font-size="13" font-weight="700" fill="#1F2328">Gen2Sim</text>
-<rect x="87.3248" y="2091" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="94.3248" y="2103.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<text x="906" y="2074" font-size="12" fill="#59636E">GPT-4 设计房间，约束求解器摆放 Objaverse 资产</text>
+<text x="22" y="2104.5" font-size="13" font-weight="700" fill="#1F2328">RoboGen</text>
+<rect x="86.2224" y="2091" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="93.2224" y="2103.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
 <rect x="244" y="2087" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="302.5" y="2087.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="360.75" y="2087.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="418.5" y="2087.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="476.5" y="2087.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="534" y="2087" width="54" height="26" rx="4" fill="#2B57A4"/>
+<rect x="418" y="2087" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="476" y="2087" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="2087.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="592.75" y="2087.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
 <rect x="650.75" y="2087.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
 <rect x="708" y="2087" width="54" height="26" rx="4" fill="#A5324D"/>
 <rect x="778.5" y="2087.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="836.5" y="2087.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="2104" font-size="12" fill="#59636E">图像到 mesh，GPT-4 定质量和奖励，PPO 学习</text>
-<text x="22" y="2134.5" font-size="13" font-weight="700" fill="#1F2328">GenSim</text>
-<rect x="78.5056" y="2121" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="85.5056" y="2133.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<text x="906" y="2104" font-size="12" fill="#59636E">GPT-4 提任务配场景，RL / 规划生成技能</text>
+<text x="22" y="2134.5" font-size="13" font-weight="700" fill="#1F2328">Gen2Sim</text>
+<rect x="87.3248" y="2121" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="94.3248" y="2133.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
 <rect x="244" y="2117" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="302.5" y="2117.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="360.75" y="2117.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="360.75" y="2117.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="418.5" y="2117.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="476" y="2117" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534.5" y="2117.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476.5" y="2117.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="534" y="2117" width="54" height="26" rx="4" fill="#2B57A4"/>
 <rect x="592.75" y="2117.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
 <rect x="650.75" y="2117.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
 <rect x="708" y="2117" width="54" height="26" rx="4" fill="#A5324D"/>
-<rect x="778.75" y="2117.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#6748B2" stroke-width="1.5"/>
-<rect x="836" y="2117" width="54" height="26" rx="4" fill="#6748B2"/>
-<text x="906" y="2134" font-size="12" fill="#59636E">GPT-4 写任务代码，执行筛选，再扩出新任务</text>
-<text x="22" y="2170" font-size="14.0" font-weight="700" fill="#1F2328">Open-loop Workflow · 固定流程，末段有局部 Agent 精修<tspan font-weight="400" fill="#59636E" dx="10">8 项</tspan></text>
-<line x1="492.761" y1="2165" x2="1266" y2="2165" stroke="#D1D9E0"/>
-<text x="22" y="2198.5" font-size="13" font-weight="700" fill="#1F2328">GIF</text>
-<rect x="56.4576" y="2185" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="63.4576" y="2197.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
-<rect x="244" y="2181" width="54" height="26" rx="4" fill="#A35C0A"/>
-<rect x="302.75" y="2181.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
-<rect x="360.75" y="2181.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="418.5" y="2181.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="476.75" y="2181.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="534.5" y="2181.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="592.75" y="2181.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.75" y="2181.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
-<rect x="708.5" y="2181.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="778" y="2181" width="54" height="26" rx="4" fill="#6748B2"/>
-<rect x="836.5" y="2181.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="2198" font-size="12" fill="#59636E">生成参考图，两路 mesh，GPRM 稳定化，VLM 筛选</text>
-<text x="22" y="2228.5" font-size="13" font-weight="700" fill="#1F2328">SceneMosaic</text>
-<rect x="117.09" y="2215" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="124.09" y="2227.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
-<rect x="244.75" y="2211.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="778.5" y="2117.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="836.5" y="2117.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="2134" font-size="12" fill="#59636E">图像到 mesh，GPT-4 定质量和奖励，PPO 学习</text>
+<text x="22" y="2164.5" font-size="13" font-weight="700" fill="#1F2328">GenSim</text>
+<rect x="78.5056" y="2151" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="85.5056" y="2163.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="244" y="2147" width="54" height="26" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="2147.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360.75" y="2147.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="2147.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="2147" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="2147.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="2147.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.75" y="2147.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708" y="2147" width="54" height="26" rx="4" fill="#A5324D"/>
+<rect x="778.75" y="2147.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#6748B2" stroke-width="1.5"/>
+<rect x="836" y="2147" width="54" height="26" rx="4" fill="#6748B2"/>
+<text x="906" y="2164" font-size="12" fill="#59636E">GPT-4 写任务代码，执行筛选，再扩出新任务</text>
+<text x="22" y="2200" font-size="14.0" font-weight="700" fill="#1F2328">Open-loop Workflow · 固定流程，末段有局部 Agent 精修<tspan font-weight="400" fill="#59636E" dx="10">8 项</tspan></text>
+<line x1="492.761" y1="2195" x2="1266" y2="2195" stroke="#D1D9E0"/>
+<text x="22" y="2228.5" font-size="13" font-weight="700" fill="#1F2328">GIF</text>
+<rect x="56.4576" y="2215" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="63.4576" y="2227.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="244" y="2211" width="54" height="26" rx="4" fill="#A35C0A"/>
 <rect x="302.75" y="2211.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
 <rect x="360.75" y="2211.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="418.5" y="2211.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="476" y="2211" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="476.75" y="2211.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="534.5" y="2211.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="592.75" y="2211.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.5" y="2211.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="650.75" y="2211.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
 <rect x="708.5" y="2211.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778" y="2211" width="54" height="26" rx="4" fill="#6748B2"/>
-<rect x="836" y="2211" width="54" height="26" rx="4" fill="#6748B2"/>
-<text x="906" y="2228" font-size="12" fill="#59636E">SAM3 + SAM3D，Agent 修局部布局，组合局部变体</text>
-<text x="22" y="2258.5" font-size="13" font-weight="700" fill="#1F2328">Lucida</text>
-<rect x="77.9032" y="2245.5" width="59" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
-<text x="84.4032" y="2257.5" font-size="11.5" fill="#59636E">只建场景</text>
+<rect x="836.5" y="2211.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="2228" font-size="12" fill="#59636E">生成参考图，两路 mesh，GPRM 稳定化，VLM 筛选</text>
+<text x="22" y="2258.5" font-size="13" font-weight="700" fill="#1F2328">SceneMosaic</text>
+<rect x="117.09" y="2245" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="124.09" y="2257.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
 <rect x="244.75" y="2241.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A35C0A" stroke-width="1.5"/>
 <rect x="302.75" y="2241.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
 <rect x="360.75" y="2241.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="418.5" y="2241.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="476" y="2241" width="54" height="26" rx="4" fill="#0B7266"/>
 <rect x="534.5" y="2241.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="593" y="2242" width="52" height="24" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
+<rect x="592.75" y="2241.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
 <rect x="650.5" y="2241.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="708.5" y="2241.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778" y="2241" width="54" height="26" rx="4" fill="#6748B2"/>
-<rect x="836.5" y="2241.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="2258" font-size="12" fill="#59636E">对象图与补全资产，GizmoAct 多轮调位姿</text>
-<text x="22" y="2287" font-size="13" font-weight="700" fill="#1F2328">Usage-Driven Code Scenes</text>
-<rect x="22" y="2293" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="29" y="2305.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
-<rect x="244" y="2271" width="54" height="43" rx="4" fill="#A35C0A"/>
-<rect x="302.5" y="2271.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="360" y="2271" width="54" height="43" rx="4" fill="#0B7266"/>
-<rect x="418" y="2271" width="54" height="43" rx="4" fill="#0B7266"/>
-<rect x="476.75" y="2271.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="534.5" y="2271.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="592.75" y="2271.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.5" y="2271.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="708" y="2271" width="54" height="43" rx="4" fill="#A5324D"/>
-<rect x="778" y="2271" width="54" height="43" rx="4" fill="#6748B2"/>
-<rect x="836.5" y="2271.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="2296.5" font-size="12" fill="#59636E">ArtiCraft 写可动资产，交互规则，几何求解与 Critic</text>
-<text x="22" y="2335.5" font-size="13" font-weight="700" fill="#1F2328">LiteReality-Agent</text>
-<rect x="164.993" y="2322.5" width="59" height="16" rx="8" fill="none" stroke="#2B57A4"/>
-<text x="171.493" y="2334.5" font-size="11.5" fill="#2B57A4">仿真就绪</text>
-<rect x="244.75" y="2318.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A35C0A" stroke-width="1.5"/>
-<rect x="302.75" y="2318.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
-<rect x="360.75" y="2318.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="418.75" y="2318.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="476" y="2318" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534" y="2318" width="54" height="26" rx="4" fill="#2B57A4"/>
-<rect x="592.75" y="2318.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.5" y="2318.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="708.5" y="2318.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="778" y="2318" width="54" height="26" rx="4" fill="#6748B2"/>
-<rect x="836.5" y="2318.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="2335" font-size="12" fill="#59636E">前段固定流水线，Coding Agent 改 Room.py，导出 MuJoCo</text>
-<text x="22" y="2365.5" font-size="13" font-weight="700" fill="#1F2328">SimFoundry</text>
-<rect x="109.373" y="2352" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="116.373" y="2364.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
-<rect x="244" y="2348" width="54" height="26" rx="4" fill="#A35C0A"/>
+<rect x="836" y="2241" width="54" height="26" rx="4" fill="#6748B2"/>
+<text x="906" y="2258" font-size="12" fill="#59636E">SAM3 + SAM3D，Agent 修局部布局，组合局部变体</text>
+<text x="22" y="2288.5" font-size="13" font-weight="700" fill="#1F2328">Lucida</text>
+<rect x="77.9032" y="2275.5" width="59" height="16" rx="8" fill="none" stroke="#59636E" stroke-dasharray="3 2"/>
+<text x="84.4032" y="2287.5" font-size="11.5" fill="#59636E">只建场景</text>
+<rect x="244.75" y="2271.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="302.75" y="2271.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="2271.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="2271.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476" y="2271" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="534.5" y="2271.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="593" y="2272" width="52" height="24" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="2" stroke-dasharray="5 3"/>
+<rect x="650.5" y="2271.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="2271.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="2271" width="54" height="26" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="2271.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="2288" font-size="12" fill="#59636E">对象图与补全资产，GizmoAct 多轮调位姿</text>
+<text x="22" y="2317" font-size="13" font-weight="700" fill="#1F2328">Usage-Driven Code Scenes</text>
+<rect x="22" y="2323" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="29" y="2335.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="244" y="2301" width="54" height="43" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="2301.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360" y="2301" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="418" y="2301" width="54" height="43" rx="4" fill="#0B7266"/>
+<rect x="476.75" y="2301.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="534.5" y="2301.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="2301.75" width="52.5" height="41.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="2301.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708" y="2301" width="54" height="43" rx="4" fill="#A5324D"/>
+<rect x="778" y="2301" width="54" height="43" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="2301.5" width="53" height="42" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="2326.5" font-size="12" fill="#59636E">ArtiCraft 写可动资产，交互规则，几何求解与 Critic</text>
+<text x="22" y="2365.5" font-size="13" font-weight="700" fill="#1F2328">LiteReality-Agent</text>
+<rect x="164.993" y="2352.5" width="59" height="16" rx="8" fill="none" stroke="#2B57A4"/>
+<text x="171.493" y="2364.5" font-size="11.5" fill="#2B57A4">仿真就绪</text>
+<rect x="244.75" y="2348.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A35C0A" stroke-width="1.5"/>
 <rect x="302.75" y="2348.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
 <rect x="360.75" y="2348.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="418" y="2348" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="476.75" y="2348.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.75" y="2348.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="476" y="2348" width="54" height="26" rx="4" fill="#0B7266"/>
 <rect x="534" y="2348" width="54" height="26" rx="4" fill="#2B57A4"/>
-<rect x="592.75" y="2348.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="592.75" y="2348.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
 <rect x="650.5" y="2348.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="708" y="2348" width="54" height="26" rx="4" fill="#A5324D"/>
-<rect x="778.5" y="2348.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="836" y="2348" width="54" height="26" rx="4" fill="#6748B2"/>
-<text x="906" y="2365" font-size="12" fill="#59636E">感知、生成、关节、位姿模块按序，VLM 定物理参数</text>
-<text x="22" y="2395.5" font-size="13" font-weight="700" fill="#1F2328">SceneCode</text>
-<rect x="102.156" y="2382.5" width="59" height="16" rx="8" fill="none" stroke="#2B57A4"/>
-<text x="108.656" y="2394.5" font-size="11.5" fill="#2B57A4">仿真就绪</text>
+<rect x="708.5" y="2348.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="2348" width="54" height="26" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="2348.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="2365" font-size="12" fill="#59636E">前段固定流水线，Coding Agent 改 Room.py，导出 MuJoCo</text>
+<text x="22" y="2395.5" font-size="13" font-weight="700" fill="#1F2328">SimFoundry</text>
+<rect x="109.373" y="2382" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="116.373" y="2394.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
 <rect x="244" y="2378" width="54" height="26" rx="4" fill="#A35C0A"/>
-<rect x="302.5" y="2378.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="360" y="2378" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="302.75" y="2378.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="2378.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="418" y="2378" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="476" y="2378" width="54" height="26" rx="4" fill="#0B7266"/>
-<rect x="534.75" y="2378.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="592.75" y="2378.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="476.75" y="2378.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="534" y="2378" width="54" height="26" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="2378.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
 <rect x="650.5" y="2378.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="708.5" y="2378.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="778" y="2378" width="54" height="26" rx="4" fill="#6748B2"/>
-<rect x="836.5" y="2378.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="2395" font-size="12" fill="#59636E">房间 Agent 布局，逐部件 Blender Python，编译物理属性</text>
-<text x="22" y="2425.5" font-size="13" font-weight="700" fill="#1F2328">Vid2Sid</text>
-<rect x="87.3248" y="2412" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="94.3248" y="2424.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
-<rect x="244.5" y="2408.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="302.75" y="2408.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
-<rect x="360.75" y="2408.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="418.5" y="2408.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="476.5" y="2408.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="534" y="2408" width="54" height="26" rx="4" fill="#2B57A4"/>
-<rect x="592.75" y="2408.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.75" y="2408.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708" y="2378" width="54" height="26" rx="4" fill="#A5324D"/>
+<rect x="778.5" y="2378.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="836" y="2378" width="54" height="26" rx="4" fill="#6748B2"/>
+<text x="906" y="2395" font-size="12" fill="#59636E">感知、生成、关节、位姿模块按序，VLM 定物理参数</text>
+<text x="22" y="2425.5" font-size="13" font-weight="700" fill="#1F2328">SceneCode</text>
+<rect x="102.156" y="2412.5" width="59" height="16" rx="8" fill="none" stroke="#2B57A4"/>
+<text x="108.656" y="2424.5" font-size="11.5" fill="#2B57A4">仿真就绪</text>
+<rect x="244" y="2408" width="54" height="26" rx="4" fill="#A35C0A"/>
+<rect x="302.5" y="2408.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360" y="2408" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="418" y="2408" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="476" y="2408" width="54" height="26" rx="4" fill="#0B7266"/>
+<rect x="534.75" y="2408.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="592.75" y="2408.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="2408.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="708.5" y="2408.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778" y="2408" width="54" height="26" rx="4" fill="#6748B2"/>
 <rect x="836.5" y="2408.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="2425" font-size="12" fill="#59636E">感知固定，VLM 对比仿真与真实视频调参数</text>
-<text x="22" y="2461" font-size="14.0" font-weight="700" fill="#1F2328">Model-based (without Agent) · 没有 Agent，模型或优化直接产出<tspan font-weight="400" fill="#59636E" dx="10">5 项</tspan></text>
-<line x1="559.244" y1="2456" x2="1266" y2="2456" stroke="#D1D9E0"/>
-<text x="22" y="2489.5" font-size="13" font-weight="700" fill="#1F2328">UniPhysGen</text>
-<rect x="110.975" y="2476.5" width="59" height="16" rx="8" fill="none" stroke="#2B57A4"/>
-<text x="117.475" y="2488.5" font-size="11.5" fill="#2B57A4">仿真就绪</text>
-<rect x="244.5" y="2472.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="302.75" y="2472.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
-<rect x="360.75" y="2472.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="418.75" y="2472.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="476.5" y="2472.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="534.75" y="2472.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="592.75" y="2472.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.5" y="2472.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="708.5" y="2472.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="778.75" y="2472.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-e)" stroke="#6748B2" stroke-width="1.5"/>
-<rect x="836.5" y="2472.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="2489" font-size="12" fill="#59636E">已有资产，感知分组与属性估计，学习模型</text>
-<text x="22" y="2519.5" font-size="13" font-weight="700" fill="#1F2328">Video2Sim2Real</text>
-<rect x="143.547" y="2506" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="150.547" y="2518.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<text x="906" y="2425" font-size="12" fill="#59636E">房间 Agent 布局，逐部件 Blender Python，编译物理属性</text>
+<text x="22" y="2455.5" font-size="13" font-weight="700" fill="#1F2328">Vid2Sid</text>
+<rect x="87.3248" y="2442" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="94.3248" y="2454.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="244.5" y="2438.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="302.75" y="2438.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="2438.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.5" y="2438.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476.5" y="2438.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="534" y="2438" width="54" height="26" rx="4" fill="#2B57A4"/>
+<rect x="592.75" y="2438.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.75" y="2438.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708.5" y="2438.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778" y="2438" width="54" height="26" rx="4" fill="#6748B2"/>
+<rect x="836.5" y="2438.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="2455" font-size="12" fill="#59636E">感知固定，VLM 对比仿真与真实视频调参数</text>
+<text x="22" y="2491" font-size="14.0" font-weight="700" fill="#1F2328">Model-based (without Agent) · 没有 Agent，模型或优化直接产出<tspan font-weight="400" fill="#59636E" dx="10">5 项</tspan></text>
+<line x1="559.244" y1="2486" x2="1266" y2="2486" stroke="#D1D9E0"/>
+<text x="22" y="2519.5" font-size="13" font-weight="700" fill="#1F2328">UniPhysGen</text>
+<rect x="110.975" y="2506.5" width="59" height="16" rx="8" fill="none" stroke="#2B57A4"/>
+<text x="117.475" y="2518.5" font-size="11.5" fill="#2B57A4">仿真就绪</text>
 <rect x="244.5" y="2502.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="302.75" y="2502.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
-<rect x="360.75" y="2502.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="418.5" y="2502.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="476.75" y="2502.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="534.5" y="2502.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="592.75" y="2502.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.75" y="2502.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
-<rect x="708.75" y="2502.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
-<rect x="778.5" y="2502.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="360.75" y="2502.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.75" y="2502.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="476.5" y="2502.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="534.75" y="2502.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="592.75" y="2502.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="2502.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="2502.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778.75" y="2502.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-e)" stroke="#6748B2" stroke-width="1.5"/>
 <rect x="836.5" y="2502.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="2519" font-size="12" fill="#59636E">基础模型重建孪生，优化、模仿学习和强化学习</text>
-<text x="22" y="2549.5" font-size="13" font-weight="700" fill="#1F2328">PhysX-Omni</text>
-<rect x="110.975" y="2536.5" width="59" height="16" rx="8" fill="none" stroke="#2B57A4"/>
-<text x="117.475" y="2548.5" font-size="11.5" fill="#2B57A4">仿真就绪</text>
-<rect x="244.75" y="2532.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
-<rect x="302.5" y="2532.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="2519" font-size="12" fill="#59636E">已有资产，感知分组与属性估计，学习模型</text>
+<text x="22" y="2549.5" font-size="13" font-weight="700" fill="#1F2328">Video2Sim2Real</text>
+<rect x="143.547" y="2536" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="150.547" y="2548.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="244.5" y="2532.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="302.75" y="2532.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
 <rect x="360.75" y="2532.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="418.75" y="2532.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="476.5" y="2532.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="534.75" y="2532.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="592.75" y="2532.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.5" y="2532.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="708.5" y="2532.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="418.5" y="2532.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476.75" y="2532.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="534.5" y="2532.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="2532.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.75" y="2532.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="708.75" y="2532.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#A5324D" stroke-width="1.5"/>
 <rect x="778.5" y="2532.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="836.5" y="2532.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="2549" font-size="12" fill="#59636E">微调的 VLM 直接生成带关节和物理属性的资产</text>
-<text x="22" y="2579.5" font-size="13" font-weight="700" fill="#1F2328">DeformMaster</text>
-<rect x="124.806" y="2566" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="131.806" y="2578.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
-<rect x="244.5" y="2562.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<rect x="302.75" y="2562.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<text x="906" y="2549" font-size="12" fill="#59636E">基础模型重建孪生，优化、模仿学习和强化学习</text>
+<text x="22" y="2579.5" font-size="13" font-weight="700" fill="#1F2328">PhysX-Omni</text>
+<rect x="110.975" y="2566.5" width="59" height="16" rx="8" fill="none" stroke="#2B57A4"/>
+<text x="117.475" y="2578.5" font-size="11.5" fill="#2B57A4">仿真就绪</text>
+<rect x="244.75" y="2562.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="302.5" y="2562.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="360.75" y="2562.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="418.5" y="2562.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="418.75" y="2562.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
 <rect x="476.5" y="2562.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="534.75" y="2562.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="592.75" y="2562.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.75" y="2562.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
+<rect x="592.75" y="2562.75" width="52.5" height="24.5" rx="4" fill="#FFFFFF" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="2562.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="708.5" y="2562.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778.5" y="2562.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="836.5" y="2562.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="2579" font-size="12" fill="#59636E">MPM + 神经残差，从交互视频优化</text>
-<text x="22" y="2609.5" font-size="13" font-weight="700" fill="#1F2328">Real2Code</text>
-<rect x="102.758" y="2596" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
-<text x="109.758" y="2608.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<text x="906" y="2579" font-size="12" fill="#59636E">微调的 VLM 直接生成带关节和物理属性的资产</text>
+<text x="22" y="2609.5" font-size="13" font-weight="700" fill="#1F2328">DeformMaster</text>
+<rect x="124.806" y="2596" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="131.806" y="2608.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
 <rect x="244.5" y="2592.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="302.75" y="2592.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
 <rect x="360.75" y="2592.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="418.75" y="2592.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="476.75" y="2592.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
-<rect x="534.5" y="2592.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="418.5" y="2592.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="476.5" y="2592.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="534.75" y="2592.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
 <rect x="592.75" y="2592.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
-<rect x="650.5" y="2592.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="650.75" y="2592.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-d)" stroke="#A5324D" stroke-width="1.5"/>
 <rect x="708.5" y="2592.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="778.5" y="2592.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
 <rect x="836.5" y="2592.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
-<text x="906" y="2609" font-size="12" fill="#59636E">分割、补全后，微调 CodeLlama 写关节代码</text>
+<text x="906" y="2609" font-size="12" fill="#59636E">MPM + 神经残差，从交互视频优化</text>
+<text x="22" y="2639.5" font-size="13" font-weight="700" fill="#1F2328">Real2Code</text>
+<rect x="102.758" y="2626" width="71.5" height="17" rx="8.5" fill="#D2EEEA"/>
+<text x="109.758" y="2638.5" font-size="11.5" fill="#0B7266">完整仿真器</text>
+<rect x="244.5" y="2622.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="302.75" y="2622.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-a)" stroke="#A35C0A" stroke-width="1.5"/>
+<rect x="360.75" y="2622.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="418.75" y="2622.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="476.75" y="2622.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-b)" stroke="#0B7266" stroke-width="1.5"/>
+<rect x="534.5" y="2622.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="592.75" y="2622.75" width="52.5" height="24.5" rx="4" fill="url(#hatch-c)" stroke="#2B57A4" stroke-width="1.5"/>
+<rect x="650.5" y="2622.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="708.5" y="2622.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="778.5" y="2622.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<rect x="836.5" y="2622.5" width="53" height="25" rx="4" fill="none" stroke="#8C959F" stroke-dasharray="3 3"/>
+<text x="906" y="2639" font-size="12" fill="#59636E">分割、补全后，微调 CodeLlama 写关节代码</text>
 </svg>

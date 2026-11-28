@@ -15,7 +15,7 @@
 <text x="40" y="151" font-size="12.5" font-weight="700" letter-spacing="0.6" fill="#E3A251">1 · 行動</text>
 <text x="40" y="176" font-size="17" font-weight="700" fill="#E6EDF3">コードでロボットを動かす</text>
 <rect x="243" y="210" width="40" height="22" rx="11" fill="#3A2914"/>
-<text x="263" y="225.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E3A251">99</text>
+<text x="263" y="225.5" text-anchor="middle" font-size="13" font-weight="700" fill="#E3A251">101</text>
 <text x="40" y="225" font-size="14" fill="#E6EDF3">3.1 身体性ハーネス</text>
 <rect x="243" y="242.5" width="40" height="22" rx="11" fill="#3A2914"/>
 <text x="263" y="258" text-anchor="middle" font-size="13" font-weight="700" fill="#E3A251">15</text>
@@ -31,7 +31,7 @@
 <text x="359" y="151" font-size="12.5" font-weight="700" letter-spacing="0.6" fill="#45C3B3">2 · 構築</text>
 <text x="359" y="176" font-size="17" font-weight="700" fill="#E6EDF3">練習用の世界を構築する</text>
 <rect x="562" y="210" width="40" height="22" rx="11" fill="#10302B"/>
-<text x="582" y="225.5" text-anchor="middle" font-size="13" font-weight="700" fill="#45C3B3">70</text>
+<text x="582" y="225.5" text-anchor="middle" font-size="13" font-weight="700" fill="#45C3B3">71</text>
 <text x="359" y="225" font-size="14" fill="#E6EDF3">3.2 シミュレータ構築</text>
 <rect x="562" y="242.5" width="40" height="22" rx="11" fill="#10302B"/>
 <text x="582" y="258" text-anchor="middle" font-size="13" font-weight="700" fill="#45C3B3">29</text>

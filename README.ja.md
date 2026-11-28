@@ -13,7 +13,7 @@
 
 マルチモーダルエージェントがコードを書き、その結果を観察し、改善していく研究のマップ——デジタル世界から物理世界まで。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-703-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--27-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![Robotics branch](https://img.shields.io/badge/branch-robotics-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Works](https://img.shields.io/badge/works-707-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--28-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/commits/main) [![Robotics branch](https://img.shields.io/badge/branch-robotics-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · [简体中文](./README.zh-CN.md) · **日本語**
 
@@ -57,11 +57,11 @@
   - [2.2 動画生成モデル × 動画制作・編集](#s2-2) (12)
   - [2.3 3D 生成モデル × 3D アセット・シーン](#s2-3) (11)
   - [2.4 生成的世界モデル × インタラクティブ環境](#s2-4) (13)
-  - [2.5 知覚モデル × シーン理解・再構成](#s2-5) (6)
+  - [2.5 知覚モデル × シーン理解・再構成](#s2-5) (7)
   - [2.6 行動モデル × ロボット操作](#s2-6) (15)
 - [Stage 3 · デジタルと物理世界の架け橋](#stage-3)
-  - [3.1 身体性ハーネス](#s3-1) (99)
-  - [3.2 シミュレータ構築](#s3-2) (70)
+  - [3.1 身体性ハーネス](#s3-1) (101)
+  - [3.2 シミュレータ構築](#s3-2) (71)
   - [3.3 シミュレータ品質評価](#s3-3) (29)
   - [3.4 データ](#s3-4) (15)
   - [3.5 学習と能力向上](#s3-5) (88)
@@ -1929,6 +1929,11 @@
 
 #### 呼び出し可能なモデル
 
+<!-- mmac-record: {"id": "2511.16719", "scope": "Resource", "primary": "2.5", "stage": 2, "type": "resource"} -->
+
+- <a id="paper-2511-16719"></a>`2025.11` **[SAM 3: Segment Anything with Concepts](https://arxiv.org/abs/2511.16719)** [[コード]](https://github.com/facebookresearch/sam3) [[モデル]](https://huggingface.co/facebook/sam3)
+  > テキストや画像の例で指定した概念に該当する全インスタンスを分割し、動画内で追跡する。
+
 <!-- mmac-record: {"id": "res:gen4p", "scope": "Resource", "primary": "2.5", "stage": 2, "type": "resource"} -->
 
 - <a id="paper-res-gen4p"></a>**[Gen4P](https://arxiv.org/abs/2610.22371)** [[プロジェクトページ]](https://gen4p.github.io/) [[コード]](https://github.com/yitongx/Gen4P)
@@ -2405,6 +2410,11 @@
   > 統一予算と元タスクのインターフェースで先端 VLM エージェントのロボット汎用性を比較し、プログラムを動かす修復と物理タスクの達成を区別する。<br>
   > 🖥️ **シミュレーション** MuJoCo + SAPIEN + PyBullet + CoppeliaSim + Isaac Sim
 
+<!-- mmac-record: {"id": "web:astranomy", "scope": "Reading", "primary": "3.1", "stage": 3, "type": "reading"} -->
+
+- <a id="paper-web-astranomy"></a>`2026.10` **[Astranomy: An Empirical Study of GPT-6 Astra as a Native Robot Policy](https://research.nvidia.com/labs/srl/projects/astranomy/)** [[コード]](https://github.com/NVlabs/RoboLab/tree/main/policies/ai_native)
+  > RoboLab シミュレーションで、直接の行動予測、履歴を保持するエージェント制御、行動モデルのオーケストレーションを比較する。
+
 <!-- mmac-record: {"id": "2610.07594", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-07594"></a>`2026.10` **[BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation](https://arxiv.org/abs/2610.07594)** [[コード]](https://github.com/swirl-uk/BiGym2)
@@ -2540,6 +2550,12 @@
 - <a id="paper-2510-03827"></a>`2025.10` **[LIBERO-PRO: Towards Robust and Fair Evaluation of Vision-Language-Action Models Beyond Memorization](https://arxiv.org/abs/2510.03827)** [[コード]](https://github.com/Zxy-MLlab/LIBERO-PRO)
   > 物体、配置、指示、タスク目標、環境に変化を加え、ロボット方策の汎化を検証する。<br>
   > 🖥️ **シミュレーション** MuJoCo
+
+<!-- mmac-record: {"id": "2502.09560", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2502-09560"></a>`2025.02` **[EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents](https://arxiv.org/abs/2502.09560)** [[プロジェクトページ]](https://embodiedbench.github.io/) [[コード]](https://github.com/EmbodiedBench/EmbodiedBench) [[データセット]](https://huggingface.co/datasets/EmbodiedBench/EB-Manipulation)
+  > 画像、行動履歴、環境からのフィードバックを使って移動・操作の行動を選ぶ身体性エージェントを評価する。<br>
+  > 🖥️ **シミュレーション** AI2-THOR + Habitat + CoppeliaSim（Franka Panda）
 
 <!-- mmac-record: {"id": "2402.14623", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
@@ -2679,6 +2695,12 @@
 - <a id="paper-2611-02691"></a>`2026.11` **[Closing the Dynamics Gap through Self-Directed Robotic Interaction](https://arxiv.org/abs/2611.02691)** [[プロジェクトページ]](https://cue-dynamics.github.io/)
   > 自律的な打撃探索から力学的な証拠を得て、Agent が軌道計測の構築、シミュレーションパラメーターの推定、次の実験の選択を行う。<br>
   > 🖥️ **シミュレーション** MuJoCo
+
+<!-- mmac-record: {"id": "2611.31098", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-31098"></a>`2026.11` **[Real2Worlds2Real: Scaling Self-Improving Agentic Real2Sim2Real for Robot Manipulation](https://arxiv.org/abs/2611.31098)** [[プロジェクトページ]](https://real2worlds2real.github.io/) [[コード]](https://github.com/real2worlds2real/real2worlds2real)
+  > レンダリングとシミュレーションからのフィードバックでデジタルツインとロボット制御プログラムを修正し、実機で転移を評価する。<br>
+  > 🖥️ **シミュレーション** PhysX · 🦾 **実機** Dexmate
 
 <!-- mmac-record: {"id": "2611.31002", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -3404,7 +3426,7 @@ P0 は前提となる関門で、合否だけを判定します。ほかの各�
   > 一人称の人の動画 1 本から、エージェントが物体の性質に基づいてシミュレーションでシーンを再構成し、多指ハンドの軌跡を最適化し、物体とロボットの状態を変えてデータを生成する。ツールライブラリは使うほど拡張される。映像：視点を変えたシミュレーションのレンダリングを、実写に近づけるよう再テクスチャ。軌跡：多指ハンドと腕の動作。<br>
   > 🖥️ **シミュレーション** Blender + MuJoCo + Isaac Sim（Sharpa Wave） · 🦾 **実機** I2RT YAM、Sharpa Wave
 
-*関連:* [Contact Harness](#paper-2611-29377) · [RoboUniverse-10K](#paper-2611-31002) · [MG-VQA](#paper-2608-17129)
+*関連:* [Contact Harness](#paper-2611-29377) · [RoboUniverse-10K](#paper-2611-31002) · [MG-VQA](#paper-2608-17129) · [EmbodiedBench](#paper-2502-09560)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 
@@ -3942,7 +3964,7 @@ P0 は前提となる関門で、合否だけを判定します。ほかの各�
   > ロボットの行動プログラムを生成するマルチモーダルモデルを訓練する。<br>
   > 🖥️ **シミュレーション** Gazebo（Franka Panda、UR5） · 🦾 **実機** Franka Panda、UR5
 
-*関連:* [BlenderFORGE](#paper-2611-10768) · [Toward Agentic Robotics](#paper-2611-34778)
+*関連:* [BlenderFORGE](#paper-2611-10768) · [Real2Worlds2Real](#paper-2611-31098) · [Toward Agentic Robotics](#paper-2611-34778)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E7%9B%AE%E6%AC%A1%E3%81%AB%E6%88%BB%E3%82%8B-30363d?style=flat-square" alt="↑ 目次に戻る" height="24"></a></p>
 

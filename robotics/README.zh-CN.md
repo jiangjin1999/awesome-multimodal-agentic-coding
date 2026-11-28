@@ -11,7 +11,7 @@
 
 面向机器人的多模态 Coding Agent：写代码去行动，搭建自己练习用的仿真，并根据观察到的结果在仿真与现实中不断改进。
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Branched from](https://img.shields.io/badge/branched_from-awesome--multimodal--agentic--coding-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding) [![Works](https://img.shields.io/badge/works-367-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--27-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Branched from](https://img.shields.io/badge/branched_from-awesome--multimodal--agentic--coding-f05032?logo=git&logoColor=white)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding) [![Works](https://img.shields.io/badge/works-370-blue.svg)](#contents) [![Last updated](https://img.shields.io/badge/updated-2026--11--28-brightgreen.svg)](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding-robotics/commits/main) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [English](./README.md) · **简体中文** · [日本語](./README.ja.md)
 
@@ -41,8 +41,8 @@ Switched to a new branch 'robotics'
 
 | 步骤 | 章节 |
 |---|---|
-| **1 · 行动**<br>用代码驱动机器人 | **[3.1 具身框架（Harness）](#s3-1)** (99)<br>[工具与控制接口](#s3-1-tools-interfaces) (41) · [委派已有策略](#s3-1-delegation) (11) · [Agent 能力评测](#s3-1-capability-eval) (32) · [Skills、工具桥与运行资源](#s3-1-skills-runtime) (15)<br>**[2.6 动作模型 × 机器人操作](#s2-6)** (15) <sub>⤴ 从 Stage 2 cherry-pick</sub> |
-| **2 · 构建**<br>搭建练习用的仿真世界 | **[3.2 仿真器构建](#s3-2)** (70)<br>**[3.3 仿真器质量评估](#s3-3)** (29) |
+| **1 · 行动**<br>用代码驱动机器人 | **[3.1 具身框架（Harness）](#s3-1)** (101)<br>[工具与控制接口](#s3-1-tools-interfaces) (41) · [委派已有策略](#s3-1-delegation) (11) · [Agent 能力评测](#s3-1-capability-eval) (34) · [Skills、工具桥与运行资源](#s3-1-skills-runtime) (15)<br>**[2.6 动作模型 × 机器人操作](#s2-6)** (15) <sub>⤴ 从 Stage 2 cherry-pick</sub> |
+| **2 · 构建**<br>搭建练习用的仿真世界 | **[3.2 仿真器构建](#s3-2)** (71)<br>**[3.3 仿真器质量评估](#s3-3)** (29) |
 | **3 · 学习**<br>从经验中变强 | **[3.4 数据](#s3-4)** (15)<br>[Real](#s3-4-real-data) (4) · [Sim](#s3-4-sim-data) (7) · [Real+Sim](#s3-4-mixed-data) (4)<br>**[3.5 训练与能力提升](#s3-5)** (88)<br>[程序与策略研发](#s3-5-program-policy) (26) · [经验、记忆与技能学习](#s3-5-experience-skill) (51) · [Coding Agent 后训练](#s3-5-post-training) (11) |
 | **4 · 应用**<br>走进物理世界 | **[3.6 物理应用与实验](#s3-6)** (51)<br>[机器人交互与操作](#s3-6-robot-interaction) (13) · [科学实验（AI4Science）](#s3-6-experiments) (27) · [物理设计、制造与验证](#s3-6-physical-design) (11) |
 
@@ -70,9 +70,9 @@ gitGraph
   commit id: "3.4 数据"
   commit id: "3.5 训练与能力提升"
   commit id: "3.6 物理应用与实验"
-  commit id: "cherry-pick 2.6 动作模型 × 机器人操作" type: HIGHLIGHT tag: "本分支 367 项"
+  commit id: "cherry-pick 2.6 动作模型 × 机器人操作" type: HIGHLIGHT tag: "本分支 370 项"
   checkout main
-  commit id: "…" tag: "上游 703 项"
+  commit id: "…" tag: "上游 707 项"
 ```
 
 <a id="stage-3"></a>
@@ -445,6 +445,11 @@ gitGraph
   > 在统一预算与源任务接口下比较前沿 VLM Agent 的机器人通用性，并区分修复程序运行与完成物理任务。<br>
   > 🖥️ **仿真** MuJoCo + SAPIEN + PyBullet + CoppeliaSim + Isaac Sim
 
+<!-- mmac-record: {"id": "web:astranomy", "scope": "Reading", "primary": "3.1", "stage": 3, "type": "reading"} -->
+
+- <a id="paper-web-astranomy"></a>`2026.10` **[Astranomy: An Empirical Study of GPT-6 Astra as a Native Robot Policy](https://research.nvidia.com/labs/srl/projects/astranomy/)** [[代码]](https://github.com/NVlabs/RoboLab/tree/main/policies/ai_native)
+  > 在 RoboLab 仿真中比较直接动作预测、保留历史的智能体控制与动作模型编排。
+
 <!-- mmac-record: {"id": "2610.07594", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2610-07594"></a>`2026.10` **[BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation](https://arxiv.org/abs/2610.07594)** [[代码]](https://github.com/swirl-uk/BiGym2)
@@ -581,6 +586,12 @@ gitGraph
   > 通过物体、位置、指令、任务目标和环境扰动，检查机器人策略的泛化能力。<br>
   > 🖥️ **仿真** MuJoCo
 
+<!-- mmac-record: {"id": "2502.09560", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2502-09560"></a>`2025.02` **[EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents](https://arxiv.org/abs/2502.09560)** [[项目页]](https://embodiedbench.github.io/) [[代码]](https://github.com/EmbodiedBench/EmbodiedBench) [[数据集]](https://huggingface.co/datasets/EmbodiedBench/EB-Manipulation)
+  > 评测具身智能体如何结合图像、动作历史和环境反馈，选择导航与操作动作。<br>
+  > 🖥️ **仿真** AI2-THOR + Habitat + CoppeliaSim（Franka Panda）
+
 <!-- mmac-record: {"id": "2402.14623", "scope": "Adjacent", "primary": "3.1", "stage": 3, "type": "paper"} -->
 
 - <a id="paper-2402-14623"></a>`2024.02` **[RoboScript: Code Generation for Free-Form Manipulation Tasks across Real and Simulation](https://arxiv.org/abs/2402.14623)**
@@ -716,6 +727,12 @@ gitGraph
 - <a id="paper-2611-02691"></a>`2026.11` **[Closing the Dynamics Gap through Self-Directed Robotic Interaction](https://arxiv.org/abs/2611.02691)** [[项目页]](https://cue-dynamics.github.io/)
   > 通过自主击球探索获取动力学证据，让 Agent 同时构建轨迹测量、拟合仿真参数并选择下一次实验。<br>
   > 🖥️ **仿真** MuJoCo
+
+<!-- mmac-record: {"id": "2611.31098", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
+
+- <a id="paper-2611-31098"></a>`2026.11` **[Real2Worlds2Real: Scaling Self-Improving Agentic Real2Sim2Real for Robot Manipulation](https://arxiv.org/abs/2611.31098)** [[项目页]](https://real2worlds2real.github.io/) [[代码]](https://github.com/real2worlds2real/real2worlds2real)
+  > 利用渲染与仿真反馈修订数字孪生和机器人控制程序，再用实机评估迁移效果。<br>
+  > 🖥️ **仿真** PhysX · 🦾 **真机** Dexmate
 
 <!-- mmac-record: {"id": "2611.31002", "scope": "Core", "primary": "3.2", "stage": 3, "type": "paper"} -->
 
@@ -1436,7 +1453,7 @@ P0 是前提关卡，只判过不过；其余各层检查不同的失败模式�
   > 从单段第一视角人类视频出发，Agent 在仿真中按物体属性重建场景、优化灵巧手轨迹，再改变物体与机器人状态批量生成数据，工具库随使用不断扩充。画面：变换视角后的仿真渲染，重贴纹理以贴近真实；轨迹：灵巧手与手臂动作。<br>
   > 🖥️ **仿真** Blender + MuJoCo + Isaac Sim（Sharpa Wave） · 🦾 **真机** I2RT YAM、Sharpa Wave
 
-*另见:* [Contact Harness](#paper-2611-29377) · [RoboUniverse-10K](#paper-2611-31002) · [MG-VQA](#paper-2608-17129)
+*另见:* [Contact Harness](#paper-2611-29377) · [RoboUniverse-10K](#paper-2611-31002) · [MG-VQA](#paper-2608-17129) · [EmbodiedBench](#paper-2502-09560)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
@@ -1974,7 +1991,7 @@ P0 是前提关卡，只判过不过；其余各层检查不同的失败模式�
   > 训练多模态模型生成机器人行为程序。<br>
   > 🖥️ **仿真** Gazebo（Franka Panda、UR5） · 🦾 **真机** Franka Panda、UR5
 
-*另见:* [BlenderFORGE](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/blob/main/README.zh-CN.md#paper-2611-10768) · [Toward Agentic Robotics](#paper-2611-34778)
+*另见:* [BlenderFORGE](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/blob/main/README.zh-CN.md#paper-2611-10768) · [Real2Worlds2Real](#paper-2611-31098) · [Toward Agentic Robotics](#paper-2611-34778)
 
 <p align="right"><a href="#contents"><img src="https://img.shields.io/badge/%E2%86%91%20%E8%BF%94%E5%9B%9E%E7%9B%AE%E5%BD%95-30363d?style=flat-square" alt="↑ 返回目录" height="24"></a></p>
 
@@ -2442,4 +2459,4 @@ P0 是前提关卡，只判过不过；其余各层检查不同的失败模式�
 
 感谢 Liangcai Gao、Wenshan Wu、Haolin Yang 和 Yu Chen。
 
-<p align="center"><sub>⎇ 同步自 <a href="https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/tree/main"><code>upstream@main</code></a> · 2026-11-27</sub></p>
+<p align="center"><sub>⎇ 同步自 <a href="https://github.com/jiangjin1999/awesome-multimodal-agentic-coding/tree/main"><code>upstream@main</code></a> · 2026-11-28</sub></p>
